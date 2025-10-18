@@ -56,6 +56,18 @@ const CaseStudySaas: React.FC = () => {
               What if there was a way to deliver the same enterprise-grade quality in a fraction of the time, at a fraction of the cost, while maintaining rigorous standards for accessibility, testing, and documentation?
             </p>
           </div>
+
+          {/* Design System Screenshot */}
+          <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
+            <img 
+              src={`${import.meta.env.BASE_URL}saas-ds-welcome.png`}
+              alt="Winzenburg Design System - Production-ready React components"
+              className="w-full"
+            />
+            <div className="bg-white/5 px-4 py-3 text-sm text-gray-400">
+              <strong className="text-cyan-400">Winzenburg Design System:</strong> Production-ready React components for building beautiful, accessible applications faster
+            </div>
+          </div>
         </section>
 
         {/* The Force Multiplier Approach */}
@@ -104,6 +116,18 @@ const CaseStudySaas: React.FC = () => {
               </div>
             </div>
 
+            {/* Color System Screenshot */}
+            <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
+              <img 
+                src={`${import.meta.env.BASE_URL}saas-ds-colors.png`}
+                alt="Dynamic brand colors with token system"
+                className="w-full"
+              />
+              <div className="bg-white/5 px-4 py-3 text-sm text-gray-400">
+                <strong className="text-cyan-400">Dynamic Color System:</strong> Brand primary token automatically updates with presets while maintaining tonal relationships
+              </div>
+            </div>
+
             {/* Phase 3 */}
             <div className="bg-white/5 border border-cyan-500/30 rounded-lg p-6">
               <div className="flex items-start gap-4">
@@ -119,6 +143,30 @@ const CaseStudySaas: React.FC = () => {
                     <strong>Innovation:</strong> Created custom validation script that scans 63,813 lines of code to ensure 100% token compliance
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Icon Library Screenshot */}
+            <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
+              <img 
+                src={`${import.meta.env.BASE_URL}saas-ds-icons.png`}
+                alt="Searchable icon browser with 34 professional icons"
+                className="w-full"
+              />
+              <div className="bg-white/5 px-4 py-3 text-sm text-gray-400">
+                <strong className="text-cyan-400">Icon Browser:</strong> 34 professional icons, searchable by category, with copy-to-clipboard component names
+              </div>
+            </div>
+
+            {/* Button Components Screenshot */}
+            <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
+              <img 
+                src={`${import.meta.env.BASE_URL}saas-ds-buttons.png`}
+                alt="Button component variants showing semantic hierarchy"
+                className="w-full"
+              />
+              <div className="bg-white/5 px-4 py-3 text-sm text-gray-400">
+                <strong className="text-cyan-400">Component Variants:</strong> Semantic button hierarchy (Primary, Secondary, Tertiary, Destructive) with size variants and icon combinations
               </div>
             </div>
 
