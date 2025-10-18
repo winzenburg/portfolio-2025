@@ -69,7 +69,7 @@ export default function Work() {
             {/* Project 1: SaaS Design System */}
             <div className="bg-card border border-accent-cyan/30 rounded-lg overflow-hidden">
               <div className="h-80 overflow-hidden">
-                <img src="/project-saas-design-system.png" alt="Enterprise SaaS Design System" className="w-full h-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}project-saas-design-system.png`} alt="Enterprise SaaS Design System" className="w-full h-full object-cover" />
               </div>
               <div className="p-8 md:p-12">
                 <div className="grid md:grid-cols-[2fr,1fr] gap-8">
@@ -135,7 +135,7 @@ export default function Work() {
             {/* Project 2: ISC Portal */}
             <div className="bg-card border border-accent-purple/30 rounded-lg overflow-hidden">
               <div className="h-80 overflow-hidden">
-                <img src="/project-isc-portal.png" alt="ISC Portal Usability Prototype" className="w-full h-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}project-isc-portal.png`} alt="ISC Portal Usability Prototype" className="w-full h-full object-cover" />
               </div>
               <div className="p-8 md:p-12">
                 <div className="grid md:grid-cols-[2fr,1fr] gap-8">
@@ -201,7 +201,7 @@ export default function Work() {
             {/* Project 3: Comcast Design System */}
             <div className="bg-card border border-accent-green/30 rounded-lg overflow-hidden">
               <div className="h-80 overflow-hidden">
-                <img src="/project-comcast-design-system.png" alt="Comcast Business Design System" className="w-full h-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}project-comcast-design-system.png`} alt="Comcast Business Design System" className="w-full h-full object-cover" />
               </div>
               <div className="p-8 md:p-12">
                 <div className="grid md:grid-cols-[2fr,1fr] gap-8">
