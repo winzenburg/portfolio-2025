@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import { Link } from "wouter";
+import { Mail, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -134,7 +135,9 @@ export default function Contact() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-card border border-border/40 rounded-lg p-8 text-center">
-                <div className="text-4xl mb-4">📧</div>
+                <div className="mb-4 flex justify-center">
+                  <Mail className="w-12 h-12 text-primary" />
+                </div>
                 <h3 className="text-xl font-semibold mb-3">Email</h3>
                 <a href="mailto:ryanwinzenburg@gmail.com" className="text-primary hover:underline">
                   ryanwinzenburg@gmail.com
@@ -144,7 +147,9 @@ export default function Contact() {
                 </p>
               </div>
               <div className="bg-card border border-border/40 rounded-lg p-8 text-center">
-                <div className="text-4xl mb-4">💼</div>
+                <div className="mb-4 flex justify-center">
+                  <Linkedin className="w-12 h-12 text-primary" />
+                </div>
                 <h3 className="text-xl font-semibold mb-3">LinkedIn</h3>
                 <a href="https://www.linkedin.com/in/rwinzenburg/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   linkedin.com/in/rwinzenburg
