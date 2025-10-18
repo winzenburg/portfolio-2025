@@ -281,53 +281,61 @@ export default function Work() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl">
             {/* BuildOut */}
-            <div className="bg-card border border-border/40 rounded-lg p-8 hover:border-border/60 transition-all">
-              <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
-                Strategic UX · 2018-2020
+            <div className="bg-card border border-border/40 rounded-lg overflow-hidden hover:border-border/60 transition-all">
+              <div className="h-64 overflow-hidden">
+                <img src={`${import.meta.env.BASE_URL}project-buildout-hero.jpg`} alt="BuildOut Commercial Real Estate" className="w-full h-full object-cover" />
               </div>
-              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">BuildOut</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Established a user-centered design practice from the ground up for a high-growth B2B SaaS platform, leading to successful acquisition.
-              </p>
-              <div className="mb-6">
-                <div className="text-sm font-semibold mb-3">Key Contributions</div>
-                <ul className="text-sm space-y-2 text-muted-foreground">
-                  <li>• Deep user research & persona development</li>
-                  <li>• Information architecture redesign</li>
-                  <li>• First design system creation</li>
-                  <li>• Core product redesign</li>
-                </ul>
+              <div className="p-8">
+                <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
+                  Design · 2023
+                </div>
+                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">BuildOut</h3>
+                <p className="text-lg text-muted-foreground mb-2 font-medium">Commercial Real Estate App</p>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Streamlined workflows for commercial real estate brokers who spend 70-80% of their day researching clients and properties. Improved deal cycle efficiency through user-centered design.
+                </p>
+                <div className="mb-6">
+                  <div className="text-sm font-semibold mb-3">Approach</div>
+                  <ul className="text-sm space-y-2 text-muted-foreground">
+                    <li>• Stakeholder & customer interviews</li>
+                    <li>• Competitive analysis & heuristic evaluation</li>
+                    <li>• Design studio workshops</li>
+                    <li>• Lean MVPs & usability testing</li>
+                  </ul>
+                </div>
+                <div className="text-sm text-muted-foreground mb-6">
+                  <strong>Outcome:</strong> Product in beta with positive early feedback, representing major workflow improvement for customers.
+                </div>
               </div>
-              <Link href="/work/buildout">
-                <Button variant="outline">
-                  View Case Study →
-                </Button>
-              </Link>
             </div>
 
-            {/* CVS Health */}
-            <div className="bg-card border border-border/40 rounded-lg p-8 hover:border-border/60 transition-all">
-              <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
-                Enterprise UX · 2016-2018
+            {/* CVS/Aetna */}
+            <div className="bg-card border border-border/40 rounded-lg overflow-hidden hover:border-border/60 transition-all">
+              <div className="h-64 overflow-hidden">
+                <img src={`${import.meta.env.BASE_URL}project-cvs-aetna-hero.jpg`} alt="CVS Aetna Health Insurance" className="w-full h-full object-cover" />
               </div>
-              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">CVS Health</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Led UX strategy for enterprise healthcare applications, improving user satisfaction and operational efficiency across multiple product lines.
-              </p>
-              <div className="mb-6">
-                <div className="text-sm font-semibold mb-3">Key Contributions</div>
-                <ul className="text-sm space-y-2 text-muted-foreground">
-                  <li>• Enterprise design system leadership</li>
-                  <li>• Cross-functional team collaboration</li>
-                  <li>• Healthcare compliance & accessibility</li>
-                  <li>• User research & testing programs</li>
-                </ul>
+              <div className="p-8">
+                <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
+                  Research · 2020
+                </div>
+                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">CVS/Aetna</h3>
+                <p className="text-lg text-muted-foreground mb-2 font-medium">Health Insurance Apps</p>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Restructured web and mobile applications to mirror customer perspective of insurance and healthcare, making critical health information easier to understand, find, and use.
+                </p>
+                <div className="mb-6">
+                  <div className="text-sm font-semibold mb-3">Approach</div>
+                  <ul className="text-sm space-y-2 text-muted-foreground">
+                    <li>• Stakeholder & customer interviews</li>
+                    <li>• Analytics review & content audit</li>
+                    <li>• Concept model alignment workshops</li>
+                    <li>• Tree tests & usability testing</li>
+                  </ul>
+                </div>
+                <div className="text-sm text-muted-foreground mb-6">
+                  <strong>Outcome:</strong> Success rates improved from below 50% to over 90% in key areas of the application.
+                </div>
               </div>
-              <Link href="/work/cvs">
-                <Button variant="outline">
-                  View Case Study →
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
