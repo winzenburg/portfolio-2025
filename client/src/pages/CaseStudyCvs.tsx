@@ -10,9 +10,9 @@ export default function CaseStudyCvs() {
           <img 
             src={`${import.meta.env.BASE_URL}project-cvs-aetna-hero.jpg`}
             alt="CVS Aetna Health Insurance" 
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background"></div>
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
@@ -123,6 +123,18 @@ export default function CaseStudyCvs() {
                 </div>
               </div>
 
+              {/* Aetna Domains Visualization Screenshot */}
+              <div className="my-8 rounded-lg overflow-hidden border border-border/20">
+                <img 
+                  src={`${import.meta.env.BASE_URL}cvs-aetna-domains.png`}
+                  alt="Aetna information architecture domains visualization"
+                  className="w-full"
+                />
+                <div className="bg-card px-4 py-3 text-sm text-muted-foreground">
+                  <strong className="text-foreground">Information Architecture Domains:</strong> Restructured content organization to mirror customer mental models rather than internal organizational structure
+                </div>
+              </div>
+
               {/* Phase 3 */}
               <div className="border-l-4 border-primary/40 pl-8">
                 <h3 className="text-2xl font-bold mb-4">3. Test potential solutions</h3>
@@ -164,6 +176,18 @@ export default function CaseStudyCvs() {
                     <li>• A/B tests</li>
                     <li>• Moderated and unmoderated usability tests</li>
                   </ul>
+                </div>
+              </div>
+
+              {/* Top Tasks Screenshot */}
+              <div className="my-8 rounded-lg overflow-hidden border border-border/20">
+                <img 
+                  src={`${import.meta.env.BASE_URL}cvs-top-tasks.png`}
+                  alt="Top tasks analysis showing 50% task completion baseline"
+                  className="w-full"
+                />
+                <div className="bg-card px-4 py-3 text-sm text-muted-foreground">
+                  <strong className="text-foreground">Top Tasks Analysis:</strong> Identified critical user tasks with 50% baseline completion rate, which improved to 90% after restructuring
                 </div>
               </div>
             </div>

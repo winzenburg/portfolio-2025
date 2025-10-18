@@ -10,9 +10,9 @@ export default function CaseStudyBuildout() {
           <img 
             src={`${import.meta.env.BASE_URL}project-buildout-hero.jpg`}
             alt="BuildOut Commercial Real Estate" 
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background"></div>
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
@@ -142,6 +142,18 @@ export default function CaseStudyBuildout() {
                 </div>
               </div>
 
+              {/* Prospect/Nurture Interface Screenshot */}
+              <div className="my-8 rounded-lg overflow-hidden border border-border/20">
+                <img 
+                  src={`${import.meta.env.BASE_URL}buildout-prospect-nurture.png`}
+                  alt="BuildOut prospect and nurture workflow interface"
+                  className="w-full"
+                />
+                <div className="bg-card px-4 py-3 text-sm text-muted-foreground">
+                  <strong className="text-foreground">Prospect & Nurture Workflow:</strong> Streamlined interface helping brokers manage client relationships and focus on closing deals
+                </div>
+              </div>
+
               {/* Phase 4 */}
               <div className="border-l-4 border-primary/40 pl-8">
                 <h3 className="text-2xl font-bold mb-4">4. Refine final solution</h3>
@@ -159,6 +171,18 @@ export default function CaseStudyBuildout() {
                     <li>• Analytics</li>
                     <li>• A/B tests</li>
                   </ul>
+                </div>
+              </div>
+
+              {/* Map View Screenshot */}
+              <div className="my-8 rounded-lg overflow-hidden border border-border/20">
+                <img 
+                  src={`${import.meta.env.BASE_URL}buildout-map-view.png`}
+                  alt="BuildOut map view showing property locations"
+                  className="w-full"
+                />
+                <div className="bg-card px-4 py-3 text-sm text-muted-foreground">
+                  <strong className="text-foreground">Interactive Map View:</strong> Geospatial visualization helping brokers quickly identify and research commercial properties
                 </div>
               </div>
             </div>
