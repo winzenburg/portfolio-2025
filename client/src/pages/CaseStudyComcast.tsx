@@ -67,6 +67,18 @@ const CaseStudyComcast: React.FC = () => {
             </p>
           </div>
 
+          {/* Foundation Screenshot */}
+          <div className="mb-8 rounded-lg overflow-hidden border border-green-500/30">
+            <img 
+              src={`${import.meta.env.BASE_URL}comcast-ds-colors.png`}
+              alt="Comcast Design System Color Foundation"
+              className="w-full"
+            />
+            <div className="bg-white/5 p-4 text-sm text-gray-400">
+              Complete color system with semantic tokens, brand colors, and accessible color ramps
+            </div>
+          </div>
+
           <div className="space-y-6">
             {/* Week 1 */}
             <div className="bg-white/5 border border-green-500/30 rounded-lg p-6">
@@ -104,6 +116,18 @@ const CaseStudyComcast: React.FC = () => {
               </div>
             </div>
 
+            {/* Icon Library Screenshot */}
+            <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
+              <img 
+                src={`${import.meta.env.BASE_URL}comcast-ds-icons.png`}
+                alt="Comcast Design System Icon Library"
+                className="w-full"
+              />
+              <div className="bg-white/5 p-4 text-sm text-gray-400">
+                Interactive icon picker with 826 type-safe icons, searchable and categorized
+              </div>
+            </div>
+
             {/* Week 3 */}
             <div className="bg-white/5 border border-green-500/30 rounded-lg p-6">
               <div className="flex items-start gap-4">
@@ -119,6 +143,18 @@ const CaseStudyComcast: React.FC = () => {
                     <strong>Scale:</strong> 24 complex patterns built by composing 38 primitive components
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Component Examples Screenshot */}
+            <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
+              <img 
+                src={`${import.meta.env.BASE_URL}comcast-ds-components.png`}
+                alt="Comcast Design System Component Examples"
+                className="w-full"
+              />
+              <div className="bg-white/5 p-4 text-sm text-gray-400">
+                Button component showing all variants: Primary, Secondary, Ghost, Destructive, and Link styles
               </div>
             </div>
 
