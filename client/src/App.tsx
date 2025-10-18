@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Router as WouterRouter } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -15,7 +15,8 @@ import CaseStudyComcast from "./pages/CaseStudyComcast";
 
 function Router() {
   return (
-    <Switch>
+    <WouterRouter base="/portfolio-2025">
+      <Switch>
       <Route path={"/"} component={Home} />
       <Route path="/work" component={Work} />
       <Route path="/methodology" component={Methodology} />
@@ -27,7 +28,8 @@ function Router() {
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
-    </Switch>
+      </Switch>
+    </WouterRouter>
   );
 }
 
