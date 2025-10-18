@@ -1,349 +1,338 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 
 export default function Methodology() {
   return (
-    <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container py-6">
-          <nav className="flex items-center justify-between">
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Navigation */}
+      <nav className="border-b border-border/40">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
             <Link href="/">
-              <span className="text-2xl font-bold">Ryan Winzenburg</span>
+              <a className="text-xl font-semibold tracking-tight hover:text-primary transition-colors">
+                Ryan Winzenburg
+              </a>
             </Link>
             <div className="flex items-center gap-8">
               <Link href="/work">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Work</span>
+                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Work
+                </a>
               </Link>
               <Link href="/methodology">
-                <span className="text-sm font-medium text-primary">Methodology</span>
+                <a className="text-sm text-foreground font-medium transition-colors">
+                  Methodology
+                </a>
               </Link>
               <Link href="/about">
-                <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
+                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  About
+                </a>
               </Link>
               <Link href="/contact">
-                <Button>Contact</Button>
+                <Button variant="default" size="sm">
+                  Contact
+                </Button>
               </Link>
             </div>
-          </nav>
+          </div>
         </div>
-      </header>
+      </nav>
 
-      {/* Hero */}
-      <section className="container py-16">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          How I Deliver 84x Faster
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl">
-          My 84x acceleration is not magic; it is the result of a rigorous, repeatable methodology that combines 25 years of deep UX expertise with AI-augmented workflows.
-        </p>
+      {/* Hero Section */}
+      <section className="py-24 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl">
+            <h1 className="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6">
+              The Force Multiplier Methodology
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              How I deliver in weeks what takes teams a year: a rigorous, repeatable 5-phase workflow combining 25 years of UX expertise with advanced AI orchestration.
+            </p>
+            <div className="text-lg text-muted-foreground">
+              My 84x acceleration isn't magic—it's a battle-tested system that enables me to do the work of a 7-person team while maintaining enterprise-grade quality.
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Philosophy */}
-      <section className="container pb-24">
-        <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-6">The Philosophy: Expert-Guided AI Orchestration</h2>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-muted-foreground mb-6">
-              The fundamental flaw in how most people use AI is that they treat it as an autonomous creator. They ask it to "design a webpage" and are disappointed with the generic, soulless results. This is the wrong approach.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              My methodology is based on a different philosophy: <strong>AI as a force multiplier, guided by an expert practitioner.</strong> I don't ask the AI to think for me. I do the strategic thinking, and I use the AI to execute at a scale and speed that is humanly impossible. I am the architect and the conductor; the AI is my orchestra.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              This workflow is a system of prompts, quality gates, and iterative refinement, where I break down a massive project into a series of precise, well-defined tasks that an AI can perform flawlessly under my supervision.
-            </p>
+      <section className="py-16 border-y border-border/40">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
+              The Philosophy: Expert-Guided AI Orchestration
+            </h2>
+            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                The fundamental flaw in how most people use AI is that they treat it as an autonomous creator. They ask it to "design a webpage" and are disappointed with generic, soulless results.
+              </p>
+              <p>
+                My methodology is based on a different philosophy: <span className="text-foreground font-semibold">AI as a force multiplier, guided by an expert practitioner.</span> I don't ask the AI to think for me. I do the strategic thinking, and I use AI to execute at a scale and speed that is humanly impossible.
+              </p>
+              <p>
+                I am the architect and the conductor; AI is my orchestra. This workflow is a system of prompts, quality gates, and iterative refinement, where I break down massive projects into precise, well-defined tasks that AI can perform flawlessly under my supervision.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 5-Phase Workflow */}
-      <section className="bg-muted/30 py-24">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-12">The 5-Phase Workflow</h2>
-          
-          <div className="space-y-12 max-w-5xl">
+      <section className="py-24">
+        <div className="container mx-auto px-6">
+          <div className="mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-center">
+              The 5-Phase Workflow
+            </h2>
+          </div>
+
+          <div className="max-w-5xl mx-auto space-y-16">
             {/* Phase 1 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    1
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Powered Research & Strategy</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Achieve deep understanding of the problem space and define a data-driven strategy in hours, not months.
+            <div className="border-l-4 border-accent-cyan pl-8">
+              <div className="text-sm font-semibold text-accent-cyan mb-2 uppercase tracking-wider">
+                Phase 1 · 1-2 Days
+              </div>
+              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                AI-Powered Research & Strategy
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Achieve deep understanding of the problem space and define a data-driven strategy in hours, not months.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <div className="font-semibold mb-2">1. Data Synthesis</div>
+                  <p className="text-muted-foreground">
+                    Feed AI hundreds of pages of raw data: user interviews, surveys, support tickets, market research. AI synthesizes information, identifying key themes, pain points, and user needs. What takes a UX researcher weeks of manual analysis, I do in an afternoon.
                   </p>
-                  <div className="space-y-3">
-                    <div>
-                      <div className="font-semibold mb-1">Data Synthesis</div>
-                      <p className="text-sm text-muted-foreground">
-                        Feed AI hundreds of pages of raw data: user interviews, surveys, support tickets, market research. AI synthesizes information, identifying key themes and pain points in hours instead of weeks.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Heuristic Analysis</div>
-                      <p className="text-sm text-muted-foreground">
-                        Use AI to conduct rapid, comprehensive heuristic analysis of existing products, mapping every usability issue to Nielsen's 10 Heuristics.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Persona & Journey Maps</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate data-driven personas and journey maps that accurately reflect the user base, not generic templates.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
-                    <div className="text-sm text-muted-foreground">
-                      Comprehensive strategy document, data-driven personas, prioritized list of high-impact opportunities
-                    </div>
-                  </div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">2. Heuristic Analysis</div>
+                  <p className="text-muted-foreground">
+                    Use AI to conduct rapid, comprehensive heuristic analysis of existing products, mapping every usability issue to Nielsen's 10 Heuristics. This provides a structured foundation for redesign.
+                  </p>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">3. Persona & Journey Map Generation</div>
+                  <p className="text-muted-foreground">
+                    Based on synthesized data, AI generates detailed user personas and journey maps. These aren't generic templates—they're data-driven artifacts that accurately reflect the user base.
+                  </p>
                 </div>
               </div>
-            </Card>
+              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+                <div className="text-sm font-semibold mb-1">Output</div>
+                <div className="text-sm text-muted-foreground">
+                  Comprehensive strategy document, data-driven personas, and prioritized list of high-impact opportunities
+                </div>
+              </div>
+            </div>
 
             {/* Phase 2 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    2
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Generated Design & Prototyping</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 3-5 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Move from strategy to high-fidelity, interactive prototype without the traditional, slow wireframing process.
+            <div className="border-l-4 border-accent-purple pl-8">
+              <div className="text-sm font-semibold text-accent-purple mb-2 uppercase tracking-wider">
+                Phase 2 · 3-5 Days
+              </div>
+              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                AI-Generated Design & Prototyping
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Move from strategy to high-fidelity, interactive prototype without traditional, slow wireframing process.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <div className="font-semibold mb-2">1. Information Architecture Modeling</div>
+                  <p className="text-muted-foreground">
+                    Use AI to generate multiple information architecture and navigation models. Explore a dozen different approaches in the time it takes to create one manually.
                   </p>
-                  <div className="space-y-3">
-                    <div>
-                      <div className="font-semibold mb-1">Information Architecture Modeling</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate multiple IA and navigation models. Explore a dozen approaches in the time it takes to create one manually.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Component & Page Generation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Provide AI with design tokens and high-level structure; it generates production-quality code for entire pages and components.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Interactive Prototyping</div>
-                      <p className="text-sm text-muted-foreground">
-                        Because AI generates real code, output is an interactive, high-fidelity prototype from day one. No separate prototyping phase.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
-                    <div className="text-sm text-muted-foreground">
-                      Fully interactive, high-fidelity prototype built with production-ready code
-                    </div>
-                  </div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">2. Component & Page Generation</div>
+                  <p className="text-muted-foreground">
+                    Provide AI with design tokens and high-level structure, and it generates code for entire pages and components in React or Angular. This is AI writing production-quality code based on my architectural guidance.
+                  </p>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">3. Interactive Prototyping</div>
+                  <p className="text-muted-foreground">
+                    Because AI generates real code, the output is an interactive, high-fidelity prototype from day one. No separate prototyping phase. We go straight from concept to testable product.
+                  </p>
                 </div>
               </div>
-            </Card>
+              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+                <div className="text-sm font-semibold mb-1">Output</div>
+                <div className="text-sm text-muted-foreground">
+                  Fully interactive, high-fidelity prototype built with production-ready code
+                </div>
+              </div>
+            </div>
 
             {/* Phase 3 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    3
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Assisted Development & Refinement</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 5-10 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Build out full application or design system with enterprise-grade quality and feature completeness.
+            <div className="border-l-4 border-accent-green pl-8">
+              <div className="text-sm font-semibold text-accent-green mb-2 uppercase tracking-wider">
+                Phase 3 · 5-10 Days
+              </div>
+              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                AI-Assisted Development & Refinement
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Build out the full application or design system with enterprise-grade quality and feature completeness.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <div className="font-semibold mb-2">1. Scaled Component Production</div>
+                  <p className="text-muted-foreground">
+                    Use AI to build out full library of components, from simplest atoms to most complex organisms. For the SaaS Design System, this meant creating 48 components and 63,813 lines of code in days.
                   </p>
-                  <div className="space-y-3">
-                    <div>
-                      <div className="font-semibold mb-1">Scaled Component Production</div>
-                      <p className="text-sm text-muted-foreground">
-                        Build full library of components from simplest atoms to most complex organisms. For the SaaS Design System: 48 components, 63,813 lines of code in days.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Complex Feature Implementation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Guide AI to implement complex business logic, state management, and API integrations. Provide architectural patterns and review for quality.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Iterative Refinement</div>
-                      <p className="text-sm text-muted-foreground">
-                        Use AI to rapidly refactor code, implement new features, and respond to feedback with incredibly tight iteration loops.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
-                    <div className="text-sm text-muted-foreground">
-                      Feature-complete application or design system with clean, scalable, production-ready codebase
-                    </div>
-                  </div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">2. Complex Feature Implementation</div>
+                  <p className="text-muted-foreground">
+                    Guide AI to implement complex business logic, state management, and API integrations. My role is to provide architectural patterns and review code for quality and scalability.
+                  </p>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">3. Iterative Refinement</div>
+                  <p className="text-muted-foreground">
+                    Use AI to rapidly refactor code, implement new features, and respond to feedback, allowing for an incredibly tight iteration loop.
+                  </p>
                 </div>
               </div>
-            </Card>
+              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+                <div className="text-sm font-semibold mb-1">Output</div>
+                <div className="text-sm text-muted-foreground">
+                  Feature-complete application or design system with clean, scalable, production-ready codebase
+                </div>
+              </div>
+            </div>
 
             {/* Phase 4 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    4
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Driven Testing & QA</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 2-3 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Achieve enterprise-grade quality and test coverage without a dedicated QA team.
+            <div className="border-l-4 border-primary pl-8">
+              <div className="text-sm font-semibold text-primary mb-2 uppercase tracking-wider">
+                Phase 4 · 2-3 Days
+              </div>
+              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                AI-Driven Testing & QA
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Achieve enterprise-grade quality and test coverage without a dedicated QA team.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <div className="font-semibold mb-2">1. Automated Test Generation</div>
+                  <p className="text-muted-foreground">
+                    Use AI to write comprehensive test suites including unit tests and full E2E tests with Playwright. For the SaaS Design System, this resulted in 9,566 lines of test code and 77% coverage for complex components.
                   </p>
-                  <div className="space-y-3">
-                    <div>
-                      <div className="font-semibold mb-1">Automated Test Generation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Use AI to write comprehensive test suites: unit tests for components and full E2E tests with Playwright. SaaS Design System: 9,566 lines of test code, 77% coverage.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Accessibility Auditing</div>
-                      <p className="text-sm text-muted-foreground">
-                        Run automated accessibility audits with axe-core, identifying and fixing hundreds of violations. Guarantee 100% WCAG 2.2 AA compliance.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Visual Regression Testing</div>
-                      <p className="text-sm text-muted-foreground">
-                        Set up automated visual regression tests comparing screenshots of every component to ensure pixel-perfect consistency.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
-                    <div className="text-sm text-muted-foreground">
-                      Robust, well-tested product with high test coverage and full accessibility compliance
-                    </div>
-                  </div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">2. Accessibility Auditing</div>
+                  <p className="text-muted-foreground">
+                    Use AI to run automated accessibility audits with axe-core, identifying and fixing hundreds of potential violations. This is how I guarantee 100% WCAG 2.2 AA compliance.
+                  </p>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">3. Visual Regression Testing</div>
+                  <p className="text-muted-foreground">
+                    Set up automated visual regression tests that compare screenshots of every component to ensure pixel-perfect consistency and catch unintended visual changes.
+                  </p>
                 </div>
               </div>
-            </Card>
+              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+                <div className="text-sm font-semibold mb-1">Output</div>
+                <div className="text-sm text-muted-foreground">
+                  Robust, well-tested product with high test coverage and full accessibility compliance
+                </div>
+              </div>
+            </div>
 
             {/* Phase 5 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    5
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Generated Documentation</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Produce comprehensive, world-class documentation that makes the system easy to use and maintain.
+            <div className="border-l-4 border-muted-foreground pl-8">
+              <div className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wider">
+                Phase 5 · 1-2 Days
+              </div>
+              <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                AI-Generated Documentation
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Produce comprehensive, world-class documentation that makes the system easy to use and maintain.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <div className="font-semibold mb-2">1. Storybook & MDX Generation</div>
+                  <p className="text-muted-foreground">
+                    Use AI to generate detailed Storybook stories for every component, including controls to test every prop and state. For the SaaS Design System, this resulted in a 14-section documentation standard for every component.
                   </p>
-                  <div className="space-y-3">
-                    <div>
-                      <div className="font-semibold mb-1">Storybook & MDX Generation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate detailed Storybook stories for every component with controls to test every prop and state. 14-section documentation standard per component.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Context & Workflow Documentation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate detailed markdown files explaining architecture, design decisions, and development workflows. 40+ context documents for SaaS Design System.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Code Commenting</div>
-                      <p className="text-sm text-muted-foreground">
-                        Ensure entire codebase is well-commented, making it easy for any developer to understand and contribute.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
-                    <div className="text-sm text-muted-foreground">
-                      Fully documented, enterprise-grade system ready for immediate adoption
-                    </div>
-                  </div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">2. Context & Workflow Documentation</div>
+                  <p className="text-muted-foreground">
+                    Have AI generate detailed markdown files that explain architecture, design decisions, and development workflows. This is how I created over 40 context documents for the SaaS Design System.
+                  </p>
+                </div>
+                <div>
+                  <div className="font-semibold mb-2">3. Code Commenting</div>
+                  <p className="text-muted-foreground">
+                    Use AI to ensure entire codebase is well-commented, making it easy for any developer to understand and contribute.
+                  </p>
                 </div>
               </div>
-            </Card>
+              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+                <div className="text-sm font-semibold mb-1">Output</div>
+                <div className="text-sm text-muted-foreground">
+                  Fully documented, enterprise-grade system ready for immediate adoption
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Tools */}
-      <section className="container py-24">
-        <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12">The AI Tool Stack</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Manus.im</h3>
-              <p className="text-sm text-muted-foreground">
-                Multi-agent orchestration for complex workflows, research synthesis, and parallel task execution.
-              </p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Claude Code</h3>
-              <p className="text-sm text-muted-foreground">
-                Production-quality code generation with deep context understanding and architectural reasoning.
-              </p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Cursor</h3>
-              <p className="text-sm text-muted-foreground">
-                AI-native code editor for rapid iteration, refactoring, and inline code generation.
-              </p>
-            </Card>
+      {/* Results */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
+              The Result: Unprecedented Velocity and Quality
+            </h2>
+            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+              This 5-phase methodology is the engine behind my ability to deliver projects at 84x velocity. It's a repeatable, scalable, and battle-tested system that combines the best of human expertise with the raw power of artificial intelligence.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div>
+                <div className="text-4xl font-bold mb-2">84x</div>
+                <div className="text-sm text-muted-foreground">Faster than traditional teams</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold mb-2">$3M+</div>
+                <div className="text-sm text-muted-foreground">Value created in past year</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold mb-2">100%</div>
+                <div className="text-sm text-muted-foreground">Enterprise-grade quality</div>
+              </div>
+            </div>
+            <Link href="/contact">
+              <Button size="lg" className="text-base">
+                Let's Discuss How This Can Accelerate Your Team
+              </Button>
+            </Link>
           </div>
-        </div>
-      </section>
-
-      {/* The Result */}
-      <section className="bg-primary text-primary-foreground py-24">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            The Result: Unprecedented Velocity and Quality
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            This 5-phase methodology is the engine behind my ability to deliver projects at 84x velocity. It is a repeatable, scalable, and battle-tested system that combines the best of human expertise with the raw power of artificial intelligence.
-          </p>
-          <Link href="/work">
-            <Button size="lg" variant="secondary">
-              See It In Action →
-            </Button>
-          </Link>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-muted-foreground">
-              © 2025 Ryan Winzenburg. All rights reserved.
-            </div>
+      <footer className="border-t border-border/40 py-8">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+            <div>© 2025 Ryan Winzenburg. All rights reserved.</div>
             <div className="flex gap-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://www.linkedin.com/in/rwinzenburg/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
                 LinkedIn
               </a>
-              <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
                 GitHub
+              </a>
+              <a href="mailto:ryanwinzenburg@gmail.com" className="hover:text-foreground transition-colors">
+                Email
               </a>
             </div>
           </div>
