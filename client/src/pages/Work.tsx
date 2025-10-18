@@ -306,6 +306,11 @@ export default function Work() {
                 <div className="text-sm text-muted-foreground mb-6">
                   <strong>Outcome:</strong> Product in beta with positive early feedback, representing major workflow improvement for customers.
                 </div>
+                <Link href="/case-study/buildout">
+                  <Button variant="outline" size="sm">
+                    View Case Study →
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -335,6 +340,11 @@ export default function Work() {
                 <div className="text-sm text-muted-foreground mb-6">
                   <strong>Outcome:</strong> Success rates improved from below 50% to over 90% in key areas of the application.
                 </div>
+                <Link href="/case-study/cvs-aetna">
+                  <Button variant="outline" size="sm">
+                    View Case Study →
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

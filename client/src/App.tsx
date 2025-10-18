@@ -12,6 +12,8 @@ import Contact from "./pages/Contact";
 import CaseStudySaas from "./pages/CaseStudySaas";
 import CaseStudyIsc from "./pages/CaseStudyIsc";
 import CaseStudyComcast from "./pages/CaseStudyComcast";
+import CaseStudyBuildout from "./pages/CaseStudyBuildout";
+import CaseStudyCvs from "./pages/CaseStudyCvs";
 
 function Router() {
   return (
@@ -25,6 +27,8 @@ function Router() {
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />
       <Route path="/case-study/comcast-design-system" component={CaseStudyComcast} />
+      <Route path="/case-study/buildout" component={CaseStudyBuildout} />
+      <Route path="/case-study/cvs-aetna" component={CaseStudyCvs} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
