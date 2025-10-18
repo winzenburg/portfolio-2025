@@ -194,7 +194,7 @@ export default function Home() {
                   <div>• 100% WCAG 2.2 AA compliance</div>
                   <div>• Industry-first validation script</div>
                 </div>
-                <Link href="/work#saas-design-system">
+                <Link href="/case-study/saas-design-system">
                   <Button variant="outline" className="border-accent-cyan/30 text-accent-cyan hover:bg-accent-cyan/10">
                     View Case Study →
                   </Button>
@@ -237,7 +237,7 @@ export default function Home() {
                   <div>• 89% reduction in UI variations</div>
                   <div>• pNPS Target: -4 → +5</div>
                 </div>
-                <Link href="/work#isc-portal">
+                <Link href="/case-study/isc-portal">
                   <Button variant="outline" className="border-accent-purple/30 text-accent-purple hover:bg-accent-purple/10">
                     View Case Study →
                   </Button>
@@ -280,7 +280,7 @@ export default function Home() {
                   <div>• 826 type-safe icons</div>
                   <div>• 100% token compliance</div>
                 </div>
-                <Link href="/work#comcast-design-system">
+                <Link href="/case-study/comcast-design-system">
                   <Button variant="outline" className="border-accent-green/30 text-accent-green hover:bg-accent-green/10">
                     View Case Study →
                   </Button>

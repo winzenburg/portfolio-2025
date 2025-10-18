@@ -100,7 +100,7 @@ export default function Work() {
                         <div className="text-xs text-muted-foreground">faster delivery</div>
                       </div>
                     </div>
-                    <Link href="/work/saas-design-system">
+                    <Link href="/case-study/saas-design-system">
                       <Button variant="outline" className="border-accent-cyan/30 text-accent-cyan hover:bg-accent-cyan/10">
                         View Full Case Study →
                       </Button>
@@ -166,7 +166,7 @@ export default function Work() {
                         <div className="text-xs text-muted-foreground">lines/day</div>
                       </div>
                     </div>
-                    <Link href="/work/isc-portal">
+                    <Link href="/case-study/isc-portal">
                       <Button variant="outline" className="border-accent-purple/30 text-accent-purple hover:bg-accent-purple/10">
                         View Full Case Study →
                       </Button>
@@ -232,7 +232,7 @@ export default function Work() {
                         <div className="text-xs text-muted-foreground">lines of code</div>
                       </div>
                     </div>
-                    <Link href="/work/comcast-design-system">
+                    <Link href="/case-study/comcast-design-system">
                       <Button variant="outline" className="border-accent-green/30 text-accent-green hover:bg-accent-green/10">
                         View Full Case Study →
                       </Button>
