@@ -241,7 +241,7 @@ export default function Home() {
               <div className="text-sm font-medium text-muted-foreground mb-2">SUPPORTING PROJECT</div>
               <h3 className="text-2xl font-bold mb-3">Comcast Business Design System</h3>
               <p className="text-muted-foreground mb-4">
-                Enterprise Design System for Fortune 100
+                171,000+ Lines: 62 Components, 826 Icons in 4 Weeks
               </p>
             </div>
             <div className="space-y-3 mb-6">
@@ -256,10 +256,10 @@ export default function Home() {
               <div>
                 <div className="text-sm text-muted-foreground">Key Metrics</div>
                 <div className="text-sm">
-                  • Production use at Comcast<br />
-                  • React + TypeScript (81.9%)<br />
-                  • Figma-to-code integration<br />
-                  • 103 commits, sustained dev
+                  • 171,000+ lines of code<br />
+                  • 62 components (38 primitives + 24 patterns)<br />
+                  • 826 type-safe icons<br />
+                  • 100% token compliance
                 </div>
               </div>
             </div>
