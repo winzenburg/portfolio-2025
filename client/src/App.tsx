@@ -14,10 +14,12 @@ import CaseStudyIsc from "./pages/CaseStudyIsc";
 import CaseStudyComcast from "./pages/CaseStudyComcast";
 import CaseStudyBuildout from "./pages/CaseStudyBuildout";
 import CaseStudyCvs from "./pages/CaseStudyCvs";
+import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
   return (
     <WouterRouter base="/portfolio-2025">
+      <ScrollToTop />
       <Switch>
       <Route path={"/"} component={Home} />
       <Route path="/work" component={Work} />
