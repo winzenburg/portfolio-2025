@@ -1,156 +1,133 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Code, Zap, DollarSign } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container py-6">
-          <nav className="flex items-center justify-between">
+      {/* Navigation */}
+      <nav className="border-b border-border/40">
+        <div className="container mx-auto py-6">
+          <div className="flex items-center justify-between">
             <Link href="/">
-              <span className="text-2xl font-bold">Ryan Winzenburg</span>
+              <a className="text-2xl font-bold tracking-tight">Ryan Winzenburg</a>
             </Link>
             <div className="flex items-center gap-8">
               <Link href="/work">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Work</span>
+                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">Work</a>
               </Link>
               <Link href="/methodology">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Methodology</span>
+                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">Methodology</a>
               </Link>
               <Link href="/about">
-                <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
+                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
               </Link>
               <Link href="/contact">
-                <Button>Contact</Button>
+                <Button variant="outline" size="sm">Contact</Button>
               </Link>
             </div>
-          </nav>
+          </div>
         </div>
-      </header>
+      </nav>
 
       {/* Hero Section */}
-      <section className="container py-24 md:py-32">
-        <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-            I Replace 7-Person Teams
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl">
-            Design Systems in 4 Weeks. Product Prototypes in 4 Days. Enterprise Quality. $1M+ Saved Per Project.
-          </p>
+      <section className="py-24 md:py-32">
+        <div className="container mx-auto">
+          <div className="max-w-4xl">
+            <p className="text-sm text-muted-foreground uppercase tracking-wider mb-6">RYAN WINZENBURG</p>
+            <h1 className="text-5xl md:text-7xl font-serif font-semibold leading-tight mb-8">
+              I replace 7-person teams.
+            </h1>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-12 max-w-3xl">
+              25 years of UX expertise + AI-augmented workflows = I deliver design systems in 4 weeks and 
+              production prototypes in 4 days that would traditionally take 12+ months with teams of 5-7 specialists.
+            </p>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="border-l-2 border-accent-saas pl-6">
+                <div className="text-4xl font-serif font-semibold text-accent-saas mb-2">84x</div>
+                <div className="text-sm text-muted-foreground">Faster Delivery</div>
+              </div>
+              <div className="border-l-2 border-accent-isc pl-6">
+                <div className="text-4xl font-serif font-semibold text-accent-isc mb-2">$3M+</div>
+                <div className="text-sm text-muted-foreground">Cost Savings</div>
+              </div>
+              <div className="border-l-2 border-accent-comcast pl-6">
+                <div className="text-4xl font-serif font-semibold text-accent-comcast mb-2">10 weeks</div>
+                <div className="text-sm text-muted-foreground">vs. 36 months</div>
+              </div>
+            </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-            <div>
-              <div className="text-3xl font-bold mb-2">84x</div>
-              <div className="text-sm text-muted-foreground">Faster Delivery</div>
-              <div className="text-xs text-muted-foreground mt-1">4 weeks vs. 84 person-months</div>
+            <div className="flex items-center gap-4">
+              <Link href="/work">
+                <Button size="lg" className="gap-2">
+                  View My Work <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button size="lg" variant="outline">
+                  Get In Touch
+                </Button>
+              </Link>
             </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">$3M+</div>
-              <div className="text-sm text-muted-foreground">Saved</div>
-              <div className="text-xs text-muted-foreground mt-1">On 3 projects in the past year</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">7-Person</div>
-              <div className="text-sm text-muted-foreground">Team Replaced</div>
-              <div className="text-xs text-muted-foreground mt-1">UX, Dev, QA, Copy, A11y</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">25 Years</div>
-              <div className="text-sm text-muted-foreground">Experience</div>
-              <div className="text-xs text-muted-foreground mt-1">UX Strategy Expertise</div>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/contact">
-              <Button size="lg" className="w-full sm:w-auto">
-                Available for Principal/VP Roles ($220K-$280K)
-              </Button>
-            </Link>
-            <Link href="/work">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                View My Work
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
 
       {/* Value Proposition */}
-      <section className="bg-muted/30 py-24">
-        <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">What I Replace</h2>
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
+      <section className="py-24 border-t border-border/40">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-2 gap-16">
             <div>
-              <h3 className="text-xl font-semibold mb-6">Traditional 7-Person Team</h3>
-              <div className="space-y-3">
+              <h2 className="text-3xl font-serif font-semibold mb-6">Traditional Team</h2>
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
+                  <div className="w-2 h-2 rounded-full bg-destructive mt-2"></div>
                   <div>
-                    <div className="font-medium">UX Researcher ($120K)</div>
+                    <div className="font-medium">7 Specialists</div>
+                    <div className="text-sm text-muted-foreground">UX Researcher, Designer, Frontend Dev, Backend Dev, QA, Copywriter, A11y Expert</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
+                  <div className="w-2 h-2 rounded-full bg-destructive mt-2"></div>
                   <div>
-                    <div className="font-medium">UX Designer ($140K)</div>
+                    <div className="font-medium">12+ Months</div>
+                    <div className="text-sm text-muted-foreground">Per major project</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
+                  <div className="w-2 h-2 rounded-full bg-destructive mt-2"></div>
                   <div>
-                    <div className="font-medium">Frontend Developer ($160K)</div>
+                    <div className="font-medium">$910K/year</div>
+                    <div className="text-sm text-muted-foreground">Total team cost</div>
                   </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">Backend Developer ($160K)</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">QA Engineer ($110K)</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">Copywriter ($90K)</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">Accessibility Expert ($130K)</div>
-                  </div>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="font-bold text-lg">Total: $910K/year</div>
-                  <div className="text-muted-foreground">Timeline: 12+ months</div>
                 </div>
               </div>
             </div>
+
             <div>
-              <h3 className="text-xl font-semibold mb-6">My AI-Augmented Approach</h3>
-              <div className="space-y-3">
+              <h2 className="text-3xl font-serif font-semibold mb-6">My AI-Augmented Approach</h2>
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-green-600 mt-1">✅</span>
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
                   <div>
-                    <div className="font-medium">All of the above, and more</div>
+                    <div className="font-medium">All Roles in One</div>
+                    <div className="text-sm text-muted-foreground">25 years expertise across all disciplines</div>
                   </div>
                 </div>
-                <div className="border-t pt-4 mt-8">
-                  <div className="font-bold text-lg">$250K/year</div>
-                  <div className="text-muted-foreground">Timeline: 2-4 weeks</div>
-                  <div className="mt-4 p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
-                    <div className="font-semibold text-green-900 dark:text-green-100">
-                      Savings: $660K/year + 11 months faster to market
-                    </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
+                  <div>
+                    <div className="font-medium">2-4 Weeks</div>
+                    <div className="text-sm text-muted-foreground">Per major project</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
+                  <div>
+                    <div className="font-medium">$250K/year</div>
+                    <div className="text-sm text-muted-foreground">$660K savings + 11 months faster</div>
                   </div>
                 </div>
               </div>
@@ -159,160 +136,174 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Work */}
-      <section className="container py-24">
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Work</h2>
-          <p className="text-xl text-muted-foreground">
-            3 Projects, 10 Weeks, $3M+ Saved
-          </p>
-        </div>
+      {/* Featured Projects */}
+      <section className="py-24 border-t border-border/40">
+        <div className="container mx-auto">
+          <div className="mb-16">
+            <p className="text-sm text-muted-foreground uppercase tracking-wider mb-4">SELECTED PROJECTS</p>
+            <h2 className="text-4xl font-serif font-semibold">Recent Work</h2>
+          </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Project 1 */}
-          <Card className="p-8 hover:shadow-lg transition-shadow">
-            <div className="mb-6">
-              <div className="text-sm font-medium text-primary mb-2">HERO PROJECT</div>
-              <h3 className="text-2xl font-bold mb-3">Enterprise SaaS Design System</h3>
-              <p className="text-muted-foreground mb-4">
-                Industry-First Automated Token Governance System
-              </p>
-            </div>
-            <div className="space-y-3 mb-6">
-              <div>
-                <div className="text-sm text-muted-foreground">Timeline</div>
-                <div className="font-semibold">4 weeks vs. 12+ months</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Savings</div>
-                <div className="font-semibold">~$1.03M</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Key Metrics</div>
-                <div className="text-sm">
-                  • 63,813 lines of code<br />
-                  • 48 production-ready components<br />
-                  • 100% WCAG 2.2 AA compliance<br />
-                  • Industry-first validation script
+          <div className="space-y-12">
+            {/* Project 1: SaaS Design System */}
+            <Link href="/work#saas-design-system">
+              <a className="block group">
+                <div className="border-l-4 border-accent-saas pl-8 py-6 hover:bg-accent/5 transition-colors">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <div className="text-xs text-accent-saas uppercase tracking-wider mb-2">AI-Augmented • Design System</div>
+                      <h3 className="text-2xl font-serif font-semibold mb-2 group-hover:text-accent-saas transition-colors">
+                        Enterprise SaaS Design System
+                      </h3>
+                      <p className="text-muted-foreground max-w-2xl">
+                        Built 63,813 lines of code in 4 weeks with industry-first automated governance system. 
+                        48 production-ready components, 100% WCAG compliance, 0 axe-core violations.
+                      </p>
+                    </div>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-accent-saas group-hover:translate-x-1 transition-all" />
+                  </div>
+                  <div className="flex items-center gap-6 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-accent-saas" />
+                      <span className="text-muted-foreground">4 weeks vs. 12+ months</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Code className="w-4 h-4 text-accent-saas" />
+                      <span className="text-muted-foreground">63,813 lines of code</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <DollarSign className="w-4 h-4 text-accent-saas" />
+                      <span className="text-muted-foreground">$1.03M saved</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <Link href="/work/saas-design-system">
-              <Button variant="outline" className="w-full">View Case Study →</Button>
+              </a>
             </Link>
-          </Card>
 
-          {/* Project 2 */}
-          <Card className="p-8 hover:shadow-lg transition-shadow">
-            <div className="mb-6">
-              <div className="text-sm font-medium text-primary mb-2">HERO PROJECT</div>
-            <h3 className="text-2xl font-bold mb-3">ISC Portal Usability Prototype</h3>
-            <p className="text-muted-foreground mb-4">
-              Addressed 81% of System Issues in 4 Days
-            </p>
-            </div>
-            <div className="space-y-3 mb-6">
-              <div>
-                <div className="text-sm text-muted-foreground">Timeline</div>
-                <div className="font-semibold">4 days vs. 12+ months</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Savings</div>
-                <div className="font-semibold">~$1.05M</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Key Metrics</div>
-                <div className="text-sm">
-                  • 5,450 lines of code/day<br />
-                  • 0 TypeScript errors (21,801 lines)<br />
-                  • 89% reduction in UI variations<br />
-                  • pNPS Target: -4 → +5
+            {/* Project 2: ISC Portal */}
+            <Link href="/work#isc-portal">
+              <a className="block group">
+                <div className="border-l-4 border-accent-isc pl-8 py-6 hover:bg-accent/5 transition-colors">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <div className="text-xs text-accent-isc uppercase tracking-wider mb-2">AI-Augmented • Product Prototype</div>
+                      <h3 className="text-2xl font-serif font-semibold mb-2 group-hover:text-accent-isc transition-colors">
+                        ISC Portal Usability Prototype
+                      </h3>
+                      <p className="text-muted-foreground max-w-2xl">
+                        Delivered 21,801 lines of code in 4 days with 0 TypeScript errors. 
+                        5,450 lines/day productivity, 89% reduction in UI variations.
+                      </p>
+                    </div>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-accent-isc group-hover:translate-x-1 transition-all" />
+                  </div>
+                  <div className="flex items-center gap-6 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-accent-isc" />
+                      <span className="text-muted-foreground">4 days vs. 12+ months</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Code className="w-4 h-4 text-accent-isc" />
+                      <span className="text-muted-foreground">21,801 lines, 0 errors</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <DollarSign className="w-4 h-4 text-accent-isc" />
+                      <span className="text-muted-foreground">$1.05M saved</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <Link href="/work/isc-portal">
-              <Button variant="outline" className="w-full">View Case Study →</Button>
+              </a>
             </Link>
-          </Card>
 
-          {/* Project 3 */}
-          <Card className="p-8 hover:shadow-lg transition-shadow">
-            <div className="mb-6">
-              <div className="text-sm font-medium text-muted-foreground mb-2">SUPPORTING PROJECT</div>
-              <h3 className="text-2xl font-bold mb-3">Comcast Business Design System</h3>
-              <p className="text-muted-foreground mb-4">
-                171,000+ Lines: 62 Components, 826 Icons in 4 Weeks
-              </p>
-            </div>
-            <div className="space-y-3 mb-6">
-              <div>
-                <div className="text-sm text-muted-foreground">Timeline</div>
-                <div className="font-semibold">4 weeks vs. 12+ months</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Savings</div>
-                <div className="font-semibold">~$1.03M</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Key Metrics</div>
-                <div className="text-sm">
-                  • 171,000+ lines of code<br />
-                  • 62 components (38 primitives + 24 patterns)<br />
-                  • 826 type-safe icons<br />
-                  • 100% token compliance
+            {/* Project 3: Comcast Design System */}
+            <Link href="/work#comcast-design-system">
+              <a className="block group">
+                <div className="border-l-4 border-accent-comcast pl-8 py-6 hover:bg-accent/5 transition-colors">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <div className="text-xs text-accent-comcast uppercase tracking-wider mb-2">AI-Augmented • Design System</div>
+                      <h3 className="text-2xl font-serif font-semibold mb-2 group-hover:text-accent-comcast transition-colors">
+                        Comcast Business Design System
+                      </h3>
+                      <p className="text-muted-foreground max-w-2xl">
+                        Delivered 171,000+ lines of code in 4 weeks. 62 components, 826 type-safe icons, 
+                        100% token compliance, production use at Fortune 100.
+                      </p>
+                    </div>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-accent-comcast group-hover:translate-x-1 transition-all" />
+                  </div>
+                  <div className="flex items-center gap-6 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-accent-comcast" />
+                      <span className="text-muted-foreground">4 weeks vs. 12+ months</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Code className="w-4 h-4 text-accent-comcast" />
+                      <span className="text-muted-foreground">171,000+ lines</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <DollarSign className="w-4 h-4 text-accent-comcast" />
+                      <span className="text-muted-foreground">$1.05M saved</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <Link href="/work/comcast-design-system">
-              <Button variant="outline" className="w-full">View Case Study →</Button>
+              </a>
             </Link>
-          </Card>
-        </div>
+          </div>
 
-        <div className="text-center mt-12">
-          <Link href="/work">
-            <Button size="lg" variant="outline">View All Projects →</Button>
-          </Link>
+          <div className="mt-12">
+            <Link href="/work">
+              <Button variant="outline" size="lg" className="gap-2">
+                View All Projects <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary text-primary-foreground py-24">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Build Something Exceptional
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            I'm currently available for select Principal/VP Product Design roles where I can deliver massive business value.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                Contact Me
-              </Button>
-            </Link>
-            <Link href="/methodology">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
-                Learn About My Methodology
-              </Button>
-            </Link>
+      <section className="py-24 border-t border-border/40">
+        <div className="container mx-auto">
+          <div className="max-w-3xl">
+            <h2 className="text-4xl font-serif font-semibold mb-6">
+              Ready to accelerate your product development?
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              I'm available for Principal/VP Product Design roles where I can deliver measurable business impact 
+              through AI-augmented workflows.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link href="/contact">
+                <Button size="lg" className="gap-2">
+                  Get In Touch <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+              <Link href="/methodology">
+                <Button size="lg" variant="outline">
+                  Learn About My Process
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-muted-foreground">
-              © 2025 Ryan Winzenburg. All rights reserved.
-            </div>
-            <div className="flex gap-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+      <footer className="border-t border-border/40 py-12">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-muted-foreground">
+              © 2025 Ryan Winzenburg. Available for $220K-$280K roles.
+            </p>
+            <div className="flex items-center gap-6">
+              <a href="https://www.linkedin.com/in/rwinzenburg/" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 LinkedIn
               </a>
               <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 GitHub
+              </a>
+              <a href="mailto:ryanwinzenburg@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Email
               </a>
             </div>
           </div>
