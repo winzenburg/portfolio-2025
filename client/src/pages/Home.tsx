@@ -161,6 +161,9 @@ export default function Home() {
           <div className="grid gap-8 max-w-5xl">
             {/* Project 1: SaaS Design System */}
             <div className="group bg-card border border-accent-cyan/30 rounded-lg overflow-hidden hover:border-accent-cyan/60 transition-all">
+              <div className="h-64 overflow-hidden">
+                <img src="/project-saas-design-system.png" alt="Enterprise SaaS Design System" className="w-full h-full object-cover" />
+              </div>
               <div className="p-8">
                 <div className="text-xs font-semibold text-accent-cyan mb-3 uppercase tracking-wider">
                   Hero Project
@@ -201,6 +204,9 @@ export default function Home() {
 
             {/* Project 2: ISC Portal */}
             <div className="group bg-card border border-accent-purple/30 rounded-lg overflow-hidden hover:border-accent-purple/60 transition-all">
+              <div className="h-64 overflow-hidden">
+                <img src="/project-isc-portal.png" alt="ISC Portal Usability Prototype" className="w-full h-full object-cover" />
+              </div>
               <div className="p-8">
                 <div className="text-xs font-semibold text-accent-purple mb-3 uppercase tracking-wider">
                   Hero Project
@@ -241,6 +247,9 @@ export default function Home() {
 
             {/* Project 3: Comcast Design System */}
             <div className="group bg-card border border-accent-green/30 rounded-lg overflow-hidden hover:border-accent-green/60 transition-all">
+              <div className="h-64 overflow-hidden">
+                <img src="/project-comcast-design-system.png" alt="Comcast Business Design System" className="w-full h-full object-cover" />
+              </div>
               <div className="p-8">
                 <div className="text-xs font-semibold text-accent-green mb-3 uppercase tracking-wider">
                   Supporting Project
