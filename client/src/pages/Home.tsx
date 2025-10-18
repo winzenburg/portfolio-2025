@@ -223,9 +223,9 @@ export default function Home() {
               <div>
                 <div className="text-sm text-muted-foreground">Key Metrics</div>
                 <div className="text-sm">
-                  • 13 functional pages, 38 components<br />
-                  • 0 TypeScript errors, 55 commits<br />
-                  • 100% Material Design 3<br />
+                  • 5,450 lines of code/day<br />
+                  • 0 TypeScript errors (21,801 lines)<br />
+                  • 89% reduction in UI variations<br />
                   • pNPS Target: -4 → +5
                 </div>
               </div>

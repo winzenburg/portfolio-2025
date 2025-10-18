@@ -107,7 +107,7 @@ export default function Work() {
                 <div className="text-sm font-medium text-primary mb-3">HERO PROJECT · 2024</div>
                 <h3 className="text-3xl font-bold mb-4">ISC Portal Usability Prototype</h3>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Delivered a comprehensive, interactive prototype addressing 81% of critical usability issues in the Comcast Business ISC Portal in just 4 days, targeting a +9 point pNPS swing.
+                  Wrote 5,450 lines of code per day to deliver a comprehensive, interactive prototype addressing 81% of critical usability issues in the Comcast Business ISC Portal in just 4 days, with zero TypeScript errors and an 89% reduction in UI variations.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
@@ -129,12 +129,12 @@ export default function Work() {
                 <div>
                   <div className="text-sm font-medium mb-2">Key Deliverables</div>
                   <ul className="text-sm space-y-1 text-muted-foreground">
-                    <li>• 13 functional pages, 38 components</li>
-                    <li>• 0 TypeScript errors, 55 commits</li>
-                    <li>• 100% Material Design 3 compliance</li>
-                    <li>• Comprehensive help system (65+ terms)</li>
-                    <li>• pNPS target: -4 → +5</li>
-                    <li>• Estimated 85-90% accessibility score</li>
+                    <li>• 5,450 lines of code per day (21,801 total)</li>
+                    <li>• 0 TypeScript errors across entire codebase</li>
+                    <li>• 89% reduction in UI variations</li>
+                    <li>• 1 base component → 9 consistent pages</li>
+                    <li>• pNPS target: -4 → +5 (+9 swing)</li>
+                    <li>• 5-7x faster development velocity</li>
                   </ul>
                 </div>
                 <div>
