@@ -20,7 +20,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
                 <Button size="lg" className="text-base">
-                  Available for Principal/VP Roles ($220K-$280K)
+                  Open to Strategic Leadership Roles
                 </Button>
               </Link>
               <Link href="/work">
