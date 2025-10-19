@@ -7,7 +7,7 @@ const CaseStudySaas: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
           src="/project-saas-design-system.png" 
-          alt="Enterprise SaaS Design System"
+          alt="Kinetic UI Design System"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -15,7 +15,7 @@ const CaseStudySaas: React.FC = () => {
             <span className="text-cyan-400 text-sm font-medium">Hero Project · 2024</span>
           </div>
           <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-6">
-            Enterprise SaaS Design System
+            Kinetic UI Design System
           </h1>
           <p className="text-xl text-gray-300 mb-8">
             Industry-first automated token governance system delivered in 4 weeks
@@ -65,7 +65,7 @@ const CaseStudySaas: React.FC = () => {
               className="w-full"
             />
             <div className="bg-white/5 px-4 py-3 text-sm text-gray-400">
-              <strong className="text-cyan-400">Winzenburg Design System:</strong> Production-ready React components for building beautiful, accessible applications faster
+              <strong className="text-cyan-400">Kinetic UI:</strong> Production-ready React components for building beautiful, accessible applications faster
             </div>
           </div>
         </section>

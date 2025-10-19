@@ -38,7 +38,7 @@ export default function Work() {
             {/* Project 1: SaaS Design System */}
             <div className="bg-card border border-accent-cyan/30 rounded-lg overflow-hidden">
               <div className="h-80 overflow-hidden">
-                <img src={`${import.meta.env.BASE_URL}project-saas-design-system.png`} alt="Enterprise SaaS Design System" className="w-full h-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}project-saas-design-system.png`} alt="Kinetic UI Design System" className="w-full h-full object-cover" />
               </div>
               <div className="p-8 md:p-12">
                 <div className="grid md:grid-cols-[2fr,1fr] gap-8">
@@ -47,7 +47,7 @@ export default function Work() {
                       Hero Project · 2024
                     </div>
                     <h3 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-                      Enterprise SaaS Design System
+                      Kinetic UI Design System
                     </h3>
                     <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                       Built a complete, production-ready design system with an industry-first automated governance engine in just 4 weeks—a task that traditionally requires a 7-person team working for over a year.
