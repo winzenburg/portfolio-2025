@@ -29,6 +29,11 @@ export default function Home() {
                   About
                 </a>
               </Link>
+              <Link href="/services">
+                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Services
+                </a>
+              </Link>
               <Link href="/contact">
                 <Button variant="default" size="sm">
                   Contact

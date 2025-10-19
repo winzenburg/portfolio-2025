@@ -14,6 +14,7 @@ import CaseStudyIsc from "./pages/CaseStudyIsc";
 import CaseStudyComcast from "./pages/CaseStudyComcast";
 import CaseStudyBuildout from "./pages/CaseStudyBuildout";
 import CaseStudyCvs from "./pages/CaseStudyCvs";
+import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/work" component={Work} />
       <Route path="/methodology" component={Methodology} />
       <Route path="/about" component={About} />
+      <Route path="/services" component={Services} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />
