@@ -46,7 +46,7 @@ export default function AudienceFirstGoToMarket() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Greg Isenberg's go-to-market strategy is rooted in a simple yet powerful principle: "Master ONE platform before expanding."
+              My go-to-market strategy is rooted in a simple yet powerful principle: "Master ONE platform before expanding."
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function AudienceFirstGoToMarket() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Another key component of Isenberg's go-to-market strategy is the creator partnership. He advocates for partnering with creators for "MASSIVE distribution." This is about leveraging the existing audiences of influencers and thought leaders in your niche to reach a wider audience.
+              Another key component of this go-to-market strategy is the creator partnership. I advocate for partnering with creators for "MASSIVE distribution." This is about leveraging the existing audiences of influencers and thought leaders in your niche to reach a wider audience.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">
@@ -111,7 +111,7 @@ export default function AudienceFirstGoToMarket() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              While organic growth is important, paid acquisition can be a powerful way to accelerate your growth. Isenberg is a proponent of the Cody Schneider Google Ads Framework, which provides a systematic approach to paid acquisition.
+              While organic growth is important, paid acquisition can be a powerful way to accelerate your growth. The Cody Schneider Google Ads Framework provides a systematic approach to paid acquisition.
             </p>
 
             <h3 className="text-2xl font-bold text-white mt-10 mb-4">

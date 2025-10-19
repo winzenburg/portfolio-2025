@@ -53,7 +53,7 @@ export default function AIMarketValidation() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-slate-300 leading-relaxed mb-6">
-              As Greg Isenberg consistently emphasizes, it's crucial to validate demand <em>before</em> writing a single line of code. This data-driven approach minimizes risk and ensures you're building a product that people actually want and need.
+              It's crucial to validate demand <em>before</em> writing a single line of code. This data-driven approach minimizes risk and ensures you're building a product that people actually want and need.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -61,11 +61,11 @@ export default function AIMarketValidation() {
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              The Greg Isenberg Validation Framework (with an AI Twist)
+              The AI-Powered Market Validation Framework
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This framework, synthesized from dozens of Isenberg's videos and enhanced with my own AI-powered workflows, provides a systematic approach to market validation.
+              This framework, refined through years of Fortune 500 experience and enhanced with AI-powered workflows, provides a systematic approach to market validation.
             </p>
 
             <h3 className="text-2xl font-bold text-white mt-10 mb-4">
@@ -109,7 +109,7 @@ export default function AIMarketValidation() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              No business exists in a vacuum. It's crucial to understand the competitive landscape and identify gaps that your product can fill. Isenberg is a proponent of the "mimesis" principle: copy what works and add your unique spin.
+              No business exists in a vacuum. It's crucial to understand the competitive landscape and identify gaps that your product can fill. I use the "mimesis" principle: analyze what works in the market and add your unique differentiation.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">

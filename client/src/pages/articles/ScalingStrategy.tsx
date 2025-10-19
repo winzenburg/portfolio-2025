@@ -53,7 +53,7 @@ export default function ScalingStrategy() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-slate-300 leading-relaxed mb-6">
-              For many entrepreneurs, scaling means pouring all of their resources into growing a single product. But as Greg Isenberg has shown, there's another way: the portfolio approach. This is about building a complementary ecosystem of businesses that are all powered by AI and automation.
+              For many entrepreneurs, scaling means pouring all of their resources into growing a single product. But there's another way: the portfolio approach. This is about building a complementary ecosystem of businesses that are all powered by AI and automation.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

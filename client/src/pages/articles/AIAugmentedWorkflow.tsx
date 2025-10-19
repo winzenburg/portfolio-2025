@@ -65,7 +65,7 @@ export default function AIAugmentedWorkflow() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Inspired by thought leaders like Greg Isenberg, I've adopted an "AI-first" product development approach. I use AI as a co-founder at every stage of the development lifecycle, from ideation to deployment. This not only accelerates the development process but also enables me to operate with the capabilities of a much larger organization.
+              I've adopted an "AI-first" product development approach. I use AI as a co-founder at every stage of the development lifecycle, from ideation to deployment. This not only accelerates the development process but also enables me to operate with the capabilities of a much larger organization.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">
@@ -84,7 +84,7 @@ export default function AIAugmentedWorkflow() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              One of the most powerful applications of AI in product development is the ability to maintain a "zero bug policy." This concept, championed by Isenberg, is about using AI agents to proactively identify and fix bugs before they ever reach production. This not only improves product quality but also frees up the development team to focus on building new features.
+              One of the most powerful applications of AI in product development is the ability to maintain a "zero bug policy." This is about using AI agents to proactively identify and fix bugs before they ever reach production. This not only improves product quality but also frees up the development team to focus on building new features.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">

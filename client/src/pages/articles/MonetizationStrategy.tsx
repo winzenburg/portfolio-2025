@@ -53,7 +53,7 @@ export default function MonetizationStrategy() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-slate-300 leading-relaxed mb-6">
-              As Greg Isenberg advises, you should be thinking about how you're going to make money before you even start building your product. In this article, I'll share my framework for developing a monetization strategy that allows you to generate revenue from day one.
+              You should be thinking about how you're going to make money before you even start building your product. In this article, I'll share my framework for developing a monetization strategy that allows you to generate revenue from day one.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">

@@ -53,7 +53,7 @@ export default function MVPStrategy() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-slate-300 leading-relaxed mb-6">
-              As Greg Isenberg says, the goal is to "build a product that sells itself."
+              The goal is to "build a product that sells itself."
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
