@@ -13,6 +13,14 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "9",
+    title: "Why Most Design Systems Fail (And How AI Changes Everything)",
+    excerpt: "A company invests 12-18 months and nearly a million dollars building a design system. Six months later, nobody's using it. Here's why design systems fail and how AI solves the core problems.",
+    date: "October 19, 2025",
+    readTime: "9 min read",
+    slug: "design-systems-fail"
+  },
+  {
     id: "8",
     title: "The AI-Powered Design System Workflow: My Exact Tech Stack",
     excerpt: "After my last article about building a $1M+ design system in 4 weeks, I received dozens of messages asking: 'What tools do you actually use?' Here's my complete tech stack and workflow.",
