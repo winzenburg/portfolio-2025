@@ -70,7 +70,7 @@ export default function Work() {
                       </div>
                     </div>
                     <Link href="/case-study/saas-design-system">
-                      <Button variant="outline" className="border-accent-cyan/30 text-accent-cyan hover:bg-accent-cyan/10">
+                      <Button className="bg-accent text-accent-cyan hover:bg-accent/80 border border-accent-cyan/20">
                         View Full Case Study →
                       </Button>
                     </Link>
@@ -136,7 +136,7 @@ export default function Work() {
                       </div>
                     </div>
                     <Link href="/case-study/isc-portal">
-                      <Button variant="outline" className="border-accent-purple/30 text-accent-purple hover:bg-accent-purple/10">
+                      <Button className="bg-accent text-accent-cyan hover:bg-accent/80 border border-accent-cyan/20">
                         View Full Case Study →
                       </Button>
                     </Link>
@@ -202,7 +202,7 @@ export default function Work() {
                       </div>
                     </div>
                     <Link href="/case-study/comcast-design-system">
-                      <Button variant="outline" className="border-accent-green/30 text-accent-green hover:bg-accent-green/10">
+                      <Button className="bg-accent text-accent-cyan hover:bg-accent/80 border border-accent-cyan/20">
                         View Full Case Study →
                       </Button>
                     </Link>
