@@ -1,3 +1,4 @@
+import ResponsiveNav from "@/components/ResponsiveNav";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Link } from "wouter";
 

@@ -1,53 +1,11 @@
+import ResponsiveNav from "@/components/ResponsiveNav";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="border-b border-border/40">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-xl font-semibold tracking-tight hover:text-primary transition-colors">
-                Ryan Winzenburg
-              </a>
-            </Link>
-            <div className="flex items-center gap-8">
-              <Link href="/work">
-                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Work
-                </a>
-              </Link>
-              <Link href="/methodology">
-                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Methodology
-                </a>
-              </Link>
-              <Link href="/about">
-                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  About
-                </a>
-              </Link>
-              <Link href="/services">
-                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Services
-                </a>
-              </Link>
-              <Link href="/articles">
-                <a className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Articles
-                </a>
-              </Link>
-              <Link href="/contact">
-                <Button variant="default" size="sm">
-                  Contact
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <ResponsiveNav currentPage="home" />
 
       {/* Hero Section */}
       <section className="py-24 md:py-32">
