@@ -5,12 +5,22 @@
   <title>Ryan Winzenburg - Portfolio</title>
   <script>
     // GitHub Pages SPA redirect workaround
-    // Store the path and redirect to index.html
-    sessionStorage.setItem('redirectPath', window.location.pathname);
-    window.location.replace(window.location.origin + '/portfolio-2025/');
+    // Immediately redirect to index.html with the path stored
+    (function() {
+      var path = window.location.pathname.replace('/portfolio-2025/', '');
+      sessionStorage.setItem('redirectPath', '/portfolio-2025' + (path === '' ? '/' : '/' + path));
+      window.location.replace('/portfolio-2025/');
+    })();
   </script>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+    }
+  </style>
 </head>
 <body>
+  <!-- Blank page during redirect -->
 </body>
 </html>
 
