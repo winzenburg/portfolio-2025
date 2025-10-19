@@ -23,6 +23,7 @@ import MVPStrategy from "./pages/articles/MVPStrategy";
 import MonetizationStrategy from "./pages/articles/MonetizationStrategy";
 import ScalingStrategy from "./pages/articles/ScalingStrategy";
 import DesignSystem4Weeks from "./pages/articles/DesignSystem4Weeks";
+import AITechStack from "./pages/articles/AITechStack";
 import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
@@ -43,6 +44,7 @@ function Router() {
       <Route path="/articles/monetization-strategy" component={MonetizationStrategy} />
       <Route path="/articles/scaling-strategy" component={ScalingStrategy} />
       <Route path="/articles/design-system-4-weeks" component={DesignSystem4Weeks} />
+      <Route path="/articles/ai-tech-stack" component={AITechStack} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />

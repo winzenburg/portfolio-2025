@@ -13,6 +13,14 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "8",
+    title: "The AI-Powered Design System Workflow: My Exact Tech Stack",
+    excerpt: "After my last article about building a $1M+ design system in 4 weeks, I received dozens of messages asking: 'What tools do you actually use?' Here's my complete tech stack and workflow.",
+    date: "October 19, 2025",
+    readTime: "8 min read",
+    slug: "ai-tech-stack"
+  },
+  {
     id: "7",
     title: "How I Built a $1M+ Design System in 4 Weeks (Not 12 Months)",
     excerpt: "When I tell people I built an enterprise-grade design system with 48 production-ready components, 63,813 lines of code, and 100% WCAG 2.2 AA compliance in just 4 weeks, the first reaction is usually skepticism. Here's how I did it.",
