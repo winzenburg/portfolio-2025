@@ -24,7 +24,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             <Link href="/work">
               <a className={`transition-colors ${currentPage === 'work' ? 'text-white font-semibold' : 'text-slate-300 hover:text-white'}`}>
                 Work
@@ -60,7 +60,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-white p-2 hover:bg-slate-800 rounded-lg transition-colors"
+            className="lg:hidden text-white p-2 hover:bg-slate-800 rounded-lg transition-colors"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -69,7 +69,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-slate-700/50 pt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t border-slate-700/50 pt-4">
             <div className="flex flex-col gap-4">
               <Link href="/work">
                 <a 
