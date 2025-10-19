@@ -53,7 +53,7 @@ export default function MonetizationStrategy() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img 
-              src="/images/articles/monetization-hero.png" 
+              src="/portfolio-2025/images/articles/monetization-hero.png" 
               alt="Monetization Strategy" 
               className="w-full h-auto"
             />

@@ -53,7 +53,7 @@ export default function MVPStrategy() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img 
-              src="/images/articles/mvp-strategy-hero.png" 
+              src="/portfolio-2025/images/articles/mvp-strategy-hero.png" 
               alt="MVP Strategy" 
               className="w-full h-auto"
             />

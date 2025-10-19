@@ -53,7 +53,7 @@ export default function AudienceFirstGoToMarket() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img 
-              src="/images/articles/go-to-market-hero.png" 
+              src="/portfolio-2025/images/articles/go-to-market-hero.png" 
               alt="Audience-First Go-to-Market Strategy" 
               className="w-full h-auto"
             />

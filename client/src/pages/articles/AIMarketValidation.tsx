@@ -53,7 +53,7 @@ export default function AIMarketValidation() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img 
-              src="/images/articles/market-validation-hero.png" 
+              src="/portfolio-2025/images/articles/market-validation-hero.png" 
               alt="AI-Powered Market Validation" 
               className="w-full h-auto"
             />
