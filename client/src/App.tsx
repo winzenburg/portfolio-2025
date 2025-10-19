@@ -16,6 +16,12 @@ import CaseStudyBuildout from "./pages/CaseStudyBuildout";
 import CaseStudyCvs from "./pages/CaseStudyCvs";
 import Services from "./pages/Services";
 import Articles from "./pages/Articles";
+import AIAugmentedWorkflow from "./pages/articles/AIAugmentedWorkflow";
+import AIMarketValidation from "./pages/articles/AIMarketValidation";
+import AudienceFirstGoToMarket from "./pages/articles/AudienceFirstGoToMarket";
+import MVPStrategy from "./pages/articles/MVPStrategy";
+import MonetizationStrategy from "./pages/articles/MonetizationStrategy";
+import ScalingStrategy from "./pages/articles/ScalingStrategy";
 import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
@@ -29,6 +35,12 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
       <Route path="/articles" component={Articles} />
+      <Route path="/articles/ai-augmented-workflow" component={AIAugmentedWorkflow} />
+      <Route path="/articles/ai-powered-market-validation" component={AIMarketValidation} />
+      <Route path="/articles/audience-first-go-to-market" component={AudienceFirstGoToMarket} />
+      <Route path="/articles/mvp-strategy" component={MVPStrategy} />
+      <Route path="/articles/monetization-strategy" component={MonetizationStrategy} />
+      <Route path="/articles/scaling-strategy" component={ScalingStrategy} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />
