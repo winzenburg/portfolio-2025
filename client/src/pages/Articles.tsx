@@ -13,6 +13,14 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "7",
+    title: "How I Built a $1M+ Design System in 4 Weeks (Not 12 Months)",
+    excerpt: "When I tell people I built an enterprise-grade design system with 48 production-ready components, 63,813 lines of code, and 100% WCAG 2.2 AA compliance in just 4 weeks, the first reaction is usually skepticism. Here's how I did it.",
+    date: "October 19, 2025",
+    readTime: "7 min read",
+    slug: "design-system-4-weeks"
+  },
+  {
     id: "1",
     title: "The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster",
     excerpt: "In today's competitive landscape, speed to market is not just an advantage—it's a necessity. Learn how I leverage AI tools to deliver the same high-quality, enterprise-grade UX strategy and design outcomes in a fraction of the time.",
