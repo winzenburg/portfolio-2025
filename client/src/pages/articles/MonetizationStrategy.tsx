@@ -1,43 +1,12 @@
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 
 export default function MonetizationStrategy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Header */}
-      <header className="border-b border-slate-700/50 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
-                Ryan Winzenburg
-              </a>
-            </Link>
-            <div className="flex items-center gap-8">
-              <Link href="/work">
-                <a className="text-slate-300 hover:text-white transition-colors">Work</a>
-              </Link>
-              <Link href="/methodology">
-                <a className="text-slate-300 hover:text-white transition-colors">Methodology</a>
-              </Link>
-              <Link href="/about">
-                <a className="text-slate-300 hover:text-white transition-colors">About</a>
-              </Link>
-              <Link href="/services">
-                <a className="text-slate-300 hover:text-white transition-colors">Services</a>
-              </Link>
-              <Link href="/articles">
-                <a className="text-white font-semibold">Articles</a>
-              </Link>
-              <Link href="/contact">
-                <a className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                  Contact
-                </a>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <ResponsiveNav currentPage="articles" />
 
       {/* Article Content */}
       <article className="py-12 px-6">
