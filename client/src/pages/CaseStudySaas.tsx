@@ -402,12 +402,11 @@ const CaseStudySaas: React.FC = () => {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             I can deliver enterprise-grade design systems in weeks, not months, at a fraction of traditional costs while maintaining rigorous quality standards.
           </p>
-          <a 
-            href="/contact" 
-            className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors"
-          >
-            Let's Discuss Your Project
-          </a>
+          <Link href="/contact">
+            <a className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors">
+              Let's Discuss Your Project
+            </a>
+          </Link>
         </section>
       </div>
     </div>

@@ -336,12 +336,11 @@ const CaseStudyIsc: React.FC = () => {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             I can deliver production-quality prototypes in days, enabling rapid user testing and confident decision-making without the traditional time and cost investment.
           </p>
-          <a 
-            href="/contact" 
-            className="inline-block px-8 py-3 bg-purple-500 hover:bg-purple-600 text-white font-medium rounded-lg transition-colors"
-          >
-            Let's Discuss Your Project
-          </a>
+          <Link href="/contact">
+            <a className="inline-block px-8 py-3 bg-purple-500 hover:bg-purple-600 text-white font-medium rounded-lg transition-colors">
+              Let\'s Discuss Your Project
+            </a>
+          </Link>
         </section>
       </div>
     </div>
