@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 
 const CaseStudySaas: React.FC = () => {
   return (
@@ -403,9 +404,9 @@ const CaseStudySaas: React.FC = () => {
             I can deliver enterprise-grade design systems in weeks, not months, at a fraction of traditional costs while maintaining rigorous quality standards.
           </p>
           <Link href="/contact">
-            <a className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors">
+            <span className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors cursor-pointer">
               Let's Discuss Your Project
-            </a>
+            </span>
           </Link>
         </section>
       </div>
