@@ -58,6 +58,13 @@ export default function Work() {
         <div className="space-y-12">
           {/* Project 1: Kinetic UI */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img 
+                src="/portfolio-2025/saas-ds-welcome.png" 
+                alt="Kinetic UI Design System" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
             <div className="grid md:grid-cols-[2fr,1fr] gap-8">
               <div>
                 <div className="text-sm font-medium text-primary mb-3">SERIES C SAAS · 2024</div>
@@ -126,6 +133,13 @@ export default function Work() {
 
           {/* Project 2: ISC Portal */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img 
+                src="/portfolio-2025/project-isc.png" 
+                alt="ISC Portal Redesign" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
             <div className="grid md:grid-cols-[2fr,1fr] gap-8">
               <div>
                 <div className="text-sm font-medium text-primary mb-3">FORTUNE 50 FINANCIAL SERVICES · 2024</div>
@@ -192,8 +206,15 @@ export default function Work() {
             </div>
           </Card>
 
-          {/* Project 3: Comcast Design System */}
+                 {/* Project 3: Comcast */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img 
+                src="/portfolio-2025/project-comcast.png" 
+                alt="Comcast Business Design System" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
             <div className="grid md:grid-cols-[2fr,1fr] gap-8">
               <div>
                 <div className="text-sm font-medium text-primary mb-3">FORTUNE 50 TELECOM · 2024</div>
