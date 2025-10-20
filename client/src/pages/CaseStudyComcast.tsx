@@ -147,15 +147,27 @@ const CaseStudyComcast: React.FC = () => {
               </div>
             </div>
 
-            {/* Component Examples Screenshot */}
+            {/* Enterprise Billing Screenshot */}
             <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
               <img 
-                src={`${import.meta.env.BASE_URL}comcast-ds-components.png`}
-                alt="Comcast Design System Component Examples"
+                src={`${import.meta.env.BASE_URL}comcast-ds-billing.png`}
+                alt="Comcast Design System Enterprise Billing Interface"
                 className="w-full"
               />
               <div className="bg-white/5 p-4 text-sm text-gray-400">
-                Button component showing all variants: Primary, Secondary, Ghost, Destructive, and Link styles
+                Enterprise billing dashboard with invoice management, payment tracking, usage monitoring, and auto-pay settings
+              </div>
+            </div>
+
+            {/* Executive Dashboard Screenshot */}
+            <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
+              <img 
+                src={`${import.meta.env.BASE_URL}comcast-ds-dashboard.png`}
+                alt="Comcast Design System Executive Dashboard"
+                className="w-full"
+              />
+              <div className="bg-white/5 p-4 text-sm text-gray-400">
+                Executive dashboard with real-time business insights, service performance trends, revenue analytics, and critical alerts
               </div>
             </div>
 
