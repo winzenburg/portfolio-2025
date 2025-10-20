@@ -22,6 +22,12 @@ export default function About() {
               <Link href="/about">
                 <span className="text-sm font-medium text-primary">About</span>
               </Link>
+              <Link href="/services">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
+              </Link>
+              <Link href="/articles">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
+              </Link>
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
@@ -33,8 +39,11 @@ export default function About() {
       {/* Hero */}
       <section className="container py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          25 Years of Experience,<br />Reimagined
+          Force Multiplier for<br />Product Teams
         </h1>
+        <p className="text-xl text-muted-foreground max-w-3xl">
+          I help VCs, Product Leaders, and Design Teams ship 4-6x faster without adding permanent headcount.
+        </p>
       </section>
 
       {/* Story */}
@@ -42,60 +51,125 @@ export default function About() {
         <div className="max-w-4xl space-y-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-muted-foreground">
-              For over two decades, I have been at the forefront of user experience, leading design and strategy for some of the nation's largest companies, including <strong>Comcast, CVS Health, and Life Time Fitness</strong>. My career has been dedicated to a single principle: building digital products that are effective, efficient, and user-centric. I have honed my skills in the trenches of enterprise-scale projects, mastering the art of UX research, information architecture, interaction design, and front-end development.
+              For 25 years, I've led UX strategy for Fortune 50 companies like <strong>Comcast, CVS Health, and Life Time Fitness</strong>. I've seen what works at scale—and what doesn't. I've built design systems for organizations with thousands of employees, navigated complex stakeholder landscapes, and shipped products that serve millions of users.
             </p>
             <p className="text-lg text-muted-foreground">
-              But the world is changing. The tools we use are evolving at an exponential rate. About a year ago, I saw the potential for AI not as a threat to our craft, but as the ultimate force multiplier. I didn't just start using AI; I began a rigorous journey to deconstruct my entire workflow and rebuild it from the ground up, integrating AI as a core component.
+              About a year ago, I saw an opportunity: AI tools were becoming powerful enough to amplify human expertise, not replace it. I spent months deconstructing my workflow and rebuilding it from the ground up, integrating AI as a core component. The result? I can now deliver outcomes that traditionally require a 7-person team—in a fraction of the time.
             </p>
             <p className="text-lg text-muted-foreground">
-              Today, I don't just design or code. I orchestrate a symphony of AI agents and advanced tools, guided by my 25 years of accumulated knowledge. This allows me to deliver with the speed and scale of a large, multi-disciplinary team, while maintaining the quality and strategic insight that only comes from deep experience. My goal is not to replace human judgment, but to augment it, to execute on proven strategies at a velocity that was previously unimaginable.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              This new paradigm allows me to focus on what truly matters: solving the right problems, delighting users, and creating massive business value. I handle the work of a 7-person team, not by cutting corners, but by multiplying my effectiveness.
+              But here's what matters: <strong>I'm additive, not subtractive.</strong> I don't replace your designers, engineers, or product managers. I multiply their effectiveness. I embed with your team, bring AI-augmented workflows, and leave behind systems and processes that make everyone faster long after I'm gone.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Core Expertise */}
+      {/* Three Pillars */}
       <section className="bg-muted/30 py-24">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12">Core Expertise</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
+          <h2 className="text-3xl font-bold mb-12">Why Companies Hire Me</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
+            <Card className="p-8">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-bold mb-3">I Make Teams Faster</h3>
+              <p className="text-muted-foreground mb-4">
+                My AI-augmented workflows deliver 4-6x faster results. This means your team ships more features per quarter, beats competitors to market, and validates ideas before burning runway.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For VCs:</div>
+              <p className="text-sm text-muted-foreground mb-3">
+                Speed = competitive advantage. Companies that ship faster win markets.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For Product Teams:</div>
+              <p className="text-sm text-muted-foreground mb-3">
+                Ship more features without hiring. Unblock designers and engineers.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For Design Leaders:</div>
+              <p className="text-sm text-muted-foreground">
+                10x output without 10x headcount. Your team focuses on strategy, not pixels.
+              </p>
+            </Card>
+
+            <Card className="p-8">
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-bold mb-3">I De-Risk Investments</h3>
+              <p className="text-muted-foreground mb-4">
+                25 years at Fortune 50 companies means I've seen every failure mode. I bring proven processes, predictable outcomes, and enterprise-grade quality—without enterprise timelines.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For VCs:</div>
+              <p className="text-sm text-muted-foreground mb-3">
+                Proven processes reduce risk. $3M+ value created across recent projects.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For Product Teams:</div>
+              <p className="text-sm text-muted-foreground mb-3">
+                Predictable delivery. No surprises. Measurable outcomes.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For Design Leaders:</div>
+              <p className="text-sm text-muted-foreground">
+                Enterprise quality at startup speed. Show design's business impact.
+              </p>
+            </Card>
+
+            <Card className="p-8">
+              <div className="text-4xl mb-4">🤝</div>
+              <h3 className="text-xl font-bold mb-3">I'm Additive, Not Subtractive</h3>
+              <p className="text-muted-foreground mb-4">
+                I don't replace your team—I amplify them. I embed with your designers, engineers, and PMs, making everyone more effective. When I leave, your team is faster permanently.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For VCs:</div>
+              <p className="text-sm text-muted-foreground mb-3">
+                No morale risk. Teams get better, not threatened.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For Product Teams:</div>
+              <p className="text-sm text-muted-foreground mb-3">
+                Your team learns AI workflows. Velocity increase is permanent.
+              </p>
+              <div className="text-sm font-semibold text-primary mb-2">For Design Leaders:</div>
+              <p className="text-sm text-muted-foreground">
+                Elevate your team's skills. Build design systems that scale.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* What I Bring */}
+      <section className="container py-24">
+        <div className="max-w-4xl">
+          <h2 className="text-3xl font-bold mb-12">What I Bring to Your Team</h2>
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">UX Strategy & Research</h3>
+              <h3 className="text-xl font-bold mb-3">25 Years of Fortune 50 Experience</h3>
               <p className="text-muted-foreground">
-                Grounding every decision in user needs and business goals through heuristic analysis, user surveys, focus groups, and data-driven insights.
+                I've led UX strategy for Comcast (Fortune 50), CVS Health (Fortune 10), and other enterprise organizations. I know what works at scale.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Design Systems Architecture</h3>
+              <h3 className="text-xl font-bold mb-3">AI-Augmented Workflows</h3>
               <p className="text-muted-foreground">
-                Building scalable, enterprise-grade design systems from the ground up, with a focus on token-based architecture, accessibility, and developer experience.
+                I've spent a year rebuilding my workflow from the ground up with AI. This isn't about using ChatGPT—it's about orchestrating AI agents to deliver 4-6x faster.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">AI-Augmented Development</h3>
+              <h3 className="text-xl font-bold mb-3">Design Systems Expertise</h3>
               <p className="text-muted-foreground">
-                Leveraging a suite of AI tools (Manus, Claude Code, Cursor) to write high-quality, production-ready code in React, Angular, and TypeScript at unprecedented speed.
+                I've built production design systems for Fortune 50 companies and Series C startups. Token-based architecture, automated governance, enterprise quality.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Automated Testing & QA</h3>
+              <h3 className="text-xl font-bold mb-3">Full-Stack Capability</h3>
               <p className="text-muted-foreground">
-                Implementing comprehensive testing strategies, including E2E tests with Playwright and accessibility audits with axe-core, to ensure enterprise-grade quality.
+                I ship production-ready code in React, Angular, and TypeScript. 100% WCAG AA compliance, comprehensive testing, zero technical debt.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Technical Documentation</h3>
+              <h3 className="text-xl font-bold mb-3">Strategic Product Thinking</h3>
               <p className="text-muted-foreground">
-                Generating extensive, multi-section documentation for every component and workflow, making systems maintainable and easy to adopt.
+                I bridge ideation and validation. I don't just build what you ask for—I help you figure out what's worth building in the first place.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Product Management</h3>
+              <h3 className="text-xl font-bold mb-3">Proven ROI</h3>
               <p className="text-muted-foreground">
-                Bridging the gap between ideation and validation, ensuring that what is built is not only well-designed but also solves a real-world problem.
+                $3M+ value created across 3 recent projects. 6-10x ROI. Extended runway by 6-12 months for portfolio companies.
               </p>
             </Card>
           </div>
@@ -103,85 +177,75 @@ export default function About() {
       </section>
 
       {/* FAQ */}
-      <section className="container py-24">
-        <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12">Frequently Asked Questions</h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-bold mb-3">Is the 84x speed claim real?</h3>
-              <p className="text-muted-foreground">
-                Yes, and it's based on concrete data. A project like the Enterprise SaaS Design System, with 48 components, extensive documentation, and full testing, traditionally takes a 7-person team 12+ months (84 person-months). I delivered it in 4 weeks (1 person-month). The math is 84 / 1 = 84x faster.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-3">How can one person replace a 7-person team?</h3>
-              <p className="text-muted-foreground">
-                I don't just replace them; I integrate their roles. My AI-augmented workflow allows me to perform the functions of a UX Researcher, Designer, Frontend Developer, QA Engineer, Accessibility Expert, Technical Writer, and more. AI handles the rote execution, while my 25 years of experience provides the strategic direction, quality control, and taste.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-3">What about quality? Doesn't AI make mistakes?</h3>
-              <p className="text-muted-foreground">
-                AI, unguided, is unreliable. The key is my role as the expert practitioner. I guide the AI, review its output, and enforce rigorous quality standards. The metrics speak for themselves: 100% WCAG 2.2 AA compliance, zero `any` types in TypeScript, and 77% E2E test coverage on complex components. The quality is not just maintained; it's often enhanced due to the ability to automate checks and balances.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-3">What types of projects are NOT a good fit for your approach?</h3>
-              <p className="text-muted-foreground">
-                My workflow is optimized for speed and quality in the digital product space. It may be less suitable for projects involving highly sensitive, classified, or air-gapped data where the use of cloud-based AI tools is prohibited. Additionally, the greatest value is realized in complex projects (like design systems or multi-faceted prototypes) where the acceleration is most pronounced.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-3">What's your ideal role?</h3>
-              <p className="text-muted-foreground">
-                I thrive in high-impact Principal, Head of, or VP-level roles where I can take ownership of the product lifecycle from ideation to validated prototype. My goal is to work with forward-thinking companies that value speed, quality, and massive ROI, and are ready to embrace a new way of building products.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-3">What's your availability?</h3>
-              <p className="text-muted-foreground">
-                I'm currently available for select Principal/VP Product Design roles ($220K-$280K range) where I can deliver massive business value. I'm based in Colorado but open to remote opportunities with forward-thinking companies.
-              </p>
+      <section className="bg-muted/30 py-24">
+        <div className="container">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl font-bold mb-12">Frequently Asked Questions</h2>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-bold mb-3">How do you deliver 4-6x faster without sacrificing quality?</h3>
+                <p className="text-muted-foreground">
+                  AI handles the rote execution—writing boilerplate code, generating documentation, running tests. My 25 years of experience provides the strategic direction, quality control, and taste. The result? 100% WCAG AA compliance, zero TypeScript errors, comprehensive testing—delivered in a fraction of the time.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3">Won't AI threaten my existing team?</h3>
+                <p className="text-muted-foreground">
+                  No. I'm additive, not subtractive. I work alongside your designers, engineers, and product managers—making them more effective, not replacing them. I bring AI workflows that your team can learn and adopt. When I leave, your team is permanently faster.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3">What's the ROI of hiring you?</h3>
+                <p className="text-muted-foreground">
+                  Typical ROI is 6-10x. For example: A Series C company saved $1M+ on their design system (vs. hiring a 7-person team), which extended their runway by 8 months. A Fortune 50 company prevented $50M+ in lost revenue by fixing critical usability issues in 4 days instead of 12 months.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3">What types of projects are you best suited for?</h3>
+                <p className="text-muted-foreground">
+                  I'm best for high-impact, time-sensitive projects where speed and quality both matter: design systems, product redesigns, rapid prototyping, and strategic UX initiatives. I work with Series B-D startups and Fortune 500 companies.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3">What's your ideal engagement model?</h3>
+                <p className="text-muted-foreground">
+                  I offer both consulting (project-based or retainer) and strategic leadership roles (Principal/VP level). For consulting, I typically work on 4-12 week projects. For leadership roles, I'm looking for companies that value speed, quality, and massive ROI.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3">Are you available for full-time roles?</h3>
+                <p className="text-muted-foreground">
+                  Yes, I'm open to strategic leadership roles (Principal, Head of, VP Product Design) where I can deliver massive business value. I'm based in Colorado but open to remote opportunities with forward-thinking companies.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-primary text-primary-foreground py-24">
-        <div className="container text-center">
+      <section className="container py-24">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Talk About Your Next Project
+            Let's Discuss How I Can Help
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            If you're looking for someone who can deliver enterprise-grade results at startup speed, let's connect.
+          <p className="text-xl text-muted-foreground mb-8">
+            Whether you're a VC looking to de-risk portfolio companies, a PM trying to ship faster, or a Design Leader scaling without hiring—let's talk.
           </p>
-          <Link href="/contact">
-            <Button size="lg" variant="secondary">
-              Get in Touch
-            </Button>
-          </Link>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-muted-foreground">
-              © 2025 Ryan Winzenburg. All rights reserved.
-            </div>
-            <div className="flex gap-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                LinkedIn
-              </a>
-              <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                GitHub
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button size="lg">
+                Schedule a Discovery Call
+              </Button>
+            </Link>
+            <Link href="/work">
+              <Button size="lg" variant="outline">
+                View Case Studies
+              </Button>
+            </Link>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
