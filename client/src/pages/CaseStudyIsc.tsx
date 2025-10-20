@@ -261,7 +261,7 @@ const CaseStudyIsc: React.FC = () => {
             {/* Homepage - Usability Analysis */}
             <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
               <img 
-                src="/images/isc-portal-home.webp" 
+                src="/portfolio-2025/images/isc-portal-home.webp" 
                 alt="ISC Portal Homepage - Usability Analysis Dashboard"
                 className="w-full"
               />
@@ -276,7 +276,7 @@ const CaseStudyIsc: React.FC = () => {
             {/* Network Analyst */}
             <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
               <img 
-                src="/images/isc-portal-network-analyst.webp" 
+                src="/portfolio-2025/images/isc-portal-network-analyst.webp" 
                 alt="ISC Portal Network Analyst - Traffic Analytics"
                 className="w-full"
               />
@@ -291,7 +291,7 @@ const CaseStudyIsc: React.FC = () => {
             {/* SD-WAN Orchestrator */}
             <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
               <img 
-                src="/images/isc-portal-sd-wan.webp" 
+                src="/portfolio-2025/images/isc-portal-sd-wan.webp" 
                 alt="ISC Portal SD-WAN Orchestrator - Access Control"
                 className="w-full"
               />
@@ -306,7 +306,7 @@ const CaseStudyIsc: React.FC = () => {
             {/* Sites Unified */}
             <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
               <img 
-                src="/images/isc-portal-sites.webp" 
+                src="/portfolio-2025/images/isc-portal-sites.webp" 
                 alt="ISC Portal Sites Management - Unified View"
                 className="w-full"
               />
