@@ -250,6 +250,76 @@ const CaseStudyIsc: React.FC = () => {
           </div>
         </section>
 
+        {/* Visual Showcase */}
+        <section className="mb-16">
+          <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Prototype</h2>
+          <p className="text-gray-300 text-lg mb-8">
+            A fully interactive, production-quality prototype demonstrating solutions to all identified usability issues.
+          </p>
+          
+          <div className="space-y-8">
+            {/* Homepage - Usability Analysis */}
+            <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
+              <img 
+                src="/images/isc-portal-home.webp" 
+                alt="ISC Portal Homepage - Usability Analysis Dashboard"
+                className="w-full"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-purple-400">Usability Analysis Dashboard</h3>
+                <p className="text-gray-300">
+                  Comprehensive overview of identified issues with clear metrics: 8 critical issues, 5 high impact items, 2 quick wins, and current pNPS score. Each issue is mapped to Nielsen's 10 Usability Heuristics with supporting evidence from employee surveys and focus groups.
+                </p>
+              </div>
+            </div>
+
+            {/* Network Analyst */}
+            <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
+              <img 
+                src="/images/isc-portal-network-analyst.webp" 
+                alt="ISC Portal Network Analyst - Traffic Analytics"
+                className="w-full"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-purple-400">Network Analytics Interface</h3>
+                <p className="text-gray-300">
+                  Interactive traffic visualization with protocol breakdown tables, real-time monitoring, and contextual help. Demonstrates improved data visualization and information hierarchy addressing the "visibility of system status" heuristic.
+                </p>
+              </div>
+            </div>
+
+            {/* SD-WAN Orchestrator */}
+            <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
+              <img 
+                src="/images/isc-portal-sd-wan.webp" 
+                alt="ISC Portal SD-WAN Orchestrator - Access Control"
+                className="w-full"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-purple-400">Access Control & Empty States</h3>
+                <p className="text-gray-300">
+                  Clear messaging for license requirements and feature access. Demonstrates solution to the "empty states" problem with helpful guidance and actionable next steps, addressing the #2 critical usability issue.
+                </p>
+              </div>
+            </div>
+
+            {/* Sites Unified */}
+            <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
+              <img 
+                src="/images/isc-portal-sites.webp" 
+                alt="ISC Portal Sites Management - Unified View"
+                className="w-full"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-purple-400">Sites Management Interface</h3>
+                <p className="text-gray-300">
+                  Unified sites view with hierarchical navigation, bulk actions, filtering capabilities, and status indicators. Addresses multiple usability issues including "no bulk actions" and "missing sites and circuits" with clear data sync status.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* The Impact */}
         <section className="mb-16">
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Impact</h2>
