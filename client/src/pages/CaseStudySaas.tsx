@@ -7,7 +7,7 @@ const CaseStudySaas: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src="/project-saas-design-system.png" 
+          src={`${import.meta.env.BASE_URL}project-saas-design-system.png`} 
           alt="Kinetic UI Design System"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />

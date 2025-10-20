@@ -7,7 +7,7 @@ const CaseStudyComcast: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src="/project-comcast-design-system.png" 
+          src={`${import.meta.env.BASE_URL}project-comcast-design-system.png`} 
           alt="Comcast Business Design System"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />

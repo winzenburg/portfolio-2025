@@ -7,7 +7,7 @@ const CaseStudyIsc: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src="/project-isc-portal.png" 
+          src={`${import.meta.env.BASE_URL}project-isc-portal.png`} 
           alt="ISC Portal Usability Prototype"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
