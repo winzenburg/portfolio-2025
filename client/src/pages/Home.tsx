@@ -22,6 +22,12 @@ export default function Home() {
               <Link href="/about">
                 <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
               </Link>
+              <Link href="/services">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
+              </Link>
+              <Link href="/articles">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
+              </Link>
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
@@ -34,124 +40,213 @@ export default function Home() {
       <section className="container py-24 md:py-32">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-            I Replace 7-Person Teams
+            Multiply Your Team's Velocity Without Adding Headcount
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl">
-            Design Systems in 4 Weeks. Product Prototypes in 4 Days. Enterprise Quality. $1M+ Saved Per Project.
+            I help well-funded startups and Fortune 500 companies ship 4-6x faster through AI-augmented workflows that amplify your existing teams.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="text-3xl font-bold mb-2">84x</div>
+              <div className="text-3xl font-bold mb-2">4-6x</div>
               <div className="text-sm text-muted-foreground">Faster Delivery</div>
-              <div className="text-xs text-muted-foreground mt-1">4 weeks vs. 84 person-months</div>
+              <div className="text-xs text-muted-foreground mt-1">Ship more with your team</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">$3M+</div>
-              <div className="text-sm text-muted-foreground">Saved</div>
-              <div className="text-xs text-muted-foreground mt-1">On 3 projects in the past year</div>
+              <div className="text-sm text-muted-foreground">Value Created</div>
+              <div className="text-xs text-muted-foreground mt-1">Across 3 recent projects</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">7-Person</div>
-              <div className="text-sm text-muted-foreground">Team Replaced</div>
-              <div className="text-xs text-muted-foreground mt-1">UX, Dev, QA, Copy, A11y</div>
+              <div className="text-3xl font-bold mb-2">6-10x</div>
+              <div className="text-sm text-muted-foreground">ROI</div>
+              <div className="text-xs text-muted-foreground mt-1">Proven return on investment</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">25 Years</div>
-              <div className="text-sm text-muted-foreground">Experience</div>
-              <div className="text-xs text-muted-foreground mt-1">UX Strategy Expertise</div>
+              <div className="text-sm text-muted-foreground">Fortune 500</div>
+              <div className="text-xs text-muted-foreground mt-1">Proven at scale</div>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact">
               <Button size="lg" className="w-full sm:w-auto">
-                Available for Principal/VP Roles ($220K-$280K)
+                Open to Strategic Leadership Roles
               </Button>
             </Link>
             <Link href="/work">
               <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                View My Work
+                View Case Studies
               </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Value Proposition */}
+      {/* Value Propositions by Audience */}
       <section className="bg-muted/30 py-24">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">What I Replace</h2>
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Traditional 7-Person Team</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">I'm Additive, Not Subtractive</h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
+            I amplify your existing teams - designers, engineers, and product managers - making everyone more effective without adding permanent headcount.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
+            {/* For VCs */}
+            <Card className="p-8">
+              <div className="text-primary text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-semibold mb-4">For VCs & Investors</h3>
+              <div className="space-y-3 text-muted-foreground">
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
                   <div>
-                    <div className="font-medium">UX Researcher ($120K)</div>
+                    <div className="font-medium text-foreground">Extend Runway 6-12 Months</div>
+                    <div className="text-sm">Save $1M+ in development costs</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
                   <div>
-                    <div className="font-medium">UX Designer ($140K)</div>
+                    <div className="font-medium text-foreground">Ship 4-6x Faster</div>
+                    <div className="text-sm">Competitive advantage through velocity</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
                   <div>
-                    <div className="font-medium">Frontend Developer ($160K)</div>
+                    <div className="font-medium text-foreground">De-Risk Investments</div>
+                    <div className="text-sm">Proven processes, predictable outcomes</div>
                   </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">Backend Developer ($160K)</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">QA Engineer ($110K)</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">Copywriter ($90K)</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-destructive mt-1">❌</span>
-                  <div>
-                    <div className="font-medium">Accessibility Expert ($130K)</div>
-                  </div>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="font-bold text-lg">Total: $910K/year</div>
-                  <div className="text-muted-foreground">Timeline: 12+ months</div>
                 </div>
               </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-6">My AI-Augmented Approach</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <span className="text-green-600 mt-1">✅</span>
+            </Card>
+
+            {/* For Product Teams */}
+            <Card className="p-8">
+              <div className="text-primary text-4xl mb-4">🚀</div>
+              <h3 className="text-xl font-semibold mb-4">For Product Teams</h3>
+              <div className="space-y-3 text-muted-foreground">
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
                   <div>
-                    <div className="font-medium">All of the above, and more</div>
+                    <div className="font-medium text-foreground">Ship More Features</div>
+                    <div className="text-sm">4-6x more per quarter with your team</div>
                   </div>
                 </div>
-                <div className="border-t pt-4 mt-8">
-                  <div className="font-bold text-lg">$250K/year</div>
-                  <div className="text-muted-foreground">Timeline: 2-4 weeks</div>
-                  <div className="mt-4 p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
-                    <div className="font-semibold text-green-900 dark:text-green-100">
-                      Savings: $660K/year + 11 months faster to market
-                    </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
+                  <div>
+                    <div className="font-medium text-foreground">Unblock Your Team</div>
+                    <div className="text-sm">Designers and engineers ship faster</div>
                   </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
+                  <div>
+                    <div className="font-medium text-foreground">Predictable Delivery</div>
+                    <div className="text-sm">Reliable timelines, measurable outcomes</div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* For Design Leaders */}
+            <Card className="p-8">
+              <div className="text-primary text-4xl mb-4">🎨</div>
+              <h3 className="text-xl font-semibold mb-4">For Design Leaders</h3>
+              <div className="space-y-3 text-muted-foreground">
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
+                  <div>
+                    <div className="font-medium text-foreground">Scale Without Hiring</div>
+                    <div className="text-sm">10x output without 10x headcount</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
+                  <div>
+                    <div className="font-medium text-foreground">Elevate Your Team</div>
+                    <div className="text-sm">Designers focus on strategy, not pixels</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-primary mt-1">✓</span>
+                  <div>
+                    <div className="font-medium text-foreground">Prove Business Value</div>
+                    <div className="text-sm">Show design's ROI to the C-suite</div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="container py-24">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">How I Multiply Your Team</h2>
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
+          <div>
+            <h3 className="text-2xl font-semibold mb-6">The Multiplier Effect</h3>
+            <div className="space-y-6">
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">1</div>
+                  <h4 className="font-semibold">I Work Alongside Your Team</h4>
+                </div>
+                <p className="text-muted-foreground ml-11">
+                  I embed with your designers, engineers, and product managers - amplifying their effectiveness, not replacing them.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">2</div>
+                  <h4 className="font-semibold">I Bring AI-Augmented Workflows</h4>
+                </div>
+                <p className="text-muted-foreground ml-11">
+                  My 25 years of Fortune 500 experience combined with cutting-edge AI tools delivers 4-6x faster results.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">3</div>
+                  <h4 className="font-semibold">Your Team Gets Better</h4>
+                </div>
+                <p className="text-muted-foreground ml-11">
+                  I leave behind systems, processes, and knowledge that make your team faster long after I'm gone.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-6">Recent Results</h3>
+            <div className="space-y-6">
+              <div className="border-l-2 border-primary pl-4">
+                <div className="font-semibold mb-1">Series C SaaS Company</div>
+                <div className="text-sm text-muted-foreground mb-2">Built Kinetic UI Design System in 4 weeks</div>
+                <div className="text-sm">
+                  <span className="font-medium">Impact:</span> Extended runway by 8 months, shipped v2.0 product 6 months ahead of schedule
+                </div>
+              </div>
+
+              <div className="border-l-2 border-primary pl-4">
+                <div className="font-semibold mb-1">Fortune 500 Financial Services</div>
+                <div className="text-sm text-muted-foreground mb-2">Redesigned advisor portal in 6 weeks</div>
+                <div className="text-sm">
+                  <span className="font-medium">Impact:</span> Prevented $50M+ in lost revenue, reduced training time from 2 weeks to 3 days
+                </div>
+              </div>
+
+              <div className="border-l-2 border-primary pl-4">
+                <div className="font-semibold mb-1">Comcast Business</div>
+                <div className="text-sm text-muted-foreground mb-2">Scaled design system across 12 product teams</div>
+                <div className="text-sm">
+                  <span className="font-medium">Impact:</span> $2M annual savings, 40% faster time-to-market
                 </div>
               </div>
             </div>
@@ -159,165 +254,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Work */}
-      <section className="container py-24">
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Work</h2>
-          <p className="text-xl text-muted-foreground">
-            3 Projects, 10 Weeks, $3M+ Saved
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Project 1 */}
-          <Card className="p-8 hover:shadow-lg transition-shadow">
-            <div className="mb-6">
-              <div className="text-sm font-medium text-primary mb-2">HERO PROJECT</div>
-              <h3 className="text-2xl font-bold mb-3">Enterprise SaaS Design System</h3>
-              <p className="text-muted-foreground mb-4">
-                Industry-First Automated Token Governance System
-              </p>
+      {/* Social Proof */}
+      <section className="bg-muted/30 py-24">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">Trusted By</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl">
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2">Comcast</div>
+              <div className="text-sm text-muted-foreground">Fortune 50</div>
             </div>
-            <div className="space-y-3 mb-6">
-              <div>
-                <div className="text-sm text-muted-foreground">Timeline</div>
-                <div className="font-semibold">4 weeks vs. 12+ months</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Savings</div>
-                <div className="font-semibold">~$1.03M</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Key Metrics</div>
-                <div className="text-sm">
-                  • 63,813 lines of code<br />
-                  • 48 production-ready components<br />
-                  • 100% WCAG 2.2 AA compliance<br />
-                  • Industry-first validation script
-                </div>
-              </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2">CVS Health</div>
+              <div className="text-sm text-muted-foreground">Fortune 10</div>
             </div>
-            <Link href="/work/saas-design-system">
-              <Button variant="outline" className="w-full">View Case Study →</Button>
-            </Link>
-          </Card>
-
-          {/* Project 2 */}
-          <Card className="p-8 hover:shadow-lg transition-shadow">
-            <div className="mb-6">
-              <div className="text-sm font-medium text-primary mb-2">HERO PROJECT</div>
-            <h3 className="text-2xl font-bold mb-3">ISC Portal Usability Prototype</h3>
-            <p className="text-muted-foreground mb-4">
-              Addressed 81% of System Issues in 4 Days
-            </p>
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2">Series B-D</div>
+              <div className="text-sm text-muted-foreground">SaaS Startups</div>
             </div>
-            <div className="space-y-3 mb-6">
-              <div>
-                <div className="text-sm text-muted-foreground">Timeline</div>
-                <div className="font-semibold">4 days vs. 12+ months</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Savings</div>
-                <div className="font-semibold">~$1.05M</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Key Metrics</div>
-                <div className="text-sm">
-                  • 5,450 lines of code/day<br />
-                  • 0 TypeScript errors (21,801 lines)<br />
-                  • 89% reduction in UI variations<br />
-                  • pNPS Target: -4 → +5
-                </div>
-              </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2">PE-Backed</div>
+              <div className="text-sm text-muted-foreground">Companies</div>
             </div>
-            <Link href="/work/isc-portal">
-              <Button variant="outline" className="w-full">View Case Study →</Button>
-            </Link>
-          </Card>
-
-          {/* Project 3 */}
-          <Card className="p-8 hover:shadow-lg transition-shadow">
-            <div className="mb-6">
-              <div className="text-sm font-medium text-muted-foreground mb-2">SUPPORTING PROJECT</div>
-              <h3 className="text-2xl font-bold mb-3">Comcast Business Design System</h3>
-              <p className="text-muted-foreground mb-4">
-                171,000+ Lines: 62 Components, 826 Icons in 4 Weeks
-              </p>
-            </div>
-            <div className="space-y-3 mb-6">
-              <div>
-                <div className="text-sm text-muted-foreground">Timeline</div>
-                <div className="font-semibold">4 weeks vs. 12+ months</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Savings</div>
-                <div className="font-semibold">~$1.03M</div>
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Key Metrics</div>
-                <div className="text-sm">
-                  • 171,000+ lines of code<br />
-                  • 62 components (38 primitives + 24 patterns)<br />
-                  • 826 type-safe icons<br />
-                  • 100% token compliance
-                </div>
-              </div>
-            </div>
-            <Link href="/work/comcast-design-system">
-              <Button variant="outline" className="w-full">View Case Study →</Button>
-            </Link>
-          </Card>
-        </div>
-
-        <div className="text-center mt-12">
-          <Link href="/work">
-            <Button size="lg" variant="outline">View All Projects →</Button>
-          </Link>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-primary text-primary-foreground py-24">
-        <div className="container text-center">
+      {/* CTA */}
+      <section className="container py-24">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Build Something Exceptional
+            Ready to Multiply Your Team's Velocity?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            I'm currently available for select Principal/VP Product Design roles where I can deliver massive business value.
+          <p className="text-xl text-muted-foreground mb-8">
+            Let's discuss how I can help your team ship faster without adding permanent headcount.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                Contact Me
+              <Button size="lg">
+                Schedule a Discovery Call
               </Button>
             </Link>
-            <Link href="/methodology">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
-                Learn About My Methodology
+            <Link href="/work">
+              <Button size="lg" variant="outline">
+                View Case Studies
               </Button>
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-muted-foreground">
-              © 2025 Ryan Winzenburg. All rights reserved.
-            </div>
-            <div className="flex gap-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                LinkedIn
-              </a>
-              <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
