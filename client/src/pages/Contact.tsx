@@ -10,14 +10,14 @@ export default function Contact() {
     name: "",
     email: "",
     company: "",
+    role: "",
     message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, just create a mailto link
     const subject = `Portfolio Inquiry from ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nRole: ${formData.role}\n\nMessage:\n${formData.message}`;
     window.location.href = `mailto:ryan@winzenburg.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
@@ -40,6 +40,12 @@ export default function Contact() {
               <Link href="/about">
                 <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
               </Link>
+              <Link href="/services">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
+              </Link>
+              <Link href="/articles">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
+              </Link>
               <Link href="/contact">
                 <span className="text-sm font-medium text-primary">Contact</span>
               </Link>
@@ -51,10 +57,10 @@ export default function Contact() {
       {/* Hero */}
       <section className="container py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Let's Build Something<br />Exceptional
+          Let's Discuss How I Can<br />Help Your Team
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl">
-          I'm currently available for select Principal/VP Product Design roles where I can deliver massive business value.
+          Whether you're looking to ship 4-6x faster, extend your runway, or scale your design team without massive hiring—let's talk about how I can help.
         </p>
       </section>
 
@@ -63,7 +69,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl">
           {/* Form */}
           <Card className="p-8">
-            <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
+            <h2 className="text-2xl font-bold mb-6">Schedule a Discovery Call</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -93,26 +99,40 @@ export default function Contact() {
               </div>
               <div>
                 <label htmlFor="company" className="block text-sm font-medium mb-2">
-                  Company
+                  Company *
                 </label>
                 <Input
                   id="company"
                   type="text"
+                  required
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   placeholder="Your company name"
                 />
               </div>
               <div>
+                <label htmlFor="role" className="block text-sm font-medium mb-2">
+                  Your Role *
+                </label>
+                <Input
+                  id="role"
+                  type="text"
+                  required
+                  value={formData.role}
+                  onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                  placeholder="e.g., VP Product, Head of Design, Partner at VC"
+                />
+              </div>
+              <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Message *
+                  What challenge are you trying to solve? *
                 </label>
                 <Textarea
                   id="message"
                   required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Tell me about your project or opportunity..."
+                  placeholder="Tell me about your product, timeline, and what success looks like..."
                   rows={6}
                 />
               </div>
@@ -125,30 +145,48 @@ export default function Contact() {
           {/* Info */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6">What I'm Looking For</h2>
+              <h2 className="text-2xl font-bold mb-6">Who I Work With</h2>
+              <div className="space-y-6">
+                <Card className="p-4">
+                  <h3 className="font-semibold mb-2">💰 VCs & Investors</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Help portfolio companies ship faster, extend runway, and de-risk product development. Typical engagement: 4-12 weeks, $50K-200K, 6-10x ROI.
+                  </p>
+                </Card>
+                <Card className="p-4">
+                  <h3 className="font-semibold mb-2">🚀 Product Leaders</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Accelerate shipping velocity, unblock design and engineering teams, deliver predictable outcomes. Typical engagement: Design systems, product redesigns, rapid prototyping.
+                  </p>
+                </Card>
+                <Card className="p-4">
+                  <h3 className="font-semibold mb-2">🎨 Design Leaders</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Scale design without massive hiring, build systems that last, prove design's business impact. Typical engagement: Design systems, AI workflow training, governance setup.
+                  </p>
+                </Card>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Engagement Options</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">Role Type</h3>
-                  <p className="text-muted-foreground">
-                    Principal Product Designer, VP Product Design, Head of Design, or similar senior IC/leadership roles
+                  <h3 className="font-semibold mb-2">Project-Based Consulting</h3>
+                  <p className="text-sm text-muted-foreground">
+                    4-12 week engagements for design systems, product redesigns, or strategic UX initiatives. $35K-200K depending on scope and company stage.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Compensation</h3>
-                  <p className="text-muted-foreground">
-                    $220K-$280K+ (justified by replacing 7-person team and delivering 84x faster)
+                  <h3 className="font-semibold mb-2">Retainer</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Ongoing partnership for continuous product development and team support. $18K-40K/month for startups, $35K-80K/month for enterprise.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Work Style</h3>
-                  <p className="text-muted-foreground">
-                    Remote-first (based in Colorado), full-time contract or permanent roles
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2">Ideal Companies</h3>
-                  <p className="text-muted-foreground">
-                    Well-funded startups (Series B-D), tech companies with innovation teams, or enterprise SaaS companies that value speed and ROI
+                  <h3 className="font-semibold mb-2">Strategic Leadership Roles</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Principal, Head of, or VP Product Design roles where I can deliver massive business value. Remote-first, based in Colorado.
                   </p>
                 </div>
               </div>
@@ -189,10 +227,36 @@ export default function Contact() {
             </div>
 
             <div className="p-6 bg-muted rounded-lg">
-              <h3 className="font-semibold mb-2">Response Time</h3>
-              <p className="text-sm text-muted-foreground">
-                I typically respond to inquiries within 24 hours. For urgent matters, please mention that in your message.
-              </p>
+              <h3 className="font-semibold mb-2">What to Expect</h3>
+              <ul className="text-sm text-muted-foreground space-y-2">
+                <li>• I typically respond within 24 hours</li>
+                <li>• Discovery calls are 30-45 minutes</li>
+                <li>• I'll share relevant case studies and ROI examples</li>
+                <li>• No obligation—just an honest conversation about fit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="bg-muted/30 py-16">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl font-bold mb-8">Recent Results</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">$3M+</div>
+                <div className="text-sm text-muted-foreground">Value Created</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">4-6x</div>
+                <div className="text-sm text-muted-foreground">Faster Delivery</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">6-10x</div>
+                <div className="text-sm text-muted-foreground">Typical ROI</div>
+              </div>
             </div>
           </div>
         </div>
@@ -206,7 +270,7 @@ export default function Contact() {
               © 2025 Ryan Winzenburg. All rights reserved.
             </div>
             <div className="flex gap-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://linkedin.com/in/ryanwinzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 LinkedIn
               </a>
               <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
