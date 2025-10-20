@@ -98,9 +98,9 @@ export default function Methodology() {
                     <div>
                       <div className="font-semibold mb-2">Business Value</div>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>💰 <strong>For VCs:</strong> Validate assumptions fast, reduce risk</li>
-                        <li>🚀 <strong>For PMs:</strong> Data-driven roadmap in days</li>
-                        <li>🎨 <strong>For Design:</strong> Research at scale without hiring</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Validate assumptions fast, reduce risk</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Data-driven roadmap in days</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> <strong>For Design:</strong> Research at scale without hiring</li>
                       </ul>
                     </div>
                   </div>
@@ -143,9 +143,9 @@ export default function Methodology() {
                     <div>
                       <div className="font-semibold mb-2">Business Value</div>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>💰 <strong>For VCs:</strong> Validate product-market fit fast</li>
-                        <li>🚀 <strong>For PMs:</strong> Test with users in week 1</li>
-                        <li>🎨 <strong>For Design:</strong> Skip low-fi, go straight to hi-fi</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Validate product-market fit fast</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Test with users in week 1</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> <strong>For Design:</strong> Skip low-fi, go straight to hi-fi</li>
                       </ul>
                     </div>
                   </div>
@@ -188,8 +188,8 @@ export default function Methodology() {
                     <div>
                       <div className="font-semibold mb-2">Business Value</div>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>💰 <strong>For VCs:</strong> No prototype-to-production gap</li>
-                        <li>🚀 <strong>For PMs:</strong> Ship to production immediately</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> No prototype-to-production gap</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Ship to production immediately</li>
                         <li>⚙️ <strong>For Engineering:</strong> Zero technical debt</li>
                       </ul>
                     </div>
@@ -233,8 +233,8 @@ export default function Methodology() {
                     <div>
                       <div className="font-semibold mb-2">Business Value</div>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>💰 <strong>For VCs:</strong> Reduce post-launch bugs</li>
-                        <li>🚀 <strong>For PMs:</strong> Ship with confidence</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Reduce post-launch bugs</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Ship with confidence</li>
                         <li>⚙️ <strong>For Engineering:</strong> Automated QA pipeline</li>
                       </ul>
                     </div>
@@ -278,9 +278,9 @@ export default function Methodology() {
                     <div>
                       <div className="font-semibold mb-2">Business Value</div>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>💰 <strong>For VCs:</strong> Reduce future maintenance costs</li>
-                        <li>🚀 <strong>For PMs:</strong> Team is self-sufficient</li>
-                        <li>🎨 <strong>For Design:</strong> Your team learns AI workflows</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Reduce future maintenance costs</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Team is self-sufficient</li>
+                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> <strong>For Design:</strong> Your team learns AI workflows</li>
                       </ul>
                     </div>
                   </div>

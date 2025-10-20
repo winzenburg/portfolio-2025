@@ -103,15 +103,15 @@ export default function Work() {
                   <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
                   <div className="space-y-3 text-sm">
                     <div>
-                      <div className="font-medium mb-1">💰 For VCs/Board</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> For VCs/Board</div>
                       <div className="text-muted-foreground">$1M+ saved = 8 months extended runway</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">🚀 For Product Team</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> For Product Team</div>
                       <div className="text-muted-foreground">Shipped v2.0 6 months ahead of schedule</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">🎨 For Design Team</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> For Design Team</div>
                       <div className="text-muted-foreground">4-6x faster feature delivery without hiring</div>
                     </div>
                     <div>
@@ -171,11 +171,11 @@ export default function Work() {
                   <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
                   <div className="space-y-3 text-sm">
                     <div>
-                      <div className="font-medium mb-1">💰 For C-Suite</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> For C-Suite</div>
                       <div className="text-muted-foreground">Prevented $50M+ in lost revenue</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">🚀 For Product Team</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> For Product Team</div>
                       <div className="text-muted-foreground">Validated solution in 4 days vs. 12 months</div>
                     </div>
                     <div>
@@ -239,15 +239,15 @@ export default function Work() {
                   <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
                   <div className="space-y-3 text-sm">
                     <div>
-                      <div className="font-medium mb-1">💰 For Finance</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> For Finance</div>
                       <div className="text-muted-foreground">$2M annual savings from efficiency</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">🚀 For Product Teams</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> For Product Teams</div>
                       <div className="text-muted-foreground">40% faster time-to-market</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">🎨 For Design</div>
+                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> For Design</div>
                       <div className="text-muted-foreground">Consistent brand across 12 teams</div>
                     </div>
                     <div>

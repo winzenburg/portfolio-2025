@@ -148,19 +148,19 @@ export default function Contact() {
               <h2 className="text-2xl font-bold mb-6">Who I Work With</h2>
               <div className="space-y-6">
                 <Card className="p-4">
-                  <h3 className="font-semibold mb-2">💰 VCs & Investors</h3>
+                  <h3 className="font-semibold mb-2"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> VCs & Investors</h3>
                   <p className="text-sm text-muted-foreground">
                     Help portfolio companies ship faster, extend runway, and de-risk product development. Typical engagement: 4-12 weeks, $50K-200K, 6-10x ROI.
                   </p>
                 </Card>
                 <Card className="p-4">
-                  <h3 className="font-semibold mb-2">🚀 Product Leaders</h3>
+                  <h3 className="font-semibold mb-2"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> Product Leaders</h3>
                   <p className="text-sm text-muted-foreground">
                     Accelerate shipping velocity, unblock design and engineering teams, deliver predictable outcomes. Typical engagement: Design systems, product redesigns, rapid prototyping.
                   </p>
                 </Card>
                 <Card className="p-4">
-                  <h3 className="font-semibold mb-2">🎨 Design Leaders</h3>
+                  <h3 className="font-semibold mb-2"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> Design Leaders</h3>
                   <p className="text-sm text-muted-foreground">
                     Scale design without massive hiring, build systems that last, prove design's business impact. Typical engagement: Design systems, AI workflow training, governance setup.
                   </p>
