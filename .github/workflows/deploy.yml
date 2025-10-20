@@ -32,14 +32,10 @@ jobs:
           version: 8
       
       - name: Install dependencies
-        run: |
-          cd client
-          pnpm install
+        run: pnpm install
       
       - name: Build
-        run: |
-          cd client
-          pnpm run build
+        run: pnpm run build
         env:
           NODE_ENV: production
       
@@ -49,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./client/dist
+          path: ./dist/public
   
   deploy:
     environment:
