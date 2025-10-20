@@ -22,6 +22,12 @@ export default function Methodology() {
               <Link href="/about">
                 <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
               </Link>
+              <Link href="/services">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
+              </Link>
+              <Link href="/articles">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
+              </Link>
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
@@ -33,10 +39,10 @@ export default function Methodology() {
       {/* Hero */}
       <section className="container py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          How I Deliver 84x Faster
+          How I Deliver 4-6x Faster
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl">
-          My 84x acceleration is not magic; it is the result of a rigorous, repeatable methodology that combines 25 years of deep UX expertise with AI-augmented workflows.
+          A proven, repeatable methodology that combines 25 years of Fortune 50 expertise with AI-augmented workflows to deliver enterprise quality at startup speed.
         </p>
       </section>
 
@@ -46,13 +52,13 @@ export default function Methodology() {
           <h2 className="text-3xl font-bold mb-6">The Philosophy: Expert-Guided AI Orchestration</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-muted-foreground mb-6">
-              The fundamental flaw in how most people use AI is that they treat it as an autonomous creator. They ask it to "design a webpage" and are disappointed with the generic, soulless results. This is the wrong approach.
+              Most people use AI wrong. They ask it to "design a webpage" and get generic, soulless results. That's not how I work.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              My methodology is based on a different philosophy: <strong>AI as a force multiplier, guided by an expert practitioner.</strong> I don't ask the AI to think for me. I do the strategic thinking, and I use the AI to execute at a scale and speed that is humanly impossible. I am the architect and the conductor; the AI is my orchestra.
+              My methodology treats <strong>AI as a force multiplier, guided by expert judgment.</strong> I do the strategic thinking—what to build, why it matters, how it should work. AI handles the execution—writing code, generating documentation, running tests. The result? Enterprise quality delivered at a speed that was previously impossible.
             </p>
             <p className="text-lg text-muted-foreground">
-              This workflow is a system of prompts, quality gates, and iterative refinement, where I break down a massive project into a series of precise, well-defined tasks that an AI can perform flawlessly under my supervision.
+              This isn't about replacing human expertise. It's about amplifying it. I'm the architect and conductor; AI is my orchestra.
             </p>
           </div>
         </div>
@@ -76,32 +82,33 @@ export default function Methodology() {
                   <h3 className="text-2xl font-bold mb-3">AI-Powered Research & Strategy</h3>
                   <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Days</div>
                   <p className="text-muted-foreground mb-6">
-                    Achieve deep understanding of the problem space and define a data-driven strategy in hours, not months.
+                    Deep understanding of the problem space and data-driven strategy in days, not months.
                   </p>
-                  <div className="space-y-3">
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <div className="font-semibold mb-1">Data Synthesis</div>
-                      <p className="text-sm text-muted-foreground">
-                        Feed AI hundreds of pages of raw data: user interviews, surveys, support tickets, market research. AI synthesizes information, identifying key themes and pain points in hours instead of weeks.
-                      </p>
+                      <div className="font-semibold mb-2">What I Do</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>• Synthesize user research, surveys, support tickets</li>
+                        <li>• Conduct heuristic analysis of existing products</li>
+                        <li>• Create data-driven personas and journey maps</li>
+                        <li>• Identify high-impact opportunities</li>
+                      </ul>
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Heuristic Analysis</div>
-                      <p className="text-sm text-muted-foreground">
-                        Use AI to conduct rapid, comprehensive heuristic analysis of existing products, mapping every usability issue to Nielsen's 10 Heuristics.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Persona & Journey Maps</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate data-driven personas and journey maps that accurately reflect the user base, not generic templates.
-                      </p>
+                      <div className="font-semibold mb-2">Business Value</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>💰 <strong>For VCs:</strong> Validate assumptions fast, reduce risk</li>
+                        <li>🚀 <strong>For PMs:</strong> Data-driven roadmap in days</li>
+                        <li>🎨 <strong>For Design:</strong> Research at scale without hiring</li>
+                      </ul>
                     </div>
                   </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
+
+                  <div className="p-4 bg-muted rounded-lg">
+                    <div className="font-semibold mb-1">Deliverable</div>
                     <div className="text-sm text-muted-foreground">
-                      Comprehensive strategy document, data-driven personas, prioritized list of high-impact opportunities
+                      Strategy document, personas, prioritized opportunities, executive summary
                     </div>
                   </div>
                 </div>
@@ -117,35 +124,36 @@ export default function Methodology() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Generated Design & Prototyping</h3>
+                  <h3 className="text-2xl font-bold mb-3">Design & Prototyping</h3>
                   <div className="text-sm text-muted-foreground mb-4">Timeline: 3-5 Days</div>
                   <p className="text-muted-foreground mb-6">
-                    Move from strategy to high-fidelity, interactive prototype without the traditional, slow wireframing process.
+                    High-fidelity, interactive prototypes without the traditional slow wireframing process.
                   </p>
-                  <div className="space-y-3">
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <div className="font-semibold mb-1">Information Architecture Modeling</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate multiple IA and navigation models. Explore a dozen approaches in the time it takes to create one manually.
-                      </p>
+                      <div className="font-semibold mb-2">What I Do</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>• Model information architecture and navigation</li>
+                        <li>• Generate production-quality components</li>
+                        <li>• Build interactive, high-fidelity prototypes</li>
+                        <li>• Iterate based on stakeholder feedback</li>
+                      </ul>
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Component & Page Generation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Provide AI with design tokens and high-level structure; it generates production-quality code for entire pages and components.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Interactive Prototyping</div>
-                      <p className="text-sm text-muted-foreground">
-                        Because AI generates real code, output is an interactive, high-fidelity prototype from day one. No separate prototyping phase.
-                      </p>
+                      <div className="font-semibold mb-2">Business Value</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>💰 <strong>For VCs:</strong> Validate product-market fit fast</li>
+                        <li>🚀 <strong>For PMs:</strong> Test with users in week 1</li>
+                        <li>🎨 <strong>For Design:</strong> Skip low-fi, go straight to hi-fi</li>
+                      </ul>
                     </div>
                   </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
+
+                  <div className="p-4 bg-muted rounded-lg">
+                    <div className="font-semibold mb-1">Deliverable</div>
                     <div className="text-sm text-muted-foreground">
-                      Fully interactive, high-fidelity prototype built with production-ready code
+                      Fully interactive prototype built with production-ready code
                     </div>
                   </div>
                 </div>
@@ -161,35 +169,36 @@ export default function Methodology() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Assisted Development & Refinement</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 5-10 Days</div>
+                  <h3 className="text-2xl font-bold mb-3">Production Development</h3>
+                  <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Weeks</div>
                   <p className="text-muted-foreground mb-6">
-                    Build out full application or design system with enterprise-grade quality and feature completeness.
+                    Production-ready code with enterprise quality: type-safe, accessible, tested, documented.
                   </p>
-                  <div className="space-y-3">
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <div className="font-semibold mb-1">Scaled Component Production</div>
-                      <p className="text-sm text-muted-foreground">
-                        Build full library of components from simplest atoms to most complex organisms. For the SaaS Design System: 48 components, 63,813 lines of code in days.
-                      </p>
+                      <div className="font-semibold mb-2">What I Do</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>• Write production code (React, TypeScript, Angular)</li>
+                        <li>• Implement design tokens and theming</li>
+                        <li>• Build reusable component library</li>
+                        <li>• Ensure 100% WCAG AA compliance</li>
+                      </ul>
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Complex Feature Implementation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Guide AI to implement complex business logic, state management, and API integrations. Provide architectural patterns and review for quality.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Iterative Refinement</div>
-                      <p className="text-sm text-muted-foreground">
-                        Use AI to rapidly refactor code, implement new features, and respond to feedback with incredibly tight iteration loops.
-                      </p>
+                      <div className="font-semibold mb-2">Business Value</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>💰 <strong>For VCs:</strong> No prototype-to-production gap</li>
+                        <li>🚀 <strong>For PMs:</strong> Ship to production immediately</li>
+                        <li>⚙️ <strong>For Engineering:</strong> Zero technical debt</li>
+                      </ul>
                     </div>
                   </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
+
+                  <div className="p-4 bg-muted rounded-lg">
+                    <div className="font-semibold mb-1">Deliverable</div>
                     <div className="text-sm text-muted-foreground">
-                      Feature-complete application or design system with clean, scalable, production-ready codebase
+                      Production-ready codebase, component library, design tokens
                     </div>
                   </div>
                 </div>
@@ -205,35 +214,36 @@ export default function Methodology() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Driven Testing & QA</h3>
+                  <h3 className="text-2xl font-bold mb-3">Testing & Quality Assurance</h3>
                   <div className="text-sm text-muted-foreground mb-4">Timeline: 2-3 Days</div>
                   <p className="text-muted-foreground mb-6">
-                    Achieve enterprise-grade quality and test coverage without a dedicated QA team.
+                    Comprehensive automated testing ensures enterprise quality without manual QA overhead.
                   </p>
-                  <div className="space-y-3">
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <div className="font-semibold mb-1">Automated Test Generation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Use AI to write comprehensive test suites: unit tests for components and full E2E tests with Playwright. SaaS Design System: 9,566 lines of test code, 77% coverage.
-                      </p>
+                      <div className="font-semibold mb-2">What I Do</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>• Write E2E tests with Playwright</li>
+                        <li>• Automated accessibility audits (axe-core)</li>
+                        <li>• Visual regression testing</li>
+                        <li>• Performance optimization</li>
+                      </ul>
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Accessibility Auditing</div>
-                      <p className="text-sm text-muted-foreground">
-                        Run automated accessibility audits with axe-core, identifying and fixing hundreds of violations. Guarantee 100% WCAG 2.2 AA compliance.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Visual Regression Testing</div>
-                      <p className="text-sm text-muted-foreground">
-                        Set up automated visual regression tests comparing screenshots of every component to ensure pixel-perfect consistency.
-                      </p>
+                      <div className="font-semibold mb-2">Business Value</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>💰 <strong>For VCs:</strong> Reduce post-launch bugs</li>
+                        <li>🚀 <strong>For PMs:</strong> Ship with confidence</li>
+                        <li>⚙️ <strong>For Engineering:</strong> Automated QA pipeline</li>
+                      </ul>
                     </div>
                   </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
+
+                  <div className="p-4 bg-muted rounded-lg">
+                    <div className="font-semibold mb-1">Deliverable</div>
                     <div className="text-sm text-muted-foreground">
-                      Robust, well-tested product with high test coverage and full accessibility compliance
+                      Comprehensive test suite, accessibility audit, performance report
                     </div>
                   </div>
                 </div>
@@ -249,35 +259,36 @@ export default function Methodology() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Generated Documentation</h3>
+                  <h3 className="text-2xl font-bold mb-3">Documentation & Handoff</h3>
                   <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Days</div>
                   <p className="text-muted-foreground mb-6">
-                    Produce comprehensive, world-class documentation that makes the system easy to use and maintain.
+                    Comprehensive documentation ensures your team can maintain and extend the system long after I'm gone.
                   </p>
-                  <div className="space-y-3">
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <div className="font-semibold mb-1">Storybook & MDX Generation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate detailed Storybook stories for every component with controls to test every prop and state. 14-section documentation standard per component.
-                      </p>
+                      <div className="font-semibold mb-2">What I Do</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>• Generate component documentation (Storybook)</li>
+                        <li>• Write implementation guides</li>
+                        <li>• Create governance playbooks</li>
+                        <li>• Train your team on AI workflows</li>
+                      </ul>
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Context & Workflow Documentation</div>
-                      <p className="text-sm text-muted-foreground">
-                        Generate detailed markdown files explaining architecture, design decisions, and development workflows. 40+ context documents for SaaS Design System.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-1">Code Commenting</div>
-                      <p className="text-sm text-muted-foreground">
-                        Ensure entire codebase is well-commented, making it easy for any developer to understand and contribute.
-                      </p>
+                      <div className="font-semibold mb-2">Business Value</div>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>💰 <strong>For VCs:</strong> Reduce future maintenance costs</li>
+                        <li>🚀 <strong>For PMs:</strong> Team is self-sufficient</li>
+                        <li>🎨 <strong>For Design:</strong> Your team learns AI workflows</li>
+                      </ul>
                     </div>
                   </div>
-                  <div className="mt-6 p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Output</div>
+
+                  <div className="p-4 bg-muted rounded-lg">
+                    <div className="font-semibold mb-1">Deliverable</div>
                     <div className="text-sm text-muted-foreground">
-                      Fully documented, enterprise-grade system ready for immediate adoption
+                      Complete documentation, governance playbook, team training
                     </div>
                   </div>
                 </div>
@@ -287,68 +298,58 @@ export default function Methodology() {
         </div>
       </section>
 
-      {/* Tools */}
+      {/* Why This Works */}
       <section className="container py-24">
         <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12">The AI Tool Stack</h2>
+          <h2 className="text-3xl font-bold mb-12">Why This Methodology Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Manus.im</h3>
-              <p className="text-sm text-muted-foreground">
-                Multi-agent orchestration for complex workflows, research synthesis, and parallel task execution.
+              <h3 className="text-xl font-bold mb-3">Proven at Scale</h3>
+              <p className="text-muted-foreground">
+                25 years at Fortune 50 companies means I've seen every failure mode. This methodology is battle-tested at enterprise scale.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Claude Code</h3>
-              <p className="text-sm text-muted-foreground">
-                Production-quality code generation with deep context understanding and architectural reasoning.
+              <h3 className="text-xl font-bold mb-3">Repeatable Process</h3>
+              <p className="text-muted-foreground">
+                Not a one-off miracle. I've delivered $3M+ in value across 3 recent projects using this exact methodology.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Cursor</h3>
-              <p className="text-sm text-muted-foreground">
-                AI-native code editor for rapid iteration, refactoring, and inline code generation.
+              <h3 className="text-xl font-bold mb-3">Your Team Gets Better</h3>
+              <p className="text-muted-foreground">
+                I don't just deliver a project—I train your team on AI workflows. The velocity increase is permanent.
               </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* The Result */}
-      <section className="bg-primary text-primary-foreground py-24">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            The Result: Unprecedented Velocity and Quality
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            This 5-phase methodology is the engine behind my ability to deliver projects at 84x velocity. It is a repeatable, scalable, and battle-tested system that combines the best of human expertise with the raw power of artificial intelligence.
-          </p>
-          <Link href="/work">
-            <Button size="lg" variant="secondary">
-              See It In Action →
-            </Button>
-          </Link>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t py-12">
+      {/* CTA */}
+      <section className="bg-muted/30 py-24">
         <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-muted-foreground">
-              © 2025 Ryan Winzenburg. All rights reserved.
-            </div>
-            <div className="flex gap-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                LinkedIn
-              </a>
-              <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                GitHub
-              </a>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Accelerate Your Team?
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Let's discuss how this methodology can help you ship 4-6x faster without adding headcount.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact">
+                <Button size="lg">
+                  Schedule a Discovery Call
+                </Button>
+              </Link>
+              <Link href="/work">
+                <Button size="lg" variant="outline">
+                  View Case Studies
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
