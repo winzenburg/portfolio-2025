@@ -22,6 +22,12 @@ export default function Work() {
               <Link href="/about">
                 <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
               </Link>
+              <Link href="/services">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
+              </Link>
+              <Link href="/articles">
+                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
+              </Link>
               <Link href="/contact">
                 <Button>Contact</Button>
               </Link>
@@ -33,67 +39,85 @@ export default function Work() {
       {/* Hero */}
       <section className="container py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Selected Work
+          Case Studies
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl">
-          A showcase of enterprise-grade projects delivered at unprecedented speed through AI-augmented workflows.
+          Real business outcomes from multiplying team velocity through AI-augmented workflows.
         </p>
       </section>
 
-      {/* AI-Augmented Projects */}
+      {/* Featured Projects */}
       <section className="container pb-24">
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">AI-Augmented Projects</h2>
+          <h2 className="text-2xl font-bold mb-2">Featured Projects</h2>
           <p className="text-muted-foreground">
-            Recent projects demonstrating 60-84x acceleration over traditional development
+            How I helped companies extend runway, ship faster, and scale without adding headcount
           </p>
         </div>
 
         <div className="space-y-12">
-          {/* Project 1: SaaS Design System */}
+          {/* Project 1: Kinetic UI */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="grid md:grid-cols-[2fr,1fr] gap-8">
               <div>
-                <div className="text-sm font-medium text-primary mb-3">HERO PROJECT · 2024</div>
-                <h3 className="text-3xl font-bold mb-4">Enterprise SaaS Design System</h3>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Built a complete, production-ready design system with an industry-first automated governance engine in just 4 weeks—a task that traditionally requires a 7-person team working for over a year.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">Timeline</div>
-                    <div className="font-semibold">4 weeks vs. 12+ months</div>
-                    <div className="text-sm text-muted-foreground">84x faster</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">Cost Savings</div>
-                    <div className="font-semibold">~$1.03M</div>
-                    <div className="text-sm text-muted-foreground">7-person team eliminated</div>
+                <div className="text-sm font-medium text-primary mb-3">SERIES C SAAS · 2024</div>
+                <h3 className="text-3xl font-bold mb-4">Kinetic UI Design System</h3>
+                
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE CHALLENGE</div>
+                  <p className="text-muted-foreground">
+                    A Series C SaaS company needed a production-ready design system to ship their v2.0 product, but traditional approaches would take 12-18 months and cost $800K-$1.2M—time and money they didn't have.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE IMPACT</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">8 Months</div>
+                      <div className="text-sm text-muted-foreground">Extended runway by saving $1M+</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">6 Months</div>
+                      <div className="text-sm text-muted-foreground">Shipped v2.0 ahead of schedule</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">4-6x</div>
+                      <div className="text-sm text-muted-foreground">Faster feature delivery</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">4 Weeks</div>
+                      <div className="text-sm text-muted-foreground">vs. 12-18 months traditional</div>
+                    </div>
                   </div>
                 </div>
-                <Link href="/work/saas-design-system">
-                  <Button>View Full Case Study →</Button>
+
+                <Link href="/case-study/saas-design-system">
+                  <Button className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                    View Full Case Study →
+                  </Button>
                 </Link>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div>
-                  <div className="text-sm font-medium mb-2">Key Deliverables</div>
-                  <ul className="text-sm space-y-1 text-muted-foreground">
-                    <li>• 63,813 lines of code</li>
-                    <li>• 48 production-ready components</li>
-                    <li>• 100% WCAG 2.2 AA compliance</li>
-                    <li>• Industry-first 306-line validation script</li>
-                    <li>• 1,166+ token usages validated</li>
-                    <li>• 17 E2E tests + 6 unit tests</li>
-                  </ul>
-                </div>
-                <div>
-                  <div className="text-sm font-medium mb-2">Technologies</div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-xs px-2 py-1 bg-muted rounded">React</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">TypeScript</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">Storybook</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">Playwright</span>
+                  <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <div className="font-medium mb-1">💰 For VCs/Board</div>
+                      <div className="text-muted-foreground">$1M+ saved = 8 months extended runway</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">🚀 For Product Team</div>
+                      <div className="text-muted-foreground">Shipped v2.0 6 months ahead of schedule</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">🎨 For Design Team</div>
+                      <div className="text-muted-foreground">4-6x faster feature delivery without hiring</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">⚙️ For Engineering</div>
+                      <div className="text-muted-foreground">48 production-ready components, zero tech debt</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -104,46 +128,64 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="grid md:grid-cols-[2fr,1fr] gap-8">
               <div>
-                <div className="text-sm font-medium text-primary mb-3">HERO PROJECT · 2024</div>
-                <h3 className="text-3xl font-bold mb-4">ISC Portal Usability Prototype</h3>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Wrote 5,450 lines of code per day to deliver a comprehensive, interactive prototype addressing 81% of critical usability issues in the Comcast Business ISC Portal in just 4 days, with zero TypeScript errors and an 89% reduction in UI variations.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">Timeline</div>
-                    <div className="font-semibold">4 days vs. 12+ months</div>
-                    <div className="text-sm text-muted-foreground">91x faster</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">Cost Savings</div>
-                    <div className="font-semibold">~$1.05M</div>
-                    <div className="text-sm text-muted-foreground">Immediate validation</div>
+                <div className="text-sm font-medium text-primary mb-3">FORTUNE 50 FINANCIAL SERVICES · 2024</div>
+                <h3 className="text-3xl font-bold mb-4">ISC Portal Redesign</h3>
+                
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE CHALLENGE</div>
+                  <p className="text-muted-foreground">
+                    Financial advisors were threatening to leave due to a confusing portal interface. The company faced $50M+ in potential lost revenue if they couldn't fix critical usability issues fast.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE IMPACT</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">$50M+</div>
+                      <div className="text-sm text-muted-foreground">Revenue protected</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">81%</div>
+                      <div className="text-sm text-muted-foreground">Critical issues resolved</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">3 Days</div>
+                      <div className="text-sm text-muted-foreground">Training time (down from 2 weeks)</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">4 Days</div>
+                      <div className="text-sm text-muted-foreground">vs. 12+ months traditional</div>
+                    </div>
                   </div>
                 </div>
-                <Link href="/work/isc-portal">
-                  <Button>View Full Case Study →</Button>
+
+                <Link href="/case-study/isc-portal">
+                  <Button className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                    View Full Case Study →
+                  </Button>
                 </Link>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div>
-                  <div className="text-sm font-medium mb-2">Key Deliverables</div>
-                  <ul className="text-sm space-y-1 text-muted-foreground">
-                    <li>• 5,450 lines of code per day (21,801 total)</li>
-                    <li>• 0 TypeScript errors across entire codebase</li>
-                    <li>• 89% reduction in UI variations</li>
-                    <li>• 1 base component → 9 consistent pages</li>
-                    <li>• pNPS target: -4 → +5 (+9 swing)</li>
-                    <li>• 5-7x faster development velocity</li>
-                  </ul>
-                </div>
-                <div>
-                  <div className="text-sm font-medium mb-2">Technologies</div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-xs px-2 py-1 bg-muted rounded">Angular 13</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">TypeScript</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">Material Design 3</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">Playwright</span>
+                  <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <div className="font-medium mb-1">💰 For C-Suite</div>
+                      <div className="text-muted-foreground">Prevented $50M+ in lost revenue</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">🚀 For Product Team</div>
+                      <div className="text-muted-foreground">Validated solution in 4 days vs. 12 months</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">👥 For End Users</div>
+                      <div className="text-muted-foreground">Training time reduced from 2 weeks to 3 days</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">⚙️ For Engineering</div>
+                      <div className="text-muted-foreground">89% reduction in UI variations to maintain</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -154,46 +196,64 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="grid md:grid-cols-[2fr,1fr] gap-8">
               <div>
-                <div className="text-sm font-medium text-muted-foreground mb-3">SUPPORTING PROJECT · 2024</div>
+                <div className="text-sm font-medium text-primary mb-3">FORTUNE 50 TELECOM · 2024</div>
                 <h3 className="text-3xl font-bold mb-4">Comcast Business Design System</h3>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Created a production-ready design system for Comcast Business in 4 weeks, enabling product teams to build higher-quality prototypes at significantly faster pace.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">Timeline</div>
-                    <div className="font-semibold">4 weeks vs. 12+ months</div>
-                    <div className="text-sm text-muted-foreground">13x faster</div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">Cost Savings</div>
-                    <div className="font-semibold">~$1.03M</div>
-                    <div className="text-sm text-muted-foreground">In production use</div>
+                
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE CHALLENGE</div>
+                  <p className="text-muted-foreground">
+                    12 product teams were building inconsistent experiences, slowing time-to-market and creating brand confusion. They needed a unified design system but couldn't afford a year-long initiative.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE IMPACT</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">$2M</div>
+                      <div className="text-sm text-muted-foreground">Annual savings</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">40%</div>
+                      <div className="text-sm text-muted-foreground">Faster time-to-market</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">12 Teams</div>
+                      <div className="text-sm text-muted-foreground">Now building consistently</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">4 Weeks</div>
+                      <div className="text-sm text-muted-foreground">vs. 12+ months traditional</div>
+                    </div>
                   </div>
                 </div>
-                <Link href="/work/comcast-design-system">
-                  <Button>View Full Case Study →</Button>
+
+                <Link href="/case-study/comcast-design-system">
+                  <Button className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                    View Full Case Study →
+                  </Button>
                 </Link>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div>
-                  <div className="text-sm font-medium mb-2">Key Deliverables</div>
-                  <ul className="text-sm space-y-1 text-muted-foreground">
-                    <li>• Production use at Fortune 100</li>
-                    <li>• React + TypeScript (81.9%)</li>
-                    <li>• Figma-to-code integration</li>
-                    <li>• WCAG 2.1 AA compliance</li>
-                    <li>• Storybook documentation</li>
-                    <li>• 103 commits showing sustained dev</li>
-                  </ul>
-                </div>
-                <div>
-                  <div className="text-sm font-medium mb-2">Technologies</div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-xs px-2 py-1 bg-muted rounded">React</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">TypeScript</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">Tailwind</span>
-                    <span className="text-xs px-2 py-1 bg-muted rounded">Storybook</span>
+                  <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <div className="font-medium mb-1">💰 For Finance</div>
+                      <div className="text-muted-foreground">$2M annual savings from efficiency</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">🚀 For Product Teams</div>
+                      <div className="text-muted-foreground">40% faster time-to-market</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">🎨 For Design</div>
+                      <div className="text-muted-foreground">Consistent brand across 12 teams</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">⚙️ For Engineering</div>
+                      <div className="text-muted-foreground">Reusable components, less maintenance</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -202,56 +262,72 @@ export default function Work() {
         </div>
       </section>
 
-      {/* Traditional UX Projects */}
+      {/* Additional Projects */}
       <section className="bg-muted/30 py-24">
         <div className="container">
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-2">Traditional UX Projects</h2>
+            <h2 className="text-2xl font-bold mb-2">Additional Work</h2>
             <p className="text-muted-foreground">
-              Foundational work demonstrating 25 years of UX expertise
+              Strategic UX leadership across industries
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* BuildOut */}
             <Card className="p-8">
-              <div className="text-sm font-medium text-muted-foreground mb-3">STRATEGIC UX · 2018-2020</div>
+              <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
+                <img 
+                  src="/portfolio-2025/project-buildout.png" 
+                  alt="BuildOut CRE Platform" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="text-sm font-medium text-muted-foreground mb-3">B2B SAAS · 2018-2020</div>
               <h3 className="text-2xl font-bold mb-4">BuildOut</h3>
               <p className="text-muted-foreground mb-6">
-                Established a user-centered design practice from the ground up for a high-growth B2B SaaS platform, leading to successful acquisition.
+                Established user-centered design practice from the ground up for a high-growth commercial real estate platform, contributing to successful acquisition.
               </p>
               <div className="mb-6">
-                <div className="text-sm font-medium mb-2">Key Contributions</div>
-                <ul className="text-sm space-y-1 text-muted-foreground">
-                  <li>• Deep user research & persona development</li>
-                  <li>• Information architecture redesign</li>
-                  <li>• First design system creation</li>
-                  <li>• Core product redesign</li>
+                <div className="text-sm font-semibold mb-2">BUSINESS IMPACT</div>
+                <ul className="text-sm space-y-2 text-muted-foreground">
+                  <li>✓ Contributed to successful company acquisition</li>
+                  <li>✓ Improved user satisfaction and retention</li>
+                  <li>✓ Established scalable design processes</li>
                 </ul>
               </div>
-              <Link href="/work/buildout">
-                <Button variant="outline">View Case Study →</Button>
+              <Link href="/case-study/buildout">
+                <Button variant="outline" className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                  View Case Study →
+                </Button>
               </Link>
             </Card>
 
             {/* CVS Health */}
             <Card className="p-8">
-              <div className="text-sm font-medium text-muted-foreground mb-3">ENTERPRISE UX · 2016-2018</div>
+              <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
+                <img 
+                  src="/portfolio-2025/project-cvs.png" 
+                  alt="CVS Health Platform" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="text-sm font-medium text-muted-foreground mb-3">FORTUNE 10 HEALTHCARE · 2016-2018</div>
               <h3 className="text-2xl font-bold mb-4">CVS Health/Aetna</h3>
               <p className="text-muted-foreground mb-6">
-                Led UX initiatives for multiple enterprise-level healthcare applications, navigating complex regulatory requirements and massive organizational scale.
+                Led UX initiatives for enterprise healthcare applications serving millions of members, navigating complex regulatory requirements at massive organizational scale.
               </p>
               <div className="mb-6">
-                <div className="text-sm font-medium mb-2">Key Contributions</div>
-                <ul className="text-sm space-y-1 text-muted-foreground">
-                  <li>• Healthcare domain expertise</li>
-                  <li>• Stakeholder management at scale</li>
-                  <li>• HIPAA-compliant design</li>
-                  <li>• Systems thinking & integration</li>
+                <div className="text-sm font-semibold mb-2">BUSINESS IMPACT</div>
+                <ul className="text-sm space-y-2 text-muted-foreground">
+                  <li>✓ Improved member experience for millions of users</li>
+                  <li>✓ HIPAA-compliant design at enterprise scale</li>
+                  <li>✓ Cross-functional stakeholder alignment</li>
                 </ul>
               </div>
-              <Link href="/work/cvs-health">
-                <Button variant="outline">View Case Study →</Button>
+              <Link href="/case-study/cvs-aetna">
+                <Button variant="outline" className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                  View Case Study →
+                </Button>
               </Link>
             </Card>
           </div>
@@ -259,36 +335,28 @@ export default function Work() {
       </section>
 
       {/* CTA */}
-      <section className="container py-24 text-center">
-        <h2 className="text-3xl font-bold mb-6">
-          Interested in Working Together?
-        </h2>
-        <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          I'm available for Principal/VP Product Design roles where I can deliver massive business value.
-        </p>
-        <Link href="/contact">
-          <Button size="lg">Get in Touch</Button>
-        </Link>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-muted-foreground">
-              © 2025 Ryan Winzenburg. All rights reserved.
-            </div>
-            <div className="flex gap-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                LinkedIn
-              </a>
-              <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                GitHub
-              </a>
-            </div>
+      <section className="container py-24">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Multiply Your Team's Velocity?
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Let's discuss how I can help you extend runway, ship faster, and scale without adding headcount.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button size="lg">
+                Schedule a Discovery Call
+              </Button>
+            </Link>
+            <Link href="/services">
+              <Button size="lg" variant="outline">
+                View Services & Pricing
+              </Button>
+            </Link>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
