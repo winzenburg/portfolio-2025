@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
+import { Settings } from "lucide-react";
 
 export default function Methodology() {
   return (
@@ -190,7 +191,10 @@ export default function Methodology() {
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> No prototype-to-production gap</li>
                         <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Ship to production immediately</li>
-                        <li>⚙️ <strong>For Engineering:</strong> Zero technical debt</li>
+                        <li className="flex items-start gap-2">
+                          <Settings className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                          <span><strong>For Engineering:</strong> Zero technical debt</span>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -235,7 +239,10 @@ export default function Methodology() {
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Reduce post-launch bugs</li>
                         <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Ship with confidence</li>
-                        <li>⚙️ <strong>For Engineering:</strong> Automated QA pipeline</li>
+                        <li className="flex items-start gap-2">
+                          <Settings className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                          <span><strong>For Engineering:</strong> Automated QA pipeline</span>
+                        </li>
                       </ul>
                     </div>
                   </div>

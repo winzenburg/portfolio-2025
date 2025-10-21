@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
+import { Zap } from "lucide-react";
 
 export default function About() {
   return (
@@ -69,7 +70,9 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-12">Why Companies Hire Me</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
             <Card className="p-8">
-              <div className="text-4xl mb-4">⚡</div>
+              <div className="mb-4">
+                <Zap className="w-10 h-10 text-primary" />
+              </div>
               <h3 className="text-xl font-bold mb-3">I Make Teams Faster</h3>
               <p className="text-muted-foreground mb-4">
                 My AI-augmented workflows deliver 4-6x faster results. This means your team ships more features per quarter, beats competitors to market, and validates ideas before burning runway.

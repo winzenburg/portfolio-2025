@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
+import { CheckCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -100,21 +101,21 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-4">For VCs & Investors</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Extend Runway 6-12 Months</div>
                     <div className="text-sm">Save $1M+ in development costs</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Ship 4-6x Faster</div>
                     <div className="text-sm">Competitive advantage through velocity</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">De-Risk Investments</div>
                     <div className="text-sm">Proven processes, predictable outcomes</div>
@@ -129,21 +130,21 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-4">For Product Teams</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Ship More Features</div>
                     <div className="text-sm">4-6x more per quarter with your team</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Unblock Your Team</div>
                     <div className="text-sm">Designers and engineers ship faster</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Predictable Delivery</div>
                     <div className="text-sm">Reliable timelines, measurable outcomes</div>
@@ -158,21 +159,21 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-4">For Design Leaders</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Scale Without Hiring</div>
                     <div className="text-sm">10x output without 10x headcount</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Elevate Your Team</div>
                     <div className="text-sm">Designers focus on strategy, not pixels</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Prove Business Value</div>
                     <div className="text-sm">Show design's ROI to the C-suite</div>

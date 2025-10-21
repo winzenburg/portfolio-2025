@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
+import { Settings, Users, CheckCircle } from "lucide-react";
 
 export default function Work() {
   return (
@@ -122,7 +123,10 @@ export default function Work() {
                       <div className="text-muted-foreground">4-6x faster feature delivery without hiring</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">⚙️ For Engineering</div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Settings className="w-4 h-4" />
+                        For Engineering
+                      </div>
                       <div className="text-muted-foreground">48 production-ready components, zero tech debt</div>
                     </div>
                   </div>
@@ -193,11 +197,17 @@ export default function Work() {
                       <div className="text-muted-foreground">Validated solution in 4 days vs. 12 months</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">👥 For End Users</div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Users className="w-4 h-4" />
+                        For End Users
+                      </div>
                       <div className="text-muted-foreground">Training time reduced from 2 weeks to 3 days</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">⚙️ For Engineering</div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Settings className="w-4 h-4" />
+                        For Engineering
+                      </div>
                       <div className="text-muted-foreground">89% reduction in UI variations to maintain</div>
                     </div>
                   </div>
@@ -272,7 +282,10 @@ export default function Work() {
                       <div className="text-muted-foreground">Consistent brand across 12 teams</div>
                     </div>
                     <div>
-                      <div className="font-medium mb-1">⚙️ For Engineering</div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Settings className="w-4 h-4" />
+                        For Engineering
+                      </div>
                       <div className="text-muted-foreground">Reusable components, less maintenance</div>
                     </div>
                   </div>
@@ -311,9 +324,18 @@ export default function Work() {
               <div className="mb-6">
                 <div className="text-sm font-semibold mb-2">BUSINESS IMPACT</div>
                 <ul className="text-sm space-y-2 text-muted-foreground">
-                  <li>✓ Contributed to successful company acquisition</li>
-                  <li>✓ Improved user satisfaction and retention</li>
-                  <li>✓ Established scalable design processes</li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Contributed to successful company acquisition</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Improved user satisfaction and retention</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Established scalable design processes</span>
+                  </li>
                 </ul>
               </div>
               <Link href="/case-study/buildout">
@@ -340,9 +362,18 @@ export default function Work() {
               <div className="mb-6">
                 <div className="text-sm font-semibold mb-2">BUSINESS IMPACT</div>
                 <ul className="text-sm space-y-2 text-muted-foreground">
-                  <li>✓ Improved member experience for millions of users</li>
-                  <li>✓ HIPAA-compliant design at enterprise scale</li>
-                  <li>✓ Cross-functional stakeholder alignment</li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Improved member experience for millions of users</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>HIPAA-compliant design at enterprise scale</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Cross-functional stakeholder alignment</span>
+                  </li>
                 </ul>
               </div>
               <Link href="/case-study/cvs-aetna">
