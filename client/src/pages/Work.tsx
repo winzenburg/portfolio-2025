@@ -210,7 +210,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
-                src="/portfolio-2025/project-comcast.png" 
+                src="/portfolio-2025/project-comcast-design-system.png" 
                 alt="Comcast Business Design System" 
                 className="w-full h-full object-cover object-top"
               />
