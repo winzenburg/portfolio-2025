@@ -105,11 +105,12 @@ export default function Services() {
 
               <div className="space-y-3">
                 <a
-                  href="/portfolio-2025/contact"
+                  href="/portfolio-2025/winzenburg_rate_sheet_startup.pdf"
+                  download
                   className="flex items-center justify-center w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  <ArrowRight className="w-5 h-5 mr-2" />
-                  Request Startup Rate Sheet
+                  <Download className="w-5 h-5 mr-2" />
+                  Download Startup Rate Sheet
                 </a>
                 <div className="text-sm text-gray-500 text-center">
                   Includes: Hourly ($225), Day Rate ($2,000), Projects ($35K-$200K), Retainers ($18K-$40K/mo)
@@ -155,11 +156,12 @@ export default function Services() {
 
               <div className="space-y-3">
                 <a
-                  href="/portfolio-2025/contact"
+                  href="/portfolio-2025/winzenburg_rate_sheet_enterprise.pdf"
+                  download
                   className="flex items-center justify-center w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  <ArrowRight className="w-5 h-5 mr-2" />
-                  Request Enterprise Rate Sheet
+                  <Download className="w-5 h-5 mr-2" />
+                  Download Enterprise Rate Sheet
                 </a>
                 <div className="text-sm text-gray-500 text-center">
                   Includes: Advisory ($300/hr), Workshops ($3,000/day), Projects ($75K-$400K+), Retainers ($35K-$80K+/mo)
