@@ -317,14 +317,14 @@ export default function Services() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/contact"
+              href="/portfolio-2025/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-semibold"
             >
               Schedule Discovery Call
               <ArrowRight className="w-5 h-5 ml-2" />
             </a>
             <a
-              href="/work"
+              href="/portfolio-2025/work"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors font-semibold"
             >
               View Case Studies
