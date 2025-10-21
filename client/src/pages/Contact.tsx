@@ -14,11 +14,41 @@ export default function Contact() {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = `Portfolio Inquiry from ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nRole: ${formData.role}\n\nMessage:\n${formData.message}`;
-    window.location.href = `mailto:ryan@winzenburg.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setSubmitting(true);
+    
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+    
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data as any).toString()
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          role: "",
+          message: ""
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting the form. Please email me directly at ryan@winzenburg.com');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -28,55 +58,103 @@ export default function Contact() {
         <div className="container py-6">
           <nav className="flex items-center justify-between">
             <Link href="/">
-              <span className="text-2xl font-bold">Ryan Winzenburg</span>
+              <a className="text-xl font-bold">Ryan Winzenburg</a>
             </Link>
-            <div className="flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-8">
               <Link href="/work">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Work</span>
+                <a className="text-muted-foreground hover:text-foreground transition-colors">
+                  Work
+                </a>
               </Link>
               <Link href="/methodology">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Methodology</span>
+                <a className="text-muted-foreground hover:text-foreground transition-colors">
+                  Methodology
+                </a>
               </Link>
               <Link href="/about">
-                <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
+                <a className="text-muted-foreground hover:text-foreground transition-colors">
+                  About
+                </a>
               </Link>
               <Link href="/services">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
+                <a className="text-muted-foreground hover:text-foreground transition-colors">
+                  Services
+                </a>
               </Link>
               <Link href="/articles">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
+                <a className="text-muted-foreground hover:text-foreground transition-colors">
+                  Articles
+                </a>
               </Link>
               <Link href="/contact">
-                <span className="text-sm font-medium text-primary">Contact</span>
+                <a className="text-foreground font-medium">
+                  Contact
+                </a>
               </Link>
             </div>
           </nav>
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="container py-16">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Let's Discuss How I Can<br />Help Your Team
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl">
-          Whether you're looking to ship 4-6x faster, extend your runway, or scale your design team without massive hiring—let's talk about how I can help.
-        </p>
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            Let's Talk About Your Project
+          </h1>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Schedule a complimentary discovery call to discuss how AI-augmented UX can accelerate your product development.
+          </p>
+        </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="container pb-24">
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl">
-          {/* Form */}
+      {/* Contact Form Section */}
+      <section className="pb-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12">
           <Card className="p-8">
+            {submitted ? (
+              <div className="text-center py-12">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
+                <p className="text-muted-foreground mb-6">
+                  Thanks for reaching out. I'll get back to you within 24 hours.
+                </p>
+                <button
+                  onClick={() => setSubmitted(false)}
+                  className="text-primary hover:underline"
+                >
+                  Send another message
+                </button>
+              </div>
+            ) : (
+            <>
             <h2 className="text-2xl font-bold mb-6">Schedule a Discovery Call</h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              onSubmit={handleSubmit} 
+              className="space-y-6"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p className="hidden">
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name *
                 </label>
                 <Input
                   id="name"
+                  name="name"
                   type="text"
                   required
                   value={formData.name}
@@ -90,6 +168,7 @@ export default function Contact() {
                 </label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   required
                   value={formData.email}
@@ -103,6 +182,7 @@ export default function Contact() {
                 </label>
                 <Input
                   id="company"
+                  name="company"
                   type="text"
                   required
                   value={formData.company}
@@ -116,85 +196,40 @@ export default function Contact() {
                 </label>
                 <Input
                   id="role"
+                  name="role"
                   type="text"
                   required
                   value={formData.role}
                   onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                  placeholder="e.g., VP Product, Head of Design, Partner at VC"
+                  placeholder="e.g., VP of Product, Design Director"
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  What challenge are you trying to solve? *
+                  Tell me about your project *
                 </label>
                 <Textarea
                   id="message"
+                  name="message"
                   required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Tell me about your product, timeline, and what success looks like..."
+                  placeholder="What challenges are you facing? What are your goals?"
                   rows={6}
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full">
-                Send Message
+              <Button type="submit" className="w-full" disabled={submitting}>
+                {submitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
+            </>
+            )}
           </Card>
 
-          {/* Info */}
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Who I Work With</h2>
-              <div className="space-y-6">
-                <Card className="p-4">
-                  <h3 className="font-semibold mb-2"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> VCs & Investors</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Help portfolio companies ship faster, extend runway, and de-risk product development. Typical engagement: 4-12 weeks, $50K-200K, 6-10x ROI.
-                  </p>
-                </Card>
-                <Card className="p-4">
-                  <h3 className="font-semibold mb-2"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> Product Leaders</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Accelerate shipping velocity, unblock design and engineering teams, deliver predictable outcomes. Typical engagement: Design systems, product redesigns, rapid prototyping.
-                  </p>
-                </Card>
-                <Card className="p-4">
-                  <h3 className="font-semibold mb-2"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> Design Leaders</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Scale design without massive hiring, build systems that last, prove design's business impact. Typical engagement: Design systems, AI workflow training, governance setup.
-                  </p>
-                </Card>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Engagement Options</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold mb-2">Project-Based Consulting</h3>
-                  <p className="text-sm text-muted-foreground">
-                    4-12 week engagements for design systems, product redesigns, or strategic UX initiatives. $35K-200K depending on scope and company stage.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2">Retainer</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Ongoing partnership for continuous product development and team support. $18K-40K/month for startups, $35K-80K/month for enterprise.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2">Strategic Leadership Roles</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Principal, Head of, or VP Product Design roles where I can deliver massive business value. Remote-first, based in Colorado.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Connect With Me</h2>
-              <div className="space-y-3">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
+                <div className="space-y-3">
                 <a
                   href="https://linkedin.com/in/ryanwinzenburg"
                   target="_blank"
@@ -202,7 +237,7 @@ export default function Contact() {
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                   </svg>
                   <span>LinkedIn</span>
                 </a>
@@ -229,8 +264,8 @@ export default function Contact() {
                   </svg>
                   <span>720.515.7182</span>
                 </div>
+                </div>
               </div>
-            </div>
 
             <div className="p-6 bg-muted rounded-lg">
               <h3 className="font-semibold mb-2">What to Expect</h3>
@@ -241,51 +276,10 @@ export default function Contact() {
                 <li>• No obligation—just an honest conversation about fit</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof */}
-      <section className="bg-muted/30 py-16">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-8">Recent Results</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">$3M+</div>
-                <div className="text-sm text-muted-foreground">Value Created</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">4-6x</div>
-                <div className="text-sm text-muted-foreground">Faster Delivery</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">6-10x</div>
-                <div className="text-sm text-muted-foreground">Typical ROI</div>
-              </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-muted-foreground">
-              © 2025 Ryan Winzenburg. All rights reserved.
-            </div>
-            <div className="flex gap-6">
-              <a href="https://linkedin.com/in/ryanwinzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                LinkedIn
-              </a>
-              <a href="https://github.com/winzenburg" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
