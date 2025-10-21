@@ -100,9 +100,9 @@ export default function Work() {
                 </div>
 
                 <Link href="/case-study/saas-design-system">
-                  <Button className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                  <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
-                  </Button>
+                  </a>
                 </Link>
               </div>
               <div className="space-y-6">
@@ -175,9 +175,9 @@ export default function Work() {
                 </div>
 
                 <Link href="/case-study/isc-portal">
-                  <Button className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                  <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
-                  </Button>
+                  </a>
                 </Link>
               </div>
               <div className="space-y-6">
@@ -250,9 +250,9 @@ export default function Work() {
                 </div>
 
                 <Link href="/case-study/comcast-design-system">
-                  <Button className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                  <a className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
-                  </Button>
+                  </a>
                 </Link>
               </div>
               <div className="space-y-6">
@@ -317,9 +317,9 @@ export default function Work() {
                 </ul>
               </div>
               <Link href="/case-study/buildout">
-                <Button variant="outline" className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                <a className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold text-lg">
                   View Case Study →
-                </Button>
+                </a>
               </Link>
             </Card>
 
@@ -346,9 +346,9 @@ export default function Work() {
                 </ul>
               </div>
               <Link href="/case-study/cvs-aetna">
-                <Button variant="outline" className="bg-accent text-accent-cyan border border-accent-cyan/20 hover:bg-accent/80">
+                <a className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 transition-colors font-semibold text-lg">
                   View Case Study →
-                </Button>
+                </a>
               </Link>
             </Card>
           </div>
