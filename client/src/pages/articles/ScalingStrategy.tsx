@@ -33,7 +33,7 @@ export default function ScalingStrategy() {
             <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
-                <span>October 20, 2024</span>
+                <span>August 14, 2025</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
