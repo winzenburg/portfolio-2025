@@ -21,9 +21,9 @@ export default function MVPStrategy() {
 
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
-            <img 
-              src="/portfolio-2025/images/articles/mvp-strategy-hero.png" 
-              alt="MVP Strategy" 
+            <img
+              src="/portfolio-2025/images/articles/mvp-strategy-hero.png"
+              alt="MVP Strategy"
               className="w-full h-auto"
             />
           </div>
@@ -33,7 +33,7 @@ export default function MVPStrategy() {
             <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
-                <span>October 18, 2025</span>
+                <span>September 25, 2024</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
@@ -42,64 +42,242 @@ export default function MVPStrategy() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              The MVP Strategy: How to Launch a Product That Sells Itself
+              The MVP Strategy: Launching Products That Sell Themselves
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Once you've validated your market and built an initial audience, it's time to build your Minimum Viable Product (MVP). The MVP is not just a half-baked version of your final product—it's a strategic tool for learning, iteration, and growth.
+              Most MVPs try to do too much.
             </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-slate-300 leading-relaxed mb-6">
-              The goal is to "build a product that sells itself."
-            </p>
-
-            <p className="text-slate-300 leading-relaxed mb-6">
-              In this article, I'll share my framework for developing an MVP that is not only functional but also inherently shareable—a concept I call "virality-by-design."
+              The result: Delayed launches, complex products, unclear value. The alternative: Ship the minimum that creates genuine value. Make it so good people can't help but share it.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              The Core Components of a Successful MVP
+              The Core MVP Framework
             </h2>
 
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Component 1: Clear Value Proposition
+            </h3>
+
             <p className="text-slate-300 leading-relaxed mb-6">
-              Your MVP should be focused on solving a single, critical pain point for your target audience. It should be simple, intuitive, and easy to use. Here are the essential components:
+              <strong className="text-white">What it solves</strong>: Single, specific pain point<br/>
+              <strong className="text-white">For whom</strong>: Clearly defined audience<br/>
+              <strong className="text-white">Why now</strong>: Unique insight or approach
             </p>
 
-            <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
-              <li><strong className="text-white">A Clear Value Proposition:</strong> Your MVP should have a clear and compelling value proposition that communicates the unique benefits of your product.</li>
-              <li><strong className="text-white">A Single Core Feature:</strong> Focus on building one feature that solves a major pain point for your users. Don't try to be everything to everyone.</li>
-              <li><strong className="text-white">A Seamless User Experience:</strong> Your MVP should be easy to use and navigate. A clunky or confusing interface will turn users away, no matter how great your core feature is.</li>
-              <li><strong className="text-white">A Feedback Mechanism:</strong> Include a way for users to provide feedback, whether it's a simple form, a survey, or a direct line to you.</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Virality-by-Design: Engineering Products That Are Inherently Shareable
-            </h2>
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The test</strong>: Can you explain the value in one sentence? If not, simplify.
+            </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              "Virality-by-design" is about building features into your product that encourage users to share it with others. This is not about a "viral loop" in the traditional sense. It's about creating a product that is so good, so useful, and so delightful that users can't help but tell their friends about it.
+              <strong className="text-white">Example</strong>: "AI-powered design system builder that goes from concept to production in 4 weeks instead of 12 months."
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Clear. Specific. Quantified.
+            </p>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Component 2: Single Core Feature
+            </h3>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The discipline</strong>: Solve one problem exceptionally well.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Don't build 10 mediocre features. Build 1 exceptional feature.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">
-              Here are some strategies for engineering virality into your product:
+              <strong className="text-white">Selection criteria</strong>:
             </p>
 
             <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
-              <li><strong className="text-white">Make it Easy to Share:</strong> Include social sharing buttons, referral codes, and other features that make it easy for users to share your product with their network.</li>
-              <li><strong className="text-white">Create a "Wow" Moment:</strong> Design your product to have a "wow" moment—a point where the user experiences the full value of your product and is compelled to share it.</li>
-              <li><strong className="text-white">Build a Community:</strong> Create a community around your product where users can connect with each other, share their experiences, and get support.</li>
-              <li><strong className="text-white">Offer Incentives for Sharing:</strong> Reward users for sharing your product, whether it's with a discount, a free month of service, or some other incentive.</li>
+              <li>Addresses most painful problem</li>
+              <li>Creates immediate value</li>
+              <li>Demonstrates clear ROI</li>
+              <li>Enables viral sharing</li>
             </ul>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              By focusing on a single core feature, creating a seamless user experience, and engineering virality into your product, you can launch an MVP that not only solves a real problem for your users but also has the potential to grow organically.
+              <strong className="text-white">The mistake to avoid</strong>: Feature bloat. Every additional feature delays launch and dilutes value.
+            </p>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Component 3: Seamless User Experience
+            </h3>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Core principle</strong>: Remove friction everywhere.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              In my next article, I'll discuss how to monetize your MVP and generate revenue from day one. Stay tuned!
+              Onboarding in &lt; 2 minutes. Value delivered in &lt; 5 minutes. No learning curve to start.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-4">
+              <strong className="text-white">UX priorities</strong>:
+            </p>
+
+            <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
+              <li>Intuitive navigation</li>
+              <li>Clear calls-to-action</li>
+              <li>Minimal steps to value</li>
+              <li>Mobile-optimized</li>
+            </ul>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The validation</strong>: Can a new user get value in 5 minutes without documentation? If no, simplify.
+            </p>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Component 4: Built-in Feedback Mechanisms
+            </h3>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Purpose</strong>: Learn and iterate quickly.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-4">
+              <strong className="text-white">Implementation</strong>:
+            </p>
+
+            <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
+              <li>In-app feedback buttons</li>
+              <li>NPS surveys at key moments</li>
+              <li>Usage analytics</li>
+              <li>Direct user interviews</li>
+            </ul>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The framework</strong>: Measure everything. Iterate based on data.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              The Virality-by-Design Principles
+            </h2>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Principle 1: Make Sharing Effortless
+            </h3>
+
+            <p className="text-slate-300 leading-relaxed mb-4">
+              <strong className="text-white">Implementation</strong>:
+            </p>
+
+            <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
+              <li>Social sharing buttons everywhere</li>
+              <li>Pre-written share text</li>
+              <li>Referral incentives</li>
+              <li>Collaborative features</li>
+            </ul>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The data shows</strong>: Products with built-in sharing grow 3-5x faster than those without.
+            </p>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Principle 2: Create "Wow Moments"
+            </h3>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Design for delight</strong>: Moments where product value becomes undeniable.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-4">
+              <strong className="text-white">Examples</strong>:
+            </p>
+
+            <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
+              <li>Design system generating complete component in 30 seconds</li>
+              <li>Analysis completing that would take hours manually</li>
+              <li>Automated task finishing while user watches</li>
+            </ul>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The psychological trigger</strong>: Surprise and delight drives organic sharing.
+            </p>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Principle 3: Build Community Features
+            </h3>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Why it matters</strong>: Users who connect with other users stay longer.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-4">
+              <strong className="text-white">Implementation</strong>:
+            </p>
+
+            <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
+              <li>User forums or communities</li>
+              <li>Collaboration features</li>
+              <li>User-generated content</li>
+              <li>Success story sharing</li>
+            </ul>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Network effects</strong>: Value increases as more people use it.
+            </p>
+
+            <h3 className="text-2xl font-bold text-white mt-8 mb-4">
+              Principle 4: Incentivize Sharing
+            </h3>
+
+            <p className="text-slate-300 leading-relaxed mb-4">
+              <strong className="text-white">What works</strong>:
+            </p>
+
+            <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
+              <li>Referral bonuses (discount, free months)</li>
+              <li>Feature unlocks for referrals</li>
+              <li>Recognition for top contributors</li>
+              <li>Exclusive access for advocates</li>
+            </ul>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The balance</strong>: Incentives should feel like bonuses, not bribes.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Launch Strategy
+            </h2>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Week 1</strong>: Private beta (50-100 users)<br/>
+              <strong className="text-white">Week 2</strong>: Gather feedback, iterate fast<br/>
+              <strong className="text-white">Week 3</strong>: Expand to 500-1000 users<br/>
+              <strong className="text-white">Week 4</strong>: Public launch with refined product
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">The principle</strong>: Perfect is the enemy of shipped. Launch imperfect, iterate based on real usage.
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              What We Learned
+            </h2>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Mistake #1</strong>: Building too many features before launch<br/>
+              Delayed our launch by 2 months. Users only wanted the core feature.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Mistake #2</strong>: Ignoring user feedback<br/>
+              Built features users didn't ask for. Wasted development time.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              <strong className="text-white">Mistake #3</strong>: Launching without distribution plan<br/>
+              Great product, no audience. Now build audience in parallel with product.
             </p>
           </div>
 
@@ -139,4 +317,3 @@ export default function MVPStrategy() {
     </div>
   );
 }
-
