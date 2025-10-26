@@ -12,6 +12,32 @@ interface Article {
   category: string;
 }
 
+/**
+ * ADDING A NEW ARTICLE?
+ *
+ * Follow these steps:
+ * 1. Create article component: /client/src/pages/articles/YourArticle.tsx
+ *    - Use ARTICLE_TEMPLATE.tsx as starting point
+ *    - Component name must be PascalCase (e.g., AITechStack)
+ *
+ * 2. Add article metadata below (in chronological order, newest first):
+ *    - id: Increment from last article
+ *    - title: Full article title
+ *    - excerpt: 2-3 sentence preview
+ *    - date: "Month DD, YYYY" (must match component)
+ *    - readTime: "X min read" (must match component)
+ *    - slug: "kebab-case" (must match file name and route)
+ *    - category: Choose from existing or add new
+ *
+ * 3. Update category counts in hero section if needed
+ *
+ * 4. Test locally before deploying:
+ *    - Articles index: /articles
+ *    - Your article: /articles/your-slug
+ *
+ * See ARTICLES_WORKFLOW.md for complete documentation.
+ */
+
 const articles: Article[] = [
   {
     id: "9",
@@ -113,7 +139,7 @@ export default function Articles() {
             Learn how to leverage AI to build better products faster.
           </p>
 
-          {/* Category Pills */}
+          {/* Category Pills - UPDATE COUNTS when adding articles */}
           <div className="flex flex-wrap gap-3">
             <span className="px-4 py-2 bg-blue-900/30 border border-blue-700/50 text-blue-300 rounded-full text-sm font-semibold">
               Design Systems (3)
