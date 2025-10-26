@@ -59,6 +59,13 @@ export default function DesignSystem4Weeks() {
               Here's the framework.
             </p>
 
+            {/* Pull Quote */}
+            <div className="my-12 pl-6 border-l-4 border-cyan-500">
+              <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+                "Not by cutting corners. By strategically implementing AI where it actually accelerates work—and keeping human judgment where it matters."
+              </p>
+            </div>
+
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
               The Traditional Timeline (12+ Months)
             </h2>
@@ -67,23 +74,41 @@ export default function DesignSystem4Weeks() {
               I've built design systems at Fortune 500 scale. The traditional approach follows this pattern:
             </p>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <h3 className="text-xl font-bold text-white mb-4">Phase 1: Planning & Research (2-3 months)</h3>
-              <p className="text-slate-300 mb-6">Stakeholder interviews across teams, component inventory across products, competitive analysis, design token strategy, governance model definition</p>
+            <div className="space-y-4 mb-8">
+              <div className="bg-slate-900/50 border-l-4 border-red-500 p-4">
+                <h4 className="text-white font-semibold mb-2">Phase 1: Planning & Research (2-3 months)</h4>
+                <p className="text-slate-300">Stakeholder interviews across teams, component inventory across products, competitive analysis, design token strategy, governance model definition</p>
+              </div>
 
-              <h3 className="text-xl font-bold text-white mb-4">Phase 2: Design (3-4 months)</h3>
-              <p className="text-slate-300 mb-6">Component design and documentation, design token system creation, accessibility guidelines, usage guidelines and examples</p>
+              <div className="bg-slate-900/50 border-l-4 border-red-500 p-4">
+                <h4 className="text-white font-semibold mb-2">Phase 2: Design (3-4 months)</h4>
+                <p className="text-slate-300">Component design and documentation, design token system creation, accessibility guidelines, usage guidelines and examples</p>
+              </div>
 
-              <h3 className="text-xl font-bold text-white mb-4">Phase 3: Development (4-6 months)</h3>
-              <p className="text-slate-300 mb-6">Component development, testing and accessibility compliance, integration with existing systems, bug fixes and refinements</p>
+              <div className="bg-slate-900/50 border-l-4 border-red-500 p-4">
+                <h4 className="text-white font-semibold mb-2">Phase 3: Development (4-6 months)</h4>
+                <p className="text-slate-300">Component development, testing and accessibility compliance, integration with existing systems, bug fixes and refinements</p>
+              </div>
 
-              <h3 className="text-xl font-bold text-white mb-4">Phase 4: Documentation & Rollout (2-3 months)</h3>
-              <p className="text-slate-300 mb-6">Comprehensive documentation, training materials, adoption strategy, ongoing maintenance planning</p>
+              <div className="bg-slate-900/50 border-l-4 border-red-500 p-4">
+                <h4 className="text-white font-semibold mb-2">Phase 4: Documentation & Rollout (2-3 months)</h4>
+                <p className="text-slate-300">Comprehensive documentation, training materials, adoption strategy, ongoing maintenance planning</p>
+              </div>
+            </div>
 
-              <div className="mt-6 pt-6 border-t border-slate-700">
-                <p className="text-white font-semibold mb-2">Total timeline: 12-18 months</p>
-                <p className="text-white font-semibold mb-2">Total cost: $800K-$1.2M</p>
-                <p className="text-red-400 font-semibold">Risk: High obsolescence by the time it ships</p>
+            {/* Statistics Cards - Traditional */}
+            <div className="my-10 grid md:grid-cols-3 gap-6">
+              <div className="bg-slate-900/50 border border-red-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">12-18 mo</div>
+                <div className="text-slate-400 text-sm">Total timeline</div>
+              </div>
+              <div className="bg-slate-900/50 border border-red-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">$800K-$1.2M</div>
+                <div className="text-slate-400 text-sm">Total cost</div>
+              </div>
+              <div className="bg-slate-900/50 border border-red-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">High Risk</div>
+                <div className="text-slate-400 text-sm">Obsolescence by launch</div>
               </div>
             </div>
 
@@ -115,31 +140,30 @@ export default function DesignSystem4Weeks() {
               I used AI agents to compress months of research into a week:
             </p>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <h4 className="text-white font-semibold mb-3">Competitive Analysis</h4>
-              <p className="text-slate-300 mb-4">AI analyzed 12 design systems (Material Design, Polaris, Carbon, Primer, etc.) and generated:</p>
-              <ul className="text-slate-300 space-y-2 mb-4">
-                <li>• Component comparison matrix</li>
-                <li>• Common patterns and best practices</li>
-                <li>• Accessibility approaches</li>
-                <li>• Documentation structures</li>
-              </ul>
-
-              <h4 className="text-white font-semibold mb-3 mt-6">Design Token Strategy</h4>
-              <p className="text-slate-300 mb-4">AI generated comprehensive token system:</p>
-              <ul className="text-slate-300 space-y-2 mb-4">
-                <li>• Color palettes with accessibility validation</li>
-                <li>• Typography scales</li>
-                <li>• Spacing systems</li>
-                <li>• Elevation and shadow systems</li>
-              </ul>
-
-              <h4 className="text-white font-semibold mb-3 mt-6">Component Prioritization</h4>
-              <p className="text-slate-300 mb-4">AI analyzed usage patterns across similar products and recommended:</p>
-              <ul className="text-slate-300 space-y-2">
-                <li>• Core components needed (48 total)</li>
-                <li>• Priority order for development</li>
-                <li>• Variant requirements</li>
+            <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+              <div className="text-white font-semibold mb-4">What AI accomplished in Week 1:</div>
+              <ul className="space-y-4 text-slate-300">
+                <li className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold text-xl mt-1">1</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Competitive Analysis</div>
+                    <div className="text-slate-300 text-sm">Analyzed 12 design systems (Material Design, Polaris, Carbon, Primer, etc.) generating component comparison matrices, pattern libraries, accessibility approaches, and documentation structures</div>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold text-xl mt-1">2</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Design Token Strategy</div>
+                    <div className="text-slate-300 text-sm">Generated comprehensive token system including color palettes with accessibility validation, typography scales, spacing systems, and elevation systems</div>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold text-xl mt-1">3</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Component Prioritization</div>
+                    <div className="text-slate-300 text-sm">Analyzed usage patterns across similar products and recommended 48 core components with priority order and variant requirements</div>
+                  </div>
+                </li>
               </ul>
             </div>
 
@@ -147,8 +171,16 @@ export default function DesignSystem4Weeks() {
               <strong className="text-white">Tools used</strong>: Perplexity for research, Claude for synthesis, custom agents for pattern analysis.
             </p>
 
-            <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-              <p className="text-cyan-300 font-semibold">Time saved: 2-3 months → 7 days</p>
+            {/* Time Savings Comparison */}
+            <div className="my-10 grid md:grid-cols-2 gap-6">
+              <div className="bg-slate-900/50 border border-red-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">2-3 months</div>
+                <div className="text-slate-400 text-sm">Traditional research phase</div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">7 days</div>
+                <div className="text-slate-300 text-sm font-semibold">AI-augmented research</div>
+              </div>
             </div>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -167,39 +199,30 @@ export default function DesignSystem4Weeks() {
               Design token implementation and component design using:
             </p>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <h4 className="text-white font-semibold mb-3">Figma AI Plugins</h4>
-              <p className="text-slate-300 mb-4">Automated token generation and application:</p>
-              <ul className="text-slate-300 space-y-2 mb-4">
-                <li>• Color token system with accessibility checking</li>
-                <li>• Typography scale implementation</li>
-                <li>• Spacing system application</li>
-              </ul>
-
-              <h4 className="text-white font-semibold mb-3 mt-6">V0 for Component Design</h4>
-              <p className="text-slate-300 mb-2">Natural language component generation</p>
+            <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
+              <p className="text-cyan-300 font-semibold mb-2">Example: V0 Component Generation</p>
               <p className="text-slate-300 mb-2"><strong className="text-white">Input</strong>: "Create a button component with primary, secondary, and destructive variants, all WCAG AA compliant"</p>
-              <p className="text-slate-300"><strong className="text-white">Output</strong>: Complete component designs with variants and states</p>
+              <p className="text-slate-300 mb-4"><strong className="text-white">Output</strong>: Complete component designs with all variants and interaction states</p>
+              <p className="text-white mt-4"><strong>Result</strong>: 48 components designed in 4 days vs. 8 weeks traditionally</p>
             </div>
 
-            <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">Result</strong>: 48 complete component designs in 4 days vs. 8 weeks traditionally.
-            </p>
-
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Each component included:
-            </p>
-
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• All necessary variants</li>
-              <li>• All interaction states</li>
-              <li>• Accessibility annotations</li>
-              <li>• Usage guidelines</li>
-            </ul>
-
-            <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-              <p className="text-cyan-300 font-semibold mb-2">Quality maintained: 8.4/10 stakeholder scores</p>
-              <p className="text-slate-300">(vs. 8.2/10 baseline for manual process)</p>
+            {/* Quality Results */}
+            <div className="my-10 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">
+              <div className="text-center mb-6">
+                <div className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-2">Design Quality Score</div>
+                <div className="text-5xl font-bold text-white mb-2">8.4/10</div>
+                <div className="text-sm text-slate-400">vs. 8.2/10 baseline for manual process</div>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4 text-center text-sm">
+                <div>
+                  <div className="text-2xl font-bold text-slate-300">48</div>
+                  <div className="text-slate-400">Components designed</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-cyan-400">4 days</div>
+                  <div className="text-slate-300 font-semibold">vs. 8 weeks traditional</div>
+                </div>
+              </div>
             </div>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -218,30 +241,54 @@ export default function DesignSystem4Weeks() {
               Using Cursor IDE and GitHub Copilot:
             </p>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <h4 className="text-white font-semibold mb-3">Component Generation</h4>
-              <p className="text-slate-300 mb-4">AI generated production-ready code:</p>
-              <ul className="text-slate-300 space-y-2 mb-6">
-                <li>• Full TypeScript typing</li>
-                <li>• Accessibility attributes (ARIA, keyboard navigation)</li>
-                <li>• Responsive behavior</li>
-                <li>• Theme support</li>
-                <li>• Test coverage</li>
-              </ul>
-
-              <h4 className="text-white font-semibold mb-3">Example output per component:</h4>
-              <ul className="text-slate-300 space-y-2">
-                <li>• Component implementation (200-400 lines)</li>
-                <li>• Storybook stories (50-100 lines)</li>
-                <li>• Unit tests (100-200 lines)</li>
-                <li>• Accessibility tests (50-100 lines)</li>
-              </ul>
+            <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+              <div className="text-white font-semibold mb-4">AI-generated output per component:</div>
+              <div className="grid md:grid-cols-2 gap-3">
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Component implementation (200-400 lines)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Full TypeScript typing</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Storybook stories (50-100 lines)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">ARIA and keyboard navigation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Unit tests (100-200 lines)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Accessibility tests (50-100 lines)</span>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-              <p className="text-white mb-2"><strong>Traditional time</strong>: 30-45 minutes per component manually</p>
-              <p className="text-white mb-4"><strong>AI-augmented time</strong>: 3-5 minutes per component with AI + review</p>
-              <p className="text-cyan-300 font-semibold">Result: 48 production components in 7 days with 100% test coverage, 100% WCAG 2.2 AA compliance, full TypeScript typing, complete documentation</p>
+            {/* Development Speed Comparison */}
+            <div className="my-10 grid md:grid-cols-3 gap-6">
+              <div className="bg-slate-900/50 border border-red-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">30-45 min</div>
+                <div className="text-slate-400 text-sm">Traditional per component</div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">3-5 min</div>
+                <div className="text-slate-300 text-sm font-semibold">With AI + review</div>
+              </div>
+              <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">10x</div>
+                <div className="text-slate-400 text-sm">Faster development</div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-cyan-900/20 via-blue-900/20 to-purple-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
+              <p className="text-cyan-300 font-semibold text-center">Result: 48 production components in 7 days with 100% test coverage, 100% WCAG 2.2 AA compliance, full TypeScript typing, and complete documentation</p>
             </div>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -256,74 +303,140 @@ export default function DesignSystem4Weeks() {
               <strong className="text-white">AI-augmented</strong>: 7 days.
             </p>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <h4 className="text-white font-semibold mb-3">Automated Documentation</h4>
-              <p className="text-slate-300 mb-4">AI generated:</p>
-              <ul className="text-slate-300 space-y-2 mb-6">
-                <li>• Component usage guidelines</li>
-                <li>• Code examples</li>
-                <li>• Accessibility guidelines</li>
-                <li>• Migration guides</li>
-                <li>• Best practices</li>
-              </ul>
-
-              <h4 className="text-white font-semibold mb-3">Governance Systems</h4>
-              <p className="text-slate-300 mb-4">AI created:</p>
-              <ul className="text-slate-300 space-y-2 mb-6">
-                <li>• Component contribution guidelines</li>
-                <li>• Review checklists</li>
-                <li>• Quality standards</li>
-                <li>• Approval workflows</li>
-              </ul>
-
-              <h4 className="text-white font-semibold mb-3">Design Token Validation</h4>
-              <p className="text-slate-300 mb-4">Automated scripts that ensure:</p>
-              <ul className="text-slate-300 space-y-2">
-                <li>• Color usage matches tokens</li>
-                <li>• Typography follows scale</li>
-                <li>• Spacing is consistent</li>
-                <li>• Accessibility standards met</li>
-              </ul>
+            <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+              <div className="text-white font-semibold mb-4">Week 4 deliverables (all AI-generated):</div>
+              <div className="grid md:grid-cols-2 gap-3">
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Component usage guidelines</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Code examples and patterns</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Accessibility documentation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Migration guides</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Contribution guidelines</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Quality standards and review checklists</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Automated validation scripts</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-cyan-400 text-xl">•</span>
+                  <span className="text-slate-300">Governance workflows</span>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-              <p className="text-cyan-300 font-semibold">The breakthrough: Documentation generated as byproduct of development, not separate phase.</p>
+            {/* Pull Quote */}
+            <div className="my-12 pl-6 border-l-4 border-cyan-500">
+              <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+                "The breakthrough: Documentation generated as byproduct of development, not separate phase."
+              </p>
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
               The Results: Speed Without Compromise
             </h2>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-white font-semibold mb-3">Timeline Comparison</h4>
-                  <p className="text-slate-300 mb-1">Traditional: 12 months</p>
-                  <p className="text-slate-300 mb-1">AI-augmented: 4 weeks</p>
-                  <p className="text-cyan-400 font-semibold mt-2">Speed advantage: 92% faster</p>
-                </div>
+            {/* Section Divider */}
+            <div className="my-12 flex items-center gap-4">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+              <div className="text-slate-500 text-sm">•••</div>
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+            </div>
 
-                <div>
-                  <h4 className="text-white font-semibold mb-3">Cost Comparison</h4>
-                  <p className="text-slate-300 mb-1">Traditional: $800K-$1.2M</p>
-                  <p className="text-slate-300 mb-1">AI-augmented: Comparable labor + AI tools</p>
-                  <p className="text-cyan-400 font-semibold mt-2">ROI: Capture value 11 months sooner</p>
+            {/* Results Metrics Grid */}
+            <div className="my-10 grid md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-4">Timeline Comparison</div>
+                <div className="space-y-2 text-sm mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Traditional:</span>
+                    <span className="text-slate-300">12 months</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">AI-augmented:</span>
+                    <span className="text-cyan-400 font-semibold">4 weeks</span>
+                  </div>
                 </div>
-
-                <div>
-                  <h4 className="text-white font-semibold mb-3">Quality Comparison</h4>
-                  <p className="text-slate-300 mb-1">Components: 48 production-ready</p>
-                  <p className="text-slate-300 mb-1">Code quality: Same standards</p>
-                  <p className="text-slate-300 mb-1">Accessibility: 100% WCAG 2.2 AA</p>
-                  <p className="text-slate-300 mb-1">Test coverage: 100%</p>
-                  <p className="text-cyan-400 font-semibold mt-2">Stakeholder scores: 8.4/10 (up from 8.2/10)</p>
+                <div className="pt-4 border-t border-cyan-700/30">
+                  <div className="text-3xl font-bold text-cyan-400">92% faster</div>
                 </div>
+              </div>
 
-                <div>
-                  <h4 className="text-white font-semibold mb-3">Business Impact</h4>
-                  <p className="text-slate-300 mb-1">Lines of code: 63,813</p>
-                  <p className="text-slate-300 mb-1">Time to market: 4 weeks vs 12 months</p>
-                  <p className="text-cyan-400 font-semibold mt-2">Value created: $1.03M</p>
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-4">Cost & ROI</div>
+                <div className="space-y-2 text-sm mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Traditional cost:</span>
+                    <span className="text-slate-300">$800K-$1.2M</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Time to value:</span>
+                    <span className="text-cyan-400 font-semibold">11 months sooner</span>
+                  </div>
+                </div>
+                <div className="pt-4 border-t border-cyan-700/30">
+                  <div className="text-3xl font-bold text-cyan-400">$1.03M</div>
+                  <div className="text-sm text-slate-400">Value created</div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-4">Quality Metrics</div>
+                <div className="space-y-2 text-sm mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Components:</span>
+                    <span className="text-slate-300">48 production-ready</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Accessibility:</span>
+                    <span className="text-cyan-400">100% WCAG 2.2 AA</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Test coverage:</span>
+                    <span className="text-cyan-400">100%</span>
+                  </div>
+                </div>
+                <div className="pt-4 border-t border-cyan-700/30">
+                  <div className="text-3xl font-bold text-cyan-400">8.4/10</div>
+                  <div className="text-sm text-slate-400">Stakeholder score (vs 8.2)</div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-4">Business Impact</div>
+                <div className="space-y-2 text-sm mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Lines of code:</span>
+                    <span className="text-slate-300">63,813</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Time to market:</span>
+                    <span className="text-cyan-400">4 weeks vs 12 mo</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Team efficiency:</span>
+                    <span className="text-cyan-400">10x improvement</span>
+                  </div>
+                </div>
+                <div className="pt-4 border-t border-cyan-700/30">
+                  <div className="text-3xl font-bold text-cyan-400">Complete</div>
+                  <div className="text-sm text-slate-400">Enterprise-ready system</div>
                 </div>
               </div>
             </div>
@@ -336,34 +449,73 @@ export default function DesignSystem4Weeks() {
               The framework isn't magic—it's strategic application of AI to the right tasks.
             </p>
 
-            <p className="text-slate-300 leading-relaxed mb-4">
-              <strong className="text-white">Where AI excels</strong>:
-            </p>
+            {/* AI vs Human Comparison */}
+            <div className="my-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-cyan-400 font-semibold mb-4 uppercase text-sm tracking-wider">Where AI Excels</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Repetitive component generation</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Pattern recognition and application</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Documentation creation</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Automated testing</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Token validation</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Code generation from specs</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+                <div className="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Where Humans Excel</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-blue-400">→</span>
+                    <span className="text-slate-300">Strategic component architecture</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-blue-400">→</span>
+                    <span className="text-slate-300">Design system strategy</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-blue-400">→</span>
+                    <span className="text-slate-300">Quality standards</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-blue-400">→</span>
+                    <span className="text-slate-300">Stakeholder alignment</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-blue-400">→</span>
+                    <span className="text-slate-300">Exception handling</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-blue-400">→</span>
+                    <span className="text-slate-300">Business context</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• Repetitive component generation</li>
-              <li>• Pattern recognition and application</li>
-              <li>• Documentation creation</li>
-              <li>• Automated testing</li>
-              <li>• Token validation</li>
-              <li>• Code generation from specifications</li>
-            </ul>
-
-            <p className="text-slate-300 leading-relaxed mb-4">
-              <strong className="text-white">Where humans excel</strong>:
-            </p>
-
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• Strategic component architecture</li>
-              <li>• Design system strategy</li>
-              <li>• Quality standards</li>
-              <li>• Stakeholder alignment</li>
-              <li>• Exception handling</li>
-              <li>• Business context</li>
-            </ul>
-
-            <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-              <p className="text-cyan-300 font-semibold">The breakthrough: AI handles mechanical execution at machine speed. Humans own strategic decisions and quality standards.</p>
+            {/* Pull Quote */}
+            <div className="my-12 pl-6 border-l-4 border-cyan-500">
+              <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+                "AI handles mechanical execution at machine speed. Humans own strategic decisions and quality standards."
+              </p>
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -374,19 +526,32 @@ export default function DesignSystem4Weeks() {
               First time building a design system this way? Avoid these mistakes:
             </p>
 
-            <div className="bg-red-900/20 border border-red-700/50 rounded-lg p-6 my-8">
-              <p className="text-red-300 font-semibold mb-2">Mistake #1: Trusting AI-generated accessibility without validation</p>
-              <p className="text-slate-300">AI gets accessibility syntax right. It misses context-dependent requirements. I now have mandatory manual accessibility audits.</p>
-            </div>
-
-            <div className="bg-orange-900/20 border border-orange-700/50 rounded-lg p-6 my-8">
-              <p className="text-orange-300 font-semibold mb-2">Mistake #2: Skipping human design review</p>
-              <p className="text-slate-300">AI-generated components met specifications. Some lacked design refinement. Human designers now review all AI-generated designs for quality polish.</p>
-            </div>
-
-            <div className="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-6 my-8">
-              <p className="text-yellow-300 font-semibold mb-2">Mistake #3: Automating governance too much</p>
-              <p className="text-slate-300">Some decisions need human judgment and context. Automated routine decisions, kept humans in the loop for strategic ones.</p>
+            {/* Mistakes Summary */}
+            <div className="my-10 bg-red-900/10 border border-red-900/30 rounded-lg p-8">
+              <div className="text-red-400 font-semibold mb-4 uppercase text-sm tracking-wider">Critical Lessons</div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <span className="text-red-400 font-bold text-xl">1</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Trusting AI-generated accessibility without validation</div>
+                    <div className="text-slate-400 text-sm">AI gets accessibility syntax right but misses context-dependent requirements. Now: Mandatory manual accessibility audits.</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-red-400 font-bold text-xl">2</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Skipping human design review</div>
+                    <div className="text-slate-400 text-sm">AI-generated components met specs but lacked design refinement. Now: Human designers review all AI-generated designs for quality polish.</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-red-400 font-bold text-xl">3</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Automating governance too much</div>
+                    <div className="text-slate-400 text-sm">Some decisions need human judgment and context. Now: Automate routine decisions, keep humans in loop for strategic ones.</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -430,6 +595,13 @@ export default function DesignSystem4Weeks() {
               <li>• Stakeholder involvement early</li>
             </ul>
 
+            {/* Section Divider */}
+            <div className="my-16 flex items-center gap-4">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+              <div className="text-slate-500 text-sm">•••</div>
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+            </div>
+
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
               The Strategic Advantage
             </h2>
@@ -438,55 +610,110 @@ export default function DesignSystem4Weeks() {
               Markets don't wait 12 months for design systems.
             </p>
 
-            <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">Traditional approach</strong>: By the time you ship, product needs have evolved. System is partially obsolete at launch.
-            </p>
+            {/* Traditional vs AI-Augmented Comparison */}
+            <div className="my-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-slate-900/30 border border-red-900/30 rounded-lg p-6">
+                <div className="text-red-400 font-semibold mb-4 uppercase text-sm tracking-wider">Traditional Approach</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">12-18 month build time</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Obsolete before launch</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Can't adapt to product changes</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">High opportunity cost</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-cyan-400 font-semibold mb-4 uppercase text-sm tracking-wider">AI-Augmented Approach</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Ship in 4 weeks</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Iterate based on real usage</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Stay ahead of product evolution</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">11 months faster to value</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">AI-augmented approach</strong>: Ship in 4 weeks. Iterate based on real usage. Stay ahead of product evolution.
-            </p>
-
-            <p className="text-slate-300 leading-relaxed mb-6">
-              That's not a marginal improvement. That's a fundamental competitive advantage.
-            </p>
-
-            <p className="text-slate-300 leading-relaxed mb-4">
-              <strong className="text-white">Business impact</strong>:
-            </p>
-
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• Faster time to market (11 months sooner)</li>
-              <li>• Reduced obsolescence risk</li>
-              <li>• Lower opportunity cost</li>
-              <li>• Faster iteration cycles</li>
-            </ul>
+            {/* Pull Quote */}
+            <div className="my-12 pl-6 border-l-4 border-cyan-500">
+              <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+                "That's not a marginal improvement. That's a fundamental competitive advantage."
+              </p>
+            </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
               The Future of Design Systems
             </h2>
 
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Companies that succeed will:
-            </p>
+            {/* Future Outlook Comparison */}
+            <div className="my-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-cyan-400 font-semibold mb-4 uppercase text-sm tracking-wider">Companies That Succeed</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Build in weeks, not months</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Maintain through automation</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Iterate based on real usage data</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Scale without proportional resources</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-slate-900/30 border border-red-900/30 rounded-lg p-6">
+                <div className="text-red-400 font-semibold mb-4 uppercase text-sm tracking-wider">Companies That Fall Behind</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Months on obsolete-at-launch systems</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Burn resources on manual maintenance</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Struggle to keep pace with products</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Growing competitive disadvantage</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• Build design systems in weeks, not months</li>
-              <li>• Maintain them through automation</li>
-              <li>• Iterate based on real usage data</li>
-              <li>• Scale without proportional resource increase</li>
-            </ul>
-
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Companies building traditional design systems will:
-            </p>
-
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• Spend months on systems that are obsolete at launch</li>
-              <li>• Burn resources on manual maintenance</li>
-              <li>• Struggle to keep pace with product evolution</li>
-            </ul>
-
-            <p className="text-slate-300 leading-relaxed mb-6">
+            <p className="text-slate-300 leading-relaxed mb-6 text-center font-semibold">
               The gap will only widen.
             </p>
 

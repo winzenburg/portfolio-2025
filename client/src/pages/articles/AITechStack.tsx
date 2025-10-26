@@ -59,15 +59,37 @@ export default function AITechStack() {
               Three principles guide my tool selection:
             </p>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <h3 className="text-xl font-bold text-white mb-4">1. Automate Repetitive Tasks</h3>
-              <p className="text-slate-300 mb-6">If a task follows a pattern, AI should handle it. Code generation, documentation, testing, validation—all candidates for automation.</p>
+            <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+              <ul className="space-y-4 text-slate-300">
+                <li className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold text-xl mt-1">1</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Automate Repetitive Tasks</div>
+                    <div className="text-slate-300">If a task follows a pattern, AI should handle it. Code generation, documentation, testing, validation—all candidates for automation.</div>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold text-xl mt-1">2</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Preserve Strategic Control</div>
+                    <div className="text-slate-300">Humans make decisions. AI provides options. I own architecture, design strategy, and UX priorities. AI generates alternatives.</div>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold text-xl mt-1">3</span>
+                  <div>
+                    <div className="text-white font-semibold mb-1">Maintain Quality Standards</div>
+                    <div className="text-slate-300">AI-generated output must meet the same standards as hand-crafted work. No exceptions.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-              <h3 className="text-xl font-bold text-white mb-4">2. Preserve Strategic Control</h3>
-              <p className="text-slate-300 mb-6">Humans make decisions. AI provides options. I own architecture, design strategy, and UX priorities. AI generates alternatives.</p>
-
-              <h3 className="text-xl font-bold text-white mb-4">3. Maintain Quality Standards</h3>
-              <p className="text-slate-300">AI-generated output must meet the same standards as hand-crafted work. No exceptions.</p>
+            {/* Pull Quote */}
+            <div className="my-12 pl-6 border-l-4 border-cyan-500">
+              <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+                "AI generates, humans decide. This division of labor is what makes the workflow effective."
+              </p>
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -140,11 +162,20 @@ export default function AITechStack() {
               <li>• Explains complex code clearly</li>
             </ul>
 
-            <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-              <p className="text-cyan-300 font-semibold mb-2">Real output:</p>
-              <p className="text-white">Traditional: 30-45 minutes per component</p>
-              <p className="text-white">With Cursor: 3-5 minutes per component</p>
-              <p className="text-white">Quality: Same or better (with review)</p>
+            {/* Time Savings Stats */}
+            <div className="my-10 grid md:grid-cols-3 gap-6">
+              <div className="bg-slate-900/50 border border-red-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">30-45 min</div>
+                <div className="text-slate-400 text-sm">Traditional approach</div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">3-5 min</div>
+                <div className="text-slate-300 text-sm font-semibold">With Cursor</div>
+              </div>
+              <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">10x</div>
+                <div className="text-slate-400 text-sm">Faster per component</div>
+              </div>
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-4">
@@ -371,33 +402,86 @@ export default function AITechStack() {
               The ROI Analysis
             </h2>
 
-            <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-4">Traditional Approach</h3>
-                  <p className="text-slate-300 mb-2">Timeline: 12 months</p>
-                  <p className="text-slate-300 mb-2">Cost: $800K-$1.2M (labor)</p>
-                  <p className="text-slate-300">Tools: ~$500/month</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-4">AI-Augmented Approach</h3>
-                  <p className="text-slate-300 mb-2">Timeline: 4 weeks</p>
-                  <p className="text-slate-300 mb-2">Cost: Comparable labor</p>
-                  <p className="text-slate-300">Tools: ~$112/month</p>
+            {/* Traditional vs AI-Augmented Comparison */}
+            <div className="my-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-slate-900/30 border border-red-900/30 rounded-lg p-6">
+                <div className="text-red-400 font-semibold mb-4 uppercase text-sm tracking-wider">Traditional Approach</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400"><strong>Timeline:</strong> 12 months</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400"><strong>Cost:</strong> $800K-$1.2M (labor)</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400"><strong>Tools:</strong> ~$500/month</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400"><strong>Team size:</strong> 4-6 people</span>
+                  </div>
                 </div>
               </div>
-
-              <div className="mt-6 pt-6 border-t border-slate-700">
-                <h4 className="text-white font-semibold mb-3">Tool cost breakdown (~$112/month):</h4>
-                <div className="grid grid-cols-2 gap-2 text-slate-300 text-sm">
-                  <p>Cursor: $20/month</p>
-                  <p>GitHub Copilot: $10/month</p>
-                  <p>V0: $20/month</p>
-                  <p>Vercel: $20/month</p>
-                  <p>ChatGPT Plus: $20/month</p>
-                  <p>Claude Pro: $20/month</p>
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-cyan-400 font-semibold mb-4 uppercase text-sm tracking-wider">AI-Augmented Approach</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300"><strong>Timeline:</strong> 4 weeks</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300"><strong>Cost:</strong> Comparable quality, 10x faster</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300"><strong>Tools:</strong> ~$112/month</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300"><strong>Team size:</strong> 1-2 people</span>
+                  </div>
                 </div>
-                <p className="text-cyan-400 font-semibold mt-4">ROI: 625-890x on tools alone when accounting for time saved</p>
+              </div>
+            </div>
+
+            {/* Tool Cost Breakdown */}
+            <div className="my-10 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+              <div className="text-white font-semibold mb-4">Tool cost breakdown (~$112/month):</div>
+              <div className="grid md:grid-cols-3 gap-3 text-slate-300 text-sm">
+                <div className="flex justify-between">
+                  <span>Cursor</span>
+                  <span className="text-cyan-400">$20</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>GitHub Copilot</span>
+                  <span className="text-cyan-400">$10</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>V0</span>
+                  <span className="text-cyan-400">$20</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Vercel</span>
+                  <span className="text-cyan-400">$20</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>ChatGPT Plus</span>
+                  <span className="text-cyan-400">$20</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Claude Pro</span>
+                  <span className="text-cyan-400">$20</span>
+                </div>
+              </div>
+              <div className="mt-6 pt-6 border-t border-slate-800">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">625-890x ROI</div>
+                  <div className="text-slate-400 text-sm">On tools alone when accounting for time saved</div>
+                </div>
               </div>
             </div>
 
@@ -503,35 +587,73 @@ export default function AITechStack() {
               </div>
             </div>
 
+            {/* Section Divider */}
+            <div className="my-16 flex items-center gap-4">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+              <div className="text-slate-500 text-sm">•••</div>
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+            </div>
+
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
               The Competitive Reality
             </h2>
 
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Teams using AI-augmented workflows:
-            </p>
-
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• Build design systems in weeks</li>
-              <li>• Maintain 100% test coverage</li>
-              <li>• Ship with full accessibility compliance</li>
-              <li>• Iterate based on real usage</li>
-            </ul>
-
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Teams using traditional workflows:
-            </p>
-
-            <ul className="text-slate-300 space-y-2 mb-6">
-              <li>• Spend months on design systems</li>
-              <li>• Struggle with test coverage</li>
-              <li>• Fix accessibility post-launch</li>
-              <li>• Can't iterate quickly enough</li>
-            </ul>
-
             <p className="text-slate-300 leading-relaxed mb-6">
-              The gap compounds over time.
+              The gap between teams using AI-augmented workflows and traditional workflows compounds over time.
             </p>
+
+            {/* Competitive Comparison */}
+            <div className="my-12 grid md:grid-cols-2 gap-6">
+              <div className="bg-slate-900/30 border border-red-900/30 rounded-lg p-6">
+                <div className="text-red-400 font-semibold mb-4 uppercase text-sm tracking-wider">Traditional Workflows</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Spend months on design systems</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Struggle with test coverage</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Fix accessibility post-launch</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-red-400">✗</span>
+                    <span className="text-slate-400">Can't iterate quickly enough</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+                <div className="text-cyan-400 font-semibold mb-4 uppercase text-sm tracking-wider">AI-Augmented Workflows</div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Build design systems in weeks</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Maintain 100% test coverage</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Ship with full accessibility compliance</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-cyan-400">✓</span>
+                    <span className="text-slate-300">Iterate based on real usage</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Pull Quote */}
+            <div className="my-12 pl-6 border-l-4 border-cyan-500">
+              <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+                "The gap compounds over time. This isn't a marginal advantage—it's a fundamental shift in competitive capability."
+              </p>
+            </div>
 
             <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Implementing an AI-Augmented Design Workflow?</h3>
