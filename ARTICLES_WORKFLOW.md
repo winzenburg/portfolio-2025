@@ -109,10 +109,59 @@ http://localhost:3000/portfolio-2025/articles/your-article-slug
 - CTA section
 
 ### Writing Style Guidelines
-- **Narrative Flow**: Write in long-form narrative style, NOT bullet-heavy outlines
-- **Storytelling**: Use personal anecdotes and real-world examples
-- **Transitions**: Connect sections with flowing prose, not abrupt jumps
-- **Engagement**: Add visual elements strategically to maintain reader interest
+
+**CRITICAL**: Articles MUST be written as long-form narrative prose, like Medium/Substack articles, NOT technical documentation or outlines.
+
+#### The Golden Rule: Narrative Over Bullets
+
+Transform every concept into a story with context, examples, and personal experience.
+
+**❌ WRONG - Outline Style:**
+```
+Purpose: AI-powered validation
+
+Benefits:
+• Faster research
+• Better insights
+• Lower cost
+• Scalable process
+```
+
+**✅ CORRECT - Narrative Style:**
+```
+The traditional approach to market validation drains weeks from your timeline.
+I've watched teams spend two to three weeks manually researching keywords,
+pain points, and competitive positioning. By the time they finish the research,
+market dynamics have shifted.
+
+AI changes the economics completely. What used to take weeks now takes days.
+But here's what most people miss: it's not just about speed. The quality of
+insights actually improves because AI can process patterns across thousands
+of data points that humans would never manually analyze.
+```
+
+#### Core Writing Principles
+
+1. **First-Person Voice** - Write as "I've learned..." not "You should..."
+2. **Show, Don't Tell** - Use specific examples with real metrics
+3. **Story Arc** - Problem → Journey → Solution → Results → Lessons
+4. **Smooth Transitions** - Connect paragraphs naturally, build momentum
+5. **Concrete Details** - Real tools, actual timelines, specific outcomes
+
+#### Required Elements in Every Article
+
+- **Opening Hook**: Specific story or observation (not generic problem statement)
+- **Personal Experience**: Share what you've built, observed, or learned
+- **Real Metrics**: Actual numbers from your work (30-45min → 3-5min)
+- **Mistakes Section**: What you learned the hard way (builds credibility)
+- **Strategic Context**: Why this matters competitively, not just tactically
+
+#### When Writing Each Section
+
+**Instead of "Here's how to..."** → Tell a story about how you discovered this approach
+**Instead of listing benefits** → Describe the moment you realized it worked
+**Instead of step-by-step instructions** → Walk through a real example with context
+**Instead of "This is important"** → Show impact through a concrete story
 
 ### Visual Design Elements
 

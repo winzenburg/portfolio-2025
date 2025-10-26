@@ -68,23 +68,50 @@ export default function ARTICLE_TEMPLATE() {
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
+            {/* NARRATIVE PROSE EXAMPLES - Replace with your content */}
+
+            {/* Opening Hook - Start with a specific story or observation */}
             <p className="text-slate-300 leading-relaxed mb-6">
-              Your article content starts here. Use clear, concise paragraphs that provide value. Write in a narrative style with flowing prose, not bullet-heavy outlines.
+              I've watched this pattern unfold more times than I care to count. [Describe a specific situation
+              you've observed repeatedly]. The story is always the same—[explain the pattern in concrete terms,
+              with real details]. It's frustrating because [explain why this matters personally].
             </p>
 
-            {/* Example: Pull Quote - Use to highlight key insights */}
+            <p className="text-slate-300 leading-relaxed mb-6">
+              The first time I encountered this, I [share your initial reaction or approach]. I thought
+              [explain your assumption]. I was wrong. What I learned over [timeframe] changed how I approach
+              [topic] completely.
+            </p>
+
+            {/* Example: Pull Quote - Use to highlight key breakthrough insight */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "A memorable quote or key insight from your narrative that deserves emphasis."
+                "A memorable insight from your journey—the moment everything clicked or the lesson that
+                changed your approach."
               </p>
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Major Section Heading
+              The Problem Nobody Talks About
             </h2>
 
+            {/* Describe the problem through narrative, not bullets */}
             <p className="text-slate-300 leading-relaxed mb-6">
-              Continue your article with well-structured sections. Keep the narrative flowing with transitions and context.
+              Here's what most people miss about [topic]. They focus on [common focus], when the real issue is
+              [actual issue]. I've seen this play out at [context—companies, teams, projects]. The pattern is
+              remarkably consistent.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Let me give you a specific example. [Walk through a concrete scenario with real details].
+              The team spent [timeframe] on [approach], only to discover [outcome]. This wasn't an isolated
+              incident. I've consulted with [number] teams facing the exact same challenge.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              The cost extends beyond [obvious cost]. There's also [hidden cost 1], [hidden cost 2], and
+              [hidden cost 3]. But the most damaging impact is [describe the compounding effect or strategic
+              consequence].
             </p>
 
             {/* Example: Statistics Cards - Use for key metrics and data */}
@@ -104,11 +131,24 @@ export default function ARTICLE_TEMPLATE() {
             </div>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
-              Subsection Heading
+              What Changed Everything
             </h3>
 
+            {/* Narrative explanation of breakthrough or solution */}
             <p className="text-slate-300 leading-relaxed mb-6">
-              Use subsections to break down complex topics into digestible pieces.
+              The breakthrough came when I [describe the pivotal moment or realization]. Instead of [old approach],
+              I started [new approach]. The difference was immediate.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Let me walk you through a specific example. [Share a concrete scenario where you applied this].
+              The traditional approach would have taken [timeframe] and required [resources]. What actually happened
+              was [describe the outcome with specific details and metrics].
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              What surprised me most was [unexpected benefit or insight]. I'd expected [original expectation],
+              but what I discovered was [actual learning]. This changed how I think about [topic] fundamentally.
             </p>
 
             {/* Example: Styled List in Card - Use for questions, features, or grouped items */}
@@ -186,11 +226,40 @@ export default function ARTICLE_TEMPLATE() {
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Conclusion
+              What I Learned the Hard Way
             </h2>
 
+            {/* Share personal mistakes and lessons - builds credibility */}
             <p className="text-slate-300 leading-relaxed mb-6">
-              Wrap up your article with actionable insights and next steps for readers.
+              I've made every mistake possible with [topic]. Let me save you some pain by sharing what I learned.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              The first mistake was [describe mistake 1 with specific context]. I thought [explain reasoning],
+              so I [describe what you did]. The result was [describe negative outcome]. What I should have done
+              was [explain better approach]. Now I [explain current practice].
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              The second mistake came from [describe mistake 2]. I'd seen [other teams/companies] successfully
+              [approach], so I assumed [assumption]. I was wrong because [explain why context matters]. This cost
+              me [specific cost—time, money, credibility] before I figured out [the lesson].
+            </p>
+
+            <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+              Why This Matters Now
+            </h2>
+
+            {/* Strategic context and competitive urgency */}
+            <p className="text-slate-300 leading-relaxed mb-6">
+              We're at an inflection point. Teams that [adopt this approach] are [describe competitive advantage].
+              Teams still [using old approach] are [describe competitive disadvantage]. This gap compounds over time.
+            </p>
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              I've watched this pattern play out across [industry/domain]. The teams moving fast aren't cutting corners—
+              they're [explain what makes them different]. Meanwhile, teams stuck in traditional workflows are
+              [describe what they're experiencing]. The difference becomes impossible to ignore within [timeframe].
             </p>
 
             {/* CTA Box */}

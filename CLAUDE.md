@@ -27,16 +27,140 @@ Portfolio-2025/
 
 ## Article Creation Philosophy
 
-### Writing Style: Narrative Over Outline
+### Writing Style: Long-Form Narrative Prose
 
-Articles should be written in **long-form narrative style**, not bullet-heavy outlines:
+Articles MUST be written in **long-form narrative prose**, like Medium or Substack articles, NOT technical documentation or outlines.
 
-- ✅ **Do**: Write flowing prose with storytelling and personal anecdotes
-- ✅ **Do**: Use transitions and context to connect ideas
-- ✅ **Do**: Include real-world examples from experience
-- ❌ **Don't**: Create outline-style articles with excessive bullet points
-- ❌ **Don't**: Use generic callout boxes without narrative context
-- ❌ **Don't**: Jump between topics without transitions
+#### ❌ WRONG: Outline/Documentation Style
+
+```tsx
+<h3>Figma (Strategic Design Foundation)</h3>
+
+<p><strong>Purpose</strong>: Core design work where strategic decisions happen</p>
+
+<p><strong>What it handles</strong>:</p>
+<ul>
+  <li>• Component architecture decisions</li>
+  <li>• Design system structure</li>
+  <li>• Visual design quality control</li>
+  <li>• Team collaboration</li>
+</ul>
+
+<p><strong>Why it's irreplaceable</strong>: Strategic design decisions still require human judgment.</p>
+```
+
+#### ✅ CORRECT: Narrative Prose Style
+
+```tsx
+<h3>Figma (Strategic Design Foundation)</h3>
+
+<p className="text-slate-300 leading-relaxed mb-6">
+  The first tool in the stack is Figma, and it remains essential for a reason that might surprise you.
+  I've experimented with fully AI-driven design workflows. They don't work. What I've learned through
+  years of building design systems is that strategic design decisions still require the kind of human
+  judgment that no AI currently provides.
+</p>
+
+<p className="text-slate-300 leading-relaxed mb-6">
+  When I'm working in Figma, I'm making decisions about component architecture that will affect how
+  designers work for years. Which variants should exist? How should props be structured? What's the
+  right level of flexibility versus constraint? These questions require deep understanding of the
+  product, the team, and the business context. AI can generate alternatives, but it can't make these
+  strategic calls.
+</p>
+
+<p className="text-slate-300 leading-relaxed mb-6">
+  This is where I maintain control. The design system structure, the visual design quality standards,
+  the collaboration patterns with the team—all of this happens in Figma because it's where strategic
+  thinking meets tactical execution.
+</p>
+```
+
+### Core Writing Principles
+
+**1. First-Person Narrative Voice**
+- Write as an experienced practitioner sharing real stories
+- Use "I've watched...", "I learned...", "In my experience..."
+- Establish credibility through personal experience, not credentials
+
+**2. Storytelling Over Lists**
+- Transform every bullet point into a paragraph with context
+- Lead with the problem or pattern you've observed
+- Follow with your experience addressing it
+- Conclude with lessons learned or insights gained
+
+**3. Concrete Examples**
+- Never make abstract claims—ground them in specific stories
+- Include real metrics, timelines, and outcomes from your work
+- Name actual tools, companies (when appropriate), and scenarios
+
+**4. Smooth Transitions**
+- Connect each paragraph to the next with natural flow
+- Use transitional phrases: "But here's what changed...", "The breakthrough came when...", "What I didn't expect was..."
+- Build narrative momentum toward conclusions
+
+**5. Show, Don't Tell**
+- Instead of "AI saves time" → "What used to take 30-45 minutes per component now takes 3-5 minutes"
+- Instead of "This is important" → Story showing why it matters
+- Instead of "Here's how it works" → Walk through a real example
+
+### Article Structure Template
+
+Every article should follow this narrative arc:
+
+**Opening Hook (2-4 paragraphs)**
+- Start with a specific story, observation, or surprising statement
+- Establish the problem or pattern readers will recognize
+- Create curiosity about the solution
+- Set up what the article will deliver
+
+**Problem Context (3-5 paragraphs)**
+- Describe the traditional approach or common mistake
+- Share personal experience with the problem
+- Explain why it matters and what's at stake
+- Use specific examples and data
+
+**Solution Journey (Main Body)**
+- Walk through your approach as a narrative journey
+- Each major section = one aspect of the solution
+- Include mistakes, learning moments, breakthroughs
+- Use visual elements (stats, comparisons) to emphasize key points
+- Maintain first-person storytelling throughout
+
+**Results & Validation (2-4 paragraphs)**
+- Share concrete outcomes with real metrics
+- Explain what worked and what didn't
+- Acknowledge limitations and trade-offs
+- Provide context for interpreting results
+
+**Strategic Implications (2-3 paragraphs)**
+- Zoom out to explain why this matters competitively
+- Connect to broader trends or shifts
+- Create urgency around adoption
+- End with forward-looking perspective
+
+**Lessons Learned (Optional but Recommended)**
+- Share 2-3 specific mistakes you made
+- Explain what you'd do differently next time
+- Make these personal and concrete, not generic advice
+
+### When to Use Lists vs. Prose
+
+**Use Narrative Prose For:**
+- Explaining concepts and approaches (90% of content)
+- Describing tools and their purposes
+- Walking through processes and workflows
+- Sharing experiences and lessons learned
+- Making arguments and building cases
+
+**Use Visual Elements (Cards/Lists) For:**
+- Emphasizing key metrics or statistics
+- Creating visual breaks every 3-4 paragraphs
+- Highlighting comparisons (traditional vs. AI-powered)
+- Summarizing complex information readers need to reference
+- Drawing attention to critical takeaways
+
+The visual elements should **enhance** the narrative, not replace it.
 
 ### Visual Design Elements
 
