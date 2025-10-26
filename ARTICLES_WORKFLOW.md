@@ -108,11 +108,97 @@ http://localhost:3000/portfolio-2025/articles/your-article-slug
 - Next article link
 - CTA section
 
+### Writing Style Guidelines
+- **Narrative Flow**: Write in long-form narrative style, NOT bullet-heavy outlines
+- **Storytelling**: Use personal anecdotes and real-world examples
+- **Transitions**: Connect sections with flowing prose, not abrupt jumps
+- **Engagement**: Add visual elements strategically to maintain reader interest
+
+### Visual Design Elements
+
+Articles should include a variety of visual elements to maintain engagement:
+
+#### Pull Quotes
+Use to highlight memorable insights or key takeaways:
+```tsx
+<div className="my-12 pl-6 border-l-4 border-cyan-500">
+  <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+    "Your memorable quote here."
+  </p>
+</div>
+```
+
+#### Statistics Cards
+Display key metrics and data points:
+```tsx
+<div className="my-10 grid md:grid-cols-3 gap-6">
+  <div className="bg-slate-900/50 border border-red-900/50 rounded-lg p-6 text-center">
+    <div className="text-3xl font-bold text-red-400 mb-2">$800K+</div>
+    <div className="text-slate-400 text-sm">Metric description</div>
+  </div>
+  {/* Add more cards as needed */}
+</div>
+```
+
+#### Styled Lists
+Present grouped information in an engaging way:
+```tsx
+<div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
+  <div className="text-white font-semibold mb-4">Section heading:</div>
+  <ul className="space-y-3 text-slate-300">
+    <li className="flex items-start gap-3">
+      <span className="text-cyan-400 mt-1">→</span>
+      <span>List item with context</span>
+    </li>
+  </ul>
+</div>
+```
+
+#### Before/After Comparison Cards
+Show traditional vs. modern approaches or problem vs. solution:
+```tsx
+<div className="my-12 grid md:grid-cols-2 gap-6">
+  <div className="bg-slate-900/30 border border-red-900/30 rounded-lg p-6">
+    <div className="text-red-400 font-semibold mb-4">Old Way</div>
+    {/* Items with ✗ */}
+  </div>
+  <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+    <div className="text-cyan-400 font-semibold mb-4">New Way</div>
+    {/* Items with ✓ */}
+  </div>
+</div>
+```
+
+#### Section Dividers
+Create visual breaks between major sections:
+```tsx
+<div className="my-16 flex items-center gap-4">
+  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+  <div className="text-slate-500 text-sm">•••</div>
+  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+</div>
+```
+
+### When to Use Each Element
+
+- **Pull Quotes**: 1-2 per article, highlighting the most impactful insights
+- **Statistics Cards**: For key data, ROI figures, before/after metrics
+- **Styled Lists**: When listing 3+ related items (questions, features, considerations)
+- **Comparison Cards**: When contrasting approaches or showing evolution
+- **Section Dividers**: Between major topic shifts, especially before conclusion
+
+### Color Palette Guidelines
+- **Problems/Warnings**: Red theme (red-900/red-400)
+- **Success/Results**: Cyan/Blue theme (cyan-900/cyan-400, blue-900/blue-400)
+- **Neutral/Info**: Slate theme (slate-900/slate-400)
+- **Gradients**: Use for emphasis on success stories (from-cyan-900/20 to-blue-900/20)
+
 ### Styling Guidelines
-- Use existing color schemes (slate, blue, cyan)
+- Use existing color schemes (slate, blue, cyan, red for problems)
 - Maintain consistent spacing (mb-6, mt-12, etc.)
 - Use semantic HTML (h2, h3, etc. in order)
 - Include hover states on interactive elements
+- Balance text blocks with visual elements (aim for visual break every 3-4 paragraphs)
 
 ## Category Guidelines
 
