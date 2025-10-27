@@ -2,57 +2,29 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Settings, Users, CheckCircle } from "lucide-react";
+import ResponsiveNav from "@/components/ResponsiveNav";
 
 export default function Work() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container py-6">
-          <nav className="flex items-center justify-between">
-            <Link href="/">
-              <span className="text-2xl font-bold">Ryan Winzenburg</span>
-            </Link>
-            <div className="flex items-center gap-8">
-              <Link href="/work">
-                <span className="text-sm font-medium text-primary">Work</span>
-              </Link>
-              <Link href="/methodology">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Methodology</span>
-              </Link>
-              <Link href="/about">
-                <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
-              </Link>
-              <Link href="/services">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
-              </Link>
-              <Link href="/articles">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
-              </Link>
-              <Link href="/contact">
-                <Button>Contact</Button>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <ResponsiveNav currentPage="work" />
 
       {/* Hero */}
       <section className="container py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Case Studies
+          Strategic Impact Portfolio
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl">
-          Real business outcomes from multiplying team velocity through AI-augmented workflows.
+          Board-level results: $3M+ value created per engagement, 6-12 month runway extensions, and defensible competitive advantages through AI-native transformation.
         </p>
       </section>
 
       {/* Featured Projects */}
       <section className="container pb-24">
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">Featured Projects</h2>
+          <h2 className="text-2xl font-bold mb-2">Portfolio Value Creation</h2>
           <p className="text-muted-foreground">
-            How I helped companies extend runway, ship faster, and scale without adding headcount
+            Strategic transformations that deliver capital efficiency, competitive advantage, and organizational velocity
           </p>
         </div>
 
@@ -390,20 +362,20 @@ export default function Work() {
       <section className="container py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Multiply Your Team's Velocity?
+            Ready for Board-Level Impact?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's discuss how I can help you extend runway, ship faster, and scale without adding headcount.
+            Whether you're a VC transforming portfolio companies or an executive seeking strategic leadership, let's discuss VP/C-suite opportunities that create lasting competitive advantage.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg">
-                Schedule a Discovery Call
+                Explore Strategic Roles
               </Button>
             </Link>
             <Link href="/services">
               <Button size="lg" variant="outline">
-                View Services & Pricing
+                View Leadership Services
               </Button>
             </Link>
           </div>

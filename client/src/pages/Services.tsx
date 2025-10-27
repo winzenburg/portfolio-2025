@@ -4,17 +4,17 @@ import { Download, CheckCircle, ArrowRight } from "lucide-react";
 export default function Services() {
   return (
     <div className="min-h-screen bg-white">
-      <ResponsiveNav currentPage="services" />
+      <ResponsiveNav currentPage="services" theme="light" />
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Services & Pricing
+            Strategic Engagement Models
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Enterprise-grade UX strategy delivered 4-6x faster through AI-augmented workflows.
+            From VP-level strategic leadership to high-impact consulting—flexible engagement models designed for VCs transforming portfolio companies and executives building competitive advantage.
             <br />
-            Choose the rate sheet that matches your organization.
+            Choose the approach that matches your strategic objectives.
           </p>
         </div>
       </section>
@@ -27,27 +27,27 @@ export default function Services() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">4-6x Faster Delivery</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Build Competitive Moats</h3>
               <p className="text-gray-600">
-                AI-augmented workflows deliver in 2-3 weeks what traditional consultants take 8-12 weeks to complete.
+                4-6x velocity gains create defensible competitive advantages—extending runway 6-12 months and establishing market leadership before competitors catch up.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Fortune 500 Experience</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Board-Ready Results</h3>
               <p className="text-gray-600">
-                Proven methodologies from Life Time Fitness, CVS Health, and Comcast. Enterprise quality at startup speed.
+                $3M+ portfolio value per engagement. Proven at Fortune 50 and Series B-D scale. Predictable strategic outcomes, not experiments.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">End-to-End Ownership</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Organizational Transformation</h3>
               <p className="text-gray-600">
-                From strategy to high-fidelity prototypes. No handoff delays, no miscommunication. Complete accountability.
+                AI-native capabilities that outlast the engagement. Your team becomes permanently faster, your organization gains sustainable competitive advantage.
               </p>
             </div>
           </div>
@@ -310,24 +310,24 @@ export default function Services() {
       <section className="py-20 px-6 bg-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to Accelerate Your UX Strategy?
+            Ready to Build Strategic Competitive Advantage?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Schedule a complimentary discovery call to discuss your project and determine the best engagement model.
+            Whether you're seeking VP-level strategic leadership or high-impact consulting, let's discuss opportunities that deliver board-level impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/portfolio-2025/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-semibold"
             >
-              Schedule Discovery Call
+              Explore Strategic Opportunities
               <ArrowRight className="w-5 h-5 ml-2" />
             </a>
             <a
               href="/portfolio-2025/work"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors font-semibold"
             >
-              View Case Studies
+              View Strategic Impact
             </a>
           </div>
         </div>

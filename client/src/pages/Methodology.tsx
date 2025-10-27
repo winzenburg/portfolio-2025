@@ -2,48 +2,20 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Settings } from "lucide-react";
+import ResponsiveNav from "@/components/ResponsiveNav";
 
 export default function Methodology() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container py-6">
-          <nav className="flex items-center justify-between">
-            <Link href="/">
-              <span className="text-2xl font-bold">Ryan Winzenburg</span>
-            </Link>
-            <div className="flex items-center gap-8">
-              <Link href="/work">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Work</span>
-              </Link>
-              <Link href="/methodology">
-                <span className="text-sm font-medium text-primary">Methodology</span>
-              </Link>
-              <Link href="/about">
-                <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
-              </Link>
-              <Link href="/services">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
-              </Link>
-              <Link href="/articles">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
-              </Link>
-              <Link href="/contact">
-                <Button>Contact</Button>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <ResponsiveNav currentPage="methodology" />
 
       {/* Hero */}
       <section className="container py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          How I Deliver 4-6x Faster
+          Strategic AI-Native Methodology
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl">
-          A proven, repeatable methodology that combines 25 years of Fortune 50 expertise with AI-augmented workflows to deliver enterprise quality at startup speed.
+          A proven, repeatable methodology that transforms organizations into AI-native competitors—delivering board-level impact through 25 years of Fortune 50 expertise combined with cutting-edge AI workflows.
         </p>
       </section>
 
@@ -337,20 +309,20 @@ export default function Methodology() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Accelerate Your Team?
+              Ready to Transform Your Organization?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Let's discuss how this methodology can help you ship 4-6x faster without adding headcount.
+              Let's discuss how this AI-native methodology creates sustainable competitive advantage and delivers board-level impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
                 <Button size="lg">
-                  Schedule a Discovery Call
+                  Explore Strategic Opportunities
                 </Button>
               </Link>
               <Link href="/work">
                 <Button size="lg" variant="outline">
-                  View Case Studies
+                  View Strategic Impact
                 </Button>
               </Link>
             </div>

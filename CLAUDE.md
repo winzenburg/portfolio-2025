@@ -1,28 +1,273 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code when working with the Portfolio 2025 project.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Repository Purpose
 
 This is Ryan Winzenburg's professional portfolio website showcasing expertise in AI-augmented UX workflows, design systems, and strategic product development. The site features a blog with in-depth articles on design systems, AI workflows, and business strategy.
 
+## Technical Stack
+
+- **Frontend**: React 18 + TypeScript + Vite
+- **Routing**: Wouter (v3) with `/portfolio-2025/` base path
+- **Styling**: TailwindCSS v4 with custom dark theme
+- **UI Components**: Radix UI + shadcn/ui pattern
+- **Deployment**: GitHub Pages via GitHub Actions
+- **Package Manager**: pnpm (required - has patches for wouter)
+
+## Development Commands
+
+```bash
+# Start development server (port 3000, auto-finds next port if busy)
+pnpm dev
+
+# Type checking
+pnpm check
+
+# Build for production
+pnpm build
+
+# Format code
+pnpm format
+
+# Git hooks setup
+pnpm setup-hooks             # Install pre-commit hook for validation
+
+# Article validation and optimization
+pnpm validate-articles       # Validate all article metadata and consistency
+pnpm optimize-images         # Optimize hero images (PNG → JPG, resize, compress)
+
+# Email/content automation scripts (for LinkedIn posts)
+pnpm email-content           # Email article content
+pnpm email-week             # Send weekly content
+pnpm email-week-1           # Send specific week
+pnpm email-today            # Send today's content
+```
+
+## Development Environment Setup
+
+### Prerequisites
+- Node.js 20+ (check with `node --version`)
+- pnpm 10+ (install with `npm install -g pnpm`)
+
+### First Time Setup
+```bash
+# Clone repository
+git clone [repo-url]
+cd Portfolio-2025
+
+# Install dependencies (must use pnpm due to patches)
+pnpm install
+
+# Set up Git hooks (pre-commit validation)
+pnpm setup-hooks
+
+# Copy environment variables (if needed)
+cp .env.example .env
+# Edit .env with your values
+
+# Start development server
+pnpm dev
+```
+
+### Environment Variables
+Check `.env.example` for required variables. Current variables:
+- Email automation scripts require SMTP configuration
+- Add to `.env` (never commit this file)
+
+### Verifying Setup
+After running `pnpm dev`, you should see:
+```
+VITE ready in [time] ms
+
+➜  Local:   http://localhost:3000/portfolio-2025/
+➜  Network: http://[your-ip]:3000/portfolio-2025/
+```
+
+Navigate to the local URL to verify the site loads.
+
+### Git Pre-Commit Hook
+A pre-commit hook is configured to run validation checks automatically before each commit:
+
+**What it checks:**
+1. TypeScript type checking (`pnpm check`)
+2. Article metadata validation (`pnpm validate-articles`)
+
+**When it runs:**
+- Automatically before every `git commit`
+- Can be bypassed with `git commit --no-verify` (not recommended)
+
+**Behavior:**
+- ✅ Allows commit if all checks pass
+- ⚠️ Allows commit if only warnings (image sizes)
+- ❌ Blocks commit if critical issues found
+
+**Note:** The hook is in `.git/hooks/pre-commit` and won't be committed to the repository. New contributors need to set it up locally (see setup script below).
+
+**Setting up the hook for new contributors:**
+```bash
+# Run the setup script (recommended)
+pnpm setup-hooks
+
+# Or manually copy the hook from scripts/setup-git-hooks.sh
+bash scripts/setup-git-hooks.sh
+```
+
+## Project Architecture
+
+### Routing System
+- Uses **Wouter** for client-side routing
+- **Base path**: `/portfolio-2025/` (set in vite.config.ts and App.tsx)
+- All routes must account for this base path
+- Article routes: `/portfolio-2025/articles/[slug]`
+- Route configuration: `client/src/App.tsx:30-62`
+
+### Path Aliases
+Configured in vite.config.ts:
+- `@/` → `client/src/`
+- `@shared/` → `shared/`
+- `@assets/` → `attached_assets/`
+
+### Component Structure
+```
+client/src/
+├── components/
+│   ├── ui/                    # shadcn/ui components (Radix UI wrappers)
+│   ├── ErrorBoundary.tsx      # Top-level error handling
+│   ├── ResponsiveNav.tsx      # Main navigation
+│   └── ScrollToTop.tsx        # Route change scroll reset
+├── contexts/
+│   └── ThemeContext.tsx       # Theme management
+├── pages/
+│   ├── Articles.tsx           # Article index with metadata
+│   ├── articles/
+│   │   ├── ARTICLE_TEMPLATE.tsx  # Template for new articles
+│   │   └── *.tsx              # Individual article components
+│   ├── Home.tsx               # Landing page
+│   ├── Work.tsx               # Portfolio/case studies
+│   └── [Other pages]
+└── hooks/
+    └── useMobile.tsx          # Responsive breakpoint hook
+```
+
+### Adding New Article Routes
+When adding a new article:
+1. Create article component in `client/src/pages/articles/`
+2. Import it in `App.tsx`
+3. Add route in `App.tsx` Router Switch (line ~40-50)
+4. Add metadata to `Articles.tsx` articles array
+5. **Route path must match slug** (kebab-case)
+
+Example:
+```tsx
+// In App.tsx
+import YourArticle from "./pages/articles/YourArticle";
+// ...
+<Route path="/articles/your-article-slug" component={YourArticle} />
+```
+
+### Build & Deployment
+- **Build output**: `dist/public/` (configured in vite.config.ts)
+- **Deployment**: Automatic via GitHub Actions on push to `main`
+- **Deploy workflow**: `.github/workflows/deploy.yml`
+- **URL**: https://winzenburg.github.io/portfolio-2025/
+- Build includes both frontend (Vite) and server (esbuild), though only frontend is deployed to GitHub Pages
+
+### Important Technical Notes
+- **pnpm required**: Project uses pnpm patches for wouter
+- **Base path critical**: All internal links must use `/portfolio-2025/` prefix
+- **Port flexibility**: Dev server tries 3000, but will use next available port
+- **Theme**: Currently set to light mode default (can be made switchable)
+- **UI components**: Use shadcn/ui pattern - components in `components/ui/` are wrappers around Radix UI
+
+## React Patterns & Conventions
+
+### UI Component Usage
+This project uses **shadcn/ui** components (Radix UI wrappers). Key patterns:
+
+**Importing components:**
+```tsx
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+```
+
+**Adding new shadcn components:**
+- Components are already installed - check `components/ui/` first
+- Don't install new UI libraries unless necessary
+- Maintain consistent Radix UI + Tailwind pattern
+
+### Styling Patterns
+**Typography in articles:**
+```tsx
+// Standard paragraph
+<p className="text-slate-300 leading-relaxed mb-6">
+
+// Section headings
+<h2 className="text-3xl font-bold text-white mb-6">
+<h3 className="text-2xl font-semibold text-white mb-4">
+```
+
+**Color palette (stick to these):**
+- Text: `text-slate-300`, `text-slate-400`, `text-white`
+- Problems/Warnings: `text-red-400`, `border-red-900/50`
+- Success/Results: `text-cyan-400`, `text-blue-400`, `border-cyan-700/50`
+- Backgrounds: `bg-slate-900/50`, `bg-slate-900/30`
+
+### Navigation Patterns
+**Internal links (use wouter's Link):**
+```tsx
+import { Link } from "wouter"
+
+<Link href="/portfolio-2025/articles/your-slug">
+  <a className="...">Article Title</a>
+</Link>
+```
+
+**External links:**
+```tsx
+<a href="https://external-site.com"
+   target="_blank"
+   rel="noopener noreferrer">
+```
+
 ## Project Structure
 
 ```
 Portfolio-2025/
-├── client/                          # React frontend
+├── .github/workflows/
+│   └── deploy.yml                   # GitHub Pages deployment
+├── client/                          # React frontend (Vite root)
 │   ├── src/
+│   │   ├── components/
+│   │   │   ├── ui/                  # shadcn/ui components
+│   │   │   ├── ErrorBoundary.tsx
+│   │   │   ├── ResponsiveNav.tsx    # Main navigation
+│   │   │   └── ScrollToTop.tsx
+│   │   ├── contexts/
+│   │   │   └── ThemeContext.tsx
 │   │   ├── pages/
-│   │   │   ├── Articles.tsx         # Articles index page
-│   │   │   └── articles/
-│   │   │       ├── ARTICLE_TEMPLATE.tsx  # Template for new articles
-│   │   │       └── *.tsx            # Individual article components
-│   │   └── components/
-│   │       └── ResponsiveNav.tsx    # Navigation component
-│   └── public/
-│       └── images/articles/         # Article hero images
+│   │   │   ├── Articles.tsx         # Articles index with metadata
+│   │   │   ├── articles/
+│   │   │   │   ├── ARTICLE_TEMPLATE.tsx  # Template for new articles
+│   │   │   │   └── *.tsx            # Individual article components
+│   │   │   ├── Home.tsx
+│   │   │   ├── Work.tsx
+│   │   │   └── [Other pages]
+│   │   ├── App.tsx                  # Router configuration
+│   │   └── main.tsx                 # Entry point
+│   ├── public/
+│   │   └── images/articles/         # Article hero images
+│   └── index.html
+├── scripts/                         # Email automation for LinkedIn posts
+│   ├── email-content.js
+│   ├── send-weekly-content.js
+│   ├── send-daily-content.js
+│   └── setup-automation.sh
+├── linkedin-posts/                  # LinkedIn content calendar files
 ├── ARTICLES_WORKFLOW.md             # Complete article creation guide
-└── CLAUDE.md                        # This file
+├── CLAUDE.md                        # This file
+├── package.json                     # pnpm scripts and dependencies
+└── vite.config.ts                   # Vite configuration
 ```
 
 ## Article Creation Philosophy
@@ -441,6 +686,116 @@ Create visual breaks between major sections:
 - **Neutral/Info**: Slate theme (slate-300, slate-400)
 - **Gradients**: Success stories (from-cyan-900/20 to-blue-900/20)
 
+## Image & Asset Management
+
+### Article Hero Images
+**Location:** `client/public/images/articles/`
+
+**Naming convention:**
+- Use kebab-case matching article slug
+- Format: `article-slug-hero.jpg` or `article-slug-hero.png`
+- Example: `design-systems-fail-hero.jpg`
+
+**Image specifications:**
+- Recommended size: 1200x630px (for social sharing)
+- Format: JPG for photos, PNG for graphics/screenshots
+- Optimize before committing (use tools like TinyPNG)
+- Keep file size under 200KB
+
+**Usage in article component:**
+```tsx
+<img
+  src="/portfolio-2025/images/articles/your-article-hero.jpg"
+  alt="Descriptive alt text for accessibility"
+  className="w-full h-auto rounded-lg"
+/>
+```
+
+### Other Assets
+- Icons: Use `lucide-react` (already installed)
+- Don't add new icon libraries
+- Custom SVGs: Inline them in components when possible
+
+### Optimizing Images
+To optimize all hero images at once:
+
+```bash
+# Step 1: Preview optimization (safe - keeps originals)
+pnpm optimize-images
+
+# Step 2: Verify quality in browser
+pnpm dev
+# Navigate to articles and check JPG quality
+
+# Step 3: If satisfied, delete originals
+bash scripts/optimize-images.sh --delete
+```
+
+The script:
+- Converts PNG → JPEG with 85% quality
+- Resizes to max 1200px width (maintains aspect ratio)
+- Target: <200KB per image
+- Safe by default (keeps originals unless --delete flag used)
+
+## Article Metadata Schema
+
+### Required Fields in Article Component
+```tsx
+export default function ArticleName() {
+  return (
+    <article>
+      {/* Date - format: "Month DD, YYYY" */}
+      <time className="...">January 15, 2025</time>
+
+      {/* Read time - format: "X min read" */}
+      <span className="...">8 min read</span>
+
+      {/* Title - 50-70 characters optimal for SEO */}
+      <h1>Your Article Title</h1>
+
+      {/* Subtitle - 120-150 characters */}
+      <p className="...">Compelling subtitle...</p>
+    </article>
+  )
+}
+```
+
+### Required Fields in Articles.tsx
+```typescript
+{
+  id: "10",              // String, increment from last article
+  title: "",             // Must match h1 in article component
+  excerpt: "",           // 2-3 sentences, 150-200 characters
+  date: "",              // Must match date in article component
+  readTime: "",          // Must match readTime in article component
+  slug: "",              // kebab-case, matches route and filename
+  category: ""           // One of: "Design Systems" | "Business Strategy" | "AI Workflow"
+}
+```
+
+### Metadata Validation Checklist
+Before committing a new article:
+- [ ] Date matches in both files
+- [ ] Read time matches in both files
+- [ ] Title is compelling and SEO-friendly
+- [ ] Excerpt provides clear value proposition
+- [ ] Slug is kebab-case and matches everywhere
+- [ ] Category is one of the three allowed values
+
+### Automated Validation
+Run the validation script to check all articles:
+```bash
+pnpm validate-articles
+```
+
+This checks:
+- ✓ Component files exist
+- ✓ Routes configured in App.tsx
+- ✓ Imports present in App.tsx
+- ✓ Date/readTime match between Articles.tsx and components
+- ✓ Hero images exist
+- ⚠ Image sizes (warns if >200KB)
+
 ## Article Workflow
 
 See `ARTICLES_WORKFLOW.md` for complete documentation. Quick summary:
@@ -459,44 +814,57 @@ See `ARTICLES_WORKFLOW.md` for complete documentation. Quick summary:
 - **Credibility**: Data-driven, cite real metrics, acknowledge trade-offs
 - **Audience**: Technical practitioners (PMs, designers, developers) seeking to leverage AI
 
-## Technical Stack
-
-- **Frontend**: React + TypeScript + Vite
-- **Routing**: Wouter
-- **Styling**: TailwindCSS with dark theme
-- **Deployment**: GitHub Pages via GitHub Actions
-- **Base Path**: `/portfolio-2025/`
-
 ## Common Tasks
 
 ### Adding a New Article
+
+**Complete workflow in ARTICLES_WORKFLOW.md** - Here's the quick version:
 
 1. Copy the template:
 ```bash
 cp client/src/pages/articles/ARTICLE_TEMPLATE.tsx client/src/pages/articles/YourArticle.tsx
 ```
 
-2. Write the article with:
-   - Narrative prose (not outline format)
-   - Visual elements every 3-4 paragraphs
-   - Personal anecdotes and real examples
-   - Data and metrics where applicable
+2. Update article component with narrative prose content (not outline format)
 
-3. Add metadata to `Articles.tsx`:
+3. **Add route to App.tsx:**
+```tsx
+// Import at top
+import YourArticle from "./pages/articles/YourArticle";
+
+// Add route in Switch component (~line 40-50)
+<Route path="/articles/your-article-slug" component={YourArticle} />
+```
+
+4. **Add metadata to Articles.tsx:**
 ```typescript
 {
   id: "10",
   title: "Your Article Title",
-  excerpt: "2-3 sentence preview of the article...",
+  excerpt: "2-3 sentence preview that describes what readers will learn...",
   date: "Month DD, YYYY",
   readTime: "X min read",
-  slug: "your-article-slug",
+  slug: "your-article-slug",  // Must match route path and filename
   category: "Design Systems" // or "Business Strategy" or "AI Workflow"
 }
 ```
 
-### Deploying Changes
+5. Test locally:
+```bash
+pnpm dev
+# Check: http://localhost:3000/portfolio-2025/articles
+# Check: http://localhost:3000/portfolio-2025/articles/your-article-slug
+```
 
+6. **Validate everything:**
+```bash
+pnpm validate-articles
+```
+Fix any issues reported before proceeding.
+
+**Note:** Validation also runs automatically via pre-commit hook when you commit.
+
+7. Deploy:
 ```bash
 git add .
 git commit -m "Add new article: Your Title"
@@ -504,6 +872,48 @@ git push
 ```
 
 GitHub Actions automatically deploys to: https://winzenburg.github.io/portfolio-2025/
+
+### Working with the Codebase
+
+**Development:**
+```bash
+pnpm dev              # Start dev server
+pnpm check            # Type check without building
+pnpm format           # Format with Prettier
+```
+
+**Making changes:**
+- Always use pnpm (not npm or yarn) - patches are required
+- Remember base path `/portfolio-2025/` for all internal links
+- UI components follow shadcn/ui pattern (Radix UI wrappers)
+- All routes configured in `client/src/App.tsx`
+
+## Common Pitfalls & Solutions
+
+### Article Creation Issues
+- **Missing route in App.tsx**: Article exists but shows 404
+  - Solution: Always add both import and `<Route>` in App.tsx
+  - Check: Search App.tsx for your article component name
+
+- **Metadata mismatch**: Date/readTime differs between component and Articles.tsx
+  - Solution: Copy metadata directly from article component to Articles.tsx
+  - These must match exactly or users see inconsistent information
+
+- **Base path forgotten**: Links break in production but work locally
+  - Wrong: `href="/articles/my-article"`
+  - Right: `href="/portfolio-2025/articles/my-article"`
+  - Use Link component from wouter for internal navigation
+
+- **Hero image paths**: Images not loading in production
+  - Images must be in `client/public/images/articles/`
+  - Path in component: `/portfolio-2025/images/articles/your-image.jpg`
+
+### Routing Issues
+- **Slug inconsistency**: Component file name, route path, and Articles.tsx slug must all match
+  - File: `AITechStack.tsx`
+  - Route: `/articles/ai-tech-stack`
+  - Slug: `"ai-tech-stack"`
+  - All three must use same kebab-case slug
 
 ## Quality Standards
 
@@ -522,6 +932,47 @@ GitHub Actions automatically deploys to: https://winzenburg.github.io/portfolio-
 - ✅ Responsive design (mobile-friendly)
 - ✅ Accessible (semantic HTML, proper contrast)
 - ✅ Fast loading (optimized images)
+
+## Article Pre-Publish Checklist
+
+Before pushing a new article, verify:
+
+### Technical Requirements
+- [ ] Article component created from ARTICLE_TEMPLATE.tsx
+- [ ] Import added to App.tsx (line ~19-27)
+- [ ] Route added to App.tsx Switch (line ~40-50)
+- [ ] Metadata added to Articles.tsx array (at top for newest first)
+- [ ] Hero image exists in `client/public/images/articles/`
+- [ ] All metadata matches (date, readTime) between files
+- [ ] Slug is consistent everywhere (kebab-case)
+- [ ] "Next Article" link points to correct article
+
+### Content Requirements
+- [ ] Opening hook (2-4 paragraphs) is compelling
+- [ ] Written in first-person narrative voice (not outline style)
+- [ ] Contains real metrics and specific examples
+- [ ] Visual elements every 3-4 paragraphs
+- [ ] Pull quotes (1-2) highlight key insights
+- [ ] Section dividers between major topics
+- [ ] Color palette follows guidelines (cyan/blue/slate/red)
+- [ ] 2,000-2,500 words total (~9 min read)
+
+### Testing Requirements
+- [ ] `pnpm check` passes (no TypeScript errors)
+- [ ] **`pnpm validate-articles` passes (no critical issues)**
+- [ ] Article loads locally at `/portfolio-2025/articles/[slug]`
+- [ ] Article appears in articles index
+- [ ] Images load correctly
+- [ ] Navigation works (next article link, back to articles)
+- [ ] Responsive design works (test mobile view)
+- [ ] All links use correct base path
+
+### Accessibility & SEO
+- [ ] All images have descriptive alt text
+- [ ] Heading hierarchy is correct (h1 → h2 → h3)
+- [ ] Color contrast meets WCAG standards
+- [ ] Title is 50-70 characters (SEO optimal)
+- [ ] Excerpt is 150-200 characters
 
 ## Reference Articles
 
@@ -545,9 +996,110 @@ Use this as the model for all future articles.
 - **Maintain consistency**: Follow the template and color palette
 - **Test thoroughly**: Check both desktop and mobile before deploying
 
-## Need Help?
+## Performance Guidelines
 
-- See `ARTICLES_WORKFLOW.md` for detailed workflow
-- Reference `ARTICLE_TEMPLATE.tsx` for code examples
-- Check `DesignSystemsFail.tsx` for best practices
-- Test locally with `npm run dev` before deploying
+### Bundle Size Awareness
+- Don't add new dependencies without justification
+- Check bundle impact: `pnpm build` and review dist/public size
+- Current optimized bundle should be < 500KB gzipped
+
+### Image Optimization
+- Compress all images before committing
+- Tools: TinyPNG, Squoosh, ImageOptim
+- Target: < 200KB per hero image
+- Use appropriate formats (JPG for photos, PNG for graphics)
+
+### Code Splitting
+- Articles are already code-split via Wouter routing
+- Each article component loads only when navigated to
+- Don't break this pattern with eager imports
+
+### Lazy Loading
+If adding heavy components, lazy load them:
+```tsx
+import { lazy, Suspense } from 'react'
+
+const HeavyComponent = lazy(() => import('./HeavyComponent'))
+
+function ArticleName() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HeavyComponent />
+    </Suspense>
+  )
+}
+```
+
+## Key Files Reference
+
+- **ARTICLES_WORKFLOW.md** - Detailed article creation workflow
+- **ARTICLE_TEMPLATE.tsx** - Article component template with code examples
+- **DesignSystemsFail.tsx** - Reference article showcasing best practices
+- **App.tsx** - Router configuration for all routes
+- **vite.config.ts** - Build configuration and path aliases
+- **scripts/validate-articles.js** - Automated article validation tool
+- **scripts/optimize-images.sh** - Image optimization script
+
+## Automated Validation & Optimization
+
+### Article Validation Tool
+
+The validation script checks all articles for consistency and common mistakes:
+
+```bash
+pnpm validate-articles
+```
+
+**What it checks:**
+- Component files exist and match slugs
+- Routes configured in App.tsx
+- Imports present in App.tsx
+- Metadata matches between Articles.tsx and components (date, readTime)
+- Hero images exist with correct naming
+- Image sizes (warns if >200KB)
+
+**Exit codes:**
+- `0` - All checks pass (only warnings allowed)
+- `1` - Critical issues found (blocks CI/CD)
+
+**When to run:**
+- Automatically runs via pre-commit hook
+- Manually before committing: `pnpm validate-articles`
+- After updating article metadata
+- When troubleshooting 404s or missing images
+- As part of CI/CD pipeline
+
+**Pre-commit hook:**
+The validation runs automatically before each commit. The hook:
+- Runs TypeScript type checking
+- Validates all article metadata
+- Allows warnings (image sizes) but blocks critical issues
+- Can be bypassed with `--no-verify` if absolutely necessary
+
+### Image Optimization Tool
+
+Optimize all hero images automatically:
+
+```bash
+# Safe preview mode (keeps originals)
+pnpm optimize-images
+
+# Delete originals after conversion
+bash scripts/optimize-images.sh --delete
+```
+
+**What it does:**
+- Converts PNG → JPEG (85% quality)
+- Resizes to max 1200px width
+- Compresses to target <200KB
+- Reports before/after sizes
+
+**Typical results:**
+- Before: 1.8MB - 2.2MB per image
+- After: 150KB - 200KB per image
+- Savings: ~90% reduction in file size
+
+**Performance impact:**
+- Faster page loads (especially mobile)
+- Better Core Web Vitals scores
+- Reduced bandwidth costs

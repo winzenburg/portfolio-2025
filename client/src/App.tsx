@@ -17,7 +17,7 @@ import CaseStudyCvs from "./pages/CaseStudyCvs";
 import Services from "./pages/Services";
 import Articles from "./pages/Articles";
 import AIAugmentedWorkflow from "./pages/articles/AIAugmentedWorkflow";
-import AIMarketValidation from "./pages/articles/AIMarketValidation";
+import AiPoweredMarketValidation from "./pages/articles/AiPoweredMarketValidation";
 import AudienceFirstGoToMarket from "./pages/articles/AudienceFirstGoToMarket";
 import MVPStrategy from "./pages/articles/MVPStrategy";
 import MonetizationStrategy from "./pages/articles/MonetizationStrategy";
@@ -39,7 +39,7 @@ function Router() {
       <Route path="/services" component={Services} />
       <Route path="/articles" component={Articles} />
       <Route path="/articles/ai-augmented-workflow" component={AIAugmentedWorkflow} />
-      <Route path="/articles/ai-powered-market-validation" component={AIMarketValidation} />
+      <Route path="/articles/ai-powered-market-validation" component={AiPoweredMarketValidation} />
       <Route path="/articles/audience-first-go-to-market" component={AudienceFirstGoToMarket} />
       <Route path="/articles/mvp-strategy" component={MVPStrategy} />
       <Route path="/articles/monetization-strategy" component={MonetizationStrategy} />

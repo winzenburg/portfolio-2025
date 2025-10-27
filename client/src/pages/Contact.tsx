@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link } from "wouter";
 import { useState } from "react";
+import ResponsiveNav from "@/components/ResponsiveNav";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -20,17 +21,17 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    
+
     const form = e.target as HTMLFormElement;
     const data = new FormData(form);
-    
+
     try {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(data as any).toString()
       });
-      
+
       if (response.ok) {
         setSubmitted(true);
         setFormData({
@@ -53,57 +54,16 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container py-6">
-          <nav className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-xl font-bold">Ryan Winzenburg</a>
-            </Link>
-            <div className="hidden md:flex items-center gap-8">
-              <Link href="/work">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">
-                  Work
-                </a>
-              </Link>
-              <Link href="/methodology">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">
-                  Methodology
-                </a>
-              </Link>
-              <Link href="/about">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">
-                  About
-                </a>
-              </Link>
-              <Link href="/services">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">
-                  Services
-                </a>
-              </Link>
-              <Link href="/articles">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">
-                  Articles
-                </a>
-              </Link>
-              <Link href="/contact">
-                <a className="text-foreground font-medium">
-                  Contact
-                </a>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <ResponsiveNav currentPage="contact" />
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Let's Talk About Your Project
+            Let's Discuss Strategic Leadership Opportunities
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Schedule a complimentary discovery call to discuss how AI-augmented UX can accelerate your product development.
+            Whether you're a VC transforming portfolio companies, an executive building AI-native competitive advantage, or a board seeking transformational leadership—let's explore opportunities for board-level impact.
           </p>
         </div>
       </section>
@@ -133,7 +93,7 @@ export default function Contact() {
               </div>
             ) : (
             <>
-            <h2 className="text-2xl font-bold mb-6">Schedule a Discovery Call</h2>
+            <h2 className="text-2xl font-bold mb-6">Start a Strategic Conversation</h2>
             <form 
               onSubmit={handleSubmit} 
               className="space-y-6"
@@ -201,12 +161,12 @@ export default function Contact() {
                   required
                   value={formData.role}
                   onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                  placeholder="e.g., VP of Product, Design Director"
+                  placeholder="e.g., VC Partner, VP Product, C-Suite Executive"
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Tell me about your project *
+                  Tell me about your strategic objectives *
                 </label>
                 <Textarea
                   id="message"
@@ -214,7 +174,7 @@ export default function Contact() {
                   required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="What challenges are you facing? What are your goals?"
+                  placeholder="What competitive advantages are you seeking? What board-level impact do you need to deliver?"
                   rows={6}
                 />
               </div>
@@ -261,9 +221,9 @@ export default function Contact() {
               <h3 className="font-semibold mb-2">What to Expect</h3>
               <ul className="text-sm text-muted-foreground space-y-2">
                 <li>• I typically respond within 24 hours</li>
-                <li>• Discovery calls are 30-45 minutes</li>
-                <li>• I'll share relevant case studies and ROI examples</li>
-                <li>• No obligation—just an honest conversation about fit</li>
+                <li>• Strategic conversations are 30-45 minutes</li>
+                <li>• I'll share portfolio impact examples and board-ready metrics</li>
+                <li>• No obligation—just an honest discussion about strategic fit</li>
               </ul>
             </div>
             </div>

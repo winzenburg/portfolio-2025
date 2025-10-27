@@ -62,7 +62,7 @@ const articles: Article[] = [
     title: "The MVP Strategy: Launching Products That Sell Themselves",
     excerpt: "Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. The alternative: Ship the minimum that creates genuine value. Make it so good people can't help but share it. Learn the virality-by-design framework.",
     date: "June 26, 2025",
-    readTime: "5 min read",
+    readTime: "8 min read",
     slug: "mvp-strategy",
     category: "Business Strategy"
   },

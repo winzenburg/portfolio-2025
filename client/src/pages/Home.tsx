@@ -2,84 +2,56 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { CheckCircle } from "lucide-react";
+import ResponsiveNav from "@/components/ResponsiveNav";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container py-6">
-          <nav className="flex items-center justify-between">
-            <Link href="/">
-              <span className="text-2xl font-bold">Ryan Winzenburg</span>
-            </Link>
-            <div className="flex items-center gap-8">
-              <Link href="/work">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Work</span>
-              </Link>
-              <Link href="/methodology">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Methodology</span>
-              </Link>
-              <Link href="/about">
-                <span className="text-sm font-medium hover:text-primary transition-colors">About</span>
-              </Link>
-              <Link href="/services">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
-              </Link>
-              <Link href="/articles">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
-              </Link>
-              <Link href="/contact">
-                <Button>Contact</Button>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <ResponsiveNav currentPage="home" />
 
       {/* Hero Section */}
       <section className="container py-24 md:py-32">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-            Multiply Your Team's Velocity Without Adding Headcount
+            Turn AI Into Competitive Advantage Before Your Competitors Do
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl">
-            I help well-funded startups and Fortune 500 companies ship 4-6x faster through AI-augmented workflows that amplify your existing teams.
+            I help VCs and executive teams transform into AI-native organizations that ship 4-6x faster, extend runway 6-12 months, and build defensible competitive moats—without the 18-month learning curve.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="text-3xl font-bold mb-2">4-6x</div>
-              <div className="text-sm text-muted-foreground">Faster Delivery</div>
-              <div className="text-xs text-muted-foreground mt-1">Ship more with your team</div>
-            </div>
-            <div>
               <div className="text-3xl font-bold mb-2">$3M+</div>
-              <div className="text-sm text-muted-foreground">Value Created</div>
-              <div className="text-xs text-muted-foreground mt-1">Across 3 recent projects</div>
+              <div className="text-sm text-muted-foreground">Portfolio Value Created</div>
+              <div className="text-xs text-muted-foreground mt-1">Per engagement average</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">6-10x</div>
-              <div className="text-sm text-muted-foreground">ROI</div>
-              <div className="text-xs text-muted-foreground mt-1">Proven return on investment</div>
+              <div className="text-3xl font-bold mb-2">6-12mo</div>
+              <div className="text-sm text-muted-foreground">Runway Extension</div>
+              <div className="text-xs text-muted-foreground mt-1">Capital efficiency gains</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-2">4-6x</div>
+              <div className="text-sm text-muted-foreground">Speed to Market</div>
+              <div className="text-xs text-muted-foreground mt-1">Competitive advantage</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">25 Years</div>
-              <div className="text-sm text-muted-foreground">Fortune 500</div>
-              <div className="text-xs text-muted-foreground mt-1">Proven at scale</div>
+              <div className="text-sm text-muted-foreground">Fortune 500 → Startup</div>
+              <div className="text-xs text-muted-foreground mt-1">Scale + velocity proven</div>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact">
               <Button size="lg" className="w-full sm:w-auto">
-                Open to Strategic Leadership Roles
+                Explore VP/C-Suite Opportunities
               </Button>
             </Link>
             <Link href="/work">
               <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                View Case Studies
+                View Strategic Impact
               </Button>
             </Link>
           </div>
@@ -89,94 +61,94 @@ export default function Home() {
       {/* Value Propositions by Audience */}
       <section className="bg-muted/30 py-24">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">I'm Additive, Not Subtractive</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Strategic Outcomes, Not Just Execution</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
-            I amplify your existing teams - designers, engineers, and product managers - making everyone more effective without adding permanent headcount.
+            I transform organizations into AI-native competitors—building sustainable competitive advantages, not just shipping faster features.
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
             {/* For VCs */}
             <Card className="p-8">
               <div className="text-primary text-4xl mb-4"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
-              <h3 className="text-xl font-semibold mb-4">For VCs & Investors</h3>
+              <h3 className="text-xl font-semibold mb-4">For VCs & Board Members</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Extend Runway 6-12 Months</div>
-                    <div className="text-sm">Save $1M+ in development costs</div>
+                    <div className="font-medium text-foreground">Portfolio Value Creation</div>
+                    <div className="text-sm">Build AI-native moats before competitors catch up</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Ship 4-6x Faster</div>
-                    <div className="text-sm">Competitive advantage through velocity</div>
+                    <div className="font-medium text-foreground">Capital Efficiency as Weapon</div>
+                    <div className="text-sm">6-12 month runway extension through 4-6x velocity gains</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">De-Risk Investments</div>
-                    <div className="text-sm">Proven processes, predictable outcomes</div>
+                    <div className="font-medium text-foreground">De-Risk at Scale</div>
+                    <div className="text-sm">Proven playbook across Fortune 500 and Series B-D startups</div>
                   </div>
                 </div>
               </div>
             </Card>
 
-            {/* For Product Teams */}
+            {/* For VPs/C-Suite */}
             <Card className="p-8">
               <div className="text-primary text-4xl mb-4"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg></div>
-              <h3 className="text-xl font-semibold mb-4">For Product Teams</h3>
+              <h3 className="text-xl font-semibold mb-4">For VPs & Executive Teams</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Ship More Features</div>
-                    <div className="text-sm">4-6x more per quarter with your team</div>
+                    <div className="font-medium text-foreground">Board-Level Impact</div>
+                    <div className="text-sm">Results that matter: $2M+ annual savings, 40% faster GTM</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Unblock Your Team</div>
-                    <div className="text-sm">Designers and engineers ship faster</div>
+                    <div className="font-medium text-foreground">Career-Defining Transformation</div>
+                    <div className="text-sm">Lead the AI transformation your board is demanding</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Predictable Delivery</div>
-                    <div className="text-sm">Reliable timelines, measurable outcomes</div>
+                    <div className="font-medium text-foreground">Predictable Strategic Outcomes</div>
+                    <div className="text-sm">Not experiments—proven frameworks with measurable ROI</div>
                   </div>
                 </div>
               </div>
             </Card>
 
-            {/* For Design Leaders */}
+            {/* For Product/Design Leaders */}
             <Card className="p-8">
               <div className="text-primary text-4xl mb-4"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg></div>
-              <h3 className="text-xl font-semibold mb-4">For Design Leaders</h3>
+              <h3 className="text-xl font-semibold mb-4">For Product & Design Leaders</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Scale Without Hiring</div>
-                    <div className="text-sm">10x output without 10x headcount</div>
+                    <div className="font-medium text-foreground">Strategic Leverage at C-Suite</div>
+                    <div className="text-sm">Prove product/design ROI with board-ready metrics</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Elevate Your Team</div>
-                    <div className="text-sm">Designers focus on strategy, not pixels</div>
+                    <div className="font-medium text-foreground">Build Without Headcount Battles</div>
+                    <div className="text-sm">10x output through AI, not 10x hiring requests</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Prove Business Value</div>
-                    <div className="text-sm">Show design's ROI to the C-suite</div>
+                    <div className="font-medium text-foreground">Future-Proof Your Organization</div>
+                    <div className="text-sm">Sustainable competitive advantage through AI capabilities</div>
                   </div>
                 </div>
               </div>
@@ -284,20 +256,20 @@ export default function Home() {
       <section className="container py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Multiply Your Team's Velocity?
+            Ready to Build Your AI-Native Competitive Advantage?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's discuss how I can help your team ship faster without adding permanent headcount.
+            Whether you're a VC looking to transform portfolio companies or an executive seeking board-level impact, let's explore VP/C-suite opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg">
-                Schedule a Discovery Call
+                Discuss Strategic Leadership Roles
               </Button>
             </Link>
             <Link href="/work">
               <Button size="lg" variant="outline">
-                View Case Studies
+                See Portfolio Impact
               </Button>
             </Link>
           </div>

@@ -2,48 +2,20 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Zap } from "lucide-react";
+import ResponsiveNav from "@/components/ResponsiveNav";
 
 export default function About() {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container py-6">
-          <nav className="flex items-center justify-between">
-            <Link href="/">
-              <span className="text-2xl font-bold">Ryan Winzenburg</span>
-            </Link>
-            <div className="flex items-center gap-8">
-              <Link href="/work">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Work</span>
-              </Link>
-              <Link href="/methodology">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Methodology</span>
-              </Link>
-              <Link href="/about">
-                <span className="text-sm font-medium text-primary">About</span>
-              </Link>
-              <Link href="/services">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Services</span>
-              </Link>
-              <Link href="/articles">
-                <span className="text-sm font-medium hover:text-primary transition-colors">Articles</span>
-              </Link>
-              <Link href="/contact">
-                <Button>Contact</Button>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <ResponsiveNav currentPage="about" />
 
       {/* Hero */}
       <section className="container py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Force Multiplier for<br />Product Teams
+          Strategic Force Multiplier<br />for AI-Native Organizations
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl">
-          I help VCs, Product Leaders, and Design Teams ship 4-6x faster without adding permanent headcount.
+          I help VCs and executive teams build defensible competitive advantages through AI-native transformation—delivering board-level impact without the 18-month learning curve.
         </p>
       </section>
 
@@ -67,67 +39,67 @@ export default function About() {
       {/* Three Pillars */}
       <section className="bg-muted/30 py-24">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12">Why Companies Hire Me</h2>
+          <h2 className="text-3xl font-bold mb-12">Why VCs and Executives Hire Me</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
             <Card className="p-8">
               <div className="mb-4">
                 <Zap className="w-10 h-10 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">I Make Teams Faster</h3>
+              <h3 className="text-xl font-bold mb-3">I Build Competitive Moats</h3>
               <p className="text-muted-foreground mb-4">
-                My AI-augmented workflows deliver 4-6x faster results. This means your team ships more features per quarter, beats competitors to market, and validates ideas before burning runway.
+                My AI-augmented workflows deliver 4-6x faster results—creating defensible competitive advantages before competitors catch up. Speed isn't just efficiency; it's strategic positioning.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For VCs:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For VCs & Board Members:</div>
               <p className="text-sm text-muted-foreground mb-3">
-                Speed = competitive advantage. Companies that ship faster win markets.
+                Portfolio companies become AI-native leaders. 6-12 month runway extension through capital efficiency gains.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For Product Teams:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For VPs/C-Suite:</div>
               <p className="text-sm text-muted-foreground mb-3">
-                Ship more features without hiring. Unblock designers and engineers.
+                Board-ready results: $2M+ savings, 40% faster GTM. Career-defining transformation leadership.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For Design Leaders:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For Product/Design Leaders:</div>
               <p className="text-sm text-muted-foreground">
-                10x output without 10x headcount. Your team focuses on strategy, not pixels.
+                Strategic leverage at C-suite level with measurable ROI. Future-proof your organization.
               </p>
             </Card>
 
             <Card className="p-8">
               <div className="text-4xl mb-4"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
-              <h3 className="text-xl font-bold mb-3">I De-Risk Investments</h3>
+              <h3 className="text-xl font-bold mb-3">I De-Risk Strategic Bets</h3>
               <p className="text-muted-foreground mb-4">
-                25 years at Fortune 50 companies means I've seen every failure mode. I bring proven processes, predictable outcomes, and enterprise-grade quality—without enterprise timelines.
+                25 years at Fortune 50 companies means I've seen every failure mode at scale. I bring proven frameworks, predictable strategic outcomes, and enterprise-grade quality—without the learning curve.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For VCs:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For VCs & Board Members:</div>
               <p className="text-sm text-muted-foreground mb-3">
-                Proven processes reduce risk. $3M+ value created across recent projects.
+                Proven at both Fortune 500 and Series B-D scale. $3M+ portfolio value created per engagement.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For Product Teams:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For VPs/C-Suite:</div>
               <p className="text-sm text-muted-foreground mb-3">
-                Predictable delivery. No surprises. Measurable outcomes.
+                Not experiments—proven frameworks with measurable ROI. Predictable strategic delivery.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For Design Leaders:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For Product/Design Leaders:</div>
               <p className="text-sm text-muted-foreground">
-                Enterprise quality at startup speed. Show design's business impact.
+                Enterprise quality at startup velocity. Demonstrate business impact to your board.
               </p>
             </Card>
 
             <Card className="p-8">
               <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold mb-3">I'm Additive, Not Subtractive</h3>
+              <h3 className="text-xl font-bold mb-3">I Transform Organizations</h3>
               <p className="text-muted-foreground mb-4">
-                I don't replace your team—I amplify them. I embed with your designers, engineers, and PMs, making everyone more effective. When I leave, your team is faster permanently.
+                I don't just deliver projects—I transform organizations into AI-native competitors. I build capabilities, install systems, and create sustainable competitive advantages that outlast my engagement.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For VCs:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For VCs & Board Members:</div>
               <p className="text-sm text-muted-foreground mb-3">
-                No morale risk. Teams get better, not threatened.
+                Portfolio companies develop AI-native DNA. Sustainable competitive positioning, not temporary consulting.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For Product Teams:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For VPs/C-Suite:</div>
               <p className="text-sm text-muted-foreground mb-3">
-                Your team learns AI workflows. Velocity increase is permanent.
+                Legacy-building transformation. Your team becomes permanently faster, your organization AI-capable.
               </p>
-              <div className="text-sm font-semibold text-primary mb-2">For Design Leaders:</div>
+              <div className="text-sm font-semibold text-primary mb-2">For Product/Design Leaders:</div>
               <p className="text-sm text-muted-foreground">
-                Elevate your team's skills. Build design systems that scale.
+                Elevate entire practice areas. Build strategic leverage that compounds over time.
               </p>
             </Card>
           </div>
@@ -212,13 +184,13 @@ export default function About() {
               <div>
                 <h3 className="text-xl font-bold mb-3">What's your ideal engagement model?</h3>
                 <p className="text-muted-foreground">
-                  I offer both consulting (project-based or retainer) and strategic leadership roles (Principal/VP level). For consulting, I typically work on 4-12 week projects. For leadership roles, I'm looking for companies that value speed, quality, and massive ROI.
+                  I'm primarily focused on strategic leadership roles (VP Product Design, Head of Design, Principal) where I can deliver transformational impact. I also take on high-impact consulting engagements (4-12 weeks) for VCs transforming portfolio companies or executives solving mission-critical challenges.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-3">Are you available for full-time roles?</h3>
+                <h3 className="text-xl font-bold mb-3">Are you available for VP/C-suite roles?</h3>
                 <p className="text-muted-foreground">
-                  Yes, I'm open to strategic leadership roles (Principal, Head of, VP Product Design) where I can deliver massive business value. I'm based in Colorado but open to remote opportunities with forward-thinking companies.
+                  Yes, that's my primary focus. I'm looking for strategic leadership roles where I can build AI-native organizations and deliver board-level impact. I'm based in Colorado but open to remote opportunities with companies committed to AI-driven competitive advantage.
                 </p>
               </div>
             </div>
@@ -230,20 +202,20 @@ export default function About() {
       <section className="container py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Discuss How I Can Help
+            Let's Discuss Strategic Leadership Opportunities
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Whether you're a VC looking to de-risk portfolio companies, a PM trying to ship faster, or a Design Leader scaling without hiring—let's talk.
+            Whether you're a VC transforming portfolio companies, an executive building AI-native competitive advantage, or a board seeking transformational leadership—let's explore opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg">
-                Schedule a Discovery Call
+                Explore VP/C-Suite Roles
               </Button>
             </Link>
             <Link href="/work">
               <Button size="lg" variant="outline">
-                View Case Studies
+                View Strategic Impact
               </Button>
             </Link>
           </div>
