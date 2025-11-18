@@ -1,0 +1,70 @@
+name: Daily LinkedIn Content Automation
+
+on:
+  schedule:
+    # Run daily at 7 AM PST (15:00 UTC)
+    - cron: '0 15 * * *'
+
+  workflow_dispatch: # Allow manual triggering
+    inputs:
+      dry_run:
+        description: 'Run in dry-run mode (no emails sent)'
+        required: false
+        type: boolean
+        default: false
+      test_date:
+        description: 'Override date for testing (YYYY-MM-DD)'
+        required: false
+        type: string
+
+jobs:
+  send-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: .
+
+      - name: Checkout content repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.CONTENT_REPO_OWNER }}/Winzenburg-Content
+          token: ${{ secrets.CONTENT_REPO_TOKEN }}
+          path: content-repo
+
+      - name: Run daily content script
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          CONTENT_SCHEDULE_PATH: ${{ github.workspace }}/content-repo/linkedin-content-schedule.yaml
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ -n "${{ github.event.inputs.test_date }}" ]; then
+            ARGS="$ARGS --date ${{ github.event.inputs.test_date }}"
+          fi
+          node scripts/send-daily-content.js $ARGS
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-automation-logs
+          path: logs/
+          retention-days: 30
