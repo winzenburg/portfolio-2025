@@ -27,10 +27,7 @@ if (fs.existsSync(dotenvPath)) {
 
 // Configuration
 const CONFIG = {
-  scheduleFile: process.env.CONTENT_SCHEDULE_PATH || path.join(
-    process.env.HOME,
-    'Library/CloudStorage/GoogleDrive-ryanwinzenburg@gmail.com/My Drive/Projects/Winzenburg-Content/linkedin-content-schedule.yaml'
-  ),
+  scheduleFile: process.env.CONTENT_SCHEDULE_PATH || path.join(__dirname, '../linkedin-content-schedule.yaml'),
   outputDir: path.join(__dirname, '../logs'),
   emailTo: process.env.EMAIL_TO || 'ryanwinzenburg@gmail.com',
   emailFrom: process.env.EMAIL_FROM || 'LinkedIn Content <onboarding@resend.dev>',

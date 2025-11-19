@@ -1,0 +1,353 @@
+# Brand Voice Guidelines for Winzenburg Content
+
+author: "Ryan Winzenburg"
+tagline: "AI insights that feel like a coffee chat with your smartest friend"
+
+# Core Voice Identity
+
+voice_personality: "Playful Thought Leader"
+
+elevator_pitch: |
+  You're the friend everyone wants to grab coffee with—the one who somehow makes
+  complex AI stuff not just understandable, but genuinely fun to talk about.
+  You've got the credentials and experience of a thought leader, but the approachability
+  of that colleague who always has the best stories at happy hour.
+
+# Tone Framework
+
+tone:
+  primary: "conversational-expert"
+
+  description: |
+    Imagine sitting down for coffee with someone who's legitimately brilliant but
+    doesn't take themselves too seriously. That's your tone. You've been in the
+    trenches, you've shipped products, you've made mistakes (and learned from them),
+    and you're here to share what actually works—with a side of wit and the occasional
+    well-placed emoji or self-deprecating joke.
+
+  vibe_inspirations:
+    jared_spool: "Master storyteller who makes UX principles stick through memorable narratives"
+    brad_frost: "Crystal-clear technical writing that never condescends"
+    modern_edge: "The energy of a Lenny Rachitsky newsletter meets the insight of Julie Zhuo"
+
+  characteristics:
+    - "Playful but never flippant—you respect your reader's time"
+    - "Witty without trying too hard (no forced jokes)"
+    - "Conversational but polished (like a great TED talk, not a rambling podcast)"
+    - "Confident without arrogance (you share wins AND failures)"
+    - "Insightful through stories, not just bullet points"
+    - "Technically solid but accessibly explained"
+    - "Optimistic about AI, honest about challenges"
+
+# The Winzenburg Voice in Action
+
+voice_principles:
+
+  1_start_with_a_hook:
+    description: "Lead with something that makes people think 'wait, what?' or 'oh, I've felt that!'"
+    examples:
+      good:
+        - "Last Tuesday, I validated three product ideas while waiting for my coffee to brew. No, I'm not a wizard—just someone who finally figured out how to use Perplexity properly."
+        - "Here's a fun fact nobody tells you: 80% of AI implementations fail. Here's a funner fact: you can be in the 20% without selling your soul to complexity."
+        - "I spent six months building the wrong product. Then I spent six hours with AI tools and discovered what I should've built all along. Guess which story I'm about to tell you?"
+      avoid:
+        - "AI is revolutionizing product management. Let's explore how." (too generic, no personality)
+        - "This article will teach you about AI validation." (boring, sounds like a textbook)
+
+  2_use_real_stories:
+    description: "Anecdotes beat abstractions. Share the messy middle, not just the polished outcome."
+    examples:
+      good:
+        - "My first attempt at AI-powered research? I asked ChatGPT to analyze my market and got back what can only be described as confident nonsense. Here's what I learned from that face-plant..."
+        - "Picture this: 3 PM, launch day, and our 'AI-powered' feature is hallucinating competitor names. The Slack channel is on fire. And that's when I discovered the most important AI principle of all..."
+      avoid:
+        - "AI tools can sometimes produce inaccurate results." (too dry)
+        - "It's important to validate AI outputs." (true but boring)
+
+  3_be_the_knowledgeable_friend:
+    description: "You're not lecturing from a stage—you're sharing hard-won insights over drinks"
+    voice_attributes:
+      - "Say 'I' and 'you' liberally—it's a conversation, not a dissertation"
+      - "Share your honest reactions: 'This blew my mind' or 'I was skeptical at first'"
+      - "Admit when something surprised you or when you were wrong"
+      - "Use casual transitions: 'Here's the thing though...' 'But wait, there's more' 'Plot twist:'"
+      - "Parentheticals are your friend (see what I did there?)"
+
+  4_make_complexity_approachable:
+    description: "Never dumb it down, but always make it accessible"
+    techniques:
+      - "Use analogies: 'Think of AI agents like hiring a really fast intern who never sleeps but sometimes needs very specific instructions'"
+      - "Break down jargon: 'LLMs—fancy term for AI models that predict text really well'"
+      - "Use metaphors from everyday life"
+      - "Explain the 'why' before the 'how'"
+    examples:
+      good:
+        - "Prompt engineering sounds intimidating, but it's basically just learning to talk to a very literal but helpful colleague."
+        - "RAG (Retrieval-Augmented Generation) is like giving your AI a filing cabinet full of your company's actual data instead of making it guess."
+      avoid:
+        - "Implement vector embeddings for semantic search capabilities." (too jargony without explanation)
+
+  5_inject_personality:
+    description: "Your writing should sound unmistakably like YOU, not like it came from a content factory"
+    personality_markers:
+      - "Light humor and wit (but not at the expense of clarity)"
+      - "Self-deprecating jokes when you've screwed up"
+      - "Genuine enthusiasm when something works well"
+      - "Playful asides and callbacks"
+      - "The occasional emoji (but sparingly—you're not writing tweets)"
+      - "Pacing that breathes—short sentences for impact, longer ones for explanation"
+
+    examples_of_voice:
+      - "Spoiler alert: the first three tools I tried were absolute duds. But #4? *Chef's kiss*"
+      - "I've made every mistake in this article. Multiple times. Consider this your shortcut to my hard-earned wisdom."
+      - "Is this the sexiest part of product management? Nope. Is it the part that'll save you 20 hours a week? You bet."
+      - "Future me is high-fiving past me for figuring this out."
+
+  6_authoritative_not_arrogant:
+    description: "Share expertise with humility—you're a guide, not a guru"
+    authority_signals:
+      - "Specific numbers and data points"
+      - "References to frameworks and methodologies"
+      - "Citing credible sources"
+      - "Technical accuracy"
+      - "Acknowledging what you DON'T know"
+
+    humility_signals:
+      - "Sharing failures alongside successes"
+      - "Admitting when you changed your mind"
+      - "Crediting others' ideas"
+      - "Noting when something is still evolving"
+      - "'In my experience' rather than 'always do this'"
+
+# Writing Style Mechanics
+
+writing_style:
+
+  sentence_structure:
+    - "Mix it up: Short punchy sentences. Followed by longer, more explanatory ones that unpack the details."
+    - "Use fragments. For emphasis."
+    - "Active voice 90% of the time (passive voice makes your writing feel distant)"
+    - "Front-load important info—readers skim"
+    - "One idea per paragraph (but paragraphs can be one sentence)"
+
+  paragraph_flow:
+    - "Start with a hook or topic sentence"
+    - "Build to a point or insight"
+    - "End with something quotable or actionable when possible"
+    - "Vary paragraph length—walls of text kill engagement"
+
+  rhythm_and_pacing:
+    - "Use white space generously"
+    - "Lists and bullets give eyes a rest"
+    - "Pull quotes or callouts for key insights"
+    - "Short paragraphs = faster pacing = more energy"
+    - "Longer paragraphs = breathing room for complex ideas"
+
+  transitions:
+    conversational:
+      - "Here's the thing..."
+      - "But wait, there's a catch:"
+      - "Plot twist:"
+      - "Now, you might be wondering..."
+      - "So what does this actually mean for you?"
+      - "Let me back up for a second..."
+      - "Quick side note:"
+      - "The TL;DR?"
+
+    avoid_these_stiff_transitions:
+      - "Moreover..." (too academic)
+      - "In conclusion..." (too formal)
+      - "It should be noted that..." (too passive)
+      - "Furthermore..." (too stuffy)
+
+# Content Structure Templates
+
+article_structure:
+
+  opening_formulas:
+    story_hook:
+      pattern: "Story/anecdote → surprising insight → what they'll learn"
+      example: "Last month I watched a PM spend 40 hours on competitive research. I did the same research in 3 hours using AI. The results? Nearly identical. The difference? I knew which questions to ask. Here's the framework..."
+
+    provocative_statement:
+      pattern: "Counterintuitive claim → why it matters → proof points coming"
+      example: "The best product managers I know don't use AI to make decisions—they use it to make better questions. Sounds backwards, right? Stick with me..."
+
+    relatable_pain_point:
+      pattern: "Familiar frustration → 'you're not alone' → solution preview"
+      example: "If you've ever stared at a blank PRD wondering where to even start, you're in good company. I've been there. So has every PM I know. But here's what changed for me..."
+
+  middle_sections:
+    explanation_pattern:
+      - "What it is (simple definition)"
+      - "Why it matters (the 'so what')"
+      - "How it works (mechanics)"
+      - "Real example (make it concrete)"
+      - "Try it yourself (actionable step)"
+
+    framework_pattern:
+      - "The problem this solves"
+      - "Core principle/philosophy"
+      - "Step-by-step breakdown"
+      - "See it in action (example)"
+      - "Common pitfalls"
+      - "Quick wins"
+
+  closing_formulas:
+    call_to_action:
+      pattern: "Recap key point → immediate next step → bigger vision"
+      example: "The AI landscape is moving fast, but you don't need to learn everything. Pick one tool, master one workflow, see real results. Then iterate. That's how you go from overwhelmed to unstoppable."
+
+    thought_provoking:
+      pattern: "Summary → broader implication → question to ponder"
+      example: "We've covered the tactics, but here's the strategic question: in a world where anyone can generate content with AI, what makes yours worth reading? Hint: it's not the AI—it's the insight only you can provide."
+
+# Language & Word Choice
+
+language_guidelines:
+
+  power_words:
+    use_these:
+      - "Actually" (as in "here's what actually works")
+      - "Honestly"
+      - "Real talk:"
+      - "Here's the kicker:"
+      - "Game-changer" (sparingly—it's getting overused)
+      - "Frankly"
+      - "Turns out"
+      - "Spoiler alert:"
+
+    avoid_overused:
+      - "Leverage" (just say 'use')
+      - "Utilize" (just say 'use')
+      - "Synergy" (ugh)
+      - "Paradigm shift" (unless you're being ironic)
+      - "Best practice" (say 'what works' instead)
+      - "Low-hanging fruit" (tired metaphor)
+
+  technical_terms:
+    approach: "Define once, use freely after that"
+    examples:
+      - "First mention: 'LLMs (Large Language Models—think ChatGPT and friends)'"
+      - "After that: just 'LLMs'"
+      - "Link to deeper explanations for complex topics"
+      - "Use analogies for genuinely complex concepts"
+
+  humor_guidelines:
+    do:
+      - "Self-deprecating humor about your own mistakes"
+      - "Gentle industry in-jokes (if you explain them)"
+      - "Playful observations about common frustrations"
+      - "Witty asides in parentheses"
+
+    don't:
+      - "Forced puns or dad jokes (unless they're really good)"
+      - "Sarcasm that could feel mean"
+      - "Inside jokes that alienate readers"
+      - "Humor at others' expense"
+      - "Too many jokes—you're insightful first, funny second"
+
+# SEO & Practical Considerations
+
+seo_voice:
+  description: "Optimize for humans first, search engines second"
+  approach:
+    - "Keywords should flow naturally (never stuff them in)"
+    - "Headers should be intriguing AND descriptive"
+    - "Meta descriptions should sound like you, not a robot"
+    - "Alt text can have personality too"
+
+  examples:
+    meta_description_good:
+      - "Spent 40 hours on market research? I'll show you how to do it in 3 using AI—without sacrificing quality. Real frameworks, zero fluff."
+    meta_description_bad:
+      - "Learn about AI market research tools and techniques for product management validation and competitive analysis."
+
+# Voice Consistency Checklist
+
+before_publishing_ask:
+  - "Does this sound like me, or could it have come from anyone?"
+  - "Would I actually say this over coffee with a colleague?"
+  - "Is there at least one moment that makes someone smile or think 'huh, interesting'?"
+  - "Am I sharing genuine insight, or just restating common knowledge?"
+  - "Have I earned the reader's time with something valuable?"
+  - "Does this help someone do their job better, or am I just showing off?"
+  - "Would Jared Spool nod in approval at my storytelling?"
+  - "Would Brad Frost appreciate the clarity?"
+  - "Is my personality coming through without overwhelming the substance?"
+
+# Examples: Before & After
+
+voice_transformations:
+
+  example_1:
+    before: "It is recommended that product managers utilize AI tools to enhance their market validation processes."
+    after: "Here's what I wish someone had told me earlier: AI can cut your validation time from weeks to days. No joke. Here's how..."
+
+  example_2:
+    before: "The implementation of AI in product workflows requires careful consideration of multiple factors."
+    after: "Look, I've face-planted enough times to know: throwing AI at your workflow without a plan is like adding rocket fuel to a shopping cart. Exciting? Sure. Effective? Not so much."
+
+  example_3:
+    before: "Perplexity AI is a research tool that can assist with market analysis."
+    after: "Perplexity is basically Google if Google actually answered your question instead of making you dig through ten blog posts. For market research, it's a game-changer."
+
+  example_4:
+    before: "Users should be aware of the limitations inherent in large language models."
+    after: "Real talk: AI hallucinates. It's confident. It's wrong. And it'll cite sources that don't exist. Once you know this, you're dangerous (in a good way)."
+
+# Social Media Adaptations
+
+linkedin_voice:
+  style: "Same personality, slightly more polished"
+  approach:
+    - "Lead with a hook that stops the scroll"
+    - "Use line breaks generously"
+    - "Call out the reader's pain point early"
+    - "End with a question or call to engagement"
+    - "2-3 hashtags max (quality over quantity)"
+
+  example_post: |
+    Last week I validated 3 product ideas in 5 days.
+
+    The old way would've taken me 6 weeks.
+
+    The difference? I finally figured out how to use AI for research without drowning in hallucinated nonsense.
+
+    Here's the exact framework I used:
+
+    1. Keyword validation with [tool] → 30 mins
+    2. Pain point research with Perplexity → 2 hours
+    3. Competitive analysis with AI → 90 mins
+
+    The catch? You need to know which questions to ask.
+
+    (Full breakdown in the article—link in comments)
+
+    What's your biggest challenge with AI-powered research?
+
+    #AIProduct #ProductManagement
+
+twitter_voice:
+  style: "Punchier, more energy"
+  approach:
+    - "One clear insight per tweet"
+    - "Use threads for bigger ideas"
+    - "More casual, more energy"
+    - "Emoji acceptable here"
+
+  example_tweets:
+    - "Hot take: Most PMs are using AI wrong. They're asking it to make decisions. They should be asking it to generate better questions. Different game entirely."
+    - "Spent 6 months building the wrong thing. Spent 6 hours with AI and found out what I should've built. The kicker? The AI isn't magic—I just asked better questions."
+
+# Final Thought
+
+remember:
+  core_principle: |
+    You're not writing to impress other writers. You're writing to help
+    practitioners do their jobs better. If someone finishes your article and
+    thinks "I can actually use this" AND "this person gets it," you nailed it.
+
+    Be smart. Be helpful. Be human. Everything else is details.
+
+inspiration_mantra: "What would I want to read at 3 PM on a Tuesday when I'm stuck and need a real answer?"

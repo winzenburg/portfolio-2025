@@ -1,0 +1,105 @@
+# Content Schema Definition
+# This file defines the structure for article YAML metadata files
+
+schema_version: "1.0"
+
+# Required Fields
+required:
+  - title              # Article title (string, 60 chars max for SEO)
+  - slug               # URL-friendly identifier (string, lowercase, hyphens)
+  - topic              # Primary topic category (enum: see topics below)
+  - subtopic           # Specific subtopic (string)
+  - audience           # Target reader (enum: see audiences below)
+  - expertise_level    # Reader expertise (enum: beginner, intermediate, advanced)
+  - status             # Current status (enum: research, draft, review, ready, published)
+
+# Optional Fields
+optional:
+  - subtitle           # Article subtitle (string)
+  - author             # Author name (string, default: "Ryan Winzenburg")
+  - publish_date       # Scheduled publication (date: YYYY-MM-DD)
+  - updated_date       # Last update date (date: YYYY-MM-DD)
+  - keywords           # SEO keywords (array of strings)
+  - meta_description   # SEO meta description (string, 155 chars max)
+  - tone               # Tone preference (enum: professional, conversational, technical)
+  - word_count_target  # Target word count (number)
+  - series             # Series name if part of a series (string)
+  - series_order       # Order in series (number)
+  - related_articles   # Related article slugs (array of strings)
+  - linkedin_post      # LinkedIn-specific post text (string, 1200-1500 chars)
+  - linkedin_hook      # Opening hook for LinkedIn version (string)
+  - linkedin_cta       # Call-to-action text for LinkedIn (string)
+  - social_hashtags    # Hashtags for social promotion (array of strings)
+  - linkedin_auto_adapt # Auto-generate LinkedIn version from full article (boolean, default: true)
+  - authenticity_level # How human it should sound (enum: medium, high, very_high)
+  - authenticity_markers # Array of authenticity techniques to use
+  - voice_quirks       # Personal recurring phrases and patterns (object)
+  - featured_image     # Path to featured image (string)
+  - code_examples      # Whether article includes code (boolean)
+  - tools_mentioned    # AI tools mentioned in article (array of strings)
+  - research_sources   # Key sources used (array of objects with title and url)
+
+# Enumerations
+
+topics:
+  - ai-in-product-management
+  - ai-in-ux-design
+  - ai-in-development
+  - ai-business-strategy
+  - ai-tools-platforms
+
+audiences:
+  - product-managers
+  - ux-designers
+  - developers
+  - entrepreneurs
+  - technical-leaders
+  - general-tech
+
+expertise_levels:
+  - beginner      # New to AI or the topic
+  - intermediate  # Some experience with AI tools
+  - advanced      # Deep expertise, looking for optimization
+
+statuses:
+  - research      # Gathering information
+  - draft         # Initial draft created
+  - review        # Under review/editing
+  - ready         # Ready to publish
+  - published     # Published to site
+  - archived      # Older content, archived
+
+tones:
+  - professional  # Formal, business-focused
+  - conversational # Friendly, approachable
+  - technical     # Deep technical detail
+
+# Example Article YAML
+# ---
+# title: "The AI-Powered Validation Framework: From Keyword Research to Market Fit"
+# slug: "ai-powered-validation-framework"
+# subtitle: "How to validate your product idea in days, not months"
+# topic: "ai-in-product-management"
+# subtopic: "market-validation"
+# audience: "product-managers"
+# expertise_level: "intermediate"
+# status: "draft"
+# author: "Ryan Winzenburg"
+# publish_date: "2025-11-01"
+# keywords:
+#   - "AI product validation"
+#   - "market research AI"
+#   - "product-market fit"
+# meta_description: "Learn how to leverage AI tools like Perplexity and ChatGPT to validate your product idea and achieve market fit faster than ever."
+# tone: "conversational"
+# word_count_target: 2000
+# tools_mentioned:
+#   - "Perplexity AI"
+#   - "ChatGPT"
+#   - "Keywords Everywhere"
+# social_hashtags:
+#   - "#AIProduct"
+#   - "#ProductManagement"
+#   - "#AITools"
+# linkedin_post: "Just published: How I validated 3 product ideas in a single week using AI. Here's the exact framework I used..."
+# ---

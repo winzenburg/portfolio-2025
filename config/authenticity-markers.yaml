@@ -1,0 +1,464 @@
+# Authenticity Markers - Making AI Content Sound Human
+
+# The Problem with AI Writing:
+# It's too perfect, too polished, too "helpful assistant" energy.
+# Real humans have quirks, make digressions, use specific phrases repeatedly.
+
+# This file defines YOUR authentic voice markers that make content sound like YOU wrote it.
+
+# ============================================================================
+# PERSONAL VOICE SIGNATURES
+# ============================================================================
+
+voice_signatures:
+
+  recurring_phrases:
+    # These are YOUR go-to expressions (use liberally)
+    - "Here's the thing though..."
+    - "Real talk:"
+    - "Plot twist:"
+    - "And here's where it gets interesting:"
+    - "Spoiler alert:"
+    - "The TL;DR?"
+    - "Here's what nobody tells you:"
+    - "I learned this the hard way:"
+    - "Future me is thanking past me for..."
+    - "Let me back up for a second..."
+
+  sentence_quirks:
+    # Natural speech patterns that show personality
+    - "Use fragments. For emphasis."
+    - "One-sentence paragraphs? Totally fine."
+    - "Parentheticals everywhere (seriously, use them liberally)"
+    - "Questions to the reader? Makes it conversational."
+    - "Occasional em-dashes—they add rhythm and feel natural"
+    - "Start sentences with 'And' or 'But' (grammar police can cope)"
+
+  emotional_markers:
+    # Show REAL reactions, not generic enthusiasm
+    honest_reactions:
+      - "This blew my mind:"
+      - "I was skeptical at first, but..."
+      - "Not gonna lie, I was frustrated when..."
+      - "Honestly, I screwed this up twice before..."
+      - "This felt like magic the first time:"
+      - "I rolled my eyes when I first heard this, but..."
+
+    genuine_uncertainty:
+      - "I'm still figuring this out, but here's what I know so far:"
+      - "Your mileage may vary, but..."
+      - "I'm not 100% sure on this, but..."
+      - "This might not work for everyone, but..."
+      - "Jury's still out on whether..."
+
+# ============================================================================
+# ANTI-AI PATTERNS (What to AVOID)
+# ============================================================================
+
+avoid_these_ai_tells:
+
+  generic_openings:
+    never_use:
+      - "In today's fast-paced world..."
+      - "As we all know..."
+      - "It's no secret that..."
+      - "In recent years..."
+      - "The digital landscape is evolving..."
+      - "With the rise of..."
+
+    why: "These scream AI-generated content. Too generic, no personality."
+
+    use_instead:
+      - "Last Tuesday, I..."
+      - "Remember when I said..."
+      - "Three weeks ago, I tried..."
+      - "My friend Sarah asked me..."
+
+  overly_smooth_transitions:
+    never_use:
+      - "Furthermore..."
+      - "Moreover..."
+      - "Additionally..."
+      - "Subsequently..."
+      - "In conclusion..."
+      - "To summarize..."
+
+    why: "Too academic. Real people don't talk like this."
+
+    use_instead:
+      - "Oh, and another thing:"
+      - "Quick side note:"
+      - "Before I forget:"
+      - "This reminds me:"
+      - "OK, so:"
+
+  perfect_structure_always:
+    avoid:
+      - "Every paragraph perfectly structured"
+      - "Every sentence the same length"
+      - "No tangents or asides"
+      - "Everything flows too smoothly"
+
+    why: "Real humans digress, backtrack, add asides."
+
+    embrace_instead:
+      - "Wait, I should mention something first..."
+      - "(Quick tangent: this is important)"
+      - "Actually, scratch that—here's a better example:"
+      - "I just realized I should clarify..."
+
+  ai_hedging_language:
+    never_use:
+      - "It's important to note that..."
+      - "One might consider..."
+      - "It's worth mentioning..."
+      - "Users may find..."
+      - "Consider the following..."
+
+    why: "Too cautious, too 'helpful AI assistant' energy."
+
+    use_instead:
+      - "Here's what matters:"
+      - "You should know:"
+      - "Don't skip this part:"
+      - "You'll notice that..."
+      - "Check this out:"
+
+# ============================================================================
+# AUTHENTICITY TECHNIQUES
+# ============================================================================
+
+authenticity_techniques:
+
+  1_specific_details:
+    rule: "Generic = AI. Specific = Human."
+
+    examples:
+      bad: "I recently tested an AI tool."
+      good: "Last Tuesday at 3 PM, I tested Perplexity for 47 minutes."
+
+      bad: "This saved me a lot of time."
+      good: "This turned a 6-hour task into 22 minutes."
+
+      bad: "Many product managers struggle with this."
+      good: "I asked 23 PMs on LinkedIn—19 said this was their #1 pain point."
+
+  2_imperfect_storytelling:
+    rule: "Real stories have messy middles, false starts, and backtracking."
+
+    techniques:
+      - "Start a story, pause to explain context, then continue"
+      - "Mention something, say 'wait, I should back up...'"
+      - "Change your mind mid-explanation: 'Actually, that's not the best example...'"
+      - "Admit you forgot to mention something earlier"
+
+    example: |
+      "So I tried Perplexity for market research. Actually, wait—I should
+      mention I'd already wasted 3 hours on Google at this point. Anyway,
+      Perplexity gave me... OK, before I tell you what it gave me, you need
+      to know what question I asked, because that's the whole trick."
+
+  3_show_personality_quirks:
+    rule: "Perfect writing is suspicious. Quirks are human."
+
+    quirks_to_include:
+      - "Occasional typo-like informality: 'gonna', 'wanna', 'kinda'"
+      - "Emphasis through capitalization: 'This is HUGE.'"
+      - "Repeating words for emphasis: 'I mean really, really important.'"
+      - "Using numbers unconventionally: '3.7 examples' instead of 'several'"
+      - "Invented words: 'validat-ey' or 'research-y' feeling"
+      - "Pop culture references (if they fit): 'This is the Thanos snap of AI tools'"
+
+  4_admit_limitations_honestly:
+    rule: "AI tries to be helpful about everything. Humans have blind spots."
+
+    honest_admissions:
+      - "I haven't tried this on enterprise-scale projects, so grain of salt."
+      - "This works for me, but I'm a solo founder. YMMV on a team."
+      - "Full disclosure: I suck at [X], so I outsource it."
+      - "I probably should test this more, but here's what I've seen so far:"
+      - "I'm biased because I love this tool, but objectively..."
+
+  5_conversational_asides:
+    rule: "Talk TO the reader, not AT them."
+
+    techniques:
+      - "You know that feeling when... [relatable situation]"
+      - "Raise your hand if you've... (yeah, thought so)"
+      - "Before you ask: yes, I tried that. Didn't work."
+      - "I can hear you asking: 'But what about...'"
+      - "Look, I get it—this sounds [too good to be true/complicated/weird]"
+
+  6_real_mistakes_and_failures:
+    rule: "Share the L's, not just the W's."
+
+    failure_patterns:
+      - "First time I tried this? Complete disaster. Here's what went wrong:"
+      - "I spent $500 learning this the hard way so you don't have to:"
+      - "My first three attempts looked like [embarrassing description]"
+      - "I confidently told my team this would work. Narrator: It didn't."
+      - "The emails I got after publishing that? Oof. Let me clarify..."
+
+  7_unpolished_thinking:
+    rule: "Show your thought process, not just conclusions."
+
+    thinking_out_loud:
+      - "My first instinct was [X], but then I realized..."
+      - "I went back and forth on this like five times..."
+      - "Part of me thinks [X], but another part says [Y]..."
+      - "I'm still not sure if this is the best approach, but..."
+      - "OK, hear me out—this is going to sound weird at first..."
+
+# ============================================================================
+# AUTHENTICITY INJECTION POINTS
+# ============================================================================
+
+where_to_inject_authenticity:
+
+  opening_paragraph:
+    - "Start mid-story, not with context"
+    - "Use a specific time: 'Last Tuesday' not 'Recently'"
+    - "Include a surprising detail or number"
+    - "Show personality immediately"
+
+    example: |
+      BAD: "In recent years, AI tools have transformed how we validate products."
+
+      GOOD: "Last Tuesday at 3:47 PM, I validated three product ideas while
+      my coffee was getting cold. No, I'm not a productivity guru—I just
+      finally figured out how to use Perplexity without drowning in
+      hallucinated nonsense."
+
+  framework_sections:
+    - "Admit which step you struggled with most"
+    - "Include a 'common mistake' that you personally made"
+    - "Use real numbers: '23 minutes' not 'about 20 minutes'"
+    - "Show the messy reality: 'Steps 1-3 were easy, Step 4 kicked my ass'"
+
+  examples_and_case_studies:
+    - "Use YOUR actual examples, with real dates and numbers"
+    - "Include what DIDN'T work: 'I also tried [X], it was terrible'"
+    - "Show decision-making: 'I almost gave up after...'"
+    - "Include unexpected details: 'The meeting got interrupted by...'"
+
+  conclusion:
+    - "End with something quotable but imperfect"
+    - "Acknowledge you might be wrong about something"
+    - "Invite disagreement: 'Tell me if I'm wrong about...'"
+    - "Show ongoing learning: 'I'm still experimenting with...'"
+
+# ============================================================================
+# WORD CHOICE AUTHENTICITY
+# ============================================================================
+
+word_choice_rules:
+
+  favor_concrete_over_abstract:
+    abstract: "optimize", "leverage", "utilize", "implement"
+    concrete: "make faster", "use", "use", "set up"
+
+  favor_active_over_passive:
+    passive: "It was discovered that the tool could be used for..."
+    active: "I discovered the tool works great for..."
+
+  favor_specific_over_generic:
+    generic: "various tools", "several options", "multiple approaches"
+    specific: "3 tools", "Perplexity and ChatGPT", "the framework I showed above"
+
+  use_contractions:
+    formal: "I have", "you are", "it is", "do not"
+    conversational: "I've", "you're", "it's", "don't"
+    rule: "Use contractions 90% of the time. Avoid them only for emphasis."
+
+# ============================================================================
+# RHYTHM AND PACING AUTHENTICITY
+# ============================================================================
+
+rhythm_rules:
+
+  vary_sentence_length:
+    pattern: "Short. Medium length to explain. Then a longer sentence that really digs into the details and shows you're thinking it through carefully."
+
+    bad_example: |
+      "AI tools are useful. They save time. They improve quality.
+       They reduce costs. Many teams use them."
+
+    good_example: |
+      "AI tools are useful. But here's the thing—they're only useful if
+       you know what questions to ask. I learned this after spending $200
+       on a tool that gave me confident answers to the wrong problems."
+
+  use_paragraph_breaks_for_emphasis:
+    technique: "One-sentence paragraphs are powerful."
+
+    example: |
+      "I tested 47 different prompts.
+
+      Know how many actually worked?
+
+      Three.
+
+      That's it. Three prompts out of 47 gave me actionable insights."
+
+  natural_digressions:
+    technique: "Real humans get sidetracked. Embrace it."
+
+    example: |
+      "So I opened Perplexity and—quick tangent: if you haven't tried
+      Perplexity yet, stop reading and go test it for 10 minutes. Seriously,
+      I'll wait. It's that good. OK, you're back? Great—so I asked it..."
+
+# ============================================================================
+# PROOFREADING FOR AUTHENTICITY
+# ============================================================================
+
+final_authenticity_check:
+
+  read_it_out_loud:
+    test: "If you wouldn't say it in a conversation, rewrite it."
+    red_flags:
+      - "Sounds too formal or academic"
+      - "Sounds like a press release"
+      - "Sounds like a LinkedIn thought leader parody"
+      - "You stumble over complex sentence structure"
+
+  check_for_personality:
+    questions:
+      - "Does this sound like ME specifically, or could anyone have written it?"
+      - "Did I include at least one personal story or specific example?"
+      - "Are there at least 2-3 of my recurring phrases?"
+      - "Did I admit at least one mistake or limitation?"
+      - "Would my friends recognize my voice in this?"
+
+  check_for_ai_tells:
+    scan_for:
+      - "Too many transition words (moreover, furthermore, additionally)"
+      - "Every paragraph is exactly 3-4 sentences"
+      - "No fragments, no one-sentence paragraphs"
+      - "No contractions"
+      - "Too balanced and diplomatic (no strong opinions)"
+      - "No emotional reactions (surprise, frustration, excitement)"
+      - "Generic examples instead of specific ones"
+
+# ============================================================================
+# EXAMPLE: BEFORE AND AFTER
+# ============================================================================
+
+before_after_examples:
+
+  example_1:
+    before_ai_sounding: |
+      "In recent years, AI-powered tools have revolutionized the product
+      validation process. By leveraging these technologies, product managers
+      can significantly reduce the time required to validate market demand.
+      It's important to note that proper implementation is crucial for success."
+
+    after_authentic: |
+      "Last month I validated three ideas in the time it used to take me to
+      validate one. Not because I got faster at interviews—because I finally
+      figured out how to use AI without it hallucinating competitor names that
+      don't exist. (Yes, that happened. Twice.)"
+
+    what_changed:
+      - "Added specific timeframe: 'Last month' not 'Recently'"
+      - "Personal voice: 'I validated' not 'product managers can'"
+      - "Specific detail: 'three ideas' not vague improvement"
+      - "Admitted a mistake: hallucination story"
+      - "Parenthetical aside with humor"
+      - "Removed corporate speak: 'leverage', 'implementation', 'crucial'"
+
+  example_2:
+    before_ai_sounding: |
+      "There are several approaches to market validation. One can utilize
+      keyword research tools to identify demand signals. Additionally,
+      competitive analysis provides valuable insights. Furthermore, customer
+      interviews are essential for understanding pain points."
+
+    after_authentic: |
+      "Here's what worked for me: keyword research first (30 minutes with
+      Keywords Everywhere), then Perplexity for deep dives (2 hours), then—
+      and this is the part I kept screwing up—actually talking to 5 real humans
+      to validate what the AI told me. Because AI hallucinates. A lot."
+
+    what_changed:
+      - "Made it personal: 'worked for me' not 'one can'"
+      - "Specific tools and timeframes"
+      - "Admitted struggle: 'kept screwing up'"
+      - "Conversational aside with em-dash"
+      - "Strong opinion: 'AI hallucinates. A lot.'"
+      - "Removed academic transitions: 'Additionally', 'Furthermore'"
+
+# ============================================================================
+# YAML CONFIGURATION FOR AUTHENTICITY
+# ============================================================================
+
+how_to_use_in_yaml:
+
+  example_yaml_config: |
+    # In your article YAML file:
+
+    authenticity_level: "high"  # Options: medium, high, very_high
+
+    authenticity_markers:
+      - "use_recurring_phrases"  # Inject my go-to expressions
+      - "include_personal_story"  # Force at least one specific anecdote
+      - "admit_mistake"  # Share something that went wrong
+      - "show_uncertainty"  # Don't be overly confident on everything
+      - "conversational_asides"  # Use parentheticals and tangents
+      - "specific_numbers"  # "23 minutes" not "about 20"
+      - "unpolished_thinking"  # Show thought process
+
+    avoid_ai_tells:
+      - "generic_openings"  # No "In today's world..."
+      - "smooth_transitions"  # No "Furthermore..."
+      - "perfect_structure"  # Allow tangents
+      - "ai_hedging"  # No "It's important to note..."
+
+    voice_quirks:
+      favorite_phrases:
+        - "Here's the thing though..."
+        - "Plot twist:"
+        - "Real talk:"
+
+      personality_notes: |
+        - Tend to use em-dashes a lot—they add natural rhythm
+        - Often start paragraphs with "So" or "Look"
+        - Use parentheticals for asides (like this!)
+        - Occasionally use fragments. For emphasis.
+        - Not afraid of starting sentences with "And" or "But"
+
+# ============================================================================
+# INSTRUCTIONS FOR AI AGENTS
+# ============================================================================
+
+agent_instructions: |
+  When generating content, you MUST:
+
+  1. Read this authenticity-markers.yaml file FIRST
+  2. Inject personality throughout, not just at the start
+  3. Use recurring phrases from voice_signatures at least 3-5 times
+  4. Include at least ONE personal story with specific details
+  5. Admit at least ONE mistake or limitation
+  6. Vary sentence length: short, medium, long—not all the same
+  7. Use contractions 90% of the time
+  8. Include parentheticals and asides
+  9. Avoid ALL phrases in "avoid_these_ai_tells" section
+  10. Read content out loud test: Would a human say this?
+
+  RED FLAGS (if you see these, you've failed):
+  - Every paragraph is 3-4 sentences
+  - No fragments or one-sentence paragraphs
+  - Starts with "In today's...", "It's no secret...", etc.
+  - Too many "Moreover", "Furthermore", "Additionally"
+  - No personal stories or specific examples
+  - Too polished—no rough edges
+  - Could have been written by anyone
+
+  AUTHENTICITY CHECKLIST:
+  ✅ Sounds like a specific human, not generic content
+  ✅ Includes imperfections (tangents, asides, backtracking)
+  ✅ Has personality quirks and recurring phrases
+  ✅ Shows real emotions and honest reactions
+  ✅ Admits mistakes and limitations
+  ✅ Uses specific details, not generic examples
+  ✅ Feels conversational when read aloud

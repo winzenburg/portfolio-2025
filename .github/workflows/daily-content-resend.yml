@@ -34,19 +34,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Checkout content repository
-        uses: actions/checkout@v4
-        with:
-          repository: winzenburg/Winzenburg-Content
-          token: ${{ secrets.CONTENT_REPO_TOKEN }}
-          path: content-repo
-
       - name: Run daily content script
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-          CONTENT_SCHEDULE_PATH: ${{ github.workspace }}/content-repo/linkedin-content-schedule.yaml
+          CONTENT_SCHEDULE_PATH: ${{ github.workspace }}/linkedin-content-schedule.yaml
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then

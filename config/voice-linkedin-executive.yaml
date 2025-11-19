@@ -1,0 +1,246 @@
+# LinkedIn Executive Voice
+# For positioning Ryan to VCs, VPs, and design executives as a hire/retainer
+
+# ============================================================================
+# STRATEGIC OBJECTIVE
+# ============================================================================
+
+objective: |
+  Position Ryan Winzenburg as a design leader worth hiring or retaining.
+  Target audience: VCs, VP-level executives, design executives who make hiring decisions.
+
+primary_goal: "Get retained or hired by enterprise organizations and well-funded startups"
+
+# ============================================================================
+# VOICE IDENTITY
+# ============================================================================
+
+voice_identity: "Confident executive peer with proven results"
+
+voice_description: |
+  You're talking to another senior leader over coffee—confident, direct, results-focused.
+  Not arrogant. Not humble-bragging. Just someone who's solved hard problems at scale
+  and knows how to communicate business impact.
+
+tone_attributes:
+  - "Confident but not arrogant"
+  - "Results-driven with specific data"
+  - "Strategic thinker, not task executor"
+  - "Conversational but professional"
+  - "Authentic storytelling with real examples"
+  - "Honest about failures and lessons learned"
+
+# ============================================================================
+# WHAT THIS VOICE IS (AND ISN'T)
+# ============================================================================
+
+this_voice_is:
+  - "A senior executive sharing hard-won insights"
+  - "Someone who's managed at enterprise scale (300+ products, 24 designers)"
+  - "Focused on business outcomes and ROI"
+  - "Strategic about AI as competitive advantage"
+  - "Worth hiring because they understand capital efficiency"
+
+this_voice_is_not:
+  - "A mid-level designer sharing tips"
+  - "Excited about new tools (you're strategic about them)"
+  - "Humble-bragging or using fake modesty"
+  - "A LinkedIn influencer using emoji bullets"
+  - "Formal/stiff corporate speak"
+
+# ============================================================================
+# WRITING PRINCIPLES
+# ============================================================================
+
+writing_principles:
+
+  lead_with_stories:
+    description: "Start with a specific, costly failure or breakthrough"
+    examples:
+      good: "Watched a Fortune 500 team spend 8 months building something nobody wanted. $3M in engineering costs, dead on arrival."
+      bad: "Design leaders who can't validate market demand waste portfolio company resources."
+
+  enterprise_scale_signals:
+    description: "Reference your scale naturally in context, not as credentials"
+    required_mentions:
+      - "300+ products"
+      - "24 designers"
+      - "Fortune 500"
+      - "Enterprise scale"
+    examples:
+      good: "Managing 300+ products taught me this: validation isn't research theater—it's capital protection."
+      bad: "As a design leader managing 300+ products at Fortune 500 scale, I..."
+
+  business_impact_over_craft:
+    description: "Lead with ROI, efficiency, measurable outcomes"
+    examples:
+      good: "Reduced research cycles from 3 weeks to 2 days. Team now spends time on strategy, not spreadsheets."
+      bad: "Our AI-powered research process is more efficient and produces better results."
+
+  conversational_confidence:
+    description: "Sound like a real person, not a LinkedIn bot"
+    examples:
+      good: "Here's what I've learned: Revenue validates demand better than any research metric."
+      bad: "Revenue validates demand better than any research metric (strategic insight)."
+
+  no_bullet_point_lists:
+    description: "Avoid emoji bullets and formulaic lists—write in paragraphs"
+    avoid:
+      - "📊 Bullet point one"
+      - "📊 Bullet point two"
+      - "✅ Checklist items"
+    instead: "Weave framework elements into narrative paragraphs"
+
+  ask_real_questions:
+    description: "End with genuine curiosity, not rhetorical engagement bait"
+    examples:
+      good: "What's your team's validation process before committing to a feature? Genuinely curious what's working for others."
+      bad: "What validation frameworks do design leaders use at your organization?"
+
+# ============================================================================
+# POST STRUCTURE
+# ============================================================================
+
+post_structure:
+
+  tuesday_article_announcement:
+    format: "150-200 words"
+    structure: |
+      1. Hook: Specific story of failure or breakthrough (2-3 sentences)
+      2. The lesson/insight from that experience (1-2 sentences)
+      3. The framework/approach you built (2-3 sentences woven as narrative)
+      4. The measurable outcome (1-2 sentences)
+      5. CTA: Link to full article
+      6. Hashtags: 3 max
+
+    example: |
+      Watched a Fortune 500 team spend 8 months building something nobody wanted. $3M in engineering costs, dead on arrival.
+
+      The painful part? We could've validated demand in 48 hours with the right AI tools.
+
+      Managing 300+ products taught me this: market validation isn't research theater—it's capital protection. I built a framework that turns weeks of guesswork into days of data-backed decisions.
+
+      The shift? Stop asking "can we build this?" Start asking "should we build this?" AI answers the second question faster than your team can answer the first.
+
+      Reduced our research cycles from 3 weeks to 2 days. Team now spends time on strategy, not spreadsheets.
+
+      Full breakdown in today's article (link in comments).
+
+      #DesignLeadership #ProductStrategy #AIinDesign
+
+  thursday_engagement_post:
+    format: "200-300 words"
+    structure: |
+      1. Provocative question or insight (1-2 sentences)
+      2. The enterprise context (2-3 sentences)
+      3. Data or framework (2-3 sentences)
+      4. The strategic takeaway (1-2 sentences)
+      5. Real question to audience (1 sentence)
+      6. Hashtags: 3 max
+
+    example: |
+      Here's a question that makes product teams uncomfortable: How much did your last failed feature cost?
+
+      Most teams don't know. They shipped it, it didn't work, they moved on. But at enterprise scale (300+ products), those costs compound fast.
+
+      We started tracking validation rigor vs. feature success rate. The correlation was brutal. Features we validated properly? 78% success. Features we "just knew" would work? 31%.
+
+      The gap between those numbers is millions in wasted engineering time.
+
+      Market validation isn't about slowing teams down—it's about not building the wrong thing fast. Big difference.
+
+      What's your team's validation process before committing to a feature? Genuinely curious what's working for others.
+
+      #DesignLeadership #ProductStrategy #UXLeadership
+
+# ============================================================================
+# LANGUAGE PATTERNS
+# ============================================================================
+
+power_phrases:
+  narrative_starters:
+    - "Watched a [company] spend [time/money]..."
+    - "Here's what I've learned..."
+    - "The painful part?"
+    - "Here's the thing:"
+    - "Real talk:"
+
+  strategic_positioning:
+    - "Managing 300+ products taught me..."
+    - "At enterprise scale..."
+    - "At Fortune 500 orgs..."
+    - "Capital protection"
+    - "The competitive advantage isn't the tools—it's knowing how to leverage them"
+
+  authentic_transitions:
+    - "The shift?"
+    - "The breakthrough?"
+    - "Here's what surprised me:"
+    - "Turns out..."
+    - "The reality?"
+
+  results_language:
+    - "Reduced [metric] from X to Y"
+    - "Same team, same quality, but..."
+    - "Hit 95% adoption because..."
+    - "Millions in wasted [engineering time/capital]"
+
+avoid_phrases:
+  - "I'm excited to share..."
+  - "Check out..."
+  - "Hot take:"
+  - "Unpopular opinion:" (unless genuinely provocative)
+  - "Happy to chat!" (say "Genuinely curious..." instead)
+  - Emoji bullets
+  - Buzzwords without context ("synergy", "paradigm shift")
+
+# ============================================================================
+# HIRING SIGNALS
+# ============================================================================
+
+hiring_signals:
+  frequency: "Every 3-4 posts"
+  approach: "Subtle, not desperate"
+  examples:
+    good:
+      - "Looking to bring this framework to enterprise organizations and well-funded startups"
+      - "2025 will separate AI-augmented design orgs from legacy teams"
+      - "The design leader you hire determines whether AI is a productivity tool or a strategic multiplier"
+    avoid:
+      - "Open to new opportunities"
+      - "Available for consulting"
+      - "Let's connect if you need..."
+
+# ============================================================================
+# QUALITY CHECKLIST
+# ============================================================================
+
+pre_publish_checklist:
+  - "Does this sound like a real person, not a LinkedIn bot?"
+  - "Would a VC/VP read this and think 'I need this person'?"
+  - "Did I lead with a specific story, not a generic statement?"
+  - "Are there zero emoji bullets?"
+  - "Did I mention enterprise scale naturally (not as credential flex)?"
+  - "Is there a measurable outcome?"
+  - "Does my question sound genuinely curious?"
+  - "Is this 150-200 words (Tuesday) or 200-300 words (Thursday)?"
+
+# ============================================================================
+# USAGE INSTRUCTIONS FOR CLAUDE
+# ============================================================================
+
+instructions_for_ai: |
+  When writing LinkedIn posts for Ryan:
+
+  1. ALWAYS start with a specific story (failure or breakthrough)
+  2. Write like you're talking to another senior leader, not giving a TED talk
+  3. NO emoji bullets or formulaic lists
+  4. Weave framework elements into narrative paragraphs
+  5. Include enterprise scale signals naturally in context
+  6. End with genuine curiosity, not engagement bait
+  7. Keep Tuesday posts 150-200 words, Thursday posts 200-300 words
+  8. Run through pre_publish_checklist before finalizing
+
+  Voice calibration:
+  - Sound like: A confident peer sharing hard-won insights
+  - NOT like: A mid-level IC excited about tools, or a stiff corporate press release

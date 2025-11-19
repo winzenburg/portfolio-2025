@@ -1,0 +1,397 @@
+# LinkedIn Content Publishing Schedule
+# First 9 weeks: Existing articles
+# Week 10+: Transition to new content calendar
+
+# Publishing Pattern:
+# - Tuesdays: Article announcement
+# - Thursdays: Follow-up engagement post
+
+# STATUS: Week 1 posted on Oct 25, 2025 (ai-augmented-workflow)
+# Current week: Week 2 posts TODAY - November 4, 2025
+
+schedule:
+  # === WEEK 1 (COMPLETED) ===
+  week_1:
+    start_date: "2025-10-25"  # Already posted
+    status: "completed"
+    article:
+      title: "The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster"
+      slug: "ai-augmented-workflow"
+      file: "content/drafts/rewritten-ai-augmented-workflow.md"
+
+  # === WEEK 2 (TODAY) ===
+  week_2:
+    start_date: "2025-11-04"  # Tuesday - TODAY
+    article:
+      title: "AI-Powered Market Validation: Finding Underserved Niches and De-Risking Products"
+      slug: "ai-powered-market-validation"
+      file: "content/drafts/rewritten-ai-market-validation.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-11-04"
+        type: "article_announcement"
+        content: |
+          Watched a Fortune 500 team spend 8 months building something nobody wanted. $3M in engineering costs, dead on arrival.
+
+          The painful part? We could've validated demand in 48 hours with the right AI tools.
+
+          Managing 300+ products taught me this: market validation isn't research theater—it's capital protection. I built a framework that turns weeks of guesswork into days of data-backed decisions.
+
+          The shift? Stop asking "can we build this?" Start asking "should we build this?" AI answers the second question faster than your team can answer the first.
+
+          Reduced our research cycles from 3 weeks to 2 days. Team now spends time on strategy, not spreadsheets.
+
+          Full breakdown in today's article (link in comments).
+
+          #DesignLeadership #ProductStrategy #AIinDesign
+
+      thursday:
+        publish_date: "2025-11-06"
+        type: "engagement"
+        content: |
+          Here's a question that makes product teams uncomfortable: How much did your last failed feature cost?
+
+          Most teams don't know. They shipped it, it didn't work, they moved on. But at enterprise scale (300+ products), those costs compound fast.
+
+          We started tracking validation rigor vs. feature success rate. The correlation was brutal. Features we validated properly? 78% success. Features we "just knew" would work? 31%.
+
+          The gap between those numbers is millions in wasted engineering time.
+
+          Market validation isn't about slowing teams down—it's about not building the wrong thing fast. Big difference.
+
+          What's your team's validation process before committing to a feature? Genuinely curious what's working for others.
+
+          #DesignLeadership #ProductStrategy #UXLeadership
+
+  # === WEEK 3 ===
+  week_3:
+    start_date: "2025-11-11"  # Tuesday
+    article:
+      title: "The AI-Powered Design Tech Stack: My Exact Workflow"
+      slug: "ai-tech-stack"
+      file: "content/drafts/rewritten-ai-tech-stack.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-11-11"
+        type: "article_announcement"
+        content: |
+          Our design team was drowning. 24 designers, 300+ products, and every request felt like a negotiation about capacity.
+
+          Then we rebuilt our tech stack around AI. Design production time dropped 40%. Same team, same quality standards, but suddenly we had bandwidth for the strategic work we'd been pushing off for months.
+
+          The breakthrough wasn't adding more tools—it was being ruthless about which problems we let AI solve. Perplexity and Claude handle research that used to take days. V0 and Cursor turn prototypes into production code 4-6x faster. We freed up time for the work that actually requires human judgment.
+
+          Here's what surprised me: the productivity gain wasn't the main win. It was watching designers shift from execution mode to strategic thinking. When you're not buried in Figma all day, you actually have time to understand the problems you're solving.
+
+          Full breakdown of what we use and why in today's article (link in comments).
+
+          #DesignLeadership #AIinDesign #DesignOps
+
+      thursday:
+        publish_date: "2025-11-13"
+        type: "engagement"
+        content: |
+          Real talk: I used to evaluate design tools by asking "will this make us faster?"
+
+          Wrong question.
+
+          At enterprise scale, every tool choice ripples across 24 designers and 300+ products. A bad tool doesn't just slow you down—it compounds inefficiency across the entire portfolio.
+
+          Now I ask: "Does this tool create leverage or just speed?" Leverage means one person's work multiplies across the team. Speed means one person works faster.
+
+          AI tools are the first time I've seen both in the same package. But only if you're strategic about which problems you solve with them.
+
+          Example: Using AI to generate design variations? That's speed. Using AI to build a framework for design decisions that your entire team can apply? That's leverage.
+
+          What tool decision had the biggest impact on your team's capacity this year? I'm always looking for what's working elsewhere.
+
+          #DesignLeadership #TechStrategy #DesignOps
+
+  # === WEEK 4 ===
+  week_4:
+    start_date: "2025-11-18"  # Tuesday
+    article:
+      title: "Building a Design System in 4 Weeks (That Actually Gets Adopted)"
+      slug: "design-system-4-weeks"
+      file: "content/drafts/rewritten-design-system-4-weeks.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-11-18"
+        type: "article_announcement"
+        content: |
+          Watched a company spend 9 months building a design system. Beautiful components, pristine documentation, 18% adoption.
+
+          Teams just... didn't use it. Too complex, too rigid, didn't solve their actual problems. Millions in engineering time, barely any business impact.
+
+          I've seen this pattern repeat across multiple Fortune 500 orgs. So when we needed a design system for 300+ products, I took a different approach: ruthless pragmatism over perfectionism.
+
+          We shipped in 4 weeks. Week 1 was just the 12 components teams were already rebuilding over and over. Week 2 was documentation that actually showed how to use them. Week 3 was getting buy-in from the teams who'd make or break adoption. Week 4 was governance—because without it, systems drift.
+
+          Hit 95% adoption because we solved real problems instead of building a monument to design perfection. Turns out teams will use your system when it makes their jobs easier.
+
+          Full breakdown of the 4-week approach in today's article (link in comments).
+
+          #DesignLeadership #DesignSystems #DesignOps
+
+      thursday:
+        publish_date: "2025-11-20"  # Thanksgiving - light post
+        type: "engagement"
+        content: |
+          Happy Thanksgiving!
+
+          Taking a break from strategy talk to say I'm genuinely grateful for this design community. The leaders here who share what actually works (and what failed spectacularly) make all of us better.
+
+          This year I'm especially thankful for the folks proving you can scale design teams with AI without sacrificing quality or burning people out. We're figuring this out together.
+
+          What design leadership win are you most proud of this year? I'd love to hear what's working.
+
+          #Thanksgiving #DesignLeadership
+
+  # === WEEK 5 ===
+  week_5:
+    start_date: "2025-11-25"  # Tuesday
+    article:
+      title: "Why Design Systems Fail (And How to Fix Them)"
+      slug: "design-systems-fail"
+      file: "content/drafts/rewritten-design-systems-fail.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-11-25"
+        type: "article_announcement"
+        content: |
+          I've watched design systems fail the same way over and over. The pattern is predictable:
+
+          12-18 months of work. Cross-functional alignment. Executive sponsorship. Beautiful component library. Comprehensive docs.
+
+          Then 6 months later... 22% adoption. Teams quietly building their own components. System slowly abandoned.
+
+          The mistake? Treating design systems as a technical problem when it's actually an organizational one.
+
+          Here's what kills design systems: Perfectionism over pragmatism. Designers leading without engineering co-ownership. Documentation written for people who already understand the context. No governance, so it drifts. Success measured by components shipped, not business impact.
+
+          At 300+ products, we've avoided these traps. The key insight? Design systems are change management disguised as component libraries. If your team doesn't want to use it, it doesn't matter how good it is.
+
+          Full diagnostic of why systems fail (and how to prevent it) in today's article (link in comments).
+
+          #DesignLeadership #DesignSystems #ChangeManagement
+
+      thursday:
+        publish_date: "2025-11-27"
+        type: "engagement"
+        content: |
+          Unpopular opinion: Your design system doesn't need to be beautiful. It needs to make people's jobs easier.
+
+          I've seen teams obsess over aesthetic perfection while their system sits unused. Meanwhile, scrappier systems with 80% of the polish get 95% adoption because they solve real problems.
+
+          The best design system isn't the most comprehensive or technically sophisticated. It's the one that actually drives business outcomes—faster development, less rework, consistent user experience.
+
+          But here's the hard part: you need executive sponsorship and funding to sustain it. Without that, even great systems die slowly.
+
+          What KPIs do you track to prove your design system's value to leadership? I'm always curious what metrics resonate with different orgs.
+
+          #DesignLeadership #DesignOps #BusinessImpact
+
+  # === WEEK 6 ===
+  week_6:
+    start_date: "2025-12-02"  # Tuesday
+    article:
+      title: "The Audience-First Go-to-Market Strategy: Building Community Before Launch"
+      slug: "audience-first-go-to-market"
+      file: "content/drafts/rewritten-audience-first-go-to-market.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-12-02"
+        type: "article_announcement"
+        content: |
+          Watched a startup burn $2M building in stealth for 11 months. Perfect product, pristine launch plan, crickets at launch. Turns out, no one wanted it.
+
+          The traditional playbook—build in secret, perfect everything, launch big—sounds safe. But it just delays the moment you find out if anyone cares. And that delay is expensive.
+
+          I've flipped this approach. Build community around the problem space first, validate demand before you write a line of code. Then co-create the solution with the people who'll actually use it.
+
+          The psychological shift is huge. Instead of "will anyone buy this?" (terrifying), it becomes "can we deliver fast enough for the people already asking for it?" (exciting).
+
+          This approach has de-risked multiple Fortune 500 product launches. You're not hoping for market fit—you're building toward proven demand.
+
+          Full audience-first framework in today's article (link in comments).
+
+          #ProductStrategy #GTM #DesignLeadership
+
+      thursday:
+        publish_date: "2025-12-04"
+        type: "engagement"
+        content: |
+          The most successful launches I've been part of? We built them in public.
+
+          Sounds risky, right? Competitors could steal the idea, market might not care, you look bad if you pivot.
+
+          But building in stealth is riskier. You're making hundreds of product decisions with zero market feedback. Then you launch and find out which ones were wrong. Expensive way to learn.
+
+          Building in public gives you early validation before the big capital deployment, real-time feedback that prevents costly pivots, and a community of people who are invested in your success before day one.
+
+          The fear is someone will steal your idea. The reality? Execution matters way more than the idea, and most competitors won't move as fast as you think.
+
+          How do you balance transparency vs. competitive advantage? Genuinely curious how other teams navigate this.
+
+          #ProductStrategy #DesignLeadership #GTM
+
+  # === WEEK 7 ===
+  week_7:
+    start_date: "2025-12-09"  # Tuesday
+    article:
+      title: "The MVP Strategy: Launching Products That Sell Themselves"
+      slug: "mvp-strategy"
+      file: "content/drafts/rewritten-mvp-strategy.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-12-09"
+        type: "article_announcement"
+        content: |
+          "Just one more feature before we launch."
+
+          I've heard this line kill more startups than bad ideas. One more feature becomes three, then five, then you've burned 9 months and half your runway before seeing if anyone wants the core product.
+
+          MVP scope creep is expensive. Delayed market entry means competitors move first. Diluted value props confuse users. And every month you're not in market is a month you're not learning.
+
+          Here's the mental shift that helps: Ask "what's the minimum we can build to prove this is worth building?" not "what's the minimum that feels complete?"
+
+          Ruthlessly scope to ONE measurable outcome. Ship in weeks, not quarters—time is a competitive advantage. Test your riskiest assumption, not your full vision. And enable revenue from day one if possible, because paying customers give better feedback than free users.
+
+          At 300+ products, this discipline has saved millions in capital and gotten us to market before competitors even knew we were building.
+
+          Full MVP scoping framework in today's article (link in comments).
+
+          #ProductStrategy #MVP #DesignLeadership
+
+      thursday:
+        publish_date: "2025-12-11"
+        type: "engagement"
+        content: |
+          The hardest part of shipping an MVP? Saying no to people you respect.
+
+          Sales wants feature parity with competitors. Engineering wants technical elegance. Executives want comprehensive capabilities. Design wants polish.
+
+          Everyone has a "critical" feature. And they're all smart people with good arguments.
+
+          But MVP success requires protecting scope like your life depends on it. Because at a startup, it kind of does.
+
+          The framework I use: "Does this help us test our riskiest assumption?" If no, it waits for V2.
+
+          Still hard to say no. Still worth it every time.
+
+          What's your framework for defending MVP scope when stakeholders push back? I'm always looking for better ways to navigate this.
+
+          #ProductLeadership #DesignStrategy #MVP
+
+  # === WEEK 8 ===
+  week_8:
+    start_date: "2025-12-16"  # Tuesday (Holiday week - lighter posting)
+    article:
+      title: "Monetization Strategy: Generating Revenue from Day One"
+      slug: "monetization-strategy"
+      file: "content/drafts/rewritten-monetization-strategy.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-12-16"
+        type: "article_announcement"
+        content: |
+          Watched a team spend 7 months perfecting their product. Beautiful UX, solid tech, zero revenue plan. At launch: "We'll figure out monetization once we have users."
+
+          They never figured it out.
+
+          Here's what I've learned building products at Fortune 500 scale: Revenue validates demand better than any research metric. If people won't pay for it, they don't really want it—they just like the idea of it.
+
+          The approach that works? Monetization from day one. Pre-sales validate demand and reduce capital risk. Early revenue funds development. And paying customers give brutally honest feedback because they have skin in the game.
+
+          The shift: Free products optimize for engagement metrics. Paid products optimize for value delivery. Different games entirely.
+
+          Monetization isn't a post-launch problem—it's a product design decision that should shape every feature you build.
+
+          Full framework in today's article (link in comments). Happy holidays! 🎄
+
+          #ProductStrategy #Monetization #DesignLeadership
+
+      thursday:
+        publish_date: "2025-12-18"
+        type: "engagement"
+        content: |
+          Hope everyone's enjoying the holidays!
+
+          Quick thought while everyone's planning for next year:
+
+          Free products attract people who optimize for price (zero). Paid products attract people who optimize for value.
+
+          Sounds obvious, but it changes everything about who you serve and what you build.
+
+          Free users want more features. Paying customers want better solutions to their problems.
+
+          If you're afraid to charge, you're also afraid to validate whether you're building something people actually value. Charge for it. The market will tell you if you're wrong.
+
+          #DesignLeadership #ProductStrategy #ValueCreation
+
+  # === WEEK 9 ===
+  week_9:
+    start_date: "2025-12-23"  # Tuesday (New Year's week)
+    article:
+      title: "Scaling Strategy: Building a Portfolio of AI-Powered Businesses"
+      slug: "scaling-strategy"
+      file: "content/drafts/rewritten-scaling-strategy.md"
+
+    posts:
+      tuesday:
+        publish_date: "2025-12-23"
+        type: "article_announcement"
+        content: |
+          Traditional scaling logic: 10 products = 10 designers. 100 products = 100 designers. Linear growth.
+
+          This worked for decades. It doesn't work anymore.
+
+          AI-augmented teams are managing 3x the product portfolio with the same headcount. Same quality standards, faster time-to-market, and designers doing more strategic work instead of production grunt work.
+
+          At 300+ Fortune 500 products, we've proven this scales. The framework has four pillars:
+
+          AI handles the 40% of design work that's high-volume, low-creativity. We systematized decision-making through design systems and governance so teams don't reinvent wheels. We optimized at portfolio level, not individual products. And design leadership influences product and engineering roadmaps—we're not just taking orders.
+
+          The result? We ship faster than teams twice our size. The competitive advantage isn't the tools—it's knowing how to leverage them strategically.
+
+          2025 will separate AI-augmented design orgs from legacy teams still scaling linearly.
+
+          Full scaling framework in today's article (link in comments).
+
+          #DesignLeadership #AIStrategy #EnterpriseDesign
+
+      thursday:
+        publish_date: "2025-01-02"
+        type: "engagement"
+        content: |
+          Happy New Year!
+
+          Bold prediction for 2025:
+
+          AI-augmented design teams will ship 3-5x faster than traditional teams with the same resources. The gap is already forming, and it's going to get dramatic.
+
+          AI-powered teams are going from concept to production in weeks. Traditional teams are still taking months for the same work.
+
+          This isn't about individual designer productivity. It's about design leadership that understands how to leverage AI at organizational scale—not just as a faster Figma, but as a strategic multiplier.
+
+          The question for enterprise leaders and VCs: Are you building an AI-native design organization, or hoping the old playbook still works?
+
+          What's your strategy for 2025? Genuinely curious how different orgs are approaching this shift.
+
+          #DesignLeadership #AIinDesign #EnterpriseStrategy
+
+  # === WEEK 10+ ===
+  # Transition to content-calendar-design-leadership.yaml schedule
+  # Starting November 5, 2025
+
+  transition_note: |
+    After week 9, transition to the 12-week Design Leadership content calendar.
+    Reference: content-calendar-design-leadership.yaml
+    Start date: Week 1 begins November 5, 2025
