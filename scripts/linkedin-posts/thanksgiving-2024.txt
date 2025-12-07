@@ -1,0 +1,43 @@
+**A Thanksgiving Lesson in Product Validation (and Life)**
+
+Last week, I spent an hour on a Zoom call with my sister. Not because it was Thanksgiving, but because we somehow let a whole year go by without catching up. 
+
+Plot twist: I actually forgot it was Thanksgiving until she reminded me. *Sheepish emoji*
+
+Real talk: I've been heads-down building our new AI-powered product validation framework. Validating demand, analyzing competition, iterating prototypes—you know, the usual product management grind. But in the process, I forgot to pause and reflect on all the things I'm grateful for.
+
+**Gratitude and Roadmaps**
+
+Like most product leaders, I have a tendency to live in the future. Always thinking about the next quarter, the next fiscal year, the next big bet. But this week, I actually stepped back and thought about the last 12 months. 
+
+And you know what I realized? The things I'm proudest of aren't the big wins or the achievements—they're the lessons I learned from the failures.
+
+For example, I'm grateful for the $20,000 I wasted on a completely wrong product direction back in Q1. Yep, you read that right. Twenty. Thousand. Dollars. Wasted. But that mistake taught me the power of rapid prototyping and AI-driven research. Now, we can validate a new idea in 48 hours instead of 4 weeks.
+
+I'm also grateful for the junior designer who called out my "brilliant" new design system as overengineered. Her feedback stung at the time, but it led us to cut complexity, prioritize adoption, and deliver real productivity gains.
+
+**The Value of Reflection**
+
+You know the old saying: "Those who don't learn from history are doomed to repeat it." Well, I'd argue that most of us don't even bother to look back at history in the first place. 
+
+We just sprint from one quarter to the next, from one roadmap to the next, without ever pausing to reflect on what worked, what failed, and why.
+
+But here's the thing: that pause, that reflection? It's not just good for the soul—it's critical for the business.
+
+**How I'm Applying This at Work**
+
+This Thanksgiving, I'm making time to revisit my product validation process. To unpack the breakthroughs and the face-plants. To ask myself: 
+
+- What did I learn from that failed feature launch?
+- How can I apply the lessons from our successful design system rollout?
+- What are the patterns emerging that I should lean into next year?
+
+The answers to those questions will shape our 2023 roadmap far more than any competitive analysis or market trend report ever could.
+
+So as you gather with your team this holiday, I'd encourage you to do the same. Pause, reflect, and turn your hard-earned lessons into a playbook for next year. 
+
+After all, the most valuable insights often come not from the things we got right, but the things we got wrong.
+
+Now, I'm curious: What's one big lesson you're thankful for this year? 🦃
+
+#Thanksgiving #ProductStrategy #DesignLeadership

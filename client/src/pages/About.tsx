@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { Zap } from "lucide-react";
+import { Zap, Users } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
 
 export default function About() {
@@ -10,13 +10,24 @@ export default function About() {
       <ResponsiveNav currentPage="about" />
 
       {/* Hero */}
-      <section className="container py-16">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Strategic Force Multiplier<br />for AI-Native Organizations
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl">
-          I help VCs and executive teams build defensible competitive advantages through AI-native transformation—delivering board-level impact without the 18-month learning curve.
-        </p>
+      <section className="relative py-16 md:py-24 mb-16 md:mb-24">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <img
+            src="/images/about-hero.png"
+            alt=""
+            className="w-full h-full object-cover opacity-40"
+          />
+        </div>
+        <div className="container">
+          <div className="bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Strategic Force Multiplier<br />for AI-Native Organizations
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl">
+            I help VCs and executive teams build defensible competitive advantages through AI-native transformation—delivering board-level impact without the 18-month learning curve.
+          </p>
+        </div>
+        </div>
       </section>
 
       {/* Story */}
@@ -42,8 +53,8 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-12">Why VCs and Executives Hire Me</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
             <Card className="p-8">
-              <div className="mb-4">
-                <Zap className="w-10 h-10 text-primary" />
+              <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
+                <Zap className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">I Build Competitive Moats</h3>
               <p className="text-muted-foreground mb-4">
@@ -64,7 +75,9 @@ export default function About() {
             </Card>
 
             <Card className="p-8">
-              <div className="text-4xl mb-4"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+              <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center shadow-lg shadow-cyan-500/30">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
               <h3 className="text-xl font-bold mb-3">I De-Risk Strategic Bets</h3>
               <p className="text-muted-foreground mb-4">
                 25 years at Fortune 50 companies means I've seen every failure mode at scale. I bring proven frameworks, predictable strategic outcomes, and enterprise-grade quality—without the learning curve.
@@ -84,7 +97,9 @@ export default function About() {
             </Card>
 
             <Card className="p-8">
-              <div className="text-4xl mb-4">🤝</div>
+              <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center shadow-lg shadow-purple-500/30">
+                <Users className="w-8 h-8 text-white" />
+              </div>
               <h3 className="text-xl font-bold mb-3">I Transform Organizations</h3>
               <p className="text-muted-foreground mb-4">
                 I don't just deliver projects—I transform organizations into AI-native competitors. I build capabilities, install systems, and create sustainable competitive advantages that outlast my engagement.
@@ -210,12 +225,12 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg">
-                Explore VP/C-Suite Roles
+                Schedule a Call
               </Button>
             </Link>
             <Link href="/work">
               <Button size="lg" variant="outline">
-                View Strategic Impact
+                View Case Studies
               </Button>
             </Link>
           </div>

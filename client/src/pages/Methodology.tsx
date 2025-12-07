@@ -10,13 +10,24 @@ export default function Methodology() {
       <ResponsiveNav currentPage="methodology" />
 
       {/* Hero */}
-      <section className="container py-16">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Strategic AI-Native Methodology
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl">
-          A proven, repeatable methodology that transforms organizations into AI-native competitors—delivering board-level impact through 25 years of Fortune 50 expertise combined with cutting-edge AI workflows.
-        </p>
+      <section className="relative py-16 md:py-24 mb-16 md:mb-24">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <img
+            src="/images/methodology-hero.png"
+            alt=""
+            className="w-full h-full object-cover opacity-40"
+          />
+        </div>
+        <div className="container">
+          <div className="bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Strategic AI-Native Methodology
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl">
+            A proven, repeatable methodology that transforms organizations into AI-native competitors—delivering board-level impact through 25 years of Fortune 50 expertise combined with cutting-edge AI workflows.
+          </p>
+        </div>
+        </div>
       </section>
 
       {/* Philosophy */}
@@ -317,12 +328,12 @@ export default function Methodology() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
                 <Button size="lg">
-                  Explore Strategic Opportunities
+                  Schedule a Call
                 </Button>
               </Link>
               <Link href="/work">
                 <Button size="lg" variant="outline">
-                  View Strategic Impact
+                  View Case Studies
                 </Button>
               </Link>
             </div>

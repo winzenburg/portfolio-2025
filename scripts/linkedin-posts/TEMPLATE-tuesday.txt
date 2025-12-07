@@ -1,0 +1,66 @@
+[Opening Hook - 2-3 paragraphs]
+Start with a specific observation, pattern, or surprising statement that stops the scroll.
+Use first 150 characters wisely - they show in the feed preview.
+
+Example: "I've watched three Fortune 500 companies waste $2.1M on design systems that failed within 18 months. The pattern is always the same..."
+
+---
+
+[Problem Section - 3-5 problems explained]
+Describe each core problem with specific examples and context.
+
+Problem 1: The specific issue
+→ Real example of how this plays out
+→ Why it matters (consequences)
+
+Problem 2: Another key challenge
+→ Concrete scenario
+→ Impact on teams/business
+
+[Continue with remaining problems...]
+
+---
+
+[Solution Section - Your approach]
+Walk through your AI-powered or strategic approach to solving these problems.
+Include specific examples, tools, or frameworks.
+
+Solution 1: What you do differently
+→ How it works
+→ Real result or metric
+
+Solution 2: Another key innovation
+→ Implementation details
+→ Outcome achieved
+
+---
+
+[Results & Validation - Real metrics]
+Share concrete outcomes with specific numbers.
+
+Example metrics:
+• 30% → 95% adoption rate
+• 6x ROI in first year
+• Reduced delivery time from 6 months to 30 days
+
+---
+
+[Strategic Implications - Why it matters]
+Zoom out to explain competitive advantage or broader impact.
+Create urgency around adoption.
+
+---
+
+[Call to Action]
+Natural transition to website for implementation details.
+
+"Want the complete framework with implementation steps? I break down the full tech stack, automation scripts, and lessons learned in my latest article: [ARTICLE URL]"
+
+[Engagement Question]
+End with a clear question to drive comments.
+
+"What's been your biggest challenge with [topic]?"
+
+---
+
+#DesignSystems #ProductDevelopment #AIWorkflow

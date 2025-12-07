@@ -57,14 +57,23 @@ export default function Contact() {
       <ResponsiveNav currentPage="contact" />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative pt-32 pb-16 mb-16 md:mb-24">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <img
+            src="/images/contact-hero.png"
+            alt=""
+            className="w-full h-full object-cover opacity-30"
+          />
+        </div>
+        <div className="container px-6">
+          <div className="max-w-4xl mx-auto text-center bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Let's Discuss Strategic Leadership Opportunities
+            Let's Build Your Competitive Advantage
           </h1>
-          <p className="text-xl text-gray-300 leading-relaxed">
-            Whether you're a VC transforming portfolio companies, an executive building AI-native competitive advantage, or a board seeking transformational leadership—let's explore opportunities for board-level impact.
+          <p className="text-xl text-slate-300 leading-relaxed">
+            Whether you're a VC seeking $3M+ portfolio value gains, an executive targeting 6-12 month runway extensions, or a leader building AI-native capabilities—let's discuss measurable outcomes.
           </p>
+        </div>
         </div>
       </section>
 
@@ -75,8 +84,8 @@ export default function Contact() {
           <Card className="p-8">
             {submitted ? (
               <div className="text-center py-12">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
@@ -217,9 +226,9 @@ export default function Contact() {
                 </div>
               </div>
 
-            <div className="p-6 bg-muted rounded-lg">
+            <div className="p-6 bg-slate-800/50 rounded-lg">
               <h3 className="font-semibold mb-2">What to Expect</h3>
-              <ul className="text-sm text-muted-foreground space-y-2">
+              <ul className="text-sm text-slate-400 space-y-2">
                 <li>• I typically respond within 24 hours</li>
                 <li>• Strategic conversations are 30-45 minutes</li>
                 <li>• I'll share portfolio impact examples and board-ready metrics</li>

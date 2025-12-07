@@ -52,7 +52,7 @@ if (weekArg) {
 } else {
   // Auto-detect week based on current date
   // Assuming Week 1 starts on a specific date (you can configure this)
-  const WEEK_1_START = new Date('2025-01-13'); // Monday of Week 1
+  const WEEK_1_START = new Date('2025-10-27'); // Monday of Week 1
   const today = new Date();
   const diffTime = Math.abs(today - WEEK_1_START);
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -65,7 +65,7 @@ if (weekArg) {
 console.log(`📅 Processing Week ${weekNumber} content...\n`);
 
 // Find all content files for this week
-const linkedinPostsDir = resolve(__dirname, '../linkedin-posts');
+const linkedinPostsDir = resolve(__dirname, './linkedin-posts');
 const weekPattern = new RegExp(`week-?${weekNumber}[-_]`, 'i');
 const readyToPostPattern = /READY-TO-POST-.*week-?(\d+)[-_]/i;
 

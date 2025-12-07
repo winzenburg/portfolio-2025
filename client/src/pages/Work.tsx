@@ -10,13 +10,24 @@ export default function Work() {
       <ResponsiveNav currentPage="work" />
 
       {/* Hero */}
-      <section className="container py-16">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Strategic Impact Portfolio
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl">
-          Board-level results: $3M+ value created per engagement, 6-12 month runway extensions, and defensible competitive advantages through AI-native transformation.
-        </p>
+      <section className="relative py-16 md:py-24 mb-16 md:mb-24">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <img
+            src="/images/work-hero.png"
+            alt=""
+            className="w-full h-full object-cover opacity-40"
+          />
+        </div>
+        <div className="container">
+          <div className="bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Strategic Impact Portfolio
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl">
+            Board-level results: $3M+ value created per engagement, 6-12 month runway extensions, and defensible competitive advantages through AI-native transformation.
+          </p>
+        </div>
+        </div>
       </section>
 
       {/* Featured Projects */}
@@ -33,7 +44,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
-                src="/portfolio-2025/saas-ds-welcome.png" 
+                src="/saas-ds-welcome.png" 
                 alt="Kinetic UI Design System" 
                 className="w-full h-full object-cover object-top"
               />
@@ -73,7 +84,7 @@ export default function Work() {
                 </div>
 
                 <Link href="/case-study/saas-design-system">
-                  <a className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold text-lg">
+                  <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
                   </a>
                 </Link>
@@ -111,7 +122,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
-                src="/portfolio-2025/project-isc.png" 
+                src="/project-isc.png" 
                 alt="ISC Portal Redesign" 
                 className="w-full h-full object-cover object-top"
               />
@@ -151,7 +162,7 @@ export default function Work() {
                 </div>
 
                 <Link href="/case-study/isc-portal">
-                  <a className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold text-lg">
+                  <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
                   </a>
                 </Link>
@@ -192,7 +203,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
-                src="/portfolio-2025/project-comcast-design-system.png" 
+                src="/project-comcast-design-system.png" 
                 alt="Comcast Business Design System" 
                 className="w-full h-full object-cover object-top"
               />
@@ -232,7 +243,7 @@ export default function Work() {
                 </div>
 
                 <Link href="/case-study/comcast-design-system">
-                  <a className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold text-lg">
+                  <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
                   </a>
                 </Link>
@@ -283,7 +294,7 @@ export default function Work() {
             <Card className="p-8">
               <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
                 <img 
-                  src="/portfolio-2025/project-buildout.png" 
+                  src="/project-buildout.png" 
                   alt="BuildOut CRE Platform" 
                   className="w-full h-full object-cover object-top"
                 />
@@ -311,7 +322,7 @@ export default function Work() {
                 </ul>
               </div>
               <Link href="/case-study/buildout">
-                <a className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold text-lg">
+                <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                   View Case Study →
                 </a>
               </Link>
@@ -321,7 +332,7 @@ export default function Work() {
             <Card className="p-8">
               <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
                 <img 
-                  src="/portfolio-2025/project-cvs.png" 
+                  src="/project-cvs.png" 
                   alt="CVS Health Platform" 
                   className="w-full h-full object-cover object-top"
                 />
@@ -349,7 +360,7 @@ export default function Work() {
                 </ul>
               </div>
               <Link href="/case-study/cvs-aetna">
-                <a className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold text-lg">
+                <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                   View Case Study →
                 </a>
               </Link>

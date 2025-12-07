@@ -1,0 +1,61 @@
+# Publishing Targets Configuration
+
+# Primary Publishing Target
+primary:
+  platform: "GitHub Pages"
+  url: "https://winzenburg.github.io/portfolio-2025/articles"
+  format: "markdown"
+  deployment:
+    method: "git-push"
+    branch: "main"
+    directory: "articles/"
+
+# Secondary Publishing Targets
+secondary:
+  - platform: "LinkedIn"
+    account: "Ryan Winzenburg"
+    format: "text-post"
+    automation:
+      enabled: true
+      method: "manual"  # Will be automated in future
+      max_length: 3000
+      include_link: true
+      hashtag_strategy: "2-3 relevant hashtags max"
+
+  # Future platforms (not yet implemented)
+  - platform: "Medium"
+    status: "planned"
+    automation:
+      enabled: false
+
+  - platform: "Dev.to"
+    status: "planned"
+    automation:
+      enabled: false
+
+# Publishing Schedule Defaults
+schedule:
+  preferred_days:
+    - "Tuesday"
+    - "Thursday"
+  preferred_time: "09:00 AM PST"
+  frequency: "2 articles per week"
+
+# Cross-Posting Rules
+cross_posting:
+  delay_between_platforms: "1 day"  # Post to primary first, then secondary
+  canonical_url: "primary"  # Primary site is canonical source
+
+# Analytics and Tracking
+tracking:
+  utm_parameters:
+    source: "winzenburg-content"
+    medium: "article"
+    # campaign will be set per article
+
+  metrics_to_track:
+    - "page_views"
+    - "time_on_page"
+    - "social_shares"
+    - "linkedin_engagement"
+    - "inbound_links"

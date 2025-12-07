@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "input": "path/to/source-articles/design-system-architecture.md",
+      "output": "client/src/pages/articles/DesignSystemArchitecture.tsx",
+      "metadata": {
+        "title": "Building a Design System Architecture That Scales",
+        "category": "Design Systems",
+        "date": "December 7, 2024",
+        "readTime": "8 min read"
+      }
+    },
+    {
+      "input": "path/to/source-articles/component-library-best-practices.md",
+      "output": "client/src/pages/articles/ComponentLibraryBestPractices.tsx",
+      "metadata": {
+        "title": "Component Library Best Practices: Lessons from the Trenches",
+        "category": "Design Systems",
+        "date": "December 8, 2024",
+        "readTime": "7 min read"
+      }
+    },
+    {
+      "input": "path/to/source-articles/ai-powered-design-workflow.md",
+      "output": "client/src/pages/articles/AIPoweredDesignWorkflow.tsx",
+      "metadata": {
+        "title": "The AI-Powered Design Workflow That Saved Me 20 Hours a Week",
+        "category": "AI Workflow",
+        "date": "December 9, 2024",
+        "readTime": "9 min read"
+      }
+    }
+  ]
+}
+

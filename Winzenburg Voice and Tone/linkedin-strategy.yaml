@@ -1,0 +1,397 @@
+# LinkedIn Publishing Strategy
+
+platform: "LinkedIn"
+content_type: "Thought Leadership Posts"
+
+# Core Strategy
+
+strategy:
+  approach: "Teaser + Value + CTA"
+
+  philosophy: |
+    LinkedIn posts are the appetizer, your site is the full meal.
+    Give them enough value to stop scrolling, enough insight to trust you,
+    and a clear reason to click through for more.
+
+  content_ratio:
+    linkedin: "30% of full article content"
+    personal_site: "100% - full depth and detail"
+
+# LinkedIn Post Structure
+
+post_structure:
+
+  ideal_length:
+    character_count: "1200-1500 characters"
+    paragraph_count: "3-5 paragraphs"
+    reading_time: "30-45 seconds"
+
+  anatomy:
+    hook:
+      purpose: "Stop the scroll in first 2 lines"
+      length: "1-2 sentences"
+      style: "Punchy, provocative, or relatable"
+      examples:
+        - "Last week I validated 3 product ideas in 5 days. The old way? 6 weeks."
+        - "80% of AI implementations fail. Here's how to be in the 20%."
+        - "I spent 40 hours on research. AI did it in 3. Same results."
+
+    value_bomb:
+      purpose: "Deliver core insight that makes post valuable on its own"
+      length: "2-3 paragraphs"
+      content: "The framework, the 'aha', the key takeaway"
+      style: "Numbered list or clear breakdown"
+      rule: "Even if they don't click through, they got value"
+
+    cta:
+      purpose: "Natural transition to full article"
+      length: "1 sentence + link location"
+      style: "Curiosity-driven, not pushy"
+      examples:
+        - "Full framework with examples in the article (link in comments)"
+        - "I break down the exact process in the full article → link in comments"
+        - "Want the complete playbook? Full breakdown on my site (link below)"
+
+    engagement_hook:
+      purpose: "Encourage comments and conversation"
+      placement: "After CTA or before closing"
+      examples:
+        - "What's your biggest challenge with AI research?"
+        - "Have you tried this approach? What worked for you?"
+        - "Which of these frameworks would help you most?"
+
+# Content Adaptation Rules
+
+adaptation_rules:
+
+  from_full_article_to_linkedin:
+
+    step_1_extract_core:
+      - "Identify the single most valuable framework or insight"
+      - "Pull out the best story or example"
+      - "Find the most compelling data point"
+
+    step_2_condense:
+      - "Cut 70% of the content"
+      - "Keep: Hook, core framework, 1 example, CTA"
+      - "Remove: Deep dives, additional examples, tangents"
+
+    step_3_punch_it_up:
+      - "Make the hook hookier"
+      - "Turn paragraphs into bullet points where possible"
+      - "Add line breaks for visual breathing room"
+      - "End with engagement question"
+
+  what_to_keep:
+    - "Opening story or hook"
+    - "Core framework (simplified to 3-5 steps)"
+    - "Best statistics or data point"
+    - "One concrete example"
+    - "Clear value proposition"
+
+  what_to_cut:
+    - "Deep explanations (save for site)"
+    - "Additional examples beyond the best one"
+    - "Detailed tool comparisons"
+    - "Nuanced caveats (summarize in one line)"
+    - "Background context (assume they'll click for it)"
+
+# LinkedIn-Specific Formatting
+
+formatting:
+
+  line_breaks:
+    rule: "Use generously for readability"
+    pattern: "Double line break between sections"
+
+  lists:
+    style: "Simple bullets or numbers"
+    format: |
+      1. Point one → quick explanation
+      2. Point two → quick explanation
+      3. Point three → quick explanation
+
+  emphasis:
+    bold: "Not available on LinkedIn (use ALL CAPS sparingly)"
+    italics: "Not available (use *asterisks* or quotes)"
+    emojis: "Occasional (1-2 per post max)"
+
+  hashtags:
+    count: "2-3 maximum"
+    placement: "End of post"
+    strategy: "Mix of specific and broad"
+    examples:
+      - "#AIProduct #ProductManagement"
+      - "#AITools #UXDesign #DesignOps"
+      - "#ProductStrategy #AIBusiness"
+
+# Post Templates by Article Type
+
+templates:
+
+  framework_article:
+    structure: |
+      [Hook: Problem → surprising solution]
+
+      [Framework name and why it matters]
+
+      Here's the framework:
+
+      1. [Step one] → [quick explanation]
+      2. [Step two] → [quick explanation]
+      3. [Step three] → [quick explanation]
+
+      [One example of it in action]
+
+      [CTA to full article with link placement]
+
+      [Engagement question]
+
+      #Hashtag #Hashtag
+
+    example: |
+      Last Tuesday, I validated three product ideas while making coffee.
+
+      Total time? 30 minutes. Old approach? 3 weeks minimum.
+
+      The difference isn't magic—it's asking AI the right questions.
+
+      Here's the exact framework:
+
+      1. Keyword validation → Find search volume in 5 mins
+      2. Pain point research → Use Perplexity for deep insights
+      3. Quick competitive scan → AI-powered analysis
+
+      Example: I tested "AI-powered PRD generator" and discovered a gap in
+      the market for product managers at Series A startups. Took 28 minutes.
+
+      Full framework with prompts and examples → [link in comments]
+
+      What's your biggest validation challenge?
+
+      #AIProduct #ProductManagement
+
+  tool_review:
+    structure: |
+      [Hook: Common problem this tool solves]
+
+      [Tool name + quick description]
+
+      What I learned:
+
+      ✅ [Key benefit 1]
+      ✅ [Key benefit 2]
+      ⚠️ [Key limitation]
+
+      [Best use case or example]
+
+      [CTA to full review]
+
+      [Question about their tool usage]
+
+    example: |
+      Spent 40 hours on market research last month. This month? 3 hours.
+
+      The difference: Perplexity AI for product research.
+
+      What I learned:
+
+      ✅ Answers questions, doesn't just list links
+      ✅ Cites sources (so you can verify)
+      ✅ Follows up intelligently on your research thread
+      ⚠️ Still hallucinates—always verify key facts
+
+      Best use case: Early-stage market validation where you need quick,
+      cited answers to specific questions.
+
+      Full breakdown of my research process + example prompts on my site
+      (link in comments)
+
+      What's your go-to AI research tool?
+
+      #AITools #ProductManagement
+
+  thought_leadership:
+    structure: |
+      [Provocative statement or counterintuitive claim]
+
+      [Why this matters now]
+
+      [Your key insight or framework]
+
+      [Supporting point or example]
+
+      [Bigger implication]
+
+      [CTA for deeper exploration]
+
+    example: |
+      Hot take: The best product managers don't use AI to make decisions.
+
+      They use it to ask better questions.
+
+      I've watched teams try to automate decision-making with AI. It fails
+      spectacularly. Why? Because decisions need context, judgment, and nuance.
+
+      But using AI to generate better questions? Game-changer.
+
+      Instead of "Should we build this feature?" ask AI to help you explore:
+      - What assumptions am I making?
+      - What data would change my mind?
+      - What are alternative framings of this problem?
+
+      The questions lead to better decisions. The AI just helps you ask them.
+
+      I wrote about this approach (with examples) → link in comments
+
+      How are you using AI in your workflow?
+
+      #ProductThinking #AIStrategy
+
+  case_study:
+    structure: |
+      [Specific outcome achieved]
+
+      [The challenge/starting point]
+
+      [What you did (high-level)]
+
+      [Key results]
+
+      [Biggest lesson]
+
+      [CTA for methodology]
+
+    example: |
+      We cut our product validation time from 6 weeks to 6 days.
+
+      The challenge: Our small team couldn't move fast enough to test ideas
+      before market windows closed.
+
+      The shift: AI-first validation process
+      - Automated keyword research
+      - AI-powered competitive analysis
+      - Rapid prototype testing with V0
+
+      Results:
+      - 90% reduction in validation time
+      - 3x more ideas tested per quarter
+      - Higher confidence in go/no-go decisions
+
+      Biggest lesson: Speed without sacrificing quality is possible when
+      you automate the research, not the judgment.
+
+      Full case study with our exact process → link in comments
+
+      #ProductStrategy #AIWorkflow
+
+# CTA Best Practices
+
+cta_guidelines:
+
+  link_placement:
+    first_comment: "Most common—keeps post clean"
+    end_of_post: "Works if brief"
+    avoid: "Links in middle of post (breaks flow)"
+
+  effective_ctas:
+    curiosity_driven:
+      - "Full breakdown with examples → [link in comments]"
+      - "I walk through the complete process in the article"
+      - "Want the exact prompts I used?"
+
+    value_explicit:
+      - "Get the complete framework with templates"
+      - "See the step-by-step guide with screenshots"
+      - "Read the full analysis with data"
+
+    action_oriented:
+      - "Grab the free template on my site"
+      - "Download the complete playbook"
+      - "Get the implementation guide"
+
+  avoid:
+    - "Click here" (too generic)
+    - "Read more" (boring)
+    - "Check out my blog" (self-promotional)
+    - Anything pushy or salesy
+
+# Engagement Optimization
+
+engagement:
+
+  timing:
+    best_days: ["Tuesday", "Wednesday", "Thursday"]
+    best_times: ["8-9 AM", "12-1 PM", "5-6 PM"]
+    timezone: "Your audience's timezone (US PST for tech)"
+
+  first_hour_critical:
+    - "Post and immediately engage in comments"
+    - "Respond to early commenters quickly"
+    - "LinkedIn algorithm favors early engagement"
+
+  comment_strategy:
+    - "Ask a question to invite responses"
+    - "Respond thoughtfully to every comment in first 24 hours"
+    - "Add your article link as first comment immediately"
+
+# Analytics to Track
+
+metrics:
+
+  primary:
+    - "Impressions (reach)"
+    - "Engagement rate (likes + comments + shares / impressions)"
+    - "Click-through rate to article"
+    - "Comment quality (not just quantity)"
+
+  secondary:
+    - "Follower growth rate"
+    - "Time on site from LinkedIn traffic"
+    - "Conversion to email list (if applicable)"
+
+  success_benchmarks:
+    engagement_rate: ">3% is good, >5% is excellent"
+    ctr_to_article: ">2% is solid"
+    meaningful_comments: "5+ thoughtful comments = strong post"
+
+# Voice Adaptation for LinkedIn
+
+voice_on_linkedin:
+
+  same_as_site:
+    - "Playful thought leader personality"
+    - "Conversational tone"
+    - "Stories and examples"
+    - "Humility and authority balanced"
+
+  adjusted_for_platform:
+    - "Slightly more polished (but still conversational)"
+    - "More generous line breaks"
+    - "Front-load the value even more"
+    - "Punchier sentences"
+    - "Less tangential personality (stay focused)"
+
+  platform_differences:
+    personal_site: "Can meander, tell longer stories, explore nuances"
+    linkedin: "Get to the point faster, but make it engaging"
+
+# Content Calendar Integration
+
+cross_posting_strategy:
+
+  timing:
+    - "Post to personal site first (canonical source)"
+    - "Post LinkedIn version same day or next day"
+    - "LinkedIn post always links back to site"
+
+  variation:
+    - "LinkedIn version is adapted, not copy-paste"
+    - "Different hook, same core insight"
+    - "Teaser on LinkedIn, full depth on site"
+
+  utm_tracking:
+    source: "linkedin"
+    medium: "social"
+    campaign: "[article-slug]"
+    example: "?utm_source=linkedin&utm_medium=social&utm_campaign=ai-validation-framework"

@@ -1,0 +1,384 @@
+# LinkedIn Content Writing Framework
+# For positioning as a design leader to VCs, VP-level executives, and enterprise hiring managers
+
+# ============================================================================
+# STRATEGIC OBJECTIVE
+# ============================================================================
+
+objective: |
+  Position Ryan Winzenburg as a thought leader in AI-augmented design leadership
+  to attract retainer engagements and full-time roles at:
+  - Enterprise organizations (Fortune 500)
+  - Well-funded startups (Series A+)
+  - VC portfolio companies needing design leadership
+
+target_outcome: "Get retained or hired by enterprise or well-funded startups"
+
+# ============================================================================
+# TARGET AUDIENCE PROFILE
+# ============================================================================
+
+primary_audience:
+  vcs_investors:
+    role: "General Partners, Portfolio Partners, Talent Partners"
+    looking_for: "Design leaders who can accelerate portfolio companies"
+    hiring_triggers:
+      - "Portfolio company needs design leadership"
+      - "Evaluating design leader candidates"
+      - "Looking for fractional/advisory design executives"
+    pain_points:
+      - "Portfolio companies with slow product development"
+      - "Design teams that can't scale efficiently"
+      - "Lack of measurable design ROI"
+      - "Uncertainty about AI integration in design"
+
+  vp_level_executives:
+    role: "VP Product, VP Engineering, Chief Product Officer"
+    looking_for: "Design partners who drive business outcomes"
+    hiring_triggers:
+      - "Need to scale design function"
+      - "Building AI-powered product portfolio"
+      - "Design leadership role open"
+    pain_points:
+      - "Slow design-to-development cycles"
+      - "Inconsistent user experiences across products"
+      - "Can't measure design impact"
+      - "Design team doesn't influence strategy"
+
+  design_executives:
+    role: "VP Design, Head of Design, Chief Design Officer"
+    looking_for: "Peer insights and potential hires/advisors"
+    hiring_triggers:
+      - "Expanding design leadership team"
+      - "Looking for fractional/advisory support"
+      - "Hiring senior design leaders"
+    pain_points:
+      - "Scaling design teams efficiently"
+      - "Demonstrating design ROI to executives"
+      - "AI integration strategy"
+      - "Design system adoption challenges"
+
+# ============================================================================
+# CORE POSITIONING PILLARS
+# ============================================================================
+
+positioning:
+  primary_identity: "Design leader at the intersection of AI + design systems + business impact"
+
+  unique_differentiators:
+    enterprise_scale:
+      stat: "300+ products, 24 designers"
+      message: "Proven at Fortune 500 enterprise scale"
+      why_it_matters: "Most design leaders lack enterprise portfolio management experience"
+
+    ai_expertise:
+      stat: "40% faster design production"
+      message: "AI augmentation as strategic multiplier, not just productivity tool"
+      why_it_matters: "2025 requires AI-native design leadership"
+
+    measurable_roi:
+      stat: "30-80% productivity improvements, 95%+ design system adoption"
+      message: "Business outcomes, not design awards"
+      why_it_matters: "VCs and executives hire based on ROI, not portfolio aesthetics"
+
+    proven_leadership:
+      stat: "39M user migration, Fortune 500 experience"
+      message: "Led high-stakes, high-visibility design initiatives"
+      why_it_matters: "Track record reduces hiring risk"
+
+  value_proposition: |
+    "I help enterprise organizations and well-funded startups build AI-augmented
+    design teams that ship 3-5x faster with measurable business impact"
+
+# ============================================================================
+# CONTENT WRITING FRAMEWORK
+# ============================================================================
+
+writing_principles:
+
+  rule_1_speak_to_decision_makers:
+    description: "Write to the person who signs the contract, not the person doing the work"
+    examples:
+      bad: "Designers struggle with AI tools"
+      good: "Design leaders who can't leverage AI will see their teams outpaced by 3-5x in 2025"
+
+  rule_2_business_impact_over_design_craft:
+    description: "Lead with ROI, efficiency, and business outcomes—not design aesthetics"
+    examples:
+      bad: "Beautiful, polished design systems"
+      good: "95%+ adoption rate across 300+ products, reducing design debt by millions"
+
+  rule_3_enterprise_scale_signals:
+    description: "Always reference enterprise scale to differentiate from mid-level designers"
+    required_elements:
+      - "300+ products"
+      - "Fortune 500"
+      - "24 designers"
+      - "Enterprise scale"
+      - "Portfolio management"
+
+  rule_4_strategic_not_tactical:
+    description: "Position as a leader who sets strategy, not executes tasks"
+    examples:
+      bad: "Here's how I use Figma plugins"
+      good: "Strategic tech stack decisions that multiply team capacity across 300+ products"
+
+  rule_5_cost_of_inaction:
+    description: "Frame problems in terms of wasted capital and lost market opportunity"
+    examples:
+      bad: "Design systems are hard to build"
+      good: "Design system failures cost organizations millions in wasted engineering time"
+
+  rule_6_ai_as_strategic_advantage:
+    description: "AI is not a tool—it's a competitive advantage and leadership requirement"
+    examples:
+      bad: "AI helps me work faster"
+      good: "The design leader you hire determines whether AI is a productivity tool or a strategic multiplier"
+
+  rule_7_hiring_signals:
+    description: "Subtly signal availability for the right opportunity"
+    frequency: "Every 3-4 posts"
+    examples:
+      - "Looking to bring this framework to enterprise organizations and well-funded startups"
+      - "Available for fractional leadership engagements"
+      - "Open to advising portfolio companies on AI-augmented design transformation"
+
+# ============================================================================
+# POST STRUCTURE TEMPLATES
+# ============================================================================
+
+post_templates:
+
+  article_announcement:
+    structure: |
+      1. Hook: Problem statement from enterprise/VC perspective (1-2 lines)
+      2. Cost of the problem: Quantify impact in dollars/time/opportunity (2-3 lines)
+      3. Credibility: Position + scale (1 line) - "Leading design across 300+ Fortune 500 products..."
+      4. Solution: Framework/approach name (1 line)
+      5. Framework details: Bulleted, scannable, strategic (4-6 bullets)
+      6. Outcome: Business impact achieved (1-2 lines)
+      7. Call to value: For whom this matters (1 line) - "For enterprise leaders and VCs..."
+      8. CTA: Article link
+      9. Hashtags: #DesignLeadership #AIinDesign #EnterpriseDesign
+
+    example: |
+      Design leaders who can't validate market demand waste portfolio company resources.
+
+      I've seen Fortune 500 teams spend 6-12 months building products nobody wants.
+      The cost? Millions in engineering resources and lost market opportunities.
+
+      As a design leader managing 300+ products, I developed an AI-powered validation
+      framework that reduces research cycles from weeks to days—freeing design teams
+      to focus on strategic work.
+
+      The framework:
+      📊 AI-driven keyword research and demand scoring
+      📊 Automated competitive intelligence gathering
+      📊 Market gap analysis and opportunity mapping
+      📊 Data-backed go/no-go decisions
+
+      This approach helped us de-risk product investments and increase our portfolio's win rate.
+
+      For enterprise organizations and well-funded startups: market validation isn't just
+      research—it's capital protection.
+
+      Full framework in today's article (link in comments).
+
+      #DesignLeadership #ProductStrategy #AIinDesign
+
+  engagement_post:
+    structure: |
+      1. Provocative statement or question (1-2 lines)
+      2. Enterprise context: Scale, stakeholders, complexity (2-3 lines)
+      3. Leadership insight: Strategic perspective (2-4 lines)
+      4. Question to audience: Invite executive-level discussion
+      5. Hashtags: #DesignLeadership #[TopicRelevant] #[AudienceRelevant]
+
+    example: |
+      The most expensive mistake design teams make?
+
+      Building solutions before validating the problem.
+
+      At enterprise scale (300+ products, 24 designers), every misaligned project
+      compounds across the portfolio.
+
+      Market validation isn't about proving your team's idea is right.
+      It's about protecting stakeholder investment and maximizing ROI.
+
+      What validation frameworks do design leaders use at your organization?
+
+      #DesignLeadership #ProductStrategy #UXLeadership
+
+# ============================================================================
+# CONTENT CHECKLISTS
+# ============================================================================
+
+pre_publish_checklist:
+  audience_check:
+    - "Is this written for VCs/VPs/design execs, not individual contributors?"
+    - "Would a hiring manager see this and think 'I need this person'?"
+
+  positioning_check:
+    - "Does it reference enterprise scale (300+ products, Fortune 500, 24 designers)?"
+    - "Does it lead with business impact, not design craft?"
+    - "Does it position AI as strategic advantage?"
+    - "Does it include measurable outcomes (40%, 95%, 3-5x)?"
+
+  strategic_check:
+    - "Am I positioned as a leader who sets strategy, not executes tasks?"
+    - "Is the tone executive-level, not mid-level IC?"
+    - "Does it demonstrate systems thinking and portfolio management?"
+
+  hiring_signal_check:
+    - "Every 3-4 posts: Does it subtly signal availability/interest?"
+    - "Does it make clear the type of organizations I want to work with?"
+
+# ============================================================================
+# LANGUAGE PATTERNS
+# ============================================================================
+
+power_phrases:
+  enterprise_credibility:
+    - "Leading design across 300+ Fortune 500 products"
+    - "At enterprise scale"
+    - "Portfolio company resources"
+    - "Managing 24 designers"
+    - "39M user migration"
+
+  business_impact:
+    - "Cost organizations millions in..."
+    - "Wasted engineering time"
+    - "Lost market opportunities"
+    - "Protect stakeholder capital"
+    - "Capital efficiency disguised as product strategy"
+    - "De-risk product investments"
+    - "Measurable business outcomes"
+
+  ai_positioning:
+    - "AI as strategic multiplier, not just productivity tool"
+    - "AI-augmented design leadership"
+    - "AI-native design organizations"
+    - "40% faster design production"
+    - "AI-powered teams ship 3-5x faster"
+
+  strategic_leadership:
+    - "Design leader who drives business outcomes"
+    - "Strategic design leadership"
+    - "Cross-functional leverage"
+    - "Portfolio management approach"
+    - "Design leadership influencing product/engineering roadmaps"
+    - "Change management disguised as component libraries"
+
+avoid_phrases:
+  individual_contributor_language:
+    - "I love designing..."
+    - "My design process..."
+    - "Tips and tricks..."
+    - "Here's how I..."
+    - "Quick win..."
+
+  mid_level_positioning:
+    - "Excited to share..."
+    - "Just launched..."
+    - "Check out this cool..."
+    - "Proud of my team for..."
+
+# ============================================================================
+# HASHTAG STRATEGY
+# ============================================================================
+
+hashtag_framework:
+  always_include:
+    - "#DesignLeadership" # Primary identity
+
+  rotate_based_on_topic:
+    ai_focused:
+      - "#AIinDesign"
+      - "#AIStrategy"
+      - "#EnterpriseAI"
+
+    systems_focused:
+      - "#DesignSystems"
+      - "#DesignOps"
+      - "#ChangeManagement"
+
+    business_focused:
+      - "#ProductStrategy"
+      - "#BusinessImpact"
+      - "#ROI"
+
+    leadership_focused:
+      - "#UXLeadership"
+      - "#ProductLeadership"
+      - "#EnterpriseDesign"
+
+  avoid:
+    - "#Design" (too generic, attracts wrong audience)
+    - "#UX" (too broad, attracts ICs not executives)
+    - Generic industry hashtags without specificity
+
+# ============================================================================
+# FREQUENCY & CADENCE
+# ============================================================================
+
+posting_schedule:
+  tuesday:
+    type: "Article announcement"
+    focus: "Thought leadership, frameworks, business impact"
+    length: "200-300 words"
+
+  thursday:
+    type: "Engagement post"
+    focus: "Strategic questions, leadership insights, peer discussion"
+    length: "100-150 words"
+
+engagement_strategy:
+  comment_approach: |
+    Respond to comments with executive-level insights, not friendly banter.
+    Position as peer to VPs/execs, mentor to design leaders.
+
+  connection_strategy: |
+    Proactively connect with:
+    - VPs of Product/Engineering at well-funded startups
+    - Design executives at Fortune 500 companies
+    - VC partners (especially those with design backgrounds)
+    - Startup CEOs raising Series A+
+
+# ============================================================================
+# SUCCESS METRICS
+# ============================================================================
+
+tracking_metrics:
+  engagement_signals:
+    - "Comments from VP+ level executives"
+    - "Connection requests from target audience"
+    - "DMs inquiring about availability/engagements"
+    - "Shares from VCs and design executives"
+
+  conversion_signals:
+    - "Inbound inquiries for fractional/advisory work"
+    - "Recruiter outreach for VP+ design roles"
+    - "Speaking/podcast invitations from enterprise/VC space"
+    - "Direct outreach from portfolio companies"
+
+# ============================================================================
+# USAGE INSTRUCTIONS FOR CLAUDE
+# ============================================================================
+
+instructions_for_ai:
+  when_writing_linkedin_content: |
+    1. Always reference this framework before writing LinkedIn posts
+    2. Run through the pre_publish_checklist before finalizing content
+    3. Use power_phrases naturally throughout the copy
+    4. Ensure every post passes the "would a hiring manager want this person?" test
+    5. Verify positioning is strategic leader, not individual contributor
+    6. Include at least 2 enterprise scale signals per post
+    7. Lead with business impact, not design craft
+    8. Add subtle hiring signals every 3-4 posts
+
+  tone_calibration: |
+    Voice: Confident, strategic, data-driven
+    NOT: Excited, friendly, humble-bragging, tips-focused
+
+    Write like: A design executive in a board meeting
+    NOT like: A designer sharing their journey

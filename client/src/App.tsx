@@ -16,6 +16,7 @@ import CaseStudyBuildout from "./pages/CaseStudyBuildout";
 import CaseStudyCvs from "./pages/CaseStudyCvs";
 import Services from "./pages/Services";
 import Articles from "./pages/Articles";
+import Gallery from "./pages/Gallery";
 import AIAugmentedWorkflow from "./pages/articles/AIAugmentedWorkflow";
 import AiPoweredMarketValidation from "./pages/articles/AiPoweredMarketValidation";
 import AudienceFirstGoToMarket from "./pages/articles/AudienceFirstGoToMarket";
@@ -29,7 +30,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
   return (
-    <WouterRouter base="/portfolio-2025">
+    <WouterRouter base="/">
       <ScrollToTop />
       <Switch>
       <Route path={"/"} component={Home} />
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/methodology" component={Methodology} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
+      <Route path="/gallery" component={Gallery} />
       <Route path="/articles" component={Articles} />
       <Route path="/articles/ai-augmented-workflow" component={AIAugmentedWorkflow} />
       <Route path="/articles/ai-powered-market-validation" component={AiPoweredMarketValidation} />

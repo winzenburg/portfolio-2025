@@ -197,6 +197,7 @@ import { Card } from "@/components/ui/card"
 - Maintain consistent Radix UI + Tailwind pattern
 
 ### Styling Patterns
+
 **Typography in articles:**
 ```tsx
 // Standard paragraph
@@ -207,11 +208,236 @@ import { Card } from "@/components/ui/card"
 <h3 className="text-2xl font-semibold text-white mb-4">
 ```
 
-**Color palette (stick to these):**
-- Text: `text-slate-300`, `text-slate-400`, `text-white`
-- Problems/Warnings: `text-red-400`, `border-red-900/50`
-- Success/Results: `text-cyan-400`, `text-blue-400`, `border-cyan-700/50`
-- Backgrounds: `bg-slate-900/50`, `bg-slate-900/30`
+## Color System
+
+The site uses a **dark theme** with a carefully structured color palette. Always use these exact color values to maintain visual consistency.
+
+### Base Colors (Backgrounds & Surfaces)
+
+**Backgrounds:**
+- `bg-slate-950` - Darkest background (article detail pages)
+- `bg-slate-900` - Primary dark background (main pages)
+- `bg-slate-800` or `bg-slate-800/50` - Card backgrounds, secondary surfaces
+- `bg-slate-900/50` or `bg-slate-900/30` - Overlay backgrounds with transparency
+
+**Gradients (Page Backgrounds):**
+```tsx
+className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
+```
+
+### Text Colors
+
+**Hierarchy (from most to least prominent):**
+- `text-white` - Primary headings (h1, h2), important UI text
+- `text-slate-300` - Body text, paragraphs, article content
+- `text-slate-400` - Meta information (dates, read time, labels)
+- `text-slate-500` - Muted text, disabled states
+
+**Usage:**
+```tsx
+<h1 className="text-white">Main Heading</h1>
+<p className="text-slate-300">Body paragraph text</p>
+<span className="text-slate-400">March 17, 2025 • 5 min read</span>
+```
+
+### Border & Divider Colors
+
+- `border-slate-700` or `border-slate-700/50` - Default borders on cards, sections
+- `border-slate-800` - Subtle dividers
+- `border-slate-600` - Input borders, stronger dividers
+
+### Accent Colors
+
+#### Blue (Primary Brand Color)
+**Usage:** Primary CTAs, buttons, links, interactive states
+
+- `bg-blue-600` → `hover:bg-blue-700` - Primary buttons
+- `bg-blue-500` or `border-blue-500` - Active/selected states
+- `text-blue-400` → `hover:text-blue-300` - Links
+- `bg-blue-900/30 border-blue-700/50` - Category badges (Design Systems)
+
+```tsx
+// Primary CTA button
+<button className="bg-blue-600 hover:bg-blue-700 text-white">
+  Schedule a Call
+</button>
+
+// Link
+<a className="text-blue-400 hover:text-blue-300">Read Article</a>
+
+// Selected filter badge
+<button className="bg-blue-500 text-white border-blue-500">
+  Design Systems (3)
+</button>
+```
+
+#### Cyan (Secondary Accent)
+**Usage:** Success states, highlights, secondary CTAs, article accents
+
+- `text-cyan-400` → `hover:text-cyan-300` - Article links, highlights
+- `bg-cyan-500` → `hover:bg-cyan-400` - Secondary CTAs
+- `border-cyan-700/50` - Accent borders
+- `bg-cyan-900/30 border-cyan-700/50` - Category badges (Business Strategy)
+
+**Gradients (Special sections like newsletter, success callouts):**
+```tsx
+className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border-cyan-700/50"
+className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border-cyan-700/50"
+```
+
+```tsx
+// Newsletter box
+<div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-blue-700/50">
+
+// Article highlight link
+<a className="text-cyan-400 hover:text-cyan-300">
+  Back to Articles
+</a>
+```
+
+#### Purple (Tertiary Accent)
+**Usage:** AI Workflow category only
+
+- `bg-purple-500` or `border-purple-500` - Active state
+- `bg-purple-900/30 border-purple-700/50 text-purple-300` - Category badge
+
+```tsx
+// AI Workflow category badge
+<span className="bg-purple-900/30 border border-purple-700/50 text-purple-300">
+  AI Workflow (1)
+</span>
+```
+
+### Semantic Colors
+
+#### Success
+**Usage:** Success messages, confirmation states, positive outcomes
+
+- `text-green-400` or `text-green-500` - Success text
+- `bg-green-900/30 border-green-700/50` - Success backgrounds
+- `bg-green-500/20` - Icon backgrounds
+
+```tsx
+// Success message
+<div className="bg-green-900/30 border border-green-700/50 rounded-lg p-6">
+  <div className="text-green-400">✓ Success!</div>
+  <p className="text-slate-300">You're subscribed!</p>
+</div>
+```
+
+#### Error/Warning
+**Usage:** Error messages, warnings, problem callouts
+
+- `text-red-400` - Error text
+- `bg-red-900/50 border-red-900/50` - Error/warning backgrounds
+- `text-red-400 border-red-900/50` - Problem metrics, warnings
+
+```tsx
+// Error state
+<p className="text-red-400">Error: Please try again</p>
+
+// Problem callout card
+<div className="bg-slate-900/50 border border-red-900/50 rounded-lg">
+  <div className="text-red-400 font-bold">Traditional Approach</div>
+</div>
+```
+
+### Interactive States
+
+**Hover States:**
+```tsx
+// Cards
+className="border-slate-700/50 hover:border-blue-500/50"
+
+// Buttons
+className="bg-blue-600 hover:bg-blue-700"
+
+// Links
+className="text-blue-400 hover:text-blue-300"
+
+// Filter badges (unselected)
+className="bg-slate-800/50 hover:bg-slate-700/50 hover:border-slate-500"
+```
+
+**Active/Selected States:**
+```tsx
+// Selected filter badge
+className="bg-blue-500 text-white border-blue-500"
+
+// Active navigation
+className="text-white" // vs text-slate-400 for inactive
+```
+
+**Disabled States:**
+```tsx
+className="opacity-50 cursor-not-allowed"
+```
+
+### Opacity Levels
+
+Use consistent opacity values for depth and layering:
+- `/10` - Very subtle tints
+- `/20` - Light backgrounds (gradients, special sections)
+- `/30` - Medium backgrounds (cards, badges)
+- `/50` - Standard overlays, borders
+- No opacity - Solid colors for text and primary elements
+
+### Color Usage Rules
+
+**DO:**
+- ✅ Use `text-white` for all h1, h2, h3 headings
+- ✅ Use `text-slate-300` for body text and paragraphs
+- ✅ Use blue for primary CTAs and links
+- ✅ Use cyan for highlights and secondary actions
+- ✅ Maintain consistent hover states (always darken buttons, lighten text)
+- ✅ Use opacity variants for depth (`/30`, `/50`)
+
+**DON'T:**
+- ❌ Don't introduce new colors outside this palette
+- ❌ Don't use `text-gray-*` (use `text-slate-*` instead)
+- ❌ Don't use arbitrary opacity values (stick to /10, /20, /30, /50)
+- ❌ Don't mix color families (e.g., blue borders with cyan backgrounds)
+- ❌ Don't use black (`bg-black`) - use `bg-slate-950` or `bg-slate-900`
+
+### Quick Reference by Component Type
+
+**Buttons:**
+```tsx
+// Primary CTA
+className="bg-blue-600 hover:bg-blue-700 text-white"
+
+// Secondary CTA
+className="bg-cyan-500 hover:bg-cyan-400 text-slate-900"
+
+// Outline
+className="border border-slate-600 text-slate-300 hover:bg-slate-700/50"
+```
+
+**Cards:**
+```tsx
+// Standard card
+className="bg-slate-800/50 border border-slate-700/50 hover:border-blue-500/50"
+
+// Article card
+className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg"
+
+// Special callout
+className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-cyan-700/50"
+```
+
+**Inputs:**
+```tsx
+className="bg-slate-800/50 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500"
+```
+
+**Badges:**
+```tsx
+// Category badge (unselected)
+className="bg-blue-900/30 border border-blue-700/50 text-blue-300"
+
+// Selected state
+className="bg-blue-500 text-white border-blue-500"
+```
 
 ### Navigation Patterns
 **Internal links (use wouter's Link):**
@@ -681,10 +907,11 @@ Create visual breaks between major sections:
 - Use visual elements to enhance, not replace, storytelling
 
 **Color Coding**:
-- **Problems/Costs**: Red theme (red-900/red-400)
-- **Success/Results**: Cyan/Blue theme (cyan-400, blue-400)
-- **Neutral/Info**: Slate theme (slate-300, slate-400)
-- **Gradients**: Success stories (from-cyan-900/20 to-blue-900/20)
+Follow the [Color System](#color-system) guidelines above. Quick reference:
+- **Problems/Costs**: Red theme (`text-red-400`, `bg-red-900/50`, `border-red-900/50`)
+- **Success/Results**: Cyan/Blue theme (`text-cyan-400`, `text-blue-400`, gradients with cyan/blue)
+- **Neutral/Info**: Slate theme (`text-slate-300`, `text-slate-400`, `bg-slate-900/50`)
+- **Gradients**: `from-cyan-900/20 to-blue-900/20` for success stories and special sections
 
 ## Image & Asset Management
 
@@ -927,7 +1154,7 @@ pnpm format           # Format with Prettier
 - ❌ Walls of text without visual breaks
 
 **Technical Quality**:
-- ✅ Consistent color palette (cyan/blue/slate/red)
+- ✅ Follows [Color System](#color-system) guidelines (cyan/blue/slate/red)
 - ✅ Proper heading hierarchy (h1 → h2 → h3)
 - ✅ Responsive design (mobile-friendly)
 - ✅ Accessible (semantic HTML, proper contrast)
@@ -954,7 +1181,7 @@ Before pushing a new article, verify:
 - [ ] Visual elements every 3-4 paragraphs
 - [ ] Pull quotes (1-2) highlight key insights
 - [ ] Section dividers between major topics
-- [ ] Color palette follows guidelines (cyan/blue/slate/red)
+- [ ] Follows [Color System](#color-system) guidelines
 - [ ] 2,000-2,500 words total (~9 min read)
 
 ### Testing Requirements
