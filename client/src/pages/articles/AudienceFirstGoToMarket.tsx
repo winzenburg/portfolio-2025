@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 
@@ -22,7 +23,7 @@ export default function AudienceFirstGoToMarket() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/go-to-market-hero.png"
+              src="/images/articles/audience-first-go-to-market-hero.png"
               alt="Audience-First Go-to-Market Strategy"
               className="w-full h-auto"
             />
@@ -449,6 +450,11 @@ export default function AudienceFirstGoToMarket() {
                 </a>
               </Link>
             </div>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

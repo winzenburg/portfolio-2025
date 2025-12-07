@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 
@@ -22,7 +23,7 @@ export default function MonetizationStrategy() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/monetization-hero.png"
+              src="/images/articles/monetization-strategy-hero.png"
               alt="Monetization Strategy"
               className="w-full h-auto"
             />
@@ -657,6 +658,11 @@ export default function MonetizationStrategy() {
                 "Revenue funds growth. Growth drives revenue. This is the compounding effect of getting monetization right from day one."
               </p>
             </div>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

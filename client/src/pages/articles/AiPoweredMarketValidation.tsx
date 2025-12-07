@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 
@@ -21,7 +22,7 @@ export default function AIMarketValidation() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/market-validation-hero.png"
+              src="/images/articles/ai-powered-market-validation-hero.png"
               alt="AI-Powered Market Validation"
               className="w-full h-auto"
             />
@@ -420,6 +421,11 @@ export default function AIMarketValidation() {
                 Schedule a Discovery Call →
               </a>
             </Link>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

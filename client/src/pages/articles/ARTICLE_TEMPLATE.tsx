@@ -42,7 +42,7 @@ export default function ARTICLE_TEMPLATE() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/your-article-hero.png"
+              src="/images/articles/your-article-hero.png"
               alt="Your Article Title"
               className="w-full h-auto"
             />

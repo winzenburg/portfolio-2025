@@ -1,6 +1,7 @@
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function AITechStack() {
   return (
@@ -21,7 +22,7 @@ export default function AITechStack() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/ai-tech-stack-hero.png"
+              src="/images/articles/ai-tech-stack-hero.png"
               alt="The AI-Powered Design Tech Stack"
               className="w-full h-auto"
             />
@@ -653,6 +654,11 @@ export default function AITechStack() {
                 </a>
               </Link>
             </div>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

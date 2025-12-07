@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 
@@ -22,7 +23,7 @@ export default function MVPStrategy() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/mvp-strategy-hero.png"
+              src="/images/articles/mvp-strategy-hero.png"
               alt="MVP Strategy"
               className="w-full h-auto"
             />
@@ -361,6 +362,11 @@ export default function MVPStrategy() {
                 </a>
               </Link>
             </div>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

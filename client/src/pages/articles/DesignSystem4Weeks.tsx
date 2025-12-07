@@ -1,6 +1,7 @@
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function DesignSystem4Weeks() {
   return (
@@ -21,7 +22,7 @@ export default function DesignSystem4Weeks() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/design-system-4-weeks-hero.png"
+              src="/images/articles/design-system-4-weeks-hero.png"
               alt="How I Built an Enterprise Design System in 4 Weeks"
               className="w-full h-auto"
             />
@@ -846,6 +847,11 @@ export default function DesignSystem4Weeks() {
                 </a>
               </Link>
             </div>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

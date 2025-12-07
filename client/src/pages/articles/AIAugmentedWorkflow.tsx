@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 
@@ -21,7 +22,7 @@ export default function AIAugmentedWorkflow() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/ai-augmented-workflow-hero.png"
+              src="/images/articles/ai-augmented-workflow-hero.png"
               alt="AI-Augmented Workflow"
               className="w-full h-auto"
             />
@@ -599,6 +600,11 @@ export default function AIAugmentedWorkflow() {
                 Get in Touch →
               </a>
             </Link>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

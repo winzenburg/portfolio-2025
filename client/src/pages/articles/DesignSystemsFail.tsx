@@ -1,6 +1,7 @@
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function DesignSystemsFail() {
   return (
@@ -21,7 +22,7 @@ export default function DesignSystemsFail() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/design-systems-fail-hero.png"
+              src="/images/articles/design-systems-fail-hero.png"
               alt="Why Most Design Systems Fail"
               className="w-full h-auto"
             />
@@ -482,6 +483,11 @@ export default function DesignSystemsFail() {
                 </a>
               </Link>
             </div>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}

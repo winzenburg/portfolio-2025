@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 
@@ -22,7 +23,7 @@ export default function ScalingStrategy() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img
-              src="/portfolio-2025/images/articles/scaling-hero.png"
+              src="/images/articles/scaling-strategy-hero.png"
               alt="Scaling Strategy"
               className="w-full h-auto"
             />
@@ -512,6 +513,11 @@ export default function ScalingStrategy() {
                 Schedule a Discovery Call
               </a>
             </Link>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16">
+            <NewsletterSignup />
           </div>
 
           {/* Next Article */}
