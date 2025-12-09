@@ -14,7 +14,7 @@ export default function MonetizationStrategy() {
         <div className="container mx-auto max-w-3xl">
           {/* Back Button */}
           <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors mb-8">
+            <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
             </a>
@@ -181,7 +181,7 @@ export default function MonetizationStrategy() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-700/50 rounded-lg p-6">
+              <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-slate-700 rounded-lg p-6">
                 <div className="text-blue-400 font-semibold mb-4 uppercase text-sm tracking-wider">Pro Tier (Most Popular)</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
@@ -245,7 +245,7 @@ export default function MonetizationStrategy() {
               The value calculation breaks down into four components. There's time saved multiplied by the customer's hourly rate, which captures productivity gains. Revenue enabled accounts for new income streams your product makes possible. Cost avoided measures the expenses your product eliminates. And risk reduced quantifies the problems your product prevents. Add these together, and you have the total value you're delivering.
             </p>
 
-            <div className="my-8 bg-blue-900/20 border border-blue-700/50 rounded-lg p-6">
+            <div className="my-8 bg-slate-800/50 border border-slate-700 rounded-lg p-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-400 font-bold text-xl">+</span>
@@ -283,7 +283,7 @@ export default function MonetizationStrategy() {
             </p>
 
             {/* Value Pricing Example */}
-            <div className="my-10 bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-700/50 rounded-lg p-8">
+            <div className="my-10 bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-slate-700 rounded-lg p-8">
               <div className="text-center mb-6">
                 <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Value Pricing Example</div>
                 <div className="text-white font-semibold mb-4">Tool saves 10 hours/month at $100/hour</div>
@@ -326,7 +326,7 @@ export default function MonetizationStrategy() {
 
             {/* Psychology Comparison */}
             <div className="my-10 grid md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-blue-900/20 to-green-900/20 border border-green-700/50 rounded-lg p-6">
+              <div className="bg-gradient-to-br from-blue-900/20 to-green-900/20 border border-slate-700 rounded-lg p-6">
                 <div className="text-green-400 font-semibold mb-4 uppercase text-sm tracking-wider">What Works</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
@@ -523,11 +523,11 @@ export default function MonetizationStrategy() {
 
             {/* Pre-sale Targets Stats */}
             <div className="my-10 grid md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-green-900/20 to-blue-900/20 border border-green-700/50 rounded-lg p-6 text-center">
+              <div className="bg-gradient-to-br from-green-900/20 to-blue-900/20 border border-slate-700 rounded-lg p-6 text-center">
                 <div className="text-3xl font-bold text-green-400 mb-2">50-100</div>
                 <div className="text-slate-400 text-sm">Buyers validates demand</div>
               </div>
-              <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-700/50 rounded-lg p-6 text-center">
+              <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-slate-700 rounded-lg p-6 text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">$10K-50K</div>
                 <div className="text-slate-400 text-sm">Funds MVP development</div>
               </div>
@@ -627,7 +627,7 @@ export default function MonetizationStrategy() {
             </p>
 
             {/* Revenue Projection */}
-            <div className="my-10 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-green-900/20 border border-blue-700/50 rounded-lg p-8">
+            <div className="my-10 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-green-900/20 border border-slate-700 rounded-lg p-8">
               <div className="text-center mb-6">
                 <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Revenue Generation</div>
                 <div className="text-white font-semibold">The Compounding Effect</div>
@@ -669,7 +669,7 @@ export default function MonetizationStrategy() {
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
             <Link href="/articles/scaling-strategy">
-              <a className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-lg font-semibold">
+              <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors text-lg font-semibold">
                 Read Next: Scaling Strategy - Building a Portfolio of AI-Powered Businesses
                 <ArrowRight className="w-5 h-5" />
               </a>
@@ -681,7 +681,7 @@ export default function MonetizationStrategy() {
       {/* CTA Section */}
       <section className="py-20 px-6 bg-slate-900/50 border-t border-slate-800">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-700/50 rounded-lg p-8 text-center">
+          <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-slate-700 rounded-lg p-8 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
               Building a Monetization Strategy?
             </h2>

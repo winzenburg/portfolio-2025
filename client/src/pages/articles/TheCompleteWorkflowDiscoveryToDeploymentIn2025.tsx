@@ -136,20 +136,20 @@ export default function CompleteWorkflowPost() {
             If the idea scores below 20, it gets killed immediately. No appeals court. No "but I really believe in this one."
           </p>
 
-          <div className="bg-green-900/20 p-6 rounded-lg my-8">
+          <div className="bg-slate-800/50 p-6 rounded-lg my-8">
             <h3 className="text-lg font-semibold mb-3 text-green-900">Portfolio Gate Results</h3>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
-                <div className="text-2xl font-bold text-green-200">23</div>
-                <div className="text-sm text-green-600">Ideas Scored</div>
+                <div className="text-2xl font-bold text-slate-200">23</div>
+                <div className="text-sm text-green-300">Ideas Scored</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-red-200">7</div>
-                <div className="text-sm text-red-600">Killed at Gate 1</div>
+                <div className="text-sm text-red-300">Killed at Gate 1</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-blue-200">~150</div>
-                <div className="text-sm text-blue-600">Hours Saved</div>
+                <div className="text-2xl font-bold text-slate-200">~150</div>
+                <div className="text-sm text-cyan-400">Hours Saved</div>
               </div>
             </div>
           </div>
@@ -231,9 +231,9 @@ export default function CompleteWorkflowPost() {
             The Opportunity & Moat Agent synthesizes everything into an Opportunity Score (0-10) and a Moat Thesis. No fluffy "we're building a platform" nonsense—specific defensibility mechanisms.
           </p>
 
-          <div className="bg-yellow-900/20 p-6 rounded-lg my-8">
+          <div className="bg-slate-800/50 p-6 rounded-lg my-8">
             <h4 className="font-semibold text-yellow-900 mb-2"></h4>
-            <p className="text-lg italic text-yellow-300">
+            <p className="text-lg italic text-cyan-400">
               "The questions lead to better decisions. The AI just helps you ask them."
             </p>
           </div>
@@ -316,7 +316,7 @@ export default function CompleteWorkflowPost() {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h5 className="font-medium text-red-200 mb-2">❌ Before (Habit Tracker)</h5>
-                <ul className="text-sm space-y-1 text-red-600">
+                <ul className="text-sm space-y-1 text-red-300">
                   <li>"Crush your goals!"</li>
                   <li>"Build unstoppable momentum!"</li>
                   <li>"Never break your streak!"</li>
@@ -324,8 +324,8 @@ export default function CompleteWorkflowPost() {
                 </ul>
               </div>
               <div>
-                <h5 className="font-medium text-green-200 mb-2">✅ After (Brand System)</h5>
-                <ul className="text-sm space-y-1 text-green-600">
+                <h5 className="font-medium text-slate-200 mb-2">✅ After (Brand System)</h5>
+                <ul className="text-sm space-y-1 text-green-300">
                   <li>"How did today feel?"</li>
                   <li>"Progress, not perfection"</li>
                   <li>Soft slate blue (#6B7AA1)</li>

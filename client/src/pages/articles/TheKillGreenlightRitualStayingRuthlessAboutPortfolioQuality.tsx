@@ -89,9 +89,9 @@ export default function KillGreenlightRitual() {
           Two weeks later, I started working on a habit tracker that scored 32/40 with an 8.5/10 opportunity score. It hit every validation threshold in four weeks. Now it's in production.
         </p>
 
-        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-300 font-medium mb-2">The Breakthrough Realization:</p>
-          <p className="text-green-200">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+          <p className="text-cyan-400 font-medium mb-2">The Breakthrough Realization:</p>
+          <p className="text-slate-200">
             The meal planner would have consumed six more months and failed anyway. The habit tracker succeeded because I started it instead of doubling down on mediocrity.
           </p>
         </div>
@@ -202,7 +202,7 @@ export default function KillGreenlightRitual() {
 
         <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
           <p className="font-medium text-cyan-300 mb-4">Expected Value in Action:</p>
-          <div className="space-y-3 text-blue-200">
+          <div className="space-y-3 text-slate-200">
             <div>
               <strong>Idea A (current meal planner):</strong><br />
               10% chance of $100K/year = $10K EV, requires 6 more months
@@ -323,7 +323,7 @@ export default function KillGreenlightRitual() {
           <p className="mb-4 italic">"Validation passed. Users are paying. Feedback is enthusiastic. This is a no-brainer."</p>
 
           <div className="bg-green-100 p-3 rounded border-l-4 border-green-400">
-            <p className="text-green-300 font-medium">Decision: GREENLIGHT → Move to build phase</p>
+            <p className="text-cyan-400 font-medium">Decision: GREENLIGHT → Move to build phase</p>
           </div>
         </div>
 
@@ -421,12 +421,12 @@ export default function KillGreenlightRitual() {
           Every hour on Idea A is an hour <em>not</em> on Idea B.
         </p>
 
-        <div className="bg-yellow-900/20 p-6 rounded-lg my-8">
-          <p className="font-medium text-yellow-300 mb-4">Opportunity Cost Formula:</p>
-          <p className="text-yellow-200 mb-4">
+        <div className="bg-slate-800/50 p-6 rounded-lg my-8">
+          <p className="font-medium text-cyan-400 mb-4">Opportunity Cost Formula:</p>
+          <p className="text-slate-200 mb-4">
             Cost of continuing A = (Expected Value of B - Expected Value of A) × Time
           </p>
-          <div className="text-yellow-200">
+          <div className="text-slate-200">
             <p><strong>Meal planner:</strong> 10% × $50K = $5K EV, needs 6 months</p>
             <p><strong>Habit tracker:</strong> 40% × $150K = $60K EV, needs 6 months</p>
             <p><strong>Opportunity cost:</strong> ($60K - $5K) × 6 months = $55K foregone</p>
@@ -461,7 +461,7 @@ export default function KillGreenlightRitual() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-cyan-300 mb-3">Portfolio Health</h4>
-              <ul className="text-blue-200 space-y-1">
+              <ul className="text-slate-200 space-y-1">
                 <li>Started: 23 ideas (many mediocre)</li>
                 <li>Killed immediately: 6 (score &lt; 20)</li>
                 <li>Killed after discovery: 3 (Opp Score &lt; 8.0)</li>
@@ -472,7 +472,7 @@ export default function KillGreenlightRitual() {
             </div>
             <div>
               <h4 className="font-semibold text-cyan-300 mb-3">Business Impact</h4>
-              <ul className="text-blue-200 space-y-1">
+              <ul className="text-slate-200 space-y-1">
                 <li><strong>Time saved:</strong> ~44 months of wasted effort avoided</li>
                 <li><strong>Success rate:</strong> 75% (vs. 10% industry average)</li>
                 <li><strong>Zero regrets</strong> about killed ideas</li>
@@ -593,9 +593,9 @@ Date: 2025-12-02`}</div>
           The solution isn't more discipline—it's better systems. Weekly kill/greenlight reviews with clear criteria and visible data make tough decisions easier.
         </p>
 
-        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-300 font-medium mb-2">The Killer Insight:</p>
-          <p className="text-green-200">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+          <p className="text-cyan-400 font-medium mb-2">The Killer Insight:</p>
+          <p className="text-slate-200">
             Killing bad ideas isn't about admitting failure—it's about protecting your ability to recognize and execute on exceptional opportunities.
           </p>
         </div>

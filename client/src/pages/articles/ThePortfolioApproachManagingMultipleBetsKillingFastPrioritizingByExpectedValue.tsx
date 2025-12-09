@@ -46,7 +46,7 @@ export default function PortfolioApproachArticle() {
       {/* Article Header */}
       <header className="mb-8">
         <div className="flex items-center gap-4 mb-4">
-          <Badge variant="secondary" className="bg-cyan-900/20 text-blue-200 hover:bg-blue-100">
+          <Badge variant="secondary" className="bg-cyan-900/20 text-slate-200 hover:bg-blue-100">
             AI Workflow
           </Badge>
           <span className="text-sm text-muted-foreground">7-9 min read</span>
@@ -62,7 +62,7 @@ export default function PortfolioApproachArticle() {
 
         <div className="w-full h-64 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg flex items-center justify-center mb-8">
           <div className="text-center">
-            <Target className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+            <Target className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
             <p className="text-muted-foreground">Portfolio management visualization</p>
           </div>
         </div>
@@ -124,16 +124,16 @@ export default function PortfolioApproachArticle() {
           Plot twist: it worked. Really well.
         </p>
 
-        <Card className="p-6 my-8 bg-green-900/20 border-green-700/50">
+        <Card className="p-6 my-8 bg-slate-800/50 border-slate-700">
           <h3 className="font-semibold text-green-900 mb-3"></h3>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="text-2xl font-bold text-green-200">5x</div>
-              <div className="text-sm text-green-600">More ideas validated per quarter</div>
+              <div className="text-2xl font-bold text-slate-200">5x</div>
+              <div className="text-sm text-green-300">More ideas validated per quarter</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-green-200">$180K</div>
-              <div className="text-sm text-green-600">Current MRR from portfolio approach</div>
+              <div className="text-2xl font-bold text-slate-200">$180K</div>
+              <div className="text-sm text-green-300">Current MRR from portfolio approach</div>
             </div>
           </div>
         </Card>
@@ -152,7 +152,7 @@ export default function PortfolioApproachArticle() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
           <Card className="p-4">
-            <DollarSign className="w-8 h-8 text-green-600 mb-3" />
+            <DollarSign className="w-8 h-8 text-green-300 mb-3" />
             <h4 className="font-semibold mb-2">Expected Value (0-10)</h4>
             <p className="text-sm text-muted-foreground">
               Probability of success × potential MRR impact
@@ -160,7 +160,7 @@ export default function PortfolioApproachArticle() {
           </Card>
           
           <Card className="p-4">
-            <Users className="w-8 h-8 text-blue-600 mb-3" />
+            <Users className="w-8 h-8 text-cyan-400 mb-3" />
             <h4 className="font-semibold mb-2">Desirability (0-8)</h4>
             <p className="text-sm text-muted-foreground">
               Strength of demand signals and validation results
@@ -184,7 +184,7 @@ export default function PortfolioApproachArticle() {
           </Card>
           
           <Card className="p-4">
-            <ArrowRight className="w-8 h-8 text-red-600 mb-3" />
+            <ArrowRight className="w-8 h-8 text-red-300 mb-3" />
             <h4 className="font-semibold mb-2">Expansion (0-6)</h4>
             <p className="text-sm text-muted-foreground">
               Revenue growth per customer over time
@@ -209,17 +209,17 @@ export default function PortfolioApproachArticle() {
           to ideas that score poorly. If the numbers don't work, the idea doesn't get built. Period.
         </p>
 
-        <div className="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-6 my-8">
+        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
           <h4 className="font-semibold text-yellow-900 mb-2">Real Example: The Great AI Tool Showdown</h4>
-          <p className="text-yellow-300 mb-3">
+          <p className="text-cyan-400 mb-3">
             Last month, I had three AI tool ideas competing for resources:
           </p>
-          <ul className="text-yellow-300 space-y-2">
+          <ul className="text-cyan-400 space-y-2">
             <li><strong>AI-powered PRD generator:</strong> Scored 35/40 (built it, now at $18K MRR)</li>
             <li><strong>Competitive analysis automation:</strong> Scored 28/40 (in development)</li>
             <li><strong>AI meeting summarizer:</strong> Scored 19/40 (killed after two weeks)</li>
           </ul>
-          <p className="text-yellow-300 mt-3">
+          <p className="text-cyan-400 mt-3">
             The meeting summarizer had great tech but zero moat. Everyone and their dog is building one. 
             Hard pass.
           </p>
@@ -261,7 +261,7 @@ export default function PortfolioApproachArticle() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h5 className="font-medium text-red-200 mb-2">❌ Old Approach</h5>
-              <ul className="text-sm text-red-600 space-y-1">
+              <ul className="text-sm text-red-300 space-y-1">
                 <li>Build what feels exciting</li>
                 <li>Equal resources to all ideas</li>
                 <li>Emotional attachment to features</li>
@@ -269,8 +269,8 @@ export default function PortfolioApproachArticle() {
               </ul>
             </div>
             <div>
-              <h5 className="font-medium text-green-200 mb-2">✅ Portfolio Approach</h5>
-              <ul className="text-sm text-green-600 space-y-1">
+              <h5 className="font-medium text-slate-200 mb-2">✅ Portfolio Approach</h5>
+              <ul className="text-sm text-green-300 space-y-1">
                 <li>Build what scores highest</li>
                 <li>Resources follow expected value</li>
                 <li>Data-driven decision making</li>
@@ -426,13 +426,13 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <div className="space-y-4 my-8">
-          <Card className="p-4 border-green-700/50 bg-green-900/20">
+          <Card className="p-4 border-slate-700 bg-slate-800/50">
             <div className="flex justify-between items-start mb-2">
               <h4 className="font-semibold text-green-900">AI-Powered PRD Generator</h4>
-              <Badge variant="outline" className="bg-green-900/30 text-green-300">35 points</Badge>
+              <Badge variant="outline" className="bg-green-900/30 text-cyan-400">35 points</Badge>
             </div>
-            <p className="text-sm text-green-200 mb-2">Status: Active development (50% of resources)</p>
-            <p className="text-sm text-green-600">Current MRR: $18K | Target: $50K by Q2</p>
+            <p className="text-sm text-slate-200 mb-2">Status: Active development (50% of resources)</p>
+            <p className="text-sm text-green-300">Current MRR: $18K | Target: $50K by Q2</p>
           </Card>
 
           <Card className="p-4 border-cyan-700/50 bg-cyan-900/20">
@@ -440,17 +440,17 @@ export default function PortfolioApproachArticle() {
               <h4 className="font-semibold text-blue-900">Competitive Analysis Automation</h4>
               <Badge variant="outline" className="bg-cyan-900/30 text-cyan-300">28 points</Badge>
             </div>
-            <p className="text-sm text-blue-200 mb-2">Status: Validation phase (30% of resources)</p>
-            <p className="text-sm text-blue-600">Target launch: Q2 2025</p>
+            <p className="text-sm text-slate-200 mb-2">Status: Validation phase (30% of resources)</p>
+            <p className="text-sm text-cyan-400">Target launch: Q2 2025</p>
           </Card>
 
-          <Card className="p-4 border-yellow-700/50 bg-yellow-900/20">
+          <Card className="p-4 border-slate-700 bg-slate-800/50">
             <div className="flex justify-between items-start mb-2">
               <h4 className="font-semibold text-yellow-900">User Research Synthesizer</h4>
-              <Badge variant="outline" className="bg-yellow-100 text-yellow-300">24 points</Badge>
+              <Badge variant="outline" className="bg-yellow-100 text-cyan-400">24 points</Badge>
             </div>
-            <p className="text-sm text-yellow-200 mb-2">Status: Early exploration (20% of resources)</p>
-            <p className="text-sm text-yellow-600">Decision point: End of Q1</p>
+            <p className="text-sm text-slate-200 mb-2">Status: Early exploration (20% of resources)</p>
+            <p className="text-sm text-yellow-300">Decision point: End of Q1</p>
           </Card>
         </div>
 
@@ -523,7 +523,7 @@ export default function PortfolioApproachArticle() {
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                 Download Free Template
               </button>
-              <button className="text-blue-600 hover:text-cyan-300 transition-colors">
+              <button className="text-cyan-400 hover:text-cyan-300 transition-colors">
                 Read More Articles →
               </button>
             </div>

@@ -80,8 +80,8 @@ export default function AiOrchestrationWorkflow() {
           Turns out, there was. And once I cracked the code on AI orchestration, everything changed.
         </p>
 
-        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-lg font-medium text-yellow-300 mb-0">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-lg font-medium text-cyan-400 mb-0">
             "AI tools are powerful in isolation, but they're game-changers when they work together."
           </p>
         </div>
@@ -104,11 +104,11 @@ export default function AiOrchestrationWorkflow() {
           <h4 className="text-lg font-semibold text-blue-900 mb-4">The Results</h4>
           <div className="grid grid-cols-2 gap-4 text-center">
             <div>
-              <div className="text-2xl font-bold text-blue-600">70%</div>
+              <div className="text-2xl font-bold text-cyan-400">70%</div>
               <div className="text-sm text-cyan-300">Faster discovery process</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-blue-600">100%</div>
+              <div className="text-2xl font-bold text-cyan-400">100%</div>
               <div className="text-sm text-cyan-300">Auditable with citations</div>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function AiOrchestrationWorkflow() {
           <h4 className="text-lg font-semibold text-white mb-4"> Before vs. After Orchestration</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h5 className="font-medium text-red-600 mb-2">❌ Old Way (Chaotic)</h5>
+              <h5 className="font-medium text-red-300 mb-2">❌ Old Way (Chaotic)</h5>
               <ul className="text-sm space-y-1">
                 <li>• Random AI tool usage</li>
                 <li>• No citation tracking</li>
@@ -177,7 +177,7 @@ export default function AiOrchestrationWorkflow() {
               </ul>
             </div>
             <div>
-              <h5 className="font-medium text-green-600 mb-2">✅ New Way (Orchestrated)</h5>
+              <h5 className="font-medium text-green-300 mb-2">✅ New Way (Orchestrated)</h5>
               <ul className="text-sm space-y-1">
                 <li>• Systematic tool sequence</li>
                 <li>• Every claim cited</li>
@@ -260,7 +260,7 @@ export default function AiOrchestrationWorkflow() {
           Plus, there's the accountability factor. When investors or teammates ask "How did you validate this?" I can trace every insight back to its original source. Try doing that with ad-hoc ChatGPT sessions.
         </p>
 
-        <div className="bg-green-900/20 rounded-lg p-6 my-8">
+        <div className="bg-slate-800/50 rounded-lg p-6 my-8">
           <h4 className="text-lg font-semibold text-green-900 mb-4">💡 Quick Wins You Can Implement Today</h4>
           <ol className="text-sm space-y-2">
             <li>1. <strong>Start with citations:</strong> Make every AI tool cite its sources</li>
@@ -372,10 +372,10 @@ export default function AiOrchestrationWorkflow() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <span className="text-slate-300">Share this article:</span>
-            <button className="text-blue-600 hover:text-blue-200">LinkedIn</button>
-            <button className="text-blue-600 hover:text-blue-200">Twitter</button>
+            <button className="text-cyan-400 hover:text-slate-200">LinkedIn</button>
+            <button className="text-cyan-400 hover:text-slate-200">Twitter</button>
           </div>
-          <Link to="/articles" className="text-blue-600 hover:text-blue-200">
+          <Link to="/articles" className="text-cyan-400 hover:text-slate-200">
             ← Back to Articles
           </Link>
         </div>

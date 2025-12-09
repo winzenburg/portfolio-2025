@@ -572,7 +572,7 @@ export default function DevQualityAssistant() {
 
             {/* Results Grid */}
             <div className="my-10 grid md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-blue-700/50 rounded-lg p-6 text-center">
+              <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-slate-700 rounded-lg p-6 text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">18</div>
                 <div className="text-slate-300 text-sm">dev quality plans created</div>
               </div>

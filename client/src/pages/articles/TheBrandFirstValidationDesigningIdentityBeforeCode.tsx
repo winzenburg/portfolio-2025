@@ -97,7 +97,7 @@ export default function BrandFirstValidationArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-blue-200 italic">
+          <p className="text-slate-200 italic">
             "If you've validated that people want your product, the next question is: How will you stand out in a crowded market? That's where brand comes in."
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function BrandFirstValidationArticle() {
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
               <h4 className="font-medium text-red-200 mb-2">Brand System</h4>
-              <ul className="text-red-600 space-y-1">
+              <ul className="text-red-300 space-y-1">
                 <li>• Warm, approachable orange palette</li>
                 <li>• Friendly, conversational copy</li>
                 <li>• Rounded corners, soft shadows</li>
@@ -140,7 +140,7 @@ export default function BrandFirstValidationArticle() {
             </div>
             <div>
               <h4 className="font-medium text-red-200 mb-2">Actual Product</h4>
-              <ul className="text-red-600 space-y-1">
+              <ul className="text-red-300 space-y-1">
                 <li>• Generic blue buttons everywhere</li>
                 <li>• Formal, feature-focused copy</li>
                 <li>• Sharp edges, standard Material UI</li>
@@ -227,9 +227,9 @@ export default function BrandFirstValidationArticle() {
           I built a habit tracker recently. Here's what I found in my competitive audit:
         </p>
 
-        <div className="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-6 my-8">
-          <h4 className="font-medium text-yellow-300 mb-3">Habit Tracker Competitive Audit</h4>
-          <div className="text-sm text-yellow-200 space-y-2">
+        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
+          <h4 className="font-medium text-cyan-400 mb-3">Habit Tracker Competitive Audit</h4>
+          <div className="text-sm text-slate-200 space-y-2">
             <p><strong>Visual patterns:</strong> Bright, high-contrast colors. Heavy gamification (badges, streaks, XP). Dense dashboards packed with metrics.</p>
             <p><strong>Verbal patterns:</strong> Motivational, sometimes guilt-inducing copy. "Don't break the streak!" "Crush your goals!" Very productivity-bro energy.</p>
             <p><strong>Target users:</strong> Self-optimization enthusiasts who want to track everything.</p>
@@ -254,9 +254,9 @@ export default function BrandFirstValidationArticle() {
           For the habit tracker, this analysis revealed something interesting: Every competitor was targeting people who <em>already</em> love self-optimization. But there's a huge segment of burned-out professionals who want to build better habits but feel overwhelmed by gamified, streak-focused apps.
         </p>
 
-        <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-6 my-8">
-          <h4 className="font-medium text-green-300 mb-3">Identified Whitespace</h4>
-          <div className="text-sm text-green-200 space-y-2">
+        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
+          <h4 className="font-medium text-cyan-400 mb-3">Identified Whitespace</h4>
+          <div className="text-sm text-slate-200 space-y-2">
             <p><strong>Gap:</strong> Competitors feel like drill sergeants. Burned-out users need tools that feel like supportive therapists.</p>
             <p><strong>Signature cues to own:</strong></p>
             <ul className="list-disc pl-4 mt-2">
@@ -314,8 +314,8 @@ export default function BrandFirstValidationArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-blue-200 font-semibold text-2xl">6 hours</p>
-          <p className="text-blue-600 text-sm">Time to complete full brand blueprint vs. 3 months retrofitting later</p>
+          <p className="text-slate-200 font-semibold text-2xl">6 hours</p>
+          <p className="text-cyan-400 text-sm">Time to complete full brand blueprint vs. 3 months retrofitting later</p>
         </div>
 
         <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
@@ -348,12 +348,12 @@ export default function BrandFirstValidationArticle() {
             <p><strong>Core message:</strong> "Progress, not perfection"</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <p className="font-medium text-green-200">✓ Do</p>
-                <p className="text-green-600">"How did today feel?"</p>
+                <p className="font-medium text-slate-200">✓ Do</p>
+                <p className="text-green-300">"How did today feel?"</p>
               </div>
               <div>
                 <p className="font-medium text-red-200">✗ Don't</p>
-                <p className="text-red-600">"Crush your goals!"</p>
+                <p className="text-red-300">"Crush your goals!"</p>
               </div>
             </div>
           </div>
@@ -502,7 +502,7 @@ export default function BrandFirstValidationArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-blue-200 italic">
+          <p className="text-slate-200 italic">
             "Users consistently mentioned that the tool 'feels different' from competitors. That's not accident—that's intentional brand work paying off."
           </p>
         </div>
@@ -654,9 +654,9 @@ export default function BrandFirstValidationArticle() {
           I've now applied brand-first validation to six new products. Here's what I've noticed:
         </p>
 
-        <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-6 my-8">
-          <h3 className="text-green-300 font-semibold mb-4">Measurable Impact</h3>
-          <div className="grid md:grid-cols-2 gap-4 text-sm text-green-200">
+        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
+          <h3 className="text-cyan-400 font-semibold mb-4">Measurable Impact</h3>
+          <div className="grid md:grid-cols-2 gap-4 text-sm text-slate-200">
             <div>
               <p><strong>60% faster execution</strong></p>
               <p>Less time debating design decisions</p>
@@ -718,7 +718,7 @@ export default function BrandFirstValidationArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-blue-200 italic">
+          <p className="text-slate-200 italic">
             "Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. What if your brand could be a moat, not just a coat of paint?"
           </p>
         </div>

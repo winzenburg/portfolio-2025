@@ -14,7 +14,7 @@ export default function ScalingStrategy() {
         <div className="container mx-auto max-w-3xl">
           {/* Back Button */}
           <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors mb-8">
+            <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
             </a>
@@ -125,8 +125,8 @@ export default function ScalingStrategy() {
               The obvious next move might be a design-to-code automation tool. Same users, different pain point. They're using your system to build components, but they're still manually translating those designs into code. You solve that. Then you notice they lack visibility into how their design system is actually being used across their organization. So you build a design system analytics platform. Finally, you create a component marketplace where teams can share and monetize their custom components. Each product serves the same audience but solves a distinct problem in their workflow.
             </p>
 
-            <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-6 my-8">
-              <p className="text-blue-300 font-semibold mb-4">Portfolio Example:</p>
+            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
+              <p className="text-cyan-400 font-semibold mb-4">Portfolio Example:</p>
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-blue-400 font-bold">1</span>
@@ -190,7 +190,7 @@ export default function ScalingStrategy() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-blue-700/50 rounded-lg p-6">
+              <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-slate-700 rounded-lg p-6">
                 <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4">Acquire When</div>
                 <ul className="space-y-3 text-slate-300 text-sm">
                   <li className="flex items-start gap-2">
@@ -264,7 +264,7 @@ export default function ScalingStrategy() {
             </p>
 
             {/* Automation Target Card */}
-            <div className="my-10 bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-700/50 rounded-lg p-8">
+            <div className="my-10 bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-slate-700 rounded-lg p-8">
               <div className="text-center mb-6">
                 <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Automation Target</div>
                 <div className="text-5xl font-bold text-white mb-2">90%+</div>
@@ -469,7 +469,7 @@ export default function ScalingStrategy() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-700/50 rounded-lg p-6">
+              <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-slate-700 rounded-lg p-6">
                 <div className="text-blue-400 font-semibold mb-4 uppercase text-sm tracking-wider">AI-First Portfolio Approach</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
@@ -505,7 +505,7 @@ export default function ScalingStrategy() {
           </div>
 
           {/* CTA Box */}
-          <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-700/50 rounded-lg p-8 my-12 text-center">
+          <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-slate-700 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Building an AI-Powered Portfolio?</h3>
             <p className="text-slate-300 mb-6">I've implemented this scaling strategy across multiple businesses. Let's discuss how to apply these principles to your specific context.</p>
             <Link href="/contact">
@@ -524,7 +524,7 @@ export default function ScalingStrategy() {
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
             <Link href="/articles/design-system-4-weeks">
-              <a className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-lg font-semibold">
+              <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors text-lg font-semibold">
                 Read Next: How I Built an Enterprise Design System in 4 Weeks
                 <ArrowRight className="w-5 h-5" />
               </a>

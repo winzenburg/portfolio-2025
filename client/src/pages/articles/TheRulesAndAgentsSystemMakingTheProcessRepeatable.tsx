@@ -110,11 +110,11 @@ export default function RulesAndAgentsSystemArticle() {
           <h3 className="text-lg font-semibold mb-3">System Impact</h3>
           <div className="grid grid-cols-2 gap-4 text-center">
             <div>
-              <div className="text-2xl font-bold text-blue-600">85%</div>
+              <div className="text-2xl font-bold text-cyan-400">85%</div>
               <div className="text-sm text-slate-400">Fewer failed features</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-green-600">60%</div>
+              <div className="text-2xl font-bold text-green-300">60%</div>
               <div className="text-sm text-slate-400">Faster validation cycles</div>
             </div>
           </div>
@@ -162,8 +162,8 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>The Moat & MRR Strategist</strong> is my secret weapon against commodity products. It designs defensibility strategies—network effects, data moats, switching costs—that keep competitors at bay. Because building something people want is hard enough; building something they can't easily replace is the real challenge.</p>
 
-        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-300 mb-0">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-cyan-400 mb-0">
             <strong>Quick tangent:</strong> I spent six months building a tool that competitors copied in three weeks. The Moat Strategist would have caught that vulnerability in the planning phase. Live and learn, right?
           </p>
         </div>
@@ -193,7 +193,7 @@ export default function RulesAndAgentsSystemArticle() {
           <h3 className="text-lg font-semibold mb-3"> Before vs. After Quality Gates</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-red-600 mb-2">Before: Chaos Mode</h4>
+              <h4 className="font-semibold text-red-300 mb-2">Before: Chaos Mode</h4>
               <ul className="text-sm space-y-1">
                 <li>• Build first, validate later (or never)</li>
                 <li>• Emotional attachment to bad ideas</li>
@@ -202,7 +202,7 @@ export default function RulesAndAgentsSystemArticle() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-green-600 mb-2">After: Systematic Validation</h4>
+              <h4 className="font-semibold text-green-300 mb-2">After: Systematic Validation</h4>
               <ul className="text-sm space-y-1">
                 <li>• Evidence-based progression through phases</li>
                 <li>• Kill bad ideas before they're expensive</li>
@@ -294,8 +294,8 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Plus, having a systematic approach means my wins are repeatable, not just lucky accidents.</p>
 
-        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-300 mb-0">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+          <p className="text-cyan-400 mb-0">
             <strong>Real talk:</strong> The first time through this system felt slow and over-engineered. By the third product, it felt like having superpowers. The learning curve is worth it.
           </p>
         </div>
@@ -342,7 +342,7 @@ export default function RulesAndAgentsSystemArticle() {
           <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
             Get the Framework Templates
           </button>
-          <button className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-cyan-900/20 transition-colors">
+          <button className="px-6 py-3 border border-blue-600 text-cyan-400 rounded-lg font-medium hover:bg-cyan-900/20 transition-colors">
             Schedule a Demo
           </button>
         </div>

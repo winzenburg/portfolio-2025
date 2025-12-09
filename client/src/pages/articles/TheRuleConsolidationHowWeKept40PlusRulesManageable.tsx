@@ -129,7 +129,7 @@ export default function RuleConsolidation() {
                 <h4 className="font-semibold text-cyan-400 mb-2">Core Guardrails (000–099)</h4>
                 <p className="text-slate-300 text-sm">Always-on constraints that gate every phase. Accessibility standards, testing requirements, document quality. These never get ignored.</p>
               </div>
-              <div className="bg-slate-900/30 border border-blue-700/50 rounded-lg p-6">
+              <div className="bg-slate-900/30 border border-slate-700 rounded-lg p-6">
                 <h4 className="font-semibold text-blue-400 mb-2">Stack & Integrations (100–199)</h4>
                 <p className="text-slate-300 text-sm">Technology conventions that activate only when a specific agent is working. Next.js patterns, Drizzle schemas, tRPC conventions.</p>
               </div>
@@ -137,7 +137,7 @@ export default function RuleConsolidation() {
                 <h4 className="font-semibold text-purple-400 mb-2">Playbooks (200–260)</h4>
                 <p className="text-slate-300 text-sm">Step-by-step workflows with explicit handoffs. How-to guides that orchestrate multiple agents in sequence.</p>
               </div>
-              <div className="bg-slate-900/30 border border-green-700/50 rounded-lg p-6">
+              <div className="bg-slate-900/30 border border-slate-700 rounded-lg p-6">
                 <h4 className="font-semibold text-green-400 mb-2">Discovery Pack (300–340)</h4>
                 <p className="text-slate-300 text-sm">Templates and AI orchestration specific to the heat filter phase. Only loaded when Discovery pod is active.</p>
               </div>
@@ -312,8 +312,8 @@ export default function RuleConsolidation() {
               Then we replaced the old files with one-line pointers:
             </p>
 
-            <div className="my-6 bg-yellow-900/20 border-l-4 border-yellow-400 p-4">
-              <code className="text-sm text-yellow-300">
+            <div className="my-6 bg-slate-800/50 border-l-4 border-yellow-400 p-4">
+              <code className="text-sm text-cyan-400">
                 # Rule 050: Manus Integration (DEPRECATED)<br />
                 &gt; This rule has been merged into `190-ai-tool-integrations.mdc`. See the Manus section.
               </code>
@@ -535,9 +535,9 @@ export default function RuleConsolidation() {
             </p>
 
             {/* Hidden Costs */}
-            <div className="my-8 bg-yellow-900/20 border-l-4 border-yellow-400 p-6">
+            <div className="my-8 bg-slate-800/50 border-l-4 border-yellow-400 p-6">
               <h3 className="text-lg font-semibold text-yellow-400 mb-3">The Hidden Costs</h3>
-              <ul className="space-y-2 text-yellow-300">
+              <ul className="space-y-2 text-cyan-400">
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">•</span>
                   <span><strong className="text-white">Upfront Investment:</strong> 40 hours of focused work—not trivial</span>

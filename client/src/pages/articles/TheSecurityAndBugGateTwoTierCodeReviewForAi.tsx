@@ -172,7 +172,7 @@ export default function SecurityBugGateArticle() {
 
         <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
           <h3 className="text-lg font-semibold text-cyan-300 mb-4">Quick Security & Logic Check Template</h3>
-          <div className="text-blue-200 space-y-4 font-mono text-sm">
+          <div className="text-slate-200 space-y-4 font-mono text-sm">
             <div>
               <strong>Feature</strong>: [Brief description]<br />
               <strong>Files changed</strong>: [List]
@@ -279,8 +279,8 @@ export default function SecurityBugGateArticle() {
           <div>&#125;</div>
         </div>
 
-        <div className="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-4 my-8">
-          <p className="text-yellow-300">
+        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4 my-8">
+          <p className="text-cyan-400">
             <strong>Pro tip</strong>: I now give Claude the everyday prompt and ask it to self-review before outputting code. 
             It catches about 70% of issues on the first pass. The remaining 30%? That's why humans still matter.
           </p>
@@ -294,16 +294,16 @@ export default function SecurityBugGateArticle() {
           that keep experienced developers awake at night.
         </p>
 
-        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
-          <div className="text-sm font-medium text-green-300 mb-4"></div>
+        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+          <div className="text-sm font-medium text-cyan-400 mb-4"></div>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="text-2xl font-bold text-green-200">31</div>
-              <div className="text-sm text-green-600">Critical issues caught in 3 months</div>
+              <div className="text-2xl font-bold text-slate-200">31</div>
+              <div className="text-sm text-green-300">Critical issues caught in 3 months</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-green-200">0</div>
-              <div className="text-sm text-green-600">Security incidents in production</div>
+              <div className="text-2xl font-bold text-slate-200">0</div>
+              <div className="text-sm text-green-300">Security incidents in production</div>
             </div>
           </div>
         </div>
@@ -388,7 +388,7 @@ export default function SecurityBugGateArticle() {
         <div className="grid grid-cols-2 gap-6 my-8">
           <div className="bg-cyan-900/20 p-4 rounded-lg">
             <h4 className="font-semibold text-cyan-300">Everyday Prompt</h4>
-            <ul className="text-blue-200 text-sm mt-2 space-y-1">
+            <ul className="text-slate-200 text-sm mt-2 space-y-1">
               <li>12 missing auth checks</li>
               <li>8 input validation gaps</li>
               <li>2 hardcoded API keys</li>
@@ -473,7 +473,7 @@ export default function SecurityBugGateArticle() {
         </ul>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-blue-200 font-medium">
+          <p className="text-slate-200 font-medium">
             "AI can ship features fast, but it can also ship vulnerabilities. The Security & Bug Gate 
             is our quality firewall—and the reason I sleep better at night."
           </p>
@@ -504,7 +504,7 @@ export default function SecurityBugGateArticle() {
           Get both the everyday prompt and pre-production gate checklists, plus examples of common issues 
           to watch for in AI-generated code.
         </p>
-        <button className="bg-slate-900 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
+        <button className="bg-slate-900 text-cyan-400 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
           Download the Templates
         </button>
       </div>

@@ -176,9 +176,9 @@ export default function DualFilterValidationFrameworkArticle() {
           products people "loved" but wouldn't pay for. Don't be me.
         </p>
 
-        <div className="bg-yellow-900/20 border-l-4 border-yellow-500 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-500 p-6 my-8">
           <p className="font-semibold text-yellow-900">Real Talk:</p>
-          <p className="text-yellow-300">
+          <p className="text-cyan-400">
             If you can't get at least 10 people to prepay $99 for your idea, you probably don't have 
             a business. You have a hobby project that'll drain your savings account.
           </p>
@@ -286,11 +286,11 @@ export default function DualFilterValidationFrameworkArticle() {
           <p className="text-sm text-slate-300 mb-2"> Durability Score Breakdown</p>
           <div className="space-y-3">
             <div>
-              <p className="font-semibold text-green-300">18-25 points: Durable Markets</p>
+              <p className="font-semibold text-cyan-400">18-25 points: Durable Markets</p>
               <p className="text-slate-200">Build this. It's worth the long-term investment.</p>
             </div>
             <div>
-              <p className="font-semibold text-yellow-300">10-17 points: Cash-Flow Micro-Bets</p>
+              <p className="font-semibold text-cyan-400">10-17 points: Cash-Flow Micro-Bets</p>
               <p className="text-slate-200">Quick revenue opportunity, but don't quit your day job.</p>
             </div>
             <div>
@@ -481,7 +481,7 @@ export default function DualFilterValidationFrameworkArticle() {
           <p className="text-slate-300 text-sm">
             Have a product idea you want to run through the Dual-Filter Framework? I'm always curious to 
             see how other founders apply these concepts. Feel free to 
-            <Link to="/contact" className="text-blue-600 hover:text-blue-200">reach out</Link> with 
+            <Link to="/contact" className="text-cyan-400 hover:text-slate-200">reach out</Link> with 
             your results—I love hearing about validation experiments, especially the failures.
           </p>
         </div>

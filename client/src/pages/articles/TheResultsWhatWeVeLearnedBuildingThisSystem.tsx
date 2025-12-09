@@ -129,17 +129,17 @@ export default function Article() {
           <p className="text-cyan-300 mb-4">
             Does a tribe of real humans urgently want this problem solved?
           </p>
-          <p className="text-sm text-blue-200">
+          <p className="text-sm text-slate-200">
             We're looking for desperation, not politeness. Waitlists, community engagement, people actively seeking solutions.
           </p>
         </div>
 
-        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
           <h4 className="font-semibold text-green-900 mb-2">The Durability Filter</h4>
-          <p className="text-green-300 mb-4">
+          <p className="text-cyan-400 mb-4">
             Will this problem still matter (and generate revenue) 12-36 months from now?
           </p>
-          <p className="text-sm text-green-200">
+          <p className="text-sm text-slate-200">
             Job frequency, economic buyer budget, potential for switching costs. We score ideas on future staying power.
           </p>
         </div>
@@ -335,9 +335,9 @@ export default function Article() {
             </p>
           </div>
 
-          <div className="bg-green-900/20 p-6 rounded-lg">
+          <div className="bg-slate-800/50 p-6 rounded-lg">
             <h4 className="font-semibold text-green-900 mb-2">AI Needs Systems, Not Just Prompts</h4>
-            <p className="text-green-300">
+            <p className="text-cyan-400">
               Individual AI tools are powerful. Orchestrated AI systems are transformative.
             </p>
           </div>
@@ -423,10 +423,10 @@ export default function Article() {
 
       {/* Navigation */}
       <nav className="mt-12 pt-8 border-t border-slate-700 flex justify-between">
-        <a href="/articles" className="text-blue-600 hover:text-blue-200 font-medium">
+        <a href="/articles" className="text-cyan-400 hover:text-slate-200 font-medium">
           ← Back to Articles
         </a>
-        <a href="/contact" className="text-blue-600 hover:text-blue-200 font-medium">
+        <a href="/contact" className="text-cyan-400 hover:text-slate-200 font-medium">
           Get in Touch →
         </a>
       </nav>

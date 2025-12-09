@@ -79,8 +79,8 @@ export default function AIToolStackArticle() {
 
         <p>Now I run the opposite: <strong>a coordinated AI tool stack with clear lanes, explicit handoffs, and systematic routing</strong>.</p>
 
-        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-300 font-semibold">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+          <p className="text-cyan-400 font-semibold">
             "Each tool has a single purpose. No overlap. Information flows through a documented pipeline."
           </p>
         </div>
@@ -325,11 +325,11 @@ export default function AIToolStackArticle() {
 
         <p><strong>Workflow examples</strong>:</p>
 
-        <div className="bg-green-900/20 rounded-lg p-6 my-8">
+        <div className="bg-slate-800/50 rounded-lg p-6 my-8">
           <h4 className="font-semibold text-green-900 mb-3">Variant generation:</h4>
-          <p className="text-green-300 mb-2"><strong>Prompt</strong>: "Generate 20 headline variants for a habit tracker targeting burned-out remote workers. Emphasize calm, non-judgmental tone."</p>
-          <p className="text-green-300 mb-2"><strong>Output</strong>: 20 headlines in 30 seconds</p>
-          <p className="text-green-300"><strong>Next</strong>: Human selects top 5 → Claude refines → Cursor saves final</p>
+          <p className="text-cyan-400 mb-2"><strong>Prompt</strong>: "Generate 20 headline variants for a habit tracker targeting burned-out remote workers. Emphasize calm, non-judgmental tone."</p>
+          <p className="text-cyan-400 mb-2"><strong>Output</strong>: 20 headlines in 30 seconds</p>
+          <p className="text-cyan-400"><strong>Next</strong>: Human selects top 5 → Claude refines → Cursor saves final</p>
         </div>
 
         <p><strong>Never use ChatGPT for</strong>: Critical review (use Claude), final polish (use Claude), deep reasoning (use Claude), source-of-truth synthesis (use Manus)</p>
@@ -342,8 +342,8 @@ export default function AIToolStackArticle() {
 
         <p>Claude is my "convergent thinking" machine. When I need depth, nuance, and critical analysis, Claude is mandatory.</p>
 
-        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-300 font-semibold">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-cyan-400 font-semibold">
             "Claude critique saved me from launching a fundamentally flawed pricing strategy. ChatGPT would have said it looked great."
           </p>
         </div>
@@ -417,9 +417,9 @@ export default function AIToolStackArticle() {
         <p>I've been running this coordinated system for 6 months. Here's what happened:</p>
 
         <div className="grid md:grid-cols-2 gap-6 my-8">
-          <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-6">
+          <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
             <h4 className="font-semibold text-green-900 mb-3">Efficiency Gains</h4>
-            <ul className="text-green-300 space-y-2">
+            <ul className="text-cyan-400 space-y-2">
               <li>Discovery phase: 8-12 hours (was 20-30 hours)</li>
               <li>Landing page copy: 2 hours (was 6-8 hours)</li>
               <li>Creative assets: 4 hours (was 12-15 hours)</li>
@@ -518,8 +518,8 @@ export default function AIToolStackArticle() {
 
         <p><strong>Target</strong>: &lt;$500/month for 5-7 tool stack (reasonable for a small team or solo founder).</p>
 
-        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-300">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-cyan-400">
             <strong>Time investment</strong>: 10-15 hours upfront to design the system. I spent a weekend documenting tool lanes, routing rules, and handoff protocols. Best weekend I've spent this year.
           </p>
         </div>
@@ -603,7 +603,7 @@ export default function AIToolStackArticle() {
             Get my complete AI Tool Orchestration Framework—including tool lane templates, routing decision trees, 
             and cost optimization strategies.
           </p>
-          <button className="bg-slate-900 text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-cyan-900/20 transition-colors">
+          <button className="bg-slate-900 text-cyan-400 font-semibold px-6 py-3 rounded-lg hover:bg-cyan-900/20 transition-colors">
             Get the Framework →
           </button>
         </div>

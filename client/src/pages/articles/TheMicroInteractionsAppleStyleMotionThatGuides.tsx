@@ -66,7 +66,7 @@ export default function MicroInteractionsArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 mb-8">
           <p className="text-cyan-300 font-medium mb-2">The TL;DR</p>
-          <p className="text-blue-200">
+          <p className="text-slate-200">
             Most animations either feel stiff (no motion) or overwhelming (too much motion). Apple found the sweet spot: subtle, purposeful micro-interactions that feel invisible but guide users perfectly. I'll show you exactly how to design and implement them.
           </p>
         </div>
@@ -142,8 +142,8 @@ export default function MicroInteractionsArticle() {
           Here's what I learned from Apple: most animations should be 150-250ms. Anything longer feels sluggish. Users perceive the interface as slow, even when the actual data loading is instant.
         </p>
 
-        <div className="bg-yellow-900/20 border border-yellow-700/50 p-4 rounded-lg my-6">
-          <p className="text-yellow-300">
+        <div className="bg-slate-800/50 border border-slate-700 p-4 rounded-lg my-6">
+          <p className="text-cyan-400">
             <strong>Quick test:</strong> If you find yourself waiting for an animation to finish so you can continue working, it's too long.
           </p>
         </div>
@@ -184,12 +184,12 @@ export default function MicroInteractionsArticle() {
           Compare that to the wild scale effects I see elsewhere (1 to 1.3, 1 to 1.5). Those demand attention. Apple's whisper while others shout.
         </p>
 
-        <div className="bg-green-900/20 p-6 rounded-lg my-8">
+        <div className="bg-slate-800/50 p-6 rounded-lg my-8">
           <p className="font-semibold text-green-900 mb-2"></p>
           <div className="space-y-2">
-            <p className="text-green-300"><strong>Apple scale transforms:</strong> 1 → 1.02 to 1.15</p>
-            <p className="text-green-300"><strong>Most other apps:</strong> 1 → 1.2 to 1.5</p>
-            <p className="text-green-300"><strong>The sweet spot:</strong> 1 → 1.02 for buttons, 1.05 for cards</p>
+            <p className="text-cyan-400"><strong>Apple scale transforms:</strong> 1 → 1.02 to 1.15</p>
+            <p className="text-cyan-400"><strong>Most other apps:</strong> 1 → 1.2 to 1.5</p>
+            <p className="text-cyan-400"><strong>The sweet spot:</strong> 1 → 1.02 for buttons, 1.05 for cards</p>
           </div>
         </div>
 
@@ -307,9 +307,9 @@ export default function MicroInteractionsArticle() {
           Nothing feels better than instant positive feedback when you complete a form field correctly. We learned this from iOS—that little checkmark appearing makes users feel confident about their progress.
         </p>
 
-        <div className="bg-green-900/20 p-6 rounded-lg my-6">
+        <div className="bg-slate-800/50 p-6 rounded-lg my-6">
           <p className="font-semibold text-green-900 mb-3">The Specs:</p>
-          <ul className="space-y-1 text-green-300">
+          <ul className="space-y-1 text-cyan-400">
             <li><strong>Trigger:</strong> User completes required field correctly</li>
             <li><strong>Purpose:</strong> Reduce anxiety, confirm success</li>
             <li><strong>Motion:</strong> Checkmark opacity 0→1 + scale 0.8→1, 150ms</li>
@@ -507,13 +507,13 @@ export default function MicroInteractionsArticle() {
           Since implementing Apple-style micro-interactions across our 300+ product portfolio, here's what happened:
         </p>
 
-        <div className="bg-green-900/20 p-6 rounded-lg my-8">
+        <div className="bg-slate-800/50 p-6 rounded-lg my-8">
           <p className="font-semibold text-green-900 mb-2"></p>
           <div className="space-y-2">
-            <p className="text-green-300"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
-            <p className="text-green-300"><strong>Complaints about "too many animations":</strong> 0% (vs 8% before)</p>
-            <p className="text-green-300"><strong>WCAG 2.2 AA compliance:</strong> 100% (motion requirements)</p>
-            <p className="text-green-300"><strong>Perceived performance rating:</strong> Increased 18%</p>
+            <p className="text-cyan-400"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
+            <p className="text-cyan-400"><strong>Complaints about "too many animations":</strong> 0% (vs 8% before)</p>
+            <p className="text-cyan-400"><strong>WCAG 2.2 AA compliance:</strong> 100% (motion requirements)</p>
+            <p className="text-cyan-400"><strong>Perceived performance rating:</strong> Increased 18%</p>
           </div>
         </div>
 
@@ -590,7 +590,7 @@ export default function MicroInteractionsArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-2">The Bottom Line</p>
-          <p className="text-blue-200">
+          <p className="text-slate-200">
             Great micro-interactions are invisible. They guide users through your interface without drawing attention to themselves. Master subtle, purposeful motion before trying anything fancy.
           </p>
         </div>

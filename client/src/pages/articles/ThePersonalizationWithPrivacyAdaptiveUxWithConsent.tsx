@@ -306,19 +306,19 @@ export default function PersonalizationWithPrivacyArticle() {
         <h4 className="font-semibold text-blue-900 mb-2">Privacy-First Data Collection</h4>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
-            <div className="font-semibold text-2xl text-blue-600">6</div>
+            <div className="font-semibold text-2xl text-cyan-400">6</div>
             <div className="text-cyan-300">Behavioral signals tracked</div>
           </div>
           <div>
-            <div className="font-semibold text-2xl text-blue-600">0</div>
+            <div className="font-semibold text-2xl text-cyan-400">0</div>
             <div className="text-cyan-300">Cross-app data points</div>
           </div>
           <div>
-            <div className="font-semibold text-2xl text-blue-600">90</div>
+            <div className="font-semibold text-2xl text-cyan-400">90</div>
             <div className="text-cyan-300">Days of data retention</div>
           </div>
           <div>
-            <div className="font-semibold text-2xl text-blue-600">72%</div>
+            <div className="font-semibold text-2xl text-cyan-400">72%</div>
             <div className="text-cyan-300">Opt-in rate achieved</div>
           </div>
         </div>
@@ -473,12 +473,12 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         Here's what happened after we rebuilt our personalization approach:
       </p>
 
-      <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
+      <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
         <h4 className="font-semibold text-green-900 mb-2"> Before vs. After Implementation</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h5 className="font-semibold text-red-200 mb-3">Before (Surveillance Model)</h5>
-            <ul className="text-sm text-red-600 space-y-1">
+            <ul className="text-sm text-red-300 space-y-1">
               <li>• 40% opt-in rate (industry average)</li>
               <li>• Multiple "creepy" reviews</li>
               <li>• Users deleting accounts faster</li>
@@ -486,8 +486,8 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
             </ul>
           </div>
           <div>
-            <h5 className="font-semibold text-green-200 mb-3">After (Privacy-First)</h5>
-            <ul className="text-sm text-green-600 space-y-1">
+            <h5 className="font-semibold text-slate-200 mb-3">After (Privacy-First)</h5>
+            <ul className="text-sm text-green-300 space-y-1">
               <li>• 72% opt-in rate</li>
               <li>• Zero creepiness complaints</li>
               <li>• 15% higher 30-day retention</li>

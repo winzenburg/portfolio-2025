@@ -73,8 +73,8 @@ export default function Article() {
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <div className="flex">
             <div className="ml-3">
-              <p className="text-sm text-blue-200 font-medium mb-2">PULL QUOTE</p>
-              <p className="text-blue-200 text-lg italic">
+              <p className="text-sm text-slate-200 font-medium mb-2">PULL QUOTE</p>
+              <p className="text-slate-200 text-lg italic">
                 "The Hub isn't a graveyard of forgotten docs. It's the control center for our entire SaaS creation pipeline."
               </p>
             </div>
@@ -180,7 +180,7 @@ export default function Article() {
               <div className="text-sm text-slate-300">Time to get portfolio overview (before Hub)</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-blue-600">10 seconds</div>
+              <div className="text-2xl font-bold text-cyan-400">10 seconds</div>
               <div className="text-sm text-slate-300">Time to get portfolio overview (with Hub)</div>
             </div>
           </div>
@@ -336,52 +336,52 @@ export default function Article() {
           Let me show you what changed when we launched the Hub three months ago.
         </p>
 
-        <div className="bg-yellow-900/20 border border-yellow-700/50 p-6 rounded-lg my-8">
-          <div className="font-bold text-yellow-300 mb-3">Before Hub</div>
+        <div className="bg-slate-800/50 border border-slate-700 p-6 rounded-lg my-8">
+          <div className="font-bold text-cyan-400 mb-3">Before Hub</div>
           
-          <p className="text-yellow-300 mb-4"><strong>Portfolio management:</strong></p>
-          <ul className="text-yellow-200 mb-4">
+          <p className="text-cyan-400 mb-4"><strong>Portfolio management:</strong></p>
+          <ul className="text-slate-200 mb-4">
             <li>"How many ideas do we have?" → Count folders manually</li>
             <li>"Which ones are high priority?" → Open each portfolio score doc</li>
             <li>"Which passed validation?" → Search for RESULTS docs, read each one</li>
           </ul>
-          <p className="text-yellow-200 font-medium">Time: ~30 minutes to get portfolio overview</p>
+          <p className="text-slate-200 font-medium">Time: ~30 minutes to get portfolio overview</p>
 
-          <p className="text-yellow-300 mb-2 mt-4"><strong>Decision making:</strong></p>
-          <ul className="text-yellow-200 mb-4">
+          <p className="text-cyan-400 mb-2 mt-4"><strong>Decision making:</strong></p>
+          <ul className="text-slate-200 mb-4">
             <li>Kill/greenlight meetings required pre-reading 5-10 docs</li>
             <li>Debate about "did we validate that?" (no quick answer)</li>
             <li>Re-scoring ideas because we forgot the original score</li>
           </ul>
 
-          <p className="text-yellow-300 mb-2"><strong>Onboarding:</strong></p>
-          <ul className="text-yellow-200">
+          <p className="text-cyan-400 mb-2"><strong>Onboarding:</strong></p>
+          <ul className="text-slate-200">
             <li>New team member: "Where do I start?"</li>
             <li>Answer: "Read the Notion wiki, then check the projects folder, then ask if you have questions"</li>
             <li>Time to productivity: 2-3 weeks</li>
           </ul>
         </div>
 
-        <div className="bg-green-900/20 border border-green-700/50 p-6 rounded-lg my-8">
-          <div className="font-bold text-green-300 mb-3">After Hub</div>
+        <div className="bg-slate-800/50 border border-slate-700 p-6 rounded-lg my-8">
+          <div className="font-bold text-cyan-400 mb-3">After Hub</div>
           
-          <p className="text-green-300 mb-4"><strong>Portfolio management:</strong></p>
-          <ul className="text-green-200 mb-4">
+          <p className="text-cyan-400 mb-4"><strong>Portfolio management:</strong></p>
+          <ul className="text-slate-200 mb-4">
             <li>"How many ideas do we have?" → Look at Hub: 16 total</li>
             <li>"Which ones are high priority?" → Filter by "Top Priority": 7 ideas</li>
             <li>"Which passed validation?" → Filter by "Proceed": 7 ideas</li>
           </ul>
-          <p className="text-green-200 font-medium">Time: 10 seconds to get portfolio overview</p>
+          <p className="text-slate-200 font-medium">Time: 10 seconds to get portfolio overview</p>
 
-          <p className="text-green-300 mb-2 mt-4"><strong>Decision making:</strong></p>
-          <ul className="text-green-200 mb-4">
+          <p className="text-cyan-400 mb-2 mt-4"><strong>Decision making:</strong></p>
+          <ul className="text-slate-200 mb-4">
             <li>Kill/greenlight meetings start with Hub open (everyone sees same data)</li>
             <li>Click a project card to review docs on the spot</li>
             <li>Verdicts are visible—no need to re-litigate</li>
           </ul>
 
-          <p className="text-green-300 mb-2"><strong>Onboarding:</strong></p>
-          <ul className="text-green-200">
+          <p className="text-cyan-400 mb-2"><strong>Onboarding:</strong></p>
+          <ul className="text-slate-200">
             <li>New team member: "Where do I start?"</li>
             <li>Answer: "Open the Hub. Top priority ideas are in green. Click one, read the docs."</li>
             <li>Time to productivity: 3-5 days</li>
@@ -389,7 +389,7 @@ export default function Article() {
         </div>
 
         <div className="bg-cyan-900/20 border border-cyan-700/50 p-6 rounded-lg my-8">
-          <div className="text-sm text-blue-600 mb-2">ROI CALCULATION</div>
+          <div className="text-sm text-cyan-400 mb-2">ROI CALCULATION</div>
           <div className="text-cyan-300">
             <strong>~25 hours/month saved</strong> on portfolio management + faster decisions + better onboarding = <strong>~$5,000/month value</strong> (for a 3-person team)
           </div>
@@ -654,8 +654,8 @@ export default function Article() {
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <div className="flex">
             <div className="ml-3">
-              <p className="text-sm text-blue-200 font-medium mb-2">PULL QUOTE</p>
-              <p className="text-blue-200 text-lg italic">
+              <p className="text-sm text-slate-200 font-medium mb-2">PULL QUOTE</p>
+              <p className="text-slate-200 text-lg italic">
                 "Most teams treat docs as artifacts. We treat them as data."
               </p>
             </div>
