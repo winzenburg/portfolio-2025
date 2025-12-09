@@ -22,7 +22,7 @@ export default function TechnicalStackModernWebStandards() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/technical-stack-hero.png"
+              src="/images/articles/tech-stack.png"
               alt="The Technical Stack: Modern Web Standards for Product Creation Platforms"
               className="w-full h-auto"
             />
