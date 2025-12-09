@@ -254,12 +254,12 @@ export default function LinnyAutomationArticle() {
         <p><strong>Data fields</strong>: What data gets collected, processed, stored</p>
 
         <p><strong>Logging locations</strong>: Exact paths—no placeholders
-        - Primary: /docs/validation/RESULTS-{`<slug>`}.md
-        - Secondary: Google Sheet "Validation Metrics - {Test Name}"</p>
+        - Primary: /docs/validation/RESULTS-{'<slug>'}.md
+        - Secondary: Google Sheet "Validation Metrics - {'<Test Name>'}"</p>
 
         <p><strong>Fallback manual workflow</strong>: Step-by-step process if automation fails</p>
 
-        <p>Save as /docs/validation/LINDY-{`<slug>`}.md</p>
+        <p>Save as /docs/validation/LINDY-{'<slug>'}.md</p>
 
         <h3>Step 3: Build Lindy Workflows</h3>
 
