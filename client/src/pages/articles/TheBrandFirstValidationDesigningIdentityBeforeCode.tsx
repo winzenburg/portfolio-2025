@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
