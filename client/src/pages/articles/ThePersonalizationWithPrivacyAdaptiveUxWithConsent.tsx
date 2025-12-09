@@ -1,17 +1,48 @@
-
-
-export const metadata = {
-  title: 'The Creepy Line: Designing Personalization That Feels Thoughtful, Not Invasive',
-  description: 'I learned the hard way that personalization can backfire spectacularly. Here\'s how to make it feel like magic, not surveillance.',
-  openGraph: {
-    title: 'The Creepy Line: Designing Personalization That Feels Thoughtful, Not Invasive',
-    description: 'I learned the hard way that personalization can backfire spectacularly. Here\'s how to make it feel like magic, not surveillance.',
-  },
-}
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import ResponsiveNav from "@/components/ResponsiveNav";
+import { Link } from "wouter";
 
 export default function PersonalizationWithPrivacyArticle() {
   return (
-    <Article
+    <div className="min-h-screen bg-slate-950">
+      <ResponsiveNav currentPage="articles" />
+
+      {/* Article Header */}
+      <article className="pt-24 pb-16">
+        <div className="container mx-auto px-6 max-w-4xl">
+          {/* Back Link */}
+          <Link href="/articles">
+            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+              <ArrowLeft className="w-4 h-4" />
+              Back to Articles
+            </a>
+          </Link>
+
+          {/* Hero Image Placeholder */}
+          <div className="mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/30">
+            <div className="aspect-video flex items-center justify-center">
+              <p className="text-slate-500 text-sm">Hero image placeholder</p>
+            </div>
+          </div>
+
+          {/* Article Meta */}
+          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+            <span>November 22, 2024</span>
+            <span>•</span>
+            <span>6 min read</span>
+          </div>
+
+          {/* Article Title */}
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              The Personalization with Privacy: Adaptive UX with Consent
+            </h1>
+          </div>
+
+          {/* Article Body */}
+          <div className="prose prose-invert prose-lg max-w-none">
+            <Article
       title="The Creepy Line: Designing Personalization That Feels Thoughtful, Not Invasive"
       publishedAt="2025-12-02T00:00:00.000Z"
       readTime="8 min"
@@ -693,5 +724,24 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         And that's a line worth drawing carefully.
       </p>
     </Article>
-  )
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16 pt-8 border-t border-slate-800">
+            <NewsletterSignup />
+          </div>
+
+          {/* Next Article Link */}
+          <div className="mt-12">
+            <Link href="/articles">
+              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+                <ArrowLeft className="w-4 h-4" />
+                Back to all articles
+              </a>
+            </Link>
+          </div>
+        </div>
+      </article>
+    </div>
+  );
 }

@@ -1,16 +1,48 @@
-
-
-export const metadata = {
-  title: 'The Documentation System Making Knowledge Repeatable and Auditable',
-  date: '2025-11-28',
-  readTime: '8 min',
-  category: 'AI Workflow',
-  description: 'After losing months of product decisions to scattered notes and forgotten context, I built a documentation system that makes every choice auditable. Here\'s the framework that turned our tribal knowledge into repeatable processes.',
-}
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import ResponsiveNav from "@/components/ResponsiveNav";
+import { Link } from "wouter";
 
 export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable() {
   return (
-    <ArticleLayout meta={metadata}>
+    <div className="min-h-screen bg-slate-950">
+      <ResponsiveNav currentPage="articles" />
+
+      {/* Article Header */}
+      <article className="pt-24 pb-16">
+        <div className="container mx-auto px-6 max-w-4xl">
+          {/* Back Link */}
+          <Link href="/articles">
+            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+              <ArrowLeft className="w-4 h-4" />
+              Back to Articles
+            </a>
+          </Link>
+
+          {/* Hero Image Placeholder */}
+          <div className="mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/30">
+            <div className="aspect-video flex items-center justify-center">
+              <p className="text-slate-500 text-sm">Hero image placeholder</p>
+            </div>
+          </div>
+
+          {/* Article Meta */}
+          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+            <span>December 5, 2024</span>
+            <span>•</span>
+            <span>8 min read</span>
+          </div>
+
+          {/* Article Title */}
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              The Documentation System: Making Knowledge Repeatable and Auditable
+            </h1>
+          </div>
+
+          {/* Article Body */}
+          <div className="prose prose-invert prose-lg max-w-none">
+            <ArticleLayout meta={metadata}>
       <div className="relative">
         <img 
           src="/api/placeholder/1200/600" 
@@ -345,5 +377,24 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         </a>
       </div>
     </ArticleLayout>
-  )
+          </div>
+
+          {/* Newsletter Signup */}
+          <div className="mt-16 pt-8 border-t border-slate-800">
+            <NewsletterSignup />
+          </div>
+
+          {/* Next Article Link */}
+          <div className="mt-12">
+            <Link href="/articles">
+              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+                <ArrowLeft className="w-4 h-4" />
+                Back to all articles
+              </a>
+            </Link>
+          </div>
+        </div>
+      </article>
+    </div>
+  );
 }
