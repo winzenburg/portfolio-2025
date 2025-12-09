@@ -1,6 +1,4 @@
 
-import { StatsCard } from '@/components/StatsCard'
-import { PullQuote } from '@/components/PullQuote'
 
 export const metadata = {
   title: 'The Documentation System Making Knowledge Repeatable and Auditable',

@@ -214,7 +214,7 @@ export default function SecurityBugGateArticle() {
           <div>  const body = await request.json();</div>
           <div>  </div>
           <div>  // Input validation</div>
-          <div>  if (!body.projectId || typeof body.name !== 'string' || body.name.length > 500) &#123;</div>
+          <div>  if (!body.projectId || typeof body.name !== 'string' || body.name.length &gt; 500) &#123;</div>
           <div>    return Response.json(&#123; error: 'Invalid input' &#125;, &#123; status: 400 &#125;);</div>
           <div>  &#125;</div>
           <div></div>

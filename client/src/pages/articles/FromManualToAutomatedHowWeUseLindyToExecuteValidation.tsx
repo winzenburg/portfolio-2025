@@ -1,6 +1,4 @@
 
-import { StatsCard } from '@/components/ui/stats-card'
-import { PullQuote } from '@/components/ui/pull-quote'
 
 export default function LinnyAutomationArticle() {
   return (
