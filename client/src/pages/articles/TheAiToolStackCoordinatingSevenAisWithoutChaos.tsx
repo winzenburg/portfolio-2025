@@ -1,8 +1,7 @@
 
 import { BlogPost } from '@/components/blog/BlogPost'
-import { Metadata } from 'next'
 
-export const metadata: Metadata = {
+export const metadata:  = {
   title: 'The AI Tool Stack: How I Coordinate 7 AIs Without Complete Chaos',
   description: 'Using multiple AI tools sounds like a nightmare. Here\'s how I orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.',
 }

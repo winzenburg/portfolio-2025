@@ -1,8 +1,7 @@
 
-import { Metadata } from 'next';
 import { ArticleLayout } from '@/components/ArticleLayout';
 
-export const metadata: Metadata = {
+export const metadata:  = {
   title: 'The Hub Evolution: From Static Docs to Decision Dashboard',
   description: 'Most docs systems are graveyards. Here\'s how we built a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions.',
   openGraph: {
@@ -271,7 +270,7 @@ export default function Article() {
         </div>
 
         <p>
-          <strong>Step 2: Extract Metadata from Docs</strong>
+          <strong>Step 2: Extract  from Docs</strong>
         </p>
 
         <p>

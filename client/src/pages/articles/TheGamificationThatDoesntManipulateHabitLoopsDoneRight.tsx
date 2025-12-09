@@ -4,7 +4,7 @@ import React from 'react';
 const GameficationThatDoesntManipulateArticle = () => {
   return (
     <article className="max-w-4xl mx-auto px-6 py-8">
-      {/* Metadata */}
+      {/*  */}
       <div className="mb-8">
         <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
           <span>AI Workflow</span>

@@ -255,7 +255,7 @@ CREATE POLICY "Users see own org projects"
         <strong>Why:</strong> App Router patterns evolve rapidly. The metadata API changes every few months.
       </p>
       <p>
-        <strong>What we query:</strong> Metadata API, server vs. client component patterns, route handlers, caching behavior.
+        <strong>What we query:</strong>  API, server vs. client component patterns, route handlers, caching behavior.
       </p>
 
       <h3>3. Supabase (Auth, RLS, Edge Functions)</h3>

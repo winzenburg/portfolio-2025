@@ -1,8 +1,7 @@
 
 import { Article } from '@/components/Article'
-import { Metadata } from 'next'
 
-export const metadata: Metadata = {
+export const metadata:  = {
   title: 'The Creepy Line: Designing Personalization That Feels Thoughtful, Not Invasive',
   description: 'I learned the hard way that personalization can backfire spectacularly. Here\'s how to make it feel like magic, not surveillance.',
   openGraph: {

@@ -1,5 +1,4 @@
 
-import { notFound } from 'next/navigation';
 import { allPosts } from 'contentlayer/generated';
 import { PostHero } from '@/components/blog/PostHero';
 import { PostContent } from '@/components/blog/PostContent';

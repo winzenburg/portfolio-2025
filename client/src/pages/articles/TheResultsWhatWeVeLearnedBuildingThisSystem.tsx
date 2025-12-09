@@ -1,8 +1,6 @@
 
-import { Metadata } from 'next'
-import Image from 'next/image'
 
-export const metadata: Metadata = {
+export const metadata:  = {
   title: 'Building a Product Creation Engine: What Actually Works (And What Doesn\'t)',
   description: 'After a year of building systematic product validation, here\'s what we learned the hard way—AI orchestration, dual filters, and why documentation isn\'t boring.',
   openGraph: {
