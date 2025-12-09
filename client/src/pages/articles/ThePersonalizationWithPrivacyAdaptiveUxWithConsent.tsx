@@ -159,7 +159,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <blockquote>
-        [PULL QUOTE] "Bad personalization feels like being watched. Good personalization feels like having a thoughtful assistant who's paying attention because you asked them to."
+        "Bad personalization feels like being watched. Good personalization feels like having a thoughtful assistant who's paying attention because you asked them to."
       </blockquote>
 
       <h2>The Privacy-First Personalization Framework</h2>
@@ -303,7 +303,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-        <h4 className="font-semibold text-blue-900 mb-2">[STATS CARD] Privacy-First Data Collection</h4>
+        <h4 className="font-semibold text-blue-900 mb-2">Privacy-First Data Collection</h4>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
             <div className="font-semibold text-2xl text-blue-600">6</div>
@@ -515,7 +515,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <blockquote>
-        [PULL QUOTE] "Users actually want personalization—they just want it done respectfully."
+        "Users actually want personalization—they just want it done respectfully."
       </blockquote>
 
       <h2>The Trade-Offs Nobody Talks About</h2>

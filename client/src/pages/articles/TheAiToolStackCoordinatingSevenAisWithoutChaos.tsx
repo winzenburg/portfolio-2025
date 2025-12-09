@@ -81,7 +81,7 @@ export default function AIToolStackArticle() {
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
           <p className="text-green-300 font-semibold">
-            [PULL QUOTE] "Each tool has a single purpose. No overlap. Information flows through a documented pipeline."
+            "Each tool has a single purpose. No overlap. Information flows through a documented pipeline."
           </p>
         </div>
 
@@ -127,7 +127,7 @@ export default function AIToolStackArticle() {
 
         <div className="bg-red-50 border-l-4 border-red-400 p-6 my-8">
           <p className="text-red-800">
-            <strong>[STATS CARD]</strong> The real cost of chaos: I tracked my tool usage for one week. 47% of queries were duplicates across different tools. That's $200/month in wasted API credits.
+            <strong></strong> The real cost of chaos: I tracked my tool usage for one week. 47% of queries were duplicates across different tools. That's $200/month in wasted API credits.
           </p>
         </div>
 
@@ -344,7 +344,7 @@ export default function AIToolStackArticle() {
 
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
           <p className="text-yellow-800 font-semibold">
-            [PULL QUOTE] "Claude critique saved me from launching a fundamentally flawed pricing strategy. ChatGPT would have said it looked great."
+            "Claude critique saved me from launching a fundamentally flawed pricing strategy. ChatGPT would have said it looked great."
           </p>
         </div>
 
@@ -418,7 +418,7 @@ export default function AIToolStackArticle() {
 
         <div className="grid md:grid-cols-2 gap-6 my-8">
           <div className="bg-green-50 border border-green-200 rounded-lg p-6">
-            <h4 className="font-semibold text-green-900 mb-3">[STATS CARD] Efficiency Gains</h4>
+            <h4 className="font-semibold text-green-900 mb-3">Efficiency Gains</h4>
             <ul className="text-green-300 space-y-2">
               <li>Discovery phase: 8-12 hours (was 20-30 hours)</li>
               <li>Landing page copy: 2 hours (was 6-8 hours)</li>
@@ -427,7 +427,7 @@ export default function AIToolStackArticle() {
           </div>
           
           <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6">
-            <h4 className="font-semibold text-blue-900 mb-3">[STATS CARD] Quality Improvements</h4>
+            <h4 className="font-semibold text-blue-900 mb-3">Quality Improvements</h4>
             <ul className="text-cyan-300 space-y-2">
               <li>Zero conflicting outputs between tools</li>
               <li>100% of high-stakes decisions get Claude critique</li>
@@ -437,7 +437,7 @@ export default function AIToolStackArticle() {
         </div>
 
         <div className="bg-purple-50 border border-purple-200 rounded-lg p-6 my-8">
-          <h4 className="font-semibold text-purple-900 mb-3">[STATS CARD] ROI Analysis</h4>
+          <h4 className="font-semibold text-purple-900 mb-3">ROI Analysis</h4>
           <p className="text-purple-800 mb-2"><strong>Cost</strong>: $260-340/month for 7-tool stack</p>
           <p className="text-purple-800 mb-2"><strong>Time saved</strong>: ~40 hours/month</p>
           <p className="text-purple-800 mb-2"><strong>Value</strong>: ~$8,000/month (at $200/hr)</p>
@@ -588,7 +588,7 @@ export default function AIToolStackArticle() {
 
         <div className="bg-indigo-50 border-l-4 border-indigo-400 p-6 my-8">
           <p className="text-indigo-800 font-semibold text-lg">
-            [PULL QUOTE] "The future isn't about finding the one perfect AI tool—it's about orchestrating multiple specialized tools into a coherent workflow."
+            "The future isn't about finding the one perfect AI tool—it's about orchestrating multiple specialized tools into a coherent workflow."
           </p>
         </div>
 

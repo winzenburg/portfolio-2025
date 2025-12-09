@@ -90,7 +90,7 @@ export default function DualFilterValidationFrameworkArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
           <p className="text-lg font-semibold text-blue-900 mb-2">
-            [PULL QUOTE] "Heat gets you in. Durability makes it a real SaaS business."
+            "Heat gets you in. Durability makes it a real SaaS business."
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </p>
 
         <div className="bg-slate-800/50 p-6 rounded-lg my-8">
-          <p className="text-sm text-slate-300 mb-2">[STATS CARD]</p>
+          <p className="text-sm text-slate-300 mb-2"></p>
           <p className="text-3xl font-bold text-white">100 signups</p>
           <p className="text-lg text-slate-200">for $50 ad spend = minimum heat threshold</p>
         </div>
@@ -349,7 +349,7 @@ export default function DualFilterValidationFrameworkArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
           <p className="text-lg font-semibold text-blue-900 mb-2">
-            [PULL QUOTE] "Every feature decision should ask: Does this increase switching costs or frequency of use?"
+            "Every feature decision should ask: Does this increase switching costs or frequency of use?"
           </p>
         </div>
 

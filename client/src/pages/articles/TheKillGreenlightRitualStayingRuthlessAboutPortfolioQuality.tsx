@@ -201,7 +201,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
-          <p className="font-medium text-cyan-300 mb-4">[STATS CARD] Expected Value in Action:</p>
+          <p className="font-medium text-cyan-300 mb-4">Expected Value in Action:</p>
           <div className="space-y-3 text-blue-700">
             <div>
               <strong>Idea A (current meal planner):</strong><br />
@@ -422,7 +422,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <div className="bg-yellow-50 p-6 rounded-lg my-8">
-          <p className="font-medium text-yellow-800 mb-4">[PULL QUOTE] Opportunity Cost Formula:</p>
+          <p className="font-medium text-yellow-800 mb-4">Opportunity Cost Formula:</p>
           <p className="text-yellow-700 mb-4">
             Cost of continuing A = (Expected Value of B - Expected Value of A) × Time
           </p>
@@ -594,7 +594,7 @@ Date: 2025-12-02`}</div>
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-300 font-medium mb-2">[PULL QUOTE] The Killer Insight:</p>
+          <p className="text-green-300 font-medium mb-2">The Killer Insight:</p>
           <p className="text-green-700">
             Killing bad ideas isn't about admitting failure—it's about protecting your ability to recognize and execute on exceptional opportunities.
           </p>

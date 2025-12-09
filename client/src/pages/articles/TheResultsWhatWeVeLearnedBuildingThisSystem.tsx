@@ -153,7 +153,7 @@ export default function Article() {
         </p>
 
         <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
-          [PULL QUOTE] "The question he didn't ask: 'Will they still want this in 18 months?'"
+          "The question he didn't ask: 'Will they still want this in 18 months?'"
         </blockquote>
 
         <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -256,7 +256,7 @@ export default function Article() {
         </p>
 
         <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
-          [PULL QUOTE] "Documentation isn't just record-keeping—it's compound learning."
+          "Documentation isn't just record-keeping—it's compound learning."
         </blockquote>
 
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -394,7 +394,7 @@ export default function Article() {
         </p>
 
         <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
-          [PULL QUOTE] "Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing really well."
+          "Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing really well."
         </blockquote>
 
         <p>

@@ -137,7 +137,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <div className="bg-green-50 p-6 rounded-lg my-8">
-            <h3 className="text-lg font-semibold mb-3 text-green-900">[STATS CARD] Portfolio Gate Results</h3>
+            <h3 className="text-lg font-semibold mb-3 text-green-900">Portfolio Gate Results</h3>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-green-700">23</div>
@@ -232,7 +232,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <div className="bg-yellow-50 p-6 rounded-lg my-8">
-            <h4 className="font-semibold text-yellow-900 mb-2">[PULL QUOTE]</h4>
+            <h4 className="font-semibold text-yellow-900 mb-2"></h4>
             <p className="text-lg italic text-yellow-800">
               "The questions lead to better decisions. The AI just helps you ask them."
             </p>
@@ -542,7 +542,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
-            <h3 className="text-lg font-semibold mb-3 text-blue-900">[PULL QUOTE]</h3>
+            <h3 className="text-lg font-semibold mb-3 text-blue-900"></h3>
             <p className="text-lg italic text-cyan-300">
               "What if every product you built had a 75% success rate instead of 10%? That's the promise of systematic product creation."
             </p>

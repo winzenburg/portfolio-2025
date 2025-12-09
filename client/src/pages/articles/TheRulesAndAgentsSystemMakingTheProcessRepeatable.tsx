@@ -90,7 +90,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-400 font-medium text-lg mb-0">
-            [PULL QUOTE] "What if I approached product creation the same way I approach code? With systems, rules, and repeatable processes that actually work?"
+            "What if I approached product creation the same way I approach code? With systems, rules, and repeatable processes that actually work?"
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export default function RulesAndAgentsSystemArticle() {
         <p>Real talk: This might sound over-engineered, but it's actually liberating. Instead of reinventing the wheel every time, I have a system that catches my blind spots and keeps me honest.</p>
 
         <div className="bg-slate-900/50 p-6 rounded-lg my-8">
-          <h3 className="text-lg font-semibold mb-3">[STATS CARD] System Impact</h3>
+          <h3 className="text-lg font-semibold mb-3">System Impact</h3>
           <div className="grid grid-cols-2 gap-4 text-center">
             <div>
               <div className="text-2xl font-bold text-blue-600">85%</div>
@@ -249,7 +249,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-400 font-medium text-lg mb-0">
-            [PULL QUOTE] "I've killed more bad ideas in the last month than I used to kill in a year—and that's a good thing."
+            "I've killed more bad ideas in the last month than I used to kill in a year—and that's a good thing."
           </p>
         </div>
 

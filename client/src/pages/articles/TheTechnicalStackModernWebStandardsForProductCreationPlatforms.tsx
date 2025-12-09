@@ -110,7 +110,7 @@ export default function TechnicalStackModernWebStandards() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-0">
-            [PULL QUOTE] "I was spending more time managing my validation tools than actually validating."
+            "I was spending more time managing my validation tools than actually validating."
           </p>
         </div>
 
@@ -160,7 +160,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h4 className="text-green-300 font-semibold mb-2">[STATS CARD] Next.js Impact</h4>
+          <h4 className="text-green-300 font-semibold mb-2">Next.js Impact</h4>
           <ul className="text-green-700 space-y-1 mb-0">
             <li>• 60% faster development cycles</li>
             <li>• Zero configuration for server/client separation</li>
@@ -302,7 +302,7 @@ export default function TechnicalStackModernWebStandards() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-0">
-            [PULL QUOTE] "I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster."
+            "I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster."
           </p>
         </div>
 
@@ -321,7 +321,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h4 className="text-green-300 font-semibold mb-2">[STATS CARD] Platform Impact</h4>
+          <h4 className="text-green-300 font-semibold mb-2">Platform Impact</h4>
           <ul className="text-green-700 space-y-1 mb-0">
             <li>• 75% faster validation cycles</li>
             <li>• 90% reduction in data inconsistencies</li>
@@ -421,7 +421,7 @@ export default function TechnicalStackModernWebStandards() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-0">
-            [PULL QUOTE] "Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter."
+            "Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter."
           </p>
         </div>
 
@@ -473,7 +473,7 @@ export default function TechnicalStackModernWebStandards() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-0">
-            [PULL QUOTE] "The goal isn't to build the perfect validation platform. The goal is to validate ideas faster and more effectively, then ship products that succeed."
+            "The goal isn't to build the perfect validation platform. The goal is to validate ideas faster and more effectively, then ship products that succeed."
           </p>
         </div>
 

@@ -96,7 +96,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-cyan-300 font-medium mb-2">[PULL QUOTE]</p>
+          <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-blue-700 italic">
             "If you've validated that people want your product, the next question is: How will you stand out in a crowded market? That's where brand comes in."
           </p>
@@ -313,7 +313,7 @@ export default function BrandFirstValidationArticle() {
         </div>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-cyan-300 font-medium mb-2">[STATS CARD]</p>
+          <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-blue-700 font-semibold text-2xl">6 hours</p>
           <p className="text-blue-600 text-sm">Time to complete full brand blueprint vs. 3 months retrofitting later</p>
         </div>
@@ -501,7 +501,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-cyan-300 font-medium mb-2">[PULL QUOTE]</p>
+          <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-blue-700 italic">
             "Users consistently mentioned that the tool 'feels different' from competitors. That's not accident—that's intentional brand work paying off."
           </p>
@@ -655,7 +655,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h3 className="text-green-300 font-semibold mb-4">[STATS CARD] Measurable Impact</h3>
+          <h3 className="text-green-300 font-semibold mb-4">Measurable Impact</h3>
           <div className="grid md:grid-cols-2 gap-4 text-sm text-green-700">
             <div>
               <p><strong>60% faster execution</strong></p>
@@ -717,7 +717,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-cyan-300 font-medium mb-2">[PULL QUOTE]</p>
+          <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-blue-700 italic">
             "Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. What if your brand could be a moat, not just a coat of paint?"
           </p>

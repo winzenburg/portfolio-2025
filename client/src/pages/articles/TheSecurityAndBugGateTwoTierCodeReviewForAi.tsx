@@ -102,7 +102,7 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <div className="bg-red-50 border-l-4 border-red-400 p-4 my-8">
-          <p className="text-red-700 font-medium mb-2">[PULL QUOTE]</p>
+          <p className="text-red-700 font-medium mb-2"></p>
           <p className="text-red-700">
             "AI is optimized for helpfulness and plausibility, not correctness or security. It'll generate code that 
             seems right, compiles, and passes surface-level tests—but fails confidently in ways that are hard to spot."
@@ -295,7 +295,7 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-          <div className="text-sm font-medium text-green-300 mb-4">[STATS CARD]</div>
+          <div className="text-sm font-medium text-green-300 mb-4"></div>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <div className="text-2xl font-bold text-green-700">31</div>
@@ -474,7 +474,7 @@ export default function SecurityBugGateArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-blue-700 font-medium">
-            [PULL QUOTE] "AI can ship features fast, but it can also ship vulnerabilities. The Security & Bug Gate 
+            "AI can ship features fast, but it can also ship vulnerabilities. The Security & Bug Gate 
             is our quality firewall—and the reason I sleep better at night."
           </p>
         </div>

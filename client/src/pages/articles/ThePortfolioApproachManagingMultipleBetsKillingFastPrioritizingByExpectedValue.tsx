@@ -94,7 +94,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
-          <p className="font-semibold text-blue-900 mb-2">[PULL QUOTE]</p>
+          <p className="font-semibold text-blue-900 mb-2"></p>
           <p className="text-cyan-300 italic text-lg">
             "You're not building one product. You're managing a portfolio of bets. The question is: 
             are you managing it like Warren Buffett or like a guy at a casino?"
@@ -125,7 +125,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <Card className="p-6 my-8 bg-green-50 border-green-200">
-          <h3 className="font-semibold text-green-900 mb-3">[STATS CARD]</h3>
+          <h3 className="font-semibold text-green-900 mb-3"></h3>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <div className="text-2xl font-bold text-green-700">5x</div>

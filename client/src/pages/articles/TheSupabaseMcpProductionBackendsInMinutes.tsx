@@ -104,7 +104,7 @@ export default function SupabaseMCPArticle() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-blue-900 font-medium mb-2">[PULL QUOTE]</p>
+          <p className="text-blue-900 font-medium mb-2"></p>
           <p className="text-cyan-300 italic">
             "Backend design went from trial-and-error to repeatable blueprint. 
             We ship production-grade architectures in hours, not weeks."
@@ -130,7 +130,7 @@ export default function SupabaseMCPArticle() {
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-yellow-800 mb-3">[STATS CARD]</h3>
+          <h3 className="text-lg font-semibold text-yellow-800 mb-3"></h3>
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div>
               <div className="text-2xl font-bold text-yellow-900">6 months</div>
@@ -533,7 +533,7 @@ supabase db push`}</code>
         </p>
 
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-900 font-medium mb-2">[PULL QUOTE]</p>
+          <p className="text-yellow-900 font-medium mb-2"></p>
           <p className="text-yellow-800 italic">
             "The 4 hours of upfront design saves you 6 months of refactoring. 
             Every. Single. Time."

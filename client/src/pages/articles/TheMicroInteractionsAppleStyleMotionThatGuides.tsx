@@ -100,7 +100,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <div className="bg-slate-800/30 p-6 rounded-lg my-8">
-          <p className="font-semibold text-white mb-2">[PULL QUOTE]</p>
+          <p className="font-semibold text-white mb-2"></p>
           <p className="text-lg text-slate-200 italic">
             "Bad animations make users notice the interface. Great animations make users notice their progress."
           </p>
@@ -185,7 +185,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <div className="bg-green-50 p-6 rounded-lg my-8">
-          <p className="font-semibold text-green-900 mb-2">[STATS CARD]</p>
+          <p className="font-semibold text-green-900 mb-2"></p>
           <div className="space-y-2">
             <p className="text-green-300"><strong>Apple scale transforms:</strong> 1 → 1.02 to 1.15</p>
             <p className="text-green-300"><strong>Most other apps:</strong> 1 → 1.2 to 1.5</p>
@@ -508,7 +508,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <div className="bg-green-50 p-6 rounded-lg my-8">
-          <p className="font-semibold text-green-900 mb-2">[STATS CARD]</p>
+          <p className="font-semibold text-green-900 mb-2"></p>
           <div className="space-y-2">
             <p className="text-green-300"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
             <p className="text-green-300"><strong>Complaints about "too many animations":</strong> 0% (vs 8% before)</p>

@@ -82,7 +82,7 @@ export default function AiOrchestrationWorkflow() {
 
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
           <p className="text-lg font-medium text-yellow-800 mb-0">
-            [PULL QUOTE] "AI tools are powerful in isolation, but they're game-changers when they work together."
+            "AI tools are powerful in isolation, but they're game-changers when they work together."
           </p>
         </div>
 
@@ -101,7 +101,7 @@ export default function AiOrchestrationWorkflow() {
         </p>
 
         <div className="bg-cyan-900/20 rounded-lg p-6 my-8">
-          <h4 className="text-lg font-semibold text-blue-900 mb-4">[STATS CARD] The Results</h4>
+          <h4 className="text-lg font-semibold text-blue-900 mb-4">The Results</h4>
           <div className="grid grid-cols-2 gap-4 text-center">
             <div>
               <div className="text-2xl font-bold text-blue-600">70%</div>
@@ -218,7 +218,7 @@ export default function AiOrchestrationWorkflow() {
 
         <div className="bg-indigo-50 border-l-4 border-indigo-400 p-6 my-8">
           <p className="text-lg font-medium text-indigo-800 mb-0">
-            [PULL QUOTE] "The magic isn't in the individual AI tools—it's in how they hand off to each other."
+            "The magic isn't in the individual AI tools—it's in how they hand off to each other."
           </p>
         </div>
 
@@ -316,7 +316,7 @@ export default function AiOrchestrationWorkflow() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-lg font-medium text-cyan-300 mb-0">
-            [PULL QUOTE] "The future belongs to teams that orchestrate AI tools, not just use them."
+            "The future belongs to teams that orchestrate AI tools, not just use them."
           </p>
         </div>
 
