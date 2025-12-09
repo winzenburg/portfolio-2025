@@ -190,7 +190,7 @@ export default function RulesAndAgentsSystemArticle() {
         <p>The beautiful thing about gates? They force kill-or-pivot decisions early, when it's cheap to change course. I've killed more bad ideas in the last month than I used to kill in a year—and that's a good thing.</p>
 
         <div className="bg-slate-900/50 p-6 rounded-lg my-8">
-          <h3 className="text-lg font-semibold mb-3">[COMPARISON] Before vs. After Quality Gates</h3>
+          <h3 className="text-lg font-semibold mb-3"> Before vs. After Quality Gates</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-red-600 mb-2">Before: Chaos Mode</h4>

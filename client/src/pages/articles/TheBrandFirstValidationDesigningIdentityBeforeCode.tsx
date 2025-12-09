@@ -127,7 +127,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <div className="bg-red-50 border border-red-200 rounded-lg p-6 my-8">
-          <h3 className="text-red-800 font-semibold mb-3">[COMPARISON] The Expensive Disconnect</h3>
+          <h3 className="text-red-800 font-semibold mb-3"> The Expensive Disconnect</h3>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
               <h4 className="font-medium text-red-700 mb-2">Brand System</h4>

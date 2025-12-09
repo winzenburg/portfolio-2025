@@ -257,7 +257,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <Card className="p-6 my-8 bg-cyan-900/20 border-cyan-700/50">
-          <h4 className="font-semibold text-blue-900 mb-3">[COMPARISON]</h4>
+          <h4 className="font-semibold text-blue-900 mb-3"></h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h5 className="font-medium text-red-700 mb-2">❌ Old Approach</h5>

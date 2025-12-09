@@ -184,7 +184,7 @@ export default function Article() {
         </p>
 
         <p>
-          <em>[COMPARISON: Ad-hoc prompting vs. Orchestrated AI workflow diagram]</em>
+          <em></em>
         </p>
 
         <p>
@@ -296,7 +296,7 @@ export default function Article() {
         </p>
 
         <p>
-          <em>[COMPARISON: Single idea focus vs. Portfolio approach - emotional investment chart]</em>
+          <em></em>
         </p>
 
         <p>

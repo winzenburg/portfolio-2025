@@ -212,7 +212,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
-          <h4 className="text-yellow-800 font-semibold mb-2">[COMPARISON] Before vs After Data Management</h4>
+          <h4 className="text-yellow-800 font-semibold mb-2"> Before vs After Data Management</h4>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
               <h5 className="font-semibold text-red-700 mb-2">Before: Spreadsheet Hell</h5>

@@ -164,7 +164,7 @@ export default function AiOrchestrationWorkflow() {
         </p>
 
         <div className="bg-slate-800/30 rounded-lg p-6 my-8">
-          <h4 className="text-lg font-semibold text-white mb-4">[COMPARISON] Before vs. After Orchestration</h4>
+          <h4 className="text-lg font-semibold text-white mb-4"> Before vs. After Orchestration</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h5 className="font-medium text-red-600 mb-2">❌ Old Way (Chaotic)</h5>

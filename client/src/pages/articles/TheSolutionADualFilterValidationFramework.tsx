@@ -283,7 +283,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </p>
 
         <div className="bg-slate-800/50 p-6 rounded-lg my-8">
-          <p className="text-sm text-slate-300 mb-2">[COMPARISON] Durability Score Breakdown</p>
+          <p className="text-sm text-slate-300 mb-2"> Durability Score Breakdown</p>
           <div className="space-y-3">
             <div>
               <p className="font-semibold text-green-300">18-25 points: Durable Markets</p>

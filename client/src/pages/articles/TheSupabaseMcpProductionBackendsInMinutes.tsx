@@ -409,7 +409,7 @@ CREATE TABLE audit_logs (
         <p><strong>Time to generate complete spec: 2 minutes.</strong></p>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-green-300 mb-3">[COMPARISON - Before vs After]</h3>
+          <h3 className="text-lg font-semibold text-green-300 mb-3"></h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-green-300 mb-2">Before MCP Blueprint</h4>

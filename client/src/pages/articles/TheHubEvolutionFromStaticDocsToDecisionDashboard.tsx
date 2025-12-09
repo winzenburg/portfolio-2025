@@ -337,7 +337,7 @@ export default function Article() {
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-lg my-8">
-          <div className="font-bold text-yellow-800 mb-3">COMPARISON: Before Hub</div>
+          <div className="font-bold text-yellow-800 mb-3">Before Hub</div>
           
           <p className="text-yellow-800 mb-4"><strong>Portfolio management:</strong></p>
           <ul className="text-yellow-700 mb-4">
@@ -363,7 +363,7 @@ export default function Article() {
         </div>
 
         <div className="bg-green-50 border border-green-200 p-6 rounded-lg my-8">
-          <div className="font-bold text-green-300 mb-3">COMPARISON: After Hub</div>
+          <div className="font-bold text-green-300 mb-3">After Hub</div>
           
           <p className="text-green-300 mb-4"><strong>Portfolio management:</strong></p>
           <ul className="text-green-700 mb-4">

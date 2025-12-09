@@ -376,7 +376,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <div className="bg-purple-50 p-6 rounded-lg my-8">
-          <p className="font-semibold text-purple-900 mb-2">[COMPARISON]</p>
+          <p className="font-semibold text-purple-900 mb-2"></p>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <p className="font-medium text-purple-900 mb-2">Before (Arbitrary Animations)</p>

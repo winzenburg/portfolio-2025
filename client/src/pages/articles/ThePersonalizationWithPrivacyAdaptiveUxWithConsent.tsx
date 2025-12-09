@@ -474,7 +474,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-        <h4 className="font-semibold text-green-900 mb-2">[COMPARISON] Before vs. After Implementation</h4>
+        <h4 className="font-semibold text-green-900 mb-2"> Before vs. After Implementation</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h5 className="font-semibold text-red-700 mb-3">Before (Surveillance Model)</h5>

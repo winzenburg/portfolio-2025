@@ -312,7 +312,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <div className="bg-slate-800/30 p-6 rounded-lg my-8">
-            <h4 className="font-semibold mb-3">[COMPARISON] Before vs. After Brand System</h4>
+            <h4 className="font-semibold mb-3"> Before vs. After Brand System</h4>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h5 className="font-medium text-red-700 mb-2">❌ Before (Habit Tracker)</h5>
