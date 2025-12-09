@@ -288,10 +288,17 @@ export default function TechnicalStackModernWebStandards() {
           When I update market research, the dashboard automatically recalculates opportunity scores. When I add competitor analysis, it updates positioning recommendations. Everything flows together instead of existing in silos.
         </p>
 
-        <div className="bg-slate-800/30 border border-slate-700 rounded-lg p-6 my-8">
-          <p className="text-slate-300 text-center mb-0">
-            [Dashboard screenshot placeholder - showing unified validation view]
-          </p>
+        <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
+          <img
+            src="/images/articles/dashboard-view.jpeg"
+            alt="Unified Validation Dashboard: Market Size, Competitor Analysis, and User Feedback in one view"
+            className="w-full h-auto"
+          />
+          <div className="p-4 text-center border-t border-slate-700/50">
+            <p className="text-sm text-slate-400 italic">
+              The Validation Dashboard: All critical metrics in a single pane of glass.
+            </p>
+          </div>
         </div>
 
         <h3 className="text-2xl font-bold mt-8 mb-4">AI-Powered Research: Speed Without Sacrifice</h3>
