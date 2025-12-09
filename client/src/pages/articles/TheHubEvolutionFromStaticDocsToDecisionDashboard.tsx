@@ -1,7 +1,7 @@
 
 import { ArticleLayout } from '@/components/ArticleLayout';
 
-export const metadata:  = {
+export const metadata = {
   title: 'The Hub Evolution: From Static Docs to Decision Dashboard',
   description: 'Most docs systems are graveyards. Here\'s how we built a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions.',
   openGraph: {

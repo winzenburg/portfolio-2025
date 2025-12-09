@@ -1,7 +1,7 @@
 
 import { Article } from '@/components/Article'
 
-export const metadata:  = {
+export const metadata = {
   title: 'The Creepy Line: Designing Personalization That Feels Thoughtful, Not Invasive',
   description: 'I learned the hard way that personalization can backfire spectacularly. Here\'s how to make it feel like magic, not surveillance.',
   openGraph: {
