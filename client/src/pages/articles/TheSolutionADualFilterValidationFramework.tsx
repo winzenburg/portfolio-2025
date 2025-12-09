@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'wouter';
+import { Link } from 'wouter';
 
 export default function DualFilterValidationFrameworkArticle() {
   return (

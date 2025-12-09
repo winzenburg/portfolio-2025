@@ -1,5 +1,5 @@
 
-import Link from 'wouter'
+import { Link } from 'wouter'
 
 export default function TechnicalStackModernWebStandards() {
   return (
