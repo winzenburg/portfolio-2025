@@ -45,7 +45,7 @@ export default function SecurityBugGateArticle() {
             <article className="max-w-4xl mx-auto px-6 py-12">
       {/* Header */}
       <header className="mb-12">
-        <div className="flex items-center gap-6 text-sm text-gray-600 mb-6">
+        <div className="flex items-center gap-6 text-sm text-slate-300 mb-6">
           <div className="flex items-center gap-2">
             <Calendar className="w-4 h-4" />
             <span>December 2, 2024</span>
@@ -60,11 +60,11 @@ export default function SecurityBugGateArticle() {
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
           The Security & Bug Gate: Two-Tier Code Review for AI
         </h1>
         
-        <p className="text-xl text-gray-600 leading-relaxed">
+        <p className="text-xl text-slate-300 leading-relaxed">
           AI can ship features fast, but it can also ship vulnerabilities. Here's the quality firewall 
           I built after almost leaking customer data in production.
         </p>
@@ -170,8 +170,8 @@ export default function SecurityBugGateArticle() {
           bite you later.
         </p>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-blue-800 mb-4">Quick Security & Logic Check Template</h3>
+        <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
+          <h3 className="text-lg font-semibold text-cyan-300 mb-4">Quick Security & Logic Check Template</h3>
           <div className="text-blue-700 space-y-4 font-mono text-sm">
             <div>
               <strong>Feature</strong>: [Brief description]<br />
@@ -295,7 +295,7 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-          <div className="text-sm font-medium text-green-800 mb-4">[STATS CARD]</div>
+          <div className="text-sm font-medium text-green-300 mb-4">[STATS CARD]</div>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <div className="text-2xl font-bold text-green-700">31</div>
@@ -386,8 +386,8 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <div className="grid grid-cols-2 gap-6 my-8">
-          <div className="bg-blue-50 p-4 rounded-lg">
-            <h4 className="font-semibold text-blue-800">Everyday Prompt</h4>
+          <div className="bg-cyan-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold text-cyan-300">Everyday Prompt</h4>
             <ul className="text-blue-700 text-sm mt-2 space-y-1">
               <li>12 missing auth checks</li>
               <li>8 input validation gaps</li>
@@ -472,7 +472,7 @@ export default function SecurityBugGateArticle() {
           <li><strong>Integration testing</strong>: Automated tests that verify the security properties we care about</li>
         </ul>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-blue-700 font-medium">
             [PULL QUOTE] "AI can ship features fast, but it can also ship vulnerabilities. The Security & Bug Gate 
             is our quality firewall—and the reason I sleep better at night."
@@ -504,7 +504,7 @@ export default function SecurityBugGateArticle() {
           Get both the everyday prompt and pre-production gate checklists, plus examples of common issues 
           to watch for in AI-generated code.
         </p>
-        <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+        <button className="bg-slate-900 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
           Download the Templates
         </button>
       </div>

@@ -295,7 +295,7 @@ export default function RulesAndAgentsSystemArticle() {
         <p>Plus, having a systematic approach means my wins are repeatable, not just lucky accidents.</p>
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-800 mb-0">
+          <p className="text-green-300 mb-0">
             <strong>Real talk:</strong> The first time through this system felt slow and over-engineered. By the third product, it felt like having superpowers. The learning curve is worth it.
           </p>
         </div>

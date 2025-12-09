@@ -689,7 +689,7 @@ export default function MonetizationStrategy() {
               I've helped companies implement these frameworks to generate revenue from day one. Let's discuss your specific product and market.
             </p>
             <Link href="/contact">
-              <a className="inline-block bg-blue-500 hover:bg-blue-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+              <a className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Schedule a Discovery Call →
               </a>
             </Link>

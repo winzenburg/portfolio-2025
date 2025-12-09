@@ -49,7 +49,7 @@ export default function Article() {
       readTime="8 min"
       category="AI Workflow"
     >
-      <div className="prose prose-gray max-w-none">
+      <div className="prose prose-invert prose-lg max-w-none">
         <p className="lead">
           I used to dread documentation. We'd write comprehensive PRDs, discovery docs, validation plans—all beautifully formatted in Notion. Then they'd sit there, forgotten, while we built the product.
         </p>
@@ -70,7 +70,7 @@ export default function Article() {
           So we built the opposite: <strong>The Hub</strong>—a living, real-time portfolio dashboard that surfaces every idea, every doc, every validation result, and every verdict in one searchable interface.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <div className="flex">
             <div className="ml-3">
               <p className="text-sm text-blue-700 font-medium mb-2">PULL QUOTE</p>
@@ -172,16 +172,16 @@ export default function Article() {
           <strong>No Decision Support</strong>: Docs don't surface verdicts. You have to read the full discovery doc to find the Opportunity Score, read the validation plan to find the thresholds, read the results doc to see if they passed.
         </p>
 
-        <div className="bg-gray-50 p-6 rounded-lg my-8">
-          <div className="text-sm text-gray-600 mb-2">STATS CARD</div>
+        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
+          <div className="text-sm text-slate-300 mb-2">STATS CARD</div>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="text-2xl font-bold text-gray-900">30 minutes</div>
-              <div className="text-sm text-gray-600">Time to get portfolio overview (before Hub)</div>
+              <div className="text-2xl font-bold text-white">30 minutes</div>
+              <div className="text-sm text-slate-300">Time to get portfolio overview (before Hub)</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-blue-600">10 seconds</div>
-              <div className="text-sm text-gray-600">Time to get portfolio overview (with Hub)</div>
+              <div className="text-sm text-slate-300">Time to get portfolio overview (with Hub)</div>
             </div>
           </div>
         </div>
@@ -224,8 +224,8 @@ export default function Article() {
           Picture this: you open the Hub and immediately see project cards laid out like this:
         </p>
 
-        <div className="bg-gray-50 p-6 rounded-lg font-mono text-sm my-6">
-          <div className="border border-gray-300 p-4 mb-4">
+        <div className="bg-slate-800/30 p-6 rounded-lg font-mono text-sm my-6">
+          <div className="border border-slate-600 p-4 mb-4">
             <div className="font-bold">🎯 Habit Tracker for Remote Workers</div>
             <div className="mt-2">Score: 32/40 ⭐⭐⭐⭐⭐ Top Priority</div>
             <div>Verdict: ✅ PROCEED</div>
@@ -255,7 +255,7 @@ export default function Article() {
           At the top, filter buttons let you focus:
         </p>
 
-        <div className="bg-gray-50 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-slate-800/30 p-4 rounded-lg font-mono text-sm my-6">
           [All Ideas: 16]  [⭐ Top Priority: 7]<br/>
           [✅ Proceed: 7]  [⚠️ Pivot: 9]
         </div>
@@ -363,9 +363,9 @@ export default function Article() {
         </div>
 
         <div className="bg-green-50 border border-green-200 p-6 rounded-lg my-8">
-          <div className="font-bold text-green-800 mb-3">COMPARISON: After Hub</div>
+          <div className="font-bold text-green-300 mb-3">COMPARISON: After Hub</div>
           
-          <p className="text-green-800 mb-4"><strong>Portfolio management:</strong></p>
+          <p className="text-green-300 mb-4"><strong>Portfolio management:</strong></p>
           <ul className="text-green-700 mb-4">
             <li>"How many ideas do we have?" → Look at Hub: 16 total</li>
             <li>"Which ones are high priority?" → Filter by "Top Priority": 7 ideas</li>
@@ -373,14 +373,14 @@ export default function Article() {
           </ul>
           <p className="text-green-700 font-medium">Time: 10 seconds to get portfolio overview</p>
 
-          <p className="text-green-800 mb-2 mt-4"><strong>Decision making:</strong></p>
+          <p className="text-green-300 mb-2 mt-4"><strong>Decision making:</strong></p>
           <ul className="text-green-700 mb-4">
             <li>Kill/greenlight meetings start with Hub open (everyone sees same data)</li>
             <li>Click a project card to review docs on the spot</li>
             <li>Verdicts are visible—no need to re-litigate</li>
           </ul>
 
-          <p className="text-green-800 mb-2"><strong>Onboarding:</strong></p>
+          <p className="text-green-300 mb-2"><strong>Onboarding:</strong></p>
           <ul className="text-green-700">
             <li>New team member: "Where do I start?"</li>
             <li>Answer: "Open the Hub. Top priority ideas are in green. Click one, read the docs."</li>
@@ -388,9 +388,9 @@ export default function Article() {
           </ul>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg my-8">
+        <div className="bg-cyan-900/20 border border-cyan-700/50 p-6 rounded-lg my-8">
           <div className="text-sm text-blue-600 mb-2">ROI CALCULATION</div>
-          <div className="text-blue-800">
+          <div className="text-cyan-300">
             <strong>~25 hours/month saved</strong> on portfolio management + faster decisions + better onboarding = <strong>~$5,000/month value</strong> (for a 3-person team)
           </div>
         </div>
@@ -487,7 +487,7 @@ export default function Article() {
           Our structure:
         </p>
 
-        <div className="bg-gray-50 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-slate-800/30 p-4 rounded-lg font-mono text-sm my-6">
           /docs<br/>
           &nbsp;&nbsp;/portfolio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PORTFOLIO-SCORE-&lt;slug&gt;.md)<br/>
           &nbsp;&nbsp;/discovery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NICHE-INTEL-&lt;slug&gt;.md, PAIN-SIGNALS-&lt;slug&gt;.md)<br/>
@@ -651,7 +651,7 @@ export default function Article() {
           Here's what I've learned building the Hub: <strong>documentation should drive decisions, not gather dust</strong>.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <div className="flex">
             <div className="ml-3">
               <p className="text-sm text-blue-700 font-medium mb-2">PULL QUOTE</p>
@@ -711,19 +711,19 @@ export default function Article() {
           What if your documentation did the same?
         </p>
 
-        <div className="bg-gray-50 border border-gray-200 p-8 rounded-lg my-12">
+        <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-lg my-12">
           <div className="text-center">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            <h3 className="text-lg font-semibold text-white mb-4">
               Want to Build Your Own Hub?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-slate-300 mb-6">
               I'm working on open-sourcing our Hub implementation. Get notified when it's ready, plus get access to our documentation templates and naming conventions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium">
                 Get the Hub Template
               </button>
-              <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium">
+              <button className="bg-slate-800/50 hover:bg-gray-200 text-slate-200 px-6 py-3 rounded-lg font-medium">
                 View Live Demo
               </button>
             </div>

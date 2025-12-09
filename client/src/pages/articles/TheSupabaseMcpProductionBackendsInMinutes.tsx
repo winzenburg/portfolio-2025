@@ -45,8 +45,8 @@ export default function SupabaseMCPArticle() {
             <article className="max-w-4xl mx-auto px-4 py-8">
       {/* Header */}
       <header className="mb-12">
-        <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">
+        <div className="flex items-center gap-4 text-sm text-slate-300 mb-4">
+          <span className="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full font-medium">
             AI Workflow
           </span>
           <div className="flex items-center gap-1">
@@ -59,11 +59,11 @@ export default function SupabaseMCPArticle() {
           </div>
         </div>
         
-        <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
           The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks
         </h1>
         
-        <p className="text-xl text-gray-700 leading-relaxed">
+        <p className="text-xl text-slate-200 leading-relaxed">
           I spent six months refactoring backends that should've been designed right the first time. 
           Here's how we turned backend design from trial-and-error into a repeatable blueprint.
         </p>
@@ -103,9 +103,9 @@ export default function SupabaseMCPArticle() {
           engineers now follows a blueprint.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <p className="text-blue-900 font-medium mb-2">[PULL QUOTE]</p>
-          <p className="text-blue-800 italic">
+          <p className="text-cyan-300 italic">
             "Backend design went from trial-and-error to repeatable blueprint. 
             We ship production-grade architectures in hours, not weeks."
           </p>
@@ -164,7 +164,7 @@ export default function SupabaseMCPArticle() {
           Googling "RLS policy examples" at 2 AM, I ask:
         </p>
 
-        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-gray-700">
+        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-slate-200">
           "Design a PostgreSQL schema for a habit tracking app with personal workspaces 
           and team organizations. Include RLS policies, analytics tables, and audit logging."
         </blockquote>
@@ -195,7 +195,7 @@ export default function SupabaseMCPArticle() {
 
         <p>Here's what this looks like for a habit tracker:</p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`## Tenancy Model
 
@@ -220,7 +220,7 @@ export default function SupabaseMCPArticle() {
           Every other table references these.
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`CREATE TABLE organizations (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -249,7 +249,7 @@ CREATE INDEX idx_organizations_slug ON organizations(slug);`}</code>
           plus appropriate indexes. No exceptions. Here's what that looks like for habits:
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`CREATE TABLE habits (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -280,7 +280,7 @@ CREATE INDEX idx_habits_org ON habits(organization_id);`}</code>
           from day one:
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`CREATE TABLE events (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -310,7 +310,7 @@ CREATE INDEX idx_habits_org ON habits(organization_id);`}</code>
 
         <p>Our pattern is simple: users can only see data for organizations they're members of.</p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`ALTER TABLE habits ENABLE ROW LEVEL SECURITY;
 
@@ -340,7 +340,7 @@ USING (
           handle the privileged operations:
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`// create-personal-org Edge Function
 export default async (req: Request) => {
@@ -374,7 +374,7 @@ export default async (req: Request) => {
           and angry users.
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`-- Consent flags in profiles
 ALTER TABLE profiles ADD COLUMN consent_for_personalization BOOLEAN DEFAULT FALSE;
@@ -399,7 +399,7 @@ CREATE TABLE audit_logs (
 
         <p><strong>Step 1: Query Supabase MCP</strong></p>
 
-        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-gray-700">
+        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-slate-200">
           "Design a Supabase backend for a habit tracking app. Users should have personal 
           workspaces and be able to join team organizations. Include tables for habits, 
           check-ins, and streaks. Add analytics tables for events and sessions. 
@@ -409,10 +409,10 @@ CREATE TABLE audit_logs (
         <p><strong>Time to generate complete spec: 2 minutes.</strong></p>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-green-800 mb-3">[COMPARISON - Before vs After]</h3>
+          <h3 className="text-lg font-semibold text-green-300 mb-3">[COMPARISON - Before vs After]</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-green-800 mb-2">Before MCP Blueprint</h4>
+              <h4 className="font-semibold text-green-300 mb-2">Before MCP Blueprint</h4>
               <ul className="text-sm text-green-700 space-y-1">
                 <li>• 2-3 weeks of backend design</li>
                 <li>• Multiple schema refactors</li>
@@ -422,7 +422,7 @@ CREATE TABLE audit_logs (
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-green-800 mb-2">After MCP Blueprint</h4>
+              <h4 className="font-semibold text-green-300 mb-2">After MCP Blueprint</h4>
               <ul className="text-sm text-green-700 space-y-1">
                 <li>• 4 hours total backend setup</li>
                 <li>• Schema designed correctly upfront</li>
@@ -448,7 +448,7 @@ CREATE TABLE audit_logs (
           Using the schema from our spec, we created versioned migration files:
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`supabase/migrations/
 ├── 20250101_initial_schema.sql
@@ -459,7 +459,7 @@ CREATE TABLE audit_logs (
 
         <p><strong>Step 4: Deploy and Test (2 hours)</strong></p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-6">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`# Run migrations locally
 supabase db reset
@@ -485,8 +485,8 @@ supabase db push`}</code>
 
         <p>Since adopting the Supabase MCP blueprint six months ago:</p>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-blue-800 mb-4">Time Savings per Backend</h3>
+        <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
+          <h3 className="text-lg font-semibold text-cyan-300 mb-4">Time Savings per Backend</h3>
           <ul className="text-blue-700 space-y-2">
             <li>• <strong>Backend design</strong>: 2-4 hours (was 1-2 weeks)</li>
             <li>• <strong>RLS policy creation</strong>: 30 minutes (was 1-2 days + bugs)</li>
@@ -496,7 +496,7 @@ supabase db push`}</code>
         </div>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-green-800 mb-4">Quality Improvements</h3>
+          <h3 className="text-lg font-semibold text-green-300 mb-4">Quality Improvements</h3>
           <ul className="text-green-700 space-y-2">
             <li>• <strong>Zero RLS data leaks</strong> in production (was 2-3 per quarter)</li>
             <li>• <strong>Zero migration rollbacks</strong> (was 1-2 per quarter)</li>
@@ -552,7 +552,7 @@ supabase db push`}</code>
 
         <p><strong>3. For your next backend, query MCP</strong>:</p>
 
-        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-gray-700">
+        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-slate-200">
           "Design a Supabase backend for [your app description]. [Your tenancy requirements]. 
           Include analytics tables. Enforce RLS. Provide Edge Function recommendations."
         </blockquote>
@@ -576,11 +576,11 @@ supabase db push`}</code>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 mt-16 border border-blue-100">
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+      <div className="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-xl p-8 mt-16 border border-blue-100">
+        <h3 className="text-2xl font-bold text-white mb-4">
           Ready to Build Production-Grade Backends?
         </h3>
-        <p className="text-gray-700 mb-6">
+        <p className="text-slate-200 mb-6">
           Get our complete Supabase MCP blueprint template and start shipping backends 
           that scale from day one.
         </p>
@@ -588,7 +588,7 @@ supabase db push`}</code>
           <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
             Download the Blueprint
           </button>
-          <button className="border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+          <button className="border border-slate-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-800/30 transition-colors">
             View Example Implementation
           </button>
         </div>

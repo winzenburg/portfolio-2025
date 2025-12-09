@@ -46,24 +46,24 @@ export default function Article() {
       {/* Hero Section */}
       <div className="mb-12">
         <div className="mb-8">
-          <span className="inline-block rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 mb-4">
+          <span className="inline-block rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-cyan-300 mb-4">
             AI Workflow
           </span>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold tracking-tight text-white mb-4">
             Building a Product Creation Engine: What Actually Works (And What Doesn't)
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-slate-300 leading-relaxed">
             After a year of building systematic product validation, here's what we learned the hard way—AI orchestration, dual filters, and why documentation isn't boring.
           </p>
         </div>
         
-        <div className="flex items-center space-x-4 text-sm text-gray-500 mb-8">
+        <div className="flex items-center space-x-4 text-sm text-slate-400 mb-8">
           <time>November 28, 2024</time>
           <span>•</span>
           <span>7 min read</span>
         </div>
 
-        <div className="relative aspect-video mb-8 overflow-hidden rounded-lg bg-gray-100">
+        <div className="relative aspect-video mb-8 overflow-hidden rounded-lg bg-slate-800/50">
           <div className="absolute inset-0 flex items-center justify-center text-gray-400">
             [Hero Image: Dashboard showing multiple product ideas in validation pipeline]
           </div>
@@ -72,7 +72,7 @@ export default function Article() {
 
       {/* Article Content */}
       <div className="prose prose-lg max-w-none">
-        <p className="text-xl text-gray-700 font-medium mb-8">
+        <p className="text-xl text-slate-200 font-medium mb-8">
           Last Tuesday, I watched a startup founder spend three hours explaining why their "revolutionary" idea was going to change everything. Two weeks later? Dead on arrival.
         </p>
 
@@ -96,7 +96,7 @@ export default function Article() {
           Let me walk you through what we've learned. The frameworks that actually work, the expensive mistakes we made so you don't have to, and why AI orchestration might be the unlock you didn't know you needed.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
           What Actually Works: The Four Pillars
         </h2>
 
@@ -104,7 +104,7 @@ export default function Article() {
           After testing dozens of approaches (and failing spectacularly at most of them), we've landed on four components that consistently deliver results. Think of these as the load-bearing walls of our product creation system.
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           1. Dual-Filter Validation (Or: Why Single Checkpoints Are a Trap)
         </h3>
 
@@ -124,9 +124,9 @@ export default function Article() {
           This is where our dual-filter approach comes in. We validate for two completely different things:
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
           <h4 className="font-semibold text-blue-900 mb-2">The Heat Filter</h4>
-          <p className="text-blue-800 mb-4">
+          <p className="text-cyan-300 mb-4">
             Does a tribe of real humans urgently want this problem solved?
           </p>
           <p className="text-sm text-blue-700">
@@ -136,7 +136,7 @@ export default function Article() {
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
           <h4 className="font-semibold text-green-900 mb-2">The Durability Filter</h4>
-          <p className="text-green-800 mb-4">
+          <p className="text-green-300 mb-4">
             Will this problem still matter (and generate revenue) 12-36 months from now?
           </p>
           <p className="text-sm text-green-700">
@@ -152,11 +152,11 @@ export default function Article() {
           Real talk: Most ideas that feel "hot" right now are actually just trend-riding. The dual filter helps us separate compounding niches from cash-flow micro-bets.
         </p>
 
-        <blockquote className="border-l-4 border-gray-300 pl-6 italic text-gray-700 my-8">
+        <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
           [PULL QUOTE] "The question he didn't ask: 'Will they still want this in 18 months?'"
         </blockquote>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           2. AI Orchestration (Not Just Better Prompting)
         </h3>
 
@@ -191,7 +191,7 @@ export default function Article() {
           Result: We've cut our validation time from 6 weeks to 6 days, with better quality outputs than our manual process ever produced.
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           3. Portfolio Approach (Because All-In Bets Are for Casinos)
         </h3>
 
@@ -211,8 +211,8 @@ export default function Article() {
           Now we maintain a portfolio of 8-12 ideas at various stages. It's not about hedging our bets—it's about making smarter decisions:
         </p>
 
-        <div className="bg-gray-50 p-6 rounded-lg my-8">
-          <h4 className="font-semibold text-gray-900 mb-4">Portfolio Management in Action</h4>
+        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
+          <h4 className="font-semibold text-white mb-4">Portfolio Management in Action</h4>
           <div className="space-y-3">
             <div><span className="font-medium">Kill Fast:</span> 67% of ideas get terminated within 30 days</div>
             <div><span className="font-medium">Expected Value Scoring:</span> Ideas ranked on 12-month revenue potential</div>
@@ -228,7 +228,7 @@ export default function Article() {
           <em>[STATS CARD: 8-12 active ideas, 67% killed within 30 days, 2-3 reach development stage]</em>
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           4. Documentation as a Feature (Not a Chore)
         </h3>
 
@@ -255,11 +255,11 @@ export default function Article() {
           Six months ago, I was evaluating a new market niche. Instead of starting from scratch, I pulled up three similar analyses from our documentation system. Spotted patterns I would have missed. Avoided mistakes I'd made before. Saved probably 20 hours of research.
         </p>
 
-        <blockquote className="border-l-4 border-gray-300 pl-6 italic text-gray-700 my-8">
+        <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
           [PULL QUOTE] "Documentation isn't just record-keeping—it's compound learning."
         </blockquote>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
           What Doesn't Work: Expensive Lessons
         </h2>
 
@@ -267,7 +267,7 @@ export default function Article() {
           Now for the fun part—all the ways we screwed this up before getting it right. Consider this your shortcut to our hard-earned wisdom.
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           The Ad-Hoc AI Disaster
         </h3>
 
@@ -283,7 +283,7 @@ export default function Article() {
           Lesson learned: AI without orchestration is like having a brilliant intern with ADHD and no supervision.
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           The Single-Idea Trap
         </h3>
 
@@ -303,7 +303,7 @@ export default function Article() {
           Having multiple ideas doesn't make you uncommitted—it makes you honest.
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           The Build-First Temptation
         </h3>
 
@@ -319,7 +319,7 @@ export default function Article() {
           The antidote? Force yourself to validate market fit before writing a single line of production code. Mock-ups and prototypes? Sure. Full features? Not until you've proven demand.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
           The Core Principles That Actually Matter
         </h2>
 
@@ -328,16 +328,16 @@ export default function Article() {
         </p>
 
         <div className="space-y-8 my-10">
-          <div className="bg-blue-50 p-6 rounded-lg">
+          <div className="bg-cyan-900/20 p-6 rounded-lg">
             <h4 className="font-semibold text-blue-900 mb-2">Validation is Continuous, Not Binary</h4>
-            <p className="text-blue-800">
+            <p className="text-cyan-300">
               Don't think "validated" vs "not validated." Think "current confidence level" and keep testing assumptions.
             </p>
           </div>
 
           <div className="bg-green-50 p-6 rounded-lg">
             <h4 className="font-semibold text-green-900 mb-2">AI Needs Systems, Not Just Prompts</h4>
-            <p className="text-green-800">
+            <p className="text-green-300">
               Individual AI tools are powerful. Orchestrated AI systems are transformative.
             </p>
           </div>
@@ -357,7 +357,7 @@ export default function Article() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
           What's Next: The Roadmap
         </h2>
 
@@ -377,7 +377,7 @@ export default function Article() {
           <strong>Community-driven features:</strong> What if other product creators could contribute to and benefit from our validation system? Still early, but fascinating possibilities.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
           The Real Takeaway
         </h2>
 
@@ -393,7 +393,7 @@ export default function Article() {
           Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing really well.
         </p>
 
-        <blockquote className="border-l-4 border-gray-300 pl-6 italic text-gray-700 my-8">
+        <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
           [PULL QUOTE] "Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing really well."
         </blockquote>
 
@@ -407,12 +407,12 @@ export default function Article() {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-16 border-t border-gray-200 pt-8">
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+      <div className="mt-16 border-t border-slate-700 pt-8">
+        <div className="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-lg p-8">
+          <h3 className="text-2xl font-bold text-white mb-4">
             Want the Complete Framework?
           </h3>
-          <p className="text-gray-700 mb-6">
+          <p className="text-slate-200 mb-6">
             Get the detailed validation templates, AI orchestration playbooks, and portfolio management tools we use in our product creation engine.
           </p>
           <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
@@ -422,7 +422,7 @@ export default function Article() {
       </div>
 
       {/* Navigation */}
-      <nav className="mt-12 pt-8 border-t border-gray-200 flex justify-between">
+      <nav className="mt-12 pt-8 border-t border-slate-700 flex justify-between">
         <a href="/articles" className="text-blue-600 hover:text-blue-700 font-medium">
           ← Back to Articles
         </a>

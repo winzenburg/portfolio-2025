@@ -45,30 +45,30 @@ export default function AiOrchestrationWorkflow() {
             <article className="max-w-4xl mx-auto px-4 py-8">
       {/* Article Header */}
       <header className="mb-12">
-        <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AI Workflow</span>
+        <div className="flex items-center gap-4 text-sm text-slate-300 mb-4">
+          <span className="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full">AI Workflow</span>
           <span>7 min read</span>
           <span>November 28, 2024</span>
         </div>
         
-        <h1 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-4xl font-bold text-white mb-6 leading-tight">
           The AI Orchestra: How I Connected Multiple AI Tools Into a Systematic Workflow
         </h1>
         
-        <p className="text-xl text-gray-600 leading-relaxed">
+        <p className="text-xl text-slate-300 leading-relaxed">
           Most founders use AI tools like islands. I built bridges between them—and the results blew my mind.
         </p>
         
         {/* Hero Image Placeholder */}
-        <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8 text-center">
+        <div className="mt-8 bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-lg p-8 text-center">
           <div className="text-4xl mb-4">🎼</div>
-          <p className="text-gray-600">AI tools working in harmony, not isolation</p>
+          <p className="text-slate-300">AI tools working in harmony, not isolation</p>
         </div>
       </header>
 
       {/* Article Content */}
       <div className="prose prose-lg max-w-none">
-        <p className="text-xl leading-relaxed text-gray-700 mb-8">
+        <p className="text-xl leading-relaxed text-slate-200 mb-8">
           Last month, I spent three days trying to create a comprehensive product discovery document. ChatGPT gave me ideas. Manus provided market research. Claude polished my writing. But here's the thing—they were all working in silos, and I was playing human copy-paste between them.
         </p>
 
@@ -86,7 +86,7 @@ export default function AiOrchestrationWorkflow() {
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Lightbulb Moment</h2>
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Lightbulb Moment</h2>
 
         <p>
           Picture this: You're conducting a symphony. Each musician is incredibly talented on their own, but the magic happens when they play together in perfect harmony. That's exactly what I realized was missing from my AI workflow.
@@ -100,21 +100,21 @@ export default function AiOrchestrationWorkflow() {
           So I decided to build what I'm calling "The AI Orchestra"—a systematic workflow where each AI tool has a specific role, clear handoffs, and quality gates between each step.
         </p>
 
-        <div className="bg-blue-50 rounded-lg p-6 my-8">
+        <div className="bg-cyan-900/20 rounded-lg p-6 my-8">
           <h4 className="text-lg font-semibold text-blue-900 mb-4">[STATS CARD] The Results</h4>
           <div className="grid grid-cols-2 gap-4 text-center">
             <div>
               <div className="text-2xl font-bold text-blue-600">70%</div>
-              <div className="text-sm text-blue-800">Faster discovery process</div>
+              <div className="text-sm text-cyan-300">Faster discovery process</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-blue-600">100%</div>
-              <div className="text-sm text-blue-800">Auditable with citations</div>
+              <div className="text-sm text-cyan-300">Auditable with citations</div>
             </div>
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Orchestra in Action</h2>
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Orchestra in Action</h2>
 
         <p>
           Let me walk you through exactly how this works with a real example. Last week, I needed to validate a new SaaS idea: an enterprise-grade design system for scaling startups.
@@ -124,7 +124,7 @@ export default function AiOrchestrationWorkflow() {
           Here's the thing though—instead of bouncing between tools randomly, I followed my orchestrated workflow:
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Movement 1: Manus Sets the Stage</h3>
+        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Movement 1: Manus Sets the Stage</h3>
 
         <p>
           First up: Manus.im. This tool is my research powerhouse. I prompted it to generate a comprehensive discovery pack for the design system product, and it delivered:
@@ -146,7 +146,7 @@ export default function AiOrchestrationWorkflow() {
           Real talk: I used to take AI outputs at face value. Now? Everything gets sourced.
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Movement 2: ChatGPT Adds Structure</h3>
+        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Movement 2: ChatGPT Adds Structure</h3>
 
         <p>
           Next, I fed the raw Manus output to ChatGPT with a specific role: refine and synthesize. No more generic "make this better" prompts. I gave it four clear tasks:
@@ -163,8 +163,8 @@ export default function AiOrchestrationWorkflow() {
           The result? A beautifully structured analysis that revealed the top three pain points (inconsistent branding, engineering time waste, scaling challenges) and identified the key opportunity: a design system that "just works" without heavy customization.
         </p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-8">
-          <h4 className="text-lg font-semibold text-gray-900 mb-4">[COMPARISON] Before vs. After Orchestration</h4>
+        <div className="bg-slate-800/30 rounded-lg p-6 my-8">
+          <h4 className="text-lg font-semibold text-white mb-4">[COMPARISON] Before vs. After Orchestration</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h5 className="font-medium text-red-600 mb-2">❌ Old Way (Chaotic)</h5>
@@ -189,7 +189,7 @@ export default function AiOrchestrationWorkflow() {
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Movement 3: Claude Provides Polish</h3>
+        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Movement 3: Claude Provides Polish</h3>
 
         <p>
           Here's where I add an optional layer of depth. Claude gets the ChatGPT-refined output and provides editorial polish—think of it as the conductor fine-tuning the performance.
@@ -199,7 +199,7 @@ export default function AiOrchestrationWorkflow() {
           Claude caught something ChatGPT missed: the emotional job wasn't just "reduce design debt anxiety"—it was "project a professional image to investors and customers." That insight changed everything about how I positioned the product.
         </p>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Movement 4: Cursor Agents Create the Final Documents</h3>
+        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Movement 4: Cursor Agents Create the Final Documents</h3>
 
         <p>
           The finale: Cursor agents transform all the refined insights into structured discovery documents. Four specialized agents each handle a specific deliverable:
@@ -222,7 +222,7 @@ export default function AiOrchestrationWorkflow() {
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Secret Sauce: Quality Gates</h2>
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Secret Sauce: Quality Gates</h2>
 
         <p>
           Here's what most people get wrong about AI orchestration: they think it's just about connecting APIs. But the real breakthrough comes from building quality gates between each step.
@@ -246,7 +246,7 @@ export default function AiOrchestrationWorkflow() {
           No more garbage in, garbage out.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Why This Matters More Than You Think</h2>
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">Why This Matters More Than You Think</h2>
 
         <p>
           Look, I get it. Building an orchestrated AI workflow sounds like overengineering. But here's the thing—we're at an inflection point.
@@ -270,7 +270,7 @@ export default function AiOrchestrationWorkflow() {
           </ol>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Hard Parts (Because Nothing's Perfect)</h2>
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Hard Parts (Because Nothing's Perfect)</h2>
 
         <p>
           Real talk: building this system wasn't all smooth sailing. The biggest challenges I hit:
@@ -292,7 +292,7 @@ export default function AiOrchestrationWorkflow() {
           But honestly? These are good problems to have. They mean you're building something systematic rather than playing with toys.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">What This Means for You</h2>
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">What This Means for You</h2>
 
         <p>
           Here's my prediction: within 18 months, every serious product team will have some form of AI orchestration. The teams that start now will have a massive head start.
@@ -314,13 +314,13 @@ export default function AiOrchestrationWorkflow() {
           The goal isn't perfection—it's systematic improvement over ad-hoc chaos.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-lg font-medium text-blue-800 mb-0">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+          <p className="text-lg font-medium text-cyan-300 mb-0">
             [PULL QUOTE] "The future belongs to teams that orchestrate AI tools, not just use them."
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Bottom Line</h2>
+        <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Bottom Line</h2>
 
         <p>
           AI orchestration isn't about replacing human judgment—it's about enhancing it with systematic, auditable processes. When you connect AI tools with clear roles, quality gates, and proper handoffs, something magical happens: the whole becomes greater than the sum of its parts.
@@ -368,10 +368,10 @@ export default function AiOrchestrationWorkflow() {
       </div>
 
       {/* Article Footer */}
-      <footer className="mt-12 pt-8 border-t border-gray-200">
+      <footer className="mt-12 pt-8 border-t border-slate-700">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <span className="text-gray-600">Share this article:</span>
+            <span className="text-slate-300">Share this article:</span>
             <button className="text-blue-600 hover:text-blue-700">LinkedIn</button>
             <button className="text-blue-600 hover:text-blue-700">Twitter</button>
           </div>

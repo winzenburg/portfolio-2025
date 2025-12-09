@@ -49,8 +49,8 @@ export default function KillGreenlightRitual() {
       category="AI Workflow"
       description="Most founders can't kill ideas because of sunk costs. Here's how I learned to make tough decisions systematically, not emotionally—and why it might be the most important skill you develop."
     >
-      <div className="prose prose-gray max-w-none">
-        <p className="text-xl text-gray-600 mb-8">
+      <div className="prose prose-invert prose-lg max-w-none">
+        <p className="text-xl text-slate-300 mb-8">
           I'll never forget the moment I finally killed my "revolutionary AI-powered meal planner."
         </p>
 
@@ -90,7 +90,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-800 font-medium mb-2">The Breakthrough Realization:</p>
+          <p className="text-green-300 font-medium mb-2">The Breakthrough Realization:</p>
           <p className="text-green-700">
             The meal planner would have consumed six more months and failed anyway. The habit tracker succeeded because I started it instead of doubling down on mediocrity.
           </p>
@@ -128,7 +128,7 @@ export default function KillGreenlightRitual() {
           Here's what finally clicked for me: <strong>past time is gone regardless.</strong> The question isn't "was it worth three months?" The question is "is it worth the <em>next</em> three months?"
         </p>
 
-        <div className="bg-gray-50 p-6 rounded-lg my-8">
+        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
           <p className="font-medium mb-4">Real Example from My Portfolio:</p>
           <p className="mb-4">
             I'd built 60% of an MVP for a project management tool. Validation was weak—users were lukewarm at best. But I kept thinking, "I just need to finish the last 40% and then I'll know for sure."
@@ -136,7 +136,7 @@ export default function KillGreenlightRitual() {
           <p className="mb-2">
             The rational question: Do I spend three more months finishing something users don't want, or three months starting something they desperately need?
           </p>
-          <p className="text-gray-600">
+          <p className="text-slate-300">
             I chose option A the first time. Learned my lesson the expensive way.
           </p>
         </div>
@@ -200,8 +200,8 @@ export default function KillGreenlightRitual() {
           Always choose the option with higher EV, regardless of past investment. This sounds obvious, but it's incredibly hard to do when you've got three months invested in something.
         </p>
 
-        <div className="bg-blue-50 p-6 rounded-lg my-8">
-          <p className="font-medium text-blue-800 mb-4">[STATS CARD] Expected Value in Action:</p>
+        <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
+          <p className="font-medium text-cyan-300 mb-4">[STATS CARD] Expected Value in Action:</p>
           <div className="space-y-3 text-blue-700">
             <div>
               <strong>Idea A (current meal planner):</strong><br />
@@ -211,7 +211,7 @@ export default function KillGreenlightRitual() {
               <strong>Idea B (new habit tracker):</strong><br />
               30% chance of $200K/year = $60K EV, requires 6 months
             </div>
-            <div className="pt-2 border-t border-blue-200">
+            <div className="pt-2 border-t border-cyan-700/50">
               <strong>Decision:</strong> Kill A, start B. B has 6x higher EV.
             </div>
           </div>
@@ -308,8 +308,8 @@ export default function KillGreenlightRitual() {
           Let me show you how this played out in my actual review last week:
         </p>
 
-        <div className="bg-gray-50 p-6 rounded-lg my-8">
-          <h4 className="font-semibold text-gray-800 mb-4">Active Idea 1: Habit Tracker (Validation Phase)</h4>
+        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
+          <h4 className="font-semibold text-slate-100 mb-4">Active Idea 1: Habit Tracker (Validation Phase)</h4>
           
           <p className="mb-3"><strong>Status:</strong></p>
           <ul className="mb-4 space-y-1">
@@ -323,12 +323,12 @@ export default function KillGreenlightRitual() {
           <p className="mb-4 italic">"Validation passed. Users are paying. Feedback is enthusiastic. This is a no-brainer."</p>
 
           <div className="bg-green-100 p-3 rounded border-l-4 border-green-400">
-            <p className="text-green-800 font-medium">Decision: GREENLIGHT → Move to build phase</p>
+            <p className="text-green-300 font-medium">Decision: GREENLIGHT → Move to build phase</p>
           </div>
         </div>
 
-        <div className="bg-gray-50 p-6 rounded-lg my-8">
-          <h4 className="font-semibold text-gray-800 mb-4">Active Idea 2: AI-Powered Meal Planner (Validation Phase)</h4>
+        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
+          <h4 className="font-semibold text-slate-100 mb-4">Active Idea 2: AI-Powered Meal Planner (Validation Phase)</h4>
           
           <p className="mb-3"><strong>Status:</strong></p>
           <ul className="mb-4 space-y-1">
@@ -368,7 +368,7 @@ export default function KillGreenlightRitual() {
           The Hub changed everything because it makes the data visible and up-to-date automatically:
         </p>
 
-        <div className="bg-gray-100 p-6 rounded-lg font-mono text-sm my-8">
+        <div className="bg-slate-800/50 p-6 rounded-lg font-mono text-sm my-8">
           <div className="mb-4 font-sans font-semibold">Friday Review Dashboard:</div>
           <div className="space-y-2">
             <div>📊 Habit Tracker (Score: 32/40 ⭐⭐⭐⭐⭐)</div>
@@ -457,10 +457,10 @@ export default function KillGreenlightRitual() {
           Since implementing weekly kill/greenlight reviews, here's what's happened to my portfolio:
         </p>
 
-        <div className="bg-blue-50 p-6 rounded-lg my-8">
+        <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-blue-800 mb-3">Portfolio Health</h4>
+              <h4 className="font-semibold text-cyan-300 mb-3">Portfolio Health</h4>
               <ul className="text-blue-700 space-y-1">
                 <li>Started: 23 ideas (many mediocre)</li>
                 <li>Killed immediately: 6 (score &lt; 20)</li>
@@ -471,7 +471,7 @@ export default function KillGreenlightRitual() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-blue-800 mb-3">Business Impact</h4>
+              <h4 className="font-semibold text-cyan-300 mb-3">Business Impact</h4>
               <ul className="text-blue-700 space-y-1">
                 <li><strong>Time saved:</strong> ~44 months of wasted effort avoided</li>
                 <li><strong>Success rate:</strong> 75% (vs. 10% industry average)</li>
@@ -528,7 +528,7 @@ export default function KillGreenlightRitual() {
           When you kill an idea, write <em>why</em> in your project docs:
         </p>
 
-        <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm my-8">
+        <div className="bg-slate-800/50 p-4 rounded-lg font-mono text-sm my-8">
           <div className="font-sans font-medium mb-2">Example Kill Documentation:</div>
           <div className="whitespace-pre-wrap">{`### Verdict: ❌ **KILL**
 
@@ -594,7 +594,7 @@ Date: 2025-12-02`}</div>
         </p>
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-800 font-medium mb-2">[PULL QUOTE] The Killer Insight:</p>
+          <p className="text-green-300 font-medium mb-2">[PULL QUOTE] The Killer Insight:</p>
           <p className="text-green-700">
             Killing bad ideas isn't about admitting failure—it's about protecting your ability to recognize and execute on exceptional opportunities.
           </p>
@@ -608,7 +608,7 @@ Date: 2025-12-02`}</div>
           What if you could kill bad ideas confidently and focus all your energy on the ones that actually matter? That's not just portfolio management—that's how you build something that lasts.
         </p>
 
-        <div className="mt-12 p-6 bg-gray-50 rounded-lg">
+        <div className="mt-12 p-6 bg-slate-800/30 rounded-lg">
           <h3 className="text-lg font-semibold mb-4">Want the Kill/Greenlight Framework?</h3>
           <p className="mb-4">
             I've documented the exact process, criteria, and templates I use for weekly portfolio reviews. 

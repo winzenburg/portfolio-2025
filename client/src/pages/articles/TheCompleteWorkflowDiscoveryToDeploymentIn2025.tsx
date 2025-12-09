@@ -69,9 +69,9 @@ export default function CompleteWorkflowPost() {
             So I built what I wish I'd had three years ago: a fully systematic SaaS creation workflow that transforms ideas into validated, defensible products with predictable outcomes. Not a framework I'm "planning to implement"—our production system, running right now, managing 16+ product ideas at various stages.
           </p>
 
-          <div className="bg-blue-50 p-6 rounded-lg my-8">
+          <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
             <h3 className="text-lg font-semibold mb-4 text-blue-900">The System at a Glance</h3>
-            <ul className="space-y-2 text-blue-800">
+            <ul className="space-y-2 text-cyan-300">
               <li><strong>25 specialized AI agents</strong> coordinated by a single orchestrator</li>
               <li><strong>8 mandatory quality gates</strong> that ideas must pass through</li>
               <li><strong>150+ rules</strong> organized into a four-tier taxonomy</li>
@@ -311,7 +311,7 @@ export default function CompleteWorkflowPost() {
             No UI design, no code, no marketing assets until the brand system is documented. This prevents the "design by committee" problems that plague most startups.
           </p>
 
-          <div className="bg-gray-50 p-6 rounded-lg my-8">
+          <div className="bg-slate-800/30 p-6 rounded-lg my-8">
             <h4 className="font-semibold mb-3">[COMPARISON] Before vs. After Brand System</h4>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -541,9 +541,9 @@ export default function CompleteWorkflowPost() {
             The most creative people I know use the most systematic processes. Because systems free your brain to focus on the interesting problems instead of remembering what step comes next.
           </p>
 
-          <div className="bg-blue-50 p-6 rounded-lg my-8">
+          <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
             <h3 className="text-lg font-semibold mb-3 text-blue-900">[PULL QUOTE]</h3>
-            <p className="text-lg italic text-blue-800">
+            <p className="text-lg italic text-cyan-300">
               "What if every product you built had a 75% success rate instead of 10%? That's the promise of systematic product creation."
             </p>
           </div>

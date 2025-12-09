@@ -357,7 +357,7 @@ export default function MVPStrategy() {
               <h3 className="text-2xl font-bold text-white mb-4">Building an MVP That Sells Itself?</h3>
               <p className="text-slate-300 mb-6">I've helped teams launch products that achieve product-market fit faster. Let's discuss your MVP strategy and go-to-market approach.</p>
               <Link href="/contact">
-                <a className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+                <a className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
                   Schedule a Strategy Call →
                 </a>
               </Link>

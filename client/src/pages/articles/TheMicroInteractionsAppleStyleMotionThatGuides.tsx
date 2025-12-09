@@ -48,30 +48,30 @@ export default function MicroInteractionsArticle() {
         <div className="mb-12">
           <div className="aspect-video bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg mb-6 flex items-center justify-center">
             <div className="text-center">
-              <div className="w-16 h-16 bg-white rounded-2xl shadow-lg mx-auto mb-4 flex items-center justify-center">
-                <div className="w-8 h-8 bg-blue-500 rounded-lg animate-pulse"></div>
+              <div className="w-16 h-16 bg-slate-900 rounded-2xl shadow-lg mx-auto mb-4 flex items-center justify-center">
+                <div className="w-8 h-8 bg-cyan-900/200 rounded-lg animate-pulse"></div>
               </div>
-              <p className="text-gray-600 font-medium">Subtle animations that actually work</p>
+              <p className="text-slate-300 font-medium">Subtle animations that actually work</p>
             </div>
           </div>
         </div>
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
+        <h1 className="text-4xl font-bold text-white mb-6">
           The Micro-Interactions Apple Gets Right (And Why Yours Probably Don't)
         </h1>
 
-        <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+        <p className="text-xl text-slate-300 mb-8 leading-relaxed">
           I spent two years reverse-engineering why Apple's animations feel so good. Turns out, it's not magic—it's a systematic approach to motion that guides without annoying. Here's the playbook.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
-          <p className="text-blue-800 font-medium mb-2">The TL;DR</p>
+        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 mb-8">
+          <p className="text-cyan-300 font-medium mb-2">The TL;DR</p>
           <p className="text-blue-700">
             Most animations either feel stiff (no motion) or overwhelming (too much motion). Apple found the sweet spot: subtle, purposeful micro-interactions that feel invisible but guide users perfectly. I'll show you exactly how to design and implement them.
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           The Day I Realized My Animations Were Terrible
         </h2>
 
@@ -99,14 +99,14 @@ export default function MicroInteractionsArticle() {
           What I discovered changed how I think about motion design entirely.
         </p>
 
-        <div className="bg-gray-50 p-6 rounded-lg my-8">
-          <p className="font-semibold text-gray-900 mb-2">[PULL QUOTE]</p>
-          <p className="text-lg text-gray-700 italic">
+        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
+          <p className="font-semibold text-white mb-2">[PULL QUOTE]</p>
+          <p className="text-lg text-slate-200 italic">
             "Bad animations make users notice the interface. Great animations make users notice their progress."
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           Why Most Animations Fail (The Three Deadly Sins)
         </h2>
 
@@ -114,7 +114,7 @@ export default function MicroInteractionsArticle() {
           After auditing hundreds of interfaces, I've found that bad animations usually commit one of three sins:
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Sin #1: Animation for Animation's Sake
         </h3>
 
@@ -130,7 +130,7 @@ export default function MicroInteractionsArticle() {
           Real talk: If you can't explain why an animation exists in one sentence, delete it.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Sin #2: Overly Long Durations
         </h3>
 
@@ -148,7 +148,7 @@ export default function MicroInteractionsArticle() {
           </p>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Sin #3: No Reduced-Motion Fallback
         </h3>
 
@@ -164,7 +164,7 @@ export default function MicroInteractionsArticle() {
           Now every animation we ship has a `prefers-reduced-motion` fallback. Non-negotiable.
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           Apple's Secret: The Five Motion Principles
         </h2>
 
@@ -172,7 +172,7 @@ export default function MicroInteractionsArticle() {
           After reverse-engineering hundreds of Apple animations (yes, I'm that nerdy), I found they follow five consistent principles:
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Principle 1: Subtlety First
         </h3>
 
@@ -187,13 +187,13 @@ export default function MicroInteractionsArticle() {
         <div className="bg-green-50 p-6 rounded-lg my-8">
           <p className="font-semibold text-green-900 mb-2">[STATS CARD]</p>
           <div className="space-y-2">
-            <p className="text-green-800"><strong>Apple scale transforms:</strong> 1 → 1.02 to 1.15</p>
-            <p className="text-green-800"><strong>Most other apps:</strong> 1 → 1.2 to 1.5</p>
-            <p className="text-green-800"><strong>The sweet spot:</strong> 1 → 1.02 for buttons, 1.05 for cards</p>
+            <p className="text-green-300"><strong>Apple scale transforms:</strong> 1 → 1.02 to 1.15</p>
+            <p className="text-green-300"><strong>Most other apps:</strong> 1 → 1.2 to 1.5</p>
+            <p className="text-green-300"><strong>The sweet spot:</strong> 1 → 1.02 for buttons, 1.05 for cards</p>
           </div>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Principle 2: Short Durations (150-250ms Rule)
         </h3>
 
@@ -209,7 +209,7 @@ export default function MicroInteractionsArticle() {
           Anything longer and users start tapping impatiently. The animation stops being feedback and starts being an obstacle.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Principle 3: Refined Easing (Ease-In-Out is King)
         </h3>
 
@@ -221,12 +221,12 @@ export default function MicroInteractionsArticle() {
           Why? It mimics natural motion. Objects in the real world don't start and stop instantly—they accelerate and decelerate. Linear easing feels robotic. Ease-in-out feels organic.
         </p>
 
-        <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm my-6">
-          <p className="text-gray-600 mb-2">/* Apple's go-to easing */</p>
+        <div className="bg-slate-800/50 p-4 rounded-lg font-mono text-sm my-6">
+          <p className="text-slate-300 mb-2">/* Apple's go-to easing */</p>
           <p>transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);</p>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Principle 4: Motion with Purpose
         </h3>
 
@@ -245,7 +245,7 @@ export default function MicroInteractionsArticle() {
           If your animation doesn't answer one of these, question whether you need it.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Principle 5: Accessibility First
         </h3>
 
@@ -257,7 +257,7 @@ export default function MicroInteractionsArticle() {
           It's not just about compliance—it's about building for everyone. When we implemented proper reduced-motion fallbacks, our accessibility score jumped to 100% WCAG 2.2 AA compliance.
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           The Practical Playbook: Six Micro-Interactions That Actually Work
         </h2>
 
@@ -265,13 +265,13 @@ export default function MicroInteractionsArticle() {
           Enough theory. Here are the six micro-interactions we use everywhere, with the exact specs that work:
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           1. Button Hover (The Foundation)
         </h3>
 
-        <div className="bg-blue-50 p-6 rounded-lg my-6">
+        <div className="bg-cyan-900/20 p-6 rounded-lg my-6">
           <p className="font-semibold text-blue-900 mb-3">The Specs:</p>
-          <ul className="space-y-1 text-blue-800">
+          <ul className="space-y-1 text-cyan-300">
             <li><strong>Trigger:</strong> Mouse enters button</li>
             <li><strong>Purpose:</strong> Confirm clickability, emphasize primary action</li>
             <li><strong>Motion:</strong> Scale 1→1.02, shadow 2px→4px, 200ms ease-in-out</li>
@@ -283,7 +283,7 @@ export default function MicroInteractionsArticle() {
           This is our bread and butter. Subtle enough that users don't consciously notice, clear enough that their brain registers feedback.
         </p>
 
-        <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-slate-800/50 p-4 rounded-lg font-mono text-sm my-6">
           <pre>{`.btn-primary {
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -299,7 +299,7 @@ export default function MicroInteractionsArticle() {
 }`}</pre>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           2. Form Validation (Success State)
         </h3>
 
@@ -309,7 +309,7 @@ export default function MicroInteractionsArticle() {
 
         <div className="bg-green-50 p-6 rounded-lg my-6">
           <p className="font-semibold text-green-900 mb-3">The Specs:</p>
-          <ul className="space-y-1 text-green-800">
+          <ul className="space-y-1 text-green-300">
             <li><strong>Trigger:</strong> User completes required field correctly</li>
             <li><strong>Purpose:</strong> Reduce anxiety, confirm success</li>
             <li><strong>Motion:</strong> Checkmark opacity 0→1 + scale 0.8→1, 150ms</li>
@@ -317,7 +317,7 @@ export default function MicroInteractionsArticle() {
           </ul>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           3. Form Validation (Error State)
         </h3>
 
@@ -339,7 +339,7 @@ export default function MicroInteractionsArticle() {
           </ul>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           4. Toast Notifications (The Attention-Getter)
         </h3>
 
@@ -351,7 +351,7 @@ export default function MicroInteractionsArticle() {
           Our solution: slide in from the top (gentle translateY), auto-dismiss after 4 seconds, fade out smoothly. Users notice them but aren't interrupted by them.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           5. Modal Open (The Spatial Connection)
         </h3>
 
@@ -363,7 +363,7 @@ export default function MicroInteractionsArticle() {
           It's a tiny detail, but it helps users understand the connection between their action and the result.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           6. Progress Indicators (The Patience-Maker)
         </h3>
 
@@ -399,7 +399,7 @@ export default function MicroInteractionsArticle() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           How to Implement This (The Step-by-Step)
         </h2>
 
@@ -407,7 +407,7 @@ export default function MicroInteractionsArticle() {
           Alright, here's how to actually implement Apple-style micro-interactions in your product:
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Step 1: Audit Your Current Animations
         </h3>
 
@@ -426,7 +426,7 @@ export default function MicroInteractionsArticle() {
           Be ruthless. I deleted 60% of our animations in the first audit. The remaining 40% worked much better.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Step 2: Define Animation Tokens
         </h3>
 
@@ -434,7 +434,7 @@ export default function MicroInteractionsArticle() {
           Add animation constants to your design system. This prevents the "should this be 200ms or 250ms?" debates:
         </p>
 
-        <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-slate-800/50 p-4 rounded-lg font-mono text-sm my-6">
           <pre>{`:root {
   --duration-fast: 150ms;
   --duration-normal: 200ms;
@@ -443,7 +443,7 @@ export default function MicroInteractionsArticle() {
 }`}</pre>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Step 3: Create the Micro-Interaction Spec
         </h3>
 
@@ -463,7 +463,7 @@ export default function MicroInteractionsArticle() {
           This spec becomes your team's reference. No more guessing about animation details.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Step 4: Implement with Reduced-Motion Fallbacks
         </h3>
 
@@ -471,7 +471,7 @@ export default function MicroInteractionsArticle() {
           Every animation needs this pattern:
         </p>
 
-        <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-slate-800/50 p-4 rounded-lg font-mono text-sm my-6">
           <pre>{`.element {
   transition: transform var(--duration-normal) var(--ease-standard);
 }
@@ -483,7 +483,7 @@ export default function MicroInteractionsArticle() {
 }`}</pre>
         </div>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Step 5: Test Everything
         </h3>
 
@@ -499,7 +499,7 @@ export default function MicroInteractionsArticle() {
           <li>• Screen readers: Ensure animations don't interfere</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           The Results (And Why This Actually Matters)
         </h2>
 
@@ -510,10 +510,10 @@ export default function MicroInteractionsArticle() {
         <div className="bg-green-50 p-6 rounded-lg my-8">
           <p className="font-semibold text-green-900 mb-2">[STATS CARD]</p>
           <div className="space-y-2">
-            <p className="text-green-800"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
-            <p className="text-green-800"><strong>Complaints about "too many animations":</strong> 0% (vs 8% before)</p>
-            <p className="text-green-800"><strong>WCAG 2.2 AA compliance:</strong> 100% (motion requirements)</p>
-            <p className="text-green-800"><strong>Perceived performance rating:</strong> Increased 18%</p>
+            <p className="text-green-300"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
+            <p className="text-green-300"><strong>Complaints about "too many animations":</strong> 0% (vs 8% before)</p>
+            <p className="text-green-300"><strong>WCAG 2.2 AA compliance:</strong> 100% (motion requirements)</p>
+            <p className="text-green-300"><strong>Perceived performance rating:</strong> Increased 18%</p>
           </div>
         </div>
 
@@ -525,7 +525,7 @@ export default function MicroInteractionsArticle() {
           More importantly: zero accessibility complaints. When you build motion right from the start, it works for everyone.
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           The Honest Trade-Offs
         </h2>
 
@@ -533,7 +533,7 @@ export default function MicroInteractionsArticle() {
           Let me be straight about the downsides:
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           It Takes Time
         </h3>
 
@@ -545,7 +545,7 @@ export default function MicroInteractionsArticle() {
           Is it worth it? For consumer products, absolutely. For internal tools? Maybe not.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Not Every Brand Should Feel Like Apple
         </h3>
 
@@ -557,7 +557,7 @@ export default function MicroInteractionsArticle() {
           The principles still apply (purpose, subtlety, accessibility), but the execution can be different.
         </p>
 
-        <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+        <h3 className="text-xl font-semibold text-white mt-8 mb-4">
           Some Users Prefer No Animation
         </h3>
 
@@ -569,7 +569,7 @@ export default function MicroInteractionsArticle() {
           Know your audience. When in doubt, make animations subtle enough to feel invisible.
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           What's Next: The Future of Micro-Interactions
         </h2>
 
@@ -588,14 +588,14 @@ export default function MicroInteractionsArticle() {
           But here's the thing: all the fancy tech in the world won't help if you don't nail the fundamentals first.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-          <p className="text-blue-800 font-medium mb-2">The Bottom Line</p>
+        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
+          <p className="text-cyan-300 font-medium mb-2">The Bottom Line</p>
           <p className="text-blue-700">
             Great micro-interactions are invisible. They guide users through your interface without drawing attention to themselves. Master subtle, purposeful motion before trying anything fancy.
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+        <h2 className="text-2xl font-bold text-white mt-12 mb-6">
           Your Next Steps
         </h2>
 
@@ -625,18 +625,18 @@ export default function MicroInteractionsArticle() {
         </p>
 
         {/* CTA Section */}
-        <div className="bg-gray-50 rounded-lg p-8 mt-12">
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className="bg-slate-800/30 rounded-lg p-8 mt-12">
+          <h3 className="text-xl font-semibold text-white mb-4">
             Want the Complete Implementation Guide?
           </h3>
-          <p className="text-gray-700 mb-6">
+          <p className="text-slate-200 mb-6">
             I've created a detailed micro-interactions spec template with code examples, animation tokens, and accessibility checklists. Everything you need to implement Apple-style motion in your product.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
               Download the Playbook
             </button>
-            <button className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+            <button className="border border-slate-600 text-slate-200 px-6 py-3 rounded-lg font-medium hover:bg-slate-800/30 transition-colors">
               View Live Examples
             </button>
           </div>

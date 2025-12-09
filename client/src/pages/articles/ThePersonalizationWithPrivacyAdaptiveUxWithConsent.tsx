@@ -50,7 +50,7 @@ export default function PersonalizationWithPrivacyArticle() {
       heroImage="/images/articles/personalization-privacy-hero.jpg"
       heroImageAlt="Split screen showing creepy vs thoughtful personalization interfaces"
     >
-      <p className="text-xl text-gray-600 mb-8">
+      <p className="text-xl text-slate-300 mb-8">
         I learned the hard way that personalization can backfire spectacularly. Here's how to make it feel like magic, not surveillance.
       </p>
 
@@ -302,24 +302,24 @@ export default function PersonalizationWithPrivacyArticle() {
         Key insight: We use activity data (what they did in our app) not identity data (who they are outside it).
       </p>
 
-      <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+      <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
         <h4 className="font-semibold text-blue-900 mb-2">[STATS CARD] Privacy-First Data Collection</h4>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
             <div className="font-semibold text-2xl text-blue-600">6</div>
-            <div className="text-blue-800">Behavioral signals tracked</div>
+            <div className="text-cyan-300">Behavioral signals tracked</div>
           </div>
           <div>
             <div className="font-semibold text-2xl text-blue-600">0</div>
-            <div className="text-blue-800">Cross-app data points</div>
+            <div className="text-cyan-300">Cross-app data points</div>
           </div>
           <div>
             <div className="font-semibold text-2xl text-blue-600">90</div>
-            <div className="text-blue-800">Days of data retention</div>
+            <div className="text-cyan-300">Days of data retention</div>
           </div>
           <div>
             <div className="font-semibold text-2xl text-blue-600">72%</div>
-            <div className="text-blue-800">Opt-in rate achieved</div>
+            <div className="text-cyan-300">Opt-in rate achieved</div>
           </div>
         </div>
       </div>
@@ -393,7 +393,7 @@ export default function PersonalizationWithPrivacyArticle() {
         We added consent flags to user profiles:
       </p>
 
-      <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-slate-800/50 p-4 rounded-lg overflow-x-auto">
         <code>{`-- Add consent tracking
 ALTER TABLE profiles ADD COLUMN consent_for_personalization BOOLEAN DEFAULT FALSE;
 ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
@@ -407,7 +407,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         Every personalization check starts with consent verification:
       </p>
 
-      <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-slate-800/50 p-4 rounded-lg overflow-x-auto">
         <code>{`async function getPersonalizedContent(userId: string) {
   const profile = await getProfile(userId);
 
@@ -432,7 +432,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         The consent interface is crystal clear:
       </p>
 
-      <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-slate-800/50 p-4 rounded-lg overflow-x-auto">
         <code>{`<Toggle
   label="Personalized content"
   description="We'll suggest habits, articles, and challenges based on your activity patterns. You can turn this off anytime."

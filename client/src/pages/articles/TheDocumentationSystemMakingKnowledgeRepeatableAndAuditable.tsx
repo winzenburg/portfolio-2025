@@ -51,7 +51,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         />
       </div>
 
-      <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+      <p className="text-xl text-slate-300 mb-8 leading-relaxed">
         Three months ago, I watched our team make the same validation mistake twice. Same market research. Same flawed assumptions. Same expensive failure. 
       </p>
 
@@ -63,7 +63,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         Here's the thing: brilliant insights are worthless if they disappear the moment someone takes vacation. I spent the next month building a documentation system that makes every decision auditable and every process repeatable. Not because I love documentation (I don't), but because I hate losing months of learning to digital amnesia.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The "One Idea, Complete Story" Rule
       </h2>
 
@@ -83,7 +83,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         Let me show you what this looks like in practice. When we explored "enterprise design system for startups" (spoiler alert: terrible idea), here's exactly what we created:
       </p>
 
-      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+      <div className="bg-slate-800/30 p-6 rounded-lg mb-8">
         <h3 className="font-semibold mb-4">Discovery Documents:</h3>
         <ul className="space-y-2 text-sm font-mono mb-6">
           <li>📄 NARRATIVE-enterprise-design-system-startups.md</li>
@@ -113,7 +113,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         "Brilliant insights are worthless if they disappear the moment someone takes vacation."
       </PullQuote>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The Knowledge Web (Or: How Everything Connects)
       </h2>
 
@@ -129,7 +129,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         For example, in that design system opportunity doc, I wrote:
       </p>
 
-      <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+      <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-4 mb-6">
         <p className="italic">
           "Based on our [LINK:/docs/discovery/NICHE-INTEL-enterprise-design-system-startups.md] analysis, we identified three key opportunities. However, the [LINK:/docs/discovery/REDTEAM-enterprise-design-system-startups.md] revealed critical flaws in our assumptions..."
         </p>
@@ -152,7 +152,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         ]}
       />
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The Real-Time Reality Check
       </h2>
 
@@ -183,7 +183,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         The magic happens during weekly reviews. Instead of everyone trying to remember what happened, we pull up the Hub and see exactly where things stand. Meetings that used to take an hour now take 15 minutes.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The Audit Trail (Because "Trust Me" Isn't a Strategy)
       </h2>
 
@@ -236,7 +236,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         }}
       />
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         How to Actually Build This (Without Losing Your Mind)
       </h2>
 
@@ -284,7 +284,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         The key is to start small and build habits before adding complexity. I tried to build the perfect system on day one and got so bogged down in features that I stopped documenting altogether.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The Uncomfortable Truths About Documentation Systems
       </h2>
 
@@ -316,7 +316,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         "The cost of good documentation is visible and annoying. The cost of bad documentation is invisible and devastating."
       </PullQuote>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         What I Wish I'd Known Starting Out
       </h2>
 
@@ -344,7 +344,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         <strong>Build in review cycles.</strong> Schedule monthly reviews of your documentation system. What's working? What's getting skipped? What needs to change? Systems evolve or they die.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The Compound Returns of Institutional Memory
       </h2>
 
@@ -364,7 +364,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         The teams that invest in systematic documentation aren't just building products—they're building institutional intelligence. And in a world where most companies lose their memory every time someone leaves, that's a genuine competitive advantage.
       </p>
 
-      <div className="bg-blue-50 p-6 rounded-lg mt-12">
+      <div className="bg-cyan-900/20 p-6 rounded-lg mt-12">
         <h3 className="text-lg font-semibold mb-4">Ready to Build Your Documentation System?</h3>
         <p className="mb-4">
           I've created templates for each document type in our system, plus a starter kit for building your own knowledge hub. No more starting from scratch.

@@ -46,7 +46,7 @@ export default function PortfolioApproachArticle() {
       {/* Article Header */}
       <header className="mb-8">
         <div className="flex items-center gap-4 mb-4">
-          <Badge variant="secondary" className="bg-blue-50 text-blue-700 hover:bg-blue-100">
+          <Badge variant="secondary" className="bg-cyan-900/20 text-blue-700 hover:bg-blue-100">
             AI Workflow
           </Badge>
           <span className="text-sm text-muted-foreground">7-9 min read</span>
@@ -93,9 +93,9 @@ export default function PortfolioApproachArticle() {
           managing a portfolio of bets.</strong> I just happened to be managing it terribly.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
           <p className="font-semibold text-blue-900 mb-2">[PULL QUOTE]</p>
-          <p className="text-blue-800 italic text-lg">
+          <p className="text-cyan-300 italic text-lg">
             "You're not building one product. You're managing a portfolio of bets. The question is: 
             are you managing it like Warren Buffett or like a guy at a casino?"
           </p>
@@ -242,7 +242,7 @@ export default function PortfolioApproachArticle() {
           My resource allocation formula is simple:
         </p>
 
-        <div className="bg-gray-50 border rounded-lg p-6 my-8">
+        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
           <div className="text-center">
             <div className="text-lg font-mono mb-2">Resource Allocation = Score² × Available Capacity</div>
             <div className="text-sm text-muted-foreground">
@@ -256,7 +256,7 @@ export default function PortfolioApproachArticle() {
           The math forces me to concentrate firepower on the highest-potential opportunities.
         </p>
 
-        <Card className="p-6 my-8 bg-blue-50 border-blue-200">
+        <Card className="p-6 my-8 bg-cyan-900/20 border-cyan-700/50">
           <h4 className="font-semibold text-blue-900 mb-3">[COMPARISON]</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -429,16 +429,16 @@ export default function PortfolioApproachArticle() {
           <Card className="p-4 border-green-200 bg-green-50">
             <div className="flex justify-between items-start mb-2">
               <h4 className="font-semibold text-green-900">AI-Powered PRD Generator</h4>
-              <Badge variant="outline" className="bg-green-100 text-green-800">35 points</Badge>
+              <Badge variant="outline" className="bg-green-900/30 text-green-300">35 points</Badge>
             </div>
             <p className="text-sm text-green-700 mb-2">Status: Active development (50% of resources)</p>
             <p className="text-sm text-green-600">Current MRR: $18K | Target: $50K by Q2</p>
           </Card>
 
-          <Card className="p-4 border-blue-200 bg-blue-50">
+          <Card className="p-4 border-cyan-700/50 bg-cyan-900/20">
             <div className="flex justify-between items-start mb-2">
               <h4 className="font-semibold text-blue-900">Competitive Analysis Automation</h4>
-              <Badge variant="outline" className="bg-blue-100 text-blue-800">28 points</Badge>
+              <Badge variant="outline" className="bg-cyan-900/30 text-cyan-300">28 points</Badge>
             </div>
             <p className="text-sm text-blue-700 mb-2">Status: Validation phase (30% of resources)</p>
             <p className="text-sm text-blue-600">Target launch: Q2 2025</p>
@@ -483,7 +483,7 @@ export default function PortfolioApproachArticle() {
           more systematic about which bets to make.
         </p>
 
-        <div className="bg-gray-50 border rounded-lg p-6 my-8">
+        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
           <h4 className="font-semibold mb-3">Your Portfolio Assignment</h4>
           <p className="mb-4">
             If you're still reading, you're probably ready to try this approach. Here's your homework:
@@ -512,7 +512,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         {/* Call to Action */}
-        <Card className="p-8 my-12 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
+        <Card className="p-8 my-12 bg-gradient-to-r from-blue-50 to-purple-50 border-cyan-700/50">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">Ready to Build Your Product Portfolio?</h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
@@ -523,7 +523,7 @@ export default function PortfolioApproachArticle() {
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                 Download Free Template
               </button>
-              <button className="text-blue-600 hover:text-blue-800 transition-colors">
+              <button className="text-blue-600 hover:text-cyan-300 transition-colors">
                 Read More Articles →
               </button>
             </div>

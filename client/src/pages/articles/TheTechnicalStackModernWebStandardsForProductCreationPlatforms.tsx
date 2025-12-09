@@ -45,7 +45,7 @@ export default function TechnicalStackModernWebStandards() {
             <article className="max-w-4xl mx-auto px-4 py-8">
       {/* Hero Section */}
       <header className="mb-12">
-        <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600 mb-4">
+        <div className="flex flex-wrap items-center gap-2 text-sm text-slate-300 mb-4">
           <span>AI Workflow</span>
           <span>•</span>
           <time>December 15, 2024</time>
@@ -57,13 +57,13 @@ export default function TechnicalStackModernWebStandards() {
           From Spreadsheet Hell to Production Gold: Building a Platform That Actually Ships
         </h1>
         
-        <p className="text-xl text-gray-600 leading-relaxed">
+        <p className="text-xl text-slate-300 leading-relaxed">
           I spent six months validating ideas with scattered Google Docs and Notion pages. Then I built a platform instead. Here's why that changes everything.
         </p>
       </header>
 
       {/* Hero Image Placeholder */}
-      <div className="w-full h-64 bg-gray-100 rounded-lg mb-12 flex items-center justify-center">
+      <div className="w-full h-64 bg-slate-800/50 rounded-lg mb-12 flex items-center justify-center">
         <span className="text-gray-400">Platform architecture visualization</span>
       </div>
 
@@ -108,8 +108,8 @@ export default function TechnicalStackModernWebStandards() {
           The kicker? I was spending more time managing my validation tools than actually validating.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-blue-800 font-medium mb-0">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+          <p className="text-cyan-300 font-medium mb-0">
             [PULL QUOTE] "I was spending more time managing my validation tools than actually validating."
           </p>
         </div>
@@ -160,7 +160,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h4 className="text-green-800 font-semibold mb-2">[STATS CARD] Next.js Impact</h4>
+          <h4 className="text-green-300 font-semibold mb-2">[STATS CARD] Next.js Impact</h4>
           <ul className="text-green-700 space-y-1 mb-0">
             <li>• 60% faster development cycles</li>
             <li>• Zero configuration for server/client separation</li>
@@ -277,8 +277,8 @@ export default function TechnicalStackModernWebStandards() {
           When I update market research, the dashboard automatically recalculates opportunity scores. When I add competitor analysis, it updates positioning recommendations. Everything flows together instead of existing in silos.
         </p>
 
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
-          <p className="text-gray-600 text-center mb-0">
+        <div className="bg-slate-800/30 border border-slate-700 rounded-lg p-6 my-8">
+          <p className="text-slate-300 text-center mb-0">
             [Dashboard screenshot placeholder - showing unified validation view]
           </p>
         </div>
@@ -300,8 +300,8 @@ export default function TechnicalStackModernWebStandards() {
           The key insight? I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-blue-800 font-medium mb-0">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+          <p className="text-cyan-300 font-medium mb-0">
             [PULL QUOTE] "I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster."
           </p>
         </div>
@@ -321,7 +321,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-          <h4 className="text-green-800 font-semibold mb-2">[STATS CARD] Platform Impact</h4>
+          <h4 className="text-green-300 font-semibold mb-2">[STATS CARD] Platform Impact</h4>
           <ul className="text-green-700 space-y-1 mb-0">
             <li>• 75% faster validation cycles</li>
             <li>• 90% reduction in data inconsistencies</li>
@@ -419,8 +419,8 @@ export default function TechnicalStackModernWebStandards() {
           The key insight? Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-blue-800 font-medium mb-0">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+          <p className="text-cyan-300 font-medium mb-0">
             [PULL QUOTE] "Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter."
           </p>
         </div>
@@ -471,8 +471,8 @@ export default function TechnicalStackModernWebStandards() {
           The trick is knowing which tool fits your ambition.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-blue-800 font-medium mb-0">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+          <p className="text-cyan-300 font-medium mb-0">
             [PULL QUOTE] "The goal isn't to build the perfect validation platform. The goal is to validate ideas faster and more effectively, then ship products that succeed."
           </p>
         </div>
@@ -484,9 +484,9 @@ export default function TechnicalStackModernWebStandards() {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-16 p-8 bg-gray-50 rounded-lg">
+      <div className="mt-16 p-8 bg-slate-800/30 rounded-lg">
         <h3 className="text-2xl font-bold mb-4">Want to build your own validation platform?</h3>
-        <p className="text-gray-600 mb-6">
+        <p className="text-slate-300 mb-6">
           I've open-sourced the core framework and written detailed implementation guides for each component of the stack.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
@@ -498,7 +498,7 @@ export default function TechnicalStackModernWebStandards() {
           </Link>
           <Link 
             href="/contact" 
-            className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-center"
+            className="px-6 py-3 border border-slate-600 text-slate-200 rounded-lg hover:bg-slate-800/30 transition-colors text-center"
           >
             Get Implementation Help
           </Link>
@@ -506,13 +506,13 @@ export default function TechnicalStackModernWebStandards() {
       </div>
 
       {/* Tags */}
-      <div className="mt-8 pt-8 border-t border-gray-200">
+      <div className="mt-8 pt-8 border-t border-slate-700">
         <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">AI Workflow</span>
-          <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Product Validation</span>
-          <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Technical Stack</span>
-          <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Next.js</span>
-          <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Platform Strategy</span>
+          <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-sm">AI Workflow</span>
+          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Product Validation</span>
+          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Technical Stack</span>
+          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Next.js</span>
+          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Platform Strategy</span>
         </div>
       </div>
 

@@ -48,18 +48,18 @@ export default function AIToolStackArticle() {
       readTime="8 min read"
       category="AI Workflow"
     >
-      <div className="prose prose-gray max-w-4xl mx-auto">
+      <div className="prose prose-invert prose-lg max-w-4xl mx-auto">
         
         {/* Hero Section */}
         <div className="mb-12">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-8 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 rounded-xl p-8 mb-8">
+            <h2 className="text-2xl font-bold text-white mb-4">
               Using multiple AI tools sounds like a nightmare. Here's how I orchestrate them with clear lanes and zero overlap.
             </h2>
           </div>
         </div>
 
-        <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+        <p className="text-xl text-slate-200 mb-8 leading-relaxed">
           Last month, I watched a startup burn through $800 in API credits in two days. Their crime? Three different team members used ChatGPT, Claude, and Perplexity to research the exact same market opportunity. Same questions, same outputs, triple the cost.
         </p>
 
@@ -80,7 +80,7 @@ export default function AIToolStackArticle() {
         <p>Now I run the opposite: <strong>a coordinated AI tool stack with clear lanes, explicit handoffs, and systematic routing</strong>.</p>
 
         <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-          <p className="text-green-800 font-semibold">
+          <p className="text-green-300 font-semibold">
             [PULL QUOTE] "Each tool has a single purpose. No overlap. Information flows through a documented pipeline."
           </p>
         </div>
@@ -154,49 +154,49 @@ export default function AIToolStackArticle() {
         <p>Each tool has a single, non-overlapping purpose. Here's my current setup:</p>
 
         <div className="overflow-x-auto my-8">
-          <table className="min-w-full bg-white border border-gray-200">
-            <thead className="bg-gray-50">
+          <table className="min-w-full bg-slate-900 border border-slate-700">
+            <thead className="bg-slate-800/30">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tool</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Primary Purpose</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Never Used For</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Tool</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Primary Purpose</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Never Used For</th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="bg-slate-900 divide-y divide-slate-700">
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Manus.im</td>
-                <td className="px-6 py-4 text-sm text-gray-900">Niche narrative research, pain mining, JTBD seeds</td>
-                <td className="px-6 py-4 text-sm text-gray-500">Final copy, code generation, image creation</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Manus.im</td>
+                <td className="px-6 py-4 text-sm text-white">Niche narrative research, pain mining, JTBD seeds</td>
+                <td className="px-6 py-4 text-sm text-slate-400">Final copy, code generation, image creation</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">ChatGPT</td>
-                <td className="px-6 py-4 text-sm text-gray-900">Rapid ideation, variant generation, clustering</td>
-                <td className="px-6 py-4 text-sm text-gray-500">Deep critique, final polish, source-of-truth synthesis</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">ChatGPT</td>
+                <td className="px-6 py-4 text-sm text-white">Rapid ideation, variant generation, clustering</td>
+                <td className="px-6 py-4 text-sm text-slate-400">Deep critique, final polish, source-of-truth synthesis</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Claude</td>
-                <td className="px-6 py-4 text-sm text-gray-900">Critical review, editorial polish, reasoning-heavy analysis</td>
-                <td className="px-6 py-4 text-sm text-gray-500">Breadth exploration, rapid iteration, batch generation</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Claude</td>
+                <td className="px-6 py-4 text-sm text-white">Critical review, editorial polish, reasoning-heavy analysis</td>
+                <td className="px-6 py-4 text-sm text-slate-400">Breadth exploration, rapid iteration, batch generation</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">ElevenLabs</td>
-                <td className="px-6 py-4 text-sm text-gray-900">Founder voice, persona voice, demo narration</td>
-                <td className="px-6 py-4 text-sm text-gray-500">Music, sound effects, background audio</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">ElevenLabs</td>
+                <td className="px-6 py-4 text-sm text-white">Founder voice, persona voice, demo narration</td>
+                <td className="px-6 py-4 text-sm text-slate-400">Music, sound effects, background audio</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Midjourney</td>
-                <td className="px-6 py-4 text-sm text-gray-900">Polished brand visuals, hero images, final assets</td>
-                <td className="px-6 py-4 text-sm text-gray-500">Rough drafts, batch generation, UI mockups</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Midjourney</td>
+                <td className="px-6 py-4 text-sm text-white">Polished brand visuals, hero images, final assets</td>
+                <td className="px-6 py-4 text-sm text-slate-400">Rough drafts, batch generation, UI mockups</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Glif</td>
-                <td className="px-6 py-4 text-sm text-gray-900">Creative batching, rapid draft generation, ad variants</td>
-                <td className="px-6 py-4 text-sm text-gray-500">Final polish, brand-defining assets, deterministic logic</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Glif</td>
+                <td className="px-6 py-4 text-sm text-white">Creative batching, rapid draft generation, ad variants</td>
+                <td className="px-6 py-4 text-sm text-slate-400">Final polish, brand-defining assets, deterministic logic</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Lindy AI</td>
-                <td className="px-6 py-4 text-sm text-gray-900">Execution automation, waitlist nurture, DM outreach</td>
-                <td className="px-6 py-4 text-sm text-gray-500">Source-of-truth docs, core product logic, CI/CD</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Lindy AI</td>
+                <td className="px-6 py-4 text-sm text-white">Execution automation, waitlist nurture, DM outreach</td>
+                <td className="px-6 py-4 text-sm text-slate-400">Source-of-truth docs, core product logic, CI/CD</td>
               </tr>
             </tbody>
           </table>
@@ -231,9 +231,9 @@ export default function AIToolStackArticle() {
           <li>Strategy assumptions (opportunity analysis, competitive positioning)</li>
         </ul>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
+        <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
           <h4 className="font-semibold text-blue-900 mb-3">ChatGPT → Claude Pipeline Example:</h4>
-          <ol className="list-decimal list-inside text-blue-800 space-y-2">
+          <ol className="list-decimal list-inside text-cyan-300 space-y-2">
             <li>ChatGPT generates 10 headline variants</li>
             <li>Human picks top 3</li>
             <li>Claude refines top 3 for tone, clarity, impact</li>
@@ -268,7 +268,7 @@ export default function AIToolStackArticle() {
 
         <p>Every tool-to-tool transition is documented. Here are my key workflows:</p>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-8">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-8">
           <h4 className="font-semibold mb-4">Discovery workflow:</h4>
           <ol className="list-decimal list-inside space-y-2">
             <li>Manus.im → Research niche, pain signals, competitors</li>
@@ -279,7 +279,7 @@ export default function AIToolStackArticle() {
           </ol>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-6 my-8">
+        <div className="bg-slate-800/30 rounded-lg p-6 my-8">
           <h4 className="font-semibold mb-4">Landing page workflow:</h4>
           <ol className="list-decimal list-inside space-y-2">
             <li>ChatGPT → Generate 10 headline variants</li>
@@ -327,9 +327,9 @@ export default function AIToolStackArticle() {
 
         <div className="bg-green-50 rounded-lg p-6 my-8">
           <h4 className="font-semibold text-green-900 mb-3">Variant generation:</h4>
-          <p className="text-green-800 mb-2"><strong>Prompt</strong>: "Generate 20 headline variants for a habit tracker targeting burned-out remote workers. Emphasize calm, non-judgmental tone."</p>
-          <p className="text-green-800 mb-2"><strong>Output</strong>: 20 headlines in 30 seconds</p>
-          <p className="text-green-800"><strong>Next</strong>: Human selects top 5 → Claude refines → Cursor saves final</p>
+          <p className="text-green-300 mb-2"><strong>Prompt</strong>: "Generate 20 headline variants for a habit tracker targeting burned-out remote workers. Emphasize calm, non-judgmental tone."</p>
+          <p className="text-green-300 mb-2"><strong>Output</strong>: 20 headlines in 30 seconds</p>
+          <p className="text-green-300"><strong>Next</strong>: Human selects top 5 → Claude refines → Cursor saves final</p>
         </div>
 
         <p><strong>Never use ChatGPT for</strong>: Critical review (use Claude), final polish (use Claude), deep reasoning (use Claude), source-of-truth synthesis (use Manus)</p>
@@ -419,16 +419,16 @@ export default function AIToolStackArticle() {
         <div className="grid md:grid-cols-2 gap-6 my-8">
           <div className="bg-green-50 border border-green-200 rounded-lg p-6">
             <h4 className="font-semibold text-green-900 mb-3">[STATS CARD] Efficiency Gains</h4>
-            <ul className="text-green-800 space-y-2">
+            <ul className="text-green-300 space-y-2">
               <li>Discovery phase: 8-12 hours (was 20-30 hours)</li>
               <li>Landing page copy: 2 hours (was 6-8 hours)</li>
               <li>Creative assets: 4 hours (was 12-15 hours)</li>
             </ul>
           </div>
           
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6">
             <h4 className="font-semibold text-blue-900 mb-3">[STATS CARD] Quality Improvements</h4>
-            <ul className="text-blue-800 space-y-2">
+            <ul className="text-cyan-300 space-y-2">
               <li>Zero conflicting outputs between tools</li>
               <li>100% of high-stakes decisions get Claude critique</li>
               <li>All insights saved to searchable markdown</li>
@@ -473,7 +473,7 @@ export default function AIToolStackArticle() {
 
         <p>For overlapping tools (like ChatGPT vs Claude), define explicit routing rules:</p>
 
-        <div className="bg-gray-100 rounded-lg p-4 my-6">
+        <div className="bg-slate-800/50 rounded-lg p-4 my-6">
           <div className="font-mono text-sm">
             <p>If [breadth/variants] → Tool A</p>
             <p>If [depth/critique] → Tool B</p>
@@ -603,7 +603,7 @@ export default function AIToolStackArticle() {
             Get my complete AI Tool Orchestration Framework—including tool lane templates, routing decision trees, 
             and cost optimization strategies.
           </p>
-          <button className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+          <button className="bg-slate-900 text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-cyan-900/20 transition-colors">
             Get the Framework →
           </button>
         </div>
