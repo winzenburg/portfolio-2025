@@ -19,11 +19,13 @@ export default function SupabaseMCPArticle() {
             </a>
           </Link>
 
-          {/* Hero Image Placeholder */}
-          <div className="mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/30">
-            <div className="aspect-video flex items-center justify-center">
-              <p className="text-slate-500 text-sm">Hero image placeholder</p>
-            </div>
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+            <img
+              src="/images/articles/supabase-mcp-hero.png"
+              alt="Supabase MCP Blueprint: Systematic Backend Design"
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Article Meta */}
@@ -575,24 +577,6 @@ supabase db push`}</code>
         </p>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-xl p-8 mt-16 border border-blue-100">
-        <h3 className="text-2xl font-bold text-white mb-4">
-          Ready to Build Production-Grade Backends?
-        </h3>
-        <p className="text-slate-200 mb-6">
-          Get our complete Supabase MCP blueprint template and start shipping backends 
-          that scale from day one.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-            Download the Blueprint
-          </button>
-          <button className="border border-slate-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-800/30 transition-colors">
-            View Example Implementation
-          </button>
-        </div>
-      </div>
     </article>
           </div>
 
