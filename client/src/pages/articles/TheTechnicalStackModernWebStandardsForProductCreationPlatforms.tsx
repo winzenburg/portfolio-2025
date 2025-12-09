@@ -501,27 +501,6 @@ export default function TechnicalStackModernWebStandards() {
 
       </div>
 
-      {/* CTA Section */}
-      <div className="mt-16 p-8 bg-slate-800/30 rounded-lg">
-        <h3 className="text-2xl font-bold mb-4">Want to build your own validation platform?</h3>
-        <p className="text-slate-300 mb-6">
-          I've open-sourced the core framework and written detailed implementation guides for each component of the stack.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Link 
-            href="/ai-workflows" 
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center"
-          >
-            Browse AI Workflows
-          </Link>
-          <Link 
-            href="/contact" 
-            className="px-6 py-3 border border-slate-600 text-slate-200 rounded-lg hover:bg-slate-800/30 transition-colors text-center"
-          >
-            Get Implementation Help
-          </Link>
-        </div>
-      </div>
 
       {/* Tags */}
       <div className="mt-8 pt-8 border-t border-slate-700">
