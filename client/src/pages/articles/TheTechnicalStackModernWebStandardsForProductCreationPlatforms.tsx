@@ -64,9 +64,18 @@ export default function TechnicalStackModernWebStandards() {
         </p>
       </header>
 
-      {/* Hero Image Placeholder */}
-      <div className="w-full h-64 bg-slate-800/50 rounded-lg mb-12 flex items-center justify-center">
-        <span className="text-gray-400">Platform architecture visualization</span>
+      {/* Platform Architecture Visualization */}
+      <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
+        <img
+          src="/images/articles/layercake.jpeg"
+          alt="Platform Architecture Visualization: Layers showing Database, API, and Frontend"
+          className="w-full h-auto"
+        />
+        <div className="p-4 text-center border-t border-slate-700/50">
+          <p className="text-sm text-slate-400 italic">
+            The Production Stack: Organized layers from data to experience.
+          </p>
+        </div>
       </div>
 
       {/* Main Content */}

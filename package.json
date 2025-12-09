@@ -24,10 +24,12 @@
     "optimize-images": "bash scripts/optimize-images.sh",
     "rewrite-article": "node scripts/rewrite-article-to-brand-voice.js",
     "batch-rewrite": "node scripts/batch-rewrite-articles.js",
-    "test-voice": "node scripts/load-voice-tone.js"
+    "test-voice": "node scripts/load-voice-tone.js",
+    "generate-images": "node scripts/generate-images.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.27.3",
+    "@google/generative-ai": "^0.24.1",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.7",
