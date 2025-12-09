@@ -26,6 +26,31 @@ import ScalingStrategy from "./pages/articles/ScalingStrategy";
 import DesignSystem4Weeks from "./pages/articles/DesignSystem4Weeks";
 import AITechStack from "./pages/articles/AITechStack";
 import DesignSystemsFail from "./pages/articles/DesignSystemsFail";
+import EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets from "./pages/articles/EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets";
+import FromManualToAutomatedHowWeUseLindyToExecuteValidation from "./pages/articles/FromManualToAutomatedHowWeUseLindyToExecuteValidation";
+import NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs from "./pages/articles/NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs";
+import TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow from "./pages/articles/TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow";
+import TheAiToolStackCoordinatingSevenAisWithoutChaos from "./pages/articles/TheAiToolStackCoordinatingSevenAisWithoutChaos";
+import TheBrandFirstValidationDesigningIdentityBeforeCode from "./pages/articles/TheBrandFirstValidationDesigningIdentityBeforeCode";
+import TheCompleteWorkflowDiscoveryToDeploymentIn2025 from "./pages/articles/TheCompleteWorkflowDiscoveryToDeploymentIn2025";
+import TheDevQualityAssistantTestPlanningBeforeCode from "./pages/articles/TheDevQualityAssistantTestPlanningBeforeCode";
+import TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable from "./pages/articles/TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable";
+import TheGamificationThatDoesntManipulateHabitLoopsDoneRight from "./pages/articles/TheGamificationThatDoesntManipulateHabitLoopsDoneRight";
+import TheHubAMetaProjectForManagingYourProductPortfolio from "./pages/articles/TheHubAMetaProjectForManagingYourProductPortfolio";
+import TheHubEvolutionFromStaticDocsToDecisionDashboard from "./pages/articles/TheHubEvolutionFromStaticDocsToDecisionDashboard";
+import TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality from "./pages/articles/TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality";
+import TheMicroInteractionsAppleStyleMotionThatGuides from "./pages/articles/TheMicroInteractionsAppleStyleMotionThatGuides";
+import TheOpenSourceVisionBuildingACommunityAroundProductCreation from "./pages/articles/TheOpenSourceVisionBuildingACommunityAroundProductCreation";
+import ThePersonalizationWithPrivacyAdaptiveUxWithConsent from "./pages/articles/ThePersonalizationWithPrivacyAdaptiveUxWithConsent";
+import ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue from "./pages/articles/ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue";
+import TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart from "./pages/articles/TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart";
+import TheResultsWhatWeVeLearnedBuildingThisSystem from "./pages/articles/TheResultsWhatWeVeLearnedBuildingThisSystem";
+import TheRuleConsolidationHowWeKept40PlusRulesManageable from "./pages/articles/TheRuleConsolidationHowWeKept40PlusRulesManageable";
+import TheRulesAndAgentsSystemMakingTheProcessRepeatable from "./pages/articles/TheRulesAndAgentsSystemMakingTheProcessRepeatable";
+import TheSecurityAndBugGateTwoTierCodeReviewForAi from "./pages/articles/TheSecurityAndBugGateTwoTierCodeReviewForAi";
+import TheSolutionADualFilterValidationFramework from "./pages/articles/TheSolutionADualFilterValidationFramework";
+import TheSupabaseMcpProductionBackendsInMinutes from "./pages/articles/TheSupabaseMcpProductionBackendsInMinutes";
+import TheTechnicalStackModernWebStandardsForProductCreationPlatforms from "./pages/articles/TheTechnicalStackModernWebStandardsForProductCreationPlatforms";
 import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
@@ -49,6 +74,31 @@ function Router() {
       <Route path="/articles/design-system-4-weeks" component={DesignSystem4Weeks} />
       <Route path="/articles/ai-tech-stack" component={AITechStack} />
       <Route path="/articles/design-systems-fail" component={DesignSystemsFail} />
+      <Route path="/articles/glif-batch-creatives" component={EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets} />
+      <Route path="/articles/lindy-automated-validation" component={FromManualToAutomatedHowWeUseLindyToExecuteValidation} />
+      <Route path="/articles/context7-live-docs" component={NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs} />
+      <Route path="/articles/ai-orchestration" component={TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow} />
+      <Route path="/articles/ai-tool-stack" component={TheAiToolStackCoordinatingSevenAisWithoutChaos} />
+      <Route path="/articles/brand-first-validation" component={TheBrandFirstValidationDesigningIdentityBeforeCode} />
+      <Route path="/articles/complete-workflow-2025" component={TheCompleteWorkflowDiscoveryToDeploymentIn2025} />
+      <Route path="/articles/dev-quality-assistant" component={TheDevQualityAssistantTestPlanningBeforeCode} />
+      <Route path="/articles/documentation-system" component={TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable} />
+      <Route path="/articles/gamification-done-right" component={TheGamificationThatDoesntManipulateHabitLoopsDoneRight} />
+      <Route path="/articles/the-hub" component={TheHubAMetaProjectForManagingYourProductPortfolio} />
+      <Route path="/articles/hub-evolution" component={TheHubEvolutionFromStaticDocsToDecisionDashboard} />
+      <Route path="/articles/kill-greenlight-ritual" component={TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality} />
+      <Route path="/articles/micro-interactions" component={TheMicroInteractionsAppleStyleMotionThatGuides} />
+      <Route path="/articles/open-source-vision" component={TheOpenSourceVisionBuildingACommunityAroundProductCreation} />
+      <Route path="/articles/personalization-privacy" component={ThePersonalizationWithPrivacyAdaptiveUxWithConsent} />
+      <Route path="/articles/portfolio-approach" component={ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue} />
+      <Route path="/articles/saas-problem" component={TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart} />
+      <Route path="/articles/system-results" component={TheResultsWhatWeVeLearnedBuildingThisSystem} />
+      <Route path="/articles/rule-consolidation" component={TheRuleConsolidationHowWeKept40PlusRulesManageable} />
+      <Route path="/articles/rules-and-agents" component={TheRulesAndAgentsSystemMakingTheProcessRepeatable} />
+      <Route path="/articles/security-bug-gate" component={TheSecurityAndBugGateTwoTierCodeReviewForAi} />
+      <Route path="/articles/dual-filter-validation" component={TheSolutionADualFilterValidationFramework} />
+      <Route path="/articles/supabase-mcp-blueprint" component={TheSupabaseMcpProductionBackendsInMinutes} />
+      <Route path="/articles/technical-stack" component={TheTechnicalStackModernWebStandardsForProductCreationPlatforms} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />
