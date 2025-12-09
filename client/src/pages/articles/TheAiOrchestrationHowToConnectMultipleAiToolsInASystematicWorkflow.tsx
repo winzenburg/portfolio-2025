@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'wouter';
 
 export default function AiOrchestrationWorkflow() {
   return (
@@ -338,7 +338,7 @@ export default function AiOrchestrationWorkflow() {
             <button className="text-blue-600 hover:text-blue-700">LinkedIn</button>
             <button className="text-blue-600 hover:text-blue-700">Twitter</button>
           </div>
-          <Link href="/articles" className="text-blue-600 hover:text-blue-700">
+          <Link to="/articles" className="text-blue-600 hover:text-blue-700">
             ← Back to Articles
           </Link>
         </div>

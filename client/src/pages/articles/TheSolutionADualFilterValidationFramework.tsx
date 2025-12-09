@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import Link from 'wouter';
 
 export default function DualFilterValidationFrameworkArticle() {
   return (
@@ -443,7 +443,7 @@ export default function DualFilterValidationFrameworkArticle() {
           <p className="text-gray-600 text-sm">
             Have a product idea you want to run through the Dual-Filter Framework? I'm always curious to 
             see how other founders apply these concepts. Feel free to 
-            <Link href="/contact" className="text-blue-600 hover:text-blue-700">reach out</Link> with 
+            <Link to="/contact" className="text-blue-600 hover:text-blue-700">reach out</Link> with 
             your results—I love hearing about validation experiments, especially the failures.
           </p>
         </div>
