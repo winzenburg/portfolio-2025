@@ -66,7 +66,7 @@ export default function MicroInteractionsArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 mb-8">
           <p className="text-cyan-300 font-medium mb-2">The TL;DR</p>
-          <p className="text-blue-700">
+          <p className="text-blue-200">
             Most animations either feel stiff (no motion) or overwhelming (too much motion). Apple found the sweet spot: subtle, purposeful micro-interactions that feel invisible but guide users perfectly. I'll show you exactly how to design and implement them.
           </p>
         </div>
@@ -142,8 +142,8 @@ export default function MicroInteractionsArticle() {
           Here's what I learned from Apple: most animations should be 150-250ms. Anything longer feels sluggish. Users perceive the interface as slow, even when the actual data loading is instant.
         </p>
 
-        <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg my-6">
-          <p className="text-yellow-800">
+        <div className="bg-yellow-900/20 border border-yellow-700/50 p-4 rounded-lg my-6">
+          <p className="text-yellow-300">
             <strong>Quick test:</strong> If you find yourself waiting for an animation to finish so you can continue working, it's too long.
           </p>
         </div>
@@ -184,7 +184,7 @@ export default function MicroInteractionsArticle() {
           Compare that to the wild scale effects I see elsewhere (1 to 1.3, 1 to 1.5). Those demand attention. Apple's whisper while others shout.
         </p>
 
-        <div className="bg-green-50 p-6 rounded-lg my-8">
+        <div className="bg-green-900/20 p-6 rounded-lg my-8">
           <p className="font-semibold text-green-900 mb-2"></p>
           <div className="space-y-2">
             <p className="text-green-300"><strong>Apple scale transforms:</strong> 1 → 1.02 to 1.15</p>
@@ -307,7 +307,7 @@ export default function MicroInteractionsArticle() {
           Nothing feels better than instant positive feedback when you complete a form field correctly. We learned this from iOS—that little checkmark appearing makes users feel confident about their progress.
         </p>
 
-        <div className="bg-green-50 p-6 rounded-lg my-6">
+        <div className="bg-green-900/20 p-6 rounded-lg my-6">
           <p className="font-semibold text-green-900 mb-3">The Specs:</p>
           <ul className="space-y-1 text-green-300">
             <li><strong>Trigger:</strong> User completes required field correctly</li>
@@ -329,9 +329,9 @@ export default function MicroInteractionsArticle() {
           Apple's approach? A gentle shake (±10px) that draws attention without feeling punishing.
         </p>
 
-        <div className="bg-red-50 p-6 rounded-lg my-6">
+        <div className="bg-red-900/20 p-6 rounded-lg my-6">
           <p className="font-semibold text-red-900 mb-3">The Specs:</p>
-          <ul className="space-y-1 text-red-800">
+          <ul className="space-y-1 text-red-300">
             <li><strong>Trigger:</strong> Form submitted with invalid field</li>
             <li><strong>Purpose:</strong> Draw attention without harsh judgment</li>
             <li><strong>Motion:</strong> Gentle shake (±10px), 300ms, border→red</li>
@@ -507,7 +507,7 @@ export default function MicroInteractionsArticle() {
           Since implementing Apple-style micro-interactions across our 300+ product portfolio, here's what happened:
         </p>
 
-        <div className="bg-green-50 p-6 rounded-lg my-8">
+        <div className="bg-green-900/20 p-6 rounded-lg my-8">
           <p className="font-semibold text-green-900 mb-2"></p>
           <div className="space-y-2">
             <p className="text-green-300"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
@@ -590,7 +590,7 @@ export default function MicroInteractionsArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
           <p className="text-cyan-300 font-medium mb-2">The Bottom Line</p>
-          <p className="text-blue-700">
+          <p className="text-blue-200">
             Great micro-interactions are invisible. They guide users through your interface without drawing attention to themselves. Master subtle, purposeful motion before trying anything fancy.
           </p>
         </div>

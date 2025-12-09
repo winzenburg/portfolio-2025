@@ -129,17 +129,17 @@ export default function Article() {
           <p className="text-cyan-300 mb-4">
             Does a tribe of real humans urgently want this problem solved?
           </p>
-          <p className="text-sm text-blue-700">
+          <p className="text-sm text-blue-200">
             We're looking for desperation, not politeness. Waitlists, community engagement, people actively seeking solutions.
           </p>
         </div>
 
-        <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
           <h4 className="font-semibold text-green-900 mb-2">The Durability Filter</h4>
           <p className="text-green-300 mb-4">
             Will this problem still matter (and generate revenue) 12-36 months from now?
           </p>
-          <p className="text-sm text-green-700">
+          <p className="text-sm text-green-200">
             Job frequency, economic buyer budget, potential for switching costs. We score ideas on future staying power.
           </p>
         </div>
@@ -335,7 +335,7 @@ export default function Article() {
             </p>
           </div>
 
-          <div className="bg-green-50 p-6 rounded-lg">
+          <div className="bg-green-900/20 p-6 rounded-lg">
             <h4 className="font-semibold text-green-900 mb-2">AI Needs Systems, Not Just Prompts</h4>
             <p className="text-green-300">
               Individual AI tools are powerful. Orchestrated AI systems are transformative.
@@ -349,9 +349,9 @@ export default function Article() {
             </p>
           </div>
 
-          <div className="bg-orange-50 p-6 rounded-lg">
+          <div className="bg-orange-900/20 p-6 rounded-lg">
             <h4 className="font-semibold text-orange-900 mb-2">Documentation Compounds Learning</h4>
-            <p className="text-orange-800">
+            <p className="text-orange-300">
               Every decision becomes input for future decisions. Your past self becomes your best consultant.
             </p>
           </div>
@@ -423,10 +423,10 @@ export default function Article() {
 
       {/* Navigation */}
       <nav className="mt-12 pt-8 border-t border-slate-700 flex justify-between">
-        <a href="/articles" className="text-blue-600 hover:text-blue-700 font-medium">
+        <a href="/articles" className="text-blue-600 hover:text-blue-200 font-medium">
           ← Back to Articles
         </a>
-        <a href="/contact" className="text-blue-600 hover:text-blue-700 font-medium">
+        <a href="/contact" className="text-blue-600 hover:text-blue-200 font-medium">
           Get in Touch →
         </a>
       </nav>

@@ -162,8 +162,8 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>The Moat & MRR Strategist</strong> is my secret weapon against commodity products. It designs defensibility strategies—network effects, data moats, switching costs—that keep competitors at bay. Because building something people want is hard enough; building something they can't easily replace is the real challenge.</p>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-800 mb-0">
+        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-yellow-300 mb-0">
             <strong>Quick tangent:</strong> I spent six months building a tool that competitors copied in three weeks. The Moat Strategist would have caught that vulnerability in the planning phase. Live and learn, right?
           </p>
         </div>
@@ -294,7 +294,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Plus, having a systematic approach means my wins are repeatable, not just lucky accidents.</p>
 
-        <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
           <p className="text-green-300 mb-0">
             <strong>Real talk:</strong> The first time through this system felt slow and over-engineered. By the third product, it felt like having superpowers. The learning curve is worth it.
           </p>

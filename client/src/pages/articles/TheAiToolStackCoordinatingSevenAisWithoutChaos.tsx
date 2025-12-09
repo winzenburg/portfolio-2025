@@ -79,7 +79,7 @@ export default function AIToolStackArticle() {
 
         <p>Now I run the opposite: <strong>a coordinated AI tool stack with clear lanes, explicit handoffs, and systematic routing</strong>.</p>
 
-        <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-green-900/20 border-l-4 border-green-400 p-6 my-8">
           <p className="text-green-300 font-semibold">
             "Each tool has a single purpose. No overlap. Information flows through a documented pipeline."
           </p>
@@ -125,8 +125,8 @@ export default function AIToolStackArticle() {
 
         <p><strong>No System of Record</strong>: Your best insights live in ChatGPT conversations from three months ago. Good luck finding them. Knowledge becomes tribal, trapped in chat logs that nobody can search.</p>
 
-        <div className="bg-red-50 border-l-4 border-red-400 p-6 my-8">
-          <p className="text-red-800">
+        <div className="bg-red-900/20 border-l-4 border-red-400 p-6 my-8">
+          <p className="text-red-300">
             <strong></strong> The real cost of chaos: I tracked my tool usage for one week. 47% of queries were duplicates across different tools. That's $200/month in wasted API credits.
           </p>
         </div>
@@ -325,7 +325,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>Workflow examples</strong>:</p>
 
-        <div className="bg-green-50 rounded-lg p-6 my-8">
+        <div className="bg-green-900/20 rounded-lg p-6 my-8">
           <h4 className="font-semibold text-green-900 mb-3">Variant generation:</h4>
           <p className="text-green-300 mb-2"><strong>Prompt</strong>: "Generate 20 headline variants for a habit tracker targeting burned-out remote workers. Emphasize calm, non-judgmental tone."</p>
           <p className="text-green-300 mb-2"><strong>Output</strong>: 20 headlines in 30 seconds</p>
@@ -342,8 +342,8 @@ export default function AIToolStackArticle() {
 
         <p>Claude is my "convergent thinking" machine. When I need depth, nuance, and critical analysis, Claude is mandatory.</p>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-800 font-semibold">
+        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-yellow-300 font-semibold">
             "Claude critique saved me from launching a fundamentally flawed pricing strategy. ChatGPT would have said it looked great."
           </p>
         </div>
@@ -417,7 +417,7 @@ export default function AIToolStackArticle() {
         <p>I've been running this coordinated system for 6 months. Here's what happened:</p>
 
         <div className="grid md:grid-cols-2 gap-6 my-8">
-          <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+          <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-6">
             <h4 className="font-semibold text-green-900 mb-3">Efficiency Gains</h4>
             <ul className="text-green-300 space-y-2">
               <li>Discovery phase: 8-12 hours (was 20-30 hours)</li>
@@ -518,8 +518,8 @@ export default function AIToolStackArticle() {
 
         <p><strong>Target</strong>: &lt;$500/month for 5-7 tool stack (reasonable for a small team or solo founder).</p>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-800">
+        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-yellow-300">
             <strong>Time investment</strong>: 10-15 hours upfront to design the system. I spent a weekend documenting tool lanes, routing rules, and handoff protocols. Best weekend I've spent this year.
           </p>
         </div>

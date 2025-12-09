@@ -161,9 +161,9 @@ export default function TechnicalStackModernWebStandards() {
           The App Router's separation between server and client components solved a problem I didn't even know I had: accidentally leaking sensitive validation data to the browser. Now, my market research stays on the server where it belongs, and my UI components focus on being, well, UI components.
         </p>
 
-        <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
+        <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-6 my-8">
           <h4 className="text-green-300 font-semibold mb-2">Next.js Impact</h4>
-          <ul className="text-green-700 space-y-1 mb-0">
+          <ul className="text-green-200 space-y-1 mb-0">
             <li>• 60% faster development cycles</li>
             <li>• Zero configuration for server/client separation</li>
             <li>• Built-in metadata management for SEO</li>
@@ -211,11 +211,11 @@ export default function TechnicalStackModernWebStandards() {
           PostgreSQL was the obvious choice for the database. It handles the complex queries I need for market analysis, scales with user growth, and has enough JSON support for the flexible data structures validation requires.
         </p>
 
-        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
-          <h4 className="text-yellow-800 font-semibold mb-2"> Before vs After Data Management</h4>
+        <div className="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-6 my-8">
+          <h4 className="text-yellow-300 font-semibold mb-2"> Before vs After Data Management</h4>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
-              <h5 className="font-semibold text-red-700 mb-2">Before: Spreadsheet Hell</h5>
+              <h5 className="font-semibold text-red-200 mb-2">Before: Spreadsheet Hell</h5>
               <ul className="text-red-600 space-y-1">
                 <li>• 12 different spreadsheets</li>
                 <li>• Manual data sync</li>
@@ -224,7 +224,7 @@ export default function TechnicalStackModernWebStandards() {
               </ul>
             </div>
             <div>
-              <h5 className="font-semibold text-green-700 mb-2">After: Unified Platform</h5>
+              <h5 className="font-semibold text-green-200 mb-2">After: Unified Platform</h5>
               <ul className="text-green-600 space-y-1">
                 <li>• Single source of truth</li>
                 <li>• Automatic data consistency</li>
@@ -322,9 +322,9 @@ export default function TechnicalStackModernWebStandards() {
           This isn't just efficiency—it's strategic. I'm de-risking the technical implementation while I'm validating the market. By the time I'm ready to build, half the technical work is already done.
         </p>
 
-        <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
+        <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-6 my-8">
           <h4 className="text-green-300 font-semibold mb-2">Platform Impact</h4>
-          <ul className="text-green-700 space-y-1 mb-0">
+          <ul className="text-green-200 space-y-1 mb-0">
             <li>• 75% faster validation cycles</li>
             <li>• 90% reduction in data inconsistencies</li>
             <li>• 60% faster time-to-market post-validation</li>

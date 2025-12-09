@@ -80,8 +80,8 @@ export default function AiOrchestrationWorkflow() {
           Turns out, there was. And once I cracked the code on AI orchestration, everything changed.
         </p>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-lg font-medium text-yellow-800 mb-0">
+        <div className="bg-yellow-900/20 border-l-4 border-yellow-400 p-6 my-8">
+          <p className="text-lg font-medium text-yellow-300 mb-0">
             "AI tools are powerful in isolation, but they're game-changers when they work together."
           </p>
         </div>
@@ -260,7 +260,7 @@ export default function AiOrchestrationWorkflow() {
           Plus, there's the accountability factor. When investors or teammates ask "How did you validate this?" I can trace every insight back to its original source. Try doing that with ad-hoc ChatGPT sessions.
         </p>
 
-        <div className="bg-green-50 rounded-lg p-6 my-8">
+        <div className="bg-green-900/20 rounded-lg p-6 my-8">
           <h4 className="text-lg font-semibold text-green-900 mb-4">💡 Quick Wins You Can Implement Today</h4>
           <ol className="text-sm space-y-2">
             <li>1. <strong>Start with citations:</strong> Make every AI tool cite its sources</li>
@@ -372,10 +372,10 @@ export default function AiOrchestrationWorkflow() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <span className="text-slate-300">Share this article:</span>
-            <button className="text-blue-600 hover:text-blue-700">LinkedIn</button>
-            <button className="text-blue-600 hover:text-blue-700">Twitter</button>
+            <button className="text-blue-600 hover:text-blue-200">LinkedIn</button>
+            <button className="text-blue-600 hover:text-blue-200">Twitter</button>
           </div>
-          <Link to="/articles" className="text-blue-600 hover:text-blue-700">
+          <Link to="/articles" className="text-blue-600 hover:text-blue-200">
             ← Back to Articles
           </Link>
         </div>
