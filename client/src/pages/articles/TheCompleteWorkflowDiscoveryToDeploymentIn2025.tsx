@@ -1,9 +1,5 @@
 
 import { allPosts } from 'contentlayer/generated';
-import { PostHero } from '@/components/blog/PostHero';
-import { PostContent } from '@/components/blog/PostContent';
-import { PostCTA } from '@/components/blog/PostCTA';
-import { PostNavigation } from '@/components/blog/PostNavigation';
 
 export default function CompleteWorkflowPost() {
   const post = {

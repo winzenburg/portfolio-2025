@@ -1,5 +1,4 @@
 
-import { ArticleLayout } from '@/components/ArticleLayout';
 
 export const metadata = {
   title: 'The Hub Evolution: From Static Docs to Decision Dashboard',

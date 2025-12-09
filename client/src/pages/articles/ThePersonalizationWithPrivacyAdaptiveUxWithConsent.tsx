@@ -1,5 +1,4 @@
 
-import { Article } from '@/components/Article'
 
 export const metadata = {
   title: 'The Creepy Line: Designing Personalization That Feels Thoughtful, Not Invasive',

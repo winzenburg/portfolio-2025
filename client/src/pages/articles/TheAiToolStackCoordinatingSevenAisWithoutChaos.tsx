@@ -1,5 +1,4 @@
 
-import { BlogPost } from '@/components/blog/BlogPost'
 
 export const metadata = {
   title: 'The AI Tool Stack: How I Coordinate 7 AIs Without Complete Chaos',

@@ -1,4 +1,3 @@
-import { ArticleLayout } from '@/components/ArticleLayout'
 
 const metadata = {
   title: "Never Ship Outdated Code: How We Use Context7 to Query Live Docs",

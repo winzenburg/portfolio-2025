@@ -1,6 +1,4 @@
 
-import { BlogPost } from '@/components/blog/BlogPost'
-import { Badge } from '@/components/ui/Badge'
 
 export default function KillGreenlightRitual() {
   return (

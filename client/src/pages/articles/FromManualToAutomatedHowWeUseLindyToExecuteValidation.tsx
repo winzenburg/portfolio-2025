@@ -1,8 +1,6 @@
 
-import { ArticleHeader } from '@/components/ui/article-header'
 import { StatsCard } from '@/components/ui/stats-card'
 import { PullQuote } from '@/components/ui/pull-quote'
-import { ComparisonTable } from '@/components/ui/comparison-table'
 
 export default function LinnyAutomationArticle() {
   return (
