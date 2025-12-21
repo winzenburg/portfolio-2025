@@ -46,7 +46,7 @@ export default function PortfolioApproachArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
             <h2>The $50K Mistake That Changed My Mind</h2>
 
         <p>

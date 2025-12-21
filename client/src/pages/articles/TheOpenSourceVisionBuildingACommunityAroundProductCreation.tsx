@@ -50,7 +50,7 @@ export default function OpenSourceVisionArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
             <p className="text-slate-300 leading-relaxed mb-6">
               Last month, I was deep in a Slack thread with my team, debugging why our validation process took three weeks when it should've taken three days. And it hit me: we're all solving the same damn problems, but we're all doing it in isolation.
             </p>

@@ -44,7 +44,7 @@ export default function DualFilterValidationFrameworkArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
             <p className="text-xl leading-relaxed text-slate-200 mb-8">
           Last year I made a $15,000 mistake. Built a product that had incredible validation—people were 
           literally DMing me asking when they could pay. Six months later? Ghost town. Churn rate through 

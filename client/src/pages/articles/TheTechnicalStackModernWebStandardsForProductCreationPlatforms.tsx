@@ -46,7 +46,7 @@ export default function TechnicalStackModernWebStandards() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0" data-article-layout="v2">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0" data-article-layout="v2">
       {/* Platform Architecture Visualization */}
       <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
         <img

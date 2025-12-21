@@ -48,7 +48,7 @@ export default function AIAugmentedWorkflow() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
             <p className="text-slate-300 leading-relaxed mb-6">
               Traditional UX design cycles take eight to twelve weeks from initial requirements to production deployment. I consistently deliver comparable enterprise-grade outcomes in two to three weeks. The quality metrics are actually higher—better accessibility scores, cleaner code, fewer bugs. And I'm maintaining this pace across multiple concurrent projects without burning out.
             </p>
