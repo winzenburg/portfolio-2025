@@ -19,11 +19,13 @@ export default function DualFilterValidationFrameworkArticle() {
             </a>
           </Link>
 
-          {/* Hero Image Placeholder */}
-          <div className="mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/30">
-            <div className="aspect-video flex items-center justify-center">
-              <p className="text-slate-500 text-sm">Hero image placeholder</p>
-            </div>
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+            <img
+              src="/images/articles/dual-filter-hero.png"
+              alt="Dual-filter validation framework: heat versus durability"
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Article Meta */}
