@@ -1,6 +1,8 @@
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, DollarSign, Shield, Target, TrendingUp, Users } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 
 export default function PortfolioApproachArticle() {
@@ -28,9 +30,9 @@ export default function PortfolioApproachArticle() {
 
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
-            <span>December 3, 2024</span>
+            <span>December 7, 2024</span>
             <span>•</span>
-            <span>9 min read</span>
+            <span>8 min read</span>
           </div>
 
           {/* Article Title */}
@@ -38,40 +40,14 @@ export default function PortfolioApproachArticle() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value
             </h1>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              You're not building one product. You're managing a portfolio of bets.
+            </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
-            <article className="max-w-4xl mx-auto px-4 py-8">
-      {/* Article Header */}
-      <header className="mb-8">
-        <div className="flex items-center gap-4 mb-4">
-          <Badge variant="secondary" className="bg-cyan-900/20 text-slate-200 hover:bg-blue-100">
-            AI Workflow
-          </Badge>
-          <span className="text-sm text-muted-foreground">7-9 min read</span>
-        </div>
-        
-        <h1 className="text-4xl font-bold tracking-tight mb-4">
-          The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value
-        </h1>
-        
-        <p className="text-xl text-muted-foreground mb-6">
-          Stop betting everything on one product idea. Here's how I learned to manage multiple bets like a VC—and why it changed everything about how I build products.
-        </p>
-
-        <div className="w-full h-64 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg flex items-center justify-center mb-8">
-          <div className="text-center">
-            <Target className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
-            <p className="text-muted-foreground">Portfolio management visualization</p>
-          </div>
-        </div>
-      </header>
-
-      {/* Article Content */}
-      <div className="prose prose-lg max-w-none">
-        
-        <h2>The $50K Mistake That Changed My Mind</h2>
+            <h2>The $50K Mistake That Changed My Mind</h2>
 
         <p>
           I used to be an "all-in" founder. You know the type—pick one product idea, pour everything into it, 
@@ -94,7 +70,6 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
-          <p className="font-semibold text-blue-900 mb-2"></p>
           <p className="text-cyan-300 italic text-lg">
             "You're not building one product. You're managing a portfolio of bets. The question is: 
             are you managing it like Warren Buffett or like a guy at a casino?"
@@ -125,7 +100,6 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <Card className="p-6 my-8 bg-slate-800/50 border-slate-700">
-          <h3 className="font-semibold text-green-900 mb-3"></h3>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <div className="text-2xl font-bold text-slate-200">5x</div>
@@ -257,7 +231,6 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <Card className="p-6 my-8 bg-cyan-900/20 border-cyan-700/50">
-          <h4 className="font-semibold text-blue-900 mb-3"></h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h5 className="font-medium text-red-200 mb-2">❌ Old Approach</h5>
@@ -529,9 +502,6 @@ export default function PortfolioApproachArticle() {
             </div>
           </div>
         </Card>
-
-      </div>
-    </article>
           </div>
 
           {/* Newsletter Signup */}

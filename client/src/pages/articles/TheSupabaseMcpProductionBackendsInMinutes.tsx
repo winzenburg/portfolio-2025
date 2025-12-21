@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
@@ -30,59 +30,29 @@ export default function SupabaseMCPArticle() {
 
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
-            <span>November 24, 2024</span>
+            <span>December 7, 2024</span>
             <span>•</span>
-            <span>7 min read</span>
+            <span>18 min read</span>
           </div>
 
           {/* Article Title */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              The Supabase MCP: Production Backends in Minutes
+              The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks
             </h1>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              I spent six months refactoring backends that should've been designed right the first time. Here's how we turned backend
+              design from trial-and-error into a repeatable blueprint.
+            </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
-            <article className="max-w-4xl mx-auto px-4 py-8">
-      {/* Header */}
-      <header className="mb-12">
-        <div className="flex items-center gap-4 text-sm text-slate-300 mb-4">
-          <span className="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full font-medium">
-            AI Workflow
-          </span>
-          <div className="flex items-center gap-1">
-            <Calendar className="w-4 h-4" />
-            <time dateTime="2025-12-02">December 2, 2025</time>
-          </div>
-          <div className="flex items-center gap-1">
-            <Clock className="w-4 h-4" />
-            <span>8 min read</span>
-          </div>
-        </div>
-        
-        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-          The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks
-        </h1>
-        
-        <p className="text-xl text-slate-200 leading-relaxed">
-          I spent six months refactoring backends that should've been designed right the first time. 
-          Here's how we turned backend design from trial-and-error into a repeatable blueprint.
-        </p>
-      </header>
-
-      {/* Hero placeholder */}
-      <div className="w-full h-64 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg mb-12 flex items-center justify-center">
-        <span className="text-white text-lg font-medium">Supabase MCP Backend Blueprint</span>
-      </div>
-
-      {/* Main content */}
-      <div className="prose prose-lg max-w-none">
-        <p>
+            <p>
           Last Tuesday, I watched a founder spend three weeks building what should've been a 
           three-hour backend setup. They'd validated demand, raised money, hired developers, 
           and then... hit the backend wall.
-        </p>
+            </p>
 
         <p>
           You know the drill. You need database schemas that won't become nightmares, 
@@ -105,13 +75,12 @@ export default function SupabaseMCPArticle() {
           engineers now follows a blueprint.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
-          <p className="text-blue-900 font-medium mb-2"></p>
-          <p className="text-cyan-300 italic">
+            <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+              <p className="text-cyan-300 italic mb-0">
             "Backend design went from trial-and-error to repeatable blueprint. 
             We ship production-grade architectures in hours, not weeks."
-          </p>
-        </div>
+              </p>
+            </div>
 
         <h2 className="text-3xl font-bold mt-12 mb-6">The Problem: Every Backend Starts the Same Way</h2>
 
@@ -132,22 +101,21 @@ export default function SupabaseMCPArticle() {
         </p>
 
         <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-cyan-400 mb-3"></h3>
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div>
-              <div className="text-2xl font-bold text-yellow-900">6 months</div>
+              <div className="text-2xl font-bold text-yellow-300">6 months</div>
               <div className="text-slate-200">Average backend refactor time</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-yellow-900">$50K+</div>
+              <div className="text-2xl font-bold text-yellow-300">$50K+</div>
               <div className="text-slate-200">Cost of major schema migrations</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-yellow-900">Zero</div>
+              <div className="text-2xl font-bold text-yellow-300">Zero</div>
               <div className="text-slate-200">RLS data leaks since using MCP</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-yellow-900">3 days</div>
+              <div className="text-2xl font-bold text-yellow-300">3 days</div>
               <div className="text-slate-200">Time saved per backend</div>
             </div>
           </div>
@@ -411,7 +379,6 @@ CREATE TABLE audit_logs (
         <p><strong>Time to generate complete spec: 2 minutes.</strong></p>
 
         <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-cyan-400 mb-3"></h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-cyan-400 mb-2">Before MCP Blueprint</h4>
@@ -535,7 +502,6 @@ supabase db push`}</code>
         </p>
 
         <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
-          <p className="text-yellow-900 font-medium mb-2"></p>
           <p className="text-cyan-400 italic">
             "The 4 hours of upfront design saves you 6 months of refactoring. 
             Every. Single. Time."
@@ -575,9 +541,6 @@ supabase db push`}</code>
           Backend design used to be trial-and-error. We turned it into a repeatable blueprint. 
           Your future self will thank you.
         </p>
-      </div>
-
-    </article>
           </div>
 
           {/* Newsletter Signup */}

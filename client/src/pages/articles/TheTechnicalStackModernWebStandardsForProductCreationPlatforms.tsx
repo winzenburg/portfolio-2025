@@ -30,9 +30,9 @@ export default function TechnicalStackModernWebStandards() {
 
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
-            <span>November 26, 2024</span>
+            <span>December 7, 2024</span>
             <span>•</span>
-            <span>9 min read</span>
+            <span>11 min read</span>
           </div>
 
           {/* Article Title */}
@@ -40,30 +40,13 @@ export default function TechnicalStackModernWebStandards() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               The Technical Stack: Modern Web Standards for Product Creation Platforms
             </h1>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.
+            </p>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
-            <article className="max-w-4xl mx-auto px-4 py-8">
-      {/* Hero Section */}
-      <header className="mb-12">
-        <div className="flex flex-wrap items-center gap-2 text-sm text-slate-300 mb-4">
-          <span>AI Workflow</span>
-          <span>•</span>
-          <time>December 15, 2024</time>
-          <span>•</span>
-          <span>8 min read</span>
-        </div>
-        
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          From Spreadsheet Hell to Production Gold: Building a Platform That Actually Ships
-        </h1>
-        
-        <p className="text-xl text-slate-300 leading-relaxed">
-          I spent six months validating ideas with scattered Google Docs and Notion pages. Then I built a platform instead. Here's why that changes everything.
-        </p>
-      </header>
-
+          <div className="prose prose-invert prose-lg max-w-none space-y-6" data-article-layout="v2">
       {/* Platform Architecture Visualization */}
       <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
         <img
@@ -79,8 +62,6 @@ export default function TechnicalStackModernWebStandards() {
       </div>
 
       {/* Main Content */}
-      <div className="prose prose-lg max-w-none">
-        
         <p className="text-lg leading-relaxed">
           Last Tuesday, I watched a brilliant founder spend three hours updating five different spreadsheets with the same market validation data. Then she lost an hour trying to remember which version had the latest competitor analysis.
         </p>
@@ -499,21 +480,16 @@ export default function TechnicalStackModernWebStandards() {
           What's your validation platform going to be?
         </p>
 
-      </div>
-
-
-      {/* Tags */}
-      <div className="mt-8 pt-8 border-t border-slate-700">
-        <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-sm">AI Workflow</span>
-          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Product Validation</span>
-          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Technical Stack</span>
-          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Next.js</span>
-          <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Platform Strategy</span>
-        </div>
-      </div>
-
-    </article>
+            {/* Tags */}
+            <div className="mt-8 pt-8 border-t border-slate-700">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-sm">AI Workflow</span>
+                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Product Validation</span>
+                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Technical Stack</span>
+                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Next.js</span>
+                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Platform Strategy</span>
+              </div>
+            </div>
           </div>
 
           {/* Newsletter Signup */}

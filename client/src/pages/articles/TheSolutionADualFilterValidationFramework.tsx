@@ -28,7 +28,7 @@ export default function DualFilterValidationFrameworkArticle() {
 
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
-            <span>November 12, 2024</span>
+            <span>December 7, 2024</span>
             <span>•</span>
             <span>8 min read</span>
           </div>
@@ -38,42 +38,18 @@ export default function DualFilterValidationFrameworkArticle() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               The Solution: A Dual-Filter Validation Framework
             </h1>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              Heat gets you in. Durability makes it a real SaaS business.
+            </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
-            <article className="max-w-4xl mx-auto px-4 py-8">
-      {/* Hero Section */}
-      <div className="mb-12">
-        <div className="flex items-center gap-4 mb-4 text-sm text-slate-300">
-          <span className="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full font-medium">
-            AI Workflow
-          </span>
-          <time dateTime="2025-11-28">November 28, 2025</time>
-          <span>7-9 min read</span>
-        </div>
-        
-        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-          The Heat Trap That's Killing Your Product Ideas
-        </h1>
-        
-        <p className="text-xl text-slate-300 leading-relaxed mb-8">
-          I watched three promising SaaS ideas die in their first year. All had heat. None had durability. 
-          Here's the framework I built to catch bad ideas before they drain your bank account.
-        </p>
-        
-        <div className="w-full h-64 bg-gradient-to-r from-orange-400 via-red-400 to-blue-500 rounded-lg flex items-center justify-center text-white text-lg font-semibold">
-          [Hero Image: Split visual showing "Hot Fire" transitioning to "Steady Flame"]
-        </div>
-      </div>
-
-      {/* Article Content */}
-      <div className="prose prose-lg max-w-none">
-        <p className="text-xl leading-relaxed text-slate-200 mb-8">
+            <p className="text-xl leading-relaxed text-slate-200 mb-8">
           Last year I made a $15,000 mistake. Built a product that had incredible validation—people were 
           literally DMing me asking when they could pay. Six months later? Ghost town. Churn rate through 
           the roof. Users who couldn't wait to get access suddenly couldn't remember why they signed up.
-        </p>
+            </p>
 
         <p>
           That's when I learned the difference between <em>heat</em> and <em>durability</em>.
@@ -88,11 +64,11 @@ export default function DualFilterValidationFrameworkArticle() {
           Durability? That's what actually pays the bills 12 months later.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
-          <p className="text-lg font-semibold text-blue-900 mb-2">
+            <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
+              <p className="text-lg font-semibold text-cyan-300 mb-0">
             "Heat gets you in. Durability makes it a real SaaS business."
-          </p>
-        </div>
+              </p>
+            </div>
 
         <p>
           Here's the thing though: most validation frameworks only test for heat. They're obsessed with 
@@ -481,12 +457,13 @@ export default function DualFilterValidationFrameworkArticle() {
           <p className="text-slate-300 text-sm">
             Have a product idea you want to run through the Dual-Filter Framework? I'm always curious to 
             see how other founders apply these concepts. Feel free to 
-            <Link to="/contact" className="text-cyan-400 hover:text-slate-200">reach out</Link> with 
+            <Link href="/contact">
+              <a className="text-cyan-400 hover:text-slate-200">reach out</a>
+            </Link>{" "}
+            with 
             your results—I love hearing about validation experiments, especially the failures.
           </p>
         </div>
-      </div>
-    </article>
           </div>
 
           {/* Newsletter Signup */}
