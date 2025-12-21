@@ -67,7 +67,7 @@ export default function ARTICLE_TEMPLATE() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             {/* NARRATIVE PROSE EXAMPLES - Replace with your content */}
 
             {/* Opening Hook - Start with a specific story or observation */}

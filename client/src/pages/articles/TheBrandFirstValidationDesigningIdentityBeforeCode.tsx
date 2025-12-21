@@ -41,7 +41,7 @@ export default function BrandFirstValidationArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <article className="max-w-4xl mx-auto px-6 py-12">
       {/* Hero Section */}
       <header className="mb-12">

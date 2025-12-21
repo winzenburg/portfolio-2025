@@ -44,7 +44,7 @@ export default function AiOrchestrationWorkflow() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <p className="text-xl leading-relaxed text-slate-200 mb-8">
           Last month, I spent three days trying to create a comprehensive product discovery document. ChatGPT gave me ideas. Manus provided market research. Claude polished my writing. But here's the thing—they were all working in silos, and I was playing human copy-paste between them.
             </p>

@@ -41,7 +41,7 @@ export default function Article() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <ArticleLayout
       title="The Hub Evolution: From Static Docs to Decision Dashboard"
       description="Most docs systems are graveyards. Here's how we built a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions."
@@ -49,7 +49,7 @@ export default function Article() {
       readTime="8 min"
       category="AI Workflow"
     >
-      <div className="prose prose-invert prose-lg max-w-none">
+      <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
         <p className="lead">
           I used to dread documentation. We'd write comprehensive PRDs, discovery docs, validation plans—all beautifully formatted in Notion. Then they'd sit there, forgotten, while we built the product.
         </p>

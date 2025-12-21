@@ -41,7 +41,7 @@ export default function MicroInteractionsArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <Article metadata={metadata}>
       <div className="prose prose-lg max-w-none">
         {/* Hero Section */}

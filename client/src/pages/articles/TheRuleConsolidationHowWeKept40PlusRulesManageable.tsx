@@ -47,7 +47,7 @@ export default function RuleConsolidation() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <p className="text-slate-300 leading-relaxed mb-6">
               Picture this: 3 AM, launch week, and I'm staring at our multi-agent system trying to figure out why it's giving contradictory advice about ChatGPT integration. Plot twist: we had <em>five different rules</em> covering the same thing, scattered across different folders, with different approaches.
             </p>

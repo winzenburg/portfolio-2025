@@ -49,7 +49,7 @@ export default function AudienceFirstGoToMarket() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <p className="text-slate-300 leading-relaxed mb-6">
               Silence. Maybe a few polite comments from friends. A handful of sign-ups that peter out within days. The product sits there, beautifully crafted and essentially invisible. The problem wasn't product quality. It was the fundamental absence of an audience ready to receive it.
             </p>

@@ -47,7 +47,7 @@ export default function GameficationThatDoesntManipulate() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <p className="text-slate-300 leading-relaxed mb-6">
               Picture this: It's 11:47 PM, and I'm lying in bed when my phone buzzes. "Your 47-day streak is about to end! Quick, log something!"
             </p>

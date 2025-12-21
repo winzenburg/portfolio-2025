@@ -47,7 +47,7 @@ export default function LinnyAutomationArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <p className="text-slate-300 leading-relaxed mb-6">
               Here's the thing about validation plans: they're like workout routines. Everyone's got a beautiful one sitting in their docs folder. But execution? That's where dreams go to die.
             </p>

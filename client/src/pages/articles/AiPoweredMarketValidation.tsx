@@ -47,7 +47,7 @@ export default function AIMarketValidation() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
             <p className="text-slate-300 leading-relaxed mb-6">
               The pattern repeats itself across startups and enterprise product teams alike. Talented people executing well on ideas that fail because they never validated whether anyone actually wanted what they were building. Not in theory, not in focus groups, but in reality—with their wallets and their time.
             </p>
