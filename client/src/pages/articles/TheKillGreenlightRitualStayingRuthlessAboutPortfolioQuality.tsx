@@ -41,7 +41,7 @@ export default function KillGreenlightRitual() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
             <BlogPost
       title="The Kill/Greenlight Ritual: Staying Ruthless About Portfolio Quality"
       date="2025-12-02"
@@ -49,7 +49,7 @@ export default function KillGreenlightRitual() {
       category="AI Workflow"
       description="Most founders can't kill ideas because of sunk costs. Here's how I learned to make tough decisions systematically, not emotionally—and why it might be the most important skill you develop."
     >
-      <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+      <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
         <p className="text-xl text-slate-300 mb-8">
           I'll never forget the moment I finally killed my "revolutionary AI-powered meal planner."
         </p>

@@ -47,7 +47,7 @@ export default function DesignSystem4Weeks() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
             <p className="text-slate-300 leading-relaxed mb-6">
               When I tell people I built an enterprise design system in four weeks, I usually get the same reaction: skeptical silence followed by questions about what I cut. They assume there's a trade-off—that moving this fast means sacrificing quality, skipping documentation, or delivering something incomplete.
             </p>

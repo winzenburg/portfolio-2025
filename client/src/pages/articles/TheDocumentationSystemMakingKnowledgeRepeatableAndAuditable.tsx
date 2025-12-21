@@ -41,7 +41,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
             <ArticleLayout meta={metadata}>
       <div className="relative">
         <img 

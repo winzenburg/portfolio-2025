@@ -41,7 +41,7 @@ export default function AIToolStackArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
             <BlogPost
       title="The AI Tool Stack: How I Coordinate 7 AIs Without Complete Chaos"
       publishDate="December 2, 2024"

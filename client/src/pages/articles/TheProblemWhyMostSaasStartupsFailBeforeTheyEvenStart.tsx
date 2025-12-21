@@ -51,7 +51,7 @@ export default function SaaSStartupFailures() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
             <p className="text-slate-300 leading-relaxed mb-6">
               Here's the thing that keeps me up at night: <strong className="text-white">90% of SaaS startups fail</strong>, and most never even had a fighting chance. Not because they had bad ideas—but because they had a bad process.
             </p>

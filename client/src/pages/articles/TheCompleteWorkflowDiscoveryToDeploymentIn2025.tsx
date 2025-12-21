@@ -41,7 +41,7 @@ export default function CompleteWorkflowPost() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
             <article className="max-w-4xl mx-auto">
       <PostHero
         title={post.title}

@@ -58,7 +58,7 @@ export default function TheHubArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none prose-p:mb-6">
+          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0">
             <p className="text-slate-300 leading-relaxed mb-6">
               Here's what nobody tells you about being a serial product creator: the ideas multiply faster than rabbits, and keeping track of them all becomes a full-time job. I had spreadsheets tracking spreadsheets, Notion pages for organizing other Notion pages, and a growing sense that I was spending more time managing my portfolio than actually building products.
             </p>
