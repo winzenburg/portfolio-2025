@@ -1,0 +1,26 @@
+---
+description: "Writing/voice guidance for articles and site copy (avoid AI tells without becoming repetitive)"
+globs:
+  - "client/src/pages/articles/**/*.tsx"
+  - "cultivate-source/**/*.md"
+  - "content-library/**/*.md"
+  - "Winzenburg Voice and Tone/**/*"
+alwaysApply: true
+---
+
+# Writing / Voice (Human, Specific, Not Templated)
+
+## What to do
+- Be **specific** (dates, durations, numbers, concrete examples).
+- Keep a **human rhythm** (short lines, occasional fragments, parenthetical asides).
+- Include **earned opinions** and clear trade-offs.
+
+## What NOT to do
+- Don’t reuse the same hook across multiple articles (e.g., avoid repeating “Picture this:”).
+- Don’t lean on the same transitions in every piece (“Plot twist”, “Spoiler alert”, “Here’s the thing…”)—use sparingly, rotate, or drop entirely.
+- Avoid generic AI openings:
+  - “In today’s world…”, “It’s no secret that…”, “With the rise of…”
+
+## Practical rule of thumb
+If a phrase appears in more than one recent article, rewrite it into a fresh, natural equivalent.
+

@@ -1,0 +1,38 @@
+---
+description: "Strict TypeScript + React quality gates (no any)"
+globs:
+  - "client/src/**/*.{ts,tsx}"
+  - "server/**/*.{ts,tsx}"
+  - "shared/**/*.{ts,tsx}"
+alwaysApply: true
+---
+
+# TypeScript Quality Gates (Strict)
+
+## Hard rules
+- ✅ Prefer precise types and small helper type guards.
+- ❌ Never introduce `any` (explicit or implicit).
+- ✅ When parsing external/unknown data, define a domain type + type guard, then narrow.
+
+## Pattern: narrowing `unknown`
+```ts
+type TodoItem = { id: string; text: string; completed: boolean };
+
+export function isTodoItem(value: unknown): value is TodoItem {
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    "id" in value &&
+    "text" in value &&
+    "completed" in value &&
+    typeof (value as { id: unknown }).id === "string" &&
+    typeof (value as { text: unknown }).text === "string" &&
+    typeof (value as { completed: unknown }).completed === "boolean"
+  );
+}
+```
+
+## React conventions
+- Prefer small components, explicit props types, and early returns.
+- Avoid “clever” generic abstractions unless they reduce repetition materially.
+

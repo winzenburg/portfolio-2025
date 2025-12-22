@@ -16,12 +16,14 @@ AI-generated content has telltale signs:
 
 ### 1. Use YOUR Recurring Phrases
 
-Inject these liberally throughout content:
-- "Here's the thing though..."
+Use a few signature phrases, but **don't over-repeat them across multiple articles**:
+- Prefer **0–1 signature phrases per article**.
+- Rotate phrasing so openings don’t feel templated (avoid repeating the same hook like "Picture this:" across posts).
+
+Examples (use sparingly):
 - "Real talk:"
-- "Plot twist:"
-- "Spoiler alert:"
 - "Let me back up for a second..."
+- "Not gonna lie:"
 
 **Why it works**: Real humans use the same phrases repeatedly. It's a signature.
 

@@ -1,0 +1,39 @@
+---
+description: "Project-wide north star + how to use Cursor rules/agents"
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Orchestration (Project North Star)
+
+## What this repo is
+Ryan Winzenburg’s portfolio site (React + Vite + TypeScript) with long-form articles. Optimize for:
+- high-quality, readable UI in dark theme
+- strict TypeScript correctness
+- consistent article layouts (spacing, lists, blockquotes, images)
+- fast iteration without regressions
+
+## Environment + commands
+- **Package manager**: pnpm
+- **Dev**: `pnpm dev`
+- **Typecheck**: `pnpm check`
+- **Build**: `pnpm build`
+
+## How to work in this repo
+- Prefer **small, surgical changes** with lints/typecheck kept green.
+- When changing UI, **match existing patterns** (Tailwind v4 utilities, dark theme).
+- When changing article pages, update both:
+  - the article page file in `client/src/pages/articles/`
+  - the article card metadata in `client/src/pages/Articles.tsx` when hero/excerpt/reading time changes
+
+## Quality gates (hard)
+- **No `any`** (explicit or implicit). If data is `unknown`, define a type + type guard.
+- **No leftover `console.log`** in production code.
+- **All `<img>` must have descriptive `alt`** (empty alt only when truly decorative).
+- **API calls**: include error handling; don’t silently swallow failures.
+
+## Style + content guardrails
+- Tailwind is **v4**. Don’t apply v2/v3 config patterns.
+- Avoid “template-y” writing across articles (don’t reuse the same hook/transition phrases repeatedly).
+

@@ -1,0 +1,31 @@
+---
+description: "Canonical article layout + spacing + images"
+globs:
+  - "client/src/pages/articles/**/*.tsx"
+  - "client/src/pages/Articles.tsx"
+  - "client/public/images/articles/*"
+alwaysApply: true
+---
+
+# Articles: Layout, Spacing, Images
+
+## Canonical structure
+- One outer `<article className="pt-24 pb-16">` wrapper for the page.
+- One **article body wrapper** with `prose prose-invert prose-lg max-w-none`.
+- Avoid nested `prose` wrappers unless there is a strong reason.
+
+## Canonical article body spacing
+Use descendant selectors so nested content gets spacing:
+- Paragraphs: `[&_p]:mb-6 [&_p:last-child]:mb-0`
+- Blockquotes: `[&_blockquote]:my-8 [&_blockquote:last-child]:mb-0`
+- Lists: `[&_ul]:my-6 [&_ol]:my-6 [&_li]:my-2` + explicit `list-*` + `pl-*`
+
+## Hero images
+- Put hero images in `client/public/images/articles/`.
+- Use descriptive `alt` text.
+- Add the same hero path to the article card entry in `client/src/pages/Articles.tsx`.
+
+## Cache-busting guideline
+If an updated image doesn’t appear in production:
+- Prefer renaming the file (`*-v2.png`) and updating references rather than trying to “force refresh”.
+

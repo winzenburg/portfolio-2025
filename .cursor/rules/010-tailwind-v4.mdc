@@ -1,0 +1,33 @@
+---
+description: "Tailwind CSS v4 rules for this project"
+globs:
+  - "client/**/*.{ts,tsx,css,html}"
+  - "postcss.config.*"
+  - "tailwind.config.*"
+alwaysApply: true
+---
+
+# Tailwind CSS v4 (Required)
+
+## Ground rules
+- Assume **Tailwind CSS v4** for all examples and edits.
+- Prefer Tailwind v4 docs behavior when there’s conflict.
+- Don’t introduce legacy Tailwind plugin patterns “because it worked in v3”.
+
+## PostCSS plugin (v4 style)
+PostCSS config should use:
+- `@tailwindcss/postcss`
+
+Example:
+```js
+// postcss.config.mjs or postcss.config.js
+export default {
+  plugins: ["@tailwindcss/postcss"],
+};
+```
+
+## Typography / prose
+- Keep article body styling predictable.
+- When you need consistent spacing inside `prose`, prefer **descendant selectors** like:
+  - `[&_p]:mb-6`, `[&_blockquote]:my-8`, list styling, etc.
+

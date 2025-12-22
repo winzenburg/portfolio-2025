@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> Note: We are migrating the active workflow to **Cursor 2.0 native Rules + Agents**.
+> See `.cursor/rules/` and `.cursor/agents/` for the current source of truth.
+
 ## Repository Purpose
 
 This is Ryan Winzenburg's professional portfolio website showcasing expertise in AI-augmented UX workflows, design systems, and strategic product development. The site features a blog with in-depth articles on design systems, AI workflows, and business strategy.
