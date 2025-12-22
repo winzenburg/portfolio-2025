@@ -23,7 +23,7 @@ export default function SecurityBugGateArticle() {
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
               src="/images/articles/security-gate-hero.png"
-              alt="Security and bug gate illustration: a vault-like gate in a modular system"
+              alt="Playful architectural illustration of a security and bug gate system"
               className="w-full h-auto"
             />
           </div>
@@ -78,7 +78,7 @@ export default function SecurityBugGateArticle() {
         <div className="my-12 rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900/30">
           <img
             src="/images/articles/security-gate-illustration.png"
-            alt="Diagram of a software delivery pipeline passing through bug and security gates"
+            alt="System diagram showing a repeatable workflow with quality gates"
             className="w-full h-auto"
           />
         </div>
