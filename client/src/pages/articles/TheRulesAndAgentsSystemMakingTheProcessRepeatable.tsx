@@ -86,9 +86,9 @@ export default function RulesAndAgentsSystemArticle() {
         
         <p>Three weeks ago, I caught myself doing it again. Staring at a half-built feature that nobody wanted, wondering how I'd burned through two weeks of engineering time without validating basic demand.</p>
 
-        <p>Sound familiar?</p>
+        <p>If that sounds familiar, you're not alone.</p>
 
-        <p>Here's the thing: I've been building products for years, but I was treating each new idea like a completely fresh problem. No process. No checklist. Just "gut feel" and hope that this time would be different.</p>
+        <p>I've been building products for years, but I was treating each new idea like a completely fresh problem. No process. No checklist. Just "gut feel" and hope that this time would be different.</p>
 
         <p>Then it hit me—what if I approached product creation the same way I approach code? With systems, rules, and repeatable processes that actually work?</p>
 

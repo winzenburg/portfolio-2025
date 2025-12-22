@@ -49,7 +49,7 @@ export default function GameficationThatDoesntManipulate() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Picture this: It's 11:47 PM, and I'm lying in bed when my phone buzzes. "Your 47-day streak is about to end! Quick, log something!"
+              It was 11:47 PM. I was in bed. My phone buzzed: “Your 47-day streak is about to end! Quick, log something!”
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -61,7 +61,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The next morning, I started digging into why most gamification feels so... icky. Turns out, there's a huge difference between gamification that helps you and gamification that exploits you. And after building habit loops for 300+ products, I've figured out how to design the good kind.
+              The next morning, I started digging into why most gamification feels so... icky. There's a huge difference between gamification that helps you and gamification that exploits you. And after building habit loops for 300+ products, I've figured out how to design the good kind.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -92,7 +92,7 @@ export default function GameficationThatDoesntManipulate() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the thing: <strong className="text-white">guilt-based streaks work in the short term</strong>. They create anxiety-driven engagement that looks amazing on your retention dashboards. But they're building a house of cards.
+              The uncomfortable truth: <strong className="text-white">guilt-based streaks work in the short term</strong>. They create anxiety-driven engagement that looks amazing on your retention dashboards. But they're building a house of cards.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -271,7 +271,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I learned this the hard way. Early version of a healthcare app I worked on had this energetic cartoon character that would pop up and say things like "Let's crush those health goals!"
+              I learned this after getting it wrong once. Early version of a healthcare app I worked on had this energetic cartoon character that would pop up and say things like "Let's crush those health goals!"
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

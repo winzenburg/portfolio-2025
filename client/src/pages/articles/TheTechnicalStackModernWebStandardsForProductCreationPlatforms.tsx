@@ -89,7 +89,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <p>
-          Spoiler alert: It was a disaster.
+          It was a disaster.
         </p>
 
         <p>
@@ -134,7 +134,7 @@ export default function TechnicalStackModernWebStandards() {
         <h2 className="text-3xl font-bold mt-12 mb-6">The Stack That Changed Everything</h2>
 
         <p>
-          Here's the thing about choosing your tech stack: everyone's got opinions, but not everyone's shipping. After building this platform and using it to validate—and ship—real products, here's what actually works.
+          Choosing your tech stack is noisy: everyone's got opinions, but not everyone's shipping. After building this platform and using it to validate—and ship—real products, I've landed on what actually works.
         </p>
 
         <h3 className="text-2xl font-bold mt-8 mb-4">Next.js 15: The Foundation That Doesn't Fight You</h3>

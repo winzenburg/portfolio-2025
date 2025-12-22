@@ -65,7 +65,7 @@ export default function AIAugmentedWorkflow() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me walk you through exactly how this framework works. I'll show you the specific transformations that happened at each phase, the tools that actually deliver results, and the mistakes I made along the way so you can avoid them.
+              Here's exactly how this framework works. I'll show you the specific transformations that happened at each phase, the tools that actually deliver results, and the mistakes I made along the way so you can avoid them.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -444,7 +444,7 @@ export default function AIAugmentedWorkflow() {
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              What I Learned the Hard Way
+              Lessons From the Trenches
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">

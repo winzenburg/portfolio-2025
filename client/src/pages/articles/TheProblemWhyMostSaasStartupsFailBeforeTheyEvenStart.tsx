@@ -53,7 +53,7 @@ export default function SaaSStartupFailures() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the thing that keeps me up at night: <strong className="text-white">90% of SaaS startups fail</strong>, and most never even had a fighting chance. Not because they had bad ideas—but because they had a bad process.
+              What keeps me up at night: <strong className="text-white">90% of SaaS startups fail</strong>, and most never even had a fighting chance. Not because they had bad ideas—but because they had a bad process.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -61,7 +61,7 @@ export default function SaaSStartupFailures() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me walk you through the five failure modes that kill most startups before they ship—and the frameworks that actually work.
+              I'll break down the five failure modes that kill most startups before they ship—and the frameworks that actually work.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -69,7 +69,7 @@ export default function SaaSStartupFailures() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Picture this: 2018, I had what I thought was a brilliant idea for a project management tool. I could already see the TechCrunch headline. So naturally, I did what every excited founder does—I started coding immediately.
+              Back in 2018, I had what I thought was a brilliant idea for a project management tool. I could already see the TechCrunch headline. So naturally, I did what every excited founder does—I started coding immediately.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -292,7 +292,7 @@ export default function SaaSStartupFailures() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Plot twist: AI makes everything I just described both easier and harder.
+              Here's the tension: AI makes everything I just described both easier and harder.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

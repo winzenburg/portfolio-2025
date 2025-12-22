@@ -221,7 +221,7 @@ export default function Article() {
         <h3>What You See When You Open the Hub</h3>
 
         <p>
-          Picture this: you open the Hub and immediately see project cards laid out like this:
+          Open the Hub and you immediately see project cards laid out like this:
         </p>
 
         <div className="bg-slate-800/30 p-6 rounded-lg font-mono text-sm my-6">
@@ -265,7 +265,7 @@ export default function Article() {
         </p>
 
         <p>
-          Here's the thing that changed everything for us: <strong>the Hub shows you what matters without making you dig for it</strong>.
+          What changed everything for us: <strong>the Hub shows you what matters without making you dig for it</strong>.
         </p>
 
         <h3>How It Actually Works (The Technical Bits)</h3>
@@ -327,7 +327,7 @@ export default function Article() {
         </p>
 
         <p>
-          Plot twist: the whole thing runs in about 200ms. Why? Because we're just reading files, not hitting a database.
+          Surprisingly, the whole thing runs in about 200ms—because we're just reading files, not hitting a database.
         </p>
 
         <h2>Real-World Impact: The Before and After</h2>

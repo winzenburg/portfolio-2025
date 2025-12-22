@@ -51,11 +51,11 @@ export default function PersonalizationWithPrivacyArticle() {
       heroImageAlt="Split screen showing creepy vs thoughtful personalization interfaces"
     >
       <p className="text-xl text-slate-300 mb-8">
-        I learned the hard way that personalization can backfire spectacularly. Here's how to make it feel like magic, not surveillance.
+        I learned firsthand that personalization can backfire spectacularly. This is how to make it feel like magic, not surveillance.
       </p>
 
       <p>
-        Picture this: It's 2019, and I'm watching our product analytics dashboard with horror. Users are deleting their accounts <em>faster</em> after we launched personalization. Our "smart recommendations" feature—which took six months to build—was driving people away.
+        In 2019, I watched our product analytics dashboard with horror. Users were deleting their accounts <em>faster</em> after we launched personalization. Our “smart recommendations” feature—which took six months to build—was driving people away.
       </p>
 
       <p>
@@ -256,7 +256,7 @@ export default function PersonalizationWithPrivacyArticle() {
       <h2>How We Actually Implemented This</h2>
 
       <p>
-        Let me walk you through the exact process we used to rebuild personalization for our habit tracking app.
+        Here's the exact process we used to rebuild personalization for our habit tracking app.
       </p>
 
       <h3>Step 1: Define Segments and Signals</h3>

@@ -49,7 +49,7 @@ export default function LinnyAutomationArticle() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the thing about validation plans: they're like workout routines. Everyone's got a beautiful one sitting in their docs folder. But execution? That's where dreams go to die.
+              Validation plans are like workout routines. Everyone's got a beautiful one sitting in their docs folder. But execution? That's where dreams go to die.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -138,7 +138,7 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Sound familiar? The problem isn't discipline—it's that manual execution doesn't scale. And when validation fails, we build without data. Every. Single. Time.
+              If you've tried to run validation manually, you know the pattern. The problem isn't discipline—it's that manual execution doesn't scale. And when validation fails, we build without data. Every. Single. Time.
             </p>
 
             {/* Comparison Card */}

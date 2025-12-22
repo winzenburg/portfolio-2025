@@ -49,7 +49,7 @@ export default function RuleConsolidation() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Picture this: 3 AM, launch week, and I'm staring at our multi-agent system trying to figure out why it's giving contradictory advice about ChatGPT integration. Plot twist: we had <em>five different rules</em> covering the same thing, scattered across different folders, with different approaches.
+              Launch week. It's 3 AM. I'm staring at our multi-agent system trying to figure out why it's giving contradictory advice about ChatGPT integration. The culprit wasn’t a bug—it was duplication: <em>five different rules</em> covering the same thing, scattered across different folders, each with its own “best” approach.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -57,15 +57,15 @@ export default function RuleConsolidation() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Sound familiar? Whether you're building a complex AI system, managing a growing codebase, or just trying to keep your team's processes from turning into spaghetti, you've probably been here. Systems that start elegant inevitably accumulate cruft, duplication, and contradictions as they scale.
+              If you've built a complex AI system, managed a growing codebase, or tried to keep your team's process from turning into spaghetti, you've probably been here. Systems that start elegant inevitably accumulate cruft, duplication, and contradictions as they scale.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the thing though: <strong className="text-white">we didn't simplify by cutting capabilities</strong>. We consolidated without losing a single feature, validation gate, or quality check. And more importantly, we built systems to keep it that way.
+              Crucially, <strong className="text-white">we didn't simplify by cutting capabilities</strong>. We consolidated without losing a single feature, validation gate, or quality check. And more importantly, we built systems to keep it that way.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me walk you through exactly how we went from chaos to clarity—and the framework you can use for any complex system.
+              Here's exactly how we went from chaos to clarity—and the framework you can use for any complex system.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -77,7 +77,7 @@ export default function RuleConsolidation() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              (Spoiler alert: it was in all three, with slightly different advice.)
+              (No surprise: it was in all three, with slightly different advice.)
             </p>
 
             {/* Symptoms Card */}
@@ -104,7 +104,7 @@ export default function RuleConsolidation() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The system was still powerful—it enforced quality gates, captured institutional knowledge, guided our workflow. But it was becoming unmaintainable. And here's what I learned the hard way: <em>unmaintainable systems don't gradually decline, they collapse suddenly</em>.
+              The system was still powerful—it enforced quality gates, captured institutional knowledge, guided our workflow. But it was becoming unmaintainable. And here's what I learned watching this pattern up close: <em>unmaintainable systems don't gradually decline, they collapse suddenly</em>.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -577,7 +577,7 @@ export default function RuleConsolidation() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the thing about good systems: they make the next decision easier. Since consolidating, every new rule gets added without drama. We know which tier it belongs in, which agents own it, and how to link it properly.
+              Great systems do one thing exceptionally well: they make the next decision easier. Since consolidating, every new rule gets added without drama. We know which tier it belongs in, which agents own it, and how to link it properly.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

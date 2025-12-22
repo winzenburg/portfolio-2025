@@ -227,7 +227,7 @@ export default function OpenSourceVisionArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the thing: I learn more from other people's disasters than their victories. And I bet you do too.
+              I learn more from other people's disasters than their victories. And I bet you do too.
             </p>
 
             {/* Pull Quote */}

@@ -51,7 +51,7 @@ export default function PortfolioApproachArticle() {
 
         <p>
           I used to be an "all-in" founder. You know the type—pick one product idea, pour everything into it, 
-          ride or die. I thought that was being "focused." Turns out, I was just being reckless.
+          ride or die. I thought that was being "focused." In reality, I was just being reckless.
         </p>
 
         <p>
@@ -79,7 +79,7 @@ export default function PortfolioApproachArticle() {
         <h2>Why Portfolio Theory Isn't Just for Wall Street</h2>
 
         <p>
-          Here's the thing about Modern Portfolio Theory (yeah, I know, finance class flashbacks). 
+          Modern Portfolio Theory (yeah, I know, finance class flashbacks). 
           The core insight isn't complicated: diversify your risks, maximize your returns. Don't 
           put all your eggs in one basket.
         </p>
@@ -96,7 +96,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <p>
-          Plot twist: it worked. Really well.
+          And it worked. Really well.
         </p>
 
         <Card className="p-6 my-8 bg-slate-800/50 border-slate-700">

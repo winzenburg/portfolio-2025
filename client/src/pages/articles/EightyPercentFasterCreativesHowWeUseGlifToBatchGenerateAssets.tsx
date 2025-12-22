@@ -68,7 +68,7 @@ export default function GlifCreativeBatchingArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the thing: I used to think creative work was where I needed to be meticulous. Every pixel perfect, every concept fully realized before testing. Turns out, that's exactly backwards.
+              I used to think creative work was where I needed to be meticulous. Every pixel perfect, every concept fully realized before testing. In fact, that's exactly backwards.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -186,7 +186,7 @@ export default function GlifCreativeBatchingArticle() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me walk you through exactly how this played out for my habit tracker validation.
+              Here's exactly how this played out for my habit tracker validation.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

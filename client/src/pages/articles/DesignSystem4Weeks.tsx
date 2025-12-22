@@ -575,7 +575,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              What We Learned the Hard Way
+              What We Learned Under Pressure
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">

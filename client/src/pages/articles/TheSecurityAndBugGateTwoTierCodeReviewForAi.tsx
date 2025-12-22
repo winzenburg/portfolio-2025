@@ -83,7 +83,7 @@ export default function SecurityBugGateArticle() {
           />
         </div>
         
-        <h2>Picture this: 3 AM, Slack is on fire, and my "perfectly safe" AI code just exposed customer data.</h2>
+        <h2>It was 3 AM, Slack was lighting up, and my “perfectly safe” AI code was one missed clause away from exposing customer data.</h2>
 
         <p>
           OK, that didn't actually happen. But it almost did.
@@ -115,7 +115,7 @@ export default function SecurityBugGateArticle() {
         </div>
 
         <p>
-          Here's the thing: this wasn't a fluke. I've made every AI code generation mistake in the book. I've shipped authentication 
+          This wasn't a fluke. I've made every AI code generation mistake in the book. I've shipped authentication 
           checks that looked perfect but had holes. I've written database queries that worked great for happy paths but leaked 
           data on edge cases. I've skipped input validation because "it's just a quick script" (narrator: it wasn't).
         </p>
@@ -126,7 +126,7 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <p>
-          Spoiler alert: it's saved us from at least a dozen production incidents since then. Here's exactly how it works.
+          Since then, it's saved us from at least a dozen production incidents. Here's exactly how it works.
         </p>
 
         <h2>The Core Insight: Default to Distrust</h2>
@@ -141,7 +141,7 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <p>
-          I learned this the hard way, but you don't have to. AI tools like Claude, ChatGPT, Copilot, and Cursor are 
+          I learned this after getting burned, but you don't have to. AI tools like Claude, ChatGPT, Copilot, and Cursor are 
           incredible productivity multipliers—but they're also confidently wrong in ways that'll keep you up at 3 AM 
           debugging production issues.
         </p>
@@ -360,7 +360,7 @@ export default function SecurityBugGateArticle() {
         <h2>How to Implement This (Without Slowing Your Team to a Crawl)</h2>
 
         <p>
-          Here's the thing—I've tried rigid security processes before. They either get ignored or they become such a bottleneck 
+          I've tried rigid security processes before. They either get ignored or they become such a bottleneck 
           that nothing ships. The key is making the gate fast and practical, not perfect.
         </p>
 
@@ -410,7 +410,7 @@ export default function SecurityBugGateArticle() {
         </div>
 
         <p>
-          Plot twist: the everyday prompt catches way more issues than the full audit. That surprised me initially, but it 
+          What surprised me: the everyday prompt catches way more issues than the full audit. That surprised me initially, but it 
           makes sense—most AI-generated code fails on the basics. Once you fix those, the complex stuff is usually solid.
         </p>
 

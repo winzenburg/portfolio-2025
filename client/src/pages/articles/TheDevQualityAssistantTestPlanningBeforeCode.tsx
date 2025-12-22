@@ -42,7 +42,7 @@ export default function DevQualityAssistant() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Most teams treat testing as an afterthought. I learned the hard way why that's expensive. Here's how we made it a build prerequisite instead—and shipped a feature in 3 days that would've normally taken 3 weeks.
+              Most teams treat testing as an afterthought. I learned firsthand why that's expensive. Here's how we made it a build prerequisite instead—and shipped a feature in 3 days that would've normally taken 3 weeks.
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export default function DevQualityAssistant() {
             </ol>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Sound familiar? The result is fragile code, manual testing bottlenecks, and that constant low-level anxiety that something's going to break.
+              If you've lived this loop, you know the result: fragile code, manual testing bottlenecks, and that constant low-level anxiety that something's going to break.
             </p>
 
             {/* Pull Quote */}
@@ -124,7 +124,7 @@ export default function DevQualityAssistant() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Plot twist: Next time never comes because there's always a new feature to ship.
+              The reality: next time never comes because there's always a new feature to ship.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -367,7 +367,7 @@ export default function DevQualityAssistant() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me walk you through a real dev quality plan we created last month. This should make it concrete.
+              Here's a real dev quality plan we created last month. This should make it concrete.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

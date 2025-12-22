@@ -258,7 +258,7 @@ export default function Context7LiveDocs() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me walk you through a real case where Context7 saved me 40 minutes of debugging.
+              Here's a real case where Context7 saved me 40 minutes of debugging.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

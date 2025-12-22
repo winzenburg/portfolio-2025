@@ -54,7 +54,7 @@ export default function AiOrchestrationWorkflow() {
             </p>
 
             <p>
-          Turns out, there was. And once I cracked the code on AI orchestration, everything changed.
+          There was. And once I cracked the code on AI orchestration, everything changed.
             </p>
 
             <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
@@ -65,9 +65,9 @@ export default function AiOrchestrationWorkflow() {
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Lightbulb Moment</h2>
 
-            <p>
-          Picture this: You're conducting a symphony. Each musician is incredibly talented on their own, but the magic happens when they play together in perfect harmony. That's exactly what I realized was missing from my AI workflow.
-            </p>
+        <p>
+          Imagine conducting a symphony. Each musician is incredibly talented on their own, but the magic happens when they play together in perfect harmony. That's exactly what I realized was missing from my AI workflow.
+        </p>
 
             <p>
           I was treating ChatGPT, Manus, Claude, and Cursor like separate freelancers instead of a coordinated team. The result? Fragmented insights, duplicated work, and—honestly—a lot of frustration.
@@ -94,11 +94,11 @@ export default function AiOrchestrationWorkflow() {
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Orchestra in Action</h2>
 
         <p>
-          Let me walk you through exactly how this works with a real example. Last week, I needed to validate a new SaaS idea: an enterprise-grade design system for scaling startups.
+          Here's how this works in practice, with a real example. Last week, I needed to validate a new SaaS idea: an enterprise-grade design system for scaling startups.
         </p>
 
         <p>
-          Here's the thing though—instead of bouncing between tools randomly, I followed my orchestrated workflow:
+          Instead of bouncing between tools randomly, I followed my orchestrated workflow:
         </p>
 
         <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Movement 1: Manus Sets the Stage</h3>
@@ -216,7 +216,7 @@ export default function AiOrchestrationWorkflow() {
         </ol>
 
         <p>
-          I learned this the hard way after Manus hallucinated a competitor that didn't exist, and ChatGPT built an entire strategy around it. Now? If something doesn't pass the quality gate, we loop back and fix it.
+          I learned this after Manus hallucinated a competitor that didn't exist, and ChatGPT built an entire strategy around it. Now? If something doesn't pass the quality gate, we loop back and fix it.
         </p>
 
         <p>

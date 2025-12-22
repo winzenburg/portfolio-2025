@@ -101,7 +101,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <p>
-          Here's the thing though—most founders can't kill ideas. We get emotionally attached. We rationalize. We pivot when we should kill. And we end up with zombie projects that consume resources without delivering results.
+          Most founders can't kill ideas. We get emotionally attached. We rationalize. We pivot when we should kill. And we end up with zombie projects that consume resources without delivering results.
         </p>
 
         <p>
@@ -152,7 +152,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <p>
-          Plot twist: Your identity shouldn't be tied to one idea. You're a builder, not "the person who builds meal planners." Good builders kill bad ideas. It's a feature, not a bug.
+          The healthier truth: your identity shouldn't be tied to one idea. You're a builder, not "the person who builds meal planners." Good builders kill bad ideas. It's a feature, not a bug.
         </p>
 
         <h3>The Optimism Bias Death Spiral</h3>
@@ -222,7 +222,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <p>
-          I learned this the hard way: if you don't have clear criteria, you'll rationalize keeping bad ideas alive forever.
+          I learned this the expensive way: if you don't have clear criteria, you'll rationalize keeping bad ideas alive forever.
         </p>
 
         <p>
@@ -361,7 +361,7 @@ export default function KillGreenlightRitual() {
         <h2>How the Hub Makes This Actually Work</h2>
 
         <p>
-          Here's the thing—I tried to do portfolio reviews with spreadsheets and notion databases before. It was a nightmare. Everything was out of sync, I'd forget to update scores, and the reviews took forever.
+          I tried to do portfolio reviews with spreadsheets and notion databases before. It was a nightmare. Everything was out of sync, I'd forget to update scores, and the reviews took forever.
         </p>
 
         <p>

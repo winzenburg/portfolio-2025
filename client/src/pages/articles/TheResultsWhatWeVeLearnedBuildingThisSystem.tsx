@@ -53,7 +53,7 @@ export default function Article() {
             Building a Product Creation Engine: What Actually Works (And What Doesn't)
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed">
-            After a year of building systematic product validation, here's what we learned the hard way—AI orchestration, dual filters, and why documentation isn't boring.
+            After a year of building systematic product validation, we learned a few things—AI orchestration, dual filters, and why documentation isn't boring.
           </p>
         </div>
         
@@ -77,7 +77,7 @@ export default function Article() {
         </p>
 
         <p>
-          Here's the thing: I've been there. We all have. That moment when you realize you've been building something nobody actually wants, or worse—something they want right now but won't care about in six months.
+          I've been there. We all have. That moment when you realize you've been building something nobody actually wants, or worse—something they want right now but won't care about in six months.
         </p>
 
         <p>
@@ -85,7 +85,7 @@ export default function Article() {
         </p>
 
         <p>
-          Spoiler alert: It's possible. But not in the way I initially thought.
+          It's possible—but not in the way I initially thought.
         </p>
 
         <p>
@@ -93,7 +93,7 @@ export default function Article() {
         </p>
 
         <p>
-          Let me walk you through what we've learned. The frameworks that actually work, the expensive mistakes we made so you don't have to, and why AI orchestration might be the unlock you didn't know you needed.
+          Here's what we've learned: the frameworks that actually work, the expensive mistakes we made so you don't have to, and why AI orchestration might be the unlock you didn't know you needed.
         </p>
 
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -221,7 +221,7 @@ export default function Article() {
         </div>
 
         <p>
-          Plot twist: Having multiple options makes you less attached to any single idea. You can be honest about what's working and what isn't.
+          Counterintuitively, having multiple options makes you less attached to any single idea. You can be honest about what's working and what isn't.
         </p>
 
         <p>
@@ -272,7 +272,7 @@ export default function Article() {
         </h3>
 
         <p>
-          Picture this: Me, 2 AM, firing random prompts at ChatGPT hoping for market insights. "Analyze the productivity software market." "What do small businesses need?" "Give me 10 SaaS ideas."
+          At 2 AM, I was firing random prompts at ChatGPT and calling it “market research.” “Analyze the productivity software market.” “What do small businesses need?” “Give me 10 SaaS ideas.”
         </p>
 
         <p>

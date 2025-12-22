@@ -60,7 +60,7 @@ export default function DesignSystemsFail() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The data reveals three core problems that kill design systems. But more importantly, I've discovered three AI-powered solutions that actually work. Let me walk you through what I've learned.
+              The data reveals three core problems that kill design systems. But more importantly, I've discovered three AI-powered solutions that actually work. Here's what I've learned.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -212,7 +212,7 @@ export default function DesignSystemsFail() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Manual design system maintenance is a losing battle against entropy. You can't scale it, and you can't sustain it. I learned this the hard way watching design systems teams burn out trying to manually validate that every component across hundreds of products still matched the design tokens.
+              Manual design system maintenance is a losing battle against entropy. You can't scale it, and you can't sustain it. I've watched design systems teams burn out trying to manually validate that every component across hundreds of products still matched the design tokens.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

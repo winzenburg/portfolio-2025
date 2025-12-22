@@ -60,7 +60,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-8">
-        Here's the thing: brilliant insights are worthless if they disappear the moment someone takes vacation. I spent the next month building a documentation system that makes every decision auditable and every process repeatable. Not because I love documentation (I don't), but because I hate losing months of learning to digital amnesia.
+        Brilliant insights are worthless if they disappear the moment someone takes vacation. I spent the next month building a documentation system that makes every decision auditable and every process repeatable. Not because I love documentation (I don't), but because I hate losing months of learning to digital amnesia.
       </p>
 
       <h2 className="text-2xl font-bold text-white mt-12 mb-6">
@@ -80,7 +80,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        Let me show you what this looks like in practice. When we explored "enterprise design system for startups" (spoiler alert: terrible idea), here's exactly what we created:
+        Let me show you what this looks like in practice. When we explored "enterprise design system for startups" (it was, in fact, a terrible idea), here's exactly what we created:
       </p>
 
       <div className="bg-slate-800/30 p-6 rounded-lg mb-8">
@@ -118,7 +118,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </h2>
 
       <p className="mb-6">
-        Having all the documents in one place is step one. Step two is making sure they actually talk to each other. Because here's what I learned the hard way: isolated documents are just expensive Post-it notes.
+        Having all the documents in one place is step one. Step two is making sure they actually talk to each other. Because here's what I learned after messing this up: isolated documents are just expensive Post-it notes.
       </p>
 
       <p className="mb-6">
@@ -140,7 +140,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-8">
-        Plot twist: The simple act of linking documents exposed gaps in our thinking. When I couldn't link to supporting research, it usually meant we didn't have any. That's a problem worth catching early.
+        Unexpectedly, the simple act of linking documents exposed gaps in our thinking. When I couldn't link to supporting research, it usually meant we didn't have any. That's a problem worth catching early.
       </p>
 
       <StatsCard 

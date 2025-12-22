@@ -61,7 +61,7 @@ export default function SupabaseMCPArticle() {
           (hello, six months of refactoring) or over-engineer (goodbye, velocity).
         </p>
 
-        <p>Here's the thing though: I used to be that founder.</p>
+      <p>I used to be that founder.</p>
 
         <p>
           I've made every backend mistake in the book. Twice. The "we'll add organization_id 
@@ -92,7 +92,7 @@ export default function SupabaseMCPArticle() {
           Day 180: "Why is our analytics so bad?" Day 365: "Let's rewrite the whole thing."
         </p>
 
-        <p>Sound familiar? I've been there. Multiple times.</p>
+        <p>If that timeline made you wince, I've been there. Multiple times.</p>
 
         <p>
           The problem isn't that we're bad developers. It's that backend design is genuinely 

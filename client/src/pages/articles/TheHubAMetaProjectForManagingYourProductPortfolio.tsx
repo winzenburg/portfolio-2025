@@ -64,7 +64,7 @@ export default function TheHubArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Sound familiar?
+              If you're nodding, you're not alone.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -210,7 +210,7 @@ export default function TheHubArticle() {
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Building the Hub: What I Learned (The Hard Way)
+              Building the Hub: Lessons From the Trenches
             </h2>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -226,7 +226,7 @@ export default function TheHubArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Plot twist: The Hub became one of my most-used "products" even though it generates zero revenue. Sometimes the best product you build is the one that helps you build everything else.
+              Unexpectedly, the Hub became one of my most-used "products" even though it generates zero revenue. Sometimes the best product you build is the one that helps you build everything else.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -352,7 +352,7 @@ export default function TheHubArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Don't reorganize everything at once (learned that lesson the hard way). Just start using the new structure for new projects and gradually migrate the important stuff.
+              Don't reorganize everything at once (learned that lesson after doing it wrong once). Just start using the new structure for new projects and gradually migrate the important stuff.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">

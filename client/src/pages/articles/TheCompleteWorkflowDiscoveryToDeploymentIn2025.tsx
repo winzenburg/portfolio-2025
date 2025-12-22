@@ -58,11 +58,11 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <p>
-            Here's the thing: I spent three years building failed startups. Each time, I thought I was being scrappy and entrepreneurial. Really? I was just being inefficient. Building first, asking questions later. Validating assumptions after I'd already fallen in love with the solution.
+            I spent three years building failed startups. Each time, I thought I was being scrappy and entrepreneurial. Really? I was just being inefficient. Building first, asking questions later. Validating assumptions after I'd already fallen in love with the solution.
           </p>
 
           <p>
-            <strong>Plot twist</strong>: The solution wasn't to validate faster. It was to kill bad ideas faster.
+            <strong>The surprise</strong>: The solution wasn't to validate faster. It was to kill bad ideas faster.
           </p>
 
           <p>

@@ -73,7 +73,7 @@ export default function DualFilterValidationFrameworkArticle() {
             </div>
 
         <p>
-          Here's the thing though: most validation frameworks only test for heat. They're obsessed with 
+          The problem: most validation frameworks only test for heat. They're obsessed with 
           proving people want your product <em>right now</em>. But wanting something today and paying for 
           it next year? Completely different games.
         </p>
@@ -117,7 +117,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </h3>
 
         <p>
-          Here's my validation playbook (learned the hard way after multiple failures):
+          Here's my validation playbook (earned through multiple failures):
         </p>
 
         <p>
@@ -168,7 +168,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </p>
 
         <p>
-          Six months later, it was dead. Turns out heat isn't everything.
+          Six months later, it was dead. Heat isn't everything.
         </p>
 
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">

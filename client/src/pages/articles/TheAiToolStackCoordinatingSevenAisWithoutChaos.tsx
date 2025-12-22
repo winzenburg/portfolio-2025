@@ -137,7 +137,7 @@ export default function AIToolStackArticle() {
 
         <p>Multi-tool workflows become an expensive mess. Outputs are inconsistent. Critical information lives in chat logs that vanish into the digital void. You make the same decision five times because you can't remember where you documented it.</p>
 
-        <p>Sound familiar? Here's how I fixed it.</p>
+        <p>If that hits close to home, here's how I fixed it.</p>
 
         <h2>The Solution: Tool Lanes + Routing Rules + System of Record</h2>
 
@@ -334,7 +334,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>Never use ChatGPT for</strong>: Critical review (use Claude), final polish (use Claude), deep reasoning (use Claude), source-of-truth synthesis (use Manus)</p>
 
-        <p>I learned this the hard way. I once asked ChatGPT to critique a pricing strategy. It was... enthusiastically unhelpful. Claude's critique actually changed my approach.</p>
+        <p>I learned this after a bad experiment. I once asked ChatGPT to critique a pricing strategy. It was... enthusiastically unhelpful. Claude's critique actually changed my approach.</p>
 
         <h3>3. Claude (Depth & Critique)</h3>
 

@@ -84,7 +84,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          Sound familiar? Here's the thing—this happens because most teams treat branding as decoration instead of foundation. They validate demand, build an MVP, ship to users, and <em>then</em> hire someone to "make it look good."
+          If you've seen this play out before, it's because most teams treat branding as decoration instead of foundation. They validate demand, build an MVP, ship to users, and <em>then</em> hire someone to "make it look good."
         </p>
 
         <p>
@@ -123,7 +123,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          Plot twist: It looked nothing like our product.
+        The problem: it looked nothing like our product.
         </p>
 
         <div className="bg-red-900/20 border border-red-700/50 rounded-lg p-6 my-8">
@@ -155,7 +155,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          Here's what I learned the hard way: Visual debt compounds faster than technical debt because it's user-facing. Every inconsistent interaction erodes trust. Every mismatched color palette makes you look unprofessional. Every voice mismatch between marketing and product confuses your users.
+          The lesson I learned the expensive way: visual debt compounds faster than technical debt because it's user-facing. Every inconsistent interaction erodes trust. Every mismatched color palette makes you look unprofessional. Every voice mismatch between marketing and product confuses your users.
         </p>
 
         <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
@@ -392,7 +392,7 @@ export default function BrandFirstValidationArticle() {
         </h2>
 
         <p>
-          Here's the thing about good processes: they only work if you can't skip them when you're excited about building.
+          Good processes only work if you can't skip them when you're excited about building.
         </p>
 
         <p>
@@ -416,7 +416,7 @@ export default function BrandFirstValidationArticle() {
         </h2>
 
         <p>
-          Let me walk you through a recent project so you can see this in action.
+          Here's a recent project so you can see this in action.
         </p>
 
         <p>

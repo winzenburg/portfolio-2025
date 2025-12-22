@@ -61,7 +61,7 @@ export default function MicroInteractionsArticle() {
         </h1>
 
         <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-          I spent two years reverse-engineering why Apple's animations feel so good. Turns out, it's not magic—it's a systematic approach to motion that guides without annoying. Here's the playbook.
+          I spent two years reverse-engineering why Apple's animations feel so good. It's not magic—it's a systematic approach to motion that guides without annoying. Here's the playbook.
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 mb-8">
@@ -76,7 +76,7 @@ export default function MicroInteractionsArticle() {
         </h2>
 
         <p>
-          Picture this: 2019, leading design on a product used by 300+ Fortune 500 companies. Our team had spent months perfecting these elaborate button animations—360-degree rotations, bouncy scale effects, the works. We thought we were being innovative.
+          In 2019, I was leading design on a product used by 300+ Fortune 500 companies. Our team had spent months perfecting these elaborate button animations—360-degree rotations, bouncy scale effects, the works. We thought we were being innovative.
         </p>
 
         <p>
@@ -157,7 +157,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <p>
-          I learned this the hard way when we got complaints about our interface causing nausea. Turns out, our bouncy loading animations were triggering motion sickness for users with vestibular disorders.
+          I learned this when we got complaints about our interface causing nausea. Our bouncy loading animations were triggering motion sickness for users with vestibular disorders.
         </p>
 
         <p>
