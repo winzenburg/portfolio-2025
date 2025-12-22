@@ -90,7 +90,7 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "rules-and-agents",
     category: "AI Workflow",
-    heroImage: "/images/articles/rules-agents-hero.png"
+    heroImage: "/images/articles/rules-agents-system-diagram.png"
   },
   {
     id: "29",

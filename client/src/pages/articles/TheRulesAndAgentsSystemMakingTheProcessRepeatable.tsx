@@ -22,8 +22,8 @@ export default function RulesAndAgentsSystemArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
-              src="/images/articles/rules-agents-hero.png"
-              alt="Playful architectural illustration representing a repeatable rules and agents system"
+              src="/images/articles/rules-agents-system-diagram.png"
+              alt="System diagram showing a repeatable workflow with rules, agents, and quality gates"
               className="w-full h-auto"
             />
           </div>
@@ -73,8 +73,8 @@ export default function RulesAndAgentsSystemArticle() {
       {/* System Diagram */}
       <div className="my-12 rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900/30">
         <img
-          src="/images/articles/rules-agents-system-diagram.png"
-          alt="System diagram showing a repeatable workflow with rules, agents, and quality gates"
+          src="/images/articles/rules-agents-hero.png"
+          alt="Playful architectural illustration representing a repeatable rules and agents system"
           className="w-full h-auto"
         />
       </div>
