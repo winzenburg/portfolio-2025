@@ -100,7 +100,7 @@ export default function TechnicalStackModernWebStandards() {
           The kicker? I was spending more time managing my validation tools than actually validating.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-0">
             "I was spending more time managing my validation tools than actually validating."
           </p>
@@ -299,7 +299,7 @@ export default function TechnicalStackModernWebStandards() {
           The key insight? I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-0">
             "I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster."
           </p>
@@ -418,7 +418,7 @@ export default function TechnicalStackModernWebStandards() {
           The key insight? Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-0">
             "Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter."
           </p>
@@ -470,7 +470,7 @@ export default function TechnicalStackModernWebStandards() {
           The trick is knowing which tool fits your ambition.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-0">
             "The goal isn't to build the perfect validation platform. The goal is to validate ideas faster and more effectively, then ship products that succeed."
           </p>

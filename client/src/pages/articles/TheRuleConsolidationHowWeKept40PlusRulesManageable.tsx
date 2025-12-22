@@ -535,7 +535,7 @@ export default function RuleConsolidation() {
             </p>
 
             {/* Hidden Costs */}
-            <div className="my-8 bg-slate-800/50 border-l-4 border-yellow-400 p-6">
+            <div className="my-8 bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5">
               <h3 className="text-lg font-semibold text-yellow-400 mb-3">The Hidden Costs</h3>
               <ul className="space-y-2 text-cyan-400">
                 <li className="flex items-start gap-3">

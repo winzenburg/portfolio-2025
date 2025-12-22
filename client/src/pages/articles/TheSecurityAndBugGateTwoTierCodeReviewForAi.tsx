@@ -294,7 +294,7 @@ export default function SecurityBugGateArticle() {
           that keep experienced developers awake at night.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <div className="text-sm font-medium text-cyan-400 mb-4"></div>
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -472,7 +472,7 @@ export default function SecurityBugGateArticle() {
           <li><strong>Integration testing</strong>: Automated tests that verify the security properties we care about</li>
         </ul>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-slate-200 font-medium">
             "AI can ship features fast, but it can also ship vulnerabilities. The Security & Bug Gate 
             is our quality firewall—and the reason I sleep better at night."

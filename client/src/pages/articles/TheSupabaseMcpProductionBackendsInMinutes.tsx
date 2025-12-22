@@ -75,7 +75,7 @@ export default function SupabaseMCPArticle() {
           engineers now follows a blueprint.
         </p>
 
-            <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+            <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
               <p className="text-cyan-300 italic mb-0">
             "Backend design went from trial-and-error to repeatable blueprint. 
             We ship production-grade architectures in hours, not weeks."
@@ -501,7 +501,7 @@ supabase db push`}</code>
           But it's nothing compared to the 6 months of refactoring you'll avoid.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 italic">
             "The 4 hours of upfront design saves you 6 months of refactoring. 
             Every. Single. Time."

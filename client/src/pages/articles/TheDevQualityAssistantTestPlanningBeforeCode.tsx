@@ -378,7 +378,7 @@ export default function DevQualityAssistant() {
               Step 1: Feature Snapshot
             </h3>
 
-            <div className="my-8 bg-slate-900/30 border-l-4 border-cyan-500 p-6">
+            <div className="my-8 bg-slate-900/30 border-l-4 border-cyan-500 px-6 pt-4 pb-5">
               <h5 className="text-white font-semibold mb-4">Feature Snapshot</h5>
               <p className="text-slate-300 mb-4"><strong className="text-white">Description</strong>: Organization owners and admins can invite new members via email. Invites are sent via Resend, stored in `org_invites` table, and can be accepted via magic link.</p>
               

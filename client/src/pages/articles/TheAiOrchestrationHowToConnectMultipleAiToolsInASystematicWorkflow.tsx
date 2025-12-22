@@ -57,7 +57,7 @@ export default function AiOrchestrationWorkflow() {
           Turns out, there was. And once I cracked the code on AI orchestration, everything changed.
             </p>
 
-            <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+            <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
               <p className="text-lg font-medium text-cyan-400 mb-0">
             "AI tools are powerful in isolation, but they're game-changers when they work together."
               </p>
@@ -193,7 +193,7 @@ export default function AiOrchestrationWorkflow() {
           The result? Four comprehensive documents, fully cited, ready for validation. What used to take me three days now happens in about four hours.
         </p>
 
-        <div className="bg-indigo-50 border-l-4 border-indigo-400 p-6 my-8">
+        <div className="bg-indigo-50 border-l-4 border-indigo-400 px-6 pt-4 pb-5 my-8">
           <p className="text-lg font-medium text-indigo-800 mb-0">
             "The magic isn't in the individual AI tools—it's in how they hand off to each other."
           </p>
@@ -291,7 +291,7 @@ export default function AiOrchestrationWorkflow() {
           The goal isn't perfection—it's systematic improvement over ad-hoc chaos.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-lg font-medium text-cyan-300 mb-0">
             "The future belongs to teams that orchestrate AI tools, not just use them."
           </p>

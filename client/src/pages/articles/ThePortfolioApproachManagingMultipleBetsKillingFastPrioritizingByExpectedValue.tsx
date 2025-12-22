@@ -69,7 +69,7 @@ export default function PortfolioApproachArticle() {
           managing a portfolio of bets.</strong> I just happened to be managing it terribly.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 italic text-lg">
             "You're not building one product. You're managing a portfolio of bets. The question is: 
             are you managing it like Warren Buffett or like a guy at a casino?"
@@ -283,7 +283,7 @@ export default function PortfolioApproachArticle() {
           The math was clear. The emotional attachment was real. I killed the interview tool.
         </p>
 
-        <div className="bg-red-900/20 border-l-4 border-red-500 p-6 my-8">
+        <div className="bg-red-900/20 border-l-4 border-red-500 px-6 pt-4 pb-5 my-8">
           <p className="font-semibold text-red-900 mb-2">Killing Ideas: The Two-Week Rule</p>
           <p className="text-red-300">
             If an idea's score drops below 20 points, I give myself exactly two weeks to either 

@@ -64,7 +64,7 @@ export default function MicroInteractionsArticle() {
           I spent two years reverse-engineering why Apple's animations feel so good. Turns out, it's not magic—it's a systematic approach to motion that guides without annoying. Here's the playbook.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 mb-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 mb-8">
           <p className="text-cyan-300 font-medium mb-2">The TL;DR</p>
           <p className="text-slate-200">
             Most animations either feel stiff (no motion) or overwhelming (too much motion). Apple found the sweet spot: subtle, purposeful micro-interactions that feel invisible but guide users perfectly. I'll show you exactly how to design and implement them.
@@ -588,7 +588,7 @@ export default function MicroInteractionsArticle() {
           But here's the thing: all the fancy tech in the world won't help if you don't nail the fundamentals first.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-2">The Bottom Line</p>
           <p className="text-slate-200">
             Great micro-interactions are invisible. They guide users through your interface without drawing attention to themselves. Master subtle, purposeful motion before trying anything fancy.

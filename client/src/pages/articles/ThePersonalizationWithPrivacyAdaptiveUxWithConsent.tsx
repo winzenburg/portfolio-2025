@@ -302,7 +302,7 @@ export default function PersonalizationWithPrivacyArticle() {
         Key insight: We use activity data (what they did in our app) not identity data (who they are outside it).
       </p>
 
-      <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+      <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
         <h4 className="font-semibold text-blue-900 mb-2">Privacy-First Data Collection</h4>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
@@ -473,7 +473,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         Here's what happened after we rebuilt our personalization approach:
       </p>
 
-      <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+      <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
         <h4 className="font-semibold text-green-900 mb-2"> Before vs. After Implementation</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>

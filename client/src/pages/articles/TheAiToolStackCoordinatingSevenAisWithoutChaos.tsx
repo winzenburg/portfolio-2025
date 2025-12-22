@@ -79,7 +79,7 @@ export default function AIToolStackArticle() {
 
         <p>Now I run the opposite: <strong>a coordinated AI tool stack with clear lanes, explicit handoffs, and systematic routing</strong>.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-semibold">
             "Each tool has a single purpose. No overlap. Information flows through a documented pipeline."
           </p>
@@ -125,7 +125,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>No System of Record</strong>: Your best insights live in ChatGPT conversations from three months ago. Good luck finding them. Knowledge becomes tribal, trapped in chat logs that nobody can search.</p>
 
-        <div className="bg-red-900/20 border-l-4 border-red-400 p-6 my-8">
+        <div className="bg-red-900/20 border-l-4 border-red-400 px-6 pt-4 pb-5 my-8">
           <p className="text-red-300">
             <strong></strong> The real cost of chaos: I tracked my tool usage for one week. 47% of queries were duplicates across different tools. That's $200/month in wasted API credits.
           </p>
@@ -342,7 +342,7 @@ export default function AIToolStackArticle() {
 
         <p>Claude is my "convergent thinking" machine. When I need depth, nuance, and critical analysis, Claude is mandatory.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-semibold">
             "Claude critique saved me from launching a fundamentally flawed pricing strategy. ChatGPT would have said it looked great."
           </p>
@@ -518,7 +518,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>Target</strong>: &lt;$500/month for 5-7 tool stack (reasonable for a small team or solo founder).</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400">
             <strong>Time investment</strong>: 10-15 hours upfront to design the system. I spent a weekend documenting tool lanes, routing rules, and handoff protocols. Best weekend I've spent this year.
           </p>
@@ -586,7 +586,7 @@ export default function AIToolStackArticle() {
 
         <p>Using multiple AI tools sounds like a nightmare. With clear lanes, explicit routing, and systematic handoffs, it becomes a competitive advantage.</p>
 
-        <div className="bg-indigo-50 border-l-4 border-indigo-400 p-6 my-8">
+        <div className="bg-indigo-50 border-l-4 border-indigo-400 px-6 pt-4 pb-5 my-8">
           <p className="text-indigo-800 font-semibold text-lg">
             "The future isn't about finding the one perfect AI tool—it's about orchestrating multiple specialized tools into a coherent workflow."
           </p>

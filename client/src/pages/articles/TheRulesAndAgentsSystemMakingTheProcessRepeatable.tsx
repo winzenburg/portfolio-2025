@@ -88,7 +88,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>That lightbulb moment led me to build something I'm calling the "Rules and Agents System"—a framework that's transformed how I validate, design, and build products. And honestly? It's saved me from more bad decisions than I care to admit.</p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium text-lg mb-0">
             "What if I approached product creation the same way I approach code? With systems, rules, and repeatable processes that actually work?"
           </p>
@@ -162,7 +162,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>The Moat & MRR Strategist</strong> is my secret weapon against commodity products. It designs defensibility strategies—network effects, data moats, switching costs—that keep competitors at bay. Because building something people want is hard enough; building something they can't easily replace is the real challenge.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 mb-0">
             <strong>Quick tangent:</strong> I spent six months building a tool that competitors copied in three weeks. The Moat Strategist would have caught that vulnerability in the planning phase. Live and learn, right?
           </p>
@@ -247,7 +247,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>The result? Products that work for everyone, not just the "typical" user. And honestly, accessible design is usually better design for everyone.</p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium text-lg mb-0">
             "I've killed more bad ideas in the last month than I used to kill in a year—and that's a good thing."
           </p>
@@ -294,7 +294,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Plus, having a systematic approach means my wins are repeatable, not just lucky accidents.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 mb-0">
             <strong>Real talk:</strong> The first time through this system felt slow and over-engineered. By the third product, it felt like having superpowers. The learning curve is worth it.
           </p>
@@ -324,7 +324,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>My guess? You'll never go back to winging it.</p>
 
-        <div className="bg-slate-900/50 border-l-4 border-gray-400 p-6 my-8">
+        <div className="bg-slate-900/50 border-l-4 border-gray-400 px-6 pt-4 pb-5 my-8">
           <p className="text-slate-300 text-lg font-medium mb-0">
             What if your product creation process was as systematic as your code? Try it for one project and find out.
           </p>

@@ -350,7 +350,7 @@ export default function ScalingStrategy() {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="bg-slate-900/50 border-l-4 border-blue-500 p-6">
+              <div className="bg-slate-900/50 border-l-4 border-blue-500 px-6 pt-4 pb-5">
                 <h4 className="text-white font-semibold mb-3 text-lg">Months 1-6: Optimize Core Product</h4>
                 <p className="text-slate-300 mb-3 leading-relaxed">The first six months are about achieving undeniable product-market fit with your core product. You're not expanding yet. You're building the automation infrastructure that will power everything else, documenting every process so it can be replicated, and proving the unit economics work.</p>
                 <div className="flex items-start gap-2 mt-4">
@@ -359,7 +359,7 @@ export default function ScalingStrategy() {
                 </div>
               </div>
 
-              <div className="bg-slate-900/50 border-l-4 border-blue-500 p-6">
+              <div className="bg-slate-900/50 border-l-4 border-blue-500 px-6 pt-4 pb-5">
                 <h4 className="text-white font-semibold mb-3 text-lg">Months 7-12: Launch Product #2</h4>
                 <p className="text-slate-300 mb-3 leading-relaxed">Now you leverage everything you built. Your second product sits on the same infrastructure. You're cross-selling to your existing user base, which dramatically lowers customer acquisition costs. You're expanding market reach while keeping operational overhead minimal. This is where the portfolio advantages start compounding.</p>
                 <div className="flex items-start gap-2 mt-4">
@@ -368,7 +368,7 @@ export default function ScalingStrategy() {
                 </div>
               </div>
 
-              <div className="bg-slate-900/50 border-l-4 border-blue-500 p-6">
+              <div className="bg-slate-900/50 border-l-4 border-blue-500 px-6 pt-4 pb-5">
                 <h4 className="text-white font-semibold mb-3 text-lg">Months 13-18: Acquire or Build Product #3</h4>
                 <p className="text-slate-300 mb-3 leading-relaxed">By now you understand your customer deeply. You know which adjacent pain points they have. Product three fills portfolio gaps, expands your total addressable market, and creates more cross-sell opportunities. This is where you start seeing network effects across your portfolio—each product makes the others more valuable.</p>
                 <div className="flex items-start gap-2 mt-4">
@@ -377,7 +377,7 @@ export default function ScalingStrategy() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border-l-4 border-blue-400 p-6">
+              <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border-l-4 border-blue-400 px-6 pt-4 pb-5">
                 <h4 className="text-white font-semibold mb-3 text-lg">Months 19-24: Optimize and Scale</h4>
                 <p className="text-slate-300 mb-3 leading-relaxed">The focus shifts to optimization. You're improving automation everywhere, expanding your team only where it creates genuine leverage, and making the strategic decision: do you continue building the portfolio, or do you start exploring exits for individual products or the entire portfolio?</p>
                 <div className="flex items-start gap-2 mt-4">

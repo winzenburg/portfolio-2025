@@ -124,7 +124,7 @@ export default function Article() {
           This is where our dual-filter approach comes in. We validate for two completely different things:
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <h4 className="font-semibold text-blue-900 mb-2">The Heat Filter</h4>
           <p className="text-cyan-300 mb-4">
             Does a tribe of real humans urgently want this problem solved?
@@ -134,7 +134,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <h4 className="font-semibold text-green-900 mb-2">The Durability Filter</h4>
           <p className="text-cyan-400 mb-4">
             Will this problem still matter (and generate revenue) 12-36 months from now?

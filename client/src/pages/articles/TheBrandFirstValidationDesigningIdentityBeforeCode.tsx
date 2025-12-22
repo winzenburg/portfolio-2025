@@ -95,7 +95,7 @@ export default function BrandFirstValidationArticle() {
           So I flipped the script. Now, the brand system blueprint is a mandatory gate between validation and build. No UI gets designed, no landing page gets shipped, no marketing assets get created until we've completed a competitive brand audit and defined our visual and verbal identity.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-slate-200 italic">
             "If you've validated that people want your product, the next question is: How will you stand out in a crowded market? That's where brand comes in."
@@ -312,7 +312,7 @@ export default function BrandFirstValidationArticle() {
           </div>
         </div>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-slate-200 font-semibold text-2xl">6 hours</p>
           <p className="text-cyan-400 text-sm">Time to complete full brand blueprint vs. 3 months retrofitting later</p>
@@ -500,7 +500,7 @@ export default function BrandFirstValidationArticle() {
           That's not accident. That's intentional brand work paying off.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-slate-200 italic">
             "Users consistently mentioned that the tool 'feels different' from competitors. That's not accident—that's intentional brand work paying off."
@@ -716,7 +716,7 @@ export default function BrandFirstValidationArticle() {
           That's a much more interesting question. And the answer usually leads to products that users remember, recommend, and choose over alternatives.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-slate-200 italic">
             "Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. What if your brand could be a moat, not just a coat of paint?"

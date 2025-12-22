@@ -66,7 +66,7 @@ export default function DualFilterValidationFrameworkArticle() {
           Durability? That's what actually pays the bills 12 months later.
         </p>
 
-            <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
               <p className="text-lg font-semibold text-cyan-300 mb-0">
             "Heat gets you in. Durability makes it a real SaaS business."
               </p>
@@ -154,7 +154,7 @@ export default function DualFilterValidationFrameworkArticle() {
           products people "loved" but wouldn't pay for. Don't be me.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-500 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-yellow-500 px-6 pt-4 pb-5 my-8">
           <p className="font-semibold text-yellow-900">Real Talk:</p>
           <p className="text-cyan-400">
             If you can't get at least 10 people to prepay $99 for your idea, you probably don't have 
@@ -325,7 +325,7 @@ export default function DualFilterValidationFrameworkArticle() {
           If the answer is no, question whether it's worth building.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-500 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
           <p className="text-lg font-semibold text-blue-900 mb-2">
             "Every feature decision should ask: Does this increase switching costs or frequency of use?"
           </p>

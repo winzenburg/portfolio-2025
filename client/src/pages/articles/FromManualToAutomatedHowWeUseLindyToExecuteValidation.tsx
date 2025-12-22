@@ -321,7 +321,7 @@ export default function LinnyAutomationArticle() {
               <strong className="text-white">Real example from our habit tracker validation</strong>:
             </p>
 
-            <div className="my-8 bg-slate-900/50 border-l-4 border-cyan-500 p-6">
+            <div className="my-8 bg-slate-900/50 border-l-4 border-cyan-500 px-6 pt-4 pb-5">
               <p className="text-slate-300 italic mb-4">
                 Survey response: "I've tried 6 different habit apps. They all make me feel guilty when I break streaks. I'd pay $20/month for something that actually helps instead of judging me."
               </p>
@@ -372,7 +372,7 @@ export default function LinnyAutomationArticle() {
               <strong className="text-white">Real example from productivity tool validation</strong>:
             </p>
 
-            <div className="my-8 bg-slate-900/50 border-l-4 border-cyan-500 p-6">
+            <div className="my-8 bg-slate-900/50 border-l-4 border-cyan-500 px-6 pt-4 pb-5">
               <p className="text-slate-300 mb-2">
                 <strong className="text-white">DM sent</strong>: "Hi Jordan! Saw your post about productivity app overwhelm. I'm building a tool designed specifically for people drowning in too many apps—would love 10 minutes of your input on what's missing."
               </p>

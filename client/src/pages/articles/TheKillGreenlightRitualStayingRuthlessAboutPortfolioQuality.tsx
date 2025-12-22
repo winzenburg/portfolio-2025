@@ -66,7 +66,7 @@ export default function KillGreenlightRitual() {
           When I finally forced myself to look at the numbers honestly, the story was brutal:
         </p>
 
-        <div className="bg-red-900/20 border-l-4 border-red-400 p-6 my-8">
+        <div className="bg-red-900/20 border-l-4 border-red-400 px-6 pt-4 pb-5 my-8">
           <div className="space-y-2">
             <p className="text-red-300 font-medium">The Hard Truth:</p>
             <ul className="text-red-200 space-y-1">
@@ -89,7 +89,7 @@ export default function KillGreenlightRitual() {
           Two weeks later, I started working on a habit tracker that scored 32/40 with an 8.5/10 opportunity score. It hit every validation threshold in four weeks. Now it's in production.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium mb-2">The Breakthrough Realization:</p>
           <p className="text-slate-200">
             The meal planner would have consumed six more months and failed anyway. The habit tracker succeeded because I started it instead of doubling down on mediocrity.
@@ -593,7 +593,7 @@ Date: 2025-12-02`}</div>
           The solution isn't more discipline—it's better systems. Weekly kill/greenlight reviews with clear criteria and visible data make tough decisions easier.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 p-6 my-8">
+        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium mb-2">The Killer Insight:</p>
           <p className="text-slate-200">
             Killing bad ideas isn't about admitting failure—it's about protecting your ability to recognize and execute on exceptional opportunities.

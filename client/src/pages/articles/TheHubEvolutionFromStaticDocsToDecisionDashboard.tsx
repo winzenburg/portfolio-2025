@@ -70,7 +70,7 @@ export default function Article() {
           So we built the opposite: <strong>The Hub</strong>—a living, real-time portfolio dashboard that surfaces every idea, every doc, every validation result, and every verdict in one searchable interface.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <div className="flex">
             <div className="ml-3">
               <p className="text-sm text-slate-200 font-medium mb-2">PULL QUOTE</p>
@@ -651,7 +651,7 @@ export default function Article() {
           Here's what I've learned building the Hub: <strong>documentation should drive decisions, not gather dust</strong>.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-6 my-8">
+        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <div className="flex">
             <div className="ml-3">
               <p className="text-sm text-slate-200 font-medium mb-2">PULL QUOTE</p>
