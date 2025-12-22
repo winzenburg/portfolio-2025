@@ -48,7 +48,7 @@ export default function MVPStrategy() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
             <p className="text-slate-300 leading-relaxed mb-6">
               I learned this the hard way launching products that took too long to build and tried to solve too many problems at once. But through those failures—and the successes that came after—I discovered something counterintuitive: the most successful MVPs aren't the ones with the most features. They're the ones that solve a single problem so well that users can't help but share them.
             </p>

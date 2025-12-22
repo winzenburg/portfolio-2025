@@ -41,7 +41,7 @@ export default function Article() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
             <article className="mx-auto max-w-3xl">
       {/* Hero Section */}
       <div className="mb-12">

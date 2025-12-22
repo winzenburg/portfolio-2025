@@ -47,7 +47,7 @@ export default function DesignSystemsFail() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
             <p className="text-slate-300 leading-relaxed mb-6">
               I've experienced this failure at Fortune 500 companies where I led design system initiatives. I've consulted with teams who called me in after their expensive design systems failed to gain traction. And through all of it, I've learned something critical: the problem isn't technical. It's organizational, and it follows a predictable pattern.
             </p>

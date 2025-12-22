@@ -47,7 +47,7 @@ export default function SupabaseMCPArticle() {
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&>p]:mb-6 [&>p:last-child]:mb-0 [&>blockquote]:my-8 [&>blockquote:last-child]:mb-0">
+          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
             <p>
           Last Tuesday, I watched a founder spend three weeks building what should've been a 
           three-hour backend setup. They'd validated demand, raised money, hired developers, 
