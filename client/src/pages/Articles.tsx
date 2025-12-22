@@ -80,7 +80,7 @@ const articles: Article[] = [
     readTime: "13 min read",
     slug: "security-bug-gate",
     category: "Engineering",
-    heroImage: "/images/articles/security-gate-hero-v2.png"
+    heroImage: "/images/articles/security-gate-hero.png"
   },
   {
     id: "30",

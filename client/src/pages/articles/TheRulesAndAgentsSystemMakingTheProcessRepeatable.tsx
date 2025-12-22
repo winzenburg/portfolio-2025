@@ -19,11 +19,13 @@ export default function RulesAndAgentsSystemArticle() {
             </a>
           </Link>
 
-          {/* Hero Image Placeholder */}
-          <div className="mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/30">
-            <div className="aspect-video flex items-center justify-center">
-              <p className="text-slate-500 text-sm">Hero image placeholder</p>
-            </div>
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+            <img
+              src="/images/articles/rules-agents-hero.png"
+              alt="Playful architectural illustration representing a repeatable rules and agents system"
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Article Meta */}
@@ -68,9 +70,13 @@ export default function RulesAndAgentsSystemArticle() {
         </p>
       </div>
 
-      {/* Hero Image Placeholder */}
-      <div className="mb-12 bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-lg p-8 text-center">
-        <div className="text-slate-500 text-sm">Hero Image: System diagram showing rules, agents, and quality gates workflow</div>
+      {/* System Diagram */}
+      <div className="my-12 rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900/30">
+        <img
+          src="/images/articles/rules-agents-system-diagram.png"
+          alt="System diagram showing a repeatable workflow with rules, agents, and quality gates"
+          className="w-full h-auto"
+        />
       </div>
 
       {/* Article Content */}
