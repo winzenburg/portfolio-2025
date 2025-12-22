@@ -394,9 +394,9 @@ export default function SecurityBugGateArticle() {
               <li>2 hardcoded API keys</li>
             </ul>
           </div>
-          <div className="bg-purple-50 p-4 rounded-lg">
-            <h4 className="font-semibold text-purple-800">Pre-Production Gate</h4>
-            <ul className="text-purple-700 text-sm mt-2 space-y-1">
+          <div className="bg-purple-900/20 border border-purple-700/50 p-4 rounded-lg">
+            <h4 className="font-semibold text-purple-300">Pre-Production Gate</h4>
+            <ul className="text-slate-200 text-sm mt-2 space-y-1">
               <li>5 RLS policy leaks</li>
               <li>3 race conditions</li>
               <li>1 critical billing logic bug</li>
