@@ -19,11 +19,13 @@ export default function SecurityBugGateArticle() {
             </a>
           </Link>
 
-          {/* Hero Image Placeholder */}
-          <div className="mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/30">
-            <div className="aspect-video flex items-center justify-center">
-              <p className="text-slate-500 text-sm">Hero image placeholder</p>
-            </div>
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+            <img
+              src="/images/articles/security-gate-hero.png"
+              alt="Illustration of a software delivery pipeline passing through bug and security gates"
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Article Meta */}
@@ -69,11 +71,6 @@ export default function SecurityBugGateArticle() {
           I built after almost leaking customer data in production.
         </p>
       </header>
-
-      {/* Hero Image Placeholder */}
-      <div className="w-full h-64 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-12 flex items-center justify-center">
-        <span className="text-white text-lg font-medium">Security Gate Illustration</span>
-      </div>
 
       {/* Article Content */}
       <div className="prose prose-lg max-w-none">
