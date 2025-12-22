@@ -46,7 +46,7 @@ export default function Article() {
       {/* Hero Section */}
       <div className="mb-12">
         <div className="mb-8">
-          <span className="inline-block rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-cyan-300 mb-4">
+          <span className="inline-block rounded-full bg-purple-900/30 border border-purple-700/50 px-3 py-1 text-sm font-medium text-purple-300 mb-4">
             AI Workflow
           </span>
           <h1 className="text-4xl font-bold tracking-tight text-white mb-4">
