@@ -27,6 +27,9 @@ Ryan Winzenburg’s portfolio site (React + Vite + TypeScript) with long-form ar
   - the article page file in `client/src/pages/articles/`
   - the article card metadata in `client/src/pages/Articles.tsx` when hero/excerpt/reading time changes
 
+## Rule–agent matrix
+See `050-rule-agent-matrix.mdc` for the canonical mapping of which agents apply which rules.
+
 ## Quality gates (hard)
 - **No `any`** (explicit or implicit). If data is `unknown`, define a type + type guard.
 - **No leftover `console.log`** in production code.

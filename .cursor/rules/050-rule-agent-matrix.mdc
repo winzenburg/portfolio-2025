@@ -1,0 +1,49 @@
+---
+description: "Rule–Agent Matrix (single source of truth for which agents apply which rules)"
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Rule–Agent Matrix
+
+This is the **single source of truth** for:
+- which **Cursor agents** should be used for which tasks
+- which **rules** each agent must load and follow
+- how to add new rules/agents without creating drift
+
+## Agents
+- **Orchestrator** (`.cursor/agents/orchestrator.md`): multi-step work, multi-file changes, release/deploy coordination.
+- **Frontend Engineer** (`.cursor/agents/frontend-engineer.md`): React + Tailwind v4 UI changes with strict TypeScript.
+- **Content Editor** (`.cursor/agents/content-editor.md`): article voice, clarity, reducing “templated” repetition.
+
+## Rules (canonical)
+- `000-orchestration.mdc`: project north star + quality gates
+- `010-tailwind-v4.mdc`: Tailwind v4-only behavior
+- `020-typescript-quality.mdc`: strict TS (no `any`, type guards)
+- `030-articles-layout.mdc`: article structure/spacing + image workflow
+- `040-writing-voice.mdc`: human writing, avoid repeated tropes
+
+## Matrix (who uses what)
+
+| Rule / Asset | Orchestrator | Frontend Engineer | Content Editor | Notes |
+| --- | --- | --- | --- | --- |
+| `000-orchestration.mdc` | ✅ required | ✅ required | ✅ required | Shared project defaults + quality gates |
+| `010-tailwind-v4.mdc` | ✅ when UI changes | ✅ required | — | Applies to Tailwind config + UI styling |
+| `020-typescript-quality.mdc` | ✅ when TS changes | ✅ required | — | Never introduce `any`; use type guards |
+| `030-articles-layout.mdc` | ✅ required for articles | ✅ required for articles | ✅ relevant | Wrapper patterns + spacing + image paths |
+| `040-writing-voice.mdc` | ✅ when editing copy | — | ✅ required | Reduce repetitive hooks/transitions |
+| `client/src/pages/Articles.tsx` | ✅ when article metadata changes | ✅ when UI changes | ✅ when copy changes | Update hero/excerpt/read time consistency |
+
+## Task → agent routing (quick)
+- **“Fix layout/spacing/contrast in article”** → Frontend Engineer (Orchestrator if many files)
+- **“Rewrite intros to avoid repetition”** → Content Editor (Orchestrator if sweeping many posts)
+- **“Add/replace hero images”** → Orchestrator (plus Frontend Engineer if layout changes)
+- **“Deploy / Netlify / build failures”** → Orchestrator
+
+## Change-control (keep it clean)
+When adding a new rule or agent:
+1. Create the rule/agent file
+2. Add it to **this matrix**
+3. If it’s a core rule, reference it from `000-orchestration.mdc`
+
