@@ -70,8 +70,8 @@ export default function Article() {
 
         <div className="relative aspect-video mb-8 overflow-hidden rounded-lg border border-slate-700/50 bg-slate-800/30">
           <img
-            src="/images/articles/results-hero.png"
-            alt="Illustration of a multi-stage machine with numbered gates, symbolizing system results and repeatable workflow"
+            src="/images/articles/dashboard-view.jpeg"
+            alt="Dashboard-style diagram showing multiple product ideas moving through a validation and build pipeline"
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
           />
