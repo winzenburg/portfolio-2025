@@ -19,10 +19,15 @@ export default function Article() {
             </a>
           </Link>
 
-          {/* Hero Image Placeholder */}
-          <div className="mb-12 rounded-lg overflow-hidden bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/30">
-            <div className="aspect-video flex items-center justify-center">
-              <p className="text-slate-500 text-sm">Hero image placeholder</p>
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30 bg-slate-900/20">
+            <div className="aspect-video">
+              <img
+                src="/images/articles/results-hero.png"
+                alt="Editorial illustration of a large machine with numbered stages, representing a systematic product creation engine and outcomes"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -63,10 +68,13 @@ export default function Article() {
           <span>7 min read</span>
         </div>
 
-        <div className="relative aspect-video mb-8 overflow-hidden rounded-lg bg-slate-800/50">
-          <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-            [Hero Image: Dashboard showing multiple product ideas in validation pipeline]
-          </div>
+        <div className="relative aspect-video mb-8 overflow-hidden rounded-lg border border-slate-700/50 bg-slate-800/30">
+          <img
+            src="/images/articles/results-hero.png"
+            alt="Illustration of a multi-stage machine with numbered gates, symbolizing system results and repeatable workflow"
+            className="absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+          />
         </div>
       </div>
 
