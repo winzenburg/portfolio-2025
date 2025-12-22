@@ -20,10 +20,10 @@ export default function RuleConsolidation() {
           </Link>
 
           {/* Hero Image */}
-          <div className="mb-12 rounded-lg overflow-hidden">
+          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Rule Consolidation"
+              src="/images/articles/rule-consolidation-hero.png"
+              alt="Editorial illustration of a creator working at a desk in front of stacked blocks, representing consolidating many rules into a manageable system"
               className="w-full h-auto"
             />
           </div>
