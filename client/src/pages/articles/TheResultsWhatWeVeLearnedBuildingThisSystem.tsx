@@ -152,9 +152,49 @@ export default function Article() {
           </p>
         </div>
 
-        <p>
-          <em>[STATS CARD: 73% of ideas pass Heat Filter, only 31% pass Durability Filter]</em>
-        </p>
+        <div className="not-prose my-10 rounded-xl border border-slate-700/50 bg-slate-900/30 p-6">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                Dual Filter Funnel
+              </div>
+              <div className="mt-1 text-lg font-semibold text-white">
+                Heat is common. Durability is rare.
+              </div>
+            </div>
+            <div className="rounded-full border border-purple-700/50 bg-purple-900/30 px-3 py-1 text-xs font-semibold text-purple-200">
+              System results
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-lg border border-cyan-700/30 bg-cyan-900/10 p-4">
+              <div className="text-sm font-semibold text-cyan-300">Pass Heat Filter</div>
+              <div className="mt-2 flex items-end gap-2">
+                <div className="text-3xl font-bold text-white">73%</div>
+                <div className="pb-1 text-sm text-slate-300">of ideas</div>
+              </div>
+              <div className="mt-3 h-2 w-full rounded-full bg-slate-800/70">
+                <div className="h-2 rounded-full bg-cyan-500" style={{ width: "73%" }} />
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-green-700/30 bg-green-900/10 p-4">
+              <div className="text-sm font-semibold text-green-300">Pass Durability Filter</div>
+              <div className="mt-2 flex items-end gap-2">
+                <div className="text-3xl font-bold text-white">31%</div>
+                <div className="pb-1 text-sm text-slate-300">of ideas</div>
+              </div>
+              <div className="mt-3 h-2 w-full rounded-full bg-slate-800/70">
+                <div className="h-2 rounded-full bg-green-500" style={{ width: "31%" }} />
+              </div>
+            </div>
+          </div>
+
+          <p className="mt-4 text-sm text-slate-300">
+            The Heat Filter tells you what people want <span className="text-slate-200">right now</span>. The Durability Filter tells you what will still matter when the hype wears off.
+          </p>
+        </div>
 
         <p>
           Real talk: Most ideas that feel "hot" right now are actually just trend-riding. The dual filter helps us separate compounding niches from cash-flow micro-bets.
@@ -232,9 +272,34 @@ export default function Article() {
           Counterintuitively, having multiple options makes you less attached to any single idea. You can be honest about what's working and what isn't.
         </p>
 
-        <p>
-          <em>[STATS CARD: 8-12 active ideas, 67% killed within 30 days, 2-3 reach development stage]</em>
-        </p>
+        <div className="not-prose my-10 rounded-xl border border-slate-700/50 bg-slate-900/30 p-6">
+          <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+            Portfolio throughput
+          </div>
+          <div className="mt-1 text-lg font-semibold text-white">
+            More shots on goal — fewer sunk-cost zombies.
+          </div>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-lg border border-slate-700/40 bg-slate-900/40 p-4">
+              <div className="text-sm font-semibold text-slate-200">Active ideas</div>
+              <div className="mt-2 text-3xl font-bold text-white">8–12</div>
+              <div className="mt-1 text-sm text-slate-400">in flight at any time</div>
+            </div>
+
+            <div className="rounded-lg border border-red-700/30 bg-red-900/10 p-4">
+              <div className="text-sm font-semibold text-red-300">Killed fast</div>
+              <div className="mt-2 text-3xl font-bold text-white">67%</div>
+              <div className="mt-1 text-sm text-slate-400">within 30 days</div>
+            </div>
+
+            <div className="rounded-lg border border-cyan-700/30 bg-cyan-900/10 p-4">
+              <div className="text-sm font-semibold text-cyan-300">Reach build</div>
+              <div className="mt-2 text-3xl font-bold text-white">2–3</div>
+              <div className="mt-1 text-sm text-slate-400">per cycle</div>
+            </div>
+          </div>
+        </div>
 
         <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
           4. Documentation as a Feature (Not a Chore)
