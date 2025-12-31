@@ -40,7 +40,97 @@ export default function Work() {
         </div>
 
         <div className="space-y-12">
-          {/* Project 1: Kinetic UI */}
+          {/* Project 1: Cultivate */}
+          <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img
+                src="/project-cultivate.png"
+                alt="Cultivate - Startup Operating System"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="grid md:grid-cols-[2fr,1fr] gap-8">
+              <div>
+                <div className="text-sm font-medium text-primary mb-3">FOUNDER · AI-NATIVE SAAS · 2025</div>
+                <h3 className="text-3xl font-bold mb-4">Cultivate: Startup Operating System</h3>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
+                  <p className="text-muted-foreground">
+                    Founded and built end-to-end: product strategy, UX design, full-stack development, and AI orchestration. Created a portfolio-first SaaS workspace that turns ideas into evidence, decisions, and a weekly operating cadence—powered by a 12-agent product creation engine.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">WHAT I DEMONSTRATED</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">12 Agents</div>
+                      <div className="text-sm text-muted-foreground">Orchestrated AI system</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">End-to-End</div>
+                      <div className="text-sm text-muted-foreground">Strategy → Design → Code</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">Full Stack</div>
+                      <div className="text-sm text-muted-foreground">React, TypeScript, Supabase</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">AI-Native</div>
+                      <div className="text-sm text-muted-foreground">Built with Claude + Cursor</div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://cultivate-six.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
+                >
+                  View Live Product →
+                </a>
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <div className="text-sm font-semibold mb-3">WHAT I BUILT</div>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Settings className="w-4 h-4" />
+                        12-Agent AI Engine
+                      </div>
+                      <div className="text-muted-foreground">Orchestrated product creation system</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Users className="w-4 h-4" />
+                        BOS Home Dashboard
+                      </div>
+                      <div className="text-muted-foreground">Weekly planning + execution cadence</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Opportunity Radar
+                      </div>
+                      <div className="text-muted-foreground">Daily idea scoring + validation</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Pipeline Runs
+                      </div>
+                      <div className="text-muted-foreground">Discovery → validation artifacts</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          {/* Project 2: Kinetic UI */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
