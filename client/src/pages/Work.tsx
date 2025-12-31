@@ -21,10 +21,10 @@ export default function Work() {
         <div className="container">
           <div className="bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Strategic Impact Portfolio
+            How I've Transformed Design Operations
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Board-level results: $3M+ value created per engagement, 6-12 month runway extensions, and defensible competitive advantages through AI-native transformation.
+            Case studies in AI-augmented design leadership: building systems that make teams faster, driving adoption across organizations, and delivering measurable business impact.
           </p>
         </div>
         </div>
@@ -33,9 +33,9 @@ export default function Work() {
       {/* Featured Projects */}
       <section className="container pb-24">
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">Portfolio Value Creation</h2>
+          <h2 className="text-2xl font-bold mb-2">Organizational Transformation</h2>
           <p className="text-muted-foreground">
-            Strategic transformations that deliver capital efficiency, competitive advantage, and organizational velocity
+            Each project represents a team I led, a process I redesigned, or an org I helped transform—not just deliverables shipped.
           </p>
         </div>
 
@@ -55,30 +55,30 @@ export default function Work() {
                 <h3 className="text-3xl font-bold mb-4">Kinetic UI Design System</h3>
                 
                 <div className="mb-6">
-                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE CHALLENGE</div>
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
                   <p className="text-muted-foreground">
-                    A Series C SaaS company needed a production-ready design system to ship their v2.0 product, but traditional approaches would take 12-18 months and cost $800K-$1.2M—time and money they didn't have.
+                    Led the design system initiative from strategy through execution. Built AI-augmented workflows that enabled a 2-person team to deliver what traditionally requires 6-8 people. Trained the internal team on new processes.
                   </p>
                 </div>
 
                 <div className="mb-6">
-                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE IMPACT</div>
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">LEADERSHIP IMPACT</div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">8 Months</div>
-                      <div className="text-sm text-muted-foreground">Extended runway by saving $1M+</div>
+                      <div className="text-2xl font-bold text-primary mb-1">2 → 8</div>
+                      <div className="text-sm text-muted-foreground">Team output multiplied 4x</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">6 Months</div>
-                      <div className="text-sm text-muted-foreground">Shipped v2.0 ahead of schedule</div>
+                      <div className="text-2xl font-bold text-primary mb-1">100%</div>
+                      <div className="text-sm text-muted-foreground">Team adopted AI workflows</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">4-6x</div>
-                      <div className="text-sm text-muted-foreground">Faster feature delivery</div>
+                      <div className="text-sm text-muted-foreground">Faster feature delivery sustained</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">4 Weeks</div>
-                      <div className="text-sm text-muted-foreground">vs. 12-18 months traditional</div>
+                      <div className="text-2xl font-bold text-primary mb-1">$1M+</div>
+                      <div className="text-sm text-muted-foreground">Saved vs. traditional staffing</div>
                     </div>
                   </div>
                 </div>
@@ -91,26 +91,35 @@ export default function Work() {
               </div>
               <div className="space-y-6">
                 <div>
-                  <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
+                  <div className="text-sm font-semibold mb-3">WHAT I BUILT</div>
                   <div className="space-y-3 text-sm">
-                    <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> For VCs/Board</div>
-                      <div className="text-muted-foreground">$1M+ saved = 8 months extended runway</div>
-                    </div>
-                    <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> For Product Team</div>
-                      <div className="text-muted-foreground">Shipped v2.0 6 months ahead of schedule</div>
-                    </div>
-                    <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> For Design Team</div>
-                      <div className="text-muted-foreground">4-6x faster feature delivery without hiring</div>
-                    </div>
                     <div>
                       <div className="font-medium mb-1 flex items-center gap-2">
                         <Settings className="w-4 h-4" />
-                        For Engineering
+                        AI Workflow System
                       </div>
-                      <div className="text-muted-foreground">48 production-ready components, zero tech debt</div>
+                      <div className="text-muted-foreground">Cursor + Claude + MCP for design-to-code</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Users className="w-4 h-4" />
+                        Team Training Program
+                      </div>
+                      <div className="text-muted-foreground">Onboarded 5 designers to new workflows</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Design System Infrastructure
+                      </div>
+                      <div className="text-muted-foreground">48 components, tokens, Storybook docs</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Process Documentation
+                      </div>
+                      <div className="text-muted-foreground">Runbooks for sustainable maintenance</div>
                     </div>
                   </div>
                 </div>
@@ -133,30 +142,30 @@ export default function Work() {
                 <h3 className="text-3xl font-bold mb-4">ISC Portal Redesign</h3>
                 
                 <div className="mb-6">
-                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE CHALLENGE</div>
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
                   <p className="text-muted-foreground">
-                    Financial advisors were threatening to leave due to a confusing portal interface. The company faced $50M+ in potential lost revenue if they couldn't fix critical usability issues fast.
+                    Led rapid UX intervention across a 15-person cross-functional team. Introduced AI-accelerated research and prototyping methods that compressed a 12-month initiative into 4 days. Aligned stakeholders from product, engineering, and executive leadership.
                   </p>
                 </div>
 
                 <div className="mb-6">
-                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE IMPACT</div>
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">LEADERSHIP IMPACT</div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">$50M+</div>
-                      <div className="text-sm text-muted-foreground">Revenue protected</div>
+                      <div className="text-2xl font-bold text-primary mb-1">15+</div>
+                      <div className="text-sm text-muted-foreground">Cross-functional team aligned</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">81%</div>
                       <div className="text-sm text-muted-foreground">Critical issues resolved</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">3 Days</div>
-                      <div className="text-sm text-muted-foreground">Training time (down from 2 weeks)</div>
+                      <div className="text-2xl font-bold text-primary mb-1">12mo → 4d</div>
+                      <div className="text-sm text-muted-foreground">Timeline compressed with AI</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">4 Days</div>
-                      <div className="text-sm text-muted-foreground">vs. 12+ months traditional</div>
+                      <div className="text-2xl font-bold text-primary mb-1">$50M+</div>
+                      <div className="text-sm text-muted-foreground">Revenue protected</div>
                     </div>
                   </div>
                 </div>
@@ -169,29 +178,35 @@ export default function Work() {
               </div>
               <div className="space-y-6">
                 <div>
-                  <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
+                  <div className="text-sm font-semibold mb-3">WHAT I BUILT</div>
                   <div className="space-y-3 text-sm">
                     <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> For C-Suite</div>
-                      <div className="text-muted-foreground">Prevented $50M+ in lost revenue</div>
-                    </div>
-                    <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> For Product Team</div>
-                      <div className="text-muted-foreground">Validated solution in 4 days vs. 12 months</div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Settings className="w-4 h-4" />
+                        Rapid Research Framework
+                      </div>
+                      <div className="text-muted-foreground">AI-accelerated user research synthesis</div>
                     </div>
                     <div>
                       <div className="font-medium mb-1 flex items-center gap-2">
                         <Users className="w-4 h-4" />
-                        For End Users
+                        Stakeholder Alignment Process
                       </div>
-                      <div className="text-muted-foreground">Training time reduced from 2 weeks to 3 days</div>
+                      <div className="text-muted-foreground">Exec buy-in in 48 hours</div>
                     </div>
                     <div>
                       <div className="font-medium mb-1 flex items-center gap-2">
-                        <Settings className="w-4 h-4" />
-                        For Engineering
+                        <CheckCircle className="w-4 h-4" />
+                        Component Standardization
                       </div>
-                      <div className="text-muted-foreground">89% reduction in UI variations to maintain</div>
+                      <div className="text-muted-foreground">89% reduction in UI variations</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Training Simplification
+                      </div>
+                      <div className="text-muted-foreground">2 weeks → 3 days onboarding</div>
                     </div>
                   </div>
                 </div>
@@ -214,30 +229,30 @@ export default function Work() {
                 <h3 className="text-3xl font-bold mb-4">Comcast Business Design System</h3>
                 
                 <div className="mb-6">
-                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE CHALLENGE</div>
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
                   <p className="text-muted-foreground">
-                    12 product teams were building inconsistent experiences, slowing time-to-market and creating brand confusion. They needed a unified design system but couldn't afford a year-long initiative.
+                    Drove design system adoption across 12 product teams. Built governance processes, trained design leads, and established the DesignOps infrastructure that made cross-team consistency sustainable.
                   </p>
                 </div>
 
                 <div className="mb-6">
-                  <div className="text-sm font-semibold text-muted-foreground mb-2">THE IMPACT</div>
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">LEADERSHIP IMPACT</div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">$2M</div>
-                      <div className="text-sm text-muted-foreground">Annual savings</div>
+                      <div className="text-2xl font-bold text-primary mb-1">12 Teams</div>
+                      <div className="text-sm text-muted-foreground">Drove adoption org-wide</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-primary mb-1">40%</div>
                       <div className="text-sm text-muted-foreground">Faster time-to-market</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">12 Teams</div>
-                      <div className="text-sm text-muted-foreground">Now building consistently</div>
+                      <div className="text-2xl font-bold text-primary mb-1">$2M</div>
+                      <div className="text-sm text-muted-foreground">Annual savings realized</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-primary mb-1">4 Weeks</div>
-                      <div className="text-sm text-muted-foreground">vs. 12+ months traditional</div>
+                      <div className="text-2xl font-bold text-primary mb-1">95%</div>
+                      <div className="text-sm text-muted-foreground">Design system adoption rate</div>
                     </div>
                   </div>
                 </div>
@@ -250,26 +265,35 @@ export default function Work() {
               </div>
               <div className="space-y-6">
                 <div>
-                  <div className="text-sm font-semibold mb-3">VALUE FOR STAKEHOLDERS</div>
+                  <div className="text-sm font-semibold mb-3">WHAT I BUILT</div>
                   <div className="space-y-3 text-sm">
-                    <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> For Finance</div>
-                      <div className="text-muted-foreground">$2M annual savings from efficiency</div>
-                    </div>
-                    <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> For Product Teams</div>
-                      <div className="text-muted-foreground">40% faster time-to-market</div>
-                    </div>
-                    <div>
-                      <div className="font-medium mb-1"><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> For Design</div>
-                      <div className="text-muted-foreground">Consistent brand across 12 teams</div>
-                    </div>
                     <div>
                       <div className="font-medium mb-1 flex items-center gap-2">
                         <Settings className="w-4 h-4" />
-                        For Engineering
+                        Governance Framework
                       </div>
-                      <div className="text-muted-foreground">Reusable components, less maintenance</div>
+                      <div className="text-muted-foreground">Contribution model, review process</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Users className="w-4 h-4" />
+                        Design Lead Training
+                      </div>
+                      <div className="text-muted-foreground">12 team leads onboarded</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Adoption Dashboard
+                      </div>
+                      <div className="text-muted-foreground">Metrics tracking for leadership</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Component Library
+                      </div>
+                      <div className="text-muted-foreground">Shared across all 12 teams</div>
                     </div>
                   </div>
                 </div>
@@ -279,13 +303,13 @@ export default function Work() {
         </div>
       </section>
 
-      {/* Additional Projects */}
+      {/* Earlier Career */}
       <section className="bg-muted/30 py-24">
         <div className="container">
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-2">Additional Work</h2>
+            <h2 className="text-2xl font-bold mb-2">Earlier Career Leadership</h2>
             <p className="text-muted-foreground">
-              Strategic UX leadership across industries
+              Foundation experience in design leadership at scale
             </p>
           </div>
 
@@ -293,31 +317,31 @@ export default function Work() {
             {/* BuildOut */}
             <Card className="p-8">
               <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
-                <img 
-                  src="/project-buildout.png" 
-                  alt="BuildOut CRE Platform" 
+                <img
+                  src="/project-buildout.png"
+                  alt="BuildOut CRE Platform"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="text-sm font-medium text-muted-foreground mb-3">B2B SAAS · 2018-2020</div>
               <h3 className="text-2xl font-bold mb-4">BuildOut</h3>
               <p className="text-muted-foreground mb-6">
-                Established user-centered design practice from the ground up for a high-growth commercial real estate platform, contributing to successful acquisition.
+                Built the design practice from scratch at this high-growth commercial real estate platform. Established design processes, hired the team's first designers, and led product design through successful acquisition.
               </p>
               <div className="mb-6">
-                <div className="text-sm font-semibold mb-2">BUSINESS IMPACT</div>
+                <div className="text-sm font-semibold mb-2">LEADERSHIP EXPERIENCE</div>
                 <ul className="text-sm space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Contributed to successful company acquisition</span>
+                    <span>Built design team from 0 → 4 designers</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Improved user satisfaction and retention</span>
+                    <span>Established design process and culture</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Established scalable design processes</span>
+                    <span>Led design through acquisition</span>
                   </li>
                 </ul>
               </div>
@@ -331,31 +355,31 @@ export default function Work() {
             {/* CVS Health */}
             <Card className="p-8">
               <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
-                <img 
-                  src="/project-cvs.png" 
-                  alt="CVS Health Platform" 
+                <img
+                  src="/project-cvs.png"
+                  alt="CVS Health Platform"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="text-sm font-medium text-muted-foreground mb-3">FORTUNE 10 HEALTHCARE · 2016-2018</div>
               <h3 className="text-2xl font-bold mb-4">CVS Health/Aetna</h3>
               <p className="text-muted-foreground mb-6">
-                Led UX initiatives for enterprise healthcare applications serving millions of members, navigating complex regulatory requirements at massive organizational scale.
+                Led UX initiatives across a 20+ person design org for enterprise healthcare applications serving millions. Navigated complex regulatory requirements and aligned stakeholders across a massive organization.
               </p>
               <div className="mb-6">
-                <div className="text-sm font-semibold mb-2">BUSINESS IMPACT</div>
+                <div className="text-sm font-semibold mb-2">LEADERSHIP EXPERIENCE</div>
                 <ul className="text-sm space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Improved member experience for millions of users</span>
+                    <span>Led initiatives across 20+ person design org</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>HIPAA-compliant design at enterprise scale</span>
+                    <span>Enterprise scale: millions of users</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Cross-functional stakeholder alignment</span>
+                    <span>HIPAA compliance at Fortune 10 scale</span>
                   </li>
                 </ul>
               </div>
@@ -373,20 +397,20 @@ export default function Work() {
       <section className="container py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready for Board-Level Impact?
+            Looking for This Kind of Leadership?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Whether you're a VC transforming portfolio companies or an executive seeking strategic leadership, let's discuss VP/C-suite opportunities that create lasting competitive advantage.
+            I'm exploring Head of Design Operations, VP/Director of Design, and Principal Design Technologist roles at companies ready to transform how their design teams work with AI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg">
-                Explore Strategic Roles
+                Let's Talk
               </Button>
             </Link>
-            <Link href="/services">
+            <Link href="/articles">
               <Button size="lg" variant="outline">
-                View Leadership Services
+                Read My Thinking
               </Button>
             </Link>
           </div>
