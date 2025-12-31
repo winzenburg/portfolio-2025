@@ -1,9 +1,17 @@
 import { useState } from "react";
 
+// TODO: Re-enable newsletter signup when ready
+const NEWSLETTER_ENABLED = false;
+
 export default function NewsletterSignup() {
   const [email, setEmail] = useState("");
   const [subscribeStatus, setSubscribeStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+
+  // Return nothing when disabled
+  if (!NEWSLETTER_ENABLED) {
+    return null;
+  }
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
