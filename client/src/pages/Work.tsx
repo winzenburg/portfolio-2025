@@ -42,21 +42,12 @@ export default function Work() {
         <div className="space-y-12">
           {/* Project 1: Cultivate */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                <img
-                  src="/project-cultivate.png"
-                  alt="Cultivate - Startup Operating System Landing"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                <img
-                  src="/project-cultivate-bos.png"
-                  alt="Cultivate - BOS Dashboard"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img
+                src="/project-cultivate-bos.png"
+                alt="Cultivate - BOS Dashboard"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <div className="grid md:grid-cols-[2fr,1fr] gap-8">
               <div>
