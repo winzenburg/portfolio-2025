@@ -447,8 +447,8 @@ export default function DualFilterValidationFrameworkArticle() {
             I've created a detailed validation playbook with all the specific tests, scoring sheets, and 
             frameworks I use. No fluff—just the exact process I follow for every new product idea.
           </p>
-          <Link 
-            href="/resources/validation-playbook" 
+          <Link
+            href="/contact?playbook=validation-playbook"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             Get the Complete Validation Playbook

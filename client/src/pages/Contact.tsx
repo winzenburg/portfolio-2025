@@ -2,18 +2,75 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Link } from "wouter";
-import { useState } from "react";
+import { Link, useSearch } from "wouter";
+import { useState, useEffect } from "react";
+import { FileText, X } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
 
+// Map of playbook IDs to their display info
+const PLAYBOOK_INFO: Record<string, { title: string; article: string; articleSlug: string }> = {
+  "micro-interactions": {
+    title: "Micro-Interactions Implementation Guide",
+    article: "The Micro-Interactions: Apple-Style Motion That Guides",
+    articleSlug: "the-micro-interactions-apple-style-motion-that-guides"
+  },
+  "security-bug-gate": {
+    title: "Security & Bug Gate Templates",
+    article: "The Security and Bug Gate: Two-Tier Code Review For AI",
+    articleSlug: "the-security-and-bug-gate-two-tier-code-review-for-ai"
+  },
+  "portfolio-template": {
+    title: "Portfolio Scoring Template",
+    article: "The Portfolio Approach: Managing Multiple Bets",
+    articleSlug: "the-portfolio-approach-managing-multiple-bets-killing-fast-prioritizing-by-expected-value"
+  },
+  "validation-playbook": {
+    title: "Validation Playbook & Scoring Sheets",
+    article: "The Solution: A Dual-Filter Validation Framework",
+    articleSlug: "the-solution-a-dual-filter-validation-framework"
+  },
+  "context7-starter": {
+    title: "Context7 Starter Kit",
+    article: "Never Ship Outdated Code: How We Use Context7",
+    articleSlug: "never-ship-outdated-code-how-we-use-context7-to-query-live-docs"
+  },
+  "complete-system": {
+    title: "Complete System Templates & Playbooks",
+    article: "The Results: What We've Learned Building This System",
+    articleSlug: "the-results-what-weve-learned-building-this-system"
+  },
+  "complete-framework": {
+    title: "Complete SaaS Framework",
+    article: "The Problem: Why Most SaaS Startups Fail Before They Even Start",
+    articleSlug: "the-problem-why-most-saas-startups-fail-before-they-even-start"
+  }
+};
+
 export default function Contact() {
+  const searchString = useSearch();
+  const params = new URLSearchParams(searchString);
+  const playbookId = params.get("playbook");
+  const playbookInfo = playbookId ? PLAYBOOK_INFO[playbookId] : null;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
     role: "",
-    message: ""
+    message: "",
+    playbook: ""
   });
+
+  // Set playbook in form data when URL parameter is present
+  useEffect(() => {
+    if (playbookInfo) {
+      setFormData(prev => ({
+        ...prev,
+        playbook: playbookInfo.title,
+        message: prev.message || `I'd like to receive the "${playbookInfo.title}" from your article.`
+      }));
+    }
+  }, [playbookInfo]);
 
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -39,7 +96,8 @@ export default function Contact() {
           email: "",
           company: "",
           role: "",
-          message: ""
+          message: "",
+          playbook: ""
         });
       } else {
         throw new Error('Form submission failed');
@@ -102,9 +160,33 @@ export default function Contact() {
               </div>
             ) : (
             <>
-            <h2 className="text-2xl font-bold mb-6">Start a Strategic Conversation</h2>
-            <form 
-              onSubmit={handleSubmit} 
+            <h2 className="text-2xl font-bold mb-6">
+              {playbookInfo ? "Request Your Playbook" : "Start a Strategic Conversation"}
+            </h2>
+
+            {/* Playbook Request Indicator */}
+            {playbookInfo && (
+              <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <FileText className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <div className="flex-1">
+                    <div className="text-sm text-blue-300 mb-1">Requesting playbook:</div>
+                    <div className="font-medium text-white">{playbookInfo.title}</div>
+                    <div className="text-sm text-slate-400 mt-1">
+                      From: <Link href={`/articles/${playbookInfo.articleSlug}`} className="text-blue-400 hover:text-blue-300">{playbookInfo.article}</Link>
+                    </div>
+                  </div>
+                  <Link href="/contact">
+                    <button type="button" className="text-slate-400 hover:text-white transition-colors" aria-label="Clear playbook request">
+                      <X className="w-4 h-4" />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            )}
+
+            <form
+              onSubmit={handleSubmit}
               className="space-y-6"
               name="contact"
               method="POST"
@@ -112,6 +194,7 @@ export default function Contact() {
               netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="playbook" value={formData.playbook} />
               <p className="hidden">
                 <label>
                   Don't fill this out if you're human: <input name="bot-field" />

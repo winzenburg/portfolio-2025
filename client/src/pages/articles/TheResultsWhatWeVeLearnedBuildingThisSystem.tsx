@@ -488,9 +488,11 @@ export default function Article() {
           <p className="text-slate-200 mb-6">
             Get the detailed validation templates, AI orchestration playbooks, and portfolio management tools we use in our product creation engine.
           </p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-            Download the Complete System
-          </button>
+          <Link href="/contact?playbook=complete-system">
+            <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+              Download the Complete System
+            </a>
+          </Link>
         </div>
       </div>
 

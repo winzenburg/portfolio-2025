@@ -359,9 +359,11 @@ export default function PortfolioApproachArticle() {
             Want the exact spreadsheet I use? I've cleaned up my scoring template and made it 
             available for free. Includes the formulas, scoring rubrics, and example calculations.
           </p>
-          <button className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors">
-            Download Portfolio Template
-          </button>
+          <Link href="/contact?playbook=portfolio-template">
+            <a className="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors">
+              Download Portfolio Template
+            </a>
+          </Link>
         </Card>
 
         <h2>The Uncomfortable Truth About This Approach</h2>
@@ -493,9 +495,11 @@ export default function PortfolioApproachArticle() {
               process. Everything you need to start managing product bets like a VC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                Download Free Template
-              </button>
+              <Link href="/contact?playbook=portfolio-template">
+                <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                  Download Free Template
+                </a>
+              </Link>
               <button className="text-cyan-400 hover:text-cyan-300 transition-colors">
                 Read More Articles →
               </button>

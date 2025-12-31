@@ -509,9 +509,11 @@ export default function SecurityBugGateArticle() {
           Get both the everyday prompt and pre-production gate checklists, plus examples of common issues 
           to watch for in AI-generated code.
         </p>
-        <button className="bg-slate-900 text-cyan-400 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
-          Download the Templates
-        </button>
+        <Link href="/contact?playbook=security-bug-gate">
+          <a className="inline-block bg-slate-900 text-cyan-400 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
+            Download the Templates
+          </a>
+        </Link>
       </div>
     </article>
           </div>

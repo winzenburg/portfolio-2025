@@ -616,9 +616,11 @@ export default function MicroInteractionsArticle() {
             I've created a detailed micro-interactions spec template with code examples, animation tokens, and accessibility checklists. Everything you need to implement Apple-style motion in your product.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-              Download the Playbook
-            </button>
+            <Link href="/contact?playbook=micro-interactions">
+              <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center">
+                Download the Playbook
+              </a>
+            </Link>
             <button className="border border-slate-600 text-slate-200 px-6 py-3 rounded-lg font-medium hover:bg-slate-800/30 transition-colors">
               View Live Examples
             </button>
