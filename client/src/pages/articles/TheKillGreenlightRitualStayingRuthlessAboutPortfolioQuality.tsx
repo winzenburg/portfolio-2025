@@ -42,14 +42,6 @@ export default function KillGreenlightRitual() {
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-            <BlogPost
-      title="The Kill/Greenlight Ritual: Staying Ruthless About Portfolio Quality"
-      date="2025-12-02"
-      readTime="8 min"
-      category="AI Workflow"
-      description="Most founders can't kill ideas because of sunk costs. Here's how I learned to make tough decisions systematically, not emotionally—and why it might be the most important skill you develop."
-    >
-      <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
         <p className="text-xl text-slate-300 mb-8">
           I'll never forget the moment I finally killed my "revolutionary AI-powered meal planner."
         </p>
@@ -615,13 +607,11 @@ Date: 2025-12-02`}</div>
             Get the complete framework and start making better decisions about your ideas.
           </p>
           <div className="flex gap-4">
-            <Badge variant="outline">Framework Template</Badge>
-            <Badge variant="outline">Kill Criteria Checklist</Badge>
-            <Badge variant="outline">Hub Integration Guide</Badge>
+            <span className="inline-block bg-slate-800/50 border border-slate-600 text-slate-300 px-4 py-2 rounded-lg text-sm">Framework Template</span>
+            <span className="inline-block bg-slate-800/50 border border-slate-600 text-slate-300 px-4 py-2 rounded-lg text-sm">Kill Criteria Checklist</span>
+            <span className="inline-block bg-slate-800/50 border border-slate-600 text-slate-300 px-4 py-2 rounded-lg text-sm">Hub Integration Guide</span>
           </div>
         </div>
-      </div>
-    </BlogPost>
           </div>
 
           {/* Newsletter Signup */}

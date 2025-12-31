@@ -42,23 +42,6 @@ export default function MicroInteractionsArticle() {
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-            <Article metadata={metadata}>
-      <div className="prose prose-lg max-w-none">
-        {/* Hero Section */}
-        <div className="mb-12">
-          <div className="aspect-video bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg mb-6 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-slate-900 rounded-2xl shadow-lg mx-auto mb-4 flex items-center justify-center">
-                <div className="w-8 h-8 bg-cyan-900/200 rounded-lg animate-pulse"></div>
-              </div>
-              <p className="text-slate-300 font-medium">Subtle animations that actually work</p>
-            </div>
-          </div>
-        </div>
-
-        <h1 className="text-4xl font-bold text-white mb-6">
-          The Micro-Interactions Apple Gets Right (And Why Yours Probably Don't)
-        </h1>
 
         <p className="text-xl text-slate-300 mb-8 leading-relaxed">
           I spent two years reverse-engineering why Apple's animations feel so good. It's not magic—it's a systematic approach to motion that guides without annoying. Here's the playbook.
@@ -641,8 +624,6 @@ export default function MicroInteractionsArticle() {
             </button>
           </div>
         </div>
-      </div>
-    </Article>
           </div>
 
           {/* Newsletter Signup */}

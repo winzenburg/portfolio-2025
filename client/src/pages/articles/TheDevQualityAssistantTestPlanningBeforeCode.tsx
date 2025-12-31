@@ -384,9 +384,9 @@ export default function DevQualityAssistant() {
               
               <p className="text-slate-300 mb-2"><strong className="text-white">Affected surfaces</strong>:</p>
               <ul className="text-slate-300 text-sm space-y-1 mb-4">
-                <li>New API route: `POST /api/orgs/{id}/invites`</li>
-                <li>New database table: `org_invites`</li>
-                <li>New email template: `invite-email.tsx`</li>
+                <li>New API route: <code className="text-cyan-400 bg-slate-900 px-2 py-1 rounded">POST /api/orgs/&#123;id&#125;/invites</code></li>
+                <li>New database table: <code className="text-cyan-400 bg-slate-900 px-2 py-1 rounded">org_invites</code></li>
+                <li>New email template: <code className="text-cyan-400 bg-slate-900 px-2 py-1 rounded">invite-email.tsx</code></li>
                 <li>UI: New "Invite Member" modal in org settings</li>
               </ul>
 

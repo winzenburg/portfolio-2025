@@ -42,14 +42,6 @@ export default function Article() {
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-            <ArticleLayout
-      title="The Hub Evolution: From Static Docs to Decision Dashboard"
-      description="Most docs systems are graveyards. Here's how we built a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions."
-      date="2025-01-21"
-      readTime="8 min"
-      category="AI Workflow"
-    >
-      <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
         <p className="lead">
           I used to dread documentation. We'd write comprehensive PRDs, discovery docs, validation plans—all beautifully formatted in Notion. Then they'd sit there, forgotten, while we built the product.
         </p>
@@ -728,9 +720,7 @@ export default function Article() {
               </button>
             </div>
           </div>
-        </div>
-      </div>
-    </ArticleLayout>
+          </div>
           </div>
 
           {/* Newsletter Signup */}

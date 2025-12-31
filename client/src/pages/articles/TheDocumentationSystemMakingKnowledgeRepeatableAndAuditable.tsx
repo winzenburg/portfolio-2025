@@ -42,14 +42,6 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-            <ArticleLayout meta={metadata}>
-      <div className="relative">
-        <img 
-          src="/api/placeholder/1200/600" 
-          alt="Organized documentation system with cross-referenced files" 
-          className="w-full h-96 object-cover rounded-lg mb-8"
-        />
-      </div>
 
       <p className="text-xl text-slate-300 mb-8 leading-relaxed">
         Three months ago, I watched our team make the same validation mistake twice. Same market research. Same flawed assumptions. Same expensive failure. 
@@ -109,9 +101,11 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         Looks obsessive? Maybe. But here's what happened: Six months later, when a client asked about design systems for their portfolio companies, I had the complete story in 12 organized files instead of hunting through 47 different tools.
       </p>
 
-      <PullQuote>
-        "Brilliant insights are worthless if they disappear the moment someone takes vacation."
-      </PullQuote>
+      <div className="my-12 pl-6 border-l-4 border-cyan-500">
+        <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+          "Brilliant insights are worthless if they disappear the moment someone takes vacation."
+        </p>
+      </div>
 
       <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The Knowledge Web (Or: How Everything Connects)
@@ -143,14 +137,23 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         Unexpectedly, the simple act of linking documents exposed gaps in our thinking. When I couldn't link to supporting research, it usually meant we didn't have any. That's a problem worth catching early.
       </p>
 
-      <StatsCard 
-        title="Documentation Impact"
-        stats={[
-          { label: "Average time to find past decisions", value: "3 minutes", context: "down from 45 minutes" },
-          { label: "Repeated validation mistakes", value: "0", context: "last 6 months" },
-          { label: "New team member onboarding", value: "2 days", context: "vs 2 weeks before" }
-        ]}
-      />
+      <div className="my-10 grid md:grid-cols-3 gap-6">
+        <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+          <div className="text-3xl font-bold text-cyan-400 mb-2">3 min</div>
+          <div className="text-slate-400 text-sm">Average time to find past decisions</div>
+          <div className="text-slate-500 text-xs mt-1">down from 45 minutes</div>
+        </div>
+        <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+          <div className="text-3xl font-bold text-cyan-400 mb-2">0</div>
+          <div className="text-slate-400 text-sm">Repeated validation mistakes</div>
+          <div className="text-slate-500 text-xs mt-1">last 6 months</div>
+        </div>
+        <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+          <div className="text-3xl font-bold text-cyan-400 mb-2">2 days</div>
+          <div className="text-slate-400 text-sm">New team member onboarding</div>
+          <div className="text-slate-500 text-xs mt-1">vs 2 weeks before</div>
+        </div>
+      </div>
 
       <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         The Real-Time Reality Check
@@ -214,27 +217,50 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         This isn't just for internal clarity—it's for building trust with stakeholders. When someone questions a decision, I can show them the complete reasoning chain instead of asking them to trust my memory.
       </p>
 
-      <ComparisonCard
-        title="Before vs. After: Decision Documentation"
-        before={{
-          title: "The Old Way",
-          items: [
-            "\"We pivoted to B2B because it felt right\"",
-            "\"Trust me, I did the research\"",
-            "\"I think we tested that approach\"",
-            "\"Someone must have the data somewhere\""
-          ]
-        }}
-        after={{
-          title: "The New Way",
-          items: [
-            "\"We pivoted to B2B based on JTBD analysis showing 67% preference for speed\"",
-            "\"Red team analysis identified 3 critical risks - see REDTEAM-project-name.md\"",
-            "\"Landing page test showed 12% conversion vs. 3% for B2C - RESULTS-project-name.md\"",
-            "\"Complete validation trail available in /docs/validation/\""
-          ]
-        }}
-      />
+      <div className="my-12 grid md:grid-cols-2 gap-6">
+        <div className="bg-slate-900/30 border border-red-900/30 rounded-lg p-6">
+          <div className="text-red-400 font-semibold mb-4 uppercase text-sm tracking-wider">The Old Way</div>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-2">
+              <span className="text-red-400">✗</span>
+              <span className="text-slate-400">"We pivoted to B2B because it felt right"</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-red-400">✗</span>
+              <span className="text-slate-400">"Trust me, I did the research"</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-red-400">✗</span>
+              <span className="text-slate-400">"I think we tested that approach"</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-red-400">✗</span>
+              <span className="text-slate-400">"Someone must have the data somewhere"</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
+          <div className="text-cyan-400 font-semibold mb-4 uppercase text-sm tracking-wider">The New Way</div>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-2">
+              <span className="text-cyan-400">✓</span>
+              <span className="text-slate-300">"We pivoted to B2B based on JTBD analysis showing 67% preference for speed"</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-cyan-400">✓</span>
+              <span className="text-slate-300">"Red team analysis identified 3 critical risks - see REDTEAM-project-name.md"</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-cyan-400">✓</span>
+              <span className="text-slate-300">"Landing page test showed 12% conversion vs. 3% for B2C - RESULTS-project-name.md"</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="text-cyan-400">✓</span>
+              <span className="text-slate-300">"Complete validation trail available in /docs/validation/"</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         How to Actually Build This (Without Losing Your Mind)
@@ -312,9 +338,11 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         But here's what I've learned after six months with this system: The cost of good documentation is visible and annoying. The cost of bad documentation is invisible and devastating.
       </p>
 
-      <PullQuote>
-        "The cost of good documentation is visible and annoying. The cost of bad documentation is invisible and devastating."
-      </PullQuote>
+      <div className="my-12 pl-6 border-l-4 border-cyan-500">
+        <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+          "The cost of good documentation is visible and annoying. The cost of bad documentation is invisible and devastating."
+        </p>
+      </div>
 
       <h2 className="text-2xl font-bold text-white mt-12 mb-6">
         What I Wish I'd Known Starting Out
@@ -376,7 +404,6 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
           Get the Documentation Templates
         </a>
       </div>
-    </ArticleLayout>
           </div>
 
           {/* Newsletter Signup */}

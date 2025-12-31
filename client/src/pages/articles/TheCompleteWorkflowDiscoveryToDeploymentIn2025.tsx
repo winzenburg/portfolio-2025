@@ -42,17 +42,6 @@ export default function CompleteWorkflowPost() {
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-            <article className="max-w-4xl mx-auto">
-      <PostHero
-        title={post.title}
-        publishedAt={post.publishedAt}
-        readTime={post.readTime}
-        category={post.category}
-        description={post.description}
-      />
-
-      <PostContent>
-        <div className="prose prose-neutral prose-lg max-w-none">
           <p className="text-xl text-neutral-600 mb-8 font-medium">
             Last month, I killed 7 product ideas in 15 minutes. Not because I'm ruthless—because I finally built a system that tells me which ideas are worth pursuing before I waste months building the wrong thing.
           </p>
@@ -567,21 +556,6 @@ export default function CompleteWorkflowPost() {
           <p>
             <em>Want to explore our open-source rules, templates, and orchestrator? I'm working on making the full system available. In the meantime, start with portfolio scoring—that single step will save you months of wasted effort.</em>
           </p>
-        </div>
-      </PostContent>
-
-      <PostCTA 
-        title="Ready to Build Your Own Systematic Workflow?"
-        description="Get the templates, checklists, and frameworks I use to turn ideas into shipped products with 75% success rates."
-        ctaText="Get the Complete System"
-        ctaLink="/contact"
-      />
-
-      <PostNavigation 
-        previousPost={{ title: "AI-Powered Market Validation", href: "/articles/ai-powered-market-validation" }}
-        nextPost={{ title: "Building Design Systems That Scale", href: "/articles/design-systems-that-scale" }}
-      />
-    </article>
           </div>
 
           {/* Newsletter Signup */}
