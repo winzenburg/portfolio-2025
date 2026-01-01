@@ -283,7 +283,7 @@ export default function Contact() {
                 <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
                 <div className="space-y-3">
                 <a
-                  href="https://linkedin.com/in/ryanwinzenburg"
+                  href="https://www.linkedin.com/in/rwinzenburg/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
