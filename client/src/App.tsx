@@ -51,6 +51,14 @@ import TheSecurityAndBugGateTwoTierCodeReviewForAi from "./pages/articles/TheSec
 import TheSolutionADualFilterValidationFramework from "./pages/articles/TheSolutionADualFilterValidationFramework";
 import TheSupabaseMcpProductionBackendsInMinutes from "./pages/articles/TheSupabaseMcpProductionBackendsInMinutes";
 import TheTechnicalStackModernWebStandardsForProductCreationPlatforms from "./pages/articles/TheTechnicalStackModernWebStandardsForProductCreationPlatforms";
+import BusinessOperatingSystem from "./pages/articles/BusinessOperatingSystem";
+import WeeklyRhythm from "./pages/articles/WeeklyRhythm";
+import RocksNotTasks from "./pages/articles/RocksNotTasks";
+import DocsAsSystemOfRecord from "./pages/articles/DocsAsSystemOfRecord";
+import MakerVsManager from "./pages/articles/MakerVsManager";
+import AICostControl from "./pages/articles/AICostControl";
+import QualityGatesForAI from "./pages/articles/QualityGatesForAI";
+import DebuggingAIWorkflows from "./pages/articles/DebuggingAIWorkflows";
 import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
@@ -99,6 +107,14 @@ function Router() {
       <Route path="/articles/dual-filter-validation" component={TheSolutionADualFilterValidationFramework} />
       <Route path="/articles/supabase-mcp-blueprint" component={TheSupabaseMcpProductionBackendsInMinutes} />
       <Route path="/articles/technical-stack" component={TheTechnicalStackModernWebStandardsForProductCreationPlatforms} />
+      <Route path="/articles/business-operating-system" component={BusinessOperatingSystem} />
+      <Route path="/articles/weekly-rhythm" component={WeeklyRhythm} />
+      <Route path="/articles/rocks-not-tasks" component={RocksNotTasks} />
+      <Route path="/articles/docs-as-system-of-record" component={DocsAsSystemOfRecord} />
+      <Route path="/articles/maker-vs-manager" component={MakerVsManager} />
+      <Route path="/articles/ai-cost-control" component={AICostControl} />
+      <Route path="/articles/quality-gates-for-ai" component={QualityGatesForAI} />
+      <Route path="/articles/debugging-ai-workflows" component={DebuggingAIWorkflows} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />

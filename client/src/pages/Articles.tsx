@@ -43,6 +43,86 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "42",
+    title: "The Business Operating System: A Weekly Loop for Shipping and Learning",
+    excerpt: "Most teams don't fail because they lack ideas. They fail because they can't translate decisions into weekly outcomes. Here's the operating system that keeps execution honest.",
+    date: "December 30, 2025",
+    readTime: "12 min read",
+    slug: "business-operating-system",
+    category: "Business Strategy",
+    heroImage: "/images/articles/business-operating-system-hero.png"
+  },
+  {
+    id: "41",
+    title: "The Weekly Rhythm: A 60-Minute Operating System That Actually Ships",
+    excerpt: "Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning—it's deciding what the week is for.",
+    date: "December 25, 2025",
+    readTime: "9 min read",
+    slug: "weekly-rhythm",
+    category: "Business Strategy",
+    heroImage: "/images/articles/weekly-rhythm-hero.png"
+  },
+  {
+    id: "40",
+    title: "Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes",
+    excerpt: "The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.",
+    date: "December 23, 2025",
+    readTime: "8 min read",
+    slug: "rocks-not-tasks",
+    category: "Business Strategy",
+    heroImage: "/images/articles/rocks-not-tasks-hero.png"
+  },
+  {
+    id: "39",
+    title: "Docs as the System of Record: Making Decisions Traceable and Reusable",
+    excerpt: "When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here's the fix.",
+    date: "December 18, 2025",
+    readTime: "8 min read",
+    slug: "docs-as-system-of-record",
+    category: "Business Strategy",
+    heroImage: "/images/articles/docs-system-of-record-hero.png"
+  },
+  {
+    id: "38",
+    title: "Maker vs Manager: How to Protect Deep Work in a Weekly Operating System",
+    excerpt: "You don't have an execution problem. You have a calendar problem. Here's how to design weeks so outcomes actually ship.",
+    date: "December 16, 2025",
+    readTime: "7 min read",
+    slug: "maker-vs-manager",
+    category: "Business Strategy",
+    heroImage: "/images/articles/maker-vs-manager-hero.png"
+  },
+  {
+    id: "37",
+    title: "AI Cost Control That Doesn't Break Velocity",
+    excerpt: "Most AI cost overruns come from retries and rework, not expensive calls. Here's how to build AI systems that stay both affordable and fast.",
+    date: "December 11, 2025",
+    readTime: "8 min read",
+    slug: "ai-cost-control",
+    category: "AI Workflow",
+    heroImage: "/images/articles/ai-cost-control-hero.png"
+  },
+  {
+    id: "36",
+    title: "Quality Gates for AI Outputs: Schema, Normalization, and Readable Rendering",
+    excerpt: "AI output is raw material, not finished product. Treat it like untrusted input and run it through gates: validate, normalize, render.",
+    date: "December 9, 2025",
+    readTime: "8 min read",
+    slug: "quality-gates-for-ai",
+    category: "AI Workflow",
+    heroImage: "/images/articles/quality-gates-ai-hero.png"
+  },
+  {
+    id: "35",
+    title: "Debugging AI Workflows Without Chaos: Evidence, Snapshots, and Minimal Endpoints",
+    excerpt: "AI failures feel random until you can reproduce them. Here's the minimal evidence system that explains what happened and how to recover.",
+    date: "December 4, 2025",
+    readTime: "9 min read",
+    slug: "debugging-ai-workflows",
+    category: "AI Workflow",
+    heroImage: "/images/articles/debugging-ai-workflows-hero.png"
+  },
+  {
     id: "34",
     title: "The Technical Stack: Modern Web Standards for Product Creation Platforms",
     excerpt: "Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.",
