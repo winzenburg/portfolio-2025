@@ -83,14 +83,21 @@ export default function Work() {
                   </div>
                 </div>
 
-                <a
-                  href="https://cultivate-six.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
-                >
-                  View Live Product →
-                </a>
+                <div className="flex gap-4">
+                  <Link href="/case-study/cultivate">
+                    <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
+                      View Full Case Study →
+                    </a>
+                  </Link>
+                  <a
+                    href="https://cultivate-six.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
+                  >
+                    View Live →
+                  </a>
+                </div>
               </div>
               <div className="space-y-6">
                 <div>
