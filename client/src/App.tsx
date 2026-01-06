@@ -14,6 +14,7 @@ import CaseStudyIsc from "./pages/CaseStudyIsc";
 import CaseStudyComcast from "./pages/CaseStudyComcast";
 import CaseStudyBuildout from "./pages/CaseStudyBuildout";
 import CaseStudyCvs from "./pages/CaseStudyCvs";
+import CaseStudyKinlet from "./pages/CaseStudyKinlet";
 import Services from "./pages/Services";
 import Articles from "./pages/Articles";
 import Gallery from "./pages/Gallery";
@@ -121,6 +122,7 @@ function Router() {
       <Route path="/case-study/comcast-design-system" component={CaseStudyComcast} />
       <Route path="/case-study/buildout" component={CaseStudyBuildout} />
       <Route path="/case-study/cvs-aetna" component={CaseStudyCvs} />
+      <Route path="/case-study/kinlet" component={CaseStudyKinlet} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

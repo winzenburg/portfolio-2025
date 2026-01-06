@@ -130,7 +130,104 @@ export default function Work() {
             </div>
           </Card>
 
-          {/* Project 2: Kinetic UI */}
+          {/* Project 2: Kinlet */}
+          <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img 
+                src="/images/kinlet-landing.png" 
+                alt="Kinlet - AI-Native SaaS MVP" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="grid md:grid-cols-[2fr,1fr] gap-8">
+              <div>
+                <div className="text-sm font-medium text-primary mb-3">FOUNDER · AI-NATIVE SAAS · 2026</div>
+                <h3 className="text-3xl font-bold mb-4">Kinlet: AI-Native SaaS MVP</h3>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
+                  <p className="text-muted-foreground">
+                    Solo founder—product strategy, UX design, full-stack development, AI integration, and go-to-market. Built complete SaaS MVP from idea to production in 5 days using AI-augmented workflows. Demonstrates how one designer-developer can now build what traditionally required entire teams.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">WHAT I DEMONSTRATED</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">5 Days</div>
+                      <div className="text-sm text-muted-foreground">Idea → Production MVP</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">Solo</div>
+                      <div className="text-sm text-muted-foreground">Full-stack + AI integration</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">AI-Native</div>
+                      <div className="text-sm text-muted-foreground">Matching + moderation</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">Live</div>
+                      <div className="text-sm text-muted-foreground">Production deployed</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Link href="/case-study/kinlet">
+                    <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
+                      View Full Case Study →
+                    </a>
+                  </Link>
+                  <a
+                    href="https://kinlet.care"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
+                  >
+                    View Live →
+                  </a>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <div className="text-sm font-semibold mb-3">WHAT I BUILT</div>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Settings className="w-4 h-4" />
+                        AI Matching Algorithm
+                      </div>
+                      <div className="text-muted-foreground">Groups caregivers by situation similarity</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <Users className="w-4 h-4" />
+                        Content Moderation AI
+                      </div>
+                      <div className="text-muted-foreground">Real-time safety without 24/7 humans</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Validation Framework
+                      </div>
+                      <div className="text-muted-foreground">Complete GTM + interview scripts</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Production Infrastructure
+                      </div>
+                      <div className="text-muted-foreground">Next.js, Supabase, Clerk, PostHog</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          {/* Project 3: Kinetic UI */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
@@ -217,7 +314,7 @@ export default function Work() {
             </div>
           </Card>
 
-          {/* Project 2: ISC Portal */}
+          {/* Project 4: ISC Portal */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
@@ -304,7 +401,7 @@ export default function Work() {
             </div>
           </Card>
 
-                 {/* Project 3: Comcast */}
+                 {/* Project 5: Comcast */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
