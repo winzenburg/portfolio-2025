@@ -129,7 +129,7 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Onboarding Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}kinlet-onboarding.png`}
+              src={`${import.meta.env.BASE_URL}images/kinlet-onboarding.png`}
               alt="Kinlet 5-step onboarding flow showing care journey selection"
               className="w-full"
             />
@@ -229,7 +229,7 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Matching Dashboard Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}kinlet-matching.png`}
+              src={`${import.meta.env.BASE_URL}images/kinlet-matching.png`}
               alt="AI-powered matching dashboard showing compatibility scores"
               className="w-full"
             />
@@ -241,7 +241,7 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Analytics Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}kinlet-analytics.png`}
+              src={`${import.meta.env.BASE_URL}images/kinlet-analytics.png`}
               alt="Group analytics showing message volume and participation"
               className="w-full"
             />
@@ -253,7 +253,7 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Roadmap Screenshot */}
           <div className="mb-8 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}kinlet-roadmap.png`}
+              src={`${import.meta.env.BASE_URL}images/kinlet-roadmap.png`}
               alt="Public product roadmap showing development phases"
               className="w-full"
             />
