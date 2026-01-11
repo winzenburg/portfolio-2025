@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Winzenburg - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.4;
+      color: #1a1a1a;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+    }
+
+    header {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0ea5e9;
+      padding-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 24pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 5px;
+    }
+
+    .headline {
+      font-size: 13pt;
+      color: #0ea5e9;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 10pt;
+      color: #475569;
+    }
+
+    .contact-info a {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .job {
+      margin-bottom: 14px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .company {
+      font-size: 10pt;
+      color: #475569;
+    }
+
+    .dates {
+      font-size: 10pt;
+      color: #64748b;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-top: 5px;
+    }
+
+    li {
+      margin-bottom: 3px;
+      color: #334155;
+    }
+
+    .summary {
+      color: #334155;
+      margin-bottom: 15px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .skill-category {
+      margin-bottom: 8px;
+    }
+
+    .skill-category strong {
+      color: #0f172a;
+      font-size: 10pt;
+    }
+
+    .skill-category span {
+      color: #475569;
+      font-size: 10pt;
+    }
+
+    .metrics {
+      display: flex;
+      gap: 20px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .metric {
+      background: #f1f5f9;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 10pt;
+    }
+
+    .metric strong {
+      color: #0ea5e9;
+    }
+
+    .education-item {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ryan Winzenburg</h1>
+    <div class="headline">AI-Augmented Design Operations Leader</div>
+    <div class="contact-info">
+      <span>Wheat Ridge, CO</span>
+      <span>720.515.7182</span>
+      <a href="mailto:ryan@winzenburg.com">ryan@winzenburg.com</a>
+      <a href="https://winzenburg.com">winzenburg.com</a>
+      <a href="https://linkedin.com/in/rwinzenburg">linkedin.com/in/rwinzenburg</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">
+      Design leader with 25 years of Fortune 50 experience transforming how design teams work with AI. I build the systems, workflows, and culture that enable design organizations to ship 4-6x faster. Expertise in design operations, design systems architecture, and AI workflow integration. Seeking Head of Design Operations, VP/Director of Design, or Principal Design Technologist roles at companies ready to transform their design operations.
+    </p>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Strategic UX & Design Technologist</h3>
+        <span class="dates">2020 - Present</span>
+      </div>
+      <div class="company">Comcast Business (Fortune 50) | Denver, CO</div>
+      <ul>
+        <li>Drove design system adoption across 12 product teams, achieving 95% adoption rate and 40% faster time-to-market</li>
+        <li>Built governance frameworks, trained design leads, and established DesignOps infrastructure for cross-team consistency</li>
+        <li>Developed AI-augmented workflows using Cursor, Claude, and MCP integrations for design-to-code automation</li>
+        <li>Delivered $2M annual savings through design system efficiency gains</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>AI-Augmented Design Consultant</h3>
+        <span class="dates">2023 - Present</span>
+      </div>
+      <div class="company">Independent | Denver, CO</div>
+      <ul>
+        <li>Led design system initiative for Series C SaaS company, enabling 2-person team to deliver 6-8 person output ($1M+ saved)</li>
+        <li>Compressed 12-month Fortune 50 UX intervention to 4 days using AI-accelerated research, protecting $50M+ revenue</li>
+        <li>Trained teams on AI-augmented workflows, achieving 100% adoption and sustained 4-6x faster feature delivery</li>
+        <li>Built orchestrated AI agent systems and MCP server integrations for production design-to-code pipelines</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Director of Product Design</h3>
+        <span class="dates">2018 - 2020</span>
+      </div>
+      <div class="company">BuildOut (B2B SaaS) | Chicago, IL</div>
+      <ul>
+        <li>Built design practice from scratch at high-growth commercial real estate platform</li>
+        <li>Grew design team from 0 to 4 designers, establishing design process and culture</li>
+        <li>Led product design through successful company acquisition</li>
+        <li>Established scalable design processes that improved user satisfaction and retention</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Senior UX Lead</h3>
+        <span class="dates">2016 - 2018</span>
+      </div>
+      <div class="company">CVS Health / Aetna (Fortune 10) | Hartford, CT</div>
+      <ul>
+        <li>Led UX initiatives across 20+ person design org for enterprise healthcare applications serving millions</li>
+        <li>Navigated complex HIPAA regulatory requirements at enterprise scale</li>
+        <li>Aligned stakeholders across massive organization on design standards and practices</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>UX Strategy Lead</h3>
+        <span class="dates">2012 - 2016</span>
+      </div>
+      <div class="company">Life Time Fitness (Fortune 500) | Minneapolis, MN</div>
+      <ul>
+        <li>Led UX strategy for digital products serving millions of members</li>
+        <li>Built and scaled design team capabilities across web and mobile platforms</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Achievements</h2>
+    <div class="metrics">
+      <div class="metric"><strong>$3M+</strong> value created across recent projects</div>
+      <div class="metric"><strong>4-6x</strong> faster design-to-code delivery</div>
+      <div class="metric"><strong>12 teams</strong> drove adoption org-wide</div>
+      <div class="metric"><strong>95%</strong> design system adoption</div>
+      <div class="metric"><strong>10+</strong> person teams led</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills & Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <strong>Design Leadership:</strong>
+        <span>DesignOps, Design Systems, Team Building, Change Management, Cross-functional Leadership</span>
+      </div>
+      <div class="skill-category">
+        <strong>AI & Automation:</strong>
+        <span>Claude, Cursor, MCP Integrations, Orchestrated AI Agents, Design-to-Code Automation</span>
+      </div>
+      <div class="skill-category">
+        <strong>Technical:</strong>
+        <span>React, TypeScript, Figma, Storybook, Token-based Design Systems, WCAG AA Compliance</span>
+      </div>
+      <div class="skill-category">
+        <strong>Strategy:</strong>
+        <span>Product Strategy, UX Research, Stakeholder Alignment, Governance Frameworks</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education & Certifications</h2>
+    <div class="education-item">
+      <strong>University of Colorado Boulder</strong> | 1996 - 1999
+    </div>
+    <div class="education-item">
+      <strong>Practical User Research & Strategy</strong> | The Designership, 2023
+    </div>
+    <div class="education-item">
+      <strong>User Experience Intensive</strong> | Adaptive Path
+    </div>
+  </section>
+
+  <section>
+    <h2>Leadership & Community</h2>
+    <div class="education-item">
+      <strong>Co-Founder</strong>, User Experience Book Club | 2010 - Present
+    </div>
+    <div class="education-item">
+      <strong>Published Author</strong> | 30+ articles on AI-augmented design workflows, design systems, and product strategy
+    </div>
+  </section>
+</body>
+</html>

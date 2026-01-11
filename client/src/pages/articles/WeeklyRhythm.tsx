@@ -19,6 +19,15 @@ export default function WeeklyRhythm() {
             </a>
           </Link>
 
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden">
+            <img
+              src="/images/articles/weekly-rhythm-hero.png"
+              alt="The Weekly Rhythm"
+              className="w-full h-auto"
+            />
+          </div>
+
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
             <span>December 25, 2025</span>

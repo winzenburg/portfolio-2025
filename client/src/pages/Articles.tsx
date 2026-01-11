@@ -43,6 +43,86 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "50",
+    title: "Integration Documentation That Developers Actually Read",
+    excerpt: "Last week, a developer integrated our API in 18 minutes. Another took 3 hours on the same integration. Same API. Same endpoints. Different documentation. Developer experience is a design problem.",
+    date: "January 11, 2026",
+    readTime: "10 min read",
+    slug: "integration-docs-that-work",
+    category: "Engineering",
+    heroImage: "/images/articles/integration-docs-hero.png"
+  },
+  {
+    id: "49",
+    title: "Compound Intelligence: How Documentation Makes Codebases Learn",
+    excerpt: "My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence.",
+    date: "January 11, 2026",
+    readTime: "13 min read",
+    slug: "compound-intelligence",
+    category: "AI Workflow",
+    heroImage: "/images/articles/compound-intelligence-hero.png"
+  },
+  {
+    id: "48",
+    title: "Fresh Context Per Iteration: Why Autonomous Agents Don't Break Like Long Sessions",
+    excerpt: "I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn't have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift.",
+    date: "January 11, 2026",
+    readTime: "12 min read",
+    slug: "fresh-context-per-iteration",
+    category: "AI Workflow",
+    heroImage: "/images/articles/fresh-context-per-iteration-hero.png"
+  },
+  {
+    id: "47",
+    title: "Self-Validating AI Agents: When Acceptance Criteria Become Tests",
+    excerpt: "Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.",
+    date: "January 11, 2026",
+    readTime: "11 min read",
+    slug: "self-validating-ai-agents",
+    category: "AI Workflow",
+    heroImage: "/images/articles/self-validating-ai-agents-hero.png"
+  },
+  {
+    id: "46",
+    title: "Writing PRDs That AI Agents Can Execute",
+    excerpt: "I spent 45 minutes writing a PRD. The autonomous agent built the feature perfectly overnight for $42. Then I wrote another PRD in 20 minutes. The agent failed three times and wasted $60. The difference? Acceptance criteria specificity.",
+    date: "January 11, 2026",
+    readTime: "13 min read",
+    slug: "writing-prds-for-ai-agents",
+    category: "AI Workflow",
+    heroImage: "/images/articles/writing-prds-for-ai-hero.png"
+  },
+  {
+    id: "45",
+    title: "Choosing Your AI Coding Mode: Interactive vs Autonomous",
+    excerpt: "Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong—my choice was. Here's the decision framework I should have used.",
+    date: "January 11, 2026",
+    readTime: "11 min read",
+    slug: "choosing-ai-coding-mode",
+    category: "AI Workflow",
+    heroImage: "/images/articles/choosing-ai-coding-mode-hero.png"
+  },
+  {
+    id: "44",
+    title: "The Economics of AI-Assisted Coding: When $40 Beats 6 Hours",
+    excerpt: "Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money—it's about what becomes possible when implementation stops being the constraint.",
+    date: "January 11, 2026",
+    readTime: "12 min read",
+    slug: "ai-coding-economics",
+    category: "AI Workflow",
+    heroImage: "/images/articles/ai-coding-economics-hero.png"
+  },
+  {
+    id: "43",
+    title: "Autonomous AI Coding: Building Features Overnight",
+    excerpt: "I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours.",
+    date: "January 11, 2026",
+    readTime: "14 min read",
+    slug: "autonomous-ai-coding",
+    category: "AI Workflow",
+    heroImage: "/images/articles/autonomous-ai-coding-hero.png"
+  },
+  {
     id: "42",
     title: "The Business Operating System: A Weekly Loop for Shipping and Learning",
     excerpt: "Most teams don't fail because they lack ideas. They fail because they can't translate decisions into weekly outcomes. Here's the operating system that keeps execution honest.",
@@ -495,7 +575,7 @@ export default function Articles() {
             Articles
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed mb-8">
-            Insights on AI-augmented UX workflows, design systems, and strategic product development.
+            Insights on AI-augmented development, design systems, and strategic product creation.
             Learn how to leverage AI to build better products faster.
           </p>
 
@@ -541,6 +621,16 @@ export default function Articles() {
             >
               AI Workflow ({getCategoryCount("AI Workflow")})
             </button>
+            <button
+              onClick={() => setSelectedCategory("Engineering")}
+              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
+                selectedCategory === "Engineering"
+                  ? 'bg-green-500 text-white border border-green-500'
+                  : 'bg-green-900/30 border border-green-700/50 text-green-300 hover:bg-green-800/50'
+              }`}
+            >
+              Engineering ({getCategoryCount("Engineering")})
+            </button>
           </div>
         </div>
       </section>
@@ -585,6 +675,8 @@ export default function Articles() {
                         ? 'bg-blue-900/30 border border-blue-700/50 text-blue-300'
                         : article.category === 'Business Strategy'
                         ? 'bg-cyan-900/30 border border-cyan-700/50 text-cyan-300'
+                        : article.category === 'Engineering'
+                        ? 'bg-green-900/30 border border-green-700/50 text-green-300'
                         : 'bg-purple-900/30 border border-purple-700/50 text-purple-300'
                     }`}>
                       {article.category}

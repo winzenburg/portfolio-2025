@@ -19,6 +19,15 @@ export default function RocksNotTasks() {
             </a>
           </Link>
 
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden">
+            <img
+              src="/images/articles/rocks-not-tasks-hero.png"
+              alt="Rocks, Not Tasks"
+              className="w-full h-auto"
+            />
+          </div>
+
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
             <span>December 23, 2025</span>

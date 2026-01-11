@@ -19,6 +19,15 @@ export default function AICostControl() {
             </a>
           </Link>
 
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden">
+            <img
+              src="/images/articles/ai-cost-control-hero.png"
+              alt="AI Cost Control That Doesn't Break Velocity"
+              className="w-full h-auto"
+            />
+          </div>
+
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
             <span>December 11, 2025</span>

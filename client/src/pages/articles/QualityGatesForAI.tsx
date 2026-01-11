@@ -19,6 +19,15 @@ export default function QualityGatesForAI() {
             </a>
           </Link>
 
+          {/* Hero Image */}
+          <div className="mb-12 rounded-lg overflow-hidden">
+            <img
+              src="/images/articles/quality-gates-ai-hero.png"
+              alt="Quality Gates for AI Outputs"
+              className="w-full h-auto"
+            />
+          </div>
+
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
             <span>December 9, 2025</span>

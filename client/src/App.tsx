@@ -61,6 +61,14 @@ import MakerVsManager from "./pages/articles/MakerVsManager";
 import AICostControl from "./pages/articles/AICostControl";
 import QualityGatesForAI from "./pages/articles/QualityGatesForAI";
 import DebuggingAIWorkflows from "./pages/articles/DebuggingAIWorkflows";
+import AutonomousAICoding from "./pages/articles/AutonomousAICoding";
+import AICodingEconomics from "./pages/articles/AICodingEconomics";
+import ChoosingAICodingMode from "./pages/articles/ChoosingAICodingMode";
+import WritingPRDsForAI from "./pages/articles/WritingPRDsForAI";
+import SelfValidatingAIAgents from "./pages/articles/SelfValidatingAIAgents";
+import FreshContextPerIteration from "./pages/articles/FreshContextPerIteration";
+import CompoundIntelligence from "./pages/articles/CompoundIntelligence";
+import IntegrationDocsThatWork from "./pages/articles/IntegrationDocsThatWork";
 import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
@@ -117,6 +125,14 @@ function Router() {
       <Route path="/articles/ai-cost-control" component={AICostControl} />
       <Route path="/articles/quality-gates-for-ai" component={QualityGatesForAI} />
       <Route path="/articles/debugging-ai-workflows" component={DebuggingAIWorkflows} />
+      <Route path="/articles/autonomous-ai-coding" component={AutonomousAICoding} />
+      <Route path="/articles/ai-coding-economics" component={AICodingEconomics} />
+      <Route path="/articles/choosing-ai-coding-mode" component={ChoosingAICodingMode} />
+      <Route path="/articles/writing-prds-for-ai-agents" component={WritingPRDsForAI} />
+      <Route path="/articles/self-validating-ai-agents" component={SelfValidatingAIAgents} />
+      <Route path="/articles/fresh-context-per-iteration" component={FreshContextPerIteration} />
+      <Route path="/articles/compound-intelligence" component={CompoundIntelligence} />
+      <Route path="/articles/integration-docs-that-work" component={IntegrationDocsThatWork} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />
