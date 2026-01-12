@@ -610,7 +610,7 @@ const CaseStudyKinlet: React.FC = () => {
                   <img 
                     src={`${import.meta.env.BASE_URL}images/kinlet-logo.svg`}
                     alt="Kinlet Logo - Geometric K"
-                    className="h-24 w-24 bg-white/5 rounded-lg p-4"
+                    className="h-24 w-24 bg-purple-500/20 rounded-lg p-4"
                   />
                 </div>
                 <div className="flex-1">
