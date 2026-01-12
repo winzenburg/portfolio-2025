@@ -129,7 +129,7 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Onboarding Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-onboarding.png`}
+              src={`${import.meta.env.BASE_URL}kinlet-onboarding.png`}
               alt="Kinlet 5-step onboarding flow showing care journey selection"
               className="w-full"
             />
@@ -229,7 +229,7 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Matching Dashboard Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-matching.png`}
+              src={`${import.meta.env.BASE_URL}kinlet-matching.png`}
               alt="AI-powered matching dashboard showing compatibility scores"
               className="w-full"
             />
@@ -241,7 +241,7 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Analytics Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-analytics.png`}
+              src={`${import.meta.env.BASE_URL}kinlet-analytics.png`}
               alt="Group analytics showing message volume and participation"
               className="w-full"
             />
@@ -253,12 +253,146 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Roadmap Screenshot */}
           <div className="mb-8 rounded-lg overflow-hidden border border-purple-500/30">
             <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-roadmap.png`}
+              src={`${import.meta.env.BASE_URL}kinlet-roadmap.png`}
               alt="Public product roadmap showing development phases"
               className="w-full"
             />
             <div className="bg-white/5 p-4 text-sm text-gray-400">
               Public roadmap showing transparent development: Foundation (Sprint 0, complete) → Beta Launch (Phase 2, in progress)
+            </div>
+          </div>
+        </section>
+
+        {/* The Product Breakthrough */}
+        <section className="mb-16">
+          <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Product Breakthrough</h2>
+          
+          <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 rounded-lg p-8 mb-8">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="text-4xl">💡</div>
+              <div>
+                <h3 className="text-2xl font-bold mb-3 text-amber-400">Research-Validated MVP Must-Haves</h3>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  After building the core platform, I realized something critical: <strong>peer support groups fail when messages go unanswered or feel too generic.</strong> I studied caregiver research (including "The 36-Hour Day") and identified 5 features that would determine whether Kinlet succeeded or failed.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  I built all 5 features in 6 hours. The expected impact: <strong>Week 3 retention from ~50% to ~90%+</strong>.
+                </p>
+              </div>
+            </div>
+
+            {/* Impact Metrics */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              <div className="bg-white/5 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-amber-400">6 hrs</div>
+                <div className="text-xs text-gray-400">Build Time</div>
+              </div>
+              <div className="bg-white/5 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-amber-400">80%+</div>
+                <div className="text-xs text-gray-400">Response Rate Target</div>
+              </div>
+              <div className="bg-white/5 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-amber-400">&lt;5%</div>
+                <div className="text-xs text-gray-400">Unanswered Messages</div>
+              </div>
+              <div className="bg-white/5 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-amber-400">90%+</div>
+                <div className="text-xs text-gray-400">Week 3 Retention Goal</div>
+              </div>
+            </div>
+
+            {/* The 5 Features */}
+            <div className="space-y-4">
+              <div className="bg-white/5 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                    <span className="text-amber-400 font-bold">1</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-amber-400 mb-1">Challenge Tags</h4>
+                    <p className="text-sm text-gray-300 mb-2">
+                      9 research-validated tags (🌅 Sundowning, 🔁 Repetitive questions, 😔 Grief day, 💼 Work/life balance, etc.) make support <em>specific</em>, not generic. Target: 60%+ tag usage.
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      <strong>Why it matters:</strong> Caregivers need support for specific struggles, not "I'm having a hard day."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/5 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                    <span className="text-amber-400 font-bold">2</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-amber-400 mb-1">Small Win Celebrations</h4>
+                    <p className="text-sm text-gray-300 mb-2">
+                      Mood tracking with 3 options: ✨ Small win! 🎉, 💪 Hanging in there, 😔 Having a hard day. Prevents doom spiral by balancing 70% hard days with 15-20% small wins.
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      <strong>Why it matters:</strong> All doom = unsustainable. Celebrating small moments is crucial for sustainable caregiving.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/5 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                    <span className="text-amber-400 font-bold">3</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-amber-400 mb-1">Response Prompts</h4>
+                    <p className="text-sm text-gray-300 mb-2">
+                      Contextual response suggestions based on tags and mood. Example for Sundowning: "The 4pm-8pm window is brutal. I know exactly what you mean." Increases response rate from ~40% → 80%+.
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      <strong>Why it matters:</strong> People want to help but don't know what to say. Prompts model peer-level validation ("I've been there") not platitudes ("Hang in there!").
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/5 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                    <span className="text-amber-400 font-bold">4</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-amber-400 mb-1">Unanswered Alerts</h4>
+                    <p className="text-sm text-gray-300 mb-2">
+                      Client-side detection of messages with 0 reactions after 2 hours. Alert banner: "Someone could use some support." Ensures &lt;5% of messages go unanswered.
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      <strong>Why it matters:</strong> Isolation is the #1 risk factor for caregivers. Feeling ignored defeats the entire purpose of peer support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/5 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                    <span className="text-amber-400 font-bold">5</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-amber-400 mb-1">Burnout Detection</h4>
+                    <p className="text-sm text-gray-300 mb-2">
+                      Mood pattern analysis triggers self-care nudges after 7 consecutive "hard days" or 14 days without a small win. Links to respite care, self-care tips, and 24/7 helpline.
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      <strong>Why it matters:</strong> Caregiver burnout is the #1 risk. Peer support + self-care resources = sustainable caregiving.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-amber-500/30">
+              <p className="text-sm text-gray-300">
+                <strong className="text-amber-400">The Hypothesis:</strong> Without these features, Kinlet is just another forum. <em>With</em> these features, Kinlet solves what caregiver research says people actually need: specific understanding, balanced perspective, helpful responses, no one ignored, and burnout prevention.
+              </p>
             </div>
           </div>
         </section>
