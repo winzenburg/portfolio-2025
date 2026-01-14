@@ -14,15 +14,21 @@
  *   --date       Override today's date (for testing)
  */
 
-const fs = require('fs');
-const path = require('path');
-const yaml = require('js-yaml');
-const https = require('https');
+import fs from 'fs';
+import path from 'path';
+import yaml from 'js-yaml';
+import https from 'https';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import dotenv from 'dotenv';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Load environment variables from .env file if it exists
 const dotenvPath = path.join(__dirname, '..', '.env');
 if (fs.existsSync(dotenvPath)) {
-  require('dotenv').config({ path: dotenvPath });
+  dotenv.config({ path: dotenvPath });
 }
 
 // Configuration
