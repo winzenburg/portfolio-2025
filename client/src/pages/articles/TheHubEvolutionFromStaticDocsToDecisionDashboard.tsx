@@ -717,7 +717,7 @@ export default function Article() {
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium">
                 Get the Hub Template
               </button>
-              <button className="bg-slate-800/50 hover:bg-gray-200 text-slate-200 px-6 py-3 rounded-lg font-medium">
+              <button className="bg-slate-800/50 hover:bg-slate-700 text-slate-200 px-6 py-3 rounded-lg font-medium">
                 View Live Demo
               </button>
             </div>
