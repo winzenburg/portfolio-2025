@@ -44,7 +44,7 @@ export default function CompleteWorkflowPost() {
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-          <p className="text-xl text-neutral-600 mb-8 font-medium">
+          <p className="text-xl text-slate-300 mb-8 font-medium">
             Last month, I killed 7 product ideas in 15 minutes. Not because I'm ruthless—because I finally built a system that tells me which ideas are worth pursuing before I waste months building the wrong thing.
           </p>
 
@@ -61,7 +61,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
-            <h3 className="text-lg font-semibold mb-4 text-blue-900">The System at a Glance</h3>
+            <h3 className="text-lg font-semibold mb-4 text-cyan-300">The System at a Glance</h3>
             <ul className="space-y-2 text-cyan-300">
               <li><strong>25 specialized AI agents</strong> coordinated by a single orchestrator</li>
               <li><strong>8 mandatory quality gates</strong> that ideas must pass through</li>
@@ -81,7 +81,7 @@ export default function CompleteWorkflowPost() {
             Remember those choose-your-own-adventure books? Our workflow is like that, except the wrong choices get killed at hard gates instead of leading to dragon encounters.
           </p>
 
-          <div className="bg-neutral-50 p-6 rounded-lg font-mono text-sm my-8">
+          <div className="bg-slate-800 p-6 rounded-lg font-mono text-sm my-8 text-slate-300">
             <div className="text-center">
               Portfolio → Discovery → Validation → Build → Scale<br/>
               &nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br/>
