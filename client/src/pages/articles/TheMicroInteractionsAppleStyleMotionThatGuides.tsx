@@ -255,7 +255,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <div className="bg-cyan-900/20 p-6 rounded-lg my-6">
-          <p className="font-semibold text-blue-900 mb-3">The Specs:</p>
+          <p className="font-semibold text-cyan-300 mb-3">The Specs:</p>
           <ul className="space-y-1 text-cyan-300">
             <li><strong>Trigger:</strong> Mouse enters button</li>
             <li><strong>Purpose:</strong> Confirm clickability, emphasize primary action</li>

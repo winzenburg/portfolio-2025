@@ -227,7 +227,7 @@ export default function AIToolStackArticle() {
         </ul>
 
         <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-          <h4 className="font-semibold text-blue-900 mb-3">ChatGPT → Claude Pipeline Example:</h4>
+          <h4 className="font-semibold text-cyan-300 mb-3">ChatGPT → Claude Pipeline Example:</h4>
           <ol className="list-decimal list-inside text-cyan-300 space-y-2">
             <li>ChatGPT generates 10 headline variants</li>
             <li>Human picks top 3</li>
@@ -422,7 +422,7 @@ export default function AIToolStackArticle() {
           </div>
           
           <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6">
-            <h4 className="font-semibold text-blue-900 mb-3">Quality Improvements</h4>
+            <h4 className="font-semibold text-cyan-300 mb-3">Quality Improvements</h4>
             <ul className="text-cyan-300 space-y-2">
               <li>Zero conflicting outputs between tools</li>
               <li>100% of high-stakes decisions get Claude critique</li>

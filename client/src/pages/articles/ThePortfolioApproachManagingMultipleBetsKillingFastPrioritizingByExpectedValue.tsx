@@ -414,7 +414,7 @@ export default function PortfolioApproachArticle() {
 
           <Card className="p-4 border-cyan-700/50 bg-cyan-900/20">
             <div className="flex justify-between items-start mb-2">
-              <h4 className="font-semibold text-blue-900">Competitive Analysis Automation</h4>
+              <h4 className="font-semibold text-cyan-300">Competitive Analysis Automation</h4>
               <Badge variant="outline" className="bg-cyan-900/30 text-cyan-300">28 points</Badge>
             </div>
             <p className="text-sm text-slate-200 mb-2">Status: Validation phase (30% of resources)</p>

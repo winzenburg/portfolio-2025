@@ -326,7 +326,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
-          <p className="text-lg font-semibold text-blue-900 mb-2">
+          <p className="text-lg font-semibold text-cyan-300 mb-2">
             "Every feature decision should ask: Does this increase switching costs or frequency of use?"
           </p>
         </div>

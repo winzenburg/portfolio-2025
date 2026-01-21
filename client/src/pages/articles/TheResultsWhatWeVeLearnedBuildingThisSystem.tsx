@@ -133,7 +133,7 @@ export default function Article() {
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <h4 className="font-semibold text-blue-900 mb-2">The Heat Filter</h4>
+          <h4 className="font-semibold text-cyan-300 mb-2">The Heat Filter</h4>
           <p className="text-cyan-300 mb-4">
             Does a tribe of real humans urgently want this problem solved?
           </p>
@@ -402,7 +402,7 @@ export default function Article() {
 
         <div className="space-y-8 my-10">
           <div className="bg-cyan-900/20 p-6 rounded-lg">
-            <h4 className="font-semibold text-blue-900 mb-2">Validation is Continuous, Not Binary</h4>
+            <h4 className="font-semibold text-cyan-300 mb-2">Validation is Continuous, Not Binary</h4>
             <p className="text-cyan-300">
               Don't think "validated" vs "not validated." Think "current confidence level" and keep testing assumptions.
             </p>

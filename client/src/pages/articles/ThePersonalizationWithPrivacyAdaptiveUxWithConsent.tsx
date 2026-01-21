@@ -297,7 +297,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-        <h4 className="font-semibold text-blue-900 mb-2">Privacy-First Data Collection</h4>
+        <h4 className="font-semibold text-cyan-300 mb-2">Privacy-First Data Collection</h4>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
             <div className="font-semibold text-2xl text-cyan-400">6</div>
