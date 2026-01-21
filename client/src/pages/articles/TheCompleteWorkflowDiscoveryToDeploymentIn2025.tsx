@@ -428,23 +428,23 @@ export default function CompleteWorkflowPost() {
             Since implementing this system (~6 months in its current form):
           </p>
 
-          <div className="bg-neutral-50 p-6 rounded-lg my-8">
-            <h3 className="text-lg font-semibold mb-4">Portfolio Performance</h3>
-            <ul className="space-y-2">
+          <div className="bg-slate-800 p-6 rounded-lg my-8">
+            <h3 className="text-lg font-semibold mb-4 text-cyan-300">Portfolio Performance</h3>
+            <ul className="space-y-2 text-slate-300">
               <li>• 23 ideas scored, 7 killed at portfolio gate (saved ~150 hours)</li>
               <li>• 16 proceeded to discovery, 9 killed/pivoted at discovery gate</li>
               <li>• 7 proceeded to validation</li>
             </ul>
             
-            <h3 className="text-lg font-semibold mb-4 mt-6">Validation & Build</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold mb-4 mt-6 text-cyan-300">Validation & Build</h3>
+            <ul className="space-y-2 text-slate-300">
               <li>• 4 passed validation thresholds, 3 currently in validation</li>
               <li>• 3 products in production, 1 shipped to 100% of users</li>
               <li>• Zero P0 security incidents (Security Gate caught 12 critical issues)</li>
             </ul>
             
-            <h3 className="text-lg font-semibold mb-4 mt-6">Time to Ship</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold mb-4 mt-6 text-cyan-300">Time to Ship</h3>
+            <ul className="space-y-2 text-slate-300">
               <li>• Old way: 6-12 months, ~60% failure rate</li>
               <li>• New way: 2-4 months, ~75% success rate</li>
             </ul>
