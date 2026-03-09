@@ -30,7 +30,7 @@ export default function ChoosingAICodingMode() {
 
           {/* Article Meta */}
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
-            <span>January 11, 2026</span>
+            <span>January 25, 2026</span>
             <span>•</span>
             <span>11 min read</span>
           </div>

@@ -26,7 +26,7 @@ export default function FreshContextPerIteration() {
           </div>
 
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
-            <span>January 11, 2026</span>
+            <span>February 15, 2026</span>
             <span>•</span>
             <span>12 min read</span>
           </div>
