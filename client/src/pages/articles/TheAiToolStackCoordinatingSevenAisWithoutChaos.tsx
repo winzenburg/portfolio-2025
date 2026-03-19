@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AIToolStackArticle() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The AI Tool Stack: How We Coordinate 7 AIs Without Chaos | Ryan Winzenburg</title>
+        <meta name="description" content="Using multiple AI tools sounds like a nightmare. Here&#39;s how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap." />
+        <meta property="og:title" content="The AI Tool Stack: How We Coordinate 7 AIs Without Chaos" />
+        <meta property="og:description" content="Using multiple AI tools sounds like a nightmare. Here&#39;s how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap." />
+        <meta property="og:url" content="https://winzenburg.com/articles/ai-tool-stack" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/ai-tool-stack" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"Using multiple AI tools sounds like a nightmare. Here's how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

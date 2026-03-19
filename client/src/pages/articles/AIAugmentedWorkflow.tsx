@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AIAugmentedWorkflow() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster | Ryan Winzenburg</title>
+        <meta name="description" content="Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks using AI throughout the design process." />
+        <meta property="og:title" content="The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster" />
+        <meta property="og:description" content="Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks using AI throughout the design process." />
+        <meta property="og:url" content="https://winzenburg.com/articles/ai-augmented-workflow" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-augmented-workflow-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/ai-augmented-workflow" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster","description":"Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks using AI throughout the design process.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-03-17","url":"https://winzenburg.com/articles/ai-augmented-workflow","image":"https://winzenburg.com/images/articles/ai-augmented-workflow-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

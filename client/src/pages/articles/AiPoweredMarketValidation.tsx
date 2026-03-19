@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AIMarketValidation() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>AI-Powered Market Validation: Finding Underserved Niches and De-Risking Products | Ryan Winzenburg</title>
+        <meta name="description" content="Building products without validating market demand wastes time and capital. Here&#39;s how to validate demand before writing code with AI-powered validation." />
+        <meta property="og:title" content="AI-Powered Market Validation: Finding Underserved Niches and De-Risking Products" />
+        <meta property="og:description" content="Building products without validating market demand wastes time and capital. Here&#39;s how to validate demand before writing code with AI-powered validation." />
+        <meta property="og:url" content="https://winzenburg.com/articles/ai-powered-market-validation" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-powered-market-validation-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/ai-powered-market-validation" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"AI-Powered Market Validation: Finding Underserved Niches and De-Risking Products","description":"Building products without validating market demand wastes time and capital. Here's how to validate demand before writing code with AI-powered validation.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-05-08","url":"https://winzenburg.com/articles/ai-powered-market-validation","image":"https://winzenburg.com/images/articles/ai-powered-market-validation-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

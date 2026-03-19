@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function PersonalizationWithPrivacyArticle() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Personalization with Privacy: How We Design Adaptive UX That Respects Consent | Ryan Winzenburg</title>
+        <meta name="description" content="Personalization can feel creepy. Here&#39;s how to make it thoughtful, transparent, and opt-in." />
+        <meta property="og:title" content="Personalization with Privacy: How We Design Adaptive UX That Respects Consent" />
+        <meta property="og:description" content="Personalization can feel creepy. Here&#39;s how to make it thoughtful, transparent, and opt-in." />
+        <meta property="og:url" content="https://winzenburg.com/articles/personalization-privacy" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/personalization-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/personalization-privacy" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Personalization with Privacy: How We Design Adaptive UX That Respects Consent","description":"Personalization can feel creepy. Here's how to make it thoughtful, transparent, and opt-in.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/personalization-privacy","image":"https://winzenburg.com/images/articles/personalization-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

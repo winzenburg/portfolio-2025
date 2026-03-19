@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function MakerVsManager() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Maker vs Manager: How to Protect Deep Work in a Weekly Operating System | Ryan Winzenburg</title>
+        <meta name="description" content="You don&#39;t have an execution problem. You have a calendar problem. Here&#39;s how to design weeks so outcomes actually ship." />
+        <meta property="og:title" content="Maker vs Manager: How to Protect Deep Work in a Weekly Operating System" />
+        <meta property="og:description" content="You don&#39;t have an execution problem. You have a calendar problem. Here&#39;s how to design weeks so outcomes actually ship." />
+        <meta property="og:url" content="https://winzenburg.com/articles/maker-vs-manager" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/maker-vs-manager-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/maker-vs-manager" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Maker vs Manager: How to Protect Deep Work in a Weekly Operating System","description":"You don't have an execution problem. You have a calendar problem. Here's how to design weeks so outcomes actually ship.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-16","url":"https://winzenburg.com/articles/maker-vs-manager","image":"https://winzenburg.com/images/articles/maker-vs-manager-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

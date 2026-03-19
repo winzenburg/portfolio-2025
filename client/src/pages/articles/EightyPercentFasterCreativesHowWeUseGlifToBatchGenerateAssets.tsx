@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function GlifCreativeBatchingArticle() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets | Ryan Winzenburg</title>
+        <meta name="description" content="Most founders get stuck on &#39;we need 10 ad variants&#39; and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours." />
+        <meta property="og:title" content="80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets" />
+        <meta property="og:description" content="Most founders get stuck on &#39;we need 10 ad variants&#39; and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours." />
+        <meta property="og:url" content="https://winzenburg.com/articles/glif-batch-creatives" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/glif-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/glif-batch-creatives" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets","description":"Most founders get stuck on 'we need 10 ad variants' and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/glif-batch-creatives","image":"https://winzenburg.com/images/articles/glif-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

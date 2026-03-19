@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function AITechStack() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The AI-Powered Design Tech Stack: My Exact Workflow | Ryan Winzenburg</title>
+        <meta name="description" content="After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: What tools did you actually use? Here&#39;s my complete tech stack." />
+        <meta property="og:title" content="The AI-Powered Design Tech Stack: My Exact Workflow" />
+        <meta property="og:description" content="After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: What tools did you actually use? Here&#39;s my complete tech stack." />
+        <meta property="og:url" content="https://winzenburg.com/articles/ai-tech-stack" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tech-stack-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/ai-tech-stack" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Powered Design Tech Stack: My Exact Workflow","description":"After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: What tools did you actually use? Here's my complete tech stack.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-03","url":"https://winzenburg.com/articles/ai-tech-stack","image":"https://winzenburg.com/images/articles/ai-tech-stack-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

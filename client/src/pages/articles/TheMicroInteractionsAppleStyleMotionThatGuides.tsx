@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function MicroInteractionsArticle() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting | Ryan Winzenburg</title>
+        <meta name="description" content="Bad animations annoy. Great ones are invisible. Here&#39;s our playbook for refined, goal-driven micro-interactions." />
+        <meta property="og:title" content="Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting" />
+        <meta property="og:description" content="Bad animations annoy. Great ones are invisible. Here&#39;s our playbook for refined, goal-driven micro-interactions." />
+        <meta property="og:url" content="https://winzenburg.com/articles/micro-interactions" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/micro-interactions-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/micro-interactions" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting","description":"Bad animations annoy. Great ones are invisible. Here's our playbook for refined, goal-driven micro-interactions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/micro-interactions","image":"https://winzenburg.com/images/articles/micro-interactions-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

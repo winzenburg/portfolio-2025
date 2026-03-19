@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function Article() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence | Ryan Winzenburg</title>
+        <meta name="description" content="Most docs systems are graveyards. Ours is a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions." />
+        <meta property="og:title" content="The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence" />
+        <meta property="og:description" content="Most docs systems are graveyards. Ours is a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions." />
+        <meta property="og:url" content="https://winzenburg.com/articles/hub-evolution" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/hub-evolution-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/hub-evolution" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence","description":"Most docs systems are graveyards. Ours is a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/hub-evolution","image":"https://winzenburg.com/images/articles/hub-evolution-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

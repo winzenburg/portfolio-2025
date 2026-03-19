@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AICodingEconomics() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Economics of AI-Assisted Coding: When $40 Beats 6 Hours | Ryan Winzenburg</title>
+        <meta name="description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money—it&#39;s about what becomes possible when implementation stops being the constraint." />
+        <meta property="og:title" content="The Economics of AI-Assisted Coding: When $40 Beats 6 Hours" />
+        <meta property="og:description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money—it&#39;s about what becomes possible when implementation stops being the constraint." />
+        <meta property="og:url" content="https://winzenburg.com/articles/ai-coding-economics" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-coding-economics-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/ai-coding-economics" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money—it's about what becomes possible when implementation stops being the constraint.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

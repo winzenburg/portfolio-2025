@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function Article() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Results: What We&#39;ve Learned Building This System | Ryan Winzenburg</title>
+        <meta name="description" content="Building a systematic product creation engine. Here&#39;s what works, what doesn&#39;t, and what we&#39;ve learned." />
+        <meta property="og:title" content="The Results: What We&#39;ve Learned Building This System" />
+        <meta property="og:description" content="Building a systematic product creation engine. Here&#39;s what works, what doesn&#39;t, and what we&#39;ve learned." />
+        <meta property="og:url" content="https://winzenburg.com/articles/system-results" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/results-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/system-results" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Results: What We've Learned Building This System","description":"Building a systematic product creation engine. Here's what works, what doesn't, and what we've learned.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/system-results","image":"https://winzenburg.com/images/articles/results-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

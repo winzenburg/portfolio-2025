@@ -4,11 +4,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function PortfolioApproachArticle() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value | Ryan Winzenburg</title>
+        <meta name="description" content="You&#39;re not building one product. You&#39;re managing a portfolio of bets. Here&#39;s how to manage them systematically." />
+        <meta property="og:title" content="The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value" />
+        <meta property="og:description" content="You&#39;re not building one product. You&#39;re managing a portfolio of bets. Here&#39;s how to manage them systematically." />
+        <meta property="og:url" content="https://winzenburg.com/articles/portfolio-approach" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/portfolio-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/portfolio-approach" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value","description":"You're not building one product. You're managing a portfolio of bets. Here's how to manage them systematically.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/portfolio-approach","image":"https://winzenburg.com/images/articles/portfolio-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

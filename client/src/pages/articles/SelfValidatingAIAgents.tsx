@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function SelfValidatingAIAgents() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Self-Validating AI Agents: When Acceptance Criteria Become Tests | Ryan Winzenburg</title>
+        <meta name="description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
+        <meta property="og:title" content="Self-Validating AI Agents: When Acceptance Criteria Become Tests" />
+        <meta property="og:description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
+        <meta property="og:url" content="https://winzenburg.com/articles/self-validating-ai-agents" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/self-validating-ai-agents-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/self-validating-ai-agents" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.png"})}</script>
+      </Helmet>
 
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-6 max-w-4xl">

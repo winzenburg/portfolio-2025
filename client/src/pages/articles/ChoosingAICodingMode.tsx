@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function ChoosingAICodingMode() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Choosing Your AI Coding Mode: Interactive vs Autonomous | Ryan Winzenburg</title>
+        <meta name="description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong—my choice was. Here&#39;s the decision framework I should have used." />
+        <meta property="og:title" content="Choosing Your AI Coding Mode: Interactive vs Autonomous" />
+        <meta property="og:description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong—my choice was. Here&#39;s the decision framework I should have used." />
+        <meta property="og:url" content="https://winzenburg.com/articles/choosing-ai-coding-mode" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/choosing-ai-coding-mode" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong—my choice was. Here's the decision framework I should have used.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

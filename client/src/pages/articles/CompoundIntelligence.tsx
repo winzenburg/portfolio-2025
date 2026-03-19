@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function CompoundIntelligence() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Compound Intelligence: How Documentation Makes Codebases Learn | Ryan Winzenburg</title>
+        <meta name="description" content="My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence." />
+        <meta property="og:title" content="Compound Intelligence: How Documentation Makes Codebases Learn" />
+        <meta property="og:description" content="My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence." />
+        <meta property="og:url" content="https://winzenburg.com/articles/compound-intelligence" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/compound-intelligence-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/compound-intelligence" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Compound Intelligence: How Documentation Makes Codebases Learn","description":"My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-22","url":"https://winzenburg.com/articles/compound-intelligence","image":"https://winzenburg.com/images/articles/compound-intelligence-hero.png"})}</script>
+      </Helmet>
 
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-6 max-w-4xl">

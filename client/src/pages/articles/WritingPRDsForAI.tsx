@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function WritingPRDsForAI() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Writing PRDs That AI Agents Can Execute | Ryan Winzenburg</title>
+        <meta name="description" content="I spent 45 minutes writing a PRD. The autonomous agent built the feature perfectly overnight for $42. Then I wrote another PRD in 20 minutes. The agent failed three times and wasted $60. The difference? Acceptance criteria specificity." />
+        <meta property="og:title" content="Writing PRDs That AI Agents Can Execute" />
+        <meta property="og:description" content="I spent 45 minutes writing a PRD. The autonomous agent built the feature perfectly overnight for $42. Then I wrote another PRD in 20 minutes. The agent failed three times and wasted $60. The difference? Acceptance criteria specificity." />
+        <meta property="og:url" content="https://winzenburg.com/articles/writing-prds-for-ai-agents" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/writing-prds-for-ai-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/writing-prds-for-ai-agents" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Writing PRDs That AI Agents Can Execute","description":"I spent 45 minutes writing a PRD. The autonomous agent built the feature perfectly overnight for $42. Then I wrote another PRD in 20 minutes. The agent failed three times and wasted $60. The difference? Acceptance criteria specificity.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-01","url":"https://winzenburg.com/articles/writing-prds-for-ai-agents","image":"https://winzenburg.com/images/articles/writing-prds-for-ai-hero.png"})}</script>
+      </Helmet>
 
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-6 max-w-4xl">

@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AutonomousAICoding() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Autonomous AI Coding: Building Features Overnight | Ryan Winzenburg</title>
+        <meta name="description" content="I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours." />
+        <meta property="og:title" content="Autonomous AI Coding: Building Features Overnight" />
+        <meta property="og:description" content="I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours." />
+        <meta property="og:url" content="https://winzenburg.com/articles/autonomous-ai-coding" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/autonomous-ai-coding-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/autonomous-ai-coding" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Autonomous AI Coding: Building Features Overnight","description":"I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-11","url":"https://winzenburg.com/articles/autonomous-ai-coding","image":"https://winzenburg.com/images/articles/autonomous-ai-coding-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

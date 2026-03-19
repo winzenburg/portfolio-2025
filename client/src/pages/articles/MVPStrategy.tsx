@@ -2,12 +2,24 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function MVPStrategy() {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Header */}
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The MVP Strategy: Launching Products That Sell Themselves | Ryan Winzenburg</title>
+        <meta name="description" content="Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here&#39;s the virality-by-design framework for the minimum that creates genuine value." />
+        <meta property="og:title" content="The MVP Strategy: Launching Products That Sell Themselves" />
+        <meta property="og:description" content="Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here&#39;s the virality-by-design framework for the minimum that creates genuine value." />
+        <meta property="og:url" content="https://winzenburg.com/articles/mvp-strategy" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/mvp-strategy-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/mvp-strategy" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The MVP Strategy: Launching Products That Sell Themselves","description":"Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here's the virality-by-design framework for the minimum that creates genuine value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-26","url":"https://winzenburg.com/articles/mvp-strategy","image":"https://winzenburg.com/images/articles/mvp-strategy-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Content */}
       <article className="pt-24 pb-16">

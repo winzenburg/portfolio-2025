@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function QualityGatesForAI() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Quality Gates for AI Outputs: Schema, Normalization, and Readable Rendering | Ryan Winzenburg</title>
+        <meta name="description" content="AI output is raw material, not finished product. Treat it like untrusted input and run it through gates: validate, normalize, render." />
+        <meta property="og:title" content="Quality Gates for AI Outputs: Schema, Normalization, and Readable Rendering" />
+        <meta property="og:description" content="AI output is raw material, not finished product. Treat it like untrusted input and run it through gates: validate, normalize, render." />
+        <meta property="og:url" content="https://winzenburg.com/articles/quality-gates-for-ai" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/quality-gates-ai-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/quality-gates-for-ai" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Quality Gates for AI Outputs: Schema, Normalization, and Readable Rendering","description":"AI output is raw material, not finished product. Treat it like untrusted input and run it through gates: validate, normalize, render.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-09","url":"https://winzenburg.com/articles/quality-gates-for-ai","image":"https://winzenburg.com/images/articles/quality-gates-ai-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

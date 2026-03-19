@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function RocksNotTasks() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes | Ryan Winzenburg</title>
+        <meta name="description" content="The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here&#39;s how to define weekly outcomes that actually finish." />
+        <meta property="og:title" content="Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes" />
+        <meta property="og:description" content="The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here&#39;s how to define weekly outcomes that actually finish." />
+        <meta property="og:url" content="https://winzenburg.com/articles/rocks-not-tasks" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/rocks-not-tasks-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/rocks-not-tasks" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes","description":"The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-23","url":"https://winzenburg.com/articles/rocks-not-tasks","image":"https://winzenburg.com/images/articles/rocks-not-tasks-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

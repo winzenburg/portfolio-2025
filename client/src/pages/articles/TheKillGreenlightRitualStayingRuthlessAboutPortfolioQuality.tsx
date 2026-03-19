@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function KillGreenlightRitual() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality | Ryan Winzenburg</title>
+        <meta name="description" content="Most founders can&#39;t kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria." />
+        <meta property="og:title" content="The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality" />
+        <meta property="og:description" content="Most founders can&#39;t kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria." />
+        <meta property="og:url" content="https://winzenburg.com/articles/kill-greenlight-ritual" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/kill-greenlight-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/kill-greenlight-ritual" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality","description":"Most founders can't kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/kill-greenlight-ritual","image":"https://winzenburg.com/images/articles/kill-greenlight-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

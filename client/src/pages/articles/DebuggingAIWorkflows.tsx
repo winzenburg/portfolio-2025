@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function DebuggingAIWorkflows() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Debugging AI Workflows Without Chaos: Evidence, Snapshots, and Minimal Endpoints | Ryan Winzenburg</title>
+        <meta name="description" content="AI failures feel random until you can reproduce them. Here&#39;s the minimal evidence system that explains what happened and how to recover." />
+        <meta property="og:title" content="Debugging AI Workflows Without Chaos: Evidence, Snapshots, and Minimal Endpoints" />
+        <meta property="og:description" content="AI failures feel random until you can reproduce them. Here&#39;s the minimal evidence system that explains what happened and how to recover." />
+        <meta property="og:url" content="https://winzenburg.com/articles/debugging-ai-workflows" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/debugging-ai-workflows-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/debugging-ai-workflows" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Debugging AI Workflows Without Chaos: Evidence, Snapshots, and Minimal Endpoints","description":"AI failures feel random until you can reproduce them. Here's the minimal evidence system that explains what happened and how to recover.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-04","url":"https://winzenburg.com/articles/debugging-ai-workflows","image":"https://winzenburg.com/images/articles/debugging-ai-workflows-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

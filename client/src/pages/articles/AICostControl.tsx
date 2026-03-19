@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function AICostControl() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>AI Cost Control That Doesn&#39;t Break Velocity | Ryan Winzenburg</title>
+        <meta name="description" content="Most AI cost overruns come from retries and rework, not expensive calls. Here&#39;s how to build AI systems that stay both affordable and fast." />
+        <meta property="og:title" content="AI Cost Control That Doesn&#39;t Break Velocity" />
+        <meta property="og:description" content="Most AI cost overruns come from retries and rework, not expensive calls. Here&#39;s how to build AI systems that stay both affordable and fast." />
+        <meta property="og:url" content="https://winzenburg.com/articles/ai-cost-control" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-cost-control-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/ai-cost-control" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"AI Cost Control That Doesn't Break Velocity","description":"Most AI cost overruns come from retries and rework, not expensive calls. Here's how to build AI systems that stay both affordable and fast.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-11","url":"https://winzenburg.com/articles/ai-cost-control","image":"https://winzenburg.com/images/articles/ai-cost-control-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

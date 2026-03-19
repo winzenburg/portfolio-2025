@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight, Calendar, Clock, Tag } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function SecurityBugGateArticle() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features | Ryan Winzenburg</title>
+        <meta name="description" content="AI can ship features fast, but it can also ship vulnerabilities. Here&#39;s our quality firewall for AI-generated code." />
+        <meta property="og:title" content="The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features" />
+        <meta property="og:description" content="AI can ship features fast, but it can also ship vulnerabilities. Here&#39;s our quality firewall for AI-generated code." />
+        <meta property="og:url" content="https://winzenburg.com/articles/security-bug-gate" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/security-gate-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/security-bug-gate" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features","description":"AI can ship features fast, but it can also ship vulnerabilities. Here's our quality firewall for AI-generated code.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/security-bug-gate","image":"https://winzenburg.com/images/articles/security-gate-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

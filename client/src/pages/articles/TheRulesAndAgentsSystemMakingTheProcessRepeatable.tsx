@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight, Calendar, Clock, Tag } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function RulesAndAgentsSystemArticle() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Rules and Agents System: Making the Process Repeatable | Ryan Winzenburg</title>
+        <meta name="description" content="What if your product creation process was as systematic as your code? Here&#39;s how rules and agents make the entire workflow repeatable." />
+        <meta property="og:title" content="The Rules and Agents System: Making the Process Repeatable" />
+        <meta property="og:description" content="What if your product creation process was as systematic as your code? Here&#39;s how rules and agents make the entire workflow repeatable." />
+        <meta property="og:url" content="https://winzenburg.com/articles/rules-and-agents" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/rules-agents-system-diagram.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/rules-and-agents" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rules and Agents System: Making the Process Repeatable","description":"What if your product creation process was as systematic as your code? Here's how rules and agents make the entire workflow repeatable.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rules-and-agents","image":"https://winzenburg.com/images/articles/rules-agents-system-diagram.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

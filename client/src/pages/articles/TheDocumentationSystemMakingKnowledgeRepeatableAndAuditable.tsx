@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Documentation System: Making Knowledge Repeatable and Auditable | Ryan Winzenburg</title>
+        <meta name="description" content="Knowledge gets lost. Processes aren&#39;t repeatable. What if every decision was documented and auditable?" />
+        <meta property="og:title" content="The Documentation System: Making Knowledge Repeatable and Auditable" />
+        <meta property="og:description" content="Knowledge gets lost. Processes aren&#39;t repeatable. What if every decision was documented and auditable?" />
+        <meta property="og:url" content="https://winzenburg.com/articles/documentation-system" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/docs-system-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/documentation-system" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Documentation System: Making Knowledge Repeatable and Auditable","description":"Knowledge gets lost. Processes aren't repeatable. What if every decision was documented and auditable?","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/documentation-system","image":"https://winzenburg.com/images/articles/docs-system-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

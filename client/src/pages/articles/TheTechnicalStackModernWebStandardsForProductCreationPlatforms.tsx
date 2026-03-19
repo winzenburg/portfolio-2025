@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function TechnicalStackModernWebStandards() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Technical Stack: Modern Web Standards for Product Creation Platforms | Ryan Winzenburg</title>
+        <meta name="description" content="Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype." />
+        <meta property="og:title" content="The Technical Stack: Modern Web Standards for Product Creation Platforms" />
+        <meta property="og:description" content="Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype." />
+        <meta property="og:url" content="https://winzenburg.com/articles/technical-stack" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/tech-stack.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/technical-stack" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Technical Stack: Modern Web Standards for Product Creation Platforms","description":"Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/technical-stack","image":"https://winzenburg.com/images/articles/tech-stack.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

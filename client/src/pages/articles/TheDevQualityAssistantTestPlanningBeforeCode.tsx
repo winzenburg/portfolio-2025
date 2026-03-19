@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function DevQualityAssistant() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Dev Quality Assistant: Test Planning Before Code Touches the Repo | Ryan Winzenburg</title>
+        <meta name="description" content="Most teams treat testing as an afterthought. We make it a build prerequisite." />
+        <meta property="og:title" content="The Dev Quality Assistant: Test Planning Before Code Touches the Repo" />
+        <meta property="og:description" content="Most teams treat testing as an afterthought. We make it a build prerequisite." />
+        <meta property="og:url" content="https://winzenburg.com/articles/dev-quality-assistant" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/dev-quality-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/dev-quality-assistant" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Dev Quality Assistant: Test Planning Before Code Touches the Repo","description":"Most teams treat testing as an afterthought. We make it a build prerequisite.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dev-quality-assistant","image":"https://winzenburg.com/images/articles/dev-quality-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

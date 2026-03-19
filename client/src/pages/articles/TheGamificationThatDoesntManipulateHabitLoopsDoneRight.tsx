@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function GameficationThatDoesntManipulate() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Gamification That Doesn&#39;t Manipulate: Designing Habit Loops with Industry-Appropriate Mascots | Ryan Winzenburg</title>
+        <meta name="description" content="Gamification is often manipulative. Here&#39;s how to make it helpful, respectful, and tailored to your industry." />
+        <meta property="og:title" content="Gamification That Doesn&#39;t Manipulate: Designing Habit Loops with Industry-Appropriate Mascots" />
+        <meta property="og:description" content="Gamification is often manipulative. Here&#39;s how to make it helpful, respectful, and tailored to your industry." />
+        <meta property="og:url" content="https://winzenburg.com/articles/gamification-done-right" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/gamification-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/gamification-done-right" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Gamification That Doesn't Manipulate: Designing Habit Loops with Industry-Appropriate Mascots","description":"Gamification is often manipulative. Here's how to make it helpful, respectful, and tailored to your industry.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/gamification-done-right","image":"https://winzenburg.com/images/articles/gamification-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function DesignSystemsFail() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Why Most Design Systems Fail (And How to Fix Them) | Ryan Winzenburg</title>
+        <meta name="description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems—and three AI-powered solutions." />
+        <meta property="og:title" content="Why Most Design Systems Fail (And How to Fix Them)" />
+        <meta property="og:description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems—and three AI-powered solutions." />
+        <meta property="og:url" content="https://winzenburg.com/articles/design-systems-fail" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/design-systems-fail-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/design-systems-fail" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here's the data on what kills design systems—and three AI-powered solutions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

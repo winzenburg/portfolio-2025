@@ -2,11 +2,23 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import { Helmet } from "react-helmet-async";
 
 export default function DocsAsSystemOfRecord() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Docs as the System of Record: Making Decisions Traceable and Reusable | Ryan Winzenburg</title>
+        <meta name="description" content="When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here&#39;s the fix." />
+        <meta property="og:title" content="Docs as the System of Record: Making Decisions Traceable and Reusable" />
+        <meta property="og:description" content="When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here&#39;s the fix." />
+        <meta property="og:url" content="https://winzenburg.com/articles/docs-as-system-of-record" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/docs-system-of-record-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/docs-as-system-of-record" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Docs as the System of Record: Making Decisions Traceable and Reusable","description":"When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here's the fix.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-18","url":"https://winzenburg.com/articles/docs-as-system-of-record","image":"https://winzenburg.com/images/articles/docs-system-of-record-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

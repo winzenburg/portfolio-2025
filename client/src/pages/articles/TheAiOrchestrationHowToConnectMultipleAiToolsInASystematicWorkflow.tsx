@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AiOrchestrationWorkflow() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow | Ryan Winzenburg</title>
+        <meta name="description" content="AI tools are powerful, but they&#39;re islands. Here&#39;s how to orchestrate them into a systematic, auditable workflow." />
+        <meta property="og:title" content="The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow" />
+        <meta property="og:description" content="AI tools are powerful, but they&#39;re islands. Here&#39;s how to orchestrate them into a systematic, auditable workflow." />
+        <meta property="og:url" content="https://winzenburg.com/articles/ai-orchestration" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-orchestration-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/ai-orchestration" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow","description":"AI tools are powerful, but they're islands. Here's how to orchestrate them into a systematic, auditable workflow.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-orchestration","image":"https://winzenburg.com/images/articles/ai-orchestration-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

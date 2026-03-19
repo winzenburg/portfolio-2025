@@ -2,12 +2,24 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function ScalingStrategy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Header */}
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Scaling Strategy: Building a Portfolio of AI-Powered Businesses | Ryan Winzenburg</title>
+        <meta name="description" content="After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here&#39;s the portfolio approach that creates compounding value." />
+        <meta property="og:title" content="Scaling Strategy: Building a Portfolio of AI-Powered Businesses" />
+        <meta property="og:description" content="After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here&#39;s the portfolio approach that creates compounding value." />
+        <meta property="og:url" content="https://winzenburg.com/articles/scaling-strategy" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/scaling-strategy-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/scaling-strategy" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Scaling Strategy: Building a Portfolio of AI-Powered Businesses","description":"After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here's the portfolio approach that creates compounding value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-08-14","url":"https://winzenburg.com/articles/scaling-strategy","image":"https://winzenburg.com/images/articles/scaling-strategy-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Content */}
       <article className="py-12 px-6">

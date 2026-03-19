@@ -2,11 +2,23 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function Context7LiveDocs() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Never Ship Outdated Code: How We Use Context7 to Query Live Documentation | Ryan Winzenburg</title>
+        <meta name="description" content="Most AI code generation uses stale training data. We query live docs via Context7 MCP to ensure code suggestions match the latest version of every library." />
+        <meta property="og:title" content="Never Ship Outdated Code: How We Use Context7 to Query Live Documentation" />
+        <meta property="og:description" content="Most AI code generation uses stale training data. We query live docs via Context7 MCP to ensure code suggestions match the latest version of every library." />
+        <meta property="og:url" content="https://winzenburg.com/articles/context7-live-docs" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/context7-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/context7-live-docs" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Never Ship Outdated Code: How We Use Context7 to Query Live Documentation","description":"Most AI code generation uses stale training data. We query live docs via Context7 MCP to ensure code suggestions match the latest version of every library.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/context7-live-docs","image":"https://winzenburg.com/images/articles/context7-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

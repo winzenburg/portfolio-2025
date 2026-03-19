@@ -2,12 +2,24 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function MonetizationStrategy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Header */}
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>Monetization Strategy: Generating Revenue from Day One | Ryan Winzenburg</title>
+        <meta name="description" content="Monetization isn&#39;t an afterthought—it&#39;s a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building." />
+        <meta property="og:title" content="Monetization Strategy: Generating Revenue from Day One" />
+        <meta property="og:description" content="Monetization isn&#39;t an afterthought—it&#39;s a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building." />
+        <meta property="og:url" content="https://winzenburg.com/articles/monetization-strategy" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/monetization-strategy-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/monetization-strategy" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Monetization Strategy: Generating Revenue from Day One","description":"Monetization isn't an afterthought—it's a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-07-21","url":"https://winzenburg.com/articles/monetization-strategy","image":"https://winzenburg.com/images/articles/monetization-strategy-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Content */}
       <article className="py-12 px-6">

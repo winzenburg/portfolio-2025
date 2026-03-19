@@ -2,12 +2,24 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AudienceFirstGoToMarket() {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Header */}
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>The Audience-First Go-to-Market Strategy: Building Community Before Launch | Ryan Winzenburg</title>
+        <meta name="description" content="Most products launch to silence. Here&#39;s what works: Build community before launch. Use one platform. Master it. Then expand." />
+        <meta property="og:title" content="The Audience-First Go-to-Market Strategy: Building Community Before Launch" />
+        <meta property="og:description" content="Most products launch to silence. Here&#39;s what works: Build community before launch. Use one platform. Master it. Then expand." />
+        <meta property="og:url" content="https://winzenburg.com/articles/audience-first-go-to-market" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/audience-first-go-to-market-hero.png" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/audience-first-go-to-market" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Audience-First Go-to-Market Strategy: Building Community Before Launch","description":"Most products launch to silence. Here's what works: Build community before launch. Use one platform. Master it. Then expand.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-02","url":"https://winzenburg.com/articles/audience-first-go-to-market","image":"https://winzenburg.com/images/articles/audience-first-go-to-market-hero.png"})}</script>
+      </Helmet>
 
       {/* Article Content */}
       <article className="pt-24 pb-16">
