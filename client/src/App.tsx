@@ -72,10 +72,17 @@ import CompoundIntelligence from "./pages/articles/CompoundIntelligence";
 import IntegrationDocsThatWork from "./pages/articles/IntegrationDocsThatWork";
 import AskingBetterStrategicQuestions from "./pages/articles/AskingBetterStrategicQuestions";
 import ScrollToTop from "./components/ScrollToTop";
+import { usePageTracking } from "./hooks/usePageTracking";
+
+function PageTracker() {
+  usePageTracking();
+  return null;
+}
 
 function Router() {
   return (
     <WouterRouter base="/">
+      <PageTracker />
       <ScrollToTop />
       <Switch>
       <Route path={"/"} component={Home} />
