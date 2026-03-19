@@ -41,7 +41,7 @@ export default function AskingBetterStrategicQuestions() {
             </p>
           </div>
 
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
 
             <p className="text-slate-300 leading-relaxed mb-6">
               People are asking whether AI will replace jobs, reduce headcount, or make their role obsolete. I get it. But those aren't the most useful questions. In most cases, they're the wrong questions entirely.
@@ -83,12 +83,24 @@ export default function AskingBetterStrategicQuestions() {
 
             <div className="my-8 bg-slate-800 border border-cyan-500/20 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-cyan-300 mb-4">What faster exploration unlocks</h3>
-              <ul className="space-y-3 text-slate-300">
-                <li>• Prototyping and validation cycles that used to take weeks now take hours</li>
-                <li>• User research synthesized at scale — not limited by team size</li>
-                <li>• Accessibility testing built into the workflow, not bolted on at the end</li>
-                <li>• DesignOps repetition eliminated so people focus on judgment and taste</li>
-              </ul>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>Prototyping and validation cycles that used to take weeks now take hours</span>
+                </div>
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>User research synthesized at scale — not limited by team size</span>
+                </div>
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>Accessibility testing built into the workflow, not bolted on at the end</span>
+                </div>
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>DesignOps repetition eliminated so people focus on judgment and taste</span>
+                </div>
+              </div>
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -190,12 +202,24 @@ export default function AskingBetterStrategicQuestions() {
 
             <div className="my-8 bg-slate-800 border border-cyan-500/20 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-cyan-300 mb-4">Better questions to be asking</h3>
-              <ul className="space-y-3 text-slate-300">
-                <li>• What can you offer users now that you couldn't offer before?</li>
-                <li>• What frustrations can you eliminate for your customers?</li>
-                <li>• What internal bottlenecks can you remove for your design and engineering teams?</li>
-                <li>• What becomes possible if your people think bigger and execute faster?</li>
-              </ul>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>What can you offer users now that you couldn't offer before?</span>
+                </div>
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>What frustrations can you eliminate for your customers?</span>
+                </div>
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>What internal bottlenecks can you remove for your design and engineering teams?</span>
+                </div>
+                <div className="flex items-start gap-3 text-slate-300">
+                  <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
+                  <span>What becomes possible if your people think bigger and execute faster?</span>
+                </div>
+              </div>
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
