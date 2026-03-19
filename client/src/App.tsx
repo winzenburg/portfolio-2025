@@ -73,9 +73,11 @@ import IntegrationDocsThatWork from "./pages/articles/IntegrationDocsThatWork";
 import AskingBetterStrategicQuestions from "./pages/articles/AskingBetterStrategicQuestions";
 import ScrollToTop from "./components/ScrollToTop";
 import { usePageTracking } from "./hooks/usePageTracking";
+import { useArticleEngagement } from "./hooks/useArticleEngagement";
 
 function PageTracker() {
   usePageTracking();
+  useArticleEngagement();
   return null;
 }
 

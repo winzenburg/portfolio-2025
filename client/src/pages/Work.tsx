@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { Settings, Users, CheckCircle } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Helmet } from "react-helmet-async";
+import { trackCaseStudyClick, trackExternalLink } from "@/lib/analytics";
 
 export default function Work() {
   return (
@@ -93,7 +94,7 @@ export default function Work() {
                 </div>
 
                 <div className="flex gap-4">
-                  <Link href="/case-study/cultivate">
+                  <Link href="/case-study/cultivate" onClick={() => trackCaseStudyClick("cultivate", "Cultivate: Startup Operating System")}>
                     <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                       View Full Case Study →
                     </a>
@@ -102,6 +103,7 @@ export default function Work() {
                     href="https://cultivate-six.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackExternalLink("https://cultivate-six.vercel.app/", "cultivate")}
                     className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
                   >
                     View Live →
@@ -190,7 +192,7 @@ export default function Work() {
                 </div>
 
                 <div className="flex gap-4">
-                  <Link href="/case-study/kinlet">
+                  <Link href="/case-study/kinlet" onClick={() => trackCaseStudyClick("kinlet", "Kinlet: AI-Native SaaS MVP")}>
                     <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                       View Full Case Study →
                     </a>
@@ -199,6 +201,7 @@ export default function Work() {
                     href="https://kinlet.care"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackExternalLink("https://kinlet.care", "kinlet")}
                     className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
                   >
                     View Live →
@@ -286,7 +289,7 @@ export default function Work() {
                   </div>
                 </div>
 
-                <Link href="/case-study/saas-design-system">
+                <Link href="/case-study/saas-design-system" onClick={() => trackCaseStudyClick("saas-design-system", "Kinetic UI Design System")}>
                   <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
                   </a>
@@ -373,7 +376,7 @@ export default function Work() {
                   </div>
                 </div>
 
-                <Link href="/case-study/isc-portal">
+                <Link href="/case-study/isc-portal" onClick={() => trackCaseStudyClick("isc-portal", "ISC Portal Redesign")}>
                   <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
                   </a>
@@ -460,7 +463,7 @@ export default function Work() {
                   </div>
                 </div>
 
-                <Link href="/case-study/comcast-design-system">
+                <Link href="/case-study/comcast-design-system" onClick={() => trackCaseStudyClick("comcast-design-system", "Comcast Business Design System")}>
                   <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                     View Full Case Study →
                   </a>
@@ -548,7 +551,7 @@ export default function Work() {
                   </li>
                 </ul>
               </div>
-              <Link href="/case-study/buildout">
+              <Link href="/case-study/buildout" onClick={() => trackCaseStudyClick("buildout", "BuildOut")}>
                 <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                   View Case Study →
                 </a>
@@ -586,7 +589,7 @@ export default function Work() {
                   </li>
                 </ul>
               </div>
-              <Link href="/case-study/cvs-aetna">
+              <Link href="/case-study/cvs-aetna" onClick={() => trackCaseStudyClick("cvs-aetna", "CVS Health/Aetna")}>
                 <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
                   View Case Study →
                 </a>

@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { trackArticleCardClick, trackCategoryFilter } from "@/lib/analytics";
 
 interface Article {
   id: string;
@@ -567,6 +568,11 @@ export default function Articles() {
     return articles.filter(article => article.category === category).length;
   };
 
+  const handleCategoryChange = (category: string) => {
+    trackCategoryFilter(category);
+    setSelectedCategory(category);
+  };
+
   return (
     <div className="min-h-screen">
       <Helmet>
@@ -600,7 +606,7 @@ export default function Articles() {
           {/* Category Filter Pills */}
           <div className="flex flex-wrap gap-3">
             <button
-              onClick={() => setSelectedCategory("All")}
+              onClick={() => handleCategoryChange("All")}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === "All"
                   ? 'bg-white text-slate-900 border border-white'
@@ -610,7 +616,7 @@ export default function Articles() {
               All ({getCategoryCount("All")})
             </button>
             <button
-              onClick={() => setSelectedCategory("Design Systems")}
+              onClick={() => handleCategoryChange("Design Systems")}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === "Design Systems"
                   ? 'bg-blue-500 text-white border border-blue-500'
@@ -620,7 +626,7 @@ export default function Articles() {
               Design Systems ({getCategoryCount("Design Systems")})
             </button>
             <button
-              onClick={() => setSelectedCategory("Business Strategy")}
+              onClick={() => handleCategoryChange("Business Strategy")}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === "Business Strategy"
                   ? 'bg-cyan-500 text-white border border-cyan-500'
@@ -630,7 +636,7 @@ export default function Articles() {
               Business Strategy ({getCategoryCount("Business Strategy")})
             </button>
             <button
-              onClick={() => setSelectedCategory("AI Workflow")}
+              onClick={() => handleCategoryChange("AI Workflow")}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === "AI Workflow"
                   ? 'bg-purple-500 text-white border border-purple-500'
@@ -640,7 +646,7 @@ export default function Articles() {
               AI Workflow ({getCategoryCount("AI Workflow")})
             </button>
             <button
-              onClick={() => setSelectedCategory("Engineering")}
+              onClick={() => handleCategoryChange("Engineering")}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === "Engineering"
                   ? 'bg-green-500 text-white border border-green-500'
@@ -650,7 +656,7 @@ export default function Articles() {
               Engineering ({getCategoryCount("Engineering")})
             </button>
             <button
-              onClick={() => setSelectedCategory("Product Design")}
+              onClick={() => handleCategoryChange("Product Design")}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === "Product Design"
                   ? 'bg-rose-500 text-white border border-rose-500'
@@ -682,6 +688,7 @@ export default function Articles() {
               {filteredArticles.map((article) => (
               <article
                 key={article.id}
+                onClick={() => trackArticleCardClick(article.slug, article.title, article.category)}
                 className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg overflow-hidden hover:border-blue-500/50 transition-all duration-300 group"
               >
                 {/* Hero Image */}

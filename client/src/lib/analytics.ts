@@ -63,3 +63,37 @@ export function trackNewsletterSignup() {
     ...baseProperties(),
   });
 }
+
+/** Track external link clicks (LinkedIn, live project sites, GitHub) */
+export function trackExternalLink(url: string, platform: string) {
+  posthog.capture("external_link_click", {
+    ...baseProperties(),
+    destination_url: url,
+    platform,
+  });
+}
+
+/** Track article category filter changes on /articles */
+export function trackCategoryFilter(category: string) {
+  posthog.capture("articles_category_filter", {
+    ...baseProperties(),
+    selected_category: category,
+  });
+}
+
+/** Track rate sheet PDF downloads on /services */
+export function trackRateSheetDownload(sheetType: "startup" | "enterprise") {
+  posthog.capture("rate_sheet_download", {
+    ...baseProperties(),
+    sheet_type: sheetType,
+  });
+}
+
+/** Track playbook request clicks from articles to /contact?playbook= */
+export function trackPlaybookRequest(playbookId: string, sourceArticleSlug: string) {
+  posthog.capture("playbook_request_click", {
+    ...baseProperties(),
+    playbook_id: playbookId,
+    source_article_slug: sourceArticleSlug,
+  });
+}

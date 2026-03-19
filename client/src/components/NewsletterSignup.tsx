@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { trackNewsletterSignup } from "@/lib/analytics";
 
-// TODO: Re-enable newsletter signup when ready
 const NEWSLETTER_ENABLED = false;
 
 export default function NewsletterSignup() {
@@ -32,8 +32,8 @@ export default function NewsletterSignup() {
         mode: "no-cors", // Beehiiv may not support CORS, use no-cors mode
       });
 
-      // With no-cors, we can't read the response, so assume success if no error is thrown
       setSubscribeStatus("success");
+      trackNewsletterSignup();
       setEmail("");
     } catch (error) {
       setSubscribeStatus("error");

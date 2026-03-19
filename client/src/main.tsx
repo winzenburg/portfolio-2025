@@ -2,34 +2,59 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { initPostHog } from "./lib/posthog";
-import { trackCTAClick, trackNavClick } from "./lib/analytics";
+import { trackCTAClick, trackNavClick, trackExternalLink } from "./lib/analytics";
 
 initPostHog();
 
-// Track CTA clicks globally (covers any button/link with relevant text)
+const CTA_PHRASES = [
+  "Schedule a Call",
+  "Schedule Call",
+  "Get the Playbook",
+  "Download",
+  "Let's Talk",
+  "Get in Touch",
+  "View Case Studies",
+  "Read My Thinking",
+  "Send Message",
+];
+
 document.addEventListener("click", (e) => {
   const target = e.target as HTMLElement;
-  const text = target.textContent?.trim() ?? target.closest("a, button")?.textContent?.trim() ?? "";
+  const anchor = target.closest("a") as HTMLAnchorElement | null;
+  const button = target.closest("button") as HTMLButtonElement | null;
+  const text =
+    target.textContent?.trim() ??
+    anchor?.textContent?.trim() ??
+    button?.textContent?.trim() ??
+    "";
+
+  // CTA tracking — text-based + href-based
   const isCtaText =
-    text.includes("Schedule a Call") ||
-    text.includes("Schedule Call") ||
-    text.includes("Get the Playbook") ||
-    text.includes("Download") ||
-    target.closest('a[href*="contact"]') !== null ||
-    target.closest('a[href*="schedule"]') !== null;
+    CTA_PHRASES.some((phrase) => text.includes(phrase)) ||
+    anchor?.href?.includes("contact") ||
+    anchor?.href?.includes("schedule");
 
   if (isCtaText) {
-    const anchor = target.closest("a") as HTMLAnchorElement | null;
     trackCTAClick(text, anchor?.href);
   }
-});
 
-// Track nav link clicks globally
-document.addEventListener("click", (e) => {
-  const target = e.target as HTMLElement;
+  // Nav link tracking
   const navAnchor = target.closest("nav a, header a") as HTMLAnchorElement | null;
   if (navAnchor) {
     trackNavClick(navAnchor.textContent?.trim() ?? "", navAnchor.href);
+  }
+
+  // External link tracking — catch any link opening in a new tab
+  if (anchor?.target === "_blank" && anchor.href) {
+    const url = anchor.href;
+    let platform = "unknown";
+    if (url.includes("linkedin.com")) platform = "linkedin";
+    else if (url.includes("github.com")) platform = "github";
+    else if (url.includes("cultivate")) platform = "cultivate";
+    else if (url.includes("kinlet")) platform = "kinlet";
+    else platform = new URL(url).hostname;
+
+    trackExternalLink(url, platform);
   }
 });
 

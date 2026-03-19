@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { FileText, X } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Helmet } from "react-helmet-async";
+import { trackContactSubmit, trackExternalLink } from "@/lib/analytics";
 
 // Map of playbook IDs to their display info
 const PLAYBOOK_INFO: Record<string, { title: string; article: string; articleSlug: string }> = {
@@ -91,6 +92,7 @@ export default function Contact() {
       });
 
       if (response.ok) {
+        trackContactSubmit(!!playbookInfo);
         setSubmitted(true);
         setFormData({
           name: "",
@@ -295,6 +297,7 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/rwinzenburg/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackExternalLink("https://www.linkedin.com/in/rwinzenburg/", "linkedin")}
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
