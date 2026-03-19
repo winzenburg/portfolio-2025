@@ -4,9 +4,11 @@ import { Link } from "wouter";
 import { CheckCircle } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  // Helmet is rendered inline in the JSX return
 
   useEffect(() => {
     const video = videoRef.current;
@@ -46,6 +48,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Ryan Winzenburg | Design Operations Leader & AI Workflow Architect</title>
+        <meta name="description" content="Design leader with 25 years at Fortune 50 companies transforming how teams ship with AI. Head of Design Operations, VP of Design, Principal Design Technologist. 4-6x faster delivery, $3M+ portfolio value." />
+        <meta property="og:title" content="Ryan Winzenburg | Design Operations Leader & AI Workflow Architect" />
+        <meta property="og:description" content="Design leader with 25 years at Fortune 50 companies transforming how teams ship with AI. 4-6x faster delivery, $3M+ portfolio value." />
+        <meta property="og:url" content="https://winzenburg.com" />
+        <link rel="canonical" href="https://winzenburg.com" />
+      </Helmet>
       <ResponsiveNav currentPage="home" />
 
       {/* Hero Section */}

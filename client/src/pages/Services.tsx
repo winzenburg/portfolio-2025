@@ -1,9 +1,18 @@
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Download, CheckCircle, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function Services() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <Helmet>
+        <title>Design Leadership & DesignOps Consulting | Ryan Winzenburg</title>
+        <meta name="description" content="Strategic design operations consulting for VCs, startups, and enterprise. AI-native transformation, design systems at scale, VP-level UX leadership. 6-10x ROI, $3M+ portfolio value delivered." />
+        <meta property="og:title" content="Design Leadership & DesignOps Consulting | Ryan Winzenburg" />
+        <meta property="og:description" content="Strategic design operations consulting. AI-native transformation, design systems, VP-level UX leadership for startups and enterprise." />
+        <meta property="og:url" content="https://winzenburg.com/services" />
+        <link rel="canonical" href="https://winzenburg.com/services" />
+      </Helmet>
       <ResponsiveNav currentPage="services" />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 mb-16 md:mb-24">

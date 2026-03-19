@@ -6,6 +6,7 @@ import { Link, useSearch } from "wouter";
 import { useState, useEffect } from "react";
 import { FileText, X } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
+import { Helmet } from "react-helmet-async";
 
 // Map of playbook IDs to their display info
 const PLAYBOOK_INFO: Record<string, { title: string; article: string; articleSlug: string }> = {
@@ -112,6 +113,14 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Contact Ryan Winzenburg | Design Operations & UX Leadership</title>
+        <meta name="description" content="Get in touch with Ryan Winzenburg about design operations leadership, AI-augmented design consulting, or VP/Director of Design roles. Based in Colorado, available remote or hybrid." />
+        <meta property="og:title" content="Contact Ryan Winzenburg | Design Operations & UX Leadership" />
+        <meta property="og:description" content="Connect with Ryan Winzenburg about design operations leadership, AI-augmented design consulting, or VP/Director of Design roles." />
+        <meta property="og:url" content="https://winzenburg.com/contact" />
+        <link rel="canonical" href="https://winzenburg.com/contact" />
+      </Helmet>
       <ResponsiveNav currentPage="contact" />
 
       {/* Hero Section */}

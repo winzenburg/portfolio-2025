@@ -3,6 +3,7 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Link } from "wouter";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 interface Article {
   id: string;
@@ -568,6 +569,14 @@ export default function Articles() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Articles on AI Design Workflows, DesignOps & Product Strategy | Ryan Winzenburg</title>
+        <meta name="description" content="51 articles on AI-augmented design workflows, design operations, design systems, UX leadership, and product strategy. Practical insights from 25 years of enterprise design leadership." />
+        <meta property="og:title" content="Articles on AI Design Workflows, DesignOps & Product Strategy" />
+        <meta property="og:description" content="Practical insights on AI-augmented design, design operations, UX leadership, and product strategy from 25 years of enterprise design leadership." />
+        <meta property="og:url" content="https://winzenburg.com/articles" />
+        <link rel="canonical" href="https://winzenburg.com/articles" />
+      </Helmet>
       {/* Header */}
       <ResponsiveNav currentPage="articles" />
 
@@ -582,11 +591,10 @@ export default function Articles() {
         </div>
         <div className="container mx-auto max-w-4xl bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Articles
+            AI Design Workflows, DesignOps & Product Strategy
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed mb-8">
-            Insights on AI-augmented development, design systems, and strategic product creation.
-            Learn how to leverage AI to build better products faster.
+            Practical insights on AI-augmented design, design operations, UX leadership, and product strategy — from 25 years of enterprise design leadership.
           </p>
 
           {/* Category Filter Pills */}
@@ -640,6 +648,16 @@ export default function Articles() {
               }`}
             >
               Engineering ({getCategoryCount("Engineering")})
+            </button>
+            <button
+              onClick={() => setSelectedCategory("Product Design")}
+              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
+                selectedCategory === "Product Design"
+                  ? 'bg-rose-500 text-white border border-rose-500'
+                  : 'bg-rose-900/30 border border-rose-700/50 text-rose-300 hover:bg-rose-800/50'
+              }`}
+            >
+              Product Design ({getCategoryCount("Product Design")})
             </button>
           </div>
         </div>

@@ -2,11 +2,32 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function IntegrationDocsThatWork() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+
+      <Helmet>
+        <title>Integration Documentation That Developers Actually Read | Ryan Winzenburg</title>
+        <meta name="description" content="18 minutes vs 3 hours — same API, different documentation. Developer experience is a design problem. How to write integration docs that engineers actually use." />
+        <meta property="og:title" content="Integration Documentation That Developers Actually Read" />
+        <meta property="og:description" content="18 minutes vs 3 hours — same API, different documentation. Developer experience is a design problem." />
+        <meta property="og:url" content="https://winzenburg.com/articles/integration-docs-that-work" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/integration-docs-hero.png" />
+        <link rel="canonical" href="https://winzenburg.com/articles/integration-docs-that-work" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Integration Documentation That Developers Actually Read",
+          "description": "18 minutes vs 3 hours — same API, different documentation. Developer experience is a design problem.",
+          "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
+          "datePublished": "2026-02-29",
+          "url": "https://winzenburg.com/articles/integration-docs-that-work",
+          "image": "https://winzenburg.com/images/articles/integration-docs-hero.png"
+        })}</script>
+      </Helmet>
 
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-6 max-w-4xl">

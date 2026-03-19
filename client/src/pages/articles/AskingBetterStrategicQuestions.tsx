@@ -2,11 +2,32 @@ import { ArrowLeft } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export default function AskingBetterStrategicQuestions() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+
+      <Helmet>
+        <title>Asking Better Strategic Questions About AI in Product Design | Ryan Winzenburg</title>
+        <meta name="description" content="The best question about AI isn't how to cut headcount — it's what can we do now that was previously impossible? A design leadership perspective on AI, product design, and raising ambition." />
+        <meta property="og:title" content="Asking Better Strategic Questions About AI in Product Design" />
+        <meta property="og:description" content="The best question about AI isn't how to cut headcount — it's what can we do now that was previously impossible?" />
+        <meta property="og:url" content="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/strategic-questions-ai-hero.png" />
+        <link rel="canonical" href="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Asking Better Strategic Questions About AI in Product Design",
+          "description": "The best question about AI isn't how to cut headcount — it's what can we do now that was previously impossible?",
+          "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
+          "datePublished": "2026-03-07",
+          "url": "https://winzenburg.com/articles/strategic-questions-ai-product-design",
+          "image": "https://winzenburg.com/images/articles/strategic-questions-ai-hero.png"
+        })}</script>
+      </Helmet>
 
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-6 max-w-4xl">
