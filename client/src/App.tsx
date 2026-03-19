@@ -69,6 +69,7 @@ import SelfValidatingAIAgents from "./pages/articles/SelfValidatingAIAgents";
 import FreshContextPerIteration from "./pages/articles/FreshContextPerIteration";
 import CompoundIntelligence from "./pages/articles/CompoundIntelligence";
 import IntegrationDocsThatWork from "./pages/articles/IntegrationDocsThatWork";
+import AskingBetterStrategicQuestions from "./pages/articles/AskingBetterStrategicQuestions";
 import ScrollToTop from "./components/ScrollToTop";
 
 function Router() {
@@ -133,6 +134,7 @@ function Router() {
       <Route path="/articles/fresh-context-per-iteration" component={FreshContextPerIteration} />
       <Route path="/articles/compound-intelligence" component={CompoundIntelligence} />
       <Route path="/articles/integration-docs-that-work" component={IntegrationDocsThatWork} />
+      <Route path="/articles/strategic-questions-ai-product-design" component={AskingBetterStrategicQuestions} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />

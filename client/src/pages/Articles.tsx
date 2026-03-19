@@ -43,6 +43,16 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "51",
+    title: "Asking Better Strategic Questions About AI in Product Design",
+    excerpt: "I've spent 20+ years inside enterprise product and design organizations. The pattern right now is consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.",
+    date: "March 7, 2026",
+    readTime: "6 min read",
+    slug: "strategic-questions-ai-product-design",
+    category: "Product Design",
+    heroImage: "/images/articles/strategic-questions-ai-hero.png"
+  },
+  {
     id: "50",
     title: "Integration Documentation That Developers Actually Read",
     excerpt: "Last week, a developer integrated our API in 18 minutes. Another took 3 hours on the same integration. Same API. Same endpoints. Different documentation. Developer experience is a design problem.",
