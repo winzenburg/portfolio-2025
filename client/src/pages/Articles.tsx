@@ -45,6 +45,16 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "52",
+    title: "AI Isn't a Feature. It's a Workflow Problem.",
+    excerpt: "Most teams aren't falling behind because they lack access to AI. They're asking the wrong question. The shift from AI as a feature to AI as a workflow redesign problem is where the real advantage lives.",
+    date: "May 29, 2026",
+    readTime: "7 min read",
+    slug: "ai-isnt-a-feature-workflow",
+    category: "Product Design",
+    heroImage: "/images/articles/ai-isnt-a-feature-workflow-hero.png"
+  },
+  {
     id: "51",
     title: "Asking Better Strategic Questions About AI in Product Design",
     excerpt: "I've spent 20+ years inside enterprise product and design organizations. The pattern right now is consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.",
