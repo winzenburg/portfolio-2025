@@ -52,7 +52,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              They're right—if you're using traditional methods. But with AI-augmented workflows, the rules have changed completely.
+              They're right, if you're using traditional methods. But with AI-augmented workflows, the rules have changed completely.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -88,7 +88,7 @@ export default function DesignSystem4Weeks() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This isn't just slow—it's dangerous. In 12 months, your product strategy can change, your tech stack can evolve, and your competitors can ship multiple iterations. You're essentially building a foundation for a house that might not exist by the time you're done.
+              This isn't just slow, it's dangerous. In 12 months, your product strategy can change, your tech stack can evolve, and your competitors can ship multiple iterations. You're essentially building a foundation for a house that might not exist by the time you're done.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">

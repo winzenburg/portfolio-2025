@@ -6,10 +6,10 @@ import { getArticleSlug, getPageType } from "@/lib/posthog";
 /**
  * Tracks deep engagement metrics for article pages:
  *
- * 1. Time on page — fires "article_time_spent" when the user navigates away,
+ * 1. Time on page, fires "article_time_spent" when the user navigates away,
  *    with the total seconds spent (active tab time only).
  *
- * 2. Reading progress — fires "article_reading_progress" at 25 / 50 / 75 / 100%
+ * 2. Reading progress, fires "article_reading_progress" at 25 / 50 / 75 / 100%
  *    of the <article> element's scroll position, separate from the page-level
  *    scroll_depth events in usePageTracking.
  *

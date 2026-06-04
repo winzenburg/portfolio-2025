@@ -9,7 +9,7 @@ export default function Methodology() {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>AI-Native Design Methodology | 5-Phase Workflow — Ryan Winzenburg</title>
+        <title>AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg</title>
         <meta name="description" content="A proven 5-phase AI-native methodology for design operations: research, prototyping, production, testing, and documentation. Expert-guided AI orchestration that makes design teams 4-6x faster." />
         <meta property="og:title" content="AI-Native Design Methodology | 5-Phase Workflow" />
         <meta property="og:description" content="Proven 5-phase AI-native methodology for design operations. Expert-guided AI orchestration delivering 4-6x faster design teams." />
@@ -33,7 +33,7 @@ export default function Methodology() {
             Strategic AI-Native Methodology
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            A proven, repeatable methodology that transforms organizations into AI-native competitors—delivering board-level impact through 25 years of Fortune 50 expertise combined with cutting-edge AI workflows.
+            A proven, repeatable methodology that transforms organizations into AI-native competitors, delivering board-level impact through 25 years of Fortune 50 expertise combined with cutting-edge AI workflows.
           </p>
         </div>
         </div>
@@ -48,7 +48,7 @@ export default function Methodology() {
               Most people use AI wrong. They ask it to "design a webpage" and get generic, soulless results. That's not how I work.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              My methodology treats <strong>AI as a force multiplier, guided by expert judgment.</strong> I do the strategic thinking—what to build, why it matters, how it should work. AI handles the execution—writing code, generating documentation, running tests. The result? Enterprise quality delivered at a speed that was previously impossible.
+              My methodology treats <strong>AI as a force multiplier, guided by expert judgment.</strong> I do the strategic thinking, what to build, why it matters, how it should work. AI handles the execution, writing code, generating documentation, running tests. The result? Enterprise quality delivered at a speed that was previously impossible.
             </p>
             <p className="text-lg text-muted-foreground">
               This isn't about replacing human expertise. It's about amplifying it. I'm the architect and conductor; AI is my orchestra.
@@ -317,7 +317,7 @@ export default function Methodology() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-3">Your Team Gets Better</h3>
               <p className="text-muted-foreground">
-                I don't just deliver a project—I train your team on AI workflows. The velocity increase is permanent.
+                I don't just deliver a project, I train your team on AI workflows. The velocity increase is permanent.
               </p>
             </Card>
           </div>

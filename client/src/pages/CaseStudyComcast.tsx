@@ -63,7 +63,7 @@ const CaseStudyComcast: React.FC = () => {
               Comcast Business needed a comprehensive design system to enable their product teams to build higher-quality prototypes at significantly faster pace. The existing workflow required designers to manually create every component and page in Figma, leading to inconsistencies, slow iteration cycles, and difficulty maintaining design standards across multiple product lines.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              The design team consisted of approximately 10 non-technical individuals who needed a system that was both powerful and accessible. The solution couldn't require deep technical knowledge to use, yet it needed to produce production-ready code that engineering teams could implement with confidence. This dual requirement—accessibility for designers, rigor for developers—made the project particularly challenging.
+              The design team consisted of approximately 10 non-technical individuals who needed a system that was both powerful and accessible. The solution couldn't require deep technical knowledge to use, yet it needed to produce production-ready code that engineering teams could implement with confidence. This dual requirement, accessibility for designers, rigor for developers, made the project particularly challenging.
             </p>
             <p className="text-gray-300 leading-relaxed">
               Additionally, as a Fortune 100 company, Comcast Business required enterprise-grade quality standards. The design system needed to support WCAG 2.1 AA accessibility compliance, provide comprehensive documentation, and scale to support hundreds of product designers and developers across the organization.
@@ -76,7 +76,7 @@ const CaseStudyComcast: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Force Multiplier Approach</h2>
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              I delivered a production-ready design system in 4 weeks by leveraging my AI-augmented workflow to build at unprecedented scale. The system includes 62 components, 826 type-safe icons, and over 171,000 lines of code—a scope that would traditionally require a large team working for over a year.
+              I delivered a production-ready design system in 4 weeks by leveraging my AI-augmented workflow to build at unprecedented scale. The system includes 62 components, 826 type-safe icons, and over 171,000 lines of code, a scope that would traditionally require a large team working for over a year.
             </p>
           </div>
 
@@ -349,7 +349,7 @@ const CaseStudyComcast: React.FC = () => {
           <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-6">
             <h3 className="text-lg font-bold mb-3 text-green-400">Business Value</h3>
             <p className="text-gray-300 leading-relaxed">
-              The design system created a force multiplier effect across the entire organization. Product teams can now validate more ideas in parallel, ship features faster, and maintain consistent quality across all customer touchpoints. The investment in the design system pays dividends every time a designer builds a prototype or an engineer implements a feature—the ROI compounds over time.
+              The design system created a force multiplier effect across the entire organization. Product teams can now validate more ideas in parallel, ship features faster, and maintain consistent quality across all customer touchpoints. The investment in the design system pays dividends every time a designer builds a prototype or an engineer implements a feature, the ROI compounds over time.
             </p>
           </div>
         </section>
@@ -369,7 +369,7 @@ const CaseStudyComcast: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-green-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-green-400">Icon System Needs Type Safety</h3>
               <p className="text-gray-300">
-                With 826 icons, it would be easy to make mistakes—typos in icon names, incorrect sizing, or inconsistent colors. The type-safe icon system prevents all these errors at compile time. Developers get autocomplete for icon names, and TypeScript catches mistakes before they reach production. This investment in developer experience pays dividends across hundreds of developers.
+                With 826 icons, it would be easy to make mistakes, typos in icon names, incorrect sizing, or inconsistent colors. The type-safe icon system prevents all these errors at compile time. Developers get autocomplete for icon names, and TypeScript catches mistakes before they reach production. This investment in developer experience pays dividends across hundreds of developers.
               </p>
             </div>
 
@@ -395,7 +395,7 @@ const CaseStudyComcast: React.FC = () => {
             Need a Design System for Your Organization?
           </h2>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            I can deliver comprehensive, production-ready design systems that accelerate your entire product organization—from design to development to deployment.
+            I can deliver comprehensive, production-ready design systems that accelerate your entire product organization, from design to development to deployment.
           </p>
           <Link href="/contact">
             <a className="inline-block px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg transition-colors">

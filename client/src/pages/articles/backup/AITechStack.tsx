@@ -52,7 +52,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              In this article, I'll share my complete tech stack, the exact workflow I use, and—most importantly—why each tool matters and when to use it.
+              In this article, I'll share my complete tech stack, the exact workflow I use, and, most importantly, why each tool matters and when to use it.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -60,7 +60,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Before diving into tools, let's establish the framework. AI doesn't replace human expertise—it amplifies it. My workflow is built on three principles:
+              Before diving into tools, let's establish the framework. AI doesn't replace human expertise, it amplifies it. My workflow is built on three principles:
             </p>
 
             <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">

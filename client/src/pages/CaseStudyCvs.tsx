@@ -270,7 +270,7 @@ export default function CaseStudyCvs() {
               Interested in Similar Results?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              I bring the same rigorous, user-centered approach to every project—whether traditional UX or AI-augmented workflows.
+              I bring the same rigorous, user-centered approach to every project, whether traditional UX or AI-augmented workflows.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/work">

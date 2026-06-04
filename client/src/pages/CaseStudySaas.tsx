@@ -60,7 +60,7 @@ const CaseStudySaas: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Challenge</h2>
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-gray-300 leading-relaxed mb-4">
-              Enterprise SaaS companies face a critical challenge: building production-ready design systems requires massive investment. The traditional approach demands a 7-person team working for 12+ months, costing over $1M in fully-loaded salaries alone. This creates a painful dilemma—design systems are essential for scaling product development, but the upfront cost and time investment make them prohibitively expensive for many organizations.
+              Enterprise SaaS companies face a critical challenge: building production-ready design systems requires massive investment. The traditional approach demands a 7-person team working for 12+ months, costing over $1M in fully-loaded salaries alone. This creates a painful dilemma, design systems are essential for scaling product development, but the upfront cost and time investment make them prohibitively expensive for many organizations.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
               The problem extends beyond just cost. Traditional design system development is sequential and slow. UX researchers conduct studies, designers create components, developers implement them, QA engineers test, and technical writers document. Each handoff introduces delays, miscommunication, and quality issues. By the time the system launches, business requirements have often changed, making portions of the work obsolete.
@@ -88,7 +88,7 @@ const CaseStudySaas: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Force Multiplier Approach</h2>
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              I applied my AI-augmented 5-phase workflow to compress 84 person-months of work into just 4 weeks. This wasn't about cutting corners—it was about using AI as a force multiplier while maintaining the strategic oversight and quality standards that only 25 years of experience can provide.
+              I applied my AI-augmented 5-phase workflow to compress 84 person-months of work into just 4 weeks. This wasn't about cutting corners, it was about using AI as a force multiplier while maintaining the strategic oversight and quality standards that only 25 years of experience can provide.
             </p>
           </div>
 

@@ -7,7 +7,7 @@ export function initPostHog() {
   posthog.init(POSTHOG_KEY, {
     api_host: POSTHOG_HOST,
     person_profiles: "identified_only",
-    // Disable automatic pageview — we fire it manually per route change
+    // Disable automatic pageview, we fire it manually per route change
     // so it includes the correct page title and metadata
     capture_pageview: false,
     capture_pageleave: true,

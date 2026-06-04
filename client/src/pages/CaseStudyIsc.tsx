@@ -338,7 +338,7 @@ const CaseStudyIsc: React.FC = () => {
           
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              This prototype enabled Comcast Business to immediately validate solutions with users and provide engineering with a concrete implementation target. The speed of delivery was critical—it allowed the business to respond to the customer satisfaction crisis in days rather than months.
+              This prototype enabled Comcast Business to immediately validate solutions with users and provide engineering with a concrete implementation target. The speed of delivery was critical, it allowed the business to respond to the customer satisfaction crisis in days rather than months.
             </p>
           </div>
 
@@ -384,14 +384,14 @@ const CaseStudyIsc: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-purple-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-purple-400">Component Reuse Amplifies Speed</h3>
               <p className="text-gray-300">
-                The decision to build one highly configurable base component rather than nine separate pages was transformative. It meant that improvements to navigation, layout, or interactions automatically propagated across all pages. This architectural decision enabled the 5,450 lines/day velocity—each line of code had 9x leverage.
+                The decision to build one highly configurable base component rather than nine separate pages was transformative. It meant that improvements to navigation, layout, or interactions automatically propagated across all pages. This architectural decision enabled the 5,450 lines/day velocity, each line of code had 9x leverage.
               </p>
             </div>
 
             <div className="bg-white/5 border-l-4 border-purple-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-purple-400">TypeScript Prevents Technical Debt</h3>
               <p className="text-gray-300">
-                Maintaining zero TypeScript errors across 21,801 lines of code wasn't just about pride—it was about ensuring the prototype could evolve into production code. Many prototypes are throw-away because they accumulate technical debt. By maintaining production-quality standards from day one, this prototype became a valuable asset rather than disposable research.
+                Maintaining zero TypeScript errors across 21,801 lines of code wasn't just about pride, it was about ensuring the prototype could evolve into production code. Many prototypes are throw-away because they accumulate technical debt. By maintaining production-quality standards from day one, this prototype became a valuable asset rather than disposable research.
               </p>
             </div>
 
@@ -405,7 +405,7 @@ const CaseStudyIsc: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-purple-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-purple-400">Speed Enables Better Decisions</h3>
               <p className="text-gray-300">
-                The 4-day timeline wasn't just about cost savings—it fundamentally changed the decision-making process. Stakeholders could see working solutions in days, provide feedback, and iterate. This tight feedback loop led to better outcomes than traditional waterfall processes where decisions are locked in months before seeing results.
+                The 4-day timeline wasn't just about cost savings, it fundamentally changed the decision-making process. Stakeholders could see working solutions in days, provide feedback, and iterate. This tight feedback loop led to better outcomes than traditional waterfall processes where decisions are locked in months before seeing results.
               </p>
             </div>
           </div>

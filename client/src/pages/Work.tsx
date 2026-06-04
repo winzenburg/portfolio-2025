@@ -10,7 +10,7 @@ export default function Work() {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Case Studies | Design Operations & AI-Augmented Product Design — Ryan Winzenburg</title>
+        <title>Case Studies | Design Operations & AI-Augmented Product Design, Ryan Winzenburg</title>
         <meta name="description" content="Case studies in AI-augmented design leadership: Cultivate (startup OS), Kinlet (AI SaaS MVP), Kinetic UI (design system), Comcast, CVS Health. See how design operations transforms product teams." />
         <meta property="og:title" content="Case Studies | Design Operations & AI-Augmented Product Design" />
         <meta property="og:description" content="Case studies: Cultivate, Kinlet AI SaaS, Kinetic UI design system, Comcast, CVS Health. AI-augmented design operations in practice." />
@@ -45,7 +45,7 @@ export default function Work() {
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-2">Organizational Transformation</h2>
           <p className="text-muted-foreground">
-            Each project represents a team I led, a process I redesigned, or an org I helped transform—not just deliverables shipped.
+            Each project represents a team I led, a process I redesigned, or an org I helped transform, not just deliverables shipped.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function Work() {
                 <div className="mb-6">
                   <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
                   <p className="text-muted-foreground">
-                    Founded and built end-to-end: product strategy, UX design, full-stack development, and AI orchestration. Created a portfolio-first SaaS workspace that turns ideas into evidence, decisions, and a weekly operating cadence—powered by a 12-agent product creation engine.
+                    Founded and built end-to-end: product strategy, UX design, full-stack development, and AI orchestration. Created a portfolio-first SaaS workspace that turns ideas into evidence, decisions, and a weekly operating cadence, powered by a 12-agent product creation engine.
                   </p>
                 </div>
 
@@ -165,7 +165,7 @@ export default function Work() {
                 <div className="mb-6">
                   <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
                   <p className="text-muted-foreground">
-                    Solo founder—product strategy, UX design, full-stack development, AI integration, and go-to-market. Built complete SaaS MVP from idea to production in 5 days using AI-augmented workflows. Demonstrates how one designer-developer can now build what traditionally required entire teams.
+                    Solo founder, product strategy, UX design, full-stack development, AI integration, and go-to-market. Built complete SaaS MVP from idea to production in 5 days using AI-augmented workflows. Demonstrates how one designer-developer can now build what traditionally required entire teams.
                   </p>
                 </div>
 

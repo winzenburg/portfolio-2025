@@ -44,7 +44,7 @@ const CaseStudyKinlet: React.FC = () => {
             </h1>
           </div>
           <p className="text-xl text-gray-300 mb-8">
-            From idea to live MVP in 30 days: AI-powered peer support platform with matching, messaging, and admin tools—built solo
+            From idea to live MVP in 30 days: AI-powered peer support platform with matching, messaging, and admin tools, built solo
           </p>
           
           {/* Key Metrics */}
@@ -76,7 +76,7 @@ const CaseStudyKinlet: React.FC = () => {
               Dementia caregivers face crushing isolation. They're managing medications, doctor visits, and emotional meltdowns while their own mental health deteriorates. Generic Facebook groups with thousands of strangers don't provide real support. Two-hour support meetings that require leaving the house don't fit their fragmented schedules. Professional therapy is expensive and often unavailable.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              But here's the real challenge: <strong>How do you validate and build a mental health platform as a solo founder without compromising on safety, privacy, or quality?</strong> Traditional MVP development would take months and tens of thousands of dollars. But caregivers can't wait—they're burning out right now.
+              But here's the real challenge: <strong>How do you validate and build a mental health platform as a solo founder without compromising on safety, privacy, or quality?</strong> Traditional MVP development would take months and tens of thousands of dollars. But caregivers can't wait, they're burning out right now.
             </p>
             <p className="text-gray-300 leading-relaxed">
               This project demonstrates how AI-augmented workflows enable a single designer-developer to build production-ready SaaS applications at unprecedented speed while maintaining enterprise-grade quality standards.
@@ -91,7 +91,7 @@ const CaseStudyKinlet: React.FC = () => {
           <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6 mb-8">
             <h3 className="text-xl font-bold mb-3 text-purple-400">What is Kinlet?</h3>
             <p className="text-gray-300 leading-relaxed">
-              Kinlet is a private peer support platform that connects dementia caregivers in small, AI-matched groups of 4-6 people facing similar challenges. It combines intelligent matching algorithms with AI-assisted content moderation and a 15-minute daily check-in ritual—delivering safe, meaningful connection that fits into a caregiver's chaotic schedule.
+              Kinlet is a private peer support platform that connects dementia caregivers in small, AI-matched groups of 4-6 people facing similar challenges. It combines intelligent matching algorithms with AI-assisted content moderation and a 15-minute daily check-in ritual, delivering safe, meaningful connection that fits into a caregiver's chaotic schedule.
             </p>
           </div>
 
@@ -111,13 +111,13 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
               <h4 className="text-lg font-bold mb-3 text-purple-400">Precise Matching</h4>
               <p className="text-gray-300 text-sm">
-                AI analyzes caregiver situations (relationship type, dementia stage, specific challenges) to create micro-groups where everyone truly "gets it"—no random strangers
+                AI analyzes caregiver situations (relationship type, dementia stage, specific challenges) to create micro-groups where everyone truly "gets it", no random strangers
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
               <h4 className="text-lg font-bold mb-3 text-purple-400">AI Safety Layer</h4>
               <p className="text-gray-300 text-sm">
-                Real-time content moderation catches medical misinformation, crisis signals, and harassment before they escalate—keeping conversations safe without heavy human oversight
+                Real-time content moderation catches medical misinformation, crisis signals, and harassment before they escalate, keeping conversations safe without heavy human oversight
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
@@ -134,7 +134,7 @@ const CaseStudyKinlet: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">MVP Features Built</h2>
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              In 30 days, I built a complete peer support platform from scratch—including onboarding, AI matching, group messaging, admin tools, and analytics. Every feature is production-ready and actively being used by caregivers.
+              In 30 days, I built a complete peer support platform from scratch, including onboarding, AI matching, group messaging, admin tools, and analytics. Every feature is production-ready and actively being used by caregivers.
             </p>
           </div>
 
@@ -414,7 +414,7 @@ const CaseStudyKinlet: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The AI-Native Build Process</h2>
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              I built Kinlet from scratch in 30 days using an AI-augmented workflow that demonstrates how a solo designer-developer can now compete with entire teams. This wasn't about cutting corners—it was about using AI as a force multiplier while maintaining strategic oversight and quality standards.
+              I built Kinlet from scratch in 30 days using an AI-augmented workflow that demonstrates how a solo designer-developer can now compete with entire teams. This wasn't about cutting corners, it was about using AI as a force multiplier while maintaining strategic oversight and quality standards.
             </p>
           </div>
 
@@ -449,7 +449,7 @@ const CaseStudyKinlet: React.FC = () => {
                     Built complete product: 5-step onboarding wizard, AI-powered matching algorithm with compatibility scoring, group messaging with reactions and threading, admin dashboard with analytics (message volume, participation, peak times), profile management, moderation queue, automated email notifications, and cron jobs for digests and reminders.
                   </p>
                   <div className="text-sm text-gray-400">
-                    <strong>Technical Achievement:</strong> 18 database migrations, 40+ API endpoints, real-time messaging, sophisticated matching algorithm—all built solo
+                    <strong>Technical Achievement:</strong> 18 database migrations, 40+ API endpoints, real-time messaging, sophisticated matching algorithm, all built solo
                   </div>
                 </div>
               </div>
@@ -599,7 +599,7 @@ const CaseStudyKinlet: React.FC = () => {
           
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              The most critical innovation in Kinlet isn't speed—it's demonstrating how AI can be used ethically and effectively in sensitive mental health contexts. This required careful architecture decisions around safety, privacy, and transparency.
+              The most critical innovation in Kinlet isn't speed, it's demonstrating how AI can be used ethically and effectively in sensitive mental health contexts. This required careful architecture decisions around safety, privacy, and transparency.
             </p>
           </div>
 
@@ -627,7 +627,7 @@ const CaseStudyKinlet: React.FC = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-gray-300 mb-3">
-                    Created complete brand identity in parallel with product development: a geometric "K" mark in plum/burgundy (#351b1e), warm earth-tone photography, and trust-building typography. The visual language communicates safety, warmth, and professionalism—perfect for a mental health platform that needs to feel accessible, not clinical.
+                    Created complete brand identity in parallel with product development: a geometric "K" mark in plum/burgundy (#351b1e), warm earth-tone photography, and trust-building typography. The visual language communicates safety, warmth, and professionalism, perfect for a mental health platform that needs to feel accessible, not clinical.
                   </p>
                   <div className="text-sm text-gray-400 bg-white/5 p-3 rounded">
                     <strong>Design Principle:</strong> "Safe enough to share, warm enough to connect, professional enough to trust"
@@ -639,10 +639,10 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-purple-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-purple-400">Content Moderation With Empathy</h3>
               <p className="text-gray-300 mb-3">
-                The AI moderation system doesn't just flag violations—it understands context. Someone sharing they're "at the end of their rope" isn't necessarily in crisis, but if combined with other signals (isolation, sleep deprivation, specific language patterns), the AI can escalate to human review. This enables safety without the false positives that make automated moderation feel oppressive.
+                The AI moderation system doesn't just flag violations, it understands context. Someone sharing they're "at the end of their rope" isn't necessarily in crisis, but if combined with other signals (isolation, sleep deprivation, specific language patterns), the AI can escalate to human review. This enables safety without the false positives that make automated moderation feel oppressive.
               </p>
               <div className="text-sm text-gray-400 bg-white/5 p-3 rounded">
-                <strong>Safety Categories:</strong> Medical misinformation, harassment, spam, crisis signals, guideline violations—each with contextual severity assessment
+                <strong>Safety Categories:</strong> Medical misinformation, harassment, spam, crisis signals, guideline violations, each with contextual severity assessment
               </div>
             </div>
 
@@ -659,7 +659,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-purple-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-purple-400">Privacy-First Architecture</h3>
               <p className="text-gray-300">
-                Groups are private by default. No public profiles. No searchable history. Caregivers share deeply personal struggles—the platform architecture respects that vulnerability. AI processing happens in real-time and doesn't create persistent analysis profiles that could be breached or misused.
+                Groups are private by default. No public profiles. No searchable history. Caregivers share deeply personal struggles, the platform architecture respects that vulnerability. AI processing happens in real-time and doesn't create persistent analysis profiles that could be breached or misused.
               </p>
             </div>
           </div>
@@ -673,7 +673,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-purple-400">Full-Stack AI-Native Development</h3>
               <p className="text-gray-300 text-sm">
-                I can build production-ready SaaS products from scratch as a solo founder—from product strategy and UX design to full-stack development and AI integration. This isn't prototyping, it's shipping.
+                I can build production-ready SaaS products from scratch as a solo founder, from product strategy and UX design to full-stack development and AI integration. This isn't prototyping, it's shipping.
               </p>
             </div>
 
@@ -687,7 +687,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-purple-400">Ethical AI Integration</h3>
               <p className="text-gray-300 text-sm">
-                AI isn't magic—it's a tool that requires careful implementation. Kinlet shows how to use AI for matching and moderation in sensitive contexts while maintaining human oversight, clear boundaries, and user trust.
+                AI isn't magic, it's a tool that requires careful implementation. Kinlet shows how to use AI for matching and moderation in sensitive contexts while maintaining human oversight, clear boundaries, and user trust.
               </p>
             </div>
 
@@ -702,7 +702,7 @@ const CaseStudyKinlet: React.FC = () => {
           <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-6">
             <h3 className="text-lg font-bold mb-3 text-purple-400">The Bigger Picture</h3>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Kinlet isn't just a case study in AI-augmented development—it's proof that the economics of software have fundamentally shifted. What used to require a team of specialists and months of runway can now be accomplished by a designer-developer with product vision and AI fluency.
+              Kinlet isn't just a case study in AI-augmented development, it's proof that the economics of software have fundamentally shifted. What used to require a team of specialists and months of runway can now be accomplished by a designer-developer with product vision and AI fluency.
             </p>
             <p className="text-gray-300 leading-relaxed">
               This enables a new model: validate faster, pivot cheaper, and ship quality products without burning months of runway. For startups, that's the difference between running out of money before finding product-market fit and having enough shots on goal to succeed.
@@ -739,7 +739,7 @@ const CaseStudyKinlet: React.FC = () => {
                 <strong className="text-green-400">Live MVP:</strong> Full platform is live and actively being used. Caregivers are onboarding, groups are being matched, messages are flowing daily, and analytics show healthy engagement patterns.
               </p>
               <p>
-                <strong className="text-purple-400">Technical Achievement:</strong> Built a production-grade SaaS platform with AI matching, real-time messaging, admin tools, analytics dashboards, automated emails, and moderation—all in 30 days as a solo founder.
+                <strong className="text-purple-400">Technical Achievement:</strong> Built a production-grade SaaS platform with AI matching, real-time messaging, admin tools, analytics dashboards, automated emails, and moderation, all in 30 days as a solo founder.
               </p>
               <p>
                 <strong className="text-purple-400">Open Source Framework:</strong> The entire codebase, workflow, and system architecture is available on GitHub. Every pattern, integration, and AI workflow is documented and replicable.

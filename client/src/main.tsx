@@ -28,7 +28,7 @@ document.addEventListener("click", (e) => {
     button?.textContent?.trim() ??
     "";
 
-  // CTA tracking — text-based + href-based
+  // CTA tracking, text-based + href-based
   const isCtaText =
     CTA_PHRASES.some((phrase) => text.includes(phrase)) ||
     anchor?.href?.includes("contact") ||
@@ -44,7 +44,7 @@ document.addEventListener("click", (e) => {
     trackNavClick(navAnchor.textContent?.trim() ?? "", navAnchor.href);
   }
 
-  // External link tracking — catch any link opening in a new tab
+  // External link tracking, catch any link opening in a new tab
   if (anchor?.target === "_blank" && anchor.href) {
     const url = anchor.href;
     let platform = "unknown";

@@ -33,7 +33,7 @@ export default function About() {
             Design Leader Who Builds<br />AI-Native Teams
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            I transform how design organizations work—building the systems, workflows, and culture that enable teams to ship 4-6x faster while developing sustainable AI capabilities.
+            I transform how design organizations work, building the systems, workflows, and culture that enable teams to ship 4-6x faster while developing sustainable AI capabilities.
           </p>
         </div>
         </div>
@@ -44,16 +44,16 @@ export default function About() {
         <div className="max-w-4xl space-y-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-muted-foreground">
-              For 25 years, I've led design teams at Fortune 50 companies like <strong>Comcast, CVS Health, and Life Time Fitness</strong>. I've built and scaled design systems, led cross-functional teams of 10+, and shipped products serving millions of users. I know what works at enterprise scale—and what doesn't.
+              For 25 years, I've led design teams at Fortune 50 companies like <strong>Comcast, CVS Health, and Life Time Fitness</strong>. I've built and scaled design systems, led cross-functional teams of 10+, and shipped products serving millions of users. I know what works at enterprise scale, and what doesn't.
             </p>
             <p className="text-lg text-muted-foreground">
-              About a year ago, I saw an opportunity that most design leaders were missing: AI tools were becoming powerful enough to fundamentally transform how design teams work. Not by replacing designers, but by amplifying what they do best. I spent months building and testing AI-augmented workflows—orchestrated agents, MCP integrations, design-to-code automation.
+              About a year ago, I saw an opportunity that most design leaders were missing: AI tools were becoming powerful enough to fundamentally transform how design teams work. Not by replacing designers, but by amplifying what they do best. I spent months building and testing AI-augmented workflows, orchestrated agents, MCP integrations, design-to-code automation.
             </p>
             <p className="text-lg text-muted-foreground">
               <strong>What I learned changed how I think about design leadership.</strong> The teams that will win aren't the ones with the most designers. They're the ones that figure out how to integrate AI into their design operations without losing what makes design work human: empathy, strategic thinking, and taste.
             </p>
             <p className="text-lg text-muted-foreground">
-              I'm now looking for a leadership role where I can apply this—transforming how a design organization works with AI while building the team and culture to sustain it.
+              I'm now looking for a leadership role where I can apply this, transforming how a design organization works with AI while building the team and culture to sustain it.
             </p>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-3">AI-Augmented Workflows</h3>
               <p className="text-muted-foreground mb-4">
-                Production-ready systems that actually work—not experiments. Design-to-code automation, orchestrated AI agents, and MCP integrations that make your team 4-6x faster.
+                Production-ready systems that actually work, not experiments. Design-to-code automation, orchestrated AI agents, and MCP integrations that make your team 4-6x faster.
               </p>
               <div className="text-sm font-semibold text-primary mb-2">First 30 Days:</div>
               <p className="text-sm text-muted-foreground mb-3">
@@ -106,7 +106,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-3">Team & Culture Development</h3>
               <p className="text-muted-foreground mb-4">
-                AI tools are only as good as the team using them. I build the skills, processes, and culture that make AI adoption stick—without burning out your people.
+                AI tools are only as good as the team using them. I build the skills, processes, and culture that make AI adoption stick, without burning out your people.
               </p>
               <div className="text-sm font-semibold text-primary mb-2">First 30 Days:</div>
               <p className="text-sm text-muted-foreground mb-3">
@@ -135,7 +135,7 @@ export default function About() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-3">AI-Augmented Workflows</h3>
               <p className="text-muted-foreground">
-                I've spent a year rebuilding my workflow from the ground up with AI. This isn't about using ChatGPT—it's about orchestrating AI agents to deliver 4-6x faster.
+                I've spent a year rebuilding my workflow from the ground up with AI. This isn't about using ChatGPT, it's about orchestrating AI agents to deliver 4-6x faster.
               </p>
             </Card>
             <Card className="p-6">
@@ -153,7 +153,7 @@ export default function About() {
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-3">Strategic Product Thinking</h3>
               <p className="text-muted-foreground">
-                I bridge ideation and validation. I don't just build what you ask for—I help you figure out what's worth building in the first place.
+                I bridge ideation and validation. I don't just build what you ask for, I help you figure out what's worth building in the first place.
               </p>
             </Card>
             <Card className="p-6">
@@ -205,7 +205,7 @@ export default function About() {
               <div>
                 <h3 className="text-xl font-bold mb-3">Why not stay in consulting?</h3>
                 <p className="text-muted-foreground">
-                  Consulting lets you parachute in, make an impact, and leave. Leadership lets you build something that lasts—a team, a culture, a way of working. I've done enough parachuting. Now I want to build.
+                  Consulting lets you parachute in, make an impact, and leave. Leadership lets you build something that lasts, a team, a culture, a way of working. I've done enough parachuting. Now I want to build.
                 </p>
               </div>
             </div>
@@ -220,7 +220,7 @@ export default function About() {
             Let's Talk About Your Design Organization
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            If you're building a design team that needs to get serious about AI, I'd love to hear what you're working on—even if it's just an exploratory conversation.
+            If you're building a design team that needs to get serious about AI, I'd love to hear what you're working on, even if it's just an exploratory conversation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

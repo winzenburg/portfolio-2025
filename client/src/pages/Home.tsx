@@ -76,7 +76,7 @@ export default function Home() {
             Transforming How Design Teams Ship with AI
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl">
-            I build the systems, workflows, and culture that enable design organizations to ship 4-6x faster—not by replacing people, but by transforming how they work together with AI.
+            I build the systems, workflows, and culture that enable design organizations to ship 4-6x faster, not by replacing people, but by transforming how they work together with AI.
           </p>
 
           {/* Stats */}
@@ -247,7 +247,7 @@ export default function Home() {
                   <h4 className="font-semibold">Design-to-Code Handoff</h4>
                 </div>
                 <p className="text-muted-foreground ml-11">
-                  Production code generation from designs is now real. The designer-developer boundary blurs—and that's a good thing.
+                  Production code generation from designs is now real. The designer-developer boundary blurs, and that's a good thing.
                 </p>
               </div>
 

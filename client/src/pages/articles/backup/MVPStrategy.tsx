@@ -46,7 +46,7 @@ export default function MVPStrategy() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Once you've validated your market and built an initial audience, it's time to build your Minimum Viable Product (MVP). The MVP is not just a half-baked version of your final product—it's a strategic tool for learning, iteration, and growth.
+              Once you've validated your market and built an initial audience, it's time to build your Minimum Viable Product (MVP). The MVP is not just a half-baked version of your final product, it's a strategic tool for learning, iteration, and growth.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              In this article, I'll share my framework for developing an MVP that is not only functional but also inherently shareable—a concept I call "virality-by-design."
+              In this article, I'll share my framework for developing an MVP that is not only functional but also inherently shareable, a concept I call "virality-by-design."
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -89,7 +89,7 @@ export default function MVPStrategy() {
 
             <ul className="list-disc list-inside text-slate-300 space-y-3 mb-6 ml-4">
               <li><strong className="text-white">Make it Easy to Share:</strong> Include social sharing buttons, referral codes, and other features that make it easy for users to share your product with their network.</li>
-              <li><strong className="text-white">Create a "Wow" Moment:</strong> Design your product to have a "wow" moment—a point where the user experiences the full value of your product and is compelled to share it.</li>
+              <li><strong className="text-white">Create a "Wow" Moment:</strong> Design your product to have a "wow" moment, a point where the user experiences the full value of your product and is compelled to share it.</li>
               <li><strong className="text-white">Build a Community:</strong> Create a community around your product where users can connect with each other, share their experiences, and get support.</li>
               <li><strong className="text-white">Offer Incentives for Sharing:</strong> Reward users for sharing your product, whether it's with a discount, a free month of service, or some other incentive.</li>
             </ul>

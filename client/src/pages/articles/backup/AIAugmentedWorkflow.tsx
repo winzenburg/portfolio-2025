@@ -53,7 +53,7 @@ export default function AIAugmentedWorkflow() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks. Not by cutting corners or sacrificing quality—by strategically implementing AI throughout the entire design process.
+              Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks. Not by cutting corners or sacrificing quality, by strategically implementing AI throughout the entire design process.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -85,7 +85,7 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">What changed</strong>: Instead of spending weeks gathering scattered information, I spend days validating and refining AI-generated insights. The strategic decisions remain mine—the research legwork happens at machine speed.
+              <strong className="text-white">What changed</strong>: Instead of spending weeks gathering scattered information, I spend days validating and refining AI-generated insights. The strategic decisions remain mine, the research legwork happens at machine speed.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -105,7 +105,7 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Design tools now convert natural language descriptions into visual prototypes. I describe the user experience, system requirements, and design constraints—AI generates the initial designs.
+              Design tools now convert natural language descriptions into visual prototypes. I describe the user experience, system requirements, and design constraints, AI generates the initial designs.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">
@@ -216,7 +216,7 @@ export default function AIAugmentedWorkflow() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The framework isn't magic—it's strategic automation combined with human judgment.
+              The framework isn't magic, it's strategic automation combined with human judgment.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-4">
@@ -262,7 +262,7 @@ export default function AIAugmentedWorkflow() {
 
             <p className="text-slate-300 leading-relaxed mb-6">
               <strong className="text-white">Mistake #2</strong>: Trying to automate creative strategy<br/>
-              AI is terrible at original strategic thinking. It's excellent at execution. I wasted 2 weeks trying to get AI to generate UX strategy—doesn't work. Use it for implementation.
+              AI is terrible at original strategic thinking. It's excellent at execution. I wasted 2 weeks trying to get AI to generate UX strategy, doesn't work. Use it for implementation.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

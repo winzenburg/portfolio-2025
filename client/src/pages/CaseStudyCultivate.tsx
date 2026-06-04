@@ -37,7 +37,7 @@ const CaseStudyCultivate: React.FC = () => {
             Cultivate: Startup Operating System
           </h1>
           <p className="text-xl text-gray-300 mb-8">
-            A portfolio-first SaaS workspace that turns ideas into validated products—powered by 25 agents, 8 quality gates, and zero guesswork
+            A portfolio-first SaaS workspace that turns ideas into validated products, powered by 25 agents, 8 quality gates, and zero guesswork
           </p>
           
           {/* Key Metrics */}
@@ -66,10 +66,10 @@ const CaseStudyCultivate: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Problem</h2>
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-gray-300 leading-relaxed mb-4">
-              90% of SaaS startups fail. But the problem isn't the idea—it's the process. Most founders fall into the "build trap," coding products before validating demand. Even worse, they validate desirability without assessing durability: Will people still pay 12-36 months from now? Will the product have switching costs, network effects, or compounding advantages?
+              90% of SaaS startups fail. But the problem isn't the idea, it's the process. Most founders fall into the "build trap," coding products before validating demand. Even worse, they validate desirability without assessing durability: Will people still pay 12-36 months from now? Will the product have switching costs, network effects, or compounding advantages?
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              As a solo founder or small team, you can't afford to bet everything on one idea. You need a portfolio approach—multiple bets running in parallel with systematic validation. But managing a portfolio creates its own challenges: How do you track 10+ ideas across discovery, validation, and build phases? How do you ensure quality without becoming a bottleneck? How do you make your process repeatable as you scale?
+              As a solo founder or small team, you can't afford to bet everything on one idea. You need a portfolio approach, multiple bets running in parallel with systematic validation. But managing a portfolio creates its own challenges: How do you track 10+ ideas across discovery, validation, and build phases? How do you ensure quality without becoming a bottleneck? How do you make your process repeatable as you scale?
             </p>
             <p className="text-gray-300 leading-relaxed">
               <strong>What if you had a complete operating system for product creation?</strong> A systematic workflow from idea scoring to production deployment, with AI agents handling research and synthesis while you focus on strategic decisions. That's Cultivate.
@@ -84,7 +84,7 @@ const CaseStudyCultivate: React.FC = () => {
           <div className="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6 mb-8">
             <h3 className="text-xl font-bold mb-3 text-emerald-400">What is Cultivate?</h3>
             <p className="text-gray-300 leading-relaxed">
-              Cultivate is a portfolio-first SaaS workspace that transforms how founders validate and build products. It combines a 25-agent AI orchestration system with an 8-gate quality framework, enabling you to manage 16+ product ideas simultaneously—from initial scoring through validated deployment. Think of it as your startup's operating system: it handles research, synthesis, and coordination while you focus on strategic decisions and creative work.
+              Cultivate is a portfolio-first SaaS workspace that transforms how founders validate and build products. It combines a 25-agent AI orchestration system with an 8-gate quality framework, enabling you to manage 16+ product ideas simultaneously, from initial scoring through validated deployment. Think of it as your startup's operating system: it handles research, synthesis, and coordination while you focus on strategic decisions and creative work.
             </p>
           </div>
 
@@ -110,13 +110,13 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
               <h4 className="text-lg font-bold mb-3 text-emerald-400">25-Agent System</h4>
               <p className="text-gray-300 text-sm">
-                Specialized AI agents for research (Manus), synthesis (ChatGPT), orchestration (Claude), validation (Lindy), and asset generation (Glif)—coordinated through systematic workflows
+                Specialized AI agents for research (Manus), synthesis (ChatGPT), orchestration (Claude), validation (Lindy), and asset generation (Glif), coordinated through systematic workflows
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
               <h4 className="text-lg font-bold mb-3 text-emerald-400">8 Quality Gates</h4>
               <p className="text-gray-300 text-sm">
-                Hard checkpoints from portfolio scoring through durability validation, brand system design, and dev quality gates—ensuring you build the right things, validated for long-term success
+                Hard checkpoints from portfolio scoring through durability validation, brand system design, and dev quality gates, ensuring you build the right things, validated for long-term success
               </p>
             </div>
           </div>
@@ -261,7 +261,7 @@ const CaseStudyCultivate: React.FC = () => {
           
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              Managing 16+ product ideas across four phases and eight gates requires a meta-project—a dashboard that orchestrates your entire portfolio. The Hub provides four critical capabilities:
+              Managing 16+ product ideas across four phases and eight gates requires a meta-project, a dashboard that orchestrates your entire portfolio. The Hub provides four critical capabilities:
             </p>
           </div>
 
@@ -283,7 +283,7 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-emerald-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-emerald-400">Document Discovery</h3>
               <p className="text-gray-300">
-                Automatic indexing of all project-related documents across multiple directories (discovery, validation, product, research, ideas). Whether it's a NARRATIVE brief, PRICING-TEST results, or PRD, the Hub finds it and makes it accessible—no more hunting through folders.
+                Automatic indexing of all project-related documents across multiple directories (discovery, validation, product, research, ideas). Whether it's a NARRATIVE brief, PRICING-TEST results, or PRD, the Hub finds it and makes it accessible, no more hunting through folders.
               </p>
             </div>
 
@@ -302,7 +302,7 @@ const CaseStudyCultivate: React.FC = () => {
           
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              Cultivate's breakthrough isn't any single feature—it's the systematic integration of multiple innovations into a cohesive operating system for startup creation.
+              Cultivate's breakthrough isn't any single feature, it's the systematic integration of multiple innovations into a cohesive operating system for startup creation.
             </p>
           </div>
 
@@ -310,7 +310,7 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-emerald-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-emerald-400">Dual-Filter Validation Framework</h3>
               <p className="text-gray-300 mb-3">
-                Most validation frameworks stop at demand validation ("will people want this?"). Cultivate adds a second filter: durability ("will they keep paying 12-36 months from now?"). This prevents you from building products that have heat but lack defensibility—the kind that churn customers or get commoditized within a year.
+                Most validation frameworks stop at demand validation ("will people want this?"). Cultivate adds a second filter: durability ("will they keep paying 12-36 months from now?"). This prevents you from building products that have heat but lack defensibility, the kind that churn customers or get commoditized within a year.
               </p>
               <div className="text-sm text-gray-400 bg-white/5 p-3 rounded">
                 <strong>Example:</strong> A "social network for [niche]" might score high on desirability but low on durability (network effects are hard, switching costs are low). The dual filter catches this before you waste months building.
@@ -340,7 +340,7 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-emerald-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-emerald-400">Portfolio-First Architecture</h3>
               <p className="text-gray-300">
-                Unlike traditional project management tools (built for single projects), Cultivate is designed from the ground up for portfolio management. You don't create "projects"—you create a portfolio, then add ideas to it. Scoring, validation, and build workflows are designed to run in parallel across multiple ideas, with kill-fast diagnostics and expected value modeling built in.
+                Unlike traditional project management tools (built for single projects), Cultivate is designed from the ground up for portfolio management. You don't create "projects", you create a portfolio, then add ideas to it. Scoring, validation, and build workflows are designed to run in parallel across multiple ideas, with kill-fast diagnostics and expected value modeling built in.
               </p>
             </div>
           </div>
@@ -487,28 +487,28 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-emerald-400">Systems Thinking at Scale</h3>
               <p className="text-gray-300 text-sm">
-                Cultivate isn't a collection of tools—it's a complete operating system. Every component (agents, gates, documents, workflows) is designed to work together, creating compounding value as the system scales. This demonstrates my ability to architect complex systems with emergent properties.
+                Cultivate isn't a collection of tools, it's a complete operating system. Every component (agents, gates, documents, workflows) is designed to work together, creating compounding value as the system scales. This demonstrates my ability to architect complex systems with emergent properties.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-emerald-400">Process Design Expertise</h3>
               <p className="text-gray-300 text-sm">
-                Building Cultivate required distilling three years of startup experience into systematic workflows. I can take messy, intuitive processes and transform them into repeatable systems that scale—essential for Head of Design Operations or VP of Product roles.
+                Building Cultivate required distilling three years of startup experience into systematic workflows. I can take messy, intuitive processes and transform them into repeatable systems that scale, essential for Head of Design Operations or VP of Product roles.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-emerald-400">AI Orchestration Mastery</h3>
               <p className="text-gray-300 text-sm">
-                Coordinating 7+ AI services (Claude, ChatGPT, Manus, Lindy, Glif, Context7, more) through systematic workflows demonstrates deep understanding of AI's strengths and limitations. I don't just use AI—I architect systems that multiply its effectiveness.
+                Coordinating 7+ AI services (Claude, ChatGPT, Manus, Lindy, Glif, Context7, more) through systematic workflows demonstrates deep understanding of AI's strengths and limitations. I don't just use AI, I architect systems that multiply its effectiveness.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-emerald-400">Product Strategy & Validation</h3>
               <p className="text-gray-300 text-sm">
-                The dual-filter framework (desirability + durability) represents sophisticated product thinking. I understand that validation isn't just about proving people want something—it's about proving they'll keep paying for it, and that you can defend your position against competitors.
+                The dual-filter framework (desirability + durability) represents sophisticated product thinking. I understand that validation isn't just about proving people want something, it's about proving they'll keep paying for it, and that you can defend your position against competitors.
               </p>
             </div>
           </div>
@@ -516,10 +516,10 @@ const CaseStudyCultivate: React.FC = () => {
           <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-6">
             <h3 className="text-lg font-bold mb-3 text-emerald-400">The Meta-Skill: Building Systems That Build Products</h3>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Most founders build products. I built a system that builds products. This meta-level thinking—creating infrastructure that makes product creation systematic and scalable—is exactly what growing organizations need. Whether you're scaling a design team, implementing AI workflows, or building operational excellence, I can create the systems that multiply your team's effectiveness.
+              Most founders build products. I built a system that builds products. This meta-level thinking, creating infrastructure that makes product creation systematic and scalable, is exactly what growing organizations need. Whether you're scaling a design team, implementing AI workflows, or building operational excellence, I can create the systems that multiply your team's effectiveness.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Cultivate is live, managing a real portfolio of 16+ ideas, with several projects currently in validation and build phases. This isn't theory—it's a production system that demonstrates systematic product creation is not only possible, but superior to traditional ad-hoc approaches.
+              Cultivate is live, managing a real portfolio of 16+ ideas, with several projects currently in validation and build phases. This isn't theory, it's a production system that demonstrates systematic product creation is not only possible, but superior to traditional ad-hoc approaches.
             </p>
           </div>
         </section>

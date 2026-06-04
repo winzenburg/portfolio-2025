@@ -15,7 +15,7 @@ export function usePageTracking() {
   const [location] = useLocation();
   const prevLocation = useRef<string | null>(null);
 
-  // Scroll depth state — reset on every route change
+  // Scroll depth state, reset on every route change
   const scrollState = useRef({
     tracked25: false,
     tracked50: false,
@@ -70,8 +70,7 @@ export function usePageTracking() {
       const base = {
         page_type: pageType,
         page_title: document.title,
-        $pathname: location,
-        ...(articleSlug ? { article_slug: articleSlug } : {}),
+        $pathname: location...(articleSlug ? { article_slug: articleSlug } : {}),
       };
 
       if (percent >= 25 && !scrollState.current.tracked25) {

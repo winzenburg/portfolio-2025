@@ -30,7 +30,7 @@ export default function Services() {
             Strategic Engagement Models
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed">
-            From VP-level strategic leadership to high-impact consulting—flexible engagement models designed for VCs transforming portfolio companies and executives building competitive advantage.
+            From VP-level strategic leadership to high-impact consulting, flexible engagement models designed for VCs transforming portfolio companies and executives building competitive advantage.
             <br />
             Choose the approach that matches your strategic objectives.
           </p>
@@ -48,7 +48,7 @@ export default function Services() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Build Competitive Moats</h3>
               <p className="text-slate-300">
-                4-6x velocity gains create defensible competitive advantages—extending runway 6-12 months and establishing market leadership before competitors catch up.
+                4-6x velocity gains create defensible competitive advantages, extending runway 6-12 months and establishing market leadership before competitors catch up.
               </p>
             </div>
             <div className="text-center">

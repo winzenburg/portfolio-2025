@@ -140,7 +140,7 @@ export default function Contact() {
             Let's Build Your Competitive Advantage
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed">
-            Whether you're a VC seeking $3M+ portfolio value gains, an executive targeting 6-12 month runway extensions, or a leader building AI-native capabilities—let's discuss measurable outcomes.
+            Whether you're a VC seeking $3M+ portfolio value gains, an executive targeting 6-12 month runway extensions, or a leader building AI-native capabilities, let's discuss measurable outcomes.
           </p>
         </div>
         </div>
@@ -327,7 +327,7 @@ export default function Contact() {
                 <li>• I typically respond within 24 hours</li>
                 <li>• Strategic conversations are 30-45 minutes</li>
                 <li>• I'll share portfolio impact examples and board-ready metrics</li>
-                <li>• No obligation—just an honest discussion about strategic fit</li>
+                <li>• No obligation, just an honest discussion about strategic fit</li>
               </ul>
             </div>
             </div>

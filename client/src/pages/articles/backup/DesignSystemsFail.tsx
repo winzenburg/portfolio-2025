@@ -48,7 +48,7 @@ export default function DesignSystemsFail() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-slate-300 leading-relaxed mb-6">
-              The design system becomes shelfware—a beautiful, well-documented artifact that collects digital dust while teams continue building inconsistent interfaces the old way.
+              The design system becomes shelfware, a beautiful, well-documented artifact that collects digital dust while teams continue building inconsistent interfaces the old way.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -60,7 +60,7 @@ export default function DesignSystemsFail() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-8">
-              Design systems fail for three fundamental reasons. These aren't technical problems—they're organizational and human problems that technology alone can't solve. But AI can help.
+              Design systems fail for three fundamental reasons. These aren't technical problems, they're organizational and human problems that technology alone can't solve. But AI can help.
             </p>
 
             {/* Problem 1 */}
@@ -101,7 +101,7 @@ export default function DesignSystemsFail() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-8">
-              Here's where AI changes everything. AI doesn't just make design systems faster to build—it fundamentally solves the three core problems that cause design systems to fail.
+              Here's where AI changes everything. AI doesn't just make design systems faster to build, it fundamentally solves the three core problems that cause design systems to fail.
             </p>
 
             {/* AI Solution 1 */}
@@ -201,7 +201,7 @@ export default function DesignSystemsFail() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The companies that win in the next five years won't be the ones with the biggest design teams. They'll be the ones that leverage AI to build design systems that actually work—systems that teams love to use, that stay current automatically, and that govern themselves intelligently.
+              The companies that win in the next five years won't be the ones with the biggest design teams. They'll be the ones that leverage AI to build design systems that actually work, systems that teams love to use, that stay current automatically, and that govern themselves intelligently.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
