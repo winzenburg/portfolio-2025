@@ -103,7 +103,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The people who need these tools most — office managers, claims adjusters, social workers, small business owners — are staring at a blinking cursor. A lot of them have already stopped trying. That's a design failure, not a model failure, and our industry has been slow to own it.
+              The people who need these tools most (office managers, claims adjusters, social workers, small business owners) are staring at a blinking cursor. A lot of them have already stopped trying. That's a design failure, not a model failure, and our industry has been slow to own it.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -117,7 +117,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              A company buys an AI platform, rolls it out, runs training, sends the tips email, and watches adoption flatline. The model usually works fine. The interface is a text box and a cursor. For designers, PMs, and engineers, that's an invitation — we know what to ask. For a dental office manager or a nonprofit program director, it's a wall. They don't know what the system can do, what happens when they hit enter, or whether they'll have to explain the result to their boss.
+              A company buys an AI platform, rolls it out, runs training, sends the tips email, and watches adoption flatline. The model usually works fine. The interface is a text box and a cursor. For designers, PMs, and engineers, that's an invitation. We know what to ask. For a dental office manager or a nonprofit program director, it's a wall. They don't know what the system can do, what happens when they hit enter, or whether they'll have to explain the result to their boss.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -139,7 +139,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Most teams describe the machine: "IVR Flow #3: RUNNING. Intent classification active." The better version describes the user's world: "Your appointment line is active. Handling calls automatically." Same backend, different copy — and the second one only works if every label, status, and notification is written from the user's job, not the engineering diagram. We slip into system-speak constantly. If a non-technical user can't read a line of UI and know what it means for their afternoon, rewrite it.
+              Most teams describe the machine: "IVR Flow #3: RUNNING. Intent classification active." The better version describes the user's world: "Your appointment line is active. Handling calls automatically." Same backend, different copy, and the second one only works if every label, status, and notification is written from the user's job, not the engineering diagram. We slip into system-speak constantly. If a non-technical user can't read a line of UI and know what it means for their afternoon, rewrite it.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -153,7 +153,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Non-technical users often aren't blocked by capability. They're blocked by not knowing what the AI will do next. The architecture that fixes that: draft the email, book the slot, queue the message — then wait for explicit approval before anything runs. Trust builds in repetition. The first approved appointment confirmation is nervous; the tenth is routine. Let people reject an action with a reason ("I'd rather call this patient myself") so the system can learn, not just log a denial.
+              Non-technical users often aren't blocked by capability. They're blocked by not knowing what the AI will do next. The architecture that fixes that: draft the email, book the slot, queue the message, then wait for explicit approval before anything runs. Trust builds in repetition. The first approved appointment confirmation is nervous; the tenth is routine. Let people reject an action with a reason ("I'd rather call this patient myself") so the system can learn, not just log a denial.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -161,7 +161,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Enterprise onboarding is still mostly a form you fill out before you understand why the fields matter. Replace it with a short conversation: preferences, context, how you actually work. "When you review a contract, what do you look at first?" beats "select jurisdiction from the dropdown." The interview configures the system and teaches the user what the product can do — without a manual. We already run good intakes in discovery; we rarely run them at signup.
+              Enterprise onboarding is still mostly a form you fill out before you understand why the fields matter. Replace it with a short conversation: preferences, context, how you actually work. "When you review a contract, what do you look at first?" beats "select jurisdiction from the dropdown." The interview configures the system and teaches the user what the product can do without a manual. We already run good intakes in discovery; we rarely run them at signup.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -169,7 +169,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When an agent is searching records or checking calendars, people need to see progress without reading API logs. "Checking your calendar for the next seven days… found three open slots… sending confirmation to the patient" beats "Processing…" Keep a plain summary visible; put routing scores and classification detail behind a disclosure for the few who want it. Progressive disclosure isn't new — we just haven't applied it consistently to agent transparency.
+              When an agent is searching records or checking calendars, people need to see progress without reading API logs. "Checking your calendar for the next seven days… found three open slots… sending confirmation to the patient" beats "Processing…" Keep a plain summary visible; put routing scores and classification detail behind a disclosure for the few who want it. Progressive disclosure isn't new. We just haven't applied it consistently to agent transparency.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -201,7 +201,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The worst moment is the first one, before anything has worked. Pre-built domain workflows — appointment reminders on, emergency calls routed to on-call, Friday billing summaries to the practice manager — let someone flip a switch instead of inventing a prompt. Ship a win before you ask for setup depth. Configuration can come after trust.
+              The worst moment is the first one, before anything has worked. Pre-built domain workflows (appointment reminders on, emergency calls routed to on-call, Friday billing summaries to the practice manager) let someone flip a switch instead of inventing a prompt. Ship a win before you ask for setup depth. Configuration can come after trust.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -223,7 +223,7 @@ export default function TheInterfaceProblem() {
             <ArticleFigure
               src={`${IMG}/canva-homepage.png`}
               alt="Canva design canvas with embedded AI tools"
-              caption="No separate AI mode — expand an image, resize for Instagram, improve copy from actions you already know."
+              caption="No separate AI mode: expand an image, resize for Instagram, improve copy from actions you already know."
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -241,7 +241,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Duolingo Max changes how it coaches depending on whether you're flying through a lesson or stuck. Enterprise software rarely does that — same error copy for a frustrated user and a curious one. If someone has rejected three AI suggestions in a row, the UI should notice.
+              Duolingo Max changes how it coaches depending on whether you're flying through a lesson or stuck. Enterprise software rarely does that. Same error copy for a frustrated user and a curious one. If someone has rejected three AI suggestions in a row, the UI should notice.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -251,7 +251,7 @@ export default function TheInterfaceProblem() {
             <ArticleFigure
               src={`${IMG}/khanmigo-tutor.png`}
               alt="Khanmigo tutor responding with a guiding question"
-              caption="Khanmigo answers a question with a question — on purpose."
+              caption="Khanmigo answers a question with a question, on purpose."
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -269,7 +269,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Most assistants wait for a question. Glean surfaces weekend changes against your projects when you open the laptop Monday. Proactive AI lives or dies on calibration — too much feels surveillance, too little is search with extra steps — and nobody has nailed the middle yet.
+              Most assistants wait for a question. Glean surfaces weekend changes against your projects when you open the laptop Monday. Proactive AI lives or dies on calibration. Too much feels like surveillance; too little is search with extra steps. Nobody has nailed the middle yet.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -297,7 +297,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Now Assist lets people say "submit a hardware request" or "show open tickets on my team" instead of hunting through menus. For users who never memorized the hierarchy, that's a real reduction in friction — and any product with deep navigation could borrow the pattern.
+              Now Assist lets people say "submit a hardware request" or "show open tickets on my team" instead of hunting through menus. For users who never memorized the hierarchy, that's a real reduction in friction, and any product with deep navigation could borrow the pattern.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -311,7 +311,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Abridge listens to the visit and produces the note. The clinician doesn't prompt it; the patient may not know it's running. For some jobs, the right interface is none — worth asking which steps in your product could disappear the same way.
+              Abridge listens to the visit and produces the note. The clinician doesn't prompt it; the patient may not know it's running. For some jobs, the right interface is none. Worth asking which steps in your product could disappear the same way.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -323,7 +323,7 @@ export default function TheInterfaceProblem() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Start from the outcome someone needs today and work backward. Invest in trust — approval flows, readable output, visible permissions — before you stack features. Spend real time on the first three minutes of mental model. Write UI copy in the user's domain language. Hide the AI wherever you can.
+              Start from the outcome someone needs today and work backward. Invest in trust (approval flows, readable output, visible permissions) before you stack features. Spend real time on the first three minutes of mental model. Write UI copy in the user's domain language. Hide the AI wherever you can.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
