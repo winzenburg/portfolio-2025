@@ -57,7 +57,7 @@ export default function Article() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
         <p className="lead">
-          I used to dread documentation. We'd write comprehensive PRDs, discovery docs, validation plans—all beautifully formatted in Notion. Then they'd sit there, forgotten, while we built the product.
+          I used to dread documentation. We'd write comprehensive PRDs, discovery docs, validation plans, all beautifully formatted in Notion. Then they'd sit there, forgotten, while we built the product.
         </p>
 
         <p>
@@ -69,11 +69,11 @@ export default function Article() {
         </p>
 
         <p>
-          But here's the thing: <strong>the problem wasn't that we documented too much—it was that documentation was static</strong>.
+          But here's the thing: <strong>the problem wasn't that we documented too much, it was that documentation was static</strong>.
         </p>
 
         <p>
-          So we built the opposite: <strong>The Hub</strong>—a living, real-time portfolio dashboard that surfaces every idea, every doc, every validation result, and every verdict in one searchable interface.
+          So we built the opposite: <strong>The Hub</strong>, a living, real-time portfolio dashboard that surfaces every idea, every doc, every validation result, and every verdict in one searchable interface.
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
@@ -122,7 +122,7 @@ export default function Article() {
         </p>
 
         <p>
-          The first few projects get comprehensive documentation—discovery notes, PRDs, technical specs, meeting notes, retrospectives. It feels organized. Leadership is happy. "Finally, we're doing this right."
+          The first few projects get comprehensive documentation, discovery notes, PRDs, technical specs, meeting notes, retrospectives. It feels organized. Leadership is happy. "Finally, we're doing this right."
         </p>
 
         <p>
@@ -153,7 +153,7 @@ export default function Article() {
         </p>
 
         <p>
-          I've watched this cycle play out at three different companies. It's not a people problem—it's a system problem.
+          I've watched this cycle play out at three different companies. It's not a people problem, it's a system problem.
         </p>
 
         <h3>Why Documentation Dies</h3>
@@ -221,7 +221,7 @@ export default function Article() {
         </p>
 
         <p>
-          The Hub doesn't replace docs—it makes them <strong>findable, filterable, and actionable</strong>.
+          The Hub doesn't replace docs, it makes them <strong>findable, filterable, and actionable</strong>.
         </p>
 
         <h3>What You See When You Open the Hub</h3>
@@ -333,7 +333,7 @@ export default function Article() {
         </p>
 
         <p>
-          Surprisingly, the whole thing runs in about 200ms—because we're just reading files, not hitting a database.
+          Surprisingly, the whole thing runs in about 200ms, because we're just reading files, not hitting a database.
         </p>
 
         <h2>Real-World Impact: The Before and After</h2>
@@ -383,7 +383,7 @@ export default function Article() {
           <ul className="text-slate-200 mb-4">
             <li>Kill/greenlight meetings start with Hub open (everyone sees same data)</li>
             <li>Click a project card to review docs on the spot</li>
-            <li>Verdicts are visible—no need to re-litigate</li>
+            <li>Verdicts are visible, no need to re-litigate</li>
           </ul>
 
           <p className="text-cyan-400 mb-2"><strong>Onboarding:</strong></p>
@@ -420,7 +420,7 @@ export default function Article() {
         <h2>What We're Building Next</h2>
 
         <p>
-          The current Hub is v1—functional but basic. Here's what's coming that I'm genuinely excited about:
+          The current Hub is v1, functional but basic. Here's what's coming that I'm genuinely excited about:
         </p>
 
         <h3>Full-Text Search Across Everything</h3>
@@ -558,7 +558,7 @@ export default function Article() {
         <h3>Step 3: Build the Frontend</h3>
 
         <p>
-          We used React + TypeScript + Tailwind. You could use Vue, Angular, plain JavaScript—whatever you prefer.
+          We used React + TypeScript + Tailwind. You could use Vue, Angular, plain JavaScript, whatever you prefer.
         </p>
 
         <p>
@@ -587,7 +587,7 @@ export default function Article() {
         <h3>Step 4: Polish the UI</h3>
 
         <p>
-          The visual elements matter more than you think. Verdict badges, priority stars, progress indicators—they make the data scannable.
+          The visual elements matter more than you think. Verdict badges, priority stars, progress indicators, they make the data scannable.
         </p>
 
         <p>

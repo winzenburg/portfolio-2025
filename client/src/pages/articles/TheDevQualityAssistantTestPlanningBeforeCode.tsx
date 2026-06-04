@@ -54,7 +54,7 @@ export default function DevQualityAssistant() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Most teams treat testing as an afterthought. I learned firsthand why that's expensive. Here's how we made it a build prerequisite instead—and shipped a feature in 3 days that would've normally taken 3 weeks.
+              Most teams treat testing as an afterthought. I learned firsthand why that's expensive. Here's how we made it a build prerequisite instead, and shipped a feature in 3 days that would've normally taken 3 weeks.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function DevQualityAssistant() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I know, I know. Planning tests first sounds about as exciting as flossing. But here's the thing—it's the difference between shipping with confidence and shipping with anxiety.
+              I know, I know. Planning tests first sounds about as exciting as flossing. But here's the thing, it's the difference between shipping with confidence and shipping with anxiety.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -166,7 +166,7 @@ export default function DevQualityAssistant() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">Manual Testing Doesn't Scale</strong>: Every new feature adds to the manual test matrix. Eventually, QA becomes a bottleneck and teams start cutting corners. I've been there—it's not pretty.
+              <strong className="text-white">Manual Testing Doesn't Scale</strong>: Every new feature adds to the manual test matrix. Eventually, QA becomes a bottleneck and teams start cutting corners. I've been there, it's not pretty.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -174,7 +174,7 @@ export default function DevQualityAssistant() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's what we changed: We treat the dev quality plan the same way we treat the PRD—<strong className="text-white">it's a mandatory deliverable before implementation starts</strong>.
+              Here's what we changed: We treat the dev quality plan the same way we treat the PRD, <strong className="text-white">it's a mandatory deliverable before implementation starts</strong>.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -207,7 +207,7 @@ export default function DevQualityAssistant() {
               This grounds everything in context:
             </p>
             <ul className="text-slate-300 leading-relaxed mb-6 space-y-1">
-              <li>Brief description (one paragraph—no novels)</li>
+              <li>Brief description (one paragraph, no novels)</li>
               <li>Affected surfaces (API, UI, database, third-party integrations)</li>
               <li>Owners (which engineers, which agents, who's responsible for what)</li>
             </ul>
@@ -567,7 +567,7 @@ export default function DevQualityAssistant() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Sometimes during implementation, you discover new edge cases or realize a test isn't feasible. That's fine—update the plan.
+              Sometimes during implementation, you discover new edge cases or realize a test isn't feasible. That's fine, update the plan.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -686,7 +686,7 @@ export default function DevQualityAssistant() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The question isn't whether this takes time upfront—it does. The question is whether you'd rather spend 45 minutes planning tests or 10 hours debugging production issues.
+              The question isn't whether this takes time upfront, it does. The question is whether you'd rather spend 45 minutes planning tests or 10 hours debugging production issues.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

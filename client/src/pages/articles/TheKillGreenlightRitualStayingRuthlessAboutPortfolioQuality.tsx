@@ -137,7 +137,7 @@ export default function KillGreenlightRitual() {
         <div className="bg-slate-800/30 p-6 rounded-lg my-8">
           <p className="font-medium mb-4">Real Example from My Portfolio:</p>
           <p className="mb-4">
-            I'd built 60% of an MVP for a project management tool. Validation was weak—users were lukewarm at best. But I kept thinking, "I just need to finish the last 40% and then I'll know for sure."
+            I'd built 60% of an MVP for a project management tool. Validation was weak, users were lukewarm at best. But I kept thinking, "I just need to finish the last 40% and then I'll know for sure."
           </p>
           <p className="mb-2">
             The rational question: Do I spend three more months finishing something users don't want, or three months starting something they desperately need?
@@ -338,7 +338,7 @@ export default function KillGreenlightRitual() {
           
           <p className="mb-3"><strong>Status:</strong></p>
           <ul className="mb-4 space-y-1">
-            <li>Score: 22/40 (Medium Priority—barely above kill threshold)</li>
+            <li>Score: 22/40 (Medium Priority, barely above kill threshold)</li>
             <li>Opportunity Score: 7.2/10 (below 8.0 threshold)</li>
             <li>Validation: 200 signups (threshold: 500 ❌), 4% prepayment (threshold: 10% ❌)</li>
             <li>Velocity: Week 4, significantly behind pace</li>
@@ -347,7 +347,7 @@ export default function KillGreenlightRitual() {
           <p className="mb-2"><strong>My internal monologue:</strong></p>
           <p className="mb-4 italic">"We're only 40% to signup threshold and prepayment conversion is half what we need. But I've already built the waitlist, wrote the copy, spent $300 on ads..."</p>
 
-          <p className="mb-4">And there it was—the sunk cost fallacy trying to make the decision for me. But the data was clear:</p>
+          <p className="mb-4">And there it was, the sunk cost fallacy trying to make the decision for me. But the data was clear:</p>
           <ul className="mb-4 space-y-1">
             <li>Opportunity Score below threshold (7.2 &lt; 8.0)</li>
             <li>Validation missed by &gt;50% on both metrics</li>
@@ -402,7 +402,7 @@ export default function KillGreenlightRitual() {
         </ul>
 
         <p>
-          No spreadsheets to maintain. No memory required. No debate about facts—the scores and verdicts are canonical.
+          No spreadsheets to maintain. No memory required. No debate about facts, the scores and verdicts are canonical.
         </p>
 
         <h2>The Mental Models That Make Killing Ideas Easier</h2>
@@ -450,7 +450,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <p>
-          When I killed the meal planner, I tweeted: "Killed the meal planner today. Saved 4 months. Starting habit tracker next week." The response was overwhelmingly positive—other founders respected the decision.
+          When I killed the meal planner, I tweeted: "Killed the meal planner today. Saved 4 months. Starting habit tracker next week." The response was overwhelmingly positive, other founders respected the decision.
         </p>
 
         <p>
@@ -570,7 +570,7 @@ Date: 2025-12-02`}</div>
         </p>
 
         <p>
-          But here's the thing—if you're managing 3+ ideas at various stages, reviews pay for themselves immediately. The time you save by not working on dead-end projects more than makes up for the review time.
+          But here's the thing, if you're managing 3+ ideas at various stages, reviews pay for themselves immediately. The time you save by not working on dead-end projects more than makes up for the review time.
         </p>
 
         <h2>What's Next?</h2>
@@ -580,7 +580,7 @@ Date: 2025-12-02`}</div>
         </p>
 
         <ul>
-          <li><strong>Automated kill alerts:</strong> "Meal planner is 50% behind pace—schedule kill review"</li>
+          <li><strong>Automated kill alerts:</strong> "Meal planner is 50% behind pace, schedule kill review"</li>
           <li><strong>EV calculator:</strong> Input scores/validation → Get expected value comparison</li>
           <li><strong>Kill lessons database:</strong> Extract patterns from killed ideas to spot failure modes earlier</li>
         </ul>
@@ -596,13 +596,13 @@ Date: 2025-12-02`}</div>
         </p>
 
         <p>
-          The solution isn't more discipline—it's better systems. Weekly kill/greenlight reviews with clear criteria and visible data make tough decisions easier.
+          The solution isn't more discipline, it's better systems. Weekly kill/greenlight reviews with clear criteria and visible data make tough decisions easier.
         </p>
 
         <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium mb-2">The Killer Insight:</p>
           <p className="text-slate-200">
-            Killing bad ideas isn't about admitting failure—it's about protecting your ability to recognize and execute on exceptional opportunities.
+            Killing bad ideas isn't about admitting failure, it's about protecting your ability to recognize and execute on exceptional opportunities.
           </p>
         </div>
 
@@ -611,7 +611,7 @@ Date: 2025-12-02`}</div>
         </p>
 
         <p>
-          What if you could kill bad ideas confidently and focus all your energy on the ones that actually matter? That's not just portfolio management—that's how you build something that lasts.
+          What if you could kill bad ideas confidently and focus all your energy on the ones that actually matter? That's not just portfolio management, that's how you build something that lasts.
         </p>
 
         <div className="mt-12 p-6 bg-slate-800/30 rounded-lg">

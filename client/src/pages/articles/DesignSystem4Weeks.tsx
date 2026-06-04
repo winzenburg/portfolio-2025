@@ -61,7 +61,7 @@ export default function DesignSystem4Weeks() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              When I tell people I built an enterprise design system in four weeks, I usually get the same reaction: skeptical silence followed by questions about what I cut. They assume there's a trade-off—that moving this fast means sacrificing quality, skipping documentation, or delivering something incomplete.
+              When I tell people I built an enterprise design system in four weeks, I usually get the same reaction: skeptical silence followed by questions about what I cut. They assume there's a trade-off, that moving this fast means sacrificing quality, skipping documentation, or delivering something incomplete.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -69,7 +69,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I didn't cut corners or compromise on quality. Instead, I strategically implemented AI where it actually accelerates work while keeping human judgment exactly where it matters most. The result isn't just faster—in several measurable ways, it's better than what traditional approaches deliver after a year of work.
+              I didn't cut corners or compromise on quality. Instead, I strategically implemented AI where it actually accelerates work while keeping human judgment exactly where it matters most. The result isn't just faster, in several measurable ways, it's better than what traditional approaches deliver after a year of work.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -79,7 +79,7 @@ export default function DesignSystem4Weeks() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Not by cutting corners. By strategically implementing AI where it actually accelerates work—and keeping human judgment where it matters."
+                "Not by cutting corners. By strategically implementing AI where it actually accelerates work, and keeping human judgment where it matters."
               </p>
             </div>
 
@@ -185,7 +185,7 @@ export default function DesignSystem4Weeks() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The competitive analysis alone would have taken weeks manually—downloading design system documentation, comparing component approaches, documenting accessibility patterns. AI processed all twelve systems in parallel, generating structured comparison matrices that highlighted exactly where each system excelled and where they made trade-offs. I spent my time reviewing these insights and making strategic decisions about our approach, not manually compiling spreadsheets.
+              The competitive analysis alone would have taken weeks manually, downloading design system documentation, comparing component approaches, documenting accessibility patterns. AI processed all twelve systems in parallel, generating structured comparison matrices that highlighted exactly where each system excelled and where they made trade-offs. I spent my time reviewing these insights and making strategic decisions about our approach, not manually compiling spreadsheets.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -213,7 +213,7 @@ export default function DesignSystem4Weeks() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The design phase traditionally consumes three to four months. Designers meticulously craft each component, exploring variants, documenting interaction states, defining spacing and proportions, creating examples for every use case. It's careful, deliberate work that doesn't compress well—or so I thought before trying AI-powered design workflows.
+              The design phase traditionally consumes three to four months. Designers meticulously craft each component, exploring variants, documenting interaction states, defining spacing and proportions, creating examples for every use case. It's careful, deliberate work that doesn't compress well, or so I thought before trying AI-powered design workflows.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -225,12 +225,12 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's a concrete example of how this worked. When I needed button components, I gave V0 a detailed prompt: "Create a button component with primary, secondary, and destructive variants, all WCAG AA compliant." Within seconds, I had complete component designs including all interaction states—default, hover, active, focus, disabled. The designs included proper color contrast validation, appropriate spacing, and clear visual hierarchy.
+              Here's a concrete example of how this worked. When I needed button components, I gave V0 a detailed prompt: "Create a button component with primary, secondary, and destructive variants, all WCAG AA compliant." Within seconds, I had complete component designs including all interaction states, default, hover, active, focus, disabled. The designs included proper color contrast validation, appropriate spacing, and clear visual hierarchy.
             </p>
 
             <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
               <p className="text-cyan-300 font-semibold mb-2">The Impact of AI-Powered Design</p>
-              <p className="text-slate-300 mb-4">I designed all 48 components in four days instead of the eight weeks this would traditionally require. But quality didn't suffer—the design quality score from stakeholder reviews came in at 8.4 out of 10, actually higher than our baseline of 8.2 for manually designed systems.</p>
+              <p className="text-slate-300 mb-4">I designed all 48 components in four days instead of the eight weeks this would traditionally require. But quality didn't suffer, the design quality score from stakeholder reviews came in at 8.4 out of 10, actually higher than our baseline of 8.2 for manually designed systems.</p>
               <p className="text-white mt-4"><strong>The difference?</strong> AI generated consistent, well-structured designs that I then refined based on specific business context and brand requirements. The tedious work happened instantly. I spent my time on the decisions that matter.</p>
             </div>
 
@@ -258,11 +258,11 @@ export default function DesignSystem4Weeks() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Development is where traditional design systems hit their longest phase—four to six months of building components, writing tests, ensuring accessibility compliance, fixing bugs, and refining implementations. Even with experienced developers, each component takes substantial time when you account for all the variants, edge cases, and quality requirements.
+              Development is where traditional design systems hit their longest phase, four to six months of building components, writing tests, ensuring accessibility compliance, fixing bugs, and refining implementations. Even with experienced developers, each component takes substantial time when you account for all the variants, edge cases, and quality requirements.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I completed all 48 components in seven days using Cursor IDE and GitHub Copilot for AI-assisted development. The transformation wasn't just about speed—it fundamentally changed what was possible for a single developer to accomplish while maintaining enterprise-grade quality standards.
+              I completed all 48 components in seven days using Cursor IDE and GitHub Copilot for AI-assisted development. The transformation wasn't just about speed, it fundamentally changed what was possible for a single developer to accomplish while maintaining enterprise-grade quality standards.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -270,7 +270,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But AI didn't just generate the component code. It also created comprehensive Storybook stories for each variant, wrote unit tests covering all functionality, and implemented accessibility tests validating WCAG compliance. For a typical component, this meant AI generating 200-400 lines of implementation code, 50-100 lines of Storybook documentation, 100-200 lines of unit tests, and 50-100 lines of accessibility tests—all production-ready.
+              But AI didn't just generate the component code. It also created comprehensive Storybook stories for each variant, wrote unit tests covering all functionality, and implemented accessibility tests validating WCAG compliance. For a typical component, this meant AI generating 200-400 lines of implementation code, 50-100 lines of Storybook documentation, 100-200 lines of unit tests, and 50-100 lines of accessibility tests, all production-ready.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -324,7 +324,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The speed increase was dramatic—going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. That's a genuine 10x improvement in development velocity. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were actually more robust than what I'd typically ship after manual development.
+              The speed increase was dramatic, going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. That's a genuine 10x improvement in development velocity. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were actually more robust than what I'd typically ship after manual development.
             </p>
 
             <div className="bg-gradient-to-r from-cyan-900/20 via-blue-900/20 to-purple-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
@@ -344,7 +344,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The breakthrough was realizing that AI had already seen every component implementation, every variant, every test case. It understood the system comprehensively because it had helped build it. Generating documentation wasn't a separate task—it was just asking AI to explain what it had already created, structured for human readers.
+              The breakthrough was realizing that AI had already seen every component implementation, every variant, every test case. It understood the system comprehensively because it had helped build it. Generating documentation wasn't a separate task, it was just asking AI to explain what it had already created, structured for human readers.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -396,7 +396,7 @@ export default function DesignSystem4Weeks() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Documentation generated as a byproduct of development, not as a separate phase afterward—that's the breakthrough most teams miss."
+                "Documentation generated as a byproduct of development, not as a separate phase afterward, that's the breakthrough most teams miss."
               </p>
             </div>
 
@@ -498,7 +498,7 @@ export default function DesignSystem4Weeks() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When I show these results to other design systems leads, the first question is always "What's the catch?" They assume there must be hidden compromises or that this only works for simple systems or that I'm exaggerating the timeline somehow. I understand the skepticism—if someone had told me this was possible two years ago, I wouldn't have believed them either.
+              When I show these results to other design systems leads, the first question is always "What's the catch?" They assume there must be hidden compromises or that this only works for simple systems or that I'm exaggerating the timeline somehow. I understand the skepticism, if someone had told me this was possible two years ago, I wouldn't have believed them either.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -575,11 +575,11 @@ export default function DesignSystem4Weeks() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              AI excels at repetitive component generation—creating the fifteenth button variant is identical cognitive work to creating the first, but AI never gets tired or sloppy. It recognizes patterns and applies them consistently across hundreds of components. Documentation creation becomes trivial when AI can analyze component code and explain it clearly. Automated testing removes the tedium of writing the same test patterns repeatedly. Token validation ensures every color, spacing, and typography value adheres to system standards without manual checking. Code generation from specifications turns detailed requirements into implementation instantly.
+              AI excels at repetitive component generation, creating the fifteenth button variant is identical cognitive work to creating the first, but AI never gets tired or sloppy. It recognizes patterns and applies them consistently across hundreds of components. Documentation creation becomes trivial when AI can analyze component code and explain it clearly. Automated testing removes the tedium of writing the same test patterns repeatedly. Token validation ensures every color, spacing, and typography value adheres to system standards without manual checking. Code generation from specifications turns detailed requirements into implementation instantly.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But humans remain essential for strategic component architecture—deciding which components the system needs and how they should relate to each other. Design system strategy requires understanding business context that no AI can infer. Quality standards need human judgment about what "good enough" means for your specific use case. Stakeholder alignment requires emotional intelligence and political awareness. Exception handling demands understanding context and trade-offs. Business context determines which corners can be cut and which details matter critically.
+              But humans remain essential for strategic component architecture, deciding which components the system needs and how they should relate to each other. Design system strategy requires understanding business context that no AI can infer. Quality standards need human judgment about what "good enough" means for your specific use case. Stakeholder alignment requires emotional intelligence and political awareness. Exception handling demands understanding context and trade-offs. Business context determines which corners can be cut and which details matter critically.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -595,7 +595,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The biggest mistake was initially trusting AI-generated accessibility without rigorous validation. AI gets the syntax right—it includes proper ARIA attributes, adds keyboard navigation, generates semantically correct HTML. But it often misses context-dependent accessibility requirements that depend on how the component is actually used. A modal might have perfect ARIA labels but trap focus incorrectly in complex page layouts. A form input might meet WCAG contrast ratios but fail in real-world lighting conditions for users with low vision.
+              The biggest mistake was initially trusting AI-generated accessibility without rigorous validation. AI gets the syntax right, it includes proper ARIA attributes, adds keyboard navigation, generates semantically correct HTML. But it often misses context-dependent accessibility requirements that depend on how the component is actually used. A modal might have perfect ARIA labels but trap focus incorrectly in complex page layouts. A form input might meet WCAG contrast ratios but fail in real-world lighting conditions for users with low vision.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -603,11 +603,11 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The second mistake was skipping human design review to save time. AI-generated components met all technical specifications and passed automated validation. But they lacked the design refinement that comes from human aesthetic judgment—subtle spacing adjustments, hierarchy improvements, polish that makes interfaces feel considered rather than generated. Users could tell something was off even if they couldn't articulate what.
+              The second mistake was skipping human design review to save time. AI-generated components met all technical specifications and passed automated validation. But they lacked the design refinement that comes from human aesthetic judgment, subtle spacing adjustments, hierarchy improvements, polish that makes interfaces feel considered rather than generated. Users could tell something was off even if they couldn't articulate what.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Now human designers review all AI-generated designs specifically for quality polish. Not to check specifications—automated validation handles that. But to apply the aesthetic refinement and attention to detail that separates good design from great design. This review happens quickly because the foundation is solid, but it's non-negotiable.
+              Now human designers review all AI-generated designs specifically for quality polish. Not to check specifications, automated validation handles that. But to apply the aesthetic refinement and attention to detail that separates good design from great design. This review happens quickly because the foundation is solid, but it's non-negotiable.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -651,7 +651,7 @@ export default function DesignSystem4Weeks() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              If you want to build a design system using this approach, here's the practical roadmap I'd follow based on what worked and what I'd change. This isn't theoretical—it's the exact process I'd use if starting another system tomorrow.
+              If you want to build a design system using this approach, here's the practical roadmap I'd follow based on what worked and what I'd change. This isn't theoretical, it's the exact process I'd use if starting another system tomorrow.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -681,7 +681,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              First, define clear quality standards before generating a single component. What does "accessible" mean for your organization—WCAG AA, AAA, or custom requirements? What's the bar for test coverage? How do you measure design quality? AI can hit any target you give it, but it can't define what "good enough" means for your context. Set these standards early and enforce them consistently.
+              First, define clear quality standards before generating a single component. What does "accessible" mean for your organization, WCAG AA, AAA, or custom requirements? What's the bar for test coverage? How do you measure design quality? AI can hit any target you give it, but it can't define what "good enough" means for your context. Set these standards early and enforce them consistently.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -712,7 +712,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Markets don't wait twelve months for design systems. Product requirements evolve faster than traditional build timelines. Competitors launch features while you're still documenting components. User expectations shift before your system reaches production. By the time a traditional design system launches, the world has moved on—the system is solving yesterday's problems with yesterday's patterns.
+              Markets don't wait twelve months for design systems. Product requirements evolve faster than traditional build timelines. Competitors launch features while you're still documenting components. User expectations shift before your system reaches production. By the time a traditional design system launches, the world has moved on, the system is solving yesterday's problems with yesterday's patterns.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -720,7 +720,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The time advantage compounds. Traditional systems take twelve to eighteen months to build, then fall behind because maintaining them manually consumes resources faster than teams can add improvements. They become technical debt within a year—expensive to maintain, painful to change, increasingly irrelevant to product needs.
+              The time advantage compounds. Traditional systems take twelve to eighteen months to build, then fall behind because maintaining them manually consumes resources faster than teams can add improvements. They become technical debt within a year, expensive to maintain, painful to change, increasingly irrelevant to product needs.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -785,7 +785,7 @@ export default function DesignSystem4Weeks() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We're at an inflection point in how design systems get built and maintained. The companies that understand this will move dramatically faster than those still following traditional approaches. This isn't a prediction about the future—it's already happening.
+              We're at an inflection point in how design systems get built and maintained. The companies that understand this will move dramatically faster than those still following traditional approaches. This isn't a prediction about the future, it's already happening.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

@@ -55,14 +55,14 @@ export default function MVPStrategy() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              I've watched countless product teams make the same mistake. They spend months building an MVP that tries to do everything—anticipating every user need, accommodating every edge case, perfecting every feature. Six months later, they finally launch. The product is complex, the value proposition is muddled, and nobody understands what problem it actually solves. Worse, by the time they ship, the market has moved on.
+              I've watched countless product teams make the same mistake. They spend months building an MVP that tries to do everything, anticipating every user need, accommodating every edge case, perfecting every feature. Six months later, they finally launch. The product is complex, the value proposition is muddled, and nobody understands what problem it actually solves. Worse, by the time they ship, the market has moved on.
             </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              I learned this by launching products that took too long to build and tried to solve too many problems at once. But through those failures—and the successes that came after—I discovered something counterintuitive: the most successful MVPs aren't the ones with the most features. They're the ones that solve a single problem so well that users can't help but share them.
+              I learned this by launching products that took too long to build and tried to solve too many problems at once. But through those failures, and the successes that came after, I discovered something counterintuitive: the most successful MVPs aren't the ones with the most features. They're the ones that solve a single problem so well that users can't help but share them.
             </p>
 
             {/* Pull Quote */}
@@ -77,7 +77,7 @@ export default function MVPStrategy() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The first thing that kills most MVPs isn't a bad product—it's a unclear value proposition. I've sat through dozens of product pitches where teams couldn't articulate what their product does in a single sentence. They'd start with the technology, drift into features, mention the market opportunity, and circle back to the problem. Five minutes later, I still didn't understand what it actually solved or who it was for.
+              The first thing that kills most MVPs isn't a bad product, it's a unclear value proposition. I've sat through dozens of product pitches where teams couldn't articulate what their product does in a single sentence. They'd start with the technology, drift into features, mention the market opportunity, and circle back to the problem. Five minutes later, I still didn't understand what it actually solved or who it was for.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -155,7 +155,7 @@ export default function MVPStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              These became my target metrics for every MVP. Onboarding should take less than two minutes—preferably using existing credentials or single sign-on. Users should get tangible value within five minutes of signing up. And the core feature should require zero explanation or documentation. If users need a tutorial to understand what to do, the UX isn't good enough.
+              These became my target metrics for every MVP. Onboarding should take less than two minutes, preferably using existing credentials or single sign-on. Users should get tangible value within five minutes of signing up. And the core feature should require zero explanation or documentation. If users need a tutorial to understand what to do, the UX isn't good enough.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -171,7 +171,7 @@ export default function MVPStrategy() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the uncomfortable truth about MVPs: you're going to get things wrong. Your assumptions about what users need, how they'll use the product, what features matter most—some of those will be incorrect. The difference between products that succeed and those that fail isn't getting everything right the first time. It's learning fast enough to course-correct before you run out of runway.
+              Here's the uncomfortable truth about MVPs: you're going to get things wrong. Your assumptions about what users need, how they'll use the product, what features matter most, some of those will be incorrect. The difference between products that succeed and those that fail isn't getting everything right the first time. It's learning fast enough to course-correct before you run out of runway.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -179,7 +179,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The feedback systems I build into every MVP now are straightforward. In-app feedback buttons at key decision points, so users can tell you when they're confused or frustrated. NPS surveys triggered at specific milestones to gauge satisfaction trends. Usage analytics tracking every interaction, so you can see what features users actually use versus what they ignore. And most importantly, structured processes for direct user interviews—because nothing replaces actually talking to the people using your product.
+              The feedback systems I build into every MVP now are straightforward. In-app feedback buttons at key decision points, so users can tell you when they're confused or frustrated. NPS surveys triggered at specific milestones to gauge satisfaction trends. Usage analytics tracking every interaction, so you can see what features users actually use versus what they ignore. And most importantly, structured processes for direct user interviews, because nothing replaces actually talking to the people using your product.
             </p>
 
             {/* Pull Quote */}
@@ -190,7 +190,7 @@ export default function MVPStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              One product I worked on had built-in feedback from launch. Within two weeks, we discovered users were abandoning the flow at a specific step we thought was straightforward. The analytics showed it clearly. User interviews explained why. We fixed it in three days. That single insight—captured because we had the right feedback mechanisms—saved what could have been months of poor conversion rates.
+              One product I worked on had built-in feedback from launch. Within two weeks, we discovered users were abandoning the flow at a specific step we thought was straightforward. The analytics showed it clearly. User interviews explained why. We fixed it in three days. That single insight, captured because we had the right feedback mechanisms, saved what could have been months of poor conversion rates.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -198,7 +198,7 @@ export default function MVPStrategy() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Most teams treat growth as a marketing problem to solve after launch. But the products that grow fastest don't rely on expensive acquisition channels—they grow because users naturally want to share them. This doesn't happen by accident. It requires deliberately designing virality into the product from the beginning.
+              Most teams treat growth as a marketing problem to solve after launch. But the products that grow fastest don't rely on expensive acquisition channels, they grow because users naturally want to share them. This doesn't happen by accident. It requires deliberately designing virality into the product from the beginning.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -206,7 +206,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I worked on a product where we added share buttons at the exact moment users completed their first successful workflow. We pre-wrote the share text highlighting the specific result they achieved. We made it work across every major platform with a single click. Organic sharing increased 340% overnight. Same product, same value—we just made it trivial to share at the moment users wanted to.
+              I worked on a product where we added share buttons at the exact moment users completed their first successful workflow. We pre-wrote the share text highlighting the specific result they achieved. We made it work across every major platform with a single click. Organic sharing increased 340% overnight. Same product, same value, we just made it trivial to share at the moment users wanted to.
             </p>
 
             {/* Growth Stats */}
@@ -219,7 +219,7 @@ export default function MVPStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Referral incentives accelerate this further, but they need to feel like genuine benefits, not bribes. Give both the referrer and the referred user something valuable—whether that's extended features, bonus credits, or exclusive access. And make the referral process itself valuable by building collaborative features. When multiple people get more value by using the product together, every user becomes a natural advocate for bringing others in.
+              Referral incentives accelerate this further, but they need to feel like genuine benefits, not bribes. Give both the referrer and the referred user something valuable, whether that's extended features, bonus credits, or exclusive access. And make the referral process itself valuable by building collaborative features. When multiple people get more value by using the product together, every user becomes a natural advocate for bringing others in.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -227,15 +227,15 @@ export default function MVPStrategy() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Beyond making sharing easy, you need to give users something worth sharing. I call these "wow moments"—experiences where the product value becomes so undeniable that users instinctively want to tell someone about it. These moments drive organic sharing more effectively than any referral program.
+              Beyond making sharing easy, you need to give users something worth sharing. I call these "wow moments", experiences where the product value becomes so undeniable that users instinctively want to tell someone about it. These moments drive organic sharing more effectively than any referral program.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The key is delivering something that feels almost magical—a result that surprises and delights because it happened faster, better, or easier than users thought possible. When a design system generates a complete, production-ready component in thirty seconds. When an analysis that would normally take hours completes while the user is still watching. When automation handles a tedious task seamlessly in the background. These are the moments users screenshot and share.
+              The key is delivering something that feels almost magical, a result that surprises and delights because it happened faster, better, or easier than users thought possible. When a design system generates a complete, production-ready component in thirty seconds. When an analysis that would normally take hours completes while the user is still watching. When automation handles a tedious task seamlessly in the background. These are the moments users screenshot and share.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I worked on a data analytics product where we built a visualization feature that auto-generated insights from raw data. Users would upload a spreadsheet and within seconds see professionally formatted charts highlighting trends they hadn't noticed manually. The "wow moment" wasn't just that it was fast—it was that the product showed them things they couldn't easily see themselves. User sharing of those auto-generated visualizations drove 60% of our new signups.
+              I worked on a data analytics product where we built a visualization feature that auto-generated insights from raw data. Users would upload a spreadsheet and within seconds see professionally formatted charts highlighting trends they hadn't noticed manually. The "wow moment" wasn't just that it was fast, it was that the product showed them things they couldn't easily see themselves. User sharing of those auto-generated visualizations drove 60% of our new signups.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -267,7 +267,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The launch strategy I've used successfully follows a four-week cadence that balances learning with scaling. Week one is private beta—fifty to one hundred users, ideally people you can talk to directly. The goal isn't scale. It's validation. Does the core feature actually solve the problem? Do users understand the value proposition? Can they complete the primary workflow without help? You'll find critical issues in the first week that would have killed a broader launch.
+              The launch strategy I've used successfully follows a four-week cadence that balances learning with scaling. Week one is private beta, fifty to one hundred users, ideally people you can talk to directly. The goal isn't scale. It's validation. Does the core feature actually solve the problem? Do users understand the value proposition? Can they complete the primary workflow without help? You'll find critical issues in the first week that would have killed a broader launch.
             </p>
 
             {/* Launch Timeline */}
@@ -291,11 +291,11 @@ export default function MVPStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Week two is iteration. You're not adding features—you're fixing what's broken and refining based on real usage patterns. This is where having those feedback mechanisms pays off. You can see exactly where users struggle and address it immediately.
+              Week two is iteration. You're not adding features, you're fixing what's broken and refining based on real usage patterns. This is where having those feedback mechanisms pays off. You can see exactly where users struggle and address it immediately.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Week three expands to five hundred to one thousand users. Now you're testing whether the infrastructure scales, whether onboarding works without personal hand-holding, and whether the product stands on its own. Week four is public launch—but at this point, you're not guessing. You have validation from real users, you've fixed the critical issues, and you know the product delivers value.
+              Week three expands to five hundred to one thousand users. Now you're testing whether the infrastructure scales, whether onboarding works without personal hand-holding, and whether the product stands on its own. Week four is public launch, but at this point, you're not guessing. You have validation from real users, you've fixed the critical issues, and you know the product delivers value.
             </p>
 
             {/* Pull Quote */}
@@ -306,7 +306,7 @@ export default function MVPStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              One team I worked with followed this exact cadence. Week one beta revealed that their onboarding was confusing—something they never would have discovered internally. They fixed it in week two. By week three, conversion was solid. Week four launch was smooth because they'd already validated everything that mattered. They reached ten thousand users in the first month post-launch.
+              One team I worked with followed this exact cadence. Week one beta revealed that their onboarding was confusing, something they never would have discovered internally. They fixed it in week two. By week three, conversion was solid. Week four launch was smooth because they'd already validated everything that mattered. They reached ten thousand users in the first month post-launch.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -326,7 +326,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The third mistake—and this one really hurt—was launching without a distribution plan. We built a genuinely good product with clear value. But we had no audience, no distribution channels, and no clear path to getting users. We thought "build it and they will come" actually worked. It doesn't. Now I start building audience in parallel with building product. By the time you launch, you should already have people waiting to use it.
+              The third mistake, and this one really hurt, was launching without a distribution plan. We built a genuinely good product with clear value. But we had no audience, no distribution channels, and no clear path to getting users. We thought "build it and they will come" actually worked. It doesn't. Now I start building audience in parallel with building product. By the time you launch, you should already have people waiting to use it.
             </p>
 
             {/* Lessons Learned */}

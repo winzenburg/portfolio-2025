@@ -54,7 +54,7 @@ export default function GameficationThatDoesntManipulate() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Last month, I deleted three habit-tracking apps from my phone. Not because they didn't work—because they worked too well at making me feel terrible about myself.
+              Last month, I deleted three habit-tracking apps from my phone. Not because they didn't work, because they worked too well at making me feel terrible about myself.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's when it hit me: <strong className="text-white">I wasn't building better habits—I was being manipulated into fake engagement</strong>.
+              That's when it hit me: <strong className="text-white">I wasn't building better habits, I was being manipulated into fake engagement</strong>.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -77,7 +77,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's what I've learned about creating gamification that users actually love—plus how we use AI to build industry-appropriate mascots that guide without guilt-tripping.
+              Here's what I've learned about creating gamification that users actually love, plus how we use AI to build industry-appropriate mascots that guide without guilt-tripping.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -206,7 +206,7 @@ export default function GameficationThatDoesntManipulate() {
               </div>
               <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-6">
                 <div className="text-cyan-400 font-semibold mb-2 uppercase text-sm tracking-wider">Good</div>
-                <div className="text-slate-300">"You completed 5 habits this week—nice work staying on track!"</div>
+                <div className="text-slate-300">"You completed 5 habits this week, nice work staying on track!"</div>
               </div>
             </div>
 
@@ -226,7 +226,7 @@ export default function GameficationThatDoesntManipulate() {
               </div>
               <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-6">
                 <div className="text-cyan-400 font-semibold mb-2 uppercase text-sm tracking-wider">Good</div>
-                <div className="text-slate-300">"You took a break—that's okay! You've still completed 42 habits this month."</div>
+                <div className="text-slate-300">"You took a break, that's okay! You've still completed 42 habits this month."</div>
               </div>
             </div>
 
@@ -259,7 +259,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Some people love badges. Others find them distracting. Respect user agency—make gamification optional.
+              Some people love badges. Others find them distracting. Respect user agency, make gamification optional.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -279,7 +279,7 @@ export default function GameficationThatDoesntManipulate() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's where it gets fun. We've discovered that a well-designed mascot can add massive personality to an app—but only if the mascot's tone matches the industry.
+              Here's where it gets fun. We've discovered that a well-designed mascot can add massive personality to an app, but only if the mascot's tone matches the industry.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -293,7 +293,7 @@ export default function GameficationThatDoesntManipulate() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Mascots aren't just cute decorations—they're your app's emotional intelligence."
+                "Mascots aren't just cute decorations, they're your app's emotional intelligence."
               </p>
             </div>
 
@@ -364,7 +364,7 @@ export default function GameficationThatDoesntManipulate() {
               <ul className="space-y-2 text-slate-300">
                 <li className="flex items-start gap-2">
                   <span className="text-cyan-400">✓</span>
-                  <span>"You're building momentum—keep going!"</span>
+                  <span>"You're building momentum, keep going!"</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-red-400">×</span>
@@ -401,7 +401,7 @@ export default function GameficationThatDoesntManipulate() {
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 font-bold">1</span>
-                  <span><strong className="text-white">Define industry tone</strong> from your brand guidelines (I always start there—never design in a vacuum).</span>
+                  <span><strong className="text-white">Define industry tone</strong> from your brand guidelines (I always start there, never design in a vacuum).</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 font-bold">2</span>
@@ -421,7 +421,7 @@ export default function GameficationThatDoesntManipulate() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 font-bold">6</span>
-                  <span><strong className="text-white">Document everything</strong>—prompts, outputs, usage guidelines. Future you will thank past you.</span>
+                  <span><strong className="text-white">Document everything</strong>, prompts, outputs, usage guidelines. Future you will thank past you.</span>
                 </li>
               </ul>
             </div>
@@ -451,7 +451,7 @@ export default function GameficationThatDoesntManipulate() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Last year, I was building a habit tracker for burned-out remote workers. The brand tone was "thoughtful therapist, not life coach"—all about progress, not perfection.
+              Last year, I was building a habit tracker for burned-out remote workers. The brand tone was "thoughtful therapist, not life coach", all about progress, not perfection.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -464,11 +464,11 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              User feedback during validation: "The tortoise makes it feel less pressured. I don't feel judged." "I love that it's not a 'hustle bro' vibe—it's calming."
+              User feedback during validation: "The tortoise makes it feel less pressured. I don't feel judged." "I love that it's not a 'hustle bro' vibe, it's calming."
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That mascot increased onboarding completion by 8%. More importantly, zero negative mentions in reviews. When mascots match industry tone, they become invisible in the best way—users focus on the product, not the character.
+              That mascot increased onboarding completion by 8%. More importantly, zero negative mentions in reviews. When mascots match industry tone, they become invisible in the best way, users focus on the product, not the character.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -662,7 +662,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The companies that win will be the ones that genuinely help users achieve their goals—not the ones that trick users into fake engagement.
+              The companies that win will be the ones that genuinely help users achieve their goals, not the ones that trick users into fake engagement.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -687,7 +687,7 @@ export default function GameficationThatDoesntManipulate() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The future of gamification isn't more badges or bigger streaks—it's better alignment between what users want and what apps reward.
+              The future of gamification isn't more badges or bigger streaks, it's better alignment between what users want and what apps reward.
             </p>
 
             {/* Pull Quote */}
@@ -706,7 +706,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Your users—and your long-term retention numbers—will thank you for choosing the harder, better path.
+              Your users, and your long-term retention numbers, will thank you for choosing the harder, better path.
             </p>
 
             {/* Section Divider */}
@@ -720,7 +720,7 @@ export default function GameficationThatDoesntManipulate() {
           {/* CTA Card */}
           <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Want to Build Better Product Experiences?</h3>
-            <p className="text-slate-300 mb-6">Get frameworks like this delivered to your inbox. I share the methods behind building products that users actually love—no manipulation required.</p>
+            <p className="text-slate-300 mb-6">Get frameworks like this delivered to your inbox. I share the methods behind building products that users actually love, no manipulation required.</p>
             <Link href="/contact">
               <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get the Framework Library →

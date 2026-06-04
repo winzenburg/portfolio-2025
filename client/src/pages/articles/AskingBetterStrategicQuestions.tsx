@@ -11,9 +11,9 @@ export default function AskingBetterStrategicQuestions() {
 
       <Helmet>
         <title>Asking Better Strategic Questions About AI in Product Design | Ryan Winzenburg</title>
-        <meta name="description" content="The best question about AI isn't how to cut headcount — it's what can we do now that was previously impossible? A design leadership perspective on AI, product design, and raising ambition." />
+        <meta name="description" content="The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible? A design leadership perspective on AI, product design, and raising ambition." />
         <meta property="og:title" content="Asking Better Strategic Questions About AI in Product Design" />
-        <meta property="og:description" content="The best question about AI isn't how to cut headcount — it's what can we do now that was previously impossible?" />
+        <meta property="og:description" content="The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible?" />
         <meta property="og:url" content="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/strategic-questions-ai-hero.png" />
         <link rel="canonical" href="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
@@ -21,7 +21,7 @@ export default function AskingBetterStrategicQuestions() {
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "Asking Better Strategic Questions About AI in Product Design",
-          "description": "The best question about AI isn't how to cut headcount — it's what can we do now that was previously impossible?",
+          "description": "The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible?",
           "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
           "datePublished": "2026-03-07",
           "url": "https://winzenburg.com/articles/strategic-questions-ai-product-design",
@@ -58,7 +58,7 @@ export default function AskingBetterStrategicQuestions() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              I've spent 20+ years inside enterprise product and design organizations. I've watched teams adopt — and resist — every wave of tooling change. And the pattern right now is remarkably consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.
+              I've spent 20+ years inside enterprise product and design organizations. I've watched teams adopt, and resist, every wave of tooling change. And the pattern right now is remarkably consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ export default function AskingBetterStrategicQuestions() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's where the real value is. When the cost of execution drops, the game changes. Not because you spend less — but because you can suddenly build things, test things, and ship things that used to be off the table. New products. New services. New ways of making better decisions faster. The biggest opportunity isn't lower costs. It's new capability.
+              That's where the real value is. When the cost of execution drops, the game changes. Not because you spend less, but because you can suddenly build things, test things, and ship things that used to be off the table. New products. New services. New ways of making better decisions faster. The biggest opportunity isn't lower costs. It's new capability.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -95,7 +95,7 @@ export default function AskingBetterStrategicQuestions() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              What I've seen firsthand: AI tools can eliminate hours of repetitive DesignOps work — the "boring" parts — while freeing people up to focus on the things that actually require a human brain. Judgment. Taste. Strategy. That's where the value lives.
+              What I've seen firsthand: AI tools can eliminate hours of repetitive DesignOps work, the "boring" parts, while freeing people up to focus on the things that actually require a human brain. Judgment. Taste. Strategy. That's where the value lives.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -111,7 +111,7 @@ export default function AskingBetterStrategicQuestions() {
                 </div>
                 <div className="flex items-start gap-3 text-slate-300">
                   <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
-                  <span>User research synthesized at scale — not limited by team size</span>
+                  <span>User research synthesized at scale, not limited by team size</span>
                 </div>
                 <div className="flex items-start gap-3 text-slate-300">
                   <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
@@ -129,7 +129,7 @@ export default function AskingBetterStrategicQuestions() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is one I think about constantly. For years, great ideas inside companies never got built. Not because the ideas were bad — but because the people who had them were too far away from the people building the tools. There was always a translation layer.
+              This is one I think about constantly. For years, great ideas inside companies never got built. Not because the ideas were bad, but because the people who had them were too far away from the people building the tools. There was always a translation layer.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -141,7 +141,7 @@ export default function AskingBetterStrategicQuestions() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Those people have real domain knowledge, and AI makes it easier for that knowledge to turn into working prototypes and real solutions — without waiting six months for an engineering allocation that may never come.
+              Those people have real domain knowledge, and AI makes it easier for that knowledge to turn into working prototypes and real solutions, without waiting six months for an engineering allocation that may never come.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -190,7 +190,7 @@ export default function AskingBetterStrategicQuestions() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              AI increases the value of good design leadership — it doesn't reduce it. In fact, it raises the bar. Because when the tools become more accessible, the differentiator becomes decision quality. Better thinking. Better priorities. Better understanding of the user. AI generates options. Humans choose.
+              AI increases the value of good design leadership, it doesn't reduce it. In fact, it raises the bar. Because when the tools become more accessible, the differentiator becomes decision quality. Better thinking. Better priorities. Better understanding of the user. AI generates options. Humans choose.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">

@@ -54,7 +54,7 @@ export default function AICostControl() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Most AI cost overruns don't come from one expensive call—they come from retries and rework. Teams think AI cost control means "use a cheaper model." In practice, the biggest spend multipliers are reliability problems disguised as cost problems. Here's how I've built AI systems that stay both affordable and fast.
+              Most AI cost overruns don't come from one expensive call, they come from retries and rework. Teams think AI cost control means "use a cheaper model." In practice, the biggest spend multipliers are reliability problems disguised as cost problems. Here's how I've built AI systems that stay both affordable and fast.
             </p>
           </div>
 
@@ -177,7 +177,7 @@ export default function AICostControl() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Cache at the right granularity. Deterministic transforms like normalization and parsing should always be cached—you'll get the same result every time, so there's no reason to redo them. Stable inputs like summaries should be cached because they change rarely. Fetch-by-id results should be cached because the external system is the source of truth.
+              Cache at the right granularity. Deterministic transforms like normalization and parsing should always be cached, you'll get the same result every time, so there's no reason to redo them. Stable inputs like summaries should be cached because they change rarely. Fetch-by-id results should be cached because the external system is the source of truth.
             </p>
 
             {/* Caching Strategy */}
@@ -227,7 +227,7 @@ export default function AICostControl() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              If you can import outputs, you get three benefits that compound. You don't rerun steps when something fails to save—you just import the result that was generated. You can re-materialize documents without regenerating content. And you can debug without repeating the expensive operation.
+              If you can import outputs, you get three benefits that compound. You don't rerun steps when something fails to save, you just import the result that was generated. You can re-materialize documents without regenerating content. And you can debug without repeating the expensive operation.
             </p>
 
             {/* Pull Quote */}
@@ -285,7 +285,7 @@ export default function AICostControl() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Strict caps can make the system feel "fragile" until recovery paths exist. Users will hit the cap and get stuck if there's no way to proceed without regeneration. This is why import-first is so important—it's the escape hatch that makes strict budgets workable.
+              Strict caps can make the system feel "fragile" until recovery paths exist. Users will hit the cap and get stuck if there's no way to proceed without regeneration. This is why import-first is so important, it's the escape hatch that makes strict budgets workable.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

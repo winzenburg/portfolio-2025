@@ -10,14 +10,14 @@ export default function WeeklyRhythm() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Weekly Rhythm: A 60-Minute Operating System That Actually Ships | Ryan Winzenburg</title>
-        <meta name="description" content="Most weekly planning fails because it tries to plan everything. The goal isn&#39;t comprehensive planning—it&#39;s deciding what the week is for." />
+        <meta name="description" content="Most weekly planning fails because it tries to plan everything. The goal isn&#39;t comprehensive planning, it&#39;s deciding what the week is for." />
         <meta property="og:title" content="The Weekly Rhythm: A 60-Minute Operating System That Actually Ships" />
-        <meta property="og:description" content="Most weekly planning fails because it tries to plan everything. The goal isn&#39;t comprehensive planning—it&#39;s deciding what the week is for." />
+        <meta property="og:description" content="Most weekly planning fails because it tries to plan everything. The goal isn&#39;t comprehensive planning, it&#39;s deciding what the week is for." />
         <meta property="og:url" content="https://winzenburg.com/articles/weekly-rhythm" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/weekly-rhythm-hero.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/weekly-rhythm" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning—it's deciding what the week is for.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning, it's deciding what the week is for.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.png"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -54,7 +54,7 @@ export default function WeeklyRhythm() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Most "weekly planning" fails because it tries to plan everything. The goal isn't comprehensive planning—it's deciding what the week is for. Here's the 60-minute weekly cadence I've refined over years of leading product teams, and why simplicity beats thoroughness every time.
+              Most "weekly planning" fails because it tries to plan everything. The goal isn't comprehensive planning, it's deciding what the week is for. Here's the 60-minute weekly cadence I've refined over years of leading product teams, and why simplicity beats thoroughness every time.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function WeeklyRhythm() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              A weekly rhythm works when it's small, repeatable, and tied to outcomes. This article is a deep dive into how I run weekly planning, issue-solving, and review in about 60 minutes per week total. If you want the big picture first, start with my article on the Business Operating System—this is the tactical implementation of that framework.
+              A weekly rhythm works when it's small, repeatable, and tied to outcomes. This article is a deep dive into how I run weekly planning, issue-solving, and review in about 60 minutes per week total. If you want the big picture first, start with my article on the Business Operating System, this is the tactical implementation of that framework.
             </p>
 
             {/* Pull Quote */}
@@ -80,7 +80,7 @@ export default function WeeklyRhythm() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              You only need three moves to run an effective week: Plan, Solve, and Review. Everything else is optional. I've seen teams add elaborate rituals, multiple check-ins, and detailed tracking systems—and I've watched those same teams abandon everything when the overhead becomes unbearable. Keep it simple, and it actually gets done.
+              You only need three moves to run an effective week: Plan, Solve, and Review. Everything else is optional. I've seen teams add elaborate rituals, multiple check-ins, and detailed tracking systems, and I've watched those same teams abandon everything when the overhead becomes unbearable. Keep it simple, and it actually gets done.
             </p>
 
             {/* Three Moves Card */}
@@ -106,7 +106,7 @@ export default function WeeklyRhythm() {
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Move 1: Plan (15–30 Minutes)
+              Move 1: Plan (15-30 Minutes)
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -114,7 +114,7 @@ export default function WeeklyRhythm() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The inputs you need are simple: a focus metric (or one key result), last week's completion rate, last week's learning note, and calendar reality—how much time do you actually have available. Without that last one, you're planning in a vacuum.
+              The inputs you need are simple: a focus metric (or one key result), last week's completion rate, last week's learning note, and calendar reality, how much time do you actually have available. Without that last one, you're planning in a vacuum.
             </p>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -122,7 +122,7 @@ export default function WeeklyRhythm() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Every planning session must produce four things: one focus metric for the week, 1–3 outcomes with "done looks like" definitions, one issue to solve, and time blocks protected on the calendar to actually do the work.
+              Every planning session must produce four things: one focus metric for the week, 1-3 outcomes with "done looks like" definitions, one issue to solve, and time blocks protected on the calendar to actually do the work.
             </p>
 
             {/* Planning Outputs */}
@@ -131,19 +131,19 @@ export default function WeeklyRhythm() {
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>One focus metric</strong> — What number will you move this week?</span>
+                  <span><strong>One focus metric</strong>, What number will you move this week?</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>1–3 outcomes</strong> — What will exist by Friday that doesn't exist today?</span>
+                  <span><strong>1-3 outcomes</strong>, What will exist by Friday that doesn't exist today?</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>One issue to solve</strong> — What's blocking progress?</span>
+                  <span><strong>One issue to solve</strong>, What's blocking progress?</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>Time blocks protected</strong> — When will the work actually happen?</span>
+                  <span><strong>Time blocks protected</strong>, When will the work actually happen?</span>
                 </li>
               </ul>
             </div>
@@ -153,7 +153,7 @@ export default function WeeklyRhythm() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've found that planning becomes efficient when you ask four questions in order: What metric matters this week? What 1–3 outcomes will move it? What issue is most likely to block those outcomes? And where will the work happen on the calendar?
+              I've found that planning becomes efficient when you ask four questions in order: What metric matters this week? What 1-3 outcomes will move it? What issue is most likely to block those outcomes? And where will the work happen on the calendar?
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -215,7 +215,7 @@ export default function WeeklyRhythm() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Weekly planning fails when you ignore time constraints. Two rules help: never commit to more than 3 outcomes, and schedule 2–4 deep work blocks before you add anything else. If the calendar can't hold the work, the plan is fantasy. Better to know that on Monday than discover it on Friday.
+              Weekly planning fails when you ignore time constraints. Two rules help: never commit to more than 3 outcomes, and schedule 2-4 deep work blocks before you add anything else. If the calendar can't hold the work, the plan is fantasy. Better to know that on Monday than discover it on Friday.
             </p>
 
             {/* Section Divider */}
@@ -226,15 +226,15 @@ export default function WeeklyRhythm() {
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Move 2: Solve (30–45 Minutes)
+              Move 2: Solve (30-45 Minutes)
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is the weekly issues meeting. Its purpose is not discussion—it's resolution. I've sat in countless meetings where the same issues got raised week after week without ever being solved. Those meetings are worse than useless because they create the illusion of progress.
+              This is the weekly issues meeting. Its purpose is not discussion, it's resolution. I've sat in countless meetings where the same issues got raised week after week without ever being solved. Those meetings are worse than useless because they create the illusion of progress.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The inputs are simple: open issues captured during the week, this week's outcomes, and the focus metric. The output is equally simple: 1–3 issues selected, 1–3 next actions total with owners and "done looks like" definitions.
+              The inputs are simple: open issues captured during the week, this week's outcomes, and the focus metric. The output is equally simple: 1-3 issues selected, 1-3 next actions total with owners and "done looks like" definitions.
             </p>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -242,7 +242,7 @@ export default function WeeklyRhythm() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I use a simple three-step structure: Identify, Discuss, Solve. In the Identify phase, you list issues, cluster duplicates, and select the top 1–3 by impact and urgency. In Discuss, you align on what's true—evidence, impact, constraints—while avoiding drifting into solutions too early. In Solve, you decide the smallest next actions that reduce uncertainty or remove the block.
+              I use a simple three-step structure: Identify, Discuss, Solve. In the Identify phase, you list issues, cluster duplicates, and select the top 1-3 by impact and urgency. In Discuss, you align on what's true, evidence, impact, constraints, while avoiding drifting into solutions too early. In Solve, you decide the smallest next actions that reduce uncertainty or remove the block.
             </p>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -250,7 +250,7 @@ export default function WeeklyRhythm() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              These rules keep the meeting from turning into a two-hour debate. If you can't agree in 10 minutes, escalate to a deeper root-cause workflow for the top issue. Actions are capped at 1–3 total, not 12 "follow-ups." Every action has a definition of done and a date.
+              These rules keep the meeting from turning into a two-hour debate. If you can't agree in 10 minutes, escalate to a deeper root-cause workflow for the top issue. Actions are capped at 1-3 total, not 12 "follow-ups." Every action has a definition of done and a date.
             </p>
 
             {/* Anti-Bloat Rules Card */}
@@ -268,7 +268,7 @@ export default function WeeklyRhythm() {
                   <span className="text-red-400 font-bold text-xl">2</span>
                   <div>
                     <div className="text-white font-semibold mb-1">Action cap</div>
-                    <div className="text-slate-400 text-sm">1–3 total actions, not 12 "follow-ups."</div>
+                    <div className="text-slate-400 text-sm">1-3 total actions, not 12 "follow-ups."</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -293,7 +293,7 @@ export default function WeeklyRhythm() {
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Move 3: Review (10–20 Minutes)
+              Move 3: Review (10-20 Minutes)
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -308,7 +308,7 @@ export default function WeeklyRhythm() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The output is just two sentences: your key learning (what changed, why, what it implies) and your next experiment (what you will change next week). Then you add one system improvement—tighten definitions of done, split outcomes smaller, add a checklist for a recurring process, or adjust the calendar so deep work happens earlier.
+              The output is just two sentences: your key learning (what changed, why, what it implies) and your next experiment (what you will change next week). Then you add one system improvement, tighten definitions of done, split outcomes smaller, add a checklist for a recurring process, or adjust the calendar so deep work happens earlier.
             </p>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -340,7 +340,7 @@ export default function WeeklyRhythm() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              If you want a "just do it" starting point, use a single weekly note with your focus metric, 1–3 outcomes, top issue, and end-of-week review. That's it. You don't need a tool or a template—though both can help once the habit is established.
+              If you want a "just do it" starting point, use a single weekly note with your focus metric, 1-3 outcomes, top issue, and end-of-week review. That's it. You don't need a tool or a template, though both can help once the habit is established.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -352,11 +352,11 @@ export default function WeeklyRhythm() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              You will feel under-committed at first. 1–3 outcomes can feel "too small" when you're used to planning ten things. But finishing compounds. Every week you complete what you commit to builds confidence and momentum. Every week you over-commit and fail erodes both.
+              You will feel under-committed at first. 1-3 outcomes can feel "too small" when you're used to planning ten things. But finishing compounds. Every week you complete what you commit to builds confidence and momentum. Every week you over-commit and fail erodes both.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This rhythm doesn't replace strategy—it makes strategy executable. And the system is only as honest as your review. If you rationalize misses instead of learning from them, you lose the loop entirely.
+              This rhythm doesn't replace strategy, it makes strategy executable. And the system is only as honest as your review. If you rationalize misses instead of learning from them, you lose the loop entirely.
             </p>
 
             {/* Takeaways Card */}
@@ -365,11 +365,11 @@ export default function WeeklyRhythm() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">Weekly planning is not about planning everything—it's about deciding what the week is for</span>
+                  <span className="text-slate-300">Weekly planning is not about planning everything, it's about deciding what the week is for</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">Keep the cadence small: plan, solve, review—that's enough</span>
+                  <span className="text-slate-300">Keep the cadence small: plan, solve, review, that's enough</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
@@ -407,7 +407,7 @@ export default function WeeklyRhythm() {
             <p className="text-slate-400 mb-4">Next in This Series</p>
             <Link href="/articles/rocks-not-tasks">
               <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
-                Read Next: Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes
+                Read Next: Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Link>

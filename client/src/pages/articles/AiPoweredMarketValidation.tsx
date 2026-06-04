@@ -61,7 +61,7 @@ export default function AIMarketValidation() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              The pattern repeats itself across startups and enterprise product teams alike. Talented people executing well on ideas that fail because they never validated whether anyone actually wanted what they were building. Not in theory, not in focus groups, but in reality—with their wallets and their time.
+              The pattern repeats itself across startups and enterprise product teams alike. Talented people executing well on ideas that fail because they never validated whether anyone actually wanted what they were building. Not in theory, not in focus groups, but in reality, with their wallets and their time.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -125,7 +125,7 @@ export default function AIMarketValidation() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Long-tail keywords with significant search volume tell you there's real demand. Low competition indicators suggest the opportunity isn't saturated yet. Search intent patterns reveal whether people are looking to learn, compare options, or buy—each requiring a different product approach. And trend analysis shows whether this is a growing opportunity or a declining one.
+              Long-tail keywords with significant search volume tell you there's real demand. Low competition indicators suggest the opportunity isn't saturated yet. Search intent patterns reveal whether people are looking to learn, compare options, or buy, each requiring a different product approach. And trend analysis shows whether this is a growing opportunity or a declining one.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -195,7 +195,7 @@ export default function AIMarketValidation() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But I never trust AI findings alone. The AI identifies patterns at scale, but humans validate whether those patterns actually matter. I take the top pain points the AI surfaces and validate them through direct customer conversations. Five to ten interviews are usually enough to confirm whether the AI correctly identified the most significant problems or missed important context. This division of labor—AI for pattern detection, humans for significance validation—is what makes the approach both fast and reliable.
+              But I never trust AI findings alone. The AI identifies patterns at scale, but humans validate whether those patterns actually matter. I take the top pain points the AI surfaces and validate them through direct customer conversations. Five to ten interviews are usually enough to confirm whether the AI correctly identified the most significant problems or missed important context. This division of labor, AI for pattern detection, humans for significance validation, is what makes the approach both fast and reliable.
             </p>
 
             {/* Pull Quote */}
@@ -218,7 +218,7 @@ export default function AIMarketValidation() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But competitive analysis isn't about reinventing the wheel. I follow what I call the mimesis principle—examine what's already working in the market, then add your unique differentiation. If competitors are succeeding with a particular feature set or pricing model, that's validated demand. The question isn't whether to do something completely different, but how to do the proven things better while adding something genuinely new that matters.
+              But competitive analysis isn't about reinventing the wheel. I follow what I call the mimesis principle, examine what's already working in the market, then add your unique differentiation. If competitors are succeeding with a particular feature set or pricing model, that's validated demand. The question isn't whether to do something completely different, but how to do the proven things better while adding something genuinely new that matters.
             </p>
 
             {/* Competitive Analysis Time Comparison */}
@@ -248,7 +248,7 @@ export default function AIMarketValidation() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Search volume indicates market size and demand. If nobody's searching for solutions to the problem, there's no market. Competition level tells you about difficulty and saturation—too little competition can mean there's no market, too much means you'll struggle to get noticed. Community engagement validates that the pain is real and people are actively discussing it. Competitor traction proves willingness to pay—if similar solutions are generating revenue, that's the strongest validation signal you can get. And trend direction shows whether you're catching a wave or fighting a tide.
+              Search volume indicates market size and demand. If nobody's searching for solutions to the problem, there's no market. Competition level tells you about difficulty and saturation, too little competition can mean there's no market, too much means you'll struggle to get noticed. Community engagement validates that the pain is real and people are actively discussing it. Competitor traction proves willingness to pay, if similar solutions are generating revenue, that's the strongest validation signal you can get. And trend direction shows whether you're catching a wave or fighting a tide.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">

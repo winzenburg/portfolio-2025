@@ -10,14 +10,14 @@ export default function CompleteWorkflowPost() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Complete Workflow: Discovery to Deployment in 2025 | Ryan Winzenburg</title>
-        <meta name="description" content="Our current end-to-end SaaS creation system, from validating ideas to shipping code—with 25 agents, 8 quality gates, and zero guesswork." />
+        <meta name="description" content="Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork." />
         <meta property="og:title" content="The Complete Workflow: Discovery to Deployment in 2025" />
-        <meta property="og:description" content="Our current end-to-end SaaS creation system, from validating ideas to shipping code—with 25 agents, 8 quality gates, and zero guesswork." />
+        <meta property="og:description" content="Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork." />
         <meta property="og:url" content="https://winzenburg.com/articles/complete-workflow-2025" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/complete-workflow-hero.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/complete-workflow-2025" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Complete Workflow: Discovery to Deployment in 2025","description":"Our current end-to-end SaaS creation system, from validating ideas to shipping code—with 25 agents, 8 quality gates, and zero guesswork.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/complete-workflow-2025","image":"https://winzenburg.com/images/articles/complete-workflow-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Complete Workflow: Discovery to Deployment in 2025","description":"Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/complete-workflow-2025","image":"https://winzenburg.com/images/articles/complete-workflow-hero.png"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -57,7 +57,7 @@ export default function CompleteWorkflowPost() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
           <p className="text-xl text-slate-300 mb-8 font-medium">
-            Last month, I killed 7 product ideas in 15 minutes. Not because I'm ruthless—because I finally built a system that tells me which ideas are worth pursuing before I waste months building the wrong thing.
+            Last month, I killed 7 product ideas in 15 minutes. Not because I'm ruthless, because I finally built a system that tells me which ideas are worth pursuing before I waste months building the wrong thing.
           </p>
 
           <p>
@@ -69,7 +69,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <p>
-            So I built what I wish I'd had three years ago: a fully systematic SaaS creation workflow that transforms ideas into validated, defensible products with predictable outcomes. Not a framework I'm "planning to implement"—our production system, running right now, managing 16+ product ideas at various stages.
+            So I built what I wish I'd had three years ago: a fully systematic SaaS creation workflow that transforms ideas into validated, defensible products with predictable outcomes. Not a framework I'm "planning to implement", our production system, running right now, managing 16+ product ideas at various stages.
           </p>
 
           <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
@@ -84,7 +84,7 @@ export default function CompleteWorkflowPost() {
           </div>
 
           <p>
-            By the end of this article, you'll understand exactly how we go from "here's an idea" to "here's a deployed, validated SaaS product." More importantly, you'll see how to adapt this for your own workflow—even if you're not building SaaS products.
+            By the end of this article, you'll understand exactly how we go from "here's an idea" to "here's a deployed, validated SaaS product." More importantly, you'll see how to adapt this for your own workflow, even if you're not building SaaS products.
           </p>
 
           <h2>The Big Picture: Four Phases, Eight Gates</h2>
@@ -113,7 +113,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <p>
-            I learned this lesson the expensive way: I once spent 6 weeks validating a "productivity app for developers" before realizing developers don't pay for productivity apps—they build their own. A 10-minute portfolio scoring would have caught this.
+            I learned this lesson the expensive way: I once spent 6 weeks validating a "productivity app for developers" before realizing developers don't pay for productivity apps, they build their own. A 10-minute portfolio scoring would have caught this.
           </p>
 
           <p>
@@ -231,7 +231,7 @@ export default function CompleteWorkflowPost() {
           <h3>4. Opportunity & Moat Assessment</h3>
 
           <p>
-            The Opportunity & Moat Agent synthesizes everything into an Opportunity Score (0-10) and a Moat Thesis. No fluffy "we're building a platform" nonsense—specific defensibility mechanisms.
+            The Opportunity & Moat Agent synthesizes everything into an Opportunity Score (0-10) and a Moat Thesis. No fluffy "we're building a platform" nonsense, specific defensibility mechanisms.
           </p>
 
           <div className="bg-slate-800/50 p-6 rounded-lg my-8">
@@ -424,7 +424,7 @@ export default function CompleteWorkflowPost() {
               
               <strong>Orchestrator</strong>: "Let's start with the Portfolio Score. I'll call the Portfolio Prioritizer to score it against our 8 criteria. Once scored, if it's ≥ 20, we'll move to Discovery."<br/><br/>
               
-              <em>(Portfolio Prioritizer scores it: 32/40 — Top Priority)</em><br/><br/>
+              <em>(Portfolio Prioritizer scores it: 32/40, Top Priority)</em><br/><br/>
               
               <strong>Orchestrator</strong>: "Great! Score is 32/40. Proceeding to Discovery. I'll call the Niche Intelligence Agent to research the community. We need 4 docs: NICHE-INTEL, PAIN-SIGNALS, JTBD, and OPPORTUNITY. This will take ~8-12 hours."
             </p>
@@ -556,7 +556,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <p>
-            From validating ideas to shipping code—with 25 agents, 8 quality gates, and zero guesswork.
+            From validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.
           </p>
 
           <p>
@@ -568,7 +568,7 @@ export default function CompleteWorkflowPost() {
           </p>
 
           <p>
-            <em>Want to explore our open-source rules, templates, and orchestrator? I'm working on making the full system available. In the meantime, start with portfolio scoring—that single step will save you months of wasted effort.</em>
+            <em>Want to explore our open-source rules, templates, and orchestrator? I'm working on making the full system available. In the meantime, start with portfolio scoring, that single step will save you months of wasted effort.</em>
           </p>
           </div>
 

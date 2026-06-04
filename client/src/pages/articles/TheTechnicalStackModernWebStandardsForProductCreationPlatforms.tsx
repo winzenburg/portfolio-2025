@@ -146,7 +146,7 @@ export default function TechnicalStackModernWebStandards() {
         <h2 className="text-3xl font-bold mt-12 mb-6">The Stack That Changed Everything</h2>
 
         <p>
-          Choosing your tech stack is noisy: everyone's got opinions, but not everyone's shipping. After building this platform and using it to validate—and ship—real products, I've landed on what actually works.
+          Choosing your tech stack is noisy: everyone's got opinions, but not everyone's shipping. After building this platform and using it to validate, and ship, real products, I've landed on what actually works.
         </p>
 
         <h3 className="text-2xl font-bold mt-8 mb-4">Next.js 15: The Foundation That Doesn't Fight You</h3>
@@ -244,17 +244,17 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <p>
-          Building on Shadcn/UI and Tailwind CSS v4 changed that. Every component comes with WCAG 2.2 AA compliance baked in. No more retrofitting accessibility—it's just there by default.
+          Building on Shadcn/UI and Tailwind CSS v4 changed that. Every component comes with WCAG 2.2 AA compliance baked in. No more retrofitting accessibility, it's just there by default.
         </p>
 
         <p>
-          The practical impact? My validation platform works for everyone, not just people who navigate the way I do. That's not just good karma—it's good business.
+          The practical impact? My validation platform works for everyone, not just people who navigate the way I do. That's not just good karma, it's good business.
         </p>
 
         <h3 className="text-2xl font-bold mt-8 mb-4">AI Integration: The Force Multiplier</h3>
 
         <p>
-          Here's where things get interesting. I've integrated AI tools throughout the platform—not to replace thinking, but to accelerate it.
+          Here's where things get interesting. I've integrated AI tools throughout the platform, not to replace thinking, but to accelerate it.
         </p>
 
         <p>
@@ -262,7 +262,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <p>
-          But—and this is crucial—I've built robust error handling and fallback strategies. AI hallucinates. It makes confident mistakes. The platform handles that gracefully instead of propagating nonsense through my validation data.
+          But, and this is crucial, I've built robust error handling and fallback strategies. AI hallucinates. It makes confident mistakes. The platform handles that gracefully instead of propagating nonsense through my validation data.
         </p>
 
         <h2 className="text-3xl font-bold mt-12 mb-6">How This Actually Works in Practice</h2>
@@ -328,7 +328,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <p>
-          This isn't just efficiency—it's strategic. I'm de-risking the technical implementation while I'm validating the market. By the time I'm ready to build, half the technical work is already done.
+          This isn't just efficiency, it's strategic. I'm de-risking the technical implementation while I'm validating the market. By the time I'm ready to build, half the technical work is already done.
         </p>
 
         <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
@@ -445,7 +445,7 @@ export default function TechnicalStackModernWebStandards() {
         <h3 className="text-2xl font-bold mt-8 mb-4">Start Smaller</h3>
 
         <p>
-          I built everything at once—dashboard, AI integration, full authentication system, the works. That was overkill. Start with a simple data layer and build up from there.
+          I built everything at once, dashboard, AI integration, full authentication system, the works. That was overkill. Start with a simple data layer and build up from there.
         </p>
 
         <h3 className="text-2xl font-bold mt-8 mb-4">Invest More in Observability Earlier</h3>
@@ -467,7 +467,7 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <p>
-          If you're spending more time managing your validation tools than using them, if you're making decisions based on stale data, if you're starting from scratch every time you want to build something—maybe it's time to think like a platform builder.
+          If you're spending more time managing your validation tools than using them, if you're making decisions based on stale data, if you're starting from scratch every time you want to build something, maybe it's time to think like a platform builder.
         </p>
 
         <p>

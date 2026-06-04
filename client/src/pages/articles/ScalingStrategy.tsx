@@ -70,7 +70,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The conventional wisdom pushes you toward focus. Pick one thing and go all-in. And for most traditional businesses, that advice makes sense. But AI fundamentally changes the equation. When you can automate 90% of your operations, when you can leverage shared infrastructure across multiple products, when you can build an entire business in a matter of weeks—the portfolio approach becomes not just viable, but strategic.
+              The conventional wisdom pushes you toward focus. Pick one thing and go all-in. And for most traditional businesses, that advice makes sense. But AI fundamentally changes the equation. When you can automate 90% of your operations, when you can leverage shared infrastructure across multiple products, when you can build an entire business in a matter of weeks, the portfolio approach becomes not just viable, but strategic.
             </p>
 
             {/* Pull Quote */}
@@ -130,7 +130,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me give you a concrete example of how this works in practice. Imagine you've built an AI-powered design system builder—your core product. It's gaining traction with design teams at tech companies. Now you're looking for complementary products.
+              Let me give you a concrete example of how this works in practice. Imagine you've built an AI-powered design system builder, your core product. It's gaining traction with design teams at tech companies. Now you're looking for complementary products.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -160,7 +160,7 @@ export default function ScalingStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The selection criteria are straightforward but critical. Each product must target the same audience—you're not chasing different markets, you're going deeper with the customers you already understand. They need to share infrastructure wherever possible, because that's where your efficiency gains come from. There should be clear cross-sell potential, so your existing customer base becomes your primary distribution channel. And crucially, they should be non-competitive—solving different problems rather than cannibalizing each other.
+              The selection criteria are straightforward but critical. Each product must target the same audience, you're not chasing different markets, you're going deeper with the customers you already understand. They need to share infrastructure wherever possible, because that's where your efficiency gains come from. There should be clear cross-sell potential, so your existing customer base becomes your primary distribution channel. And crucially, they should be non-competitive, solving different problems rather than cannibalizing each other.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -226,7 +226,7 @@ export default function ScalingStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When you do acquire, the framework I follow is rigorous but fast. Target companies that can be bought for 2-3x their annual revenue—anything more and the payback period gets too long for a portfolio play. Validate ruthlessly: dive deep into their metrics, audit their code quality, talk to their customers. The acquisition itself is just the beginning. The real work is integration: migrating them onto your shared infrastructure, setting up cross-promotion flows, unifying billing and support. Then you apply your portfolio advantages—your automation, your distribution, your operational playbook—to accelerate their growth.
+              When you do acquire, the framework I follow is rigorous but fast. Target companies that can be bought for 2-3x their annual revenue, anything more and the payback period gets too long for a portfolio play. Validate ruthlessly: dive deep into their metrics, audit their code quality, talk to their customers. The acquisition itself is just the beginning. The real work is integration: migrating them onto your shared infrastructure, setting up cross-promotion flows, unifying billing and support. Then you apply your portfolio advantages, your automation, your distribution, your operational playbook, to accelerate their growth.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -234,7 +234,7 @@ export default function ScalingStrategy() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's what most people get wrong about building a portfolio: they treat each product as a completely separate business. Different brands, different websites, different support systems. It's organizational chaos and you lose the single biggest advantage of the portfolio approach—compounding trust.
+              Here's what most people get wrong about building a portfolio: they treat each product as a completely separate business. Different brands, different websites, different support systems. It's organizational chaos and you lose the single biggest advantage of the portfolio approach, compounding trust.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -242,7 +242,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Implementation is about consistency across every touchpoint. A shared design language means your products feel related even when they solve different problems. Common brand elements—logo, color palette, typography—create visual cohesion. Cross-product navigation makes it effortless for users to discover your other tools. Unified support means they get the same quality of help regardless of which product they're using. Single billing eliminates friction and makes bundling natural.
+              Implementation is about consistency across every touchpoint. A shared design language means your products feel related even when they solve different problems. Common brand elements, logo, color palette, typography, create visual cohesion. Cross-product navigation makes it effortless for users to discover your other tools. Unified support means they get the same quality of help regardless of which product they're using. Single billing eliminates friction and makes bundling natural.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -268,11 +268,11 @@ export default function ScalingStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The portfolio approach only works if you're ruthlessly committed to automation. You cannot run multiple businesses with traditional operational overhead. The math simply doesn't work. This is where most portfolio attempts fail—they scale complexity faster than they scale automation, and eventually the weight of manual operations crushes them.
+              The portfolio approach only works if you're ruthlessly committed to automation. You cannot run multiple businesses with traditional operational overhead. The math simply doesn't work. This is where most portfolio attempts fail, they scale complexity faster than they scale automation, and eventually the weight of manual operations crushes them.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The target is 90%+ automation across every business function. Not 70%. Not 80%. Ninety percent or higher. This sounds aggressive until you realize that AI now makes it achievable. The question isn't whether it's possible—it's whether you're willing to architect your operations around automation from day one.
+              The target is 90%+ automation across every business function. Not 70%. Not 80%. Ninety percent or higher. This sounds aggressive until you realize that AI now makes it achievable. The question isn't whether it's possible, it's whether you're willing to architect your operations around automation from day one.
             </p>
 
             {/* Automation Target Card */}
@@ -326,7 +326,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Even enterprise sales can be heavily automated. AI generates customized proposals based on the prospect's profile and needs. Automated follow-up sequences keep deals moving forward. Contract templates adjust dynamically based on deal parameters. ROI calculators demonstrate value automatically. Sales reps only enter the conversation for complex negotiations and relationship building—the high-value activities that actually require human judgment.
+              Even enterprise sales can be heavily automated. AI generates customized proposals based on the prospect's profile and needs. Automated follow-up sequences keep deals moving forward. Contract templates adjust dynamically based on deal parameters. ROI calculators demonstrate value automatically. Sales reps only enter the conversation for complex negotiations and relationship building, the high-value activities that actually require human judgment.
             </p>
 
             <h3 className="text-2xl font-bold text-white mt-8 mb-4">
@@ -382,7 +382,7 @@ export default function ScalingStrategy() {
 
               <div className="bg-slate-900/50 border-l-4 border-blue-500 px-6 pt-4 pb-5">
                 <h4 className="text-white font-semibold mb-3 text-lg">Months 13-18: Acquire or Build Product #3</h4>
-                <p className="text-slate-300 mb-3 leading-relaxed">By now you understand your customer deeply. You know which adjacent pain points they have. Product three fills portfolio gaps, expands your total addressable market, and creates more cross-sell opportunities. This is where you start seeing network effects across your portfolio—each product makes the others more valuable.</p>
+                <p className="text-slate-300 mb-3 leading-relaxed">By now you understand your customer deeply. You know which adjacent pain points they have. Product three fills portfolio gaps, expands your total addressable market, and creates more cross-sell opportunities. This is where you start seeing network effects across your portfolio, each product makes the others more valuable.</p>
                 <div className="flex items-start gap-2 mt-4">
                   <span className="text-blue-400 font-bold">→</span>
                   <span className="font-semibold text-white">Portfolio revenue target: $100K-400K MRR</span>
@@ -422,7 +422,7 @@ export default function ScalingStrategy() {
                   <span className="text-red-400 font-bold text-xl">2</span>
                   <div>
                     <div className="text-white font-semibold mb-2">Not building shared infrastructure from day one</div>
-                    <div className="text-slate-400 text-sm">I watched a team put each product on a different tech stack. Authentication, billing, data storage—all different for each product. The integration nightmare nearly killed the company. Now I architect for portfolio from the beginning. Shared infrastructure isn't optional.</div>
+                    <div className="text-slate-400 text-sm">I watched a team put each product on a different tech stack. Authentication, billing, data storage, all different for each product. The integration nightmare nearly killed the company. Now I architect for portfolio from the beginning. Shared infrastructure isn't optional.</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -447,7 +447,7 @@ export default function ScalingStrategy() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We're in the middle of a fundamental shift in how businesses get built and scaled. The traditional approach—focus on one product, scale it through people and process—made sense when operations required armies of humans. But that world is ending faster than most founders realize.
+              We're in the middle of a fundamental shift in how businesses get built and scaled. The traditional approach, focus on one product, scale it through people and process, made sense when operations required armies of humans. But that world is ending faster than most founders realize.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -455,7 +455,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Meanwhile, AI-first portfolio companies are operating in a completely different paradigm. They have diverse revenue streams that insulate them from market volatility. They achieve 90%+ operational efficiency through automation, so adding products doesn't proportionally increase costs. They benefit from compounding advantages where each product amplifies the others. And critically, they maintain strategic optionality—they can exit individual products, acquire complementary businesses, or scale the entire portfolio depending on market conditions.
+              Meanwhile, AI-first portfolio companies are operating in a completely different paradigm. They have diverse revenue streams that insulate them from market volatility. They achieve 90%+ operational efficiency through automation, so adding products doesn't proportionally increase costs. They benefit from compounding advantages where each product amplifies the others. And critically, they maintain strategic optionality, they can exit individual products, acquire complementary businesses, or scale the entire portfolio depending on market conditions.
             </p>
 
             {/* Traditional vs AI-First Comparison */}

@@ -54,7 +54,7 @@ export default function DocsAsSystemOfRecord() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Most teams don't have a documentation problem. They have a memory problem. When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here's how I've built documentation systems that compound rather than rot—and why conventions matter more than tools.
+              Most teams don't have a documentation problem. They have a memory problem. When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here's how I've built documentation systems that compound rather than rot, and why conventions matter more than tools.
             </p>
           </div>
 
@@ -93,19 +93,19 @@ export default function DocsAsSystemOfRecord() {
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>Workflow artifacts</strong> — The outputs of your processes (research docs, design specs, test results)</span>
+                  <span><strong>Workflow artifacts</strong>, The outputs of your processes (research docs, design specs, test results)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>Decisions</strong> — What was decided and why (proceed, pivot, or kill)</span>
+                  <span><strong>Decisions</strong>, What was decided and why (proceed, pivot, or kill)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>Checklists and playbooks</strong> — How recurring work gets done</span>
+                  <span><strong>Checklists and playbooks</strong>, How recurring work gets done</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>Links</strong> — Connections between related documents that create a knowledge graph</span>
+                  <span><strong>Links</strong>, Connections between related documents that create a knowledge graph</span>
                 </li>
               </ul>
             </div>
@@ -115,7 +115,7 @@ export default function DocsAsSystemOfRecord() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've experimented with many approaches to building systems of record—databases, wikis, specialized tools, custom applications. Documents keep winning for a simple reason: they succeed because they're human-readable, portable, easy to link, and easy to diff and review.
+              I've experimented with many approaches to building systems of record, databases, wikis, specialized tools, custom applications. Documents keep winning for a simple reason: they succeed because they're human-readable, portable, easy to link, and easy to diff and review.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -258,7 +258,7 @@ export default function DocsAsSystemOfRecord() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              For any new initiative, I create a set of linked documents that together capture the full lifecycle. This isn't overhead—it's the minimum artifact set that makes the work traceable and reusable.
+              For any new initiative, I create a set of linked documents that together capture the full lifecycle. This isn't overhead, it's the minimum artifact set that makes the work traceable and reusable.
             </p>
 
             {/* Document Checklist */}
@@ -312,7 +312,7 @@ export default function DocsAsSystemOfRecord() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've found the best way to maintain discipline is to make docs part of the definition of done. An outcome isn't complete until the relevant documents exist and are linked. A decision isn't finalized until it's captured in a DECISION doc. This sounds bureaucratic but it's actually liberating—you know exactly what "done" means.
+              I've found the best way to maintain discipline is to make docs part of the definition of done. An outcome isn't complete until the relevant documents exist and are linked. A decision isn't finalized until it's captured in a DECISION doc. This sounds bureaucratic but it's actually liberating, you know exactly what "done" means.
             </p>
 
             {/* Takeaways Card */}

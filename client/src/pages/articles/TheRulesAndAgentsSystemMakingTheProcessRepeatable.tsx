@@ -102,9 +102,9 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>I've been building products for years, but I was treating each new idea like a completely fresh problem. No process. No checklist. Just "gut feel" and hope that this time would be different.</p>
 
-        <p>Then it hit me—what if I approached product creation the same way I approach code? With systems, rules, and repeatable processes that actually work?</p>
+        <p>Then it hit me, what if I approached product creation the same way I approach code? With systems, rules, and repeatable processes that actually work?</p>
 
-        <p>That lightbulb moment led me to build something I'm calling the "Rules and Agents System"—a framework that's transformed how I validate, design, and build products. And honestly? It's saved me from more bad decisions than I care to admit.</p>
+        <p>That lightbulb moment led me to build something I'm calling the "Rules and Agents System", a framework that's transformed how I validate, design, and build products. And honestly? It's saved me from more bad decisions than I care to admit.</p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium text-lg mb-0">
@@ -116,7 +116,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>The system has three core components, and they work together like a well-orchestrated team:</p>
 
-        <p><strong>300+ Rules</strong> that codify everything I've learned about product creation. Not fluffy guidelines—actual, enforceable rules like "No feature enters engineering without 3+ lo-fi validation tests."</p>
+        <p><strong>300+ Rules</strong> that codify everything I've learned about product creation. Not fluffy guidelines, actual, enforceable rules like "No feature enters engineering without 3+ lo-fi validation tests."</p>
 
         <p><strong>12 Specialized AI Agents</strong> that handle different phases of the process. Think of them as your most competent colleagues, each with deep expertise in their domain.</p>
 
@@ -140,7 +140,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <h2 className="text-2xl font-bold text-white mb-4">The Rules System: My Product Creation Constitution</h2>
 
-        <p>Let me show you what I mean by "rules." These aren't vague principles like "validate early"—they're specific, actionable guidelines that my system can actually enforce.</p>
+        <p>Let me show you what I mean by "rules." These aren't vague principles like "validate early", they're specific, actionable guidelines that my system can actually enforce.</p>
 
         <p>For example, here's one from my Validation Playbook:</p>
 
@@ -153,7 +153,7 @@ export default function RulesAndAgentsSystemArticle() {
           </code>
         </div>
 
-        <p>See how specific that is? It's not "validate your idea"—it's exactly what validation looks like, with numbers and criteria.</p>
+        <p>See how specific that is? It's not "validate your idea", it's exactly what validation looks like, with numbers and criteria.</p>
 
         <p>My rules cover six major phases:</p>
 
@@ -162,11 +162,11 @@ export default function RulesAndAgentsSystemArticle() {
           <li><strong>Validation</strong>: Proving people actually want this thing</li>
           <li><strong>Moat & Retention</strong>: Designing defensibility (because growth without retention is expensive)</li>
           <li><strong>Monetization</strong>: Mapping how money flows through the system</li>
-          <li><strong>Design</strong>: User flows, interactions, accessibility—the whole experience</li>
+          <li><strong>Design</strong>: User flows, interactions, accessibility, the whole experience</li>
           <li><strong>Engineering</strong>: Architecture decisions that won't make me cry later</li>
         </ul>
 
-        <p>Each phase has its own "playbook"—a collection of interconnected rules that define inputs, outputs, and quality standards. It's like having a really pedantic but helpful colleague who never lets you skip steps.</p>
+        <p>Each phase has its own "playbook", a collection of interconnected rules that define inputs, outputs, and quality standards. It's like having a really pedantic but helpful colleague who never lets you skip steps.</p>
 
         <h2 className="text-2xl font-bold text-white mb-4">The Agent System: Your AI Dream Team</h2>
 
@@ -174,11 +174,11 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Let me introduce you to a few of my favorites:</p>
 
-        <p><strong>The Insight & Narrative Strategist</strong> takes my half-baked ideas and turns them into compelling "unfair insights"—those counterintuitive truths that make people go "wait, that's actually genius." This agent saved me from building yet another generic productivity app by uncovering that remote workers don't need more features—they need apps that adapt to their psychological state.</p>
+        <p><strong>The Insight & Narrative Strategist</strong> takes my half-baked ideas and turns them into compelling "unfair insights", those counterintuitive truths that make people go "wait, that's actually genius." This agent saved me from building yet another generic productivity app by uncovering that remote workers don't need more features, they need apps that adapt to their psychological state.</p>
 
-        <p><strong>The Product Strategist</strong> is basically the PM I wish I'd had on every project. It creates PRDs that actually matter—not feature lists, but value stories with "why now" analysis and validation plans. Plus, it runs demand-validation tests before I get emotionally attached to ideas.</p>
+        <p><strong>The Product Strategist</strong> is basically the PM I wish I'd had on every project. It creates PRDs that actually matter, not feature lists, but value stories with "why now" analysis and validation plans. Plus, it runs demand-validation tests before I get emotionally attached to ideas.</p>
 
-        <p><strong>The Moat & MRR Strategist</strong> is my secret weapon against commodity products. It designs defensibility strategies—network effects, data moats, switching costs—that keep competitors at bay. Because building something people want is hard enough; building something they can't easily replace is the real challenge.</p>
+        <p><strong>The Moat & MRR Strategist</strong> is my secret weapon against commodity products. It designs defensibility strategies, network effects, data moats, switching costs, that keep competitors at bay. Because building something people want is hard enough; building something they can't easily replace is the real challenge.</p>
 
         <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 mb-0">
@@ -186,7 +186,7 @@ export default function RulesAndAgentsSystemArticle() {
           </p>
         </div>
 
-        <p><strong>The Retention Architect</strong> maps the complete journey from signup to renewal—habit loops, notification triggers, collaboration hooks. It's the agent that asks uncomfortable questions like "Why would someone still use this in six months?"</p>
+        <p><strong>The Retention Architect</strong> maps the complete journey from signup to renewal, habit loops, notification triggers, collaboration hooks. It's the agent that asks uncomfortable questions like "Why would someone still use this in six months?"</p>
 
         <p>These agents don't work in isolation. The output from one becomes input for the next, creating a seamless handoff that prevents things from falling through the cracks.</p>
 
@@ -205,7 +205,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>All four gates have to be green before anything moves forward. No exceptions. No "we'll figure it out later."</p>
 
-        <p>The beautiful thing about gates? They force kill-or-pivot decisions early, when it's cheap to change course. I've killed more bad ideas in the last month than I used to kill in a year—and that's a good thing.</p>
+        <p>The beautiful thing about gates? They force kill-or-pivot decisions early, when it's cheap to change course. I've killed more bad ideas in the last month than I used to kill in a year, and that's a good thing.</p>
 
         <div className="bg-slate-900/50 p-6 rounded-lg my-8">
           <h3 className="text-lg font-semibold mb-3"> Before vs. After Quality Gates</h3>
@@ -239,7 +239,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>I had this idea for a productivity app. Revolutionary concept, right? 🙄</p>
 
-        <p>My Insight & Narrative Strategist dug deeper and uncovered something interesting: Remote workers don't struggle with productivity because they lack discipline—they struggle because existing apps are too rigid for the psychological chaos of working from home.</p>
+        <p>My Insight & Narrative Strategist dug deeper and uncovered something interesting: Remote workers don't struggle with productivity because they lack discipline, they struggle because existing apps are too rigid for the psychological chaos of working from home.</p>
 
         <p>The unfair insight? "Productivity apps should adapt to your mental state, not force you to adapt to their system."</p>
 
@@ -249,7 +249,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>For a SaaS marketplace I was designing, the Moat & MRR Strategist identified three defensibility layers:</p>
 
-        <p><strong>Network Effects</strong>: Buyers attract sellers, sellers attract buyers—classic but effective.</p>
+        <p><strong>Network Effects</strong>: Buyers attract sellers, sellers attract buyers, classic but effective.</p>
 
         <p><strong>Data Moat</strong>: Rich behavioral data lets us personalize matching algorithms that competitors can't replicate without similar data.</p>
 
@@ -267,7 +267,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium text-lg mb-0">
-            "I've killed more bad ideas in the last month than I used to kill in a year—and that's a good thing."
+            "I've killed more bad ideas in the last month than I used to kill in a year, and that's a good thing."
           </p>
         </div>
 
@@ -283,11 +283,11 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>Assign Your Agents</strong>: Who (human or AI) is responsible for each phase? Even if it's just you wearing different hats, be explicit about the role each "agent" plays.</p>
 
-        <p><strong>Set Your Gates</strong>: What must be true before moving to the next phase? Be ruthless here—fuzzy gates defeat the purpose.</p>
+        <p><strong>Set Your Gates</strong>: What must be true before moving to the next phase? Be ruthless here, fuzzy gates defeat the purpose.</p>
 
         <h3 className="text-xl font-semibold text-white mb-3">Make It Enforceable</h3>
 
-        <p>The magic isn't in having rules—it's in actually following them. Start with simple enforcement mechanisms:</p>
+        <p>The magic isn't in having rules, it's in actually following them. Start with simple enforcement mechanisms:</p>
 
         <ul>
           <li>Checklists for each phase</li>
@@ -308,7 +308,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Look, I'll be honest with you. Part of me resisted this level of systemization for years. It felt constraining, bureaucratic, corporate.</p>
 
-        <p>But here's what I learned: Good process doesn't limit creativity—it creates space for it. When I'm not constantly making the same validation mistakes, I can focus on the truly creative challenges.</p>
+        <p>But here's what I learned: Good process doesn't limit creativity, it creates space for it. When I'm not constantly making the same validation mistakes, I can focus on the truly creative challenges.</p>
 
         <p>Plus, having a systematic approach means my wins are repeatable, not just lucky accidents.</p>
 
@@ -332,7 +332,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <h2 className="text-2xl font-bold text-white mb-4">The Bottom Line</h2>
 
-        <p>Here's what I wish someone had told me five years ago: Product creation isn't art—it's craft. And like any craft, it gets better with systematic practice and accumulated wisdom.</p>
+        <p>Here's what I wish someone had told me five years ago: Product creation isn't art, it's craft. And like any craft, it gets better with systematic practice and accumulated wisdom.</p>
 
         <p>The Rules and Agents system isn't about removing creativity or intuition. It's about creating structure so your creativity can focus on problems that actually matter.</p>
 

@@ -110,7 +110,7 @@ export default function SecurityBugGateArticle() {
         <p>
           Two days later, during what was supposed to be a routine security audit, we discovered something that made my 
           stomach drop: our AI-generated RLS policy had a subtle but critical flaw. Users could read data from <em>any</em> 
-          organization they'd ever been a member of—including ones they'd been removed from.
+          organization they'd ever been a member of, including ones they'd been removed from.
         </p>
 
         <p>
@@ -122,7 +122,7 @@ export default function SecurityBugGateArticle() {
           <p className="text-red-200 font-medium mb-2"></p>
           <p className="text-red-200">
             "AI is optimized for helpfulness and plausibility, not correctness or security. It'll generate code that 
-            seems right, compiles, and passes surface-level tests—but fails confidently in ways that are hard to spot."
+            seems right, compiles, and passes surface-level tests, but fails confidently in ways that are hard to spot."
           </p>
         </div>
 
@@ -154,7 +154,7 @@ export default function SecurityBugGateArticle() {
 
         <p>
           I learned this after getting burned, but you don't have to. AI tools like Claude, ChatGPT, Copilot, and Cursor are 
-          incredible productivity multipliers—but they're also confidently wrong in ways that'll keep you up at 3 AM 
+          incredible productivity multipliers, but they're also confidently wrong in ways that'll keep you up at 3 AM 
           debugging production issues.
         </p>
 
@@ -171,7 +171,7 @@ export default function SecurityBugGateArticle() {
         </ul>
 
         <p>
-          These aren't AI limitations—humans miss them too. But AI fails <em>confidently</em>, without the "wait, does this 
+          These aren't AI limitations, humans miss them too. But AI fails <em>confidently</em>, without the "wait, does this 
           feel right?" gut check that experienced developers have developed over years of being burned by production incidents.
         </p>
 
@@ -183,7 +183,7 @@ export default function SecurityBugGateArticle() {
 
         <p>
           For rapid iteration during development, I built a lightweight 5-minute review checklist that runs <em>before</em> 
-          code gets committed to a feature branch. This isn't about perfection—it's about catching the obvious stuff that'll 
+          code gets committed to a feature branch. This isn't about perfection, it's about catching the obvious stuff that'll 
           bite you later.
         </p>
 
@@ -307,7 +307,7 @@ export default function SecurityBugGateArticle() {
 
         <p>
           Before any feature ships to production, it goes through a comprehensive 30-60 minute security and logic audit. 
-          This is where we catch the subtle stuff—the race conditions, the edge cases, the "wait, what if..." scenarios 
+          This is where we catch the subtle stuff, the race conditions, the edge cases, the "wait, what if..." scenarios 
           that keep experienced developers awake at night.
         </p>
 
@@ -365,7 +365,7 @@ export default function SecurityBugGateArticle() {
 
         <p>
           The authorization gap alone could have let any team member cancel their organization's subscription. The RLS leak 
-          would have exposed sensitive billing information to users who shouldn't see it. These aren't theoretical issues—they're 
+          would have exposed sensitive billing information to users who shouldn't see it. These aren't theoretical issues, they're 
           the kind of bugs that end up on the front page of Hacker News for all the wrong reasons.
         </p>
 
@@ -423,7 +423,7 @@ export default function SecurityBugGateArticle() {
 
         <p>
           What surprised me: the everyday prompt catches way more issues than the full audit. That surprised me initially, but it 
-          makes sense—most AI-generated code fails on the basics. Once you fix those, the complex stuff is usually solid.
+          makes sense, most AI-generated code fails on the basics. Once you fix those, the complex stuff is usually solid.
         </p>
 
         <h3>4. Automate What You Can</h3>
@@ -492,7 +492,7 @@ export default function SecurityBugGateArticle() {
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-slate-200 font-medium">
             "AI can ship features fast, but it can also ship vulnerabilities. The Security & Bug Gate 
-            is our quality firewall—and the reason I sleep better at night."
+            is our quality firewall, and the reason I sleep better at night."
           </p>
         </div>
 

@@ -10,14 +10,14 @@ export default function DesignSystemsFail() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Why Most Design Systems Fail (And How to Fix Them) | Ryan Winzenburg</title>
-        <meta name="description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems—and three AI-powered solutions." />
+        <meta name="description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems, and three AI-powered solutions." />
         <meta property="og:title" content="Why Most Design Systems Fail (And How to Fix Them)" />
-        <meta property="og:description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems—and three AI-powered solutions." />
+        <meta property="og:description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems, and three AI-powered solutions." />
         <meta property="og:url" content="https://winzenburg.com/articles/design-systems-fail" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/design-systems-fail-hero.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-systems-fail" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here's the data on what kills design systems—and three AI-powered solutions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here's the data on what kills design systems, and three AI-powered solutions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.png"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -54,7 +54,7 @@ export default function DesignSystemsFail() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              I've watched this pattern unfold more times than I care to count. A company invests twelve to eighteen months and nearly a million dollars building a design system. The launch happens with presentations and internal announcements. Six months later, when you check the analytics, adoption sits stubbornly below 20%. The system has become shelfware—a beautiful, well-documented artifact that collects digital dust while teams continue building interfaces the old way.
+              I've watched this pattern unfold more times than I care to count. A company invests twelve to eighteen months and nearly a million dollars building a design system. The launch happens with presentations and internal announcements. Six months later, when you check the analytics, adoption sits stubbornly below 20%. The system has become shelfware, a beautiful, well-documented artifact that collects digital dust while teams continue building interfaces the old way.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function DesignSystemsFail() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's how it typically unfolds. The design system launches with fanfare—complete documentation, beautifully crafted components, a clear governance structure. Everything looks perfect on paper. The design systems team presents to the organization. Leadership is impressed. Everyone nods in agreement about the importance of consistency.
+              Here's how it typically unfolds. The design system launches with fanfare, complete documentation, beautifully crafted components, a clear governance structure. Everything looks perfect on paper. The design systems team presents to the organization. Leadership is impressed. Everyone nods in agreement about the importance of consistency.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -186,7 +186,7 @@ export default function DesignSystemsFail() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              AI changes this fundamentally. Instead of expecting designers to navigate complex documentation structures, you let them ask questions in plain English. The AI understands their intent, searches across all documentation and component examples, and returns exactly what they need—the relevant components, usage examples, implementation code, and accessibility guidelines. It's the difference between forcing someone to learn your filing system versus just giving them what they asked for.
+              AI changes this fundamentally. Instead of expecting designers to navigate complex documentation structures, you let them ask questions in plain English. The AI understands their intent, searches across all documentation and component examples, and returns exactly what they need, the relevant components, usage examples, implementation code, and accessibility guidelines. It's the difference between forcing someone to learn your filing system versus just giving them what they asked for.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -232,7 +232,7 @@ export default function DesignSystemsFail() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When design tokens need to change—and they always do—AI can update all affected components automatically. It generates migration guides for teams, flags breaking changes that need human review, and creates pull requests ready for approval. Updates that traditionally took weeks to coordinate and implement now happen in hours.
+              When design tokens need to change, and they always do, AI can update all affected components automatically. It generates migration guides for teams, flags breaking changes that need human review, and creates pull requests ready for approval. Updates that traditionally took weeks to coordinate and implement now happen in hours.
             </p>
 
             {/* Automation Results */}
@@ -293,7 +293,7 @@ export default function DesignSystemsFail() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              You're not guessing what teams need—you're responding to demonstrated demand.
+              You're not guessing what teams need, you're responding to demonstrated demand.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -355,7 +355,7 @@ export default function DesignSystemsFail() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              AI doesn't replace human judgment in design systems. It amplifies it. Humans still set strategic direction, define quality standards, handle exceptions that require context, and manage stakeholder relationships. But AI handles the mechanical work—answering questions, validating consistency, tracking usage patterns, and automating routine decisions. This division of labor lets small teams maintain systems that serve hundreds of designers across dozens of products.
+              AI doesn't replace human judgment in design systems. It amplifies it. Humans still set strategic direction, define quality standards, handle exceptions that require context, and manage stakeholder relationships. But AI handles the mechanical work, answering questions, validating consistency, tracking usage patterns, and automating routine decisions. This division of labor lets small teams maintain systems that serve hundreds of designers across dozens of products.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -363,13 +363,13 @@ export default function DesignSystemsFail() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Building design systems for the past decade taught me what not to do, often through painful experience. The first mistake is building for eighteen months before launching. Ship the minimum viable system in four to six weeks instead. Iterate based on real usage. Perfect is not just the enemy of good—it's the enemy of adopted. By the time you've perfected everything, the world has moved on.
+              Building design systems for the past decade taught me what not to do, often through painful experience. The first mistake is building for eighteen months before launching. Ship the minimum viable system in four to six weeks instead. Iterate based on real usage. Perfect is not just the enemy of good, it's the enemy of adopted. By the time you've perfected everything, the world has moved on.
             </p>
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Perfect is not just the enemy of good—it's the enemy of adopted."
+                "Perfect is not just the enemy of good, it's the enemy of adopted."
               </p>
             </div>
 

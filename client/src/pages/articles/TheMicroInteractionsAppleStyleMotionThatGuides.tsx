@@ -58,7 +58,7 @@ export default function MicroInteractionsArticle() {
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
 
         <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-          I spent two years reverse-engineering why Apple's animations feel so good. It's not magic—it's a systematic approach to motion that guides without annoying. Here's the playbook.
+          I spent two years reverse-engineering why Apple's animations feel so good. It's not magic, it's a systematic approach to motion that guides without annoying. Here's the playbook.
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 mb-8">
@@ -73,7 +73,7 @@ export default function MicroInteractionsArticle() {
         </h2>
 
         <p>
-          In 2019, I was leading design on a product used by 300+ Fortune 500 companies. Our team had spent months perfecting these elaborate button animations—360-degree rotations, bouncy scale effects, the works. We thought we were being innovative.
+          In 2019, I was leading design on a product used by 300+ Fortune 500 companies. Our team had spent months perfecting these elaborate button animations, 360-degree rotations, bouncy scale effects, the works. We thought we were being innovative.
         </p>
 
         <p>
@@ -89,7 +89,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <p>
-          That's when I started studying Apple's approach to micro-interactions. Not because they're perfect, but because somehow their animations never felt annoying. Even power users—the ones who hate unnecessary motion—never complained about iOS animations.
+          That's when I started studying Apple's approach to micro-interactions. Not because they're perfect, but because somehow their animations never felt annoying. Even power users, the ones who hate unnecessary motion, never complained about iOS animations.
         </p>
 
         <p>
@@ -150,7 +150,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          This one's a big deal. About 35% of users enable reduced-motion in their OS settings—they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this isn't just bad UX; it's an accessibility failure.
+          This one's a big deal. About 35% of users enable reduced-motion in their OS settings, they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this isn't just bad UX; it's an accessibility failure.
         </p>
 
         <p>
@@ -174,7 +174,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          Apple animations are felt, not noticed. When you hover over a macOS Dock icon, it scales from 1 to 1.15—barely perceptible, but your brain registers the feedback.
+          Apple animations are felt, not noticed. When you hover over a macOS Dock icon, it scales from 1 to 1.15, barely perceptible, but your brain registers the feedback.
         </p>
 
         <p>
@@ -211,11 +211,11 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          This one's technical but crucial. Apple uses `cubic-bezier(0.4, 0, 0.2, 1)` for most animations—roughly equivalent to `ease-in-out`.
+          This one's technical but crucial. Apple uses `cubic-bezier(0.4, 0, 0.2, 1)` for most animations, roughly equivalent to `ease-in-out`.
         </p>
 
         <p>
-          Why? It mimics natural motion. Objects in the real world don't start and stop instantly—they accelerate and decelerate. Linear easing feels robotic. Ease-in-out feels organic.
+          Why? It mimics natural motion. Objects in the real world don't start and stop instantly, they accelerate and decelerate. Linear easing feels robotic. Ease-in-out feels organic.
         </p>
 
         <div className="bg-slate-800/50 p-4 rounded-lg font-mono text-sm my-6">
@@ -251,7 +251,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <p>
-          It's not just about compliance—it's about building for everyone. When we implemented proper reduced-motion fallbacks, our accessibility score jumped to 100% WCAG 2.2 AA compliance.
+          It's not just about compliance, it's about building for everyone. When we implemented proper reduced-motion fallbacks, our accessibility score jumped to 100% WCAG 2.2 AA compliance.
         </p>
 
         <h2 className="text-2xl font-bold text-white mt-12 mb-6">
@@ -301,7 +301,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          Nothing feels better than instant positive feedback when you complete a form field correctly. We learned this from iOS—that little checkmark appearing makes users feel confident about their progress.
+          Nothing feels better than instant positive feedback when you complete a form field correctly. We learned this from iOS, that little checkmark appearing makes users feel confident about their progress.
         </p>
 
         <div className="bg-slate-800/50 p-6 rounded-lg my-6">
@@ -319,7 +319,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          Here's where I see teams mess up constantly. They make error animations too aggressive—big red flashes, violent shakes. That just stresses users out more.
+          Here's where I see teams mess up constantly. They make error animations too aggressive, big red flashes, violent shakes. That just stresses users out more.
         </p>
 
         <p>
@@ -353,7 +353,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          This one's about showing relationships. When a user clicks "Edit Profile," the modal doesn't just appear—it emerges from the button with a subtle scale animation.
+          This one's about showing relationships. When a user clicks "Edit Profile," the modal doesn't just appear, it emerges from the button with a subtle scale animation.
         </p>
 
         <p>
@@ -547,7 +547,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          If your product is edgy, rebellious, or playful, Apple's refined motion might feel too polished. Gaming apps, youth-focused products, creative tools—they might benefit from more expressive animation.
+          If your product is edgy, rebellious, or playful, Apple's refined motion might feel too polished. Gaming apps, youth-focused products, creative tools, they might benefit from more expressive animation.
         </p>
 
         <p>
@@ -601,7 +601,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <ol className="space-y-3 my-6">
-          <li><strong>Audit your current animations</strong> (be ruthless—delete anything without clear purpose)</li>
+          <li><strong>Audit your current animations</strong> (be ruthless, delete anything without clear purpose)</li>
           <li><strong>Define animation tokens</strong> (durations, easing curves, consistent values)</li>
           <li><strong>Start with button hovers</strong> (scale 1→1.02, 200ms, ease-in-out)</li>
           <li><strong>Add reduced-motion fallbacks</strong> (mandatory, not optional)</li>

@@ -54,7 +54,7 @@ export default function DebuggingAIWorkflows() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              AI failures feel random until you can reproduce them—or at least explain them. When an AI-powered step fails, teams usually fall into one of two bad patterns: no evidence ("It failed. Try again.") or too much evidence (logs full of sensitive or irrelevant data). Here's the third path that actually works.
+              AI failures feel random until you can reproduce them, or at least explain them. When an AI-powered step fails, teams usually fall into one of two bad patterns: no evidence ("It failed. Try again.") or too much evidence (logs full of sensitive or irrelevant data). Here's the third path that actually works.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function DebuggingAIWorkflows() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The alternative—logging everything—creates its own problems. Logs fill up with full prompts including user data, sensitive context, and irrelevant details. When you actually need to debug, you're searching through noise. And if those logs contain PII, you've created a compliance issue on top of your debugging problem.
+              The alternative, logging everything, creates its own problems. Logs fill up with full prompts including user data, sensitive context, and irrelevant details. When you actually need to debug, you're searching through noise. And if those logs contain PII, you've created a compliance issue on top of your debugging problem.
             </p>
 
             {/* Pull Quote */}
@@ -327,11 +327,11 @@ export default function DebuggingAIWorkflows() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Evidence collection adds storage and complexity. You're saving snapshots and artifacts that take space and require retention policies. But the alternative—debugging blind—costs far more in engineering time and user frustration.
+              Evidence collection adds storage and complexity. You're saving snapshots and artifacts that take space and require retention policies. But the alternative, debugging blind, costs far more in engineering time and user frustration.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Finding the right level of evidence is a design challenge. Too little is useless—you can't debug without information. Too much is risky—you're storing sensitive data and creating noise. The snapshot approach with pointers to artifacts is a good balance, but you'll need to tune it for your specific context.
+              Finding the right level of evidence is a design challenge. Too little is useless, you can't debug without information. Too much is risky, you're storing sensitive data and creating noise. The snapshot approach with pointers to artifacts is a good balance, but you'll need to tune it for your specific context.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

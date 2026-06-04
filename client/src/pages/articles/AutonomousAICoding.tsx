@@ -62,15 +62,15 @@ export default function AutonomousAICoding() {
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've been using AI coding assistants since GPT-3. Cursor, GitHub Copilot, V0—they all accelerated my workflow. But they still required me to be present. I'd write a prompt, review the code, fix issues, iterate. Faster than manual coding, sure. But still serial execution. Still bottlenecked by my attention.
+              I've been using AI coding assistants since GPT-3. Cursor, GitHub Copilot, V0, they all accelerated my workflow. But they still required me to be present. I'd write a prompt, review the code, fix issues, iterate. Faster than manual coding, sure. But still serial execution. Still bottlenecked by my attention.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Then I tried autonomous mode. Not the interactive "help me write this function" mode. Autonomous as in "here's a complete feature spec—build it while I sleep and let me know when it's done."
+              Then I tried autonomous mode. Not the interactive "help me write this function" mode. Autonomous as in "here's a complete feature spec, build it while I sleep and let me know when it's done."
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The first time I tried it, I was skeptical. Really skeptical. I'd spent years believing that good code requires constant human judgment. That AI might help with boilerplate, but complex features need a human in the loop making decisions. I was wrong. Not completely wrong—there's nuance here—but fundamentally wrong about what's now possible.
+              The first time I tried it, I was skeptical. Really skeptical. I'd spent years believing that good code requires constant human judgment. That AI might help with boilerplate, but complex features need a human in the loop making decisions. I was wrong. Not completely wrong, there's nuance here, but fundamentally wrong about what's now possible.
             </p>
 
             {/* Pull Quote */}
@@ -114,7 +114,7 @@ export default function AutonomousAICoding() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The math is brutal. I could validate five product ideas in a week, but I could only implement one. The implementation bottleneck wasn't lack of coding speed—it was the serial nature of human attention. I can't code on three features simultaneously. But autonomous agents can.
+              The math is brutal. I could validate five product ideas in a week, but I could only implement one. The implementation bottleneck wasn't lack of coding speed, it was the serial nature of human attention. I can't code on three features simultaneously. But autonomous agents can.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -302,7 +302,7 @@ export default function AutonomousAICoding() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I fixed these manually in 20 minutes. Shipped to production at 7 AM Tuesday—less than 9 hours after starting the build, with only 65 minutes of my active time.
+              I fixed these manually in 20 minutes. Shipped to production at 7 AM Tuesday, less than 9 hours after starting the build, with only 65 minutes of my active time.
             </p>
 
             {/* ROI Comparison */}
@@ -533,7 +533,7 @@ export default function AutonomousAICoding() {
                   <span className="text-cyan-400 font-bold text-xl">4</span>
                   <div>
                     <div className="text-white font-semibold mb-2">Expect to polish edge cases</div>
-                    <div className="text-slate-400 text-sm">Autonomous builds nail the happy path. Loading states, error messages, empty states—budget 20-60 minutes to add these yourself.</div>
+                    <div className="text-slate-400 text-sm">Autonomous builds nail the happy path. Loading states, error messages, empty states, budget 20-60 minutes to add these yourself.</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -570,7 +570,7 @@ export default function AutonomousAICoding() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Start small. Pick a low-risk feature you'd normally spend 6-8 hours coding. Something with clear requirements and existing patterns to follow. Write a detailed PRD—spend a full hour on this. Then run your first autonomous build.
+              Start small. Pick a low-risk feature you'd normally spend 6-8 hours coding. Something with clear requirements and existing patterns to follow. Write a detailed PRD, spend a full hour on this. Then run your first autonomous build.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -589,7 +589,7 @@ export default function AutonomousAICoding() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Autonomous AI coding isn't replacing developers. It's removing the constraint that you can only work on one feature at a time. It's enabling a new development model where your attention focuses on strategy, validation, and polish—while agents handle the mechanical work of implementation.
+              Autonomous AI coding isn't replacing developers. It's removing the constraint that you can only work on one feature at a time. It's enabling a new development model where your attention focuses on strategy, validation, and polish, while agents handle the mechanical work of implementation.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

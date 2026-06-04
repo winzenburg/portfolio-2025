@@ -110,7 +110,7 @@ export default function AudienceFirstGoToMarket() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The content strategy that works on Twitter is "building in public"—sharing your product development journey transparently and consistently. This isn't marketing in the traditional sense. It's storytelling that happens to build trust, demonstrate expertise, and attract exactly the people who will benefit most from what you're creating.
+              The content strategy that works on Twitter is "building in public", sharing your product development journey transparently and consistently. This isn't marketing in the traditional sense. It's storytelling that happens to build trust, demonstrate expertise, and attract exactly the people who will benefit most from what you're creating.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -140,7 +140,7 @@ export default function AudienceFirstGoToMarket() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Consistency matters more than perfection. I recommend a simple weekly content schedule that's sustainable over months, not just the first energetic few weeks. On Mondays, share technical deep-dives or exploration of the tools you're using. Wednesdays are for business metrics—how your operational improvements are impacting real numbers. Fridays are development progress updates, including the obstacles you're hitting and how you're working through them.
+              Consistency matters more than perfection. I recommend a simple weekly content schedule that's sustainable over months, not just the first energetic few weeks. On Mondays, share technical deep-dives or exploration of the tools you're using. Wednesdays are for business metrics, how your operational improvements are impacting real numbers. Fridays are development progress updates, including the obstacles you're hitting and how you're working through them.
             </p>
 
             {/* Content Schedule */}
@@ -170,11 +170,11 @@ export default function AudienceFirstGoToMarket() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Organic content builds your foundation, but there's a ceiling to how fast you can grow through your own audience alone. Eventually you need to reach beyond the people who already follow you. This is where creator partnerships become transformative—they let you tap into established audiences that align perfectly with your target market.
+              Organic content builds your foundation, but there's a ceiling to how fast you can grow through your own audience alone. Eventually you need to reach beyond the people who already follow you. This is where creator partnerships become transformative, they let you tap into established audiences that align perfectly with your target market.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The implementation follows a clear progression. Start by identifying creators in adjacent spaces—people whose audiences overlap significantly with your target market but who aren't direct competitors. You're looking for creators already covering topics related to what you're building, because that natural alignment makes promotion feel authentic rather than forced.
+              The implementation follows a clear progression. Start by identifying creators in adjacent spaces, people whose audiences overlap significantly with your target market but who aren't direct competitors. You're looking for creators already covering topics related to what you're building, because that natural alignment makes promotion feel authentic rather than forced.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -222,7 +222,7 @@ export default function AudienceFirstGoToMarket() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The results can be dramatic. One well-aligned creator partnership can drive more awareness than months of organic posting. But success depends entirely on selection criteria. You need aligned audience demographics—their followers should match your target market precisely. You need authentic voice—creators who produce genuine content, not forced promotional posts. You need consistent engagement—active, responsive communities rather than passive follower counts. And you need relevant expertise—credibility in your specific niche that makes their recommendation carry weight.
+              The results can be dramatic. One well-aligned creator partnership can drive more awareness than months of organic posting. But success depends entirely on selection criteria. You need aligned audience demographics, their followers should match your target market precisely. You need authentic voice, creators who produce genuine content, not forced promotional posts. You need consistent engagement, active, responsive communities rather than passive follower counts. And you need relevant expertise, credibility in your specific niche that makes their recommendation carry weight.
             </p>
 
             {/* Selection Criteria Grid */}
@@ -258,7 +258,7 @@ export default function AudienceFirstGoToMarket() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Phase one is all about learning. You're running click-focused campaigns targeting highly relevant keywords with phrase matching. The goal isn't to acquire customers profitably yet—it's to implement conversion tracking, gather audience insights, and understand which search terms actually convert. You're paying for education about your market and what messaging resonates.
+              Phase one is all about learning. You're running click-focused campaigns targeting highly relevant keywords with phrase matching. The goal isn't to acquire customers profitably yet, it's to implement conversion tracking, gather audience insights, and understand which search terms actually convert. You're paying for education about your market and what messaging resonates.
             </p>
 
             {/* Phase 1 List */}
@@ -310,11 +310,11 @@ export default function AudienceFirstGoToMarket() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Social media paid acquisition has transformed with AI-generated video. Tools like HeyGen let you create authentic-feeling video content at scale, removing the production bottleneck that used to make video prohibitively expensive to test. The messaging should address specific pain points you discovered during your validation phase—you're not guessing what resonates, you're reinforcing what you already know works.
+              Social media paid acquisition has transformed with AI-generated video. Tools like HeyGen let you create authentic-feeling video content at scale, removing the production bottleneck that used to make video prohibitively expensive to test. The messaging should address specific pain points you discovered during your validation phase, you're not guessing what resonates, you're reinforcing what you already know works.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Platform selection is straightforward: advertise where your target audience actually spends time. For B2B, that's typically LinkedIn. For consumer products, it depends on demographic and behavior patterns. Don't spread budget across multiple platforms initially—pick the one where your audience is most concentrated and master it first, just like with organic content.
+              Platform selection is straightforward: advertise where your target audience actually spends time. For B2B, that's typically LinkedIn. For consumer products, it depends on demographic and behavior patterns. Don't spread budget across multiple platforms initially, pick the one where your audience is most concentrated and master it first, just like with organic content.
             </p>
 
             {/* Social Strategy Cards */}
@@ -338,7 +338,7 @@ export default function AudienceFirstGoToMarket() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The real power emerges when you layer these channels strategically rather than running them in isolation. Organic content builds your foundation and credibility—it's the consistent drumbeat that establishes you as someone worth following. Creator partnerships expand your reach to aligned audiences you couldn't access on your own, leveraging trust they've built over years. Paid acquisition accelerates growth in the specific areas where your organic content has already proven traction.
+              The real power emerges when you layer these channels strategically rather than running them in isolation. Organic content builds your foundation and credibility, it's the consistent drumbeat that establishes you as someone worth following. Creator partnerships expand your reach to aligned audiences you couldn't access on your own, leveraging trust they've built over years. Paid acquisition accelerates growth in the specific areas where your organic content has already proven traction.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -385,7 +385,7 @@ export default function AudienceFirstGoToMarket() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Weeks nine through twelve are for testing paid acquisition. Start small with learning-focused campaigns. Implement tracking. Gather data about what keywords, audiences, and messaging actually convert. You're not optimizing for ROI yet—you're building the foundation of knowledge that will let you scale profitably later.
+              Weeks nine through twelve are for testing paid acquisition. Start small with learning-focused campaigns. Implement tracking. Gather data about what keywords, audiences, and messaging actually convert. You're not optimizing for ROI yet, you're building the foundation of knowledge that will let you scale profitably later.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -413,7 +413,7 @@ export default function AudienceFirstGoToMarket() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The metrics that actually matter are different from what most teams track. Follower count is vanity—engagement rate tells you if people care. You need to measure actual interaction, not just passive audience size. Click-through to your product reveals whether curiosity translates to genuine interest. Conversion to active users shows whether your positioning matches reality. And cohort retention indicates whether you're attracting the right people who stay engaged over time, not just drive-by visitors who never return.
+              The metrics that actually matter are different from what most teams track. Follower count is vanity, engagement rate tells you if people care. You need to measure actual interaction, not just passive audience size. Click-through to your product reveals whether curiosity translates to genuine interest. Conversion to active users shows whether your positioning matches reality. And cohort retention indicates whether you're attracting the right people who stay engaged over time, not just drive-by visitors who never return.
             </p>
 
             {/* Metrics Grid */}

@@ -102,7 +102,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          I used to do this too. Then I realized I was making the same mistake as teams who write code before writing tests—you end up with technical debt that's expensive to fix. Except this is <strong>visual debt</strong>, and it compounds just as fast.
+          I used to do this too. Then I realized I was making the same mistake as teams who write code before writing tests, you end up with technical debt that's expensive to fix. Except this is <strong>visual debt</strong>, and it compounds just as fast.
         </p>
 
         <p>
@@ -125,7 +125,7 @@ export default function BrandFirstValidationArticle() {
         </h2>
 
         <p>
-          Let me tell you about my most expensive branding mistake. Three years ago, I built a project management tool for creative agencies. I validated the hell out of it—surveys, interviews, landing page tests. People wanted it. Badly.
+          Let me tell you about my most expensive branding mistake. Three years ago, I built a project management tool for creative agencies. I validated the hell out of it, surveys, interviews, landing page tests. People wanted it. Badly.
         </p>
 
         <p>
@@ -177,7 +177,7 @@ export default function BrandFirstValidationArticle() {
         </h3>
 
         <p>
-          But the real problem isn't just consistency—it's missed positioning opportunities. When you build first and brand later, you end up looking like everyone else by default. 
+          But the real problem isn't just consistency, it's missed positioning opportunities. When you build first and brand later, you end up looking like everyone else by default. 
         </p>
 
         <p>
@@ -224,7 +224,7 @@ export default function BrandFirstValidationArticle() {
         </h3>
 
         <p>
-          First, I identify 3-5 leading brands in my target space and systematically capture their brand elements. Not just logos—everything:
+          First, I identify 3-5 leading brands in my target space and systematically capture their brand elements. Not just logos, everything:
         </p>
 
         <ul className="list-disc pl-6 mb-6">
@@ -337,7 +337,7 @@ export default function BrandFirstValidationArticle() {
         </h3>
 
         <p>
-          Here's where I define how the product talks to users. This isn't marketing copy—it's the voice in button labels, error messages, empty states, and onboarding flows.
+          Here's where I define how the product talks to users. This isn't marketing copy, it's the voice in button labels, error messages, empty states, and onboarding flows.
         </p>
 
         <p>
@@ -395,7 +395,7 @@ export default function BrandFirstValidationArticle() {
         <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
           <div className="text-sm">
             <p><strong>Hero:</strong> "Build habits that last, without the pressure"</p>
-            <p><strong>Subcopy:</strong> "A daily check-in that adapts to you—not a streak counter that judges you"</p>
+            <p><strong>Subcopy:</strong> "A daily check-in that adapts to you, not a streak counter that judges you"</p>
             <p><strong>Visual:</strong> Soft gradient (slate blue to cream), single illustration of person journaling</p>
             <p><strong>CTA:</strong> "Try your first check-in" (not "Start your journey")</p>
           </div>
@@ -418,7 +418,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          I also assign clear ownership. For each project, someone is the "Brand Strategist"—either me, a team member with design chops, or (increasingly) an AI assistant guided by the template. Their job: complete the blueprint before anyone else can start.
+          I also assign clear ownership. For each project, someone is the "Brand Strategist", either me, a team member with design chops, or (increasingly) an AI assistant guided by the template. Their job: complete the blueprint before anyone else can start.
         </p>
 
         <p>
@@ -503,7 +503,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          <strong>The result?</strong> When I started designing the actual product, every decision had context. Button colors weren't random—they reinforced the warm, creative positioning. Error messages weren't generic—they acknowledged the emotional reality: "We know chasing payments sucks. Let us handle this one."
+          <strong>The result?</strong> When I started designing the actual product, every decision had context. Button colors weren't random, they reinforced the warm, creative positioning. Error messages weren't generic, they acknowledged the emotional reality: "We know chasing payments sucks. Let us handle this one."
         </p>
 
         <p>
@@ -517,7 +517,7 @@ export default function BrandFirstValidationArticle() {
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-slate-200 italic">
-            "Users consistently mentioned that the tool 'feels different' from competitors. That's not accident—that's intentional brand work paying off."
+            "Users consistently mentioned that the tool 'feels different' from competitors. That's not accident, that's intentional brand work paying off."
           </p>
         </div>
 
@@ -707,7 +707,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          The brand system blueprint has become one of my most valuable artifacts—right up there with the PRD and technical specs.
+          The brand system blueprint has become one of my most valuable artifacts, right up there with the PRD and technical specs.
         </p>
 
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -719,7 +719,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          When you design your brand system first, every downstream decision gets easier. Colors, typography, copy, imagery—they all ladder up to a coherent strategy instead of being random aesthetic choices.
+          When you design your brand system first, every downstream decision gets easier. Colors, typography, copy, imagery, they all ladder up to a coherent strategy instead of being random aesthetic choices.
         </p>
 
         <p>
@@ -742,7 +742,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          Your future self—and your users—will thank you for it.
+          Your future self, and your users, will thank you for it.
         </p>
 
         <p>

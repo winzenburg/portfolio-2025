@@ -69,7 +69,7 @@ export default function WritingPRDsForAI() {
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The quality of your PRD determines the quality of the autonomous build. Garbage in, garbage out—at $3 per iteration."
+                "The quality of your PRD determines the quality of the autonomous build. Garbage in, garbage out, at $3 per iteration."
               </p>
             </div>
 
@@ -486,7 +486,7 @@ One paragraph maximum.
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Writing PRDs for AI agents isn't about documentation for its own sake. It's about translating strategic intent into executable specifications. The specificity required—acceptance criteria with no ambiguity, stories sized appropriately, dependencies marked explicitly—forces you to think clearly about what you're building.
+              Writing PRDs for AI agents isn't about documentation for its own sake. It's about translating strategic intent into executable specifications. The specificity required, acceptance criteria with no ambiguity, stories sized appropriately, dependencies marked explicitly, forces you to think clearly about what you're building.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

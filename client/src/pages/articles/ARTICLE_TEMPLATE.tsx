@@ -73,7 +73,7 @@ export default function ARTICLE_TEMPLATE() {
             {/* Opening Hook - Start with a specific story or observation */}
             <p className="text-slate-300 leading-relaxed mb-6">
               I've watched this pattern unfold more times than I care to count. [Describe a specific situation
-              you've observed repeatedly]. The story is always the same—[explain the pattern in concrete terms,
+              you've observed repeatedly]. The story is always the same, [explain the pattern in concrete terms,
               with real details]. It's frustrating because [explain why this matters personally].
             </p>
 
@@ -86,7 +86,7 @@ export default function ARTICLE_TEMPLATE() {
             {/* Example: Pull Quote - Use to highlight key breakthrough insight */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "A memorable insight from your journey—the moment everything clicked or the lesson that
+                "A memorable insight from your journey, the moment everything clicked or the lesson that
                 changed your approach."
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function ARTICLE_TEMPLATE() {
             {/* Describe the problem through narrative, not bullets */}
             <p className="text-slate-300 leading-relaxed mb-6">
               Here's what most people miss about [topic]. They focus on [common focus], when the real issue is
-              [actual issue]. I've seen this play out at [context—companies, teams, projects]. The pattern is
+              [actual issue]. I've seen this play out at [context, companies, teams, projects]. The pattern is
               remarkably consistent.
             </p>
 
@@ -243,7 +243,7 @@ export default function ARTICLE_TEMPLATE() {
             <p className="text-slate-300 leading-relaxed mb-6">
               The second mistake came from [describe mistake 2]. I'd seen [other teams/companies] successfully
               [approach], so I assumed [assumption]. I was wrong because [explain why context matters]. This cost
-              me [specific cost—time, money, credibility] before I figured out [the lesson].
+              me [specific cost, time, money, credibility] before I figured out [the lesson].
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -257,7 +257,7 @@ export default function ARTICLE_TEMPLATE() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've watched this pattern play out across [industry/domain]. The teams moving fast aren't cutting corners—
+              I've watched this pattern play out across [industry/domain]. The teams moving fast aren't cutting corners, 
               they're [explain what makes them different]. Meanwhile, teams stuck in traditional workflows are
               [describe what they're experiencing]. The difference becomes impossible to ignore within [timeframe].
             </p>

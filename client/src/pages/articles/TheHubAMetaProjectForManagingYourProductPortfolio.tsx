@@ -65,7 +65,7 @@ export default function TheHubArticle() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Last month, I spent 47 minutes looking for a validation document I knew I'd created. Found it eventually—buried three folders deep in a directory I'd forgotten existed. That was my "enough is enough" moment.
+              Last month, I spent 47 minutes looking for a validation document I knew I'd created. Found it eventually, buried three folders deep in a directory I'd forgotten existed. That was my "enough is enough" moment.
             </p>
           </div>
 
@@ -80,13 +80,13 @@ export default function TheHubArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's when I decided to build what I call "The Hub"—a meta-project designed specifically to manage all my other projects. Think of it as mission control for your entire product portfolio, except instead of launching rockets, you're launching (hopefully profitable) SaaS products.
+              That's when I decided to build what I call "The Hub", a meta-project designed specifically to manage all my other projects. Think of it as mission control for your entire product portfolio, except instead of launching rockets, you're launching (hopefully profitable) SaaS products.
             </p>
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The Hub isn't just another project management tool—it's a meta-project that helps me orchestrate the lifecycle of all my other products."
+                "The Hub isn't just another project management tool, it's a meta-project that helps me orchestrate the lifecycle of all my other products."
               </p>
             </div>
 
@@ -119,7 +119,7 @@ export default function TheHubArticle() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is where I get my "CEO moment"—looking at all my projects like a proper portfolio manager instead of a scatter-brained creator. Every project gets a card showing its status, portfolio score (more on that later), and estimated MRR potential.
+              This is where I get my "CEO moment", looking at all my projects like a proper portfolio manager instead of a scatter-brained creator. Every project gets a card showing its status, portfolio score (more on that later), and estimated MRR potential.
             </p>
 
             {/* Stats Card */}
@@ -199,7 +199,7 @@ export default function TheHubArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              It indexes everything automatically. Need that pricing test from Project Aurora? Type "Aurora pricing" and boom—there it is. No more archaeological expeditions through my own file system.
+              It indexes everything automatically. Need that pricing test from Project Aurora? Type "Aurora pricing" and boom, there it is. No more archaeological expeditions through my own file system.
             </p>
 
             {/* Pull Quote */}
@@ -246,7 +246,7 @@ export default function TheHubArticle() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's where I initially went wrong: I tried to make the Hub do everything Notion and Trello already do well. Project management, task tracking, detailed notes—the whole nine yards.
+              Here's where I initially went wrong: I tried to make the Hub do everything Notion and Trello already do well. Project management, task tracking, detailed notes, the whole nine yards.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -418,7 +418,7 @@ export default function TheHubArticle() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The Hub isn't just a tool—it's a meta-project that deserves the same level of care and attention as your other product ideas."
+                "The Hub isn't just a tool, it's a meta-project that deserves the same level of care and attention as your other product ideas."
               </p>
             </div>
 
@@ -520,7 +520,7 @@ export default function TheHubArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But the biggest benefit isn't time savings—it's decision quality. I make better choices about where to invest my time because I have better information about my entire portfolio.
+              But the biggest benefit isn't time savings, it's decision quality. I make better choices about where to invest my time because I have better information about my entire portfolio.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -532,7 +532,7 @@ export default function TheHubArticle() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I'm working on predictive scoring—using historical data to estimate which projects are most likely to succeed based on early signals. Basically, trying to build my own crystal ball for product ideas.
+              I'm working on predictive scoring, using historical data to estimate which projects are most likely to succeed based on early signals. Basically, trying to build my own crystal ball for product ideas.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -540,7 +540,7 @@ export default function TheHubArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The Hub evolves as my portfolio grows. That's the beauty of building your own tools—they grow with you.
+              The Hub evolves as my portfolio grows. That's the beauty of building your own tools, they grow with you.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">

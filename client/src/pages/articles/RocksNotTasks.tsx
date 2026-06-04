@@ -9,15 +9,15 @@ export default function RocksNotTasks() {
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
-        <title>Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes | Ryan Winzenburg</title>
+        <title>Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes | Ryan Winzenburg</title>
         <meta name="description" content="The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here&#39;s how to define weekly outcomes that actually finish." />
-        <meta property="og:title" content="Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes" />
+        <meta property="og:title" content="Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes" />
         <meta property="og:description" content="The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here&#39;s how to define weekly outcomes that actually finish." />
         <meta property="og:url" content="https://winzenburg.com/articles/rocks-not-tasks" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/rocks-not-tasks-hero.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/rocks-not-tasks" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes","description":"The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-23","url":"https://winzenburg.com/articles/rocks-not-tasks","image":"https://winzenburg.com/images/articles/rocks-not-tasks-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes","description":"The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-23","url":"https://winzenburg.com/articles/rocks-not-tasks","image":"https://winzenburg.com/images/articles/rocks-not-tasks-hero.png"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -50,11 +50,11 @@ export default function RocksNotTasks() {
           {/* Article Title */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes
+              Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              The fastest way to sabotage a week is to commit to tasks instead of outcomes. "We'll work on onboarding" is a promise you can always claim you kept. That's exactly why it's dangerous. Here's how I've learned to define weekly outcomes that actually finish—and why the constraint of 1–3 is what makes it work.
+              The fastest way to sabotage a week is to commit to tasks instead of outcomes. "We'll work on onboarding" is a promise you can always claim you kept. That's exactly why it's dangerous. Here's how I've learned to define weekly outcomes that actually finish, and why the constraint of 1-3 is what makes it work.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function RocksNotTasks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The problem isn't effort or talent. It's the way commitments are framed. Outcomes force clarity: what will exist by Friday that doesn't exist today? How will we know it's done? What metric should move if it worked? Tasks avoid these questions entirely, which is why they feel safer—and why they fail.
+              The problem isn't effort or talent. It's the way commitments are framed. Outcomes force clarity: what will exist by Friday that doesn't exist today? How will we know it's done? What metric should move if it worked? Tasks avoid these questions entirely, which is why they feel safer, and why they fail.
             </p>
 
             {/* Pull Quote */}
@@ -80,7 +80,7 @@ export default function RocksNotTasks() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              A Rock is a weekly outcome—a shippable result with a definition of done. I borrowed the term from EOS (Entrepreneurial Operating System), but the concept applies regardless of what framework you use. The key is that a Rock produces something tangible. It has a finish line. You can look at it on Friday and definitively say whether it happened or not.
+              A Rock is a weekly outcome, a shippable result with a definition of done. I borrowed the term from EOS (Entrepreneurial Operating System), but the concept applies regardless of what framework you use. The key is that a Rock produces something tangible. It has a finish line. You can look at it on Friday and definitively say whether it happened or not.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -138,7 +138,7 @@ export default function RocksNotTasks() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Every Rock must include a definition of done. This isn't optional—it's what separates outcomes from activities. "Done looks like" forces you to describe the end state in concrete terms that anyone could verify.
+              Every Rock must include a definition of done. This isn't optional, it's what separates outcomes from activities. "Done looks like" forces you to describe the end state in concrete terms that anyone could verify.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -165,7 +165,7 @@ export default function RocksNotTasks() {
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              Why Only 1–3 Rocks?
+              Why Only 1-3 Rocks?
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -205,7 +205,7 @@ export default function RocksNotTasks() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Three outcomes is a forcing function. It makes you choose. And choosing—saying no to good things so you can say yes to the best things—is the discipline that separates teams that ship from teams that just stay busy.
+              Three outcomes is a forcing function. It makes you choose. And choosing, saying no to good things so you can say yes to the best things, is the discipline that separates teams that ship from teams that just stay busy.
             </p>
 
             {/* Pull Quote */}
@@ -267,7 +267,7 @@ export default function RocksNotTasks() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              These are fake Rocks: "Refactor onboarding," "Launch the new pipeline," "Rebuild the dashboard." They sound specific, but they hide multi-week projects inside one-week labels. I've seen teams commit to Rocks like these and then feel demoralized when they don't complete them—as if the problem were their execution rather than their scoping.
+              These are fake Rocks: "Refactor onboarding," "Launch the new pipeline," "Rebuild the dashboard." They sound specific, but they hide multi-week projects inside one-week labels. I've seen teams commit to Rocks like these and then feel demoralized when they don't complete them, as if the problem were their execution rather than their scoping.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -345,7 +345,7 @@ export default function RocksNotTasks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Outcome-driven weeks can surface uncomfortable truths—your plan was too big, your estimates were off, your priorities weren't clear. This is a feature, not a bug. Better to learn these things weekly than quarterly.
+              Outcome-driven weeks can surface uncomfortable truths, your plan was too big, your estimates were off, your priorities weren't clear. This is a feature, not a bug. Better to learn these things weekly than quarterly.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -362,7 +362,7 @@ export default function RocksNotTasks() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">Limit commitments to 1–3 weekly outcomes</span>
+                  <span className="text-slate-300">Limit commitments to 1-3 weekly outcomes</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>

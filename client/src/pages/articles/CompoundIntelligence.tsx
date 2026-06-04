@@ -64,12 +64,12 @@ export default function CompoundIntelligence() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This isn't theoretical. I've been running this pattern for three months across multiple projects. The results: agents make fewer mistakes over time. Build quality improves. Onboarding time for new agents drops by 60%. The codebase becomes progressively easier to work with—for both AI and humans.
+              This isn't theoretical. I've been running this pattern for three months across multiple projects. The results: agents make fewer mistakes over time. Build quality improves. Onboarding time for new agents drops by 60%. The codebase becomes progressively easier to work with, for both AI and humans.
             </p>
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Code tells you what the system does. AI context files tell you why it does it that way—and what not to do."
+                "Code tells you what the system does. AI context files tell you why it does it that way, and what not to do."
               </p>
             </div>
 
@@ -125,13 +125,13 @@ export default function CompoundIntelligence() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-400 mt-1">✗</span>
-                  <span>"Don't use absolute imports in this module—breaks the build for unclear reasons"</span>
+                  <span>"Don't use absolute imports in this module, breaks the build for unclear reasons"</span>
                 </li>
               </ul>
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This tribal knowledge exists only in human memory and scattered Slack messages. Every new developer—human or AI—rediscovers these lessons the hard way. Every agent makes the same mistakes until they're caught in code review.
+              This tribal knowledge exists only in human memory and scattered Slack messages. Every new developer, human or AI, rediscovers these lessons the hard way. Every agent makes the same mistakes until they're caught in code review.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -283,7 +283,7 @@ export default function CompoundIntelligence() {
                   <div className="text-yellow-400 font-semibold mb-2">Build 2: Basic Context Added</div>
                   <p className="text-slate-300 text-sm mb-2">Agent read context: "Validate on blur, not onChange". Implemented correctly.</p>
                   <p className="text-slate-400 text-sm mb-3">Agent discovered: Async email validation caused race conditions.</p>
-                  <p className="text-slate-300 text-sm mb-2">Agent documented: "Don't use debounced async validation—race conditions on rapid typing. Use onBlur validation only."</p>
+                  <p className="text-slate-300 text-sm mb-2">Agent documented: "Don't use debounced async validation, race conditions on rapid typing. Use onBlur validation only."</p>
                   <div className="text-yellow-400 text-xs">⚠ Good UX, but performance issue discovered</div>
                 </div>
 
@@ -311,7 +311,7 @@ export default function CompoundIntelligence() {
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Code shows what works now. Context files show what didn't work last time—so you don't try it again."
+                "Code shows what works now. Context files show what didn't work last time, so you don't try it again."
               </p>
             </div>
 
@@ -590,7 +590,7 @@ export default function CompoundIntelligence() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But codebases can be smarter than that. When agents document learnings, future agents benefit. When patterns are captured, they're replicated. When pitfalls are documented, they're avoided. The codebase becomes progressively easier to work with—not just for AI, but for everyone.
+              But codebases can be smarter than that. When agents document learnings, future agents benefit. When patterns are captured, they're replicated. When pitfalls are documented, they're avoided. The codebase becomes progressively easier to work with, not just for AI, but for everyone.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

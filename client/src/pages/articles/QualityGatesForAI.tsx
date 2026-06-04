@@ -54,14 +54,14 @@ export default function QualityGatesForAI() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              AI output is a raw material, not a finished product. When teams ship AI output directly into a UI, they usually learn the same lesson the hard way: formatting breaks, JSON becomes unreadable, headings are inconsistent, structure changes between runs. The fix isn't "prompt harder"—it's treating AI output like untrusted input.
+              AI output is a raw material, not a finished product. When teams ship AI output directly into a UI, they usually learn the same lesson the hard way: formatting breaks, JSON becomes unreadable, headings are inconsistent, structure changes between runs. The fix isn't "prompt harder", it's treating AI output like untrusted input.
             </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              I made this mistake early in my AI development journey. The prompts were working great in testing—clean outputs, consistent structure, exactly what we needed. Then we deployed to production. Within days, support tickets started rolling in. The output was breaking in ways that seemed random: malformed JSON, missing sections, formatting that looked fine in one context and terrible in another.
+              I made this mistake early in my AI development journey. The prompts were working great in testing, clean outputs, consistent structure, exactly what we needed. Then we deployed to production. Within days, support tickets started rolling in. The output was breaking in ways that seemed random: malformed JSON, missing sections, formatting that looked fine in one context and terrible in another.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -71,7 +71,7 @@ export default function QualityGatesForAI() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Treat AI output like untrusted input. The fix is not 'prompt harder'—it's gates."
+                "Treat AI output like untrusted input. The fix is not 'prompt harder', it's gates."
               </p>
             </div>
 
@@ -111,7 +111,7 @@ export default function QualityGatesForAI() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Schema validation should be strict about required keys, types (string, number, array, object), and maximum sizes. That last one is important—AI can produce enormous outputs that break your UI or exceed storage limits. Better to catch that at the schema level than in production.
+              Schema validation should be strict about required keys, types (string, number, array, object), and maximum sizes. That last one is important, AI can produce enormous outputs that break your UI or exceed storage limits. Better to catch that at the schema level than in production.
             </p>
 
             {/* Schema Validation */}
@@ -134,7 +134,7 @@ export default function QualityGatesForAI() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When schema validation fails, don't just throw an error. Store the raw output anyway—you'll want it for debugging. Mark the step failed with a recovery path, either retry or import. And surface a helpful error message that tells the user what was missing, not just "something went wrong."
+              When schema validation fails, don't just throw an error. Store the raw output anyway, you'll want it for debugging. Mark the step failed with a recovery path, either retry or import. And surface a helpful error message that tells the user what was missing, not just "something went wrong."
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -192,7 +192,7 @@ export default function QualityGatesForAI() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Readable rendering is a product feature, not vanity. Table of contents, collapsible long sections, syntax highlighting for code and JSON, stable anchors for headings, consistent typography—these aren't nice-to-haves. They directly reduce confusion, support requests, and rework.
+              Readable rendering is a product feature, not vanity. Table of contents, collapsible long sections, syntax highlighting for code and JSON, stable anchors for headings, consistent typography, these aren't nice-to-haves. They directly reduce confusion, support requests, and rework.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -264,11 +264,11 @@ export default function QualityGatesForAI() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Strict schemas can cause more failures initially—and that's actually good. It surfaces real reliability issues that would otherwise manifest as user-facing bugs. Better to fail at the gate with a clear error than to show broken output to users.
+              Strict schemas can cause more failures initially, and that's actually good. It surfaces real reliability issues that would otherwise manifest as user-facing bugs. Better to fail at the gate with a clear error than to show broken output to users.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              You can keep gates minimal. A few checks and a few formatting rules go a long way. The goal isn't perfect output—it's consistently usable output. Start with the issues that cause the most support burden and expand from there.
+              You can keep gates minimal. A few checks and a few formatting rules go a long way. The goal isn't perfect output, it's consistently usable output. Start with the issues that cause the most support burden and expand from there.
             </p>
 
             {/* Takeaways Card */}
@@ -277,7 +277,7 @@ export default function QualityGatesForAI() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">Treat AI output as untrusted input—it's raw material, not finished product</span>
+                  <span className="text-slate-300">Treat AI output as untrusted input, it's raw material, not finished product</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
@@ -289,7 +289,7 @@ export default function QualityGatesForAI() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">Start minimal—a few checks and formatting rules go a long way</span>
+                  <span className="text-slate-300">Start minimal, a few checks and formatting rules go a long way</span>
                 </div>
               </div>
             </div>

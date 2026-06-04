@@ -65,7 +65,7 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I spent years creating perfect validation plans—fake door tests, waitlist campaigns, DM sequences, pricing experiments. Everything documented, thresholds defined, channels mapped. Then I'd hit execute and realize I needed to manually send 50 DMs per day, segment hundreds of signups, and update spreadsheets until my eyes bled.
+              I spent years creating perfect validation plans, fake door tests, waitlist campaigns, DM sequences, pricing experiments. Everything documented, thresholds defined, channels mapped. Then I'd hit execute and realize I needed to manually send 50 DMs per day, segment hundreds of signups, and update spreadsheets until my eyes bled.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -73,11 +73,11 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Most of that time was soul-crushing busy work: copying names into email templates, updating spreadsheets, setting calendar reminders, checking for replies. But I couldn't skip it—validation requires consistent execution and rigorous data collection.
+              Most of that time was soul-crushing busy work: copying names into email templates, updating spreadsheets, setting calendar reminders, checking for replies. But I couldn't skip it, validation requires consistent execution and rigorous data collection.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's what changed everything: We now automate 80% of that manual work using Lindy AI. Validation plans don't just sit in docs anymore—they get executed automatically, with results logged in real-time and daily summaries delivered to our team.
+              Here's what changed everything: We now automate 80% of that manual work using Lindy AI. Validation plans don't just sit in docs anymore, they get executed automatically, with results logged in real-time and daily summaries delivered to our team.
             </p>
 
             {/* Stats Card */}
@@ -150,7 +150,7 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              If you've tried to run validation manually, you know the pattern. The problem isn't discipline—it's that manual execution doesn't scale. And when validation fails, we build without data. Every. Single. Time.
+              If you've tried to run validation manually, you know the pattern. The problem isn't discipline, it's that manual execution doesn't scale. And when validation fails, we build without data. Every. Single. Time.
             </p>
 
             {/* Comparison Card */}
@@ -225,7 +225,7 @@ export default function LinnyAutomationArticle() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The magic isn't in the AI—it's in knowing which parts of validation to automate and which parts require human insight."
+                "The magic isn't in the AI, it's in knowing which parts of validation to automate and which parts require human insight."
               </p>
             </div>
 
@@ -386,7 +386,7 @@ export default function LinnyAutomationArticle() {
 
             <div className="my-8 bg-slate-900/50 border-l-4 border-cyan-500 px-6 pt-4 pb-5">
               <p className="text-slate-300 mb-2">
-                <strong className="text-white">DM sent</strong>: "Hi Jordan! Saw your post about productivity app overwhelm. I'm building a tool designed specifically for people drowning in too many apps—would love 10 minutes of your input on what's missing."
+                <strong className="text-white">DM sent</strong>: "Hi Jordan! Saw your post about productivity app overwhelm. I'm building a tool designed specifically for people drowning in too many apps, would love 10 minutes of your input on what's missing."
               </p>
               <p className="text-slate-300 mb-2">
                 <strong className="text-white">Reply received</strong>: "YES! I have 12 productivity apps and use none of them consistently. When can we chat?"
@@ -467,7 +467,7 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">Week 1</strong>: 28 waitlist signups (12 high intent, 10 medium, 6 low). 75 DMs sent, 32 replies (43% reply rate—way above our 20% target). 5 calls scheduled. Cost per signup: $5.36.
+              <strong className="text-white">Week 1</strong>: 28 waitlist signups (12 high intent, 10 medium, 6 low). 75 DMs sent, 32 replies (43% reply rate, way above our 20% target). 5 calls scheduled. Cost per signup: $5.36.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -542,7 +542,7 @@ export default function LinnyAutomationArticle() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Use your standard VALIDATION-PLAN-{`<slug>`}.md template. Define tests, thresholds, timeline, success criteria. Nothing changes here—this is still strategy work that requires human judgment.
+              Use your standard VALIDATION-PLAN-{`<slug>`}.md template. Define tests, thresholds, timeline, success criteria. Nothing changes here, this is still strategy work that requires human judgment.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -569,7 +569,7 @@ export default function LinnyAutomationArticle() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong className="text-white">Logging locations</strong>: Exact paths—no placeholders</span>
+                  <span><strong className="text-white">Logging locations</strong>: Exact paths, no placeholders</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
@@ -834,7 +834,7 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Lindy doesn't make validation strategy easier—it makes validation execution automatic. Your validation plans become self-executing systems that run 24/7, collect data rigorously, and keep you accountable with daily progress reports.
+              Lindy doesn't make validation strategy easier, it makes validation execution automatic. Your validation plans become self-executing systems that run 24/7, collect data rigorously, and keep you accountable with daily progress reports.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -842,7 +842,7 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Start with one automation—probably waitlist nurture, since that's the highest ROI. See how it feels to wake up to a Slack message saying "12 new signups yesterday, 8 high intent, 3 calls scheduled for next week."
+              Start with one automation, probably waitlist nurture, since that's the highest ROI. See how it feels to wake up to a Slack message saying "12 new signups yesterday, 8 high intent, 3 calls scheduled for next week."
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -852,7 +852,7 @@ export default function LinnyAutomationArticle() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Start with one automation—probably waitlist nurture, since that's the highest ROI."
+                "Start with one automation, probably waitlist nurture, since that's the highest ROI."
               </p>
             </div>
 

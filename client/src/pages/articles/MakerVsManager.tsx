@@ -61,7 +61,7 @@ export default function MakerVsManager() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've experienced this pattern firsthand more times than I care to admit. You start the week with clear outcomes—real Rocks with definitions of done. You're excited, focused, ready to ship. Then meetings fragment your attention. Reactive communications fill the gaps. Deep work gets pushed "to later." By Friday, you've been busy all week and completed nothing that mattered.
+              I've experienced this pattern firsthand more times than I care to admit. You start the week with clear outcomes, real Rocks with definitions of done. You're excited, focused, ready to ship. Then meetings fragment your attention. Reactive communications fill the gaps. Deep work gets pushed "to later." By Friday, you've been busy all week and completed nothing that mattered.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -80,7 +80,7 @@ export default function MakerVsManager() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Paul Graham's original essay on this distinction was about engineers versus executives, but I've found it applies much more broadly. Most work falls into two modes: maker mode and manager mode. Understanding which mode you're in—and when—is the foundation of effective time design.
+              Paul Graham's original essay on this distinction was about engineers versus executives, but I've found it applies much more broadly. Most work falls into two modes: maker mode and manager mode. Understanding which mode you're in, and when, is the foundation of effective time design.
             </p>
 
             {/* Two Modes Card */}
@@ -114,7 +114,7 @@ export default function MakerVsManager() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Both modes are necessary. The failure isn't manager mode itself—it's letting manager mode consume all available time. When meetings and messages fill every gap, there's nowhere left for the deep work that produces outcomes. You end up coordinating work without ever doing work.
+              Both modes are necessary. The failure isn't manager mode itself, it's letting manager mode consume all available time. When meetings and messages fill every gap, there's nowhere left for the deep work that produces outcomes. You end up coordinating work without ever doing work.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -122,7 +122,7 @@ export default function MakerVsManager() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              In weekly planning, schedule 2–4 deep work blocks before committing to outcomes. This is the fundamental discipline that makes everything else work. If you can't find the blocks, reduce the commitments. A plan without time is a fantasy.
+              In weekly planning, schedule 2-4 deep work blocks before committing to outcomes. This is the fundamental discipline that makes everything else work. If you can't find the blocks, reduce the commitments. A plan without time is a fantasy.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -134,7 +134,7 @@ export default function MakerVsManager() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              A deep work block is 60–180 minutes of focused time on one outcome. No meetings, no notifications, no "quick questions." You should have a clear start state (what you're beginning with) and end state (what you're producing). Anything shorter than 60 minutes isn't a block—it's a warmup.
+              A deep work block is 60-180 minutes of focused time on one outcome. No meetings, no notifications, no "quick questions." You should have a clear start state (what you're beginning with) and end state (what you're producing). Anything shorter than 60 minutes isn't a block, it's a warmup.
             </p>
 
             {/* Deep Work Block Specs */}
@@ -143,7 +143,7 @@ export default function MakerVsManager() {
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span><strong>Duration:</strong> 60–180 minutes (less isn't a block)</span>
+                  <span><strong>Duration:</strong> 60-180 minutes (less isn't a block)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
@@ -176,7 +176,7 @@ export default function MakerVsManager() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              If manager work is unavoidable—and it usually is—batch it. Instead of checking messages throughout the day, have one window for comms. Instead of scattering admin across the week, have one window for admin. Instead of approving things whenever they come in, have one window for review and approval.
+              If manager work is unavoidable, and it usually is, batch it. Instead of checking messages throughout the day, have one window for comms. Instead of scattering admin across the week, have one window for admin. Instead of approving things whenever they come in, have one window for review and approval.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -220,7 +220,7 @@ export default function MakerVsManager() {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="text-cyan-400 font-semibold w-20">Tue/Wed</div>
-                  <div>1–2 deep work blocks per day (most productive days)</div>
+                  <div>1-2 deep work blocks per day (most productive days)</div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="text-cyan-400 font-semibold w-20">Thursday</div>
@@ -234,7 +234,7 @@ export default function MakerVsManager() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Notice that meetings are pushed later in the week. Monday morning is often when I have the most mental clarity—it would be a waste to spend it in meetings. By the time Thursday arrives, the deep work should be mostly done. That's when coordination and issue-solving make sense.
+              Notice that meetings are pushed later in the week. Monday morning is often when I have the most mental clarity, it would be a waste to spend it in meetings. By the time Thursday arrives, the deep work should be mostly done. That's when coordination and issue-solving make sense.
             </p>
 
             {/* Pull Quote */}
@@ -253,7 +253,7 @@ export default function MakerVsManager() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When genuine emergencies do occur, the operating system helps rather than hinders. You can re-plan honestly because you know what you were supposed to accomplish. You can make conscious trade-offs because you know what you're giving up. The system isn't a fantasy calendar—it's a recovery mechanism that helps you respond to reality without losing all structure.
+              When genuine emergencies do occur, the operating system helps rather than hinders. You can re-plan honestly because you know what you were supposed to accomplish. You can make conscious trade-offs because you know what you're giving up. The system isn't a fantasy calendar, it's a recovery mechanism that helps you respond to reality without losing all structure.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -261,7 +261,7 @@ export default function MakerVsManager() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Teams with heavy coordination needs can't eliminate meetings. That's okay—the goal is to protect blocks, not eliminate manager mode entirely. Even roles that are inherently manager-heavy can protect some maker time for the work that requires deep focus.
+              Teams with heavy coordination needs can't eliminate meetings. That's okay, the goal is to protect blocks, not eliminate manager mode entirely. Even roles that are inherently manager-heavy can protect some maker time for the work that requires deep focus.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -274,11 +274,11 @@ export default function MakerVsManager() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">The calendar is the execution system—protect it before committing to outcomes</span>
+                  <span className="text-slate-300">The calendar is the execution system, protect it before committing to outcomes</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">Schedule 2–4 deep work blocks (60-180 min each) before anything else</span>
+                  <span className="text-slate-300">Schedule 2-4 deep work blocks (60-180 min each) before anything else</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>

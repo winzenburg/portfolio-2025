@@ -10,14 +10,14 @@ export default function SelfValidatingAIAgents() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Self-Validating AI Agents: When Acceptance Criteria Become Tests | Ryan Winzenburg</title>
-        <meta name="description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
+        <meta name="description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
         <meta property="og:title" content="Self-Validating AI Agents: When Acceptance Criteria Become Tests" />
-        <meta property="og:description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
+        <meta property="og:description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
         <meta property="og:url" content="https://winzenburg.com/articles/self-validating-ai-agents" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/self-validating-ai-agents-hero.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/self-validating-ai-agents" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.png"})}</script>
       </Helmet>
 
       <article className="pt-24 pb-16">
@@ -49,7 +49,7 @@ export default function SelfValidatingAIAgents() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.
+              Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function SelfValidatingAIAgents() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've run 50+ autonomous builds. The difference between agents that self-correct and agents that fail repeatedly comes down to one thing: whether acceptance criteria can be turned into tests. Manual tests, automated tests, visual tests—doesn't matter. What matters is that the agent can definitively say "this criterion passed" or "this criterion failed."
+              I've run 50+ autonomous builds. The difference between agents that self-correct and agents that fail repeatedly comes down to one thing: whether acceptance criteria can be turned into tests. Manual tests, automated tests, visual tests, doesn't matter. What matters is that the agent can definitively say "this criterion passed" or "this criterion failed."
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -69,7 +69,7 @@ export default function SelfValidatingAIAgents() {
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "When acceptance criteria are specific enough, they become the test specification. The agent doesn't guess if it's done—it knows."
+                "When acceptance criteria are specific enough, they become the test specification. The agent doesn't guess if it's done, it knows."
               </p>
             </div>
 
@@ -142,7 +142,7 @@ export default function SelfValidatingAIAgents() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              These can be validated with automated tests—unit tests, integration tests, or assertions.
+              These can be validated with automated tests, unit tests, integration tests, or assertions.
             </p>
 
             <div className="my-8 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
@@ -578,7 +578,7 @@ export default function SelfValidatingAIAgents() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That specificity—the kind that makes human reviewers roll their eyes at PRD length—is exactly what enables agents to validate their own work, catch their own mistakes, and deliver 90-95% correct code without human intervention. The overnight feature that wakes you up working? That's testable acceptance criteria plus self-validation.
+              That specificity, the kind that makes human reviewers roll their eyes at PRD length, is exactly what enables agents to validate their own work, catch their own mistakes, and deliver 90-95% correct code without human intervention. The overnight feature that wakes you up working? That's testable acceptance criteria plus self-validation.
             </p>
 
             <div className="my-12 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">

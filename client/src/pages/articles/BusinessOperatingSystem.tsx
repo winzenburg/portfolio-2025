@@ -54,7 +54,7 @@ export default function BusinessOperatingSystem() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              I've worked with dozens of teams across startups and enterprises, and the pattern is remarkably consistent. Most don't fail because they lack ideas or talent. They fail because they can't translate decisions into weekly outcomes. This is the operating system I've refined over years of building products and leading teams—a lightweight framework that keeps execution honest and turns lessons into compounding improvements.
+              I've worked with dozens of teams across startups and enterprises, and the pattern is remarkably consistent. Most don't fail because they lack ideas or talent. They fail because they can't translate decisions into weekly outcomes. This is the operating system I've refined over years of building products and leading teams, a lightweight framework that keeps execution honest and turns lessons into compounding improvements.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function BusinessOperatingSystem() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              What I'm sharing here is a lightweight Business Operating System—a weekly loop that I've used to run product teams, build AI workflows, and ship products at velocity. It's not theoretical. Every element exists because I've seen what breaks without it.
+              What I'm sharing here is a lightweight Business Operating System, a weekly loop that I've used to run product teams, build AI workflows, and ship products at velocity. It's not theoretical. Every element exists because I've seen what breaks without it.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -138,7 +138,7 @@ export default function BusinessOperatingSystem() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              If I had to distill the entire system into a single sentence, it would be this: Decide what matters, commit to 1–3 outcomes, solve the top issue, review results, capture learning, and improve the system.
+              If I had to distill the entire system into a single sentence, it would be this: Decide what matters, commit to 1-3 outcomes, solve the top issue, review results, capture learning, and improve the system.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -163,7 +163,7 @@ export default function BusinessOperatingSystem() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Every week, this module produces a focus metric for the week, 1–3 outcomes (what I call "Rocks"), the single most important issue to solve, and a short review that captures learning and a process improvement. These artifacts create the rhythm that everything else follows.
+              Every week, this module produces a focus metric for the week, 1-3 outcomes (what I call "Rocks"), the single most important issue to solve, and a short review that captures learning and a process improvement. These artifacts create the rhythm that everything else follows.
             </p>
 
             {/* Module 2 */}
@@ -172,7 +172,7 @@ export default function BusinessOperatingSystem() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Data keeps you honest. The goal isn't dashboards—it's a weekly learning loop. I've seen teams build elaborate analytics infrastructure and still make decisions based on gut feel because they never closed the loop between data and action.
+              Data keeps you honest. The goal isn't dashboards, it's a weekly learning loop. I've seen teams build elaborate analytics infrastructure and still make decisions based on gut feel because they never closed the loop between data and action.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -189,7 +189,7 @@ export default function BusinessOperatingSystem() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The key output is 1–3 weekly outcomes with clear "done looks like" definitions. If you can't write what done looks like, you don't have an outcome—you have a direction. And directions don't finish. They just continue indefinitely.
+              The key output is 1-3 weekly outcomes with clear "done looks like" definitions. If you can't write what done looks like, you don't have an outcome, you have a direction. And directions don't finish. They just continue indefinitely.
             </p>
 
             {/* Module 4 */}
@@ -202,7 +202,7 @@ export default function BusinessOperatingSystem() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Each week, this produces 1–3 solved issues with concrete plans, next actions with owners and definitions of done, and escalation to deeper problem-solving when issues recur. The discipline of limiting yourself to 1–3 issues forces prioritization and prevents the endless discussion syndrome.
+              Each week, this produces 1-3 solved issues with concrete plans, next actions with owners and definitions of done, and escalation to deeper problem-solving when issues recur. The discipline of limiting yourself to 1-3 issues forces prioritization and prevents the endless discussion syndrome.
             </p>
 
             {/* Module 5 */}
@@ -211,7 +211,7 @@ export default function BusinessOperatingSystem() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Process turns wins and failures into checklists so you don't relearn the same lessons. People protects time, roles, and decision hygiene so the system remains sustainable. This is the compounding layer—where your investment in the system pays dividends over time.
+              Process turns wins and failures into checklists so you don't relearn the same lessons. People protects time, roles, and decision hygiene so the system remains sustainable. This is the compounding layer, where your investment in the system pays dividends over time.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -230,14 +230,14 @@ export default function BusinessOperatingSystem() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's the cadence that makes the system real. I've designed it to stay small—about 60–90 minutes per week total for the structured activities. Any more than that and teams start resenting the overhead.
+              Here's the cadence that makes the system real. I've designed it to stay small, about 60-90 minutes per week total for the structured activities. Any more than that and teams start resenting the overhead.
             </p>
 
             {/* Cadence Overview */}
             <div className="my-10 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">
               <div className="text-center mb-6">
                 <div className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-2">Weekly Time Investment</div>
-                <div className="text-3xl font-bold text-white">60–90 Minutes Total</div>
+                <div className="text-3xl font-bold text-white">60-90 Minutes Total</div>
               </div>
               <div className="grid md:grid-cols-3 gap-4 text-center">
                 <div>
@@ -256,15 +256,15 @@ export default function BusinessOperatingSystem() {
             </div>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
-              Monday: Plan (15–30 minutes)
+              Monday: Plan (15-30 minutes)
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              You're deciding what the week is for. The output is a focus metric, 1–3 outcomes with "done looks like," one issue to solve, and time blocks protected for execution. This planning session sets the entire week's direction.
+              You're deciding what the week is for. The output is a focus metric, 1-3 outcomes with "done looks like," one issue to solve, and time blocks protected for execution. This planning session sets the entire week's direction.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've found the most important part of Monday planning isn't the planning itself—it's looking at the calendar and protecting time for deep work before anything else gets scheduled. If the calendar can't hold the work, the plan is fantasy.
+              I've found the most important part of Monday planning isn't the planning itself, it's looking at the calendar and protecting time for deep work before anything else gets scheduled. If the calendar can't hold the work, the plan is fantasy.
             </p>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -276,15 +276,15 @@ export default function BusinessOperatingSystem() {
             </p>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
-              Thursday/Friday: Issues Meeting (30–45 minutes)
+              Thursday/Friday: Issues Meeting (30-45 minutes)
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This meeting is a decision engine, not a discussion club. You select 1–3 issues by impact and urgency, commit to 1–3 next actions total (not 12), and escalate to deeper problem-solving if an issue is recurring or ambiguous. The hard limit on actions is what makes this meeting work.
+              This meeting is a decision engine, not a discussion club. You select 1-3 issues by impact and urgency, commit to 1-3 next actions total (not 12), and escalate to deeper problem-solving if an issue is recurring or ambiguous. The hard limit on actions is what makes this meeting work.
             </p>
 
             <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
-              Friday: Review (10–20 minutes)
+              Friday: Review (10-20 minutes)
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -337,7 +337,7 @@ export default function BusinessOperatingSystem() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This isn't elaborate process. This is the minimum system that keeps you focused and honest. The learning about empty state copy directly informed the next week's experiment—that's the compounding effect in action.
+              This isn't elaborate process. This is the minimum system that keeps you focused and honest. The learning about empty state copy directly informed the next week's experiment, that's the compounding effect in action.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -353,7 +353,7 @@ export default function BusinessOperatingSystem() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Second, pick 1–3 outcomes, not tasks. Each outcome needs a definition of done and a clear link to the focus metric. If the outcome is "do X," rewrite it to "ship Y" or "produce Z." Verbs like "work on" or "continue" are red flags.
+              Second, pick 1-3 outcomes, not tasks. Each outcome needs a definition of done and a clear link to the focus metric. If the outcome is "do X," rewrite it to "ship Y" or "produce Z." Verbs like "work on" or "continue" are red flags.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -361,11 +361,11 @@ export default function BusinessOperatingSystem() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Fourth, run an issues meeting with action limits. Select only 1–3 issues, commit to only 1–3 next actions total, and if you're stuck for 10 minutes, escalate to deeper problem solving.
+              Fourth, run an issues meeting with action limits. Select only 1-3 issues, commit to only 1-3 next actions total, and if you're stuck for 10 minutes, escalate to deeper problem solving.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Finally, close the loop every Friday. Write two sentences: your key learning and your next experiment. Then choose one system improvement—tighten definitions of done, split outcomes smaller, convert a fix into a checklist, or adjust the calendar so deep work happens earlier.
+              Finally, close the loop every Friday. Write two sentences: your key learning and your next experiment. Then choose one system improvement, tighten definitions of done, split outcomes smaller, convert a fix into a checklist, or adjust the calendar so deep work happens earlier.
             </p>
 
             {/* Pull Quote */}
@@ -380,11 +380,11 @@ export default function BusinessOperatingSystem() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              No system is free. You'll spend 60–90 minutes per week on planning, issues, and review. That's overhead, and it needs to earn its place. The discipline of actually running the review is what most teams skip, and it's what kills the learning loop.
+              No system is free. You'll spend 60-90 minutes per week on planning, issues, and review. That's overhead, and it needs to earn its place. The discipline of actually running the review is what most teams skip, and it's what kills the learning loop.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              There's also risk of "process theater"—going through the motions without using the outputs. The cadence must remain small and outcome-driven. The moment it becomes about the artifacts rather than the results, you've lost the plot.
+              There's also risk of "process theater", going through the motions without using the outputs. The cadence must remain small and outcome-driven. The moment it becomes about the artifacts rather than the results, you've lost the plot.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -392,7 +392,7 @@ export default function BusinessOperatingSystem() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              After running this system across multiple teams and products, a few things stand out. The 1–3 outcome limit feels constraining at first, but it's what makes weeks actually finish. The Friday review is the most important meeting of the week, even though it's the shortest. And the compounding effect only kicks in after 6–8 weeks of consistent execution.
+              After running this system across multiple teams and products, a few things stand out. The 1-3 outcome limit feels constraining at first, but it's what makes weeks actually finish. The Friday review is the most important meeting of the week, even though it's the shortest. And the compounding effect only kicks in after 6-8 weeks of consistent execution.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -413,7 +413,7 @@ export default function BusinessOperatingSystem() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-slate-300">Protect the system from bloat with hard limits (1 metric, 1–3 outcomes, 1–3 actions)</span>
+                  <span className="text-slate-300">Protect the system from bloat with hard limits (1 metric, 1-3 outcomes, 1-3 actions)</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-cyan-400 mt-1">→</span>

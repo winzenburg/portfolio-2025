@@ -72,7 +72,7 @@ export default function OpenSourceVisionArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've spent the last year building what I call a "12-agent product creation engine"—basically, AI agents that handle everything from market validation to retention architecture. It's working. Really well. But here's the thing that keeps me up at night: I'm hoarding all this knowledge while watching other founders make the exact same mistakes I made six months ago.
+              I've spent the last year building what I call a "12-agent product creation engine", basically, AI agents that handle everything from market validation to retention architecture. It's working. Really well. But here's the thing that keeps me up at night: I'm hoarding all this knowledge while watching other founders make the exact same mistakes I made six months ago.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -107,7 +107,7 @@ export default function OpenSourceVisionArticle() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Imagine GitHub, but for entire product creation systems. Not just code—the whole thing. The validation frameworks. The orchestration patterns. The document templates. The lessons learned from spectacular failures.
+              Imagine GitHub, but for entire product creation systems. Not just code, the whole thing. The validation frameworks. The orchestration patterns. The document templates. The lessons learned from spectacular failures.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -144,7 +144,7 @@ export default function OpenSourceVisionArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Each agent comes with documentation, example outputs, and—this is the key part—real case studies showing where it worked and where it face-planted.
+              Each agent comes with documentation, example outputs, and, this is the key part, real case studies showing where it worked and where it face-planted.
             </p>
 
             {/* Stats Card */}
@@ -214,7 +214,7 @@ export default function OpenSourceVisionArticle() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is the part I'm most excited about: real, no-BS case studies. Not just the success stories—the complete failures too.
+              This is the part I'm most excited about: real, no-BS case studies. Not just the success stories, the complete failures too.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -245,7 +245,7 @@ export default function OpenSourceVisionArticle() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The goal isn't to eliminate failure—it's to fail faster, cheaper, and with better data."
+                "The goal isn't to eliminate failure, it's to fail faster, cheaper, and with better data."
               </p>
             </div>
 
@@ -258,7 +258,7 @@ export default function OpenSourceVisionArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's what changed my mind: I spent six months watching competitors struggle with the exact same validation challenges we'd already solved. They weren't copying our approach—they didn't even know it existed. They were just... struggling.
+              But here's what changed my mind: I spent six months watching competitors struggle with the exact same validation challenges we'd already solved. They weren't copying our approach, they didn't even know it existed. They were just... struggling.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

@@ -10,14 +10,14 @@ export default function AICodingEconomics() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Economics of AI-Assisted Coding: When $40 Beats 6 Hours | Ryan Winzenburg</title>
-        <meta name="description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money—it&#39;s about what becomes possible when implementation stops being the constraint." />
+        <meta name="description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money, it&#39;s about what becomes possible when implementation stops being the constraint." />
         <meta property="og:title" content="The Economics of AI-Assisted Coding: When $40 Beats 6 Hours" />
-        <meta property="og:description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money—it&#39;s about what becomes possible when implementation stops being the constraint." />
+        <meta property="og:description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money, it&#39;s about what becomes possible when implementation stops being the constraint." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-coding-economics" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-coding-economics-hero.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-coding-economics" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money—it's about what becomes possible when implementation stops being the constraint.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money, it's about what becomes possible when implementation stops being the constraint.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.png"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -54,7 +54,7 @@ export default function AICodingEconomics() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money—it's about what becomes possible when implementation stops being the constraint.
+              Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money, it's about what becomes possible when implementation stops being the constraint.
             </p>
           </div>
 
@@ -116,7 +116,7 @@ export default function AICodingEconomics() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              At $100/hour (conservative for experienced developers), that's $1,300 per feature. At $200/hour (senior/contract rates), it's $2,600. And that's assuming everything goes smoothly—no architectural surprises, no integration headaches, no scope creep.
+              At $100/hour (conservative for experienced developers), that's $1,300 per feature. At $200/hour (senior/contract rates), it's $2,600. And that's assuming everything goes smoothly, no architectural surprises, no integration headaches, no scope creep.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -180,7 +180,7 @@ export default function AICodingEconomics() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Your active time dropped from 13 hours to 1.75 hours. The agent worked for 6-8 hours, but that time was unattended—you were sleeping or working on other things. The economic value of that time arbitrage is massive.
+              Your active time dropped from 13 hours to 1.75 hours. The agent worked for 6-8 hours, but that time was unattended, you were sleeping or working on other things. The economic value of that time arbitrage is massive.
             </p>
 
             {/* ROI Breakdown */}
@@ -399,7 +399,7 @@ export default function AICodingEconomics() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is the right concern for the wrong reasons. Yes, you'll refactor. But you'd refactor human-written code too. Code written quickly always needs refinement as requirements evolve. The question isn't "will I refactor"—it's "did this code get me to market faster?" If yes, the refactoring cost is just business as usual.
+              This is the right concern for the wrong reasons. Yes, you'll refactor. But you'd refactor human-written code too. Code written quickly always needs refinement as requirements evolve. The question isn't "will I refactor", it's "did this code get me to market faster?" If yes, the refactoring cost is just business as usual.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -456,7 +456,7 @@ export default function AICodingEconomics() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              These advantages compound. More experiments lead to more validated features. Faster feedback leads to better product decisions. Lower opportunity cost leads to exploring adjacent markets. The velocity advantage isn't linear—it's exponential.
+              These advantages compound. More experiments lead to more validated features. Faster feedback leads to better product decisions. Lower opportunity cost leads to exploring adjacent markets. The velocity advantage isn't linear, it's exponential.
             </p>
 
             {/* Statistics Cards */}
@@ -532,7 +532,7 @@ export default function AICodingEconomics() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That shift—from implementation-constrained to validation-constrained—is what the economics of AI-assisted coding actually mean. The $40 feature isn't just cheaper. It's a fundamentally different way of building products.
+              That shift, from implementation-constrained to validation-constrained, is what the economics of AI-assisted coding actually mean. The $40 feature isn't just cheaper. It's a fundamentally different way of building products.
             </p>
 
             <div className="my-12 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">

@@ -55,14 +55,14 @@ export default function AIAugmentedWorkflow() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Last quarter, I delivered a complete enterprise dashboard—from requirements through production—in three weeks flat. My stakeholder's reaction was immediate: "How did you do this so fast?" The honest answer? I didn't work longer hours. I didn't cut corners. I rebuilt my entire workflow around AI, and it fundamentally changed what's possible.
+              Last quarter, I delivered a complete enterprise dashboard, from requirements through production, in three weeks flat. My stakeholder's reaction was immediate: "How did you do this so fast?" The honest answer? I didn't work longer hours. I didn't cut corners. I rebuilt my entire workflow around AI, and it fundamentally changed what's possible.
             </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Traditional UX design cycles take eight to twelve weeks from initial requirements to production deployment. I consistently deliver comparable enterprise-grade outcomes in two to three weeks. The quality metrics are actually higher—better accessibility scores, cleaner code, fewer bugs. And I'm maintaining this pace across multiple concurrent projects without burning out.
+              Traditional UX design cycles take eight to twelve weeks from initial requirements to production deployment. I consistently deliver comparable enterprise-grade outcomes in two to three weeks. The quality metrics are actually higher, better accessibility scores, cleaner code, fewer bugs. And I'm maintaining this pace across multiple concurrent projects without burning out.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -85,7 +85,7 @@ export default function AIAugmentedWorkflow() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Traditional design workflows were built for a pre-AI world—a world where gathering requirements meant weeks of stakeholder interviews, where competitive analysis required manual research across dozens of sources, where design exploration meant hand-crafting every component variation. That world still exists for most teams. But it doesn't have to.
+              Traditional design workflows were built for a pre-AI world, a world where gathering requirements meant weeks of stakeholder interviews, where competitive analysis required manual research across dozens of sources, where design exploration meant hand-crafting every component variation. That world still exists for most teams. But it doesn't have to.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -119,7 +119,7 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's the critical part most people miss: this isn't about trusting AI blindly. I spend three to five days validating and refining those AI-generated insights. I check sources, validate assumptions, fill gaps the AI missed, and inject strategic context only I can provide. The strategic decisions remain entirely mine—product positioning, target audience prioritization, feature trade-offs. AI just eliminated the weeks of mechanical information gathering.
+              But here's the critical part most people miss: this isn't about trusting AI blindly. I spend three to five days validating and refining those AI-generated insights. I check sources, validate assumptions, fill gaps the AI missed, and inject strategic context only I can provide. The strategic decisions remain entirely mine, product positioning, target audience prioritization, feature trade-offs. AI just eliminated the weeks of mechanical information gathering.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -167,11 +167,11 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Modern design tools now convert natural language descriptions into visual prototypes. I describe the user experience I want to create—the data model, user flows, interaction patterns, design constraints, accessibility requirements. The AI generates initial designs across multiple fidelity levels. I'm looking at working prototypes within hours, not weeks.
+              Modern design tools now convert natural language descriptions into visual prototypes. I describe the user experience I want to create, the data model, user flows, interaction patterns, design constraints, accessibility requirements. The AI generates initial designs across multiple fidelity levels. I'm looking at working prototypes within hours, not weeks.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But again, the critical distinction: AI isn't making my design decisions. It's executing them at scale. When I need a complex data table component, I don't spend hours building variants manually. I describe what I need—sorting, filtering, pagination, bulk actions—and get five to ten variations instantly. I evaluate them against user needs and select the best approach. AI handled the execution. I handled the judgment.
+              But again, the critical distinction: AI isn't making my design decisions. It's executing them at scale. When I need a complex data table component, I don't spend hours building variants manually. I describe what I need, sorting, filtering, pagination, bulk actions, and get five to ten variations instantly. I evaluate them against user needs and select the best approach. AI handled the execution. I handled the judgment.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -245,7 +245,7 @@ export default function AIAugmentedWorkflow() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The development phase is where skeptics usually push back hardest. "AI can't write production-grade code." "You'll spend more time fixing bugs than if you wrote it manually." "Code quality will suffer." I understand the skepticism—I had the same concerns.
+              The development phase is where skeptics usually push back hardest. "AI can't write production-grade code." "You'll spend more time fixing bugs than if you wrote it manually." "Code quality will suffer." I understand the skepticism, I had the same concerns.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -253,7 +253,7 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's how it works in practice. I provide the design specifications and component requirements to the AI coding environment. It generates the initial implementation—components, styling, state management, event handlers. But more importantly, it generates the infrastructure around that code: automated tests, accessibility validations, performance benchmarks, documentation. Everything production systems need.
+              Here's how it works in practice. I provide the design specifications and component requirements to the AI coding environment. It generates the initial implementation, components, styling, state management, event handlers. But more importantly, it generates the infrastructure around that code: automated tests, accessibility validations, performance benchmarks, documentation. Everything production systems need.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -285,7 +285,7 @@ export default function AIAugmentedWorkflow() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">Real impact</strong>: Development time dropped from four to six weeks down to seven to ten days while maintaining—and often exceeding—enterprise-grade code quality standards. My accessibility scores improved. Performance metrics got better. Bug rates decreased. The code reviews from senior engineers consistently come back with minor feedback, not major rewrites.
+              <strong className="text-white">Real impact</strong>: Development time dropped from four to six weeks down to seven to ten days while maintaining, and often exceeding, enterprise-grade code quality standards. My accessibility scores improved. Performance metrics got better. Bug rates decreased. The code reviews from senior engineers consistently come back with minor feedback, not major rewrites.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -379,7 +379,7 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But there's another advantage that matters just as much: significantly reduced project risk. Shorter timelines mean less can change mid-project—requirements, market conditions, competitive landscape, technology stacks. Faster feedback loops mean course corrections happen in days, not months. When you discover a design assumption was wrong, you haven't invested twelve weeks building on that faulty foundation. You've invested three weeks, and you can pivot immediately.
+              But there's another advantage that matters just as much: significantly reduced project risk. Shorter timelines mean less can change mid-project, requirements, market conditions, competitive landscape, technology stacks. Faster feedback loops mean course corrections happen in days, not months. When you discover a design assumption was wrong, you haven't invested twelve weeks building on that faulty foundation. You've invested three weeks, and you can pivot immediately.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -478,7 +478,7 @@ export default function AIAugmentedWorkflow() {
                   <span className="text-red-400 font-bold text-xl">2</span>
                   <div>
                     <div className="text-white font-semibold mb-2">Trying to automate creative strategy</div>
-                    <div className="text-slate-400 text-sm">AI is terrible at original strategic thinking. It's excellent at execution. I wasted 2 weeks trying to get AI to generate UX strategy—doesn't work. Use it for implementation.</div>
+                    <div className="text-slate-400 text-sm">AI is terrible at original strategic thinking. It's excellent at execution. I wasted 2 weeks trying to get AI to generate UX strategy, doesn't work. Use it for implementation.</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -500,7 +500,7 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Specifically, winning companies can ship faster than competitors, iterate based on real user feedback instead of assumptions, maintain quality at speed rather than compromising for velocity, and scale design capacity without proportional cost increases. These four capabilities used to be in tension—optimize for one, sacrifice another. AI-augmented workflows deliver all four simultaneously.
+              Specifically, winning companies can ship faster than competitors, iterate based on real user feedback instead of assumptions, maintain quality at speed rather than compromising for velocity, and scale design capacity without proportional cost increases. These four capabilities used to be in tension, optimize for one, sacrifice another. AI-augmented workflows deliver all four simultaneously.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -559,11 +559,11 @@ export default function AIAugmentedWorkflow() {
               </div>
               <div className="bg-slate-900/50 border-l-4 border-cyan-500 p-4">
                 <div className="text-white font-semibold mb-2">Step 2: Pick one phase to augment</div>
-                <p className="text-slate-300 text-sm">Start with requirements or development—these typically show the biggest time savings and ROI. Don't start with design unless that's your primary bottleneck. Pick the phase where time compression matters most to your business.</p>
+                <p className="text-slate-300 text-sm">Start with requirements or development, these typically show the biggest time savings and ROI. Don't start with design unless that's your primary bottleneck. Pick the phase where time compression matters most to your business.</p>
               </div>
               <div className="bg-slate-900/50 border-l-4 border-cyan-500 p-4">
                 <div className="text-white font-semibold mb-2">Step 3: Run a controlled pilot</div>
-                <p className="text-slate-300 text-sm">Take one real project and run it two ways simultaneously—traditional approach and AI-augmented approach. Compare time, cost, quality, and team satisfaction. Real data beats assumptions.</p>
+                <p className="text-slate-300 text-sm">Take one real project and run it two ways simultaneously, traditional approach and AI-augmented approach. Compare time, cost, quality, and team satisfaction. Real data beats assumptions.</p>
               </div>
               <div className="bg-slate-900/50 border-l-4 border-cyan-500 p-4">
                 <div className="text-white font-semibold mb-2">Step 4: Measure time and quality</div>
@@ -583,7 +583,7 @@ export default function AIAugmentedWorkflow() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The world of product development is splitting into two groups. One group continues building products the way they always have—sequential phases, manual execution, long timelines. The other group is rebuilding workflows around AI, compressing timelines by four to six times while improving quality metrics. The gap between these groups isn't static. It's widening every quarter as AI-augmented teams compound their advantages.
+              The world of product development is splitting into two groups. One group continues building products the way they always have, sequential phases, manual execution, long timelines. The other group is rebuilding workflows around AI, compressing timelines by four to six times while improving quality metrics. The gap between these groups isn't static. It's widening every quarter as AI-augmented teams compound their advantages.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

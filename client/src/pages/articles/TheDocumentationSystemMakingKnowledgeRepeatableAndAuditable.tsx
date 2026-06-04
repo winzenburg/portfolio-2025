@@ -74,11 +74,11 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </h2>
 
       <p className="mb-6">
-        Most teams document like they're playing whack-a-mole—create a doc when they remember, save it wherever feels convenient, hope they can find it later. I tried that approach for years. It's a disaster.
+        Most teams document like they're playing whack-a-mole, create a doc when they remember, save it wherever feels convenient, hope they can find it later. I tried that approach for years. It's a disaster.
       </p>
 
       <p className="mb-6">
-        The breakthrough came when I realized documentation isn't about capturing information—it's about telling complete stories. Every product idea needs its full narrative, from the first "what if" moment through the final "here's what we learned."
+        The breakthrough came when I realized documentation isn't about capturing information, it's about telling complete stories. Every product idea needs its full narrative, from the first "what if" moment through the final "here's what we learned."
       </p>
 
       <p className="mb-6">
@@ -130,7 +130,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        My solution? A simple linking system that creates what I call a "knowledge web." Every document includes [LINK] placeholders that point to related content. Not fancy—just functional.
+        My solution? A simple linking system that creates what I call a "knowledge web." Every document includes [LINK] placeholders that point to related content. Not fancy, just functional.
       </p>
 
       <p className="mb-6">
@@ -178,7 +178,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        That's where our "Hub" page comes in. Think of it as the mission control for our product exploration—every active project, its current status, and direct links to the relevant docs.
+        That's where our "Hub" page comes in. Think of it as the mission control for our product exploration, every active project, its current status, and direct links to the relevant docs.
       </p>
 
       <p className="mb-6">
@@ -228,7 +228,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </ul>
 
       <p className="mb-8">
-        This isn't just for internal clarity—it's for building trust with stakeholders. When someone questions a decision, I can show them the complete reasoning chain instead of asking them to trust my memory.
+        This isn't just for internal clarity, it's for building trust with stakeholders. When someone questions a decision, I can show them the complete reasoning chain instead of asking them to trust my memory.
       </p>
 
       <div className="my-12 grid md:grid-cols-2 gap-6">
@@ -281,7 +281,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </h2>
 
       <p className="mb-6">
-        Look, I'm not going to lie—setting up a comprehensive documentation system is about as fun as organizing your garage. But like organizing your garage, once it's done, everything else gets easier.
+        Look, I'm not going to lie, setting up a comprehensive documentation system is about as fun as organizing your garage. But like organizing your garage, once it's done, everything else gets easier.
       </p>
 
       <p className="mb-6">
@@ -309,7 +309,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </h3>
 
       <p className="mb-6">
-        Go back through your documents and add [LINK] placeholders anywhere you reference other documents. Don't worry about making the links functional yet—just mark where they should go.
+        Go back through your documents and add [LINK] placeholders anywhere you reference other documents. Don't worry about making the links functional yet, just mark where they should go.
       </p>
 
       <h3 className="text-lg font-semibold mb-4">
@@ -317,7 +317,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </h3>
 
       <p className="mb-6">
-        Create a simple index page that lists all your projects with their status and links to the key documents. Keep it simple—a markdown file with a table works fine to start.
+        Create a simple index page that lists all your projects with their status and links to the key documents. Keep it simple, a markdown file with a table works fine to start.
       </p>
 
       <p className="mb-8">
@@ -371,11 +371,11 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        <strong>Document failures generously.</strong> Your failed projects will teach future you more than your successes. Don't bury the evidence—make it findable and learnable.
+        <strong>Document failures generously.</strong> Your failed projects will teach future you more than your successes. Don't bury the evidence, make it findable and learnable.
       </p>
 
       <p className="mb-6">
-        <strong>Link to external sources liberally.</strong> Don't just reference "competitor research"—link to the specific articles, reports, or tools you used. Future you will thank present you.
+        <strong>Link to external sources liberally.</strong> Don't just reference "competitor research", link to the specific articles, reports, or tools you used. Future you will thank present you.
       </p>
 
       <p className="mb-6">
@@ -395,7 +395,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        But the biggest win isn't efficiency—it's confidence. When every decision is auditable and every process is repeatable, you can move faster because you're not constantly second-guessing yourself.
+        But the biggest win isn't efficiency, it's confidence. When every decision is auditable and every process is repeatable, you can move faster because you're not constantly second-guessing yourself.
       </p>
 
       <p className="mb-6">
@@ -403,7 +403,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-8">
-        The teams that invest in systematic documentation aren't just building products—they're building institutional intelligence. And in a world where most companies lose their memory every time someone leaves, that's a genuine competitive advantage.
+        The teams that invest in systematic documentation aren't just building products, they're building institutional intelligence. And in a world where most companies lose their memory every time someone leaves, that's a genuine competitive advantage.
       </p>
 
       <div className="bg-cyan-900/20 p-6 rounded-lg mt-12">

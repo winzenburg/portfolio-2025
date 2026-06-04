@@ -10,14 +10,14 @@ export default function ChoosingAICodingMode() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Choosing Your AI Coding Mode: Interactive vs Autonomous | Ryan Winzenburg</title>
-        <meta name="description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong—my choice was. Here&#39;s the decision framework I should have used." />
+        <meta name="description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong, my choice was. Here&#39;s the decision framework I should have used." />
         <meta property="og:title" content="Choosing Your AI Coding Mode: Interactive vs Autonomous" />
-        <meta property="og:description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong—my choice was. Here&#39;s the decision framework I should have used." />
+        <meta property="og:description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong, my choice was. Here&#39;s the decision framework I should have used." />
         <meta property="og:url" content="https://winzenburg.com/articles/choosing-ai-coding-mode" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.png" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/choosing-ai-coding-mode" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong—my choice was. Here's the decision framework I should have used.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong, my choice was. Here's the decision framework I should have used.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.png"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -54,7 +54,7 @@ export default function ChoosingAICodingMode() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong—my choice was. Here's the decision framework I should have used.
+              Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong, my choice was. Here's the decision framework I should have used.
             </p>
           </div>
 
@@ -356,7 +356,7 @@ export default function ChoosingAICodingMode() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Autonomous mode only makes sense if you have valuable alternative uses for your time during the build. If you'd just be waiting around anyway, use interactive mode—you'll get a better result faster.
+              Autonomous mode only makes sense if you have valuable alternative uses for your time during the build. If you'd just be waiting around anyway, use interactive mode, you'll get a better result faster.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -600,7 +600,7 @@ export default function ChoosingAICodingMode() {
                 <div>
                   <div className="text-red-400 font-semibold mb-2">Mistake: Forcing autonomous when you'd wait anyway</div>
                   <p className="text-slate-400 text-sm mb-2">Symptom: Running 4-hour autonomous build when you have no other work</p>
-                  <p className="text-slate-300 text-sm"><strong className="text-white">Fix:</strong> Use interactive—you'll finish in 2 hours with better results</p>
+                  <p className="text-slate-300 text-sm"><strong className="text-white">Fix:</strong> Use interactive, you'll finish in 2 hours with better results</p>
                 </div>
               </div>
             </div>
@@ -614,7 +614,7 @@ export default function ChoosingAICodingMode() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That shift—from defaulting to one mode to strategically choosing—increased my output by 2-3x. Not because one mode is better, but because I stopped using the wrong mode for the wrong work.
+              That shift, from defaulting to one mode to strategically choosing, increased my output by 2-3x. Not because one mode is better, but because I stopped using the wrong mode for the wrong work.
             </p>
 
             {/* Statistics Cards */}
@@ -641,7 +641,7 @@ export default function ChoosingAICodingMode() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Interactive and autonomous aren't competing options—they're complementary tools for different contexts. The developers who ship fastest aren't the ones who pick one mode and stick with it. They're the ones who consciously choose based on requirements clarity, risk level, pattern availability, and time arbitrage opportunity.
+              Interactive and autonomous aren't competing options, they're complementary tools for different contexts. The developers who ship fastest aren't the ones who pick one mode and stick with it. They're the ones who consciously choose based on requirements clarity, risk level, pattern availability, and time arbitrage opportunity.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

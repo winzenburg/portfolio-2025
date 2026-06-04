@@ -61,11 +61,11 @@ export default function RuleConsolidation() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Launch week. It's 3 AM. I'm staring at our multi-agent system trying to figure out why it's giving contradictory advice about ChatGPT integration. The culprit wasn’t a bug—it was duplication: <em>five different rules</em> covering the same thing, scattered across different folders, each with its own “best” approach.
+              Launch week. It's 3 AM. I'm staring at our multi-agent system trying to figure out why it's giving contradictory advice about ChatGPT integration. The culprit wasn’t a bug, it was duplication: <em>five different rules</em> covering the same thing, scattered across different folders, each with its own “best” approach.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's when it hit me—we'd built something powerful, but we were drowning in our own success. Forty-seven rules covering discovery, validation, build, and scale phases. Multiple agents getting confused about which rule was canonical. The orchestrator trying to track everything and failing spectacularly.
+              That's when it hit me, we'd built something powerful, but we were drowning in our own success. Forty-seven rules covering discovery, validation, build, and scale phases. Multiple agents getting confused about which rule was canonical. The orchestrator trying to track everything and failing spectacularly.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -77,7 +77,7 @@ export default function RuleConsolidation() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Here's exactly how we went from chaos to clarity—and the framework you can use for any complex system.
+              Here's exactly how we went from chaos to clarity, and the framework you can use for any complex system.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -85,7 +85,7 @@ export default function RuleConsolidation() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Six months ago, I was that person. You know the one—frantically grep-ing through dozens of files, trying to find the "real" rule about data moat guidance. Was it in the 003 series? The 170s? The 180s?
+              Six months ago, I was that person. You know the one, frantically grep-ing through dozens of files, trying to find the "real" rule about data moat guidance. Was it in the 003 series? The 170s? The 180s?
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -116,7 +116,7 @@ export default function RuleConsolidation() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The system was still powerful—it enforced quality gates, captured institutional knowledge, guided our workflow. But it was becoming unmaintainable. And here's what I learned watching this pattern up close: <em>unmaintainable systems don't gradually decline, they collapse suddenly</em>.
+              The system was still powerful, it enforced quality gates, captured institutional knowledge, guided our workflow. But it was becoming unmaintainable. And here's what I learned watching this pattern up close: <em>unmaintainable systems don't gradually decline, they collapse suddenly</em>.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -124,7 +124,7 @@ export default function RuleConsolidation() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The solution came from borrowing ideas from everywhere—military command structures, software architecture, even how libraries organize books. Three interlocking concepts saved us:
+              The solution came from borrowing ideas from everywhere, military command structures, software architecture, even how libraries organize books. Three interlocking concepts saved us:
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -138,19 +138,19 @@ export default function RuleConsolidation() {
             {/* Taxonomy Grid */}
             <div className="my-8 grid md:grid-cols-2 gap-6">
               <div className="bg-slate-900/30 border border-cyan-700/50 rounded-lg p-6">
-                <h4 className="font-semibold text-cyan-400 mb-2">Core Guardrails (000–099)</h4>
+                <h4 className="font-semibold text-cyan-400 mb-2">Core Guardrails (000-099)</h4>
                 <p className="text-slate-300 text-sm">Always-on constraints that gate every phase. Accessibility standards, testing requirements, document quality. These never get ignored.</p>
               </div>
               <div className="bg-slate-900/30 border border-slate-700 rounded-lg p-6">
-                <h4 className="font-semibold text-blue-400 mb-2">Stack & Integrations (100–199)</h4>
+                <h4 className="font-semibold text-blue-400 mb-2">Stack & Integrations (100-199)</h4>
                 <p className="text-slate-300 text-sm">Technology conventions that activate only when a specific agent is working. Next.js patterns, Drizzle schemas, tRPC conventions.</p>
               </div>
               <div className="bg-slate-900/30 border border-purple-700/50 rounded-lg p-6">
-                <h4 className="font-semibold text-purple-400 mb-2">Playbooks (200–260)</h4>
+                <h4 className="font-semibold text-purple-400 mb-2">Playbooks (200-260)</h4>
                 <p className="text-slate-300 text-sm">Step-by-step workflows with explicit handoffs. How-to guides that orchestrate multiple agents in sequence.</p>
               </div>
               <div className="bg-slate-900/30 border border-slate-700 rounded-lg p-6">
-                <h4 className="font-semibold text-green-400 mb-2">Discovery Pack (300–340)</h4>
+                <h4 className="font-semibold text-green-400 mb-2">Discovery Pack (300-340)</h4>
                 <p className="text-slate-300 text-sm">Templates and AI orchestration specific to the heat filter phase. Only loaded when Discovery pod is active.</p>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function RuleConsolidation() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The matrix became our single source of truth—a simple table that maps every rule to its purpose:
+              The matrix became our single source of truth, a simple table that maps every rule to its purpose:
             </p>
 
             {/* Matrix Table */}
@@ -245,7 +245,7 @@ export default function RuleConsolidation() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The matrix became our navigation system—one table that prevents duplication and confusion."
+                "The matrix became our navigation system, one table that prevents duplication and confusion."
               </p>
             </div>
 
@@ -361,7 +361,7 @@ export default function RuleConsolidation() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Then came the fun part: updating every reference across the entire codebase. Matrix, playbooks, orchestrator, agent prompts—everything.
+              Then came the fun part: updating every reference across the entire codebase. Matrix, playbooks, orchestrator, agent prompts, everything.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -383,7 +383,7 @@ export default function RuleConsolidation() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We updated the orchestrator, the matrix, all playbooks, agent documentation—everything that might reference the old rules. It took a full day, but it was worth it.
+              We updated the orchestrator, the matrix, all playbooks, agent documentation, everything that might reference the old rules. It took a full day, but it was worth it.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -391,7 +391,7 @@ export default function RuleConsolidation() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We created <code className="text-cyan-400 bg-slate-900/50 px-2 py-1 rounded">docs/rules/change-control.md</code>—a lightweight checklist for future changes:
+              We created <code className="text-cyan-400 bg-slate-900/50 px-2 py-1 rounded">docs/rules/change-control.md</code>, a lightweight checklist for future changes:
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -552,7 +552,7 @@ export default function RuleConsolidation() {
               <ul className="space-y-2 text-cyan-400">
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">•</span>
-                  <span><strong className="text-white">Upfront Investment:</strong> 40 hours of focused work—not trivial</span>
+                  <span><strong className="text-white">Upfront Investment:</strong> 40 hours of focused work, not trivial</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-yellow-400 mt-1">•</span>
@@ -574,7 +574,7 @@ export default function RuleConsolidation() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's what surprised me: the system got <em>stronger</em> after consolidation. Since cleaning up, we've confidently added brand system blueprints, dev quality rules, Supabase integration, gamification playbooks, micro-interactions guidance—each following the change-control checklist and landing in the right tier.
+              But here's what surprised me: the system got <em>stronger</em> after consolidation. Since cleaning up, we've confidently added brand system blueprints, dev quality rules, Supabase integration, gamification playbooks, micro-interactions guidance, each following the change-control checklist and landing in the right tier.
             </p>
 
             {/* Pull Quote */}

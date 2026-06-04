@@ -61,7 +61,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <p>
-        In 2019, I watched our product analytics dashboard with horror. Users were deleting their accounts <em>faster</em> after we launched personalization. Our “smart recommendations” feature—which took six months to build—was driving people away.
+        In 2019, I watched our product analytics dashboard with horror. Users were deleting their accounts <em>faster</em> after we launched personalization. Our “smart recommendations” feature, which took six months to build, was driving people away.
       </p>
 
       <p>
@@ -73,7 +73,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <p>
-        We'd built what I now call "surveillance personalization"—algorithmic assumptions about users based on data they didn't know we were collecting. It felt invasive because it <em>was</em> invasive.
+        We'd built what I now call "surveillance personalization", algorithmic assumptions about users based on data they didn't know we were collecting. It felt invasive because it <em>was</em> invasive.
       </p>
 
       <p>
@@ -117,7 +117,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <p>
-        Suggestions appear with zero explanation of why they were chosen. Users feel like the algorithm knows something they don't—which is unsettling, not helpful.
+        Suggestions appear with zero explanation of why they were chosen. Users feel like the algorithm knows something they don't, which is unsettling, not helpful.
       </p>
 
       <p>
@@ -235,7 +235,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <p>
-        We use behavioral signals (habits completed, session patterns) not personal identifiers (location, device info, browsing history). We aggregate where possible ("users like you" not "people in your zip code"). And we delete old data—only the last 90 days of activity influences recommendations.
+        We use behavioral signals (habits completed, session patterns) not personal identifiers (location, device info, browsing history). We aggregate where possible ("users like you" not "people in your zip code"). And we delete old data, only the last 90 days of activity influences recommendations.
       </p>
 
       <p>
@@ -252,7 +252,7 @@ export default function PersonalizationWithPrivacyArticle() {
       <ul>
         <li><strong>Healthcare</strong>: Conservative, professional, never presume ("You might find this resource helpful")</li>
         <li><strong>Fintech</strong>: Transparent, data-driven, goal-oriented ("Based on your spending, consider this savings target")</li>
-        <li><strong>Personal Development</strong>: Encouraging, growth-minded ("You've been consistent with morning routines—want to add evening reflection?")</li>
+        <li><strong>Personal Development</strong>: Encouraging, growth-minded ("You've been consistent with morning routines, want to add evening reflection?")</li>
       </ul>
 
       <p>
@@ -268,7 +268,7 @@ export default function PersonalizationWithPrivacyArticle() {
       <h3>Step 1: Define Segments and Signals</h3>
 
       <p>
-        First, we identified what data actually improves the user experience—without crossing the creepy line.
+        First, we identified what data actually improves the user experience, without crossing the creepy line.
       </p>
 
       <p>
@@ -353,7 +353,7 @@ export default function PersonalizationWithPrivacyArticle() {
       </p>
 
       <p>
-        "You've completed 10 habits—nice work staying consistent!" This celebrates behaviors (what they did) not traits (who they are).
+        "You've completed 10 habits, nice work staying consistent!" This celebrates behaviors (what they did) not traits (who they are).
       </p>
 
       <p>
@@ -422,7 +422,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
     return getPopularContent(); // Everyone sees the same thing
   }
 
-  // User has explicitly consented—personalize
+  // User has explicitly consented, personalize
   const habits = await getUserHabits(userId);
   const recommendations = await generateRecommendations(habits);
   
@@ -517,11 +517,11 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <p>
-        The key insight? Users actually <em>want</em> personalization—they just want it done respectfully.
+        The key insight? Users actually <em>want</em> personalization, they just want it done respectfully.
       </p>
 
       <blockquote>
-        "Users actually want personalization—they just want it done respectfully."
+        "Users actually want personalization, they just want it done respectfully."
       </blockquote>
 
       <h2>The Trade-Offs Nobody Talks About</h2>
@@ -711,7 +711,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <p>
-        The goal isn't to collect more data—it's to use data more thoughtfully.
+        The goal isn't to collect more data, it's to use data more thoughtfully.
       </p>
 
       <p>
@@ -719,7 +719,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <p>
-        I'd love to hear how this approach works for your product. What's your biggest personalization challenge? Drop me a line—I'm genuinely curious what's working (and what isn't) for other teams tackling this problem.
+        I'd love to hear how this approach works for your product. What's your biggest personalization challenge? Drop me a line, I'm genuinely curious what's working (and what isn't) for other teams tackling this problem.
       </p>
 
       <p>

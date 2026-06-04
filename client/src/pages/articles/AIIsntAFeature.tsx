@@ -13,7 +13,7 @@ export default function AIIsntAFeature() {
         <title>AI Isn't a Feature. It's a Workflow Problem. | Ryan Winzenburg</title>
         <meta
           name="description"
-          content="Most teams aren't falling behind because they lack AI tools. They're asking the wrong question. Why workflow redesign — not feature bolt-ons — is where the real advantage lives."
+          content="Most teams aren't falling behind because they lack AI tools. They're asking the wrong question. Why workflow redesign, not feature bolt-ons, is where the real advantage lives."
         />
         <meta property="og:title" content="AI Isn't a Feature. It's a Workflow Problem." />
         <meta
@@ -71,7 +71,7 @@ export default function AIIsntAFeature() {
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We're in that moment again — except the gap is wider than it's ever been. And the reason most teams are falling behind isn't that they lack access to AI. It's that they're asking the wrong question. The conversation has been dominated by tool announcements and anxiety about replacement. Neither gets you anywhere. What actually matters is less flashy: the shift from AI as a feature to AI as a workflow redesign problem.
+              We're in that moment again, except the gap is wider than it's ever been. And the reason most teams are falling behind isn't that they lack access to AI. It's that they're asking the wrong question. The conversation has been dominated by tool announcements and anxiety about replacement. Neither gets you anywhere. What actually matters is less flashy: the shift from AI as a feature to AI as a workflow redesign problem.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -87,7 +87,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The first is AI getting bolted into existing software. Microsoft Copilot in Office. Google Gemini in Docs and Gmail. Legacy product management tools adding a "summarize this" button. These integrations are real and they're useful. But they're also limited. You're getting a 10–30% productivity improvement on individual tasks. The underlying process — with all its handoffs, silos, and friction — stays exactly the same.
+              The first is AI getting bolted into existing software. Microsoft Copilot in Office. Google Gemini in Docs and Gmail. Legacy product management tools adding a "summarize this" button. These integrations are real and they're useful. But they're also limited. You're getting a 10-30% productivity improvement on individual tasks. The underlying process, with all its handoffs, silos, and friction, stays exactly the same.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -100,7 +100,7 @@ export default function AIIsntAFeature() {
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
                     <span className="text-red-400">✗</span>
-                    <span className="text-slate-400">10–30% faster on individual tasks</span>
+                    <span className="text-slate-400">10-30% faster on individual tasks</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-red-400">✗</span>
@@ -121,7 +121,7 @@ export default function AIIsntAFeature() {
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-cyan-400">✓</span>
-                    <span className="text-slate-300">Entire steps — sometimes entire roles — eliminated</span>
+                    <span className="text-slate-300">Entire steps, sometimes entire roles, eliminated</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-cyan-400">✓</span>
@@ -132,7 +132,7 @@ export default function AIIsntAFeature() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Adding AI to an old process makes the process faster. Redesigning the process around AI can eliminate entire steps — and sometimes entire roles.
+              Adding AI to an old process makes the process faster. Redesigning the process around AI can eliminate entire steps, and sometimes entire roles.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -144,7 +144,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              A typical discovery cycle looks like this: a PM or researcher identifies a problem, conducts interviews, manually synthesizes findings into a report, writes a PRD, waits for design, waits for engineering, and finally ships something — only to discover the original assumption was slightly off. The whole loop can take months. And by the time you get signal, the market has moved.
+              A typical discovery cycle looks like this: a PM or researcher identifies a problem, conducts interviews, manually synthesizes findings into a report, writes a PRD, waits for design, waits for engineering, and finally ships something, only to discover the original assumption was slightly off. The whole loop can take months. And by the time you get signal, the market has moved.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -152,7 +152,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              What I've seen firsthand: most teams are spending the majority of their time in delivery — standups, documentation, alignment meetings, expectation management — and almost none of their time in real discovery. The result is safe, derivative product decisions. Teams copy competitors because they can't afford to explore anything else.
+              What I've seen firsthand: most teams are spending the majority of their time in delivery, standups, documentation, alignment meetings, expectation management, and almost none of their time in real discovery. The result is safe, derivative product decisions. Teams copy competitors because they can't afford to explore anything else.
             </p>
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
@@ -175,19 +175,19 @@ export default function AIIsntAFeature() {
                 <div>
                   <div className="text-white font-semibold mb-2">Discovery and research synthesis</div>
                   <p className="text-slate-300 text-sm leading-relaxed">
-                    Manually transcribing and tagging user interviews used to take days — and even then, synthesis was bounded by whoever had time to do it. That constraint is gone. AI-native research platforms now handle transcription, theme extraction, and insight clustering automatically, and they do it across your entire research history, not just the last sprint. When a PM can query two years of user interviews in real time, discovery stops being a periodic activity and becomes a continuously updated picture of what users actually need.
+                    Manually transcribing and tagging user interviews used to take days, and even then, synthesis was bounded by whoever had time to do it. That constraint is gone. AI-native research platforms now handle transcription, theme extraction, and insight clustering automatically, and they do it across your entire research history, not just the last sprint. When a PM can query two years of user interviews in real time, discovery stops being a periodic activity and becomes a continuously updated picture of what users actually need.
                   </p>
                 </div>
                 <div>
                   <div className="text-white font-semibold mb-2">Design-to-code handoff</div>
                   <p className="text-slate-300 text-sm leading-relaxed">
-                    The gap between design intent and what gets built has always been one of the most expensive inefficiencies in the product lifecycle. Designers redline files. Developers interpret — which means they sometimes misinterpret. QA cycles stretch. Design debt accumulates quietly until it isn't quiet anymore. When design context — variables, styles, component logic — lives directly in the developer's environment, AI can generate brand-compliant, accessible front-end code without a translation layer. The design system stops being a reference document and starts being an active constraint on what ships.
+                    The gap between design intent and what gets built has always been one of the most expensive inefficiencies in the product lifecycle. Designers redline files. Developers interpret, which means they sometimes misinterpret. QA cycles stretch. Design debt accumulates quietly until it isn't quiet anymore. When design context, variables, styles, component logic, lives directly in the developer's environment, AI can generate brand-compliant, accessible front-end code without a translation layer. The design system stops being a reference document and starts being an active constraint on what ships.
                   </p>
                 </div>
                 <div>
                   <div className="text-white font-semibold mb-2">Prototyping and validation</div>
                   <p className="text-slate-300 text-sm leading-relaxed">
-                    Getting a navigable prototype in front of users used to require a designer, an engineer, and a lead time measured in weeks. That lead time is now measured in hours. A PM or designer can generate something testable directly from a structured brief — not a static mockup, something a user can actually interact with. When prototyping is cheap, you test more bets. When you test more bets, you make fewer expensive mistakes.
+                    Getting a navigable prototype in front of users used to require a designer, an engineer, and a lead time measured in weeks. That lead time is now measured in hours. A PM or designer can generate something testable directly from a structured brief, not a static mockup, something a user can actually interact with. When prototyping is cheap, you test more bets. When you test more bets, you make fewer expensive mistakes.
                   </p>
                 </div>
               </div>
@@ -206,7 +206,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's where AI creates leverage. Not in the creative, judgment-intensive work — that still requires humans. But in the connective tissue between the work. The transcription. The documentation. The synthesis. The translation between disciplines. That's where hours disappear, and that's where redesigning the workflow pays off.
+              That's where AI creates leverage. Not in the creative, judgment-intensive work, that still requires humans. But in the connective tissue between the work. The transcription. The documentation. The synthesis. The translation between disciplines. That's where hours disappear, and that's where redesigning the workflow pays off.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -214,7 +214,7 @@ export default function AIIsntAFeature() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is where most organizations stall. The workflow problem gets identified, everyone agrees it's real, and then it sits in a no-man's-land between product, engineering, and design — each team waiting for someone else to take the first move.
+              This is where most organizations stall. The workflow problem gets identified, everyone agrees it's real, and then it sits in a no-man's-land between product, engineering, and design, each team waiting for someone else to take the first move.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -222,7 +222,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That cross-functional visibility is exactly what workflow redesign requires. It's not a technical problem. It's a systems problem — and the people who think in systems are the ones who should be leading it.
+              That cross-functional visibility is exactly what workflow redesign requires. It's not a technical problem. It's a systems problem, and the people who think in systems are the ones who should be leading it.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -246,7 +246,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              A lot of product and design teams are using AI to protect the old model — to do the same work with less effort. That's the wrong frame. The better question isn't how to preserve what you're already doing. It's what becomes possible now that the economics of building have fundamentally changed.
+              A lot of product and design teams are using AI to protect the old model, to do the same work with less effort. That's the wrong frame. The better question isn't how to preserve what you're already doing. It's what becomes possible now that the economics of building have fundamentally changed.
             </p>
 
             <div className="my-8 bg-slate-800 border border-cyan-500/20 rounded-lg p-6">
@@ -254,7 +254,7 @@ export default function AIIsntAFeature() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3 text-slate-300">
                   <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
-                  <span>What can you offer users now that wasn't viable six months ago — not because you lacked the idea, but because you lacked the capacity to build it?</span>
+                  <span>What can you offer users now that wasn't viable six months ago, not because you lacked the idea, but because you lacked the capacity to build it?</span>
                 </div>
                 <div className="flex items-start gap-3 text-slate-300">
                   <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
@@ -272,7 +272,7 @@ export default function AIIsntAFeature() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The teams that win with AI won't be the ones who automated their existing process. They'll be the ones who looked at what the automation made possible — and redesigned around that.
+              The teams that win with AI won't be the ones who automated their existing process. They'll be the ones who looked at what the automation made possible, and redesigned around that.
             </p>
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">

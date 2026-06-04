@@ -107,7 +107,7 @@ const articles: Article[] = [
   {
     id: "47",
     title: "Self-Validating AI Agents: When Acceptance Criteria Become Tests",
-    excerpt: "Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed—all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.",
+    excerpt: "Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.",
     date: "February 8, 2026",
     readTime: "11 min read",
     slug: "self-validating-ai-agents",
@@ -127,7 +127,7 @@ const articles: Article[] = [
   {
     id: "45",
     title: "Choosing Your AI Coding Mode: Interactive vs Autonomous",
-    excerpt: "Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong—my choice was. Here's the decision framework I should have used.",
+    excerpt: "Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong, my choice was. Here's the decision framework I should have used.",
     date: "January 25, 2026",
     readTime: "11 min read",
     slug: "choosing-ai-coding-mode",
@@ -137,7 +137,7 @@ const articles: Article[] = [
   {
     id: "44",
     title: "The Economics of AI-Assisted Coding: When $40 Beats 6 Hours",
-    excerpt: "Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money—it's about what becomes possible when implementation stops being the constraint.",
+    excerpt: "Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money, it's about what becomes possible when implementation stops being the constraint.",
     date: "January 18, 2026",
     readTime: "12 min read",
     slug: "ai-coding-economics",
@@ -167,7 +167,7 @@ const articles: Article[] = [
   {
     id: "41",
     title: "The Weekly Rhythm: A 60-Minute Operating System That Actually Ships",
-    excerpt: "Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning—it's deciding what the week is for.",
+    excerpt: "Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning, it's deciding what the week is for.",
     date: "December 25, 2025",
     readTime: "9 min read",
     slug: "weekly-rhythm",
@@ -176,7 +176,7 @@ const articles: Article[] = [
   },
   {
     id: "40",
-    title: "Rocks, Not Tasks: How to Commit to 1–3 Weekly Outcomes",
+    title: "Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes",
     excerpt: "The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.",
     date: "December 23, 2025",
     readTime: "8 min read",
@@ -307,7 +307,7 @@ const articles: Article[] = [
   {
     id: "27",
     title: "The Problem: Why Most SaaS Startups Fail Before They Even Start",
-    excerpt: "Exploring why 90% of SaaS startups fail and how the problem isn't the idea—it's the process.",
+    excerpt: "Exploring why 90% of SaaS startups fail and how the problem isn't the idea, it's the process.",
     date: "December 7, 2024",
     readTime: "7 min read",
     slug: "saas-problem",
@@ -417,7 +417,7 @@ const articles: Article[] = [
   {
     id: "16",
     title: "The Complete Workflow: Discovery to Deployment in 2025",
-    excerpt: "Our current end-to-end SaaS creation system, from validating ideas to shipping code—with 25 agents, 8 quality gates, and zero guesswork.",
+    excerpt: "Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.",
     date: "December 7, 2024",
     readTime: "18 min read",
     slug: "complete-workflow-2025",
@@ -497,7 +497,7 @@ const articles: Article[] = [
   {
     id: "8",
     title: "Monetization Strategy: Generating Revenue from Day One",
-    excerpt: "Monetization isn't an afterthought—it's a critical component of product strategy from day one. Learn the modular pricing framework and pre-selling strategy that allows you to generate revenue before building, validate demand with real dollars, and scale systematically.",
+    excerpt: "Monetization isn't an afterthought, it's a critical component of product strategy from day one. Learn the modular pricing framework and pre-selling strategy that allows you to generate revenue before building, validate demand with real dollars, and scale systematically.",
     date: "July 21, 2025",
     readTime: "5 min read",
     slug: "monetization-strategy",
@@ -517,7 +517,7 @@ const articles: Article[] = [
   {
     id: "6",
     title: "The Audience-First Go-to-Market Strategy: Building Community Before Launch",
-    excerpt: "Most products launch to silence. The pattern: Build for months, announce launch, hear crickets. The issue isn't product quality—it's lack of audience. Here's what works: Build community before launch. Use one platform. Master it. Then expand.",
+    excerpt: "Most products launch to silence. The pattern: Build for months, announce launch, hear crickets. The issue isn't product quality, it's lack of audience. Here's what works: Build community before launch. Use one platform. Master it. Then expand.",
     date: "June 2, 2025",
     readTime: "5 min read",
     slug: "audience-first-go-to-market",
@@ -537,7 +537,7 @@ const articles: Article[] = [
   {
     id: "4",
     title: "The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster",
-    excerpt: "Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks. Not by cutting corners—by strategically implementing AI throughout the entire design process. Here's the framework.",
+    excerpt: "Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks. Not by cutting corners, by strategically implementing AI throughout the entire design process. Here's the framework.",
     date: "March 17, 2025",
     readTime: "5 min read",
     slug: "ai-augmented-workflow",
@@ -547,7 +547,7 @@ const articles: Article[] = [
   {
     id: "3",
     title: "How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)",
-    excerpt: "Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance. Not by cutting corners—by strategically implementing AI where it accelerates work.",
+    excerpt: "Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance. Not by cutting corners, by strategically implementing AI where it accelerates work.",
     date: "February 24, 2025",
     readTime: "7 min read",
     slug: "design-system-4-weeks",
@@ -557,7 +557,7 @@ const articles: Article[] = [
   {
     id: "2",
     title: "The AI-Powered Design Tech Stack: My Exact Workflow",
-    excerpt: "After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: 'What tools did you actually use?' Here's my complete tech stack and exactly how each tool fits into the workflow—from Cursor to V0 to automated testing.",
+    excerpt: "After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: 'What tools did you actually use?' Here's my complete tech stack and exactly how each tool fits into the workflow, from Cursor to V0 to automated testing.",
     date: "February 3, 2025",
     readTime: "8 min read",
     slug: "ai-tech-stack",
@@ -567,7 +567,7 @@ const articles: Article[] = [
   {
     id: "1",
     title: "Why Most Design Systems Fail (And How to Fix Them)",
-    excerpt: "Here's the pattern I've seen repeatedly: Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. The system becomes shelfware. The data shows three core problems that kill design systems—and three AI-powered solutions that work.",
+    excerpt: "Here's the pattern I've seen repeatedly: Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. The system becomes shelfware. The data shows three core problems that kill design systems, and three AI-powered solutions that work.",
     date: "January 15, 2025",
     readTime: "9 min read",
     slug: "design-systems-fail",
@@ -620,7 +620,7 @@ export default function Articles() {
             AI Design Workflows, DesignOps & Product Strategy
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed mb-8">
-            Practical insights on AI-augmented design, design operations, UX leadership, and product strategy — from 25 years of enterprise design leadership.
+            Practical insights on AI-augmented design, design operations, UX leadership, and product strategy, from 25 years of enterprise design leadership.
           </p>
 
           {/* Category Filter Pills */}

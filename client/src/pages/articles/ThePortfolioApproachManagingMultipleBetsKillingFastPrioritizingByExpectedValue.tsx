@@ -64,7 +64,7 @@ export default function PortfolioApproachArticle() {
             <h2>The $50K Mistake That Changed My Mind</h2>
 
         <p>
-          I used to be an "all-in" founder. You know the type—pick one product idea, pour everything into it, 
+          I used to be an "all-in" founder. You know the type, pick one product idea, pour everything into it, 
           ride or die. I thought that was being "focused." In reality, I was just being reckless.
         </p>
 
@@ -75,7 +75,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <p>
-          The product launched to crickets. Not even expensive crickets—free crickets. Nobody cared.
+          The product launched to crickets. Not even expensive crickets, free crickets. Nobody cared.
         </p>
 
         <p>
@@ -276,7 +276,7 @@ export default function PortfolioApproachArticle() {
 
         <p>
           Six months ago, I was building an AI-powered customer interview tool. Scored it a 26 
-          initially—high priority. Spent three weeks on prototypes, customer interviews, the works.
+          initially, high priority. Spent three weeks on prototypes, customer interviews, the works.
         </p>
 
         <p>
@@ -462,7 +462,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <p>
-          Not remove passion—that's still essential for execution. But remove the emotional 
+          Not remove passion, that's still essential for execution. But remove the emotional 
           attachment that makes us keep building products nobody wants.
         </p>
 

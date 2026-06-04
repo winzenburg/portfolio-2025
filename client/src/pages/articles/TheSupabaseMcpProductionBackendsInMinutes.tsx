@@ -135,7 +135,7 @@ export default function SupabaseMCPArticle() {
 
         <p>
           And here's what nobody tells you: every mistake compounds. That missing 
-          organization_id? It's not just one table—it's twenty tables, plus RLS policies, 
+          organization_id? It's not just one table, it's twenty tables, plus RLS policies, 
           plus indexes, plus migrations. One oversight becomes months of work.
         </p>
 
@@ -250,7 +250,7 @@ CREATE INDEX idx_habits_org ON habits(organization_id);`}</code>
         </div>
 
         <p>
-          The <code>organization_id</code> on every table isn't just good practice—it's 
+          The <code>organization_id</code> on every table isn't just good practice, it's 
           what makes RLS work. Miss it on one table and you've created a data leak.
         </p>
 
@@ -310,7 +310,7 @@ USING (
         </div>
 
         <p>
-          The subquery checks org membership on every query. Expensive? Nope—Postgres 
+          The subquery checks org membership on every query. Expensive? Nope, Postgres 
           is smart about optimizing these. Secure? Absolutely.
         </p>
 
@@ -318,7 +318,7 @@ USING (
 
         <p>
           Some operations can't be trusted to the client. Creating organizations, 
-          sending invites, logging events—these need server-side logic. Edge Functions 
+          sending invites, logging events, these need server-side logic. Edge Functions 
           handle the privileged operations:
         </p>
 
@@ -538,7 +538,7 @@ supabase db push`}</code>
         </blockquote>
 
         <p>
-          <strong>4. Review, refine, generate migrations</strong>. Don't skip the review—MCP 
+          <strong>4. Review, refine, generate migrations</strong>. Don't skip the review, MCP 
           gives you a great starting point, but you know your app best.
         </p>
 

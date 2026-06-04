@@ -54,14 +54,14 @@ export default function AITechStack() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: "What tools did you actually use?" Every single conversation—whether on LinkedIn, in consulting calls, or over coffee with other designers—eventually circled back to this. People wanted specifics. Not vague platitudes about "leveraging AI" or "modernizing workflows." They wanted to know exactly which tools I used, why I chose them, and how they fit together into something that actually works.
+              After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: "What tools did you actually use?" Every single conversation, whether on LinkedIn, in consulting calls, or over coffee with other designers, eventually circled back to this. People wanted specifics. Not vague platitudes about "leveraging AI" or "modernizing workflows." They wanted to know exactly which tools I used, why I chose them, and how they fit together into something that actually works.
             </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              So here it is. My complete tech stack, laid out with brutal honesty about what works, what doesn't, and where the actual value lives. I'm not going to tell you about every tool that exists—there are dozens of AI-powered design tools launching every month. I'm going to tell you about the specific tools I use every day to ship production-quality work at a pace that would have seemed impossible three years ago.
+              So here it is. My complete tech stack, laid out with brutal honesty about what works, what doesn't, and where the actual value lives. I'm not going to tell you about every tool that exists, there are dozens of AI-powered design tools launching every month. I'm going to tell you about the specific tools I use every day to ship production-quality work at a pace that would have seemed impossible three years ago.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -69,11 +69,11 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Before diving into specific tools, you need to understand the philosophy that guides my choices. I've watched too many teams get distracted by shiny new AI tools that promised to revolutionize their workflow but ended up creating more complexity than value. The graveyard of abandoned tools is depressing—subscriptions that seemed essential in the moment but never actually got integrated into the daily flow of work.
+              Before diving into specific tools, you need to understand the philosophy that guides my choices. I've watched too many teams get distracted by shiny new AI tools that promised to revolutionize their workflow but ended up creating more complexity than value. The graveyard of abandoned tools is depressing, subscriptions that seemed essential in the moment but never actually got integrated into the daily flow of work.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              My approach is built on three principles that have survived contact with reality. First, I want to automate anything that follows a pattern. If a task is repetitive and rule-based—code generation, documentation, testing, validation—AI should handle it without my intervention. Not because I'm lazy, but because these tasks are where consistency matters most, and humans are notoriously bad at maintaining perfect consistency when doing repetitive work.
+              My approach is built on three principles that have survived contact with reality. First, I want to automate anything that follows a pattern. If a task is repetitive and rule-based, code generation, documentation, testing, validation, AI should handle it without my intervention. Not because I'm lazy, but because these tasks are where consistency matters most, and humans are notoriously bad at maintaining perfect consistency when doing repetitive work.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -81,7 +81,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Third, I maintain uncompromising quality standards regardless of how the work was created. AI-generated code needs to meet the same standards as hand-crafted code. AI-generated documentation must be as clear and useful as anything I'd write myself. The moment you create a two-tier quality system—one for human work, one for AI work—you've lost. Users don't care how you built it. They only care whether it works and whether it works well.
+              Third, I maintain uncompromising quality standards regardless of how the work was created. AI-generated code needs to meet the same standards as hand-crafted code. AI-generated documentation must be as clear and useful as anything I'd write myself. The moment you create a two-tier quality system, one for human work, one for AI work, you've lost. Users don't care how you built it. They only care whether it works and whether it works well.
             </p>
 
             <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
@@ -90,7 +90,7 @@ export default function AITechStack() {
                   <span className="text-cyan-400 font-bold text-xl mt-1">1</span>
                   <div>
                     <div className="text-white font-semibold mb-1">Automate Repetitive Tasks</div>
-                    <div className="text-slate-300">If a task follows a pattern, AI should handle it. Code generation, documentation, testing, validation—all candidates for automation.</div>
+                    <div className="text-slate-300">If a task follows a pattern, AI should handle it. Code generation, documentation, testing, validation, all candidates for automation.</div>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -122,7 +122,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The design phase is where everything starts, and it's where I've seen the most dramatic transformation in workflow over the past two years. Traditional design workflows assumed that quality required time—that good design meant iterating slowly through multiple rounds of feedback and refinement. AI hasn't eliminated the need for quality or iteration, but it's fundamentally changed the speed at which you can generate options and explore variations.
+              The design phase is where everything starts, and it's where I've seen the most dramatic transformation in workflow over the past two years. Traditional design workflows assumed that quality required time, that good design meant iterating slowly through multiple rounds of feedback and refinement. AI hasn't eliminated the need for quality or iteration, but it's fundamentally changed the speed at which you can generate options and explore variations.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -130,7 +130,7 @@ export default function AITechStack() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I still use Figma as the core of my design workflow, and I don't see that changing anytime soon. Not because Figma has the best AI features—it doesn't—but because it's where the strategic design decisions actually happen. This is where I define component architecture, make decisions about the structure of the design system, control visual design quality, and collaborate with the team.
+              I still use Figma as the core of my design workflow, and I don't see that changing anytime soon. Not because Figma has the best AI features, it doesn't, but because it's where the strategic design decisions actually happen. This is where I define component architecture, make decisions about the structure of the design system, control visual design quality, and collaborate with the team.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -138,7 +138,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The work I do in Figma creates the framework that AI tools then execute against. I design the architecture. AI fills in the implementation. This division of labor is what makes the whole system work—Figma for strategy, AI for execution.
+              The work I do in Figma creates the framework that AI tools then execute against. I design the architecture. AI fills in the implementation. This division of labor is what makes the whole system work, Figma for strategy, AI for execution.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -150,7 +150,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The first time I used V0, I was skeptical. I'd seen too many AI design tools that generated mediocre output—components that looked okay at first glance but fell apart when you actually tried to use them. V0 is different. The components it generates aren't just visually complete. They handle edge cases. They include proper accessibility attributes. They respond correctly to different screen sizes. They're built with real component libraries like Radix UI and styled with Tailwind.
+              The first time I used V0, I was skeptical. I'd seen too many AI design tools that generated mediocre output, components that looked okay at first glance but fell apart when you actually tried to use them. V0 is different. The components it generates aren't just visually complete. They handle edge cases. They include proper accessibility attributes. They respond correctly to different screen sizes. They're built with real component libraries like Radix UI and styled with Tailwind.
             </p>
 
             <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
@@ -169,7 +169,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The development phase is where AI has the most dramatic impact on productivity. Not because it replaces developers—it doesn't—but because it removes almost all of the friction between thinking about what you want to build and having working code in front of you.
+              The development phase is where AI has the most dramatic impact on productivity. Not because it replaces developers, it doesn't, but because it removes almost all of the friction between thinking about what you want to build and having working code in front of you.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -177,11 +177,11 @@ export default function AITechStack() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Cursor is the single most impactful tool in my entire stack. If I could only keep one AI tool, this would be it. Cursor isn't just a code editor with AI features bolted on—it's a fundamentally different way of working with code that understands your entire codebase, generates production-quality implementations, and refactors existing code with a level of intelligence that still surprises me months into using it daily.
+              Cursor is the single most impactful tool in my entire stack. If I could only keep one AI tool, this would be it. Cursor isn't just a code editor with AI features bolted on, it's a fundamentally different way of working with code that understands your entire codebase, generates production-quality implementations, and refactors existing code with a level of intelligence that still surprises me months into using it daily.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let me give you a specific example. I needed to build a Button component with three variants—primary, secondary, and destructive—with full TypeScript typing, comprehensive accessibility support, and Storybook stories for documentation. In a traditional workflow, this takes thirty to forty-five minutes of careful implementation. With Cursor, I describe what I need in a single prompt. Three minutes later, I have a complete implementation including the component code, TypeScript types, unit tests, and Storybook stories.
+              Let me give you a specific example. I needed to build a Button component with three variants, primary, secondary, and destructive, with full TypeScript typing, comprehensive accessibility support, and Storybook stories for documentation. In a traditional workflow, this takes thirty to forty-five minutes of careful implementation. With Cursor, I describe what I need in a single prompt. Three minutes later, I have a complete implementation including the component code, TypeScript types, unit tests, and Storybook stories.
             </p>
 
             {/* Time Savings Stats */}
@@ -201,11 +201,11 @@ export default function AITechStack() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's what makes Cursor truly different from other AI coding assistants: it understands context at the codebase level. When I ask it to create a new component, it knows about the existing design system tokens, understands the component patterns I've been using, recognizes the testing framework we have set up, and generates code that fits seamlessly into the existing architecture. It's not just generating generic code—it's generating code that looks like it was written by someone who deeply understands this specific codebase.
+              But here's what makes Cursor truly different from other AI coding assistants: it understands context at the codebase level. When I ask it to create a new component, it knows about the existing design system tokens, understands the component patterns I've been using, recognizes the testing framework we have set up, and generates code that fits seamlessly into the existing architecture. It's not just generating generic code, it's generating code that looks like it was written by someone who deeply understands this specific codebase.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I spend two to three minutes reviewing the generated code and another one to two minutes making refinements—adjusting edge cases, tweaking the API to match specific requirements, ensuring the implementation matches my mental model. Total time from idea to production-ready component: five minutes. That's a genuine 10x improvement in speed, and the quality is consistently high.
+              I spend two to three minutes reviewing the generated code and another one to two minutes making refinements, adjusting edge cases, tweaking the API to match specific requirements, ensuring the implementation matches my mental model. Total time from idea to production-ready component: five minutes. That's a genuine 10x improvement in speed, and the quality is consistently high.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -213,7 +213,7 @@ export default function AITechStack() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              While Cursor handles the big picture code generation, GitHub Copilot works quietly in the background handling all the small, repetitive patterns that consume surprising amounts of time. It's not as dramatic as Cursor—you don't ask it to build entire components—but it removes friction from hundreds of small decisions every day.
+              While Cursor handles the big picture code generation, GitHub Copilot works quietly in the background handling all the small, repetitive patterns that consume surprising amounts of time. It's not as dramatic as Cursor, you don't ask it to build entire components, but it removes friction from hundreds of small decisions every day.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -221,7 +221,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The real value of Copilot isn't just the time it saves—though reducing typing by forty to fifty percent is significant. It's that Copilot reduces context switching. When I'm implementing a complex feature, I can stay focused on the strategic logic while Copilot handles the mechanical implementation details. I don't need to stop and think about the exact syntax for a TypeScript generic or the proper way to structure a test case. Copilot handles that automatically, keeping me in flow.
+              The real value of Copilot isn't just the time it saves, though reducing typing by forty to fifty percent is significant. It's that Copilot reduces context switching. When I'm implementing a complex feature, I can stay focused on the strategic logic while Copilot handles the mechanical implementation details. I don't need to stop and think about the exact syntax for a TypeScript generic or the proper way to structure a test case. Copilot handles that automatically, keeping me in flow.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -229,7 +229,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Testing is where most design systems fail to maintain quality over time. Manual testing doesn't scale. Teams start with good intentions about comprehensive test coverage, but as the component library grows and timelines compress, testing becomes the thing that gets skipped. AI doesn't make testing optional—it makes comprehensive testing feasible.
+              Testing is where most design systems fail to maintain quality over time. Manual testing doesn't scale. Teams start with good intentions about comprehensive test coverage, but as the component library grows and timelines compress, testing becomes the thing that gets skipped. AI doesn't make testing optional, it makes comprehensive testing feasible.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -245,7 +245,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              More importantly, the tests stay current. When I update a component, I can regenerate the tests to match the new implementation. The barrier to maintaining comprehensive test coverage essentially disappears. This isn't theoretical—I've used this approach on production design systems serving millions of users, and the test coverage has caught real bugs that would have made it to production in a traditional workflow.
+              More importantly, the tests stay current. When I update a component, I can regenerate the tests to match the new implementation. The barrier to maintaining comprehensive test coverage essentially disappears. This isn't theoretical, I've used this approach on production design systems serving millions of users, and the test coverage has caught real bugs that would have made it to production in a traditional workflow.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -269,7 +269,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Documentation is where most design systems die. Teams create comprehensive documentation during the build phase, then watch it slowly become outdated as the system evolves. The documentation becomes a liability—misleading teams about how components actually work—rather than an asset. AI finally makes dynamic, automatically-updated documentation feasible.
+              Documentation is where most design systems die. Teams create comprehensive documentation during the build phase, then watch it slowly become outdated as the system evolves. The documentation becomes a liability, misleading teams about how components actually work, rather than an asset. AI finally makes dynamic, automatically-updated documentation feasible.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -281,7 +281,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When I create a component in Cursor, it automatically generates Storybook stories that cover all props, variants, and states. The stories include usage examples, accessibility guidelines, and code snippets that teams can copy directly into their projects. When the component changes, the stories update automatically. Documentation stays current because it's generated from the source of truth—the component code itself.
+              When I create a component in Cursor, it automatically generates Storybook stories that cover all props, variants, and states. The stories include usage examples, accessibility guidelines, and code snippets that teams can copy directly into their projects. When the component changes, the stories update automatically. Documentation stays current because it's generated from the source of truth, the component code itself.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -289,11 +289,11 @@ export default function AITechStack() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Mintlify transforms design system documentation from static pages into an intelligent system that actually helps designers find what they need. The key feature is natural language search—designers can ask questions in plain English and get contextual answers with examples, not just links to documentation pages they need to read through.
+              Mintlify transforms design system documentation from static pages into an intelligent system that actually helps designers find what they need. The key feature is natural language search, designers can ask questions in plain English and get contextual answers with examples, not just links to documentation pages they need to read through.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is the difference between documentation that exists and documentation that gets used. Traditional documentation requires designers to navigate complex information architectures, scan through pages looking for relevant information, and piece together examples from multiple sources. Mintlify lets them ask "how do I build a data table with sorting" and get an immediate, specific answer with working code examples. The adoption impact is measurable—documentation that actually gets referenced instead of ignored.
+              This is the difference between documentation that exists and documentation that gets used. Traditional documentation requires designers to navigate complex information architectures, scan through pages looking for relevant information, and piece together examples from multiple sources. Mintlify lets them ask "how do I build a data table with sorting" and get an immediate, specific answer with working code examples. The adoption impact is measurable, documentation that actually gets referenced instead of ignored.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -301,7 +301,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Fast deployment cycles aren't a nice-to-have—they're essential to making AI-powered workflows effective. When you can generate new components in minutes, waiting hours or days for deployment becomes the bottleneck. The infrastructure needs to move at the same speed as the development workflow.
+              Fast deployment cycles aren't a nice-to-have, they're essential to making AI-powered workflows effective. When you can generate new components in minutes, waiting hours or days for deployment becomes the bottleneck. The infrastructure needs to move at the same speed as the development workflow.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -313,7 +313,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This speed matters because it enables rapid iteration. I can generate a component, deploy it, test it in production conditions, gather feedback, and iterate—all within an hour. The deployment infrastructure never becomes the constraint on iteration speed.
+              This speed matters because it enables rapid iteration. I can generate a component, deploy it, test it in production conditions, gather feedback, and iterate, all within an hour. The deployment infrastructure never becomes the constraint on iteration speed.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -321,11 +321,11 @@ export default function AITechStack() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              GitHub Actions orchestrates all the automated quality checks that run before code reaches production. Every pull request triggers a series of automated validations—unit tests run, accessibility checks verify WCAG compliance, design tokens are validated for consistency, and the entire system builds successfully before deployment proceeds.
+              GitHub Actions orchestrates all the automated quality checks that run before code reaches production. Every pull request triggers a series of automated validations, unit tests run, accessibility checks verify WCAG compliance, design tokens are validated for consistency, and the entire system builds successfully before deployment proceeds.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This automation is what makes the quality standards enforceable at scale. Issues get caught before they reach production, not after. The CI/CD pipeline becomes the quality gate that ensures every component meets standards regardless of how quickly it was generated. Fast development speed doesn't mean compromised quality—it means quality checks happen automatically and continuously rather than manually at the end.
+              This automation is what makes the quality standards enforceable at scale. Issues get caught before they reach production, not after. The CI/CD pipeline becomes the quality gate that ensures every component meets standards regardless of how quickly it was generated. Fast development speed doesn't mean compromised quality, it means quality checks happen automatically and continuously rather than manually at the end.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -333,7 +333,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Looking at individual tools doesn't capture how they work together as a system. The power comes from the integration—how each tool handles a specific part of the workflow and passes information seamlessly to the next stage.
+              Looking at individual tools doesn't capture how they work together as a system. The power comes from the integration, how each tool handles a specific part of the workflow and passes information seamlessly to the next stage.
             </p>
 
             <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
@@ -370,7 +370,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let's talk about money, because that's what makes this real for organizations trying to decide whether to invest in this approach. Traditional design system development costs between eight hundred thousand and one point two million dollars in labor over twelve months. That's four to six senior people working full-time—designers, developers, documentation specialists, quality engineers.
+              Let's talk about money, because that's what makes this real for organizations trying to decide whether to invest in this approach. Traditional design system development costs between eight hundred thousand and one point two million dollars in labor over twelve months. That's four to six senior people working full-time, designers, developers, documentation specialists, quality engineers.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -477,7 +477,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Days three and four focus on generating your first component with the new workflow. The goal isn't perfection—it's learning the process. Generate a component with Cursor, review and refine the output, document what worked and what didn't, and train the team on the tools and process. This becomes your workflow template that you'll iterate on and improve.
+              Days three and four focus on generating your first component with the new workflow. The goal isn't perfection, it's learning the process. Generate a component with Cursor, review and refine the output, document what worked and what didn't, and train the team on the tools and process. This becomes your workflow template that you'll iterate on and improve.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -524,19 +524,19 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              First, maintain the division of labor: AI generates, humans decide. This keeps quality control where it belongs—with people who understand context, business requirements, and user needs. AI is phenomenal at producing options quickly. Humans are better at evaluating those options and choosing what actually serves the product and users.
+              First, maintain the division of labor: AI generates, humans decide. This keeps quality control where it belongs, with people who understand context, business requirements, and user needs. AI is phenomenal at producing options quickly. Humans are better at evaluating those options and choosing what actually serves the product and users.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Second, automate validation relentlessly. Don't rely on human review to catch consistency issues, accessibility violations, or test failures. Automated checks catch these problems before code gets merged. This isn't about trusting AI blindly—it's about building systems that enforce quality standards automatically rather than depending on manual vigilance that inevitably breaks down under time pressure.
+              Second, automate validation relentlessly. Don't rely on human review to catch consistency issues, accessibility violations, or test failures. Automated checks catch these problems before code gets merged. This isn't about trusting AI blindly, it's about building systems that enforce quality standards automatically rather than depending on manual vigilance that inevitably breaks down under time pressure.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Third, document automatically as a byproduct of development, not as a separate phase. The moment documentation becomes a manual task that happens after implementation, it becomes outdated. Documentation should be generated from the source of truth—the component code itself—and update automatically when the code changes.
+              Third, document automatically as a byproduct of development, not as a separate phase. The moment documentation becomes a manual task that happens after implementation, it becomes outdated. Documentation should be generated from the source of truth, the component code itself, and update automatically when the code changes.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Fourth, deploy continuously with fast iteration cycles. When you can generate components in minutes, waiting days for deployment kills momentum. The infrastructure needs to support rapid iteration—changes should go from commit to production in minutes, not hours or days.
+              Fourth, deploy continuously with fast iteration cycles. When you can generate components in minutes, waiting days for deployment kills momentum. The infrastructure needs to support rapid iteration, changes should go from commit to production in minutes, not hours or days.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -558,17 +558,17 @@ export default function AITechStack() {
             <div className="space-y-6">
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6">
                 <h4 className="text-white font-semibold mb-2">Can I use different tools in this workflow?</h4>
-                <p className="text-slate-300">Absolutely. The framework matters more than the specific tools. If you're already invested in different tools that serve the same functions, use those. The principles—automate repetition, preserve strategic control, maintain quality standards—apply regardless of which specific tools you choose. I use Cursor, but GitHub Copilot Workspace might work better for your team. I use V0, but Bolt or other AI design tools might fit your workflow better. Adapt the framework to your context.</p>
+                <p className="text-slate-300">Absolutely. The framework matters more than the specific tools. If you're already invested in different tools that serve the same functions, use those. The principles, automate repetition, preserve strategic control, maintain quality standards, apply regardless of which specific tools you choose. I use Cursor, but GitHub Copilot Workspace might work better for your team. I use V0, but Bolt or other AI design tools might fit your workflow better. Adapt the framework to your context.</p>
               </div>
 
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6">
                 <h4 className="text-white font-semibold mb-2">What if my team doesn't know these tools?</h4>
-                <p className="text-slate-300">The two-week onboarding timeline I outlined accounts for learning. Most of these tools are designed to be intuitive—they have to be, because the whole value proposition is reducing friction. Teams get productive faster with these tools than with traditional approaches because the tools do most of the heavy lifting. The ROI is still compelling even accounting for learning time.</p>
+                <p className="text-slate-300">The two-week onboarding timeline I outlined accounts for learning. Most of these tools are designed to be intuitive, they have to be, because the whole value proposition is reducing friction. Teams get productive faster with these tools than with traditional approaches because the tools do most of the heavy lifting. The ROI is still compelling even accounting for learning time.</p>
               </div>
 
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6">
                 <h4 className="text-white font-semibold mb-2">Do I need all these tools to get started?</h4>
-                <p className="text-slate-300">No. Start with Cursor and GitHub Copilot—those two tools provide the biggest immediate productivity gains. Add other tools incrementally as you identify specific needs. You don't need to implement the entire stack on day one. Build the workflow progressively, adding tools when they solve specific problems you're actually facing.</p>
+                <p className="text-slate-300">No. Start with Cursor and GitHub Copilot, those two tools provide the biggest immediate productivity gains. Add other tools incrementally as you identify specific needs. You don't need to implement the entire stack on day one. Build the workflow progressively, adding tools when they solve specific problems you're actually facing.</p>
               </div>
 
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6">
@@ -589,7 +589,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We're past the point where AI-augmented workflows are experimental. Teams using these approaches ship design systems in weeks instead of months, maintain comprehensive test coverage as a byproduct of development, enforce accessibility compliance automatically, and iterate based on real usage data. This isn't future potential—it's present reality.
+              We're past the point where AI-augmented workflows are experimental. Teams using these approaches ship design systems in weeks instead of months, maintain comprehensive test coverage as a byproduct of development, enforce accessibility compliance automatically, and iterate based on real usage data. This isn't future potential, it's present reality.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -645,12 +645,12 @@ export default function AITechStack() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The gap compounds over time. This isn't a marginal advantage—it's a fundamental shift in competitive capability."
+                "The gap compounds over time. This isn't a marginal advantage, it's a fundamental shift in competitive capability."
               </p>
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This isn't about replacing human expertise. It's about amplifying what humans do well—strategic thinking, creative problem-solving, contextual judgment—by automating what humans do poorly—maintaining perfect consistency, comprehensive documentation, exhaustive testing. The teams that understand this distinction will build better products faster. The teams that don't will fall further behind every quarter.
+              This isn't about replacing human expertise. It's about amplifying what humans do well, strategic thinking, creative problem-solving, contextual judgment, by automating what humans do poorly, maintaining perfect consistency, comprehensive documentation, exhaustive testing. The teams that understand this distinction will build better products faster. The teams that don't will fall further behind every quarter.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

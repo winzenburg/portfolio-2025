@@ -70,7 +70,7 @@ export default function Article() {
             Building a Product Creation Engine: What Actually Works (And What Doesn't)
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed">
-            After a year of building systematic product validation, we learned a few things—AI orchestration, dual filters, and why documentation isn't boring.
+            After a year of building systematic product validation, we learned a few things, AI orchestration, dual filters, and why documentation isn't boring.
           </p>
         </div>
         
@@ -97,7 +97,7 @@ export default function Article() {
         </p>
 
         <p>
-          I've been there. We all have. That moment when you realize you've been building something nobody actually wants, or worse—something they want right now but won't care about in six months.
+          I've been there. We all have. That moment when you realize you've been building something nobody actually wants, or worse, something they want right now but won't care about in six months.
         </p>
 
         <p>
@@ -105,11 +105,11 @@ export default function Article() {
         </p>
 
         <p>
-          It's possible—but not in the way I initially thought.
+          It's possible, but not in the way I initially thought.
         </p>
 
         <p>
-          Over the past year, we've been building what I call a "product creation engine"—a repeatable, defensible process for launching SaaS products that people actually pay for (and keep paying for). The journey has been equal parts breakthrough and face-plant.
+          Over the past year, we've been building what I call a "product creation engine", a repeatable, defensible process for launching SaaS products that people actually pay for (and keep paying for). The journey has been equal parts breakthrough and face-plant.
         </p>
 
         <p>
@@ -221,7 +221,7 @@ export default function Article() {
         </h3>
 
         <p>
-          Here's where things get interesting. Most people use AI like a really smart intern—ask it a question, get an answer, move on. We tried that. It was chaos.
+          Here's where things get interesting. Most people use AI like a really smart intern, ask it a question, get an answer, move on. We tried that. It was chaos.
         </p>
 
         <p>
@@ -268,7 +268,7 @@ export default function Article() {
         </p>
 
         <p>
-          Now we maintain a portfolio of 8-12 ideas at various stages. It's not about hedging our bets—it's about making smarter decisions:
+          Now we maintain a portfolio of 8-12 ideas at various stages. It's not about hedging our bets, it's about making smarter decisions:
         </p>
 
         <div className="bg-slate-800/30 p-6 rounded-lg my-8">
@@ -289,13 +289,13 @@ export default function Article() {
             Portfolio throughput
           </div>
           <div className="mt-1 text-lg font-semibold text-white">
-            More shots on goal — fewer sunk-cost zombies.
+            More shots on goal, fewer sunk-cost zombies.
           </div>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             <div className="rounded-lg border border-slate-700/40 bg-slate-900/40 p-4">
               <div className="text-sm font-semibold text-slate-200">Active ideas</div>
-              <div className="mt-2 text-3xl font-bold text-white">8–12</div>
+              <div className="mt-2 text-3xl font-bold text-white">8-12</div>
               <div className="mt-1 text-sm text-slate-400">in flight at any time</div>
             </div>
 
@@ -307,7 +307,7 @@ export default function Article() {
 
             <div className="rounded-lg border border-cyan-700/30 bg-cyan-900/10 p-4">
               <div className="text-sm font-semibold text-cyan-300">Reach build</div>
-              <div className="mt-2 text-3xl font-bold text-white">2–3</div>
+              <div className="mt-2 text-3xl font-bold text-white">2-3</div>
               <div className="mt-1 text-sm text-slate-400">per cycle</div>
             </div>
           </div>
@@ -333,7 +333,7 @@ export default function Article() {
         </ul>
 
         <p>
-          Here's why this matters: Documentation isn't just record-keeping—it's compound learning. Every decision, insight, and failure becomes input for future decisions.
+          Here's why this matters: Documentation isn't just record-keeping, it's compound learning. Every decision, insight, and failure becomes input for future decisions.
         </p>
 
         <p>
@@ -341,7 +341,7 @@ export default function Article() {
         </p>
 
         <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
-          "Documentation isn't just record-keeping—it's compound learning."
+          "Documentation isn't just record-keeping, it's compound learning."
         </blockquote>
 
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -349,7 +349,7 @@ export default function Article() {
         </h2>
 
         <p>
-          Now for the fun part—all the ways we screwed this up before getting it right. Consider this your shortcut to our hard-earned wisdom.
+          Now for the fun part, all the ways we screwed this up before getting it right. Consider this your shortcut to our hard-earned wisdom.
         </p>
 
         <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -385,7 +385,7 @@ export default function Article() {
         </p>
 
         <p>
-          Having multiple ideas doesn't make you uncommitted—it makes you honest.
+          Having multiple ideas doesn't make you uncommitted, it makes you honest.
         </p>
 
         <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -455,7 +455,7 @@ export default function Article() {
         </p>
 
         <p>
-          <strong>Increased automation:</strong> The goal isn't to replace human judgment—it's to automate the tedious research so humans can focus on strategy and creativity.
+          <strong>Increased automation:</strong> The goal isn't to replace human judgment, it's to automate the tedious research so humans can focus on strategy and creativity.
         </p>
 
         <p>

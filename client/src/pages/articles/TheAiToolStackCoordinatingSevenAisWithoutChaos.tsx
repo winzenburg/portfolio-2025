@@ -92,7 +92,7 @@ export default function AIToolStackArticle() {
           </p>
         </div>
 
-        <p>Each tool has a single purpose. No overlap. Information flows through a documented pipeline. Cursor remains the system of record. And I route tasks to the right tool based on what they're actually best at—not what I feel like using.</p>
+        <p>Each tool has a single purpose. No overlap. Information flows through a documented pipeline. Cursor remains the system of record. And I route tasks to the right tool based on what they're actually best at, not what I feel like using.</p>
 
         <p>In this article, I'll show you exactly how I orchestrate 7 different AI tools, the routing rules I follow, the quality gates I enforce, and how I prevent chaos while maximizing the unique strengths of each tool.</p>
 
@@ -120,7 +120,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>Month 5</strong>: I told myself "let's just pick one tool and stick with it."</p>
 
-        <p>But here's the thing—each tool legitimately <em>is</em> better at different tasks. Consolidating would mean losing capabilities. I was stuck in expensive, inefficient purgatory.</p>
+        <p>But here's the thing, each tool legitimately <em>is</em> better at different tasks. Consolidating would mean losing capabilities. I was stuck in expensive, inefficient purgatory.</p>
 
         <h3>Why This Pattern Always Fails</h3>
 
@@ -138,7 +138,7 @@ export default function AIToolStackArticle() {
           </p>
         </div>
 
-        <p><strong>No Cost Management</strong>: APIs charge per token. Without routing logic, you over-query expensive models for simple tasks. I once spent $50 asking Claude to generate blog post titles—a $2 ChatGPT task.</p>
+        <p><strong>No Cost Management</strong>: APIs charge per token. Without routing logic, you over-query expensive models for simple tasks. I once spent $50 asking Claude to generate blog post titles, a $2 ChatGPT task.</p>
 
         <h3>The Result: Expensive, Inconsistent, Chaotic</h3>
 
@@ -150,7 +150,7 @@ export default function AIToolStackArticle() {
 
         <p>My approach came from a simple realization: <strong>treating AI tools like a team, not a toolkit</strong>.</p>
 
-        <p>Think about it—you wouldn't have three people research the same market, then argue about whose findings to use. You'd assign one person to research, another to critique, a third to synthesize. Clear roles, defined handoffs, documented outcomes.</p>
+        <p>Think about it, you wouldn't have three people research the same market, then argue about whose findings to use. You'd assign one person to research, another to critique, a third to synthesize. Clear roles, defined handoffs, documented outcomes.</p>
 
         <p>That's exactly what I built for AI tools.</p>
 
@@ -368,7 +368,7 @@ export default function AIToolStackArticle() {
 
         <h3>4-7. The Supporting Cast</h3>
 
-        <p><strong>ElevenLabs</strong> handles all voice work—founder pitches, persona testimonials, demo narration. I write scripts (ChatGPT draft → Claude polish), then generate voice with my founder profile. Simple, consistent, professional.</p>
+        <p><strong>ElevenLabs</strong> handles all voice work, founder pitches, persona testimonials, demo narration. I write scripts (ChatGPT draft → Claude polish), then generate voice with my founder profile. Simple, consistent, professional.</p>
 
         <p><strong>Midjourney</strong> creates final brand visuals. Hero images, marketing assets, anything that represents the brand. I use Glif for rough drafts, Midjourney for finals. The quality difference is obvious.</p>
 
@@ -451,7 +451,7 @@ export default function AIToolStackArticle() {
           <p className="text-purple-800 font-semibold"><strong>ROI</strong>: 30x return on investment</p>
         </div>
 
-        <p>But the biggest win isn't the numbers—it's the decision clarity. I never wonder "which tool should I use?" anymore. I never lose insights in chat logs. I never waste time reconciling conflicting outputs from different tools.</p>
+        <p>But the biggest win isn't the numbers, it's the decision clarity. I never wonder "which tool should I use?" anymore. I never lose insights in chat logs. I never waste time reconciling conflicting outputs from different tools.</p>
 
         <p>The cognitive overhead of AI tool chaos is gone.</p>
 
@@ -569,7 +569,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>Cost optimization</strong>: Dynamic routing that uses cheaper tools when quality threshold allows</p>
 
-        <p>The future of AI tools isn't about finding the "one perfect tool"—it's about orchestrating multiple specialized tools into a coherent, efficient workflow.</p>
+        <p>The future of AI tools isn't about finding the "one perfect tool", it's about orchestrating multiple specialized tools into a coherent, efficient workflow.</p>
 
         <h2>Takeaways: From Chaos to Coordination</h2>
 
@@ -595,7 +595,7 @@ export default function AIToolStackArticle() {
 
         <div className="bg-indigo-50 border-l-4 border-indigo-400 px-6 pt-4 pb-5 my-8">
           <p className="text-indigo-800 font-semibold text-lg">
-            "The future isn't about finding the one perfect AI tool—it's about orchestrating multiple specialized tools into a coherent workflow."
+            "The future isn't about finding the one perfect AI tool, it's about orchestrating multiple specialized tools into a coherent workflow."
           </p>
         </div>
 
@@ -607,7 +607,7 @@ export default function AIToolStackArticle() {
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-white mt-12">
           <h3 className="text-2xl font-bold mb-4">Ready to coordinate your AI tool chaos?</h3>
           <p className="text-blue-100 mb-6">
-            Get my complete AI Tool Orchestration Framework—including tool lane templates, routing decision trees, 
+            Get my complete AI Tool Orchestration Framework, including tool lane templates, routing decision trees, 
             and cost optimization strategies.
           </p>
           <button className="bg-slate-900 text-cyan-400 font-semibold px-6 py-3 rounded-lg hover:bg-cyan-900/20 transition-colors">

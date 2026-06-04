@@ -11,9 +11,9 @@ export default function IntegrationDocsThatWork() {
 
       <Helmet>
         <title>Integration Documentation That Developers Actually Read | Ryan Winzenburg</title>
-        <meta name="description" content="18 minutes vs 3 hours — same API, different documentation. Developer experience is a design problem. How to write integration docs that engineers actually use." />
+        <meta name="description" content="18 minutes vs 3 hours, same API, different documentation. Developer experience is a design problem. How to write integration docs that engineers actually use." />
         <meta property="og:title" content="Integration Documentation That Developers Actually Read" />
-        <meta property="og:description" content="18 minutes vs 3 hours — same API, different documentation. Developer experience is a design problem." />
+        <meta property="og:description" content="18 minutes vs 3 hours, same API, different documentation. Developer experience is a design problem." />
         <meta property="og:url" content="https://winzenburg.com/articles/integration-docs-that-work" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/integration-docs-hero.png" />
         <link rel="canonical" href="https://winzenburg.com/articles/integration-docs-that-work" />
@@ -21,7 +21,7 @@ export default function IntegrationDocsThatWork() {
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "Integration Documentation That Developers Actually Read",
-          "description": "18 minutes vs 3 hours — same API, different documentation. Developer experience is a design problem.",
+          "description": "18 minutes vs 3 hours, same API, different documentation. Developer experience is a design problem.",
           "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
           "datePublished": "2026-02-29",
           "url": "https://winzenburg.com/articles/integration-docs-that-work",
@@ -69,11 +69,11 @@ export default function IntegrationDocsThatWork() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The problem isn't missing information—it's information architecture. Traditional API docs are organized around endpoints and parameters. But developers don't think in endpoints. They think in goals: "I need to authenticate a user." "I need to fetch a list." "I need to handle webhooks."
+              The problem isn't missing information, it's information architecture. Traditional API docs are organized around endpoints and parameters. But developers don't think in endpoints. They think in goals: "I need to authenticate a user." "I need to fetch a list." "I need to handle webhooks."
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              After writing integration docs for five different APIs and watching developers use them, I've identified the patterns that actually work. The difference between 18-minute integrations and 3-hour integrations isn't the API—it's treating documentation as a UX problem.
+              After writing integration docs for five different APIs and watching developers use them, I've identified the patterns that actually work. The difference between 18-minute integrations and 3-hour integrations isn't the API, it's treating documentation as a UX problem.
             </p>
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
@@ -333,7 +333,7 @@ Success! You're ready to integrate.`}
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Real example: Our webhook verification recipe got copied 847 times in the first month. The reference docs for webhooks? Visited 43 times. Developers don't want to understand every detail—they want working code.
+              Real example: Our webhook verification recipe got copied 847 times in the first month. The reference docs for webhooks? Visited 43 times. Developers don't want to understand every detail, they want working code.
             </p>
 
             <div className="my-12 pl-6 border-l-4 border-cyan-500">

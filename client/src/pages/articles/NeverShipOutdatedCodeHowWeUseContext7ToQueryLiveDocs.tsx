@@ -192,7 +192,7 @@ export default function Context7LiveDocs() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This happens 2-5 times per week if you're using AI heavily. That's 100-250 hours per year—$20,000-50,000 wasted at $200/hour.
+              This happens 2-5 times per week if you're using AI heavily. That's 100-250 hours per year, $20,000-50,000 wasted at $200/hour.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -408,7 +408,7 @@ Users should only see projects for organizations they're members of.`}
               <div className="bg-slate-900/30 border border-slate-800 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-cyan-400 mb-3">3. Supabase (Auth, RLS, Edge Functions)</h3>
                 <p className="text-slate-300 mb-2">
-                  <strong className="text-white">Why:</strong> Supabase updates frequently. Auth API, RLS syntax, Edge Functions—all moving targets.
+                  <strong className="text-white">Why:</strong> Supabase updates frequently. Auth API, RLS syntax, Edge Functions, all moving targets.
                 </p>
                 <p className="text-slate-300">
                   <strong className="text-white">What we query:</strong> RLS policy syntax, auth patterns, Edge Functions, storage API.
@@ -475,7 +475,7 @@ Users should only see projects for organizations they're members of.`}
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              If your tool doesn't support Context7, you can do manual doc lookup—just copy current docs into your AI chat before asking for code.
+              If your tool doesn't support Context7, you can do manual doc lookup, just copy current docs into your AI chat before asking for code.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -553,7 +553,7 @@ Before writing code: Query Context7 for each library above`}
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">→</span>
-                  <span><strong className="text-white">Stable libraries:</strong> React core APIs, lodash—these don't change</span>
+                  <span><strong className="text-white">Stable libraries:</strong> React core APIs, lodash, these don't change</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500">→</span>
@@ -598,7 +598,7 @@ Before writing code: Query Context7 for each library above`}
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We save 12-18 hours per month in debugging time. That's $2,400-3,600 in value at $200/hour. More importantly, it builds trust in AI code generation—when code works first try, you trust the tool more.
+              We save 12-18 hours per month in debugging time. That's $2,400-3,600 in value at $200/hour. More importantly, it builds trust in AI code generation, when code works first try, you trust the tool more.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

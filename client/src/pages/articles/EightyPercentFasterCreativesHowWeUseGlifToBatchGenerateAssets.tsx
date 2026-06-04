@@ -54,14 +54,14 @@ export default function GlifCreativeBatchingArticle() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Most founders get stuck on "we need 10 ad variants" and spend days in Canva. I batch-generate creatives with Glif, refine with Midjourney, and ship in hours. Last Tuesday, I needed 16 different creatives for a habit tracker validation—I had all concepts generated in 47 minutes.
+              Most founders get stuck on "we need 10 ad variants" and spend days in Canva. I batch-generate creatives with Glif, refine with Midjourney, and ship in hours. Last Tuesday, I needed 16 different creatives for a habit tracker validation, I had all concepts generated in 47 minutes.
             </p>
           </div>
 
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-slate-300 leading-relaxed mb-6">
-              Last Tuesday, I needed 16 different creatives for a habit tracker validation. Hero images, ad variants, social graphics—the whole shebang.
+              Last Tuesday, I needed 16 different creatives for a habit tracker validation. Hero images, ad variants, social graphics, the whole shebang.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -69,7 +69,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              <em>Not polished finals</em>—drafts. But good enough drafts that I could see which directions worked, test them with real users, and <em>then</em> spend time polishing the winners.
+              <em>Not polished finals</em>, drafts. But good enough drafts that I could see which directions worked, test them with real users, and <em>then</em> spend time polishing the winners.
             </p>
 
             {/* Pull Quote */}
@@ -96,7 +96,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              You've just finished discovery. NICHE-INTEL, PAIN-SIGNALS, JTBD—all done in 8 hours using your AI-powered research stack. You've written the validation plan (tests, thresholds, timeline) in another 2 hours. You're ready to execute.
+              You've just finished discovery. NICHE-INTEL, PAIN-SIGNALS, JTBD, all done in 8 hours using your AI-powered research stack. You've written the validation plan (tests, thresholds, timeline) in another 2 hours. You're ready to execute.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -173,7 +173,7 @@ export default function GlifCreativeBatchingArticle() {
             <div className="my-8 space-y-4">
               <div className="bg-slate-900/50 border-l-4 border-cyan-500 p-4">
                 <div className="text-white font-semibold mb-2">Step 1: Glif for Quantity (5 minutes)</div>
-                <p className="text-slate-300 text-sm">Generate 20-50 rough concepts. Not finals—drafts. Speed over polish.</p>
+                <p className="text-slate-300 text-sm">Generate 20-50 rough concepts. Not finals, drafts. Speed over polish.</p>
               </div>
               <div className="bg-slate-900/50 border-l-4 border-cyan-500 p-4">
                 <div className="text-white font-semibold mb-2">Step 2: Human Curation (15 minutes)</div>
@@ -202,7 +202,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">Context:</strong> I'd validated demand (scored 32/40, Opportunity 8.5/10) and was ready to launch validation tests. I needed creatives—fast.
+              <strong className="text-white">Context:</strong> I'd validated demand (scored 32/40, Opportunity 8.5/10) and was ready to launch validation tests. I needed creatives, fast.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -369,7 +369,7 @@ export default function GlifCreativeBatchingArticle() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Don't build from scratch initially. Glif has a template library—fork existing workflows and customize them.
+              Don't build from scratch initially. Glif has a template library, fork existing workflows and customize them.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -394,7 +394,7 @@ export default function GlifCreativeBatchingArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Now the same workflow works for habit trackers, productivity apps, fitness tools—just change the variables.
+              Now the same workflow works for habit trackers, productivity apps, fitness tools, just change the variables.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -484,7 +484,7 @@ export default function GlifCreativeBatchingArticle() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Let's be real—this isn't magic. Glif creative batching has trade-offs:
+              Let's be real, this isn't magic. Glif creative batching has trade-offs:
             </p>
 
             <div className="my-10 bg-red-900/10 border border-red-900/30 rounded-lg p-8">
@@ -586,7 +586,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I used to be precious about creative concepts because they took so long to generate. Now I'm ruthless—if something doesn't perform in the first 48 hours of testing, I regenerate new concepts and try again.
+              I used to be precious about creative concepts because they took so long to generate. Now I'm ruthless, if something doesn't perform in the first 48 hours of testing, I regenerate new concepts and try again.
             </p>
 
             {/* Pull Quote */}
@@ -601,7 +601,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's the real value of batch generation—not just speed, but the ability to explore the full creative space instead of stopping at the first "good enough" concept.
+              That's the real value of batch generation, not just speed, but the ability to explore the full creative space instead of stopping at the first "good enough" concept.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">

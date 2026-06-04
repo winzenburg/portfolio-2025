@@ -60,7 +60,7 @@ export default function DualFilterValidationFrameworkArticle() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-xl leading-relaxed text-slate-200 mb-8">
-          Last year I made a $15,000 mistake. Built a product that had incredible validation—people were 
+          Last year I made a $15,000 mistake. Built a product that had incredible validation, people were 
           literally DMing me asking when they could pay. Six months later? Ghost town. Churn rate through 
           the roof. Users who couldn't wait to get access suddenly couldn't remember why they signed up.
             </p>
@@ -92,7 +92,7 @@ export default function DualFilterValidationFrameworkArticle() {
 
         <p>
           So I built what I call the Dual-Filter Validation Framework. It's basically a BS detector for 
-          product ideas—catches the ones that feel hot but won't last, and helps you double down on the 
+          product ideas, catches the ones that feel hot but won't last, and helps you double down on the 
           ones that actually compound into real businesses.
         </p>
 
@@ -101,13 +101,13 @@ export default function DualFilterValidationFrameworkArticle() {
         </h2>
 
         <p>
-          The first filter is what you'd expect—classic desirability validation. But here's where most 
+          The first filter is what you'd expect, classic desirability validation. But here's where most 
           people screw it up: they validate with the wrong people using the wrong questions.
         </p>
 
         <p>
           I learned this from watching Greg Isenberg's methodology (the guy's a master at this). You're 
-          not just asking "would you use this?" You're looking for what he calls tribal urgency—a specific 
+          not just asking "would you use this?" You're looking for what he calls tribal urgency, a specific 
           group of people who are experiencing acute pain and desperately want a solution.
         </p>
 
@@ -158,7 +158,7 @@ export default function DualFilterValidationFrameworkArticle() {
 
         <p>
           <strong>Prepayment Tests</strong>: The ultimate heat test. "Pay us $99 now, get the product when 
-          it's ready." If people won't prepay, you don't have a business—you have a nice-to-have.
+          it's ready." If people won't prepay, you don't have a business, you have a nice-to-have.
         </p>
 
         <p>
@@ -450,14 +450,14 @@ export default function DualFilterValidationFrameworkArticle() {
 
         <p>
           If you're evaluating a product idea right now, run it through both filters before you write a 
-          single line of code. Trust me on this one—I learned the expensive way so you don't have to.
+          single line of code. Trust me on this one, I learned the expensive way so you don't have to.
         </p>
 
         <div className="bg-slate-800/30 p-8 rounded-lg mt-12">
           <h3 className="text-xl font-semibold text-white mb-4">Ready to validate your next idea?</h3>
           <p className="text-slate-200 mb-6">
             I've created a detailed validation playbook with all the specific tests, scoring sheets, and 
-            frameworks I use. No fluff—just the exact process I follow for every new product idea.
+            frameworks I use. No fluff, just the exact process I follow for every new product idea.
           </p>
           <Link
             href="/contact?playbook=validation-playbook"
@@ -475,7 +475,7 @@ export default function DualFilterValidationFrameworkArticle() {
               <a className="text-cyan-400 hover:text-slate-200">reach out</a>
             </Link>{" "}
             with 
-            your results—I love hearing about validation experiments, especially the failures.
+            your results, I love hearing about validation experiments, especially the failures.
           </p>
         </div>
           </div>
