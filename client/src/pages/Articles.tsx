@@ -47,7 +47,7 @@ const articles: Article[] = [
   {
     id: "53",
     title: "The Interface Problem Nobody Is Talking About",
-    excerpt: "We built the most powerful AI tools in history — then handed them to people staring at a blinking cursor. Nine interface patterns that actually work for non-technical users, with examples from Canva, Glean, Abridge, and more.",
+    excerpt: "Enterprise AI keeps stalling at the prompt box. Nine interface patterns from Canva, Notion, Glean, Abridge, and others — for teams building products non-technical people will actually use.",
     date: "June 3, 2026",
     readTime: "16 min read",
     slug: "interface-problem-ai-ux",
