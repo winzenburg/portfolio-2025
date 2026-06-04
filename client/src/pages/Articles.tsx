@@ -45,6 +45,16 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "53",
+    title: "The Interface Problem Nobody Is Talking About",
+    excerpt: "We built the most powerful AI tools in history — then handed them to people staring at a blinking cursor. Nine interface patterns that actually work for non-technical users, with examples from Canva, Glean, Abridge, and more.",
+    date: "June 3, 2026",
+    readTime: "16 min read",
+    slug: "interface-problem-ai-ux",
+    category: "Product Design",
+    heroImage: "/images/articles/interface-problem-hero.png"
+  },
+  {
     id: "52",
     title: "AI Isn't a Feature. It's a Workflow Problem.",
     excerpt: "Most teams aren't falling behind because they lack access to AI. They're asking the wrong question. The shift from AI as a feature to AI as a workflow redesign problem is where the real advantage lives.",

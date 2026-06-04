@@ -72,6 +72,7 @@ import CompoundIntelligence from "./pages/articles/CompoundIntelligence";
 import IntegrationDocsThatWork from "./pages/articles/IntegrationDocsThatWork";
 import AskingBetterStrategicQuestions from "./pages/articles/AskingBetterStrategicQuestions";
 import AIIsntAFeature from "./pages/articles/AIIsntAFeature";
+import TheInterfaceProblem from "./pages/articles/TheInterfaceProblem";
 import ScrollToTop from "./components/ScrollToTop";
 import { usePageTracking } from "./hooks/usePageTracking";
 import { useArticleEngagement } from "./hooks/useArticleEngagement";
@@ -147,6 +148,7 @@ function Router() {
       <Route path="/articles/integration-docs-that-work" component={IntegrationDocsThatWork} />
       <Route path="/articles/strategic-questions-ai-product-design" component={AskingBetterStrategicQuestions} />
       <Route path="/articles/ai-isnt-a-feature-workflow" component={AIIsntAFeature} />
+      <Route path="/articles/interface-problem-ai-ux" component={TheInterfaceProblem} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/isc-portal" component={CaseStudyIsc} />
