@@ -332,7 +332,86 @@ export default function Work() {
             </div>
           </Card>
 
-          {/* Project 4: Kinetic UI */}
+          {/* Project 4: Winzinvest */}
+          <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img
+                src="/images/winzinvest_01_homepage_hero.png"
+                alt="Winzinvest execution platform for RIAs"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="grid md:grid-cols-[2fr,1fr] gap-8">
+              <div>
+                <div className="text-sm font-medium text-primary mb-3">FOUNDER · FINTECH · 2024 – PRESENT</div>
+                <h3 className="text-3xl font-bold mb-4">Winzinvest: Execution Controls for RIAs</h3>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
+                  <p className="text-muted-foreground">
+                    Founder and product lead. Designed, built, and deployed a fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices who need institutional-quality execution without an in-house trading desk.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-3 gap-4 mb-6">
+                  <div className="bg-muted/50 p-4 rounded-lg text-center">
+                    <div className="text-2xl font-bold text-primary">2.16</div>
+                    <div className="text-xs text-muted-foreground mt-1">Sharpe Ratio (5yr)</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg text-center">
+                    <div className="text-2xl font-bold text-primary">3.5%</div>
+                    <div className="text-xs text-muted-foreground mt-1">Options Income Floor</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg text-center">
+                    <div className="text-2xl font-bold text-primary">17</div>
+                    <div className="text-xs text-muted-foreground mt-1">Risk Gates / Order</div>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Link href="/case-study/winzinvest" onClick={() => trackCaseStudyClick("winzinvest", "Winzinvest: Execution Controls for RIAs")}>
+                    <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
+                      View Full Case Study
+                    </a>
+                  </Link>
+                  <a
+                    href="https://winzinvest.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackExternalLink("https://winzinvest.com", "winzinvest")}
+                    className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
+                  >
+                    View Live
+                  </a>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <div className="text-sm font-semibold mb-3">KEY CAPABILITIES</div>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <div className="font-medium mb-1">Systematic Execution</div>
+                      <div className="text-muted-foreground">Automated entries, exits, stops, and options rolls via IBKR API</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">17-Gate Risk Framework</div>
+                      <div className="text-muted-foreground">Every order blocked or approved by independent risk checks</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">Firm Command Center</div>
+                      <div className="text-muted-foreground">Multi-account oversight with governance queue and audit logs</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">Transparent Logic</div>
+                      <div className="text-muted-foreground">Every blocked trade logged with the specific gate that rejected it</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          {/* Project 5: Kinetic UI */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 

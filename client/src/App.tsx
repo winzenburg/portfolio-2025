@@ -11,12 +11,12 @@ import Methodology from "./pages/Methodology";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CaseStudySaas from "./pages/CaseStudySaas";
-import CaseStudyIsc from "./pages/CaseStudyIsc";
 import CaseStudyComcast from "./pages/CaseStudyComcast";
 import CaseStudyBuildout from "./pages/CaseStudyBuildout";
 import CaseStudyCvs from "./pages/CaseStudyCvs";
 import CaseStudyKinlet from "./pages/CaseStudyKinlet";
 import CaseStudyUndercurrent from "./pages/CaseStudyUndercurrent";
+import CaseStudyWinzinvest from "./pages/CaseStudyWinzinvest";
 import CaseStudyCultivate from "./pages/CaseStudyCultivate";
 import Services from "./pages/Services";
 import Articles from "./pages/Articles";
@@ -157,6 +157,7 @@ function Router() {
       <Route path="/case-study/cvs-aetna" component={CaseStudyCvs} />
       <Route path="/case-study/kinlet" component={CaseStudyKinlet} />
       <Route path="/case-study/undercurrent" component={CaseStudyUndercurrent} />
+      <Route path="/case-study/winzinvest" component={CaseStudyWinzinvest} />
       <Route path="/case-study/cultivate" component={CaseStudyCultivate} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
