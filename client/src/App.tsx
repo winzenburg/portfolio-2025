@@ -152,7 +152,6 @@ function Router() {
       <Route path="/articles/interface-problem-ai-ux" component={TheInterfaceProblem} />
       <Route path="/contact" component={Contact} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
-      <Route path="/case-study/isc-portal" component={CaseStudyIsc} />
       <Route path="/case-study/comcast-design-system" component={CaseStudyComcast} />
       <Route path="/case-study/buildout" component={CaseStudyBuildout} />
       <Route path="/case-study/cvs-aetna" component={CaseStudyCvs} />
