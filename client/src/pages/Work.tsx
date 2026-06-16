@@ -50,8 +50,8 @@ export default function Work() {
         </div>
 
         <div className="space-y-12">
-          {/* Project 1: Cultivate */}
-          <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+          {/* Project 1: Cultivate — hidden, re-enable by removing the false && wrapper */}
+          {false && <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img
                 src="/project-cultivate-bos.png"
@@ -146,7 +146,7 @@ export default function Work() {
                 </div>
               </div>
             </div>
-          </Card>
+          </Card>}
 
           {/* Project 2: Kinlet */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
