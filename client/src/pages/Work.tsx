@@ -246,7 +246,93 @@ export default function Work() {
             </div>
           </Card>
 
-          {/* Project 3: Kinetic UI */}
+          {/* Project 3: Undercurrent */}
+          <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
+            <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
+              <img
+                src="/images/06_home_dashboard.png"
+                alt="Undercurrent Career Discovery OS"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="grid md:grid-cols-[2fr,1fr] gap-8">
+              <div>
+                <div className="text-sm font-medium text-primary mb-3">FOUNDER · AI-NATIVE PRODUCT · 2026</div>
+                <h3 className="text-3xl font-bold mb-4">Undercurrent: Career Discovery OS</h3>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">MY ROLE</div>
+                  <p className="text-muted-foreground">
+                    Solo founder, product strategy, UX design, full-stack development, and AI orchestration. Designed and built a voice-first AI coaching platform that synthesizes 6 career clarity frameworks into a 45-60 minute guided interview, with automated report generation.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-muted-foreground mb-2">WHAT I BUILT</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">45-60 min</div>
+                      <div className="text-sm text-muted-foreground">Voice-first AI interview</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">6</div>
+                      <div className="text-sm text-muted-foreground">Proven frameworks woven together</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">19</div>
+                      <div className="text-sm text-muted-foreground">Guided questions</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary mb-1">Live</div>
+                      <div className="text-sm text-muted-foreground">Production deployed</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Link href="/case-study/undercurrent" onClick={() => trackCaseStudyClick("undercurrent", "Undercurrent: Career Discovery OS")}>
+                    <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg">
+                      View Full Case Study
+                    </a>
+                  </Link>
+                  <a
+                    href="https://undercurrent-brown.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackExternalLink("https://undercurrent-brown.vercel.app/", "undercurrent")}
+                    className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-semibold text-lg"
+                  >
+                    View Live
+                  </a>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <div className="text-sm font-semibold mb-3">KEY CAPABILITIES</div>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <div className="font-medium mb-1">Voice AI Coaching</div>
+                      <div className="text-muted-foreground">Claude-powered interview with real-time Coach Reflection</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">Multi-Modal Input</div>
+                      <div className="text-muted-foreground">Voice-first with graceful text fallback</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">Automated Synthesis</div>
+                      <div className="text-muted-foreground">Full report generated from 19-question session</div>
+                    </div>
+                    <div>
+                      <div className="font-medium mb-1">Progress Persistence</div>
+                      <div className="text-muted-foreground">Save and resume across sessions</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          {/* Project 4: Kinetic UI */}
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 

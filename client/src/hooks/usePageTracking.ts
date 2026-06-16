@@ -70,7 +70,8 @@ export function usePageTracking() {
       const base = {
         page_type: pageType,
         page_title: document.title,
-        $pathname: location...(articleSlug ? { article_slug: articleSlug } : {}),
+        $pathname: location,
+        ...(articleSlug ? { article_slug: articleSlug } : {}),
       };
 
       if (percent >= 25 && !scrollState.current.tracked25) {
