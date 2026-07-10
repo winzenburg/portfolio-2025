@@ -10,6 +10,7 @@ import Work from "./pages/Work";
 import Methodology from "./pages/Methodology";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Unsubscribe from "./pages/Unsubscribe";
 import CaseStudySaas from "./pages/CaseStudySaas";
 import CaseStudyComcast from "./pages/CaseStudyComcast";
 import CaseStudyBuildout from "./pages/CaseStudyBuildout";
@@ -153,6 +154,7 @@ function Router() {
       <Route path="/articles/ai-ux-maturity-level-3" component={AIUxMaturityLevel3} />
       <Route path="/articles/interface-problem-ai-ux" component={TheInterfaceProblem} />
       <Route path="/contact" component={Contact} />
+      <Route path="/unsubscribe" component={Unsubscribe} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
       <Route path="/case-study/comcast-design-system" component={CaseStudyComcast} />
       <Route path="/case-study/buildout" component={CaseStudyBuildout} />
