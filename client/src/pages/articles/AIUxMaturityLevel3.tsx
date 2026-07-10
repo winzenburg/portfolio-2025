@@ -44,6 +44,14 @@ export default function AIUxMaturityLevel3() {
             </a>
           </Link>
 
+          <div className="mb-12 rounded-lg overflow-hidden">
+            <img
+              src="/images/articles/ai-ux-maturity-level-3-hero.png"
+              alt="AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3."
+              className="w-full h-auto"
+            />
+          </div>
+
           <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
             <span>July 9, 2026</span>
             <span>•</span>
