@@ -1,6 +1,7 @@
 [build]
   publish = "dist/public"
   command = "pnpm install && pnpm vite build"
+  functions = "netlify/functions"
 
 [build.processing]
   [build.processing.html]
@@ -8,6 +9,11 @@
 
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
+
+[[redirects]]
+  from = "/api/subscribe"
+  to = "/.netlify/functions/subscribe"
+  status = 200
 
 [[redirects]]
   from = "/*"

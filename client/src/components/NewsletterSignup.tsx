@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { trackNewsletterSignup } from "@/lib/analytics";
 
-const NEWSLETTER_ENABLED = false;
+const NEWSLETTER_ENABLED = true;
 
 export default function NewsletterSignup() {
   const [email, setEmail] = useState("");
@@ -19,18 +19,17 @@ export default function NewsletterSignup() {
     setErrorMessage("");
 
     try {
-      // Use FormData to submit to Beehiiv's form endpoint
-      const formData = new FormData();
-      formData.append("email", email);
-      formData.append("publication_id", "pub_edc42b24-e8db-4628-b878-934ce46b2f22");
-      formData.append("utm_source", "winzenburg.com");
-      formData.append("utm_medium", "organic");
-
-      const response = await fetch("https://embeds.beehiiv.com/v2/subscribe", {
+      const response = await fetch("/api/subscribe", {
         method: "POST",
-        body: formData,
-        mode: "no-cors", // Beehiiv may not support CORS, use no-cors mode
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
       });
+
+      const data: { success?: boolean; error?: string } = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
 
       setSubscribeStatus("success");
       trackNewsletterSignup();
@@ -60,7 +59,7 @@ export default function NewsletterSignup() {
             </svg>
           </div>
           <h3 className="text-xl font-bold text-white mb-2">You're subscribed!</h3>
-          <p className="text-slate-300">Check your email to confirm your subscription.</p>
+          <p className="text-slate-300">Thanks for signing up. Keep an eye on your inbox.</p>
         </div>
       ) : (
         <form onSubmit={handleNewsletterSubmit} className="max-w-xl mx-auto">
