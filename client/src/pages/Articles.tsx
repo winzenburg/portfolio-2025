@@ -45,6 +45,16 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "54",
+    title: "AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3.",
+    excerpt: "Everyone wants to jump straight to Level 5. That jump doesn't happen. The real opportunity is using AI to do the discovery work the business has never funded, and actually move the needle on what gets built.",
+    date: "July 9, 2026",
+    readTime: "7 min read",
+    slug: "ai-ux-maturity-level-3",
+    category: "Product Design",
+    heroImage: "/images/articles/ai-ux-maturity-level-3-hero.png"
+  },
+  {
     id: "53",
     title: "The Interface Problem Nobody Is Talking About",
     excerpt: "Enterprise AI keeps stalling at the prompt box. Nine interface patterns from Canva, Notion, Glean, Abridge, and others, for teams building products non-technical people will actually use.",
