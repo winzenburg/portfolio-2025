@@ -111,7 +111,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
               <h4 className="text-lg font-bold mb-3 text-purple-400">Precise Matching</h4>
               <p className="text-gray-300 text-sm">
-                AI analyzes caregiver situations (relationship type, dementia stage, specific challenges) to create micro-groups where everyone truly "gets it", no random strangers
+                AI analyzes caregiver situations (relationship type, dementia stage, specific challenges) to create micro-groups where everyone actually "gets it", no random strangers
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
@@ -607,7 +607,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-purple-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-purple-400">AI Matching That Respects Context</h3>
               <p className="text-gray-300 mb-3">
-                The matching algorithm doesn't just group people randomly. It understands nuanced differences: an adult child caring for a parent faces different challenges than a spouse in 24/7 care. Early-stage dementia has different needs than late-stage. The AI creates groups where people truly understand each other's context.
+                The matching algorithm understands nuanced differences instead of grouping people randomly: an adult child caring for a parent faces different challenges than a spouse in 24/7 care. Early-stage dementia has different needs than late-stage. The AI creates groups where people actually understand each other's context.
               </p>
               <div className="text-sm text-gray-400 bg-white/5 p-3 rounded">
                 <strong>Example:</strong> Instead of "all dementia caregivers," groups might be "adult children caring for parents with early-stage Alzheimer's who work full-time"
@@ -702,7 +702,7 @@ const CaseStudyKinlet: React.FC = () => {
           <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-6">
             <h3 className="text-lg font-bold mb-3 text-purple-400">The Bigger Picture</h3>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Kinlet isn't just a case study in AI-augmented development, it's proof that the economics of software have fundamentally shifted. What used to require a team of specialists and months of runway can now be accomplished by a designer-developer with product vision and AI fluency.
+              Kinlet is proof that the economics of software have fundamentally shifted, beyond being a case study in AI-augmented development. What used to require a team of specialists and months of runway can now be accomplished by a designer-developer with product vision and AI fluency.
             </p>
             <p className="text-gray-300 leading-relaxed">
               This enables a new model: validate faster, pivot cheaper, and ship quality products without burning months of runway. For startups, that's the difference between running out of money before finding product-market fit and having enough shots on goal to succeed.

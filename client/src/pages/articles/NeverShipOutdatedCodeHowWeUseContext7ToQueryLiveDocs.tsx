@@ -81,7 +81,7 @@ export default function Context7LiveDocs() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's the thing: I didn't <em>want</em> to read docs. I wanted AI to write the code. That's the promise of AI-assisted development. But AI training data is always 6-12 months behind the latest releases.
+              I didn't <em>want</em> to read docs. I wanted AI to write the code. That's the promise of AI-assisted development. But AI training data is always 6-12 months behind the latest releases.
             </p>
 
             {/* Pull Quote */}

@@ -166,7 +166,7 @@ export default function RulesAndAgentsSystemArticle() {
           <li><strong>Engineering</strong>: Architecture decisions that won't make me cry later</li>
         </ul>
 
-        <p>Each phase has its own "playbook", a collection of interconnected rules that define inputs, outputs, and quality standards. It's like having a really pedantic but helpful colleague who never lets you skip steps.</p>
+        <p>Each phase has its own "playbook", a collection of interconnected rules that define inputs, outputs, and quality standards. It's like having a pedantic but helpful colleague who never lets you skip steps.</p>
 
         <h2 className="text-2xl font-bold text-white mb-4">The Agent System: Your AI Dream Team</h2>
 
@@ -188,7 +188,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>The Retention Architect</strong> maps the complete journey from signup to renewal, habit loops, notification triggers, collaboration hooks. It's the agent that asks uncomfortable questions like "Why would someone still use this in six months?"</p>
 
-        <p>These agents don't work in isolation. The output from one becomes input for the next, creating a seamless handoff that prevents things from falling through the cracks.</p>
+        <p>These agents don't work in isolation. The output from one becomes input for the next, creating a clean handoff that prevents things from falling through the cracks.</p>
 
         <h2 className="text-2xl font-bold text-white mb-4">Quality Gates: The Reality Checks</h2>
 
@@ -255,7 +255,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>Switching Costs</strong>: Deep integrations with existing workflows make leaving expensive and painful.</p>
 
-        <p>The Retention Architect then mapped habit-forming features, collaboration triggers, and renewal mechanisms around those moats. The result? A product strategy that's actually defensible, not just feature-rich.</p>
+        <p>The Retention Architect then mapped habit-forming features, collaboration triggers, and renewal mechanisms around those moats. The result? A product strategy that's actually defensible, beyond just feature-rich.</p>
 
         <h3 className="text-xl font-semibold text-white mb-3">Example 3: Accessibility as a First-Class Citizen</h3>
 
@@ -263,7 +263,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Now, my IA Designer maps complete user flows with accessibility in mind from day one. The Accessibility Agent performs WCAG 2.2 AA audits on designs before any code gets written.</p>
 
-        <p>The result? Products that work for everyone, not just the "typical" user. And honestly, accessible design is usually better design for everyone.</p>
+        <p>The result? Products that work for everyone, beyond the "typical" user. And honestly, accessible design is usually better design for everyone.</p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 font-medium text-lg mb-0">
@@ -308,9 +308,9 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Look, I'll be honest with you. Part of me resisted this level of systemization for years. It felt constraining, bureaucratic, corporate.</p>
 
-        <p>But here's what I learned: Good process doesn't limit creativity, it creates space for it. When I'm not constantly making the same validation mistakes, I can focus on the truly creative challenges.</p>
+        <p>But here's what I learned: Good process doesn't limit creativity, it creates space for it. When I'm not constantly making the same validation mistakes, I can focus on the challenges that actually require creative thinking.</p>
 
-        <p>Plus, having a systematic approach means my wins are repeatable, not just lucky accidents.</p>
+        <p>Plus, having a systematic approach means my wins are repeatable, beyond lucky accidents.</p>
 
         <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-400 mb-0">

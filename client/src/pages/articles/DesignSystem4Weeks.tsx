@@ -69,7 +69,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I didn't cut corners or compromise on quality. Instead, I strategically implemented AI where it actually accelerates work while keeping human judgment exactly where it matters most. The result isn't just faster, in several measurable ways, it's better than what traditional approaches deliver after a year of work.
+              I didn't cut corners or compromise on quality. Instead, I strategically implemented AI where it actually accelerates work while keeping human judgment exactly where it matters most. The result beats what traditional approaches deliver after a year of work, and it's faster in several measurable ways too.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -324,11 +324,11 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The speed increase was dramatic, going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. That's a genuine 10x improvement in development velocity. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were actually more robust than what I'd typically ship after manual development.
+              The speed increase was dramatic, going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. That's a genuine 10x improvement in development velocity. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were more reliable than what I'd typically ship after manual development.
             </p>
 
             <div className="bg-gradient-to-r from-cyan-900/20 via-blue-900/20 to-purple-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-              <p className="text-cyan-300 font-semibold text-center">The result: 48 production-ready components delivered in seven days with 100% test coverage, 100% WCAG 2.2 AA compliance, full TypeScript typing across every component, and complete Storybook documentation. Not as a minimum viable product, but as genuinely enterprise-ready code.</p>
+              <p className="text-cyan-300 font-semibold text-center">Seven days produced 48 production-ready components with 100% test coverage, 100% WCAG 2.2 AA compliance, full TypeScript typing across every component, and complete Storybook documentation. Not a minimum viable product. Genuinely enterprise-ready code.</p>
             </div>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -386,7 +386,7 @@ export default function DesignSystem4Weeks() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Component usage guidelines explained when to use each component and which variants fit different scenarios. Code examples showed real-world implementations, not just toy examples. Accessibility documentation covered not just WCAG compliance but why certain patterns worked better for screen reader users. Migration guides helped teams transition from legacy components with minimal friction. Contribution guidelines and quality standards gave teams clear frameworks for extending the system. Automated validation scripts caught inconsistencies before code review. Governance workflows defined decision-making processes with appropriate approval gates.
+              Component usage guidelines explained when to use each component and which variants fit different scenarios. Code examples showed real-world implementations instead of toy examples. Accessibility documentation went beyond WCAG compliance, explaining why certain patterns worked better for screen reader users. Migration guides helped teams transition from legacy components with minimal friction. Contribution guidelines and quality standards gave teams clear frameworks for extending the system. Automated validation scripts caught inconsistencies before code review. Governance workflows defined decision-making processes with appropriate approval gates.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -689,7 +689,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Third, implement automated validation throughout the process, not just at the end. Validate design tokens as they're created. Check component code against standards as it's written. Test accessibility continuously, not in a final audit phase. Automation catches mechanical errors instantly, leaving human reviews to focus on judgment calls.
+              Third, implement automated validation throughout the process, from day one rather than only at the end. Validate design tokens as they're created. Check component code against standards as it's written. Test accessibility continuously, not in a final audit phase. Automation catches mechanical errors instantly, leaving human reviews to focus on judgment calls.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -708,7 +708,7 @@ export default function DesignSystem4Weeks() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The real competitive advantage here isn't just about building faster, though that matters. It's about what becomes possible when you can ship a complete design system in four weeks instead of twelve to eighteen months.
+              The real competitive advantage isn't building faster, though that matters too. It's what becomes possible when you can ship a complete design system in four weeks instead of twelve to eighteen months.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

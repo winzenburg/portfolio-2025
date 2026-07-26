@@ -175,7 +175,7 @@ export default function AIIsntAFeature() {
                 <div>
                   <div className="text-white font-semibold mb-2">Discovery and research synthesis</div>
                   <p className="text-slate-300 text-sm leading-relaxed">
-                    Manually transcribing and tagging user interviews used to take days, and even then, synthesis was bounded by whoever had time to do it. That constraint is gone. AI-native research platforms now handle transcription, theme extraction, and insight clustering automatically, and they do it across your entire research history, not just the last sprint. When a PM can query two years of user interviews in real time, discovery stops being a periodic activity and becomes a continuously updated picture of what users actually need.
+                    Manually transcribing and tagging user interviews used to take days, and even then, synthesis was bounded by whoever had time to do it. That constraint is gone. AI-native research platforms now handle transcription, theme extraction, and insight clustering automatically, and they do it across your entire research history, beyond just the last sprint. When a PM can query two years of user interviews in real time, discovery stops being a periodic activity and becomes a continuously updated picture of what users actually need.
                   </p>
                 </div>
                 <div>

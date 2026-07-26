@@ -66,7 +66,7 @@ export default function AICodingEconomics() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This isn't another article about "AI will change everything" with no specifics. This is a cost-benefit analysis with real numbers, real trade-offs, and a framework for deciding when AI coding makes economic sense. Because here's the thing: AI coding doesn't always win. But when it does, the margin is enormous.
+              This isn't another article about "AI will change everything" with no specifics. This is a cost-benefit analysis with real numbers, real trade-offs, and a framework for deciding when AI coding makes economic sense. AI coding doesn't always win, but when it does, the margin is enormous.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -243,7 +243,7 @@ export default function AICodingEconomics() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's where the economics get really interesting. The traditional calculation assumes you're building one feature. What if you're building three features simultaneously?
+              The economics get more interesting once you scale up. The traditional calculation assumes you're building one feature. What if you're building three features simultaneously?
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -309,7 +309,7 @@ export default function AICodingEconomics() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The economic advantage isn't just lower cost. It's shipping 5x faster while doing other work."
+                "The economic advantage is shipping 5x faster while doing other work. Lower cost is a bonus."
               </p>
             </div>
 
@@ -532,7 +532,7 @@ export default function AICodingEconomics() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That shift, from implementation-constrained to validation-constrained, is what the economics of AI-assisted coding actually mean. The $40 feature isn't just cheaper. It's a fundamentally different way of building products.
+              That shift, from implementation-constrained to validation-constrained, is what the economics of AI-assisted coding actually mean. The $40 feature is a fundamentally different way of building products, not merely a cheaper one.
             </p>
 
             <div className="my-12 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">

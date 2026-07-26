@@ -224,7 +224,7 @@ export default function RocksNotTasks() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The third criterion is where most teams struggle. They pick Rocks that are really multi-week projects dressed up as weekly outcomes. "Refactor onboarding" sounds like a Rock, but it probably isn't. "Extract the onboarding step component and add one test" is closer to what can actually finish in a week.
+              The third criterion is where most teams struggle. They pick Rocks that are actually multi-week projects dressed up as weekly outcomes. "Refactor onboarding" sounds like a Rock, but it probably isn't. "Extract the onboarding step component and add one test" is closer to what can actually finish in a week.
             </p>
 
             {/* Filter Card */}

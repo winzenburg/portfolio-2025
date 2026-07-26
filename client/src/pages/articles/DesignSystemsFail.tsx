@@ -363,13 +363,13 @@ export default function DesignSystemsFail() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Building design systems for the past decade taught me what not to do, often through painful experience. The first mistake is building for eighteen months before launching. Ship the minimum viable system in four to six weeks instead. Iterate based on real usage. Perfect is not just the enemy of good, it's the enemy of adopted. By the time you've perfected everything, the world has moved on.
+              Building design systems for the past decade taught me what not to do, often through painful experience. The first mistake is building for eighteen months before launching. Ship the minimum viable system in four to six weeks instead. Iterate based on real usage. Perfect is the enemy of adopted, beyond just the enemy of good. By the time you've perfected everything, the world has moved on.
             </p>
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "Perfect is not just the enemy of good, it's the enemy of adopted."
+                "Perfect is the enemy of adopted, beyond just the enemy of good."
               </p>
             </div>
 

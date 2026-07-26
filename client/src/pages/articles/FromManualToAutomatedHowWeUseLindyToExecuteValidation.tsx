@@ -122,7 +122,7 @@ export default function LinnyAutomationArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              In this deep dive, I'll show you exactly how we use Lindy AI to automate validation execution, our three standard automations for every idea, how we maintain Cursor as the system of record, and how we optimize for credit efficiency without breaking the bank.
+              In this article, I'll show you exactly how we use Lindy AI to automate validation execution, our three standard automations for every idea, how we maintain Cursor as the system of record, and how we optimize for credit efficiency without breaking the bank.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -428,7 +428,7 @@ export default function LinnyAutomationArticle() {
 
             <p className="text-slate-300 leading-relaxed mb-6">
               <strong className="text-white">Step 3: Report</strong> (generate and send)<br />
-              Sends plain text summary to Slack channel and/or email. Updates RESULTS doc with daily entry. Links to full data sheet for deep dives.
+              Sends plain text summary to Slack channel and/or email. Updates RESULTS doc with daily entry. Links to full data sheet for closer analysis.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -632,7 +632,7 @@ export default function LinnyAutomationArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              <strong className="text-white">Weekly</strong>: Deep dive into full data sheets, optimize workflows based on patterns, update RESULTS doc.
+              <strong className="text-white">Weekly</strong>: Review full data sheets in detail, optimize workflows based on patterns, update RESULTS doc.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -769,7 +769,7 @@ export default function LinnyAutomationArticle() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Since implementing Lindy automation, we've validated 7 ideas in 6 months (previously 2-3). Here's what really changed:
+              Since implementing Lindy automation, we've validated 7 ideas in 6 months (previously 2-3). Here's what changed:
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

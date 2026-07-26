@@ -174,7 +174,7 @@ export default function CompleteWorkflowPost() {
           <h3>1. Niche Intelligence</h3>
 
           <p>
-            The Niche Intelligence Agent uses Manus.im to research community landscapes. Not just "how big is the market" but "where do these people actually hang out and complain about their problems?"
+            The Niche Intelligence Agent uses Manus.im to research community landscapes, going beyond "how big is the market" to "where do these people actually hang out and complain about their problems?"
           </p>
 
           <p>
@@ -531,7 +531,7 @@ export default function CompleteWorkflowPost() {
           </ul>
 
           <p>
-            But here's the thing: every hour spent on systematic process saves 10 hours of building the wrong thing. The math works if you're serious about building multiple products.
+            Every hour spent on systematic process saves 10 hours of building the wrong thing. The math works if you're serious about building multiple products.
           </p>
 
           <h2>What I Learned Building This</h2>

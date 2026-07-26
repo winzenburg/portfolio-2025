@@ -399,7 +399,7 @@ export default function FreshContextPerIteration() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That 20-point quality difference compounds. Higher quality means less debugging, less rework, less time spent correcting mistakes. The ROI of fresh context isn't just about reliability, it's about sustained productivity.
+              That 20-point quality difference compounds. Higher quality means less debugging, less rework, less time spent correcting mistakes. The ROI of fresh context is sustained productivity, beyond reliability alone.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -523,7 +523,7 @@ export default function FreshContextPerIteration() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is why autonomous agents can run overnight reliably while long interactive sessions break down. It's why Story 15 can be as high-quality as Story 1. It's why fresh context per iteration isn't just a nice-to-have, it's the fundamental architectural insight that makes autonomous coding work.
+              This is why autonomous agents can run overnight reliably while long interactive sessions break down. It's why Story 15 can be as high-quality as Story 1. Fresh context per iteration is the fundamental architectural insight that makes autonomous coding work, well beyond a nice-to-have.
             </p>
 
             <div className="my-12 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">

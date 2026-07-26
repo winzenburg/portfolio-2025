@@ -90,7 +90,7 @@ export default function PortfolioApproachArticle() {
           </p>
         </div>
 
-        <h2>Why Portfolio Theory Isn't Just for Wall Street</h2>
+        <h2>Portfolio Theory Isn't a Wall Street Thing Anymore</h2>
 
         <p>
           Modern Portfolio Theory (yeah, I know, finance class flashbacks). 
@@ -110,7 +110,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <p>
-          And it worked. Really well.
+          And it worked, better than I expected.
         </p>
 
         <Card className="p-6 my-8 bg-slate-800/50 border-slate-700">
@@ -307,8 +307,8 @@ export default function PortfolioApproachArticle() {
         </div>
 
         <p>
-          Here's what I've learned about killing fast: it's not just about cutting losses. It's 
-          about opportunity cost. Every hour spent trying to revive a 19-point idea is an hour 
+          What I've learned about killing fast: it's about opportunity cost more than cutting 
+          losses. Every hour spent trying to revive a 19-point idea is an hour 
           not spent accelerating a 35-point winner.
         </p>
 

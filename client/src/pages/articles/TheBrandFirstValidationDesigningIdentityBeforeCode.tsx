@@ -78,7 +78,7 @@ export default function BrandFirstValidationArticle() {
         </h1>
         
         <p className="text-xl text-slate-300 leading-relaxed mb-8">
-          Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. Here's why that changed everything.
+          Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision, and that one shift changed everything.
         </p>
 
         <div className="w-full h-64 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg flex items-center justify-center mb-8">
@@ -177,7 +177,7 @@ export default function BrandFirstValidationArticle() {
         </h3>
 
         <p>
-          But the real problem isn't just consistency, it's missed positioning opportunities. When you build first and brand later, you end up looking like everyone else by default. 
+          But the real problem is missed positioning opportunities, beyond just consistency. When you build first and brand later, you end up looking like everyone else by default. 
         </p>
 
         <p>
@@ -224,7 +224,7 @@ export default function BrandFirstValidationArticle() {
         </h3>
 
         <p>
-          First, I identify 3-5 leading brands in my target space and systematically capture their brand elements. Not just logos, everything:
+          First, I identify 3-5 leading brands in my target space and systematically capture their brand elements, well beyond logos:
         </p>
 
         <ul className="list-disc pl-6 mb-6">
@@ -733,7 +733,7 @@ export default function BrandFirstValidationArticle() {
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-cyan-300 font-medium mb-2"></p>
           <p className="text-slate-200 italic">
-            "Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. What if your brand could be a moat, not just a coat of paint?"
+            "Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. Your brand can be a moat, not a coat of paint slapped on at the end."
           </p>
         </div>
 
@@ -746,7 +746,7 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         <p>
-          What if your brand could be a moat, not just a coat of paint? That's the promise of designing identity before code.
+          Your brand can be a moat, not a coat of paint slapped on at the end. That's the promise of designing identity before code.
         </p>
 
         {/* CTA Section */}

@@ -70,7 +70,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The conventional wisdom pushes you toward focus. Pick one thing and go all-in. And for most traditional businesses, that advice makes sense. But AI fundamentally changes the equation. When you can automate 90% of your operations, when you can leverage shared infrastructure across multiple products, when you can build an entire business in a matter of weeks, the portfolio approach becomes not just viable, but strategic.
+              The conventional wisdom pushes you toward focus. Pick one thing and go all-in. And for most traditional businesses, that advice makes sense. But AI fundamentally changes the equation. You can automate 90% of your operations. You can share infrastructure across multiple products. You can spin up an entire business in weeks. That's what makes the portfolio approach strategic.
             </p>
 
             {/* Pull Quote */}
@@ -172,7 +172,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Build when the technical complexity is low, you have clear product-market fit validation from your existing customers, you can ship an MVP in four to eight weeks, and you can leverage your existing infrastructure. These conditions make building the obvious choice. You control the entire tech stack, the integration is seamless from day one, and the marginal cost is minimal.
+              Build when the technical complexity is low, you have clear product-market fit validation from your existing customers, you can ship an MVP in four to eight weeks, and you can build on your existing infrastructure. These conditions make building the obvious choice. You control the entire tech stack, the integration is clean from day one, and the marginal cost is minimal.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -198,7 +198,7 @@ export default function ScalingStrategy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400">✓</span>
-                    <span>Leverage existing infrastructure</span>
+                    <span>Build on existing infrastructure</span>
                   </li>
                 </ul>
               </div>
@@ -226,7 +226,7 @@ export default function ScalingStrategy() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When you do acquire, the framework I follow is rigorous but fast. Target companies that can be bought for 2-3x their annual revenue, anything more and the payback period gets too long for a portfolio play. Validate ruthlessly: dive deep into their metrics, audit their code quality, talk to their customers. The acquisition itself is just the beginning. The real work is integration: migrating them onto your shared infrastructure, setting up cross-promotion flows, unifying billing and support. Then you apply your portfolio advantages, your automation, your distribution, your operational playbook, to accelerate their growth.
+              When you do acquire, the framework I follow is rigorous but fast. Target companies that can be bought for 2-3x their annual revenue, anything more and the payback period gets too long for a portfolio play. Validate ruthlessly. Dig into their metrics, audit their code quality, talk to their customers. The acquisition itself is just the beginning. The real work is integration. You migrate them onto your shared infrastructure, set up cross-promotion flows, and unify billing and support. Then you apply your portfolio advantages, your automation, your distribution, your operational playbook, to accelerate their growth.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -373,7 +373,7 @@ export default function ScalingStrategy() {
 
               <div className="bg-slate-900/50 border-l-4 border-blue-500 px-6 pt-4 pb-5">
                 <h4 className="text-white font-semibold mb-3 text-lg">Months 7-12: Launch Product #2</h4>
-                <p className="text-slate-300 mb-3 leading-relaxed">Now you leverage everything you built. Your second product sits on the same infrastructure. You're cross-selling to your existing user base, which dramatically lowers customer acquisition costs. You're expanding market reach while keeping operational overhead minimal. This is where the portfolio advantages start compounding.</p>
+                <p className="text-slate-300 mb-3 leading-relaxed">Now everything you built starts paying off. Your second product sits on the same infrastructure. You're cross-selling to your existing user base, which dramatically lowers customer acquisition costs. You're expanding market reach while keeping operational overhead minimal. This is where the portfolio advantages start compounding.</p>
                 <div className="flex items-start gap-2 mt-4">
                   <span className="text-blue-400 font-bold">→</span>
                   <span className="font-semibold text-white">Portfolio revenue target: $60K-200K MRR</span>

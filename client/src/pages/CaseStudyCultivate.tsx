@@ -501,14 +501,14 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-emerald-400">AI Orchestration Mastery</h3>
               <p className="text-gray-300 text-sm">
-                Coordinating 7+ AI services (Claude, ChatGPT, Manus, Lindy, Glif, Context7, more) through systematic workflows demonstrates deep understanding of AI's strengths and limitations. I don't just use AI, I architect systems that multiply its effectiveness.
+                Coordinating 7+ AI services (Claude, ChatGPT, Manus, Lindy, Glif, Context7, more) through systematic workflows demonstrates deep understanding of AI's strengths and limitations. I architect systems that multiply AI's effectiveness, beyond simply using the tools.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-emerald-400">Product Strategy & Validation</h3>
               <p className="text-gray-300 text-sm">
-                The dual-filter framework (desirability + durability) represents sophisticated product thinking. I understand that validation isn't just about proving people want something, it's about proving they'll keep paying for it, and that you can defend your position against competitors.
+                The dual-filter framework (desirability + durability) represents sophisticated product thinking. Validation means proving people will keep paying for something and that you can defend your position against competitors, well beyond proving they want it.
               </p>
             </div>
           </div>
@@ -516,10 +516,10 @@ const CaseStudyCultivate: React.FC = () => {
           <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-6">
             <h3 className="text-lg font-bold mb-3 text-emerald-400">The Meta-Skill: Building Systems That Build Products</h3>
             <p className="text-gray-300 leading-relaxed mb-3">
-              Most founders build products. I built a system that builds products. This meta-level thinking, creating infrastructure that makes product creation systematic and scalable, is exactly what growing organizations need. Whether you're scaling a design team, implementing AI workflows, or building operational excellence, I can create the systems that multiply your team's effectiveness.
+              Most founders build products. I built a system that builds products. This meta-level thinking, creating infrastructure that makes product creation systematic and scalable, is exactly what growing organizations need. I build systems that multiply a team's effectiveness, whether that means scaling a design team, implementing AI workflows, or building operational excellence.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Cultivate is live, managing a real portfolio of 16+ ideas, with several projects currently in validation and build phases. This isn't theory, it's a production system that demonstrates systematic product creation is not only possible, but superior to traditional ad-hoc approaches.
+              Cultivate is live, managing a real portfolio of 16+ ideas, with several projects currently in validation and build phases. It's a production system, not a theory, and it demonstrates that systematic product creation beats traditional ad-hoc approaches.
             </p>
           </div>
         </section>

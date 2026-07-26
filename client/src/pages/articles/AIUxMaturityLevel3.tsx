@@ -75,7 +75,7 @@ export default function AIUxMaturityLevel3() {
               <div className="space-y-3">
                 {[
                   { level: "Level 2", label: "Deficient", desc: "UX brought in after decisions. Execution-only. No discovery, no seat at the table.", active: false, dim: true },
-                  { level: "Level 3", label: "Emergent", desc: "Some user research happening. Beginning to influence what gets built, not just how it looks.", active: true, dim: false },
+                  { level: "Level 3", label: "Emergent", desc: "Some user research happening. Beginning to influence what gets built, beyond how it looks.", active: true, dim: false },
                   { level: "Level 5", label: "Systematic", desc: "Automated insight, user-driven strategy, design as a competitive differentiator.", active: false, dim: true },
                 ].map((row) => (
                   <div
@@ -118,7 +118,7 @@ export default function AIUxMaturityLevel3() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's the unlock. You stop waiting for a funded discovery sprint. You run a lightweight version before the sprint planning meeting and show up with something real.
+              That's what changes everything. You stop waiting for a funded discovery sprint. You run a lightweight version before the sprint planning meeting and show up with something real.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">

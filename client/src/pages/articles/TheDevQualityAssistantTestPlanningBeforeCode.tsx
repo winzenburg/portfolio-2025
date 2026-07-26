@@ -69,7 +69,7 @@ export default function DevQualityAssistant() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I know, I know. Planning tests first sounds about as exciting as flossing. But here's the thing, it's the difference between shipping with confidence and shipping with anxiety.
+              I know, I know. Planning tests first sounds about as exciting as flossing. But it's the difference between shipping with confidence and shipping with anxiety.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

@@ -54,7 +54,7 @@ export default function AITechStack() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: "What tools did you actually use?" Every single conversation, whether on LinkedIn, in consulting calls, or over coffee with other designers, eventually circled back to this. People wanted specifics. Not vague platitudes about "leveraging AI" or "modernizing workflows." They wanted to know exactly which tools I used, why I chose them, and how they fit together into something that actually works.
+              After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: "What tools did you actually use?" Every single conversation, whether on LinkedIn, in consulting calls, or over coffee with other designers, eventually circled back to this. People wanted specifics. Not vague platitudes about "using AI" or "modernizing workflows." They wanted to know exactly which tools I used, why I chose them, and how they fit together into something that actually works.
             </p>
           </div>
 
@@ -69,46 +69,20 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Before diving into specific tools, you need to understand the philosophy that guides my choices. I've watched too many teams get distracted by shiny new AI tools that promised to revolutionize their workflow but ended up creating more complexity than value. The graveyard of abandoned tools is depressing, subscriptions that seemed essential in the moment but never actually got integrated into the daily flow of work.
+              Before I get into specific tools, you need to understand the philosophy that guides my choices. I've watched too many teams get distracted by shiny new AI tools that promised to revolutionize their workflow but ended up creating more complexity than value. The graveyard of abandoned tools is depressing, subscriptions that seemed essential in the moment but never actually got integrated into the daily flow of work.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              My approach is built on three principles that have survived contact with reality. First, I want to automate anything that follows a pattern. If a task is repetitive and rule-based, code generation, documentation, testing, validation, AI should handle it without my intervention. Not because I'm lazy, but because these tasks are where consistency matters most, and humans are notoriously bad at maintaining perfect consistency when doing repetitive work.
+              My approach comes down to a few rules that have survived contact with reality. I automate anything that follows a pattern. If a task is repetitive and rule-based, code generation, documentation, testing, validation, AI should handle it without my intervention. These are the tasks where consistency matters most, and humans are notoriously bad at maintaining perfect consistency when doing repetitive work.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Second, I preserve strategic control for humans. This is where most teams get it backwards. They try to automate the creative decisions and keep humans in the loop for execution. That's exactly wrong. Humans should own the architecture decisions, the design strategy, the UX priorities. We should decide what to build and why. AI should generate the options, create the variations, produce the implementation. It's about division of labor that actually makes sense.
+              I also preserve strategic control for humans. This is where most teams get it backwards. They try to automate the creative decisions and keep humans in the loop for execution. That's exactly wrong. Humans should own the architecture decisions, the design strategy, the UX priorities. We decide what to build and why. AI generates the options, creates the variations, produces the implementation.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Third, I maintain uncompromising quality standards regardless of how the work was created. AI-generated code needs to meet the same standards as hand-crafted code. AI-generated documentation must be as clear and useful as anything I'd write myself. The moment you create a two-tier quality system, one for human work, one for AI work, you've lost. Users don't care how you built it. They only care whether it works and whether it works well.
+              And I hold AI-generated work to the same quality bar as anything hand-crafted. AI-generated code needs to meet the same standards as hand-crafted code. AI-generated documentation must be as clear and useful as anything I'd write myself. The moment you create a two-tier quality system, one for human work, one for AI work, you've lost. Users don't care how you built it. They only care whether it works.
             </p>
-
-            <div className="my-8 bg-slate-900/30 border border-slate-800 rounded-lg p-6">
-              <ul className="space-y-4 text-slate-300">
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 font-bold text-xl mt-1">1</span>
-                  <div>
-                    <div className="text-white font-semibold mb-1">Automate Repetitive Tasks</div>
-                    <div className="text-slate-300">If a task follows a pattern, AI should handle it. Code generation, documentation, testing, validation, all candidates for automation.</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 font-bold text-xl mt-1">2</span>
-                  <div>
-                    <div className="text-white font-semibold mb-1">Preserve Strategic Control</div>
-                    <div className="text-slate-300">Humans make decisions. AI provides options. I own architecture, design strategy, and UX priorities. AI generates alternatives.</div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 font-bold text-xl mt-1">3</span>
-                  <div>
-                    <div className="text-white font-semibold mb-1">Maintain Quality Standards</div>
-                    <div className="text-slate-300">AI-generated output must meet the same standards as hand-crafted work. No exceptions.</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
@@ -150,7 +124,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The first time I used V0, I was skeptical. I'd seen too many AI design tools that generated mediocre output, components that looked okay at first glance but fell apart when you actually tried to use them. V0 is different. The components it generates aren't just visually complete. They handle edge cases. They include proper accessibility attributes. They respond correctly to different screen sizes. They're built with real component libraries like Radix UI and styled with Tailwind.
+              The first time I used V0, I was skeptical. I'd seen too many AI design tools that generated mediocre output, components that looked okay at first glance but fell apart when you actually tried to use them. V0 is different. The components it generates handle edge cases, include proper accessibility attributes, and respond correctly to different screen sizes. They're built with real component libraries like Radix UI and styled with Tailwind.
             </p>
 
             <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
@@ -173,11 +147,11 @@ export default function AITechStack() {
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
-              Cursor: The Game-Changer
+              Cursor: The One I'd Keep
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Cursor is the single most impactful tool in my entire stack. If I could only keep one AI tool, this would be it. Cursor isn't just a code editor with AI features bolted on, it's a fundamentally different way of working with code that understands your entire codebase, generates production-quality implementations, and refactors existing code with a level of intelligence that still surprises me months into using it daily.
+              Cursor is the single most impactful tool in my entire stack. If I could only keep one AI tool, this would be it. It works differently from a code editor with AI features bolted on. It understands your entire codebase, generates production-quality implementations, and refactors existing code with a level of intelligence that still surprises me months into using it daily.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -201,7 +175,7 @@ export default function AITechStack() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's what makes Cursor truly different from other AI coding assistants: it understands context at the codebase level. When I ask it to create a new component, it knows about the existing design system tokens, understands the component patterns I've been using, recognizes the testing framework we have set up, and generates code that fits seamlessly into the existing architecture. It's not just generating generic code, it's generating code that looks like it was written by someone who deeply understands this specific codebase.
+              What makes Cursor different from other AI coding assistants is that it understands context at the codebase level. When I ask it to create a new component, it knows about the existing design system tokens, understands the component patterns I've been using, recognizes the testing framework we have set up, and generates code that fits directly into the existing architecture. The code looks like it was written by someone who understands this specific codebase, not generic boilerplate.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -221,7 +195,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The real value of Copilot isn't just the time it saves, though reducing typing by forty to fifty percent is significant. It's that Copilot reduces context switching. When I'm implementing a complex feature, I can stay focused on the strategic logic while Copilot handles the mechanical implementation details. I don't need to stop and think about the exact syntax for a TypeScript generic or the proper way to structure a test case. Copilot handles that automatically, keeping me in flow.
+              The real value of Copilot is that it reduces context switching, even more than the time it saves (and reducing typing by forty to fifty percent is significant on its own). When I'm implementing a complex feature, I can stay focused on the strategic logic while Copilot handles the mechanical implementation details. I don't need to stop and think about the exact syntax for a TypeScript generic or the proper way to structure a test case. Copilot handles that automatically, keeping me in flow.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -289,7 +263,7 @@ export default function AITechStack() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Mintlify transforms design system documentation from static pages into an intelligent system that actually helps designers find what they need. The key feature is natural language search, designers can ask questions in plain English and get contextual answers with examples, not just links to documentation pages they need to read through.
+              Mintlify transforms design system documentation from static pages into an intelligent system that actually helps designers find what they need. The key feature is natural language search, designers can ask questions in plain English and get contextual answers with working examples, instead of links to documentation pages they have to dig through.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -333,7 +307,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Looking at individual tools doesn't capture how they work together as a system. The power comes from the integration, how each tool handles a specific part of the workflow and passes information seamlessly to the next stage.
+              Looking at individual tools doesn't capture how they work together as a system. The power comes from the integration: each tool handles a specific part of the workflow and hands off cleanly to the next stage.
             </p>
 
             <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-8">
@@ -558,7 +532,7 @@ export default function AITechStack() {
             <div className="space-y-6">
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6">
                 <h4 className="text-white font-semibold mb-2">Can I use different tools in this workflow?</h4>
-                <p className="text-slate-300">Absolutely. The framework matters more than the specific tools. If you're already invested in different tools that serve the same functions, use those. The principles, automate repetition, preserve strategic control, maintain quality standards, apply regardless of which specific tools you choose. I use Cursor, but GitHub Copilot Workspace might work better for your team. I use V0, but Bolt or other AI design tools might fit your workflow better. Adapt the framework to your context.</p>
+                <p className="text-slate-300">Yes. The framework matters more than the specific tools. If you're already invested in different tools that serve the same functions, use those. The principles, automate repetition, preserve strategic control, maintain quality standards, apply regardless of which specific tools you choose. I use Cursor, but GitHub Copilot Workspace might work better for your team. I use V0, but Bolt or other AI design tools might fit your workflow better. Adapt the framework to your context.</p>
               </div>
 
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6">

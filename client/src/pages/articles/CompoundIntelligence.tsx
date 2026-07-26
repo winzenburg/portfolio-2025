@@ -60,7 +60,7 @@ export default function CompoundIntelligence() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But what if your codebase could capture learnings from each AI interaction? Not just "what was built" but "what we learned while building it"? Patterns that worked. Approaches that failed. Edge cases discovered. Architectural decisions explained.
+              But what if your codebase could capture learnings from each AI interaction? The point isn't recording what was built. It's capturing what you learned while building it. Patterns that worked. Approaches that failed. Edge cases discovered. Architectural decisions explained.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -300,7 +300,7 @@ export default function CompoundIntelligence() {
                   <div className="text-green-400 font-semibold mb-2">Build 4: Full Context Advantage</div>
                   <p className="text-slate-300 text-sm mb-3">Agent read all three previous learnings. Implemented form with perfect UX, no race conditions, proper cleanup, first try.</p>
                   <p className="text-slate-300 text-sm">Time to implement: 40% faster than Build 1. Zero rework required.</p>
-                  <div className="text-green-400 text-xs">✓ Flawless execution leveraging compound intelligence</div>
+                  <div className="text-green-400 text-xs">✓ Flawless execution, powered by compound intelligence</div>
                 </div>
               </div>
             </div>
@@ -590,11 +590,11 @@ export default function CompoundIntelligence() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But codebases can be smarter than that. When agents document learnings, future agents benefit. When patterns are captured, they're replicated. When pitfalls are documented, they're avoided. The codebase becomes progressively easier to work with, not just for AI, but for everyone.
+              But codebases can be smarter than that. When agents document learnings, future agents benefit. When patterns are captured, they're replicated. When pitfalls are documented, they're avoided. The codebase becomes progressively easier to work with, for AI and for everyone else.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's compound intelligence. Not just code that works, but knowledge that accumulates. Every build makes the next build better. That advantage compounds faster than you'd think.
+              That's compound intelligence. The code works, and the knowledge that built it keeps accumulating. Every build makes the next build better. That advantage compounds faster than you'd think.
             </p>
 
             <div className="my-12 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">
@@ -604,7 +604,7 @@ export default function CompoundIntelligence() {
                   Smart code runs once. Smart documentation makes every future build better.
                 </p>
                 <p className="text-slate-300">
-                  Build intelligence that accumulates, not just code that executes.
+                  Build intelligence that accumulates, beyond code that merely executes.
                 </p>
               </div>
             </div>

@@ -209,7 +209,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        Every document in our system includes the rationale behind decisions. Not just "we chose Option B" but "we chose Option B because our JTBD analysis showed 67% of users prioritized speed over customization, and our red team identified three major risks with Option A."
+        Every document in our system includes the rationale behind decisions, upgrading "we chose Option B" to "we chose Option B because our JTBD analysis showed 67% of users prioritized speed over customization, and our red team identified three major risks with Option A."
       </p>
 
       <p className="mb-6">
@@ -228,7 +228,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </ul>
 
       <p className="mb-8">
-        This isn't just for internal clarity, it's for building trust with stakeholders. When someone questions a decision, I can show them the complete reasoning chain instead of asking them to trust my memory.
+        This builds trust with stakeholders, beyond internal clarity. When someone questions a decision, I can show them the complete reasoning chain instead of asking them to trust my memory.
       </p>
 
       <div className="my-12 grid md:grid-cols-2 gap-6">
@@ -379,7 +379,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        <strong>Version control matters.</strong> Use Git or similar for your documents. Being able to see how your thinking evolved over time is incredibly valuable for learning.
+        <strong>Version control matters.</strong> Use Git or similar for your documents. Being able to see how your thinking evolved over time is valuable for learning.
       </p>
 
       <p className="mb-8">
@@ -399,7 +399,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <p className="mb-6">
-        Is this the sexiest part of building products? Absolutely not. Is it the part that'll make you 3x more effective over time? You bet.
+        Is this the sexiest part of building products? No. Is it the part that'll make you 3x more effective over time? You bet.
       </p>
 
       <p className="mb-8">

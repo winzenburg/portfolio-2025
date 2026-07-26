@@ -33,7 +33,7 @@ export default function Methodology() {
             Strategic AI-Native Methodology
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            A proven, repeatable methodology that transforms organizations into AI-native competitors, delivering board-level impact through 25 years of Fortune 50 expertise combined with cutting-edge AI workflows.
+            A proven, repeatable methodology that transforms organizations into AI-native competitors, delivering board-level impact through 25 years of Fortune 50 expertise combined with the latest AI workflows.
           </p>
         </div>
         </div>

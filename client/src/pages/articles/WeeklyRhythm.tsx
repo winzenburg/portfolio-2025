@@ -65,7 +65,7 @@ export default function WeeklyRhythm() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              A weekly rhythm works when it's small, repeatable, and tied to outcomes. This article is a deep dive into how I run weekly planning, issue-solving, and review in about 60 minutes per week total. If you want the big picture first, start with my article on the Business Operating System, this is the tactical implementation of that framework.
+              A weekly rhythm works when it's small, repeatable, and tied to outcomes. This article walks through how I run weekly planning, issue-solving, and review in about 60 minutes per week total. If you want the big picture first, start with my article on the Business Operating System, this is the tactical implementation of that framework.
             </p>
 
             {/* Pull Quote */}

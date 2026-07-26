@@ -120,7 +120,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>Month 5</strong>: I told myself "let's just pick one tool and stick with it."</p>
 
-        <p>But here's the thing, each tool legitimately <em>is</em> better at different tasks. Consolidating would mean losing capabilities. I was stuck in expensive, inefficient purgatory.</p>
+        <p>Each tool legitimately <em>is</em> better at different tasks. Consolidating would mean losing capabilities. I was stuck in expensive, inefficient purgatory.</p>
 
         <h3>Why This Pattern Always Fails</h3>
 
@@ -298,7 +298,7 @@ export default function AIToolStackArticle() {
           </ol>
         </div>
 
-        <h2>The Tool Stack: Deep Dive</h2>
+        <h2>The Tool Stack, Tool by Tool</h2>
 
         <p>Here's exactly how I use each tool and where it fits in the workflow. (Warning: I'm about to get nerdy about AI orchestration.)</p>
 

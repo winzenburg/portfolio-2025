@@ -107,7 +107,7 @@ const CaseStudyUndercurrent: React.FC = () => {
           <h2 className="font-serif text-4xl font-bold mb-6">The Challenge</h2>
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-stone-300 leading-relaxed mb-4">
-              Whether you've just been laid off, are burning out, or quietly wondering if AI is about to make your skills obsolete, the moment of "what now?" is universally overwhelming.
+              A layoff, a burnout spiral, or a quiet fear that AI is about to make your skills obsolete: the moment of "what now?" is universally overwhelming.
             </p>
             <p className="text-stone-300 leading-relaxed mb-4">
               Traditional career coaching is expensive, scheduling is a nightmare, and the process often takes months to yield actionable insights. Personality tests and quizzes are fast, but they're reductive and rarely provide the nuanced clarity needed for major life pivots.
@@ -245,7 +245,7 @@ const CaseStudyUndercurrent: React.FC = () => {
             <Screenshot
               src="13_interview_coach_reflection.png"
               alt="Coach reflection with full answer visible"
-              caption="The reflection responds to the content of the answer, not just acknowledges it. The user's full response is also preserved on screen"
+              caption="The reflection responds to the content of the answer, beyond simply acknowledging it. The user's full response is also preserved on screen"
             />
             <Screenshot
               src="11_interview_active_question.png"
@@ -322,7 +322,7 @@ const CaseStudyUndercurrent: React.FC = () => {
             <div className="bg-white/5 border border-amber-700/30 rounded-lg p-6">
               <h4 className="font-bold text-white mb-2">AI as an empathetic interface</h4>
               <p className="text-stone-400 text-sm leading-relaxed">
-                Undercurrent demonstrates how to use LLMs to create experiences that feel warm, perceptive, and genuinely helpful in sensitive, high-stakes contexts like career transitions, not just fast.
+                Undercurrent demonstrates how to use LLMs to create experiences that feel warm, perceptive, and genuinely helpful in sensitive, high-stakes contexts like career transitions, well beyond raw speed.
               </p>
             </div>
             <div className="bg-white/5 border border-amber-700/30 rounded-lg p-6">

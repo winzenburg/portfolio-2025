@@ -45,7 +45,7 @@ export default function Work() {
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-2">Organizational Transformation</h2>
           <p className="text-muted-foreground">
-            Each project represents a team I led, a process I redesigned, or an org I helped transform, not just deliverables shipped.
+            Each project represents a team I led, a process I redesigned, or an org I helped transform, beyond deliverables shipped.
           </p>
         </div>
 

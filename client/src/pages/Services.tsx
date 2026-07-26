@@ -337,7 +337,7 @@ export default function Services() {
             Ready to Build Strategic Competitive Advantage?
           </h2>
           <p className="text-xl text-slate-300 mb-8">
-            Whether you're seeking VP-level strategic leadership or high-impact consulting, let's discuss opportunities that deliver board-level impact.
+            Let's discuss opportunities that deliver board-level impact, from VP-level strategic leadership to high-impact consulting engagements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

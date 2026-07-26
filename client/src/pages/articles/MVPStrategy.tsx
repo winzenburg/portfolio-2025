@@ -99,7 +99,7 @@ export default function MVPStrategy() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Once you have clarity on the value proposition, the next temptation emerges: building multiple features to address different use cases. I've fallen into this trap more times than I'd like to admit. You convince yourself that users need the core feature plus these five supporting features to really get value. So you build them all.
+              Once you have clarity on the value proposition, the next temptation emerges: building multiple features to address different use cases. I've fallen into this trap more times than I'd like to admit. You convince yourself that users need the core feature plus these five supporting features to get any real value. So you build them all.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -231,7 +231,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The key is delivering something that feels almost magical, a result that surprises and delights because it happened faster, better, or easier than users thought possible. When a design system generates a complete, production-ready component in thirty seconds. When an analysis that would normally take hours completes while the user is still watching. When automation handles a tedious task seamlessly in the background. These are the moments users screenshot and share.
+              The key is delivering something that feels almost magical, a result that surprises and delights because it happened faster, better, or easier than users thought possible. When a design system generates a complete, production-ready component in thirty seconds. When an analysis that would normally take hours completes while the user is still watching. When automation handles a tedious task quietly in the background. These are the moments users screenshot and share.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -326,7 +326,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The third mistake, and this one really hurt, was launching without a distribution plan. We built a genuinely good product with clear value. But we had no audience, no distribution channels, and no clear path to getting users. We thought "build it and they will come" actually worked. It doesn't. Now I start building audience in parallel with building product. By the time you launch, you should already have people waiting to use it.
+              The third mistake, and this one stung, was launching without a distribution plan. We built a genuinely good product with clear value. But we had no audience, no distribution channels, and no clear path to getting users. We thought "build it and they will come" actually worked. It doesn't. Now I start building audience in parallel with building product. By the time you launch, you should already have people waiting to use it.
             </p>
 
             {/* Lessons Learned */}

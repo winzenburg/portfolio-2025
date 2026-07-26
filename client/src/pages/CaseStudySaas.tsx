@@ -378,7 +378,7 @@ const CaseStudySaas: React.FC = () => {
           
           <div className="space-y-6">
             <div className="bg-white/5 border-l-4 border-cyan-500 rounded-r-lg p-6">
-              <h3 className="text-lg font-bold mb-2 text-cyan-400">Automated Validation is a Game-Changer</h3>
+              <h3 className="text-lg font-bold mb-2 text-cyan-400">Automated Validation Pays for Itself</h3>
               <p className="text-gray-300">
                 The custom token validation script proved to be one of the most valuable innovations. By automatically scanning the entire codebase and flagging non-compliant usage, it eliminates the manual governance burden that typically makes design systems expensive to maintain. This single innovation could save organizations hundreds of thousands of dollars over the system's lifetime.
               </p>
@@ -401,7 +401,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-white/5 border-l-4 border-cyan-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-cyan-400">Replicability Across Projects</h3>
               <p className="text-gray-300">
-                The workflow and tooling developed for this project are highly replicable. The same approach can be applied to any design system project, regardless of technology stack or visual design direction. This makes the methodology valuable not just for one-off projects, but as a repeatable capability that can be applied across an organization's portfolio.
+                The workflow and tooling developed for this project are highly replicable. The same approach can be applied to any design system project, regardless of technology stack or visual design direction. That makes the methodology a repeatable capability applicable across an organization's portfolio, well beyond a one-off project.
               </p>
             </div>
           </div>

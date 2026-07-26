@@ -210,7 +210,7 @@ export default function AIMarketValidation() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Understanding your competition isn't just about knowing who else is in the market. It's about understanding what's working for them, what's not, where the gaps are, and how you can position differently. This used to require weeks of manual research, spreadsheet building, and analysis. AI compresses this timeline dramatically.
+              Understanding your competition means understanding what's working for them, what's not, where the gaps are, and how you can position differently, well beyond just knowing who else is in the market. This used to require weeks of manual research, spreadsheet building, and analysis. AI compresses this timeline dramatically.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -348,11 +348,11 @@ export default function AIMarketValidation() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The real advantage of AI-powered validation isn't just speed, though that matters. It's the ability to test more opportunities in the same amount of time. Traditional validation takes weeks, which means most teams can only thoroughly validate one or two ideas per quarter. AI-powered validation takes days, which means you can validate five or six opportunities in the same timeframe.
+              The real advantage of AI-powered validation is the ability to test more opportunities in the same amount of time, beyond the speed itself (though that matters too). Traditional validation takes weeks, which means most teams can only thoroughly validate one or two ideas per quarter. AI-powered validation takes days, which means you can validate five or six opportunities in the same timeframe.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This volume advantage compounds. More tests mean more learning about what works and what doesn't. More opportunities analyzed means higher odds of finding the truly exceptional ones. And faster cycles mean you can pivot quickly when validation fails instead of being trapped by sunk costs.
+              This volume advantage compounds. More tests mean more learning about what works and what doesn't. More opportunities analyzed means higher odds of finding the exceptional ones. And faster cycles mean you can pivot quickly when validation fails instead of being trapped by sunk costs.
             </p>
 
             {/* Section Divider */}

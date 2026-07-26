@@ -655,7 +655,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <p>
-        <strong>Test the Explanation, Not Just the Recommendation</strong>
+        <strong>Test the Explanation as Much as the Recommendation</strong>
       </p>
 
       <p>
@@ -685,7 +685,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <p>
-        <strong>AI-Powered Explanations</strong>: Using language models to generate personalized explanations of why content was recommended, not just generic "based on your activity" messaging.
+        <strong>AI-Powered Explanations</strong>: Using language models to generate personalized explanations of why content was recommended, instead of generic "based on your activity" messaging.
       </p>
 
       <p>
@@ -693,7 +693,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <p>
-        <strong>Transparent Algorithms</strong>: Explaining not just <em>why</em> but <em>how</em> recommendations are generated, like a nutrition label for algorithms.
+        <strong>Transparent Algorithms</strong>: Explaining both <em>why</em> and <em>how</em> recommendations are generated, like a nutrition label for algorithms.
       </p>
 
       <p>
@@ -723,7 +723,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
       </p>
 
       <p>
-        Because at the end of the day, personalization should make users feel understood, not watched. The difference is consent, transparency, and respect.
+        Personalization should make users feel understood, not watched. That difference comes down to consent and transparency.
       </p>
 
       <p>

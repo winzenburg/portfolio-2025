@@ -140,14 +140,14 @@ export default function AudienceFirstGoToMarket() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Consistency matters more than perfection. I recommend a simple weekly content schedule that's sustainable over months, not just the first energetic few weeks. On Mondays, share technical deep-dives or exploration of the tools you're using. Wednesdays are for business metrics, how your operational improvements are impacting real numbers. Fridays are development progress updates, including the obstacles you're hitting and how you're working through them.
+              Consistency matters more than perfection. I recommend a simple weekly content schedule that's sustainable over months, beyond just the first energetic few weeks. On Mondays, share detailed technical breakdowns or exploration of the tools you're using. Wednesdays are for business metrics, how your operational improvements are impacting real numbers. Fridays are development progress updates, including the obstacles you're hitting and how you're working through them.
             </p>
 
             {/* Content Schedule */}
             <div className="space-y-4 mb-8">
               <div className="bg-slate-900/50 border-l-4 border-cyan-500 p-4">
                 <h4 className="text-white font-semibold mb-2">Mondays</h4>
-                <p className="text-slate-300">Technical deep-dives and tool exploration</p>
+                <p className="text-slate-300">In-depth technical breakdowns and tool exploration</p>
               </div>
               <div className="bg-slate-900/50 border-l-4 border-cyan-500 p-4">
                 <h4 className="text-white font-semibold mb-2">Wednesdays</h4>
@@ -178,7 +178,7 @@ export default function AudienceFirstGoToMarket() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The partnership terms need to be genuinely attractive to work. Equity stakes of 10-20% or revenue shares of 30-50% might seem steep, but they align incentives completely. When the creator succeeds financially only if your product succeeds, they're motivated to promote it thoughtfully and persistently, not just mention it once and move on. This transforms the relationship from a transactional sponsorship into a true partnership where both parties benefit from mutual success.
+              The partnership terms need to be genuinely attractive to work. Equity stakes of 10-20% or revenue shares of 30-50% might seem steep, but they align incentives completely. When the creator succeeds financially only if your product succeeds, they're motivated to promote it thoughtfully and persistently, beyond a single mention. This transforms the relationship from a transactional sponsorship into a true partnership where both parties benefit from mutual success.
             </p>
 
             {/* Implementation Steps */}
@@ -338,7 +338,7 @@ export default function AudienceFirstGoToMarket() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The real power emerges when you layer these channels strategically rather than running them in isolation. Organic content builds your foundation and credibility, it's the consistent drumbeat that establishes you as someone worth following. Creator partnerships expand your reach to aligned audiences you couldn't access on your own, leveraging trust they've built over years. Paid acquisition accelerates growth in the specific areas where your organic content has already proven traction.
+              The real power emerges when you layer these channels strategically rather than running them in isolation. Organic content builds your foundation and credibility, it's the consistent drumbeat that establishes you as someone worth following. Creator partnerships expand your reach to aligned audiences you couldn't access on your own, drawing on trust they've built over years. Paid acquisition accelerates growth in the specific areas where your organic content has already proven traction.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -413,14 +413,14 @@ export default function AudienceFirstGoToMarket() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The metrics that actually matter are different from what most teams track. Follower count is vanity, engagement rate tells you if people care. You need to measure actual interaction, not just passive audience size. Click-through to your product reveals whether curiosity translates to genuine interest. Conversion to active users shows whether your positioning matches reality. And cohort retention indicates whether you're attracting the right people who stay engaged over time, not just drive-by visitors who never return.
+              The metrics that actually matter are different from what most teams track. Follower count is vanity, engagement rate tells you if people care. You need to measure actual interaction, beyond passive audience size. Click-through to your product reveals whether curiosity translates to genuine interest. Conversion to active users shows whether your positioning matches reality. And cohort retention indicates whether you're attracting the right people who stay engaged over time, beyond drive-by visitors who never return.
             </p>
 
             {/* Metrics Grid */}
             <div className="my-8 grid md:grid-cols-2 gap-4">
               <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-4">
                 <div className="text-cyan-400 font-semibold mb-2">Engagement rate</div>
-                <p className="text-slate-300 text-sm">Not just followers - measure actual interaction</p>
+                <p className="text-slate-300 text-sm">Measures actual interaction, beyond raw follower counts</p>
               </div>
               <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-4">
                 <div className="text-cyan-400 font-semibold mb-2">Click-through to product</div>

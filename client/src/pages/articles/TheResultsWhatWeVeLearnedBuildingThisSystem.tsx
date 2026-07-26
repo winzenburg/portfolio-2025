@@ -113,7 +113,7 @@ export default function Article() {
         </p>
 
         <p>
-          Here's what we've learned: the frameworks that actually work, the expensive mistakes we made so you don't have to, and why AI orchestration might be the unlock you didn't know you needed.
+          We learned which frameworks actually work, the expensive mistakes we made so you don't have to, and why AI orchestration matters more than you'd expect.
         </p>
 
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -217,11 +217,11 @@ export default function Article() {
         </blockquote>
 
         <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
-          2. AI Orchestration (Not Just Better Prompting)
+          2. AI Orchestration (More Than Better Prompting)
         </h3>
 
         <p>
-          Here's where things get interesting. Most people use AI like a really smart intern, ask it a question, get an answer, move on. We tried that. It was chaos.
+          This is where things get interesting. Most people use AI like a smart intern, ask it a question, get an answer, move on. We tried that. It was chaos.
         </p>
 
         <p>
@@ -248,7 +248,7 @@ export default function Article() {
         </p>
 
         <p>
-          Result: We've cut our validation time from 6 weeks to 6 days, with better quality outputs than our manual process ever produced.
+          We've cut our validation time from 6 weeks to 6 days, with better quality outputs than our manual process ever produced.
         </p>
 
         <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
@@ -326,14 +326,14 @@ export default function Article() {
         </p>
 
         <ul className="space-y-2 my-6">
-          <li>Unfair Insight Briefs for each market research deep-dive</li>
+          <li>Unfair Insight Briefs for each round of market research</li>
           <li>Architecture Decision Records for every technical choice</li>
           <li>Validation scorecards with specific criteria and reasoning</li>
           <li>Post-mortem analyses on killed ideas (especially important)</li>
         </ul>
 
         <p>
-          Here's why this matters: Documentation isn't just record-keeping, it's compound learning. Every decision, insight, and failure becomes input for future decisions.
+          Documentation isn't record-keeping. It's compound learning: every decision, insight, and failure becomes input for future decisions.
         </p>
 
         <p>
@@ -341,7 +341,7 @@ export default function Article() {
         </p>
 
         <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
-          "Documentation isn't just record-keeping, it's compound learning."
+          "Documentation isn't record-keeping. It's compound learning."
         </blockquote>
 
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -373,7 +373,7 @@ export default function Article() {
         </h3>
 
         <p>
-          I mentioned this earlier, but it's worth diving deeper because this mistake almost killed my motivation entirely.
+          I mentioned this earlier, but it deserves more attention because this mistake almost killed my motivation entirely.
         </p>
 
         <p>
@@ -421,7 +421,7 @@ export default function Article() {
           </div>
 
           <div className="bg-slate-800/50 p-6 rounded-lg">
-            <h4 className="font-semibold text-green-900 mb-2">AI Needs Systems, Not Just Prompts</h4>
+            <h4 className="font-semibold text-green-900 mb-2">AI Needs Systems, Not More Prompts</h4>
             <p className="text-cyan-400">
               Individual AI tools are powerful. Orchestrated AI systems are transformative.
             </p>
@@ -471,15 +471,15 @@ export default function Article() {
         </p>
 
         <p>
-          The dual filters help us learn what makes ideas durable. The AI orchestration helps us learn faster. The portfolio approach helps us learn to be honest about what's working. The documentation helps us learn from our past selves.
+          The dual filters teach us what makes ideas durable. AI orchestration speeds up how fast we learn it. The portfolio approach keeps us honest about what's actually working. And the documentation means we never relearn the same lesson twice.
         </p>
 
         <p>
-          Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing really well.
+          Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing too well.
         </p>
 
         <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
-          "Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing really well."
+          "Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing too well."
         </blockquote>
 
         <p>

@@ -89,7 +89,7 @@ export default function AIAugmentedWorkflow() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've rebuilt my workflow from the ground up around an AI-first approach. Each phase leverages AI differently, but the pattern is consistent: AI handles execution speed, I handle strategic judgment. Let me show you exactly how this plays out across the four critical phases of product development.
+              I've rebuilt my workflow from the ground up around an AI-first approach. Each phase uses AI differently, but the pattern is consistent: AI handles execution speed, I handle strategic judgment. Let me show you exactly how this plays out across the four critical phases of product development.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -375,7 +375,7 @@ export default function AIAugmentedWorkflow() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That nine-week difference isn't just about efficiency. It's about market dynamics. In fast-moving markets, being first with a working solution beats being perfect but late. You capture early adopters. You establish product-market fit while competitors are still in development. You iterate based on real user feedback while they're still speculating.
+              That nine-week difference is about market dynamics, beyond just efficiency. In fast-moving markets, being first with a working solution beats being perfect but late. You capture early adopters. You establish product-market fit while competitors are still in development. You iterate based on real user feedback while they're still speculating.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

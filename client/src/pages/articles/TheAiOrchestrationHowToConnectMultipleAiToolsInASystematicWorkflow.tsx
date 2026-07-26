@@ -60,7 +60,7 @@ export default function AiOrchestrationWorkflow() {
           {/* Article Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
             <p className="text-xl leading-relaxed text-slate-200 mb-8">
-          Last month, I spent three days trying to create a comprehensive product discovery document. ChatGPT gave me ideas. Manus provided market research. Claude polished my writing. But here's the thing, they were all working in silos, and I was playing human copy-paste between them.
+          Last month, I spent three days trying to create a comprehensive product discovery document. ChatGPT gave me ideas. Manus provided market research. Claude polished my writing. They were all working in silos, and I was playing human copy-paste between them.
             </p>
 
             <p>
@@ -73,14 +73,14 @@ export default function AiOrchestrationWorkflow() {
 
             <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
               <p className="text-lg font-medium text-cyan-400 mb-0">
-            "AI tools are powerful in isolation, but they're game-changers when they work together."
+            "AI tools are powerful in isolation, but they multiply each other's strengths when they work together."
               </p>
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">The Lightbulb Moment</h2>
 
         <p>
-          Imagine conducting a symphony. Each musician is incredibly talented on their own, but the magic happens when they play together in perfect harmony. That's exactly what I realized was missing from my AI workflow.
+          Imagine conducting a symphony. Each musician is talented on their own, but the magic happens when they play together in perfect harmony. That's exactly what I realized was missing from my AI workflow.
         </p>
 
             <p>
@@ -130,7 +130,7 @@ export default function AiOrchestrationWorkflow() {
         </ul>
 
         <p>
-          But here's what made this different from my old approach: Every single claim came with citations. Not just "startups struggle with design systems," but "startups struggle with design systems [^1: State of Design Systems 2022 Report, InVision]."
+          What made this different from my old approach: every single claim came with citations, upgrading "startups struggle with design systems" to "startups struggle with design systems [^1: State of Design Systems 2022 Report, InVision]."
         </p>
 
         <p>
@@ -240,7 +240,7 @@ export default function AiOrchestrationWorkflow() {
         <h2 className="text-3xl font-bold text-white mt-12 mb-6">Why This Matters More Than You Think</h2>
 
         <p>
-          Look, I get it. Building an orchestrated AI workflow sounds like overengineering. But here's the thing, we're at an inflection point.
+          Look, I get it. Building an orchestrated AI workflow sounds like overengineering. But we're at an inflection point.
         </p>
 
         <p>
@@ -307,7 +307,7 @@ export default function AiOrchestrationWorkflow() {
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <p className="text-lg font-medium text-cyan-300 mb-0">
-            "The future belongs to teams that orchestrate AI tools, not just use them."
+            "The future belongs to teams that orchestrate AI tools instead of merely using them."
           </p>
         </div>
 
@@ -322,7 +322,7 @@ export default function AiOrchestrationWorkflow() {
         </p>
 
         <p>
-          Most importantly? I can sleep better knowing my product decisions are backed by systematic research, not just AI-generated hunches.
+          Most importantly? I can sleep better knowing my product decisions are backed by systematic research instead of AI-generated hunches.
         </p>
 
         <p>

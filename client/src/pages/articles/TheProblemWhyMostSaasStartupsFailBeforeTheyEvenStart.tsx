@@ -394,7 +394,7 @@ export default function SaaSStartupFailures() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Look, I get it. This sounds like a lot of process for someone who just wants to build cool stuff. But here's the thing: every shortcut I've tried has cost me more time and money in the long run.
+              Look, I get it. This sounds like a lot of process for someone who just wants to build cool stuff. But every shortcut I've tried has cost me more time and money in the long run.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">If you take nothing else from this, remember these four things:</p>
@@ -460,7 +460,7 @@ export default function SaaSStartupFailures() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But for founders who are serious about building durable, defensible businesses, not just cool products, the benefits far outweigh the costs.
+              But for founders who are serious about building durable, defensible businesses instead of merely cool products, the benefits far outweigh the costs.
             </p>
 
             {/* Pull Quote */}

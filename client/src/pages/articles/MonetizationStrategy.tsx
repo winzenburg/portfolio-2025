@@ -167,7 +167,7 @@ export default function MonetizationStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The Enterprise tier operates on completely different economics. You're not optimizing for volume here, you're optimizing for average contract value. Custom limits based on their scale. White-label options for their branding requirements. Dedicated support that includes a named contact, not just a ticketing system. SSO and compliance features that satisfy their security requirements. And pricing that starts at five hundred dollars monthly but often extends into thousands, with annual contracts that provide revenue predictability.
+              The Enterprise tier operates on completely different economics. You're not optimizing for volume here, you're optimizing for average contract value. Custom limits based on their scale. White-label options for their branding requirements. Dedicated support that includes a named contact, beyond a generic ticketing system. SSO and compliance features that satisfy their security requirements. And pricing that starts at five hundred dollars monthly but often extends into thousands, with annual contracts that provide revenue predictability.
             </p>
 
             {/* Pricing Tiers Comparison */}
@@ -329,7 +329,7 @@ export default function MonetizationStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Tiered pricing leverages what behavioral economists call the "anchoring effect." When presented with three options, most people choose the middle one. This isn't random, it's a psychological pattern called the "Goldilocks effect." The lowest tier feels too limited, the highest tier feels too expensive, and the middle tier feels just right. This is why I always position the Pro tier as the recommended option and make it visually distinct on the pricing page.
+              Tiered pricing uses what behavioral economists call the "anchoring effect." When presented with three options, most people choose the middle one. This isn't random, it's a psychological pattern called the "Goldilocks effect." The lowest tier feels too limited, the highest tier feels too expensive, and the middle tier feels just right. This is why I always position the Pro tier as the recommended option and make it visually distinct on the pricing page.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -522,7 +522,7 @@ export default function MonetizationStrategy() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              How do you know if pre-selling is working? The numbers tell a clear story. Getting fifty to one hundred buyers validates that real demand exists. This isn't just polite interest or wishful thinking, it's people putting money down for something that doesn't exist yet. That level of commitment signals you've found a real problem worth solving.
+              How do you know if pre-selling is working? The numbers tell a clear story. Getting fifty to one hundred buyers validates that real demand exists. This is people putting money down for something that doesn't exist yet, not polite interest or wishful thinking. That level of commitment signals you've found a real problem worth solving.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -558,7 +558,7 @@ export default function MonetizationStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Perhaps most importantly, pre-sale buyers typically retain at seventy to ninety percent rates when transitioning to full pricing after launch. They've already committed financially and emotionally. They've been part of the journey. They're not casual users who signed up for a free trial, they're invested customers who want to see you succeed. This retention rate is substantially higher than typical free-to-paid conversion, which makes pre-sale customers incredibly valuable to your long-term business model.
+              Perhaps most importantly, pre-sale buyers typically retain at seventy to ninety percent rates when transitioning to full pricing after launch. They've already committed financially and emotionally. They've been part of the journey. They're invested customers who want to see you succeed, not casual users who signed up for a free trial. This retention rate is substantially higher than typical free-to-paid conversion, which makes pre-sale customers a valuable asset to your long-term business model.
             </p>
 
             {/* Conversion Rates */}
@@ -635,7 +635,7 @@ export default function MonetizationStrategy() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              These aren't hypothetical numbers. I've watched this play out with multiple products that combined modular pricing and pre-selling. The key insight is that revenue funds growth, and growth drives more revenue. This is the compounding effect of getting monetization right from day one. You're not just building a product, you're building a business that can sustain and scale itself.
+              These aren't hypothetical numbers. I've watched this play out with multiple products that combined modular pricing and pre-selling. The key insight is that revenue funds growth, and growth drives more revenue. This is the compounding effect of getting monetization right from day one. You're building a business that can sustain and scale itself, beyond just a product.
             </p>
 
             {/* Revenue Projection */}

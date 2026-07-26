@@ -283,7 +283,7 @@ export default function RuleConsolidation() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Boring? Absolutely. Essential? You bet.
+              Boring? Yes. Essential? You bet.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -466,7 +466,7 @@ export default function RuleConsolidation() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Whether you're managing a multi-agent AI system, a complex codebase, or a team with scattered process docs, here's how to apply these principles:
+              These principles apply just as well to a multi-agent AI system, a complex codebase, or a team with scattered process docs. Here's how to apply them:
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">

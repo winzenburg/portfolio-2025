@@ -153,7 +153,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Non-technical users often aren't blocked by capability. They're blocked by not knowing what the AI will do next. The architecture that fixes that: draft the email, book the slot, queue the message, then wait for explicit approval before anything runs. Trust builds in repetition. The first approved appointment confirmation is nervous; the tenth is routine. Let people reject an action with a reason ("I'd rather call this patient myself") so the system can learn, not just log a denial.
+              Non-technical users often aren't blocked by capability. They're blocked by not knowing what the AI will do next. The architecture that fixes that: draft the email, book the slot, queue the message, then wait for explicit approval before anything runs. Trust builds in repetition. The first approved appointment confirmation is nervous; the tenth is routine. Let people reject an action with a reason ("I'd rather call this patient myself") so the system can learn from it, beyond just logging a denial.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -185,7 +185,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The assistant should only reach what the logged-in user can reach. That's table-stakes security, but it's also UX: the AI isn't a backdoor, it's a faster version of the same role. Say that on the screen where work happens, not only in the privacy policy. It costs little and changes how willing people are to try the tool.
+              The assistant should only reach what the logged-in user can reach. That's table-stakes security, but it's also UX: the AI isn't a backdoor, it's a faster version of the same role. Say that on the screen where work happens, beyond burying it in the privacy policy. It costs little and changes how willing people are to try the tool.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">
@@ -255,7 +255,7 @@ export default function TheInterfaceProblem() {
             />
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Khanmigo won't hand over the solution. It asks what you've tried, what you already know, and keeps guiding. That choice matters anywhere the goal is judgment, not just completion. Capability-building and dependency-building need different interfaces; most teams haven't picked which they're building.
+              Khanmigo won't hand over the solution. It asks what you've tried, what you already know, and keeps guiding. That choice matters anywhere the goal is judgment, beyond mere completion. Capability-building and dependency-building need different interfaces; most teams haven't picked which they're building.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-10 mb-4">

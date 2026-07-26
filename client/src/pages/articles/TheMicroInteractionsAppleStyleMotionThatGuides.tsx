@@ -150,7 +150,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          This one's a big deal. About 35% of users enable reduced-motion in their OS settings, they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this isn't just bad UX; it's an accessibility failure.
+          This one's a big deal. About 35% of users enable reduced-motion in their OS settings, they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this isn't bad UX. It's an accessibility failure.
         </p>
 
         <p>
@@ -247,11 +247,11 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          This is where Apple really shines. Every animation respects `prefers-reduced-motion`. Users who enable this setting get instant state changes instead of animated transitions.
+          This is where Apple shines brightest. Every animation respects `prefers-reduced-motion`. Users who enable this setting get instant state changes instead of animated transitions.
         </p>
 
         <p>
-          It's not just about compliance, it's about building for everyone. When we implemented proper reduced-motion fallbacks, our accessibility score jumped to 100% WCAG 2.2 AA compliance.
+          It's about building for everyone, beyond checking a compliance box. When we implemented proper reduced-motion fallbacks, our accessibility score jumped to 100% WCAG 2.2 AA compliance.
         </p>
 
         <h2 className="text-2xl font-bold text-white mt-12 mb-6">
@@ -539,7 +539,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <p>
-          Is it worth it? For consumer products, absolutely. For internal tools? Maybe not.
+          Is it worth it? For consumer products, yes. For internal tools? Maybe not.
         </p>
 
         <h3 className="text-xl font-semibold text-white mt-8 mb-4">
@@ -582,7 +582,7 @@ export default function MicroInteractionsArticle() {
         </ul>
 
         <p>
-          But here's the thing: all the fancy tech in the world won't help if you don't nail the fundamentals first.
+          But all the fancy tech in the world won't help if you don't nail the fundamentals first.
         </p>
 
         <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">

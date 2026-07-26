@@ -76,7 +76,7 @@ const CaseStudyComcast: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Force Multiplier Approach</h2>
           <div className="prose prose-invert prose-lg max-w-none mb-8">
             <p className="text-gray-300 leading-relaxed">
-              I delivered a production-ready design system in 4 weeks by leveraging my AI-augmented workflow to build at unprecedented scale. The system includes 62 components, 826 type-safe icons, and over 171,000 lines of code, a scope that would traditionally require a large team working for over a year.
+              I delivered a production-ready design system in 4 weeks by using my AI-augmented workflow to build at unprecedented scale. The system includes 62 components, 826 type-safe icons, and over 171,000 lines of code, a scope that would traditionally require a large team working for over a year.
             </p>
           </div>
 

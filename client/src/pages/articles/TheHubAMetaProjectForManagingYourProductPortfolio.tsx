@@ -86,7 +86,7 @@ export default function TheHubArticle() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The Hub isn't just another project management tool, it's a meta-project that helps me orchestrate the lifecycle of all my other products."
+                "The Hub isn't another project management tool. It's a meta-project that helps me orchestrate the lifecycle of all my other products."
               </p>
             </div>
 
@@ -158,7 +158,7 @@ export default function TheHubArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This isn't just pretty visual progress bars (though they are pretty). It's accountability. When a project sits in "Validation" for two months, that card starts looking lonely. Either I move it forward or kill it. No more project purgatory.
+              This isn't pretty visual progress bars, though they are pretty. It's accountability. When a project sits in "Validation" for two months, that card starts looking lonely. Either I move it forward or kill it. No more project purgatory.
             </p>
 
             <h3 className="text-2xl font-bold text-cyan-400 mt-8 mb-4">
@@ -214,7 +214,7 @@ export default function TheHubArticle() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This might sound boring, but hear me out: seamless navigation between portfolio view, project details, and documents is what makes the whole system actually usable.
+              This might sound boring, but hear me out: smooth navigation between portfolio view, project details, and documents is what makes the whole system actually usable.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -320,7 +320,7 @@ export default function TheHubArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              The result? The Hub stays current without me thinking about it. It's like having a really organized assistant who never sleeps and never forgets to file things.
+              The result? The Hub stays current without me thinking about it. It's like having a meticulously organized assistant who never sleeps and never forgets to file things.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -418,7 +418,7 @@ export default function TheHubArticle() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-cyan-500">
               <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
-                "The Hub isn't just a tool, it's a meta-project that deserves the same level of care and attention as your other product ideas."
+                "The Hub isn't a tool. It's a meta-project that deserves the same level of care and attention as your other product ideas."
               </p>
             </div>
 

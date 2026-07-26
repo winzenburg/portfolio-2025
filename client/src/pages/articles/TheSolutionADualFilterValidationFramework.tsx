@@ -106,8 +106,8 @@ export default function DualFilterValidationFrameworkArticle() {
         </p>
 
         <p>
-          I learned this from watching Greg Isenberg's methodology (the guy's a master at this). You're 
-          not just asking "would you use this?" You're looking for what he calls tribal urgency, a specific 
+          I learned this from watching Greg Isenberg's methodology (the guy's a master at this). Asking 
+          "would you use this?" isn't enough. You're looking for what he calls tribal urgency, a specific 
           group of people who are experiencing acute pain and desperately want a solution.
         </p>
 
@@ -175,7 +175,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </div>
 
         <p>
-          But here's where it gets interesting. I had an idea last year that absolutely crushed the Heat 
+          Heat alone can still mislead you, though. I had an idea last year that crushed the Heat 
           Filter. 400 email signups in two weeks. 23 people prepaid. I was ready to quit my day job.
         </p>
 

@@ -135,7 +135,7 @@ export default function SupabaseMCPArticle() {
 
         <p>
           And here's what nobody tells you: every mistake compounds. That missing 
-          organization_id? It's not just one table, it's twenty tables, plus RLS policies, 
+          organization_id? It's never just one table. It's twenty tables, plus RLS policies, 
           plus indexes, plus migrations. One oversight becomes months of work.
         </p>
 
@@ -250,8 +250,8 @@ CREATE INDEX idx_habits_org ON habits(organization_id);`}</code>
         </div>
 
         <p>
-          The <code>organization_id</code> on every table isn't just good practice, it's 
-          what makes RLS work. Miss it on one table and you've created a data leak.
+          The <code>organization_id</code> on every table is good practice, and more 
+          importantly, it's what makes RLS work. Miss it on one table and you've created a data leak.
         </p>
 
         <h4 className="text-xl font-semibold mt-6 mb-3">4. Analytics Schema (Know Your Users)</h4>
@@ -311,7 +311,7 @@ USING (
 
         <p>
           The subquery checks org membership on every query. Expensive? Nope, Postgres 
-          is smart about optimizing these. Secure? Absolutely.
+          is smart about optimizing these. Secure? Yes.
         </p>
 
         <h4 className="text-xl font-semibold mt-6 mb-3">6. Edge Functions + Automation</h4>

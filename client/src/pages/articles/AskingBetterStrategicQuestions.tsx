@@ -99,11 +99,11 @@ export default function AskingBetterStrategicQuestions() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              And when the speed of exploration increases 10x, your team isn't just faster. They're making better decisions because they can test more ideas before committing.
+              And when the speed of exploration increases 10x, your team makes better decisions, beyond faster ones, because they can test more ideas before committing.
             </p>
 
             <div className="my-8 bg-slate-800 border border-cyan-500/20 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-cyan-300 mb-4">What faster exploration unlocks</h3>
+              <h3 className="text-lg font-semibold text-cyan-300 mb-4">What faster exploration makes possible</h3>
               <div className="space-y-3">
                 <div className="flex items-start gap-3 text-slate-300">
                   <span className="text-cyan-400 mt-1 text-lg leading-none">→</span>
@@ -202,7 +202,7 @@ export default function AskingBetterStrategicQuestions() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              For a long time, comprehensive documentation, robust testing, clean design-to-code workflows, and polished execution were treated as luxuries. Things you'd invest in if you had the budget and the time. AI is collapsing the cost of all of those things.
+              For a long time, comprehensive documentation, thorough testing, clean design-to-code workflows, and polished execution were treated as luxuries. Things you'd invest in if you had the budget and the time. AI is collapsing the cost of all of those things.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

@@ -510,7 +510,7 @@ export default function GlifCreativeBatchingArticle() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              But here's what it absolutely nails: removing the creative bottleneck from validation. If you're a solo founder who needs to test multiple ideas with visual assets, it's transformative.
+              But here's what it nails: removing the creative bottleneck from validation. If you're a solo founder who needs to test multiple ideas with visual assets, it's transformative.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -574,7 +574,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-              What This Really Changes
+              What This Actually Changes
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -601,7 +601,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's the real value of batch generation, not just speed, but the ability to explore the full creative space instead of stopping at the first "good enough" concept.
+              That's the real value of batch generation: the ability to explore the full creative space instead of stopping at the first "good enough" concept, beyond raw speed.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">
@@ -648,7 +648,7 @@ export default function GlifCreativeBatchingArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              That's the promise of AI-powered creative batching. Speed without sacrificing the exploration that leads to truly resonant concepts.
+              That's the promise of AI-powered creative batching. Speed without sacrificing the exploration that leads to concepts that actually resonate.
             </p>
 
             <div className="my-12 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-8">

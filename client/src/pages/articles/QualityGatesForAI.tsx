@@ -134,7 +134,7 @@ export default function QualityGatesForAI() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              When schema validation fails, don't just throw an error. Store the raw output anyway, you'll want it for debugging. Mark the step failed with a recovery path, either retry or import. And surface a helpful error message that tells the user what was missing, not just "something went wrong."
+              When schema validation fails, throwing an error isn't enough. Store the raw output anyway, you'll want it for debugging. Mark the step failed with a recovery path, either retry or import. And surface a helpful error message that tells the user what was missing, instead of a generic "something went wrong."
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-12 mb-6">

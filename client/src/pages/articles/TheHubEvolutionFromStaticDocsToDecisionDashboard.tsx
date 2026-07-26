@@ -69,7 +69,7 @@ export default function Article() {
         </p>
 
         <p>
-          But here's the thing: <strong>the problem wasn't that we documented too much, it was that documentation was static</strong>.
+          <strong>The problem wasn't that we documented too much. It was that documentation was static</strong>.
         </p>
 
         <p>
@@ -402,7 +402,7 @@ export default function Article() {
         </div>
 
         <p>
-          But here's what really changed: <strong>the quality of our decisions</strong>.
+          What changed most: <strong>the quality of our decisions</strong>.
         </p>
 
         <p>

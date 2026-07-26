@@ -267,7 +267,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is where most apps screw up. They copy Duolingo's playful tone for everything. But here's the thing: what works for language learning doesn't work for mental health apps.
+              This is where most apps screw up. They copy Duolingo's playful tone for everything, but what works for language learning doesn't work for mental health apps.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">

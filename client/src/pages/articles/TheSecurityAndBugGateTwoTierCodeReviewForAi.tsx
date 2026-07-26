@@ -468,7 +468,7 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <p>
-          But here's the thing: in three months, we've had zero security incidents in production. Previously, we were averaging 
+          In three months, we've had zero security incidents in production. Previously, we were averaging 
           2-3 per quarter. The gate has easily paid for itself just in saved debugging time.
         </p>
 

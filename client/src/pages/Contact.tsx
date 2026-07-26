@@ -140,7 +140,7 @@ export default function Contact() {
             Let's Build Your Competitive Advantage
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed">
-            Whether you're a VC seeking $3M+ portfolio value gains, an executive targeting 6-12 month runway extensions, or a leader building AI-native capabilities, let's discuss measurable outcomes.
+            Let's discuss measurable outcomes: $3M+ portfolio value gains for VCs, 6-12 month runway extensions for executives, and AI-native capabilities for leaders building for what's next.
           </p>
         </div>
         </div>

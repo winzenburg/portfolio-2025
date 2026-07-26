@@ -205,7 +205,7 @@ const CaseStudyWinzinvest: React.FC = () => {
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">Transparent Execution Logic</h2>
           <p className="text-slate-300 leading-relaxed mb-8">
-            The "What Happened Today" module is one of the most important design decisions in the product. It shows not just what executed, but what was blocked and exactly which risk gate triggered the block. Advisors can hand this to a compliance officer and it explains itself. That's rare in trading software.
+            The "What Happened Today" module is one of the most important design decisions in the product. It shows what was blocked and exactly which risk gate triggered the block, alongside what executed. Advisors can hand this to a compliance officer and it explains itself. That's rare in trading software.
           </p>
           <Screenshot
             src={IMG('03_dashboard_daily_narrative.png')}
@@ -349,7 +349,7 @@ const CaseStudyWinzinvest: React.FC = () => {
             <div className="bg-white/5 border border-cyan-700/30 rounded-lg p-6">
               <h4 className="font-bold text-white mb-2">Systems thinking beyond the UI</h4>
               <p className="text-slate-400 text-sm leading-relaxed">
-                The product required architecting robust, fault-tolerant execution pipelines, not just screens. The 17-gate validation system, hard stops at the broker level, and session monitoring are all engineering decisions with direct UX consequences.
+                The product required architecting fault-tolerant execution pipelines, beyond just screens. The 17-gate validation system, hard stops at the broker level, and session monitoring are all engineering decisions with direct UX consequences.
               </p>
             </div>
             <div className="bg-white/5 border border-cyan-700/30 rounded-lg p-6">

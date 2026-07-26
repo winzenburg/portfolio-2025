@@ -117,7 +117,7 @@ export default function KillGreenlightRitual() {
         <h2>Why Founders Can't Kill Ideas (Spoiler: It's All Psychology)</h2>
 
         <p>
-          Before we dive into the solution, let's talk about why this is so damn hard. I've made every mistake in this section. Multiple times.
+          Before we get to the solution, let's talk about why this is so damn hard. I've made every mistake in this section. Multiple times.
         </p>
 
         <h3>The Sunk Cost Trap</h3>
@@ -203,7 +203,7 @@ export default function KillGreenlightRitual() {
         </p>
 
         <p>
-          Always choose the option with higher EV, regardless of past investment. This sounds obvious, but it's incredibly hard to do when you've got three months invested in something.
+          Always choose the option with higher EV, regardless of past investment. This sounds obvious, but it's hard to do when you've got three months invested in something.
         </p>
 
         <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
@@ -361,7 +361,7 @@ export default function KillGreenlightRitual() {
         </div>
 
         <p>
-          That kill decision saved me at least four months of working on something that users didn't really want. The habit tracker I started instead? It's now generating revenue.
+          That kill decision saved me at least four months of working on something users didn't want. The habit tracker I started instead? It's now generating revenue.
         </p>
 
         <h2>How the Hub Makes This Actually Work</h2>
@@ -443,7 +443,7 @@ export default function KillGreenlightRitual() {
           When you frame it like that, the decision becomes obvious.
         </p>
 
-        <h3>3. "Celebrate Kills, Not Just Wins"</h3>
+        <h3>3. "Celebrate Kills as Wins"</h3>
 
         <p>
           This one was huge for me. I started treating kills as wins, not failures.
@@ -570,7 +570,7 @@ Date: 2025-12-02`}</div>
         </p>
 
         <p>
-          But here's the thing, if you're managing 3+ ideas at various stages, reviews pay for themselves immediately. The time you save by not working on dead-end projects more than makes up for the review time.
+          If you're managing 3+ ideas at various stages, reviews pay for themselves immediately. The time you save by not working on dead-end projects more than makes up for the review time.
         </p>
 
         <h2>What's Next?</h2>
@@ -611,7 +611,7 @@ Date: 2025-12-02`}</div>
         </p>
 
         <p>
-          What if you could kill bad ideas confidently and focus all your energy on the ones that actually matter? That's not just portfolio management, that's how you build something that lasts.
+          What if you could kill bad ideas confidently and focus all your energy on the ones that actually matter? That's how you build something that lasts.
         </p>
 
         <div className="mt-12 p-6 bg-slate-800/30 rounded-lg">

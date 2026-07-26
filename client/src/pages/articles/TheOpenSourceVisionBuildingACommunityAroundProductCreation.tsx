@@ -57,7 +57,7 @@ export default function OpenSourceVisionArticle() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              I've been secretly working on something that might sound crazy: making our entire 12-agent product creation system completely transparent. Here's why I think it could change everything.
+              I've been secretly working on something that might sound crazy: making our entire 12-agent product creation system completely transparent. I think it could change everything.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function OpenSourceVisionArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              I've spent the last year building what I call a "12-agent product creation engine", basically, AI agents that handle everything from market validation to retention architecture. It's working. Really well. But here's the thing that keeps me up at night: I'm hoarding all this knowledge while watching other founders make the exact same mistakes I made six months ago.
+              I've spent the last year building what I call a "12-agent product creation engine", basically, AI agents that handle everything from market validation to retention architecture. It's working, better than I expected. But something keeps me up at night: I'm hoarding all this knowledge while watching other founders make the exact same mistakes I made six months ago.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -107,7 +107,7 @@ export default function OpenSourceVisionArticle() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Imagine GitHub, but for entire product creation systems. Not just code, the whole thing. The validation frameworks. The orchestration patterns. The document templates. The lessons learned from spectacular failures.
+              Imagine GitHub, but for entire product creation systems. The whole thing, beyond code. The validation frameworks. The orchestration patterns. The document templates. The lessons learned from spectacular failures.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -214,7 +214,7 @@ export default function OpenSourceVisionArticle() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              This is the part I'm most excited about: real, no-BS case studies. Not just the success stories, the complete failures too.
+              This is the part I'm most excited about: real, no-BS case studies. The complete failures, alongside the success stories.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -424,7 +424,7 @@ export default function OpenSourceVisionArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              And here's the thing: if you're worried about competitors copying your validation process, maybe your competitive advantage isn't as strong as you think it is.
+              If you're worried about competitors copying your validation process, maybe your competitive advantage isn't as strong as you think it is.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -436,7 +436,7 @@ export default function OpenSourceVisionArticle() {
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              Because at the end of the day, I'd rather live in a world where fewer good products die from preventable mistakes. Even if it means giving away our "secret sauce."
+              I'd rather live in a world where fewer good products die from preventable mistakes. Even if it means giving away our "secret sauce."
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
