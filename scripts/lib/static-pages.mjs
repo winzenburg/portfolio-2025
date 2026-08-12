@@ -46,7 +46,7 @@ export const STATIC_PAGES = [
     path: "/brand-hub",
     title: "Brand Hub | Ryan Winzenburg — Canonical Identity Facts",
     description:
-      "Canonical facts about Ryan Winzenburg: roles, location, founder status at Winzinvest, experience claims, and machine-readable identity files for AI citation.",
+      "Canonical facts about Ryan Winzenburg: Design Operations Leader & AI Workflow Architect in Wheat Ridge, CO; founder of Winzinvest and Casimir Systems.",
     ogImage: "/images/about-hero.webp",
     ogType: "profile",
     changefreq: "monthly",
