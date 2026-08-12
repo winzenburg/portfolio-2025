@@ -67,7 +67,7 @@ export default function PageSeo({
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={title} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@ryanwinzenburg" />
+      <meta name="twitter:site" content="@rwinzenburg" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
