@@ -21,6 +21,7 @@
     "setup-automation": "bash scripts/setup-automation.sh",
     "setup-hooks": "bash scripts/setup-git-hooks.sh",
     "validate-articles": "node scripts/validate-articles.js",
+    "notify-subscribers": "node scripts/notify-subscribers.js",
     "optimize-images": "bash scripts/optimize-images.sh",
     "rewrite-article": "node scripts/rewrite-article-to-brand-voice.js",
     "batch-rewrite": "node scripts/batch-rewrite-articles.js",

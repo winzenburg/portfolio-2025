@@ -12,10 +12,9 @@ node_modules/
 # macOS
 .DS_Store
 
-<<<<<<< HEAD
 # Temporary files
 .email_body.txt
-=======
+
 # nyc test coverage
 .nyc_output
 
@@ -74,4 +73,3 @@ temp/
 
 # Local Netlify folder
 .netlify
->>>>>>> 1d7a912 (Add article rewrite workflow documentation and scripts)

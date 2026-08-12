@@ -98,6 +98,34 @@ http://localhost:3000/portfolio-2025/articles/your-article-slug
 3. Monitor deployment:
    - https://github.com/winzenburg/portfolio-2025/actions
 
+### Step 6: Notify Newsletter Subscribers
+
+Once the article is live on winzenburg.com, email everyone who signed up via the
+"Get AI-Augmented Insights" form (`NewsletterSignup.tsx`):
+
+```bash
+node scripts/notify-subscribers.js
+```
+
+This reads the newest entry (top of the array) from `Articles.tsx` and sends a
+Resend broadcast to the `RESEND_AUDIENCE_ID` audience with the title, excerpt,
+hero image, and a "Read the full article" link. It's idempotent per slug (logs
+sends to `logs/newsletter-notifications.json`), so running it again for the same
+article is a no-op unless you pass `--force`.
+
+Useful flags:
+- `--dry-run` — preview the subject/body without sending or logging anything
+- `--slug your-article-slug` — target an older article instead of the newest one
+- `--force` — resend even if already logged as sent
+
+Requires `NEWSLETTER_RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, and
+`NEWSLETTER_FROM_EMAIL` in `.env` (see `.env.example`).
+`NEWSLETTER_RESEND_API_KEY` is intentionally separate from `RESEND_API_KEY`
+(that one is scoped to the unrelated LinkedIn content automation scripts on a
+different Resend account). `NEWSLETTER_FROM_EMAIL` must be on a domain
+verified in the [Resend Domains dashboard](https://resend.com/domains) —
+broadcasts to a full audience will fail from an unverified sender.
+
 ## Article Structure Reference
 
 ### Required Sections
