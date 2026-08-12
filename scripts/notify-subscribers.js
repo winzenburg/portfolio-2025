@@ -16,6 +16,10 @@
  *   node scripts/notify-subscribers.js --slug some-slug    # notify about a specific article
  *   node scripts/notify-subscribers.js --dry-run           # preview the email, send nothing
  *   node scripts/notify-subscribers.js --force             # resend even if already logged as sent
+ *   node scripts/notify-subscribers.js --test-email you@example.com
+ *                                                          # send a single preview copy to one
+ *                                                          # address instead of broadcasting to
+ *                                                          # the audience (doesn't touch the sent log)
  *
  * Requires in .env:
  *   NEWSLETTER_RESEND_API_KEY (Resend key for the account that owns the
@@ -52,6 +56,8 @@ const isDryRun = args.includes('--dry-run');
 const force = args.includes('--force');
 const slugFlagIndex = args.indexOf('--slug');
 const targetSlug = slugFlagIndex !== -1 ? args[slugFlagIndex + 1] : null;
+const testEmailFlagIndex = args.indexOf('--test-email');
+const testEmail = testEmailFlagIndex !== -1 ? args[testEmailFlagIndex + 1] : null;
 
 /**
  * Parse the "newest first" articles array out of Articles.tsx.
@@ -214,6 +220,26 @@ async function main() {
   }
 
   const resend = new Resend(apiKey);
+
+  if (testEmail) {
+    const { data, error } = await resend.emails.send({
+      from: fromEmail,
+      to: testEmail,
+      subject: `[TEST] ${subject}`,
+      html,
+      text,
+    });
+
+    if (error || !data) {
+      console.error('❌ Failed to send test email:', error);
+      process.exit(1);
+    }
+
+    console.log(`✅ Test email sent to ${testEmail}.`);
+    console.log(`   Email ID: ${data.id}`);
+    console.log('   (Not logged as sent - the real broadcast can still go out later.)');
+    return;
+  }
 
   const { data: broadcast, error: createError } = await resend.broadcasts.create({
     audienceId,
