@@ -43,6 +43,16 @@ export const STATIC_PAGES = [
     priority: "0.9",
   },
   {
+    path: "/brand-hub",
+    title: "Brand Hub | Ryan Winzenburg — Canonical Identity Facts",
+    description:
+      "Canonical facts about Ryan Winzenburg: roles, location, founder status at Winzinvest, experience claims, and machine-readable identity files for AI citation.",
+    ogImage: "/images/about-hero.webp",
+    ogType: "profile",
+    changefreq: "monthly",
+    priority: "0.95",
+  },
+  {
     path: "/about",
     title: "About Ryan Winzenburg | VP of Design & DesignOps Leader",
     description:

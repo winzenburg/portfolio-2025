@@ -27,6 +27,15 @@ import { Helmet } from "react-helmet-async";
  * 6. Add article preview to Articles.tsx (see ARTICLES_WORKFLOW.md)
  *
  * 7. Run `pnpm generate-sitemap` (also runs in `pnpm build:web`) so the new slug is crawlable
+ *
+ * GEO / AEO (citation) checklist for the draft:
+ * - Front-load "Ryan Winzenburg" in title/H1/first paragraph; use full name + appositives
+ *   ("Ryan Winzenburg, founder of Winzinvest, …") in key claim sentences — not only "I".
+ * - Open with one ~40–50 word self-contained claim passage an engine can lift.
+ * - Prefer question-style H2s ("What …?" / "Why …?") and lead each section with the answer.
+ * - Ask: what information gain exists nowhere else (firsthand build story, original framework)?
+ * - Keep hard performance/backtest numbers out of top-of-funnel essays; methodology-forward OK.
+ * - Align bio/venture facts with shared/brand-facts.json + /brand-hub.
  */
 
 export default function ARTICLE_TEMPLATE() {

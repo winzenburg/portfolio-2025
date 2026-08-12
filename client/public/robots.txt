@@ -1,5 +1,6 @@
 # winzenburg.com — allow search + AI answer-engine crawlers deliberately.
 # Allowing GPTBot / ClaudeBot / PerplexityBot / Google-Extended enables citation.
+# Identity for agents: /llms.txt and /brand-facts.json (canonical: /brand-hub)
 
 User-agent: *
 Allow: /

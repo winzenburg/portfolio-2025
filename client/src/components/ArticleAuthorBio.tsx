@@ -1,13 +1,17 @@
 import { Link } from "wouter";
 
-const AUTHOR_NAME = "Ryan Winzenburg";
-const AUTHOR_TITLE = "Design Operations Leader & AI Workflow Architect";
-const AUTHOR_BLURB =
-  "Design leader with 25 years at Fortune 50 companies. I write about AI-native workflows, design systems, and the operating models that make teams ship.";
+import { brandFacts } from "@/lib/brandFacts";
+
+const AUTHOR_NAME = brandFacts.person.legalName;
+const AUTHOR_TITLE = brandFacts.person.jobTitle;
+const WINZINVEST = brandFacts.ventures.find((v) => v.name === "Winzinvest");
+const AUTHOR_BLURB = WINZINVEST
+  ? `${AUTHOR_NAME}, founder of ${WINZINVEST.name}, is a design leader with ${brandFacts.person.experienceYears} years at Fortune 50 companies. Ryan Winzenburg writes about AI-native workflows, design systems, and the operating models that make teams ship.`
+  : brandFacts.person.shortBio;
 
 /**
  * Visible E-E-A-T author block for every article.
- * Keep bio wording aligned with index.html Person schema + LinkedIn.
+ * Keep bio wording aligned with Brand Hub / brand-facts.json / LinkedIn.
  */
 export default function ArticleAuthorBio() {
   return (
@@ -35,9 +39,15 @@ export default function ArticleAuthorBio() {
           <p className="text-slate-400 text-sm mt-1 mb-3">{AUTHOR_TITLE}</p>
           <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
             {AUTHOR_BLURB}{" "}
+            <Link href="/brand-hub">
+              <a className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                Brand Hub
+              </a>
+            </Link>
+            {" · "}
             <Link href="/about">
               <a className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                More about Ryan
+                About
               </a>
             </Link>
             {" · "}

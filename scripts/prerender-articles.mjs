@@ -306,6 +306,8 @@ async function main() {
   const articles = extractArticlesMetadata();
   /** @type {{ routePath: string; kind: "article" | "index" }[]} */
   const routes = [
+    { routePath: "/brand-hub", kind: "article" },
+    { routePath: "/about", kind: "article" },
     { routePath: "/articles", kind: "index" },
     ...articles.map((article) => ({
       routePath: `/articles/${article.slug}`,

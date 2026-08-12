@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite --host",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "generate-llms-txt": "node scripts/generate-llms-txt.mjs",
     "generate-indexable-html": "node scripts/generate-indexable-html.mjs",
     "prerender-articles": "node scripts/prerender-articles.mjs",
-    "build:web": "node scripts/generate-sitemap.mjs && vite build && node scripts/generate-indexable-html.mjs && node scripts/prerender-articles.mjs",
+    "build:web": "node scripts/generate-llms-txt.mjs && node scripts/generate-sitemap.mjs && vite build && node scripts/generate-indexable-html.mjs && node scripts/prerender-articles.mjs",
     "build": "pnpm run build:web && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",

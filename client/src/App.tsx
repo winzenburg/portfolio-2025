@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import Methodology from "./pages/Methodology";
 import About from "./pages/About";
+import BrandHub from "./pages/BrandHub";
 import Contact from "./pages/Contact";
 import Unsubscribe from "./pages/Unsubscribe";
 import Services from "./pages/Services";
@@ -171,6 +172,7 @@ function Router() {
         <Route path="/work" component={Work} />
         <Route path="/methodology" component={Methodology} />
         <Route path="/about" component={About} />
+        <Route path="/brand-hub" component={BrandHub} />
         <Route path="/services" component={Services} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/articles" component={Articles} />
