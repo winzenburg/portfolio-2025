@@ -90,13 +90,17 @@ function checkRouteExists(slug) {
   return routePattern.test(content);
 }
 
-// Check if import exists in App.tsx
+// Check if import exists in App.tsx (eager or React.lazy)
 function checkImportExists(componentName) {
   const appPath = path.join(rootDir, 'client/src/App.tsx');
   const content = fs.readFileSync(appPath, 'utf-8');
 
-  const importPattern = new RegExp(`import\\s+${componentName}\\s+from`, 'i');
-  return importPattern.test(content);
+  const eagerPattern = new RegExp(`import\\s+${componentName}\\s+from`, 'i');
+  const lazyPattern = new RegExp(
+    `const\\s+${componentName}\\s*=\\s*lazy\\(\\s*\\(\\)\\s*=>\\s*import\\(`,
+    'i',
+  );
+  return eagerPattern.test(content) || lazyPattern.test(content);
 }
 
 // Check if hero image exists

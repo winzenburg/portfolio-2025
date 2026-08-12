@@ -1,44 +1,25 @@
 #!/usr/bin/env node
 
 /**
- * Generate client/public/sitemap.xml from Articles.tsx + known static routes.
- * Run before or as part of the production build so crawlers see every article.
+ * Generate client/public/sitemap.xml from static pages + Articles.tsx.
  */
 
 import fs from "node:fs";
 import path from "node:path";
 import {
-  SITE_ORIGIN,
   extractArticlesMetadata,
   parseArticleDateToIso,
   rootDir,
 } from "./lib/articles-metadata.mjs";
-
-/** @type {{ loc: string; changefreq: string; priority: string; lastmod?: string }[]} */
-const STATIC_URLS = [
-  { loc: "/", changefreq: "weekly", priority: "1.0" },
-  { loc: "/work", changefreq: "monthly", priority: "0.9" },
-  { loc: "/about", changefreq: "monthly", priority: "0.9" },
-  { loc: "/methodology", changefreq: "monthly", priority: "0.8" },
-  { loc: "/services", changefreq: "monthly", priority: "0.8" },
-  { loc: "/articles", changefreq: "weekly", priority: "0.9" },
-  { loc: "/contact", changefreq: "monthly", priority: "0.7" },
-  { loc: "/gallery", changefreq: "monthly", priority: "0.6" },
-  { loc: "/case-study/cultivate", changefreq: "monthly", priority: "0.8" },
-  { loc: "/case-study/kinlet", changefreq: "monthly", priority: "0.8" },
-  { loc: "/case-study/saas-design-system", changefreq: "monthly", priority: "0.7" },
-  { loc: "/case-study/comcast-design-system", changefreq: "monthly", priority: "0.7" },
-  { loc: "/case-study/buildout", changefreq: "monthly", priority: "0.7" },
-  { loc: "/case-study/cvs-aetna", changefreq: "monthly", priority: "0.7" },
-  { loc: "/case-study/undercurrent", changefreq: "monthly", priority: "0.8" },
-  { loc: "/case-study/winzinvest", changefreq: "monthly", priority: "0.8" },
-];
+import {
+  STATIC_PAGES,
+  staticPageAbsoluteUrl,
+} from "./lib/static-pages.mjs";
 
 function urlEntry({ loc, changefreq, priority, lastmod }) {
-  const absolute = `${SITE_ORIGIN}${loc === "/" ? "/" : loc}`;
   const lastmodLine = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : "";
   return `  <url>
-    <loc>${absolute}</loc>${lastmodLine}
+    <loc>${loc}</loc>${lastmodLine}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
@@ -50,28 +31,32 @@ function generateSitemap() {
     throw new Error("No articles found in Articles.tsx — refusing to write empty sitemap");
   }
 
+  const staticEntries = STATIC_PAGES.filter((page) => !page.noIndex).map((page) =>
+    urlEntry({
+      loc: staticPageAbsoluteUrl(page),
+      changefreq: page.changefreq ?? "monthly",
+      priority: page.priority ?? "0.7",
+    }),
+  );
+
   const articleEntries = articles.map((article) => {
     const lastmod = parseArticleDateToIso(article.date) ?? undefined;
     return urlEntry({
-      loc: `/articles/${article.slug}`,
+      loc: `https://winzenburg.com/articles/${article.slug}`,
       changefreq: "monthly",
       priority: "0.8",
       lastmod,
     });
   });
 
-  const body = [
-    ...STATIC_URLS.map(urlEntry),
-    "",
-    "  <!-- Articles (generated from Articles.tsx) -->",
-    ...articleEntries,
-  ].join("\n");
-
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Main pages + case studies -->
-${body}
+${staticEntries.join("\n")}
+
+  <!-- Articles (generated from Articles.tsx) -->
+${articleEntries.join("\n")}
 
 </urlset>
 `;
@@ -79,7 +64,7 @@ ${body}
   const outPath = path.join(rootDir, "client/public/sitemap.xml");
   fs.writeFileSync(outPath, xml, "utf-8");
   console.log(
-    `✓ Wrote sitemap with ${STATIC_URLS.length} static URLs + ${articles.length} articles → ${path.relative(rootDir, outPath)}`,
+    `✓ Wrote sitemap with ${staticEntries.length} static URLs + ${articles.length} articles → ${path.relative(rootDir, outPath)}`,
   );
 }
 

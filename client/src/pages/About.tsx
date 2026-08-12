@@ -3,19 +3,18 @@ import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Zap, Users } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/PageSeo";
 
 export default function About() {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>About Ryan Winzenburg | VP of Design & DesignOps Leader</title>
-        <meta name="description" content="25 years of Fortune 50 design leadership at Comcast, CVS Health, and Life Time. Now building AI-native design teams as Head of Design Operations, VP of Design, or Director of Design. Colorado-based, remote/hybrid." />
-        <meta property="og:title" content="About Ryan Winzenburg | VP of Design & DesignOps Leader" />
-        <meta property="og:description" content="25 years of Fortune 50 design leadership. Building AI-native design teams as Head of Design Operations, VP of Design, or Director of Design." />
-        <meta property="og:url" content="https://winzenburg.com/about" />
-        <link rel="canonical" href="https://winzenburg.com/about" />
-      </Helmet>
+      <PageSeo
+        title="About Ryan Winzenburg | VP of Design & DesignOps Leader"
+        description="Ryan Winzenburg is a design operations leader and AI workflow architect with 25 years at Fortune 50 companies. VP of Design, Head of DesignOps, Principal Design Technologist."
+        path="/about"
+        ogImage="/images/about-hero.webp"
+        ogType="profile"
+      />
       <ResponsiveNav currentPage="about" />
 
       {/* Hero */}

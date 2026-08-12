@@ -48,6 +48,8 @@ export default function TheInterfaceProblem() {
         />
         <meta property="og:url" content="https://winzenburg.com/articles/interface-problem-ai-ux" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/interface-problem-hero.webp" />
+                <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://winzenburg.com/articles/interface-problem-ai-ux" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

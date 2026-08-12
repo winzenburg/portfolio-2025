@@ -22,6 +22,8 @@ export default function AIUxMaturityLevel3() {
         />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-ux-maturity-level-3" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-ux-maturity-level-3-hero.webp" />
+                <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-ux-maturity-level-3" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

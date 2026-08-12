@@ -1,9 +1,44 @@
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
+import PageSeo from "@/components/PageSeo";
+
+const CASE_STUDY_PATH = "/case-study/buildout";
+const CASE_STUDY_TITLE = "Buildout Case Study | Ryan Winzenburg";
+const CASE_STUDY_DESCRIPTION =
+  "UX and product design for Buildout commercial real estate workflows, including prospecting and map-driven experiences.";
+const CASE_STUDY_OG_IMAGE = "/project-buildout-hero.webp";
+
+const caseStudyJsonLd: Record<string, unknown>[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://winzenburg.com/" },
+      { "@type": "ListItem", position: 2, name: "Work", item: "https://winzenburg.com/work" },
+      { "@type": "ListItem", position: 3, name: "Buildout", item: "https://winzenburg.com/case-study/buildout" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    headline: "Buildout Case Study",
+    description: CASE_STUDY_DESCRIPTION,
+    url: "https://winzenburg.com/case-study/buildout",
+    image: "https://winzenburg.com/project-buildout-hero.webp",
+  },
+];
 
 export default function CaseStudyBuildout() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <PageSeo
+        title={CASE_STUDY_TITLE}
+        description={CASE_STUDY_DESCRIPTION}
+        path={CASE_STUDY_PATH}
+        ogImage={CASE_STUDY_OG_IMAGE}
+        ogType="article"
+        jsonLd={caseStudyJsonLd}
+      />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
         <Link href="/work">

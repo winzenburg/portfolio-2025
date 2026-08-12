@@ -16,6 +16,8 @@ export default function AskingBetterStrategicQuestions() {
         <meta property="og:description" content="The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible?" />
         <meta property="og:url" content="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/strategic-questions-ai-hero.webp" />
+                <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

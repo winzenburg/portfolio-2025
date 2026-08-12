@@ -1,3 +1,4 @@
+import { Suspense, lazy, type ComponentType } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -11,80 +12,152 @@ import Methodology from "./pages/Methodology";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Unsubscribe from "./pages/Unsubscribe";
-import CaseStudySaas from "./pages/CaseStudySaas";
-import CaseStudyComcast from "./pages/CaseStudyComcast";
-import CaseStudyBuildout from "./pages/CaseStudyBuildout";
-import CaseStudyCvs from "./pages/CaseStudyCvs";
-import CaseStudyKinlet from "./pages/CaseStudyKinlet";
-import CaseStudyUndercurrent from "./pages/CaseStudyUndercurrent";
-import CaseStudyWinzinvest from "./pages/CaseStudyWinzinvest";
-import CaseStudyCultivate from "./pages/CaseStudyCultivate";
 import Services from "./pages/Services";
 import Articles from "./pages/Articles";
 import Gallery from "./pages/Gallery";
-import AIAugmentedWorkflow from "./pages/articles/AIAugmentedWorkflow";
-import AiPoweredMarketValidation from "./pages/articles/AiPoweredMarketValidation";
-import AudienceFirstGoToMarket from "./pages/articles/AudienceFirstGoToMarket";
-import MVPStrategy from "./pages/articles/MVPStrategy";
-import MonetizationStrategy from "./pages/articles/MonetizationStrategy";
-import ScalingStrategy from "./pages/articles/ScalingStrategy";
-import DesignSystem4Weeks from "./pages/articles/DesignSystem4Weeks";
-import AITechStack from "./pages/articles/AITechStack";
-import DesignSystemsFail from "./pages/articles/DesignSystemsFail";
-import EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets from "./pages/articles/EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets";
-import FromManualToAutomatedHowWeUseLindyToExecuteValidation from "./pages/articles/FromManualToAutomatedHowWeUseLindyToExecuteValidation";
-import NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs from "./pages/articles/NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs";
-import TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow from "./pages/articles/TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow";
-import TheAiToolStackCoordinatingSevenAisWithoutChaos from "./pages/articles/TheAiToolStackCoordinatingSevenAisWithoutChaos";
-import TheBrandFirstValidationDesigningIdentityBeforeCode from "./pages/articles/TheBrandFirstValidationDesigningIdentityBeforeCode";
-import TheCompleteWorkflowDiscoveryToDeploymentIn2025 from "./pages/articles/TheCompleteWorkflowDiscoveryToDeploymentIn2025";
-import TheDevQualityAssistantTestPlanningBeforeCode from "./pages/articles/TheDevQualityAssistantTestPlanningBeforeCode";
-import TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable from "./pages/articles/TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable";
-import TheGamificationThatDoesntManipulateHabitLoopsDoneRight from "./pages/articles/TheGamificationThatDoesntManipulateHabitLoopsDoneRight";
-import TheHubAMetaProjectForManagingYourProductPortfolio from "./pages/articles/TheHubAMetaProjectForManagingYourProductPortfolio";
-import TheHubEvolutionFromStaticDocsToDecisionDashboard from "./pages/articles/TheHubEvolutionFromStaticDocsToDecisionDashboard";
-import TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality from "./pages/articles/TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality";
-import TheMicroInteractionsAppleStyleMotionThatGuides from "./pages/articles/TheMicroInteractionsAppleStyleMotionThatGuides";
-import TheOpenSourceVisionBuildingACommunityAroundProductCreation from "./pages/articles/TheOpenSourceVisionBuildingACommunityAroundProductCreation";
-import ThePersonalizationWithPrivacyAdaptiveUxWithConsent from "./pages/articles/ThePersonalizationWithPrivacyAdaptiveUxWithConsent";
-import ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue from "./pages/articles/ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue";
-import TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart from "./pages/articles/TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart";
-import TheResultsWhatWeVeLearnedBuildingThisSystem from "./pages/articles/TheResultsWhatWeVeLearnedBuildingThisSystem";
-import TheRuleConsolidationHowWeKept40PlusRulesManageable from "./pages/articles/TheRuleConsolidationHowWeKept40PlusRulesManageable";
-import TheRulesAndAgentsSystemMakingTheProcessRepeatable from "./pages/articles/TheRulesAndAgentsSystemMakingTheProcessRepeatable";
-import TheSecurityAndBugGateTwoTierCodeReviewForAi from "./pages/articles/TheSecurityAndBugGateTwoTierCodeReviewForAi";
-import TheSolutionADualFilterValidationFramework from "./pages/articles/TheSolutionADualFilterValidationFramework";
-import TheSupabaseMcpProductionBackendsInMinutes from "./pages/articles/TheSupabaseMcpProductionBackendsInMinutes";
-import TheTechnicalStackModernWebStandardsForProductCreationPlatforms from "./pages/articles/TheTechnicalStackModernWebStandardsForProductCreationPlatforms";
-import BusinessOperatingSystem from "./pages/articles/BusinessOperatingSystem";
-import WeeklyRhythm from "./pages/articles/WeeklyRhythm";
-import RocksNotTasks from "./pages/articles/RocksNotTasks";
-import DocsAsSystemOfRecord from "./pages/articles/DocsAsSystemOfRecord";
-import MakerVsManager from "./pages/articles/MakerVsManager";
-import AICostControl from "./pages/articles/AICostControl";
-import QualityGatesForAI from "./pages/articles/QualityGatesForAI";
-import DebuggingAIWorkflows from "./pages/articles/DebuggingAIWorkflows";
-import AutonomousAICoding from "./pages/articles/AutonomousAICoding";
-import AICodingEconomics from "./pages/articles/AICodingEconomics";
-import ChoosingAICodingMode from "./pages/articles/ChoosingAICodingMode";
-import WritingPRDsForAI from "./pages/articles/WritingPRDsForAI";
-import SelfValidatingAIAgents from "./pages/articles/SelfValidatingAIAgents";
-import FreshContextPerIteration from "./pages/articles/FreshContextPerIteration";
-import CompoundIntelligence from "./pages/articles/CompoundIntelligence";
-import IntegrationDocsThatWork from "./pages/articles/IntegrationDocsThatWork";
-import AskingBetterStrategicQuestions from "./pages/articles/AskingBetterStrategicQuestions";
-import AIIsntAFeature from "./pages/articles/AIIsntAFeature";
-import AIUxMaturityLevel3 from "./pages/articles/AIUxMaturityLevel3";
-import TheInterfaceProblem from "./pages/articles/TheInterfaceProblem";
-import TheAgentLayerBusinessLayer from "./pages/articles/TheAgentLayerBusinessLayer";
 import ScrollToTop from "./components/ScrollToTop";
 import { usePageTracking } from "./hooks/usePageTracking";
 import { useArticleEngagement } from "./hooks/useArticleEngagement";
+
+const CaseStudySaas = lazy(() => import("./pages/CaseStudySaas"));
+const CaseStudyComcast = lazy(() => import("./pages/CaseStudyComcast"));
+const CaseStudyBuildout = lazy(() => import("./pages/CaseStudyBuildout"));
+const CaseStudyCvs = lazy(() => import("./pages/CaseStudyCvs"));
+const CaseStudyKinlet = lazy(() => import("./pages/CaseStudyKinlet"));
+const CaseStudyUndercurrent = lazy(() => import("./pages/CaseStudyUndercurrent"));
+const CaseStudyWinzinvest = lazy(() => import("./pages/CaseStudyWinzinvest"));
+const CaseStudyCultivate = lazy(() => import("./pages/CaseStudyCultivate"));
+
+const AIAugmentedWorkflow = lazy(() => import("./pages/articles/AIAugmentedWorkflow"));
+const AiPoweredMarketValidation = lazy(() => import("./pages/articles/AiPoweredMarketValidation"));
+const AudienceFirstGoToMarket = lazy(() => import("./pages/articles/AudienceFirstGoToMarket"));
+const MVPStrategy = lazy(() => import("./pages/articles/MVPStrategy"));
+const MonetizationStrategy = lazy(() => import("./pages/articles/MonetizationStrategy"));
+const ScalingStrategy = lazy(() => import("./pages/articles/ScalingStrategy"));
+const DesignSystem4Weeks = lazy(() => import("./pages/articles/DesignSystem4Weeks"));
+const AITechStack = lazy(() => import("./pages/articles/AITechStack"));
+const DesignSystemsFail = lazy(() => import("./pages/articles/DesignSystemsFail"));
+const EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets = lazy(
+  () => import("./pages/articles/EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets"),
+);
+const FromManualToAutomatedHowWeUseLindyToExecuteValidation = lazy(
+  () => import("./pages/articles/FromManualToAutomatedHowWeUseLindyToExecuteValidation"),
+);
+const NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs = lazy(
+  () => import("./pages/articles/NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs"),
+);
+const TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow = lazy(
+  () => import("./pages/articles/TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow"),
+);
+const TheAiToolStackCoordinatingSevenAisWithoutChaos = lazy(
+  () => import("./pages/articles/TheAiToolStackCoordinatingSevenAisWithoutChaos"),
+);
+const TheBrandFirstValidationDesigningIdentityBeforeCode = lazy(
+  () => import("./pages/articles/TheBrandFirstValidationDesigningIdentityBeforeCode"),
+);
+const TheCompleteWorkflowDiscoveryToDeploymentIn2025 = lazy(
+  () => import("./pages/articles/TheCompleteWorkflowDiscoveryToDeploymentIn2025"),
+);
+const TheDevQualityAssistantTestPlanningBeforeCode = lazy(
+  () => import("./pages/articles/TheDevQualityAssistantTestPlanningBeforeCode"),
+);
+const TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable = lazy(
+  () => import("./pages/articles/TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable"),
+);
+const TheGamificationThatDoesntManipulateHabitLoopsDoneRight = lazy(
+  () => import("./pages/articles/TheGamificationThatDoesntManipulateHabitLoopsDoneRight"),
+);
+const TheHubAMetaProjectForManagingYourProductPortfolio = lazy(
+  () => import("./pages/articles/TheHubAMetaProjectForManagingYourProductPortfolio"),
+);
+const TheHubEvolutionFromStaticDocsToDecisionDashboard = lazy(
+  () => import("./pages/articles/TheHubEvolutionFromStaticDocsToDecisionDashboard"),
+);
+const TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality = lazy(
+  () => import("./pages/articles/TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality"),
+);
+const TheMicroInteractionsAppleStyleMotionThatGuides = lazy(
+  () => import("./pages/articles/TheMicroInteractionsAppleStyleMotionThatGuides"),
+);
+const TheOpenSourceVisionBuildingACommunityAroundProductCreation = lazy(
+  () => import("./pages/articles/TheOpenSourceVisionBuildingACommunityAroundProductCreation"),
+);
+const ThePersonalizationWithPrivacyAdaptiveUxWithConsent = lazy(
+  () => import("./pages/articles/ThePersonalizationWithPrivacyAdaptiveUxWithConsent"),
+);
+const ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue = lazy(
+  () => import("./pages/articles/ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue"),
+);
+const TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart = lazy(
+  () => import("./pages/articles/TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart"),
+);
+const TheResultsWhatWeVeLearnedBuildingThisSystem = lazy(
+  () => import("./pages/articles/TheResultsWhatWeVeLearnedBuildingThisSystem"),
+);
+const TheRuleConsolidationHowWeKept40PlusRulesManageable = lazy(
+  () => import("./pages/articles/TheRuleConsolidationHowWeKept40PlusRulesManageable"),
+);
+const TheRulesAndAgentsSystemMakingTheProcessRepeatable = lazy(
+  () => import("./pages/articles/TheRulesAndAgentsSystemMakingTheProcessRepeatable"),
+);
+const TheSecurityAndBugGateTwoTierCodeReviewForAi = lazy(
+  () => import("./pages/articles/TheSecurityAndBugGateTwoTierCodeReviewForAi"),
+);
+const TheSolutionADualFilterValidationFramework = lazy(
+  () => import("./pages/articles/TheSolutionADualFilterValidationFramework"),
+);
+const TheSupabaseMcpProductionBackendsInMinutes = lazy(
+  () => import("./pages/articles/TheSupabaseMcpProductionBackendsInMinutes"),
+);
+const TheTechnicalStackModernWebStandardsForProductCreationPlatforms = lazy(
+  () => import("./pages/articles/TheTechnicalStackModernWebStandardsForProductCreationPlatforms"),
+);
+const BusinessOperatingSystem = lazy(() => import("./pages/articles/BusinessOperatingSystem"));
+const WeeklyRhythm = lazy(() => import("./pages/articles/WeeklyRhythm"));
+const RocksNotTasks = lazy(() => import("./pages/articles/RocksNotTasks"));
+const DocsAsSystemOfRecord = lazy(() => import("./pages/articles/DocsAsSystemOfRecord"));
+const MakerVsManager = lazy(() => import("./pages/articles/MakerVsManager"));
+const AICostControl = lazy(() => import("./pages/articles/AICostControl"));
+const QualityGatesForAI = lazy(() => import("./pages/articles/QualityGatesForAI"));
+const DebuggingAIWorkflows = lazy(() => import("./pages/articles/DebuggingAIWorkflows"));
+const AutonomousAICoding = lazy(() => import("./pages/articles/AutonomousAICoding"));
+const AICodingEconomics = lazy(() => import("./pages/articles/AICodingEconomics"));
+const ChoosingAICodingMode = lazy(() => import("./pages/articles/ChoosingAICodingMode"));
+const WritingPRDsForAI = lazy(() => import("./pages/articles/WritingPRDsForAI"));
+const SelfValidatingAIAgents = lazy(() => import("./pages/articles/SelfValidatingAIAgents"));
+const FreshContextPerIteration = lazy(() => import("./pages/articles/FreshContextPerIteration"));
+const CompoundIntelligence = lazy(() => import("./pages/articles/CompoundIntelligence"));
+const IntegrationDocsThatWork = lazy(() => import("./pages/articles/IntegrationDocsThatWork"));
+const AskingBetterStrategicQuestions = lazy(
+  () => import("./pages/articles/AskingBetterStrategicQuestions"),
+);
+const AIIsntAFeature = lazy(() => import("./pages/articles/AIIsntAFeature"));
+const AIUxMaturityLevel3 = lazy(() => import("./pages/articles/AIUxMaturityLevel3"));
+const TheInterfaceProblem = lazy(() => import("./pages/articles/TheInterfaceProblem"));
+const TheAgentLayerBusinessLayer = lazy(
+  () => import("./pages/articles/TheAgentLayerBusinessLayer"),
+);
 
 function PageTracker() {
   usePageTracking();
   useArticleEngagement();
   return null;
+}
+
+function RouteFallback() {
+  return (
+    <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+      <div className="text-slate-400 text-sm">Loading…</div>
+    </div>
+  );
+}
+
+function LazyRoute({ component: Component }: { component: ComponentType }) {
+  return (
+    <Suspense fallback={<RouteFallback />}>
+      <Component />
+    </Suspense>
+  );
 }
 
 function Router() {
@@ -93,99 +166,216 @@ function Router() {
       <PageTracker />
       <ScrollToTop />
       <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path="/work" component={Work} />
-      <Route path="/methodology" component={Methodology} />
-      <Route path="/about" component={About} />
-      <Route path="/services" component={Services} />
-      <Route path="/gallery" component={Gallery} />
-      <Route path="/articles" component={Articles} />
-      <Route path="/articles/ai-augmented-workflow" component={AIAugmentedWorkflow} />
-      <Route path="/articles/ai-powered-market-validation" component={AiPoweredMarketValidation} />
-      <Route path="/articles/audience-first-go-to-market" component={AudienceFirstGoToMarket} />
-      <Route path="/articles/mvp-strategy" component={MVPStrategy} />
-      <Route path="/articles/monetization-strategy" component={MonetizationStrategy} />
-      <Route path="/articles/scaling-strategy" component={ScalingStrategy} />
-      <Route path="/articles/design-system-4-weeks" component={DesignSystem4Weeks} />
-      <Route path="/articles/ai-tech-stack" component={AITechStack} />
-      <Route path="/articles/design-systems-fail" component={DesignSystemsFail} />
-      <Route path="/articles/glif-batch-creatives" component={EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets} />
-      <Route path="/articles/lindy-automated-validation" component={FromManualToAutomatedHowWeUseLindyToExecuteValidation} />
-      <Route path="/articles/context7-live-docs" component={NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs} />
-      <Route path="/articles/ai-orchestration" component={TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow} />
-      <Route path="/articles/ai-tool-stack" component={TheAiToolStackCoordinatingSevenAisWithoutChaos} />
-      <Route path="/articles/brand-first-validation" component={TheBrandFirstValidationDesigningIdentityBeforeCode} />
-      <Route path="/articles/complete-workflow-2025" component={TheCompleteWorkflowDiscoveryToDeploymentIn2025} />
-      <Route path="/articles/dev-quality-assistant" component={TheDevQualityAssistantTestPlanningBeforeCode} />
-      <Route path="/articles/documentation-system" component={TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable} />
-      <Route path="/articles/gamification-done-right" component={TheGamificationThatDoesntManipulateHabitLoopsDoneRight} />
-      <Route path="/articles/the-hub" component={TheHubAMetaProjectForManagingYourProductPortfolio} />
-      <Route path="/articles/hub-evolution" component={TheHubEvolutionFromStaticDocsToDecisionDashboard} />
-      <Route path="/articles/kill-greenlight-ritual" component={TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality} />
-      <Route path="/articles/micro-interactions" component={TheMicroInteractionsAppleStyleMotionThatGuides} />
-      <Route path="/articles/open-source-vision" component={TheOpenSourceVisionBuildingACommunityAroundProductCreation} />
-      <Route path="/articles/personalization-privacy" component={ThePersonalizationWithPrivacyAdaptiveUxWithConsent} />
-      <Route path="/articles/portfolio-approach" component={ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue} />
-      <Route path="/articles/saas-problem" component={TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart} />
-      <Route path="/articles/system-results" component={TheResultsWhatWeVeLearnedBuildingThisSystem} />
-      <Route path="/articles/rule-consolidation" component={TheRuleConsolidationHowWeKept40PlusRulesManageable} />
-      <Route path="/articles/rules-and-agents" component={TheRulesAndAgentsSystemMakingTheProcessRepeatable} />
-      <Route path="/articles/security-bug-gate" component={TheSecurityAndBugGateTwoTierCodeReviewForAi} />
-      <Route path="/articles/dual-filter-validation" component={TheSolutionADualFilterValidationFramework} />
-      <Route path="/articles/supabase-mcp-blueprint" component={TheSupabaseMcpProductionBackendsInMinutes} />
-      <Route path="/articles/technical-stack" component={TheTechnicalStackModernWebStandardsForProductCreationPlatforms} />
-      <Route path="/articles/business-operating-system" component={BusinessOperatingSystem} />
-      <Route path="/articles/weekly-rhythm" component={WeeklyRhythm} />
-      <Route path="/articles/rocks-not-tasks" component={RocksNotTasks} />
-      <Route path="/articles/docs-as-system-of-record" component={DocsAsSystemOfRecord} />
-      <Route path="/articles/maker-vs-manager" component={MakerVsManager} />
-      <Route path="/articles/ai-cost-control" component={AICostControl} />
-      <Route path="/articles/quality-gates-for-ai" component={QualityGatesForAI} />
-      <Route path="/articles/debugging-ai-workflows" component={DebuggingAIWorkflows} />
-      <Route path="/articles/autonomous-ai-coding" component={AutonomousAICoding} />
-      <Route path="/articles/ai-coding-economics" component={AICodingEconomics} />
-      <Route path="/articles/choosing-ai-coding-mode" component={ChoosingAICodingMode} />
-      <Route path="/articles/writing-prds-for-ai-agents" component={WritingPRDsForAI} />
-      <Route path="/articles/self-validating-ai-agents" component={SelfValidatingAIAgents} />
-      <Route path="/articles/fresh-context-per-iteration" component={FreshContextPerIteration} />
-      <Route path="/articles/compound-intelligence" component={CompoundIntelligence} />
-      <Route path="/articles/integration-docs-that-work" component={IntegrationDocsThatWork} />
-      <Route path="/articles/strategic-questions-ai-product-design" component={AskingBetterStrategicQuestions} />
-      <Route path="/articles/ai-isnt-a-feature-workflow" component={AIIsntAFeature} />
-      <Route path="/articles/ai-ux-maturity-level-3" component={AIUxMaturityLevel3} />
-      <Route path="/articles/interface-problem-ai-ux" component={TheInterfaceProblem} />
-      <Route path="/articles/the-agent-layer-is-becoming-the-business-layer" component={TheAgentLayerBusinessLayer} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/unsubscribe" component={Unsubscribe} />
-      <Route path="/case-study/saas-design-system" component={CaseStudySaas} />
-      <Route path="/case-study/comcast-design-system" component={CaseStudyComcast} />
-      <Route path="/case-study/buildout" component={CaseStudyBuildout} />
-      <Route path="/case-study/cvs-aetna" component={CaseStudyCvs} />
-      <Route path="/case-study/kinlet" component={CaseStudyKinlet} />
-      <Route path="/case-study/undercurrent" component={CaseStudyUndercurrent} />
-      <Route path="/case-study/winzinvest" component={CaseStudyWinzinvest} />
-      <Route path="/case-study/cultivate" component={CaseStudyCultivate} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
+        <Route path="/" component={Home} />
+        <Route path="/work" component={Work} />
+        <Route path="/methodology" component={Methodology} />
+        <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/articles" component={Articles} />
+        <Route path="/articles/ai-augmented-workflow">
+          {() => <LazyRoute component={AIAugmentedWorkflow} />}
+        </Route>
+        <Route path="/articles/ai-powered-market-validation">
+          {() => <LazyRoute component={AiPoweredMarketValidation} />}
+        </Route>
+        <Route path="/articles/audience-first-go-to-market">
+          {() => <LazyRoute component={AudienceFirstGoToMarket} />}
+        </Route>
+        <Route path="/articles/mvp-strategy">
+          {() => <LazyRoute component={MVPStrategy} />}
+        </Route>
+        <Route path="/articles/monetization-strategy">
+          {() => <LazyRoute component={MonetizationStrategy} />}
+        </Route>
+        <Route path="/articles/scaling-strategy">
+          {() => <LazyRoute component={ScalingStrategy} />}
+        </Route>
+        <Route path="/articles/design-system-4-weeks">
+          {() => <LazyRoute component={DesignSystem4Weeks} />}
+        </Route>
+        <Route path="/articles/ai-tech-stack">
+          {() => <LazyRoute component={AITechStack} />}
+        </Route>
+        <Route path="/articles/design-systems-fail">
+          {() => <LazyRoute component={DesignSystemsFail} />}
+        </Route>
+        <Route path="/articles/glif-batch-creatives">
+          {() => <LazyRoute component={EightyPercentFasterCreativesHowWeUseGlifToBatchGenerateAssets} />}
+        </Route>
+        <Route path="/articles/lindy-automated-validation">
+          {() => <LazyRoute component={FromManualToAutomatedHowWeUseLindyToExecuteValidation} />}
+        </Route>
+        <Route path="/articles/context7-live-docs">
+          {() => <LazyRoute component={NeverShipOutdatedCodeHowWeUseContext7ToQueryLiveDocs} />}
+        </Route>
+        <Route path="/articles/ai-orchestration">
+          {() => <LazyRoute component={TheAiOrchestrationHowToConnectMultipleAiToolsInASystematicWorkflow} />}
+        </Route>
+        <Route path="/articles/ai-tool-stack">
+          {() => <LazyRoute component={TheAiToolStackCoordinatingSevenAisWithoutChaos} />}
+        </Route>
+        <Route path="/articles/brand-first-validation">
+          {() => <LazyRoute component={TheBrandFirstValidationDesigningIdentityBeforeCode} />}
+        </Route>
+        <Route path="/articles/complete-workflow-2025">
+          {() => <LazyRoute component={TheCompleteWorkflowDiscoveryToDeploymentIn2025} />}
+        </Route>
+        <Route path="/articles/dev-quality-assistant">
+          {() => <LazyRoute component={TheDevQualityAssistantTestPlanningBeforeCode} />}
+        </Route>
+        <Route path="/articles/documentation-system">
+          {() => <LazyRoute component={TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable} />}
+        </Route>
+        <Route path="/articles/gamification-done-right">
+          {() => <LazyRoute component={TheGamificationThatDoesntManipulateHabitLoopsDoneRight} />}
+        </Route>
+        <Route path="/articles/the-hub">
+          {() => <LazyRoute component={TheHubAMetaProjectForManagingYourProductPortfolio} />}
+        </Route>
+        <Route path="/articles/hub-evolution">
+          {() => <LazyRoute component={TheHubEvolutionFromStaticDocsToDecisionDashboard} />}
+        </Route>
+        <Route path="/articles/kill-greenlight-ritual">
+          {() => <LazyRoute component={TheKillGreenlightRitualStayingRuthlessAboutPortfolioQuality} />}
+        </Route>
+        <Route path="/articles/micro-interactions">
+          {() => <LazyRoute component={TheMicroInteractionsAppleStyleMotionThatGuides} />}
+        </Route>
+        <Route path="/articles/open-source-vision">
+          {() => <LazyRoute component={TheOpenSourceVisionBuildingACommunityAroundProductCreation} />}
+        </Route>
+        <Route path="/articles/personalization-privacy">
+          {() => <LazyRoute component={ThePersonalizationWithPrivacyAdaptiveUxWithConsent} />}
+        </Route>
+        <Route path="/articles/portfolio-approach">
+          {() => <LazyRoute component={ThePortfolioApproachManagingMultipleBetsKillingFastPrioritizingByExpectedValue} />}
+        </Route>
+        <Route path="/articles/saas-problem">
+          {() => <LazyRoute component={TheProblemWhyMostSaasStartupsFailBeforeTheyEvenStart} />}
+        </Route>
+        <Route path="/articles/system-results">
+          {() => <LazyRoute component={TheResultsWhatWeVeLearnedBuildingThisSystem} />}
+        </Route>
+        <Route path="/articles/rule-consolidation">
+          {() => <LazyRoute component={TheRuleConsolidationHowWeKept40PlusRulesManageable} />}
+        </Route>
+        <Route path="/articles/rules-and-agents">
+          {() => <LazyRoute component={TheRulesAndAgentsSystemMakingTheProcessRepeatable} />}
+        </Route>
+        <Route path="/articles/security-bug-gate">
+          {() => <LazyRoute component={TheSecurityAndBugGateTwoTierCodeReviewForAi} />}
+        </Route>
+        <Route path="/articles/dual-filter-validation">
+          {() => <LazyRoute component={TheSolutionADualFilterValidationFramework} />}
+        </Route>
+        <Route path="/articles/supabase-mcp-blueprint">
+          {() => <LazyRoute component={TheSupabaseMcpProductionBackendsInMinutes} />}
+        </Route>
+        <Route path="/articles/technical-stack">
+          {() => <LazyRoute component={TheTechnicalStackModernWebStandardsForProductCreationPlatforms} />}
+        </Route>
+        <Route path="/articles/business-operating-system">
+          {() => <LazyRoute component={BusinessOperatingSystem} />}
+        </Route>
+        <Route path="/articles/weekly-rhythm">
+          {() => <LazyRoute component={WeeklyRhythm} />}
+        </Route>
+        <Route path="/articles/rocks-not-tasks">
+          {() => <LazyRoute component={RocksNotTasks} />}
+        </Route>
+        <Route path="/articles/docs-as-system-of-record">
+          {() => <LazyRoute component={DocsAsSystemOfRecord} />}
+        </Route>
+        <Route path="/articles/maker-vs-manager">
+          {() => <LazyRoute component={MakerVsManager} />}
+        </Route>
+        <Route path="/articles/ai-cost-control">
+          {() => <LazyRoute component={AICostControl} />}
+        </Route>
+        <Route path="/articles/quality-gates-for-ai">
+          {() => <LazyRoute component={QualityGatesForAI} />}
+        </Route>
+        <Route path="/articles/debugging-ai-workflows">
+          {() => <LazyRoute component={DebuggingAIWorkflows} />}
+        </Route>
+        <Route path="/articles/autonomous-ai-coding">
+          {() => <LazyRoute component={AutonomousAICoding} />}
+        </Route>
+        <Route path="/articles/ai-coding-economics">
+          {() => <LazyRoute component={AICodingEconomics} />}
+        </Route>
+        <Route path="/articles/choosing-ai-coding-mode">
+          {() => <LazyRoute component={ChoosingAICodingMode} />}
+        </Route>
+        <Route path="/articles/writing-prds-for-ai-agents">
+          {() => <LazyRoute component={WritingPRDsForAI} />}
+        </Route>
+        <Route path="/articles/self-validating-ai-agents">
+          {() => <LazyRoute component={SelfValidatingAIAgents} />}
+        </Route>
+        <Route path="/articles/fresh-context-per-iteration">
+          {() => <LazyRoute component={FreshContextPerIteration} />}
+        </Route>
+        <Route path="/articles/compound-intelligence">
+          {() => <LazyRoute component={CompoundIntelligence} />}
+        </Route>
+        <Route path="/articles/integration-docs-that-work">
+          {() => <LazyRoute component={IntegrationDocsThatWork} />}
+        </Route>
+        <Route path="/articles/strategic-questions-ai-product-design">
+          {() => <LazyRoute component={AskingBetterStrategicQuestions} />}
+        </Route>
+        <Route path="/articles/ai-isnt-a-feature-workflow">
+          {() => <LazyRoute component={AIIsntAFeature} />}
+        </Route>
+        <Route path="/articles/ai-ux-maturity-level-3">
+          {() => <LazyRoute component={AIUxMaturityLevel3} />}
+        </Route>
+        <Route path="/articles/interface-problem-ai-ux">
+          {() => <LazyRoute component={TheInterfaceProblem} />}
+        </Route>
+        <Route path="/articles/the-agent-layer-is-becoming-the-business-layer">
+          {() => <LazyRoute component={TheAgentLayerBusinessLayer} />}
+        </Route>
+        <Route path="/contact" component={Contact} />
+        <Route path="/unsubscribe" component={Unsubscribe} />
+        <Route path="/case-study/saas-design-system">
+          {() => <LazyRoute component={CaseStudySaas} />}
+        </Route>
+        <Route path="/case-study/comcast-design-system">
+          {() => <LazyRoute component={CaseStudyComcast} />}
+        </Route>
+        <Route path="/case-study/buildout">
+          {() => <LazyRoute component={CaseStudyBuildout} />}
+        </Route>
+        <Route path="/case-study/cvs-aetna">
+          {() => <LazyRoute component={CaseStudyCvs} />}
+        </Route>
+        <Route path="/case-study/kinlet">
+          {() => <LazyRoute component={CaseStudyKinlet} />}
+        </Route>
+        <Route path="/case-study/undercurrent">
+          {() => <LazyRoute component={CaseStudyUndercurrent} />}
+        </Route>
+        <Route path="/case-study/winzinvest">
+          {() => <LazyRoute component={CaseStudyWinzinvest} />}
+        </Route>
+        <Route path="/case-study/cultivate">
+          {() => <LazyRoute component={CaseStudyCultivate} />}
+        </Route>
+        <Route path="/404" component={NotFound} />
+        <Route component={NotFound} />
       </Switch>
     </WouterRouter>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <HelmetProvider>
       <ErrorBoundary>
-        <ThemeProvider
-          defaultTheme="light"
-          // switchable
-        >
+        <ThemeProvider defaultTheme="light">
           <TooltipProvider>
             <Toaster />
             <Router />

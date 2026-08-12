@@ -1,9 +1,40 @@
 import React from 'react';
 import { Link } from 'wouter';
-import { Helmet } from 'react-helmet-async';
+import PageSeo from "@/components/PageSeo";
 
 const BASE = import.meta.env.BASE_URL;
 const IMG = (name: string) => `${BASE}images/winzinvest_${name}`;
+
+const CASE_STUDY_PATH = "/case-study/winzinvest";
+const CASE_STUDY_TITLE = "Winzinvest: Execution Controls for RIAs | Ryan Winzenburg";
+const CASE_STUDY_DESCRIPTION =
+  "A fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices.";
+const CASE_STUDY_OG_IMAGE = "/images/winzinvest_01_homepage_hero.webp";
+
+const caseStudyJsonLd: Record<string, unknown>[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://winzenburg.com/" },
+      { "@type": "ListItem", position: 2, name: "Work", item: "https://winzenburg.com/work" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Winzinvest",
+        item: "https://winzenburg.com/case-study/winzinvest",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    headline: "Winzinvest: Execution Controls for RIAs",
+    description: CASE_STUDY_DESCRIPTION,
+    url: "https://winzenburg.com/case-study/winzinvest",
+    image: "https://winzenburg.com/images/winzinvest_01_homepage_hero.webp",
+  },
+];
 
 interface ScreenshotProps {
   src: string;
@@ -23,15 +54,14 @@ function Screenshot({ src, alt, caption }: ScreenshotProps) {
 const CaseStudyWinzinvest: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      <Helmet>
-        <title>Winzinvest: Execution Controls for RIAs | Ryan Winzenburg</title>
-        <meta
-          name="description"
-          content="A fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices."
-        />
-        <meta property="og:title" content="Winzinvest: Execution Controls for RIAs | Ryan Winzenburg" />
-        <meta property="og:url" content="https://winzenburg.com/case-study/winzinvest" />
-      </Helmet>
+      <PageSeo
+        title={CASE_STUDY_TITLE}
+        description={CASE_STUDY_DESCRIPTION}
+        path={CASE_STUDY_PATH}
+        ogImage={CASE_STUDY_OG_IMAGE}
+        ogType="article"
+        jsonLd={caseStudyJsonLd}
+      />
 
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">

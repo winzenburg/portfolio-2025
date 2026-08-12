@@ -22,6 +22,8 @@ export default function TheAgentLayerBusinessLayer() {
         />
         <meta property="og:url" content="https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp" />
+                <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

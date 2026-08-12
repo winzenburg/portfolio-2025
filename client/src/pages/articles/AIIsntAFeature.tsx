@@ -22,6 +22,8 @@ export default function AIIsntAFeature() {
         />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-isnt-a-feature-workflow" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-isnt-a-feature-workflow-hero.webp" />
+                <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-isnt-a-feature-workflow" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

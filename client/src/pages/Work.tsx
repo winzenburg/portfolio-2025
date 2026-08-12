@@ -3,20 +3,18 @@ import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Settings, Users, CheckCircle } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/PageSeo";
 import { trackCaseStudyClick, trackExternalLink } from "@/lib/analytics";
 
 export default function Work() {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Case Studies | Design Operations & AI-Augmented Product Design, Ryan Winzenburg</title>
-        <meta name="description" content="Case studies in AI-augmented design leadership: Cultivate (startup OS), Kinlet (AI SaaS MVP), Kinetic UI (design system), Comcast, CVS Health. See how design operations transforms product teams." />
-        <meta property="og:title" content="Case Studies | Design Operations & AI-Augmented Product Design" />
-        <meta property="og:description" content="Case studies: Cultivate, Kinlet AI SaaS, Kinetic UI design system, Comcast, CVS Health. AI-augmented design operations in practice." />
-        <meta property="og:url" content="https://winzenburg.com/work" />
-        <link rel="canonical" href="https://winzenburg.com/work" />
-      </Helmet>
+      <PageSeo
+        title="Case Studies | Design Operations & AI-Augmented Product Design, Ryan Winzenburg"
+        description="Case studies in design operations, enterprise design systems, and AI-augmented product design across Fortune 50 and startup environments."
+        path="/work"
+        ogImage="/images/work-hero.webp"
+      />
       <ResponsiveNav currentPage="work" />
 
       {/* Hero */}

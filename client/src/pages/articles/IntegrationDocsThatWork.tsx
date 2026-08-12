@@ -16,6 +16,8 @@ export default function IntegrationDocsThatWork() {
         <meta property="og:description" content="18 minutes vs 3 hours, same API, different documentation. Developer experience is a design problem." />
         <meta property="og:url" content="https://winzenburg.com/articles/integration-docs-that-work" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/integration-docs-hero.webp" />
+                <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://winzenburg.com/articles/integration-docs-that-work" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

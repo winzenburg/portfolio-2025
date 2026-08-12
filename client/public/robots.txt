@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /unsubscribe
+Disallow: /unsubscribe/
+Disallow: /404
+Disallow: /404/
 
 Sitemap: https://winzenburg.com/sitemap.xml

@@ -3,19 +3,17 @@ import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Settings } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/PageSeo";
 
 export default function Methodology() {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg</title>
-        <meta name="description" content="A proven 5-phase AI-native methodology for design operations: research, prototyping, production, testing, and documentation. Expert-guided AI orchestration that makes design teams 4-6x faster." />
-        <meta property="og:title" content="AI-Native Design Methodology | 5-Phase Workflow" />
-        <meta property="og:description" content="Proven 5-phase AI-native methodology for design operations. Expert-guided AI orchestration delivering 4-6x faster design teams." />
-        <meta property="og:url" content="https://winzenburg.com/methodology" />
-        <link rel="canonical" href="https://winzenburg.com/methodology" />
-      </Helmet>
+      <PageSeo
+        title="AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg"
+        description="A five-phase AI-native design methodology for shipping enterprise-grade UX 4-6x faster without sacrificing quality or system integrity."
+        path="/methodology"
+        ogImage="/images/methodology-hero.webp"
+      />
       <ResponsiveNav currentPage="methodology" />
 
       {/* Hero */}
