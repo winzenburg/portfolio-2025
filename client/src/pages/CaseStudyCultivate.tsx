@@ -1,9 +1,44 @@
 import React from 'react';
 import { Link } from 'wouter';
+import PageSeo from "@/components/PageSeo";
+
+const CASE_STUDY_PATH = "/case-study/cultivate";
+const CASE_STUDY_TITLE = "Cultivate: Startup Operating System | Ryan Winzenburg";
+const CASE_STUDY_DESCRIPTION =
+  "A portfolio-first SaaS workspace that turns ideas into validated products, powered by agents, quality gates, and a business operating system.";
+const CASE_STUDY_OG_IMAGE = "/project-cultivate-bos.webp";
+
+const caseStudyJsonLd: Record<string, unknown>[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://winzenburg.com/" },
+      { "@type": "ListItem", position: 2, name: "Work", item: "https://winzenburg.com/work" },
+      { "@type": "ListItem", position: 3, name: "Cultivate", item: "https://winzenburg.com/case-study/cultivate" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    headline: "Cultivate: Startup Operating System",
+    description: CASE_STUDY_DESCRIPTION,
+    url: "https://winzenburg.com/case-study/cultivate",
+    image: "https://winzenburg.com/project-cultivate-bos.webp",
+  },
+];
 
 const CaseStudyCultivate: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0a0e1a] text-white">
+      <PageSeo
+        title={CASE_STUDY_TITLE}
+        description={CASE_STUDY_DESCRIPTION}
+        path={CASE_STUDY_PATH}
+        ogImage={CASE_STUDY_OG_IMAGE}
+        ogType="article"
+        jsonLd={caseStudyJsonLd}
+      />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
         <Link href="/work">

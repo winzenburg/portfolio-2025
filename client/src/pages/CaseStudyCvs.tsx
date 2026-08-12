@@ -1,9 +1,44 @@
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
+import PageSeo from "@/components/PageSeo";
+
+const CASE_STUDY_PATH = "/case-study/cvs-aetna";
+const CASE_STUDY_TITLE = "CVS / Aetna Case Study | Ryan Winzenburg";
+const CASE_STUDY_DESCRIPTION =
+  "Enterprise UX and design systems work across CVS and Aetna digital product domains.";
+const CASE_STUDY_OG_IMAGE = "/project-cvs-aetna-hero.webp";
+
+const caseStudyJsonLd: Record<string, unknown>[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://winzenburg.com/" },
+      { "@type": "ListItem", position: 2, name: "Work", item: "https://winzenburg.com/work" },
+      { "@type": "ListItem", position: 3, name: "CVS / Aetna", item: "https://winzenburg.com/case-study/cvs-aetna" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    headline: "CVS / Aetna Case Study",
+    description: CASE_STUDY_DESCRIPTION,
+    url: "https://winzenburg.com/case-study/cvs-aetna",
+    image: "https://winzenburg.com/project-cvs-aetna-hero.webp",
+  },
+];
 
 export default function CaseStudyCvs() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <PageSeo
+        title={CASE_STUDY_TITLE}
+        description={CASE_STUDY_DESCRIPTION}
+        path={CASE_STUDY_PATH}
+        ogImage={CASE_STUDY_OG_IMAGE}
+        ogType="article"
+        jsonLd={caseStudyJsonLd}
+      />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
         <Link href="/work">

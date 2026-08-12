@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import ResponsiveNav from "@/components/ResponsiveNav";
+import PageSeo from "@/components/PageSeo";
 
 // All illustrations with cleaned-up names
 const illustrations = [
@@ -62,6 +63,12 @@ export default function Gallery() {
 
   return (
     <div className="min-h-screen">
+      <PageSeo
+        title="Illustration Gallery | Ryan Winzenburg"
+        description="Selected editorial and conceptual illustrations created for articles and product storytelling."
+        path="/gallery"
+        ogImage="/images/articles-hero.webp"
+      />
       <ResponsiveNav currentPage="gallery" />
 
       {/* Hero */}

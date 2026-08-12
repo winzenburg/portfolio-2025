@@ -1,8 +1,39 @@
 import React from 'react';
 import { Link } from 'wouter';
-import { Helmet } from 'react-helmet-async';
+import PageSeo from "@/components/PageSeo";
 
 const BASE = import.meta.env.BASE_URL;
+
+const CASE_STUDY_PATH = "/case-study/undercurrent";
+const CASE_STUDY_TITLE = "Undercurrent: Career Discovery OS | Ryan Winzenburg";
+const CASE_STUDY_DESCRIPTION =
+  "An AI-powered voice interview platform that helps professionals navigate career transitions through proven frameworks and automated synthesis.";
+const CASE_STUDY_OG_IMAGE = "/images/01_welcome.webp";
+
+const caseStudyJsonLd: Record<string, unknown>[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://winzenburg.com/" },
+      { "@type": "ListItem", position: 2, name: "Work", item: "https://winzenburg.com/work" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Undercurrent",
+        item: "https://winzenburg.com/case-study/undercurrent",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    headline: "Undercurrent: Career Discovery OS",
+    description: CASE_STUDY_DESCRIPTION,
+    url: "https://winzenburg.com/case-study/undercurrent",
+    image: "https://winzenburg.com/images/01_welcome.webp",
+  },
+];
 
 interface ScreenshotProps {
   src: string;
@@ -23,15 +54,14 @@ function Screenshot({ src, alt, caption, accent = 'border-amber-700/40' }: Scree
 const CaseStudyUndercurrent: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
-      <Helmet>
-        <title>Undercurrent: Career Discovery OS | Ryan Winzenburg</title>
-        <meta
-          name="description"
-          content="An AI-powered voice interview platform that helps professionals navigate career transitions through 6 proven frameworks, 19 guided questions, and automated synthesis."
-        />
-        <meta property="og:title" content="Undercurrent: Career Discovery OS | Ryan Winzenburg" />
-        <meta property="og:url" content="https://winzenburg.com/case-study/undercurrent" />
-      </Helmet>
+      <PageSeo
+        title={CASE_STUDY_TITLE}
+        description={CASE_STUDY_DESCRIPTION}
+        path={CASE_STUDY_PATH}
+        ogImage={CASE_STUDY_OG_IMAGE}
+        ogType="article"
+        jsonLd={caseStudyJsonLd}
+      />
 
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">

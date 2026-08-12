@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSearch } from "wouter";
 import ResponsiveNav from "@/components/ResponsiveNav";
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/PageSeo";
 
 type UnsubscribeStatus = "idle" | "loading" | "success" | "error";
 
@@ -40,11 +40,13 @@ export default function Unsubscribe() {
 
   return (
     <div className="min-h-screen bg-slate-950">
-      <Helmet>
-        <title>Unsubscribe | Ryan Winzenburg</title>
-        <meta name="description" content="Unsubscribe from the Ryan Winzenburg newsletter." />
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+      <PageSeo
+        title="Unsubscribe | Ryan Winzenburg"
+        description="Manage your newsletter subscription."
+        path="/unsubscribe"
+        ogImage="/images/contact-hero.webp"
+        noIndex
+      />
       <ResponsiveNav currentPage="unsubscribe" />
 
       <section className="pt-32 pb-20 px-6">

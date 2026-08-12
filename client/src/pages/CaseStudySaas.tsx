@@ -1,9 +1,49 @@
 import React from 'react';
 import { Link } from 'wouter';
+import PageSeo from "@/components/PageSeo";
+
+const CASE_STUDY_PATH = "/case-study/saas-design-system";
+const CASE_STUDY_TITLE = "SaaS Design System Case Study | Ryan Winzenburg";
+const CASE_STUDY_DESCRIPTION =
+  "How a SaaS design system was structured for velocity, consistency, and adoption across product teams.";
+const CASE_STUDY_OG_IMAGE = "/project-saas-design-system.webp";
+
+const caseStudyJsonLd: Record<string, unknown>[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://winzenburg.com/" },
+      { "@type": "ListItem", position: 2, name: "Work", item: "https://winzenburg.com/work" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "SaaS Design System",
+        item: "https://winzenburg.com/case-study/saas-design-system",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    headline: "SaaS Design System Case Study",
+    description: CASE_STUDY_DESCRIPTION,
+    url: "https://winzenburg.com/case-study/saas-design-system",
+    image: "https://winzenburg.com/project-saas-design-system.webp",
+  },
+];
 
 const CaseStudySaas: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0a0e1a] text-white">
+      <PageSeo
+        title={CASE_STUDY_TITLE}
+        description={CASE_STUDY_DESCRIPTION}
+        path={CASE_STUDY_PATH}
+        ogImage={CASE_STUDY_OG_IMAGE}
+        ogType="article"
+        jsonLd={caseStudyJsonLd}
+      />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
         <Link href="/work">

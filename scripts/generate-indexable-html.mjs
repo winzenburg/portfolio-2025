@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * After Vite build, emit static HTML shells for each article route (and the
- * articles index) with correct <title>, meta, canonical, OG, and JSON-LD.
+ * After Vite build, emit static HTML shells for indexable routes with correct
+ * <title>, meta, canonical, OG, Twitter, and JSON-LD.
  *
- * Netlify serves these files for /articles/<slug> before the SPA fallback, so
- * crawlers and social bots see per-page SEO without waiting on client JS.
- * The SPA still hydrates/replaces #root once JS loads.
+ * Covers articles + main/case-study pages from static-pages.mjs.
+ * Netlify serves these files before the 404 catch-all.
  */
 
 import fs from "node:fs";
@@ -20,6 +19,11 @@ import {
   parseArticleDateToIso,
   rootDir,
 } from "./lib/articles-metadata.mjs";
+import {
+  STATIC_PAGES,
+  staticPageAbsoluteImage,
+  staticPageAbsoluteUrl,
+} from "./lib/static-pages.mjs";
 
 const DIST_DIR = path.join(rootDir, "dist/public");
 const INDEX_HTML_PATH = path.join(DIST_DIR, "index.html");
@@ -35,6 +39,7 @@ const INDEX_HTML_PATH = path.join(DIST_DIR, "index.html");
  *   ogUrl: string;
  *   ogImage: string;
  *   ogType: string;
+ *   robots: string;
  *   jsonLd: string | null;
  *   noscriptHeading: string;
  *   noscriptBody: string;
@@ -49,12 +54,13 @@ function applySeoToHtml(html, seo) {
   );
 
   next = replaceOrInsertMeta(next, "name", "description", seo.description);
-  next = replaceOrInsertMeta(next, "name", "robots", "index, follow");
+  next = replaceOrInsertMeta(next, "name", "robots", seo.robots);
   next = replaceOrInsertMeta(next, "property", "og:type", seo.ogType);
   next = replaceOrInsertMeta(next, "property", "og:title", seo.ogTitle);
   next = replaceOrInsertMeta(next, "property", "og:description", seo.ogDescription);
   next = replaceOrInsertMeta(next, "property", "og:url", seo.ogUrl);
   next = replaceOrInsertMeta(next, "property", "og:image", seo.ogImage);
+  next = replaceOrInsertMeta(next, "name", "twitter:card", "summary_large_image");
   next = replaceOrInsertMeta(next, "name", "twitter:title", seo.ogTitle);
   next = replaceOrInsertMeta(next, "name", "twitter:description", seo.ogDescription);
   next = replaceOrInsertMeta(next, "name", "twitter:image", seo.ogImage);
@@ -71,17 +77,21 @@ function applySeoToHtml(html, seo) {
     );
   }
 
-  // Remove prior Article JSON-LD if regenerating; keep Person/WebSite from shell.
+  // Drop prior page-specific JSON-LD types we regenerate; keep Person/WebSite/Org in shell.
   next = next.replace(
-    /<script type="application\/ld\+json">\s*\{[\s\S]*?"@type"\s*:\s*"Article"[\s\S]*?\}\s*<\/script>\s*/g,
+    /<script type="application\/ld\+json">\s*\{[\s\S]*?"@type"\s*:\s*"(Article|CollectionPage|BreadcrumbList|CreativeWork)"[\s\S]*?\}\s*<\/script>\s*/g,
     "",
   );
 
   if (seo.jsonLd) {
-    next = next.replace(
-      "</head>",
-      `    <script type="application/ld+json">${seo.jsonLd}</script>\n  </head>`,
-    );
+    // Support one or more JSON objects concatenated as adjacent script payloads
+    const blocks = seo.jsonLd.startsWith("[")
+      ? /** @type {unknown[]} */ (JSON.parse(seo.jsonLd)).map((block) => JSON.stringify(block))
+      : [seo.jsonLd];
+    const scripts = blocks
+      .map((block) => `    <script type="application/ld+json">${block}</script>`)
+      .join("\n");
+    next = next.replace("</head>", `${scripts}\n  </head>`);
   }
 
   const noscript = `<noscript>
@@ -92,12 +102,15 @@ function applySeoToHtml(html, seo) {
       </article>
     </noscript>`;
 
-  if (next.includes('<div id="root"></div>')) {
+  // Replace existing noscript block if regenerating, else insert once.
+  if (/<noscript>[\s\S]*?<\/noscript>/.test(next)) {
+    next = next.replace(/<noscript>[\s\S]*?<\/noscript>/, noscript);
+  } else if (next.includes('<div id="root"></div>')) {
     next = next.replace(
       '<div id="root"></div>',
       `<div id="root"></div>\n    ${noscript}`,
     );
-  } else if (!next.includes("<noscript>")) {
+  } else {
     next = next.replace("</body>", `    ${noscript}\n  </body>`);
   }
 
@@ -137,6 +150,24 @@ function escapeRegExp(value) {
 }
 
 /**
+ * @param {string} routePath
+ * @param {string} html
+ */
+function writeShellForPath(routePath, html) {
+  if (routePath === "/") {
+    fs.writeFileSync(INDEX_HTML_PATH, html, "utf-8");
+    return INDEX_HTML_PATH;
+  }
+
+  const relative = routePath.replace(/^\//, "");
+  const outDir = path.join(DIST_DIR, relative);
+  fs.mkdirSync(outDir, { recursive: true });
+  const outPath = path.join(outDir, "index.html");
+  fs.writeFileSync(outPath, html, "utf-8");
+  return outPath;
+}
+
+/**
  * @param {import("./lib/articles-metadata.mjs").ArticleMeta} article
  * @param {string | undefined} componentPath
  */
@@ -163,8 +194,7 @@ function resolveArticleSeo(article, componentPath) {
     helmet = extractHelmetSeo(fs.readFileSync(componentPath, "utf-8"));
   }
 
-  const title =
-    helmet.title ?? `${article.title} | Ryan Winzenburg`;
+  const title = helmet.title ?? `${article.title} | Ryan Winzenburg`;
   const description = helmet.description ?? article.excerpt;
   const ogTitle = helmet.ogTitle ?? article.title;
   const ogDescription = helmet.ogDescription ?? article.excerpt;
@@ -173,23 +203,47 @@ function resolveArticleSeo(article, componentPath) {
   const canonical = helmet.canonical ?? fallbackCanonical;
   const ogType = helmet.ogType ?? "article";
 
-  let jsonLd = helmet.jsonLd;
-  if (!jsonLd) {
-    jsonLd = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: article.title,
-      description: article.excerpt,
-      author: {
-        "@type": "Person",
-        name: "Ryan Winzenburg",
-        url: SITE_ORIGIN,
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${SITE_ORIGIN}/`,
       },
-      datePublished: parseArticleDateToIso(article.date),
-      url: canonical,
-      image: ogImage,
-    });
-  }
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Articles",
+        item: `${SITE_ORIGIN}/articles`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: canonical,
+      },
+    ],
+  };
+
+  const articleLd = helmet.jsonLd
+    ? JSON.parse(helmet.jsonLd)
+    : {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: article.title,
+        description: article.excerpt,
+        author: {
+          "@type": "Person",
+          name: "Ryan Winzenburg",
+          url: SITE_ORIGIN,
+        },
+        datePublished: parseArticleDateToIso(article.date),
+        url: canonical,
+        image: ogImage,
+      };
 
   return {
     title,
@@ -200,9 +254,86 @@ function resolveArticleSeo(article, componentPath) {
     ogUrl,
     ogImage,
     ogType,
-    jsonLd,
+    robots: "index, follow",
+    jsonLd: JSON.stringify([breadcrumb, articleLd]),
     noscriptHeading: article.title,
     noscriptBody: article.excerpt,
+  };
+}
+
+/**
+ * @param {import("./lib/static-pages.mjs").StaticPageSeo} page
+ */
+function resolveStaticPageSeo(page) {
+  const canonical = staticPageAbsoluteUrl(page);
+  const ogImage = staticPageAbsoluteImage(page);
+  const ogType = page.ogType ?? "website";
+
+  /** @type {Record<string, unknown>[]} */
+  const jsonLdBlocks = [];
+
+  if (page.path.startsWith("/case-study/")) {
+    const name = page.title.split("|")[0]?.trim() ?? page.title;
+    jsonLdBlocks.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: `${SITE_ORIGIN}/`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Work",
+          item: `${SITE_ORIGIN}/work`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name,
+          item: canonical,
+        },
+      ],
+    });
+    jsonLdBlocks.push({
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      name,
+      description: page.description,
+      url: canonical,
+      image: ogImage,
+      author: {
+        "@type": "Person",
+        name: "Ryan Winzenburg",
+        url: SITE_ORIGIN,
+      },
+    });
+  } else if (page.path === "/articles") {
+    jsonLdBlocks.push({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: page.title,
+      url: canonical,
+      description: page.description,
+    });
+  }
+
+  return {
+    title: page.title,
+    description: page.description,
+    canonical,
+    ogTitle: page.title,
+    ogDescription: page.description,
+    ogUrl: canonical,
+    ogImage,
+    ogType,
+    robots: page.noIndex ? "noindex, nofollow" : "index, follow",
+    jsonLd: jsonLdBlocks.length > 0 ? JSON.stringify(jsonLdBlocks) : null,
+    noscriptHeading: page.title,
+    noscriptBody: page.description,
   };
 }
 
@@ -217,66 +348,56 @@ function generateIndexableHtml() {
   const articles = extractArticlesMetadata();
   const componentPaths = extractArticleComponentPaths();
 
-  let written = 0;
+  let staticWritten = 0;
+  for (const page of STATIC_PAGES) {
+    const seo = resolveStaticPageSeo(page);
+    const html = applySeoToHtml(shellHtml, seo);
+    writeShellForPath(page.path, html);
+    staticWritten += 1;
+  }
+
+  // 404 shell (explicit)
+  const notFoundHtml = applySeoToHtml(shellHtml, {
+    title: "Page Not Found | Ryan Winzenburg",
+    description: "The page you requested could not be found.",
+    canonical: `${SITE_ORIGIN}/404`,
+    ogTitle: "Page Not Found | Ryan Winzenburg",
+    ogDescription: "The page you requested could not be found.",
+    ogUrl: `${SITE_ORIGIN}/404`,
+    ogImage: `${SITE_ORIGIN}/images/about-hero.webp`,
+    ogType: "website",
+    robots: "noindex, nofollow",
+    jsonLd: null,
+    noscriptHeading: "Page Not Found",
+    noscriptBody: "The page you requested could not be found.",
+  });
+  writeShellForPath("/404", notFoundHtml);
+  fs.writeFileSync(path.join(DIST_DIR, "404.html"), notFoundHtml, "utf-8");
+
+  let articleWritten = 0;
   let missingHelmet = 0;
 
   for (const article of articles) {
     const componentPath = componentPaths.get(article.slug);
-    if (componentPath && fs.existsSync(componentPath)) {
+    if (!(componentPath && fs.existsSync(componentPath))) {
+      missingHelmet += 1;
+      console.warn(`  ⚠ Component not found for ${article.slug} — using Articles.tsx fallback`);
+    } else {
       const helmet = extractHelmetSeo(fs.readFileSync(componentPath, "utf-8"));
       if (!helmet.title) {
         missingHelmet += 1;
         console.warn(`  ⚠ No Helmet title for ${article.slug} — using Articles.tsx fallback`);
       }
-    } else {
-      missingHelmet += 1;
-      console.warn(`  ⚠ Component not found for ${article.slug} — using Articles.tsx fallback`);
     }
 
     const seo = resolveArticleSeo(article, componentPath);
     const html = applySeoToHtml(shellHtml, seo);
-    const outDir = path.join(DIST_DIR, "articles", article.slug);
-    fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, "index.html"), html, "utf-8");
-    written += 1;
+    writeShellForPath(`/articles/${article.slug}`, html);
+    articleWritten += 1;
   }
 
-  // Articles index page
-  const articlesIndexSeo = {
-    title:
-      "Articles on AI Design Workflows, DesignOps & Product Strategy | Ryan Winzenburg",
-    description:
-      `${articles.length} articles on AI-augmented design workflows, design operations, design systems, UX leadership, and product strategy. Practical insights from 25 years of enterprise design leadership.`,
-    canonical: `${SITE_ORIGIN}/articles`,
-    ogTitle: "Articles on AI Design Workflows, DesignOps & Product Strategy",
-    ogDescription:
-      "Practical insights on AI-augmented design, design operations, UX leadership, and product strategy from 25 years of enterprise design leadership.",
-    ogUrl: `${SITE_ORIGIN}/articles`,
-    ogImage: `${SITE_ORIGIN}/images/articles-hero.webp`,
-    ogType: "website",
-    jsonLd: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: "Articles on AI Design Workflows, DesignOps & Product Strategy",
-      url: `${SITE_ORIGIN}/articles`,
-      description:
-        "Practical insights on AI-augmented design, design operations, UX leadership, and product strategy.",
-    }),
-    noscriptHeading: "Articles on AI Design Workflows, DesignOps & Product Strategy",
-    noscriptBody:
-      "Practical insights on AI-augmented design, design operations, UX leadership, and product strategy.",
-  };
-
-  const articlesIndexDir = path.join(DIST_DIR, "articles");
-  fs.mkdirSync(articlesIndexDir, { recursive: true });
-  fs.writeFileSync(
-    path.join(articlesIndexDir, "index.html"),
-    applySeoToHtml(shellHtml, articlesIndexSeo),
-    "utf-8",
-  );
-
   console.log(
-    `✓ Wrote ${written} article HTML shells + articles index → dist/public/articles/`,
+    `✓ Wrote ${staticWritten} static shells + ${articleWritten} article shells (+ 404.html)`,
   );
   if (missingHelmet > 0) {
     console.warn(`  (${missingHelmet} used metadata fallbacks)`);

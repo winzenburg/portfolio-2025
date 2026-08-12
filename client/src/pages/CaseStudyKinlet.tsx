@@ -1,9 +1,44 @@
 import React from 'react';
 import { Link } from 'wouter';
+import PageSeo from "@/components/PageSeo";
+
+const CASE_STUDY_PATH = "/case-study/kinlet";
+const CASE_STUDY_TITLE = "Kinlet: AI-Powered Matching Platform | Ryan Winzenburg";
+const CASE_STUDY_DESCRIPTION =
+  "Product design and design system work for Kinlet, an AI-powered matching platform spanning onboarding, matching, and analytics.";
+const CASE_STUDY_OG_IMAGE = "/images/kinlet-landing.webp";
+
+const caseStudyJsonLd: Record<string, unknown>[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://winzenburg.com/" },
+      { "@type": "ListItem", position: 2, name: "Work", item: "https://winzenburg.com/work" },
+      { "@type": "ListItem", position: 3, name: "Kinlet", item: "https://winzenburg.com/case-study/kinlet" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    headline: "Kinlet: AI-Powered Matching Platform",
+    description: CASE_STUDY_DESCRIPTION,
+    url: "https://winzenburg.com/case-study/kinlet",
+    image: "https://winzenburg.com/images/kinlet-landing.webp",
+  },
+];
 
 const CaseStudyKinlet: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0a0e1a] text-white">
+      <PageSeo
+        title={CASE_STUDY_TITLE}
+        description={CASE_STUDY_DESCRIPTION}
+        path={CASE_STUDY_PATH}
+        ogImage={CASE_STUDY_OG_IMAGE}
+        ogType="article"
+        jsonLd={caseStudyJsonLd}
+      />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
         <Link href="/work">

@@ -54,6 +54,7 @@ export function extractArticlesMetadata() {
 
 /**
  * Map article slug → absolute path to the React component file via App.tsx.
+ * Supports both eager imports and React.lazy(() => import(...)) routes.
  * @returns {Map<string, string>}
  */
 export function extractArticleComponentPaths() {
@@ -62,10 +63,11 @@ export function extractArticleComponentPaths() {
 
   /** @type {Map<string, string>} */
   const importToFile = new Map();
-  const importRegex =
+
+  const eagerImportRegex =
     /import\s+(\w+)\s+from\s+"\.\/pages\/articles\/([^"]+)"/g;
   let importMatch;
-  while ((importMatch = importRegex.exec(content)) !== null) {
+  while ((importMatch = eagerImportRegex.exec(content)) !== null) {
     const componentName = importMatch[1];
     const fileBase = importMatch[2].replace(/\.tsx$/, "");
     importToFile.set(
@@ -74,14 +76,39 @@ export function extractArticleComponentPaths() {
     );
   }
 
+  const lazyImportRegex =
+    /const\s+(\w+)\s*=\s*lazy\(\s*\(\)\s*=>\s*import\(\s*"\.\/pages\/articles\/([^"]+)"\s*\)/g;
+  let lazyMatch;
+  while ((lazyMatch = lazyImportRegex.exec(content)) !== null) {
+    const componentName = lazyMatch[1];
+    const fileBase = lazyMatch[2].replace(/\.tsx$/, "");
+    importToFile.set(
+      componentName,
+      path.join(rootDir, `client/src/pages/articles/${fileBase}.tsx`),
+    );
+  }
+
   /** @type {Map<string, string>} */
   const slugToPath = new Map();
-  const routeRegex =
+
+  const eagerRouteRegex =
     /<Route\s+path="\/articles\/([^"]+)"\s+component=\{(\w+)\}/g;
   let routeMatch;
-  while ((routeMatch = routeRegex.exec(content)) !== null) {
+  while ((routeMatch = eagerRouteRegex.exec(content)) !== null) {
     const slug = routeMatch[1];
     const componentName = routeMatch[2];
+    const filePath = importToFile.get(componentName);
+    if (filePath) {
+      slugToPath.set(slug, filePath);
+    }
+  }
+
+  const lazyRouteRegex =
+    /<Route\s+path="\/articles\/([^"]+)"\s*>\s*\{\(\)\s*=>\s*<LazyRoute\s+component=\{(\w+)\}/g;
+  let lazyRouteMatch;
+  while ((lazyRouteMatch = lazyRouteRegex.exec(content)) !== null) {
+    const slug = lazyRouteMatch[1];
+    const componentName = lazyRouteMatch[2];
     const filePath = importToFile.get(componentName);
     if (filePath) {
       slugToPath.set(slug, filePath);

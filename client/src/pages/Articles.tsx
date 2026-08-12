@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Link } from "wouter";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import PageSeo from "@/components/PageSeo";
 import { trackArticleCardClick, trackCategoryFilter } from "@/lib/analytics";
 
 interface Article {
@@ -618,14 +618,12 @@ export default function Articles() {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Articles on AI Design Workflows, DesignOps & Product Strategy | Ryan Winzenburg</title>
-        <meta name="description" content="55 articles on AI-augmented design workflows, design operations, design systems, UX leadership, and product strategy. Practical insights from 25 years of enterprise design leadership." />
-        <meta property="og:title" content="Articles on AI Design Workflows, DesignOps & Product Strategy" />
-        <meta property="og:description" content="Practical insights on AI-augmented design, design operations, UX leadership, and product strategy from 25 years of enterprise design leadership." />
-        <meta property="og:url" content="https://winzenburg.com/articles" />
-        <link rel="canonical" href="https://winzenburg.com/articles" />
-      </Helmet>
+      <PageSeo
+        title="Articles on AI Design Workflows, DesignOps & Product Strategy | Ryan Winzenburg"
+        description="Articles on AI-augmented design workflows, design operations, design systems, UX leadership, and product strategy from 25 years of enterprise design leadership."
+        path="/articles"
+        ogImage="/images/articles-hero.webp"
+      />
       {/* Header */}
       <ResponsiveNav currentPage="articles" />
 
