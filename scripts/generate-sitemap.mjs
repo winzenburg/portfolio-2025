@@ -63,10 +63,11 @@ function generateSitemap() {
   const staticEntries = STATIC_PAGES.filter((page) => !page.noIndex).map((page) => {
     /** @type {string | undefined} */
     let lastmod;
-    if (page.path === "/brand-hub") {
-      lastmod = brandFactsMtime;
-    } else if (page.path === "/about") {
-      lastmod = fileMtimeIso(path.join(rootDir, "client/src/pages/About.tsx"));
+    if (page.path === "/about") {
+      // Canonical Brand Hub — prefer brand-facts freshness, fall back to page mtime
+      lastmod =
+        brandFactsMtime ??
+        fileMtimeIso(path.join(rootDir, "client/src/pages/About.tsx"));
     }
     return urlEntry({
       loc: staticPageAbsoluteUrl(page),

@@ -43,24 +43,14 @@ export const STATIC_PAGES = [
     priority: "0.9",
   },
   {
-    path: "/brand-hub",
-    title: "Brand Hub | Ryan Winzenburg — Canonical Identity Facts",
+    path: "/about",
+    title: "About Ryan Winzenburg | Brand Hub — Canonical Identity Facts",
     description:
       "Canonical facts about Ryan Winzenburg: Design Operations Leader & AI Workflow Architect in Wheat Ridge, CO; founder of Winzinvest and Casimir Systems.",
     ogImage: "/images/about-hero.webp",
     ogType: "profile",
     changefreq: "monthly",
     priority: "0.95",
-  },
-  {
-    path: "/about",
-    title: "About Ryan Winzenburg | VP of Design & DesignOps Leader",
-    description:
-      "Ryan Winzenburg is a design operations leader and AI workflow architect with 25 years at Fortune 50 companies. VP of Design, Head of DesignOps, Principal Design Technologist.",
-    ogImage: "/images/about-hero.webp",
-    ogType: "profile",
-    changefreq: "monthly",
-    priority: "0.9",
   },
   {
     path: "/methodology",

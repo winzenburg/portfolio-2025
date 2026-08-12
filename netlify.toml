@@ -20,6 +20,19 @@
   to = "/.netlify/functions/unsubscribe"
   status = 200
 
+# Canonical Brand Hub is /about — collapse legacy /brand-hub URLs
+[[redirects]]
+  from = "/brand-hub"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/brand-hub/"
+  to = "/about"
+  status = 301
+  force = true
+
 # Canonical host: no trailing slash (except home). Static shells cover real routes.
 # Unknown paths return a real 404 instead of soft-404 SPA 200s.
 [[redirects]]

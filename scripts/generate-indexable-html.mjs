@@ -300,9 +300,9 @@ function brandHubJsonLdFromFacts() {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "@id": `${SITE_ORIGIN}/brand-hub#webpage`,
-      url: `${SITE_ORIGIN}/brand-hub`,
-      name: "Brand Hub — Ryan Winzenburg",
+      "@id": `${SITE_ORIGIN}/about#webpage`,
+      url: `${SITE_ORIGIN}/about`,
+      name: "About Ryan Winzenburg — Brand Hub",
       description:
         "Canonical identity facts for Ryan Winzenburg, founder of Winzinvest and Casimir Systems.",
       dateModified: facts.updated,
@@ -372,8 +372,8 @@ function brandHubJsonLdFromFacts() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Brand Hub",
-        item: `${SITE_ORIGIN}/brand-hub`,
+        name: "About",
+        item: `${SITE_ORIGIN}/about`,
       },
     ],
   });
@@ -392,7 +392,7 @@ function resolveStaticPageSeo(page) {
   /** @type {Record<string, unknown>[]} */
   const jsonLdBlocks = [];
 
-  if (page.path === "/brand-hub") {
+  if (page.path === "/about") {
     jsonLdBlocks.push(...brandHubJsonLdFromFacts());
   } else if (page.path.startsWith("/case-study/")) {
     const name = page.title.split("|")[0]?.trim() ?? page.title;
@@ -496,6 +496,28 @@ function generateIndexableHtml() {
   });
   writeShellForPath("/404", notFoundHtml);
   fs.writeFileSync(path.join(DIST_DIR, "404.html"), notFoundHtml, "utf-8");
+
+  // Legacy Brand Hub URL → canonical /about (static fallback for hosts without Netlify 301)
+  const brandHubRedirectHtml = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moved to About / Brand Hub | Ryan Winzenburg</title>
+    <link rel="canonical" href="${SITE_ORIGIN}/about" />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content="0; url=${SITE_ORIGIN}/about" />
+    <script>location.replace("/about");</script>
+  </head>
+  <body>
+    <p>
+      This page has moved to
+      <a href="/about">About / Brand Hub</a>.
+    </p>
+  </body>
+</html>
+`;
+  writeShellForPath("/brand-hub", brandHubRedirectHtml);
 
   let articleWritten = 0;
   let missingHelmet = 0;

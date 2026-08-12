@@ -5,7 +5,7 @@ Companion process for the deeper SEO/AEO pass. Code makes Ryan Winzenburg crawla
 ## Canonical sources (fix facts here first)
 
 1. `shared/brand-facts.json` → generates `/llms.txt` + `/brand-facts.json`
-2. `/brand-hub` (human + schema)
+2. `/about` (canonical Brand Hub — human + schema; `/brand-hub` 301-redirects here)
 3. LinkedIn / Medium / X — same wording as Brand Hub (consensus)
 
 Wrong facts in ChatGPT/Claude/Perplexity → fix Brand Hub + brand-facts.json, then sync profiles. Do not invent metrics to “win” a citation.
@@ -74,7 +74,7 @@ Prioritize pieces only Ryan Winzenburg can write:
 
 ## Related code
 
-- Brand Hub: `client/src/pages/BrandHub.tsx`
+- Brand Hub (canonical): `client/src/pages/About.tsx` (`/about`; legacy `BrandHub.tsx` redirects)
 - Facts: `shared/brand-facts.json`
 - Generator: `scripts/generate-llms-txt.mjs`
 - Recency: sitemap `lastmod` + Article `dateModified` from component mtime

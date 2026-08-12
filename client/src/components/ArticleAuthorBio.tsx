@@ -5,11 +5,11 @@ import { brandFacts } from "@/lib/brandFacts";
 const AUTHOR_NAME = brandFacts.person.legalName;
 const AUTHOR_TITLE = brandFacts.person.jobTitle;
 const VENTURE_NAMES = brandFacts.ventures.map((v) => v.name);
-const AUTHOR_BLURB = `${AUTHOR_NAME}, founder of ${VENTURE_NAMES.join(" and ")}, is a ${AUTHOR_TITLE} with ${brandFacts.person.experienceYears}+ years of UX and information-architecture experience. Ryan Winzenburg writes about AI-native workflows, design systems, and operating models that make teams ship.`;
+const AUTHOR_BLURB = `${AUTHOR_NAME}, founder of ${VENTURE_NAMES.join(" and ")}, is a ${AUTHOR_TITLE} with ${brandFacts.person.experienceYears} years designing enterprise products. Ryan Winzenburg writes about AI-native workflows, design systems, and operating models that make teams ship.`;
 
 /**
  * Visible E-E-A-T author block for every article.
- * Keep bio wording aligned with Brand Hub / brand-facts.json / LinkedIn.
+ * Keep bio wording aligned with /about (Brand Hub) / brand-facts.json / LinkedIn.
  */
 export default function ArticleAuthorBio() {
   return (
@@ -37,9 +37,9 @@ export default function ArticleAuthorBio() {
           <p className="text-slate-400 text-sm mt-1 mb-3">{AUTHOR_TITLE}</p>
           <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
             {AUTHOR_BLURB}{" "}
-            <Link href="/brand-hub">
+            <Link href="/about">
               <a className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                Brand Hub
+                About / Brand Hub
               </a>
             </Link>
             {" · "}
