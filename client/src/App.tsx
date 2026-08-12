@@ -76,6 +76,7 @@ import AskingBetterStrategicQuestions from "./pages/articles/AskingBetterStrateg
 import AIIsntAFeature from "./pages/articles/AIIsntAFeature";
 import AIUxMaturityLevel3 from "./pages/articles/AIUxMaturityLevel3";
 import TheInterfaceProblem from "./pages/articles/TheInterfaceProblem";
+import TheAgentLayerBusinessLayer from "./pages/articles/TheAgentLayerBusinessLayer";
 import ScrollToTop from "./components/ScrollToTop";
 import { usePageTracking } from "./hooks/usePageTracking";
 import { useArticleEngagement } from "./hooks/useArticleEngagement";
@@ -153,6 +154,7 @@ function Router() {
       <Route path="/articles/ai-isnt-a-feature-workflow" component={AIIsntAFeature} />
       <Route path="/articles/ai-ux-maturity-level-3" component={AIUxMaturityLevel3} />
       <Route path="/articles/interface-problem-ai-ux" component={TheInterfaceProblem} />
+      <Route path="/articles/the-agent-layer-is-becoming-the-business-layer" component={TheAgentLayerBusinessLayer} />
       <Route path="/contact" component={Contact} />
       <Route path="/unsubscribe" component={Unsubscribe} />
       <Route path="/case-study/saas-design-system" component={CaseStudySaas} />

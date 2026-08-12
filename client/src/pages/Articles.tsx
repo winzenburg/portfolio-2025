@@ -45,6 +45,16 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "55",
+    title: "The Agent Layer Is Becoming the Business Layer",
+    excerpt: "The companies that win with AI won't be the ones with the most agents. They'll be the ones that can say exactly what each agent is for, what it's allowed to touch, and when a person takes the wheel.",
+    date: "August 11, 2026",
+    readTime: "6 min read",
+    slug: "the-agent-layer-is-becoming-the-business-layer",
+    category: "AI Workflow",
+    heroImage: "/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.png"
+  },
+  {
     id: "54",
     title: "AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3.",
     excerpt: "Everyone wants to jump straight to Level 5. That jump doesn't happen. The real opportunity is using AI to do the discovery work the business has never funded, and actually move the needle on what gets built.",
@@ -607,7 +617,7 @@ export default function Articles() {
     <div className="min-h-screen">
       <Helmet>
         <title>Articles on AI Design Workflows, DesignOps & Product Strategy | Ryan Winzenburg</title>
-        <meta name="description" content="51 articles on AI-augmented design workflows, design operations, design systems, UX leadership, and product strategy. Practical insights from 25 years of enterprise design leadership." />
+        <meta name="description" content="55 articles on AI-augmented design workflows, design operations, design systems, UX leadership, and product strategy. Practical insights from 25 years of enterprise design leadership." />
         <meta property="og:title" content="Articles on AI Design Workflows, DesignOps & Product Strategy" />
         <meta property="og:description" content="Practical insights on AI-augmented design, design operations, UX leadership, and product strategy from 25 years of enterprise design leadership." />
         <meta property="og:url" content="https://winzenburg.com/articles" />
