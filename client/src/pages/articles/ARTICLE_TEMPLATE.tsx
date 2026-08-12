@@ -1,6 +1,7 @@
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 /**
  * ARTICLE TEMPLATE
@@ -15,18 +16,50 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
  *    - Date: "Month DD, YYYY"
  *    - Read time: "X min read"
  *    - Hero image path
+ *    - Helmet title, description, OG tags, canonical, JSON-LD (required for indexing)
  *
  * 4. Write your article content in the prose section
  *
  * 5. Update the "Next Article" section at the bottom
  *
  * 6. Add article preview to Articles.tsx (see ARTICLES_WORKFLOW.md)
+ *
+ * 7. Run `pnpm generate-sitemap` (also runs in `pnpm build:web`) so the new slug is crawlable
  */
 
 export default function ARTICLE_TEMPLATE() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="articles" />
+      <Helmet>
+        <title>YOUR ARTICLE TITLE | Ryan Winzenburg</title>
+        <meta
+          name="description"
+          content="Replace with a 1-2 sentence summary used for search snippets and social previews."
+        />
+        <meta property="og:title" content="YOUR ARTICLE TITLE" />
+        <meta
+          property="og:description"
+          content="Replace with a 1-2 sentence summary used for search snippets and social previews."
+        />
+        <meta property="og:url" content="https://winzenburg.com/articles/your-article-slug" />
+        <meta
+          property="og:image"
+          content="https://winzenburg.com/images/articles/your-article-slug-hero.webp"
+        />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://winzenburg.com/articles/your-article-slug" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "YOUR ARTICLE TITLE",
+          description: "Replace with a 1-2 sentence summary used for search snippets and social previews.",
+          author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
+          datePublished: "2026-01-01",
+          url: "https://winzenburg.com/articles/your-article-slug",
+          image: "https://winzenburg.com/images/articles/your-article-slug-hero.webp",
+        })}</script>
+      </Helmet>
 
       {/* Article Header */}
       <article className="pt-24 pb-16">

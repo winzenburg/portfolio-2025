@@ -40,6 +40,9 @@ interface Article {
  *    - Articles index: /articles
  *    - Your article: /articles/your-slug
  *
+ * 5. Indexability: include Helmet meta on the article page. `pnpm build:web`
+ *    regenerates sitemap.xml and per-article HTML shells for crawlers.
+ *
  * See ARTICLES_WORKFLOW.md for complete documentation.
  */
 
