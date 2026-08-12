@@ -67,14 +67,9 @@ export default function ARTICLE_TEMPLATE() {
           description: "Replace with a 1-2 sentence summary used for search snippets and social previews.",
           author: {
             "@type": "Person",
-            "@id": "https://winzenburg.com/#person",
+            "@id": "https://winzenburg.com/#ryan-winzenburg",
             name: "Ryan Winzenburg",
             url: "https://winzenburg.com",
-            sameAs: [
-              "https://www.linkedin.com/in/rwinzenburg/",
-              "https://github.com/winzenburg",
-              "https://x.com/ryanwinzenburg",
-            ],
           },
           datePublished: "2026-01-01",
           dateModified: "2026-01-01",

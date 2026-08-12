@@ -4,10 +4,8 @@ import { brandFacts } from "@/lib/brandFacts";
 
 const AUTHOR_NAME = brandFacts.person.legalName;
 const AUTHOR_TITLE = brandFacts.person.jobTitle;
-const WINZINVEST = brandFacts.ventures.find((v) => v.name === "Winzinvest");
-const AUTHOR_BLURB = WINZINVEST
-  ? `${AUTHOR_NAME}, founder of ${WINZINVEST.name}, is a design leader with ${brandFacts.person.experienceYears} years at Fortune 50 companies. Ryan Winzenburg writes about AI-native workflows, design systems, and the operating models that make teams ship.`
-  : brandFacts.person.shortBio;
+const VENTURE_NAMES = brandFacts.ventures.map((v) => v.name);
+const AUTHOR_BLURB = `${AUTHOR_NAME}, founder of ${VENTURE_NAMES.join(" and ")}, is a ${AUTHOR_TITLE} with ${brandFacts.person.experienceYears}+ years of UX and information-architecture experience. Ryan Winzenburg writes about AI-native workflows, design systems, and operating models that make teams ship.`;
 
 /**
  * Visible E-E-A-T author block for every article.
@@ -42,12 +40,6 @@ export default function ArticleAuthorBio() {
             <Link href="/brand-hub">
               <a className="text-cyan-400 hover:text-cyan-300 transition-colors">
                 Brand Hub
-              </a>
-            </Link>
-            {" · "}
-            <Link href="/about">
-              <a className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                About
               </a>
             </Link>
             {" · "}

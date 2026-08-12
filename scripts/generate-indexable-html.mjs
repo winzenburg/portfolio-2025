@@ -242,16 +242,12 @@ function resolveArticleSeo(article, componentPath) {
       };
 
   // Always attach a consistent Person reference for E-E-A-T / AEO.
+  articleLd["@type"] = articleLd["@type"] ?? "Article";
   articleLd.author = {
     "@type": "Person",
-    "@id": `${SITE_ORIGIN}/#person`,
+    "@id": `${SITE_ORIGIN}/#ryan-winzenburg`,
     name: "Ryan Winzenburg",
     url: SITE_ORIGIN,
-    sameAs: [
-      "https://www.linkedin.com/in/rwinzenburg/",
-      "https://github.com/winzenburg",
-      "https://x.com/ryanwinzenburg",
-    ],
   };
   if (!articleLd.datePublished) {
     articleLd.datePublished = parseArticleDateToIso(article.date);
@@ -287,7 +283,7 @@ function resolveArticleSeo(article, componentPath) {
 }
 
 /**
- * Nested Person ↔ Org ↔ Winzinvest graph for Brand Hub shells.
+ * Nested Person ↔ Org ↔ venture graph for Brand Hub shells (from brand-facts.json).
  * @returns {Record<string, unknown>[]}
  */
 function brandHubJsonLdFromFacts() {
@@ -295,9 +291,9 @@ function brandHubJsonLdFromFacts() {
   const facts = JSON.parse(fs.readFileSync(factsPath, "utf-8"));
   const person = facts.person;
   const organization = facts.organization;
-  const winzinvest = (facts.ventures || []).find(
-    (/** @type {{ name?: string }} */ v) => v.name === "Winzinvest",
-  );
+  const personId = person["@id"] || `${SITE_ORIGIN}/#ryan-winzenburg`;
+  /** @type {{ name: string; url: string; "@id"?: string; oneLiner: string; started: string }[]} */
+  const ventures = Array.isArray(facts.ventures) ? facts.ventures : [];
 
   /** @type {Record<string, unknown>[]} */
   const blocks = [
@@ -308,15 +304,15 @@ function brandHubJsonLdFromFacts() {
       url: `${SITE_ORIGIN}/brand-hub`,
       name: "Brand Hub — Ryan Winzenburg",
       description:
-        "Canonical, machine-readable identity facts for Ryan Winzenburg, Winzinvest, and related work.",
+        "Canonical identity facts for Ryan Winzenburg, founder of Winzinvest and Casimir Systems.",
       dateModified: facts.updated,
-      about: { "@id": `${SITE_ORIGIN}/#person` },
-      mainEntity: { "@id": `${SITE_ORIGIN}/#person` },
+      about: { "@id": personId },
+      mainEntity: { "@id": personId },
     },
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "@id": `${SITE_ORIGIN}/#person`,
+      "@id": personId,
       name: person.legalName,
       url: person.url,
       jobTitle: person.jobTitle,
@@ -331,9 +327,9 @@ function brandHubJsonLdFromFacts() {
         addressCountry: person.location.addressCountry,
       },
       worksFor: { "@id": `${SITE_ORIGIN}/#organization` },
-      owns: winzinvest
-        ? { "@id": `${SITE_ORIGIN}/#winzinvest` }
-        : undefined,
+      owns: ventures.map((venture) => ({
+        "@id": venture["@id"] || `${SITE_ORIGIN}/#${venture.name.toLowerCase().replace(/\s+/g, "-")}`,
+      })),
     },
     {
       "@context": "https://schema.org",
@@ -342,22 +338,24 @@ function brandHubJsonLdFromFacts() {
       name: organization.name,
       url: organization.url,
       description: organization.description,
-      founder: { "@id": `${SITE_ORIGIN}/#person` },
+      founder: { "@id": personId },
       sameAs: person.sameAs,
     },
   ];
 
-  if (winzinvest) {
+  for (const venture of ventures) {
+    const ventureId =
+      venture["@id"] ||
+      `${SITE_ORIGIN}/#${venture.name.toLowerCase().replace(/\s+/g, "-")}`;
     blocks.push({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": `${SITE_ORIGIN}/#winzinvest`,
-      name: winzinvest.name,
-      url: winzinvest.url,
-      description: winzinvest.oneLiner,
-      foundingDate: winzinvest.started,
-      founder: { "@id": `${SITE_ORIGIN}/#person` },
-      sameAs: [winzinvest.url, winzinvest.caseStudyUrl],
+      "@id": ventureId,
+      name: venture.name,
+      url: venture.url,
+      description: venture.oneLiner,
+      foundingDate: venture.started,
+      founder: { "@id": personId },
     });
   }
 
@@ -431,7 +429,7 @@ function resolveStaticPageSeo(page) {
       image: ogImage,
       author: {
         "@type": "Person",
-        "@id": `${SITE_ORIGIN}/#person`,
+        "@id": `${SITE_ORIGIN}/#ryan-winzenburg`,
         name: "Ryan Winzenburg",
         url: SITE_ORIGIN,
       },

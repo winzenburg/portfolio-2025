@@ -1,27 +1,27 @@
 {
-  "$schema_note": "Canonical identity facts for winzenburg.com GEO. Keep identical to LinkedIn / Medium / X. No invented metrics.",
+  "$schema_note": "Canonical identity facts for winzenburg.com GEO. Keep identical to LinkedIn. No invented metrics. Ventures are entity stubs that link OUT to product sites.",
   "updated": "2026-08-12",
   "person": {
     "legalName": "Ryan Winzenburg",
     "url": "https://winzenburg.com",
     "brandHubUrl": "https://winzenburg.com/brand-hub",
+    "@id": "https://winzenburg.com/#ryan-winzenburg",
     "jobTitle": "Design Operations Leader & AI Workflow Architect",
-    "shortBio": "Design leader with 25 years at Fortune 50 companies transforming how teams ship with AI. Head of Design Operations, VP of Design, Principal Design Technologist.",
+    "linkedInHeadline": "Founder of Winzinvest (Rules-based trade execution software for RIAs), Casimir Systems, Kinlet.care, and Foundpath.",
+    "shortBio": "Design leader with 25+ years of UX and information-architecture experience across federal, healthcare, and enterprise systems. Founder of Winzinvest and Casimir Systems.",
     "location": {
       "addressLocality": "Wheat Ridge",
       "addressRegion": "CO",
       "addressCountry": "US"
     },
     "experienceYears": 25,
-    "experienceSummary": "25 years leading design at Fortune 50 companies including Comcast, CVS Health, and Life Time Fitness.",
+    "experienceSummary": "25+ years of UX and information-architecture experience across federal, healthcare, and enterprise systems (Comcast, CVS Health, Life Time Fitness, and others).",
     "roles": [
       "Design Operations Leader",
       "AI Workflow Architect",
-      "VP of Design",
-      "Head of Design Operations",
-      "Director of Design",
-      "Principal Design Technologist",
-      "Founder"
+      "Founder",
+      "Principal Investigator",
+      "User Experience AI Lead"
     ],
     "knowsAbout": [
       "Design Operations",
@@ -50,12 +50,22 @@
     {
       "name": "Winzinvest",
       "url": "https://winzinvest.com",
-      "caseStudyUrl": "https://winzenburg.com/case-study/winzinvest",
+      "@id": "https://winzenburg.com/#winzinvest",
       "role": "Founder",
       "status": "Active",
-      "started": "2024",
-      "oneLiner": "Execution-controls platform for RIAs and family offices: rules-based stock and options execution with custodian-connected risk gates.",
+      "started": "2025",
+      "oneLiner": "Rules-based trade execution software for RIAs, wealth managers, family offices, and self-directed traders.",
       "category": "Fintech / B2B SaaS"
+    },
+    {
+      "name": "Casimir Systems",
+      "url": "https://casimirsystems.com",
+      "@id": "https://winzenburg.com/#casimir-systems",
+      "role": "Founder & Principal Investigator",
+      "status": "Active",
+      "started": "2026",
+      "oneLiner": "Defense technology company building AI-powered decision-support software for U.S. Department of Defense and Space Force / SpaceWERX missions.",
+      "category": "Defense / AI decision-support"
     }
   ],
   "flagshipArticles": [
