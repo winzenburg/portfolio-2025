@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, DollarSign, Shield, Target, TrendingUp, Users } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -524,6 +525,7 @@ export default function PortfolioApproachArticle() {
 
           {/* Newsletter Signup */}
           <div className="mt-16 pt-8 border-t border-slate-800">
+            <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 

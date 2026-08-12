@@ -161,8 +161,9 @@ function LazyRoute({ component: Component }: { component: ComponentType }) {
 }
 
 function Router() {
+  // Omit base="/" — wouter joins base+href and turns "/articles" into "//articles".
   return (
-    <WouterRouter base="/">
+    <WouterRouter>
       <PageTracker />
       <ScrollToTop />
       <Switch>

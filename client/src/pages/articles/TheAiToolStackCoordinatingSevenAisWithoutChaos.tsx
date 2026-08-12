@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
@@ -619,6 +620,7 @@ export default function AIToolStackArticle() {
 
           {/* Newsletter Signup */}
           <div className="mt-16 pt-8 border-t border-slate-800">
+            <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 

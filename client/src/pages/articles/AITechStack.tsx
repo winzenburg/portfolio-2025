@@ -2,6 +2,7 @@ import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import { Helmet } from "react-helmet-async";
 
 export default function AITechStack() {
@@ -644,6 +645,7 @@ export default function AITechStack() {
 
           {/* Newsletter Signup */}
           <div className="mt-16">
+            <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
