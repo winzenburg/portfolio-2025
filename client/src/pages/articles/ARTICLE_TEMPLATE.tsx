@@ -1,4 +1,6 @@
 import ResponsiveNav from "@/components/ResponsiveNav";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
+import ArticleFaq from "@/components/ArticleFaq";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -54,8 +56,19 @@ export default function ARTICLE_TEMPLATE() {
           "@type": "Article",
           headline: "YOUR ARTICLE TITLE",
           description: "Replace with a 1-2 sentence summary used for search snippets and social previews.",
-          author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
+          author: {
+            "@type": "Person",
+            "@id": "https://winzenburg.com/#person",
+            name: "Ryan Winzenburg",
+            url: "https://winzenburg.com",
+            sameAs: [
+              "https://www.linkedin.com/in/rwinzenburg/",
+              "https://github.com/winzenburg",
+              "https://x.com/ryanwinzenburg",
+            ],
+          },
           datePublished: "2026-01-01",
+          dateModified: "2026-01-01",
           url: "https://winzenburg.com/articles/your-article-slug",
           image: "https://winzenburg.com/images/articles/your-article-slug-hero.webp",
         })}</script>
@@ -94,8 +107,9 @@ export default function ARTICLE_TEMPLATE() {
               Your Article Title Goes Here
             </h1>
 
+            {/* AEO: one crisp, quotable, self-contained claim an answer engine can lift */}
             <p className="text-xl text-slate-300 leading-relaxed">
-              Your compelling subtitle or opening hook that draws readers in and clearly states what they'll learn.
+              One crisp claim sentence that answers the article&apos;s core question — quotable on its own, no throat-clearing.
             </p>
           </div>
 
@@ -305,7 +319,25 @@ export default function ARTICLE_TEMPLATE() {
                 </a>
               </Link>
             </div>
+
+            {/* AEO: 2–4 real questions this piece answers (+ FAQPage schema via ArticleFaq) */}
+            <ArticleFaq
+              items={[
+                {
+                  question: "What is the core claim of this article?",
+                  answer:
+                    "Replace with a direct answer in one or two sentences, grounded in the piece — not a teaser.",
+                },
+                {
+                  question: "When does this approach not apply?",
+                  answer:
+                    "Replace with an honest boundary or trade-off so answer engines can cite a nuanced take.",
+                },
+              ]}
+            />
           </div>
+
+          <ArticleAuthorBio />
 
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">

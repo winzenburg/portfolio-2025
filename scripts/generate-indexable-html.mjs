@@ -79,7 +79,7 @@ function applySeoToHtml(html, seo) {
 
   // Drop prior page-specific JSON-LD types we regenerate; keep Person/WebSite/Org in shell.
   next = next.replace(
-    /<script type="application\/ld\+json">\s*\{[\s\S]*?"@type"\s*:\s*"(Article|CollectionPage|BreadcrumbList|CreativeWork)"[\s\S]*?\}\s*<\/script>\s*/g,
+    /<script type="application\/ld\+json">\s*\{[\s\S]*?"@type"\s*:\s*"(Article|CollectionPage|BreadcrumbList|CreativeWork|FAQPage)"[\s\S]*?\}\s*<\/script>\s*/g,
     "",
   );
 
@@ -228,6 +228,7 @@ function resolveArticleSeo(article, componentPath) {
     ],
   };
 
+  /** @type {Record<string, unknown>} */
   const articleLd = helmet.jsonLd
     ? JSON.parse(helmet.jsonLd)
     : {
@@ -235,15 +236,29 @@ function resolveArticleSeo(article, componentPath) {
         "@type": "Article",
         headline: article.title,
         description: article.excerpt,
-        author: {
-          "@type": "Person",
-          name: "Ryan Winzenburg",
-          url: SITE_ORIGIN,
-        },
         datePublished: parseArticleDateToIso(article.date),
         url: canonical,
         image: ogImage,
       };
+
+  // Always attach a consistent Person reference for E-E-A-T / AEO.
+  articleLd.author = {
+    "@type": "Person",
+    "@id": `${SITE_ORIGIN}/#person`,
+    name: "Ryan Winzenburg",
+    url: SITE_ORIGIN,
+    sameAs: [
+      "https://www.linkedin.com/in/rwinzenburg/",
+      "https://github.com/winzenburg",
+      "https://x.com/ryanwinzenburg",
+    ],
+  };
+  if (!articleLd.datePublished) {
+    articleLd.datePublished = parseArticleDateToIso(article.date);
+  }
+  if (!articleLd.dateModified) {
+    articleLd.dateModified = articleLd.datePublished;
+  }
 
   return {
     title,

@@ -1,5 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
+import ArticleFaq from "@/components/ArticleFaq";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
@@ -66,14 +68,14 @@ export default function AIIsntAFeature() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Every major tooling shift of the last two decades followed the same arc. Early adopters move fast. The majority waits. And by the time the majority catches up, the real advantage has already gone somewhere else.
+              AI isn&apos;t a feature you bolt on — it&apos;s a workflow redesign problem, and teams that treat it as a button lose to teams that rebuild how work moves.
             </p>
           </div>
 
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              We're in that moment again, except the gap is wider than it's ever been. And the reason most teams are falling behind isn't that they lack access to AI. It's that they're asking the wrong question. The conversation has been dominated by tool announcements and anxiety about replacement. Neither gets you anywhere. What actually matters is less flashy: the shift from AI as a feature to AI as a workflow redesign problem.
+              Every major tooling shift of the last two decades followed the same arc. Early adopters move fast. The majority waits. And by the time the majority catches up, the real advantage has already gone somewhere else. We&apos;re in that moment again, except the gap is wider than it&apos;s ever been. The conversation has been dominated by tool announcements and anxiety about replacement. Neither gets you anywhere. What actually matters is less flashy: moving from AI as a feature to AI as a workflow redesign problem.
             </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
@@ -283,8 +285,29 @@ export default function AIIsntAFeature() {
               </p>
             </div>
 
+            <ArticleFaq
+              items={[
+                {
+                  question: "Why isn't AI just another product feature?",
+                  answer:
+                    "Feature bolt-ons improve individual tasks by roughly 10–30% while leaving handoffs, silos, and process friction intact. The durable advantage comes from redesigning the workflow around AI, not from adding a summarize button to the old process.",
+                },
+                {
+                  question: "Who should own AI workflow redesign inside a product org?",
+                  answer:
+                    "In organizations that get this right, design operations or product operations usually own it. They sit at the intersection of process, tooling, and craft, and can see where handoffs break without being buried in day-to-day ticket execution.",
+                },
+                {
+                  question: "What should teams ask instead of 'which AI tool should we buy?'",
+                  answer:
+                    "Ask what becomes possible now that building and feedback loops are cheaper: which user value was previously uneconomical, which internal friction is now optional, and which decisions can move from weeks to hours with better evidence.",
+                },
+              ]}
+            />
+
           </div>
 
+          <ArticleAuthorBio />
           <NewsletterSignup />
         </div>
       </article>

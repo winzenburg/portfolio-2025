@@ -1,5 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
+import ArticleFaq from "@/components/ArticleFaq";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
@@ -66,11 +68,15 @@ export default function TheAgentLayerBusinessLayer() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed">
-              Most of the AI work happening inside companies right now is feature work. A chat panel in the product. A model handed to employees. A handful of low-risk tasks automated, usage measured, adoption declared. Then a long quiet stretch where nobody can explain why the productivity story never showed up anywhere that matters.
+              The agent layer is becoming the business layer: agent design is org design, and most companies still treat it like a model-selection problem.
             </p>
           </div>
 
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
+
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Most of the AI work happening inside companies right now is feature work. A chat panel in the product. A model handed to employees. A handful of low-risk tasks automated, usage measured, adoption declared. Then a long quiet stretch where nobody can explain why the productivity story never showed up anywhere that matters.
+            </p>
 
             <p className="text-slate-300 leading-relaxed mb-6">
               The problem isn't the model. It's the level we're working at.
@@ -251,8 +257,29 @@ export default function TheAgentLayerBusinessLayer() {
               </p>
             </div>
 
+            <ArticleFaq
+              items={[
+                {
+                  question: "What does it mean that the agent layer is becoming the business layer?",
+                  answer:
+                    "Agents are starting to absorb coordination work that used to live in job descriptions, handoffs, and undocumented process. Designing those agents means deciding authority, sources of truth, escalation, and accountability — the same questions as org design.",
+                },
+                {
+                  question: "Why do agent pilots look good in demos and thin in production?",
+                  answer:
+                    "A model can generate an answer, but production work needs permission boundaries, quality checks, systems of record, and a named owner when judgment is required. Those operating-design decisions are usually missing from the pilot.",
+                },
+                {
+                  question: "Who should own agent operating design?",
+                  answer:
+                    "Not the vendor picker alone. It belongs where design, operations, and product can decide how work actually runs: what an agent may execute, what it must only prepare, what evidence it leaves behind, and when a human takes the wheel.",
+                },
+              ]}
+            />
+
           </div>
 
+          <ArticleAuthorBio />
           <NewsletterSignup />
         </div>
       </article>

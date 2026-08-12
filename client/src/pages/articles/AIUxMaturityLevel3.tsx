@@ -1,5 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
@@ -260,6 +261,7 @@ export default function AIUxMaturityLevel3() {
 
           </div>
 
+          <ArticleAuthorBio />
           <NewsletterSignup />
         </div>
       </article>
