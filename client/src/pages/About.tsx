@@ -29,10 +29,14 @@ export default function About() {
         <div className="container">
           <div className="bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Design Leader Who Builds<br />AI-Native Teams
+            Ryan Winzenburg — Design Leader Who Builds<br />AI-Native Teams
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            I transform how design organizations work, building the systems, workflows, and culture that enable teams to ship 4-6x faster while developing sustainable AI capabilities.
+            Ryan Winzenburg transforms how design organizations work, building the systems, workflows, and culture that enable teams to ship 4-6x faster while developing sustainable AI capabilities. Canonical identity facts live on the{" "}
+            <Link href="/brand-hub">
+              <a className="text-cyan-400 hover:text-cyan-300">Brand Hub</a>
+            </Link>
+            .
           </p>
         </div>
         </div>

@@ -7,6 +7,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  extractArticleComponentPaths,
   extractArticlesMetadata,
   parseArticleDateToIso,
   rootDir,
@@ -15,6 +16,29 @@ import {
   STATIC_PAGES,
   staticPageAbsoluteUrl,
 } from "./lib/static-pages.mjs";
+
+/**
+ * @param {string} filePath
+ * @returns {string | undefined} YYYY-MM-DD from mtime
+ */
+function fileMtimeIso(filePath) {
+  if (!filePath || !fs.existsSync(filePath)) {
+    return undefined;
+  }
+  return fs.statSync(filePath).mtime.toISOString().slice(0, 10);
+}
+
+/**
+ * Prefer newer of published date vs component file mtime (real refresh signal).
+ * @param {string | null} publishedIso
+ * @param {string | undefined} mtimeIso
+ */
+function resolveLastmod(publishedIso, mtimeIso) {
+  if (publishedIso && mtimeIso) {
+    return publishedIso > mtimeIso ? publishedIso : mtimeIso;
+  }
+  return mtimeIso ?? publishedIso ?? undefined;
+}
 
 function urlEntry({ loc, changefreq, priority, lastmod }) {
   const lastmodLine = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : "";
@@ -31,16 +55,32 @@ function generateSitemap() {
     throw new Error("No articles found in Articles.tsx — refusing to write empty sitemap");
   }
 
-  const staticEntries = STATIC_PAGES.filter((page) => !page.noIndex).map((page) =>
-    urlEntry({
+  const componentPaths = extractArticleComponentPaths();
+  const brandFactsMtime = fileMtimeIso(
+    path.join(rootDir, "shared/brand-facts.json"),
+  );
+
+  const staticEntries = STATIC_PAGES.filter((page) => !page.noIndex).map((page) => {
+    /** @type {string | undefined} */
+    let lastmod;
+    if (page.path === "/brand-hub") {
+      lastmod = brandFactsMtime;
+    } else if (page.path === "/about") {
+      lastmod = fileMtimeIso(path.join(rootDir, "client/src/pages/About.tsx"));
+    }
+    return urlEntry({
       loc: staticPageAbsoluteUrl(page),
       changefreq: page.changefreq ?? "monthly",
       priority: page.priority ?? "0.7",
-    }),
-  );
+      lastmod,
+    });
+  });
 
   const articleEntries = articles.map((article) => {
-    const lastmod = parseArticleDateToIso(article.date) ?? undefined;
+    const published = parseArticleDateToIso(article.date);
+    const componentPath = componentPaths.get(article.slug);
+    const mtime = fileMtimeIso(componentPath ?? "");
+    const lastmod = resolveLastmod(published, mtime);
     return urlEntry({
       loc: `https://winzenburg.com/articles/${article.slug}`,
       changefreq: "monthly",

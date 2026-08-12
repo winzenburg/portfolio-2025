@@ -256,9 +256,19 @@ function resolveArticleSeo(article, componentPath) {
   if (!articleLd.datePublished) {
     articleLd.datePublished = parseArticleDateToIso(article.date);
   }
-  if (!articleLd.dateModified) {
-    articleLd.dateModified = articleLd.datePublished;
+
+  // Real refresh signal: component file mtime when newer than published date.
+  /** @type {string | null} */
+  let dateModified = typeof articleLd.datePublished === "string"
+    ? articleLd.datePublished
+    : parseArticleDateToIso(article.date);
+  if (componentPath && fs.existsSync(componentPath)) {
+    const mtimeIso = fs.statSync(componentPath).mtime.toISOString().slice(0, 10);
+    if (!dateModified || mtimeIso > dateModified) {
+      dateModified = mtimeIso;
+    }
   }
+  articleLd.dateModified = dateModified;
 
   return {
     title,
@@ -277,6 +287,103 @@ function resolveArticleSeo(article, componentPath) {
 }
 
 /**
+ * Nested Person ↔ Org ↔ Winzinvest graph for Brand Hub shells.
+ * @returns {Record<string, unknown>[]}
+ */
+function brandHubJsonLdFromFacts() {
+  const factsPath = path.join(rootDir, "shared/brand-facts.json");
+  const facts = JSON.parse(fs.readFileSync(factsPath, "utf-8"));
+  const person = facts.person;
+  const organization = facts.organization;
+  const winzinvest = (facts.ventures || []).find(
+    (/** @type {{ name?: string }} */ v) => v.name === "Winzinvest",
+  );
+
+  /** @type {Record<string, unknown>[]} */
+  const blocks = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${SITE_ORIGIN}/brand-hub#webpage`,
+      url: `${SITE_ORIGIN}/brand-hub`,
+      name: "Brand Hub — Ryan Winzenburg",
+      description:
+        "Canonical, machine-readable identity facts for Ryan Winzenburg, Winzinvest, and related work.",
+      dateModified: facts.updated,
+      about: { "@id": `${SITE_ORIGIN}/#person` },
+      mainEntity: { "@id": `${SITE_ORIGIN}/#person` },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": `${SITE_ORIGIN}/#person`,
+      name: person.legalName,
+      url: person.url,
+      jobTitle: person.jobTitle,
+      description: person.shortBio,
+      image: `${SITE_ORIGIN}/images/about-hero.webp`,
+      sameAs: person.sameAs,
+      knowsAbout: person.knowsAbout,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: person.location.addressLocality,
+        addressRegion: person.location.addressRegion,
+        addressCountry: person.location.addressCountry,
+      },
+      worksFor: { "@id": `${SITE_ORIGIN}/#organization` },
+      owns: winzinvest
+        ? { "@id": `${SITE_ORIGIN}/#winzinvest` }
+        : undefined,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": `${SITE_ORIGIN}/#organization`,
+      name: organization.name,
+      url: organization.url,
+      description: organization.description,
+      founder: { "@id": `${SITE_ORIGIN}/#person` },
+      sameAs: person.sameAs,
+    },
+  ];
+
+  if (winzinvest) {
+    blocks.push({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": `${SITE_ORIGIN}/#winzinvest`,
+      name: winzinvest.name,
+      url: winzinvest.url,
+      description: winzinvest.oneLiner,
+      foundingDate: winzinvest.started,
+      founder: { "@id": `${SITE_ORIGIN}/#person` },
+      sameAs: [winzinvest.url, winzinvest.caseStudyUrl],
+    });
+  }
+
+  blocks.push({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${SITE_ORIGIN}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Brand Hub",
+        item: `${SITE_ORIGIN}/brand-hub`,
+      },
+    ],
+  });
+
+  return blocks;
+}
+
+/**
  * @param {import("./lib/static-pages.mjs").StaticPageSeo} page
  */
 function resolveStaticPageSeo(page) {
@@ -287,7 +394,9 @@ function resolveStaticPageSeo(page) {
   /** @type {Record<string, unknown>[]} */
   const jsonLdBlocks = [];
 
-  if (page.path.startsWith("/case-study/")) {
+  if (page.path === "/brand-hub") {
+    jsonLdBlocks.push(...brandHubJsonLdFromFacts());
+  } else if (page.path.startsWith("/case-study/")) {
     const name = page.title.split("|")[0]?.trim() ?? page.title;
     jsonLdBlocks.push({
       "@context": "https://schema.org",
@@ -322,6 +431,7 @@ function resolveStaticPageSeo(page) {
       image: ogImage,
       author: {
         "@type": "Person",
+        "@id": `${SITE_ORIGIN}/#person`,
         name: "Ryan Winzenburg",
         url: SITE_ORIGIN,
       },
