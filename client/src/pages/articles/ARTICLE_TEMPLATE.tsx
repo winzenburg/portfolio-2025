@@ -35,7 +35,7 @@ import { Helmet } from "react-helmet-async";
  * - Prefer question-style H2s ("What …?" / "Why …?") and lead each section with the answer.
  * - Ask: what information gain exists nowhere else (firsthand build story, original framework)?
  * - Keep hard performance/backtest numbers out of top-of-funnel essays; methodology-forward OK.
- * - Align bio/venture facts with shared/brand-facts.json + /brand-hub.
+ * - Align bio/venture facts with shared/brand-facts.json + /about (Brand Hub).
  */
 
 export default function ARTICLE_TEMPLATE() {

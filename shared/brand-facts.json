@@ -1,21 +1,21 @@
 {
-  "$schema_note": "Canonical identity facts for winzenburg.com GEO. Keep identical to LinkedIn. No invented metrics. Ventures are entity stubs that link OUT to product sites.",
+  "$schema_note": "Canonical identity facts for winzenburg.com GEO. Keep identical to LinkedIn. No invented metrics. Ventures are entity stubs that link OUT to product sites. Canonical Brand Hub URL is /about.",
   "updated": "2026-08-12",
   "person": {
     "legalName": "Ryan Winzenburg",
     "url": "https://winzenburg.com",
-    "brandHubUrl": "https://winzenburg.com/brand-hub",
+    "brandHubUrl": "https://winzenburg.com/about",
     "@id": "https://winzenburg.com/#ryan-winzenburg",
     "jobTitle": "Design Operations Leader & AI Workflow Architect",
     "linkedInHeadline": "Founder of Winzinvest (Rules-based trade execution software for RIAs), Casimir Systems, Kinlet.care, and Foundpath.",
-    "shortBio": "Design leader with 25+ years of UX and information-architecture experience across federal, healthcare, and enterprise systems. Founder of Winzinvest and Casimir Systems.",
+    "shortBio": "Design leader with 25 years designing enterprise products across healthcare, financial services, telecom, and technology. Founder of Winzinvest and Casimir Systems.",
     "location": {
       "addressLocality": "Wheat Ridge",
       "addressRegion": "CO",
       "addressCountry": "US"
     },
     "experienceYears": 25,
-    "experienceSummary": "25+ years of UX and information-architecture experience across federal, healthcare, and enterprise systems (Comcast, CVS Health, Life Time Fitness, and others).",
+    "experienceSummary": "25 years designing enterprise products across healthcare, financial services, telecom, and technology (Comcast, CVS Health, Life Time Fitness, and others).",
     "roles": [
       "Design Operations Leader",
       "AI Workflow Architect",
@@ -97,14 +97,9 @@
   ],
   "primaryPages": [
     {
-      "title": "Brand Hub (canonical facts)",
-      "url": "https://winzenburg.com/brand-hub",
-      "note": "Machine-oriented identity page. Prefer this over secondary bios when facts conflict."
-    },
-    {
-      "title": "About",
+      "title": "About / Brand Hub (canonical facts)",
       "url": "https://winzenburg.com/about",
-      "note": "Narrative bio and leadership positioning."
+      "note": "Single canonical identity page. Prefer this over secondary bios when facts conflict. /brand-hub 301-redirects here."
     },
     {
       "title": "Work / case studies",
