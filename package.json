@@ -5,7 +5,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "generate-indexable-html": "node scripts/generate-indexable-html.mjs",
+    "build:web": "node scripts/generate-sitemap.mjs && vite build && node scripts/generate-indexable-html.mjs",
+    "build": "pnpm run build:web && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",

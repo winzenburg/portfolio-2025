@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Ryan Winzenburg - Portfolio</title>
+  <title>Page not found | Ryan Winzenburg</title>
+  <meta name="robots" content="noindex, follow" />
+  <meta http-equiv="refresh" content="0; url=/" />
+  <link rel="canonical" href="https://winzenburg.com/" />
   <script>
-    // GitHub Pages SPA redirect workaround
-    // Store the full path and redirect to index.html
-    (function() {
-      var fullPath = window.location.pathname;
-      // Store the full path including /portfolio-2025
-      sessionStorage.setItem('redirectPath', fullPath);
-      // Redirect to the base index.html
-      window.location.replace('/portfolio-2025/');
+    // SPA deep-link fallback for hosts that serve 404.html for unknown paths.
+    // Preserve the requested path so the client router can render it.
+    (function () {
+      var path = window.location.pathname + window.location.search + window.location.hash;
+      try {
+        sessionStorage.setItem("redirectPath", path);
+      } catch (e) {
+        // Ignore storage failures; redirect still works.
+      }
+      window.location.replace("/" + window.location.search + window.location.hash);
     })();
   </script>
   <style>
     body {
       margin: 0;
-      background: white;
+      background: #020617;
+      color: #e2e8f0;
+      font-family: system-ui, sans-serif;
     }
   </style>
 </head>
 <body>
-  <!-- Redirecting... -->
+  <p>Redirecting… <a href="/">Go home</a></p>
 </body>
 </html>
-
