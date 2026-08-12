@@ -14,10 +14,10 @@ export default function AICodingEconomics() {
         <meta property="og:title" content="The Economics of AI-Assisted Coding: When $40 Beats 6 Hours" />
         <meta property="og:description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money, it&#39;s about what becomes possible when implementation stops being the constraint." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-coding-economics" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-coding-economics-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-coding-economics-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-coding-economics" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money, it's about what becomes possible when implementation stops being the constraint.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money, it's about what becomes possible when implementation stops being the constraint.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function AICodingEconomics() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/ai-coding-economics-hero.png"
+              src="/images/articles/ai-coding-economics-hero.webp"
               alt="The Economics of AI-Assisted Coding"
               className="w-full h-auto"
             />

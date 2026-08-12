@@ -22,7 +22,7 @@ export default function About() {
       <section className="relative py-16 md:py-24 mb-16 md:mb-24">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <img
-            src="/images/about-hero.png"
+            src="/images/about-hero.webp"
             alt=""
             className="w-full h-full object-cover opacity-40"
           />

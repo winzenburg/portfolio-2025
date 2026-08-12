@@ -14,10 +14,10 @@ export default function WeeklyRhythm() {
         <meta property="og:title" content="The Weekly Rhythm: A 60-Minute Operating System That Actually Ships" />
         <meta property="og:description" content="Most weekly planning fails because it tries to plan everything. The goal isn&#39;t comprehensive planning, it&#39;s deciding what the week is for." />
         <meta property="og:url" content="https://winzenburg.com/articles/weekly-rhythm" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/weekly-rhythm-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/weekly-rhythm-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/weekly-rhythm" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning, it's deciding what the week is for.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning, it's deciding what the week is for.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function WeeklyRhythm() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/weekly-rhythm-hero.png"
+              src="/images/articles/weekly-rhythm-hero.webp"
               alt="The Weekly Rhythm"
               className="w-full h-auto"
             />

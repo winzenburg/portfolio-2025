@@ -129,7 +129,7 @@ export default function Contact() {
       <section className="relative pt-32 pb-16 mb-16 md:mb-24">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <img
-            src="/images/contact-hero.png"
+            src="/images/contact-hero.webp"
             alt=""
             className="w-full h-full object-cover opacity-30"
           />

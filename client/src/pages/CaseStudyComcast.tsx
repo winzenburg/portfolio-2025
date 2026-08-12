@@ -19,7 +19,7 @@ const CaseStudyComcast: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src={`${import.meta.env.BASE_URL}project-comcast-design-system.png`} 
+          src={`${import.meta.env.BASE_URL}project-comcast-design-system.webp`} 
           alt="Comcast Business Design System"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
@@ -82,8 +82,8 @@ const CaseStudyComcast: React.FC = () => {
 
           {/* Foundation Screenshot */}
           <div className="mb-8 rounded-lg overflow-hidden border border-green-500/30">
-            <img 
-              src={`${import.meta.env.BASE_URL}comcast-ds-colors.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}comcast-ds-colors.webp`}
               alt="Comcast Design System Color Foundation"
               className="w-full"
             />
@@ -131,8 +131,8 @@ const CaseStudyComcast: React.FC = () => {
 
             {/* Icon Library Screenshot */}
             <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
-              <img 
-                src={`${import.meta.env.BASE_URL}comcast-ds-icons.png`}
+              <img loading="lazy" 
+                src={`${import.meta.env.BASE_URL}comcast-ds-icons.webp`}
                 alt="Comcast Design System Icon Library"
                 className="w-full"
               />
@@ -161,8 +161,8 @@ const CaseStudyComcast: React.FC = () => {
 
             {/* Enterprise Billing Screenshot */}
             <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
-              <img 
-                src={`${import.meta.env.BASE_URL}comcast-ds-billing.png`}
+              <img loading="lazy" 
+                src={`${import.meta.env.BASE_URL}comcast-ds-billing.webp`}
                 alt="Comcast Design System Enterprise Billing Interface"
                 className="w-full"
               />
@@ -173,8 +173,8 @@ const CaseStudyComcast: React.FC = () => {
 
             {/* Executive Dashboard Screenshot */}
             <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
-              <img 
-                src={`${import.meta.env.BASE_URL}comcast-ds-dashboard.png`}
+              <img loading="lazy" 
+                src={`${import.meta.env.BASE_URL}comcast-ds-dashboard.webp`}
                 alt="Comcast Design System Executive Dashboard"
                 className="w-full"
               />

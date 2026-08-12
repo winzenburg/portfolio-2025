@@ -15,7 +15,7 @@ export default function IntegrationDocsThatWork() {
         <meta property="og:title" content="Integration Documentation That Developers Actually Read" />
         <meta property="og:description" content="18 minutes vs 3 hours, same API, different documentation. Developer experience is a design problem." />
         <meta property="og:url" content="https://winzenburg.com/articles/integration-docs-that-work" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/integration-docs-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/integration-docs-hero.webp" />
         <link rel="canonical" href="https://winzenburg.com/articles/integration-docs-that-work" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -25,7 +25,7 @@ export default function IntegrationDocsThatWork() {
           "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
           "datePublished": "2026-02-29",
           "url": "https://winzenburg.com/articles/integration-docs-that-work",
-          "image": "https://winzenburg.com/images/articles/integration-docs-hero.png"
+          "image": "https://winzenburg.com/images/articles/integration-docs-hero.webp"
         })}</script>
       </Helmet>
 
@@ -40,7 +40,7 @@ export default function IntegrationDocsThatWork() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/integration-docs-hero.png"
+              src="/images/articles/integration-docs-hero.webp"
               alt="Integration Documentation That Works"
               className="w-full h-auto"
             />

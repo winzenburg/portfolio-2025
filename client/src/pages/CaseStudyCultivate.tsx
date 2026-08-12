@@ -19,7 +19,7 @@ const CaseStudyCultivate: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src={`${import.meta.env.BASE_URL}project-cultivate-bos.png`} 
+          src={`${import.meta.env.BASE_URL}project-cultivate-bos.webp`} 
           alt="Cultivate Business Operating System Dashboard"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
@@ -90,8 +90,8 @@ const CaseStudyCultivate: React.FC = () => {
 
           {/* BOS Dashboard Screenshot */}
           <div className="mb-8 rounded-lg overflow-hidden border border-emerald-500/30">
-            <img 
-              src={`${import.meta.env.BASE_URL}project-cultivate-bos.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}project-cultivate-bos.webp`}
               alt="Cultivate BOS Dashboard - Portfolio management and weekly planning"
               className="w-full"
             />

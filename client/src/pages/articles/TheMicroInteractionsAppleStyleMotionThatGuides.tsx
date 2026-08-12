@@ -14,10 +14,10 @@ export default function MicroInteractionsArticle() {
         <meta property="og:title" content="Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting" />
         <meta property="og:description" content="Bad animations annoy. Great ones are invisible. Here&#39;s our playbook for refined, goal-driven micro-interactions." />
         <meta property="og:url" content="https://winzenburg.com/articles/micro-interactions" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/micro-interactions-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/micro-interactions-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/micro-interactions" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting","description":"Bad animations annoy. Great ones are invisible. Here's our playbook for refined, goal-driven micro-interactions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/micro-interactions","image":"https://winzenburg.com/images/articles/micro-interactions-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting","description":"Bad animations annoy. Great ones are invisible. Here's our playbook for refined, goal-driven micro-interactions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/micro-interactions","image":"https://winzenburg.com/images/articles/micro-interactions-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function MicroInteractionsArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/micro-interactions-hero.png"
+              src="/images/articles/micro-interactions-hero.webp"
               alt="Micro-Interactions Done Right"
               className="w-full h-auto"
             />

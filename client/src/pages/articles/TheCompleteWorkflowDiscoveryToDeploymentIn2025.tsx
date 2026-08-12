@@ -14,10 +14,10 @@ export default function CompleteWorkflowPost() {
         <meta property="og:title" content="The Complete Workflow: Discovery to Deployment in 2025" />
         <meta property="og:description" content="Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork." />
         <meta property="og:url" content="https://winzenburg.com/articles/complete-workflow-2025" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/complete-workflow-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/complete-workflow-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/complete-workflow-2025" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Complete Workflow: Discovery to Deployment in 2025","description":"Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/complete-workflow-2025","image":"https://winzenburg.com/images/articles/complete-workflow-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Complete Workflow: Discovery to Deployment in 2025","description":"Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/complete-workflow-2025","image":"https://winzenburg.com/images/articles/complete-workflow-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function CompleteWorkflowPost() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/complete-workflow-hero.png"
+              src="/images/articles/complete-workflow-hero.webp"
               alt="The Complete Workflow"
               className="w-full h-auto"
             />

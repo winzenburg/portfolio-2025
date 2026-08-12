@@ -14,10 +14,10 @@ export default function BrandFirstValidationArticle() {
         <meta property="og:title" content="Brand-First Validation: Why We Design the Brand System Before Writing Code" />
         <meta property="og:description" content="Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision." />
         <meta property="og:url" content="https://winzenburg.com/articles/brand-first-validation" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/brand-first-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/brand-first-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/brand-first-validation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Brand-First Validation: Why We Design the Brand System Before Writing Code","description":"Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/brand-first-validation","image":"https://winzenburg.com/images/articles/brand-first-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Brand-First Validation: Why We Design the Brand System Before Writing Code","description":"Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/brand-first-validation","image":"https://winzenburg.com/images/articles/brand-first-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function BrandFirstValidationArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/brand-first-hero.png"
+              src="/images/articles/brand-first-hero.webp"
               alt="Brand-First Validation"
               className="w-full h-auto"
             />

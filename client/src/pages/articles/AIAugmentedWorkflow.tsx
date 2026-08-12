@@ -14,10 +14,10 @@ export default function AIAugmentedWorkflow() {
         <meta property="og:title" content="The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster" />
         <meta property="og:description" content="Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks using AI throughout the design process." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-augmented-workflow" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-augmented-workflow-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-augmented-workflow" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster","description":"Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks using AI throughout the design process.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-03-17","url":"https://winzenburg.com/articles/ai-augmented-workflow","image":"https://winzenburg.com/images/articles/ai-augmented-workflow-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster","description":"Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks using AI throughout the design process.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-03-17","url":"https://winzenburg.com/articles/ai-augmented-workflow","image":"https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function AIAugmentedWorkflow() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/ai-augmented-workflow-hero.png"
+              src="/images/articles/ai-augmented-workflow-hero.webp"
               alt="AI-Augmented Workflow"
               className="w-full h-auto"
             />

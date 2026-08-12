@@ -14,10 +14,10 @@ export default function SupabaseMCPArticle() {
         <meta property="og:title" content="The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks" />
         <meta property="og:description" content="Backend design is usually trial-and-error. We turned it into a repeatable blueprint using Supabase MCP." />
         <meta property="og:url" content="https://winzenburg.com/articles/supabase-mcp-blueprint" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/supabase-mcp-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/supabase-mcp-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/supabase-mcp-blueprint" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks","description":"Backend design is usually trial-and-error. We turned it into a repeatable blueprint using Supabase MCP.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/supabase-mcp-blueprint","image":"https://winzenburg.com/images/articles/supabase-mcp-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks","description":"Backend design is usually trial-and-error. We turned it into a repeatable blueprint using Supabase MCP.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/supabase-mcp-blueprint","image":"https://winzenburg.com/images/articles/supabase-mcp-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function SupabaseMCPArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
-              src="/images/articles/supabase-mcp-hero.png"
+              src="/images/articles/supabase-mcp-hero.webp"
               alt="Supabase MCP Blueprint: Systematic Backend Design"
               className="w-full h-auto"
             />

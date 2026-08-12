@@ -21,7 +21,7 @@ export default function TheAgentLayerBusinessLayer() {
           content="Agents are starting to absorb the coordination work that used to hold companies together. That makes agent design an org design problem, not a model problem."
         />
         <meta property="og:url" content="https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp" />
         <link rel="canonical" href="https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -31,7 +31,7 @@ export default function TheAgentLayerBusinessLayer() {
           author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
           datePublished: "2026-08-11",
           url: "https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer",
-          image: "https://winzenburg.com/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.png",
+          image: "https://winzenburg.com/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp",
         })}</script>
       </Helmet>
 
@@ -46,7 +46,7 @@ export default function TheAgentLayerBusinessLayer() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.png"
+              src="/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp"
               alt="The Agent Layer Is Becoming the Business Layer"
               className="w-full h-auto"
             />

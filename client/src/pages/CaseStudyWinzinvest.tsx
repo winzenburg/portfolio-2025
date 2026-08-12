@@ -14,7 +14,7 @@ interface ScreenshotProps {
 function Screenshot({ src, alt, caption }: ScreenshotProps) {
   return (
     <div className="mb-10 rounded-lg overflow-hidden border border-slate-700/50">
-      <img src={src} alt={alt} className="w-full" />
+      <img loading="lazy" src={src} alt={alt} className="w-full" />
       <div className="bg-slate-900 px-5 py-3 text-sm text-slate-400 italic">{caption}</div>
     </div>
   );
@@ -48,7 +48,7 @@ const CaseStudyWinzinvest: React.FC = () => {
       {/* Hero */}
       <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden">
         <img
-          src={IMG('01_homepage_hero.png')}
+          src={IMG('01_homepage_hero.webp')}
           alt="Winzinvest homepage"
           className="absolute inset-0 w-full h-full object-cover object-top opacity-20"
         />
@@ -107,7 +107,7 @@ const CaseStudyWinzinvest: React.FC = () => {
 
         {/* Hero screenshot */}
         <Screenshot
-          src={IMG('01_homepage_hero.png')}
+          src={IMG('01_homepage_hero.webp')}
           alt="Winzinvest marketing homepage"
           caption="The marketing site leads with the core value proposition: systematic execution that shows its work"
         />
@@ -162,26 +162,26 @@ const CaseStudyWinzinvest: React.FC = () => {
           </p>
 
           <Screenshot
-            src={IMG('01_dashboard_overview.png')}
+            src={IMG('01_dashboard_overview.webp')}
             alt="Winzinvest dashboard overview"
             caption="Dashboard overview: system health, setup progress, and live macro events driving execution context"
           />
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-slate-700/50">
-              <img src={IMG('02_dashboard_equity_curve.png')} alt="Equity curve" className="w-full" />
+              <img loading="lazy" src={IMG('02_dashboard_equity_curve.webp')} alt="Equity curve" className="w-full" />
               <div className="bg-slate-900 px-4 py-2 text-xs text-slate-400 italic">Equity curve and portfolio-level performance metrics</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-slate-700/50">
-              <img src={IMG('06_dashboard_performance.png')} alt="Performance tab" className="w-full" />
+              <img loading="lazy" src={IMG('06_dashboard_performance.webp')} alt="Performance tab" className="w-full" />
               <div className="bg-slate-900 px-4 py-2 text-xs text-slate-400 italic">Performance tab with detailed return attribution</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-slate-700/50">
-              <img src={IMG('04_dashboard_portfolio.png')} alt="Portfolio tab" className="w-full" />
+              <img loading="lazy" src={IMG('04_dashboard_portfolio.webp')} alt="Portfolio tab" className="w-full" />
               <div className="bg-slate-900 px-4 py-2 text-xs text-slate-400 italic">Portfolio tab: open positions with real-time P&L</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-slate-700/50">
-              <img src={IMG('05_dashboard_risk.png')} alt="Risk tab" className="w-full" />
+              <img loading="lazy" src={IMG('05_dashboard_risk.webp')} alt="Risk tab" className="w-full" />
               <div className="bg-slate-900 px-4 py-2 text-xs text-slate-400 italic">Risk tab: exposure limits and gate status</div>
             </div>
           </div>
@@ -208,7 +208,7 @@ const CaseStudyWinzinvest: React.FC = () => {
             The "What Happened Today" module is one of the most important design decisions in the product. It shows what was blocked and exactly which risk gate triggered the block, alongside what executed. Advisors can hand this to a compliance officer and it explains itself. That's rare in trading software.
           </p>
           <Screenshot
-            src={IMG('03_dashboard_daily_narrative.png')}
+            src={IMG('03_dashboard_daily_narrative.webp')}
             alt="What Happened Today module"
             caption='"What Happened Today": 30 screened, 5 executed, 34 blocked, with named gate violations for every rejection'
           />
@@ -222,12 +222,12 @@ const CaseStudyWinzinvest: React.FC = () => {
           </p>
 
           <Screenshot
-            src={IMG('08_signals.png')}
+            src={IMG('08_signals.webp')}
             alt="Trading signals page"
             caption="Signals page with full methodology guide so advisors understand exactly how to interpret each field"
           />
           <Screenshot
-            src={IMG('09_signals_cards.png')}
+            src={IMG('09_signals_cards.webp')}
             alt="Signal cards view"
             caption="Signal cards: conviction, direction, entry, stop, target, and R:R ratio on every setup"
           />
@@ -258,7 +258,7 @@ const CaseStudyWinzinvest: React.FC = () => {
           </div>
 
           <Screenshot
-            src={IMG('07_dashboard_system.png')}
+            src={IMG('07_dashboard_system.webp')}
             alt="System status tab"
             caption="System tab: live execution engine status, broker connection health, and session state"
           />
@@ -271,7 +271,7 @@ const CaseStudyWinzinvest: React.FC = () => {
             Phase 3 of the product introduces multi-account oversight. Advisors get firm-wide status, a sleeve registry, and a governance queue that surfaces items requiring compliance attention. The authenticated workspace keeps the firm's context persistent across all views, so context never gets lost when switching between accounts.
           </p>
           <Screenshot
-            src={IMG('10_firm_command_center.png')}
+            src={IMG('10_firm_command_center.webp')}
             alt="Firm Command Center"
             caption="Firm Command Center: multi-account NLV, P&L, open positions, and governance queue from a single authenticated workspace"
           />
@@ -283,17 +283,17 @@ const CaseStudyWinzinvest: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-slate-700/50">
-              <img src={IMG('12_performance_track_record.png')} alt="Performance track record" className="w-full" />
+              <img loading="lazy" src={IMG('12_performance_track_record.webp')} alt="Performance track record" className="w-full" />
               <div className="bg-slate-900 px-4 py-2 text-xs text-slate-400 italic">Full execution history with verified backtest results</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-slate-700/50">
-              <img src={IMG('13_platform.png')} alt="Platform overview" className="w-full" />
+              <img loading="lazy" src={IMG('13_platform.webp')} alt="Platform overview" className="w-full" />
               <div className="bg-slate-900 px-4 py-2 text-xs text-slate-400 italic">Platform overview page for advisor onboarding</div>
             </div>
           </div>
 
           <Screenshot
-            src={IMG('11_pricing.png')}
+            src={IMG('11_pricing.webp')}
             alt="Pricing page"
             caption="Pricing: tiered access from manual signals to full automation, structured for RIA firm billing"
           />

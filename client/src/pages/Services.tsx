@@ -19,7 +19,7 @@ export default function Services() {
       <section className="relative pt-32 pb-16 mb-16 md:mb-24">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/images/services-hero.png"
+            src="/images/services-hero.webp"
             alt=""
             className="w-full h-full object-cover opacity-20"
           />

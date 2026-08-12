@@ -14,10 +14,10 @@ export default function ChoosingAICodingMode() {
         <meta property="og:title" content="Choosing Your AI Coding Mode: Interactive vs Autonomous" />
         <meta property="og:description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong, my choice was. Here&#39;s the decision framework I should have used." />
         <meta property="og:url" content="https://winzenburg.com/articles/choosing-ai-coding-mode" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/choosing-ai-coding-mode" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong, my choice was. Here's the decision framework I should have used.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong, my choice was. Here's the decision framework I should have used.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function ChoosingAICodingMode() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/choosing-ai-coding-mode-hero.png"
+              src="/images/articles/choosing-ai-coding-mode-hero.webp"
               alt="Choosing Your AI Coding Mode"
               className="w-full h-auto"
             />

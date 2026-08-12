@@ -14,10 +14,10 @@ export default function SecurityBugGateArticle() {
         <meta property="og:title" content="The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features" />
         <meta property="og:description" content="AI can ship features fast, but it can also ship vulnerabilities. Here&#39;s our quality firewall for AI-generated code." />
         <meta property="og:url" content="https://winzenburg.com/articles/security-bug-gate" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/security-gate-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/security-gate-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/security-bug-gate" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features","description":"AI can ship features fast, but it can also ship vulnerabilities. Here's our quality firewall for AI-generated code.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/security-bug-gate","image":"https://winzenburg.com/images/articles/security-gate-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features","description":"AI can ship features fast, but it can also ship vulnerabilities. Here's our quality firewall for AI-generated code.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/security-bug-gate","image":"https://winzenburg.com/images/articles/security-gate-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function SecurityBugGateArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
-              src="/images/articles/security-gate-hero.png"
+              src="/images/articles/security-gate-hero.webp"
               alt="Playful architectural illustration of a security and bug gate system"
               className="w-full h-auto"
             />
@@ -88,8 +88,8 @@ export default function SecurityBugGateArticle() {
       <div className="prose prose-lg max-w-none">
         {/* Bug/Security Gate Illustration */}
         <div className="my-12 rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900/30">
-          <img
-            src="/images/articles/security-gate-illustration.png"
+          <img loading="lazy"
+            src="/images/articles/security-gate-illustration.webp"
             alt="Diagram of a software delivery pipeline passing through bug and security gates"
             className="w-full h-auto"
           />

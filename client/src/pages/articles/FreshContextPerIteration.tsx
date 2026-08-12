@@ -14,10 +14,10 @@ export default function FreshContextPerIteration() {
         <meta property="og:title" content="Fresh Context Per Iteration: Why Autonomous Agents Don&#39;t Break Like Long Sessions" />
         <meta property="og:description" content="I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn&#39;t have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift." />
         <meta property="og:url" content="https://winzenburg.com/articles/fresh-context-per-iteration" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/fresh-context-per-iteration" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Fresh Context Per Iteration: Why Autonomous Agents Don't Break Like Long Sessions","description":"I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn't have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-15","url":"https://winzenburg.com/articles/fresh-context-per-iteration","image":"https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Fresh Context Per Iteration: Why Autonomous Agents Don't Break Like Long Sessions","description":"I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn't have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-15","url":"https://winzenburg.com/articles/fresh-context-per-iteration","image":"https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.webp"})}</script>
       </Helmet>
 
       <article className="pt-24 pb-16">
@@ -31,7 +31,7 @@ export default function FreshContextPerIteration() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/fresh-context-per-iteration-hero.png"
+              src="/images/articles/fresh-context-per-iteration-hero.webp"
               alt="Fresh Context Per Iteration"
               className="w-full h-auto"
             />

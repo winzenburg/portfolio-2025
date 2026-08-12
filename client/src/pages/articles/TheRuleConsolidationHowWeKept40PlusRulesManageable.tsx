@@ -14,10 +14,10 @@ export default function RuleConsolidation() {
         <meta property="og:title" content="The Rule Consolidation: How We Kept 40+ Rules Manageable Without Losing Power" />
         <meta property="og:description" content="Most systems collapse under their own complexity. Here&#39;s how we prevented that with a unified taxonomy and single foreman orchestrator." />
         <meta property="og:url" content="https://winzenburg.com/articles/rule-consolidation" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/rule-consolidation-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/rule-consolidation-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/rule-consolidation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rule Consolidation: How We Kept 40+ Rules Manageable Without Losing Power","description":"Most systems collapse under their own complexity. Here's how we prevented that with a unified taxonomy and single foreman orchestrator.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rule-consolidation","image":"https://winzenburg.com/images/articles/rule-consolidation-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rule Consolidation: How We Kept 40+ Rules Manageable Without Losing Power","description":"Most systems collapse under their own complexity. Here's how we prevented that with a unified taxonomy and single foreman orchestrator.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rule-consolidation","image":"https://winzenburg.com/images/articles/rule-consolidation-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function RuleConsolidation() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
-              src="/images/articles/rule-consolidation-hero.png"
+              src="/images/articles/rule-consolidation-hero.webp"
               alt="Editorial illustration of a creator working at a desk in front of stacked blocks, representing consolidating many rules into a manageable system"
               className="w-full h-auto"
             />

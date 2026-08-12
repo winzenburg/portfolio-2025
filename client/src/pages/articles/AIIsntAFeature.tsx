@@ -21,7 +21,7 @@ export default function AIIsntAFeature() {
           content="Most teams aren't falling behind because they lack AI tools. They're asking the wrong question."
         />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-isnt-a-feature-workflow" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-isnt-a-feature-workflow-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-isnt-a-feature-workflow-hero.webp" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-isnt-a-feature-workflow" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -31,7 +31,7 @@ export default function AIIsntAFeature() {
           author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
           datePublished: "2026-05-29",
           url: "https://winzenburg.com/articles/ai-isnt-a-feature-workflow",
-          image: "https://winzenburg.com/images/articles/ai-isnt-a-feature-workflow-hero.png",
+          image: "https://winzenburg.com/images/articles/ai-isnt-a-feature-workflow-hero.webp",
         })}</script>
       </Helmet>
 
@@ -46,7 +46,7 @@ export default function AIIsntAFeature() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/ai-isnt-a-feature-workflow-hero.png"
+              src="/images/articles/ai-isnt-a-feature-workflow-hero.webp"
               alt="AI Isn't a Feature. It's a Workflow Problem."
               className="w-full h-auto"
             />

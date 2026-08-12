@@ -14,10 +14,10 @@ export default function LinnyAutomationArticle() {
         <meta property="og:title" content="From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale" />
         <meta property="og:description" content="Most founders manually manage waitlists and outreach. We automate execution with Lindy while keeping Cursor as our documentation system of record." />
         <meta property="og:url" content="https://winzenburg.com/articles/lindy-automated-validation" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/lindy-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/lindy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/lindy-automated-validation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale","description":"Most founders manually manage waitlists and outreach. We automate execution with Lindy while keeping Cursor as our documentation system of record.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/lindy-automated-validation","image":"https://winzenburg.com/images/articles/lindy-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale","description":"Most founders manually manage waitlists and outreach. We automate execution with Lindy while keeping Cursor as our documentation system of record.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/lindy-automated-validation","image":"https://winzenburg.com/images/articles/lindy-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}

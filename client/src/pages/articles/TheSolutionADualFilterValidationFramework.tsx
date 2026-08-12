@@ -14,10 +14,10 @@ export default function DualFilterValidationFrameworkArticle() {
         <meta property="og:title" content="The Solution: A Dual-Filter Validation Framework" />
         <meta property="og:description" content="Heat gets you in. Durability makes it a real SaaS business. Here&#39;s the dual-filter framework for validating product ideas that actually work." />
         <meta property="og:url" content="https://winzenburg.com/articles/dual-filter-validation" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/dual-filter-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/dual-filter-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/dual-filter-validation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Solution: A Dual-Filter Validation Framework","description":"Heat gets you in. Durability makes it a real SaaS business. Here's the dual-filter framework for validating product ideas that actually work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dual-filter-validation","image":"https://winzenburg.com/images/articles/dual-filter-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Solution: A Dual-Filter Validation Framework","description":"Heat gets you in. Durability makes it a real SaaS business. Here's the dual-filter framework for validating product ideas that actually work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dual-filter-validation","image":"https://winzenburg.com/images/articles/dual-filter-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function DualFilterValidationFrameworkArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
-              src="/images/articles/dual-filter-hero.png"
+              src="/images/articles/dual-filter-hero.webp"
               alt="Dual-filter validation framework: heat versus durability"
               className="w-full h-auto"
             />

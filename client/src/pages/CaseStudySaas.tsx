@@ -19,7 +19,7 @@ const CaseStudySaas: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src={`${import.meta.env.BASE_URL}project-saas-design-system.png`} 
+          src={`${import.meta.env.BASE_URL}project-saas-design-system.webp`} 
           alt="Kinetic UI Design System"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
@@ -72,8 +72,8 @@ const CaseStudySaas: React.FC = () => {
 
           {/* Design System Screenshot */}
           <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
-            <img 
-              src={`${import.meta.env.BASE_URL}saas-ds-welcome.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}saas-ds-welcome.webp`}
               alt="Winzenburg Design System - Production-ready React components"
               className="w-full"
             />
@@ -131,8 +131,8 @@ const CaseStudySaas: React.FC = () => {
 
             {/* Color System Screenshot */}
             <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
-              <img 
-                src={`${import.meta.env.BASE_URL}saas-ds-colors.png`}
+              <img loading="lazy" 
+                src={`${import.meta.env.BASE_URL}saas-ds-colors.webp`}
                 alt="Dynamic brand colors with token system"
                 className="w-full"
               />
@@ -161,8 +161,8 @@ const CaseStudySaas: React.FC = () => {
 
             {/* Icon Library Screenshot */}
             <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
-              <img 
-                src={`${import.meta.env.BASE_URL}saas-ds-icons.png`}
+              <img loading="lazy" 
+                src={`${import.meta.env.BASE_URL}saas-ds-icons.webp`}
                 alt="Searchable icon browser with 34 professional icons"
                 className="w-full"
               />
@@ -173,8 +173,8 @@ const CaseStudySaas: React.FC = () => {
 
             {/* Button Components Screenshot */}
             <div className="my-8 rounded-lg overflow-hidden border border-cyan-500/20">
-              <img 
-                src={`${import.meta.env.BASE_URL}saas-ds-buttons.png`}
+              <img loading="lazy" 
+                src={`${import.meta.env.BASE_URL}saas-ds-buttons.webp`}
                 alt="Button component variants showing semantic hierarchy"
                 className="w-full"
               />

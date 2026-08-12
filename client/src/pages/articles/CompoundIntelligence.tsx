@@ -14,10 +14,10 @@ export default function CompoundIntelligence() {
         <meta property="og:title" content="Compound Intelligence: How Documentation Makes Codebases Learn" />
         <meta property="og:description" content="My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence." />
         <meta property="og:url" content="https://winzenburg.com/articles/compound-intelligence" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/compound-intelligence-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/compound-intelligence-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/compound-intelligence" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Compound Intelligence: How Documentation Makes Codebases Learn","description":"My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-22","url":"https://winzenburg.com/articles/compound-intelligence","image":"https://winzenburg.com/images/articles/compound-intelligence-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Compound Intelligence: How Documentation Makes Codebases Learn","description":"My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-22","url":"https://winzenburg.com/articles/compound-intelligence","image":"https://winzenburg.com/images/articles/compound-intelligence-hero.webp"})}</script>
       </Helmet>
 
       <article className="pt-24 pb-16">
@@ -31,7 +31,7 @@ export default function CompoundIntelligence() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/compound-intelligence-hero.png"
+              src="/images/articles/compound-intelligence-hero.webp"
               alt="Compound Intelligence"
               className="w-full h-auto"
             />

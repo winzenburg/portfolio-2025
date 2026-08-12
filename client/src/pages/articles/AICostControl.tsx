@@ -14,10 +14,10 @@ export default function AICostControl() {
         <meta property="og:title" content="AI Cost Control That Doesn&#39;t Break Velocity" />
         <meta property="og:description" content="Most AI cost overruns come from retries and rework, not expensive calls. Here&#39;s how to build AI systems that stay both affordable and fast." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-cost-control" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-cost-control-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-cost-control-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-cost-control" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"AI Cost Control That Doesn't Break Velocity","description":"Most AI cost overruns come from retries and rework, not expensive calls. Here's how to build AI systems that stay both affordable and fast.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-11","url":"https://winzenburg.com/articles/ai-cost-control","image":"https://winzenburg.com/images/articles/ai-cost-control-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"AI Cost Control That Doesn't Break Velocity","description":"Most AI cost overruns come from retries and rework, not expensive calls. Here's how to build AI systems that stay both affordable and fast.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-11","url":"https://winzenburg.com/articles/ai-cost-control","image":"https://winzenburg.com/images/articles/ai-cost-control-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function AICostControl() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/ai-cost-control-hero.png"
+              src="/images/articles/ai-cost-control-hero.webp"
               alt="AI Cost Control That Doesn't Break Velocity"
               className="w-full h-auto"
             />

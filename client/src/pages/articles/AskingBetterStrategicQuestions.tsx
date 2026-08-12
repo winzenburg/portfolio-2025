@@ -15,7 +15,7 @@ export default function AskingBetterStrategicQuestions() {
         <meta property="og:title" content="Asking Better Strategic Questions About AI in Product Design" />
         <meta property="og:description" content="The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible?" />
         <meta property="og:url" content="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/strategic-questions-ai-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/strategic-questions-ai-hero.webp" />
         <link rel="canonical" href="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -25,7 +25,7 @@ export default function AskingBetterStrategicQuestions() {
           "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
           "datePublished": "2026-03-07",
           "url": "https://winzenburg.com/articles/strategic-questions-ai-product-design",
-          "image": "https://winzenburg.com/images/articles/strategic-questions-ai-hero.png"
+          "image": "https://winzenburg.com/images/articles/strategic-questions-ai-hero.webp"
         })}</script>
       </Helmet>
 
@@ -40,7 +40,7 @@ export default function AskingBetterStrategicQuestions() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/strategic-questions-ai-hero.png"
+              src="/images/articles/strategic-questions-ai-hero.webp"
               alt="Asking Better Strategic Questions About AI in Product Design"
               className="w-full h-auto"
             />

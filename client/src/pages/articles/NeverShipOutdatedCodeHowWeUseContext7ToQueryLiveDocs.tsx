@@ -14,10 +14,10 @@ export default function Context7LiveDocs() {
         <meta property="og:title" content="Never Ship Outdated Code: How We Use Context7 to Query Live Documentation" />
         <meta property="og:description" content="Most AI code generation uses stale training data. We query live docs via Context7 MCP to ensure code suggestions match the latest version of every library." />
         <meta property="og:url" content="https://winzenburg.com/articles/context7-live-docs" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/context7-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/context7-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/context7-live-docs" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Never Ship Outdated Code: How We Use Context7 to Query Live Documentation","description":"Most AI code generation uses stale training data. We query live docs via Context7 MCP to ensure code suggestions match the latest version of every library.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/context7-live-docs","image":"https://winzenburg.com/images/articles/context7-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Never Ship Outdated Code: How We Use Context7 to Query Live Documentation","description":"Most AI code generation uses stale training data. We query live docs via Context7 MCP to ensure code suggestions match the latest version of every library.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/context7-live-docs","image":"https://winzenburg.com/images/articles/context7-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}

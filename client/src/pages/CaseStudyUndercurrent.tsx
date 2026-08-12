@@ -14,7 +14,7 @@ interface ScreenshotProps {
 function Screenshot({ src, alt, caption, accent = 'border-amber-700/40' }: ScreenshotProps) {
   return (
     <div className={`mb-12 rounded-lg overflow-hidden border ${accent}`}>
-      <img src={`${BASE}images/${src}`} alt={alt} className="w-full" />
+      <img loading="lazy" src={`${BASE}images/${src}`} alt={alt} className="w-full" />
       <div className="bg-white/5 px-5 py-3 text-sm text-stone-400 italic">{caption}</div>
     </div>
   );
@@ -48,7 +48,7 @@ const CaseStudyUndercurrent: React.FC = () => {
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <img
-          src={`${BASE}images/01_welcome.png`}
+          src={`${BASE}images/01_welcome.webp`}
           alt="Undercurrent welcome screen"
           className="absolute inset-0 w-full h-full object-cover object-center opacity-25"
         />
@@ -127,25 +127,25 @@ const CaseStudyUndercurrent: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
-              <img src={`${BASE}images/01_welcome.png`} alt="Undercurrent welcome screen" className="w-full" />
+              <img loading="lazy" src={`${BASE}images/01_welcome.webp`} alt="Undercurrent welcome screen" className="w-full" />
               <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">Welcome: brand and positioning before any commitment</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
-              <img src={`${BASE}images/02_why_this_exists.png`} alt="Why this exists screen" className="w-full" />
+              <img loading="lazy" src={`${BASE}images/02_why_this_exists.webp`} alt="Why this exists screen" className="w-full" />
               <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">The problem statement, in the user's language</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
-              <img src={`${BASE}images/03_frameworks.png`} alt="6 frameworks screen" className="w-full" />
+              <img loading="lazy" src={`${BASE}images/03_frameworks.webp`} alt="6 frameworks screen" className="w-full" />
               <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">The methodology: credibility through rigor</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
-              <img src={`${BASE}images/04_interview_sections.png`} alt="Interview sections overview" className="w-full" />
+              <img loading="lazy" src={`${BASE}images/04_interview_sections.webp`} alt="Interview sections overview" className="w-full" />
               <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">The 8-section structure: wayfinding before the journey starts</div>
             </div>
           </div>
 
           <Screenshot
-            src="05_ready_to_begin.png"
+            src="05_ready_to_begin.webp"
             alt="Ready to begin screen"
             caption="Ready to begin: Google sign-in only asked after the user understands exactly what they're signing up for"
           />
@@ -186,7 +186,7 @@ const CaseStudyUndercurrent: React.FC = () => {
             After sign-in, the dashboard gives users a persistent, motivating view of their progress. They can see exactly how far they've come, which sections are complete, and resume with a single click. The copy adapts to their name and progress, making a 45-minute commitment feel manageable.
           </p>
           <Screenshot
-            src="06_home_dashboard.png"
+            src="06_home_dashboard.webp"
             alt="Home dashboard showing interview progress"
             caption='Dashboard at 84% completion: personalized progress, section status, and a clear "Continue Interview" CTA'
           />
@@ -200,24 +200,24 @@ const CaseStudyUndercurrent: React.FC = () => {
           </p>
 
           <Screenshot
-            src="08_interview_ui.png"
+            src="08_interview_ui.webp"
             alt="Interview UI showing voice question and Coach Reflection panel"
             caption="Voice-first question with Coach Reflection panel awaiting a response"
           />
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
-              <img src={`${BASE}images/07_interview_audio_prompt.png`} alt="Audio prompt screen" className="w-full" />
+              <img loading="lazy" src={`${BASE}images/07_interview_audio_prompt.webp`} alt="Audio prompt screen" className="w-full" />
               <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">Voice-first: users hear each question before responding</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
-              <img src={`${BASE}images/12_interview_text_input.png`} alt="Text input fallback" className="w-full" />
+              <img loading="lazy" src={`${BASE}images/12_interview_text_input.webp`} alt="Text input fallback" className="w-full" />
               <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">"Prefer to type instead?" gracefully degrades to text when voice isn't ideal</div>
             </div>
           </div>
 
           <Screenshot
-            src="09_interview_section_expanded.png"
+            src="09_interview_section_expanded.webp"
             alt="Interview section expanded in sidebar"
             caption="Section navigation: users can always see exactly where they are in the 19-question journey"
           />
@@ -238,17 +238,17 @@ const CaseStudyUndercurrent: React.FC = () => {
 
           <div className="mt-8">
             <Screenshot
-              src="10_interview_question_answered.png"
+              src="10_interview_question_answered.webp"
               alt="Interview question answered with coach reflection visible"
               caption="The Coach Reflection panel activates after each answer, responding before the next question appears"
             />
             <Screenshot
-              src="13_interview_coach_reflection.png"
+              src="13_interview_coach_reflection.webp"
               alt="Coach reflection with full answer visible"
               caption="The reflection responds to the content of the answer, beyond simply acknowledging it. The user's full response is also preserved on screen"
             />
             <Screenshot
-              src="11_interview_active_question.png"
+              src="11_interview_active_question.webp"
               alt="Active question in interview"
               caption="Each question carries its framework tag, grounding the user in the methodology while they're in it"
             />

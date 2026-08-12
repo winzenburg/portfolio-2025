@@ -20,7 +20,7 @@ export default function CaseStudyCvs() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={`${import.meta.env.BASE_URL}project-cvs-aetna-hero.jpg`}
+            src={`${import.meta.env.BASE_URL}project-cvs-aetna-hero.webp`}
             alt="CVS Aetna Health Insurance" 
             className="w-full h-full object-cover opacity-60"
           />
@@ -137,8 +137,8 @@ export default function CaseStudyCvs() {
 
               {/* Aetna Domains Visualization Screenshot */}
               <div className="my-8 rounded-lg overflow-hidden border border-border/20">
-                <img 
-                  src={`${import.meta.env.BASE_URL}cvs-aetna-domains.png`}
+                <img loading="lazy" 
+                  src={`${import.meta.env.BASE_URL}cvs-aetna-domains.webp`}
                   alt="Aetna information architecture domains visualization"
                   className="w-full"
                 />
@@ -193,8 +193,8 @@ export default function CaseStudyCvs() {
 
               {/* Top Tasks Screenshot */}
               <div className="my-8 rounded-lg overflow-hidden border border-border/20">
-                <img 
-                  src={`${import.meta.env.BASE_URL}cvs-top-tasks.png`}
+                <img loading="lazy" 
+                  src={`${import.meta.env.BASE_URL}cvs-top-tasks.webp`}
                   alt="Top tasks analysis showing 50% task completion baseline"
                   className="w-full"
                 />

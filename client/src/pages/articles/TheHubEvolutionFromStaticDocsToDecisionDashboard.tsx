@@ -14,10 +14,10 @@ export default function Article() {
         <meta property="og:title" content="The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence" />
         <meta property="og:description" content="Most docs systems are graveyards. Ours is a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions." />
         <meta property="og:url" content="https://winzenburg.com/articles/hub-evolution" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/hub-evolution-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/hub-evolution-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/hub-evolution" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence","description":"Most docs systems are graveyards. Ours is a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/hub-evolution","image":"https://winzenburg.com/images/articles/hub-evolution-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence","description":"Most docs systems are graveyards. Ours is a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/hub-evolution","image":"https://winzenburg.com/images/articles/hub-evolution-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function Article() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/hub-evolution-hero.png"
+              src="/images/articles/hub-evolution-hero.webp"
               alt="The Hub Evolution"
               className="w-full h-auto"
             />

@@ -14,10 +14,10 @@ export default function AutonomousAICoding() {
         <meta property="og:title" content="Autonomous AI Coding: Building Features Overnight" />
         <meta property="og:description" content="I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours." />
         <meta property="og:url" content="https://winzenburg.com/articles/autonomous-ai-coding" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/autonomous-ai-coding-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/autonomous-ai-coding-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/autonomous-ai-coding" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Autonomous AI Coding: Building Features Overnight","description":"I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-11","url":"https://winzenburg.com/articles/autonomous-ai-coding","image":"https://winzenburg.com/images/articles/autonomous-ai-coding-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Autonomous AI Coding: Building Features Overnight","description":"I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-11","url":"https://winzenburg.com/articles/autonomous-ai-coding","image":"https://winzenburg.com/images/articles/autonomous-ai-coding-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function AutonomousAICoding() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/autonomous-ai-coding-hero.png"
+              src="/images/articles/autonomous-ai-coding-hero.webp"
               alt="Autonomous AI Coding"
               className="w-full h-auto"
             />

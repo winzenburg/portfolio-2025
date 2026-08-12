@@ -14,10 +14,10 @@ export default function TechnicalStackModernWebStandards() {
         <meta property="og:title" content="The Technical Stack: Modern Web Standards for Product Creation Platforms" />
         <meta property="og:description" content="Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype." />
         <meta property="og:url" content="https://winzenburg.com/articles/technical-stack" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/tech-stack.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/tech-stack.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/technical-stack" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Technical Stack: Modern Web Standards for Product Creation Platforms","description":"Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/technical-stack","image":"https://winzenburg.com/images/articles/tech-stack.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Technical Stack: Modern Web Standards for Product Creation Platforms","description":"Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/technical-stack","image":"https://winzenburg.com/images/articles/tech-stack.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function TechnicalStackModernWebStandards() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/tech-stack.png"
+              src="/images/articles/tech-stack.webp"
               alt="The Technical Stack: Modern Web Standards for Product Creation Platforms"
               className="w-full h-auto"
             />
@@ -61,8 +61,8 @@ export default function TechnicalStackModernWebStandards() {
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200" data-article-layout="v2">
       {/* Platform Architecture Visualization */}
       <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
-        <img
-          src="/images/articles/layercake.jpeg"
+        <img loading="lazy"
+          src="/images/articles/layercake.webp"
           alt="Platform Architecture Visualization: Layers showing Database, API, and Frontend"
           className="w-full h-auto"
         />
@@ -282,8 +282,8 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
         <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
-          <img
-            src="/images/articles/dashboard-view.jpeg"
+          <img loading="lazy"
+            src="/images/articles/dashboard-view.webp"
             alt="Unified Validation Dashboard: Market Size, Competitor Analysis, and User Feedback in one view"
             className="w-full h-auto"
           />

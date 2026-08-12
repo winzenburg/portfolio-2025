@@ -15,10 +15,10 @@ export default function MVPStrategy() {
         <meta property="og:title" content="The MVP Strategy: Launching Products That Sell Themselves" />
         <meta property="og:description" content="Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here&#39;s the virality-by-design framework for the minimum that creates genuine value." />
         <meta property="og:url" content="https://winzenburg.com/articles/mvp-strategy" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/mvp-strategy-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/mvp-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/mvp-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The MVP Strategy: Launching Products That Sell Themselves","description":"Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here's the virality-by-design framework for the minimum that creates genuine value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-26","url":"https://winzenburg.com/articles/mvp-strategy","image":"https://winzenburg.com/images/articles/mvp-strategy-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The MVP Strategy: Launching Products That Sell Themselves","description":"Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here's the virality-by-design framework for the minimum that creates genuine value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-26","url":"https://winzenburg.com/articles/mvp-strategy","image":"https://winzenburg.com/images/articles/mvp-strategy-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Content */}
@@ -35,7 +35,7 @@ export default function MVPStrategy() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/mvp-strategy-hero.png"
+              src="/images/articles/mvp-strategy-hero.webp"
               alt="MVP Strategy"
               className="w-full h-auto"
             />

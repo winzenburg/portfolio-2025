@@ -14,10 +14,10 @@ export default function Article() {
         <meta property="og:title" content="The Results: What We&#39;ve Learned Building This System" />
         <meta property="og:description" content="Building a systematic product creation engine. Here&#39;s what works, what doesn&#39;t, and what we&#39;ve learned." />
         <meta property="og:url" content="https://winzenburg.com/articles/system-results" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/results-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/results-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/system-results" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Results: What We've Learned Building This System","description":"Building a systematic product creation engine. Here's what works, what doesn't, and what we've learned.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/system-results","image":"https://winzenburg.com/images/articles/results-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Results: What We've Learned Building This System","description":"Building a systematic product creation engine. Here's what works, what doesn't, and what we've learned.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/system-results","image":"https://winzenburg.com/images/articles/results-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -35,7 +35,7 @@ export default function Article() {
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30 bg-slate-900/20">
             <div className="aspect-video">
               <img
-                src="/images/articles/results-hero.png"
+                src="/images/articles/results-hero.webp"
                 alt="Editorial illustration of a large machine with numbered stages, representing a systematic product creation engine and outcomes"
                 className="h-full w-full object-cover"
                 loading="lazy"
@@ -82,7 +82,7 @@ export default function Article() {
 
         <div className="relative aspect-video mb-8 overflow-hidden rounded-lg border border-slate-700/50 bg-slate-800/30">
           <img
-            src="/images/articles/system-results-diagram.png"
+            src="/images/articles/system-results-diagram.webp"
             alt="Diagram showing a multi-stage product creation pipeline with conveyor belts labeled development and durability, and gates filtering ideas through stages"
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"

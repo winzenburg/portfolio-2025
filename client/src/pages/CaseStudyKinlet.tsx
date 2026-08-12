@@ -19,7 +19,7 @@ const CaseStudyKinlet: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
-          src={`${import.meta.env.BASE_URL}images/kinlet-landing.png`} 
+          src={`${import.meta.env.BASE_URL}images/kinlet-landing.webp`} 
           alt="Kinlet Landing Page"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
@@ -34,7 +34,7 @@ const CaseStudyKinlet: React.FC = () => {
             <span className="text-purple-400 text-sm font-medium">Hero Project · 2026</span>
           </div>
           <div className="flex items-center justify-center gap-4 mb-6">
-            <img 
+            <img loading="lazy" 
               src={`${import.meta.env.BASE_URL}images/kinlet-logo.svg`}
               alt="Kinlet Logo"
               className="h-16 w-16"
@@ -97,8 +97,8 @@ const CaseStudyKinlet: React.FC = () => {
 
           {/* Landing Page Screenshot */}
           <div className="mb-8 rounded-lg overflow-hidden border border-purple-500/30">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-landing.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}images/kinlet-landing.webp`}
               alt="Kinlet Landing Page - Stop feeling alone in your caregiving journey"
               className="w-full"
             />
@@ -140,8 +140,8 @@ const CaseStudyKinlet: React.FC = () => {
 
           {/* Onboarding Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-onboarding.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}images/kinlet-onboarding.webp`}
               alt="Kinlet 5-step onboarding flow showing care journey selection"
               className="w-full"
             />
@@ -240,8 +240,8 @@ const CaseStudyKinlet: React.FC = () => {
 
           {/* Matching Dashboard Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-matching.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}images/kinlet-matching.webp`}
               alt="AI-powered matching dashboard showing compatibility scores"
               className="w-full"
             />
@@ -252,8 +252,8 @@ const CaseStudyKinlet: React.FC = () => {
 
           {/* Analytics Screenshot */}
           <div className="mb-12 rounded-lg overflow-hidden border border-purple-500/30">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-analytics.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}images/kinlet-analytics.webp`}
               alt="Group analytics showing message volume and participation"
               className="w-full"
             />
@@ -264,8 +264,8 @@ const CaseStudyKinlet: React.FC = () => {
 
           {/* Roadmap Screenshot */}
           <div className="mb-8 rounded-lg overflow-hidden border border-purple-500/30">
-            <img 
-              src={`${import.meta.env.BASE_URL}images/kinlet-roadmap.png`}
+            <img loading="lazy" 
+              src={`${import.meta.env.BASE_URL}images/kinlet-roadmap.webp`}
               alt="Public product roadmap showing development phases"
               className="w-full"
             />
@@ -619,7 +619,7 @@ const CaseStudyKinlet: React.FC = () => {
               <h3 className="text-lg font-bold mb-2 text-purple-400">Brand Identity Design</h3>
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
-                  <img 
+                  <img loading="lazy" 
                     src={`${import.meta.env.BASE_URL}images/kinlet-logo.svg`}
                     alt="Kinlet Logo - Geometric K"
                     className="h-24 w-24 bg-white rounded-lg p-4"

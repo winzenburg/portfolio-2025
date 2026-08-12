@@ -21,7 +21,7 @@ export default function AIUxMaturityLevel3() {
           content="Everyone wants to skip straight to Level 5. The real opportunity is using AI to bridge Level 2 to Level 3."
         />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-ux-maturity-level-3" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-ux-maturity-level-3-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-ux-maturity-level-3-hero.webp" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-ux-maturity-level-3" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -31,7 +31,7 @@ export default function AIUxMaturityLevel3() {
           author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
           datePublished: "2026-07-09",
           url: "https://winzenburg.com/articles/ai-ux-maturity-level-3",
-          image: "https://winzenburg.com/images/articles/ai-ux-maturity-level-3-hero.png",
+          image: "https://winzenburg.com/images/articles/ai-ux-maturity-level-3-hero.webp",
         })}</script>
       </Helmet>
 
@@ -46,7 +46,7 @@ export default function AIUxMaturityLevel3() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/ai-ux-maturity-level-3-hero.png"
+              src="/images/articles/ai-ux-maturity-level-3-hero.webp"
               alt="AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3."
               className="w-full h-auto"
             />

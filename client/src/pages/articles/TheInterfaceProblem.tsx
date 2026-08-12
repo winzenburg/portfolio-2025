@@ -18,6 +18,7 @@ function ArticleFigure({
   return (
     <figure className="my-10">
       <img
+        loading="lazy"
         src={src}
         alt={alt}
         className="w-full h-auto rounded-lg border border-slate-800"
@@ -46,7 +47,7 @@ export default function TheInterfaceProblem() {
           content="Enterprise AI adoption keeps stalling at the prompt box. Nine interface patterns that work for non-technical users."
         />
         <meta property="og:url" content="https://winzenburg.com/articles/interface-problem-ai-ux" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/interface-problem-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/interface-problem-hero.webp" />
         <link rel="canonical" href="https://winzenburg.com/articles/interface-problem-ai-ux" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -57,7 +58,7 @@ export default function TheInterfaceProblem() {
           author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
           datePublished: "2026-06-03",
           url: "https://winzenburg.com/articles/interface-problem-ai-ux",
-          image: "https://winzenburg.com/images/articles/interface-problem-hero.png",
+          image: "https://winzenburg.com/images/articles/interface-problem-hero.webp",
         })}</script>
       </Helmet>
 
@@ -72,7 +73,7 @@ export default function TheInterfaceProblem() {
 
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/interface-problem-hero.png"
+              src="/images/articles/interface-problem-hero.webp"
               alt="The Interface Problem Nobody Is Talking About"
               className="w-full h-auto"
             />
@@ -97,7 +98,7 @@ export default function TheInterfaceProblem() {
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0">
 
             <ArticleFigure
-              src={`${IMG}/canva-homepage.png`}
+              src={`${IMG}/canva-homepage.webp`}
               alt="Canva homepage with design actions that hide AI complexity behind familiar creative tasks"
               caption="Canva: AI is in the product, but the user is just designing."
             />
@@ -111,7 +112,7 @@ export default function TheInterfaceProblem() {
             </h2>
 
             <ArticleFigure
-              src={`${IMG}/perplexity-answer.jpg`}
+              src={`${IMG}/perplexity-answer.webp`}
               alt="Perplexity AI answer with numbered citations and a plain-language response"
               caption="Perplexity replaces the empty prompt with a structured answer you can scan and trust."
             />
@@ -133,7 +134,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <ArticleFigure
-              src={`${IMG}/notion-ai-inline.png`}
+              src={`${IMG}/notion-ai-inline.webp`}
               alt="Notion AI inline menu with Improve writing, Fix spelling, Make longer, and Change tone options"
               caption="Notion labels actions by what you get, not what the model is doing."
             />
@@ -221,7 +222,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <ArticleFigure
-              src={`${IMG}/canva-homepage.png`}
+              src={`${IMG}/canva-homepage.webp`}
               alt="Canva design canvas with embedded AI tools"
               caption="No separate AI mode: expand an image, resize for Instagram, improve copy from actions you already know."
             />
@@ -235,7 +236,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <ArticleFigure
-              src={`${IMG}/duolingo-max.jpg`}
+              src={`${IMG}/duolingo-max.webp`}
               alt="Duolingo Max AI roleplay conversation"
               caption="Max adjusts tone and pacing based on how the session is going."
             />
@@ -249,7 +250,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <ArticleFigure
-              src={`${IMG}/khanmigo-tutor.png`}
+              src={`${IMG}/khanmigo-tutor.webp`}
               alt="Khanmigo tutor responding with a guiding question"
               caption="Khanmigo answers a question with a question, on purpose."
             />
@@ -277,7 +278,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <ArticleFigure
-              src={`${IMG}/salesforce-agentforce.png`}
+              src={`${IMG}/salesforce-agentforce.webp`}
               alt="Salesforce Agentforce builder using familiar CRM components"
               caption="Agentforce renders AI output with the same components reps already use."
             />
@@ -291,7 +292,7 @@ export default function TheInterfaceProblem() {
             </h3>
 
             <ArticleFigure
-              src={`${IMG}/servicenow-now-assist.png`}
+              src={`${IMG}/servicenow-now-assist.webp`}
               alt="ServiceNow Now Assist summarizing an incident with next steps"
               caption="Now Assist: describe the task, skip the menu tree."
             />

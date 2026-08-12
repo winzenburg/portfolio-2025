@@ -14,10 +14,10 @@ export default function BusinessOperatingSystem() {
         <meta property="og:title" content="The Business Operating System: A Weekly Loop for Shipping and Learning" />
         <meta property="og:description" content="Most teams don&#39;t fail because they lack ideas. They fail because they can&#39;t translate decisions into weekly outcomes. Here&#39;s the operating system that keeps execution honest." />
         <meta property="og:url" content="https://winzenburg.com/articles/business-operating-system" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/business-operating-system-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/business-operating-system-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/business-operating-system" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Business Operating System: A Weekly Loop for Shipping and Learning","description":"Most teams don't fail because they lack ideas. They fail because they can't translate decisions into weekly outcomes. Here's the operating system that keeps execution honest.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-30","url":"https://winzenburg.com/articles/business-operating-system","image":"https://winzenburg.com/images/articles/business-operating-system-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Business Operating System: A Weekly Loop for Shipping and Learning","description":"Most teams don't fail because they lack ideas. They fail because they can't translate decisions into weekly outcomes. Here's the operating system that keeps execution honest.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-30","url":"https://winzenburg.com/articles/business-operating-system","image":"https://winzenburg.com/images/articles/business-operating-system-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function BusinessOperatingSystem() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/business-operating-system-hero.png"
+              src="/images/articles/business-operating-system-hero.webp"
               alt="The Business Operating System"
               className="w-full h-auto"
             />

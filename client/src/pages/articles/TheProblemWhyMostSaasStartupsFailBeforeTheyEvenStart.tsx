@@ -14,10 +14,10 @@ export default function SaaSStartupFailures() {
         <meta property="og:title" content="The Problem: Why Most SaaS Startups Fail Before They Even Start" />
         <meta property="og:description" content="Exploring why 90% of SaaS startups fail and how the problem isn&#39;t the idea, it&#39;s the process." />
         <meta property="og:url" content="https://winzenburg.com/articles/saas-problem" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/saas-problem-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/saas-problem-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/saas-problem" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Problem: Why Most SaaS Startups Fail Before They Even Start","description":"Exploring why 90% of SaaS startups fail and how the problem isn't the idea, it's the process.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/saas-problem","image":"https://winzenburg.com/images/articles/saas-problem-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Problem: Why Most SaaS Startups Fail Before They Even Start","description":"Exploring why 90% of SaaS startups fail and how the problem isn't the idea, it's the process.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/saas-problem","image":"https://winzenburg.com/images/articles/saas-problem-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}

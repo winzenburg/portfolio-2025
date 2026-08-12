@@ -14,10 +14,10 @@ export default function OpenSourceVisionArticle() {
         <meta property="og:title" content="The Open Source Vision: Building a Community Around Product Creation" />
         <meta property="og:description" content="What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products." />
         <meta property="og:url" content="https://winzenburg.com/articles/open-source-vision" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/open-source-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/open-source-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/open-source-vision" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Open Source Vision: Building a Community Around Product Creation","description":"What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/open-source-vision","image":"https://winzenburg.com/images/articles/open-source-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Open Source Vision: Building a Community Around Product Creation","description":"What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/open-source-vision","image":"https://winzenburg.com/images/articles/open-source-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}

@@ -15,10 +15,10 @@ export default function MonetizationStrategy() {
         <meta property="og:title" content="Monetization Strategy: Generating Revenue from Day One" />
         <meta property="og:description" content="Monetization isn&#39;t an afterthought, it&#39;s a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building." />
         <meta property="og:url" content="https://winzenburg.com/articles/monetization-strategy" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/monetization-strategy-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/monetization-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/monetization-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Monetization Strategy: Generating Revenue from Day One","description":"Monetization isn't an afterthought, it's a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-07-21","url":"https://winzenburg.com/articles/monetization-strategy","image":"https://winzenburg.com/images/articles/monetization-strategy-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Monetization Strategy: Generating Revenue from Day One","description":"Monetization isn't an afterthought, it's a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-07-21","url":"https://winzenburg.com/articles/monetization-strategy","image":"https://winzenburg.com/images/articles/monetization-strategy-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Content */}
@@ -35,7 +35,7 @@ export default function MonetizationStrategy() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img
-              src="/images/articles/monetization-strategy-hero.png"
+              src="/images/articles/monetization-strategy-hero.webp"
               alt="Monetization Strategy"
               className="w-full h-auto"
             />

@@ -14,10 +14,10 @@ export default function DesignSystem4Weeks() {
         <meta property="og:title" content="How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)" />
         <meta property="og:description" content="Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance." />
         <meta property="og:url" content="https://winzenburg.com/articles/design-system-4-weeks" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/design-system-4-weeks-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-system-4-weeks" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)","description":"Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-24","url":"https://winzenburg.com/articles/design-system-4-weeks","image":"https://winzenburg.com/images/articles/design-system-4-weeks-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)","description":"Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-24","url":"https://winzenburg.com/articles/design-system-4-weeks","image":"https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function DesignSystem4Weeks() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/design-system-4-weeks-hero.png"
+              src="/images/articles/design-system-4-weeks-hero.webp"
               alt="How I Built an Enterprise Design System in 4 Weeks"
               className="w-full h-auto"
             />

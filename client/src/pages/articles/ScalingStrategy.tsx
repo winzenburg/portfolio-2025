@@ -15,10 +15,10 @@ export default function ScalingStrategy() {
         <meta property="og:title" content="Scaling Strategy: Building a Portfolio of AI-Powered Businesses" />
         <meta property="og:description" content="After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here&#39;s the portfolio approach that creates compounding value." />
         <meta property="og:url" content="https://winzenburg.com/articles/scaling-strategy" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/scaling-strategy-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/scaling-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/scaling-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Scaling Strategy: Building a Portfolio of AI-Powered Businesses","description":"After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here's the portfolio approach that creates compounding value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-08-14","url":"https://winzenburg.com/articles/scaling-strategy","image":"https://winzenburg.com/images/articles/scaling-strategy-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Scaling Strategy: Building a Portfolio of AI-Powered Businesses","description":"After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here's the portfolio approach that creates compounding value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-08-14","url":"https://winzenburg.com/articles/scaling-strategy","image":"https://winzenburg.com/images/articles/scaling-strategy-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Content */}
@@ -35,7 +35,7 @@ export default function ScalingStrategy() {
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
             <img
-              src="/images/articles/scaling-strategy-hero.png"
+              src="/images/articles/scaling-strategy-hero.webp"
               alt="Scaling Strategy"
               className="w-full h-auto"
             />

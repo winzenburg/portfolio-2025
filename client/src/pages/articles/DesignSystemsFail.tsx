@@ -14,10 +14,10 @@ export default function DesignSystemsFail() {
         <meta property="og:title" content="Why Most Design Systems Fail (And How to Fix Them)" />
         <meta property="og:description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems, and three AI-powered solutions." />
         <meta property="og:url" content="https://winzenburg.com/articles/design-systems-fail" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/design-systems-fail-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/design-systems-fail-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-systems-fail" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here's the data on what kills design systems, and three AI-powered solutions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here's the data on what kills design systems, and three AI-powered solutions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function DesignSystemsFail() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/design-systems-fail-hero.png"
+              src="/images/articles/design-systems-fail-hero.webp"
               alt="Why Most Design Systems Fail"
               className="w-full h-auto"
             />

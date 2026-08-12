@@ -23,7 +23,7 @@ export default function Work() {
       <section className="relative py-16 md:py-24 mb-16 md:mb-24">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <img
-            src="/images/work-hero.png"
+            src="/images/work-hero.webp"
             alt=""
             className="w-full h-full object-cover opacity-40"
           />
@@ -54,7 +54,7 @@ export default function Work() {
           {false && <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img
-                src="/project-cultivate-bos.png"
+                src="/project-cultivate-bos.webp"
                 alt="Cultivate - BOS Dashboard"
                 className="w-full h-full object-cover object-top"
               />
@@ -152,7 +152,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
-                src="/images/kinlet-landing.png" 
+                src="/images/kinlet-landing.webp" 
                 alt="Kinlet - AI-Native SaaS MVP" 
                 className="w-full h-full object-cover object-top"
               />
@@ -250,7 +250,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img
-                src="/images/06_home_dashboard.png"
+                src="/images/06_home_dashboard.webp"
                 alt="Undercurrent Career Discovery OS"
                 className="w-full h-full object-cover object-top"
               />
@@ -336,7 +336,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img
-                src="/images/winzinvest_01_homepage_hero.png"
+                src="/images/winzinvest_01_homepage_hero.webp"
                 alt="Winzinvest execution platform for RIAs"
                 className="w-full h-full object-cover object-top"
               />
@@ -415,7 +415,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
-                src="/saas-ds-welcome.png" 
+                src="/saas-ds-welcome.webp" 
                 alt="Kinetic UI Design System" 
                 className="w-full h-full object-cover object-top"
               />
@@ -502,7 +502,7 @@ export default function Work() {
           <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-muted rounded-lg mb-8 overflow-hidden">
               <img 
-                src="/project-comcast-design-system.png" 
+                src="/project-comcast-design-system.webp" 
                 alt="Comcast Business Design System" 
                 className="w-full h-full object-cover object-top"
               />
@@ -602,7 +602,7 @@ export default function Work() {
             <Card className="p-8">
               <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
                 <img
-                  src="/project-buildout.png"
+                  src="/project-buildout.webp"
                   alt="BuildOut CRE Platform"
                   className="w-full h-full object-cover object-top"
                 />
@@ -640,7 +640,7 @@ export default function Work() {
             <Card className="p-8">
               <div className="aspect-video bg-muted rounded-lg mb-6 overflow-hidden">
                 <img
-                  src="/project-cvs.png"
+                  src="/project-cvs.webp"
                   alt="CVS Health Platform"
                   className="w-full h-full object-cover object-top"
                 />

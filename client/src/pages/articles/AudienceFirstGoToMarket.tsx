@@ -15,10 +15,10 @@ export default function AudienceFirstGoToMarket() {
         <meta property="og:title" content="The Audience-First Go-to-Market Strategy: Building Community Before Launch" />
         <meta property="og:description" content="Most products launch to silence. Here&#39;s what works: Build community before launch. Use one platform. Master it. Then expand." />
         <meta property="og:url" content="https://winzenburg.com/articles/audience-first-go-to-market" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/audience-first-go-to-market-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/audience-first-go-to-market-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/audience-first-go-to-market" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Audience-First Go-to-Market Strategy: Building Community Before Launch","description":"Most products launch to silence. Here's what works: Build community before launch. Use one platform. Master it. Then expand.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-02","url":"https://winzenburg.com/articles/audience-first-go-to-market","image":"https://winzenburg.com/images/articles/audience-first-go-to-market-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Audience-First Go-to-Market Strategy: Building Community Before Launch","description":"Most products launch to silence. Here's what works: Build community before launch. Use one platform. Master it. Then expand.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-02","url":"https://winzenburg.com/articles/audience-first-go-to-market","image":"https://winzenburg.com/images/articles/audience-first-go-to-market-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Content */}
@@ -35,7 +35,7 @@ export default function AudienceFirstGoToMarket() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/audience-first-go-to-market-hero.png"
+              src="/images/articles/audience-first-go-to-market-hero.webp"
               alt="Audience-First Go-to-Market Strategy"
               className="w-full h-auto"
             />

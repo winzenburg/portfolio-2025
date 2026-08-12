@@ -14,10 +14,10 @@ export default function RocksNotTasks() {
         <meta property="og:title" content="Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes" />
         <meta property="og:description" content="The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here&#39;s how to define weekly outcomes that actually finish." />
         <meta property="og:url" content="https://winzenburg.com/articles/rocks-not-tasks" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/rocks-not-tasks-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/rocks-not-tasks-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/rocks-not-tasks" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes","description":"The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-23","url":"https://winzenburg.com/articles/rocks-not-tasks","image":"https://winzenburg.com/images/articles/rocks-not-tasks-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes","description":"The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-23","url":"https://winzenburg.com/articles/rocks-not-tasks","image":"https://winzenburg.com/images/articles/rocks-not-tasks-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function RocksNotTasks() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/rocks-not-tasks-hero.png"
+              src="/images/articles/rocks-not-tasks-hero.webp"
               alt="Rocks, Not Tasks"
               className="w-full h-auto"
             />

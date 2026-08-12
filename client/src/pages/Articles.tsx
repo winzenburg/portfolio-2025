@@ -52,7 +52,7 @@ const articles: Article[] = [
     readTime: "6 min read",
     slug: "the-agent-layer-is-becoming-the-business-layer",
     category: "AI Workflow",
-    heroImage: "/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.png"
+    heroImage: "/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp"
   },
   {
     id: "54",
@@ -62,7 +62,7 @@ const articles: Article[] = [
     readTime: "7 min read",
     slug: "ai-ux-maturity-level-3",
     category: "Product Design",
-    heroImage: "/images/articles/ai-ux-maturity-level-3-hero.png"
+    heroImage: "/images/articles/ai-ux-maturity-level-3-hero.webp"
   },
   {
     id: "53",
@@ -72,7 +72,7 @@ const articles: Article[] = [
     readTime: "16 min read",
     slug: "interface-problem-ai-ux",
     category: "Product Design",
-    heroImage: "/images/articles/interface-problem-hero.png"
+    heroImage: "/images/articles/interface-problem-hero.webp"
   },
   {
     id: "52",
@@ -82,7 +82,7 @@ const articles: Article[] = [
     readTime: "7 min read",
     slug: "ai-isnt-a-feature-workflow",
     category: "Product Design",
-    heroImage: "/images/articles/ai-isnt-a-feature-workflow-hero.png"
+    heroImage: "/images/articles/ai-isnt-a-feature-workflow-hero.webp"
   },
   {
     id: "51",
@@ -92,7 +92,7 @@ const articles: Article[] = [
     readTime: "6 min read",
     slug: "strategic-questions-ai-product-design",
     category: "Product Design",
-    heroImage: "/images/articles/strategic-questions-ai-hero.png"
+    heroImage: "/images/articles/strategic-questions-ai-hero.webp"
   },
   {
     id: "50",
@@ -102,7 +102,7 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "integration-docs-that-work",
     category: "Engineering",
-    heroImage: "/images/articles/integration-docs-hero.png"
+    heroImage: "/images/articles/integration-docs-hero.webp"
   },
   {
     id: "49",
@@ -112,7 +112,7 @@ const articles: Article[] = [
     readTime: "13 min read",
     slug: "compound-intelligence",
     category: "AI Workflow",
-    heroImage: "/images/articles/compound-intelligence-hero.png"
+    heroImage: "/images/articles/compound-intelligence-hero.webp"
   },
   {
     id: "48",
@@ -122,7 +122,7 @@ const articles: Article[] = [
     readTime: "12 min read",
     slug: "fresh-context-per-iteration",
     category: "AI Workflow",
-    heroImage: "/images/articles/fresh-context-per-iteration-hero.png"
+    heroImage: "/images/articles/fresh-context-per-iteration-hero.webp"
   },
   {
     id: "47",
@@ -132,7 +132,7 @@ const articles: Article[] = [
     readTime: "11 min read",
     slug: "self-validating-ai-agents",
     category: "AI Workflow",
-    heroImage: "/images/articles/self-validating-ai-agents-hero.png"
+    heroImage: "/images/articles/self-validating-ai-agents-hero.webp"
   },
   {
     id: "46",
@@ -142,7 +142,7 @@ const articles: Article[] = [
     readTime: "13 min read",
     slug: "writing-prds-for-ai-agents",
     category: "AI Workflow",
-    heroImage: "/images/articles/writing-prds-for-ai-hero.png"
+    heroImage: "/images/articles/writing-prds-for-ai-hero.webp"
   },
   {
     id: "45",
@@ -152,7 +152,7 @@ const articles: Article[] = [
     readTime: "11 min read",
     slug: "choosing-ai-coding-mode",
     category: "AI Workflow",
-    heroImage: "/images/articles/choosing-ai-coding-mode-hero.png"
+    heroImage: "/images/articles/choosing-ai-coding-mode-hero.webp"
   },
   {
     id: "44",
@@ -162,7 +162,7 @@ const articles: Article[] = [
     readTime: "12 min read",
     slug: "ai-coding-economics",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-coding-economics-hero.png"
+    heroImage: "/images/articles/ai-coding-economics-hero.webp"
   },
   {
     id: "43",
@@ -172,7 +172,7 @@ const articles: Article[] = [
     readTime: "14 min read",
     slug: "autonomous-ai-coding",
     category: "AI Workflow",
-    heroImage: "/images/articles/autonomous-ai-coding-hero.png"
+    heroImage: "/images/articles/autonomous-ai-coding-hero.webp"
   },
   {
     id: "42",
@@ -182,7 +182,7 @@ const articles: Article[] = [
     readTime: "12 min read",
     slug: "business-operating-system",
     category: "Business Strategy",
-    heroImage: "/images/articles/business-operating-system-hero.png"
+    heroImage: "/images/articles/business-operating-system-hero.webp"
   },
   {
     id: "41",
@@ -192,7 +192,7 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "weekly-rhythm",
     category: "Business Strategy",
-    heroImage: "/images/articles/weekly-rhythm-hero.png"
+    heroImage: "/images/articles/weekly-rhythm-hero.webp"
   },
   {
     id: "40",
@@ -202,7 +202,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "rocks-not-tasks",
     category: "Business Strategy",
-    heroImage: "/images/articles/rocks-not-tasks-hero.png"
+    heroImage: "/images/articles/rocks-not-tasks-hero.webp"
   },
   {
     id: "39",
@@ -212,7 +212,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "docs-as-system-of-record",
     category: "Business Strategy",
-    heroImage: "/images/articles/docs-system-of-record-hero.png"
+    heroImage: "/images/articles/docs-system-of-record-hero.webp"
   },
   {
     id: "38",
@@ -222,7 +222,7 @@ const articles: Article[] = [
     readTime: "7 min read",
     slug: "maker-vs-manager",
     category: "Business Strategy",
-    heroImage: "/images/articles/maker-vs-manager-hero.png"
+    heroImage: "/images/articles/maker-vs-manager-hero.webp"
   },
   {
     id: "37",
@@ -232,7 +232,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "ai-cost-control",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-cost-control-hero.png"
+    heroImage: "/images/articles/ai-cost-control-hero.webp"
   },
   {
     id: "36",
@@ -242,7 +242,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "quality-gates-for-ai",
     category: "AI Workflow",
-    heroImage: "/images/articles/quality-gates-ai-hero.png"
+    heroImage: "/images/articles/quality-gates-ai-hero.webp"
   },
   {
     id: "35",
@@ -252,7 +252,7 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "debugging-ai-workflows",
     category: "AI Workflow",
-    heroImage: "/images/articles/debugging-ai-workflows-hero.png"
+    heroImage: "/images/articles/debugging-ai-workflows-hero.webp"
   },
   {
     id: "34",
@@ -262,7 +262,7 @@ const articles: Article[] = [
     readTime: "11 min read",
     slug: "technical-stack",
     category: "Engineering",
-    heroImage: "/images/articles/tech-stack.png"
+    heroImage: "/images/articles/tech-stack.webp"
   },
   {
     id: "33",
@@ -272,7 +272,7 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "supabase-mcp-blueprint",
     category: "Engineering",
-    heroImage: "/images/articles/supabase-mcp-hero.png"
+    heroImage: "/images/articles/supabase-mcp-hero.webp"
   },
   {
     id: "32",
@@ -282,7 +282,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "dual-filter-validation",
     category: "Business Strategy",
-    heroImage: "/images/articles/dual-filter-hero.png"
+    heroImage: "/images/articles/dual-filter-hero.webp"
   },
   {
     id: "31",
@@ -292,7 +292,7 @@ const articles: Article[] = [
     readTime: "13 min read",
     slug: "security-bug-gate",
     category: "Engineering",
-    heroImage: "/images/articles/security-gate-hero.png"
+    heroImage: "/images/articles/security-gate-hero.webp"
   },
   {
     id: "30",
@@ -302,7 +302,7 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "rules-and-agents",
     category: "AI Workflow",
-    heroImage: "/images/articles/rules-agents-system-diagram.png"
+    heroImage: "/images/articles/rules-agents-system-diagram.webp"
   },
   {
     id: "29",
@@ -312,7 +312,7 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "rule-consolidation",
     category: "AI Workflow",
-    heroImage: "/images/articles/rule-consolidation-hero.png"
+    heroImage: "/images/articles/rule-consolidation-hero.webp"
   },
   {
     id: "28",
@@ -322,7 +322,7 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "system-results",
     category: "Business Strategy",
-    heroImage: "/images/articles/results-hero.png"
+    heroImage: "/images/articles/results-hero.webp"
   },
   {
     id: "27",
@@ -332,7 +332,7 @@ const articles: Article[] = [
     readTime: "7 min read",
     slug: "saas-problem",
     category: "Business Strategy",
-    heroImage: "/images/articles/saas-problem-hero.png"
+    heroImage: "/images/articles/saas-problem-hero.webp"
   },
   {
     id: "26",
@@ -342,7 +342,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "portfolio-approach",
     category: "Business Strategy",
-    heroImage: "/images/articles/portfolio-hero.png"
+    heroImage: "/images/articles/portfolio-hero.webp"
   },
   {
     id: "25",
@@ -352,7 +352,7 @@ const articles: Article[] = [
     readTime: "16 min read",
     slug: "personalization-privacy",
     category: "Design Systems",
-    heroImage: "/images/articles/personalization-hero.png"
+    heroImage: "/images/articles/personalization-hero.webp"
   },
   {
     id: "24",
@@ -362,7 +362,7 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "open-source-vision",
     category: "Business Strategy",
-    heroImage: "/images/articles/open-source-hero.png"
+    heroImage: "/images/articles/open-source-hero.webp"
   },
   {
     id: "23",
@@ -372,7 +372,7 @@ const articles: Article[] = [
     readTime: "13 min read",
     slug: "micro-interactions",
     category: "Design Systems",
-    heroImage: "/images/articles/micro-interactions-hero.png"
+    heroImage: "/images/articles/micro-interactions-hero.webp"
   },
   {
     id: "22",
@@ -382,7 +382,7 @@ const articles: Article[] = [
     readTime: "19 min read",
     slug: "kill-greenlight-ritual",
     category: "Business Strategy",
-    heroImage: "/images/articles/kill-greenlight-hero.png"
+    heroImage: "/images/articles/kill-greenlight-hero.webp"
   },
   {
     id: "21",
@@ -392,7 +392,7 @@ const articles: Article[] = [
     readTime: "15 min read",
     slug: "hub-evolution",
     category: "AI Workflow",
-    heroImage: "/images/articles/hub-evolution-hero.png"
+    heroImage: "/images/articles/hub-evolution-hero.webp"
   },
   {
     id: "20",
@@ -402,7 +402,7 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "the-hub",
     category: "AI Workflow",
-    heroImage: "/images/articles/hub-hero.png"
+    heroImage: "/images/articles/hub-hero.webp"
   },
   {
     id: "19",
@@ -412,7 +412,7 @@ const articles: Article[] = [
     readTime: "17 min read",
     slug: "gamification-done-right",
     category: "Design Systems",
-    heroImage: "/images/articles/gamification-hero.png"
+    heroImage: "/images/articles/gamification-hero.webp"
   },
   {
     id: "18",
@@ -422,7 +422,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "documentation-system",
     category: "AI Workflow",
-    heroImage: "/images/articles/docs-system-hero.png"
+    heroImage: "/images/articles/docs-system-hero.webp"
   },
   {
     id: "17",
@@ -432,7 +432,7 @@ const articles: Article[] = [
     readTime: "14 min read",
     slug: "dev-quality-assistant",
     category: "Engineering",
-    heroImage: "/images/articles/dev-quality-hero.png"
+    heroImage: "/images/articles/dev-quality-hero.webp"
   },
   {
     id: "16",
@@ -442,7 +442,7 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "complete-workflow-2025",
     category: "AI Workflow",
-    heroImage: "/images/articles/complete-workflow-hero.png"
+    heroImage: "/images/articles/complete-workflow-hero.webp"
   },
   {
     id: "15",
@@ -452,7 +452,7 @@ const articles: Article[] = [
     readTime: "12 min read",
     slug: "brand-first-validation",
     category: "Design Systems",
-    heroImage: "/images/articles/brand-first-hero.png"
+    heroImage: "/images/articles/brand-first-hero.webp"
   },
   {
     id: "14",
@@ -462,7 +462,7 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "ai-tool-stack",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-tool-stack-hero.png"
+    heroImage: "/images/articles/ai-tool-stack-hero.webp"
   },
   {
     id: "13",
@@ -472,7 +472,7 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "ai-orchestration",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-orchestration-hero.png"
+    heroImage: "/images/articles/ai-orchestration-hero.webp"
   },
   {
     id: "12",
@@ -482,7 +482,7 @@ const articles: Article[] = [
     readTime: "17 min read",
     slug: "context7-live-docs",
     category: "Engineering",
-    heroImage: "/images/articles/context7-hero.png"
+    heroImage: "/images/articles/context7-hero.webp"
   },
   {
     id: "11",
@@ -492,7 +492,7 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "lindy-automated-validation",
     category: "AI Workflow",
-    heroImage: "/images/articles/lindy-hero.png"
+    heroImage: "/images/articles/lindy-hero.webp"
   },
   {
     id: "10",
@@ -502,7 +502,7 @@ const articles: Article[] = [
     readTime: "16 min read",
     slug: "glif-batch-creatives",
     category: "AI Workflow",
-    heroImage: "/images/articles/glif-hero.png"
+    heroImage: "/images/articles/glif-hero.webp"
   },
   {
     id: "9",
@@ -512,7 +512,7 @@ const articles: Article[] = [
     readTime: "6 min read",
     slug: "scaling-strategy",
     category: "Business Strategy",
-    heroImage: "/images/articles/scaling-strategy-hero.png"
+    heroImage: "/images/articles/scaling-strategy-hero.webp"
   },
   {
     id: "8",
@@ -522,7 +522,7 @@ const articles: Article[] = [
     readTime: "5 min read",
     slug: "monetization-strategy",
     category: "Business Strategy",
-    heroImage: "/images/articles/monetization-strategy-hero.png"
+    heroImage: "/images/articles/monetization-strategy-hero.webp"
   },
   {
     id: "7",
@@ -532,7 +532,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "mvp-strategy",
     category: "Business Strategy",
-    heroImage: "/images/articles/mvp-strategy-hero.png"
+    heroImage: "/images/articles/mvp-strategy-hero.webp"
   },
   {
     id: "6",
@@ -542,7 +542,7 @@ const articles: Article[] = [
     readTime: "5 min read",
     slug: "audience-first-go-to-market",
     category: "Business Strategy",
-    heroImage: "/images/articles/audience-first-go-to-market-hero.png"
+    heroImage: "/images/articles/audience-first-go-to-market-hero.webp"
   },
   {
     id: "5",
@@ -552,7 +552,7 @@ const articles: Article[] = [
     readTime: "6 min read",
     slug: "ai-powered-market-validation",
     category: "Business Strategy",
-    heroImage: "/images/articles/ai-powered-market-validation-hero.png"
+    heroImage: "/images/articles/ai-powered-market-validation-hero.webp"
   },
   {
     id: "4",
@@ -562,7 +562,7 @@ const articles: Article[] = [
     readTime: "5 min read",
     slug: "ai-augmented-workflow",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-augmented-workflow-hero.png"
+    heroImage: "/images/articles/ai-augmented-workflow-hero.webp"
   },
   {
     id: "3",
@@ -572,7 +572,7 @@ const articles: Article[] = [
     readTime: "7 min read",
     slug: "design-system-4-weeks",
     category: "Design Systems",
-    heroImage: "/images/articles/design-system-4-weeks-hero.png"
+    heroImage: "/images/articles/design-system-4-weeks-hero.webp"
   },
   {
     id: "2",
@@ -582,7 +582,7 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "ai-tech-stack",
     category: "Design Systems",
-    heroImage: "/images/articles/ai-tech-stack-hero.png"
+    heroImage: "/images/articles/ai-tech-stack-hero.webp"
   },
   {
     id: "1",
@@ -592,7 +592,7 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "design-systems-fail",
     category: "Design Systems",
-    heroImage: "/images/articles/design-systems-fail-hero.png"
+    heroImage: "/images/articles/design-systems-fail-hero.webp"
   }
 ];
 
@@ -630,7 +630,7 @@ export default function Articles() {
       <section className="relative py-20 mb-16 md:mb-24">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <img
-            src="/images/articles-hero.png"
+            src="/images/articles-hero.webp"
             alt=""
             className="w-full h-full object-cover opacity-40"
           />
@@ -735,6 +735,7 @@ export default function Articles() {
                 <Link href={`/articles/${article.slug}`}>
                   <div className="w-full overflow-hidden" style={{ aspectRatio: '4/1' }}>
                     <img
+                      loading="lazy"
                       src={article.heroImage}
                       alt={article.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

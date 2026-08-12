@@ -14,10 +14,10 @@ export default function DevQualityAssistant() {
         <meta property="og:title" content="The Dev Quality Assistant: Test Planning Before Code Touches the Repo" />
         <meta property="og:description" content="Most teams treat testing as an afterthought. We make it a build prerequisite." />
         <meta property="og:url" content="https://winzenburg.com/articles/dev-quality-assistant" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/dev-quality-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/dev-quality-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/dev-quality-assistant" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Dev Quality Assistant: Test Planning Before Code Touches the Repo","description":"Most teams treat testing as an afterthought. We make it a build prerequisite.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dev-quality-assistant","image":"https://winzenburg.com/images/articles/dev-quality-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Dev Quality Assistant: Test Planning Before Code Touches the Repo","description":"Most teams treat testing as an afterthought. We make it a build prerequisite.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dev-quality-assistant","image":"https://winzenburg.com/images/articles/dev-quality-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}

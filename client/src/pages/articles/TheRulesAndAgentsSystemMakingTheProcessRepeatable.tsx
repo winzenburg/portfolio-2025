@@ -14,10 +14,10 @@ export default function RulesAndAgentsSystemArticle() {
         <meta property="og:title" content="The Rules and Agents System: Making the Process Repeatable" />
         <meta property="og:description" content="What if your product creation process was as systematic as your code? Here&#39;s how rules and agents make the entire workflow repeatable." />
         <meta property="og:url" content="https://winzenburg.com/articles/rules-and-agents" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/rules-agents-system-diagram.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/rules-agents-system-diagram.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/rules-and-agents" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rules and Agents System: Making the Process Repeatable","description":"What if your product creation process was as systematic as your code? Here's how rules and agents make the entire workflow repeatable.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rules-and-agents","image":"https://winzenburg.com/images/articles/rules-agents-system-diagram.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rules and Agents System: Making the Process Repeatable","description":"What if your product creation process was as systematic as your code? Here's how rules and agents make the entire workflow repeatable.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rules-and-agents","image":"https://winzenburg.com/images/articles/rules-agents-system-diagram.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function RulesAndAgentsSystemArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
             <img
-              src="/images/articles/rules-agents-system-diagram.png"
+              src="/images/articles/rules-agents-system-diagram.webp"
               alt="System diagram showing a repeatable workflow with rules, agents, and quality gates"
               className="w-full h-auto"
             />
@@ -84,8 +84,8 @@ export default function RulesAndAgentsSystemArticle() {
 
       {/* System Diagram */}
       <div className="my-12 rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900/30">
-        <img
-          src="/images/articles/rules-agents-hero.png"
+        <img loading="lazy"
+          src="/images/articles/rules-agents-hero.webp"
           alt="Playful architectural illustration representing a repeatable rules and agents system"
           className="w-full h-auto"
         />

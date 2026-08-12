@@ -20,7 +20,7 @@ export default function CaseStudyBuildout() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={`${import.meta.env.BASE_URL}project-buildout-hero.jpg`}
+            src={`${import.meta.env.BASE_URL}project-buildout-hero.webp`}
             alt="BuildOut Commercial Real Estate" 
             className="w-full h-full object-cover opacity-60"
           />
@@ -156,8 +156,8 @@ export default function CaseStudyBuildout() {
 
               {/* Prospect/Nurture Interface Screenshot */}
               <div className="my-8 rounded-lg overflow-hidden border border-border/20">
-                <img 
-                  src={`${import.meta.env.BASE_URL}buildout-prospect-nurture.png`}
+                <img loading="lazy" 
+                  src={`${import.meta.env.BASE_URL}buildout-prospect-nurture.webp`}
                   alt="BuildOut prospect and nurture workflow interface"
                   className="w-full"
                 />
@@ -188,8 +188,8 @@ export default function CaseStudyBuildout() {
 
               {/* Map View Screenshot */}
               <div className="my-8 rounded-lg overflow-hidden border border-border/20">
-                <img 
-                  src={`${import.meta.env.BASE_URL}buildout-map-view.png`}
+                <img loading="lazy" 
+                  src={`${import.meta.env.BASE_URL}buildout-map-view.webp`}
                   alt="BuildOut map view showing property locations"
                   className="w-full"
                 />

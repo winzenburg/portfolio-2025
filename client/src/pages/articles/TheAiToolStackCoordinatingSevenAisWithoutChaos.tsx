@@ -14,10 +14,10 @@ export default function AIToolStackArticle() {
         <meta property="og:title" content="The AI Tool Stack: How We Coordinate 7 AIs Without Chaos" />
         <meta property="og:description" content="Using multiple AI tools sounds like a nightmare. Here&#39;s how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-tool-stack" />
-        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.png" />
+        <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-tool-stack" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"Using multiple AI tools sounds like a nightmare. Here's how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.png"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"Using multiple AI tools sounds like a nightmare. Here's how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -34,7 +34,7 @@ export default function AIToolStackArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/ai-tool-stack-hero.png"
+              src="/images/articles/ai-tool-stack-hero.webp"
               alt="The AI Tool Stack"
               className="w-full h-auto"
             />
