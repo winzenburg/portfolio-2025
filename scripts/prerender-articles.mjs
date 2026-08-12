@@ -189,6 +189,20 @@ async function prerenderRoute(page, routePath, kind) {
     { timeout: 45_000 },
   );
 
+  // Normalize accidental protocol-relative internal links (e.g. href="//articles").
+  await page.evaluate(() => {
+    document.querySelectorAll("#root a[href^='//']").forEach((anchor) => {
+      const href = anchor.getAttribute("href");
+      if (!href) return;
+      // Keep real protocol-relative absolute URLs (//example.com/...), fix path-only bugs.
+      const rest = href.slice(2);
+      const firstSegment = rest.split("/")[0] || "";
+      if (!firstSegment.includes(".")) {
+        anchor.setAttribute("href", `/${rest}`);
+      }
+    });
+  });
+
   const rootHtml = await page.$eval("#root", (el) => el.innerHTML);
   const textLen = rootHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
     .length;
