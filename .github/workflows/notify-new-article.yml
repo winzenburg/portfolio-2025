@@ -1,0 +1,76 @@
+name: Notify Newsletter Subscribers
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'client/src/pages/Articles.tsx'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Detect newly-added articles
+        id: detect
+        run: |
+          NEW_ARTICLES=$(node scripts/detect-new-articles.js "${{ github.event.before }}")
+          if [ -z "$NEW_ARTICLES" ]; then
+            echo "No new articles detected in this push (existing entries were just edited) - nothing to send."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            echo "$NEW_ARTICLES" > /tmp/new-articles.jsonl
+            echo "New articles detected:"
+            cat /tmp/new-articles.jsonl
+          fi
+
+      - name: Install pnpm
+        if: steps.detect.outputs.found == 'true'
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
+
+      - name: Install dependencies
+        if: steps.detect.outputs.found == 'true'
+        run: pnpm install
+
+      - name: Wait for live deploy, then notify subscribers
+        if: steps.detect.outputs.found == 'true'
+        env:
+          NEWSLETTER_RESEND_API_KEY: ${{ secrets.NEWSLETTER_RESEND_API_KEY }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+        run: |
+          while IFS= read -r article; do
+            SLUG=$(node -e "console.log(JSON.parse(process.argv[1]).slug)" "$article")
+            HERO=$(node -e "console.log(JSON.parse(process.argv[1]).heroImage)" "$article")
+            HERO_URL="https://winzenburg.com${HERO}"
+
+            echo "Waiting for $HERO_URL to go live (new deploy)..."
+            READY=false
+            for i in $(seq 1 40); do
+              STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$HERO_URL" || echo "000")
+              if [ "$STATUS" = "200" ]; then
+                echo "Live after $((i * 15))s."
+                READY=true
+                break
+              fi
+              sleep 15
+            done
+
+            if [ "$READY" != "true" ]; then
+              echo "::warning::Timed out waiting for $HERO_URL to go live; sending notification anyway."
+            fi
+
+            echo "Notifying subscribers about: $SLUG"
+            node scripts/notify-subscribers.js --slug "$SLUG"
+          done < /tmp/new-articles.jsonl

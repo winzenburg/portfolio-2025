@@ -98,10 +98,22 @@ http://localhost:3000/portfolio-2025/articles/your-article-slug
 3. Monitor deployment:
    - https://github.com/winzenburg/portfolio-2025/actions
 
-### Step 6: Notify Newsletter Subscribers
+### Step 6: Newsletter Notification (Automatic)
 
-Once the article is live on winzenburg.com, email everyone who signed up via the
-"Get AI-Augmented Insights" form (`NewsletterSignup.tsx`):
+Nothing to do here — this happens on its own. The
+`.github/workflows/notify-new-article.yml` GitHub Action watches every push to
+`main` that touches `client/src/pages/Articles.tsx`. It diffs the file against
+the previous commit (`scripts/detect-new-articles.js`) to find slugs that
+weren't there before — so it only fires for a genuinely new article, not for
+edits to an existing one (typo fixes, excerpt tweaks, etc.) — then polls the
+new article's hero image URL until the Netlify deploy is live and runs
+`scripts/notify-subscribers.js --slug <new-slug>` to send the Resend broadcast.
+
+You can watch it run at
+https://github.com/winzenburg/portfolio-2025/actions/workflows/notify-new-article.yml.
+
+If you ever need to send (or resend) manually, the underlying script still
+works standalone:
 
 ```bash
 node scripts/notify-subscribers.js
@@ -109,22 +121,28 @@ node scripts/notify-subscribers.js
 
 This reads the newest entry (top of the array) from `Articles.tsx` and sends a
 Resend broadcast to the `RESEND_AUDIENCE_ID` audience with the title, excerpt,
-hero image, and a "Read the full article" link. It's idempotent per slug (logs
-sends to `logs/newsletter-notifications.json`), so running it again for the same
-article is a no-op unless you pass `--force`.
+hero image, and a "Read the full article" link. Locally, it's idempotent per
+slug (logs sends to `logs/newsletter-notifications.json`, which is gitignored
+and not used by the GitHub Action — the Action relies on the diff check
+instead), so running it again for the same article is a no-op unless you pass
+`--force`.
 
 Useful flags:
 - `--dry-run` — preview the subject/body without sending or logging anything
 - `--slug your-article-slug` — target an older article instead of the newest one
 - `--force` — resend even if already logged as sent
+- `--test-email you@example.com` — send yourself a single preview copy instead
+  of broadcasting to the audience (doesn't touch the sent log)
 
-Requires `NEWSLETTER_RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, and
-`NEWSLETTER_FROM_EMAIL` in `.env` (see `.env.example`).
+Requires `NEWSLETTER_RESEND_API_KEY` and `RESEND_AUDIENCE_ID` in `.env` locally
+(see `.env.example`), and as `NEWSLETTER_RESEND_API_KEY` / `RESEND_AUDIENCE_ID`
+repo secrets for the GitHub Action
+(https://github.com/winzenburg/portfolio-2025/settings/secrets/actions).
 `NEWSLETTER_RESEND_API_KEY` is intentionally separate from `RESEND_API_KEY`
 (that one is scoped to the unrelated LinkedIn content automation scripts on a
-different Resend account). `NEWSLETTER_FROM_EMAIL` must be on a domain
-verified in the [Resend Domains dashboard](https://resend.com/domains) —
-broadcasts to a full audience will fail from an unverified sender.
+different Resend account). The sending address must be on a domain verified in
+the [Resend Domains dashboard](https://resend.com/domains) — broadcasts to a
+full audience will fail from an unverified sender.
 
 ## Article Structure Reference
 
