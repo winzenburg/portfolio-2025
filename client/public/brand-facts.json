@@ -66,6 +66,16 @@
       "started": "2026",
       "oneLiner": "Defense technology company building AI-powered decision-support software for U.S. Department of Defense and Space Force / SpaceWERX missions.",
       "category": "Defense / AI decision-support"
+    },
+    {
+      "name": "Foundpath",
+      "url": "https://foundpath.app",
+      "@id": "https://winzenburg.com/#foundpath",
+      "role": "Founder",
+      "status": "Active",
+      "started": "2026",
+      "oneLiner": "Pre-session client discovery software for coaches: clients complete a guided intake before their first session, so coaches open with a written brief instead of a cold-start interview.",
+      "category": "Coaching Tech / B2B SaaS"
     }
   ],
   "flagshipArticles": [

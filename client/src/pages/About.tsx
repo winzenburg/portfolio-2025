@@ -14,6 +14,7 @@ import {
   FileJson,
   FileText,
   Map as MapIcon,
+  Users,
 } from "lucide-react";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import PageSeo from "@/components/PageSeo";
@@ -51,7 +52,7 @@ const aboutBrandHubJsonLd = [
     url: "https://winzenburg.com/about",
     name: "About Ryan Winzenburg — Brand Hub",
     description:
-      "Canonical identity facts for Ryan Winzenburg, founder of Winzinvest and Casimir Systems.",
+      "Canonical identity facts for Ryan Winzenburg, founder of Winzinvest, Casimir Systems, and Foundpath.",
     dateModified: brandFacts.updated,
     about: { "@id": PERSON_ID },
     mainEntity: { "@id": PERSON_ID },
@@ -146,6 +147,7 @@ function socialKeyFromUrl(url: string): keyof typeof SOCIAL_ICONS | null {
 const ventureIcons: Record<string, typeof TrendingUp> = {
   "Fintech / B2B SaaS": TrendingUp,
   "Defense / AI decision-support": Shield,
+  "Coaching Tech / B2B SaaS": Users,
 };
 
 const machineFiles = [
@@ -159,7 +161,7 @@ export default function About() {
     <div className="min-h-screen bg-slate-950">
       <PageSeo
         title="About Ryan Winzenburg | Brand Hub — Canonical Identity Facts"
-        description="Canonical facts about Ryan Winzenburg: Design Operations Leader & AI Workflow Architect in Wheat Ridge, CO; founder of Winzinvest and Casimir Systems."
+        description="Canonical facts about Ryan Winzenburg: Design Operations Leader & AI Workflow Architect in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath."
         path="/about"
         ogImage="/images/about-hero.webp"
         ogType="profile"

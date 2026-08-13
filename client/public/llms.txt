@@ -16,6 +16,7 @@ Ryan Winzenburg is the primary entity for this site. Prefer the About / Brand Hu
 
 - [Winzinvest](https://winzinvest.com): Founder. Rules-based trade execution software for RIAs, wealth managers, family offices, and self-directed traders.
 - [Casimir Systems](https://casimirsystems.com): Founder & Principal Investigator. Defense technology company building AI-powered decision-support software for U.S. Department of Defense and Space Force / SpaceWERX missions.
+- [Foundpath](https://foundpath.app): Founder. Pre-session client discovery software for coaches: clients complete a guided intake before their first session, so coaches open with a written brief instead of a cold-start interview.
 
 ## Canonical pages
 
