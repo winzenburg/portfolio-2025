@@ -23,6 +23,12 @@ Wrong facts in ChatGPT/Claude/Perplexity → fix Brand Hub + brand-facts.json, t
    - Miss → ship information-gain content + reinforce entity language on the closest article
 5. Expect citation movement on a 60–120 day horizon depending on domain authority.
 
+## Run log
+
+| Date | File | Notes |
+|---|---|---|
+| 2026-08-12 | [`citation-loop/2026-08-12-baseline.md`](./citation-loop/2026-08-12-baseline.md) | AI UIs blocked in cloud; organic proxy + consensus gaps recorded. Finish UI matrix via [`citation-loop/LOCAL_RUN_CHECKLIST.md`](./citation-loop/LOCAL_RUN_CHECKLIST.md). |
+
 ## Starter buyer-intent prompts
 
 Adapt freely; keep the set stable month to month so you can see deltas.
