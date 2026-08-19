@@ -1,5 +1,6 @@
 import posthog from "./posthog";
 import { getPageType, getArticleSlug, getCaseStudySlug } from "./posthog";
+import type { ContactIntent, RateSheet } from "./contact-intent";
 
 function baseProperties() {
   const pathname = window.location.pathname;
@@ -50,10 +51,16 @@ export function trackNavClick(label: string, href: string) {
 }
 
 /** Track contact form submissions */
-export function trackContactSubmit(hasPlaybook: boolean) {
+export function trackContactSubmit(options: {
+  hasPlaybook: boolean;
+  intent: ContactIntent | null;
+  sheet: RateSheet | null;
+}): void {
   posthog.capture("contact_form_submit", {
     ...baseProperties(),
-    has_playbook_request: hasPlaybook,
+    has_playbook_request: options.hasPlaybook,
+    contact_intent: options.intent ?? "unspecified",
+    rate_sheet: options.sheet,
   });
 }
 
@@ -95,5 +102,26 @@ export function trackPlaybookRequest(playbookId: string, sourceArticleSlug: stri
     ...baseProperties(),
     playbook_id: playbookId,
     source_article_slug: sourceArticleSlug,
+  });
+}
+
+/** First answer on the UX maturity assessment. Does not include answers. */
+export function trackAssessmentStart(): void {
+  posthog.capture("assessment_started", {
+    ...baseProperties(),
+  });
+}
+
+/** Completed assessment. Scores only, never individual answers. */
+export function trackAssessmentComplete(options: {
+  total: number;
+  level: string;
+  weakestDimension: string;
+}): void {
+  posthog.capture("assessment_completed", {
+    ...baseProperties(),
+    assessment_total: options.total,
+    assessment_level: options.level,
+    weakest_dimension: options.weakestDimension,
   });
 }

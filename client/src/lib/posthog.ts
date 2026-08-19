@@ -23,7 +23,8 @@ export function getPageType(pathname: string): string {
   if (pathname === "/articles") return "articles_index";
   if (pathname === "/work") return "work";
   if (pathname === "/about") return "about";
-  if (pathname === "/services") return "services";
+  if (pathname === "/services" || pathname === "/consulting") return "consulting";
+  if (pathname === "/assessment") return "assessment";
   if (pathname === "/methodology") return "methodology";
   if (pathname === "/contact") return "contact";
   if (pathname === "/gallery") return "gallery";

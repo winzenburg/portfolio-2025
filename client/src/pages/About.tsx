@@ -422,7 +422,7 @@ export default function About() {
             just an exploratory conversation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href="/contact?intent=role">
               <Button size="lg">Get in Touch</Button>
             </Link>
             <Link href="/articles">

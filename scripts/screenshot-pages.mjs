@@ -17,6 +17,8 @@ const pages = [
   { name: 'work', url: '/work' },
   { name: 'about', url: '/about' },
   { name: 'services', url: '/services' },
+  { name: 'consulting', url: '/consulting' },
+  { name: 'assessment', url: '/assessment' },
   { name: 'methodology', url: '/methodology' },
   { name: 'contact', url: '/contact' },
   { name: 'articles', url: '/articles' }

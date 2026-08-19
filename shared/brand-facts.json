@@ -117,9 +117,14 @@
       "note": "Enterprise and product case studies."
     },
     {
-      "title": "Services",
-      "url": "https://winzenburg.com/services",
-      "note": "Consulting offerings."
+      "title": "Consulting",
+      "url": "https://winzenburg.com/consulting",
+      "note": "Product UX consulting for product leaders. /services is an alias."
+    },
+    {
+      "title": "UX maturity assessment",
+      "url": "https://winzenburg.com/assessment",
+      "note": "Twenty-question product risk and UX maturity self-diagnostic. No email gate."
     },
     {
       "title": "Methodology",

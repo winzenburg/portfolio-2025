@@ -62,13 +62,31 @@ export const STATIC_PAGES = [
     priority: "0.8",
   },
   {
-    path: "/services",
-    title: "Design Leadership & DesignOps Consulting | Ryan Winzenburg",
+    path: "/consulting",
+    title: "Consulting | Product UX Research, Strategy, and Delivery | Ryan Winzenburg",
     description:
-      "Design leadership and DesignOps consulting: AI workflow architecture, design system acceleration, and team scaling for product organizations.",
+      "Turn uncertain customer problems into experiences your team can actually build. Research, product strategy, prototyping, testing, and delivery. Engagements start at $8,000.",
     ogImage: "/images/services-hero.webp",
     changefreq: "monthly",
     priority: "0.8",
+  },
+  {
+    path: "/services",
+    title: "Consulting | Product UX Research, Strategy, and Delivery | Ryan Winzenburg",
+    description:
+      "Turn uncertain customer problems into experiences your team can actually build. Research, product strategy, prototyping, testing, and delivery. Engagements start at $8,000.",
+    ogImage: "/images/services-hero.webp",
+    changefreq: "monthly",
+    priority: "0.6",
+  },
+  {
+    path: "/assessment",
+    title: "Product Risk and UX Maturity Assessment | Ryan Winzenburg",
+    description:
+      "Twenty questions about how your team decides what to build. Get a maturity score, your three largest product risks, and a recommended starting engagement. About six minutes. No email required.",
+    ogImage: "/images/services-hero.webp",
+    changefreq: "monthly",
+    priority: "0.7",
   },
   {
     path: "/articles",
@@ -81,9 +99,9 @@ export const STATIC_PAGES = [
   },
   {
     path: "/contact",
-    title: "Contact Ryan Winzenburg | Design Operations & UX Leadership",
+    title: "Contact Ryan Winzenburg | Design Leadership Roles and Scoped Work",
     description:
-      "Contact Ryan Winzenburg about design operations leadership, AI workflow architecture, design systems, and UX consulting engagements.",
+      "Contact Ryan Winzenburg about a design leadership role, or about scoped AI workflow, design system, and product work.",
     ogImage: "/images/contact-hero.webp",
     changefreq: "monthly",
     priority: "0.7",

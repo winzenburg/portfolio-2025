@@ -685,7 +685,7 @@ export default function Work() {
             I'm exploring Head of Design Operations, VP/Director of Design, and Principal Design Technologist roles at companies ready to transform how their design teams work with AI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href="/contact?intent=role">
               <Button size="lg">
                 Let's Talk
               </Button>

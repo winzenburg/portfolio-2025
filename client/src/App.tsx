@@ -14,6 +14,7 @@ import BrandHub from "./pages/BrandHub";
 import Contact from "./pages/Contact";
 import Unsubscribe from "./pages/Unsubscribe";
 import Services from "./pages/Services";
+import Assessment from "./pages/Assessment";
 import Articles from "./pages/Articles";
 import Gallery from "./pages/Gallery";
 import ScrollToTop from "./components/ScrollToTop";
@@ -173,7 +174,9 @@ function Router() {
         <Route path="/methodology" component={Methodology} />
         <Route path="/about" component={About} />
         <Route path="/brand-hub" component={BrandHub} />
+        <Route path="/consulting" component={Services} />
         <Route path="/services" component={Services} />
+        <Route path="/assessment" component={Assessment} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/articles" component={Articles} />
         <Route path="/articles/ai-augmented-workflow">
