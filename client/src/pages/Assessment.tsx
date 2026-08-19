@@ -187,11 +187,13 @@ export default function Assessment() {
                   id={`question-${question.id}`}
                   className="py-6 border-b border-slate-800 scroll-mt-24"
                 >
-                  <legend className="text-lg font-semibold text-white mb-1">
+                  <legend className="text-lg font-semibold text-white p-0 mb-0">
                     {question.prompt}
                   </legend>
                   {question.hint.length > 0 ? (
-                    <p className="text-sm text-slate-400 mb-4">{question.hint}</p>
+                    <p className="text-sm text-slate-400 mt-0.5 mb-4 leading-snug">
+                      {question.hint}
+                    </p>
                   ) : (
                     <div className="mb-4" />
                   )}
