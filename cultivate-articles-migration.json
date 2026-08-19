@@ -1,0 +1,261 @@
+{
+  "migration_plan": {
+    "source_site": "https://cultivate-six.vercel.app/articles",
+    "total_articles": 25,
+    "status": "pending",
+    "notes": "Articles from Cultivate site to be migrated to Winzenburg.com with brand voice transformation"
+  },
+  "articles": [
+    {
+      "title": "80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets",
+      "source_url": "https://cultivate-six.vercel.app/articles/80-percent-faster-creatives",
+      "date": "12/2/2025",
+      "readTime": "16 min read",
+      "category": "AI & Automation",
+      "excerpt": "Most founders get stuck on 'we need 10 ad variants' and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours.",
+      "output": "client/src/pages/articles/BatchGenerateCreatives.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale",
+      "source_url": "https://cultivate-six.vercel.app/articles/from-manual-to-automated",
+      "date": "12/2/2025",
+      "readTime": "18 min read",
+      "category": "AI & Automation",
+      "excerpt": "Most founders manually manage waitlists and outreach. We automate execution with Lindy while keeping Cursor as our documentation system of record.",
+      "output": "client/src/pages/articles/AutomatedValidation.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "Never Ship Outdated Code: How We Use Context7 to Query Live Documentation",
+      "source_url": "https://cultivate-six.vercel.app/articles/never-ship-outdated-code",
+      "date": "12/2/2025",
+      "readTime": "17 min read",
+      "category": "Engineering",
+      "excerpt": "Most AI code generation uses stale training data. We query live docs via Context7 MCP to ensure code suggestions match the latest version of every library.",
+      "output": "client/src/pages/articles/LiveDocumentation.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The AI Tool Stack: How We Coordinate 7 AIs Without Chaos",
+      "source_url": "https://cultivate-six.vercel.app/articles/ai-tool-stack",
+      "date": "12/2/2025",
+      "readTime": "18 min read",
+      "category": "AI & Automation",
+      "excerpt": "Using multiple AI tools sounds like a nightmare. Here's how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.",
+      "output": "client/src/pages/articles/AIToolStack.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "Brand-First Validation: Why We Design the Brand System Before Writing Code",
+      "source_url": "https://cultivate-six.vercel.app/articles/brand-first-validation",
+      "date": "12/2/2025",
+      "readTime": "12 min read",
+      "category": "Product Creation",
+      "excerpt": "Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision.",
+      "output": "client/src/pages/articles/BrandFirstValidation.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Complete Workflow: Discovery to Deployment in 2025",
+      "source_url": "https://cultivate-six.vercel.app/articles/complete-workflow",
+      "date": "12/2/2025",
+      "readTime": "18 min read",
+      "category": "Product Creation",
+      "excerpt": "Our current end-to-end SaaS creation system, from validating ideas to shipping code—with 25 agents, 8 quality gates, and zero guesswork.",
+      "output": "client/src/pages/articles/CompleteWorkflow2025.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Dev Quality Assistant: Test Planning Before Code Touches the Repo",
+      "source_url": "https://cultivate-six.vercel.app/articles/dev-quality-assistant",
+      "date": "12/2/2025",
+      "readTime": "14 min read",
+      "category": "Engineering",
+      "excerpt": "Most teams treat testing as an afterthought. We make it a build prerequisite.",
+      "output": "client/src/pages/articles/DevQualityAssistant.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "Gamification That Doesn't Manipulate: Designing Habit Loops with Industry-Appropriate Mascots",
+      "source_url": "https://cultivate-six.vercel.app/articles/gamification-done-right",
+      "date": "12/2/2025",
+      "readTime": "17 min read",
+      "category": "Product Design",
+      "excerpt": "Gamification is often manipulative. Here's how to make it helpful, respectful, and tailored to your industry.",
+      "output": "client/src/pages/articles/GamificationDoneRight.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence",
+      "source_url": "https://cultivate-six.vercel.app/articles/hub-evolution",
+      "date": "12/2/2025",
+      "readTime": "15 min read",
+      "category": "Product Creation",
+      "excerpt": "Most docs systems are graveyards. Ours is a living strategy layer that surfaces portfolio status, filters ideas, and drives kill/greenlight decisions.",
+      "output": "client/src/pages/articles/HubEvolution.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality",
+      "source_url": "https://cultivate-six.vercel.app/articles/kill-greenlight-ritual",
+      "date": "12/2/2025",
+      "readTime": "19 min read",
+      "category": "Product Creation",
+      "excerpt": "Most founders can't kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria.",
+      "output": "client/src/pages/articles/KillGreenlightRitual.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting",
+      "source_url": "https://cultivate-six.vercel.app/articles/micro-interactions",
+      "date": "12/2/2025",
+      "readTime": "13 min read",
+      "category": "Product Design",
+      "excerpt": "Bad animations annoy. Great ones are invisible. Here's our playbook for refined, goal-driven micro-interactions.",
+      "output": "client/src/pages/articles/MicroInteractions.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "Personalization with Privacy: How We Design Adaptive UX That Respects Consent",
+      "source_url": "https://cultivate-six.vercel.app/articles/personalization-with-privacy",
+      "date": "12/2/2025",
+      "readTime": "16 min read",
+      "category": "Product Design",
+      "excerpt": "Personalization can feel creepy. Here's how to make it thoughtful, transparent, and opt-in.",
+      "output": "client/src/pages/articles/PersonalizationWithPrivacy.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Rule Consolidation: How We Kept 40+ Rules Manageable Without Losing Power",
+      "source_url": "https://cultivate-six.vercel.app/articles/rule-consolidation",
+      "date": "12/2/2025",
+      "readTime": "10 min read",
+      "category": "Product Creation",
+      "excerpt": "Most systems collapse under their own complexity. Here's how we prevented that with a unified taxonomy and single foreman orchestrator.",
+      "output": "client/src/pages/articles/RuleConsolidation.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features",
+      "source_url": "https://cultivate-six.vercel.app/articles/security-bug-gate",
+      "date": "12/2/2025",
+      "readTime": "13 min read",
+      "category": "Engineering",
+      "excerpt": "AI can ship features fast, but it can also ship vulnerabilities. Here's our quality firewall.",
+      "output": "client/src/pages/articles/SecurityBugGate.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks",
+      "source_url": "https://cultivate-six.vercel.app/articles/supabase-mcp-blueprint",
+      "date": "12/2/2025",
+      "readTime": "18 min read",
+      "category": "Engineering",
+      "excerpt": "Backend design is usually trial-and-error. We turned it into a repeatable blueprint using Supabase MCP.",
+      "output": "client/src/pages/articles/SupabaseMCPBlueprint.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Results: What We've Learned Building This System",
+      "source_url": "https://cultivate-six.vercel.app/articles/the-results",
+      "date": "11/28/2025",
+      "readTime": "9 min read",
+      "category": "Product Creation",
+      "excerpt": "Building a systematic product creation engine. Here's what works, what doesn't, and what we've learned.",
+      "output": "client/src/pages/articles/TheResults.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Hub: A Meta-Project for Managing Your Product Portfolio",
+      "source_url": "https://cultivate-six.vercel.app/articles/the-hub",
+      "date": "11/28/2025",
+      "readTime": "9 min read",
+      "category": "Product Creation",
+      "excerpt": "What if you had a dashboard for managing your entire product portfolio?",
+      "output": "client/src/pages/articles/TheHub.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Rules and Agents System: Making the Process Repeatable",
+      "source_url": "https://cultivate-six.vercel.app/articles/rules-and-agents",
+      "date": "11/28/2025",
+      "readTime": "9 min read",
+      "category": "Product Creation",
+      "excerpt": "What if your product creation process was as systematic as your code?",
+      "output": "client/src/pages/articles/RulesAndAgents.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Documentation System: Making Knowledge Repeatable and Auditable",
+      "source_url": "https://cultivate-six.vercel.app/articles/documentation-system",
+      "date": "11/28/2025",
+      "readTime": "8 min read",
+      "category": "Product Creation",
+      "excerpt": "Knowledge gets lost. Processes aren't repeatable. What if every decision was documented and auditable?",
+      "output": "client/src/pages/articles/DocumentationSystem.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value",
+      "source_url": "https://cultivate-six.vercel.app/articles/portfolio-approach",
+      "date": "11/28/2025",
+      "readTime": "8 min read",
+      "category": "Product Creation",
+      "excerpt": "You're not building one product. You're managing a portfolio of bets.",
+      "output": "client/src/pages/articles/PortfolioApproach.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow",
+      "source_url": "https://cultivate-six.vercel.app/articles/ai-orchestration",
+      "date": "11/28/2025",
+      "readTime": "10 min read",
+      "category": "Product Creation",
+      "excerpt": "AI tools are powerful, but they're islands. Here's how to orchestrate them into a systematic, auditable workflow.",
+      "output": "client/src/pages/articles/AIOrchestration.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Solution: A Dual-Filter Validation Framework",
+      "source_url": "https://cultivate-six.vercel.app/articles/dual-filter-validation",
+      "date": "11/28/2025",
+      "readTime": "8 min read",
+      "category": "Product Creation",
+      "excerpt": "Heat gets you in. Durability makes it a real SaaS business.",
+      "output": "client/src/pages/articles/DualFilterValidation.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Problem: Why Most SaaS Startups Fail Before They Even Start",
+      "source_url": "https://cultivate-six.vercel.app/articles/the-problem",
+      "date": "11/27/2025",
+      "readTime": "7 min read",
+      "category": "Product Creation",
+      "excerpt": "Exploring why 90% of SaaS startups fail and how the problem isn't the idea—it's the process.",
+      "output": "client/src/pages/articles/TheProblem.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Open Source Vision: Building a Community Around Product Creation",
+      "source_url": "https://cultivate-six.vercel.app/articles/open-source-vision",
+      "date": "5/15/2023",
+      "readTime": "10 min read",
+      "category": "Product Management",
+      "excerpt": "What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products.",
+      "output": "client/src/pages/articles/OpenSourceVision.tsx",
+      "status": "pending"
+    },
+    {
+      "title": "The Technical Stack: Modern Web Standards for Product Creation Platforms",
+      "source_url": "https://cultivate-six.vercel.app/articles/technical-stack",
+      "date": "5/15/2023",
+      "readTime": "11 min read",
+      "category": "Product Development",
+      "excerpt": "Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.",
+      "output": "client/src/pages/articles/TechnicalStack.tsx",
+      "status": "pending"
+    }
+  ]
+}
+
