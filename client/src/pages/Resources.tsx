@@ -67,7 +67,13 @@ const DOWNLOADS: DownloadItem[] = [
   },
 ];
 
-type PhaseSkill = {
+type MethodSkill = {
+  name: string;
+  summary: string;
+  tasks: string[];
+};
+
+type CompetencySkill = {
   name: string;
   summary: string;
 };
@@ -77,37 +83,79 @@ type Phase = {
   mode: string;
   question: string;
   intent: string;
-  doubleDiamond: PhaseSkill[];
-  competency: PhaseSkill[];
+  doubleDiamond: MethodSkill[];
+  competency: CompetencySkill[];
 };
 
+/**
+ * Phase copy and task lists follow the Double Diamond Skill Pack areas/methods
+ * (and the DiamondPlay deck’s per-phase breakdown pattern). Competency skills
+ * are the agent skills that usually pair with that phase.
+ */
 const PHASES: Phase[] = [
   {
     name: "Discover",
     mode: "Diverge",
     question: "What is actually going on?",
     intent:
-      "Widen the problem space with evidence before anyone commits to a solution. Prefer planning and research skills here.",
+      "Generate evidence about the problem space. Stay expansive — learn, don’t confirm. Discovery ends when you can define the problem with confidence.",
     doubleDiamond: [
       {
         name: "Research planning",
-        summary: "Structure the engagement before sessions or screeners start.",
-      },
-      {
-        name: "Qualitative research",
-        summary: "Direct human data from interviews, observation, and fieldwork.",
-      },
-      {
-        name: "Quantitative research",
-        summary: "Measure the problem space at scale.",
+        summary: "Scope the engagement before a single session is scheduled.",
+        tasks: [
+          "Research scoping and question framing",
+          "Stakeholder identification and mapping",
+          "Recruiting screener writing",
+          "Research ops and logistics",
+          "Ethics and consent management",
+        ],
       },
       {
         name: "Secondary research",
-        summary: "Desk research and landscape work before primary fieldwork.",
+        summary: "Build the knowledge foundation before entering the field.",
+        tasks: [
+          "Desk research and literature review",
+          "Competitive landscape mapping",
+          "Industry and market analysis",
+          "Heuristic benchmark review",
+          "Patent and regulatory landscape research",
+        ],
+      },
+      {
+        name: "Qualitative research",
+        summary: "Generate rich, direct human data before defining or solving.",
+        tasks: [
+          "User interviews and discussion guides",
+          "Contextual inquiry",
+          "Ethnographic observation and shadowing",
+          "Diary studies",
+          "Focus groups",
+          "Job task analysis",
+        ],
+      },
+      {
+        name: "Quantitative research",
+        summary: "Understand the problem space at scale through measurement.",
+        tasks: [
+          "Survey design and instrumentation",
+          "Analytics review and behavioral analysis",
+          "Funnel analysis",
+          "A/B test result interpretation",
+          "NPS and CSAT analysis",
+          "Cohort analysis",
+        ],
       },
       {
         name: "Lean / Agile discovery",
-        summary: "Keep lightweight discovery inside the team's delivery rhythm.",
+        summary: "Integrate evidence into the team’s rhythm, not as a side project.",
+        tasks: [
+          "Continuous discovery cadence",
+          "Opportunity backlog maintenance",
+          "Discovery sprint planning",
+          "Jobs-to-be-done interviewing",
+          "Assumption mapping",
+        ],
       },
     ],
     competency: [
@@ -134,27 +182,62 @@ const PHASES: Phase[] = [
     mode: "Converge",
     question: "Which problem is worth solving?",
     intent:
-      "Turn research into a shared, bounded problem. This is where scope gets cheaper because it gets cut.",
+      "Converge discovery into a shared problem. Definition ends with a bounded problem statement and prioritized opportunities ready for ideation.",
     doubleDiamond: [
       {
         name: "Synthesis",
         summary: "Move from observations to shared, actionable insight.",
-      },
-      {
-        name: "Problem framing",
-        summary: "Name the problem precisely before ideation.",
+        tasks: [
+          "Affinity diagramming",
+          "Thematic coding and clustering",
+          "Insight statement writing",
+          "Data triangulation across methods",
+          "Sense-making workshops",
+        ],
       },
       {
         name: "Frameworks and models",
-        summary: "Make the user's world legible with shared models.",
+        summary: "Make the user’s world legible in forms the team can act on.",
+        tasks: [
+          "Jobs-to-be-done maps",
+          "Ecosystem storyboards",
+          "Empathy and mental-model maps",
+          "Service blueprints",
+          "Personas grounded in evidence",
+        ],
+      },
+      {
+        name: "Problem framing",
+        summary: "Turn insight into a problem worth solving — and say what you are not solving.",
+        tasks: [
+          "Root cause analysis (5 Whys)",
+          "Problem / point-of-view statement writing",
+          "Opportunity framing",
+          "How Might We question generation",
+          "Assumption and risk articulation",
+        ],
+      },
+      {
+        name: "Lean / Agile defining",
+        summary: "Make the problem legible in lean and agile delivery language.",
+        tasks: [
+          "Lean problem canvas",
+          "Value stream mapping (current state)",
+          "Hypothesis framing",
+          "OKR and outcome alignment",
+          "North Star metric definition",
+        ],
       },
       {
         name: "Prioritization",
         summary: "Turn a long list into a focused, defensible commitment.",
-      },
-      {
-        name: "Lean / Agile defining",
-        summary: "Write problem definitions delivery teams can execute against.",
+        tasks: [
+          "Impact vs. effort mapping",
+          "RICE scoring",
+          "MoSCoW (Must / Should / Could / Won’t)",
+          "Opportunity scoring (Ulwick)",
+          "Dot voting and facilitated prioritization",
+        ],
       },
     ],
     competency: [
@@ -181,23 +264,50 @@ const PHASES: Phase[] = [
     mode: "Diverge",
     question: "What is the best way to solve it?",
     intent:
-      "Explore multiple directions. Generate options, co-create, and prototype before locking a single path.",
+      "Explore many solution directions before committing. Development ends when you have a concept worth validating and delivering.",
     doubleDiamond: [
       {
         name: "Ideation",
-        summary: "Go wide before going deep.",
+        summary: "Generate the widest useful range of potential solutions before converging.",
+        tasks: [
+          "Brainstorming facilitation",
+          "Crazy 8s / thumbnail sketching",
+          "Worst possible idea",
+          "Analogous inspiration",
+          "SCAMPER",
+          "Design studio workshops",
+        ],
       },
       {
         name: "Concept development",
-        summary: "Turn raw ideas into testable concepts you can compare.",
+        summary: "Turn raw ideas into defined, comparable concepts.",
+        tasks: [
+          "Concept definition",
+          "Design principles",
+          "Concept narrative",
+          "Concept comparison and selection",
+        ],
       },
       {
         name: "Co-design",
         summary: "Design with users as contributors, not only evaluators.",
+        tasks: [
+          "Generative design activities",
+          "Co-creation workshops",
+          "Contextual co-design",
+          "Prototype iteration with users",
+        ],
       },
       {
         name: "Prototyping",
         summary: "Build the right fidelity to test a specific assumption.",
+        tasks: [
+          "Paper prototyping",
+          "Wireframe prototypes",
+          "Interactive mid-fidelity prototypes",
+          "Wizard of Oz and concierge prototypes",
+          "High-fidelity mockups",
+        ],
       },
     ],
     competency: [
@@ -232,27 +342,60 @@ const PHASES: Phase[] = [
     mode: "Converge",
     question: "Will it hold up, and can it be built?",
     intent:
-      "Validate, harden, and ship. Accessibility, QA, metrics, and iteration belong here, not as afterthoughts.",
+      "Test, harden, and ship. Delivery ends when the solution is live, measured, and set up for continuous improvement.",
     doubleDiamond: [
       {
         name: "Usability testing",
-        summary: "Catch problems when they are still cheap to fix.",
+        summary: "Evaluate with real users to find what works and what doesn’t.",
+        tasks: [
+          "Writing test tasks",
+          "Moderated testing protocol",
+          "Unmoderated testing",
+          "Analyzing usability findings (success, errors, severity)",
+        ],
       },
       {
         name: "Accessibility",
         summary: "Design for the full range of human ability and context.",
+        tasks: [
+          "Visual accessibility",
+          "Keyboard and motor accessibility",
+          "Screen reader accessibility",
+          "Cognitive accessibility",
+          "Accessibility audit",
+        ],
       },
       {
         name: "Design QA and handoff",
         summary: "Keep what ships aligned with what was validated.",
+        tasks: [
+          "Preparing the design file",
+          "Design annotations",
+          "Design specifications",
+          "Design QA",
+          "Iteration after handoff",
+        ],
       },
       {
         name: "Design metrics",
         summary: "Measure quality and impact so design can be defended.",
+        tasks: [
+          "Behavioral UX metrics",
+          "Attitudinal UX metrics",
+          "HEART framework",
+          "Design system metrics",
+          "Connecting design to business metrics",
+        ],
       },
       {
         name: "Iteration and design debt",
         summary: "Improve after launch and keep debt from compounding.",
+        tasks: [
+          "Identifying design debt",
+          "Design iteration planning",
+          "Design system maintenance",
+          "Connecting data to design decisions",
+        ],
       },
     ],
     competency: [
@@ -313,7 +456,7 @@ export default function Resources() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <PageSeo
         title="Resources | Skill Packs for Product, UX, and Front-End | Ryan Winzenburg"
-        description="Download Ryan Winzenburg's Double Diamond and UX competency skill packs for Cursor and Grok, with guidance on which skill to use in Discover, Define, Develop, and Deliver."
+        description="Download Ryan Winzenburg's Double Diamond and UX competency skill packs for Cursor and Grok, with task-level guidance for Discover, Define, Develop, and Deliver."
         path="/resources"
       />
       <ResponsiveNav currentPage="resources" />
@@ -371,37 +514,64 @@ export default function Resources() {
             <h2 className="mb-4 text-4xl font-bold text-white">What to use when</h2>
             <p className="mx-auto max-w-3xl text-xl text-slate-300">
               Same Double Diamond framing as the consulting process: Discover and Define find the
-              right problem; Develop and Deliver find the right solution. Each phase lists Double
-              Diamond method skills and the competency skills that usually belong there.
+              right problem; Develop and Deliver find the right solution. Each phase breaks skills
+              into the concrete tasks the pack actually covers.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="space-y-8">
             {PHASES.map((phase) => (
-              <div
+              <article
                 key={phase.name}
-                className="rounded-lg border border-slate-700/50 bg-slate-800/50 p-6"
+                className="rounded-lg border border-slate-700/50 bg-slate-800/50 p-6 md:p-8"
               >
-                <p className="mb-2 text-sm uppercase tracking-widest text-cyan-400">{phase.mode}</p>
-                <h3 className="mb-1 text-2xl font-bold text-white">{phase.name}</h3>
-                <p className="mb-4 italic text-slate-400">{phase.question}</p>
-                <p className="mb-6 text-slate-300">{phase.intent}</p>
+                <div className="mb-6 md:flex md:items-start md:justify-between md:gap-8">
+                  <div>
+                    <p className="mb-2 text-sm uppercase tracking-widest text-cyan-400">
+                      {phase.mode}
+                    </p>
+                    <h3 className="mb-1 text-3xl font-bold text-white">{phase.name}</h3>
+                    <p className="italic text-slate-400">{phase.question}</p>
+                  </div>
+                  <p className="mt-4 max-w-xl text-slate-300 md:mt-0">{phase.intent}</p>
+                </div>
 
-                <div className="mb-5">
-                  <p className="mb-3 text-sm font-semibold text-white">Double Diamond skills</p>
-                  <ul className="space-y-2">
+                <div className="mb-8">
+                  <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
+                    Double Diamond tasks
+                  </p>
+                  <div className="grid gap-4 md:grid-cols-2">
                     {phase.doubleDiamond.map((skill) => (
-                      <li key={skill.name} className="text-sm text-slate-300">
-                        <span className="font-medium text-slate-100">{skill.name}.</span>{" "}
-                        {skill.summary}
-                      </li>
+                      <div
+                        key={skill.name}
+                        className="rounded-lg border border-slate-700/40 bg-slate-900/40 p-4"
+                      >
+                        <h4 className="mb-1 text-base font-semibold text-white">{skill.name}</h4>
+                        <p className="mb-3 text-sm text-slate-400">{skill.summary}</p>
+                        <ul className="space-y-1.5">
+                          {skill.tasks.map((task) => (
+                            <li
+                              key={task}
+                              className="flex items-start gap-2 text-sm text-slate-300"
+                            >
+                              <span
+                                className="mt-2 h-1 w-1 shrink-0 rounded-full bg-cyan-400"
+                                aria-hidden="true"
+                              />
+                              <span>{task}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
 
                 <div>
-                  <p className="mb-3 text-sm font-semibold text-white">Competency skills</p>
-                  <ul className="space-y-2">
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-200">
+                    Competency skills for this phase
+                  </p>
+                  <ul className="grid gap-2 md:grid-cols-2">
                     {phase.competency.map((skill) => (
                       <li key={skill.name} className="text-sm text-slate-300">
                         <code className="rounded bg-slate-900/80 px-1.5 py-0.5 text-cyan-300">
@@ -412,7 +582,7 @@ export default function Resources() {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
 
@@ -421,7 +591,8 @@ export default function Resources() {
               Unsure where to start? Use <code className="text-cyan-300">competency-router</code>.
               It classifies the request, picks a playbook, and chains the domain skills. Cross-cutting
               checks: accessibility on UI work, leadership/governance when stakeholders or risk are
-              in play.
+              in play. The Double Diamond is not a linear checklist — teams often run methods in
+              parallel or return upstream when evidence demands it.
             </p>
           </div>
         </div>
