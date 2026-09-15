@@ -13,6 +13,7 @@ import About from "./pages/About";
 import BrandHub from "./pages/BrandHub";
 import Contact from "./pages/Contact";
 import Unsubscribe from "./pages/Unsubscribe";
+import Subscribe from "./pages/Subscribe";
 import Services from "./pages/Services";
 import Assessment from "./pages/Assessment";
 import Articles from "./pages/Articles";
@@ -345,6 +346,7 @@ function Router() {
           {() => <LazyRoute component={TheAgentLayerBusinessLayer} />}
         </Route>
         <Route path="/contact" component={Contact} />
+        <Route path="/subscribe" component={Subscribe} />
         <Route path="/unsubscribe" component={Unsubscribe} />
         <Route path="/case-study/saas-design-system">
           {() => <LazyRoute component={CaseStudySaas} />}

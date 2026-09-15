@@ -20,6 +20,11 @@
   to = "/.netlify/functions/unsubscribe"
   status = 200
 
+[[redirects]]
+  from = "/api/subscribe-weekly-scan"
+  to = "/.netlify/functions/subscribe-weekly-scan"
+  status = 200
+
 # Canonical Brand Hub is /about — collapse legacy /brand-hub URLs
 [[redirects]]
   from = "/brand-hub"

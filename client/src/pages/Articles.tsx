@@ -813,6 +813,14 @@ export default function Articles() {
               Schedule a Call
             </a>
           </Link>
+          <p className="mt-8 text-slate-500 text-sm">
+            Want a shorter, weekly version?{" "}
+            <Link href="/subscribe">
+              <a className="text-slate-400 hover:text-slate-300 underline underline-offset-2 transition-colors">
+                Subscribe to the Weekly AI-Native Scan
+              </a>
+            </Link>
+          </p>
         </div>
       </section>
     </div>

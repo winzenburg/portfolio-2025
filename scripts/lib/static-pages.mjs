@@ -196,6 +196,15 @@ export const STATIC_PAGES = [
     priority: "0.8",
   },
   {
+    path: "/subscribe",
+    title: "Subscribe to the Weekly AI-Native Scan | Ryan Winzenburg",
+    description:
+      "A weekly brief for design and product leaders on AI-native workflows. Practical patterns, specific tools, and real examples from active work in design systems, product strategy, and AI workflow architecture.",
+    ogImage: "/images/contact-hero.webp",
+    changefreq: "monthly",
+    priority: "0.6",
+  },
+  {
     path: "/unsubscribe",
     title: "Unsubscribe | Ryan Winzenburg",
     description: "Manage your newsletter subscription.",
