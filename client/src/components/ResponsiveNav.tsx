@@ -71,6 +71,11 @@ export default function ResponsiveNav({ currentPage, theme = "dark" }: Responsiv
                 Articles
               </span>
             </Link>
+            <Link href="/resources">
+              <span className={currentPage === 'resources' ? linkActiveClasses : linkInactiveClasses}>
+                Resources
+              </span>
+            </Link>
             <Link href="/contact">
               <Button>Contact</Button>
             </Link>
@@ -128,6 +133,14 @@ export default function ResponsiveNav({ currentPage, theme = "dark" }: Responsiv
                   onClick={closeMenu}
                 >
                   Articles
+                </span>
+              </Link>
+              <Link href="/resources">
+                <span
+                  className={currentPage === 'resources' ? linkActiveClasses : linkInactiveClasses}
+                  onClick={closeMenu}
+                >
+                  Resources
                 </span>
               </Link>
               <Link href="/contact">

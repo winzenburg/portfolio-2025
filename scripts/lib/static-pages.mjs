@@ -98,6 +98,15 @@ export const STATIC_PAGES = [
     priority: "0.9",
   },
   {
+    path: "/resources",
+    title: "Resources | Skill Packs for Product, UX, and Front-End | Ryan Winzenburg",
+    description:
+      "Download Ryan Winzenburg's Double Diamond and UX competency skill packs for Cursor and Grok, with guidance on which skill to use in Discover, Define, Develop, and Deliver.",
+    ogImage: "/images/methodology-hero.webp",
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
     path: "/contact",
     title: "Contact Ryan Winzenburg | Design Leadership Roles and Scoped Work",
     description:

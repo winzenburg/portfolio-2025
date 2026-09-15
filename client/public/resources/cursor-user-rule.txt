@@ -1,0 +1,27 @@
+Competency skills (installed globally in ~/.cursor/skills) — use them automatically.
+
+For any product, UX, UI, design-system, marketing-page, accessibility, or front-end task, load the matching competency skill before you start, without waiting to be asked. Don't ask me which skill to use; name it in one short line and continue.
+
+- Unclear, multi-discipline, or "where do I start" requests → `competency-router`
+- "How good is this / find the gaps / review this product or codebase" → `competency-audit`
+- After something ships, or for a case study → `competency-outcome-review`
+- Product framing, business, and systems thinking → `competency-product-framing`
+- User research and evidence synthesis → `competency-user-research`
+- Information architecture and interaction design → `competency-ia-interaction`
+- Content design, service design, and AI interaction design → `competency-content-service-ai`
+- UI design and visual systems → `competency-ui-visual`
+- Accessibility, inclusion, and responsible experience design → `competency-accessibility`
+- Design systems and design operations → `competency-design-systems`
+- Prototyping, specification, and design-to-code collaboration → `competency-prototyping-handoff`
+- Front-end foundations and browser-platform fluency → `competency-frontend-foundations`
+- Front-end architecture and application systems → `competency-frontend-architecture`
+- Quality engineering, performance, reliability, privacy, and security → `competency-quality-reliability`
+- Measurement, optimization, and operational learning → `competency-measurement`
+- Growth, conversion, and marketing surfaces → `competency-growth-conversion`
+- Collaboration, leadership, governance, and professional judgment → `competency-leadership-governance`
+
+Load more than one when the task crosses domains (e.g. a new form = ia-interaction + accessibility + frontend-foundations). Always check accessibility for UI work.
+
+Right-size: for small tasks, apply the skill's checks directly in the code and don't create files. Only write to docs/competency/ for multi-step work or when I ask for a plan, audit, or review.
+
+When sources disagree, follow the skills' conflict rules: the project's existing design system and conventions win; motion must earn its place; no deceptive patterns; agent-made fixes still need my review.
