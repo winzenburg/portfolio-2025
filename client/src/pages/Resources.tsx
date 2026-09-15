@@ -19,7 +19,7 @@ const DOWNLOADS: DownloadItem[] = [
   {
     title: "Complete skill packs",
     description:
-      "Everything on this page in one zip: Double Diamond skills, UX competency skills v1.3.0, taxonomy, discrete skills taxonomy, and the Cursor user rule.",
+      "Everything on this page in one zip: Double Diamond skills, UX competency skills v1.4.0, Double Diamond crosswalk, taxonomy, discrete skills taxonomy, and the Cursor user rule.",
     filename: "skill-packs-complete.zip",
     meta: "Full pack · ZIP",
   },
@@ -31,17 +31,24 @@ const DOWNLOADS: DownloadItem[] = [
     meta: "19 skills · ZIP",
   },
   {
-    title: "UX Competency Skills v1.3.0",
+    title: "UX Competency Skills v1.4.0",
     description:
-      "Seventeen agent skills on a 176-skill taxonomy for product, UX, UI, and front-end architecture. Works in Cursor and Grok (SKILL.md format).",
-    filename: "ux-competency-skills-v1.3.0.zip",
-    meta: "17 skills · ZIP",
+      "Eighteen agent skills on a 202-skill taxonomy across 15 domains (including ideation). Works in Cursor and Grok (SKILL.md format).",
+    filename: "ux-competency-skills-v1.4.0.zip",
+    meta: "18 skills · ZIP",
   },
   {
-    title: "Competency taxonomy v1.2.0",
+    title: "Double Diamond crosswalk",
     description:
-      "The full 176-skill taxonomy with depth levels and lead roles across product, UX, UI, and front-end architecture.",
-    filename: "taxonomy-v1.2.0.md",
+      "How the original Double Diamond Playbook's 26 skills map into the competency pack, plus what the pack adds (phase exit gates, front-end, AI, growth).",
+    filename: "double-diamond-crosswalk.md",
+    meta: "Markdown",
+  },
+  {
+    title: "Competency taxonomy v1.4.0",
+    description:
+      "The full 202-skill taxonomy with depth levels and lead roles across product, UX, UI, ideation, and front-end architecture.",
+    filename: "taxonomy-v1.4.0.md",
     meta: "Markdown",
   },
   {
@@ -54,12 +61,11 @@ const DOWNLOADS: DownloadItem[] = [
   {
     title: "Cursor user rule",
     description:
-      "Always-on Cursor User Rule that indexes the competency skills so the agent loads the right one without being asked.",
+      "Always-on Cursor User Rule that indexes the competency skills (including ideation and Double Diamond phase routing) so the agent loads the right one without being asked.",
     filename: "cursor-user-rule.txt",
     meta: "Text",
   },
 ];
-
 type MethodSkill = {
   name: string;
   summary: string;
@@ -154,7 +160,7 @@ const PHASES: Phase[] = [
     competency: [
       {
         name: "competency-router",
-        summary: "Start here when the request spans disciplines or needs a plan.",
+        summary: "Start here when the request spans disciplines or needs a plan (Double Diamond lens + exit gates).",
       },
       {
         name: "competency-audit",
@@ -162,11 +168,15 @@ const PHASES: Phase[] = [
       },
       {
         name: "competency-user-research",
-        summary: "Research planning, methods, and evidence synthesis (RE).",
+        summary: "Research planning, secondary/competitive review, methods, and ethics (RE).",
       },
       {
         name: "competency-product-framing",
-        summary: "Early problem framing, assumptions, and opportunity sizing (PB).",
+        summary: "Opportunity sizing, JTBD, domain model, and systems mapping (PB).",
+      },
+      {
+        name: "competency-measurement",
+        summary: "Analytics review and discovery cadence metrics (ME).",
       },
     ],
   },
@@ -236,7 +246,11 @@ const PHASES: Phase[] = [
     competency: [
       {
         name: "competency-product-framing",
-        summary: "Outcomes, value proposition, prioritization, and trade-offs (PB).",
+        summary: "POV, HMW, prioritization, OKRs, and reframing (PB).",
+      },
+      {
+        name: "competency-user-research",
+        summary: "Synthesis, insight statements, and experience modeling (RE).",
       },
       {
         name: "competency-ia-interaction",
@@ -244,7 +258,11 @@ const PHASES: Phase[] = [
       },
       {
         name: "competency-measurement",
-        summary: "Define the metrics that will prove the problem is solved (ME).",
+        summary: "North Star and input metrics that prove the problem is solved (ME).",
+      },
+      {
+        name: "competency-content-service-ai",
+        summary: "Language models and service framing from evidence (CX).",
       },
       {
         name: "competency-leadership-governance",
@@ -305,6 +323,10 @@ const PHASES: Phase[] = [
     ],
     competency: [
       {
+        name: "competency-ideation",
+        summary: "Ideation facilitation, Crazy 8s, SCAMPER, co-design, and concept briefs (ID).",
+      },
+      {
         name: "competency-ia-interaction",
         summary: "Navigation, flows, forms, and interaction patterns (IA).",
       },
@@ -327,6 +349,10 @@ const PHASES: Phase[] = [
       {
         name: "competency-frontend-foundations",
         summary: "Semantic HTML, CSS, and browser-platform fluency (FE).",
+      },
+      {
+        name: "competency-product-framing",
+        summary: "Story mapping and MVP scoping for release slices (PB).",
       },
     ],
   },
@@ -393,24 +419,32 @@ const PHASES: Phase[] = [
     ],
     competency: [
       {
+        name: "competency-user-research",
+        summary: "Usability testing at scale, SUS/SEQ, and evaluative methods (RE).",
+      },
+      {
+        name: "competency-ideation",
+        summary: "Concept testing and validation (ID).",
+      },
+      {
         name: "competency-accessibility",
-        summary: "WCAG, inclusion, and responsible experience design (AX).",
+        summary: "WCAG 2.2, inclusion, and responsible experience design (AX).",
+      },
+      {
+        name: "competency-prototyping-handoff",
+        summary: "Design QA, UX definition of done, and staged release (PR).",
       },
       {
         name: "competency-quality-reliability",
         summary: "Testing, performance, privacy, and security (QL).",
       },
       {
-        name: "competency-frontend-architecture",
-        summary: "Application structure, state, and technical systems (AR).",
+        name: "competency-measurement",
+        summary: "Demand validation, pilots, instrumentation, and value review (ME).",
       },
       {
         name: "competency-growth-conversion",
         summary: "Marketing surfaces and conversion work (GM).",
-      },
-      {
-        name: "competency-measurement",
-        summary: "Instrumentation, funnels, and whether the release worked (ME).",
       },
       {
         name: "competency-outcome-review",
@@ -419,7 +453,6 @@ const PHASES: Phase[] = [
     ],
   },
 ];
-
 function DownloadCard({ item, featured = false }: { item: DownloadItem; featured?: boolean }) {
   return (
     <a
@@ -486,15 +519,17 @@ export default function Resources() {
               Two packs, one shared map. The{" "}
               <strong className="text-white">Double Diamond Skill Pack</strong> is phase-tagged
               design method skills (research planning through design QA). The{" "}
-              <strong className="text-white">UX Competency Skills</strong> pack is seventeen agent
-              skills built on a 176-skill taxonomy for product framing, research, IA, content, UI,
-              accessibility, design systems, prototyping, front-end, quality, measurement, growth,
-              and leadership.
+              <strong className="text-white">UX Competency Skills</strong> pack (v1.4.0) is eighteen
+              agent skills on a 202-skill taxonomy across 15 domains — product framing, research,
+              ideation, IA, content, UI, accessibility, design systems, prototyping, front-end,
+              quality, measurement, growth, and leadership.
             </p>
             <p>
-              Install the competency pack into Cursor or Grok, paste the user rule so the agent
-              picks skills automatically, and use the Double Diamond pack when you want method depth
-              inside a specific phase. The taxonomy explains the underlying skill map.
+              The chain is router (with a Double Diamond lens and phase exit gates) → audit → 15
+              domain skills → outcome review. New in v1.4.0: an ideation domain, Full Double Diamond
+              playbook, and a crosswalk of all 26 original playbook skills into the pack. Install
+              into Cursor or Grok, paste the user rule so the agent picks skills automatically, and
+              use the Double Diamond pack when you want method depth inside a specific phase.
             </p>
           </div>
         </div>
@@ -581,10 +616,11 @@ export default function Resources() {
           <div className="mt-8 rounded-lg border border-cyan-500/30 bg-cyan-950/20 p-6 md:p-8">
             <p className="text-slate-200">
               Unsure where to start? Use <code className="text-cyan-300">competency-router</code>.
-              It classifies the request, picks a playbook, and chains the domain skills. Cross-cutting
-              checks: accessibility on UI work, leadership/governance when stakeholders or risk are
-              in play. The Double Diamond is not a linear checklist — teams often run methods in
-              parallel or return upstream when evidence demands it.
+              It classifies the request, picks a playbook (including Full Double Diamond), applies
+              phase exit gates, and chains the domain skills. Cross-cutting checks: accessibility on
+              UI work, leadership/governance when stakeholders or risk are in play. The Double Diamond
+              is not a linear checklist — teams often run methods in parallel or return upstream when
+              evidence demands it.
             </p>
           </div>
         </div>
