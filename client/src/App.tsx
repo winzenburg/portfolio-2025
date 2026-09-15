@@ -17,6 +17,7 @@ import Services from "./pages/Services";
 import Assessment from "./pages/Assessment";
 import Articles from "./pages/Articles";
 import Gallery from "./pages/Gallery";
+import Resources from "./pages/Resources";
 import ScrollToTop from "./components/ScrollToTop";
 import { usePageTracking } from "./hooks/usePageTracking";
 import { useArticleEngagement } from "./hooks/useArticleEngagement";
@@ -179,6 +180,7 @@ function Router() {
         <Route path="/assessment" component={Assessment} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/articles" component={Articles} />
+        <Route path="/resources" component={Resources} />
         <Route path="/articles/ai-augmented-workflow">
           {() => <LazyRoute component={AIAugmentedWorkflow} />}
         </Route>
