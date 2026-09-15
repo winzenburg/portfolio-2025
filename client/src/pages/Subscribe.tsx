@@ -102,10 +102,9 @@ export default function Subscribe() {
                   strategy, and workflow architecture.
                 </p>
                 <p className="text-slate-400 leading-relaxed">
-                  This is a public brief, not a sales pitch. It comes from
-                  ongoing work as a Design Operations Leader and AI Workflow
-                  Architect. If you read the articles here and want the
-                  shorter, more frequent version, this is it.
+                  A weekly public brief from ongoing work as a Design
+                  Operations Leader and AI Workflow Architect — practical
+                  patterns from live design ops and AI workflow projects.
                 </p>
               </div>
 
