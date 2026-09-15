@@ -1,5 +1,5 @@
-# UX / Product / UI / Front-End Architecture Competency Taxonomy (v1.2.0)
-176 discrete skills in 14 domains. Refined 2026-09-15 from Ryan Winzenburg's taxonomy of 2026-09-10. See CHANGELOG.md for what changed.
+# UX / Product / UI / Front-End Architecture Competency Taxonomy (v1.4.0)
+202 discrete skills in 15 domains. Refined 2026-09-15 from Ryan Winzenburg's taxonomy of 2026-09-10. See CHANGELOG.md for what changed.
 
 **Depth:** O = deep specialist (expected to set the standard) · P = independent practitioner · L = working literacy (can review and make trade-offs) · — = outside normal scope.
 **Lead:** the one role that is accountable, breaks ties, and signs off. Several roles can be O; only one leads.
@@ -26,11 +26,14 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | PB-05 | Value-proposition design | Articulates audience, job, differentiated benefit, and proof. | O | P | L | L | Product |
 | PB-06 | Jobs-to-be-done analysis | Identifies functional, social, and emotional jobs plus switching triggers. | P | O | L | L | UX |
 | PB-07 | Domain-model comprehension | Understands the entities, rules, vocabulary, and exceptions of a customer domain. | O | O | P | O | Product |
-| PB-08 | Systems mapping | Maps actors, dependencies, feedback loops, and operational handoffs around the experience. | O | P | L | O | Product |
-| PB-09 | Product strategy translation | Converts a strategy into experience principles, bets, and decision criteria. | O | P | L | P | Product |
-| PB-10 | Prioritization | Applies a transparent method to sequence work under capacity and risk constraints. | O | L | L | P | Product |
+| PB-08 | Systems mapping | Maps actors, dependencies, feedback loops, value streams, and operational handoffs around the experience. | O | P | L | O | Product |
+| PB-09 | Product strategy translation | Converts a strategy into experience principles, outcome-based OKRs, bets, and decision criteria. | O | P | L | P | Product |
+| PB-10 | Prioritization | Applies a transparent method (RICE, opportunity scoring, Kano, MoSCoW, impact/effort) to sequence work under capacity and risk constraints. | O | L | L | P | Product |
 | PB-11 | Experiment design | Specifies a falsifiable hypothesis, population, treatment, measure, and decision threshold. | O | P | L | P | Product |
 | PB-12 | Trade-off articulation | Explains customer, business, design, technical, legal, and operational consequences of a choice. | O | P | P | O | Product |
+| PB-13 | Problem reframing | Writes point-of-view statements ([user] needs [need] because [insight]), generates 10–20 How-Might-We questions, and narrows them to 3–5 with a stated 'not solving' boundary. | O | O | P | L | Product |
+| PB-14 | Story mapping and release slicing | Maps the user journey as activities and steps, places stories beneath, and cuts thin end-to-end release slices. | O | P | L | P | Product |
+| PB-15 | MVP scoping | Defines the smallest release that tests the core hypothesis: in scope, deferred, success metrics, timebox, and team. | O | P | L | P | Product |
 
 ## 2. User research and evidence synthesis (RE) → `competency-user-research`
 
@@ -45,9 +48,28 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | RE-07 | Quantitative behavior analysis | Uses event, funnel, cohort, and segmentation data without confusing correlation and cause. | P | P | L | P | Product |
 | RE-08 | Diary-study design | Captures longitudinal behavior, reflections, and changes in context. | L | P | — | — | UX |
 | RE-09 | Usability-test moderation | Runs task-based sessions, probes behavior, and avoids coaching participants. | P | O | P | L | UX |
-| RE-10 | Research synthesis | Clusters observations into findings, confidence levels, tensions, and implications. | P | O | L | L | UX |
+| RE-10 | Research synthesis | Clusters observations with affinity mapping and coding into findings, insight statements (observation, tension, implication), triangulation, and confidence levels. | P | O | L | L | UX |
 | RE-11 | Insight communication | Communicates evidence through concise narratives, artifacts, clips, and direct implications. | O | O | P | L | UX |
 | RE-12 | Research-repository stewardship | Makes evidence findable, traceable, current, and reusable across teams. | P | P | L | L | UX |
+| RE-13 | Secondary and competitive research | Runs desk research and maps competitors by tier (direct, indirect, substitute, potential) into a what-we-know / don't-know summary. | P | O | L | L | UX |
+| RE-14 | Heuristic evaluation | Rates an interface against established heuristics (e.g. Nielsen's 10) on a 0–4 severity scale, alone or benchmarked against competitors; includes expert-rating methods such as PURE. | P | O | O | L | UX |
+| RE-15 | Experience modeling | Builds needs-based personas (goals, tensions, behaviors — not demographics), experience maps, empathy maps, mental-model diagrams, and ecosystem maps from evidence. | P | O | L | L | UX |
+| RE-16 | Evaluative testing at scale | Runs unmoderated tests, tree tests, first-click tests, and desirability studies with samples sized to the question (typically 20–50). | P | O | L | L | UX |
+| RE-17 | Usability measurement | Reports task success, error types, time on task, and standardized scores (SUS, SEQ) with severity-rated findings and recommended changes. | P | O | L | L | UX |
+| RE-18 | Research ethics and bias control | Handles consent, privacy, and incentives; audits screeners, guides, and synthesis for bias; uses independent coding when stakes are high. | P | O | L | L | UX |
+
+## 15. Ideation and concept development (ID) → `competency-ideation`
+
+| ID | Skill | Observable evidence | Product | UX | UI | FE Arch | Lead |
+|---|---|---|---|---|---|---|---|
+| ID-01 | Ideation facilitation | Runs divergent sessions (brainstorming, worst-possible-idea) that separate generation from judgment and produce a large, varied idea inventory. | O | O | P | L | UX |
+| ID-02 | Structured idea generation | Uses constraint techniques such as Crazy 8s, SCAMPER, and analogous inspiration to push past obvious solutions. | O | O | O | P | UX |
+| ID-03 | Concept sketching and storyboarding | Makes ideas concrete with quick sketches and storyboards that show context, steps, and outcome. | P | O | O | L | UX |
+| ID-04 | Co-design and design studio | Runs sketch–present–critique–iterate cycles with cross-functional partners or users. | P | O | P | P | UX |
+| ID-05 | Concept convergence | Clusters ideas, votes with stated criteria, and selects 3–5 directions with a recorded rationale. | O | P | P | P | Product |
+| ID-06 | Concept brief | Documents each direction: problem addressed, how it works, key assumptions, risks, and how it will be tested. | O | P | P | L | Product |
+| ID-07 | Concept testing | Tests competing concepts with 5–8 target users each and reports preference, comprehension, and concerns against a preset threshold. | P | O | L | — | UX |
+| ID-08 | Design sprint execution | Runs a time-boxed map–sketch–decide–prototype–test sprint and ends with test results and a decision. | O | O | P | P | Product |
 
 ## 3. Information architecture and interaction design (IA) → `competency-ia-interaction`
 
@@ -71,7 +93,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 
 | ID | Skill | Observable evidence | Product | UX | UI | FE Arch | Lead |
 |---|---|---|---|---|---|---|---|
-| CX-01 | UX writing | Produces concise, task-oriented labels, instructions, status, and error content. | P | O | P | L | UX |
+| CX-01 | UX writing | Produces concise, plain-language labels, instructions, status, and error content at an appropriate reading level for the audience. | P | O | P | L | UX |
 | CX-02 | Content hierarchy | Determines what users need now, later, or never; structures for scanning and action. | P | O | P | L | UX |
 | CX-03 | Terminology governance | Maintains a controlled vocabulary that matches user language and domain semantics. | P | O | P | P | UX |
 | CX-04 | Error-message design | States the problem, cause when useful, recovery action, and durable support path. | P | O | P | P | UX |
@@ -156,6 +178,8 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | PR-11 | Design QA | Detects and prioritizes deviations across function, layout, content, states, accessibility, and responsiveness. | P | P | O | O | UI |
 | PR-12 | Implementation feedback incorporation | Updates design artifacts after discovery of real platform constraints or new learning. | O | O | O | O | Product |
 | PR-13 | Rendered-UI verification | Checks the built UI in a real browser across viewports, themes, and states with screenshots; fixes, re-verifies, and submits changes for review. | L | P | O | O | FE Arch |
+| PR-14 | UX definition of done | Adds UX criteria to the team's definition of done: accessibility criticals fixed, design QA passed, analytics tagged, copy final. | P | O | O | O | UX |
+| PR-15 | Staged release planning | Plans phased rollout (internal, percentage, general) with a success gate and rollback for each phase. | O | P | L | O | Product |
 
 ## 9. Front-end foundations and browser-platform fluency (FE) → `competency-frontend-foundations`
 
@@ -214,7 +238,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 
 | ID | Skill | Observable evidence | Product | UX | UI | FE Arch | Lead |
 |---|---|---|---|---|---|---|---|
-| ME-01 | North-star and input metric selection | Defines a meaningful outcome metric and controllable leading indicators. | O | P | L | P | Product |
+| ME-01 | North-star and input metric selection | Defines a meaningful outcome metric, controllable input metrics, and a signal–metric–target framework such as HEART. | O | P | L | P | Product |
 | ME-02 | Measurement-plan design | Maps events, properties, identity, consent, campaign attribution (UTM), funnel stages, ownership, and QA to a question. | O | P | L | O | Product |
 | ME-03 | Event-schema design | Uses consistent event names, properties, versioning, data types, and semantics across product surfaces. | P | P | L | O | FE Arch |
 | ME-04 | Instrumentation implementation | Implements analytics events correctly without degrading performance or privacy. | L | L | L | O | FE Arch |
@@ -225,7 +249,9 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | ME-09 | Qual-quant triangulation | Uses behavioral data and human evidence together to explain what happened and why. | O | O | L | P | UX |
 | ME-10 | Product-health reporting | Communicates adoption, success, quality, risk, and learning to the right audience. | O | P | L | P | Product |
 | ME-11 | Continuous-discovery operating rhythm | Establishes recurring evidence collection, synthesis, decision, and follow-up loops. | O | O | L | P | Product |
-| ME-12 | Value-realization review | Assesses whether a released change created expected value and what must change next. | O | P | L | P | Product |
+| ME-12 | Value-realization review | Assesses whether a released change created expected value and decides to scale, iterate (persevere), pivot, or stop. | O | P | L | P | Product |
+| ME-13 | Demand validation | Tests demand before building with fake-door, smoke, concierge, or Wizard-of-Oz tests and preset success thresholds. | O | P | L | P | Product |
+| ME-14 | Beta and pilot programs | Recruits pilot users, sets duration and exit criteria, collects structured feedback, and issues a go/no-go recommendation. | O | P | L | P | Product |
 
 ## 14. Growth, conversion, and marketing surfaces (GM) → `competency-growth-conversion`
 
@@ -247,7 +273,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | ID | Skill | Observable evidence | Product | UX | UI | FE Arch | Lead |
 |---|---|---|---|---|---|---|---|
 | LG-01 | Stakeholder alignment | Identifies decision-makers, incentives, conflict, and needed commitments; creates shared clarity. | O | O | P | O | Product |
-| LG-02 | Facilitation | Runs inclusive working sessions that produce decisions, artifacts, owners, and next steps. | O | O | P | O | UX |
+| LG-02 | Facilitation | Runs inclusive working sessions and retrospectives (e.g. Rose/Thorn/Bud) that produce decisions, artifacts, owners, and next steps. | O | O | P | O | UX |
 | LG-03 | Design critique | Gives and receives evidence-based critique focused on intent, risk, and user outcome rather than taste; can run a structured pressure-test of a plan. | O | O | O | P | UX |
 | LG-04 | Technical critique | Evaluates architectural proposals for boundaries, risk, simplicity, cost, and evolvability. | L | L | L | O | FE Arch |
 | LG-05 | Narrative communication | Explains a recommendation through context, evidence, decision, trade-off, and next action. | O | O | O | O | Product |
@@ -260,12 +286,18 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | LG-12 | AI-governance collaboration | Establishes review, auditability, data boundaries, human accountability, and monitoring for AI-enabled experiences. | O | P | L | O | Product |
 | LG-13 | AI-augmented delivery practice | Uses AI agents for research, design, and code with explicit specs, verification steps, provenance, and human review before anything ships. | O | P | P | O | Product |
 | LG-14 | Prompt and skill authoring | Writes reusable prompts, specs, and agent skills with clear triggers, inputs, steps, quality bars, and evals; retires stale ones. | O | P | P | O | Product |
+| LG-15 | Design maturity assessment | Scores a team or organization on a design-maturity model and names the capabilities needed to reach the next level. | P | O | P | P | UX |
+| LG-16 | UX roadmapping | Builds a 12–18 month experience roadmap in outcome-based horizons tied to product strategy. | O | O | P | P | UX |
+| LG-17 | Design ROI and business case | Quantifies the cost of the problem and the expected return of design work with stated assumptions and ranges. | O | P | L | L | Product |
+| LG-18 | DesignOps | Sets up tools, workflows, research operations, reviews, and staffing models so design work scales. | P | O | O | P | UX |
+| LG-19 | Working agreements and review cadence | Establishes cross-functional working agreements, design review rhythm, and critique norms. | O | O | P | O | Product |
 
 ## Senior role summary
 | Capability area | Product Design | UX Design | UI Design | Front-End Architecture |
 |---|---|---|---|---|
 | Customer and business problem | **Lead** | Co-own | Fluency | Fluency |
 | User research and synthesis | Co-own | **Lead** | Fluency | Fluency |
+| Ideation and concept development | Co-own | **Lead** | Co-own | Fluency |
 | IA, task flows, interaction states | Co-own | **Lead** | Co-own | Co-own |
 | Visual design and interface expression | Co-own | Co-own | **Lead** | Co-own |
 | Content, service, and AI workflow | **Lead** | Co-own | Fluency | Co-own |

@@ -2,11 +2,12 @@ Competency skills (installed globally in ~/.cursor/skills) — use them automati
 
 For any product, UX, UI, design-system, marketing-page, accessibility, or front-end task, load the matching competency skill before you start, without waiting to be asked. Don't ask me which skill to use; name it in one short line and continue.
 
-- Unclear, multi-discipline, or "where do I start" requests → `competency-router`
+- Unclear, multi-discipline, or "where do I start" requests, and Double Diamond phase questions (Discover / Define / Develop / Deliver, "what's next", "are we ready to build") → `competency-router`
 - "How good is this / find the gaps / review this product or codebase" → `competency-audit`
 - After something ships, or for a case study → `competency-outcome-review`
 - Product framing, business, and systems thinking → `competency-product-framing`
 - User research and evidence synthesis → `competency-user-research`
+- Ideation and concept development → `competency-ideation`
 - Information architecture and interaction design → `competency-ia-interaction`
 - Content design, service design, and AI interaction design → `competency-content-service-ai`
 - UI design and visual systems → `competency-ui-visual`
