@@ -197,9 +197,9 @@ export const STATIC_PAGES = [
   },
   {
     path: "/subscribe",
-    title: "Subscribe to the Weekly AI-Native Scan | Ryan Winzenburg",
+    title: "Subscribe to the Weekly AI Founder Pulse | Ryan Winzenburg",
     description:
-      "A weekly brief for design and product leaders on AI-native workflows. Practical patterns, specific tools, and real examples from active work in design systems, product strategy, and AI workflow architecture.",
+      "A weekly brief for design and product leaders building with AI. Practical patterns, specific tools, and real examples from active work in design systems, product strategy, and AI workflow architecture.",
     ogImage: "/images/contact-hero.webp",
     changefreq: "monthly",
     priority: "0.6",

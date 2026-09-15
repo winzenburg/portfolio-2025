@@ -142,32 +142,48 @@ export const handler: NetlifyFunctionHandler = async (event) => {
   }
 
   // Attempt to send the welcome email via the published template.
-  // If the template is still a draft or the send fails for any reason,
-  // we log the error and return success anyway — the contact is already subscribed.
-  try {
-    const welcomeRes = await fetch(`${RESEND_API_BASE}/emails`, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: fromAddress,
-        to: [email],
-        template: "weekly-ai-native-scan-welcome",
-      }),
-    });
+  // Tries the renamed alias first; falls back to the legacy alias in case
+  // the Resend template rename hasn't fully propagated yet.
+  // If the send fails for any reason, we log and return success — the contact
+  // is already subscribed.
+  const welcomeTemplates = [
+    "weekly-ai-founder-pulse-welcome",
+    "weekly-ai-native-scan-welcome",
+  ];
+  for (const template of welcomeTemplates) {
+    try {
+      const welcomeRes = await fetch(`${RESEND_API_BASE}/emails`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: fromAddress,
+          to: [email],
+          template,
+        }),
+      });
 
-    if (!welcomeRes.ok) {
+      if (welcomeRes.ok) {
+        break;
+      }
+
       const welcomeErr: unknown = await welcomeRes.json().catch(() => ({}));
-      console.warn(
-        "Welcome email not sent (template may still be draft):",
-        welcomeRes.status,
-        welcomeErr,
-      );
+      if (template === welcomeTemplates[welcomeTemplates.length - 1]) {
+        console.warn(
+          "Welcome email not sent (template may still be draft):",
+          welcomeRes.status,
+          welcomeErr,
+        );
+      } else {
+        console.warn(
+          `Welcome template "${template}" failed (${welcomeRes.status}), trying fallback.`,
+        );
+      }
+    } catch (err) {
+      console.warn(`Welcome email request failed for template "${template}":`, err);
     }
-  } catch (err) {
-    console.warn("Welcome email request failed:", err);
   }
 
   return jsonResponse(200, { success: true });
