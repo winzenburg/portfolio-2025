@@ -49,7 +49,7 @@ export default function Home() {
     <div className="min-h-screen">
       <PageSeo
         title="Ryan Winzenburg | Design Operations Leader & AI Workflow Architect"
-        description="Design leader with 25 years at Fortune 50 companies transforming how teams ship with AI. Head of Design Operations, VP of Design, Principal Design Technologist. 4-6x faster delivery, $3M+ portfolio value."
+        description="Design Operations Leader & AI Workflow Architect with 25 years designing enterprise products at Fortune 50 companies. Durable AI advantage comes from workflow redesign, not feature bolt-ons."
         path="/"
         ogImage="/images/about-hero.webp"
         ogType="website"
@@ -74,7 +74,7 @@ export default function Home() {
             Transforming How Design Teams Ship with AI
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl">
-            I build the systems, workflows, and culture that enable design organizations to ship 4-6x faster, not by replacing people, but by transforming how they work together with AI.
+            I build the systems, workflows, and culture that redesign how design organizations work with AI. Durable advantage comes from workflow transformation, not feature bolt-ons.
           </p>
 
           {/* Stats */}
@@ -85,14 +85,14 @@ export default function Home() {
               <div className="text-xs text-muted-foreground mt-1">Designers, engineers, ops</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">4-6x</div>
-              <div className="text-sm text-muted-foreground">Faster Design-to-Code</div>
-              <div className="text-xs text-muted-foreground mt-1">With AI-augmented workflows</div>
-            </div>
-            <div>
               <div className="text-3xl font-bold mb-2">25 Years</div>
               <div className="text-sm text-muted-foreground">Fortune 50 Design Leadership</div>
               <div className="text-xs text-muted-foreground mt-1">Comcast, CVS Health, Life Time</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-2">3</div>
+              <div className="text-sm text-muted-foreground">Active Ventures Founded</div>
+              <div className="text-xs text-muted-foreground mt-1">Winzinvest, Casimir, Foundpath</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">AI-Native</div>
@@ -325,13 +325,13 @@ export default function Home() {
       <section className="container py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Looking for Design Leadership That Gets AI
+            Building a Design Organization That Needs to Get Serious About AI?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            I'm exploring Head of Design Operations, VP/Director of Design, and Principal Design Technologist roles at companies ready to transform how their design teams work with AI.
+            If your design team is navigating the shift to AI-augmented work, I'd like to hear what you're working on — even if it's an exploratory conversation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact?intent=role">
+            <Link href="/contact">
               <Button size="lg">
                 Let's Talk
               </Button>
