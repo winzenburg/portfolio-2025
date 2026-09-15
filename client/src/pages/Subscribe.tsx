@@ -46,8 +46,8 @@ export default function Subscribe() {
   return (
     <div className="min-h-screen bg-slate-950">
       <PageSeo
-        title="Subscribe to the Weekly AI-Native Scan | Ryan Winzenburg"
-        description="A weekly brief for design and product leaders on AI-native workflows. Practical patterns, specific tools, real examples from active work."
+        title="Subscribe to the Weekly AI Founder Pulse | Ryan Winzenburg"
+        description="A weekly brief for design and product leaders building with AI. Practical patterns, specific tools, real examples from active work."
         path="/subscribe"
         ogImage="/images/contact-hero.webp"
       />
@@ -77,7 +77,7 @@ export default function Subscribe() {
                 You're on the list.
               </h1>
               <p className="text-slate-300 mb-8">
-                The next scan drops this week. Check your inbox, including
+                The next pulse drops this week. Check your inbox, including
                 spam, in case it lands there the first time.
               </p>
               <Link href="/articles">
@@ -90,7 +90,7 @@ export default function Subscribe() {
             <>
               <div className="mb-10">
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                  Weekly AI-Native Improvement Scan
+                  Weekly AI Founder Pulse
                 </h1>
                 <p className="text-xl text-slate-300 leading-relaxed mb-6">
                   Once a week. One area where AI is genuinely changing how
