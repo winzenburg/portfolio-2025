@@ -19,7 +19,7 @@ const DOWNLOADS: DownloadItem[] = [
   {
     title: "Complete skill packs",
     description:
-      "Everything on this page in one zip: Double Diamond skills, UX competency skills v1.3.0, taxonomy, Aura crosswalk, discrete skills taxonomy, and the Cursor user rule.",
+      "Everything on this page in one zip: Double Diamond skills, UX competency skills v1.3.0, taxonomy, discrete skills taxonomy, and the Cursor user rule.",
     filename: "skill-packs-complete.zip",
     meta: "Full pack · ZIP",
   },
@@ -42,13 +42,6 @@ const DOWNLOADS: DownloadItem[] = [
     description:
       "The full 176-skill taxonomy with depth levels and lead roles across product, UX, UI, and front-end architecture.",
     filename: "taxonomy-v1.2.0.md",
-    meta: "Markdown",
-  },
-  {
-    title: "Aura crosswalk",
-    description:
-      "How Aura library skills map into this competency pack: what was added, merged, covered, treated as a tool or style, or left out.",
-    filename: "aura-crosswalk.md",
     meta: "Markdown",
   },
   {
@@ -501,8 +494,7 @@ export default function Resources() {
             <p>
               Install the competency pack into Cursor or Grok, paste the user rule so the agent
               picks skills automatically, and use the Double Diamond pack when you want method depth
-              inside a specific phase. The taxonomy and Aura crosswalk explain the underlying map
-              and how adjacent skill libraries fit.
+              inside a specific phase. The taxonomy explains the underlying skill map.
             </p>
           </div>
         </div>
