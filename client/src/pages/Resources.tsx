@@ -479,15 +479,24 @@ export default function Resources() {
   const [fullPack, ...individualDownloads] = DOWNLOADS;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <div className="min-h-screen">
       <PageSeo
         title="Resources | Skill Packs for Product, UX, and Front-End | Ryan Winzenburg"
         description="Download Ryan Winzenburg's Double Diamond and UX competency skill packs for Cursor and Grok, with task-level guidance for Discover, Define, Develop, and Deliver."
         path="/resources"
+        ogImage="/images/methodology-hero.webp"
       />
       <ResponsiveNav currentPage="resources" />
 
       <section className="relative mb-8 pb-16 pt-32">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <img
+            src="/images/methodology-hero.webp"
+            alt=""
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/30" />
+        </div>
         <div className="container px-6">
           <div className="relative mx-auto max-w-4xl rounded-2xl border border-slate-800/50 bg-slate-950/60 p-8 text-center backdrop-blur-sm md:p-12">
             <p className="mb-4 text-sm uppercase tracking-widest text-cyan-400">Resources</p>
