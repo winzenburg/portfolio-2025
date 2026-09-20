@@ -48,8 +48,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <PageSeo
-        title="Ryan Winzenburg | Design Operations Leader & AI Workflow Architect"
-        description="Design Operations Leader & AI Workflow Architect with 25 years designing enterprise products at Fortune 50 companies. Durable AI advantage comes from workflow redesign, not feature bolt-ons."
+        title="Ryan Winzenburg | Product Experience Leader, Enterprise B2B"
+        description="Product experience leader with 25 years designing enterprise B2B systems at Fortune 50 companies. I lead product experience for complex B2B systems — from healthcare to fintech to defense."
         path="/"
         ogImage="/images/about-hero.webp"
         ogType="website"
@@ -71,23 +71,23 @@ export default function Home() {
         <div className="container">
           <div className="max-w-4xl bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-            Transforming How Design Teams Ship with AI
+            I lead product experience for complex B2B systems
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl">
-            I build the systems, workflows, and culture that redesign how design organizations work with AI. Durable advantage comes from workflow transformation, not feature bolt-ons.
+            25 years designing enterprise products across healthcare, financial services, telecom, and technology. I work at the intersection of product strategy, operating model, and AI-enabled execution.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="text-3xl font-bold mb-2">10+</div>
-              <div className="text-sm text-muted-foreground">Teams Led & Transformed</div>
-              <div className="text-xs text-muted-foreground mt-1">Designers, engineers, ops</div>
+              <div className="text-3xl font-bold mb-2">25 Years</div>
+              <div className="text-sm text-muted-foreground">Enterprise B2B Experience</div>
+              <div className="text-xs text-muted-foreground mt-1">Comcast, CVS Health, Life Time</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">25 Years</div>
-              <div className="text-sm text-muted-foreground">Fortune 50 Design Leadership</div>
-              <div className="text-xs text-muted-foreground mt-1">Comcast, CVS Health, Life Time</div>
+              <div className="text-3xl font-bold mb-2">Fortune 50</div>
+              <div className="text-sm text-muted-foreground">Product Experience Scope</div>
+              <div className="text-xs text-muted-foreground mt-1">Healthcare, fintech, telecom</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-2">3</div>
@@ -95,9 +95,9 @@ export default function Home() {
               <div className="text-xs text-muted-foreground mt-1">Winzinvest, Casimir, Foundpath</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">AI-Native</div>
-              <div className="text-sm text-muted-foreground">Workflow Architecture</div>
-              <div className="text-xs text-muted-foreground mt-1">MCP, Cursor, orchestrated agents</div>
+              <div className="text-3xl font-bold mb-2">Remote</div>
+              <div className="text-sm text-muted-foreground">Wheat Ridge / Denver, CO</div>
+              <div className="text-xs text-muted-foreground mt-1">Available for distributed teams</div>
             </div>
           </div>
 
@@ -117,103 +117,103 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What I Bring to Leadership Roles */}
+      {/* What I Bring */}
       <section className="bg-muted/30 py-24">
         <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What I Bring to Design Leadership</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">What I Bring to Product Experience Leadership</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            The rare combination of enterprise design leadership, hands-on AI workflow expertise, and a proven track record of transforming how teams work.
+            Enterprise B2B product experience runs on three interconnected capabilities — and the work rarely separates cleanly into just one.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* AI Workflow Architecture */}
+            {/* Product Experience Leadership */}
             <Card className="p-8">
               <div className="w-16 h-16 mb-6 mx-auto rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">AI Workflow Architecture</h3>
+              <h3 className="text-xl font-semibold mb-4">Product Experience Leadership</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Orchestrated AI Agents</div>
-                    <div className="text-sm">Multi-agent systems for design-to-code automation</div>
+                    <div className="font-medium text-foreground">B2B Systems Strategy</div>
+                    <div className="text-sm">Complex enterprise product decisions across stakeholder layers</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">MCP Server Integrations</div>
-                    <div className="text-sm">Figma, Storybook, and design system tooling</div>
+                    <div className="font-medium text-foreground">Cross-Functional Alignment</div>
+                    <div className="text-sm">Design, engineering, and product working from the same model</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Cursor + Claude Workflows</div>
-                    <div className="text-sm">Production-ready component generation in minutes</div>
+                    <div className="font-medium text-foreground">User Research & Evidence</div>
+                    <div className="text-sm">Decisions grounded in real enterprise user behavior</div>
                   </div>
                 </div>
               </div>
             </Card>
 
-            {/* Design Operations Excellence */}
+            {/* Product Operating Model */}
             <Card className="p-8">
               <div className="w-16 h-16 mb-6 mx-auto rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center shadow-lg shadow-cyan-500/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Design Operations Excellence</h3>
+              <h3 className="text-xl font-semibold mb-4">Product Operating Model</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Design System Strategy</div>
-                    <div className="text-sm">Token-based architecture, automated governance</div>
+                    <div className="text-sm">Token-based architecture with sustainable governance</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Process Transformation</div>
-                    <div className="text-sm">Redesigning workflows for AI-augmented teams</div>
+                    <div className="font-medium text-foreground">Design Operations</div>
+                    <div className="text-sm">Process, tooling, and rituals that scale delivery</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Tool Evaluation & Adoption</div>
-                    <div className="text-sm">Strategic selection and org-wide rollout</div>
+                    <div className="font-medium text-foreground">Team Structure & Governance</div>
+                    <div className="text-sm">Role clarity, decision rights, and contribution models</div>
                   </div>
                 </div>
               </div>
             </Card>
 
-            {/* Team Leadership */}
+            {/* AI-enabled Execution */}
             <Card className="p-8">
               <div className="w-16 h-16 mb-6 mx-auto rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center shadow-lg shadow-purple-500/30">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Team Leadership</h3>
+              <h3 className="text-xl font-semibold mb-4">AI-enabled Execution</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Cross-Functional Leadership</div>
-                    <div className="text-sm">Led 10+ person teams across design, eng, and ops</div>
+                    <div className="font-medium text-foreground">Workflow Architecture</div>
+                    <div className="text-sm">AI systems that fit into real team rhythms, not over them</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Change Management</div>
-                    <div className="text-sm">Driving AI adoption without disrupting delivery</div>
+                    <div className="font-medium text-foreground">Orchestrated Tooling</div>
+                    <div className="text-sm">MCP integrations, Cursor workflows, agent coordination</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Mentorship & Growth</div>
-                    <div className="text-sm">Building AI-native capabilities in existing teams</div>
+                    <div className="font-medium text-foreground">Speed Without Fragility</div>
+                    <div className="text-sm">AI adoption that holds up at enterprise delivery pace</div>
                   </div>
                 </div>
               </div>
@@ -222,73 +222,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* My Philosophy */}
+      {/* How I Work */}
       <section className="container py-24 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">My Philosophy on AI + Design Teams</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">How I Think About Product Experience</h2>
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto text-left">
           <div>
-            <h3 className="text-2xl font-semibold mb-6">What Changes with AI</h3>
+            <h3 className="text-2xl font-semibold mb-6">Where the real work happens</h3>
             <div className="space-y-6">
               <div>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">1</div>
-                  <h4 className="font-semibold">Speed of Exploration</h4>
+                  <h4 className="font-semibold">The operating model before the output</h4>
                 </div>
                 <p className="text-muted-foreground ml-11">
-                  Designers can explore 10x more variations in the same time. This changes how we approach creative briefs and stakeholder presentations.
+                  Most product experience problems are actually operating model problems. Fix how decisions get made and the design output follows.
                 </p>
               </div>
 
               <div>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">2</div>
-                  <h4 className="font-semibold">Design-to-Code Handoff</h4>
+                  <h4 className="font-semibold">Systems, not heroics</h4>
                 </div>
                 <p className="text-muted-foreground ml-11">
-                  Production code generation from designs is now real. The designer-developer boundary blurs, and that's a good thing.
+                  Enterprise B2B doesn't scale on individual craft. It scales on design systems, decision frameworks, and team rituals that hold up under delivery pressure.
                 </p>
               </div>
 
               <div>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">3</div>
-                  <h4 className="font-semibold">Documentation & Testing</h4>
+                  <h4 className="font-semibold">AI as execution depth</h4>
                 </div>
                 <p className="text-muted-foreground ml-11">
-                  Automated docs, generated tests, and living style guides become feasible. The "boring" parts of DesignOps get automated.
+                  AI changes what a small, well-structured team can ship. I use it to move faster on the work that's already well-defined — not to skip the thinking.
                 </p>
               </div>
             </div>
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold mb-6">What Stays Human</h3>
+            <h3 className="text-2xl font-semibold mb-6">What I keep in the human layer</h3>
             <div className="space-y-6">
               <div className="border-l-2 border-primary pl-4">
-                <div className="font-semibold mb-1">Strategic Decisions</div>
+                <div className="font-semibold mb-1">Product strategy</div>
                 <div className="text-sm text-muted-foreground">
-                  Which components to build, how they relate, what trade-offs to make. AI generates options, humans choose.
+                  What to build, for whom, and why now. AI generates alternatives; the judgment call stays human.
                 </div>
               </div>
 
               <div className="border-l-2 border-primary pl-4">
-                <div className="font-semibold mb-1">Taste & Quality Standards</div>
+                <div className="font-semibold mb-1">Stakeholder trust</div>
                 <div className="text-sm text-muted-foreground">
-                  Defining what "good" looks like, maintaining brand integrity, and knowing when AI output isn't good enough.
+                  Enterprise B2B runs on relationships with engineering, product, legal, and buyers. That's earned in person, not automated.
                 </div>
               </div>
 
               <div className="border-l-2 border-primary pl-4">
-                <div className="font-semibold mb-1">Team Dynamics & Culture</div>
+                <div className="font-semibold mb-1">Quality standards</div>
                 <div className="text-sm text-muted-foreground">
-                  How teams collaborate, how decisions get made, how people grow. The human operating system matters more than ever.
+                  Knowing when something is good enough and when it isn't. The bar is set by the people doing the work, not the tools.
                 </div>
               </div>
 
               <div className="border-l-2 border-primary pl-4">
-                <div className="font-semibold mb-1">User Empathy & Context</div>
+                <div className="font-semibold mb-1">User context</div>
                 <div className="text-sm text-muted-foreground">
-                  Understanding why users behave the way they do. AI can analyze patterns, but humans understand meaning.
+                  Enterprise users have constraints, workflows, and politics that AI can't read. That context comes from direct research.
                 </div>
               </div>
             </div>
@@ -325,10 +325,10 @@ export default function Home() {
       <section className="container py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Building a Design Organization That Needs to Get Serious About AI?
+            Navigating a complex B2B product experience problem?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            If your design team is navigating the shift to AI-augmented work, I'd like to hear what you're working on — even if it's an exploratory conversation.
+            If your product organization is working through a hard experience, operating model, or AI adoption problem, I'd like to hear what you're dealing with — even if it's exploratory.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

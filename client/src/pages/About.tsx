@@ -161,7 +161,7 @@ export default function About() {
     <div className="min-h-screen bg-slate-950">
       <PageSeo
         title="About Ryan Winzenburg | Brand Hub — Canonical Identity Facts"
-        description="Canonical facts about Ryan Winzenburg: Design Operations Leader & AI Workflow Architect in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath."
+        description="Canonical facts about Ryan Winzenburg: Product Experience Leader, Enterprise B2B, in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath."
         path="/about"
         ogImage="/images/about-hero.webp"
         ogType="profile"
@@ -414,12 +414,12 @@ export default function About() {
       <section className="border-t border-slate-800/60 py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Let&apos;s Talk About Your Design Organization
+            Working through a complex B2B product experience problem?
           </h2>
           <p className="text-xl text-slate-300 mb-8">
-            If you&apos;re building a design team that needs to get serious about
-            AI, I&apos;d love to hear what you&apos;re working on, even if it&apos;s
-            just an exploratory conversation.
+            If your product organization is dealing with a hard experience,
+            operating model, or AI adoption challenge, I&apos;d like to hear
+            what you&apos;re working on — even if it&apos;s exploratory.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact?intent=role">
