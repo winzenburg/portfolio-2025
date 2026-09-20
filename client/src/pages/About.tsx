@@ -158,7 +158,7 @@ const machineFiles = [
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen">
       <PageSeo
         title="About Ryan Winzenburg | Brand Hub — Canonical Identity Facts"
         description="Canonical facts about Ryan Winzenburg: Product Experience Leader, Enterprise B2B, in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath."
