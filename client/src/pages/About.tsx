@@ -407,7 +407,7 @@ export default function About() {
                   {/* The ordered list already conveys position to assistive tech. */}
                   <span
                     aria-hidden="true"
-                    className="font-['Playfair_Display'] text-lg text-slate-500 transition-colors group-hover:text-primary/70"
+                    className="font-['Playfair_Display'] text-lg text-slate-400 transition-colors group-hover:text-primary"
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
@@ -484,7 +484,7 @@ export default function About() {
                       <span className="font-medium">
                         {social?.label ?? url.replace(/^https?:\/\//, "")}
                       </span>
-                      <span className="ml-auto truncate text-xs text-slate-500 transition-colors group-hover:text-slate-400">
+                      <span className="ml-auto truncate text-xs text-slate-400 transition-colors group-hover:text-slate-300">
                         {url.replace(/^https?:\/\/(www\.)?/, "")}
                       </span>
                     </a>

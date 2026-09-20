@@ -541,12 +541,21 @@ function FormatChip({ format }: { format: string }) {
   );
 }
 
+function phaseAnchorId(name: PhaseName): string {
+  return `phase-${name.toLowerCase()}`;
+}
+
 function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
   const accent = PHASE_ACCENT[phase.name];
-  const headingId = `phase-${phase.name.toLowerCase()}`;
+  const anchorId = phaseAnchorId(phase.name);
+  const headingId = `${anchorId}-heading`;
 
   return (
-    <article className="py-14 first:pt-0 last:pb-0" aria-labelledby={headingId}>
+    <article
+      id={anchorId}
+      aria-labelledby={headingId}
+      className="scroll-mt-24 py-14 first:pt-0 last:pb-0"
+    >
       <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-24">
@@ -856,6 +865,20 @@ export default function Resources() {
           title="Four phases, and the tasks each one actually covers"
           lede="Same Double Diamond framing as the consulting process. Each phase breaks down into the concrete method areas the pack covers, plus the competency skills that pair with it."
         />
+        <nav aria-label="Jump to a phase" className="-mt-6 mb-14 flex flex-wrap gap-2">
+          {PHASES.map((phase) => {
+            const accent = PHASE_ACCENT[phase.name];
+            return (
+              <a
+                key={phase.name}
+                href={`#${phaseAnchorId(phase.name)}`}
+                className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${accent.border} ${accent.bg} ${accent.text} hover:border-current`}
+              >
+                {phase.name}
+              </a>
+            );
+          })}
+        </nav>
         <div className="divide-y divide-border/60">
           {PHASES.map((phase, index) => (
             <PhaseBlock key={phase.name} phase={phase} index={index} />
