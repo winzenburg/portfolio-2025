@@ -1,8 +1,21 @@
 import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import PageSeo from "@/components/PageSeo";
+import PageHero from "@/components/PageHero";
+import Reveal from "@/components/Reveal";
+import { Eyebrow, Section, SectionHeading, SectionTitle } from "@/components/Section";
+import DoubleDiamondDiagram, {
+  PHASE_ACCENT,
+  type PhaseName,
+} from "@/components/DoubleDiamondDiagram";
 
 const BASE = import.meta.env.BASE_URL;
+
+const PACK_VERSION = "1.4.0";
+const TAXONOMY_SKILL_COUNT = 202;
+const TAXONOMY_DOMAIN_COUNT = 15;
 
 function resourceHref(filename: string): string {
   return `${BASE}resources/${filename}`;
@@ -12,7 +25,10 @@ type DownloadItem = {
   title: string;
   description: string;
   filename: string;
-  meta: string;
+  /** Short file-format chip shown in the manifest. */
+  format: string;
+  /** Number of agent skills in the artifact, where it ships skills. */
+  skillCount?: number;
 };
 
 const DOWNLOADS: DownloadItem[] = [
@@ -21,49 +37,112 @@ const DOWNLOADS: DownloadItem[] = [
     description:
       "Everything on this page in one zip: Double Diamond skills, UX competency skills v1.4.0, Double Diamond crosswalk, taxonomy, discrete skills taxonomy, and the Cursor user rule.",
     filename: "skill-packs-complete.zip",
-    meta: "Full pack · ZIP",
+    format: "ZIP",
   },
   {
     title: "Double Diamond Skill Pack",
     description:
       "Nineteen design skills tagged to Discover, Define, Develop, and Deliver. Use when you need method-level help inside a Double Diamond phase.",
     filename: "double-diamond-skill-pack.zip",
-    meta: "19 skills · ZIP",
+    format: "ZIP",
+    skillCount: 19,
   },
   {
-    title: "UX Competency Skills v1.4.0",
+    title: `UX Competency Skills v${PACK_VERSION}`,
     description:
       "Eighteen agent skills on a 202-skill taxonomy across 15 domains (including ideation). Works in Cursor and Grok (SKILL.md format).",
     filename: "ux-competency-skills-v1.4.0.zip",
-    meta: "18 skills · ZIP",
+    format: "ZIP",
+    skillCount: 18,
   },
   {
     title: "Double Diamond crosswalk",
     description:
       "How the original Double Diamond Playbook's 26 skills map into the competency pack, plus what the pack adds (phase exit gates, front-end, AI, growth).",
     filename: "double-diamond-crosswalk.md",
-    meta: "Markdown",
+    format: "MD",
   },
   {
-    title: "Competency taxonomy v1.4.0",
+    title: `Competency taxonomy v${PACK_VERSION}`,
     description:
       "The full 202-skill taxonomy with depth levels and lead roles across product, UX, UI, ideation, and front-end architecture.",
     filename: "taxonomy-v1.4.0.md",
-    meta: "Markdown",
+    format: "MD",
   },
   {
     title: "Discrete skills taxonomy",
     description:
       "Long-form taxonomy for UI, product design, UX design, and front-end architecture. The source map behind the competency pack.",
     filename: "discrete-skills-taxonomy.md",
-    meta: "Markdown",
+    format: "MD",
   },
   {
     title: "Cursor user rule",
     description:
       "Always-on Cursor User Rule that indexes the competency skills (including ideation and Double Diamond phase routing) so the agent loads the right one without being asked.",
     filename: "cursor-user-rule.txt",
-    meta: "Text",
+    format: "TXT",
+  },
+];
+
+const TOTAL_SKILL_COUNT = DOWNLOADS.reduce(
+  (total, item) => total + (item.skillCount ?? 0),
+  0,
+);
+
+/** The order the router chains skills in. Rendered as the sequence diagram. */
+const SKILL_CHAIN = [
+  { name: "Router", note: "Classifies the request and picks a playbook" },
+  { name: "Audit", note: "Finds the gaps before anything gets built" },
+  { name: `${TAXONOMY_DOMAIN_COUNT} domain skills`, note: "The actual method work" },
+  { name: "Outcome review", note: "Post-release value check and case study" },
+];
+
+const INSTALL_STEPS = [
+  {
+    title: "Unzip and install",
+    body: (
+      <>
+        Run the competency pack&apos;s install script for Cursor (
+        <code className="whitespace-nowrap rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
+          ./install.sh cursor
+        </code>
+        ) or Grok Build.
+      </>
+    ),
+  },
+  {
+    title: "Make it automatic",
+    body: (
+      <>
+        For skill selection in every Cursor project, run{" "}
+        <code className="whitespace-nowrap rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
+          ./install.sh cursor-global
+        </code>{" "}
+        and paste the user rule into{" "}
+        <strong className="font-medium text-white">
+          Cursor → Customize → Rules → User Rules
+        </strong>
+        .
+      </>
+    ),
+  },
+  {
+    title: "Load method skills as needed",
+    body: (
+      <>
+        Double Diamond{" "}
+        <code className="rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
+          .skill
+        </code>{" "}
+        files load as individual agent skills. Grok web accepts the
+        self-contained markdown in the competency pack&apos;s{" "}
+        <code className="rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
+          grok-web/
+        </code>{" "}
+        folder.
+      </>
+    ),
   },
 ];
 type MethodSkill = {
@@ -78,7 +157,7 @@ type CompetencySkill = {
 };
 
 type Phase = {
-  name: "Discover" | "Define" | "Develop" | "Deliver";
+  name: PhaseName;
   mode: string;
   question: string;
   intent: string;
@@ -453,30 +532,116 @@ const PHASES: Phase[] = [
     ],
   },
 ];
-function DownloadCard({ item, featured = false }: { item: DownloadItem; featured?: boolean }) {
+
+function FormatChip({ format }: { format: string }) {
   return (
-    <a
-      href={resourceHref(item.filename)}
-      download
-      className={
-        featured
-          ? "block rounded-lg border border-cyan-700/50 bg-gradient-to-br from-cyan-950/40 to-slate-900/60 p-6 transition-colors hover:border-cyan-500/60"
-          : "block rounded-lg border border-slate-700/50 bg-slate-800/50 p-6 transition-colors hover:border-cyan-500/40"
-      }
-    >
-      <div className="mb-3 flex items-start justify-between gap-4">
-        <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-        <Download className="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true" />
+    <span className="inline-flex h-9 w-12 shrink-0 items-center justify-center rounded-md border border-border/60 bg-background/60 text-[0.65rem] font-semibold tracking-[0.12em] text-slate-400">
+      {format}
+    </span>
+  );
+}
+
+function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
+  const accent = PHASE_ACCENT[phase.name];
+  const headingId = `phase-${phase.name.toLowerCase()}`;
+
+  return (
+    <article className="py-14 first:pt-0 last:pb-0" aria-labelledby={headingId}>
+      <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+        <div className="lg:col-span-4">
+          <div className="lg:sticky lg:top-24">
+            <div className="mb-5 flex items-center gap-4">
+              <span className="font-['Playfair_Display'] text-2xl text-slate-500">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span
+                aria-hidden="true"
+                className={`h-px w-10 ${accent.rule}`}
+              />
+              <span
+                className={`rounded-full border px-2.5 py-0.5 text-[0.65rem] font-medium uppercase tracking-[0.16em] ${accent.border} ${accent.bg} ${accent.text}`}
+              >
+                {phase.mode}
+              </span>
+            </div>
+            <h3
+              id={headingId}
+              className="mb-3 text-3xl font-bold tracking-tight text-white"
+            >
+              {phase.name}
+            </h3>
+            <p className={`mb-5 text-lg ${accent.text}`}>{phase.question}</p>
+            <p className="leading-relaxed text-slate-400">{phase.intent}</p>
+          </div>
+        </div>
+
+        <div className="lg:col-span-8">
+          <h4 className="mb-6 text-xs uppercase tracking-[0.16em] text-slate-400">
+            Double Diamond method areas
+          </h4>
+          <div className="divide-y divide-border/60 border-y border-border/60">
+            {phase.doubleDiamond.map((skill) => (
+              <div
+                key={skill.name}
+                className="grid gap-4 py-6 md:grid-cols-[minmax(0,15rem)_1fr] md:gap-10"
+              >
+                <div>
+                  <h5 className="text-base font-semibold leading-snug text-white">
+                    {skill.name}
+                  </h5>
+                  <p className="mt-1.5 text-sm leading-relaxed text-slate-400">
+                    {skill.summary}
+                  </p>
+                </div>
+                <ul className="gap-x-8 sm:columns-2">
+                  {skill.tasks.map((task) => (
+                    <li
+                      key={task}
+                      className="flex break-inside-avoid items-start gap-2.5 py-1 text-sm text-slate-300"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className={`mt-[0.45rem] h-1 w-1 shrink-0 rounded-full ${accent.rule}`}
+                      />
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <h4 className="mb-4 mt-10 text-xs uppercase tracking-[0.16em] text-slate-400">
+            Competency skills that pair with {phase.name}
+          </h4>
+          <ul className="grid gap-x-8 gap-y-3 md:grid-cols-2">
+            {phase.competency.map((skill) => (
+              <li key={skill.name} className="text-sm leading-relaxed">
+                <code className="rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
+                  {skill.name}
+                </code>
+                <span className="text-slate-400"> {skill.summary}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <p className="mb-4 text-sm leading-relaxed text-slate-300">{item.description}</p>
-      <p className="text-xs font-medium uppercase tracking-wide text-slate-400">{item.meta}</p>
-      <span className="mt-3 inline-block text-sm font-medium text-cyan-400">Download</span>
-    </a>
+    </article>
   );
 }
 
 export default function Resources() {
   const [fullPack, ...individualDownloads] = DOWNLOADS;
+
+  const heroFacts = [
+    { label: "Agent skills", value: `${TOTAL_SKILL_COUNT} across two packs` },
+    {
+      label: "Taxonomy",
+      value: `${TAXONOMY_SKILL_COUNT} skills, ${TAXONOMY_DOMAIN_COUNT} domains`,
+    },
+    { label: "Runs in", value: "Cursor and Grok" },
+    { label: "Cost", value: "Free, no email gate" },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -488,194 +653,274 @@ export default function Resources() {
       />
       <ResponsiveNav currentPage="resources" />
 
-      <section className="relative mb-8 pb-16 pt-32">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <img
-            src="/images/methodology-hero.webp"
-            alt=""
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/30" />
-        </div>
-        <div className="container px-6">
-          <div className="relative mx-auto max-w-4xl rounded-2xl border border-slate-800/50 bg-slate-950/60 p-8 text-center backdrop-blur-sm md:p-12">
-            <p className="mb-4 text-sm uppercase tracking-widest text-cyan-400">Resources</p>
-            <h1 className="mb-6 text-4xl font-bold text-white md:text-6xl">
-              Skill packs for product, UX, and front-end work
-            </h1>
-            <p className="mx-auto mb-8 max-w-3xl text-xl leading-relaxed text-slate-300">
-              Agent skills and taxonomies I use on real product work. Built for PMs and designers who
-              want Cursor or Grok to follow a clear method, not invent one. Download individuals or
-              the full pack.
-            </p>
-            <a
-              href={resourceHref(fullPack.filename)}
-              download
-              className="inline-flex items-center justify-center rounded-lg bg-cyan-600 px-8 py-4 font-semibold text-white transition-colors hover:bg-cyan-500"
-            >
-              <Download className="mr-2 h-5 w-5" aria-hidden="true" />
-              Download complete pack
-            </a>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        titleId="resources-hero-title"
+        eyebrow="Resources"
+        eyebrowNote={`Skill packs · version ${PACK_VERSION}`}
+        title="Skill packs for product, UX, and front-end work"
+        lede="Agent skills and taxonomies I use on real product work. Built for PMs and designers who want Cursor or Grok to follow a clear method instead of inventing one."
+        actions={
+          <>
+            <Button size="lg" asChild>
+              <a href={resourceHref(fullPack.filename)} download>
+                <Download className="h-4 w-4" aria-hidden="true" />
+                Download complete pack
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href="#packs">Browse individual files</a>
+            </Button>
+          </>
+        }
+        meta={
+          <dl className="grid grid-cols-2 gap-x-8 gap-y-6 border-t border-border/60 pt-8 md:grid-cols-4">
+            {heroFacts.map((fact) => (
+              <div key={fact.label}>
+                <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
+                  {fact.label}
+                </dt>
+                <dd className="mt-2 text-sm font-medium text-slate-100">
+                  {fact.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        }
+        aside={<DoubleDiamondDiagram />}
+      />
 
-      <section className="px-6 pb-16">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-4 text-3xl font-bold text-white">What these are</h2>
-          <div className="space-y-4 text-lg leading-relaxed text-slate-300">
-            <p>
-              Two packs, one shared map. The{" "}
-              <strong className="text-white">Double Diamond Skill Pack</strong> is phase-tagged
-              design method skills (research planning through design QA). The{" "}
-              <strong className="text-white">UX Competency Skills</strong> pack (v1.4.0) is eighteen
-              agent skills on a 202-skill taxonomy across 15 domains — product framing, research,
-              ideation, IA, content, UI, accessibility, design systems, prototyping, front-end,
-              quality, measurement, growth, and leadership.
-            </p>
-            <p>
-              The chain is router (with a Double Diamond lens and phase exit gates) → audit → 15
-              domain skills → outcome review. New in v1.4.0: an ideation domain, Full Double Diamond
-              playbook, and a crosswalk of all 26 original playbook skills into the pack. Install
-              into Cursor or Grok, paste the user rule so the agent picks skills automatically, and
-              use the Double Diamond pack when you want method depth inside a specific phase.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-900/30 px-6 py-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-white">What to use when</h2>
-            <p className="mx-auto max-w-3xl text-xl text-slate-300">
-              Same Double Diamond framing as the consulting process: Discover and Define find the
-              right problem; Develop and Deliver find the right solution. Each phase breaks skills
-              into the concrete tasks the pack actually covers.
-            </p>
+      {/* What these are */}
+      <Section tone="muted" labelledBy="overview-heading">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <Eyebrow className="mb-4">What these are</Eyebrow>
+            <SectionTitle id="overview-heading">
+              Two packs, one shared map
+            </SectionTitle>
+            <div className="mt-6 space-y-5 text-lg leading-relaxed text-slate-300">
+              <p>
+                The{" "}
+                <strong className="font-semibold text-white">
+                  Double Diamond Skill Pack
+                </strong>{" "}
+                is phase-tagged design method skills, research planning through
+                design QA. The{" "}
+                <strong className="font-semibold text-white">
+                  UX Competency Skills
+                </strong>{" "}
+                pack is eighteen agent skills sitting on a{" "}
+                {TAXONOMY_SKILL_COUNT}-skill taxonomy across{" "}
+                {TAXONOMY_DOMAIN_COUNT} domains, from product framing through
+                front-end, quality, measurement, and leadership.
+              </p>
+              <p>
+                New in v{PACK_VERSION}: an ideation domain, the full Double
+                Diamond playbook, and a crosswalk of all 26 original playbook
+                skills into the pack.
+              </p>
+            </div>
           </div>
 
-          <div className="space-y-8">
-            {PHASES.map((phase) => (
-              <article
-                key={phase.name}
-                className="rounded-lg border border-slate-700/50 bg-slate-800/50 p-6 md:p-8"
-              >
-                <div className="mb-6 md:flex md:items-start md:justify-between md:gap-8">
+          <div className="lg:col-span-6 lg:col-start-7">
+            <h3 className="mb-6 text-xs uppercase tracking-[0.16em] text-slate-400">
+              How the router chains them
+            </h3>
+            <ol className="relative">
+              {SKILL_CHAIN.map((step, index) => (
+                <li key={step.name} className="relative flex gap-5 pb-7 last:pb-0">
+                  {index < SKILL_CHAIN.length - 1 ? (
+                    <span
+                      aria-hidden="true"
+                      className="absolute left-[0.6875rem] top-7 bottom-0 w-px bg-border/60"
+                    />
+                  ) : null}
+                  <span className="relative z-10 mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-background text-[0.65rem] font-semibold text-primary">
+                    {index + 1}
+                  </span>
                   <div>
-                    <p className="mb-2 text-sm uppercase tracking-widest text-cyan-400">
-                      {phase.mode}
+                    <p className="font-semibold text-white">{step.name}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                      {step.note}
                     </p>
-                    <h3 className="mb-1 text-3xl font-bold text-white">{phase.name}</h3>
-                    <p className="italic text-slate-400">{phase.question}</p>
                   </div>
-                  <p className="mt-4 max-w-xl text-slate-300 md:mt-0">{phase.intent}</p>
-                </div>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-2 rounded-xl border border-primary/30 bg-primary/10 p-5 text-sm leading-relaxed text-slate-200">
+              Unsure where to start? Use{" "}
+              <code className="rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
+                competency-router
+              </code>
+              . It classifies the request, picks a playbook, applies phase exit
+              gates, and chains the domain skills. Accessibility gets checked on
+              any UI work; leadership and governance come in when stakeholders or
+              risk are in play.
+            </p>
+          </div>
+        </div>
+      </Section>
 
-                <div className="mb-8">
-                  <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-200">
-                    Double Diamond tasks
-                  </p>
-                  <div className="grid gap-4 md:grid-cols-2">
-                    {phase.doubleDiamond.map((skill) => (
-                      <div
-                        key={skill.name}
-                        className="rounded-lg border border-slate-700/40 bg-slate-900/40 p-4"
-                      >
-                        <h4 className="mb-1 text-base font-semibold text-white">{skill.name}</h4>
-                        <p className="mb-3 text-sm text-slate-400">{skill.summary}</p>
-                        <ul className="space-y-1.5">
-                          {skill.tasks.map((task) => (
-                            <li
-                              key={task}
-                              className="flex items-start gap-2 text-sm text-slate-300"
-                            >
-                              <span
-                                className="mt-2 h-1 w-1 shrink-0 rounded-full bg-cyan-400"
-                                aria-hidden="true"
-                              />
-                              <span>{task}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+      {/* Downloads */}
+      <Section id="packs" labelledBy="downloads-heading">
+        <SectionHeading
+          id="downloads-heading"
+          eyebrow="Downloads"
+          title="Take the whole set, or just the part you need"
+          lede="No email gate. Every artifact is a direct file download."
+        />
+
+        <Reveal>
+          <a
+            href={resourceHref(fullPack.filename)}
+            download
+            className="group mb-14 block rounded-2xl border border-primary/30 bg-gradient-to-br from-cyan-950/50 via-slate-900/40 to-slate-900/20 p-8 transition-colors hover:border-primary/60 md:p-10"
+          >
+            <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+              <div className="lg:col-span-7">
+                <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-primary">
+                  Recommended
+                </p>
+                <h3 className="mb-4 text-2xl font-bold text-white md:text-3xl">
+                  {fullPack.title}
+                </h3>
+                <p className="mb-8 max-w-xl leading-relaxed text-slate-300">
+                  {fullPack.description}
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors group-hover:text-cyan-300">
+                  <Download className="h-4 w-4" aria-hidden="true" />
+                  Download {fullPack.format} · {TOTAL_SKILL_COUNT} agent skills
+                </span>
+              </div>
+              <div className="lg:col-span-5">
+                <p className="mb-4 text-xs uppercase tracking-[0.16em] text-slate-400">
+                  What&apos;s inside
+                </p>
+                <ul className="divide-y divide-border/60 border-t border-border/60">
+                  {individualDownloads.map((item) => (
+                    <li
+                      key={item.filename}
+                      className="flex items-baseline justify-between gap-4 py-2.5 text-sm text-slate-300"
+                    >
+                      <span>{item.title}</span>
+                      <span className="shrink-0 text-[0.65rem] font-semibold tracking-[0.12em] text-slate-400">
+                        {item.format}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </a>
+        </Reveal>
+
+        <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+          Individual files
+        </h3>
+        <ul className="divide-y divide-border/60 border-y border-border/60">
+          {individualDownloads.map((item) => (
+            <li key={item.filename}>
+              <a
+                href={resourceHref(item.filename)}
+                download
+                className="group grid grid-cols-[3rem_1fr_1.25rem] items-start gap-x-5 gap-y-2 py-6 transition-colors hover:bg-white/5 md:grid-cols-[3rem_minmax(0,18rem)_1fr_1.25rem] md:items-center md:gap-x-8"
+              >
+                <FormatChip format={item.format} />
+                <div className="min-w-0">
+                  <h4 className="text-base font-semibold leading-snug text-slate-100 transition-colors group-hover:text-primary md:text-lg">
+                    {item.title}
+                  </h4>
+                  {item.skillCount ? (
+                    <p className="mt-1 text-xs uppercase tracking-[0.14em] text-slate-400">
+                      {item.skillCount} skills
+                    </p>
+                  ) : null}
+                </div>
+                <p className="col-start-2 text-sm leading-relaxed text-slate-400 md:col-start-3">
+                  {item.description}
+                </p>
+                <Download
+                  className="hidden h-5 w-5 justify-self-end text-slate-400 transition-colors group-hover:text-primary md:block"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* Phases */}
+      <Section id="what-to-use-when" tone="slate" labelledBy="phases-heading">
+        <SectionHeading
+          id="phases-heading"
+          eyebrow="What to use when"
+          title="Four phases, and the tasks each one actually covers"
+          lede="Same Double Diamond framing as the consulting process. Each phase breaks down into the concrete method areas the pack covers, plus the competency skills that pair with it."
+        />
+        <div className="divide-y divide-border/60">
+          {PHASES.map((phase, index) => (
+            <PhaseBlock key={phase.name} phase={phase} index={index} />
+          ))}
+        </div>
+      </Section>
+
+      {/* Install */}
+      <Section labelledBy="install-heading">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-4">
+            <Eyebrow className="mb-4">How to install</Eyebrow>
+            <SectionTitle id="install-heading">
+              Three steps, then forget about it
+            </SectionTitle>
+            <p className="mt-6 leading-relaxed text-slate-400">
+              The point of the user rule is that you stop choosing skills by
+              hand. The agent routes itself.
+            </p>
+          </div>
+          <div className="lg:col-span-7 lg:col-start-6">
+            <ol className="divide-y divide-border/60 overflow-hidden rounded-xl border border-border/60 bg-background/40">
+              {INSTALL_STEPS.map((step, index) => (
+                <li key={step.title} className="flex gap-5 p-6 md:p-7">
+                  <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-background text-xs font-semibold text-primary">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <h3 className="mb-2 font-semibold text-white">
+                      {step.title}
+                    </h3>
+                    <p className="leading-relaxed text-slate-300">{step.body}</p>
                   </div>
-                </div>
-
-                <div>
-                  <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-200">
-                    Competency skills for this phase
-                  </p>
-                  <ul className="grid gap-2 md:grid-cols-2">
-                    {phase.competency.map((skill) => (
-                      <li key={skill.name} className="text-sm text-slate-300">
-                        <code className="rounded bg-slate-900/80 px-1.5 py-0.5 text-cyan-300">
-                          {skill.name}
-                        </code>
-                        <span className="text-slate-400"> — {skill.summary}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="mt-8 rounded-lg border border-cyan-500/30 bg-cyan-950/20 p-6 md:p-8">
-            <p className="text-slate-200">
-              Unsure where to start? Use <code className="text-cyan-300">competency-router</code>.
-              It classifies the request, picks a playbook (including Full Double Diamond), applies
-              phase exit gates, and chains the domain skills. Cross-cutting checks: accessibility on
-              UI work, leadership/governance when stakeholders or risk are in play. The Double Diamond
-              is not a linear checklist — teams often run methods in parallel or return upstream when
-              evidence demands it.
-            </p>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="px-6 py-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-white">Downloads</h2>
-            <p className="mx-auto max-w-3xl text-xl text-slate-300">
-              Each artifact is available on its own. The complete pack is the fastest way to get the
-              full set.
+      {/* Closing */}
+      <Section tone="muted" compact labelledBy="resources-closing-heading">
+        <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-7">
+            <SectionTitle
+              id="resources-closing-heading"
+              className="text-2xl md:text-3xl"
+            >
+              These come out of project work, not a content calendar
+            </SectionTitle>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate-300">
+              The packs change when the work changes. The methodology behind them
+              and the writing that explains the reasoning both live on the site.
             </p>
           </div>
-
-          <div className="mb-6">
-            <DownloadCard item={fullPack} featured />
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {individualDownloads.map((item) => (
-              <DownloadCard key={item.filename} item={item} />
-            ))}
+          <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
+            <Button variant="outline" asChild>
+              <Link href="/methodology">See the methodology</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/articles">Read the writing</Link>
+            </Button>
           </div>
         </div>
-      </section>
-
-      <section className="border-t border-slate-800 px-6 py-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-4 text-3xl font-bold text-white">How to install</h2>
-          <div className="space-y-4 text-left text-slate-300 md:text-center">
-            <p>
-              Unzip the competency pack and run its install script for Cursor (
-              <code className="text-cyan-300">./install.sh cursor</code>) or Grok Build. For
-              automatic skill selection in every Cursor project, run{" "}
-              <code className="text-cyan-300">./install.sh cursor-global</code> and paste the user
-              rule into <strong className="text-white">Cursor → Customize → Rules → User Rules</strong>.
-            </p>
-            <p>
-              Double Diamond <code className="text-cyan-300">.skill</code> files can be loaded as
-              individual agent skills. Grok web accepts the self-contained markdown files from the
-              competency pack&apos;s <code className="text-cyan-300">grok-web/</code> folder.
-            </p>
-          </div>
-        </div>
-      </section>
+      </Section>
     </div>
   );
 }
