@@ -225,8 +225,8 @@ const earlierProjects: EarlierProject[] = [
     slug: "/case-study/buildout",
     kicker: "B2B SAAS · 2018-2020",
     title: "BuildOut",
-    image: "/project-buildout.webp",
-    imageAlt: "BuildOut CRE Platform",
+    image: "/project-buildout-hero.webp",
+    imageAlt: "Commercial real estate towers, the market BuildOut serves",
     summary:
       "Built the design practice from scratch at this high-growth commercial real estate platform. Established design processes, hired the team's first designers, and led product design through successful acquisition.",
     pointsLabel: "LEADERSHIP EXPERIENCE",
@@ -241,8 +241,8 @@ const earlierProjects: EarlierProject[] = [
     slug: "/case-study/cvs-aetna",
     kicker: "FORTUNE 10 HEALTHCARE · 2016-2018",
     title: "CVS Health/Aetna",
-    image: "/project-cvs.webp",
-    imageAlt: "CVS Health Platform",
+    image: "/project-cvs-aetna-hero.webp",
+    imageAlt: "A patient receiving care, the setting for the CVS Health and Aetna work",
     summary:
       "Led UX initiatives across a 20+ person design org for enterprise healthcare applications serving millions. Navigated complex regulatory requirements and aligned stakeholders across a massive organization.",
     pointsLabel: "LEADERSHIP EXPERIENCE",
@@ -455,8 +455,8 @@ export default function Work() {
   return (
     <SiteLayout currentPage="work">
       <PageSeo
-        title="Case Studies | Design Operations & AI-Augmented Product Design, Ryan Winzenburg"
-        description="Case studies in design operations, enterprise design systems, and AI-augmented product design across Fortune 50 and startup environments."
+        title="Case Studies | Product Experience Leadership, Enterprise B2B, Ryan Winzenburg"
+        description="Case studies in enterprise B2B product experience: experience direction, design systems, product operating model, and AI-enabled execution across Fortune 50 and venture-backed environments."
         path="/work"
         ogImage="/images/work-hero.webp"
       />
@@ -493,8 +493,8 @@ export default function Work() {
         <SectionHeading
           id="featured-heading"
           eyebrow="Featured projects"
-          title="Organizational Transformation"
-          lede="Each project represents a team I led, a process I redesigned, or an org I helped transform, beyond deliverables shipped."
+          title="Product experience, at organization scale"
+          lede="Each one is a team I led, a process I redesigned, or an operating model I helped change. Not a list of deliverables."
         />
         <div className="space-y-10 md:space-y-12">
           {projects.map((project) => (

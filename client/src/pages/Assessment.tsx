@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -43,32 +43,11 @@ function barFillClass(tone: "risk" | "warn" | "ok"): string {
   return "bg-emerald-500";
 }
 
-/**
- * The primary nav is a normal-flow sticky header, not a fixed overlay, so the
- * progress bar has to park directly under it instead of at the top of the
- * viewport. Its height differs between breakpoints, so measure rather than
- * hard-code the offset.
- */
-function useStickyNavOffset(): number {
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const measure = (): void => {
-      setOffset(document.querySelector("header")?.offsetHeight ?? 0);
-    };
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, []);
-
-  return offset;
-}
 
 export default function Assessment() {
   const [answers, setAnswers] = useState<AnswerMap>({});
   const [showResults, setShowResults] = useState(false);
   const [warning, setWarning] = useState("");
-  const navOffset = useStickyNavOffset();
   const startedRef = useRef(false);
   const completedRef = useRef(false);
   const resultsRef = useRef<HTMLElement>(null);
@@ -156,10 +135,7 @@ export default function Assessment() {
       />
 
       {/* Parks under the sticky nav rather than over it. */}
-      <div
-        style={{ top: navOffset }}
-        className="sticky z-40 border-b border-slate-800 bg-slate-950"
-      >
+      <div className="sticky top-[var(--nav-height,4.75rem)] z-40 border-b border-slate-800 bg-slate-950">
         <div className="container py-3">
           <div className="mx-auto flex max-w-4xl items-center gap-4">
             <p className="whitespace-nowrap font-mono text-xs uppercase tracking-widest text-slate-400">

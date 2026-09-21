@@ -224,15 +224,17 @@ export default function PageHero({
               </div>
             ) : null}
 
+            {/* A div, not a p, so callers can pass more than one line without
+                nesting block-level spans inside a paragraph. */}
             {footnote ? (
-              <p
+              <div
                 className={cn(
-                  "mt-6 max-w-xl text-sm leading-relaxed text-slate-400",
+                  "mt-6 max-w-xl space-y-1 text-sm leading-relaxed text-slate-400",
                   isCentered ? "mx-auto" : "",
                 )}
               >
                 {footnote}
-              </p>
+              </div>
             ) : null}
 
             {meta ? <div className="mt-12">{meta}</div> : null}

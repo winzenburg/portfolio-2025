@@ -278,7 +278,7 @@ export default function Methodology() {
     <SiteLayout currentPage="methodology">
       <PageSeo
         title="AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg"
-        description="A five-phase AI-native design methodology for shipping enterprise-grade UX 4-6x faster without sacrificing quality or system integrity."
+        description="A five-phase AI-native design methodology for enterprise product work: where the strategic calls stay human, and where AI handles execution."
         path="/methodology"
         ogImage="/images/methodology-hero.webp"
       />

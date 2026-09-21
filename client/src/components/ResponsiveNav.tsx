@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -33,6 +33,31 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [location] = useLocation();
+  const headerRef = useRef<HTMLElement>(null);
+
+  // Publish the header height as --nav-height so any page can offset its own
+  // sticky chrome with top-[var(--nav-height)] instead of measuring the DOM or
+  // hard-coding a value that is wrong at one breakpoint.
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+
+    const publish = () => {
+      document.documentElement.style.setProperty(
+        "--nav-height",
+        `${header.offsetHeight}px`,
+      );
+    };
+    publish();
+
+    if (typeof ResizeObserver === "undefined") {
+      window.addEventListener("resize", publish);
+      return () => window.removeEventListener("resize", publish);
+    }
+    const observer = new ResizeObserver(publish);
+    observer.observe(header);
+    return () => observer.disconnect();
+  }, []);
 
   // Close the mobile menu when the route changes, so it never survives a jump.
   useEffect(() => {
@@ -51,10 +76,11 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
 
   return (
     <header
+      ref={headerRef}
       className={cn(
         "sticky top-0 z-50 border-b transition-colors duration-200",
         isScrolled
-          ? "border-border/60 bg-background/90 backdrop-blur-xl"
+          ? "border-border/60 bg-background/95 backdrop-blur-xl"
           : "border-border/40 bg-background",
       )}
     >

@@ -18,14 +18,19 @@ interface FactRowProps {
  */
 export default function FactRow({ facts, className }: FactRowProps) {
   return (
+    // Subgrid keeps the values on one baseline when a label wraps to two lines,
+    // which happens often in the two-column mobile layout.
     <dl
       className={cn(
-        "grid grid-cols-2 gap-x-8 gap-y-6 border-t border-border/60 pt-8 md:grid-cols-4",
+        "grid grid-cols-2 grid-rows-[auto_1fr] gap-x-8 gap-y-6 border-t border-border/60 pt-8 md:grid-cols-4",
         className,
       )}
     >
       {facts.map((fact) => (
-        <div key={fact.label}>
+        <div
+          key={fact.label}
+          className="row-span-2 grid grid-rows-subgrid gap-0"
+        >
           <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
             {fact.label}
           </dt>
