@@ -22,14 +22,12 @@ export default function DualFilterValidationFrameworkArticle() {
       </Helmet>
 
       {/* Article Header */}
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -472,8 +470,11 @@ export default function DualFilterValidationFrameworkArticle() {
           <p className="text-slate-300 text-sm">
             Have a product idea you want to run through the Dual-Filter Framework? I'm always curious to 
             see how other founders apply these concepts. Feel free to 
-            <Link href="/contact">
-              <a className="text-cyan-400 hover:text-slate-200">reach out</a>
+            <Link
+              href="/contact"
+              className="text-cyan-400 underline underline-offset-2 hover:text-slate-200"
+            >
+              reach out
             </Link>{" "}
             with 
             your results, I love hearing about validation experiments, especially the failures.
@@ -489,11 +490,9 @@ export default function DualFilterValidationFrameworkArticle() {
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
-              </a>
             </Link>
           </div>
         </div>

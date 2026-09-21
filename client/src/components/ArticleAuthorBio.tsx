@@ -10,44 +10,46 @@ const AUTHOR_BLURB = `${AUTHOR_NAME}, founder of ${VENTURE_NAMES.join(" and ")},
 /**
  * Visible E-E-A-T author block for every article.
  * Keep bio wording aligned with /about (Brand Hub) / brand-facts.json / LinkedIn.
+ *
+ * The avatar is the RW monogram rather than an image. The illustration this
+ * previously used is not a photograph of the author, so presenting it as one
+ * with a descriptive alt was misleading.
  */
 export default function ArticleAuthorBio() {
   return (
     <aside
-      className="mt-16 pt-8 border-t border-slate-800"
+      className="mt-16 border-t border-border/60 pt-8"
       aria-label={`About the author, ${AUTHOR_NAME}`}
     >
-      <div className="flex flex-col sm:flex-row gap-5 sm:items-start">
-        <div className="shrink-0">
-          <img
-            src="/images/about-hero.webp"
-            alt={`${AUTHOR_NAME}, ${AUTHOR_TITLE}`}
-            className="w-16 h-16 rounded-full object-cover border border-slate-700"
-            width={64}
-            height={64}
-          />
-        </div>
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+        <span
+          aria-hidden="true"
+          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/10 font-['Playfair_Display'] text-xl font-semibold text-primary"
+        >
+          RW
+        </span>
         <div>
-          <p className="text-xs uppercase tracking-wide text-slate-500 mb-2">
+          <p className="mb-2 text-xs uppercase tracking-[0.16em] text-slate-400">
             Written by
           </p>
-          <p className="text-white font-semibold text-lg leading-snug">
+          <p className="text-lg font-semibold leading-snug text-white">
             {AUTHOR_NAME}
           </p>
-          <p className="text-slate-400 text-sm mt-1 mb-3">{AUTHOR_TITLE}</p>
-          <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
+          <p className="mb-3 mt-1 text-sm text-slate-400">{AUTHOR_TITLE}</p>
+          <p className="text-sm leading-relaxed text-slate-300 sm:text-base">
             {AUTHOR_BLURB}{" "}
-            <Link href="/about">
-              <a className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                About / Brand Hub
-              </a>
+            <Link
+              href="/about"
+              className="text-primary underline underline-offset-2 transition-colors hover:text-cyan-300"
+            >
+              About / Brand Hub
             </Link>
             {" · "}
             <a
               href="https://www.linkedin.com/in/rwinzenburg/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cyan-400 hover:text-cyan-300 transition-colors"
+              className="text-primary underline underline-offset-2 transition-colors hover:text-cyan-300"
             >
               LinkedIn
             </a>

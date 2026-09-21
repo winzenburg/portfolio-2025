@@ -21,13 +21,11 @@ export default function FreshContextPerIteration() {
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Fresh Context Per Iteration: Why Autonomous Agents Don't Break Like Long Sessions","description":"I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn't have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-15","url":"https://winzenburg.com/articles/fresh-context-per-iteration","image":"https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.webp"})}</script>
       </Helmet>
 
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
@@ -543,10 +541,8 @@ export default function FreshContextPerIteration() {
           <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Architect AI Workflows That Scale?</h3>
             <p className="text-slate-300 mb-6">Let's discuss how fresh context architecture can transform your development reliability.</p>
-            <Link href="/contact">
-              <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get in Touch →
-              </a>
             </Link>
           </div>
 
@@ -557,11 +553,9 @@ export default function FreshContextPerIteration() {
 
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles/compound-intelligence">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles/compound-intelligence" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read Next: Compound Intelligence - Making Codebases Smarter
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

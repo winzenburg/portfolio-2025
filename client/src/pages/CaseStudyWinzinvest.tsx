@@ -65,13 +65,11 @@ const CaseStudyWinzinvest: React.FC = () => {
 
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work">
-          <a className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             <span className="text-sm font-medium">Back to Work</span>
-          </a>
         </Link>
       </div>
 
@@ -104,17 +102,17 @@ const CaseStudyWinzinvest: React.FC = () => {
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
               <div className="text-3xl font-bold text-cyan-400 mb-1">2.16</div>
               <div className="text-xs text-slate-400 uppercase tracking-wider">Sharpe Ratio</div>
-              <div className="text-xs text-slate-500 mt-1">5-year backtest</div>
+              <div className="text-xs text-slate-400 mt-1">5-year backtest</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
               <div className="text-3xl font-bold text-cyan-400 mb-1">3.5%</div>
               <div className="text-xs text-slate-400 uppercase tracking-wider">Options Income</div>
-              <div className="text-xs text-slate-500 mt-1">Annualized floor</div>
+              <div className="text-xs text-slate-400 mt-1">Annualized floor</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
               <div className="text-3xl font-bold text-cyan-400 mb-1">17</div>
               <div className="text-xs text-slate-400 uppercase tracking-wider">Risk Gates</div>
-              <div className="text-xs text-slate-500 mt-1">On every order</div>
+              <div className="text-xs text-slate-400 mt-1">On every order</div>
             </div>
           </div>
 
@@ -122,7 +120,7 @@ const CaseStudyWinzinvest: React.FC = () => {
             href="https://winzinvest.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-lg transition-colors"
           >
             View Live Platform
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -278,7 +276,7 @@ const CaseStudyWinzinvest: React.FC = () => {
               { n: '04', title: 'Session Monitoring', desc: 'Positions are tracked continuously, managing profit targets, failed-setup exits, and auto-rolling options at 7 DTE' },
             ].map((s) => (
               <div key={s.n} className="flex gap-5 bg-white/5 border border-white/10 rounded-lg p-5">
-                <div className="text-2xl font-bold text-cyan-700/60 font-serif w-8 shrink-0">{s.n}</div>
+                <div className="text-2xl font-bold text-cyan-400/80 font-serif w-8 shrink-0">{s.n}</div>
                 <div>
                   <div className="font-semibold text-white mb-1">{s.title}</div>
                   <div className="text-slate-400 text-sm leading-relaxed">{s.desc}</div>
@@ -407,10 +405,8 @@ const CaseStudyWinzinvest: React.FC = () => {
               </svg>
             </a>
           </div>
-          <Link href="/contact">
-            <a className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-lg transition-colors">
+          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-lg transition-colors">
               Let's Talk
-            </a>
           </Link>
         </section>
 

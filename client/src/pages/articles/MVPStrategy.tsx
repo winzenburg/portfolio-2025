@@ -23,14 +23,12 @@ export default function MVPStrategy() {
       </Helmet>
 
       {/* Article Content */}
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Button */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -369,10 +367,8 @@ export default function MVPStrategy() {
             <div className="bg-gradient-to-r from-blue-900/30 to-cyan-900/30 border border-slate-700 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Building an MVP That Sells Itself?</h3>
               <p className="text-slate-300 mb-6">I've helped teams launch products that achieve product-market fit faster. Let's discuss your MVP strategy and go-to-market approach.</p>
-              <Link href="/contact">
-                <a className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
                   Schedule a Strategy Call →
-                </a>
               </Link>
             </div>
           </div>
@@ -386,11 +382,9 @@ export default function MVPStrategy() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles/monetization-strategy">
-              <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors text-lg font-semibold">
+            <Link href="/articles/monetization-strategy" className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors text-lg font-semibold">
                 Read Next: Monetization Strategy - How to Generate Revenue from Day One
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

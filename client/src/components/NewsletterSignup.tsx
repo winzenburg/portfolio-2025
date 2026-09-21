@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useId, useState } from "react";
+import { Button } from "@/components/ui/button";
 import { trackNewsletterSignup } from "@/lib/analytics";
 
 const NEWSLETTER_ENABLED = true;
 
 export default function NewsletterSignup() {
   const [email, setEmail] = useState("");
-  const [subscribeStatus, setSubscribeStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [subscribeStatus, setSubscribeStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const emailId = useId();
 
   // Return nothing when disabled
   if (!NEWSLETTER_ENABLED) {
@@ -36,59 +40,92 @@ export default function NewsletterSignup() {
       setEmail("");
     } catch (error) {
       setSubscribeStatus("error");
-      setErrorMessage(error instanceof Error ? error.message : "Something went wrong. Please try again.");
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : "Something went wrong. Please try again.",
+      );
     }
   };
 
   return (
-    <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-blue-700/50 rounded-xl p-8 md:p-12">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-white mb-4">
-          Get AI-Augmented Insights in Your Inbox
+    <div className="rounded-2xl border border-primary/30 bg-gradient-to-br from-cyan-950/50 via-slate-900/40 to-slate-900/20 p-8 md:p-12">
+      <div className="mb-8 text-center">
+        <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-primary">
+          Weekly
+        </p>
+        <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">
+          One email a week on product experience and AI-enabled delivery
         </h2>
-        <p className="text-lg text-slate-300">
-          Strategic frameworks, case studies, and lessons learned from building AI-native products. No fluff, just actionable insights for VCs and executives.
+        <p className="mx-auto max-w-xl text-lg leading-relaxed text-slate-300">
+          What I&apos;m working on, what broke, and what I&apos;d do
+          differently. Written for people running product organizations.
         </p>
       </div>
 
-      {subscribeStatus === "success" ? (
-        <div className="bg-green-900/30 border border-green-700/50 rounded-lg p-6 text-center">
-          <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
+      <div aria-live="polite">
+        {subscribeStatus === "success" ? (
+          <div className="mx-auto max-w-xl rounded-xl border border-emerald-700/50 bg-emerald-900/30 p-6 text-center">
+            <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20">
+              <svg
+                className="h-6 w-6 text-emerald-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <h3 className="mb-2 text-xl font-bold text-white">
+              You&apos;re subscribed
+            </h3>
+            <p className="text-slate-300">
+              Thanks for signing up. Keep an eye on your inbox.
+            </p>
           </div>
-          <h3 className="text-xl font-bold text-white mb-2">You're subscribed!</h3>
-          <p className="text-slate-300">Thanks for signing up. Keep an eye on your inbox.</p>
-        </div>
-      ) : (
-        <form onSubmit={handleNewsletterSubmit} className="max-w-xl mx-auto">
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="your.email@company.com"
-              required
-              disabled={subscribeStatus === "loading"}
-              className="flex-1 px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
-            />
-            <button
-              type="submit"
-              disabled={subscribeStatus === "loading"}
-              className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {subscribeStatus === "loading" ? "Subscribing..." : "Subscribe"}
-            </button>
-          </div>
-          {subscribeStatus === "error" && (
-            <p className="mt-3 text-sm text-red-400 text-center">{errorMessage}</p>
-          )}
-          <p className="mt-4 text-sm text-slate-400 text-center">
-            Weekly insights. Unsubscribe anytime.
-          </p>
-        </form>
-      )}
+        ) : (
+          <form onSubmit={handleNewsletterSubmit} className="mx-auto max-w-xl">
+            <label htmlFor={emailId} className="sr-only">
+              Email address
+            </label>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <input
+                id={emailId}
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your.email@company.com"
+                required
+                disabled={subscribeStatus === "loading"}
+                aria-invalid={subscribeStatus === "error" || undefined}
+                className="flex-1 rounded-lg border border-slate-600 bg-slate-800/50 px-4 py-3 text-base text-white placeholder-slate-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50"
+              />
+              <Button
+                type="submit"
+                size="lg"
+                disabled={subscribeStatus === "loading"}
+                className="shrink-0"
+              >
+                {subscribeStatus === "loading" ? "Subscribing…" : "Subscribe"}
+              </Button>
+            </div>
+            {subscribeStatus === "error" ? (
+              <p role="alert" className="mt-3 text-center text-sm text-red-400">
+                {errorMessage}
+              </p>
+            ) : null}
+            <p className="mt-4 text-center text-sm text-slate-400">
+              One email a week. Unsubscribe anytime.
+            </p>
+          </form>
+        )}
+      </div>
     </div>
   );
 }

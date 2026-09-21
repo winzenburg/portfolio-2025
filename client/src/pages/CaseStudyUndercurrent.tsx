@@ -65,13 +65,11 @@ const CaseStudyUndercurrent: React.FC = () => {
 
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work">
-          <a className="flex items-center gap-2 px-4 py-2 bg-stone-900/80 backdrop-blur-sm border border-stone-700/50 rounded-full text-stone-300 hover:text-amber-400 hover:border-amber-600/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-stone-900/80 backdrop-blur-sm border border-stone-700/50 rounded-full text-stone-300 hover:text-amber-400 hover:border-amber-600/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             <span className="text-sm font-medium">Back to Work</span>
-          </a>
         </Link>
       </div>
 
@@ -303,7 +301,7 @@ const CaseStudyUndercurrent: React.FC = () => {
               { n: '08', title: 'Synthesis', desc: 'Connecting the dots into a cohesive, actionable report' },
             ].map((s) => (
               <div key={s.n} className="flex gap-4 bg-white/5 border border-white/10 rounded-lg p-5">
-                <div className="text-2xl font-bold text-amber-700/60 font-serif w-8 shrink-0">{s.n}</div>
+                <div className="text-2xl font-bold text-amber-400/80 font-serif w-8 shrink-0">{s.n}</div>
                 <div>
                   <div className="font-semibold text-white mb-1">{s.title}</div>
                   <div className="text-stone-400 text-sm leading-relaxed">{s.desc}</div>
@@ -386,10 +384,8 @@ const CaseStudyUndercurrent: React.FC = () => {
               </svg>
             </a>
           </div>
-          <Link href="/contact">
-            <a className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-lg transition-colors">
+          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-lg transition-colors">
               Let's Talk
-            </a>
           </Link>
         </section>
 

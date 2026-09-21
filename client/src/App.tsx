@@ -20,6 +20,7 @@ import Articles from "./pages/Articles";
 import Gallery from "./pages/Gallery";
 import Resources from "./pages/Resources";
 import ScrollToTop from "./components/ScrollToTop";
+import SiteFooter from "./components/SiteFooter";
 import { usePageTracking } from "./hooks/usePageTracking";
 import { useArticleEngagement } from "./hooks/useArticleEngagement";
 
@@ -377,6 +378,9 @@ function Router() {
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
+      {/* Rendered here rather than per page so the routes that still mount
+          their own chrome (articles, case studies) also get a footer. */}
+      <SiteFooter />
     </WouterRouter>
   );
 }

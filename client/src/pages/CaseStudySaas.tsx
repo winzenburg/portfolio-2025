@@ -46,13 +46,11 @@ const CaseStudySaas: React.FC = () => {
       />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work">
-          <a className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             <span className="text-sm font-medium">Back to Work</span>
-          </a>
         </Link>
       </div>
 
@@ -382,7 +380,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-cyan-400 mb-2">~$1.03M</div>
               <div className="text-sm text-gray-400 mb-3">Cost Savings</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 7-person team eliminated (84 person-months saved)
               </p>
             </div>
@@ -390,7 +388,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-cyan-400 mb-2">60%</div>
               <div className="text-sm text-gray-400 mb-3">Faster Development</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 Product teams ship features significantly faster
               </p>
             </div>
@@ -398,7 +396,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-cyan-400 mb-2">100%</div>
               <div className="text-sm text-gray-400 mb-3">Token Compliance</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 Automated validation prevents governance drift
               </p>
             </div>
@@ -455,10 +453,8 @@ const CaseStudySaas: React.FC = () => {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             I can deliver enterprise-grade design systems in weeks, not months, at a fraction of traditional costs while maintaining rigorous quality standards.
           </p>
-          <Link href="/contact">
-            <span className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors cursor-pointer">
+          <Link href="/contact" className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-lg transition-colors cursor-pointer">
               Let's Discuss Your Project
-            </span>
           </Link>
         </section>
       </div>

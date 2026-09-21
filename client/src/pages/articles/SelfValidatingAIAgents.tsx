@@ -21,13 +21,11 @@ export default function SelfValidatingAIAgents() {
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.webp"})}</script>
       </Helmet>
 
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
@@ -598,10 +596,8 @@ export default function SelfValidatingAIAgents() {
           <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Want to Enable Self-Validating AI Workflows?</h3>
             <p className="text-slate-300 mb-6">Let's discuss how to structure your development process for autonomous success.</p>
-            <Link href="/contact">
-              <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get in Touch →
-              </a>
             </Link>
           </div>
 
@@ -612,11 +608,9 @@ export default function SelfValidatingAIAgents() {
 
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles/autonomous-ai-coding">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles/autonomous-ai-coding" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read Next: Autonomous AI Coding
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

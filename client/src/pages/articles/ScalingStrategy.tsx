@@ -26,11 +26,9 @@ export default function ScalingStrategy() {
       <article className="py-12 px-6">
         <div className="container mx-auto max-w-3xl">
           {/* Back Button */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -521,10 +519,8 @@ export default function ScalingStrategy() {
           <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-slate-700 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Building an AI-Powered Portfolio?</h3>
             <p className="text-slate-300 mb-6">I've implemented this scaling strategy across multiple businesses. Let's discuss how to apply these principles to your specific context.</p>
-            <Link href="/contact">
-              <a className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
                 Schedule a Discovery Call
-              </a>
             </Link>
           </div>
 
@@ -537,11 +533,9 @@ export default function ScalingStrategy() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles/design-system-4-weeks">
-              <a className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors text-lg font-semibold">
+            <Link href="/articles/design-system-4-weeks" className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition-colors text-lg font-semibold">
                 Read Next: How I Built an Enterprise Design System in 4 Weeks
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

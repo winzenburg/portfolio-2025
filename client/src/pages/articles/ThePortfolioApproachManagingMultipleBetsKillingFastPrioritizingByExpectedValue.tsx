@@ -24,14 +24,12 @@ export default function PortfolioApproachArticle() {
       </Helmet>
 
       {/* Article Header */}
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -374,10 +372,8 @@ export default function PortfolioApproachArticle() {
             Want the exact spreadsheet I use? I've cleaned up my scoring template and made it 
             available for free. Includes the formulas, scoring rubrics, and example calculations.
           </p>
-          <Link href="/contact?playbook=portfolio-template">
-            <a className="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors">
+          <Link href="/contact?playbook=portfolio-template" className="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors">
               Download Portfolio Template
-            </a>
           </Link>
         </Card>
 
@@ -510,10 +506,8 @@ export default function PortfolioApproachArticle() {
               process. Everything you need to start managing product bets like a VC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/contact?playbook=portfolio-template">
-                <a className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <Link href="/contact?playbook=portfolio-template" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                   Download Free Template
-                </a>
               </Link>
               <button className="text-cyan-400 hover:text-cyan-300 transition-colors">
                 Read More Articles →
@@ -531,11 +525,9 @@ export default function PortfolioApproachArticle() {
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
-              </a>
             </Link>
           </div>
         </div>

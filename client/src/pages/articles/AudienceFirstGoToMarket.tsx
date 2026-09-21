@@ -23,14 +23,12 @@ export default function AudienceFirstGoToMarket() {
       </Helmet>
 
       {/* Article Content */}
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -457,10 +455,8 @@ export default function AudienceFirstGoToMarket() {
             <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Ready to Build Your Audience-First Strategy?</h3>
               <p className="text-slate-300 mb-6">I've helped multiple teams implement this framework. Let's discuss how to adapt it to your specific market and product.</p>
-              <Link href="/contact">
-                <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                   Schedule a Discovery Call →
-                </a>
               </Link>
             </div>
           </div>
@@ -474,11 +470,9 @@ export default function AudienceFirstGoToMarket() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles/mvp-strategy">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles/mvp-strategy" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read Next: The MVP Strategy: How to Launch a Product That Sells Itself
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>
