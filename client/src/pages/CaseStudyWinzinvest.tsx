@@ -65,13 +65,11 @@ const CaseStudyWinzinvest: React.FC = () => {
 
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work">
-          <a className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             <span className="text-sm font-medium">Back to Work</span>
-          </a>
         </Link>
       </div>
 
@@ -407,10 +405,8 @@ const CaseStudyWinzinvest: React.FC = () => {
               </svg>
             </a>
           </div>
-          <Link href="/contact">
-            <a className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-lg transition-colors">
+          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-lg transition-colors">
               Let's Talk
-            </a>
           </Link>
         </section>
 

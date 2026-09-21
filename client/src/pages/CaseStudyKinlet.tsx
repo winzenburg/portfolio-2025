@@ -41,13 +41,11 @@ const CaseStudyKinlet: React.FC = () => {
       />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work">
-          <a className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             <span className="text-sm font-medium">Back to Work</span>
-          </a>
         </Link>
       </div>
 
@@ -831,10 +829,8 @@ const CaseStudyKinlet: React.FC = () => {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             I can help your team adopt AI-augmented workflows, build SaaS MVPs at unprecedented speed, or serve as a full-stack product leader who bridges strategy and execution.
           </p>
-          <Link href="/contact">
-            <span className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-lg transition-colors cursor-pointer">
+          <Link href="/contact" className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-lg transition-colors cursor-pointer">
               Let's Talk
-            </span>
           </Link>
         </section>
       </div>

@@ -25,11 +25,9 @@ export default function SaaSStartupFailures() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -495,10 +493,8 @@ export default function SaaSStartupFailures() {
           <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Build Something That Lasts?</h3>
             <p className="text-slate-300 mb-6">Get the complete validation framework, including templates, checklists, and AI-powered tools that help you validate both desirability and durability before you build.</p>
-            <Link href="/contact?playbook=complete-framework">
-              <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?playbook=complete-framework" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Download the Complete Framework →
-              </a>
             </Link>
           </div>
 
@@ -511,11 +507,9 @@ export default function SaaSStartupFailures() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read More Articles
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

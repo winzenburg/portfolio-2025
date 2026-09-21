@@ -25,11 +25,9 @@ export default function SecurityBugGateArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -522,10 +520,8 @@ export default function SecurityBugGateArticle() {
           Get both the everyday prompt and pre-production gate checklists, plus examples of common issues 
           to watch for in AI-generated code.
         </p>
-        <Link href="/contact?playbook=security-bug-gate">
-          <a className="inline-block bg-slate-900 text-cyan-400 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
+        <Link href="/contact?playbook=security-bug-gate" className="inline-block bg-slate-900 text-cyan-400 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
             Download the Templates
-          </a>
         </Link>
       </div>
     </article>
@@ -539,11 +535,9 @@ export default function SecurityBugGateArticle() {
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
-              </a>
             </Link>
           </div>
         </div>

@@ -67,11 +67,9 @@ export default function TheInterfaceProblem() {
 
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">

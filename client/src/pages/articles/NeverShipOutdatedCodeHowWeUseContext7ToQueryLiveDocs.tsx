@@ -25,11 +25,9 @@ export default function Context7LiveDocs() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -628,10 +626,8 @@ Before writing code: Query Context7 for each library above`}
             <p className="text-slate-300 mb-6">
               Want the exact Context7 queries we use for Tailwind, Next.js, and Supabase? Plus our dev quality template with Context7 integration?
             </p>
-            <Link href="/contact?playbook=context7-starter">
-              <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?playbook=context7-starter" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Download the Context7 Starter Kit →
-              </a>
             </Link>
           </div>
 
@@ -644,11 +640,9 @@ Before writing code: Query Context7 for each library above`}
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read More Articles
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

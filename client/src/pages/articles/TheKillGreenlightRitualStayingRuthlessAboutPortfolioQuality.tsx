@@ -25,11 +25,9 @@ export default function KillGreenlightRitual() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -637,11 +635,9 @@ Date: 2025-12-02`}</div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
-              </a>
             </Link>
           </div>
         </div>

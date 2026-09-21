@@ -25,11 +25,9 @@ export default function BusinessOperatingSystem() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -430,10 +428,8 @@ export default function BusinessOperatingSystem() {
             <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Want to Implement This in Your Organization?</h3>
               <p className="text-slate-300 mb-6">I've helped teams adopt this operating system across startups and enterprises. The key is adapting it to your specific context while keeping the core constraints intact.</p>
-              <Link href="/contact">
-                <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                   Let's Talk →
-                </a>
               </Link>
             </div>
           </div>
@@ -447,11 +443,9 @@ export default function BusinessOperatingSystem() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">Next in This Series</p>
-            <Link href="/articles/weekly-rhythm">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles/weekly-rhythm" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read Next: The Weekly Rhythm: A 60-Minute Operating System
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

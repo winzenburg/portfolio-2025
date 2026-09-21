@@ -34,11 +34,9 @@ export default function IntegrationDocsThatWork() {
 
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
@@ -527,10 +525,8 @@ Success! You're ready to integrate.`}
           <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Need Documentation That Developers Actually Use?</h3>
             <p className="text-slate-300 mb-6">Let's discuss how to design integration experiences that reduce time-to-value.</p>
-            <Link href="/contact">
-              <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get in Touch →
-              </a>
             </Link>
           </div>
 
@@ -541,11 +537,9 @@ Success! You're ready to integrate.`}
 
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles/autonomous-ai-coding">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles/autonomous-ai-coding" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read Next: Autonomous AI Coding
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>

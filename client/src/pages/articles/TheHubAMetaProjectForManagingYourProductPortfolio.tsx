@@ -25,11 +25,9 @@ export default function TheHubArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles">
-            <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
-            </a>
           </Link>
 
           {/* Hero Image */}
@@ -590,15 +588,11 @@ export default function TheHubArticle() {
               I'm working on a step-by-step guide with templates, code examples, and lessons learned from building my own portfolio management system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
-                <a className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors text-center">
+              <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors text-center">
                   Get the Hub Building Guide
-                </a>
               </Link>
-              <Link href="/portfolio">
-                <a className="inline-block border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 font-semibold px-6 py-3 rounded-lg transition-colors text-center">
+              <Link href="/portfolio" className="inline-block border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 font-semibold px-6 py-3 rounded-lg transition-colors text-center">
                   See My Portfolio Dashboard
-                </a>
               </Link>
             </div>
           </div>
@@ -612,11 +606,9 @@ export default function TheHubArticle() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-slate-800">
             <p className="text-slate-400 mb-4">What's Next?</p>
-            <Link href="/articles">
-              <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-semibold">
                 Read More Articles
                 <ArrowRight className="w-5 h-5" />
-              </a>
             </Link>
           </div>
         </div>
