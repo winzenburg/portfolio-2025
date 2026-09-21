@@ -104,17 +104,17 @@ const CaseStudyWinzinvest: React.FC = () => {
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
               <div className="text-3xl font-bold text-cyan-400 mb-1">2.16</div>
               <div className="text-xs text-slate-400 uppercase tracking-wider">Sharpe Ratio</div>
-              <div className="text-xs text-slate-500 mt-1">5-year backtest</div>
+              <div className="text-xs text-slate-400 mt-1">5-year backtest</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
               <div className="text-3xl font-bold text-cyan-400 mb-1">3.5%</div>
               <div className="text-xs text-slate-400 uppercase tracking-wider">Options Income</div>
-              <div className="text-xs text-slate-500 mt-1">Annualized floor</div>
+              <div className="text-xs text-slate-400 mt-1">Annualized floor</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
               <div className="text-3xl font-bold text-cyan-400 mb-1">17</div>
               <div className="text-xs text-slate-400 uppercase tracking-wider">Risk Gates</div>
-              <div className="text-xs text-slate-500 mt-1">On every order</div>
+              <div className="text-xs text-slate-400 mt-1">On every order</div>
             </div>
           </div>
 
@@ -122,7 +122,7 @@ const CaseStudyWinzinvest: React.FC = () => {
             href="https://winzinvest.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-lg transition-colors"
           >
             View Live Platform
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -278,7 +278,7 @@ const CaseStudyWinzinvest: React.FC = () => {
               { n: '04', title: 'Session Monitoring', desc: 'Positions are tracked continuously, managing profit targets, failed-setup exits, and auto-rolling options at 7 DTE' },
             ].map((s) => (
               <div key={s.n} className="flex gap-5 bg-white/5 border border-white/10 rounded-lg p-5">
-                <div className="text-2xl font-bold text-cyan-700/60 font-serif w-8 shrink-0">{s.n}</div>
+                <div className="text-2xl font-bold text-cyan-400/80 font-serif w-8 shrink-0">{s.n}</div>
                 <div>
                   <div className="font-semibold text-white mb-1">{s.title}</div>
                   <div className="text-slate-400 text-sm leading-relaxed">{s.desc}</div>

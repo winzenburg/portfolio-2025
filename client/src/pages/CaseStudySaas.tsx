@@ -382,7 +382,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-cyan-400 mb-2">~$1.03M</div>
               <div className="text-sm text-gray-400 mb-3">Cost Savings</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 7-person team eliminated (84 person-months saved)
               </p>
             </div>
@@ -390,7 +390,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-cyan-400 mb-2">60%</div>
               <div className="text-sm text-gray-400 mb-3">Faster Development</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 Product teams ship features significantly faster
               </p>
             </div>
@@ -398,7 +398,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-cyan-400 mb-2">100%</div>
               <div className="text-sm text-gray-400 mb-3">Token Compliance</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 Automated validation prevents governance drift
               </p>
             </div>
@@ -456,7 +456,7 @@ const CaseStudySaas: React.FC = () => {
             I can deliver enterprise-grade design systems in weeks, not months, at a fraction of traditional costs while maintaining rigorous quality standards.
           </p>
           <Link href="/contact">
-            <span className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors cursor-pointer">
+            <span className="inline-block px-8 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-lg transition-colors cursor-pointer">
               Let's Discuss Your Project
             </span>
           </Link>

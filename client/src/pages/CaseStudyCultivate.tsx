@@ -613,7 +613,7 @@ const CaseStudyCultivate: React.FC = () => {
             I can help your organization implement AI-augmented workflows, design systematic processes, or lead product/design operations that multiply your team's effectiveness. Let's talk about building systems that build products.
           </p>
           <Link href="/contact">
-            <span className="inline-block px-8 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors cursor-pointer">
+            <span className="inline-block px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold rounded-lg transition-colors cursor-pointer">
               Let's Talk
             </span>
           </Link>

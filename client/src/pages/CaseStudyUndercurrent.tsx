@@ -303,7 +303,7 @@ const CaseStudyUndercurrent: React.FC = () => {
               { n: '08', title: 'Synthesis', desc: 'Connecting the dots into a cohesive, actionable report' },
             ].map((s) => (
               <div key={s.n} className="flex gap-4 bg-white/5 border border-white/10 rounded-lg p-5">
-                <div className="text-2xl font-bold text-amber-700/60 font-serif w-8 shrink-0">{s.n}</div>
+                <div className="text-2xl font-bold text-amber-400/80 font-serif w-8 shrink-0">{s.n}</div>
                 <div>
                   <div className="font-semibold text-white mb-1">{s.title}</div>
                   <div className="text-stone-400 text-sm leading-relaxed">{s.desc}</div>

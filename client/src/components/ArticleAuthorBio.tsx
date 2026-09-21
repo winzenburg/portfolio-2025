@@ -40,7 +40,7 @@ export default function ArticleAuthorBio() {
             {AUTHOR_BLURB}{" "}
             <Link
               href="/about"
-              className="text-primary transition-colors hover:text-cyan-300"
+              className="text-primary underline underline-offset-2 transition-colors hover:text-cyan-300"
             >
               About / Brand Hub
             </Link>
@@ -49,7 +49,7 @@ export default function ArticleAuthorBio() {
               href="https://www.linkedin.com/in/rwinzenburg/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary transition-colors hover:text-cyan-300"
+              className="text-primary underline underline-offset-2 transition-colors hover:text-cyan-300"
             >
               LinkedIn
             </a>

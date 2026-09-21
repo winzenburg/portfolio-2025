@@ -364,7 +364,7 @@ const CaseStudyComcast: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-green-400 mb-2">~$1.03M</div>
               <div className="text-sm text-gray-400 mb-3">Cost Savings</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 Large team eliminated (84 person-months saved)
               </p>
             </div>
@@ -372,7 +372,7 @@ const CaseStudyComcast: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-green-400 mb-2">10x</div>
               <div className="text-sm text-gray-400 mb-3">Faster Prototyping</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 Design team builds prototypes in hours, not days
               </p>
             </div>
@@ -380,7 +380,7 @@ const CaseStudyComcast: React.FC = () => {
             <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-green-400 mb-2">Fortune 100</div>
               <div className="text-sm text-gray-400 mb-3">Production Use</div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-400">
                 Actively used across multiple product lines
               </p>
             </div>
@@ -438,8 +438,8 @@ const CaseStudyComcast: React.FC = () => {
             I can deliver comprehensive, production-ready design systems that accelerate your entire product organization, from design to development to deployment.
           </p>
           <Link href="/contact">
-            <a className="inline-block px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg transition-colors">
-              Let\'s Discuss Your Project
+            <a className="inline-block px-8 py-3 bg-green-500 hover:bg-green-400 text-slate-900 font-semibold rounded-lg transition-colors">
+              Let&apos;s Discuss Your Project
             </a>
           </Link>
         </section>
