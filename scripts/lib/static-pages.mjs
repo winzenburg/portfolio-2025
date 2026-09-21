@@ -24,9 +24,9 @@ import { SITE_ORIGIN } from "./articles-metadata.mjs";
 export const STATIC_PAGES = [
   {
     path: "/",
-    title: "Ryan Winzenburg | Design Operations Leader & AI Workflow Architect",
+    title: "Ryan Winzenburg | Product Experience Leader, Enterprise B2B",
     description:
-      "Design leader with 25 years at Fortune 50 companies transforming how teams ship with AI. Head of Design Operations, VP of Design, Principal Design Technologist. 4-6x faster delivery, $3M+ portfolio value.",
+      "Product experience leader with 25 years designing enterprise B2B systems at Fortune 50 companies. I lead product experience for complex B2B systems, from healthcare to fintech to defense.",
     ogImage: "/images/about-hero.webp",
     ogType: "website",
     changefreq: "weekly",
@@ -35,9 +35,9 @@ export const STATIC_PAGES = [
   },
   {
     path: "/work",
-    title: "Case Studies | Design Operations & AI-Augmented Product Design, Ryan Winzenburg",
+    title: "Case Studies | Product Experience Leadership, Enterprise B2B, Ryan Winzenburg",
     description:
-      "Case studies in design operations, enterprise design systems, and AI-augmented product design across Fortune 50 and startup environments.",
+      "Case studies in enterprise B2B product experience: experience direction, design systems, product operating model, and AI-enabled execution across Fortune 50 and venture-backed environments.",
     ogImage: "/images/work-hero.webp",
     changefreq: "monthly",
     priority: "0.9",
@@ -46,7 +46,7 @@ export const STATIC_PAGES = [
     path: "/about",
     title: "About Ryan Winzenburg | Brand Hub — Canonical Identity Facts",
     description:
-      "Canonical facts about Ryan Winzenburg: Design Operations Leader & AI Workflow Architect in Wheat Ridge, CO; founder of Winzinvest and Casimir Systems.",
+      "Canonical facts about Ryan Winzenburg: Product Experience Leader, Enterprise B2B, in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath.",
     ogImage: "/images/about-hero.webp",
     ogType: "profile",
     changefreq: "monthly",
@@ -56,7 +56,7 @@ export const STATIC_PAGES = [
     path: "/methodology",
     title: "AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg",
     description:
-      "A five-phase AI-native design methodology for shipping enterprise-grade UX 4-6x faster without sacrificing quality or system integrity.",
+      "A five-phase AI-native design methodology for enterprise product work: where the strategic calls stay human, and where AI handles execution.",
     ogImage: "/images/methodology-hero.webp",
     changefreq: "monthly",
     priority: "0.8",
