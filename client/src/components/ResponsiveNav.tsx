@@ -104,7 +104,12 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
               );
             })}
             <Button className="ml-4" asChild>
-              <Link href="/contact">Contact</Link>
+              <Link
+                href="/contact"
+                aria-current={currentPage === "contact" ? "page" : undefined}
+              >
+                Contact
+              </Link>
             </Button>
           </div>
 
@@ -156,7 +161,12 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
               })}
             </ul>
             <Button className="mt-4 w-full" asChild>
-              <Link href="/contact">Contact</Link>
+              <Link
+                href="/contact"
+                aria-current={currentPage === "contact" ? "page" : undefined}
+              >
+                Contact
+              </Link>
             </Button>
           </div>
         ) : null}

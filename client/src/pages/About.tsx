@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, ArrowUpRight, FileJson, FileText, Map as MapIcon } from "lucide-react";
-import ResponsiveNav from "@/components/ResponsiveNav";
+import SiteLayout from "@/components/SiteLayout";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
 import FactRow from "@/components/FactRow";
@@ -184,7 +184,7 @@ const machineFiles = [
 
 export default function About() {
   return (
-    <div className="min-h-screen">
+    <SiteLayout currentPage="about">
       <PageSeo
         title="About Ryan Winzenburg | Brand Hub — Canonical Identity Facts"
         description="Canonical facts about Ryan Winzenburg: Product Experience Leader, Enterprise B2B, in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath."
@@ -193,7 +193,6 @@ export default function About() {
         ogType="profile"
         jsonLd={aboutBrandHubJsonLd}
       />
-      <ResponsiveNav currentPage="about" />
 
       <PageHero
         titleId="about-hero-title"
@@ -527,6 +526,6 @@ export default function About() {
           </div>
         </div>
       </Section>
-    </div>
+    </SiteLayout>
   );
 }

@@ -1,7 +1,7 @@
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import ResponsiveNav from "@/components/ResponsiveNav";
+import SiteLayout from "@/components/SiteLayout";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
 import FactRow from "@/components/FactRow";
@@ -654,14 +654,13 @@ export default function Resources() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <SiteLayout currentPage="resources">
       <PageSeo
         title="Resources | Skill Packs for Product, UX, and Front-End | Ryan Winzenburg"
         description="Download Ryan Winzenburg's Double Diamond and UX competency skill packs for Cursor and Grok, with task-level guidance for Discover, Define, Develop, and Deliver."
         path="/resources"
         ogImage="/images/methodology-hero.webp"
       />
-      <ResponsiveNav currentPage="resources" />
 
       <PageHero
         titleId="resources-hero-title"
@@ -932,6 +931,6 @@ export default function Resources() {
           </div>
         </div>
       </Section>
-    </div>
+    </SiteLayout>
   );
 }
