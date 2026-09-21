@@ -1,11 +1,23 @@
-import { useState } from "react";
-import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import ResponsiveNav from "@/components/ResponsiveNav";
+import { useMemo, useState } from "react";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
+import PageHero from "@/components/PageHero";
+import FactRow, { type Fact } from "@/components/FactRow";
+import Reveal from "@/components/Reveal";
+import SiteLayout from "@/components/SiteLayout";
+import { Section, SectionHeading, SectionTitle } from "@/components/Section";
+
+interface Illustration {
+  name: string;
+  file: string;
+  category: string;
+}
+
+const ALL_CATEGORIES = "All";
 
 // All illustrations with cleaned-up names
-const illustrations = [
+const illustrations: Illustration[] = [
   { name: "AI as Co-Architect 1", file: "ryanwinzenburg_76877_AI_as_Co-Architect_of_the_Future_Concept_a4776f28-6708-40a2-b432-9f81f66a70da_1.webp", category: "AI Concepts" },
   { name: "AI as Co-Architect 2", file: "ryanwinzenburg_76877_AI_as_Co-Architect_of_the_Future_Concept_a4776f28-6708-40a2-b432-9f81f66a70da_2.webp", category: "AI Concepts" },
   { name: "AI as Co-Architect 3", file: "ryanwinzenburg_76877_AI_as_Co-Architect_of_the_Future_Concept_a4776f28-6708-40a2-b432-9f81f66a70da_3.webp", category: "AI Concepts" },
@@ -49,95 +61,216 @@ const illustrations = [
   { name: "Design Systems Solutions", file: "ryanwinzenburg_76877_Why_Most_Design_Systems_Fail_And_How_to__243e40d9-678a-4bbc-b5b2-e06b303634eb_2.webp", category: "Design Systems" },
 ];
 
+const categories: string[] = [
+  ALL_CATEGORIES,
+  ...Array.from(new Set(illustrations.map((item) => item.category))),
+];
+
+const heroFacts: Fact[] = [
+  { label: "Illustrations", value: `${String(illustrations.length)} in the set` },
+  { label: "Categories", value: String(categories.length - 1) },
+  { label: "Made for", value: "Articles and product storytelling" },
+  { label: "Style", value: "Hand-drawn, editorial" },
+];
+
+function filterPillClass(active: boolean): string {
+  return active
+    ? "rounded-full border border-primary/60 bg-primary/15 px-4 py-1.5 text-sm font-medium text-primary transition-colors"
+    : "rounded-full border border-border/60 bg-background/40 px-4 py-1.5 text-sm font-medium text-slate-300 transition-colors hover:border-primary/50 hover:text-white";
+}
+
 export default function Gallery() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState(ALL_CATEGORIES);
 
-  const categories = ["All", ...Array.from(new Set(illustrations.map(i => i.category)))];
+  const filteredIllustrations = useMemo(() => {
+    const query = searchTerm.trim().toLowerCase();
+    return illustrations.filter((illustration) => {
+      const matchesSearch =
+        query.length === 0 || illustration.name.toLowerCase().includes(query);
+      const matchesCategory =
+        selectedCategory === ALL_CATEGORIES ||
+        illustration.category === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+  }, [searchTerm, selectedCategory]);
 
-  const filteredIllustrations = illustrations.filter(illustration => {
-    const matchesSearch = illustration.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === "All" || illustration.category === selectedCategory;
-    return matchesSearch && matchesCategory;
-  });
+  const isFiltered =
+    searchTerm.trim().length > 0 || selectedCategory !== ALL_CATEGORIES;
+
+  function resetFilters(): void {
+    setSearchTerm("");
+    setSelectedCategory(ALL_CATEGORIES);
+  }
 
   return (
-    <div className="min-h-screen">
+    <SiteLayout currentPage="gallery">
       <PageSeo
         title="Illustration Gallery | Ryan Winzenburg"
         description="Selected editorial and conceptual illustrations created for articles and product storytelling."
         path="/gallery"
         ogImage="/images/articles-hero.webp"
       />
-      <ResponsiveNav currentPage="gallery" />
 
-      {/* Hero */}
-      <section className="container py-16 md:py-24">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Illustration Library
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mb-8">
-          A collection of custom hand-drawn architectural and conceptual illustrations created for the portfolio. Each illustration represents themes of AI collaboration, strategic architecture, and systems thinking.
+      <PageHero
+        titleId="gallery-hero-title"
+        eyebrow="Gallery"
+        media={{
+          // The gallery fronts itself with one of its own pieces rather than
+          // borrowing the Articles hero art.
+          src: "/images/gallery/ryanwinzenburg_76877_Editorial_architectural_illustration_sym_8d4bcf2f-ed38-4db9-8038-4099cefd73e3_1.webp",
+          position: "object-center",
+        }}
+        title="Illustration library"
+        lede={
+          <>
+            Custom hand-drawn architectural and conceptual illustrations created
+            for the portfolio. The recurring themes are AI collaboration,
+            strategic architecture, and systems thinking.
+          </>
+        }
+        actions={
+          <Button size="lg" variant="outline" asChild>
+            <a href="#library">Browse the set</a>
+          </Button>
+        }
+        meta={<FactRow facts={heroFacts} />}
+      />
+
+      <Section id="library" labelledBy="library-heading">
+        <SectionHeading
+          id="library-heading"
+          eyebrow="Browse"
+          title="Filter by theme, or search by name"
+          lede="Every image here was drawn for a specific article or case study on this site."
+        />
+
+        <div className="flex flex-col gap-6 border-y border-border/60 py-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="lg:w-80">
+            <label
+              htmlFor="gallery-search"
+              className="mb-2 block text-xs uppercase tracking-[0.16em] text-slate-400"
+            >
+              Search by name
+            </label>
+            <input
+              id="gallery-search"
+              type="search"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Design systems, MVP, architecture…"
+              className="w-full rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-2.5 text-sm text-white placeholder:text-slate-400 outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50"
+            />
+          </div>
+
+          <div>
+            <p
+              id="gallery-filter-label"
+              className="mb-2 text-xs uppercase tracking-[0.16em] text-slate-400"
+            >
+              Category
+            </p>
+            <div
+              role="group"
+              aria-labelledby="gallery-filter-label"
+              className="flex flex-wrap gap-2"
+            >
+              {categories.map((category) => {
+                const active = selectedCategory === category;
+                return (
+                  <button
+                    key={category}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => setSelectedCategory(category)}
+                    className={filterPillClass(active)}
+                  >
+                    {category}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <p aria-live="polite" className="mt-6 text-sm text-slate-400">
+          Showing {filteredIllustrations.length} of {illustrations.length}{" "}
+          illustrations
         </p>
 
-        {/* Search and Filter */}
-        <div className="flex flex-col md:flex-row gap-4 mb-12">
-          <Input
-            type="text"
-            placeholder="Search illustrations..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="max-w-md"
-          />
-          <div className="flex gap-2 flex-wrap">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  selectedCategory === category
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted hover:bg-muted/80"
-                }`}
-              >
-                {category}
-              </button>
+        {filteredIllustrations.length > 0 ? (
+          <ul className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {filteredIllustrations.map((illustration, index) => (
+              <li key={illustration.file}>
+                <Reveal delay={Math.min(index, 5) * 70} className="h-full">
+                  <figure className="group flex h-full flex-col overflow-hidden rounded-xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70">
+                    <div className="aspect-[4/3] overflow-hidden bg-slate-900">
+                      <img
+                        src={`/images/gallery/${illustration.file}`}
+                        alt={`${illustration.name}, ${illustration.category.toLowerCase()} illustration`}
+                        className="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+                    <figcaption className="flex flex-1 flex-col gap-1 border-t border-border/60 p-5">
+                      <span className="text-xs uppercase tracking-[0.16em] text-slate-400">
+                        {illustration.category}
+                      </span>
+                      <span className="font-semibold leading-snug text-slate-100">
+                        {illustration.name}
+                      </span>
+                    </figcaption>
+                  </figure>
+                </Reveal>
+              </li>
             ))}
-          </div>
-        </div>
-
-        <div className="text-sm text-muted-foreground mb-8">
-          Showing {filteredIllustrations.length} of {illustrations.length} illustrations
-        </div>
-      </section>
-
-      {/* Gallery Grid */}
-      <section className="container pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredIllustrations.map((illustration, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-muted overflow-hidden">
-                <img
-                  src={`/images/gallery/${illustration.file}`}
-                  alt={illustration.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold mb-1">{illustration.name}</h3>
-                <div className="text-sm text-muted-foreground">{illustration.category}</div>
-              </div>
-            </Card>
-          ))}
-        </div>
-
-        {filteredIllustrations.length === 0 && (
-          <div className="text-center py-12 text-muted-foreground">
-            No illustrations found matching your search.
+          </ul>
+        ) : (
+          <div className="mt-10 rounded-xl border border-border/60 bg-background/40 p-10 text-center">
+            <h3 className="text-lg font-semibold text-white">
+              Nothing matches that yet
+            </h3>
+            <p className="mx-auto mt-2 max-w-md leading-relaxed text-slate-300">
+              Try a shorter search term, or clear the filters to see all{" "}
+              {illustrations.length} illustrations.
+            </p>
+            <Button
+              type="button"
+              variant="outline"
+              className="mt-6"
+              onClick={resetFilters}
+              disabled={!isFiltered}
+            >
+              Clear filters
+            </Button>
           </div>
         )}
-      </section>
-    </div>
+      </Section>
+
+      <Section tone="muted" compact labelledBy="gallery-closing-heading">
+        <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-7">
+            <SectionTitle
+              id="gallery-closing-heading"
+              className="text-2xl md:text-3xl"
+            >
+              These were drawn to carry an argument
+            </SectionTitle>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate-300">
+              Each one belongs to a piece of writing or a case study. The
+              writing is where the reasoning lives.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
+            <Button variant="outline" asChild>
+              <Link href="/articles">Read the articles</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/work">See the case studies</Link>
+            </Button>
+          </div>
+        </div>
+      </Section>
+    </SiteLayout>
   );
 }

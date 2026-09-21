@@ -1,353 +1,454 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { Settings } from "lucide-react";
-import ResponsiveNav from "@/components/ResponsiveNav";
+import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
+import PageHero from "@/components/PageHero";
+import FactRow, { type Fact } from "@/components/FactRow";
+import Reveal from "@/components/Reveal";
+import SiteLayout from "@/components/SiteLayout";
+import {
+  Eyebrow,
+  Section,
+  SectionHeading,
+  SectionTitle,
+} from "@/components/Section";
+
+type AudienceValue = {
+  /** Who the benefit lands with. Rendered as the term in a definition list. */
+  audience: string;
+  benefit: string;
+};
+
+type MethodologyPhase = {
+  /** Anchor id, also used by the phase jump nav. */
+  slug: string;
+  name: string;
+  shortName: string;
+  timeline: string;
+  summary: string;
+  activities: string[];
+  value: AudienceValue[];
+  deliverable: string;
+};
+
+type Reason = {
+  title: string;
+  body: string;
+};
+
+/**
+ * Structural facts only. The page's outcome claims ($3M+, WCAG AA) stay in the
+ * body where they carry their original context; promoting them into the hero
+ * would amplify proof claims that have not been verified.
+ */
+const HERO_FACTS: Fact[] = [
+  { label: "Phases", value: "Five", note: "Research through handoff" },
+  { label: "Experience", value: "25 years", note: "Fortune 50 product work" },
+  {
+    label: "Human decisions",
+    value: "Strategy and quality",
+    note: "What to build, and whether it's good enough",
+  },
+  {
+    label: "AI execution",
+    value: "Code, docs, tests",
+    note: "Once the direction is settled",
+  },
+];
+
+const PHASES: MethodologyPhase[] = [
+  {
+    slug: "phase-research-strategy",
+    name: "AI-Powered Research & Strategy",
+    shortName: "Research",
+    timeline: "1–2 days",
+    summary:
+      "Deep understanding of the problem space and data-driven strategy in days, not months.",
+    activities: [
+      "Synthesize user research, surveys, support tickets",
+      "Conduct heuristic analysis of existing products",
+      "Create data-driven personas and journey maps",
+      "Identify high-impact opportunities",
+    ],
+    value: [
+      { audience: "VCs", benefit: "Validate assumptions fast, reduce risk" },
+      { audience: "PMs", benefit: "Data-driven roadmap in days" },
+      { audience: "Design", benefit: "Research at scale without hiring" },
+    ],
+    deliverable:
+      "Strategy document, personas, prioritized opportunities, executive summary",
+  },
+  {
+    slug: "phase-design-prototyping",
+    name: "Design & Prototyping",
+    shortName: "Design",
+    timeline: "3–5 days",
+    summary:
+      "High-fidelity, interactive prototypes without the traditional slow wireframing process.",
+    activities: [
+      "Model information architecture and navigation",
+      "Generate production-quality components",
+      "Build interactive, high-fidelity prototypes",
+      "Iterate based on stakeholder feedback",
+    ],
+    value: [
+      { audience: "VCs", benefit: "Validate product-market fit fast" },
+      { audience: "PMs", benefit: "Test with users in week 1" },
+      { audience: "Design", benefit: "Skip low-fi, go straight to hi-fi" },
+    ],
+    deliverable: "Fully interactive prototype built with production-ready code",
+  },
+  {
+    slug: "phase-production-development",
+    name: "Production Development",
+    shortName: "Development",
+    timeline: "1–2 weeks",
+    summary:
+      "Production-ready code with enterprise quality: type-safe, accessible, tested, documented.",
+    activities: [
+      "Write production code (React, TypeScript, Angular)",
+      "Implement design tokens and theming",
+      "Build reusable component library",
+      "Ensure 100% WCAG AA compliance",
+    ],
+    value: [
+      { audience: "VCs", benefit: "No prototype-to-production gap" },
+      { audience: "PMs", benefit: "Ship to production immediately" },
+      { audience: "Engineering", benefit: "Zero technical debt" },
+    ],
+    deliverable: "Production-ready codebase, component library, design tokens",
+  },
+  {
+    slug: "phase-testing-qa",
+    name: "Testing & Quality Assurance",
+    shortName: "Testing",
+    timeline: "2–3 days",
+    summary:
+      "Comprehensive automated testing ensures enterprise quality without manual QA overhead.",
+    activities: [
+      "Write E2E tests with Playwright",
+      "Automated accessibility audits (axe-core)",
+      "Visual regression testing",
+      "Performance optimization",
+    ],
+    value: [
+      { audience: "VCs", benefit: "Reduce post-launch bugs" },
+      { audience: "PMs", benefit: "Ship with confidence" },
+      { audience: "Engineering", benefit: "Automated QA pipeline" },
+    ],
+    deliverable:
+      "Comprehensive test suite, accessibility audit, performance report",
+  },
+  {
+    slug: "phase-documentation-handoff",
+    name: "Documentation & Handoff",
+    shortName: "Handoff",
+    timeline: "1–2 days",
+    summary:
+      "Documentation that lets your team maintain and extend the system long after I am gone.",
+    activities: [
+      "Generate component documentation (Storybook)",
+      "Write implementation guides",
+      "Create governance playbooks",
+      "Train your team on AI workflows",
+    ],
+    value: [
+      { audience: "VCs", benefit: "Reduce future maintenance costs" },
+      { audience: "PMs", benefit: "Team is self-sufficient" },
+      { audience: "Design", benefit: "Your team learns AI workflows" },
+    ],
+    deliverable: "Complete documentation, governance playbook, team training",
+  },
+];
+
+const REASONS: Reason[] = [
+  {
+    title: "Proven at scale",
+    body: "25 years at Fortune 50 companies means I have seen every failure mode. This methodology is battle-tested at enterprise scale.",
+  },
+  {
+    title: "Repeatable process",
+    body: "Not a one-off miracle. I have delivered $3M+ in value across 3 recent projects using this exact methodology.",
+  },
+  {
+    title: "Your team gets better",
+    body: "Training your team on AI workflows is part of the engagement, not an afterthought. The velocity increase is permanent.",
+  },
+];
+
+function PhaseBlock({
+  phase,
+  index,
+}: {
+  phase: MethodologyPhase;
+  index: number;
+}) {
+  const headingId = `${phase.slug}-heading`;
+
+  return (
+    <article
+      id={phase.slug}
+      aria-labelledby={headingId}
+      className="scroll-mt-24 py-14 first:pt-0 last:pb-0"
+    >
+      <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+        <div className="lg:col-span-4">
+          <div className="lg:sticky lg:top-24">
+            <div className="mb-5 flex items-center gap-4">
+              <span
+                aria-hidden="true"
+                className="font-['Playfair_Display'] text-2xl text-slate-400"
+              >
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span aria-hidden="true" className="h-px w-10 bg-primary" />
+              <span className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-[0.65rem] font-medium uppercase tracking-[0.16em] text-primary">
+                {phase.timeline}
+              </span>
+            </div>
+            <h3
+              id={headingId}
+              className="mb-4 text-2xl font-bold tracking-tight text-white md:text-3xl"
+            >
+              {phase.name}
+            </h3>
+            <p className="leading-relaxed text-slate-300">{phase.summary}</p>
+          </div>
+        </div>
+
+        <div className="lg:col-span-8">
+          <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+            <div>
+              <h4 className="mb-4 text-xs uppercase tracking-[0.16em] text-slate-400">
+                What I do
+              </h4>
+              <ul className="space-y-2.5 border-t border-border/60 pt-4">
+                {phase.activities.map((activity) => (
+                  <li
+                    key={activity}
+                    className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-300"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="mt-[0.45rem] h-1 w-1 shrink-0 rounded-full bg-primary"
+                    />
+                    <span>{activity}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="mb-4 text-xs uppercase tracking-[0.16em] text-slate-400">
+                What it is worth
+              </h4>
+              <dl className="divide-y divide-border/60 border-t border-border/60">
+                {phase.value.map((item) => (
+                  <div
+                    key={item.audience}
+                    className="grid grid-cols-[minmax(0,6rem)_1fr] gap-x-4 py-3"
+                  >
+                    <dt className="text-sm font-medium text-slate-100">
+                      {item.audience}
+                    </dt>
+                    <dd className="text-sm leading-relaxed text-slate-300">
+                      {item.benefit}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+
+          <div className="mt-8 rounded-xl border border-border/60 bg-background/40 p-6">
+            <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
+              Deliverable
+            </p>
+            <p className="mt-2 leading-relaxed text-slate-200">
+              {phase.deliverable}
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
 
 export default function Methodology() {
   return (
-    <div className="min-h-screen">
+    <SiteLayout currentPage="methodology">
       <PageSeo
         title="AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg"
         description="A five-phase AI-native design methodology for shipping enterprise-grade UX 4-6x faster without sacrificing quality or system integrity."
         path="/methodology"
         ogImage="/images/methodology-hero.webp"
       />
-      <ResponsiveNav currentPage="methodology" />
 
-      {/* Hero */}
-      <section className="relative py-16 md:py-24 mb-16 md:mb-24">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <img
-            src="/images/methodology-hero.webp"
-            alt=""
-            className="w-full h-full object-cover opacity-40"
-          />
-        </div>
-        <div className="container">
-          <div className="bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Strategic AI-Native Methodology
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl">
-            A proven, repeatable methodology that transforms organizations into AI-native competitors, delivering board-level impact through 25 years of Fortune 50 expertise combined with the latest AI workflows.
-          </p>
-        </div>
-        </div>
-      </section>
+      <PageHero
+        titleId="methodology-hero-title"
+        eyebrow="Methodology"
+        eyebrowNote="Research through handoff"
+        media={{ src: "/images/methodology-hero.webp", position: "object-center" }}
+        title={<>A five-phase workflow for AI-native product delivery</>}
+        lede={
+          <>
+            I make the strategic calls about what to build and why. AI handles
+            execution: code, documentation, tests. The structure underneath is
+            25 years of Fortune 50 product work.
+          </>
+        }
+        actions={
+          <>
+            <Button size="lg" asChild>
+              <Link href="/contact">Schedule a call</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href="#workflow">See the five phases</a>
+            </Button>
+          </>
+        }
+        meta={<FactRow facts={HERO_FACTS} />}
+      />
 
       {/* Philosophy */}
-      <section className="container pb-24">
-        <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-6">The Philosophy: Expert-Guided AI Orchestration</h2>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-muted-foreground mb-6">
-              Most people use AI wrong. They ask it to "design a webpage" and get generic, soulless results. That's not how I work.
+      <Section labelledBy="philosophy-heading">
+        <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-4">
+            <Eyebrow className="mb-4">The philosophy</Eyebrow>
+            <SectionTitle id="philosophy-heading">
+              Expert-guided AI orchestration
+            </SectionTitle>
+          </div>
+          <div className="space-y-6 text-lg leading-relaxed text-slate-300 lg:col-span-7 lg:col-start-6">
+            <p className="text-xl text-slate-200 md:text-2xl md:leading-snug">
+              Most people use AI wrong. They ask it to &ldquo;design a
+              webpage&rdquo; and get generic, soulless results. That&apos;s not
+              how I work.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              My methodology treats <strong>AI as a force multiplier, guided by expert judgment.</strong> I do the strategic thinking, what to build, why it matters, how it should work. AI handles the execution, writing code, generating documentation, running tests. The result? Enterprise quality delivered at a speed that was previously impossible.
+            <p>
+              My methodology treats{" "}
+              <strong className="font-semibold text-white">
+                AI as a force multiplier, guided by expert judgment
+              </strong>
+              . I do the strategic thinking: what to build, why it matters, how
+              it should work. AI handles the execution: writing code, generating
+              documentation, running tests. Enterprise quality, at a speed that
+              was previously impossible.
             </p>
-            <p className="text-lg text-muted-foreground">
-              This isn't about replacing human expertise. It's about amplifying it. I'm the architect and conductor; AI is my orchestra.
+            <p>
+              This isn&apos;t about replacing human expertise. It&apos;s about
+              amplifying it. I&apos;m the architect and conductor; AI is my
+              orchestra.
             </p>
           </div>
         </div>
-      </section>
+      </Section>
 
-      {/* 5-Phase Workflow */}
-      <section className="bg-muted/30 py-24">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-12">The 5-Phase Workflow</h2>
-          
-          <div className="space-y-12 max-w-5xl">
-            {/* Phase 1 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    1
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">AI-Powered Research & Strategy</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Deep understanding of the problem space and data-driven strategy in days, not months.
-                  </p>
-                  
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <div className="font-semibold mb-2">What I Do</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Synthesize user research, surveys, support tickets</li>
-                        <li>• Conduct heuristic analysis of existing products</li>
-                        <li>• Create data-driven personas and journey maps</li>
-                        <li>• Identify high-impact opportunities</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-2">Business Value</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Validate assumptions fast, reduce risk</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Data-driven roadmap in days</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> <strong>For Design:</strong> Research at scale without hiring</li>
-                      </ul>
-                    </div>
-                  </div>
+      {/* Five phases */}
+      <Section id="workflow" tone="muted" labelledBy="workflow-heading">
+        <SectionHeading
+          id="workflow-heading"
+          eyebrow="The workflow"
+          title="Five phases, research through handoff"
+          lede="Each phase is scoped to a timeline and ends in a concrete deliverable."
+        />
 
-                  <div className="p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Deliverable</div>
-                    <div className="text-sm text-muted-foreground">
-                      Strategy document, personas, prioritized opportunities, executive summary
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
+        <nav
+          aria-label="Jump to a phase"
+          className="-mt-6 mb-14 flex flex-wrap gap-2"
+        >
+          {PHASES.map((phase, index) => (
+            <a
+              key={phase.slug}
+              href={`#${phase.slug}`}
+              className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/40 px-4 py-1.5 text-sm font-medium text-slate-300 transition-colors hover:border-primary/50 hover:text-primary"
+            >
+              <span aria-hidden="true" className="text-slate-400">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              {phase.shortName}
+            </a>
+          ))}
+        </nav>
 
-            {/* Phase 2 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    2
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">Design & Prototyping</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 3-5 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    High-fidelity, interactive prototypes without the traditional slow wireframing process.
-                  </p>
-                  
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <div className="font-semibold mb-2">What I Do</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Model information architecture and navigation</li>
-                        <li>• Generate production-quality components</li>
-                        <li>• Build interactive, high-fidelity prototypes</li>
-                        <li>• Iterate based on stakeholder feedback</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-2">Business Value</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Validate product-market fit fast</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Test with users in week 1</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> <strong>For Design:</strong> Skip low-fi, go straight to hi-fi</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Deliverable</div>
-                    <div className="text-sm text-muted-foreground">
-                      Fully interactive prototype built with production-ready code
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Phase 3 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    3
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">Production Development</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Weeks</div>
-                  <p className="text-muted-foreground mb-6">
-                    Production-ready code with enterprise quality: type-safe, accessible, tested, documented.
-                  </p>
-                  
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <div className="font-semibold mb-2">What I Do</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Write production code (React, TypeScript, Angular)</li>
-                        <li>• Implement design tokens and theming</li>
-                        <li>• Build reusable component library</li>
-                        <li>• Ensure 100% WCAG AA compliance</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-2">Business Value</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> No prototype-to-production gap</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Ship to production immediately</li>
-                        <li className="flex items-start gap-2">
-                          <Settings className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                          <span><strong>For Engineering:</strong> Zero technical debt</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Deliverable</div>
-                    <div className="text-sm text-muted-foreground">
-                      Production-ready codebase, component library, design tokens
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Phase 4 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    4
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">Testing & Quality Assurance</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 2-3 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Comprehensive automated testing ensures enterprise quality without manual QA overhead.
-                  </p>
-                  
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <div className="font-semibold mb-2">What I Do</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Write E2E tests with Playwright</li>
-                        <li>• Automated accessibility audits (axe-core)</li>
-                        <li>• Visual regression testing</li>
-                        <li>• Performance optimization</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-2">Business Value</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Reduce post-launch bugs</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Ship with confidence</li>
-                        <li className="flex items-start gap-2">
-                          <Settings className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                          <span><strong>For Engineering:</strong> Automated QA pipeline</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Deliverable</div>
-                    <div className="text-sm text-muted-foreground">
-                      Comprehensive test suite, accessibility audit, performance report
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Phase 5 */}
-            <Card className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    5
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">Documentation & Handoff</h3>
-                  <div className="text-sm text-muted-foreground mb-4">Timeline: 1-2 Days</div>
-                  <p className="text-muted-foreground mb-6">
-                    Comprehensive documentation ensures your team can maintain and extend the system long after I'm gone.
-                  </p>
-                  
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <div className="font-semibold mb-2">What I Do</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Generate component documentation (Storybook)</li>
-                        <li>• Write implementation guides</li>
-                        <li>• Create governance playbooks</li>
-                        <li>• Train your team on AI workflows</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="font-semibold mb-2">Business Value</div>
-                      <ul className="text-sm text-muted-foreground space-y-1">
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <strong>For VCs:</strong> Reduce future maintenance costs</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> <strong>For PMs:</strong> Team is self-sufficient</li>
-                        <li><svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg> <strong>For Design:</strong> Your team learns AI workflows</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="p-4 bg-muted rounded-lg">
-                    <div className="font-semibold mb-1">Deliverable</div>
-                    <div className="text-sm text-muted-foreground">
-                      Complete documentation, governance playbook, team training
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
+        <div className="divide-y divide-border/60">
+          {PHASES.map((phase, index) => (
+            <PhaseBlock key={phase.slug} phase={phase} index={index} />
+          ))}
         </div>
-      </section>
+      </Section>
 
-      {/* Why This Works */}
-      <section className="container py-24">
-        <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12">Why This Methodology Works</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Proven at Scale</h3>
-              <p className="text-muted-foreground">
-                25 years at Fortune 50 companies means I've seen every failure mode. This methodology is battle-tested at enterprise scale.
-              </p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Repeatable Process</h3>
-              <p className="text-muted-foreground">
-                Not a one-off miracle. I've delivered $3M+ in value across 3 recent projects using this exact methodology.
-              </p>
-            </Card>
-            <Card className="p-6">
-              <h3 className="text-xl font-bold mb-3">Your Team Gets Better</h3>
-              <p className="text-muted-foreground">
-                I don't just deliver a project, I train your team on AI workflows. The velocity increase is permanent.
-              </p>
-            </Card>
+      {/* Why it works */}
+      <Section tone="slate" labelledBy="why-heading">
+        <SectionHeading
+          id="why-heading"
+          eyebrow="Why it holds up"
+          title="Three reasons this methodology works"
+        />
+        {/* Subgrid keeps the index rule, title, and body on shared baselines. */}
+        <Reveal>
+          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-3 md:grid-rows-[auto_auto_1fr] md:gap-y-0">
+            {REASONS.map((reason, index) => (
+              <div
+                key={reason.title}
+                className="bg-background/60 p-7 md:row-span-3 md:grid md:grid-rows-subgrid md:p-8"
+              >
+                <div className="mb-6 flex items-baseline gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="font-['Playfair_Display'] text-2xl text-primary/70"
+                  >
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
+                </div>
+                <h3 className="mb-3 text-xl font-semibold leading-snug text-white">
+                  {reason.title}
+                </h3>
+                <p className="leading-relaxed text-slate-300">{reason.body}</p>
+              </div>
+            ))}
           </div>
-        </div>
-      </section>
+        </Reveal>
 
-      {/* CTA */}
-      <section className="bg-muted/30 py-24">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Transform Your Organization?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Let's discuss how this AI-native methodology creates sustainable competitive advantage and delivers board-level impact.
+        <p className="mt-10 max-w-2xl leading-relaxed text-slate-300">
+          Engagement scopes, timelines, and pricing live on the consulting
+          page.{" "}
+          <Link
+            href="/consulting"
+            className="group inline-flex items-center gap-1.5 font-medium text-primary transition-colors hover:text-cyan-300"
+          >
+            See how engagements are scoped
+            <ArrowRight
+              className="h-4 w-4 motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
+              aria-hidden="true"
+            />
+          </Link>
+        </p>
+      </Section>
+
+      {/* Closing */}
+      <Section tone="muted" compact labelledBy="methodology-cta-heading">
+        <div className="grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-16">
+          <div className="lg:col-span-7">
+            <SectionTitle id="methodology-cta-heading">
+              Want to see how this runs on your product?
+            </SectionTitle>
+            <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">
+              Tell me what you are shipping and where it is stuck. I will walk
+              you through what the five phases would look like against it,
+              including the parts I would not use.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg">
-                  Schedule a Call
-                </Button>
-              </Link>
-              <Link href="/work">
-                <Button size="lg" variant="outline">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
+            <Button size="lg" asChild>
+              <Link href="/contact">Schedule a call</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/work">View case studies</Link>
+            </Button>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SiteLayout>
   );
 }
-

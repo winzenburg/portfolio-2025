@@ -1,9 +1,24 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import ResponsiveNav from "@/components/ResponsiveNav";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
+import PageHero from "@/components/PageHero";
+import FactRow, { type Fact } from "@/components/FactRow";
+import SiteLayout from "@/components/SiteLayout";
+import { Eyebrow, Section, SectionTitle } from "@/components/Section";
 
 type SubscribeStatus = "idle" | "loading" | "success" | "error";
+
+const FIELD_CLASS =
+  "w-full rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50";
+
+const heroFacts: Fact[] = [
+  { label: "Cadence", value: "Once a week" },
+  { label: "Subject", value: "AI in design and product work" },
+  { label: "Drawn from", value: "Active project work" },
+  { label: "Unsubscribe", value: "From any email, anytime" },
+];
 
 export default function Subscribe() {
   const [email, setEmail] = useState("");
@@ -44,136 +59,158 @@ export default function Subscribe() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <SiteLayout currentPage="subscribe">
       <PageSeo
         title="Subscribe to the Weekly AI Founder Pulse | Ryan Winzenburg"
         description="A weekly brief for design and product leaders building with AI. Practical patterns, specific tools, real examples from active work."
         path="/subscribe"
         ogImage="/images/contact-hero.webp"
       />
-      <ResponsiveNav currentPage="subscribe" />
 
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-lg mx-auto">
-          {status === "success" ? (
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg
-                  className="w-8 h-8 text-green-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <h1 className="text-3xl font-bold text-white mb-4">
-                You're on the list.
-              </h1>
-              <p className="text-slate-300 mb-8">
-                The next pulse drops this week. Check your inbox, including
-                spam, in case it lands there the first time.
+      <PageHero
+        titleId="subscribe-hero-title"
+        align="center"
+        eyebrow="Newsletter"
+        title="Weekly AI Founder Pulse"
+        lede={
+          <>
+            Once a week. One area where AI is genuinely changing how design and
+            product teams work.
+          </>
+        }
+        meta={<FactRow facts={heroFacts} />}
+      />
+
+      <Section tone="muted" labelledBy="subscribe-what-heading">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <Eyebrow className="mb-4">What lands in your inbox</Eyebrow>
+            <SectionTitle id="subscribe-what-heading" className="text-2xl md:text-3xl">
+              One area at a time, with the working detail
+            </SectionTitle>
+            <div className="mt-6 space-y-5 leading-relaxed text-slate-300">
+              <p>
+                Practical patterns, specific tools, and decisions from active
+                work in AI-augmented design systems, product strategy, and
+                workflow architecture.
               </p>
-              <Link href="/articles">
-                <a className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">
-                  Read the articles archive →
-                </a>
-              </Link>
+              <p>
+                A weekly public brief from active work in enterprise B2B product
+                experience: product operating model, design systems, and
+                AI-enabled execution.
+              </p>
             </div>
-          ) : (
-            <>
-              <div className="mb-10">
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                  Weekly AI Founder Pulse
-                </h1>
-                <p className="text-xl text-slate-300 leading-relaxed mb-6">
-                  Once a week. One area where AI is genuinely changing how
-                  design and product teams work.
-                </p>
-                <p className="text-slate-400 leading-relaxed mb-3">
-                  Practical patterns, specific tools, and decisions from
-                  active work in AI-augmented design systems, product
-                  strategy, and workflow architecture.
-                </p>
-                <p className="text-slate-400 leading-relaxed">
-                  A weekly public brief from active work in enterprise B2B
-                  product experience — product operating model, design systems,
-                  and AI-enabled execution.
-                </p>
+          </div>
+
+          <div className="lg:col-span-6 lg:col-start-7">
+            <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
+              <h2
+                id="subscribe-form-heading"
+                className="text-xl font-semibold text-white"
+              >
+                Get the next one
+              </h2>
+
+              {/* Always mounted so the confirmation is announced when it appears. */}
+              <div aria-live="polite">
+                {status === "success" ? (
+                  <div className="mt-6 rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-6">
+                    <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500/20">
+                      <Check
+                        className="h-6 w-6 text-emerald-300"
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <h3 className="text-lg font-semibold text-white">
+                      You&apos;re on the list.
+                    </h3>
+                    <p className="mt-2 leading-relaxed text-slate-300">
+                      The next pulse drops this week. Check your inbox,
+                      including spam, in case it lands there the first time.
+                    </p>
+                    <Link
+                      href="/articles"
+                      className="mt-5 inline-flex text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+                    >
+                      Read the articles archive
+                    </Link>
+                  </div>
+                ) : null}
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-sm font-medium text-slate-300 mb-2"
-                  >
-                    First name{" "}
-                    <span className="text-slate-500 font-normal">
-                      (optional)
-                    </span>
-                  </label>
-                  <input
-                    id="firstName"
-                    type="text"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    placeholder="Alex"
-                    autoComplete="given-name"
+              {status === "success" ? null : (
+                <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+                  <div>
+                    <label
+                      htmlFor="firstName"
+                      className="mb-2 block text-sm font-medium text-slate-300"
+                    >
+                      First name{" "}
+                      <span className="font-normal text-slate-400">
+                        (optional)
+                      </span>
+                    </label>
+                    <input
+                      id="firstName"
+                      name="firstName"
+                      type="text"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      placeholder="Alex"
+                      autoComplete="given-name"
+                      disabled={status === "loading"}
+                      className={FIELD_CLASS}
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="mb-2 block text-sm font-medium text-slate-300"
+                    >
+                      Email address
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="you@company.com"
+                      required
+                      autoComplete="email"
+                      disabled={status === "loading"}
+                      className={FIELD_CLASS}
+                    />
+                  </div>
+
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full"
                     disabled={status === "loading"}
-                    className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-slate-300 mb-2"
                   >
-                    Email address
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="you@company.com"
-                    required
-                    autoComplete="email"
-                    disabled={status === "loading"}
-                    className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
-                  />
-                </div>
+                    {status === "loading" ? "Subscribing…" : "Subscribe"}
+                  </Button>
 
-                <button
-                  type="submit"
-                  disabled={status === "loading"}
-                  className="w-full px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {status === "loading" ? "Subscribing…" : "Subscribe"}
-                </button>
+                  <div role="alert">
+                    {status === "error" ? (
+                      <p className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                        {errorMessage}
+                      </p>
+                    ) : null}
+                  </div>
 
-                {status === "error" && (
-                  <p className="text-sm text-red-400 text-center">
-                    {errorMessage}
+                  <p className="pt-2 text-sm leading-relaxed text-slate-400">
+                    Unsubscribe from any email, anytime. Resend handles it and
+                    there are no dark patterns. No sharing your address.
                   </p>
-                )}
-
-                <p className="text-xs text-slate-500 text-center pt-2">
-                  Unsubscribe from any email, anytime. Resend handles it and
-                  there are no dark patterns. No sharing your address.
-                </p>
-              </form>
-            </>
-          )}
+                </form>
+              )}
+            </div>
+          </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SiteLayout>
   );
 }

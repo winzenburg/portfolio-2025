@@ -1,9 +1,16 @@
 import { useState } from "react";
-import { useSearch } from "wouter";
-import ResponsiveNav from "@/components/ResponsiveNav";
+import { Link, useSearch } from "wouter";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
+import PageHero from "@/components/PageHero";
+import SiteLayout from "@/components/SiteLayout";
+import { Section } from "@/components/Section";
 
 type UnsubscribeStatus = "idle" | "loading" | "success" | "error";
+
+const FIELD_CLASS =
+  "w-full rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50";
 
 export default function Unsubscribe() {
   const searchString = useSearch();
@@ -39,7 +46,7 @@ export default function Unsubscribe() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <SiteLayout currentPage="unsubscribe">
       <PageSeo
         title="Unsubscribe | Ryan Winzenburg"
         description="Manage your newsletter subscription."
@@ -47,54 +54,119 @@ export default function Unsubscribe() {
         ogImage="/images/contact-hero.webp"
         noIndex
       />
-      <ResponsiveNav currentPage="unsubscribe" />
 
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-lg mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-            Unsubscribe
-          </h1>
+      <PageHero
+        titleId="unsubscribe-hero-title"
+        align="center"
+        eyebrow="Newsletter"
+        title="Unsubscribe"
+        lede={
+          <>
+            Enter the address you subscribed with. After that you won&apos;t
+            receive any more newsletter emails.
+          </>
+        }
+      />
 
-          {status === "success" ? (
-            <div className="bg-green-900/30 border border-green-700/50 rounded-lg p-6 text-center">
-              <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h2 className="text-xl font-bold text-white mb-2">You've been unsubscribed</h2>
-              <p className="text-slate-300">You won't receive any more newsletter emails from us.</p>
+      <Section tone="muted" compact labelledBy="unsubscribe-form-heading">
+        <div className="mx-auto max-w-xl">
+          <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
+            <h2
+              id="unsubscribe-form-heading"
+              className="text-xl font-semibold text-white"
+            >
+              Remove an address from the list
+            </h2>
+
+            {/* Always mounted so the confirmation is announced when it appears. */}
+            <div aria-live="polite">
+              {status === "success" ? (
+                <div className="mt-6 rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-6">
+                  <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500/20">
+                    <Check
+                      className="h-6 w-6 text-emerald-300"
+                      aria-hidden="true"
+                    />
+                  </span>
+                  <h3 className="text-lg font-semibold text-white">
+                    You&apos;ve been unsubscribed
+                  </h3>
+                  <p className="mt-2 leading-relaxed text-slate-300">
+                    You won&apos;t receive any more newsletter emails from us.
+                  </p>
+                  <Link
+                    href="/articles"
+                    className="mt-5 inline-flex text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+                  >
+                    Read the articles archive
+                  </Link>
+                </div>
+              ) : null}
             </div>
-          ) : (
-            <>
-              <p className="text-slate-300 text-center mb-8">
-                Enter your email address below to unsubscribe from the newsletter.
-              </p>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your.email@company.com"
-                  required
-                  disabled={status === "loading"}
-                  className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent disabled:opacity-50"
-                />
-                <button
+
+            {status === "success" ? null : (
+              <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+                <div>
+                  <label
+                    htmlFor="unsubscribe-email"
+                    className="mb-2 block text-sm font-medium text-slate-300"
+                  >
+                    Email address
+                  </label>
+                  <input
+                    id="unsubscribe-email"
+                    name="email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="your.email@company.com"
+                    required
+                    autoComplete="email"
+                    disabled={status === "loading"}
+                    aria-describedby="unsubscribe-email-note"
+                    className={FIELD_CLASS}
+                  />
+                  <p
+                    id="unsubscribe-email-note"
+                    className="mt-2 text-sm text-slate-400"
+                  >
+                    Use the address the newsletter arrives at, not a forwarding
+                    alias.
+                  </p>
+                </div>
+
+                <Button
                   type="submit"
+                  size="lg"
+                  className="w-full"
                   disabled={status === "loading"}
-                  className="w-full px-8 py-3 bg-cyan-600 text-white rounded-lg hover:bg-cyan-500 transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {status === "loading" ? "Unsubscribing..." : "Unsubscribe"}
-                </button>
-                {status === "error" && (
-                  <p className="text-sm text-red-400 text-center">{errorMessage}</p>
-                )}
+                </Button>
+
+                <div role="alert">
+                  {status === "error" ? (
+                    <p className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                      {errorMessage}
+                    </p>
+                  ) : null}
+                </div>
               </form>
-            </>
-          )}
+            )}
+          </div>
+
+          <p className="mt-6 text-center text-sm leading-relaxed text-slate-400">
+            Landed here by mistake?{" "}
+            <Link
+              href="/subscribe"
+              className="text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
+            >
+              Stay on the list
+            </Link>
+            .
+          </p>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SiteLayout>
   );
 }

@@ -1,18 +1,21 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link, useSearch } from "wouter";
 import { useState, useEffect } from "react";
-import { FileText, X } from "lucide-react";
-import ResponsiveNav from "@/components/ResponsiveNav";
+import { ArrowRight, Check, FileText, Mail, Phone, X } from "lucide-react";
 import PageSeo from "@/components/PageSeo";
+import PageHero from "@/components/PageHero";
+import FactRow, { type Fact } from "@/components/FactRow";
+import SiteLayout from "@/components/SiteLayout";
+import { Section, SectionHeading, SectionTitle } from "@/components/Section";
 import { trackContactSubmit, trackExternalLink } from "@/lib/analytics";
 import {
   parseContactSearch,
   contactHref,
   consultingPrefill,
   contactPathCopy,
+  type ContactIntent,
   type RateSheet,
 } from "@/lib/contact-intent";
 
@@ -59,6 +62,9 @@ const SHEET_LABEL: Record<RateSheet, string> = {
   enterprise: "Enterprise org",
 };
 
+const EMAIL_ADDRESS = "ryan@winzenburg.com";
+const PHONE_NUMBER = "720.515.7182";
+
 type ContactFormFields = {
   name: string;
   email: string;
@@ -87,10 +93,52 @@ function formDataToSearchParams(data: FormData): URLSearchParams {
   return params;
 }
 
+/** Facts all come from the path copy on this page, not from new claims. */
+function heroFactsFor(intent: ContactIntent | null): Fact[] {
+  const firstConversation: Fact =
+    intent === "consulting"
+      ? { label: "First conversation", value: "30 minutes, no deck" }
+      : { label: "First conversation", value: "30 to 45 minutes" };
+
+  return [
+    { label: "Reply time", value: "Within a day" },
+    firstConversation,
+    { label: "Email", value: EMAIL_ADDRESS },
+    { label: "Phone", value: PHONE_NUMBER },
+  ];
+}
+
 function pathCardClass(active: boolean): string {
   return active
-    ? "block rounded-lg border-2 border-cyan-500 bg-cyan-950/40 p-5 text-left transition-colors"
-    : "block rounded-lg border-2 border-slate-700/60 bg-slate-900/40 p-5 text-left hover:border-slate-500 transition-colors";
+    ? "group block h-full rounded-xl border border-primary/60 bg-primary/10 p-7 text-left"
+    : "group block h-full rounded-xl border border-border/60 bg-background/40 p-7 text-left transition-colors hover:border-primary/50 hover:bg-background/70";
+}
+
+function PathCardHeader({ label, active }: { label: string; active: boolean }) {
+  return (
+    <div className="mb-6 flex items-center justify-between gap-4">
+      <span
+        className={
+          active
+            ? "text-xs uppercase tracking-[0.16em] text-primary"
+            : "text-xs uppercase tracking-[0.16em] text-slate-400"
+        }
+      >
+        {label}
+      </span>
+      {active ? (
+        <span className="inline-flex items-center gap-1.5 text-xs font-medium text-primary">
+          <Check className="h-3.5 w-3.5" aria-hidden="true" />
+          Selected
+        </span>
+      ) : (
+        <ArrowRight
+          className="h-4 w-4 text-slate-400 transition-transform group-hover:translate-x-1"
+          aria-hidden="true"
+        />
+      )}
+    </div>
+  );
 }
 
 export default function Contact() {
@@ -103,6 +151,7 @@ export default function Contact() {
   const [messageTouched, setMessageTouched] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [submitFailed, setSubmitFailed] = useState(false);
 
   useEffect(() => {
     if (playbookInfo) {
@@ -138,6 +187,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
+    setSubmitFailed(false);
 
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -161,9 +211,8 @@ export default function Contact() {
       } else {
         throw new Error("Form submission failed");
       }
-    } catch (error) {
-      console.error("Form submission error:", error);
-      alert("There was an error submitting the form. Please email me directly at ryan@winzenburg.com");
+    } catch {
+      setSubmitFailed(true);
     } finally {
       setSubmitting(false);
     }
@@ -184,112 +233,190 @@ export default function Contact() {
         : "Contact Ryan Winzenburg about design operations leadership, AI workflow architecture, design systems, and scoped engagements.";
 
   return (
-    <div className="min-h-screen">
+    <SiteLayout currentPage="contact">
       <PageSeo title={seoTitle} description={seoDescription} path="/contact" ogImage="/images/contact-hero.webp" />
-      <ResponsiveNav currentPage="contact" />
 
-      <section className="relative pt-32 pb-16 mb-16 md:mb-24">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <img src="/images/contact-hero.webp" alt="" className="w-full h-full object-cover opacity-30" />
+      <PageHero
+        titleId="contact-hero-title"
+        eyebrow="Contact"
+        media={{ src: "/images/contact-hero.webp", position: "object-center" }}
+        title={copy.title}
+        lede={copy.description}
+        actions={
+          <>
+            <Button size="lg" asChild>
+              <a href="#contact-form">Write to me</a>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href={`mailto:${EMAIL_ADDRESS}`}>Email directly</a>
+            </Button>
+          </>
+        }
+        meta={<FactRow facts={heroFactsFor(intent)} />}
+      />
+
+      {/* Path selector */}
+      <Section labelledBy="contact-paths-heading">
+        <SectionHeading
+          id="contact-paths-heading"
+          eyebrow="Pick a lane"
+          title="Two conversations, and they run differently"
+          lede="Choosing one sets up the form below. If neither fits, skip it and write whatever you were going to write."
+        />
+        <div className="grid gap-6 md:grid-cols-2">
+          <Link
+            href={contactHref({ intent: "role", playbook: playbookId })}
+            aria-current={intent === "role" ? "page" : undefined}
+            className={pathCardClass(intent === "role")}
+          >
+            <PathCardHeader label="Hiring" active={intent === "role"} />
+            <h3 className="mb-2 text-xl font-semibold text-white">
+              A leadership role
+            </h3>
+            <p className="leading-relaxed text-slate-300">
+              Head of Design Operations, VP or Director of Design, Principal
+              Design Technologist.
+            </p>
+          </Link>
+
+          <Link
+            href={contactHref({ intent: "consulting", sheet, playbook: playbookId })}
+            aria-current={intent === "consulting" ? "page" : undefined}
+            className={pathCardClass(intent === "consulting")}
+          >
+            <PathCardHeader
+              label="Product work"
+              active={intent === "consulting"}
+            />
+            <h3 className="mb-2 text-xl font-semibold text-white">
+              A 30-minute consultation
+            </h3>
+            <p className="leading-relaxed text-slate-300">
+              Research through delivery on a product bet that still has too much
+              uncertainty.
+            </p>
+          </Link>
         </div>
-        <div className="container px-6">
-          <div className="max-w-4xl mx-auto text-center bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">{copy.title}</h1>
-            <p className="text-xl text-slate-300 leading-relaxed">{copy.description}</p>
-          </div>
-        </div>
-      </section>
+      </Section>
 
-      <section className="pb-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Link href={contactHref({ intent: "role", playbook: playbookId })} className={pathCardClass(intent === "role")}>
-              <p className="text-sm font-medium text-cyan-400 mb-1">Hiring</p>
-              <h2 className="text-xl font-bold text-white mb-2">A leadership role</h2>
-              <p className="text-slate-300 text-sm">
-                Head of Design Operations, VP or Director of Design, Principal Design Technologist.
-              </p>
-            </Link>
-            <Link
-              href={contactHref({ intent: "consulting", sheet, playbook: playbookId })}
-              className={pathCardClass(intent === "consulting")}
-            >
-              <p className="text-sm font-medium text-slate-400 mb-1">Product work</p>
-              <h2 className="text-xl font-bold text-white mb-2">A 30-minute consultation</h2>
-              <p className="text-slate-300 text-sm">
-                Research through delivery on a product bet that still has too much uncertainty.
-              </p>
-            </Link>
-          </div>
+      {/* Form + sidebar */}
+      <Section id="contact-form" tone="slate" labelledBy="contact-form-heading">
+        <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-7">
+            <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
+              <h2
+                id="contact-form-heading"
+                className="text-2xl font-bold text-white"
+              >
+                {playbookInfo ? "Request your playbook" : copy.formHeading}
+              </h2>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <Card className="p-8">
-              {submitted ? (
-                <div className="text-center py-12">
-                  <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+              {/* Always mounted so the confirmation is announced when it lands. */}
+              <div aria-live="polite">
+                {submitted ? (
+                  <div className="mt-6 rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-6 md:p-7">
+                    <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20">
+                      <Check
+                        className="h-6 w-6 text-emerald-300"
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <h3 className="text-xl font-semibold text-white">
+                      Message sent
+                    </h3>
+                    <p className="mt-2 max-w-md leading-relaxed text-slate-300">
+                      Thanks for reaching out. I&apos;ll get back to you within
+                      24 hours. If it&apos;s urgent, {EMAIL_ADDRESS} reaches me
+                      faster.
+                    </p>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="mt-6"
+                      onClick={() => setSubmitted(false)}
+                    >
+                      Send another message
+                    </Button>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Thanks for reaching out. I'll get back to you within 24 hours.
-                  </p>
-                  <button onClick={() => setSubmitted(false)} className="text-primary hover:underline">
-                    Send another message
-                  </button>
-                </div>
-              ) : (
+                ) : null}
+              </div>
+
+              {submitted ? null : (
                 <>
-                  <h2 className="text-2xl font-bold mb-6">
-                    {playbookInfo ? "Request Your Playbook" : copy.formHeading}
-                  </h2>
+                  {/* role="alert" so a failed send is announced straight away. */}
+                  <div role="alert">
+                    {submitFailed ? (
+                      <div className="mt-6 rounded-lg border border-red-500/40 bg-red-500/10 p-5">
+                        <p className="font-semibold text-red-200">
+                          That didn&apos;t send.
+                        </p>
+                        <p className="mt-1 leading-relaxed text-slate-300">
+                          Nothing was lost, so you can try again. If it keeps
+                          failing, email me directly at{" "}
+                          <a
+                            href={`mailto:${EMAIL_ADDRESS}`}
+                            className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
+                          >
+                            {EMAIL_ADDRESS}
+                          </a>
+                          .
+                        </p>
+                      </div>
+                    ) : null}
+                  </div>
 
                   {playbookInfo && (
-                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4 mb-6">
+                    <div className="mt-6 rounded-lg border border-primary/30 bg-primary/10 p-4">
                       <div className="flex items-start gap-3">
-                        <FileText className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                        <FileText
+                          className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary"
+                          aria-hidden="true"
+                        />
                         <div className="flex-1">
-                          <div className="text-sm text-blue-300 mb-1">Requesting playbook:</div>
-                          <div className="font-medium text-white">{playbookInfo.title}</div>
-                          <div className="text-sm text-slate-400 mt-1">
+                          <div className="text-sm text-slate-300">
+                            Requesting playbook:
+                          </div>
+                          <div className="font-medium text-white">
+                            {playbookInfo.title}
+                          </div>
+                          <div className="mt-1 text-sm text-slate-400">
                             From:{" "}
                             <Link
                               href={`/articles/${playbookInfo.articleSlug}`}
-                              className="text-blue-400 hover:text-blue-300"
+                              className="text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
                             >
                               {playbookInfo.article}
                             </Link>
                           </div>
                         </div>
-                        <Link href={contactHref({ intent, sheet })}>
-                          <button
-                            type="button"
-                            className="text-slate-400 hover:text-white transition-colors"
-                            aria-label="Clear playbook request"
-                          >
-                            <X className="w-4 h-4" />
-                          </button>
+                        <Link
+                          href={contactHref({ intent, sheet })}
+                          aria-label="Clear playbook request"
+                          className="rounded-md p-1 text-slate-400 transition-colors hover:text-white"
+                        >
+                          <X className="h-4 w-4" aria-hidden="true" />
                         </Link>
                       </div>
                     </div>
                   )}
 
                   {intent === "consulting" && sheet && (
-                    <div className="bg-slate-800/80 border border-slate-600 rounded-lg p-4 mb-6">
+                    <div className="mt-6 rounded-lg border border-border/60 bg-slate-900/60 p-4">
                       <div className="flex items-start gap-3">
                         <div className="flex-1">
-                          <div className="text-sm text-slate-400 mb-1">Company shape</div>
-                          <div className="font-medium text-white">{SHEET_LABEL[sheet]}</div>
+                          <div className="text-sm text-slate-400">
+                            Company shape
+                          </div>
+                          <div className="font-medium text-white">
+                            {SHEET_LABEL[sheet]}
+                          </div>
                         </div>
-                        <Link href={contactHref({ intent: "consulting", playbook: playbookId })}>
-                          <button
-                            type="button"
-                            className="text-slate-400 hover:text-white transition-colors"
-                            aria-label="Clear company shape"
-                          >
-                            <X className="w-4 h-4" />
-                          </button>
+                        <Link
+                          href={contactHref({ intent: "consulting", playbook: playbookId })}
+                          aria-label="Clear company shape"
+                          className="rounded-md p-1 text-slate-400 transition-colors hover:text-white"
+                        >
+                          <X className="h-4 w-4" aria-hidden="true" />
                         </Link>
                       </div>
                     </div>
@@ -297,7 +424,7 @@ export default function Contact() {
 
                   <form
                     onSubmit={handleSubmit}
-                    className="space-y-6"
+                    className="mt-7 space-y-6"
                     name="contact"
                     method="POST"
                     data-netlify="true"
@@ -312,68 +439,89 @@ export default function Contact() {
                         Don't fill this out if you're human: <input name="bot-field" />
                       </label>
                     </p>
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2">
-                        Name *
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Your name"
-                      />
+                    <div className="grid gap-6 sm:grid-cols-2">
+                      <div>
+                        <label
+                          htmlFor="name"
+                          className="mb-2 block text-sm font-medium text-slate-300"
+                        >
+                          Name *
+                        </label>
+                        <Input
+                          id="name"
+                          name="name"
+                          type="text"
+                          required
+                          autoComplete="name"
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          placeholder="Your name"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="mb-2 block text-sm font-medium text-slate-300"
+                        >
+                          Email *
+                        </label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          required
+                          autoComplete="email"
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          placeholder="your.email@company.com"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="company"
+                          className="mb-2 block text-sm font-medium text-slate-300"
+                        >
+                          Company *
+                        </label>
+                        <Input
+                          id="company"
+                          name="company"
+                          type="text"
+                          required
+                          autoComplete="organization"
+                          value={formData.company}
+                          onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                          placeholder="Your company name"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="role"
+                          className="mb-2 block text-sm font-medium text-slate-300"
+                        >
+                          Your Role *
+                        </label>
+                        <Input
+                          id="role"
+                          name="role"
+                          type="text"
+                          required
+                          autoComplete="organization-title"
+                          value={formData.role}
+                          onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                          placeholder={
+                            intent === "role"
+                              ? "e.g., Head of Talent, VP Product, CEO"
+                              : "e.g., VP Product, C-Suite, Partner"
+                          }
+                        />
+                      </div>
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2">
-                        Email *
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="your.email@company.com"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium mb-2">
-                        Company *
-                      </label>
-                      <Input
-                        id="company"
-                        name="company"
-                        type="text"
-                        required
-                        value={formData.company}
-                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        placeholder="Your company name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="role" className="block text-sm font-medium mb-2">
-                        Your Role *
-                      </label>
-                      <Input
-                        id="role"
-                        name="role"
-                        type="text"
-                        required
-                        value={formData.role}
-                        onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                        placeholder={
-                          intent === "role"
-                            ? "e.g., Head of Talent, VP Product, CEO"
-                            : "e.g., VP Product, C-Suite, Partner"
-                        }
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium mb-2">
+                      <label
+                        htmlFor="message"
+                        className="mb-2 block text-sm font-medium text-slate-300"
+                      >
                         {copy.messageLabel} *
                       </label>
                       <Textarea
@@ -387,92 +535,131 @@ export default function Contact() {
                         }}
                         placeholder={copy.messagePlaceholder}
                         rows={6}
+                        className="min-h-40"
                       />
                     </div>
-                    <Button type="submit" className="w-full" disabled={submitting}>
+                    <Button type="submit" size="lg" className="w-full" disabled={submitting}>
                       {submitting ? "Sending..." : copy.submitLabel}
                     </Button>
                   </form>
                 </>
               )}
-            </Card>
+            </div>
+          </div>
 
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
-                <div className="space-y-3">
+          <div className="space-y-6 lg:col-span-5">
+            <div className="rounded-xl border border-border/60 bg-background/40 p-7">
+              <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+                Direct lines
+              </h3>
+              <ul className="divide-y divide-border/60 border-t border-border/60">
+                <li>
                   <a
                     href="https://www.linkedin.com/in/rwinzenburg/"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackExternalLink("https://www.linkedin.com/in/rwinzenburg/", "linkedin")}
-                    className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
                   >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="h-5 w-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
-                    <span>LinkedIn</span>
+                    <span className="font-medium">LinkedIn</span>
                   </a>
-
+                </li>
+                <li>
                   <a
                     href="https://x.com/rwinzenburg"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackExternalLink("https://x.com/rwinzenburg", "x")}
-                    className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
                   >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="h-5 w-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                     </svg>
-                    <span>X</span>
+                    <span className="font-medium">X</span>
                   </a>
+                </li>
+                <li>
+                  <a
+                    href={`mailto:${EMAIL_ADDRESS}`}
+                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
+                  >
+                    <Mail className="h-5 w-5 shrink-0" aria-hidden="true" />
+                    <span className="font-medium">{EMAIL_ADDRESS}</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`tel:+1${PHONE_NUMBER.replace(/\D/g, "")}`}
+                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
+                  >
+                    <Phone className="h-5 w-5 shrink-0" aria-hidden="true" />
+                    <span className="font-medium">{PHONE_NUMBER}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    <span>ryan@winzenburg.com</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                      />
-                    </svg>
-                    <span>720.515.7182</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6 bg-slate-800/50 rounded-lg">
-                <h3 className="font-semibold mb-2">What to Expect</h3>
-                <ul className="text-sm text-slate-400 space-y-2">
-                  {copy.expectItems.map((item) => (
-                    <li key={item}>• {item}</li>
-                  ))}
-                </ul>
-                {intent === "consulting" ? (
-                  <p className="text-sm text-slate-400 mt-4">
-                    Process, timing, and payment are covered on the{" "}
-                    <Link href="/consulting#faq">
-                      <span className="text-cyan-400 hover:text-cyan-300">consulting FAQ</span>
-                    </Link>
-                    .
-                  </p>
-                ) : null}
-              </div>
+            <div className="rounded-xl border border-border/60 bg-background/40 p-7">
+              <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+                What to expect
+              </h3>
+              <ul className="space-y-3 border-t border-border/60 pt-5">
+                {copy.expectItems.map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-slate-300">
+                    <span
+                      aria-hidden="true"
+                      className="mt-[0.5rem] h-1 w-1 shrink-0 rounded-full bg-primary"
+                    />
+                    <span className="leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              {intent === "consulting" ? (
+                <p className="mt-5 border-t border-border/60 pt-5 text-sm leading-relaxed text-slate-400">
+                  Process, timing, and payment are covered on the{" "}
+                  <Link
+                    href="/consulting#faq"
+                    className="text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
+                  >
+                    consulting FAQ
+                  </Link>
+                  .
+                </p>
+              ) : null}
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+
+      {/* Closing */}
+      <Section tone="muted" compact labelledBy="contact-closing-heading">
+        <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-7">
+            <SectionTitle
+              id="contact-closing-heading"
+              className="text-2xl md:text-3xl"
+            >
+              Still deciding what to ask for?
+            </SectionTitle>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate-300">
+              The case studies show how these engagements actually run. The
+              assessment is a faster way in if you&apos;d rather start with your
+              own product.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
+            <Button variant="outline" asChild>
+              <Link href="/work">See the case studies</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/assessment">Take the assessment</Link>
+            </Button>
+          </div>
+        </div>
+      </Section>
+    </SiteLayout>
   );
 }
