@@ -21,7 +21,7 @@ export default function FreshContextPerIteration() {
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Fresh Context Per Iteration: Why Autonomous Agents Don't Break Like Long Sessions","description":"I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn't have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-15","url":"https://winzenburg.com/articles/fresh-context-per-iteration","image":"https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.webp"})}</script>
       </Helmet>
 
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           <Link href="/articles">
             <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">

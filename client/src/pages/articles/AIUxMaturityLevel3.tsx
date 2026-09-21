@@ -38,7 +38,7 @@ export default function AIUxMaturityLevel3() {
         })}</script>
       </Helmet>
 
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           <Link href="/articles">
             <a className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">

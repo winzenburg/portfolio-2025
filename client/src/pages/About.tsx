@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, FileJson, FileText, Map as MapIcon } from "lu
 import ResponsiveNav from "@/components/ResponsiveNav";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
+import FactRow from "@/components/FactRow";
 import Reveal from "@/components/Reveal";
 import { Eyebrow, Section, SectionHeading, SectionTitle } from "@/components/Section";
 import {
@@ -198,7 +199,7 @@ export default function About() {
         titleId="about-hero-title"
         eyebrow="About"
         eyebrowNote={`Canonical profile · Updated ${brandFacts.updated}`}
-        image={{ src: "/images/about-hero.webp", position: "object-center" }}
+        media={{ src: "/images/about-hero.webp", position: "object-center" }}
         title={
           <>
             Twenty-five years designing enterprise B2B systems, and the
@@ -224,20 +225,7 @@ export default function About() {
             </Button>
           </>
         }
-        meta={
-          <dl className="grid grid-cols-2 gap-x-8 gap-y-6 border-t border-border/60 pt-8 md:grid-cols-4">
-            {heroFacts.map((fact) => (
-              <div key={fact.label}>
-                <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
-                  {fact.label}
-                </dt>
-                <dd className="mt-2 text-sm font-medium text-slate-100">
-                  {fact.value}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        }
+        meta={<FactRow facts={heroFacts} />}
       />
 
       {/* Capabilities */}

@@ -1,9 +1,14 @@
-import ResponsiveNav from "@/components/ResponsiveNav";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Link } from "wouter";
-import NewsletterSignup from "@/components/NewsletterSignup";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import PageSeo from "@/components/PageSeo";
+import PageHero from "@/components/PageHero";
+import Reveal from "@/components/Reveal";
+import SiteLayout from "@/components/SiteLayout";
+import { Section, SectionHeading, SectionTitle } from "@/components/Section";
+import { cn } from "@/lib/utils";
 import { trackArticleCardClick, trackCategoryFilter } from "@/lib/analytics";
 
 interface Article {
@@ -599,230 +604,318 @@ const articles: Article[] = [
   }
 ];
 
+
+/**
+ * One source of truth per category, so the filter pill and the card badge can
+ * never drift apart. Previously the pill list had a Product Design entry that
+ * the badge switch did not, so those cards rendered with AI Workflow styling.
+ */
+interface CategoryStyle {
+  pillActive: string;
+  pillIdle: string;
+  badge: string;
+}
+
+const CATEGORY_STYLES: Record<string, CategoryStyle> = {
+  "Design Systems": {
+    pillActive: "bg-blue-500 text-white border-blue-500",
+    pillIdle: "border-blue-700/50 bg-blue-900/30 text-blue-300 hover:bg-blue-800/50",
+    badge: "border-blue-700/50 bg-blue-900/30 text-blue-300",
+  },
+  "Business Strategy": {
+    pillActive: "bg-cyan-500 text-slate-900 border-cyan-500",
+    pillIdle: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300 hover:bg-cyan-800/50",
+    badge: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300",
+  },
+  "AI Workflow": {
+    pillActive: "bg-purple-500 text-white border-purple-500",
+    pillIdle: "border-purple-700/50 bg-purple-900/30 text-purple-300 hover:bg-purple-800/50",
+    badge: "border-purple-700/50 bg-purple-900/30 text-purple-300",
+  },
+  Engineering: {
+    pillActive: "bg-emerald-500 text-slate-900 border-emerald-500",
+    pillIdle: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300 hover:bg-emerald-800/50",
+    badge: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300",
+  },
+  "Product Design": {
+    pillActive: "bg-rose-500 text-white border-rose-500",
+    pillIdle: "border-rose-700/50 bg-rose-900/30 text-rose-300 hover:bg-rose-800/50",
+    badge: "border-rose-700/50 bg-rose-900/30 text-rose-300",
+  },
+};
+
+const NEUTRAL_BADGE = "border-border/60 bg-background/60 text-slate-300";
+
+const ALL = "All";
+
+const CATEGORY_ORDER: string[] = [
+  ALL,
+  "Design Systems",
+  "Business Strategy",
+  "AI Workflow",
+  "Engineering",
+  "Product Design",
+];
+
+function ArticleMeta({ article }: { article: Article }) {
+  return (
+    <div className="flex items-center gap-4 text-sm text-slate-400">
+      <span className="flex items-center gap-2">
+        <Calendar className="h-4 w-4" aria-hidden="true" />
+        {article.date}
+      </span>
+      <span className="flex items-center gap-2">
+        <Clock className="h-4 w-4" aria-hidden="true" />
+        {article.readTime}
+      </span>
+    </div>
+  );
+}
+
+function CategoryBadge({ category }: { category: string }) {
+  return (
+    <span
+      className={cn(
+        "inline-block rounded-full border px-3 py-1 text-xs font-semibold",
+        CATEGORY_STYLES[category]?.badge ?? NEUTRAL_BADGE,
+      )}
+    >
+      {category}
+    </span>
+  );
+}
+
+/** The newest piece, given room so the index has a clear entry point. */
+function FeaturedArticleCard({ article }: { article: Article }) {
+  return (
+    <Link
+      href={`/articles/${article.slug}`}
+      onClick={() =>
+        trackArticleCardClick(article.slug, article.title, article.category)
+      }
+      className="group grid overflow-hidden rounded-2xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70 lg:grid-cols-2"
+    >
+      <div className="aspect-[16/10] overflow-hidden lg:aspect-auto lg:h-full">
+        <img
+          loading="lazy"
+          src={article.heroImage}
+          alt={article.title}
+          className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
+        />
+      </div>
+      <div className="flex flex-col justify-center p-8 md:p-10">
+        <div className="mb-5 flex flex-wrap items-center gap-4">
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
+            Latest
+          </span>
+          <CategoryBadge category={article.category} />
+        </div>
+        <h3 className="text-2xl font-bold leading-snug text-white transition-colors group-hover:text-primary md:text-3xl">
+          {article.title}
+        </h3>
+        <p className="mt-5 leading-relaxed text-slate-300">{article.excerpt}</p>
+        <div className="mt-7 flex items-center justify-between gap-4 border-t border-border/60 pt-5">
+          <ArticleMeta article={article} />
+          <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
+            Read
+            <ArrowRight
+              className="h-4 w-4 transition-transform motion-safe:group-hover:translate-x-1"
+              aria-hidden="true"
+            />
+          </span>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+function ArticleCard({ article }: { article: Article }) {
+  return (
+    <Link
+      href={`/articles/${article.slug}`}
+      onClick={() =>
+        trackArticleCardClick(article.slug, article.title, article.category)
+      }
+      className="group flex h-full flex-col overflow-hidden rounded-xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70"
+    >
+      <div className="aspect-[16/9] overflow-hidden">
+        <img
+          loading="lazy"
+          src={article.heroImage}
+          alt={article.title}
+          className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-6">
+        <div className="mb-4">
+          <CategoryBadge category={article.category} />
+        </div>
+        <h3 className="mb-3 text-lg font-semibold leading-snug text-white transition-colors group-hover:text-primary">
+          {article.title}
+        </h3>
+        <p className="mb-6 flex-1 text-sm leading-relaxed text-slate-300">
+          {article.excerpt}
+        </p>
+        <div className="mt-auto flex items-center justify-between gap-3 border-t border-border/60 pt-4">
+          <ArticleMeta article={article} />
+          <ArrowRight
+            className="h-4 w-4 shrink-0 text-slate-500 transition-all group-hover:text-primary motion-safe:group-hover:translate-x-1"
+            aria-hidden="true"
+          />
+        </div>
+      </div>
+    </Link>
+  );
+}
+
 export default function Articles() {
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [selectedCategory, setSelectedCategory] = useState<string>(ALL);
 
-  const filteredArticles = selectedCategory === "All"
-    ? articles
-    : articles.filter(article => article.category === selectedCategory);
+  const filteredArticles =
+    selectedCategory === ALL
+      ? articles
+      : articles.filter((article) => article.category === selectedCategory);
 
-  const getCategoryCount = (category: string) => {
-    if (category === "All") return articles.length;
-    return articles.filter(article => article.category === category).length;
-  };
+  const getCategoryCount = (category: string) =>
+    category === ALL
+      ? articles.length
+      : articles.filter((article) => article.category === category).length;
 
   const handleCategoryChange = (category: string) => {
     trackCategoryFilter(category);
     setSelectedCategory(category);
   };
 
+  const [featured, ...rest] = filteredArticles;
+
   return (
-    <div className="min-h-screen">
+    <SiteLayout currentPage="articles">
       <PageSeo
         title="Articles on AI Design Workflows, DesignOps & Product Strategy | Ryan Winzenburg"
         description="Articles on AI-augmented design workflows, design operations, design systems, UX leadership, and product strategy from 25 years of enterprise design leadership."
         path="/articles"
         ogImage="/images/articles-hero.webp"
       />
-      {/* Header */}
-      <ResponsiveNav currentPage="articles" />
 
-      {/* Hero Section */}
-      <section className="relative py-20 mb-16 md:mb-24">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <img
-            src="/images/articles-hero.webp"
-            alt=""
-            className="w-full h-full object-cover opacity-40"
-          />
+      <PageHero
+        titleId="articles-hero-title"
+        eyebrow="Articles"
+        eyebrowNote={`${articles.length} pieces`}
+        media={{ src: "/images/articles-hero.webp", position: "object-center" }}
+        title="Writing on product experience, operating models, and AI-enabled delivery"
+        lede="First-person pieces from enterprise product work. What I tried, what broke, and what I would do differently."
+        actions={
+          <>
+            <Button size="lg" asChild>
+              <Link href="/resources">Get the skill packs</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/subscribe">Weekly pulse</Link>
+            </Button>
+          </>
+        }
+      />
+
+      <Section labelledBy="articles-index-heading">
+        <SectionHeading
+          id="articles-index-heading"
+          eyebrow="The archive"
+          title="Browse by topic"
+          lede="Filtering is instant. Every piece stays on one page, newest first."
+        />
+
+        <div
+          role="group"
+          aria-label="Filter articles by category"
+          className="mb-12 flex flex-wrap gap-3"
+        >
+          {CATEGORY_ORDER.map((category) => {
+            const isSelected = selectedCategory === category;
+            const style = CATEGORY_STYLES[category];
+            return (
+              <button
+                key={category}
+                type="button"
+                aria-pressed={isSelected}
+                onClick={() => handleCategoryChange(category)}
+                className={cn(
+                  "rounded-full border px-4 py-2 text-sm font-semibold transition-colors",
+                  isSelected
+                    ? (style?.pillActive ?? "border-white bg-white text-slate-900")
+                    : (style?.pillIdle ??
+                        "border-border/60 bg-background/40 text-slate-300 hover:border-slate-500 hover:text-white"),
+                )}
+              >
+                {category}{" "}
+                <span className="font-normal opacity-70">
+                  {getCategoryCount(category)}
+                </span>
+              </button>
+            );
+          })}
         </div>
-        <div className="container mx-auto max-w-4xl bg-slate-950/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-slate-800/50">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            AI Design Workflows, DesignOps & Product Strategy
-          </h1>
-          <p className="text-xl text-slate-300 leading-relaxed mb-8">
-            Practical insights on AI-augmented design, design operations, UX leadership, and product strategy, from 25 years of enterprise design leadership.
-          </p>
 
-          {/* Category Filter Pills */}
-          <div className="flex flex-wrap gap-3">
-            <button
-              onClick={() => handleCategoryChange("All")}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
-                selectedCategory === "All"
-                  ? 'bg-white text-slate-900 border border-white'
-                  : 'bg-slate-800/50 border border-slate-600 text-slate-300 hover:bg-slate-700/50 hover:border-slate-500'
-              }`}
-            >
-              All ({getCategoryCount("All")})
-            </button>
-            <button
-              onClick={() => handleCategoryChange("Design Systems")}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
-                selectedCategory === "Design Systems"
-                  ? 'bg-blue-500 text-white border border-blue-500'
-                  : 'bg-blue-900/30 border border-blue-700/50 text-blue-300 hover:bg-blue-800/50'
-              }`}
-            >
-              Design Systems ({getCategoryCount("Design Systems")})
-            </button>
-            <button
-              onClick={() => handleCategoryChange("Business Strategy")}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
-                selectedCategory === "Business Strategy"
-                  ? 'bg-cyan-500 text-white border border-cyan-500'
-                  : 'bg-cyan-900/30 border border-cyan-700/50 text-cyan-300 hover:bg-cyan-800/50'
-              }`}
-            >
-              Business Strategy ({getCategoryCount("Business Strategy")})
-            </button>
-            <button
-              onClick={() => handleCategoryChange("AI Workflow")}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
-                selectedCategory === "AI Workflow"
-                  ? 'bg-purple-500 text-white border border-purple-500'
-                  : 'bg-purple-900/30 border border-purple-700/50 text-purple-300 hover:bg-purple-800/50'
-              }`}
-            >
-              AI Workflow ({getCategoryCount("AI Workflow")})
-            </button>
-            <button
-              onClick={() => handleCategoryChange("Engineering")}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
-                selectedCategory === "Engineering"
-                  ? 'bg-green-500 text-white border border-green-500'
-                  : 'bg-green-900/30 border border-green-700/50 text-green-300 hover:bg-green-800/50'
-              }`}
-            >
-              Engineering ({getCategoryCount("Engineering")})
-            </button>
-            <button
-              onClick={() => handleCategoryChange("Product Design")}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
-                selectedCategory === "Product Design"
-                  ? 'bg-rose-500 text-white border border-rose-500'
-                  : 'bg-rose-900/30 border border-rose-700/50 text-rose-300 hover:bg-rose-800/50'
-              }`}
-            >
-              Product Design ({getCategoryCount("Product Design")})
-            </button>
+        {filteredArticles.length === 0 ? (
+          <div className="rounded-xl border border-border/60 bg-background/40 px-6 py-20 text-center">
+            <p className="text-lg text-slate-200">
+              Nothing published in {selectedCategory} yet.
+            </p>
+            <p className="mt-3 text-slate-400">
+              Try another topic, or browse everything.
+            </p>
+            <Button className="mt-7" variant="outline" onClick={() => handleCategoryChange(ALL)}>
+              Show all articles
+            </Button>
           </div>
-        </div>
-      </section>
+        ) : (
+          <>
+            {featured ? (
+              <Reveal className="mb-12">
+                <FeaturedArticleCard article={featured} />
+              </Reveal>
+            ) : null}
+            {rest.length > 0 ? (
+              <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                {rest.map((article) => (
+                  <li key={article.id} className="flex">
+                    <ArticleCard article={article} />
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </>
+        )}
+      </Section>
 
-      {/* Newsletter Section */}
-      <section className="py-12 px-6">
-        <div className="container mx-auto max-w-3xl">
+      <Section tone="muted" compact labelledBy="articles-newsletter-heading">
+        <h2 id="articles-newsletter-heading" className="sr-only">
+          Newsletter
+        </h2>
+        <div className="mx-auto max-w-3xl">
           <NewsletterSignup />
         </div>
-      </section>
+      </Section>
 
-      {/* Articles Grid */}
-      <section className="py-12 px-6 pb-32">
-        <div className="container mx-auto max-w-5xl">
-          {filteredArticles.length === 0 ? (
-            <div className="text-center py-16">
-              <p className="text-slate-400 text-lg">No articles found in this category.</p>
-            </div>
-          ) : (
-            <div className="grid gap-8">
-              {filteredArticles.map((article) => (
-              <article
-                key={article.id}
-                onClick={() => trackArticleCardClick(article.slug, article.title, article.category)}
-                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg overflow-hidden hover:border-blue-500/50 transition-all duration-300 group"
-              >
-                {/* Hero Image */}
-                <Link href={`/articles/${article.slug}`}>
-                  <div className="w-full overflow-hidden" style={{ aspectRatio: '4/1' }}>
-                    <img
-                      loading="lazy"
-                      src={article.heroImage}
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </Link>
-
-                <div className="p-8">
-                  {/* Category Badge */}
-                  <div className="mb-4">
-                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                      article.category === 'Design Systems'
-                        ? 'bg-blue-900/30 border border-blue-700/50 text-blue-300'
-                        : article.category === 'Business Strategy'
-                        ? 'bg-cyan-900/30 border border-cyan-700/50 text-cyan-300'
-                        : article.category === 'Engineering'
-                        ? 'bg-green-900/30 border border-green-700/50 text-green-300'
-                        : 'bg-purple-900/30 border border-purple-700/50 text-purple-300'
-                    }`}>
-                      {article.category}
-                    </span>
-                  </div>
-
-                  {/* Meta Info */}
-                  <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>{article.date}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4" />
-                      <span>{article.readTime}</span>
-                    </div>
-                  </div>
-
-                  {/* Title */}
-                  <Link href={`/articles/${article.slug}`}>
-                    <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors cursor-pointer">
-                      {article.title}
-                    </h2>
-                  </Link>
-
-                  {/* Excerpt */}
-                  <p className="text-slate-300 leading-relaxed mb-6">
-                    {article.excerpt}
-                  </p>
-
-                  {/* Read More Link */}
-                  <Link href={`/articles/${article.slug}`}>
-                    <a className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold">
-                      Read Article
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </a>
-                  </Link>
-                </div>
-              </article>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-slate-900/50 border-t border-slate-700/50">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Accelerate Your Product Development?
-          </h2>
-          <p className="text-xl text-slate-300 mb-8">
-            Let's discuss how I can help you deliver enterprise-grade UX 4-6x faster.
+      <Section labelledBy="articles-cta-heading">
+        <div className="mx-auto max-w-3xl text-center">
+          <SectionTitle id="articles-cta-heading">
+            Working on something the writing doesn&apos;t cover?
+          </SectionTitle>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+            If your product organization is dealing with a hard experience,
+            operating model, or AI adoption problem, I&apos;d like to hear what
+            you&apos;re working on.
           </p>
-          <Link href="/contact">
-            <a className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg">
-              Schedule a Call
-            </a>
-          </Link>
-          <p className="mt-8 text-slate-500 text-sm">
-            Want a shorter, weekly version?{" "}
-            <Link href="/subscribe">
-              <a className="text-slate-400 hover:text-slate-300 underline underline-offset-2 transition-colors">
-                Subscribe to the Weekly AI Founder Pulse
-              </a>
-            </Link>
-          </p>
+          <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <Button size="lg" asChild>
+              <Link href="/contact">Get in touch</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/subscribe">Subscribe to the weekly pulse</Link>
+            </Button>
+          </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SiteLayout>
   );
 }

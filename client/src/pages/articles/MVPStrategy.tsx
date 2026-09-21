@@ -23,7 +23,7 @@ export default function MVPStrategy() {
       </Helmet>
 
       {/* Article Content */}
-      <article className="pt-24 pb-16">
+      <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Button */}
           <Link href="/articles">
