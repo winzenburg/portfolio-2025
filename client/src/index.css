@@ -1,8 +1,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 @custom-variant dark (&:is(.dark *));
+
+/*
+ * Font family tokens — consumed as Tailwind utilities:
+ *   font-sans    → Source Sans 3 (body / UI)
+ *   font-display → Newsreader (headlines / display)
+ *
+ * Replaces: Inter (body) + Playfair Display (headings)
+ */
+@theme {
+  --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -44,82 +56,143 @@
 }
 
 :root {
-  /* Project Accent Colors */
-  --accent-saas: oklch(0.75 0.15 195); /* Cyan - SaaS Design System */
-  --accent-isc: oklch(0.7 0.2 300); /* Purple - ISC Portal */
-  --accent-comcast: oklch(0.7 0.15 150); /* Green - Comcast */
-  --accent-buildout: oklch(0.75 0.15 60); /* Orange - BuildOut */
-  --accent-cvs: oklch(0.7 0.2 350); /* Pink - CVS */
-  
-  /* Dark Theme as Default */
-  --primary: oklch(0.75 0.15 195); /* Cyan */
-  --primary-foreground: oklch(0.08 0.02 265);
-  --sidebar-primary: oklch(0.75 0.15 195);
-  --sidebar-primary-foreground: oklch(0.08 0.02 265);
-  --chart-1: oklch(0.75 0.15 195);
-  --chart-2: oklch(0.7 0.2 300);
-  --chart-3: oklch(0.7 0.15 150);
-  --chart-4: oklch(0.75 0.15 60);
-  --chart-5: oklch(0.7 0.2 350);
-  --radius: 0.65rem;
-  --background: oklch(0.08 0.02 265); /* Dark navy */
-  --foreground: oklch(0.98 0 0); /* Light gray */
-  --card: oklch(0.12 0.02 265);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.12 0.02 265);
-  --popover-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.2 0.02 265);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.2 0.02 265);
-  --muted-foreground: oklch(0.6 0 0);
-  --accent: oklch(0.18 0.02 265);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.25 0.02 265);
-  --input: oklch(0.25 0.02 265);
-  --ring: oklch(0.75 0.15 195);
-  --sidebar: oklch(0.12 0.02 265);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.18 0.02 265);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.25 0.02 265);
-  --sidebar-ring: oklch(0.75 0.15 195);
+  /*
+   * ── Primitive palette (private — reference via semantic tokens) ──────────
+   *
+   * Paper: warm off-white canvas
+   * Ink:  near-black with slight blue cast (like quality print)
+   * Ink-blue: single quiet accent — deep fountain-pen blue
+   */
+  --primitive-paper:         oklch(0.98 0.010 95);
+  --primitive-paper-subtle:  oklch(0.95 0.010 90);
+  --primitive-ink:           oklch(0.20 0.018 262);
+  --primitive-ink-muted:     oklch(0.47 0.012 262);
+  --primitive-rule:          oklch(0.87 0.007 95);
+  --primitive-rule-strong:   oklch(0.74 0.008 95);
+  --primitive-accent:        oklch(0.37 0.140 258);   /* deep ink-blue */
+  --primitive-accent-hover:  oklch(0.44 0.148 258);   /* slightly lighter on hover */
+  --primitive-accent-focus:  oklch(0.37 0.140 258);   /* same hue for focus ring */
+
+  /*
+   * ── Semantic tokens — compose page/component styles from these ───────────
+   *
+   * Surface
+   */
+  --color-bg-canvas:          var(--primitive-paper);
+  --color-bg-subtle:          var(--primitive-paper-subtle);
+
+  /* Text */
+  --color-text-primary:       var(--primitive-ink);
+  --color-text-secondary:     var(--primitive-ink-muted);
+  --color-text-inverse:       var(--primitive-paper);
+
+  /* Border */
+  --color-border-subtle:      var(--primitive-rule);
+  --color-border-strong:      var(--primitive-rule-strong);
+
+  /* Action — single accent for links, focus, primary CTA */
+  --color-action-primary:       var(--primitive-accent);
+  --color-action-primary-hover: var(--primitive-accent-hover);
+
+  /* Focus */
+  --color-focus-ring:          var(--primitive-accent-focus);
+
+  /* Status — form feedback only; not for decorative use */
+  --color-status-success:      oklch(0.40 0.14 145);
+  --color-status-danger:       oklch(0.46 0.20 25);
+
+  /*
+   * ── shadcn / Tailwind bridge tokens ──────────────────────────────────────
+   *
+   * These map to Tailwind's @theme inline utilities above.
+   * Values are resolved from primitives where possible.
+   */
+  --radius: 0.25rem;   /* 4px — near-sharp; no large SaaS pills */
+
+  --background:             var(--primitive-paper);
+  --foreground:             var(--primitive-ink);
+  --card:                   var(--primitive-paper-subtle);
+  --card-foreground:        var(--primitive-ink);
+  --popover:                var(--primitive-paper);
+  --popover-foreground:     var(--primitive-ink);
+  --primary:                var(--primitive-accent);
+  --primary-foreground:     var(--primitive-paper);
+  --secondary:              var(--primitive-paper-subtle);
+  --secondary-foreground:   var(--primitive-ink);
+  --muted:                  oklch(0.93 0.006 90);
+  --muted-foreground:       var(--primitive-ink-muted);
+  --accent:                 var(--primitive-paper-subtle);
+  --accent-foreground:      var(--primitive-ink);
+  --destructive:            var(--color-status-danger);
+  --destructive-foreground: var(--primitive-paper);
+  --border:                 var(--primitive-rule);
+  --input:                  oklch(0.91 0.008 90);
+  --ring:                   var(--primitive-accent);
+
+  /* Sidebar — warm paper surface */
+  --sidebar:                  var(--primitive-paper);
+  --sidebar-foreground:       var(--primitive-ink);
+  --sidebar-primary:          var(--primitive-accent);
+  --sidebar-primary-foreground: var(--primitive-paper);
+  --sidebar-accent:           var(--primitive-paper-subtle);
+  --sidebar-accent-foreground: var(--primitive-ink);
+  --sidebar-border:           var(--primitive-rule);
+  --sidebar-ring:             var(--primitive-accent);
+
+  /* Chart — ink-blue series; not project rainbow */
+  --chart-1: var(--primitive-accent);
+  --chart-2: oklch(0.50 0.10 200);
+  --chart-3: oklch(0.55 0.10 140);
+  --chart-4: oklch(0.52 0.10 50);
+  --chart-5: oklch(0.50 0.12 295);
+
+  /*
+   * ── Case-study accent palette ─────────────────────────────────────────────
+   *
+   * Scope: inside individual case-study components only.
+   * Do NOT use as site chrome (nav, cards, badges, buttons).
+   * These are evidence colors that appear within case-study context, not brand.
+   */
+  --cs-accent-saas:      oklch(0.75 0.15 195);   /* SaaS Design System */
+  --cs-accent-isc:       oklch(0.70 0.20 300);   /* ISC Portal */
+  --cs-accent-comcast:   oklch(0.70 0.15 150);   /* Comcast */
+  --cs-accent-buildout:  oklch(0.75 0.15 60);    /* BuildOut */
+  --cs-accent-cvs:       oklch(0.70 0.20 350);   /* CVS */
 }
 
+/*
+ * Dark mode — inactive by default (ThemeProvider switchable=false).
+ * Values maintain craft/studio feel: warm dark canvas, not the old cyan/navy.
+ * Preserved for accessibility tooling and future opt-in.
+ */
 .dark {
-  --primary: oklch(0.75 0.15 195);
-  --primary-foreground: oklch(0.08 0.02 265);
-  --sidebar-primary: oklch(0.75 0.15 195);
-  --sidebar-primary-foreground: oklch(0.08 0.02 265);
-  --background: oklch(0.08 0.02 265);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.12 0.02 265);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.12 0.02 265);
-  --popover-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.2 0.02 265);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.2 0.02 265);
-  --muted-foreground: oklch(0.6 0 0);
-  --accent: oklch(0.18 0.02 265);
-  --accent-foreground:  oklch(0.98 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.25 0.02 265);
-  --input: oklch(0.25 0.02 265);
-  --ring: oklch(0.75 0.15 195);
-  --chart-1: oklch(0.75 0.15 195);
-  --chart-2: oklch(0.7 0.2 300);
-  --chart-3: oklch(0.7 0.15 150);
-  --chart-4: oklch(0.75 0.15 60);
-  --chart-5: oklch(0.7 0.2 350);
-  --sidebar: oklch(0.12 0.02 265);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.18 0.02 265);
-  --sidebar-accent-foreground:  oklch(0.98 0 0);
-  --sidebar-border: oklch(0.25 0.02 265);
-  --sidebar-ring: oklch(0.75 0.15 195);
+  --background:             oklch(0.15 0.015 262);
+  --foreground:             oklch(0.93 0.010 90);
+  --card:                   oklch(0.19 0.015 262);
+  --card-foreground:        oklch(0.93 0.010 90);
+  --popover:                oklch(0.15 0.015 262);
+  --popover-foreground:     oklch(0.93 0.010 90);
+  --primary:                oklch(0.60 0.160 258);
+  --primary-foreground:     oklch(0.15 0.015 262);
+  --secondary:              oklch(0.22 0.015 262);
+  --secondary-foreground:   oklch(0.93 0.010 90);
+  --muted:                  oklch(0.22 0.015 262);
+  --muted-foreground:       oklch(0.64 0.010 90);
+  --accent:                 oklch(0.22 0.015 262);
+  --accent-foreground:      oklch(0.93 0.010 90);
+  --destructive:            oklch(0.60 0.22 25);
+  --destructive-foreground: oklch(0.93 0.010 90);
+  --border:                 oklch(0.28 0.015 262);
+  --input:                  oklch(0.28 0.015 262);
+  --ring:                   oklch(0.60 0.160 258);
+  --sidebar:                oklch(0.19 0.015 262);
+  --sidebar-foreground:     oklch(0.93 0.010 90);
+  --sidebar-primary:        oklch(0.60 0.160 258);
+  --sidebar-primary-foreground: oklch(0.15 0.015 262);
+  --sidebar-accent:         oklch(0.22 0.015 262);
+  --sidebar-accent-foreground: oklch(0.93 0.010 90);
+  --sidebar-border:         oklch(0.28 0.015 262);
+  --sidebar-ring:           oklch(0.60 0.160 258);
 }
 
 @layer base {
@@ -128,11 +201,20 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-sans);
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-display);
     font-weight: 600;
+  }
+  /* Respect prefers-reduced-motion globally */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -170,38 +252,37 @@
       max-width: 1280px;
     }
   }
-  
-  /* Project accent border utilities */
-  .border-accent-saas {
-    border-color: var(--accent-saas);
-  }
-  .border-accent-isc {
-    border-color: var(--accent-isc);
-  }
-  .border-accent-comcast {
-    border-color: var(--accent-comcast);
-  }
-  .border-accent-buildout {
-    border-color: var(--accent-buildout);
-  }
-  .border-accent-cvs {
-    border-color: var(--accent-cvs);
-  }
-  
-  /* Text accent utilities */
-  .text-accent-saas {
-    color: var(--accent-saas);
-  }
-  .text-accent-isc {
-    color: var(--accent-isc);
-  }
-  .text-accent-comcast {
-    color: var(--accent-comcast);
-  }
-  .text-accent-buildout {
-    color: var(--accent-buildout);
-  }
-  .text-accent-cvs {
-    color: var(--accent-cvs);
-  }
+
+  /*
+   * Case-study accent border/text utilities.
+   * Use ONLY inside case-study page components as evidence color.
+   * Not for nav, cards, buttons, or any site-chrome context.
+   */
+  .cs-border-accent-saas     { border-color: var(--cs-accent-saas); }
+  .cs-border-accent-isc      { border-color: var(--cs-accent-isc); }
+  .cs-border-accent-comcast  { border-color: var(--cs-accent-comcast); }
+  .cs-border-accent-buildout { border-color: var(--cs-accent-buildout); }
+  .cs-border-accent-cvs      { border-color: var(--cs-accent-cvs); }
+
+  .cs-text-accent-saas     { color: var(--cs-accent-saas); }
+  .cs-text-accent-isc      { color: var(--cs-accent-isc); }
+  .cs-text-accent-comcast  { color: var(--cs-accent-comcast); }
+  .cs-text-accent-buildout { color: var(--cs-accent-buildout); }
+  .cs-text-accent-cvs      { color: var(--cs-accent-cvs); }
+
+  /*
+   * Legacy aliases kept for backward compat — point to cs-accent vars.
+   * @deprecated Use cs-border-accent-* / cs-text-accent-* instead.
+   */
+  .border-accent-saas     { border-color: var(--cs-accent-saas); }
+  .border-accent-isc      { border-color: var(--cs-accent-isc); }
+  .border-accent-comcast  { border-color: var(--cs-accent-comcast); }
+  .border-accent-buildout { border-color: var(--cs-accent-buildout); }
+  .border-accent-cvs      { border-color: var(--cs-accent-cvs); }
+
+  .text-accent-saas     { color: var(--cs-accent-saas); }
+  .text-accent-isc      { color: var(--cs-accent-isc); }
+  .text-accent-comcast  { color: var(--cs-accent-comcast); }
+  .text-accent-buildout { color: var(--cs-accent-buildout); }
+  .text-accent-cvs      { color: var(--cs-accent-cvs); }
 }
