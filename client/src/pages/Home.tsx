@@ -7,6 +7,10 @@ import FactRow, { type Fact } from "@/components/FactRow";
 import Reveal from "@/components/Reveal";
 import SiteLayout from "@/components/SiteLayout";
 import { Eyebrow, Section, SectionHeading, SectionTitle } from "@/components/Section";
+import { contactHref } from "@/lib/contact-intent";
+
+const consultingHref = contactHref({ intent: "consulting" });
+const roleHref = contactHref({ intent: "role" });
 
 const heroFacts: Fact[] = [
   {
@@ -167,11 +171,27 @@ export default function Home() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/contact?intent=role">Schedule a call</Link>
+              <Link href="/consulting">Work with me</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/work">View case studies</Link>
             </Button>
+          </>
+        }
+        footnote={
+          <>
+            Consulting: product leaders bring me the bet they are about to fund,
+            and we find out whether the direction holds before the budget is
+            committed.
+            <span className="mt-2 block">
+              Hiring for a leadership role instead?{" "}
+              <Link
+                href={roleHref}
+                className="font-medium text-primary transition-colors hover:text-cyan-300"
+              >
+                That is a different conversation.
+              </Link>
+            </span>
           </>
         }
         meta={<FactRow facts={heroFacts} />}
@@ -184,6 +204,18 @@ export default function Home() {
           eyebrow="What I bring"
           title="Three capabilities, rarely one at a time"
           lede="Enterprise B2B product experience runs on all three. The work almost never separates cleanly into just one."
+          trailing={
+            <Link
+              href="/consulting"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+            >
+              How this turns into an engagement
+              <ArrowRight
+                className="h-4 w-4 transition-transform motion-safe:group-hover:translate-x-1"
+                aria-hidden="true"
+              />
+            </Link>
+          }
         />
         {/* Subgrid keeps the index rule, title, summary and point list aligned
             across all three cards regardless of copy length. */}
@@ -328,19 +360,20 @@ export default function Home() {
       <Section labelledBy="home-cta-heading">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle id="home-cta-heading">
-            Navigating a complex B2B product experience problem?
+            About to commit budget to something nobody has validated?
           </SectionTitle>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
-            If your product organization is working through a hard experience,
-            operating model, or AI adoption problem, I&apos;d like to hear what
-            you&apos;re dealing with, even if it&apos;s exploratory.
+            That is the moment this work is worth the most. Thirty minutes, no
+            deck: tell me what you&apos;re about to fund and which part of it is
+            still a guess. I&apos;ll tell you what I&apos;d do first, whether or
+            not you hire me.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href="/contact">Let&apos;s talk</Link>
+              <Link href={consultingHref}>Book a 30-minute call</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/articles">Read my thinking</Link>
+              <Link href="/consulting">See how engagements work</Link>
             </Button>
           </div>
         </div>

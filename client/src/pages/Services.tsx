@@ -46,6 +46,11 @@ type Phase = {
   deliverable: string;
 };
 
+type Capability = {
+  name: string;
+  body: string;
+};
+
 type Engagement = {
   name: string;
   when: string;
@@ -66,66 +71,79 @@ type Industry = {
   body: string;
 };
 
-/** Numbers here all come from the engagement and investment copy below. */
+/**
+ * Engagement shape, not outcome claims. Every value here restates something
+ * already written on this page: the FAQ, the working-together list, or the
+ * engagement durations. Pricing sits in the investment block further down
+ * rather than in the hero, because the first question this buyer has is
+ * whether the decision is the kind I handle, not what it costs.
+ */
 const HERO_FACTS: Fact[] = [
-  { label: "Engagements from", value: "$8,000", note: "UX Diagnostic" },
-  { label: "Most product work", value: "$20,000 to $150,000" },
+  { label: "First step", value: "30-minute call", note: "No deck, no pitch" },
   {
-    label: "Duration",
-    value: "2 to 16 weeks",
-    note: "Fractional leadership is ongoing",
+    label: "Proposal",
+    value: "Three business days",
+    note: "Fixed fee, scoped before it starts",
   },
-  { label: "Start", value: "About two weeks out", note: "Entry engagements" },
+  { label: "Entry engagements", value: "2 to 4 weeks" },
+  { label: "You work with", value: "Me, directly", note: "No account manager" },
 ];
 
 const SITUATIONS: Situation[] = [
   {
-    title: "Product teams heading into a big bet",
-    body: "Budget is approved and the direction is still fuzzy. Every week of ambiguity turns into rework later. You want confidence before engineering starts.",
+    title: "A funded bet nobody has validated",
+    body: "The roadmap item is approved and the direction came from stakeholder requests, a competitor's screenshots, and three loud customer calls. Nobody has asked whether the thing you are about to build is the thing that gets bought.",
   },
   {
-    title: "More roadmap than design capacity",
-    body: "You have a designer or two and four times the work. Things ship, but quality is uneven and nobody has time to think upstream. You need senior capacity without a six-month hire.",
+    title: "Two directions and no tiebreaker",
+    body: "There is a real fork in the road, and the internal debate keeps resolving by seniority rather than evidence. Whichever way it goes, you will be defending it to a board a quarter from now.",
   },
   {
-    title: "Design that does not scale",
-    body: "Multiple product teams, inconsistent patterns, and a design system people work around. Every new screen is a negotiation. You need structure that holds without slowing anyone down.",
+    title: "An AI feature with no decided job",
+    body: "Leadership wants AI in the product this year. Nobody has named the decision it makes for the user, what happens when the model is wrong, or why a customer would trust it with work that matters.",
+  },
+  {
+    title: "A product that demos well and stalls in the account",
+    body: "Sales lands it and six weeks later the seats are quiet. Whatever is going wrong happens in the first two weeks of real use, and nobody owns finding it.",
   },
 ];
 
 const RISKS: Risk[] = [
   {
     title: "Expensive uncertainty",
-    body: "You are about to commit engineering months to a direction nobody has tested with a real customer.",
+    body: "You are about to commit engineering quarters to a direction nobody has put in front of a real customer.",
     outcome:
-      "A go, no-go, or pivot decision backed by evidence rather than the loudest opinion in the room.",
+      "A go, no-go, or pivot call backed by evidence rather than the most senior opinion in the room.",
   },
   {
-    title: "A roadmap built from internal debate",
-    body: "Feature lists come from stakeholder requests and competitor screenshots, not from what customers will pay to fix.",
-    outcome: "A prioritized view you can defend to your board and your engineers.",
+    title: "A roadmap assembled from internal debate",
+    body: "The feature list came from stakeholder requests and competitor screenshots, not from what a customer would change a contract over.",
+    outcome:
+      "A prioritized direction you can defend to your board and hand to engineering without re-litigating it.",
   },
   {
-    title: "Conversion that stalls for unnamed reasons",
-    body: "Traffic is fine. Signups are fine. Activation is not.",
-    outcome: "Specific, testable changes tied to the metric you are missing.",
+    title: "Scope that only grows",
+    body: "Every review adds a requirement and nothing ever comes off, because no one agreed what this release was supposed to prove.",
+    outcome:
+      "A scope with a stated hypothesis, explicit cuts, and the metric that will tell you it worked.",
+  },
+  {
+    title: "Adoption that stalls after the sale",
+    body: "The contract is signed and the seats go quiet. The trail goes cold somewhere in the first weeks of real use.",
+    outcome:
+      "Named friction in the actual workflow, and specific changes tied to the number you are missing.",
   },
   {
     title: "Handoffs that turn into rework",
-    body: "Design ships a file, engineering interprets it, and three sprints later it looks nothing like the intent.",
+    body: "Design ships a file, engineering interprets it, and three sprints later what is in staging is not what was decided.",
     outcome:
-      "Specs, states, edge cases, and system-level components so the build is a build, not a translation.",
+      "States, edge cases, and system-level components specified, so the build is a build rather than a translation.",
   },
   {
-    title: "Design that dies past a handful of people",
-    body: "Patterns fork, components duplicate, and the system becomes a museum.",
-    outcome: "A consistent product surface and faster delivery across teams.",
-  },
-  {
-    title: "Not enough senior design capacity",
-    body: "You need someone who can run research, make the call, and produce the work, without ramping for a quarter.",
+    title: "The same decision, re-argued by every team",
+    body: "Patterns fork, components duplicate, and each new surface reopens a question that was already settled once.",
     outcome:
-      "Senior throughput on the calendar you have, not the hiring timeline you wish you had.",
+      "Decisions made centrally and encoded, so teams inherit them instead of negotiating them.",
   },
 ];
 
@@ -164,42 +182,67 @@ const PHASES: Phase[] = [
   },
 ];
 
+/**
+ * Names are load-bearing: the assessment at /assessment recommends a starting
+ * engagement by these exact names, and the FAQ prices them. Reordered so the
+ * pre-commitment work reads first, which is the order this buyer arrives in.
+ */
 const ENGAGEMENTS: Engagement[] = [
   {
     name: "UX Diagnostic",
-    when: "A team knows something is wrong but not why.",
+    when: "Something in the product is clearly costing you and nobody can name it.",
     scope: "Expert review, analytics review, stakeholder interviews, prioritized recommendations.",
     duration: "2–3 weeks",
   },
   {
     name: "Discovery Sprint",
-    when: "The problem or opportunity is unclear.",
+    when: "The problem is still fuzzy and the budget conversation has already started.",
     scope: "Research, synthesis, journey mapping, opportunity framing, research readout.",
     duration: "2–4 weeks",
   },
   {
     name: "Concept Validation",
-    when: "A team needs confidence before building.",
+    when: "You need evidence behind a direction before engineering commits to it.",
     scope: "Ideation, flows, prototype, usability testing, recommendations.",
     duration: "3–6 weeks",
   },
   {
     name: "End-to-End Product Engagement",
-    when: "A product or major feature needs full UX leadership.",
+    when: "A product or major feature needs experience leadership from the decision through the build.",
     scope: "Discover through delivery: research, strategy, design, testing, implementation support.",
     duration: "8–16 weeks",
   },
   {
     name: "Design System Acceleration",
-    when: "Design does not scale past a handful of people.",
+    when: "The same decisions are being re-made by every team that ships a screen.",
     scope: "Component architecture, foundations, accessibility standards, documentation, governance.",
     duration: "4–8 weeks",
   },
   {
     name: "Fractional UX Leadership",
-    when: "A team needs ongoing senior UX capability.",
+    when: "The gap is ongoing senior judgment, not a project with an end date.",
     scope: "Roadmap input, research planning, design direction, coaching, stakeholder alignment.",
     duration: "Ongoing, 3-month minimum",
+  },
+];
+
+/**
+ * Same three capabilities named on Home and About, written for the buying
+ * decision rather than the identity statement. No new claims: the experience
+ * span and the venture list both come from the canonical brand facts.
+ */
+const CAPABILITIES: Capability[] = [
+  {
+    name: "Product experience leadership",
+    body: "Twenty-five years deciding what the experience should be when the system is complicated and the stakeholders disagree. Most of it inside Fortune 50 product organizations, where being wrong is expensive and slow to undo.",
+  },
+  {
+    name: "Product operating model",
+    body: "A surprising number of product problems turn out to be decision-rights problems. I work on how the call actually gets made, so the direction survives contact with delivery instead of drifting the moment I leave.",
+  },
+  {
+    name: "AI-enabled execution",
+    body: "AI compresses the mechanical parts of synthesis, prototyping, and specification, which is why a small engagement can cover more ground than it used to. The judgment stays mine and the delivery does not get fragile.",
   },
 ];
 
@@ -308,8 +351,8 @@ export default function Services() {
   return (
     <SiteLayout currentPage="consulting">
       <PageSeo
-        title="Consulting | Product UX Research, Strategy, and Delivery | Ryan Winzenburg"
-        description="Turn uncertain customer problems into experiences your team can actually build. Research, product strategy, prototyping, testing, and delivery. Engagements start at $8,000."
+        title="Consulting | Validate the Product Direction Before You Fund the Build | Ryan Winzenburg"
+        description="For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated. Evidence behind the decision, a scope with explicit cuts, and a path engineering can build."
         path="/consulting"
         ogImage="/images/services-hero.webp"
         jsonLd={consultingFaqJsonLd()}
@@ -318,40 +361,40 @@ export default function Services() {
       <PageHero
         titleId="services-hero-title"
         eyebrow="Consulting"
-        eyebrowNote="Enterprise B2B product experience"
+        eyebrowNote="Enterprise B2B product leaders"
         media={{ src: "/images/services-hero.webp", position: "object-center" }}
         title={
           <>
-            Turn uncertain customer problems into experiences your team can
-            actually build.
+            Prove the direction before you spend the build budget on it.
           </>
         }
         lede={
           <>
-            I help product teams move from &ldquo;we think this is the
-            problem&rdquo; to a validated, implementation-ready design. Research
-            and product strategy through prototyping, testing, and delivery. 25
-            years of enterprise product design, most of it inside Fortune 50
-            environments where being wrong is expensive.
+            Most of the expensive product mistakes I get called into were not
+            design mistakes. Someone committed engineering quarters to a
+            direction nobody had tested, and the bill arrived at launch. I work
+            in the window just before that commitment, so the decision has
+            evidence under it and the build has a scope your engineers can
+            actually start.
           </>
         }
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href={consultingHref}>Book a 30-minute consultation</Link>
+              <Link href={consultingHref}>Book a 30-minute call</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#how-i-work">See how I work</a>
+              <a href="#situations">See where I come in</a>
             </Button>
           </>
         }
         footnote={
           <>
-            Enterprise product design across healthcare, financial services,
-            telecom, and technology. Previously design leadership at CVS/Aetna
-            and Comcast.
+            Twenty-five years of enterprise product experience across
+            healthcare, financial services, telecom, and technology. Previously
+            design leadership at CVS/Aetna and Comcast.
             <span className="mt-2 block">
-              Hiring for a design leadership role?{" "}
+              Hiring for a leadership role instead?{" "}
               <Link
                 href={roleHref}
                 className="font-medium text-primary transition-colors hover:text-cyan-300"
@@ -365,20 +408,27 @@ export default function Services() {
       />
 
       {/* Who this is for */}
-      <Section tone="muted" labelledBy="situations-heading">
+      <Section id="situations" tone="muted" labelledBy="situations-heading">
         <SectionHeading
           id="situations-heading"
-          eyebrow="Who this is for"
-          title="Three situations that come up most"
-          lede="Common titles I work with: VP Product, Head of Product, Director of Design, founder or CEO at a company past its first product."
+          eyebrow="Where I come in"
+          title="Four situations with a budget attached"
+          lede="These are mandates, not job titles. Every one of them is a decision somebody is about to fund, which is the point at which the work is still cheap to change."
         />
-        {/* Subgrid keeps the index rule, title, and body on shared baselines. */}
+        {/*
+          Subgrid keeps the index rule, title, and body on shared baselines, so
+          the row gap has to be zero or it would draw a line through each card.
+          That leaves the second row of cards with no rule above it at md, hence
+          the explicit border on everything past the first row.
+        */}
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-3 md:grid-rows-[auto_auto_1fr] md:gap-y-0">
+          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 md:grid-rows-[auto_auto_1fr] md:gap-y-0">
             {SITUATIONS.map((situation, index) => (
               <div
                 key={situation.title}
-                className="bg-background/60 p-7 md:row-span-3 md:grid md:grid-rows-subgrid md:p-8"
+                className={`bg-background/60 p-7 md:row-span-3 md:grid md:grid-rows-subgrid md:p-8 ${
+                  index >= 2 ? "md:border-t md:border-border/60" : ""
+                }`}
               >
                 <div className="mb-6 flex items-baseline gap-3">
                   <span
@@ -404,8 +454,8 @@ export default function Services() {
         <SectionHeading
           id="risks-heading"
           eyebrow="What you are actually buying"
-          title="Six risks clients hire me to remove"
-          lede="Clients rarely hire me for research or wireframes. They hire me to remove a specific risk. These are the six that come up most."
+          title="The risk you are carrying, and what replaces it"
+          lede="Nobody hires me for research or wireframes. They hire me because a specific risk is sitting on a budget they have to defend. These are the six that come up most."
         />
         <ol className="border-t border-border/60">
           {RISKS.map((risk, index) => (
@@ -501,10 +551,10 @@ export default function Services() {
 
         <div className="mt-12 rounded-xl border border-primary/30 bg-primary/10 p-7 md:p-8">
           <p className="max-w-3xl leading-relaxed text-slate-200">
-            Two things I do differently: I stay through implementation rather
-            than handing off at the file, and I use AI-augmented workflows to
-            compress the mechanical parts of the process. The judgment stays
-            mine. The production work gets faster.
+            One thing worth saying plainly: I stay through implementation rather
+            than handing off at the file. A validated direction that nobody can
+            build is the same as no direction, and most of the loss happens in
+            the gap between the decision and the thing that ships.
           </p>
           <Link
             href="/methodology"
@@ -516,6 +566,91 @@ export default function Services() {
               aria-hidden="true"
             />
           </Link>
+        </div>
+      </Section>
+
+      {/* Why me */}
+      <Section compact labelledBy="capabilities-heading">
+        <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-4">
+            <Eyebrow className="mb-4">Why me</Eyebrow>
+            <SectionTitle id="capabilities-heading">
+              What I bring to the decision
+            </SectionTitle>
+            <p className="mt-6 leading-relaxed text-slate-300">
+              Three capabilities, and they rarely show up one at a time. The
+              work almost never separates cleanly into just one of them.
+            </p>
+          </div>
+          <div className="lg:col-span-7 lg:col-start-6">
+            <dl className="divide-y divide-border/60 border-y border-border/60">
+              {CAPABILITIES.map((capability) => (
+                <div key={capability.name} className="py-6">
+                  <dt className="font-semibold text-white">{capability.name}</dt>
+                  <dd className="mt-2 leading-relaxed text-slate-300">
+                    {capability.body}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <p className="mt-6 leading-relaxed text-slate-400">
+              I also build and run my own products. Winzinvest is live
+              commercial software for RIAs and family offices, and Foundpath and
+              Casimir Systems are active. Founding things keeps me honest about
+              what shipping actually costs, which is different knowledge from
+              reviewing somebody else&apos;s roadmap.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* Selected work */}
+      <Section tone="muted" labelledBy="work-heading">
+        <SectionHeading
+          id="work-heading"
+          eyebrow="Proof"
+          title="Six projects, six different problems"
+          lede="Scope and decisions rather than headline numbers. Each one links to the full case study."
+          trailing={
+            <Link
+              href="/work"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+            >
+              All case studies
+              <ArrowRight
+                className="h-4 w-4 motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
+                aria-hidden="true"
+              />
+            </Link>
+          }
+        />
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {SELECTED_WORK.map((item, index) => (
+            <Reveal key={item.name} delay={index * 60} className="h-full">
+              <Link
+                href={item.href}
+                className="group flex h-full flex-col rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70"
+              >
+                <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
+                  {item.meta}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold text-white">
+                  {item.name}
+                </h3>
+                <p className="mt-3 leading-relaxed text-slate-300">{item.body}</p>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-400">
+                  {item.result}
+                </p>
+                <span className="mt-6 inline-flex items-center gap-2 border-t border-border/60 pt-5 text-sm font-medium text-primary">
+                  Read the case study
+                  <ArrowRight
+                    className="h-4 w-4 motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
+                    aria-hidden="true"
+                  />
+                </span>
+              </Link>
+            </Reveal>
+          ))}
         </div>
       </Section>
 
@@ -543,12 +678,12 @@ export default function Services() {
       </Section>
 
       {/* Engagements */}
-      <Section tone="muted" labelledBy="engagements-heading">
+      <Section tone="slate" labelledBy="engagements-heading">
         <SectionHeading
           id="engagements-heading"
           eyebrow="Ways to work together"
           title="Six engagements, each defined by the decision it helps you make"
-          lede="Start at the smallest engagement that answers your actual question."
+          lede="Start at the smallest one that answers the question actually in front of you. Scaling up later is easy. Unwinding a large engagement that started before the question was clear is not."
         />
         <Reveal>
           <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 lg:grid-cols-3">
@@ -622,58 +757,8 @@ export default function Services() {
         </div>
       </Section>
 
-      {/* Selected work */}
-      <Section labelledBy="work-heading">
-        <SectionHeading
-          id="work-heading"
-          eyebrow="Selected work"
-          title="Six projects, six different problems"
-          lede="Each one links to the full case study."
-          trailing={
-            <Link
-              href="/work"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
-            >
-              All case studies
-              <ArrowRight
-                className="h-4 w-4 motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </Link>
-          }
-        />
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {SELECTED_WORK.map((item, index) => (
-            <Reveal key={item.name} delay={index * 60} className="h-full">
-              <Link
-                href={item.href}
-                className="group flex h-full flex-col rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70"
-              >
-                <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
-                  {item.meta}
-                </p>
-                <h3 className="mt-3 text-xl font-semibold text-white">
-                  {item.name}
-                </h3>
-                <p className="mt-3 leading-relaxed text-slate-300">{item.body}</p>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-400">
-                  {item.result}
-                </p>
-                <span className="mt-6 inline-flex items-center gap-2 border-t border-border/60 pt-5 text-sm font-medium text-primary">
-                  Read the case study
-                  <ArrowRight
-                    className="h-4 w-4 motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
-                    aria-hidden="true"
-                  />
-                </span>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
-
       {/* Industries */}
-      <Section tone="slate" labelledBy="industries-heading">
+      <Section labelledBy="industries-heading">
         <SectionHeading
           id="industries-heading"
           eyebrow="Industries"
@@ -710,7 +795,7 @@ export default function Services() {
       </Section>
 
       {/* FAQ */}
-      <Section id="faq" labelledBy="faq-heading">
+      <Section id="faq" tone="muted" labelledBy="faq-heading">
         <SectionHeading
           id="faq-heading"
           eyebrow="Before a call"
@@ -765,23 +850,24 @@ export default function Services() {
       </Section>
 
       {/* Closing */}
-      <Section tone="muted" compact labelledBy="consulting-cta-heading">
+      <Section compact labelledBy="consulting-cta-heading">
         <div className="grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-16">
           <div className="lg:col-span-7">
             <SectionTitle id="consulting-cta-heading">
-              Let&apos;s find out if this is a fit
+              Bring me the bet you are about to fund
             </SectionTitle>
             <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">
-              A 30-minute call, no deck. Tell me what you are trying to ship and
-              what is making it uncertain. I will tell you what I would do
-              first, whether or not you hire me. If there is a fit, you will
-              have a scoped proposal within three business days.
+              Thirty minutes, no deck. Tell me what you are about to commit to
+              and which part of it is still unproven. I will tell you what I
+              would do first, whether or not you hire me. If there is a fit, you
+              will have a scoped proposal with a fixed fee within three business
+              days.
             </p>
           </div>
           <div className="lg:col-span-5">
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
               <Button size="lg" asChild>
-                <Link href={consultingHref}>Book a 30-minute consultation</Link>
+                <Link href={consultingHref}>Book a 30-minute call</Link>
               </Button>
             </div>
             <p className="mt-6 text-sm leading-relaxed text-slate-400 lg:text-right">
@@ -793,7 +879,7 @@ export default function Services() {
                 ryan@winzenburg.com
               </a>
               <span className="mt-1 block">
-                Discovery Sprints can usually begin within two weeks.
+                Entry engagements can usually begin within two weeks.
               </span>
             </p>
           </div>
