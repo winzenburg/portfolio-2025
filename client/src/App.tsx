@@ -142,6 +142,7 @@ const TheInterfaceProblem = lazy(() => import("./pages/articles/TheInterfaceProb
 const TheAgentLayerBusinessLayer = lazy(
   () => import("./pages/articles/TheAgentLayerBusinessLayer"),
 );
+const Pulse20260921 = lazy(() => import("./pages/pulse/2026-09-21"));
 
 function PageTracker() {
   usePageTracking();
@@ -347,6 +348,9 @@ function Router() {
         </Route>
         <Route path="/articles/the-agent-layer-is-becoming-the-business-layer">
           {() => <LazyRoute component={TheAgentLayerBusinessLayer} />}
+        </Route>
+        <Route path="/pulse/2026-09-21">
+          {() => <LazyRoute component={Pulse20260921} />}
         </Route>
         <Route path="/contact" component={Contact} />
         <Route path="/subscribe" component={Subscribe} />
