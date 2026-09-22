@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
 import FactRow, { type Fact } from "@/components/FactRow";
 import SiteLayout from "@/components/SiteLayout";
 import { Eyebrow, Section, SectionTitle } from "@/components/Section";
+import { allPulseIssues, formatWeekOf } from "@/data/pulseIssues";
 
 type SubscribeStatus = "idle" | "loading" | "success" | "error";
 
@@ -211,6 +212,44 @@ export default function Subscribe() {
           </div>
         </div>
       </Section>
+
+      {/* Past issues archive */}
+      {allPulseIssues.length > 0 && (
+        <Section tone="plain" labelledBy="past-issues-heading">
+          <div className="max-w-2xl">
+            <Eyebrow className="mb-4">Archive</Eyebrow>
+            <SectionTitle id="past-issues-heading" className="text-2xl md:text-3xl mb-8">
+              Past issues
+            </SectionTitle>
+            <ol className="space-y-4">
+              {allPulseIssues.map((issue) => (
+                <li key={issue.slug}>
+                  <Link
+                    href={`/pulse/${issue.slug}`}
+                    className="group flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 rounded-xl border border-border/60 bg-background/40 px-5 py-4 transition-colors hover:border-cyan-700/60 hover:bg-slate-800/40"
+                  >
+                    <span className="shrink-0 text-sm text-slate-500 pt-0.5 min-w-[90px]">
+                      {formatWeekOf(issue.weekOf)}
+                    </span>
+                    <span className="flex-1 min-w-0">
+                      <span className="block text-sm font-medium text-white group-hover:text-cyan-300 transition-colors leading-snug mb-1">
+                        {issue.title}
+                      </span>
+                      <span className="block text-xs text-slate-400 leading-relaxed">
+                        {issue.centralSignal}
+                      </span>
+                    </span>
+                    <ArrowRight
+                      className="w-4 h-4 text-slate-600 group-hover:text-cyan-400 transition-colors shrink-0 mt-0.5 hidden sm:block"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </Section>
+      )}
     </SiteLayout>
   );
 }
