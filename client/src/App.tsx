@@ -154,8 +154,8 @@ function PageTracker() {
 
 function RouteFallback() {
   return (
-    <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-      <div className="text-slate-400 text-sm">Loading…</div>
+    <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="text-muted-foreground text-sm">Loading…</div>
     </div>
   );
 }
