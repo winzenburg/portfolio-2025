@@ -510,7 +510,7 @@ export default function Article() {
         <a href="/articles" className="text-cyan-400 hover:text-slate-200 font-medium">
           ← Back to Articles
         </a>
-        <a href="/contact" className="text-cyan-400 hover:text-slate-200 font-medium">
+        <a href="/contact?intent=consulting" className="text-cyan-400 hover:text-slate-200 font-medium">
           Get in Touch →
         </a>
       </nav>

@@ -348,7 +348,7 @@ export default function AiOrchestrationWorkflow() {
             Get the Framework
           </Link>
           <Link 
-            href="/contact"
+            href="/contact?intent=consulting"
             className="inline-block border border-gray-600 text-gray-300 px-8 py-3 rounded-lg font-semibold hover:border-gray-500 transition-colors"
           >
             Let's Chat

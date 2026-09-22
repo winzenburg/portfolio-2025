@@ -829,7 +829,7 @@ const CaseStudyKinlet: React.FC = () => {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             I can help your team adopt AI-augmented workflows, build SaaS MVPs at unprecedented speed, or serve as a full-stack product leader who bridges strategy and execution.
           </p>
-          <Link href="/contact" className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-lg transition-colors cursor-pointer">
+          <Link href="/contact?intent=consulting" className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-lg transition-colors cursor-pointer">
               Let's Talk
           </Link>
         </section>

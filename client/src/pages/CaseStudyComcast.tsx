@@ -435,7 +435,7 @@ const CaseStudyComcast: React.FC = () => {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
             I can deliver comprehensive, production-ready design systems that accelerate your entire product organization, from design to development to deployment.
           </p>
-          <Link href="/contact" className="inline-block px-8 py-3 bg-green-500 hover:bg-green-400 text-slate-900 font-semibold rounded-lg transition-colors">
+          <Link href="/contact?intent=consulting" className="inline-block px-8 py-3 bg-green-500 hover:bg-green-400 text-slate-900 font-semibold rounded-lg transition-colors">
               Let&apos;s Discuss Your Project
           </Link>
         </section>

@@ -519,7 +519,7 @@ export default function ScalingStrategy() {
           <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-slate-700 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Building an AI-Powered Portfolio?</h3>
             <p className="text-slate-300 mb-6">I've implemented this scaling strategy across multiple businesses. Let's discuss how to apply these principles to your specific context.</p>
-            <Link href="/contact" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?intent=consulting" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
                 Schedule a Discovery Call
             </Link>
           </div>
