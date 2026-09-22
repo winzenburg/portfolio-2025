@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function DualFilterValidationFrameworkArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Solution: A Dual-Filter Validation Framework | Ryan Winzenburg</title>
@@ -25,13 +25,13 @@ export default function DualFilterValidationFrameworkArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
 
           {/* Hero Image */}
-          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+          <div className="mb-12 rounded-lg overflow-hidden border border-primary/15">
             <img
               src="/images/articles/dual-filter-hero.webp"
               alt="Dual-filter validation framework: heat versus durability"
@@ -40,7 +40,7 @@ export default function DualFilterValidationFrameworkArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 7, 2024</span>
             <span>•</span>
             <span>8 min read</span>
@@ -48,17 +48,17 @@ export default function DualFilterValidationFrameworkArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Solution: A Dual-Filter Validation Framework
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               Heat gets you in. Durability makes it a real SaaS business.
             </p>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-            <p className="text-xl leading-relaxed text-slate-200 mb-8">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
+            <p className="text-xl leading-relaxed text-foreground mb-8">
           Last year I made a $15,000 mistake. Built a product that had incredible validation, people were 
           literally DMing me asking when they could pay. Six months later? Ghost town. Churn rate through 
           the roof. Users who couldn't wait to get access suddenly couldn't remember why they signed up.
@@ -77,8 +77,8 @@ export default function DualFilterValidationFrameworkArticle() {
           Durability? That's what actually pays the bills 12 months later.
         </p>
 
-            <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
-              <p className="text-lg font-semibold text-cyan-300 mb-0">
+            <div className="bg-primary/5 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
+              <p className="text-lg font-semibold text-primary mb-0">
             "Heat gets you in. Durability makes it a real SaaS business."
               </p>
             </div>
@@ -95,7 +95,7 @@ export default function DualFilterValidationFrameworkArticle() {
           ones that actually compound into real businesses.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           Filter 1: The Heat Filter (Or: "Do Real Humans Actually Give a Damn?")
         </h2>
 
@@ -114,7 +114,7 @@ export default function DualFilterValidationFrameworkArticle() {
           Let me back up for a second. When I say "Heat Filter," I'm talking about answering one brutal question:
         </p>
 
-        <blockquote className="text-2xl font-semibold text-center py-8 text-slate-200 border-t border-b border-slate-700">
+        <blockquote className="text-2xl font-semibold text-center py-8 text-foreground border-t border-b border-border">
           "Do a tribe of real humans urgently want this?"
         </blockquote>
 
@@ -123,7 +123,7 @@ export default function DualFilterValidationFrameworkArticle() {
           before you build it levels of want.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           The Heat Tests I Actually Run
         </h3>
 
@@ -143,10 +143,10 @@ export default function DualFilterValidationFrameworkArticle() {
           have heat.
         </p>
 
-        <div className="bg-slate-800/50 p-6 rounded-lg my-8">
-          <p className="text-sm text-slate-300 mb-2"></p>
-          <p className="text-3xl font-bold text-white">100 signups</p>
-          <p className="text-lg text-slate-200">for $50 ad spend = minimum heat threshold</p>
+        <div className="bg-muted/50 p-6 rounded-lg my-8">
+          <p className="text-sm text-muted-foreground mb-2"></p>
+          <p className="text-3xl font-bold text-foreground">100 signups</p>
+          <p className="text-lg text-foreground">for $50 ad spend = minimum heat threshold</p>
         </div>
 
         <p>
@@ -165,9 +165,9 @@ export default function DualFilterValidationFrameworkArticle() {
           products people "loved" but wouldn't pay for. Don't be me.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-500 px-6 pt-4 pb-5 my-8">
+        <div className="bg-muted/50 border-l-4 border-amber-400 px-6 pt-4 pb-5 my-8">
           <p className="font-semibold text-yellow-900">Real Talk:</p>
-          <p className="text-cyan-400">
+          <p className="text-primary">
             If you can't get at least 10 people to prepay $99 for your idea, you probably don't have 
             a business. You have a hobby project that'll drain your savings account.
           </p>
@@ -182,7 +182,7 @@ export default function DualFilterValidationFrameworkArticle() {
           Six months later, it was dead. Heat isn't everything.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           Filter 2: The Durability Filter (Or: "Will This Still Matter When the Hype Dies?")
         </h2>
 
@@ -195,7 +195,7 @@ export default function DualFilterValidationFrameworkArticle() {
           The Durability Filter answers a different question entirely:
         </p>
 
-        <blockquote className="text-2xl font-semibold text-center py-8 text-slate-200 border-t border-b border-slate-700">
+        <blockquote className="text-2xl font-semibold text-center py-8 text-foreground border-t border-b border-border">
           "Will this still matter and keep paying 12-36 months from now?"
         </blockquote>
 
@@ -203,7 +203,7 @@ export default function DualFilterValidationFrameworkArticle() {
           I score every idea against five criteria. Call it my "Will This Actually Last?" checklist:
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           1. Frequency of the Job (1-5 points)
         </h3>
 
@@ -217,7 +217,7 @@ export default function DualFilterValidationFrameworkArticle() {
           red flag immediately.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           2. Economic Buyer Has Budget (1-5 points)
         </h3>
 
@@ -230,7 +230,7 @@ export default function DualFilterValidationFrameworkArticle() {
           "Marketing automation" has budget. "Cool AI tool that might be useful" doesn't.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           3. Problem Exists Independent of Hype (1-5 points)
         </h3>
 
@@ -243,7 +243,7 @@ export default function DualFilterValidationFrameworkArticle() {
           influencers"? Maybe not so much.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           4. Users Would Be Upset If It Disappeared (1-5 points)
         </h3>
 
@@ -257,7 +257,7 @@ export default function DualFilterValidationFrameworkArticle() {
           budgets tighten.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           5. Clear Path to Switching Costs (1-5 points)
         </h3>
 
@@ -271,20 +271,20 @@ export default function DualFilterValidationFrameworkArticle() {
           part of their infrastructure.
         </p>
 
-        <div className="bg-slate-800/50 p-6 rounded-lg my-8">
-          <p className="text-sm text-slate-300 mb-2"> Durability Score Breakdown</p>
+        <div className="bg-muted/50 p-6 rounded-lg my-8">
+          <p className="text-sm text-muted-foreground mb-2"> Durability Score Breakdown</p>
           <div className="space-y-3">
             <div>
-              <p className="font-semibold text-cyan-400">18-25 points: Durable Markets</p>
-              <p className="text-slate-200">Build this. It's worth the long-term investment.</p>
+              <p className="font-semibold text-primary">18-25 points: Durable Markets</p>
+              <p className="text-foreground">Build this. It's worth the long-term investment.</p>
             </div>
             <div>
-              <p className="font-semibold text-cyan-400">10-17 points: Cash-Flow Micro-Bets</p>
-              <p className="text-slate-200">Quick revenue opportunity, but don't quit your day job.</p>
+              <p className="font-semibold text-primary">10-17 points: Cash-Flow Micro-Bets</p>
+              <p className="text-foreground">Quick revenue opportunity, but don't quit your day job.</p>
             </div>
             <div>
               <p className="font-semibold text-red-300">Under 10 points: Low Durability</p>
-              <p className="text-slate-200">Kill it now before it kills your bank account.</p>
+              <p className="text-foreground">Kill it now before it kills your bank account.</p>
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@ export default function DualFilterValidationFrameworkArticle() {
           Don't be drunk-on-validation me. Sober-and-systematic me is much better at business.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           How to Actually Use This Framework (Without Overthinking It)
         </h2>
 
@@ -336,13 +336,13 @@ export default function DualFilterValidationFrameworkArticle() {
           If the answer is no, question whether it's worth building.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
-          <p className="text-lg font-semibold text-cyan-300 mb-2">
+        <div className="bg-primary/5 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
+          <p className="text-lg font-semibold text-primary mb-2">
             "Every feature decision should ask: Does this increase switching costs or frequency of use?"
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           What This Framework Won't Do (Managing Expectations)
         </h2>
 
@@ -379,7 +379,7 @@ export default function DualFilterValidationFrameworkArticle() {
           products that die within a year.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The Real Test: What I'm Building Now
         </h2>
 
@@ -419,7 +419,7 @@ export default function DualFilterValidationFrameworkArticle() {
           Future me is definitely high-fiving past me for figuring this out.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The TL;DR (And What to Do Next)
         </h2>
 
@@ -452,27 +452,27 @@ export default function DualFilterValidationFrameworkArticle() {
           single line of code. Trust me on this one, I learned the expensive way so you don't have to.
         </p>
 
-        <div className="bg-slate-800/30 p-8 rounded-lg mt-12">
-          <h3 className="text-xl font-semibold text-white mb-4">Ready to validate your next idea?</h3>
-          <p className="text-slate-200 mb-6">
+        <div className="bg-muted/30 p-8 rounded-lg mt-12">
+          <h3 className="text-xl font-semibold text-foreground mb-4">Ready to validate your next idea?</h3>
+          <p className="text-foreground mb-6">
             I've created a detailed validation playbook with all the specific tests, scoring sheets, and 
             frameworks I use. No fluff, just the exact process I follow for every new product idea.
           </p>
           <Link
             href="/contact?playbook=validation-playbook"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             Get the Complete Validation Playbook
           </Link>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-slate-700">
-          <p className="text-slate-300 text-sm">
+        <div className="mt-12 pt-8 border-t border-border">
+          <p className="text-muted-foreground text-sm">
             Have a product idea you want to run through the Dual-Filter Framework? I'm always curious to 
             see how other founders apply these concepts. Feel free to 
             <Link
               href="/contact?intent=consulting"
-              className="text-cyan-400 underline underline-offset-2 hover:text-slate-200"
+              className="text-primary underline underline-offset-2 hover:text-foreground"
             >
               reach out
             </Link>{" "}
@@ -483,14 +483,14 @@ export default function DualFilterValidationFrameworkArticle() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

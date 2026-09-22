@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function SupabaseMCPArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks | Ryan Winzenburg</title>
@@ -25,13 +25,13 @@ export default function SupabaseMCPArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
 
           {/* Hero Image */}
-          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+          <div className="mb-12 rounded-lg overflow-hidden border border-primary/15">
             <img
               src="/images/articles/supabase-mcp-hero.webp"
               alt="Supabase MCP Blueprint: Systematic Backend Design"
@@ -40,7 +40,7 @@ export default function SupabaseMCPArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 7, 2024</span>
             <span>•</span>
             <span>18 min read</span>
@@ -48,17 +48,17 @@ export default function SupabaseMCPArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               I spent six months refactoring backends that should've been designed right the first time. Here's how we turned backend
               design from trial-and-error into a repeatable blueprint.
             </p>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
             <p>
           Last Tuesday, I watched a founder spend three weeks building what should've been a 
           three-hour backend setup. They'd validated demand, raised money, hired developers, 
@@ -86,8 +86,8 @@ export default function SupabaseMCPArticle() {
           engineers now follows a blueprint.
         </p>
 
-            <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-              <p className="text-cyan-300 italic mb-0">
+            <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+              <p className="text-primary italic mb-0">
             "Backend design went from trial-and-error to repeatable blueprint. 
             We ship production-grade architectures in hours, not weeks."
               </p>
@@ -111,23 +111,23 @@ export default function SupabaseMCPArticle() {
           late. Security becomes an afterthought.
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div>
               <div className="text-2xl font-bold text-yellow-300">6 months</div>
-              <div className="text-slate-200">Average backend refactor time</div>
+              <div className="text-foreground">Average backend refactor time</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-yellow-300">$50K+</div>
-              <div className="text-slate-200">Cost of major schema migrations</div>
+              <div className="text-foreground">Cost of major schema migrations</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-yellow-300">Zero</div>
-              <div className="text-slate-200">RLS data leaks since using MCP</div>
+              <div className="text-foreground">RLS data leaks since using MCP</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-yellow-300">3 days</div>
-              <div className="text-slate-200">Time saved per backend</div>
+              <div className="text-foreground">Time saved per backend</div>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function SupabaseMCPArticle() {
           Googling "RLS policy examples" at 2 AM, I ask:
         </p>
 
-        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-slate-200">
+        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-foreground">
           "Design a PostgreSQL schema for a habit tracking app with personal workspaces 
           and team organizations. Include RLS policies, analytics tables, and audit logging."
         </blockquote>
@@ -176,7 +176,7 @@ export default function SupabaseMCPArticle() {
 
         <p>Here's what this looks like for a habit tracker:</p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`## Tenancy Model
 
@@ -201,7 +201,7 @@ export default function SupabaseMCPArticle() {
           Every other table references these.
         </p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`CREATE TABLE organizations (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -230,7 +230,7 @@ CREATE INDEX idx_organizations_slug ON organizations(slug);`}</code>
           plus appropriate indexes. No exceptions. Here's what that looks like for habits:
         </p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`CREATE TABLE habits (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -261,7 +261,7 @@ CREATE INDEX idx_habits_org ON habits(organization_id);`}</code>
           from day one:
         </p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`CREATE TABLE events (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -291,7 +291,7 @@ CREATE INDEX idx_habits_org ON habits(organization_id);`}</code>
 
         <p>Our pattern is simple: users can only see data for organizations they're members of.</p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`ALTER TABLE habits ENABLE ROW LEVEL SECURITY;
 
@@ -321,7 +321,7 @@ USING (
           handle the privileged operations:
         </p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`// create-personal-org Edge Function
 export default async (req: Request) => {
@@ -355,7 +355,7 @@ export default async (req: Request) => {
           and angry users.
         </p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`-- Consent flags in profiles
 ALTER TABLE profiles ADD COLUMN consent_for_personalization BOOLEAN DEFAULT FALSE;
@@ -380,7 +380,7 @@ CREATE TABLE audit_logs (
 
         <p><strong>Step 1: Query Supabase MCP</strong></p>
 
-        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-slate-200">
+        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-foreground">
           "Design a Supabase backend for a habit tracking app. Users should have personal 
           workspaces and be able to join team organizations. Include tables for habits, 
           check-ins, and streaks. Add analytics tables for events and sessions. 
@@ -389,11 +389,11 @@ CREATE TABLE audit_logs (
 
         <p><strong>Time to generate complete spec: 2 minutes.</strong></p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-cyan-400 mb-2">Before MCP Blueprint</h4>
-              <ul className="text-sm text-slate-200 space-y-1">
+              <h4 className="font-semibold text-primary mb-2">Before MCP Blueprint</h4>
+              <ul className="text-sm text-foreground space-y-1">
                 <li>• 2-3 weeks of backend design</li>
                 <li>• Multiple schema refactors</li>
                 <li>• RLS added after data leaks</li>
@@ -402,8 +402,8 @@ CREATE TABLE audit_logs (
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-cyan-400 mb-2">After MCP Blueprint</h4>
-              <ul className="text-sm text-slate-200 space-y-1">
+              <h4 className="font-semibold text-primary mb-2">After MCP Blueprint</h4>
+              <ul className="text-sm text-foreground space-y-1">
                 <li>• 4 hours total backend setup</li>
                 <li>• Schema designed correctly upfront</li>
                 <li>• RLS enforced from day one</li>
@@ -428,7 +428,7 @@ CREATE TABLE audit_logs (
           Using the schema from our spec, we created versioned migration files:
         </p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`supabase/migrations/
 ├── 20250101_initial_schema.sql
@@ -439,7 +439,7 @@ CREATE TABLE audit_logs (
 
         <p><strong>Step 4: Deploy and Test (2 hours)</strong></p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-6">
+        <div className="bg-muted/30 rounded-lg p-6 my-6">
           <pre className="text-sm overflow-x-auto">
             <code>{`# Run migrations locally
 supabase db reset
@@ -465,9 +465,9 @@ supabase db push`}</code>
 
         <p>Since adopting the Supabase MCP blueprint six months ago:</p>
 
-        <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-cyan-300 mb-4">Time Savings per Backend</h3>
-          <ul className="text-slate-200 space-y-2">
+        <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+          <h3 className="text-lg font-semibold text-primary mb-4">Time Savings per Backend</h3>
+          <ul className="text-foreground space-y-2">
             <li>• <strong>Backend design</strong>: 2-4 hours (was 1-2 weeks)</li>
             <li>• <strong>RLS policy creation</strong>: 30 minutes (was 1-2 days + bugs)</li>
             <li>• <strong>Migration generation</strong>: 1 hour (was 3-4 hours)</li>
@@ -475,9 +475,9 @@ supabase db push`}</code>
           </ul>
         </div>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-cyan-400 mb-4">Quality Improvements</h3>
-          <ul className="text-slate-200 space-y-2">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
+          <h3 className="text-lg font-semibold text-primary mb-4">Quality Improvements</h3>
+          <ul className="text-foreground space-y-2">
             <li>• <strong>Zero RLS data leaks</strong> in production (was 2-3 per quarter)</li>
             <li>• <strong>Zero migration rollbacks</strong> (was 1-2 per quarter)</li>
             <li>• <strong>Analytics from day one</strong> (was added 3-6 months later)</li>
@@ -512,8 +512,8 @@ supabase db push`}</code>
           But it's nothing compared to the 6 months of refactoring you'll avoid.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400 italic">
+        <div className="bg-muted/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary italic">
             "The 4 hours of upfront design saves you 6 months of refactoring. 
             Every. Single. Time."
           </p>
@@ -531,7 +531,7 @@ supabase db push`}</code>
 
         <p><strong>3. For your next backend, query MCP</strong>:</p>
 
-        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-slate-200">
+        <blockquote className="border-l-4 border-gray-400 pl-6 py-2 my-6 italic text-foreground">
           "Design a Supabase backend for [your app description]. [Your tenancy requirements]. 
           Include analytics tables. Enforce RLS. Provide Edge Function recommendations."
         </blockquote>
@@ -555,14 +555,14 @@ supabase db push`}</code>
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAuditable() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Documentation System: Making Knowledge Repeatable and Auditable | Ryan Winzenburg</title>
@@ -25,7 +25,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -40,7 +40,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 5, 2024</span>
             <span>•</span>
             <span>8 min read</span>
@@ -48,15 +48,15 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Documentation System: Making Knowledge Repeatable and Auditable
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
 
-      <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
         Three months ago, I watched our team make the same validation mistake twice. Same market research. Same flawed assumptions. Same expensive failure. 
       </p>
 
@@ -68,7 +68,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         Brilliant insights are worthless if they disappear the moment someone takes vacation. I spent the next month building a documentation system that makes every decision auditable and every process repeatable. Not because I love documentation (I don't), but because I hate losing months of learning to digital amnesia.
       </p>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         The "One Idea, Complete Story" Rule
       </h2>
 
@@ -88,7 +88,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         Let me show you what this looks like in practice. When we explored "enterprise design system for startups" (it was, in fact, a terrible idea), here's exactly what we created:
       </p>
 
-      <div className="bg-slate-800/30 p-6 rounded-lg mb-8">
+      <div className="bg-muted/30 p-6 rounded-lg mb-8">
         <h3 className="font-semibold mb-4">Discovery Documents:</h3>
         <ul className="space-y-2 text-sm font-mono mb-6">
           <li>📄 NARRATIVE-enterprise-design-system-startups.md</li>
@@ -114,13 +114,13 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         Looks obsessive? Maybe. But here's what happened: Six months later, when a client asked about design systems for their portfolio companies, I had the complete story in 12 organized files instead of hunting through 47 different tools.
       </p>
 
-      <div className="my-12 pl-6 border-l-4 border-cyan-500">
-        <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+      <div className="my-12 pl-6 border-l-4 border-primary">
+        <p className="text-2xl text-primary font-semibold italic leading-relaxed">
           "Brilliant insights are worthless if they disappear the moment someone takes vacation."
         </p>
       </div>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         The Knowledge Web (Or: How Everything Connects)
       </h2>
 
@@ -136,7 +136,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         For example, in that design system opportunity doc, I wrote:
       </p>
 
-      <div className="bg-cyan-900/20 border-l-4 border-blue-400 p-4 mb-6">
+      <div className="bg-primary/5 border-l-4 border-blue-400 p-4 mb-6">
         <p className="italic">
           "Based on our [LINK:/docs/discovery/NICHE-INTEL-enterprise-design-system-startups.md] analysis, we identified three key opportunities. However, the [LINK:/docs/discovery/REDTEAM-enterprise-design-system-startups.md] revealed critical flaws in our assumptions..."
         </p>
@@ -151,24 +151,24 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <div className="my-10 grid md:grid-cols-3 gap-6">
-        <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
-          <div className="text-3xl font-bold text-cyan-400 mb-2">3 min</div>
-          <div className="text-slate-400 text-sm">Average time to find past decisions</div>
-          <div className="text-slate-500 text-xs mt-1">down from 45 minutes</div>
+        <div className="bg-muted/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+          <div className="text-3xl font-bold text-primary mb-2">3 min</div>
+          <div className="text-muted-foreground text-sm">Average time to find past decisions</div>
+          <div className="text-muted-foreground text-xs mt-1">down from 45 minutes</div>
         </div>
-        <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
-          <div className="text-3xl font-bold text-cyan-400 mb-2">0</div>
-          <div className="text-slate-400 text-sm">Repeated validation mistakes</div>
-          <div className="text-slate-500 text-xs mt-1">last 6 months</div>
+        <div className="bg-muted/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+          <div className="text-3xl font-bold text-primary mb-2">0</div>
+          <div className="text-muted-foreground text-sm">Repeated validation mistakes</div>
+          <div className="text-muted-foreground text-xs mt-1">last 6 months</div>
         </div>
-        <div className="bg-slate-900/50 border border-cyan-900/50 rounded-lg p-6 text-center">
-          <div className="text-3xl font-bold text-cyan-400 mb-2">2 days</div>
-          <div className="text-slate-400 text-sm">New team member onboarding</div>
-          <div className="text-slate-500 text-xs mt-1">vs 2 weeks before</div>
+        <div className="bg-muted/50 border border-cyan-900/50 rounded-lg p-6 text-center">
+          <div className="text-3xl font-bold text-primary mb-2">2 days</div>
+          <div className="text-muted-foreground text-sm">New team member onboarding</div>
+          <div className="text-muted-foreground text-xs mt-1">vs 2 weeks before</div>
         </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         The Real-Time Reality Check
       </h2>
 
@@ -199,7 +199,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         The magic happens during weekly reviews. Instead of everyone trying to remember what happened, we pull up the Hub and see exactly where things stand. Meetings that used to take an hour now take 15 minutes.
       </p>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         The Audit Trail (Because "Trust Me" Isn't a Strategy)
       </h2>
 
@@ -231,51 +231,51 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <div className="my-12 grid md:grid-cols-2 gap-6">
-        <div className="bg-slate-900/30 border border-red-900/30 rounded-lg p-6">
-          <div className="text-red-400 font-semibold mb-4 uppercase text-sm tracking-wider">The Old Way</div>
+        <div className="bg-muted/30 border border-destructive/30 rounded-lg p-6">
+          <div className="text-destructive font-semibold mb-4 uppercase text-sm tracking-wider">The Old Way</div>
           <div className="space-y-3 text-sm">
             <div className="flex items-start gap-2">
-              <span className="text-red-400">✗</span>
-              <span className="text-slate-400">"We pivoted to B2B because it felt right"</span>
+              <span className="text-destructive">✗</span>
+              <span className="text-muted-foreground">"We pivoted to B2B because it felt right"</span>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-red-400">✗</span>
-              <span className="text-slate-400">"Trust me, I did the research"</span>
+              <span className="text-destructive">✗</span>
+              <span className="text-muted-foreground">"Trust me, I did the research"</span>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-red-400">✗</span>
-              <span className="text-slate-400">"I think we tested that approach"</span>
+              <span className="text-destructive">✗</span>
+              <span className="text-muted-foreground">"I think we tested that approach"</span>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-red-400">✗</span>
-              <span className="text-slate-400">"Someone must have the data somewhere"</span>
+              <span className="text-destructive">✗</span>
+              <span className="text-muted-foreground">"Someone must have the data somewhere"</span>
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-700/50 rounded-lg p-6">
-          <div className="text-cyan-400 font-semibold mb-4 uppercase text-sm tracking-wider">The New Way</div>
+        <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+          <div className="text-primary font-semibold mb-4 uppercase text-sm tracking-wider">The New Way</div>
           <div className="space-y-3 text-sm">
             <div className="flex items-start gap-2">
-              <span className="text-cyan-400">✓</span>
-              <span className="text-slate-300">"We pivoted to B2B based on JTBD analysis showing 67% preference for speed"</span>
+              <span className="text-primary">✓</span>
+              <span className="text-muted-foreground">"We pivoted to B2B based on JTBD analysis showing 67% preference for speed"</span>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-cyan-400">✓</span>
-              <span className="text-slate-300">"Red team analysis identified 3 critical risks - see REDTEAM-project-name.md"</span>
+              <span className="text-primary">✓</span>
+              <span className="text-muted-foreground">"Red team analysis identified 3 critical risks - see REDTEAM-project-name.md"</span>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-cyan-400">✓</span>
-              <span className="text-slate-300">"Landing page test showed 12% conversion vs. 3% for B2C - RESULTS-project-name.md"</span>
+              <span className="text-primary">✓</span>
+              <span className="text-muted-foreground">"Landing page test showed 12% conversion vs. 3% for B2C - RESULTS-project-name.md"</span>
             </div>
             <div className="flex items-start gap-2">
-              <span className="text-cyan-400">✓</span>
-              <span className="text-slate-300">"Complete validation trail available in /docs/validation/"</span>
+              <span className="text-primary">✓</span>
+              <span className="text-muted-foreground">"Complete validation trail available in /docs/validation/"</span>
             </div>
           </div>
         </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         How to Actually Build This (Without Losing Your Mind)
       </h2>
 
@@ -323,7 +323,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         The key is to start small and build habits before adding complexity. I tried to build the perfect system on day one and got so bogged down in features that I stopped documenting altogether.
       </p>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         The Uncomfortable Truths About Documentation Systems
       </h2>
 
@@ -351,13 +351,13 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         But here's what I've learned after six months with this system: The cost of good documentation is visible and annoying. The cost of bad documentation is invisible and devastating.
       </p>
 
-      <div className="my-12 pl-6 border-l-4 border-cyan-500">
-        <p className="text-2xl text-cyan-400 font-semibold italic leading-relaxed">
+      <div className="my-12 pl-6 border-l-4 border-primary">
+        <p className="text-2xl text-primary font-semibold italic leading-relaxed">
           "The cost of good documentation is visible and annoying. The cost of bad documentation is invisible and devastating."
         </p>
       </div>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         What I Wish I'd Known Starting Out
       </h2>
 
@@ -385,7 +385,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         <strong>Build in review cycles.</strong> Schedule monthly reviews of your documentation system. What's working? What's getting skipped? What needs to change? Systems evolve or they die.
       </p>
 
-      <h2 className="text-2xl font-bold text-white mt-12 mb-6">
+      <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
         The Compound Returns of Institutional Memory
       </h2>
 
@@ -405,14 +405,14 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         The teams that invest in systematic documentation aren't just building products, they're building institutional intelligence. And in a world where most companies lose their memory every time someone leaves, that's a genuine competitive advantage.
       </p>
 
-      <div className="bg-cyan-900/20 p-6 rounded-lg mt-12">
+      <div className="bg-primary/5 p-6 rounded-lg mt-12">
         <h3 className="text-lg font-semibold mb-4">Ready to Build Your Documentation System?</h3>
         <p className="mb-4">
           I've created templates for each document type in our system, plus a starter kit for building your own knowledge hub. No more starting from scratch.
         </p>
         <a 
           href="/resources/documentation-system-templates" 
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
         >
           Get the Documentation Templates
         </a>
@@ -420,14 +420,14 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

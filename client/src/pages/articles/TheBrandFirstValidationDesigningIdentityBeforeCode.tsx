@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function BrandFirstValidationArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Brand-First Validation: Why We Design the Brand System Before Writing Code | Ryan Winzenburg</title>
@@ -25,7 +25,7 @@ export default function BrandFirstValidationArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -40,7 +40,7 @@ export default function BrandFirstValidationArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>November 28, 2024</span>
             <span>•</span>
             <span>6 min read</span>
@@ -48,18 +48,18 @@ export default function BrandFirstValidationArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Brand-First Validation: Designing Identity Before Code
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
             <article className="max-w-4xl mx-auto px-6 py-12">
       {/* Hero Section */}
       <header className="mb-12">
-        <div className="flex items-center gap-4 text-sm text-slate-300 mb-6">
-          <span className="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+          <span className="bg-primary/8 text-primary px-3 py-1 rounded-full">
             AI Workflow
           </span>
           <div className="flex items-center gap-2">
@@ -72,11 +72,11 @@ export default function BrandFirstValidationArticle() {
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
           The Brand First Validation: Designing Identity Before Code
         </h1>
         
-        <p className="text-xl text-slate-300 leading-relaxed mb-8">
+        <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision, and that one shift changed everything.
         </p>
 
@@ -85,7 +85,7 @@ export default function BrandFirstValidationArticle() {
             <div className="w-16 h-16 bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
               <span className="text-2xl">🎨</span>
             </div>
-            <p className="text-slate-300">Brand System Blueprint</p>
+            <p className="text-muted-foreground">Brand System Blueprint</p>
           </div>
         </div>
       </header>
@@ -108,9 +108,9 @@ export default function BrandFirstValidationArticle() {
           So I flipped the script. Now, the brand system blueprint is a mandatory gate between validation and build. No UI gets designed, no landing page gets shipped, no marketing assets get created until we've completed a competitive brand audit and defined our visual and verbal identity.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-slate-200 italic">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-2"></p>
+          <p className="text-foreground italic">
             "If you've validated that people want your product, the next question is: How will you stand out in a crowded market? That's where brand comes in."
           </p>
         </div>
@@ -119,7 +119,7 @@ export default function BrandFirstValidationArticle() {
           This isn't about making things "pretty." It's about strategic differentiation. If you've validated demand and confirmed long-term viability, the next crucial question is positioning: How will you stand out when everyone else is solving similar problems?
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The Problem: Brand as an Afterthought (And Why I Used to Fail at This)
         </h2>
 
@@ -139,7 +139,7 @@ export default function BrandFirstValidationArticle() {
         The problem: it looked nothing like our product.
         </p>
 
-        <div className="bg-red-900/20 border border-red-700/50 rounded-lg p-6 my-8">
+        <div className="bg-destructive/20 border border-red-700/50 rounded-lg p-6 my-8">
           <h3 className="text-red-300 font-semibold mb-3"> The Expensive Disconnect</h3>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
@@ -171,7 +171,7 @@ export default function BrandFirstValidationArticle() {
           The lesson I learned the expensive way: visual debt compounds faster than technical debt because it's user-facing. Every inconsistent interaction erodes trust. Every mismatched color palette makes you look unprofessional. Every voice mismatch between marketing and product confuses your users.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           Why This Pattern Kills Differentiation
         </h3>
 
@@ -191,7 +191,7 @@ export default function BrandFirstValidationArticle() {
           By the time you're ready to differentiate, those patterns are baked into your codebase. Changing them feels like renovating a house while you're living in it.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The Solution: Brand System Blueprint as a Validation Gate
         </h2>
 
@@ -199,7 +199,7 @@ export default function BrandFirstValidationArticle() {
           Here's how I do it now. In my product creation pipeline, the brand system blueprint sits right after demand validation and before any design or build work:
         </p>
 
-        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
+        <div className="bg-muted/30 border rounded-lg p-6 my-8">
           <h3 className="font-semibold mb-4">My Product Pipeline (Updated)</h3>
           <ol className="space-y-2 text-sm">
             <li><strong>1. Heat Filter</strong> → Validate that people urgently want this</li>
@@ -218,7 +218,7 @@ export default function BrandFirstValidationArticle() {
           The brand system blueprint contains five required sections. I've got a template now (took me three failed projects to get it right), and I don't start any new product without completing it.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           Section 1: Competitive Brand Audit
         </h3>
 
@@ -240,16 +240,16 @@ export default function BrandFirstValidationArticle() {
           I built a habit tracker recently. Here's what I found in my competitive audit:
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h4 className="font-medium text-cyan-400 mb-3">Habit Tracker Competitive Audit</h4>
-          <div className="text-sm text-slate-200 space-y-2">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
+          <h4 className="font-medium text-primary mb-3">Habit Tracker Competitive Audit</h4>
+          <div className="text-sm text-foreground space-y-2">
             <p><strong>Visual patterns:</strong> Bright, high-contrast colors. Heavy gamification (badges, streaks, XP). Dense dashboards packed with metrics.</p>
             <p><strong>Verbal patterns:</strong> Motivational, sometimes guilt-inducing copy. "Don't break the streak!" "Crush your goals!" Very productivity-bro energy.</p>
             <p><strong>Target users:</strong> Self-optimization enthusiasts who want to track everything.</p>
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           Section 2: Whitespace & Differentiators
         </h3>
 
@@ -267,9 +267,9 @@ export default function BrandFirstValidationArticle() {
           For the habit tracker, this analysis revealed something interesting: Every competitor was targeting people who <em>already</em> love self-optimization. But there's a huge segment of burned-out professionals who want to build better habits but feel overwhelmed by gamified, streak-focused apps.
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h4 className="font-medium text-cyan-400 mb-3">Identified Whitespace</h4>
-          <div className="text-sm text-slate-200 space-y-2">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
+          <h4 className="font-medium text-primary mb-3">Identified Whitespace</h4>
+          <div className="text-sm text-foreground space-y-2">
             <p><strong>Gap:</strong> Competitors feel like drill sergeants. Burned-out users need tools that feel like supportive therapists.</p>
             <p><strong>Signature cues to own:</strong></p>
             <ul className="list-disc pl-4 mt-2">
@@ -280,7 +280,7 @@ export default function BrandFirstValidationArticle() {
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           Section 3: Foundational Design System
         </h3>
 
@@ -304,7 +304,7 @@ export default function BrandFirstValidationArticle() {
           For my habit tracker, informed by the "mindful minimalism" positioning:
         </p>
 
-        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
+        <div className="bg-muted/30 border rounded-lg p-6 my-8">
           <div className="grid md:grid-cols-2 gap-6 text-sm">
             <div>
               <h4 className="font-medium mb-3">Typography</h4>
@@ -325,13 +325,13 @@ export default function BrandFirstValidationArticle() {
           </div>
         </div>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-slate-200 font-semibold text-2xl">6 hours</p>
-          <p className="text-cyan-400 text-sm">Time to complete full brand blueprint vs. 3 months retrofitting later</p>
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-2"></p>
+          <p className="text-foreground font-semibold text-2xl">6 hours</p>
+          <p className="text-primary text-sm">Time to complete full brand blueprint vs. 3 months retrofitting later</p>
         </div>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           Section 4: Voice & Tone Guidelines
         </h3>
 
@@ -361,7 +361,7 @@ export default function BrandFirstValidationArticle() {
             <p><strong>Core message:</strong> "Progress, not perfection"</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <p className="font-medium text-slate-200">✓ Do</p>
+                <p className="font-medium text-foreground">✓ Do</p>
                 <p className="text-green-300">"How did today feel?"</p>
               </div>
               <div>
@@ -372,7 +372,7 @@ export default function BrandFirstValidationArticle() {
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
           Section 5: Landing Page Concept
         </h3>
 
@@ -391,7 +391,7 @@ export default function BrandFirstValidationArticle() {
           For the habit tracker:
         </p>
 
-        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
+        <div className="bg-muted/30 border rounded-lg p-6 my-8">
           <div className="text-sm">
             <p><strong>Hero:</strong> "Build habits that last, without the pressure"</p>
             <p><strong>Subcopy:</strong> "A daily check-in that adapts to you, not a streak counter that judges you"</p>
@@ -400,7 +400,7 @@ export default function BrandFirstValidationArticle() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The Enforcement Mechanism (Or: How I Force Myself to Actually Do This)
         </h2>
 
@@ -424,7 +424,7 @@ export default function BrandFirstValidationArticle() {
           No exceptions. No "we'll figure out the brand later." No "let's just use blue for now."
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           What This Actually Looks Like in Practice
         </h2>
 
@@ -440,7 +440,7 @@ export default function BrandFirstValidationArticle() {
           Old me would've started building immediately. New me forced myself through the brand blueprint first.
         </p>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Competitive Audit Insights
         </h3>
 
@@ -454,7 +454,7 @@ export default function BrandFirstValidationArticle() {
           <li><strong>Target:</strong> Generic small business owners</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           The Whitespace I Found
         </h3>
 
@@ -472,11 +472,11 @@ export default function BrandFirstValidationArticle() {
           <li><strong>Creative visual language:</strong> Colors and imagery that feel at home in a designer's workflow</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Design System Decisions
         </h3>
 
-        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
+        <div className="bg-muted/30 border rounded-lg p-6 my-8">
           <div className="grid md:grid-cols-3 gap-4 text-sm">
             <div>
               <h4 className="font-medium mb-2">Typography</h4>
@@ -513,14 +513,14 @@ export default function BrandFirstValidationArticle() {
           That's not accident. That's intentional brand work paying off.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-slate-200 italic">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-2"></p>
+          <p className="text-foreground italic">
             "Users consistently mentioned that the tool 'feels different' from competitors. That's not accident, that's intentional brand work paying off."
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           How to Implement This in Your Workflow
         </h2>
 
@@ -528,7 +528,7 @@ export default function BrandFirstValidationArticle() {
           Want to try brand-first validation yourself? Here's the practical roadmap:
         </p>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Step 1: Create Your Brand Blueprint Template
         </h3>
 
@@ -548,7 +548,7 @@ export default function BrandFirstValidationArticle() {
           I keep mine as a Markdown template that I copy for each new project. You could use Notion, Figma, or whatever works for your workflow. The format matters less than the consistency.
         </p>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Step 2: Make It a Hard Gate
         </h3>
 
@@ -563,7 +563,7 @@ export default function BrandFirstValidationArticle() {
           <li>Just a personal commitment (honor system works if you're disciplined)</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Step 3: Assign Clear Ownership
         </h3>
 
@@ -582,7 +582,7 @@ export default function BrandFirstValidationArticle() {
           The key is making someone accountable for completing the blueprint before execution starts.
         </p>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Step 4: Reference It Everywhere
         </h3>
 
@@ -597,7 +597,7 @@ export default function BrandFirstValidationArticle() {
           <li>Marketing campaigns align to the brand persona</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Step 5: Evolve It Based on Learning
         </h3>
 
@@ -616,7 +616,7 @@ export default function BrandFirstValidationArticle() {
           Update the blueprint and propagate changes to all touchpoints. But always maintain one canonical source that everyone references.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           When This Doesn't Make Sense (Be Honest About Trade-offs)
         </h2>
 
@@ -624,7 +624,7 @@ export default function BrandFirstValidationArticle() {
           Look, I'm not going to pretend this approach is perfect for everyone. It adds time and complexity upfront, and sometimes that's not worth it.
         </p>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           Skip the Full Blueprint For:
         </h3>
 
@@ -635,7 +635,7 @@ export default function BrandFirstValidationArticle() {
           <li><strong>Super technical products:</strong> Where users care more about functionality than experience</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-white mt-6 mb-4">
+        <h3 className="text-xl font-semibold text-foreground mt-6 mb-4">
           The Real Costs:
         </h3>
 
@@ -659,7 +659,7 @@ export default function BrandFirstValidationArticle() {
           My rule of thumb: If brand could be a meaningful moat in your market, do the blueprint. If you're selling to users who will never see your UI or where functionality is the only thing that matters, skip it.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The Results: What's Changed Since I Started Doing This
         </h2>
 
@@ -667,9 +667,9 @@ export default function BrandFirstValidationArticle() {
           I've now applied brand-first validation to six new products. Here's what I've noticed:
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h3 className="text-cyan-400 font-semibold mb-4">Measurable Impact</h3>
-          <div className="grid md:grid-cols-2 gap-4 text-sm text-slate-200">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
+          <h3 className="text-primary font-semibold mb-4">Measurable Impact</h3>
+          <div className="grid md:grid-cols-2 gap-4 text-sm text-foreground">
             <div>
               <p><strong>60% faster execution</strong></p>
               <p>Less time debating design decisions</p>
@@ -709,7 +709,7 @@ export default function BrandFirstValidationArticle() {
           The brand system blueprint has become one of my most valuable artifacts, right up there with the PRD and technical specs.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           Final Thoughts: Brand as Foundation, Not Decoration
         </h2>
 
@@ -729,9 +729,9 @@ export default function BrandFirstValidationArticle() {
           That's a much more interesting question. And the answer usually leads to products that users remember, recommend, and choose over alternatives.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-2"></p>
-          <p className="text-slate-200 italic">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-2"></p>
+          <p className="text-foreground italic">
             "Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. Your brand can be a moat, not a coat of paint slapped on at the end."
           </p>
         </div>
@@ -749,14 +749,14 @@ export default function BrandFirstValidationArticle() {
         </p>
 
         {/* CTA Section */}
-        <div className="bg-slate-800/30 rounded-lg p-8 mt-12">
-          <h3 className="text-xl font-semibold text-white mb-4">
+        <div className="bg-muted/30 rounded-lg p-8 mt-12">
+          <h3 className="text-xl font-semibold text-foreground mb-4">
             Want to see the brand blueprint template I use?
           </h3>
-          <p className="text-slate-300 mb-6">
+          <p className="text-muted-foreground mb-6">
             I've turned this into a step-by-step template that walks you through each section with examples and prompts. It's what I use for every new product.
           </p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+          <button className="bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
             Get the Brand Blueprint Template
           </button>
         </div>
@@ -765,14 +765,14 @@ export default function BrandFirstValidationArticle() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

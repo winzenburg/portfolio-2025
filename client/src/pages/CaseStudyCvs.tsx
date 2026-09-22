@@ -41,7 +41,7 @@ export default function CaseStudyCvs() {
       />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-muted/80 backdrop-blur-sm border border-border/50 rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -100,7 +100,7 @@ export default function CaseStudyCvs() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Problem Statement</h2>
-            <div className="prose prose-lg prose-invert max-w-none">
+            <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground">
                 Aetna is an enormous healthcare organization with 100's of medical experts and insurance specialists. Overtime, the consumer facing website and mobile applications began to reflect how these experts viewed healthcare and insurance rather than the customer's understanding of their services. This impacted user satisfaction with the service by making <strong>critical health information and tools hard to understand, find, and use</strong>.
               </p>
@@ -114,7 +114,7 @@ export default function CaseStudyCvs() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">The Objective</h2>
-            <div className="prose prose-lg prose-invert max-w-none">
+            <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground">
                 Restructure the web and mobile applications to mirror a customer's perspective of insurance and health care to help users successfully find and complete tasks. <strong>Customer success leads to healthier outcomes and cost savings for members</strong>.
               </p>
@@ -251,7 +251,7 @@ export default function CaseStudyCvs() {
                 <div className="text-xl text-muted-foreground">Success Rate Improvement</div>
               </div>
             </div>
-            <div className="prose prose-lg prose-invert max-w-none">
+            <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground">
                 By the end of the research, workshops, and user research we had a solution that worked much better for the user and the business. Success rates went from <strong>below 50% in some parts of the application to over 90%</strong>. This was a dramatic improvement in delivering value to the customer at the end of the process.
               </p>

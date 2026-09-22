@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function PortfolioApproachArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value | Ryan Winzenburg</title>
@@ -27,7 +27,7 @@ export default function PortfolioApproachArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -42,7 +42,7 @@ export default function PortfolioApproachArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 7, 2024</span>
             <span>•</span>
             <span>8 min read</span>
@@ -50,16 +50,16 @@ export default function PortfolioApproachArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               You're not building one product. You're managing a portfolio of bets.
             </p>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
             <h2>The $50K Mistake That Changed My Mind</h2>
 
         <p>
@@ -82,8 +82,8 @@ export default function PortfolioApproachArticle() {
           managing a portfolio of bets.</strong> I just happened to be managing it terribly.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 italic text-lg">
+        <div className="bg-primary/5 border-l-4 border-blue-500 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary italic text-lg">
             "You're not building one product. You're managing a portfolio of bets. The question is: 
             are you managing it like Warren Buffett or like a guy at a casino?"
           </p>
@@ -112,14 +112,14 @@ export default function PortfolioApproachArticle() {
           And it worked, better than I expected.
         </p>
 
-        <Card className="p-6 my-8 bg-slate-800/50 border-slate-700">
+        <Card className="p-6 my-8 bg-muted/50 border-border">
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="text-2xl font-bold text-slate-200">5x</div>
+              <div className="text-2xl font-bold text-foreground">5x</div>
               <div className="text-sm text-green-300">More ideas validated per quarter</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-slate-200">$180K</div>
+              <div className="text-2xl font-bold text-foreground">$180K</div>
               <div className="text-sm text-green-300">Current MRR from portfolio approach</div>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function PortfolioApproachArticle() {
           </Card>
           
           <Card className="p-4">
-            <Users className="w-8 h-8 text-cyan-400 mb-3" />
+            <Users className="w-8 h-8 text-primary mb-3" />
             <h4 className="font-semibold mb-2">Desirability (0-8)</h4>
             <p className="text-sm text-muted-foreground">
               Strength of demand signals and validation results
@@ -196,17 +196,17 @@ export default function PortfolioApproachArticle() {
           to ideas that score poorly. If the numbers don't work, the idea doesn't get built. Period.
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
           <h4 className="font-semibold text-yellow-900 mb-2">Real Example: The Great AI Tool Showdown</h4>
-          <p className="text-cyan-400 mb-3">
+          <p className="text-primary mb-3">
             Last month, I had three AI tool ideas competing for resources:
           </p>
-          <ul className="text-cyan-400 space-y-2">
+          <ul className="text-primary space-y-2">
             <li><strong>AI-powered PRD generator:</strong> Scored 35/40 (built it, now at $18K MRR)</li>
             <li><strong>Competitive analysis automation:</strong> Scored 28/40 (in development)</li>
             <li><strong>AI meeting summarizer:</strong> Scored 19/40 (killed after two weeks)</li>
           </ul>
-          <p className="text-cyan-400 mt-3">
+          <p className="text-primary mt-3">
             The meeting summarizer had great tech but zero moat. Everyone and their dog is building one. 
             Hard pass.
           </p>
@@ -229,7 +229,7 @@ export default function PortfolioApproachArticle() {
           My resource allocation formula is simple:
         </p>
 
-        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
+        <div className="bg-muted/30 border rounded-lg p-6 my-8">
           <div className="text-center">
             <div className="text-lg font-mono mb-2">Resource Allocation = Score² × Available Capacity</div>
             <div className="text-sm text-muted-foreground">
@@ -243,7 +243,7 @@ export default function PortfolioApproachArticle() {
           The math forces me to concentrate firepower on the highest-potential opportunities.
         </p>
 
-        <Card className="p-6 my-8 bg-cyan-900/20 border-cyan-700/50">
+        <Card className="p-6 my-8 bg-primary/5 border-primary/20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h5 className="font-medium text-red-200 mb-2">❌ Old Approach</h5>
@@ -255,7 +255,7 @@ export default function PortfolioApproachArticle() {
               </ul>
             </div>
             <div>
-              <h5 className="font-medium text-slate-200 mb-2">✅ Portfolio Approach</h5>
+              <h5 className="font-medium text-foreground mb-2">✅ Portfolio Approach</h5>
               <ul className="text-sm text-green-300 space-y-1">
                 <li>Build what scores highest</li>
                 <li>Resources follow expected value</li>
@@ -296,7 +296,7 @@ export default function PortfolioApproachArticle() {
           The math was clear. The emotional attachment was real. I killed the interview tool.
         </p>
 
-        <div className="bg-red-900/20 border-l-4 border-red-500 px-6 pt-4 pb-5 my-8">
+        <div className="bg-destructive/20 border-l-4 border-red-500 px-6 pt-4 pb-5 my-8">
           <p className="font-semibold text-red-900 mb-2">Killing Ideas: The Two-Week Rule</p>
           <p className="text-red-300">
             If an idea's score drops below 20 points, I give myself exactly two weeks to either 
@@ -372,7 +372,7 @@ export default function PortfolioApproachArticle() {
             Want the exact spreadsheet I use? I've cleaned up my scoring template and made it 
             available for free. Includes the formulas, scoring rubrics, and example calculations.
           </p>
-          <Link href="/contact?playbook=portfolio-template" className="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors">
+          <Link href="/contact?playbook=portfolio-template" className="inline-block bg-purple-600 text-foreground px-4 py-2 rounded hover:bg-purple-700 transition-colors">
               Download Portfolio Template
           </Link>
         </Card>
@@ -412,30 +412,30 @@ export default function PortfolioApproachArticle() {
         </p>
 
         <div className="space-y-4 my-8">
-          <Card className="p-4 border-slate-700 bg-slate-800/50">
+          <Card className="p-4 border-border bg-muted/50">
             <div className="flex justify-between items-start mb-2">
               <h4 className="font-semibold text-green-900">AI-Powered PRD Generator</h4>
-              <Badge variant="outline" className="bg-green-900/30 text-cyan-400">35 points</Badge>
+              <Badge variant="outline" className="bg-green-50 text-primary">35 points</Badge>
             </div>
-            <p className="text-sm text-slate-200 mb-2">Status: Active development (50% of resources)</p>
+            <p className="text-sm text-foreground mb-2">Status: Active development (50% of resources)</p>
             <p className="text-sm text-green-300">Current MRR: $18K | Target: $50K by Q2</p>
           </Card>
 
-          <Card className="p-4 border-cyan-700/50 bg-cyan-900/20">
+          <Card className="p-4 border-primary/20 bg-primary/5">
             <div className="flex justify-between items-start mb-2">
-              <h4 className="font-semibold text-cyan-300">Competitive Analysis Automation</h4>
-              <Badge variant="outline" className="bg-cyan-900/30 text-cyan-300">28 points</Badge>
+              <h4 className="font-semibold text-primary">Competitive Analysis Automation</h4>
+              <Badge variant="outline" className="bg-primary/8 text-primary">28 points</Badge>
             </div>
-            <p className="text-sm text-slate-200 mb-2">Status: Validation phase (30% of resources)</p>
-            <p className="text-sm text-cyan-400">Target launch: Q2 2025</p>
+            <p className="text-sm text-foreground mb-2">Status: Validation phase (30% of resources)</p>
+            <p className="text-sm text-primary">Target launch: Q2 2025</p>
           </Card>
 
-          <Card className="p-4 border-slate-700 bg-slate-800/50">
+          <Card className="p-4 border-border bg-muted/50">
             <div className="flex justify-between items-start mb-2">
               <h4 className="font-semibold text-yellow-900">User Research Synthesizer</h4>
-              <Badge variant="outline" className="bg-yellow-100 text-cyan-400">24 points</Badge>
+              <Badge variant="outline" className="bg-yellow-100 text-primary">24 points</Badge>
             </div>
-            <p className="text-sm text-slate-200 mb-2">Status: Early exploration (20% of resources)</p>
+            <p className="text-sm text-foreground mb-2">Status: Early exploration (20% of resources)</p>
             <p className="text-sm text-yellow-300">Decision point: End of Q1</p>
           </Card>
         </div>
@@ -469,7 +469,7 @@ export default function PortfolioApproachArticle() {
           more systematic about which bets to make.
         </p>
 
-        <div className="bg-slate-800/30 border rounded-lg p-6 my-8">
+        <div className="bg-muted/30 border rounded-lg p-6 my-8">
           <h4 className="font-semibold mb-3">Your Portfolio Assignment</h4>
           <p className="mb-4">
             If you're still reading, you're probably ready to try this approach. Here's your homework:
@@ -498,7 +498,7 @@ export default function PortfolioApproachArticle() {
         </p>
 
         {/* Call to Action */}
-        <Card className="p-8 my-12 bg-gradient-to-r from-blue-50 to-purple-50 border-cyan-700/50">
+        <Card className="p-8 my-12 bg-gradient-to-r from-blue-50 to-purple-50 border-primary/20">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">Ready to Build Your Product Portfolio?</h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
@@ -506,10 +506,10 @@ export default function PortfolioApproachArticle() {
               process. Everything you need to start managing product bets like a VC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/contact?playbook=portfolio-template" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <Link href="/contact?playbook=portfolio-template" className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                   Download Free Template
               </Link>
-              <button className="text-cyan-400 hover:text-cyan-300 transition-colors">
+              <button className="text-primary hover:text-primary transition-colors">
                 Read More Articles →
               </button>
             </div>
@@ -518,14 +518,14 @@ export default function PortfolioApproachArticle() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

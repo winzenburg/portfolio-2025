@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function Article() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Results: What We&#39;ve Learned Building This System | Ryan Winzenburg</title>
@@ -25,13 +25,13 @@ export default function Article() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
 
           {/* Hero Image */}
-          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30 bg-slate-900/20">
+          <div className="mb-12 rounded-lg overflow-hidden border border-primary/15 bg-muted/20">
             <div className="aspect-video">
               <img
                 src="/images/articles/results-hero.webp"
@@ -43,7 +43,7 @@ export default function Article() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 18, 2024</span>
             <span>•</span>
             <span>8 min read</span>
@@ -51,13 +51,13 @@ export default function Article() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Results: What We've Learned Building This System
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
             <article className="mx-auto max-w-3xl">
       {/* Hero Section */}
       <div className="mb-12">
@@ -65,21 +65,21 @@ export default function Article() {
           <span className="inline-block rounded-full bg-purple-900/30 border border-purple-700/50 px-3 py-1 text-sm font-medium text-purple-300 mb-4">
             AI Workflow
           </span>
-          <h1 className="text-4xl font-bold tracking-tight text-white mb-4">
+          <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">
             Building a Product Creation Engine: What Actually Works (And What Doesn't)
           </h1>
-          <p className="text-xl text-slate-300 leading-relaxed">
+          <p className="text-xl text-muted-foreground leading-relaxed">
             After a year of building systematic product validation, we learned a few things, AI orchestration, dual filters, and why documentation isn't boring.
           </p>
         </div>
         
-        <div className="flex items-center space-x-4 text-sm text-slate-400 mb-8">
+        <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-8">
           <time>November 28, 2024</time>
           <span>•</span>
           <span>7 min read</span>
         </div>
 
-        <div className="relative aspect-video mb-8 overflow-hidden rounded-lg border border-slate-700/50 bg-slate-800/30">
+        <div className="relative aspect-video mb-8 overflow-hidden rounded-lg border border-border/50 bg-muted/30">
           <img
             src="/images/articles/system-results-diagram.webp"
             alt="Diagram showing a multi-stage product creation pipeline with conveyor belts labeled development and durability, and gates filtering ideas through stages"
@@ -91,7 +91,7 @@ export default function Article() {
 
       {/* Article Content */}
       <div className="prose prose-lg max-w-none">
-        <p className="text-xl text-slate-200 font-medium mb-8">
+        <p className="text-xl text-foreground font-medium mb-8">
           Last Tuesday, I watched a startup founder spend three hours explaining why their "revolutionary" idea was going to change everything. Two weeks later? Dead on arrival.
         </p>
 
@@ -115,7 +115,7 @@ export default function Article() {
           We learned which frameworks actually work, the expensive mistakes we made so you don't have to, and why AI orchestration matters more than you'd expect.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           What Actually Works: The Four Pillars
         </h2>
 
@@ -123,7 +123,7 @@ export default function Article() {
           After testing dozens of approaches (and failing spectacularly at most of them), we've landed on four components that consistently deliver results. Think of these as the load-bearing walls of our product creation system.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
           1. Dual-Filter Validation (Or: Why Single Checkpoints Are a Trap)
         </h3>
 
@@ -143,33 +143,33 @@ export default function Article() {
           This is where our dual-filter approach comes in. We validate for two completely different things:
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <h4 className="font-semibold text-cyan-300 mb-2">The Heat Filter</h4>
-          <p className="text-cyan-300 mb-4">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <h4 className="font-semibold text-primary mb-2">The Heat Filter</h4>
+          <p className="text-primary mb-4">
             Does a tribe of real humans urgently want this problem solved?
           </p>
-          <p className="text-sm text-slate-200">
+          <p className="text-sm text-foreground">
             We're looking for desperation, not politeness. Waitlists, community engagement, people actively seeking solutions.
           </p>
         </div>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
+        <div className="bg-muted/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
           <h4 className="font-semibold text-green-900 mb-2">The Durability Filter</h4>
-          <p className="text-cyan-400 mb-4">
+          <p className="text-primary mb-4">
             Will this problem still matter (and generate revenue) 12-36 months from now?
           </p>
-          <p className="text-sm text-slate-200">
+          <p className="text-sm text-foreground">
             Job frequency, economic buyer budget, potential for switching costs. We score ideas on future staying power.
           </p>
         </div>
 
-        <div className="not-prose my-10 rounded-xl border border-slate-700/50 bg-slate-900/30 p-6">
+        <div className="not-prose my-10 rounded-xl border border-border/50 bg-muted/30 p-6">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+              <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Dual Filter Funnel
               </div>
-              <div className="mt-1 text-lg font-semibold text-white">
+              <div className="mt-1 text-lg font-semibold text-foreground">
                 Heat is common. Durability is rare.
               </div>
             </div>
@@ -179,31 +179,31 @@ export default function Article() {
           </div>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-lg border border-cyan-700/30 bg-cyan-900/10 p-4">
-              <div className="text-sm font-semibold text-cyan-300">Pass Heat Filter</div>
+            <div className="rounded-lg border border-primary/15 bg-cyan-900/10 p-4">
+              <div className="text-sm font-semibold text-primary">Pass Heat Filter</div>
               <div className="mt-2 flex items-end gap-2">
-                <div className="text-3xl font-bold text-white">73%</div>
-                <div className="pb-1 text-sm text-slate-300">of ideas</div>
+                <div className="text-3xl font-bold text-foreground">73%</div>
+                <div className="pb-1 text-sm text-muted-foreground">of ideas</div>
               </div>
-              <div className="mt-3 h-2 w-full rounded-full bg-slate-800/70">
-                <div className="h-2 rounded-full bg-cyan-500" style={{ width: "73%" }} />
+              <div className="mt-3 h-2 w-full rounded-full bg-muted/70">
+                <div className="h-2 rounded-full bg-primary" style={{ width: "73%" }} />
               </div>
             </div>
 
-            <div className="rounded-lg border border-green-700/30 bg-green-900/10 p-4">
+            <div className="rounded-lg border border-green-700/30 bg-green-50 p-4">
               <div className="text-sm font-semibold text-green-300">Pass Durability Filter</div>
               <div className="mt-2 flex items-end gap-2">
-                <div className="text-3xl font-bold text-white">31%</div>
-                <div className="pb-1 text-sm text-slate-300">of ideas</div>
+                <div className="text-3xl font-bold text-foreground">31%</div>
+                <div className="pb-1 text-sm text-muted-foreground">of ideas</div>
               </div>
-              <div className="mt-3 h-2 w-full rounded-full bg-slate-800/70">
+              <div className="mt-3 h-2 w-full rounded-full bg-muted/70">
                 <div className="h-2 rounded-full bg-green-500" style={{ width: "31%" }} />
               </div>
             </div>
           </div>
 
-          <p className="mt-4 text-sm text-slate-300">
-            The Heat Filter tells you what people want <span className="text-slate-200">right now</span>. The Durability Filter tells you what will still matter when the hype wears off.
+          <p className="mt-4 text-sm text-muted-foreground">
+            The Heat Filter tells you what people want <span className="text-foreground">right now</span>. The Durability Filter tells you what will still matter when the hype wears off.
           </p>
         </div>
 
@@ -211,11 +211,11 @@ export default function Article() {
           Real talk: Most ideas that feel "hot" right now are actually just trend-riding. The dual filter helps us separate compounding niches from cash-flow micro-bets.
         </p>
 
-        <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
+        <blockquote className="border-l-4 border-border pl-6 italic text-foreground my-8">
           "The question he didn't ask: 'Will they still want this in 18 months?'"
         </blockquote>
 
-        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
           2. AI Orchestration (More Than Better Prompting)
         </h3>
 
@@ -250,7 +250,7 @@ export default function Article() {
           We've cut our validation time from 6 weeks to 6 days, with better quality outputs than our manual process ever produced.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
           3. Portfolio Approach (Because All-In Bets Are for Casinos)
         </h3>
 
@@ -270,8 +270,8 @@ export default function Article() {
           Now we maintain a portfolio of 8-12 ideas at various stages. It's not about hedging our bets, it's about making smarter decisions:
         </p>
 
-        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
-          <h4 className="font-semibold text-white mb-4">Portfolio Management in Action</h4>
+        <div className="bg-muted/30 p-6 rounded-lg my-8">
+          <h4 className="font-semibold text-foreground mb-4">Portfolio Management in Action</h4>
           <div className="space-y-3">
             <div><span className="font-medium">Kill Fast:</span> 67% of ideas get terminated within 30 days</div>
             <div><span className="font-medium">Expected Value Scoring:</span> Ideas ranked on 12-month revenue potential</div>
@@ -283,36 +283,36 @@ export default function Article() {
           Counterintuitively, having multiple options makes you less attached to any single idea. You can be honest about what's working and what isn't.
         </p>
 
-        <div className="not-prose my-10 rounded-xl border border-slate-700/50 bg-slate-900/30 p-6">
-          <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+        <div className="not-prose my-10 rounded-xl border border-border/50 bg-muted/30 p-6">
+          <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             Portfolio throughput
           </div>
-          <div className="mt-1 text-lg font-semibold text-white">
+          <div className="mt-1 text-lg font-semibold text-foreground">
             More shots on goal, fewer sunk-cost zombies.
           </div>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-lg border border-slate-700/40 bg-slate-900/40 p-4">
-              <div className="text-sm font-semibold text-slate-200">Active ideas</div>
-              <div className="mt-2 text-3xl font-bold text-white">8-12</div>
-              <div className="mt-1 text-sm text-slate-400">in flight at any time</div>
+            <div className="rounded-lg border border-border/40 bg-muted/40 p-4">
+              <div className="text-sm font-semibold text-foreground">Active ideas</div>
+              <div className="mt-2 text-3xl font-bold text-foreground">8-12</div>
+              <div className="mt-1 text-sm text-muted-foreground">in flight at any time</div>
             </div>
 
-            <div className="rounded-lg border border-red-700/30 bg-red-900/10 p-4">
+            <div className="rounded-lg border border-red-700/30 bg-destructive/10 p-4">
               <div className="text-sm font-semibold text-red-300">Killed fast</div>
-              <div className="mt-2 text-3xl font-bold text-white">67%</div>
-              <div className="mt-1 text-sm text-slate-400">within 30 days</div>
+              <div className="mt-2 text-3xl font-bold text-foreground">67%</div>
+              <div className="mt-1 text-sm text-muted-foreground">within 30 days</div>
             </div>
 
-            <div className="rounded-lg border border-cyan-700/30 bg-cyan-900/10 p-4">
-              <div className="text-sm font-semibold text-cyan-300">Reach build</div>
-              <div className="mt-2 text-3xl font-bold text-white">2-3</div>
-              <div className="mt-1 text-sm text-slate-400">per cycle</div>
+            <div className="rounded-lg border border-primary/15 bg-cyan-900/10 p-4">
+              <div className="text-sm font-semibold text-primary">Reach build</div>
+              <div className="mt-2 text-3xl font-bold text-foreground">2-3</div>
+              <div className="mt-1 text-sm text-muted-foreground">per cycle</div>
             </div>
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
           4. Documentation as a Feature (Not a Chore)
         </h3>
 
@@ -339,11 +339,11 @@ export default function Article() {
           Six months ago, I was evaluating a new market niche. Instead of starting from scratch, I pulled up three similar analyses from our documentation system. Spotted patterns I would have missed. Avoided mistakes I'd made before. Saved probably 20 hours of research.
         </p>
 
-        <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
+        <blockquote className="border-l-4 border-border pl-6 italic text-foreground my-8">
           "Documentation isn't record-keeping. It's compound learning."
         </blockquote>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           What Doesn't Work: Expensive Lessons
         </h2>
 
@@ -351,7 +351,7 @@ export default function Article() {
           Now for the fun part, all the ways we screwed this up before getting it right. Consider this your shortcut to our hard-earned wisdom.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
           The Ad-Hoc AI Disaster
         </h3>
 
@@ -367,7 +367,7 @@ export default function Article() {
           Lesson learned: AI without orchestration is like having a brilliant intern with ADHD and no supervision.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
           The Single-Idea Trap
         </h3>
 
@@ -387,7 +387,7 @@ export default function Article() {
           Having multiple ideas doesn't make you uncommitted, it makes you honest.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mt-10 mb-4">
+        <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
           The Build-First Temptation
         </h3>
 
@@ -403,7 +403,7 @@ export default function Article() {
           The antidote? Force yourself to validate market fit before writing a single line of production code. Mock-ups and prototypes? Sure. Full features? Not until you've proven demand.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The Core Principles That Actually Matter
         </h2>
 
@@ -412,16 +412,16 @@ export default function Article() {
         </p>
 
         <div className="space-y-8 my-10">
-          <div className="bg-cyan-900/20 p-6 rounded-lg">
-            <h4 className="font-semibold text-cyan-300 mb-2">Validation is Continuous, Not Binary</h4>
-            <p className="text-cyan-300">
+          <div className="bg-primary/5 p-6 rounded-lg">
+            <h4 className="font-semibold text-primary mb-2">Validation is Continuous, Not Binary</h4>
+            <p className="text-primary">
               Don't think "validated" vs "not validated." Think "current confidence level" and keep testing assumptions.
             </p>
           </div>
 
-          <div className="bg-slate-800/50 p-6 rounded-lg">
+          <div className="bg-muted/50 p-6 rounded-lg">
             <h4 className="font-semibold text-green-900 mb-2">AI Needs Systems, Not More Prompts</h4>
-            <p className="text-cyan-400">
+            <p className="text-primary">
               Individual AI tools are powerful. Orchestrated AI systems are transformative.
             </p>
           </div>
@@ -441,7 +441,7 @@ export default function Article() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           What's Next: The Roadmap
         </h2>
 
@@ -461,7 +461,7 @@ export default function Article() {
           <strong>Community-driven features:</strong> What if other product creators could contribute to and benefit from our validation system? Still early, but fascinating possibilities.
         </p>
 
-        <h2 className="text-3xl font-bold text-white mt-12 mb-6">
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
           The Real Takeaway
         </h2>
 
@@ -477,7 +477,7 @@ export default function Article() {
           Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing too well.
         </p>
 
-        <blockquote className="border-l-4 border-slate-600 pl-6 italic text-slate-200 my-8">
+        <blockquote className="border-l-4 border-border pl-6 italic text-foreground my-8">
           "Most product failures aren't because people built the wrong thing badly. They're because people built the wrong thing too well."
         </blockquote>
 
@@ -491,26 +491,26 @@ export default function Article() {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-16 border-t border-slate-700 pt-8">
-        <div className="bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-lg p-8">
-          <h3 className="text-2xl font-bold text-white mb-4">
+      <div className="mt-16 border-t border-border pt-8">
+        <div className="bg-primary/5 rounded-lg p-8">
+          <h3 className="text-2xl font-bold text-foreground mb-4">
             Want the Complete Framework?
           </h3>
-          <p className="text-slate-200 mb-6">
+          <p className="text-foreground mb-6">
             Get the detailed validation templates, AI orchestration playbooks, and portfolio management tools we use in our product creation engine.
           </p>
-          <Link href="/contact?playbook=complete-system" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+          <Link href="/contact?playbook=complete-system" className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
               Download the Complete System
           </Link>
         </div>
       </div>
 
       {/* Navigation */}
-      <nav className="mt-12 pt-8 border-t border-slate-700 flex justify-between">
-        <a href="/articles" className="text-cyan-400 hover:text-slate-200 font-medium">
+      <nav className="mt-12 pt-8 border-t border-border flex justify-between">
+        <a href="/articles" className="text-primary hover:text-foreground font-medium">
           ← Back to Articles
         </a>
-        <a href="/contact?intent=consulting" className="text-cyan-400 hover:text-slate-200 font-medium">
+        <a href="/contact?intent=consulting" className="text-primary hover:text-foreground font-medium">
           Get in Touch →
         </a>
       </nav>
@@ -518,14 +518,14 @@ export default function Article() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

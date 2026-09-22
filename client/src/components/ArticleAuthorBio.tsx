@@ -29,18 +29,18 @@ export default function ArticleAuthorBio() {
           RW
         </span>
         <div>
-          <p className="mb-2 text-xs uppercase tracking-[0.16em] text-slate-400">
+          <p className="mb-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
             Written by
           </p>
-          <p className="text-lg font-semibold leading-snug text-white">
+          <p className="text-lg font-semibold leading-snug text-foreground">
             {AUTHOR_NAME}
           </p>
-          <p className="mb-3 mt-1 text-sm text-slate-400">{AUTHOR_TITLE}</p>
-          <p className="text-sm leading-relaxed text-slate-300 sm:text-base">
+          <p className="mb-3 mt-1 text-sm text-muted-foreground">{AUTHOR_TITLE}</p>
+          <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
             {AUTHOR_BLURB}{" "}
             <Link
               href="/about"
-              className="text-primary underline underline-offset-2 transition-colors hover:text-cyan-300"
+              className="text-primary underline underline-offset-2 transition-colors hover:text-primary/80"
             >
               About / Brand Hub
             </Link>
@@ -49,7 +49,7 @@ export default function ArticleAuthorBio() {
               href="https://www.linkedin.com/in/rwinzenburg/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary underline underline-offset-2 transition-colors hover:text-cyan-300"
+              className="text-primary underline underline-offset-2 transition-colors hover:text-primary/80"
             >
               LinkedIn
             </a>

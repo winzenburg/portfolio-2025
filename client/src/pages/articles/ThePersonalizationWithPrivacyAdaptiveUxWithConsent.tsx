@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function PersonalizationWithPrivacyArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Personalization with Privacy: How We Design Adaptive UX That Respects Consent | Ryan Winzenburg</title>
@@ -25,7 +25,7 @@ export default function PersonalizationWithPrivacyArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -40,7 +40,7 @@ export default function PersonalizationWithPrivacyArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>November 22, 2024</span>
             <span>•</span>
             <span>6 min read</span>
@@ -48,14 +48,14 @@ export default function PersonalizationWithPrivacyArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Personalization with Privacy: Adaptive UX with Consent
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-      <p className="text-xl text-slate-300 mb-8">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
+      <p className="text-xl text-muted-foreground mb-8">
         I learned firsthand that personalization can backfire spectacularly. This is how to make it feel like magic, not surveillance.
       </p>
 
@@ -307,24 +307,24 @@ export default function PersonalizationWithPrivacyArticle() {
         Key insight: We use activity data (what they did in our app) not identity data (who they are outside it).
       </p>
 
-      <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-        <h4 className="font-semibold text-cyan-300 mb-2">Privacy-First Data Collection</h4>
+      <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+        <h4 className="font-semibold text-primary mb-2">Privacy-First Data Collection</h4>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
-            <div className="font-semibold text-2xl text-cyan-400">6</div>
-            <div className="text-cyan-300">Behavioral signals tracked</div>
+            <div className="font-semibold text-2xl text-primary">6</div>
+            <div className="text-primary">Behavioral signals tracked</div>
           </div>
           <div>
-            <div className="font-semibold text-2xl text-cyan-400">0</div>
-            <div className="text-cyan-300">Cross-app data points</div>
+            <div className="font-semibold text-2xl text-primary">0</div>
+            <div className="text-primary">Cross-app data points</div>
           </div>
           <div>
-            <div className="font-semibold text-2xl text-cyan-400">90</div>
-            <div className="text-cyan-300">Days of data retention</div>
+            <div className="font-semibold text-2xl text-primary">90</div>
+            <div className="text-primary">Days of data retention</div>
           </div>
           <div>
-            <div className="font-semibold text-2xl text-cyan-400">72%</div>
-            <div className="text-cyan-300">Opt-in rate achieved</div>
+            <div className="font-semibold text-2xl text-primary">72%</div>
+            <div className="text-primary">Opt-in rate achieved</div>
           </div>
         </div>
       </div>
@@ -398,7 +398,7 @@ export default function PersonalizationWithPrivacyArticle() {
         We added consent flags to user profiles:
       </p>
 
-      <pre className="bg-slate-800/50 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-muted/50 p-4 rounded-lg overflow-x-auto">
         <code>{`-- Add consent tracking
 ALTER TABLE profiles ADD COLUMN consent_for_personalization BOOLEAN DEFAULT FALSE;
 ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
@@ -412,7 +412,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         Every personalization check starts with consent verification:
       </p>
 
-      <pre className="bg-slate-800/50 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-muted/50 p-4 rounded-lg overflow-x-auto">
         <code>{`async function getPersonalizedContent(userId: string) {
   const profile = await getProfile(userId);
 
@@ -437,7 +437,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         The consent interface is crystal clear:
       </p>
 
-      <pre className="bg-slate-800/50 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-muted/50 p-4 rounded-lg overflow-x-auto">
         <code>{`<Toggle
   label="Personalized content"
   description="We'll suggest habits, articles, and challenges based on your activity patterns. You can turn this off anytime."
@@ -478,7 +478,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
         Here's what happened after we rebuilt our personalization approach:
       </p>
 
-      <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
+      <div className="bg-muted/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
         <h4 className="font-semibold text-green-900 mb-2"> Before vs. After Implementation</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -491,7 +491,7 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
             </ul>
           </div>
           <div>
-            <h5 className="font-semibold text-slate-200 mb-3">After (Privacy-First)</h5>
+            <h5 className="font-semibold text-foreground mb-3">After (Privacy-First)</h5>
             <ul className="text-sm text-green-300 space-y-1">
               <li>• 72% opt-in rate</li>
               <li>• Zero creepiness complaints</li>
@@ -731,14 +731,14 @@ ALTER TABLE profiles ADD COLUMN consent_updated_at TIMESTAMPTZ;`}</code>
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

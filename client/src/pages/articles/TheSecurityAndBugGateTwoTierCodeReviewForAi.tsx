@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function SecurityBugGateArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features | Ryan Winzenburg</title>
@@ -25,13 +25,13 @@ export default function SecurityBugGateArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
 
           {/* Hero Image */}
-          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+          <div className="mb-12 rounded-lg overflow-hidden border border-primary/15">
             <img
               src="/images/articles/security-gate-hero.webp"
               alt="Playful architectural illustration of a security and bug gate system"
@@ -40,7 +40,7 @@ export default function SecurityBugGateArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>November 27, 2024</span>
             <span>•</span>
             <span>7 min read</span>
@@ -48,17 +48,17 @@ export default function SecurityBugGateArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Security and Bug Gate: Two-Tier Code Review for AI
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
             <article className="max-w-4xl mx-auto px-6 py-12">
       {/* Header */}
       <header className="mb-12">
-        <div className="flex items-center gap-6 text-sm text-slate-300 mb-6">
+        <div className="flex items-center gap-6 text-sm text-muted-foreground mb-6">
           <div className="flex items-center gap-2">
             <Calendar className="w-4 h-4" />
             <span>December 2, 2024</span>
@@ -73,11 +73,11 @@ export default function SecurityBugGateArticle() {
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
           The Security & Bug Gate: Two-Tier Code Review for AI
         </h1>
         
-        <p className="text-xl text-slate-300 leading-relaxed">
+        <p className="text-xl text-muted-foreground leading-relaxed">
           AI can ship features fast, but it can also ship vulnerabilities. Here's the quality firewall 
           I built after almost leaking customer data in production.
         </p>
@@ -86,7 +86,7 @@ export default function SecurityBugGateArticle() {
       {/* Article Content */}
       <div className="prose prose-lg max-w-none">
         {/* Bug/Security Gate Illustration */}
-        <div className="my-12 rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900/30">
+        <div className="my-12 rounded-lg overflow-hidden border border-border/50 bg-muted/30">
           <img loading="lazy"
             src="/images/articles/security-gate-illustration.webp"
             alt="Diagram of a software delivery pipeline passing through bug and security gates"
@@ -117,7 +117,7 @@ export default function SecurityBugGateArticle() {
           <code>AND status = 'active'</code> clause away from a major data leak.
         </p>
 
-        <div className="bg-red-900/20 border-l-4 border-red-400 p-4 my-8">
+        <div className="bg-destructive/20 border-l-4 border-red-400 p-4 my-8">
           <p className="text-red-200 font-medium mb-2"></p>
           <p className="text-red-200">
             "AI is optimized for helpfulness and plausibility, not correctness or security. It'll generate code that 
@@ -186,9 +186,9 @@ export default function SecurityBugGateArticle() {
           bite you later.
         </p>
 
-        <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-          <h3 className="text-lg font-semibold text-cyan-300 mb-4">Quick Security & Logic Check Template</h3>
-          <div className="text-slate-200 space-y-4 font-mono text-sm">
+        <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+          <h3 className="text-lg font-semibold text-primary mb-4">Quick Security & Logic Check Template</h3>
+          <div className="text-foreground space-y-4 font-mono text-sm">
             <div>
               <strong>Feature</strong>: [Brief description]<br />
               <strong>Files changed</strong>: [List]
@@ -229,8 +229,8 @@ export default function SecurityBugGateArticle() {
           Last week, this simple checklist caught a classic AI mistake. Claude generated this seemingly innocent API route:
         </p>
 
-        <div className="bg-gray-900 text-green-400 p-4 rounded-lg my-6 font-mono text-sm">
-          <div className="text-red-400 mb-2">// AI-generated code (BEFORE review)</div>
+        <div className="bg-gray-900 text-green-700 p-4 rounded-lg my-6 font-mono text-sm">
+          <div className="text-destructive mb-2">// AI-generated code (BEFORE review)</div>
           <div>export async function POST(request: Request) &#123;</div>
           <div>  const &#123; projectId, name &#125; = await request.json();</div>
           <div></div>
@@ -257,8 +257,8 @@ export default function SecurityBugGateArticle() {
           <strong>Time to spot and fix</strong>: 8 minutes. <strong>Potential data leak prevented</strong>: Priceless.
         </p>
 
-        <div className="bg-gray-900 text-green-400 p-4 rounded-lg my-6 font-mono text-sm">
-          <div className="text-green-400 mb-2">// After Security & Bug Gate review</div>
+        <div className="bg-gray-900 text-green-700 p-4 rounded-lg my-6 font-mono text-sm">
+          <div className="text-green-700 mb-2">// After Security & Bug Gate review</div>
           <div>export async function POST(request: Request) &#123;</div>
           <div>  const session = await getServerSession();</div>
           <div>  if (!session?.user) &#123;</div>
@@ -295,8 +295,8 @@ export default function SecurityBugGateArticle() {
           <div>&#125;</div>
         </div>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4 my-8">
-          <p className="text-cyan-400">
+        <div className="bg-muted/50 border border-border rounded-lg p-4 my-8">
+          <p className="text-primary">
             <strong>Pro tip</strong>: I now give Claude the everyday prompt and ask it to self-review before outputting code. 
             It catches about 70% of issues on the first pass. The remaining 30%? That's why humans still matter.
           </p>
@@ -310,15 +310,15 @@ export default function SecurityBugGateArticle() {
           that keep experienced developers awake at night.
         </p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
-          <div className="text-sm font-medium text-cyan-400 mb-4"></div>
+        <div className="bg-muted/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
+          <div className="text-sm font-medium text-primary mb-4"></div>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="text-2xl font-bold text-slate-200">31</div>
+              <div className="text-2xl font-bold text-foreground">31</div>
               <div className="text-sm text-green-300">Critical issues caught in 3 months</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-slate-200">0</div>
+              <div className="text-2xl font-bold text-foreground">0</div>
               <div className="text-sm text-green-300">Security incidents in production</div>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function SecurityBugGateArticle() {
           and passed all our basic tests. But the pre-production gate caught some nasty issues:
         </p>
 
-        <div className="bg-red-900/20 border border-red-700/50 rounded-lg p-4 my-8">
+        <div className="bg-destructive/20 border border-red-700/50 rounded-lg p-4 my-8">
           <h4 className="font-semibold text-red-300 mb-2">Issues Found:</h4>
           <ul className="text-red-200 space-y-2 text-sm">
             <li>⚠️ Cancel subscription endpoint didn't verify user is org owner (any member could cancel)</li>
@@ -402,9 +402,9 @@ export default function SecurityBugGateArticle() {
         </p>
 
         <div className="grid grid-cols-2 gap-6 my-8">
-          <div className="bg-cyan-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold text-cyan-300">Everyday Prompt</h4>
-            <ul className="text-slate-200 text-sm mt-2 space-y-1">
+          <div className="bg-primary/5 p-4 rounded-lg">
+            <h4 className="font-semibold text-primary">Everyday Prompt</h4>
+            <ul className="text-foreground text-sm mt-2 space-y-1">
               <li>12 missing auth checks</li>
               <li>8 input validation gaps</li>
               <li>2 hardcoded API keys</li>
@@ -412,7 +412,7 @@ export default function SecurityBugGateArticle() {
           </div>
           <div className="bg-purple-900/20 border border-purple-700/50 p-4 rounded-lg">
             <h4 className="font-semibold text-purple-300">Pre-Production Gate</h4>
-            <ul className="text-slate-200 text-sm mt-2 space-y-1">
+            <ul className="text-foreground text-sm mt-2 space-y-1">
               <li>5 RLS policy leaks</li>
               <li>3 race conditions</li>
               <li>1 critical billing logic bug</li>
@@ -488,8 +488,8 @@ export default function SecurityBugGateArticle() {
           <li><strong>Integration testing</strong>: Automated tests that verify the security properties we care about</li>
         </ul>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-slate-200 font-medium">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-foreground font-medium">
             "AI can ship features fast, but it can also ship vulnerabilities. The Security & Bug Gate 
             is our quality firewall, and the reason I sleep better at night."
           </p>
@@ -514,13 +514,13 @@ export default function SecurityBugGateArticle() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-8 mt-16 text-white">
+      <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-8 mt-16 text-foreground">
         <h2 className="text-2xl font-bold mb-4">Want the Complete Security & Bug Gate Templates?</h2>
         <p className="text-blue-100 mb-6">
           Get both the everyday prompt and pre-production gate checklists, plus examples of common issues 
           to watch for in AI-generated code.
         </p>
-        <Link href="/contact?playbook=security-bug-gate" className="inline-block bg-slate-900 text-cyan-400 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-900/20 transition-colors">
+        <Link href="/contact?playbook=security-bug-gate" className="inline-block bg-muted text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors">
             Download the Templates
         </Link>
       </div>
@@ -528,14 +528,14 @@ export default function SecurityBugGateArticle() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

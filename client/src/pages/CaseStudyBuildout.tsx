@@ -41,7 +41,7 @@ export default function CaseStudyBuildout() {
       />
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-full text-slate-300 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-muted/80 backdrop-blur-sm border border-border/50 rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -100,7 +100,7 @@ export default function CaseStudyBuildout() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Problem Statement</h2>
-            <div className="prose prose-lg prose-invert max-w-none">
+            <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground">
                 Commercial real estate brokers are finding it hard to stay profitable in a softening economy. CRE doesn't have a common listing service like residential real estate has with the multiple listing service (MLS). With the lack of a MLS, they spend <strong>70-80% of their day</strong> looking for and researching clients and properties. This is time better spent meeting with clients and showing properties which ultimately leads to closing deals.
               </p>
@@ -114,7 +114,7 @@ export default function CaseStudyBuildout() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">The Objective</h2>
-            <div className="prose prose-lg prose-invert max-w-none">
+            <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground">
                 Our goal is to understand how commercial real estate brokers research and prospect new clients and nurture existing relationships. Since each deal can be worth <strong>$10k's to $10M's</strong>, any improvement to streamlining the deal cycle will easily be worth the price of a software subscription.
               </p>
@@ -240,7 +240,7 @@ export default function CaseStudyBuildout() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">The Outcome</h2>
-            <div className="prose prose-lg prose-invert max-w-none">
+            <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground mb-6">
                 The product is currently in beta with a general release planned for summer 2023. Based upon our work with customers along the way, the early feedback has been positive.
               </p>
