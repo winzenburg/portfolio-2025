@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet-async";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
-const CANONICAL = "https://winzenburg.com/pulse/2026-09-21";
+const CANONICAL = "https://winzenburg.com/pulse/2026-08-28";
 
-function VideoLink({ href, title, date }: { href: string; title: string; date: string }) {
+function VideoLink({ href, title }: { href: string; title: string }) {
   return (
     <li className="flex items-start gap-1.5">
       <a
@@ -18,29 +18,28 @@ function VideoLink({ href, title, date }: { href: string; title: string; date: s
         {title}
         <ExternalLink className="w-3 h-3 shrink-0 mt-0.5" aria-hidden="true" />
       </a>
-      <span className="text-slate-500 shrink-0">· {date}</span>
     </li>
   );
 }
 
-export default function Pulse20260921() {
+export default function Pulse20260828() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="subscribe" />
 
       <Helmet>
-        <title>Weekly AI Founder Pulse — Week of September 21, 2026 | Ryan Winzenburg</title>
+        <title>Weekly AI Founder Pulse — Week of August 28, 2026 | Ryan Winzenburg</title>
         <meta
           name="description"
-          content="The agent layer is becoming the business layer—but the durable advantage is controlled operating design. Five signals from the week of September 21, 2026."
+          content="The market is shifting from prompt-driven AI to agentic work that can act across interfaces, execute defined workflows, and produce monetizable outcomes. Five signals from the week of August 28, 2026."
         />
         <meta
           property="og:title"
-          content="Weekly AI Founder Pulse — Week of September 21, 2026"
+          content="Weekly AI Founder Pulse — Week of August 28, 2026"
         />
         <meta
           property="og:description"
-          content="The agent layer is becoming the business layer—but the durable advantage is controlled operating design."
+          content="The market is shifting from prompt-driven AI to agentic work that can act across interfaces, execute defined workflows, and produce monetizable outcomes."
         />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
@@ -50,15 +49,15 @@ export default function Pulse20260921() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Weekly AI Founder Pulse — Week of September 21, 2026",
+            headline: "Weekly AI Founder Pulse — Week of August 28, 2026",
             description:
-              "The agent layer is becoming the business layer—but the durable advantage is controlled operating design.",
+              "The market is shifting from prompt-driven AI to agentic work that can act across interfaces, execute defined workflows, and produce monetizable outcomes.",
             author: {
               "@type": "Person",
               name: "Ryan Winzenburg",
               url: "https://winzenburg.com",
             },
-            datePublished: "2026-09-21",
+            datePublished: "2026-08-28",
             url: CANONICAL,
           })}
         </script>
@@ -80,13 +79,13 @@ export default function Pulse20260921() {
               Weekly AI Founder Pulse
             </p>
             <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Week of September 21, 2026
+              Week of August 28, 2026
             </h1>
             <div className="rounded-lg border border-slate-700/60 bg-slate-900/60 px-5 py-4">
               <p className="text-sm font-medium text-slate-400 mb-1">Central signal</p>
               <p className="text-base text-slate-200 leading-relaxed">
-                The agent layer is becoming the business layer—but the durable advantage is
-                controlled operating design.
+                The market is shifting from prompt-driven AI to agentic work that can act across
+                interfaces, execute defined workflows, and produce monetizable outcomes.
               </p>
             </div>
           </header>
@@ -94,10 +93,9 @@ export default function Pulse20260921() {
           {/* Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mt-12 [&_h2]:mb-5 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-slate-100 [&_h3]:mt-8 [&_h3]:mb-4 [&_ul]:my-5 [&_li]:my-2 [&_li]:text-slate-300">
             <p className="text-slate-300 leading-relaxed text-lg">
-              The leading pattern this week is agents connected to work: code, marketing, content,
-              and workflow orchestration. The counter-signal is equally important. Once agents touch
-              real operations, continuous evaluation, scoped authority, evidence capture, and human
-              escalation become the product—not back-office compliance.
+              Coverage window: August 21–28, 2026. Scan scope: 13 channels monitored; 11 channels
+              with qualifying uploads; 23 standard videos identified. Shorts, clips, and livestream
+              replays were excluded.
             </p>
 
             <h2>Five signals to use</h2>
@@ -109,7 +107,7 @@ export default function Pulse20260921() {
                   HIGH
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Agent runtimes are shifting from demos to an operating layer
+                  Agents are moving from "assist" to "act"
                 </h3>
               </div>
               <div className="mb-4">
@@ -118,27 +116,31 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=4mTLpuQpB80"
-                    title="Greg Isenberg · Jev is HERE"
-                    date="Sep 18"
+                    href="https://www.youtube.com/watch?v=EoNH3Tn8wYE"
+                    title="Greg Isenberg — WebMCP: Let AI Agents pay you money"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=sGDWOMbKGHk"
-                    title="Leveling Up · Jev Supercharged All Of Your AI Agents"
-                    date="Sep 20"
+                    href="https://www.youtube.com/watch?v=_9OT25ZvrWs"
+                    title="AI Jason — I don't prompt agents anymore..."
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=o1CogAtWdBk"
-                    title="Riley Brown · JEV: How It Works"
-                    date="Sep 18"
+                    href="https://www.youtube.com/watch?v=XgkW4A6lrDY"
+                    title="Riley Brown — 11 Insane Things Cursor's NEW GrokBot Can Do"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=rKo9iLGjUbs"
+                    title="Matt Wolfe — I Built a FREE App That Runs Your Entire Business"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=HGk9N-HctVA"
+                    title="Leveling Up — Grok Bot's Best Workflows for Marketing"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Founders are moving past isolated chats toward orchestrated work surfaces. The
-                strategic test is whether the runtime preserves context, controls permissions,
-                produces verifiable outputs, and can be swapped without losing the operating system
-                around it.
+                The key shift is from conversational assistance to agents that perform work across
+                tools and interfaces. Differentiation moves to permissions, workflow control,
+                exception handling, and evidence trails—governed action, not open-ended autonomy.
               </p>
             </div>
 
@@ -149,7 +151,7 @@ export default function Pulse20260921() {
                   HIGH
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  AI-native product production is collapsing into a coordinated pipeline
+                  AI-native product creation is collapsing the distance from idea to live software
                 </h3>
               </div>
               <div className="mb-4">
@@ -158,39 +160,38 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=NDTbUObZTlM"
-                    title="Riley Brown · NEW Claude Code Projects"
-                    date="Sep 21"
+                    href="https://www.youtube.com/watch?v=mHqSBCHEZOY"
+                    title="Riley Brown — NEW ChatGPT Sites Just Changed Everything"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=O8pzzIP1RyM"
-                    title="Riley Brown · Astra Built Me an Entire Product Launch"
-                    date="Sep 16"
+                    href="https://www.youtube.com/watch?v=ETa6ZYqoIXo"
+                    title="Riley Brown — Codex vs Claude vs Grokbot"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=GkGufbIVVC8"
-                    title="AI Jason · AI UGC campaign workflow"
-                    date="Sep 16"
+                    href="https://www.youtube.com/watch?v=XgkW4A6lrDY"
+                    title="Riley Brown — 11 Insane Things Cursor's NEW GrokBot Can Do"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=rKo9iLGjUbs"
+                    title="Matt Wolfe — I Built a FREE App That Runs Your Entire Business"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Specification, code, launch assets, and distribution are increasingly one flow
-                rather than separate specialist handoffs. Design for a brief-to-evidence loop: a
-                structured brief yields a build, a launch artifact, a test, and a retained decision
-                record—while judgment gates remain explicit for positioning, accuracy, and brand
-                risk.
+                The competitive question is which environment can take a founder from intent to a
+                working product with enough control to keep iterating in production. Product
+                judgment, acceptance criteria, and evaluations become the durable asset.
               </p>
             </div>
 
             {/* Signal 3 */}
             <div className="rounded-lg border border-slate-700/50 bg-slate-900/40 px-6 py-5 mb-6 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-amber-400 bg-amber-900/20 border border-amber-800/40 rounded px-2 py-0.5">
-                  EMERGING
+                <span className="text-xs font-bold tracking-wider text-red-400 bg-red-900/30 border border-red-800/50 rounded px-2 py-0.5">
+                  HIGH
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Agent governance is becoming a revenue prerequisite
+                  The one-person, AI-augmented business model is becoming concrete
                 </h3>
               </div>
               <div className="mb-4">
@@ -199,22 +200,31 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=V_9TCu_21SE"
-                    title="Latent Space · Why Static Evals Become Obsolete in Production"
-                    date="Sep 19"
+                    href="https://www.youtube.com/watch?v=I-pPhs5Qbsk"
+                    title="Marc Lou — My SaaS hit $4,000/day (solo)"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=Sc2_LfWgHb4"
-                    title="Latent Space · The $20 Agent, $200M Liability"
-                    date="Sep 16"
+                    href="https://www.youtube.com/watch?v=mVd6PIKY-P0"
+                    title="Sabrina Ramonov — How I Made $120,000 with AI"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=TePQevG_Dgc"
+                    title="Sabrina Ramonov — How I'd Start a 1-Person Business + Personal Brand with AI in 30 Days"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=NO4u4PiHC5o"
+                    title="Sabrina Ramonov — How to Make Your First $1000 (3 Claude Prompts)"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=TVpLs0F1zpA"
+                    title="My First Million — How a $5B founder is using AI"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Static pre-launch demos do not establish production reliability, and low-cost agents
-                can create asymmetric downside. The opening is governed automation: continuous
-                scenario-specific evaluation, policy-bounded tools, audit-ready provenance, and
-                escalation paths sized to the consequence.
+                Solo-founder content has moved beyond generic productivity advice. The active thesis
+                is operating a broader commercial surface when agents own defined recurring work.
+                The metric is a validated, repeatable commercial outcome—not agent novelty.
               </p>
             </div>
 
@@ -225,7 +235,8 @@ export default function Pulse20260921() {
                   MEDIUM
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Solo economics are moving from "build faster" to repeatable loops
+                  Distribution is being rebuilt around AI search, agentic marketing, and direct
+                  sales
                 </h3>
               </div>
               <div className="mb-4">
@@ -234,26 +245,23 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=LU_K4CXOkQY"
-                    title="Marc Lou · $100,000/month solo"
-                    date="Sep 21"
+                    href="https://www.youtube.com/watch?v=Zvgm3KE5pHM"
+                    title="Leveling Up — The New SEO Playbook for AI"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=Fgutvd4-F_0"
-                    title="Sabrina Ramonov · Top 10 Ways to Make Money with AI"
-                    date="Sep 19"
+                    href="https://www.youtube.com/watch?v=qQluNEfSVHk"
+                    title="Greg Isenberg — Making $$$ with Grok Bot"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=TAHAlGH_DK0"
-                    title="My First Million · Funko marketplace"
-                    date="Sep 21"
+                    href="https://www.youtube.com/watch?v=YS9In813jJ0"
+                    title="Lenny's Podcast — 84 minutes of enterprise sales alpha | Jen Abel"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                The actionable signal is operational: leverage comes from a narrow, repeatable
-                system that can acquire, fulfill, learn, and retain with minimal incremental
-                coordination. Treat revenue claims as directional, not as a benchmark.
+                Acquisition, content, and sales motions are being redesigned around agents. Keep
+                brand, accuracy, and relationship judgment human; automate the repeatable production
+                and research steps.
               </p>
             </div>
 
@@ -264,7 +272,7 @@ export default function Pulse20260921() {
                   MEDIUM
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Model novelty is a commodity input; interchangeability is the asset
+                  Infrastructure and interface bets are consolidating around agent-ready systems
                 </h3>
               </div>
               <div className="mb-4">
@@ -273,26 +281,26 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=s9OC9_FWQ-4"
-                    title="Sabrina Ramonov · Claude to ChatGPT"
-                    date="Sep 15"
+                    href="https://www.youtube.com/watch?v=YscDZpVF4CQ"
+                    title="No Priors — Rethinking Legacy Data Infrastructure with Eon"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=Kof2VcHTjrk"
-                    title="Matt Wolfe · The AI Slowdown"
-                    date="Sep 18"
+                    href="https://www.youtube.com/watch?v=MwNvowwcZOo"
+                    title="Latent Space — Forward Deployed: Voice AI on what works in 2026"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=N1rjtDs8blY"
-                    title="No Priors · Why Diffusion Will Win AI Inference"
-                    date="Sep 18"
+                    href="https://www.youtube.com/watch?v=KpOW9Pk4BUs"
+                    title="Latent Space — Simulating Humanity: from Generative Agents to Digital Twins"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=TInwQglNkzo"
+                    title="Matt Wolfe — AI News: OpenAI Made a Massive Move Against NVIDIA"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Durable systems store intent, data constraints, policies, evaluations, and outcomes
-                outside any one model. That lets you optimize performance, cost, and availability
-                without destabilizing the workflow that creates value.
+                Watch for systems that make agents cheaper to run, easier to supervise, and safer
+                to connect to real tools and data.
               </p>
             </div>
 
@@ -303,36 +311,36 @@ export default function Pulse20260921() {
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500 text-sm font-mono mt-0.5 shrink-0">01</span>
                   <a
-                    href="https://www.youtube.com/watch?v=V_9TCu_21SE"
+                    href="https://www.youtube.com/watch?v=EoNH3Tn8wYE"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Latent Space — Why Static Evals Become Obsolete in Production (Sep 19)
+                    Greg Isenberg — WebMCP: Let AI Agents pay you money
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500 text-sm font-mono mt-0.5 shrink-0">02</span>
                   <a
-                    href="https://www.youtube.com/watch?v=Sc2_LfWgHb4"
+                    href="https://www.youtube.com/watch?v=I-pPhs5Qbsk"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Latent Space — The $20 Agent, $200M Liability (Sep 16)
+                    Marc Lou — My SaaS hit $4,000/day (solo)
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500 text-sm font-mono mt-0.5 shrink-0">03</span>
                   <a
-                    href="https://www.youtube.com/watch?v=O8pzzIP1RyM"
+                    href="https://www.youtube.com/watch?v=_9OT25ZvrWs"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Riley Brown — Astra Built Me an Entire Product Launch (Sep 16)
+                    AI Jason — I don't prompt agents anymore...
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -343,9 +351,9 @@ export default function Pulse20260921() {
             <div className="mt-10 rounded-lg border border-slate-800 bg-slate-900/30 px-5 py-4 not-prose">
               <p className="text-xs text-slate-500 leading-relaxed">
                 <span className="font-medium text-slate-400">Source note:</span> 13 channels
-                scanned in parallel; 12 active channels; 26 qualifying standard uploads published
-                September 15–21, 2026. Shorts and Live content were excluded. This briefing is a
-                source pulse, not a transcript or endorsement of any video's claims.
+                monitored; 11 channels with qualifying uploads; 23 standard videos identified for
+                August 21–28, 2026. Shorts, clips, and livestream replays were excluded. This
+                briefing is a source pulse, not a transcript or endorsement of any video's claims.
               </p>
             </div>
           </div>
@@ -358,6 +366,12 @@ export default function Pulse20260921() {
             >
               <ArrowLeft className="w-4 h-4" aria-hidden="true" />
               All past issues
+            </Link>
+            <Link
+              href="/pulse/2026-09-14"
+              className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-slate-300 transition-colors"
+            >
+              Next issue →
             </Link>
           </div>
         </div>

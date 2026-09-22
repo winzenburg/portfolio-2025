@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet-async";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
-const CANONICAL = "https://winzenburg.com/pulse/2026-09-21";
+const CANONICAL = "https://winzenburg.com/pulse/2026-09-14";
 
-function VideoLink({ href, title, date }: { href: string; title: string; date: string }) {
+function VideoLink({ href, title }: { href: string; title: string }) {
   return (
     <li className="flex items-start gap-1.5">
       <a
@@ -18,29 +18,28 @@ function VideoLink({ href, title, date }: { href: string; title: string; date: s
         {title}
         <ExternalLink className="w-3 h-3 shrink-0 mt-0.5" aria-hidden="true" />
       </a>
-      <span className="text-slate-500 shrink-0">· {date}</span>
     </li>
   );
 }
 
-export default function Pulse20260921() {
+export default function Pulse20260914() {
   return (
     <div className="min-h-screen bg-slate-950">
       <ResponsiveNav currentPage="subscribe" />
 
       <Helmet>
-        <title>Weekly AI Founder Pulse — Week of September 21, 2026 | Ryan Winzenburg</title>
+        <title>Weekly AI Founder Pulse — Week of September 14, 2026 | Ryan Winzenburg</title>
         <meta
           name="description"
-          content="The agent layer is becoming the business layer—but the durable advantage is controlled operating design. Five signals from the week of September 21, 2026."
+          content="The agent layer is becoming the operating layer. Five signals from the week of September 14, 2026."
         />
         <meta
           property="og:title"
-          content="Weekly AI Founder Pulse — Week of September 21, 2026"
+          content="Weekly AI Founder Pulse — Week of September 14, 2026"
         />
         <meta
           property="og:description"
-          content="The agent layer is becoming the business layer—but the durable advantage is controlled operating design."
+          content="The agent layer is becoming the operating layer."
         />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
@@ -50,15 +49,14 @@ export default function Pulse20260921() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Weekly AI Founder Pulse — Week of September 21, 2026",
-            description:
-              "The agent layer is becoming the business layer—but the durable advantage is controlled operating design.",
+            headline: "Weekly AI Founder Pulse — Week of September 14, 2026",
+            description: "The agent layer is becoming the operating layer.",
             author: {
               "@type": "Person",
               name: "Ryan Winzenburg",
               url: "https://winzenburg.com",
             },
-            datePublished: "2026-09-21",
+            datePublished: "2026-09-14",
             url: CANONICAL,
           })}
         </script>
@@ -80,13 +78,12 @@ export default function Pulse20260921() {
               Weekly AI Founder Pulse
             </p>
             <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Week of September 21, 2026
+              Week of September 14, 2026
             </h1>
             <div className="rounded-lg border border-slate-700/60 bg-slate-900/60 px-5 py-4">
               <p className="text-sm font-medium text-slate-400 mb-1">Central signal</p>
               <p className="text-base text-slate-200 leading-relaxed">
-                The agent layer is becoming the business layer—but the durable advantage is
-                controlled operating design.
+                The agent layer is becoming the operating layer.
               </p>
             </div>
           </header>
@@ -94,10 +91,11 @@ export default function Pulse20260921() {
           {/* Body */}
           <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mt-12 [&_h2]:mb-5 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-slate-100 [&_h3]:mt-8 [&_h3]:mb-4 [&_ul]:my-5 [&_li]:my-2 [&_li]:text-slate-300">
             <p className="text-slate-300 leading-relaxed text-lg">
-              The leading pattern this week is agents connected to work: code, marketing, content,
-              and workflow orchestration. The counter-signal is equally important. Once agents touch
-              real operations, continuous evaluation, scoped authority, evidence capture, and human
-              escalation become the product—not back-office compliance.
+              Across current-week long-form uploads from the monitored channels, the practical
+              conversation has moved beyond model chat into agents that take work, finish workflows,
+              and leave a decision trail. The durable edge is not access to a model. It is
+              controlled operating design: scoped authority, evaluation, evidence, and human
+              escalation.
             </p>
 
             <h2>Five signals to use</h2>
@@ -109,7 +107,7 @@ export default function Pulse20260921() {
                   HIGH
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Agent runtimes are shifting from demos to an operating layer
+                  Agents are being positioned as workers, not copilots
                 </h3>
               </div>
               <div className="mb-4">
@@ -118,27 +116,24 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=4mTLpuQpB80"
-                    title="Greg Isenberg · Jev is HERE"
-                    date="Sep 18"
+                    href="https://www.youtube.com/watch?v=maSdsTLaMuU"
+                    title="Lenny's Podcast — How a handful of people built Grok Bot in 30 days"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=sGDWOMbKGHk"
-                    title="Leveling Up · Jev Supercharged All Of Your AI Agents"
-                    date="Sep 20"
+                    href="https://www.youtube.com/watch?v=Ju41cQSe7hY"
+                    title="Riley Brown — I Spent 100 Hours Using GPT-6 Astra"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=o1CogAtWdBk"
-                    title="Riley Brown · JEV: How It Works"
-                    date="Sep 18"
+                    href="https://www.youtube.com/watch?v=nglqTHwuZ-8"
+                    title="Greg Isenberg — GPT-6 Astra: How I'd Make Money With It"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Founders are moving past isolated chats toward orchestrated work surfaces. The
-                strategic test is whether the runtime preserves context, controls permissions,
-                produces verifiable outputs, and can be swapped without losing the operating system
-                around it.
+                Creator attention has moved from "which model wins?" to "what task can I hand it
+                next?" Keep your model layer interchangeable and benchmark proprietary workflows on
+                completion rate, cycle time, exception rate, and reviewer effort—not on vendor
+                claims.
               </p>
             </div>
 
@@ -149,7 +144,7 @@ export default function Pulse20260921() {
                   HIGH
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  AI-native product production is collapsing into a coordinated pipeline
+                  End-to-end loops beat isolated feature demos
                 </h3>
               </div>
               <div className="mb-4">
@@ -158,39 +153,33 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=NDTbUObZTlM"
-                    title="Riley Brown · NEW Claude Code Projects"
-                    date="Sep 21"
+                    href="https://www.youtube.com/watch?v=_LCeJZFIsd4"
+                    title="Leveling Up — related AI workflow content from the week"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=O8pzzIP1RyM"
-                    title="Riley Brown · Astra Built Me an Entire Product Launch"
-                    date="Sep 16"
+                    href="https://www.youtube.com/watch?v=ifz8NGHuHtY"
+                    title="Matt Wolfe — AI news / tooling cluster"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=GkGufbIVVC8"
-                    title="AI Jason · AI UGC campaign workflow"
-                    date="Sep 16"
+                    href="https://www.youtube.com/watch?v=xo8WsOaBTcw"
+                    title="Additional current-week workflow upload"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Specification, code, launch assets, and distribution are increasingly one flow
-                rather than separate specialist handoffs. Design for a brief-to-evidence loop: a
-                structured brief yields a build, a launch artifact, a test, and a retained decision
-                record—while judgment gates remain explicit for positioning, accuracy, and brand
-                risk.
+                Design the retained decision record first; treat the model as a replaceable worker
+                inside a brief → build → ship → learn loop.
               </p>
             </div>
 
             {/* Signal 3 */}
             <div className="rounded-lg border border-slate-700/50 bg-slate-900/40 px-6 py-5 mb-6 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-amber-400 bg-amber-900/20 border border-amber-800/40 rounded px-2 py-0.5">
-                  EMERGING
+                <span className="text-xs font-bold tracking-wider text-blue-400 bg-blue-900/20 border border-blue-800/40 rounded px-2 py-0.5">
+                  MEDIUM
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Agent governance is becoming a revenue prerequisite
+                  One-person firms are becoming portfolio operators
                 </h3>
               </div>
               <div className="mb-4">
@@ -199,22 +188,22 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=V_9TCu_21SE"
-                    title="Latent Space · Why Static Evals Become Obsolete in Production"
-                    date="Sep 19"
+                    href="https://www.youtube.com/watch?v=LNFGf5w99Gs"
+                    title="Sabrina Ramonov — These 5 FREE AI Tools Made Me $1M With Zero Employees"
                   />
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=Sc2_LfWgHb4"
-                    title="Latent Space · The $20 Agent, $200M Liability"
-                    date="Sep 16"
+                    href="https://www.youtube.com/watch?v=XqS7kIWMIDE"
+                    title="Dan Koe — If You Have Multiple Interests, Please Start a One-Person Business"
+                  />
+                  <VideoLink
+                    href="https://www.youtube.com/watch?v=gHUMarocxy4"
+                    title="My First Million — high school dropout / $200M brand"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Static pre-launch demos do not establish production reliability, and low-cost agents
-                can create asymmetric downside. The opening is governed automation: continuous
-                scenario-specific evaluation, policy-bounded tools, audit-ready provenance, and
-                escalation paths sized to the consequence.
+                The useful mental model is a portfolio operator who owns demand, taste, constraints,
+                and capital allocation while agents execute bounded production.
               </p>
             </div>
 
@@ -225,7 +214,7 @@ export default function Pulse20260921() {
                   MEDIUM
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Solo economics are moving from "build faster" to repeatable loops
+                  Distribution is being rebuilt around AI search and agentic marketing
                 </h3>
               </div>
               <div className="mb-4">
@@ -234,37 +223,25 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=LU_K4CXOkQY"
-                    title="Marc Lou · $100,000/month solo"
-                    date="Sep 21"
-                  />
-                  <VideoLink
-                    href="https://www.youtube.com/watch?v=Fgutvd4-F_0"
-                    title="Sabrina Ramonov · Top 10 Ways to Make Money with AI"
-                    date="Sep 19"
-                  />
-                  <VideoLink
-                    href="https://www.youtube.com/watch?v=TAHAlGH_DK0"
-                    title="My First Million · Funko marketplace"
-                    date="Sep 21"
+                    href="https://www.youtube.com/watch?v=-KcHn0QcSb0"
+                    title="Current-week distribution / AI SEO cluster"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                The actionable signal is operational: leverage comes from a narrow, repeatable
-                system that can acquire, fulfill, learn, and retain with minimal incremental
-                coordination. Treat revenue claims as directional, not as a benchmark.
+                Treat channel claims as market signal. The operating lesson is measurable
+                acquisition loops with human judgment on brand and accuracy.
               </p>
             </div>
 
             {/* Signal 5 */}
             <div className="rounded-lg border border-slate-700/50 bg-slate-900/40 px-6 py-5 mb-10 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-blue-400 bg-blue-900/20 border border-blue-800/40 rounded px-2 py-0.5">
-                  MEDIUM
+                <span className="text-xs font-bold tracking-wider text-amber-400 bg-amber-900/20 border border-amber-800/40 rounded px-2 py-0.5">
+                  EMERGING
                 </span>
                 <h3 className="text-base font-semibold text-white leading-snug">
-                  Model novelty is a commodity input; interchangeability is the asset
+                  Agentic finance will force permissioned, explainable workflows
                 </h3>
               </div>
               <div className="mb-4">
@@ -273,26 +250,14 @@ export default function Pulse20260921() {
                 </p>
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
-                    href="https://www.youtube.com/watch?v=s9OC9_FWQ-4"
-                    title="Sabrina Ramonov · Claude to ChatGPT"
-                    date="Sep 15"
-                  />
-                  <VideoLink
-                    href="https://www.youtube.com/watch?v=Kof2VcHTjrk"
-                    title="Matt Wolfe · The AI Slowdown"
-                    date="Sep 18"
-                  />
-                  <VideoLink
-                    href="https://www.youtube.com/watch?v=N1rjtDs8blY"
-                    title="No Priors · Why Diffusion Will Win AI Inference"
-                    date="Sep 18"
+                    href="https://www.youtube.com/watch?v=uLDK4l_-gUE"
+                    title="No Priors — Coinbase's Everything Exchange: Agentic Finance, Stablecoins & Tokenization"
                   />
                 </ul>
               </div>
               <p className="text-slate-300 leading-relaxed text-sm">
-                Durable systems store intent, data constraints, policies, evaluations, and outcomes
-                outside any one model. That lets you optimize performance, cost, and availability
-                without destabilizing the workflow that creates value.
+                Authority design, auditability, and exception queues become product requirements
+                once agents can move money or make consequential commitments.
               </p>
             </div>
 
@@ -303,36 +268,36 @@ export default function Pulse20260921() {
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500 text-sm font-mono mt-0.5 shrink-0">01</span>
                   <a
-                    href="https://www.youtube.com/watch?v=V_9TCu_21SE"
+                    href="https://www.youtube.com/watch?v=Ju41cQSe7hY"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Latent Space — Why Static Evals Become Obsolete in Production (Sep 19)
+                    Riley Brown — I Spent 100 Hours Using GPT-6 Astra
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500 text-sm font-mono mt-0.5 shrink-0">02</span>
                   <a
-                    href="https://www.youtube.com/watch?v=Sc2_LfWgHb4"
+                    href="https://www.youtube.com/watch?v=maSdsTLaMuU"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Latent Space — The $20 Agent, $200M Liability (Sep 16)
+                    Lenny's Podcast — How a handful of people built Grok Bot in 30 days
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-slate-500 text-sm font-mono mt-0.5 shrink-0">03</span>
                   <a
-                    href="https://www.youtube.com/watch?v=O8pzzIP1RyM"
+                    href="https://www.youtube.com/watch?v=uLDK4l_-gUE"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Riley Brown — Astra Built Me an Entire Product Launch (Sep 16)
+                    No Priors — Coinbase's Everything Exchange: Agentic Finance
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -342,10 +307,11 @@ export default function Pulse20260921() {
             {/* Source note */}
             <div className="mt-10 rounded-lg border border-slate-800 bg-slate-900/30 px-5 py-4 not-prose">
               <p className="text-xs text-slate-500 leading-relaxed">
-                <span className="font-medium text-slate-400">Source note:</span> 13 channels
-                scanned in parallel; 12 active channels; 26 qualifying standard uploads published
-                September 15–21, 2026. Shorts and Live content were excluded. This briefing is a
-                source pulse, not a transcript or endorsement of any video's claims.
+                <span className="font-medium text-slate-400">Source note:</span> 13 monitored
+                YouTube channels; 21 qualifying standard long-form uploads from 10 active channels;
+                scan completed September 14, 2026. Video-title claims and creator framing are
+                treated as market signals; this briefing is a source pulse, not a transcript or
+                endorsement.
               </p>
             </div>
           </div>
@@ -358,6 +324,12 @@ export default function Pulse20260921() {
             >
               <ArrowLeft className="w-4 h-4" aria-hidden="true" />
               All past issues
+            </Link>
+            <Link
+              href="/pulse/2026-09-21"
+              className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-slate-300 transition-colors"
+            >
+              Next issue →
             </Link>
           </div>
         </div>
