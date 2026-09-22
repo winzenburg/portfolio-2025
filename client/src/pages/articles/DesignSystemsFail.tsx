@@ -493,7 +493,7 @@ export default function DesignSystemsFail() {
             <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Building or Fixing a Design System?</h3>
               <p className="text-slate-300 mb-6">I've implemented this framework across multiple organizations, from startups to Fortune 500 companies. Let's discuss what makes sense for your specific scale and context.</p>
-              <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact?intent=consulting" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                   Schedule a Discovery Call →
               </Link>
             </div>

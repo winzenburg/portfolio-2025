@@ -870,7 +870,7 @@ export default function LinnyAutomationArticle() {
               Want the exact Lindy automation specs we use for waitlist nurture, DM outreach, and daily reporting? 
               I've packaged them into templates you can copy and customize for your validations.
             </p>
-            <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?intent=consulting" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get the Lindy Templates →
             </Link>
           </div>

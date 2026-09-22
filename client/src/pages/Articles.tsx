@@ -908,7 +908,7 @@ export default function Articles() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href="/contact">Get in touch</Link>
+              <Link href="/contact?intent=consulting">Get in touch</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/subscribe">Subscribe to the weekly pulse</Link>

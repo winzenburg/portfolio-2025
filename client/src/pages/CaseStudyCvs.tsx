@@ -310,7 +310,7 @@ export default function CaseStudyCvs() {
                 <Link href="/work">Back to Work</Link>
               </Button>
               <Button size="lg" asChild>
-                <Link href="/contact">Let&apos;s discuss your project</Link>
+                <Link href="/contact?intent=consulting">Let&apos;s discuss your project</Link>
               </Button>
             </div>
           </div>

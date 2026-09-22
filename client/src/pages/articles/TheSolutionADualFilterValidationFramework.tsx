@@ -471,7 +471,7 @@ export default function DualFilterValidationFrameworkArticle() {
             Have a product idea you want to run through the Dual-Filter Framework? I'm always curious to 
             see how other founders apply these concepts. Feel free to 
             <Link
-              href="/contact"
+              href="/contact?intent=consulting"
               className="text-cyan-400 underline underline-offset-2 hover:text-slate-200"
             >
               reach out

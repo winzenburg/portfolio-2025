@@ -643,7 +643,7 @@ export default function RuleConsolidation() {
             <h3 className="text-2xl font-bold text-white mb-4">Want More AI Workflow Insights?</h3>
             <p className="text-slate-300 mb-6">Get practical frameworks for building scalable AI systems that actually work in production.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact?intent=consulting" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                   Subscribe for Updates →
               </Link>
               <Link href="/articles" className="inline-block border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 font-semibold px-8 py-3 rounded-lg transition-colors">

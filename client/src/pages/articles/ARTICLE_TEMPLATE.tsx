@@ -315,7 +315,7 @@ export default function ARTICLE_TEMPLATE() {
             <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">Ready to Take Action?</h3>
               <p className="text-slate-300 mb-6">Clear call-to-action that relates to the article topic.</p>
-              <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact?intent=consulting" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                   Get in Touch →
               </Link>
             </div>

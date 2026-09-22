@@ -698,7 +698,7 @@ export default function MonetizationStrategy() {
             <p className="text-xl text-slate-300 mb-8">
               I've helped companies implement these frameworks to generate revenue from day one. Let's discuss your specific product and market.
             </p>
-            <Link href="/contact" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?intent=consulting" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors">
                 Schedule a Discovery Call →
             </Link>
           </div>

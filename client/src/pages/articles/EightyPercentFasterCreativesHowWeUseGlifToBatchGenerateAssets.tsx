@@ -674,7 +674,7 @@ export default function GlifCreativeBatchingArticle() {
           <div className="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border border-cyan-700/50 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to 10x Your Creative Output?</h3>
             <p className="text-slate-300 mb-6">Get my complete Glif workflow templates and step-by-step setup guide. Start batch-generating validation assets in under 30 minutes.</p>
-            <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2">
+            <Link href="/contact?intent=consulting" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2">
                 Get the Glif Workflow Templates
                 <ArrowRight className="w-4 h-4" />
             </Link>
