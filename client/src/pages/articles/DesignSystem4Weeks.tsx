@@ -539,27 +539,27 @@ export default function DesignSystem4Weeks() {
                 <div className="text-foreground font-semibold mb-4 uppercase text-sm tracking-wider">Where Humans Excel</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">→</span>
+                    <span className="text-blue-600">→</span>
                     <span className="text-muted-foreground">Strategic component architecture</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">→</span>
+                    <span className="text-blue-600">→</span>
                     <span className="text-muted-foreground">Design system strategy</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">→</span>
+                    <span className="text-blue-600">→</span>
                     <span className="text-muted-foreground">Quality standards</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">→</span>
+                    <span className="text-blue-600">→</span>
                     <span className="text-muted-foreground">Stakeholder alignment</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">→</span>
+                    <span className="text-blue-600">→</span>
                     <span className="text-muted-foreground">Exception handling</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">→</span>
+                    <span className="text-blue-600">→</span>
                     <span className="text-muted-foreground">Business context</span>
                   </div>
                 </div>

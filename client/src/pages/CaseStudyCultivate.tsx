@@ -74,15 +74,15 @@ const CaseStudyCultivate: React.FC = () => {
           <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-emerald-700 mb-2">25 Agents</div>
-              <div className="text-sm text-muted-foreground">Orchestrated System</div>
+              <div className="text-sm text-foreground/70">Orchestrated System</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-emerald-700 mb-2">8 Gates</div>
-              <div className="text-sm text-muted-foreground">Quality Checkpoints</div>
+              <div className="text-sm text-foreground/70">Quality Checkpoints</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-emerald-700 mb-2">16+ Ideas</div>
-              <div className="text-sm text-muted-foreground">Active Portfolio</div>
+              <div className="text-sm text-foreground/70">Active Portfolio</div>
             </div>
           </div>
         </div>
@@ -562,15 +562,15 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-emerald-700 mb-2">Production</div>
-                <div className="text-sm text-muted-foreground">Live System</div>
+                <div className="text-sm text-foreground/70">Live System</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-emerald-700 mb-2">16+ Ideas</div>
-                <div className="text-sm text-muted-foreground">Active Portfolio</div>
+                <div className="text-sm text-foreground/70">Active Portfolio</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-emerald-700 mb-2">Open Source</div>
-                <div className="text-sm text-muted-foreground">Future Vision</div>
+                <div className="text-sm text-foreground/70">Future Vision</div>
               </div>
             </div>
 

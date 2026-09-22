@@ -26,7 +26,7 @@ export default function MonetizationStrategy() {
       <article className="py-12 px-6">
         <div className="container mx-auto max-w-3xl">
           {/* Back Button */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-400 hover:text-primary transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-600 hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -74,7 +74,7 @@ export default function MonetizationStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "Monetization isn't an afterthought, it's the validation that your product solves a real problem worth paying for."
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function MonetizationStrategy() {
               The key insight behind effective pricing is understanding that you're not selling features, you're selling outcomes to different customer segments who value those outcomes differently. A solo freelancer and an enterprise team might use the exact same product, but they have fundamentally different needs, budgets, and buying processes. Treating them as a single market with one-size-fits-all pricing leaves money on the table or excludes potential customers entirely.
             </p>
 
-            <h3 className="text-2xl font-bold text-blue-400 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-blue-600 mt-8 mb-4">
               Step 1: Customer Segmentation
             </h3>
 
@@ -110,15 +110,15 @@ export default function MonetizationStrategy() {
             <div className="my-8 bg-muted/30 border border-border rounded-lg p-6">
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">→</span>
+                  <span className="text-blue-600 mt-1">→</span>
                   <span><strong className="text-foreground">Solo users:</strong> Price-sensitive, need core functionality</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">→</span>
+                  <span className="text-blue-600 mt-1">→</span>
                   <span><strong className="text-foreground">Small teams:</strong> Value collaboration, moderate budgets</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">→</span>
+                  <span className="text-blue-600 mt-1">→</span>
                   <span><strong className="text-foreground">Enterprises:</strong> Need scale, compliance, support</span>
                 </li>
               </ul>
@@ -131,25 +131,25 @@ export default function MonetizationStrategy() {
             <div className="my-8 bg-muted/30 border border-border rounded-lg p-6">
               <div className="grid md:grid-cols-2 gap-3">
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span className="text-muted-foreground">Budget ranges by segment</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span className="text-muted-foreground">Feature priorities by segment</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span className="text-muted-foreground">Support expectations</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span className="text-muted-foreground">Buying process (self-serve vs. sales)</span>
                 </div>
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-blue-400 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-blue-600 mt-8 mb-4">
               Step 2: Tier Creation
             </h3>
 
@@ -175,68 +175,68 @@ export default function MonetizationStrategy() {
                 <div className="text-muted-foreground font-semibold mb-4 uppercase text-sm tracking-wider">Free Tier (optional)</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">•</span>
+                    <span className="text-blue-600">•</span>
                     <span className="text-muted-foreground">Limited usage (e.g., 3 projects)</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">•</span>
+                    <span className="text-blue-600">•</span>
                     <span className="text-muted-foreground">Core functionality only</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">•</span>
+                    <span className="text-blue-600">•</span>
                     <span className="text-muted-foreground">Community support</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">•</span>
+                    <span className="text-blue-600">•</span>
                     <span className="text-muted-foreground">Upgrade prompts</span>
                   </div>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-border rounded-lg p-6">
-                <div className="text-blue-400 font-semibold mb-4 uppercase text-sm tracking-wider">Pro Tier (Most Popular)</div>
+                <div className="text-blue-600 font-semibold mb-4 uppercase text-sm tracking-wider">Pro Tier (Most Popular)</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-muted-foreground">Unlimited usage</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-muted-foreground">Advanced features</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-muted-foreground">Email support</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-foreground font-semibold">$29-99/month</span>
                   </div>
                 </div>
               </div>
               <div className="bg-muted/50 border border-purple-700/50 rounded-lg p-6">
-                <div className="text-purple-400 font-semibold mb-4 uppercase text-sm tracking-wider">Enterprise Tier</div>
+                <div className="text-purple-700 font-semibold mb-4 uppercase text-sm tracking-wider">Enterprise Tier</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
-                    <span className="text-purple-400">✓</span>
+                    <span className="text-purple-700">✓</span>
                     <span className="text-muted-foreground">Custom limits</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-purple-400">✓</span>
+                    <span className="text-purple-700">✓</span>
                     <span className="text-muted-foreground">White-label options</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-purple-400">✓</span>
+                    <span className="text-purple-700">✓</span>
                     <span className="text-muted-foreground">Dedicated support + SSO</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-purple-400">✓</span>
+                    <span className="text-purple-700">✓</span>
                     <span className="text-foreground font-semibold">$500-5000+/month</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-blue-400 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-blue-600 mt-8 mb-4">
               Step 3: Value-Based Pricing
             </h3>
 
@@ -259,28 +259,28 @@ export default function MonetizationStrategy() {
             <div className="my-8 bg-muted/50 border border-border rounded-lg p-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">+</span>
+                  <span className="text-blue-600 font-bold text-xl">+</span>
                   <div>
                     <div className="text-foreground font-semibold">Time saved × hourly rate</div>
                     <div className="text-muted-foreground text-sm">Productivity gains</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">+</span>
+                  <span className="text-blue-600 font-bold text-xl">+</span>
                   <div>
                     <div className="text-foreground font-semibold">Revenue enabled</div>
                     <div className="text-muted-foreground text-sm">New income streams</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">+</span>
+                  <span className="text-blue-600 font-bold text-xl">+</span>
                   <div>
                     <div className="text-foreground font-semibold">Cost avoided</div>
                     <div className="text-muted-foreground text-sm">Expenses eliminated</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">+</span>
+                  <span className="text-blue-600 font-bold text-xl">+</span>
                   <div>
                     <div className="text-foreground font-semibold">Risk reduced</div>
                     <div className="text-muted-foreground text-sm">Problems prevented</div>
@@ -296,12 +296,12 @@ export default function MonetizationStrategy() {
             {/* Value Pricing Example */}
             <div className="my-10 bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-border rounded-lg p-8">
               <div className="text-center mb-6">
-                <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Value Pricing Example</div>
+                <div className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">Value Pricing Example</div>
                 <div className="text-foreground font-semibold mb-4">Tool saves 10 hours/month at $100/hour</div>
               </div>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-1">$1,000</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-1">$1,000</div>
                   <div className="text-sm text-muted-foreground">Monthly value delivered</div>
                 </div>
                 <div className="text-center">
@@ -315,7 +315,7 @@ export default function MonetizationStrategy() {
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-blue-400 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-blue-600 mt-8 mb-4">
               Step 4: Pricing Psychology
             </h3>
 
@@ -398,12 +398,12 @@ export default function MonetizationStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "Sell before building. People voting with wallets, not words."
               </p>
             </div>
 
-            <h3 className="text-2xl font-bold text-blue-400 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-blue-600 mt-8 mb-4">
               Why It Works
             </h3>
 
@@ -426,28 +426,28 @@ export default function MonetizationStrategy() {
             <div className="my-8 bg-muted/30 border border-border rounded-lg p-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">1</span>
+                  <span className="text-blue-600 font-bold text-xl">1</span>
                   <div>
                     <div className="text-foreground font-semibold mb-1">Validates demand</div>
                     <div className="text-muted-foreground text-sm">People voting with wallets, not words</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">2</span>
+                  <span className="text-blue-600 font-bold text-xl">2</span>
                   <div>
                     <div className="text-foreground font-semibold mb-1">Generates capital</div>
                     <div className="text-muted-foreground text-sm">Fund development with revenue</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">3</span>
+                  <span className="text-blue-600 font-bold text-xl">3</span>
                   <div>
                     <div className="text-foreground font-semibold mb-1">Creates urgency</div>
                     <div className="text-muted-foreground text-sm">Limited-time offers drive action</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold text-xl">4</span>
+                  <span className="text-blue-600 font-bold text-xl">4</span>
                   <div>
                     <div className="text-foreground font-semibold mb-1">Builds advocates</div>
                     <div className="text-muted-foreground text-sm">Early buyers become evangelists</div>
@@ -456,7 +456,7 @@ export default function MonetizationStrategy() {
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-blue-400 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-blue-600 mt-8 mb-4">
               Implementation
             </h3>
 
@@ -516,7 +516,7 @@ export default function MonetizationStrategy() {
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-blue-400 mt-8 mb-4">
+            <h3 className="text-2xl font-bold text-blue-600 mt-8 mb-4">
               Success Metrics
             </h3>
 
@@ -539,7 +539,7 @@ export default function MonetizationStrategy() {
                 <div className="text-muted-foreground text-sm">Buyers validates demand</div>
               </div>
               <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-border rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">$10K-50K</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">$10K-50K</div>
                 <div className="text-muted-foreground text-sm">Funds MVP development</div>
               </div>
               <div className="bg-muted/50 border border-destructive/30 rounded-lg p-6 text-center">
@@ -565,11 +565,11 @@ export default function MonetizationStrategy() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Landing page: Visitor to buyer</span>
-                  <span className="text-blue-400 font-semibold">2-5%</span>
+                  <span className="text-blue-600 font-semibold">2-5%</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Email list: Subscriber to buyer</span>
-                  <span className="text-blue-400 font-semibold">10-20%</span>
+                  <span className="text-blue-600 font-semibold">10-20%</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Pre-sale to full price retention</span>
@@ -603,23 +603,23 @@ export default function MonetizationStrategy() {
               <div className="text-foreground font-semibold mb-4">Timeline</div>
               <div className="space-y-3 text-muted-foreground text-sm">
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">Weeks 1-2:</span>
+                  <span className="text-blue-600 font-bold">Weeks 1-2:</span>
                   <span>Validation</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">Week 3:</span>
+                  <span className="text-blue-600 font-bold">Week 3:</span>
                   <span>Pre-sale setup</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">Week 4:</span>
+                  <span className="text-blue-600 font-bold">Week 4:</span>
                   <span>Pre-sale launch</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">Weeks 5-12:</span>
+                  <span className="text-blue-600 font-bold">Weeks 5-12:</span>
                   <span>Development</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">Week 13:</span>
+                  <span className="text-blue-600 font-bold">Week 13:</span>
                   <span>Launch</span>
                 </div>
               </div>
@@ -640,16 +640,16 @@ export default function MonetizationStrategy() {
             {/* Revenue Projection */}
             <div className="my-10 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-green-900/20 border border-border rounded-lg p-8">
               <div className="text-center mb-6">
-                <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Revenue Generation</div>
+                <div className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">Revenue Generation</div>
                 <div className="text-foreground font-semibold">The Compounding Effect</div>
               </div>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400 mb-1">$10K-50K</div>
+                  <div className="text-2xl font-bold text-blue-600 mb-1">$10K-50K</div>
                   <div className="text-sm text-muted-foreground">Pre-sales</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-400 mb-1">$5K-20K</div>
+                  <div className="text-2xl font-bold text-purple-700 mb-1">$5K-20K</div>
                   <div className="text-sm text-muted-foreground">Launch month MRR</div>
                 </div>
                 <div className="text-center">
@@ -665,7 +665,7 @@ export default function MonetizationStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "Revenue funds growth. Growth drives revenue. This is the compounding effect of getting monetization right from day one."
               </p>
             </div>
@@ -680,7 +680,7 @@ export default function MonetizationStrategy() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-border">
             <p className="text-muted-foreground mb-4">What's Next?</p>
-            <Link href="/articles/scaling-strategy" className="inline-flex items-center gap-2 text-blue-400 hover:text-primary transition-colors text-lg font-semibold">
+            <Link href="/articles/scaling-strategy" className="inline-flex items-center gap-2 text-blue-600 hover:text-primary transition-colors text-lg font-semibold">
                 Read Next: Scaling Strategy - Building a Portfolio of AI-Powered Businesses
                 <ArrowRight className="w-5 h-5" />
             </Link>

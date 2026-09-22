@@ -103,7 +103,7 @@ export default function Pulse20260828() {
             {/* Signal 1 */}
             <div className="rounded-lg border border-border/50 bg-muted/40 px-6 py-5 mb-6 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-red-400 bg-red-900/30 border border-red-800/50 rounded px-2 py-0.5">
+                <span className="text-xs font-bold tracking-wider text-red-700 bg-red-50 border border-red-200 rounded px-2 py-0.5">
                   HIGH
                 </span>
                 <h3 className="text-base font-semibold text-foreground leading-snug">
@@ -111,7 +111,7 @@ export default function Pulse20260828() {
                 </h3>
               </div>
               <div className="mb-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
                   Supporting
                 </p>
                 <ul className="space-y-1.5 text-sm">
@@ -147,7 +147,7 @@ export default function Pulse20260828() {
             {/* Signal 2 */}
             <div className="rounded-lg border border-border/50 bg-muted/40 px-6 py-5 mb-6 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-red-400 bg-red-900/30 border border-red-800/50 rounded px-2 py-0.5">
+                <span className="text-xs font-bold tracking-wider text-red-700 bg-red-50 border border-red-200 rounded px-2 py-0.5">
                   HIGH
                 </span>
                 <h3 className="text-base font-semibold text-foreground leading-snug">
@@ -155,7 +155,7 @@ export default function Pulse20260828() {
                 </h3>
               </div>
               <div className="mb-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
                   Supporting
                 </p>
                 <ul className="space-y-1.5 text-sm">
@@ -187,7 +187,7 @@ export default function Pulse20260828() {
             {/* Signal 3 */}
             <div className="rounded-lg border border-border/50 bg-muted/40 px-6 py-5 mb-6 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-red-400 bg-red-900/30 border border-red-800/50 rounded px-2 py-0.5">
+                <span className="text-xs font-bold tracking-wider text-red-700 bg-red-50 border border-red-200 rounded px-2 py-0.5">
                   HIGH
                 </span>
                 <h3 className="text-base font-semibold text-foreground leading-snug">
@@ -195,7 +195,7 @@ export default function Pulse20260828() {
                 </h3>
               </div>
               <div className="mb-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
                   Supporting
                 </p>
                 <ul className="space-y-1.5 text-sm">
@@ -231,7 +231,7 @@ export default function Pulse20260828() {
             {/* Signal 4 */}
             <div className="rounded-lg border border-border/50 bg-muted/40 px-6 py-5 mb-6 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-blue-400 bg-blue-900/20 border border-blue-800/40 rounded px-2 py-0.5">
+                <span className="text-xs font-bold tracking-wider text-blue-700 bg-blue-50 border border-blue-200 rounded px-2 py-0.5">
                   MEDIUM
                 </span>
                 <h3 className="text-base font-semibold text-foreground leading-snug">
@@ -240,7 +240,7 @@ export default function Pulse20260828() {
                 </h3>
               </div>
               <div className="mb-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
                   Supporting
                 </p>
                 <ul className="space-y-1.5 text-sm">
@@ -268,7 +268,7 @@ export default function Pulse20260828() {
             {/* Signal 5 */}
             <div className="rounded-lg border border-border/50 bg-muted/40 px-6 py-5 mb-10 not-prose">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold tracking-wider text-blue-400 bg-blue-900/20 border border-blue-800/40 rounded px-2 py-0.5">
+                <span className="text-xs font-bold tracking-wider text-blue-700 bg-blue-50 border border-blue-200 rounded px-2 py-0.5">
                   MEDIUM
                 </span>
                 <h3 className="text-base font-semibold text-foreground leading-snug">
@@ -276,7 +276,7 @@ export default function Pulse20260828() {
                 </h3>
               </div>
               <div className="mb-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
                   Supporting
                 </p>
                 <ul className="space-y-1.5 text-sm">
@@ -349,7 +349,7 @@ export default function Pulse20260828() {
 
             {/* Source note */}
             <div className="mt-10 rounded-lg border border-border bg-muted/30 px-5 py-4 not-prose">
-              <p className="text-xs text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 <span className="font-medium text-muted-foreground">Source note:</span> 13 channels
                 monitored; 11 channels with qualifying uploads; 23 standard videos identified for
                 August 21–28, 2026. Shorts, clips, and livestream replays were excluded. This

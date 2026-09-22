@@ -26,7 +26,7 @@ export default function ScalingStrategy() {
       <article className="py-12 px-6">
         <div className="container mx-auto max-w-3xl">
           {/* Back Button */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-400 hover:text-primary transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-600 hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -74,7 +74,7 @@ export default function ScalingStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "Build interconnected niche businesses instead of one horizontal platform."
               </p>
             </div>
@@ -102,19 +102,19 @@ export default function ScalingStrategy() {
             <div className="my-8 bg-muted/30 border border-border rounded-lg p-6">
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">→</span>
+                  <span className="text-blue-600 mt-1">→</span>
                   <span>Diversified revenue streams protect against market volatility</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">→</span>
+                  <span className="text-blue-600 mt-1">→</span>
                   <span>Shared infrastructure reduces marginal costs dramatically</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">→</span>
+                  <span className="text-blue-600 mt-1">→</span>
                   <span>Cross-promotion turns existing users into distribution</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">→</span>
+                  <span className="text-blue-600 mt-1">→</span>
                   <span>Risk mitigation through portfolio diversification</span>
                 </li>
               </ul>
@@ -140,19 +140,19 @@ export default function ScalingStrategy() {
               <p className="text-primary font-semibold mb-4">Portfolio Example:</p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">1</span>
+                  <span className="text-blue-600 font-bold">1</span>
                   <span>Core product: AI-powered design system builder</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">2</span>
+                  <span className="text-blue-600 font-bold">2</span>
                   <span>Complementary 1: Design-to-code automation tool</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">3</span>
+                  <span className="text-blue-600 font-bold">3</span>
                   <span>Complementary 2: Design system analytics platform</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 font-bold">4</span>
+                  <span className="text-blue-600 font-bold">4</span>
                   <span>Complementary 3: Component marketplace</span>
                 </li>
               </ul>
@@ -181,43 +181,43 @@ export default function ScalingStrategy() {
             {/* Build vs Acquire Comparison */}
             <div className="my-10 grid md:grid-cols-2 gap-6">
               <div className="bg-muted/50 border border-blue-900/50 rounded-lg p-6">
-                <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4">Build When</div>
+                <div className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4">Build When</div>
                 <ul className="space-y-3 text-muted-foreground text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>Low technical complexity</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>Clear product-market fit</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>4-8 week timeline</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>Build on existing infrastructure</span>
                   </li>
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-border rounded-lg p-6">
-                <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4">Acquire When</div>
+                <div className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4">Acquire When</div>
                 <ul className="space-y-3 text-muted-foreground text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>Existing traction</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>Complementary audience</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>Faster than building</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span>Strategic positioning</span>
                   </li>
                 </ul>
@@ -261,7 +261,7 @@ export default function ScalingStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "Minimize manual operations through AI and automation. The goal: 90%+ automation across all business operations."
               </p>
             </div>
@@ -277,7 +277,7 @@ export default function ScalingStrategy() {
             {/* Automation Target Card */}
             <div className="my-10 bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-border rounded-lg p-8">
               <div className="text-center mb-6">
-                <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Automation Target</div>
+                <div className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">Automation Target</div>
                 <div className="text-5xl font-bold text-foreground mb-2">90%+</div>
                 <div className="text-muted-foreground">Of all business operations automated</div>
               </div>
@@ -294,19 +294,19 @@ export default function ScalingStrategy() {
             <div className="my-8 bg-muted/30 border border-border rounded-lg p-6">
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span>Blog posts generated from product updates and user stories</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span>Social media content created from customer wins</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span>Email campaigns triggered by behavior patterns</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-400 text-xl">•</span>
+                  <span className="text-blue-600 text-xl">•</span>
                   <span>SEO optimization running continuously</span>
                 </li>
               </ul>
@@ -365,7 +365,7 @@ export default function ScalingStrategy() {
                 <h4 className="text-foreground font-semibold mb-3 text-lg">Months 1-6: Optimize Core Product</h4>
                 <p className="text-muted-foreground mb-3 leading-relaxed">The first six months are about achieving undeniable product-market fit with your core product. You're not expanding yet. You're building the automation infrastructure that will power everything else, documenting every process so it can be replicated, and proving the unit economics work.</p>
                 <div className="flex items-start gap-2 mt-4">
-                  <span className="text-blue-400 font-bold">→</span>
+                  <span className="text-blue-600 font-bold">→</span>
                   <span className="font-semibold text-foreground">Target: $30K-100K MRR</span>
                 </div>
               </div>
@@ -374,7 +374,7 @@ export default function ScalingStrategy() {
                 <h4 className="text-foreground font-semibold mb-3 text-lg">Months 7-12: Launch Product #2</h4>
                 <p className="text-muted-foreground mb-3 leading-relaxed">Now everything you built starts paying off. Your second product sits on the same infrastructure. You're cross-selling to your existing user base, which dramatically lowers customer acquisition costs. You're expanding market reach while keeping operational overhead minimal. This is where the portfolio advantages start compounding.</p>
                 <div className="flex items-start gap-2 mt-4">
-                  <span className="text-blue-400 font-bold">→</span>
+                  <span className="text-blue-600 font-bold">→</span>
                   <span className="font-semibold text-foreground">Portfolio revenue target: $60K-200K MRR</span>
                 </div>
               </div>
@@ -383,7 +383,7 @@ export default function ScalingStrategy() {
                 <h4 className="text-foreground font-semibold mb-3 text-lg">Months 13-18: Acquire or Build Product #3</h4>
                 <p className="text-muted-foreground mb-3 leading-relaxed">By now you understand your customer deeply. You know which adjacent pain points they have. Product three fills portfolio gaps, expands your total addressable market, and creates more cross-sell opportunities. This is where you start seeing network effects across your portfolio, each product makes the others more valuable.</p>
                 <div className="flex items-start gap-2 mt-4">
-                  <span className="text-blue-400 font-bold">→</span>
+                  <span className="text-blue-600 font-bold">→</span>
                   <span className="font-semibold text-foreground">Portfolio revenue target: $100K-400K MRR</span>
                 </div>
               </div>
@@ -392,7 +392,7 @@ export default function ScalingStrategy() {
                 <h4 className="text-foreground font-semibold mb-3 text-lg">Months 19-24: Optimize and Scale</h4>
                 <p className="text-muted-foreground mb-3 leading-relaxed">The focus shifts to optimization. You're improving automation everywhere, expanding your team only where it creates genuine leverage, and making the strategic decision: do you continue building the portfolio, or do you start exploring exits for individual products or the entire portfolio?</p>
                 <div className="flex items-start gap-2 mt-4">
-                  <span className="text-blue-400 font-bold">→</span>
+                  <span className="text-blue-600 font-bold">→</span>
                   <span className="font-semibold text-foreground">Strategic inflection point</span>
                 </div>
               </div>
@@ -481,22 +481,22 @@ export default function ScalingStrategy() {
                 </div>
               </div>
               <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-border rounded-lg p-6">
-                <div className="text-blue-400 font-semibold mb-4 uppercase text-sm tracking-wider">AI-First Portfolio Approach</div>
+                <div className="text-blue-600 font-semibold mb-4 uppercase text-sm tracking-wider">AI-First Portfolio Approach</div>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-muted-foreground">Diverse revenue streams</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-muted-foreground">90%+ operational efficiency</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-muted-foreground">Compounding advantages</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-blue-400">✓</span>
+                    <span className="text-blue-600">✓</span>
                     <span className="text-muted-foreground">Strategic optionality</span>
                   </div>
                 </div>
@@ -509,7 +509,7 @@ export default function ScalingStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "The window: AI-first companies have a 2-3 year advantage. Then it becomes table stakes."
               </p>
             </div>
@@ -533,7 +533,7 @@ export default function ScalingStrategy() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-border">
             <p className="text-muted-foreground mb-4">What's Next?</p>
-            <Link href="/articles/design-system-4-weeks" className="inline-flex items-center gap-2 text-blue-400 hover:text-primary transition-colors text-lg font-semibold">
+            <Link href="/articles/design-system-4-weeks" className="inline-flex items-center gap-2 text-blue-600 hover:text-primary transition-colors text-lg font-semibold">
                 Read Next: How I Built an Enterprise Design System in 4 Weeks
                 <ArrowRight className="w-5 h-5" />
             </Link>

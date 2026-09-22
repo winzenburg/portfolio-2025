@@ -79,15 +79,15 @@ const CaseStudyComcast: React.FC = () => {
           <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-green-700 mb-2">4 weeks</div>
-              <div className="text-sm text-muted-foreground">vs. 12+ months</div>
+              <div className="text-sm text-foreground/70">vs. 12+ months</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-green-700 mb-2">~$1.03M</div>
-              <div className="text-sm text-muted-foreground">Value Created</div>
+              <div className="text-sm text-foreground/70">Value Created</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-green-700 mb-2">171K+</div>
-              <div className="text-sm text-muted-foreground">Lines of Code</div>
+              <div className="text-sm text-foreground/70">Lines of Code</div>
             </div>
           </div>
         </div>
@@ -364,24 +364,24 @@ const CaseStudyComcast: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-muted border border-border rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-green-700 mb-2">~$1.03M</div>
-              <div className="text-sm text-muted-foreground mb-3">Cost Savings</div>
-              <p className="text-xs text-muted-foreground">
+              <div className="text-sm font-medium text-foreground mb-3">Cost Savings</div>
+              <p className="text-sm text-muted-foreground">
                 Large team eliminated (84 person-months saved)
               </p>
             </div>
 
             <div className="bg-muted border border-border rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-green-700 mb-2">10x</div>
-              <div className="text-sm text-muted-foreground mb-3">Faster Prototyping</div>
-              <p className="text-xs text-muted-foreground">
+              <div className="text-sm font-medium text-foreground mb-3">Faster Prototyping</div>
+              <p className="text-sm text-muted-foreground">
                 Design team builds prototypes in hours, not days
               </p>
             </div>
 
             <div className="bg-muted border border-border rounded-lg p-6 text-center">
               <div className="text-4xl font-bold text-green-700 mb-2">Fortune 100</div>
-              <div className="text-sm text-muted-foreground mb-3">Production Use</div>
-              <p className="text-xs text-muted-foreground">
+              <div className="text-sm font-medium text-foreground mb-3">Production Use</div>
+              <p className="text-sm text-muted-foreground">
                 Actively used across multiple product lines
               </p>
             </div>

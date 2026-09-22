@@ -97,7 +97,7 @@ export default function FreshContextPerIteration() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-yellow-500/20 border border-yellow-500 flex items-center justify-center text-yellow-400 font-bold">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-amber-100 border border-amber-400 flex items-center justify-center text-amber-700 font-bold">
                     1-2h
                   </div>
                   <div>
@@ -107,7 +107,7 @@ export default function FreshContextPerIteration() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-orange-500/20 border border-orange-500 flex items-center justify-center text-orange-400 font-bold">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-orange-100 border border-orange-400 flex items-center justify-center text-orange-700 font-bold">
                     2-3h
                   </div>
                   <div>
@@ -200,7 +200,7 @@ export default function FreshContextPerIteration() {
                     <span className="text-muted-foreground">Discussion about Story 2 that's no longer relevant</span>
                   </li>
                 </ul>
-                <div className="mt-4 text-muted-foreground text-xs">Signal-to-noise ratio: Declining</div>
+                <div className="mt-4 text-muted-foreground text-sm">Signal-to-noise ratio: Declining</div>
               </div>
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
                 <div className="text-primary font-semibold mb-4">✓ Autonomous Fresh Context</div>
@@ -226,7 +226,7 @@ export default function FreshContextPerIteration() {
                     <span className="text-muted-foreground italic">Nothing else</span>
                   </li>
                 </ul>
-                <div className="mt-4 text-muted-foreground text-xs">Signal-to-noise ratio: Constant</div>
+                <div className="mt-4 text-muted-foreground text-sm">Signal-to-noise ratio: Constant</div>
               </div>
             </div>
 
@@ -253,12 +253,12 @@ export default function FreshContextPerIteration() {
 
                 <div className="bg-muted/50 border border-border rounded p-4">
                   <div className="text-foreground mb-2">Hour 2: Building Admin Settings Form</div>
-                  <p className="text-muted-foreground">Agent suggests the SAME validation pattern I rejected in Hour 1. I remind it we're using Plan B. It corrects. <span className="text-yellow-400">⚠ Minor pollution</span></p>
+                  <p className="text-muted-foreground">Agent suggests the SAME validation pattern I rejected in Hour 1. I remind it we're using Plan B. It corrects. <span className="text-amber-700">⚠ Minor pollution</span></p>
                 </div>
 
                 <div className="bg-muted/50 border border-border rounded p-4">
                   <div className="text-foreground mb-2">Hour 3: Building Account Settings Form</div>
-                  <p className="text-muted-foreground">Agent implements validation but references function names that don't exist, from our Hour 1 false start. I spend 15 minutes debugging before realizing the functions were never created. <span className="text-orange-400">⚠ Context pollution</span></p>
+                  <p className="text-muted-foreground">Agent implements validation but references function names that don't exist, from our Hour 1 false start. I spend 15 minutes debugging before realizing the functions were never created. <span className="text-orange-700">⚠ Context pollution</span></p>
                 </div>
 
                 <div className="bg-muted/50 border border-border rounded p-4">

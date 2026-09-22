@@ -101,15 +101,15 @@ const CaseStudyUndercurrent: React.FC = () => {
           <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
               <div className="text-3xl font-bold text-amber-700 mb-1">45-60</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Min Interview</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Min Interview</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
               <div className="text-3xl font-bold text-amber-700 mb-1">6</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Frameworks</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Frameworks</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
               <div className="text-3xl font-bold text-amber-700 mb-1">19</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Guided Questions</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Guided Questions</div>
             </div>
           </div>
 
@@ -156,19 +156,19 @@ const CaseStudyUndercurrent: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/01_welcome.webp`} alt="Undercurrent welcome screen" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Welcome: brand and positioning before any commitment</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Welcome: brand and positioning before any commitment</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/02_why_this_exists.webp`} alt="Why this exists screen" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">The problem statement, in the user's language</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">The problem statement, in the user's language</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/03_frameworks.webp`} alt="6 frameworks screen" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">The methodology: credibility through rigor</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">The methodology: credibility through rigor</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/04_interview_sections.webp`} alt="Interview sections overview" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">The 8-section structure: wayfinding before the journey starts</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">The 8-section structure: wayfinding before the journey starts</div>
             </div>
           </div>
 
@@ -236,11 +236,11 @@ const CaseStudyUndercurrent: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/07_interview_audio_prompt.webp`} alt="Audio prompt screen" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Voice-first: users hear each question before responding</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Voice-first: users hear each question before responding</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/12_interview_text_input.webp`} alt="Text input fallback" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">"Prefer to type instead?" gracefully degrades to text when voice isn't ideal</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">"Prefer to type instead?" gracefully degrades to text when voice isn't ideal</div>
             </div>
           </div>
 

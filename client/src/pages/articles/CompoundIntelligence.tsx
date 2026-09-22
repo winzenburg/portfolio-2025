@@ -279,11 +279,11 @@ export default function CompoundIntelligence() {
                 </div>
 
                 <div className="bg-muted/50 border border-yellow-900/30 rounded p-4">
-                  <div className="text-yellow-400 font-semibold mb-2">Build 2: Basic Context Added</div>
+                  <div className="text-amber-700 font-semibold mb-2">Build 2: Basic Context Added</div>
                   <p className="text-muted-foreground text-sm mb-2">Agent read context: "Validate on blur, not onChange". Implemented correctly.</p>
                   <p className="text-muted-foreground text-sm mb-3">Agent discovered: Async email validation caused race conditions.</p>
                   <p className="text-muted-foreground text-sm mb-2">Agent documented: "Don't use debounced async validation, race conditions on rapid typing. Use onBlur validation only."</p>
-                  <div className="text-yellow-400 text-xs">⚠ Good UX, but performance issue discovered</div>
+                  <div className="text-amber-700 text-xs">⚠ Good UX, but performance issue discovered</div>
                 </div>
 
                 <div className="bg-muted/50 border border-cyan-900/30 rounded p-4">
@@ -461,17 +461,17 @@ export default function CompoundIntelligence() {
               <div className="bg-primary/8 border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">60%</div>
                 <div className="text-muted-foreground text-sm">Reduction in agent onboarding time</div>
-                <div className="text-muted-foreground text-xs mt-2">From 2 hours to 45 minutes</div>
+                <div className="text-muted-foreground text-sm mt-2">From 2 hours to 45 minutes</div>
               </div>
               <div className="bg-primary/8 border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">45%</div>
                 <div className="text-muted-foreground text-sm">Fewer mistakes repeated</div>
-                <div className="text-muted-foreground text-xs mt-2">Pitfalls documented once, avoided forever</div>
+                <div className="text-muted-foreground text-sm mt-2">Pitfalls documented once, avoided forever</div>
               </div>
               <div className="bg-primary/8 border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">30%</div>
                 <div className="text-muted-foreground text-sm">Faster implementation time</div>
-                <div className="text-muted-foreground text-xs mt-2">Agents reference patterns, don't reinvent</div>
+                <div className="text-muted-foreground text-sm mt-2">Agents reference patterns, don't reinvent</div>
               </div>
             </div>
 

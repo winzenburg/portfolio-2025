@@ -101,18 +101,18 @@ const CaseStudyWinzinvest: React.FC = () => {
           <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
               <div className="text-3xl font-bold text-primary mb-1">2.16</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Sharpe Ratio</div>
-              <div className="text-xs text-muted-foreground mt-1">5-year backtest</div>
+              <div className="text-sm font-semibold text-foreground uppercase tracking-wider">Sharpe Ratio</div>
+              <div className="text-sm text-foreground/70 mt-1">5-year backtest</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
               <div className="text-3xl font-bold text-primary mb-1">3.5%</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Options Income</div>
-              <div className="text-xs text-muted-foreground mt-1">Annualized floor</div>
+              <div className="text-sm font-semibold text-foreground uppercase tracking-wider">Options Income</div>
+              <div className="text-sm text-foreground/70 mt-1">Annualized floor</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
               <div className="text-3xl font-bold text-primary mb-1">17</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Risk Gates</div>
-              <div className="text-xs text-muted-foreground mt-1">On every order</div>
+              <div className="text-sm font-semibold text-foreground uppercase tracking-wider">Risk Gates</div>
+              <div className="text-sm text-foreground/70 mt-1">On every order</div>
             </div>
           </div>
 
@@ -198,19 +198,19 @@ const CaseStudyWinzinvest: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-border/50">
               <img loading="lazy" src={IMG('02_dashboard_equity_curve.webp')} alt="Equity curve" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Equity curve and portfolio-level performance metrics</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Equity curve and portfolio-level performance metrics</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-border/50">
               <img loading="lazy" src={IMG('06_dashboard_performance.webp')} alt="Performance tab" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Performance tab with detailed return attribution</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Performance tab with detailed return attribution</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-border/50">
               <img loading="lazy" src={IMG('04_dashboard_portfolio.webp')} alt="Portfolio tab" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Portfolio tab: open positions with real-time P&L</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Portfolio tab: open positions with real-time P&L</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-border/50">
               <img loading="lazy" src={IMG('05_dashboard_risk.webp')} alt="Risk tab" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Risk tab: exposure limits and gate status</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Risk tab: exposure limits and gate status</div>
             </div>
           </div>
         </section>
@@ -312,11 +312,11 @@ const CaseStudyWinzinvest: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-border/50">
               <img loading="lazy" src={IMG('12_performance_track_record.webp')} alt="Performance track record" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Full execution history with verified backtest results</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Full execution history with verified backtest results</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-border/50">
               <img loading="lazy" src={IMG('13_platform.webp')} alt="Platform overview" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Platform overview page for advisor onboarding</div>
+              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Platform overview page for advisor onboarding</div>
             </div>
           </div>
 

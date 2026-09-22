@@ -467,7 +467,7 @@ Users should only see projects for organizations they're members of.`}
                   <span>Claude chat: Via browser extension</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-yellow-400">~</span>
+                  <span className="text-amber-700">~</span>
                   <span>VS Code with Copilot: Limited (via extensions)</span>
                 </li>
               </ul>

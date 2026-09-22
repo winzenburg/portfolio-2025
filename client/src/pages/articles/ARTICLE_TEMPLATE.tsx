@@ -174,7 +174,7 @@ export default function ARTICLE_TEMPLATE() {
                 <div className="text-muted-foreground text-sm">Success metric</div>
               </div>
               <div className="bg-muted/50 border border-blue-900/50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">4-6x</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">4-6x</div>
                 <div className="text-muted-foreground text-sm">ROI or improvement</div>
               </div>
             </div>

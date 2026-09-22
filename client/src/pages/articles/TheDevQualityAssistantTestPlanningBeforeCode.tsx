@@ -584,7 +584,7 @@ export default function DevQualityAssistant() {
             {/* Results Grid */}
             <div className="my-10 grid md:grid-cols-3 gap-6">
               <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-border rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">18</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">18</div>
                 <div className="text-muted-foreground text-sm">dev quality plans created</div>
               </div>
               <div className="bg-gradient-to-br from-cyan-900/20 to-green-900/20 border border-primary/20 rounded-lg p-6 text-center">
@@ -592,7 +592,7 @@ export default function DevQualityAssistant() {
                 <div className="text-muted-foreground text-sm">edge cases caught during planning</div>
               </div>
               <div className="bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-700/50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">0</div>
+                <div className="text-3xl font-bold text-purple-700 mb-2">0</div>
                 <div className="text-muted-foreground text-sm">features shipped without test coverage</div>
               </div>
             </div>

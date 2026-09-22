@@ -163,12 +163,12 @@ export default function AutonomousAICoding() {
               <div className="bg-muted/50 border border-destructive/30 rounded-lg p-6 text-center">
                 <div className="text-3xl font-bold text-destructive mb-2">40+ hours</div>
                 <div className="text-muted-foreground text-sm">Traditional manual coding</div>
-                <div className="text-muted-foreground text-xs mt-2">(Your active time)</div>
+                <div className="text-muted-foreground text-sm mt-2">(Your active time)</div>
               </div>
               <div className="bg-primary/8 border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-3xl font-bold text-primary mb-2">~2 hours</div>
                 <div className="text-muted-foreground text-sm font-semibold">Autonomous AI coding</div>
-                <div className="text-muted-foreground text-xs mt-2">(Your active time: PRD + testing)</div>
+                <div className="text-muted-foreground text-sm mt-2">(Your active time: PRD + testing)</div>
               </div>
             </div>
 

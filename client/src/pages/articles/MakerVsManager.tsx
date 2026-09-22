@@ -94,7 +94,7 @@ export default function MakerVsManager() {
                   <div>• Deep thinking and problem-solving</div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-border">
-                  <div className="text-muted-foreground text-xs">Requires uninterrupted blocks of 60-180 minutes</div>
+                  <div className="text-muted-foreground text-sm">Requires uninterrupted blocks of 60-180 minutes</div>
                 </div>
               </div>
               <div className="bg-muted/30 border border-border rounded-lg p-6">
@@ -107,7 +107,7 @@ export default function MakerVsManager() {
                   <div>• Context switching</div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-border">
-                  <div className="text-muted-foreground text-xs">Can happen in 30-minute increments throughout the day</div>
+                  <div className="text-muted-foreground text-sm">Can happen in 30-minute increments throughout the day</div>
                 </div>
               </div>
             </div>

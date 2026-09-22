@@ -56,15 +56,10 @@ const CaseStudyKinlet: React.FC = () => {
           alt="Kinlet Landing Page"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
-        <div 
-          className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-indigo-900/40 to-violet-900/40"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%)',
-          }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="inline-block px-4 py-2 bg-purple-500/20 border border-purple-500/30 rounded-full mb-6">
-            <span className="text-purple-400 text-sm font-medium">Hero Project · 2026</span>
+            <span className="text-purple-700 text-sm font-medium">Hero Project · 2026</span>
           </div>
           <div className="flex items-center justify-center gap-4 mb-6">
             <img loading="lazy" 
@@ -83,16 +78,16 @@ const CaseStudyKinlet: React.FC = () => {
           {/* Key Metrics */}
           <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
-              <div className="text-3xl font-bold text-purple-400 mb-2">30 days</div>
-              <div className="text-sm text-muted-foreground">Idea → Live MVP</div>
+              <div className="text-3xl font-bold text-purple-700 mb-2">30 days</div>
+              <div className="text-sm text-foreground/70">Idea → Live MVP</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
-              <div className="text-3xl font-bold text-purple-400 mb-2">Solo</div>
-              <div className="text-sm text-muted-foreground">Full-Stack + AI</div>
+              <div className="text-3xl font-bold text-purple-700 mb-2">Solo</div>
+              <div className="text-sm text-foreground/70">Full-Stack + AI</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
-              <div className="text-3xl font-bold text-purple-400 mb-2">18</div>
-              <div className="text-sm text-muted-foreground">DB Migrations</div>
+              <div className="text-3xl font-bold text-purple-700 mb-2">18</div>
+              <div className="text-sm text-foreground/70">DB Migrations</div>
             </div>
           </div>
         </div>
@@ -122,7 +117,7 @@ const CaseStudyKinlet: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Solution: Kinlet</h2>
           
           <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6 mb-8">
-            <h3 className="text-xl font-bold mb-3 text-purple-400">What is Kinlet?</h3>
+            <h3 className="text-xl font-bold mb-3 text-purple-700">What is Kinlet?</h3>
             <p className="text-muted-foreground leading-relaxed">
               Kinlet is a private peer support platform that connects dementia caregivers in small, AI-matched groups of 4-6 people facing similar challenges. It combines intelligent matching algorithms with AI-assisted content moderation and a 15-minute daily check-in ritual, delivering safe, meaningful connection that fits into a caregiver's chaotic schedule.
             </p>
@@ -142,19 +137,19 @@ const CaseStudyKinlet: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h4 className="text-lg font-bold mb-3 text-purple-400">Precise Matching</h4>
+              <h4 className="text-lg font-bold mb-3 text-purple-700">Precise Matching</h4>
               <p className="text-muted-foreground text-sm">
                 AI analyzes caregiver situations (relationship type, dementia stage, specific challenges) to create micro-groups where everyone actually "gets it", no random strangers
               </p>
             </div>
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h4 className="text-lg font-bold mb-3 text-purple-400">AI Safety Layer</h4>
+              <h4 className="text-lg font-bold mb-3 text-purple-700">AI Safety Layer</h4>
               <p className="text-muted-foreground text-sm">
                 Real-time content moderation catches medical misinformation, crisis signals, and harassment before they escalate, keeping conversations safe without heavy human oversight
               </p>
             </div>
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h4 className="text-lg font-bold mb-3 text-purple-400">Daily Ritual</h4>
+              <h4 className="text-lg font-bold mb-3 text-purple-700">Daily Ritual</h4>
               <p className="text-muted-foreground text-sm">
                 15-minute structured check-ins provide consistent connection without overwhelming caregivers who already have no time
               </p>
@@ -186,40 +181,40 @@ const CaseStudyKinlet: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {/* User-Facing Features */}
             <div className="bg-muted border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-4 text-purple-400">Caregiver Experience</h3>
+              <h3 className="text-xl font-bold mb-4 text-purple-700">Caregiver Experience</h3>
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>5-Step Onboarding:</strong> Relationship type, dementia stage, care duration, challenges, availability
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>AI Matching:</strong> Compatibility scoring based on 8+ factors (19%-73% range)
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Group Messaging:</strong> Real-time chat with reactions, replies, threading
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Profile Management:</strong> Update challenges, availability, preferences
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Email Notifications:</strong> Group invites, new messages, activity summaries
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Crisis Resources:</strong> 988 Suicide & Crisis Lifeline, Alzheimer's Association 24/7 hotline
                   </div>
@@ -229,40 +224,40 @@ const CaseStudyKinlet: React.FC = () => {
 
             {/* Admin Tools */}
             <div className="bg-muted border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-4 text-purple-400">Admin Tools</h3>
+              <h3 className="text-xl font-bold mb-4 text-purple-700">Admin Tools</h3>
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Matching Dashboard:</strong> Sort by join date, relationship, dementia stage with live compatibility scores
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Group Analytics:</strong> Message volume, response times, participation rates, peak activity times
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Profile Management:</strong> View, edit, and manage all caregiver profiles
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Moderation Queue:</strong> Flag content, review reports, manage violations
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Waitlist Management:</strong> Send invites, track referrals, manage confirmations
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">✓</span>
+                  <span className="text-purple-700 mt-1">✓</span>
                   <div>
                     <strong>Email Templates:</strong> Automated group invites, reminders, digests
                   </div>
@@ -330,19 +325,19 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               <div className="bg-muted rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-amber-700">6 hrs</div>
-                <div className="text-xs text-muted-foreground">Build Time</div>
+                <div className="text-sm text-muted-foreground">Build Time</div>
               </div>
               <div className="bg-muted rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-amber-700">80%+</div>
-                <div className="text-xs text-muted-foreground">Response Rate Target</div>
+                <div className="text-sm text-muted-foreground">Response Rate Target</div>
               </div>
               <div className="bg-muted rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-amber-700">&lt;5%</div>
-                <div className="text-xs text-muted-foreground">Unanswered Messages</div>
+                <div className="text-sm text-muted-foreground">Unanswered Messages</div>
               </div>
               <div className="bg-muted rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-amber-700">90%+</div>
-                <div className="text-xs text-muted-foreground">Week 3 Retention Goal</div>
+                <div className="text-sm text-muted-foreground">Week 3 Retention Goal</div>
               </div>
             </div>
 
@@ -358,7 +353,7 @@ const CaseStudyKinlet: React.FC = () => {
                     <p className="text-sm text-muted-foreground mb-2">
                       9 research-validated tags (🌅 Sundowning, 🔁 Repetitive questions, 😔 Grief day, 💼 Work/life balance, etc.) make support <em>specific</em>, not generic. Target: 60%+ tag usage.
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       <strong>Why it matters:</strong> Caregivers need support for specific struggles, not "I'm having a hard day."
                     </p>
                   </div>
@@ -375,7 +370,7 @@ const CaseStudyKinlet: React.FC = () => {
                     <p className="text-sm text-muted-foreground mb-2">
                       Mood tracking with 3 options: ✨ Small win! 🎉, 💪 Hanging in there, 😔 Having a hard day. Prevents doom spiral by balancing 70% hard days with 15-20% small wins.
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       <strong>Why it matters:</strong> All doom = unsustainable. Celebrating small moments is crucial for sustainable caregiving.
                     </p>
                   </div>
@@ -392,7 +387,7 @@ const CaseStudyKinlet: React.FC = () => {
                     <p className="text-sm text-muted-foreground mb-2">
                       Contextual response suggestions based on tags and mood. Example for Sundowning: "The 4pm-8pm window is brutal. I know exactly what you mean." Increases response rate from ~40% → 80%+.
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       <strong>Why it matters:</strong> People want to help but don't know what to say. Prompts model peer-level validation ("I've been there") not platitudes ("Hang in there!").
                     </p>
                   </div>
@@ -409,7 +404,7 @@ const CaseStudyKinlet: React.FC = () => {
                     <p className="text-sm text-muted-foreground mb-2">
                       Client-side detection of messages with 0 reactions after 2 hours. Alert banner: "Someone could use some support." Ensures &lt;5% of messages go unanswered.
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       <strong>Why it matters:</strong> Isolation is the #1 risk factor for caregivers. Feeling ignored defeats the entire purpose of peer support.
                     </p>
                   </div>
@@ -426,7 +421,7 @@ const CaseStudyKinlet: React.FC = () => {
                     <p className="text-sm text-muted-foreground mb-2">
                       Mood pattern analysis triggers self-care nudges after 7 consecutive "hard days" or 14 days without a small win. Links to respite care, self-care tips, and 24/7 helpline.
                     </p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       <strong>Why it matters:</strong> Caregiver burnout is the #1 risk. Peer support + self-care resources = sustainable caregiving.
                     </p>
                   </div>
@@ -456,10 +451,10 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-muted border border-purple-500/30 rounded-lg p-6">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                  <span className="text-purple-400 font-bold text-xl">1</span>
+                  <span className="text-purple-700 font-bold text-xl">1</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2 text-purple-400">Week 1: Foundation (Sprint 0)</h3>
+                  <h3 className="text-xl font-bold mb-2 text-purple-700">Week 1: Foundation (Sprint 0)</h3>
                   <p className="text-muted-foreground mb-3">
                     Product strategy, technical architecture, landing page, waitlist functionality, brand identity, legal docs (privacy/terms), and deployment infrastructure. Launched validation campaign and started collecting caregiver signups.
                   </p>
@@ -474,10 +469,10 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-muted border border-purple-500/30 rounded-lg p-6">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                  <span className="text-purple-400 font-bold text-xl">2-4</span>
+                  <span className="text-purple-700 font-bold text-xl">2-4</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2 text-purple-400">Weeks 2-4: MVP Build (Phase 2)</h3>
+                  <h3 className="text-xl font-bold mb-2 text-purple-700">Weeks 2-4: MVP Build (Phase 2)</h3>
                   <p className="text-muted-foreground mb-3">
                     Built complete product: 5-step onboarding wizard, AI-powered matching algorithm with compatibility scoring, group messaging with reactions and threading, admin dashboard with analytics (message volume, participation, peak times), profile management, moderation queue, automated email notifications, and cron jobs for digests and reminders.
                   </p>
@@ -514,88 +509,88 @@ const CaseStudyKinlet: React.FC = () => {
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-4 text-purple-400">Frontend & Framework</h3>
+              <h3 className="text-lg font-bold mb-4 text-purple-700">Frontend & Framework</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Next.js 15 (App Router)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>TypeScript (strict mode)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Tailwind CSS v4</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>React 18</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-4 text-purple-400">Backend & Data</h3>
+              <h3 className="text-lg font-bold mb-4 text-purple-700">Backend & Data</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Supabase (PostgreSQL)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Drizzle ORM</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>tRPC for type-safe APIs</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Zod for validation</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-4 text-purple-400">AI & Intelligence</h3>
+              <h3 className="text-lg font-bold mb-4 text-purple-700">AI & Intelligence</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Anthropic Claude Sonnet 4</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>AI matching algorithm</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Real-time content moderation</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Crisis signal detection</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-4 text-purple-400">Infrastructure & Tools</h3>
+              <h3 className="text-lg font-bold mb-4 text-purple-700">Infrastructure & Tools</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Vercel (hosting + CI/CD)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Clerk (authentication)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>PostHog (analytics)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-purple-400 mt-1">•</span>
+                  <span className="text-purple-700 mt-1">•</span>
                   <span>Resend (transactional email)</span>
                 </li>
               </ul>
@@ -607,20 +602,20 @@ const CaseStudyKinlet: React.FC = () => {
             <h3 className="text-lg font-bold mb-4">AI-Augmented Development Process</h3>
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-400 text-sm font-bold">✓</div>
-                <span><strong className="text-purple-400">Claude + Cursor:</strong> Primary development environment with AI pair programming</span>
+                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-700 text-sm font-bold">✓</div>
+                <span><strong className="text-purple-700">Claude + Cursor:</strong> Primary development environment with AI pair programming</span>
               </div>
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-400 text-sm font-bold">✓</div>
-                <span><strong className="text-purple-400">Strategic Oversight:</strong> Human-driven architecture decisions, ethical boundaries, UX strategy</span>
+                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-700 text-sm font-bold">✓</div>
+                <span><strong className="text-purple-700">Strategic Oversight:</strong> Human-driven architecture decisions, ethical boundaries, UX strategy</span>
               </div>
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-400 text-sm font-bold">✓</div>
-                <span><strong className="text-purple-400">AI Execution:</strong> Boilerplate code, type definitions, documentation, test scenarios</span>
+                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-700 text-sm font-bold">✓</div>
+                <span><strong className="text-purple-700">AI Execution:</strong> Boilerplate code, type definitions, documentation, test scenarios</span>
               </div>
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-400 text-sm font-bold">✓</div>
-                <span><strong className="text-purple-400">Quality Gates:</strong> Type safety (zero `any` types), accessibility compliance, security best practices</span>
+                <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-700 text-sm font-bold">✓</div>
+                <span><strong className="text-purple-700">Quality Gates:</strong> Type safety (zero `any` types), accessibility compliance, security best practices</span>
               </div>
             </div>
           </div>
@@ -638,7 +633,7 @@ const CaseStudyKinlet: React.FC = () => {
 
           <div className="space-y-6">
             <div className="bg-muted border-l-4 border-purple-500 rounded-r-lg p-6">
-              <h3 className="text-lg font-bold mb-2 text-purple-400">AI Matching That Respects Context</h3>
+              <h3 className="text-lg font-bold mb-2 text-purple-700">AI Matching That Respects Context</h3>
               <p className="text-muted-foreground mb-3">
                 The matching algorithm understands nuanced differences instead of grouping people randomly: an adult child caring for a parent faces different challenges than a spouse in 24/7 care. Early-stage dementia has different needs than late-stage. The AI creates groups where people actually understand each other's context.
               </p>
@@ -649,7 +644,7 @@ const CaseStudyKinlet: React.FC = () => {
 
             {/* Brand Identity Section */}
             <div className="bg-muted border-l-4 border-purple-500 rounded-r-lg p-6">
-              <h3 className="text-lg font-bold mb-2 text-purple-400">Brand Identity Design</h3>
+              <h3 className="text-lg font-bold mb-2 text-purple-700">Brand Identity Design</h3>
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
                   <img loading="lazy" 
@@ -670,7 +665,7 @@ const CaseStudyKinlet: React.FC = () => {
             </div>
 
             <div className="bg-muted border-l-4 border-purple-500 rounded-r-lg p-6">
-              <h3 className="text-lg font-bold mb-2 text-purple-400">Content Moderation With Empathy</h3>
+              <h3 className="text-lg font-bold mb-2 text-purple-700">Content Moderation With Empathy</h3>
               <p className="text-muted-foreground mb-3">
                 The AI moderation system doesn't just flag violations, it understands context. Someone sharing they're "at the end of their rope" isn't necessarily in crisis, but if combined with other signals (isolation, sleep deprivation, specific language patterns), the AI can escalate to human review. This enables safety without the false positives that make automated moderation feel oppressive.
               </p>
@@ -680,7 +675,7 @@ const CaseStudyKinlet: React.FC = () => {
             </div>
 
             <div className="bg-muted border-l-4 border-purple-500 rounded-r-lg p-6">
-              <h3 className="text-lg font-bold mb-2 text-purple-400">Clear Non-Medical Boundaries</h3>
+              <h3 className="text-lg font-bold mb-2 text-purple-700">Clear Non-Medical Boundaries</h3>
               <p className="text-muted-foreground mb-3">
                 From the first screen, Kinlet makes clear what it is and isn't. It's peer support, not therapy. It's emotional connection, not medical advice. The AI moderation actively catches and flags when users drift into giving medical recommendations, gently redirecting to "sharing my experience" language instead.
               </p>
@@ -690,7 +685,7 @@ const CaseStudyKinlet: React.FC = () => {
             </div>
 
             <div className="bg-muted border-l-4 border-purple-500 rounded-r-lg p-6">
-              <h3 className="text-lg font-bold mb-2 text-purple-400">Privacy-First Architecture</h3>
+              <h3 className="text-lg font-bold mb-2 text-purple-700">Privacy-First Architecture</h3>
               <p className="text-muted-foreground">
                 Groups are private by default. No public profiles. No searchable history. Caregivers share deeply personal struggles, the platform architecture respects that vulnerability. AI processing happens in real-time and doesn't create persistent analysis profiles that could be breached or misused.
               </p>
@@ -704,28 +699,28 @@ const CaseStudyKinlet: React.FC = () => {
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-3 text-purple-400">Full-Stack AI-Native Development</h3>
+              <h3 className="text-lg font-bold mb-3 text-purple-700">Full-Stack AI-Native Development</h3>
               <p className="text-muted-foreground text-sm">
                 I can build production-ready SaaS products from scratch as a solo founder, from product strategy and UX design to full-stack development and AI integration. This isn't prototyping, it's shipping.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-3 text-purple-400">Product Thinking + Technical Execution</h3>
+              <h3 className="text-lg font-bold mb-3 text-purple-700">Product Thinking + Technical Execution</h3>
               <p className="text-muted-foreground text-sm">
                 Kinlet demonstrates both strategic product vision (jobs-to-be-done, persona development, validation methodology) and technical execution (clean architecture, type safety, scalable infrastructure). I bridge the designer-developer gap.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-3 text-purple-400">Ethical AI Integration</h3>
+              <h3 className="text-lg font-bold mb-3 text-purple-700">Ethical AI Integration</h3>
               <p className="text-muted-foreground text-sm">
                 AI isn't magic, it's a tool that requires careful implementation. Kinlet shows how to use AI for matching and moderation in sensitive contexts while maintaining human oversight, clear boundaries, and user trust.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-3 text-purple-400">Speed Without Sacrifice</h3>
+              <h3 className="text-lg font-bold mb-3 text-purple-700">Speed Without Sacrifice</h3>
               <p className="text-muted-foreground text-sm">
                 5 days from idea to production doesn't mean cutting corners. The codebase has zero `any` types, comprehensive documentation, proper validation schemas, and production-grade infrastructure. Speed through smart tooling, not technical debt.
               </p>
@@ -733,7 +728,7 @@ const CaseStudyKinlet: React.FC = () => {
           </div>
 
           <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-bold mb-3 text-purple-400">The Bigger Picture</h3>
+            <h3 className="text-lg font-bold mb-3 text-purple-700">The Bigger Picture</h3>
             <p className="text-muted-foreground leading-relaxed mb-3">
               Kinlet is proof that the economics of software have fundamentally shifted, beyond being a case study in AI-augmented development. What used to require a team of specialists and months of runway can now be accomplished by a designer-developer with product vision and AI fluency.
             </p>
@@ -751,19 +746,19 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="grid md:grid-cols-4 gap-6 mb-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-700 mb-2">Live MVP</div>
-                <div className="text-sm text-muted-foreground">Production Active</div>
+                <div className="text-sm text-foreground/70">Production Active</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">50%</div>
-                <div className="text-sm text-muted-foreground">Active Participation</div>
+                <div className="text-3xl font-bold text-purple-700 mb-2">50%</div>
+                <div className="text-sm text-foreground/70">Active Participation</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">19-73%</div>
-                <div className="text-sm text-muted-foreground">Match Scores</div>
+                <div className="text-3xl font-bold text-purple-700 mb-2">19-73%</div>
+                <div className="text-sm text-foreground/70">Match Scores</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">5h</div>
-                <div className="text-sm text-muted-foreground">Avg Response Time</div>
+                <div className="text-3xl font-bold text-purple-700 mb-2">5h</div>
+                <div className="text-sm text-foreground/70">Avg Response Time</div>
               </div>
             </div>
 
@@ -772,16 +767,16 @@ const CaseStudyKinlet: React.FC = () => {
                 <strong className="text-green-700">Live MVP:</strong> Full platform is live and actively being used. Caregivers are onboarding, groups are being matched, messages are flowing daily, and analytics show healthy engagement patterns.
               </p>
               <p>
-                <strong className="text-purple-400">Technical Achievement:</strong> Built a production-grade SaaS platform with AI matching, real-time messaging, admin tools, analytics dashboards, automated emails, and moderation, all in 30 days as a solo founder.
+                <strong className="text-purple-700">Technical Achievement:</strong> Built a production-grade SaaS platform with AI matching, real-time messaging, admin tools, analytics dashboards, automated emails, and moderation, all in 30 days as a solo founder.
               </p>
               <p>
-                <strong className="text-purple-400">Open Source Framework:</strong> The entire codebase, workflow, and system architecture is available on GitHub. Every pattern, integration, and AI workflow is documented and replicable.
+                <strong className="text-purple-700">Open Source Framework:</strong> The entire codebase, workflow, and system architecture is available on GitHub. Every pattern, integration, and AI workflow is documented and replicable.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div className="bg-muted rounded-lg p-4">
-                <div className="text-sm font-semibold text-purple-400 mb-2">Next Phase: Intelligence & Automation</div>
+                <div className="text-sm font-semibold text-purple-700 mb-2">Next Phase: Intelligence & Automation</div>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• AI affinity monitoring (detect struggling caregivers)</li>
                   <li>• AI-powered matching (automate group creation)</li>
@@ -790,7 +785,7 @@ const CaseStudyKinlet: React.FC = () => {
                 </ul>
               </div>
               <div className="bg-muted rounded-lg p-4">
-                <div className="text-sm font-semibold text-purple-400 mb-2">Future: Ritual & Rhythm</div>
+                <div className="text-sm font-semibold text-purple-700 mb-2">Future: Ritual & Rhythm</div>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Guided daily check-ins (15-minute ritual)</li>
                   <li>• Weekly group themes (structured connection)</li>
@@ -805,7 +800,7 @@ const CaseStudyKinlet: React.FC = () => {
                 href="https://kinlet.care"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors font-semibold text-lg"
+                className="inline-flex items-center gap-2 text-purple-700 hover:text-purple-300 transition-colors font-semibold text-lg"
               >
                 View Live Platform →
               </a>
@@ -813,7 +808,7 @@ const CaseStudyKinlet: React.FC = () => {
                 href="https://github.com/winzenburg/SaaS-Starter/tree/main/apps/caregiver"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors font-semibold text-lg"
+                className="inline-flex items-center gap-2 text-purple-700 hover:text-purple-300 transition-colors font-semibold text-lg"
               >
                 View on GitHub →
               </a>

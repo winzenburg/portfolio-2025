@@ -165,7 +165,7 @@ export default function DualFilterValidationFrameworkArticle() {
           products people "loved" but wouldn't pay for. Don't be me.
         </p>
 
-        <div className="bg-muted/50 border-l-4 border-yellow-500 px-6 pt-4 pb-5 my-8">
+        <div className="bg-muted/50 border-l-4 border-amber-400 px-6 pt-4 pb-5 my-8">
           <p className="font-semibold text-yellow-900">Real Talk:</p>
           <p className="text-primary">
             If you can't get at least 10 people to prepay $99 for your idea, you probably don't have 

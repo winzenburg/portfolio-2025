@@ -167,7 +167,7 @@ export default function AICodingEconomics() {
                 <div className="flex justify-between items-start pt-2">
                   <div>
                     <div className="text-foreground font-bold">Your Active Time</div>
-                    <div className="text-muted-foreground text-xs">*Agent time doesn't count</div>
+                    <div className="text-muted-foreground text-sm">*Agent time doesn't count</div>
                   </div>
                   <div className="text-primary font-bold text-xl">1.75 hours</div>
                 </div>

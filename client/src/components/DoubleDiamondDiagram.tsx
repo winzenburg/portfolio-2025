@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 export type PhaseName = "Discover" | "Define" | "Develop" | "Deliver";
 
 interface PhaseAccent {
-  /** Paints SVG fill/stroke through `currentColor`. */
+  /** Class applied to the polygon SVG element. Uses text-* so fill="currentColor" picks it up. */
   svg: string;
   text: string;
   border: string;
@@ -12,9 +12,10 @@ interface PhaseAccent {
 }
 
 /**
- * One accent per Double Diamond phase, shared by the diagram and the phase
- * sections so colour means the same thing in both places. Ramp uses saturated
- * mid-tones that meet WCAG AA on the paper canvas (light background).
+ * One accent per Double Diamond phase. Uses dark mid-tones that pass WCAG AA
+ * on the paper canvas. All SVG text uses fill="currentColor" + a text-* class
+ * so the computed color is always respected, avoiding fill-* class ambiguity
+ * in SVG rendering.
  */
 export const PHASE_ACCENT: Record<PhaseName, PhaseAccent> = {
   Discover: {
@@ -49,7 +50,6 @@ export const PHASE_ACCENT: Record<PhaseName, PhaseAccent> = {
 
 interface PhaseGeometry {
   name: PhaseName;
-  /** Triangle wedge inside one of the two diamonds. */
   wedge: string;
   labelX: number;
   mode: "Diverge" | "Converge";
@@ -77,14 +77,28 @@ interface DoubleDiamondDiagramProps {
   className?: string;
 }
 
+/**
+ * Double Diamond process diagram styled for the light studio.
+ *
+ * SVG text approach: every <text> uses fill="currentColor" + a text-* Tailwind
+ * class.  This is the standard pattern for SVG colour in React/Tailwind — the
+ * text-* class sets CSS `color`, currentColor picks it up as `fill`.  Avoid
+ * fill-* utilities on SVG text: they emit `fill:` via CSS which works, but
+ * specificity fights with browser default SVG fill.
+ *
+ * All labels that must be readable at small sizes (PROBLEM / SOLUTION / mode)
+ * use text-foreground (full ink) for maximum contrast.  Phase name labels use
+ * their accent colour.
+ */
 export default function DoubleDiamondDiagram({
   className,
 }: DoubleDiamondDiagramProps) {
   return (
     <figure className={cn("m-0", className)}>
+      {/* Panel: bg-card gives a very slight warm separation from the page bg */}
       <div className="rounded-2xl border border-border bg-card p-5 md:p-7">
         <svg
-          viewBox="0 0 560 300"
+          viewBox="0 0 560 310"
           role="img"
           aria-labelledby="double-diamond-title double-diamond-desc"
           className="h-auto w-full"
@@ -92,34 +106,43 @@ export default function DoubleDiamondDiagram({
           <title id="double-diamond-title">The Double Diamond</title>
           <desc id="double-diamond-desc">
             Two diamonds side by side. The first covers the problem space and
-            splits into Discover, which diverges, then Define, which converges.
-            The second covers the solution space and splits into Develop, which
-            diverges, then Deliver, which converges.
+            splits into Discover (diverge) then Define (converge). The second
+            covers the solution space: Develop (diverge) then Deliver (converge).
           </desc>
 
-          {/* horizontal centre-line */}
+          {/*
+           * PROBLEM / SOLUTION header labels — full ink, not muted.
+           * fill="currentColor" + text-foreground ensures the CSS color variable
+           * is respected even when SVG user-agent stylesheet sets fill:black.
+           */}
+          <g
+            fontSize="10"
+            letterSpacing="2.5"
+            textAnchor="middle"
+            fontWeight="600"
+          >
+            <text x="135" y="18" fill="currentColor" className="text-foreground">
+              PROBLEM
+            </text>
+            <text x="425" y="18" fill="currentColor" className="text-foreground">
+              SOLUTION
+            </text>
+          </g>
+
+          {/* Horizontal centre-line — muted-foreground stroke is readable */}
           <line
             x1="8"
-            y1="150"
+            y1="155"
             x2="552"
-            y2="150"
+            y2="155"
             stroke="currentColor"
             strokeWidth="1"
-            strokeDasharray="2 7"
-            className="text-border"
-          />
-
-          {/* The neck between the two diamonds: problem handed to solution. */}
-          <path
-            d="M252 150 H305 M299 145.5 L305 150 L299 154.5"
-            stroke="currentColor"
-            strokeWidth="1.25"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            strokeDasharray="3 8"
             className="text-muted-foreground"
+            strokeOpacity="0.5"
           />
 
+          {/* Phase wedge fills */}
           {PHASES.map((phase) => (
             <polygon
               key={phase.name}
@@ -128,56 +151,60 @@ export default function DoubleDiamondDiagram({
               fill="currentColor"
               fillOpacity="0.12"
               stroke="currentColor"
-              strokeOpacity="0.5"
-              strokeWidth="1.25"
+              strokeOpacity="0.6"
+              strokeWidth="1.5"
               strokeLinejoin="round"
             />
           ))}
 
+          {/* Vertex dots */}
           {VERTICES.map(([cx, cy]) => (
             <circle
               key={`${cx}-${cy}`}
               cx={cx}
               cy={cy}
-              r="2.5"
+              r="3"
               fill="currentColor"
-              className="text-muted-foreground"
+              className="text-foreground"
+              fillOpacity="0.5"
             />
           ))}
 
-          {/* PROBLEM / SOLUTION labels */}
-          <g
-            className="fill-muted-foreground"
-            fontSize="10.5"
-            letterSpacing="2.4"
-            textAnchor="middle"
-          >
-            <text x="135" y="30">
-              PROBLEM
-            </text>
-            <text x="425" y="30">
-              SOLUTION
-            </text>
-          </g>
+          {/* Neck arrow between the two diamonds */}
+          <path
+            d="M252 155 H305 M299 150.5 L305 155 L299 159.5"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-foreground"
+            strokeOpacity="0.4"
+          />
 
+          {/* Phase name labels + mode (DIVERGE / CONVERGE) */}
           {PHASES.map((phase) => (
             <g key={phase.name} textAnchor="middle">
+              {/* Phase name — coloured accent */}
               <text
                 x={phase.labelX}
-                y="273"
-                fontSize="16"
-                fontWeight="500"
+                y="278"
+                fontSize="15"
+                fontWeight="600"
                 fill="currentColor"
                 className={PHASE_ACCENT[phase.name].svg}
               >
                 {phase.name}
               </text>
+              {/* Mode label — full ink so it's readable at tiny size */}
               <text
                 x={phase.labelX}
-                y="291"
+                y="296"
                 fontSize="9"
-                letterSpacing="1.8"
-                className="fill-muted-foreground"
+                letterSpacing="1.6"
+                fill="currentColor"
+                className="text-foreground"
+                fillOpacity="0.5"
               >
                 {phase.mode.toUpperCase()}
               </text>
@@ -185,6 +212,7 @@ export default function DoubleDiamondDiagram({
           ))}
         </svg>
       </div>
+
       <figcaption className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
         Discover and Define find the right problem. Develop and Deliver find the
         right solution. Teams run methods in parallel and go back upstream when

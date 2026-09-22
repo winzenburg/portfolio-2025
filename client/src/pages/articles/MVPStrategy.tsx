@@ -26,7 +26,7 @@ export default function MVPStrategy() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Button */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-400 hover:text-primary transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-blue-600 hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -66,7 +66,7 @@ export default function MVPStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "Ship the minimum that creates genuine value. Make it so good people can't help but share it."
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function MVPStrategy() {
 
             {/* Pull Quote */}
             <div className="my-10 pl-6 border-l-4 border-blue-500">
-              <p className="text-xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-xl text-blue-600 font-semibold italic leading-relaxed">
                 "Don't build 10 mediocre features. Build 1 exceptional feature."
               </p>
             </div>
@@ -140,15 +140,15 @@ export default function MVPStrategy() {
             {/* Time Metrics */}
             <div className="my-10 grid md:grid-cols-3 gap-6">
               <div className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-border rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">&lt; 2 min</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">&lt; 2 min</div>
                 <div className="text-muted-foreground text-sm font-semibold">Onboarding time</div>
               </div>
               <div className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-border rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">&lt; 5 min</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">&lt; 5 min</div>
                 <div className="text-muted-foreground text-sm font-semibold">Time to value</div>
               </div>
               <div className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-border rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">Zero</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">Zero</div>
                 <div className="text-muted-foreground text-sm font-semibold">Learning curve</div>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function MVPStrategy() {
 
             {/* Pull Quote */}
             <div className="my-10 pl-6 border-l-4 border-blue-500">
-              <p className="text-xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-xl text-blue-600 font-semibold italic leading-relaxed">
                 "Measure everything. Iterate based on data, not opinions."
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function MVPStrategy() {
             {/* Growth Stats */}
             <div className="my-10 bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-border rounded-lg p-8">
               <div className="text-center">
-                <div className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">The Data Shows</div>
+                <div className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">The Data Shows</div>
                 <div className="text-4xl font-bold text-foreground mb-2">3-5x Faster</div>
                 <div className="text-muted-foreground">Products with built-in sharing grow faster than those without</div>
               </div>
@@ -299,7 +299,7 @@ export default function MVPStrategy() {
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-blue-500">
-              <p className="text-2xl text-blue-400 font-semibold italic leading-relaxed">
+              <p className="text-2xl text-blue-600 font-semibold italic leading-relaxed">
                 "Perfect is the enemy of shipped. Launch imperfect, iterate based on real usage."
               </p>
             </div>
@@ -382,7 +382,7 @@ export default function MVPStrategy() {
           {/* Next Article */}
           <div className="mt-16 pt-8 border-t border-border">
             <p className="text-muted-foreground mb-4">What's Next?</p>
-            <Link href="/articles/monetization-strategy" className="inline-flex items-center gap-2 text-blue-400 hover:text-primary transition-colors text-lg font-semibold">
+            <Link href="/articles/monetization-strategy" className="inline-flex items-center gap-2 text-blue-600 hover:text-primary transition-colors text-lg font-semibold">
                 Read Next: Monetization Strategy - How to Generate Revenue from Day One
                 <ArrowRight className="w-5 h-5" />
             </Link>

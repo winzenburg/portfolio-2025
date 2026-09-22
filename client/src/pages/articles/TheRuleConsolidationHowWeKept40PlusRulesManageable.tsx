@@ -141,11 +141,11 @@ export default function RuleConsolidation() {
                 <p className="text-muted-foreground text-sm">Always-on constraints that gate every phase. Accessibility standards, testing requirements, document quality. These never get ignored.</p>
               </div>
               <div className="bg-muted/30 border border-border rounded-lg p-6">
-                <h4 className="font-semibold text-blue-400 mb-2">Stack & Integrations (100-199)</h4>
+                <h4 className="font-semibold text-blue-600 mb-2">Stack & Integrations (100-199)</h4>
                 <p className="text-muted-foreground text-sm">Technology conventions that activate only when a specific agent is working. Next.js patterns, Drizzle schemas, tRPC conventions.</p>
               </div>
               <div className="bg-muted/30 border border-purple-700/50 rounded-lg p-6">
-                <h4 className="font-semibold text-purple-400 mb-2">Playbooks (200-260)</h4>
+                <h4 className="font-semibold text-purple-700 mb-2">Playbooks (200-260)</h4>
                 <p className="text-muted-foreground text-sm">Step-by-step workflows with explicit handoffs. How-to guides that orchestrate multiple agents in sequence.</p>
               </div>
               <div className="bg-muted/30 border border-border rounded-lg p-6">
@@ -547,22 +547,22 @@ export default function RuleConsolidation() {
 
             {/* Hidden Costs */}
             <div className="my-8 bg-muted/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5">
-              <h3 className="text-lg font-semibold text-yellow-400 mb-3">The Hidden Costs</h3>
+              <h3 className="text-lg font-semibold text-amber-700 mb-3">The Hidden Costs</h3>
               <ul className="space-y-2 text-primary">
                 <li className="flex items-start gap-3">
-                  <span className="text-yellow-400 mt-1">•</span>
+                  <span className="text-amber-700 mt-1">•</span>
                   <span><strong className="text-foreground">Upfront Investment:</strong> 40 hours of focused work, not trivial</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-yellow-400 mt-1">•</span>
+                  <span className="text-amber-700 mt-1">•</span>
                   <span><strong className="text-foreground">Requires Discipline:</strong> System only works if people follow the checklist</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-yellow-400 mt-1">•</span>
+                  <span className="text-amber-700 mt-1">•</span>
                   <span><strong className="text-foreground">Anchor Complexity:</strong> Big files with sections mean agents need to know which section to read</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-yellow-400 mt-1">•</span>
+                  <span className="text-amber-700 mt-1">•</span>
                   <span><strong className="text-foreground">Regular Maintenance:</strong> Matrix needs periodic review every 3-6 months</span>
                 </li>
               </ul>
