@@ -24,6 +24,21 @@ export const allPulseIssues: PulseIssue[] = [
     centralSignal:
       "The agent layer is becoming the business layer—but the durable advantage is controlled operating design.",
   },
+  {
+    slug: "2026-09-14",
+    title: "Weekly AI Founder Pulse — Week of September 14, 2026",
+    weekOf: "2026-09-14",
+    publishedAt: "2026-09-14",
+    centralSignal: "The agent layer is becoming the operating layer.",
+  },
+  {
+    slug: "2026-08-28",
+    title: "Weekly AI Founder Pulse — Week of August 28, 2026",
+    weekOf: "2026-08-28",
+    publishedAt: "2026-08-28",
+    centralSignal:
+      "The market is shifting from prompt-driven AI to agentic work that can act across interfaces, execute defined workflows, and produce monetizable outcomes.",
+  },
 ];
 
 export function getPulseIssue(slug: string): PulseIssue | undefined {
