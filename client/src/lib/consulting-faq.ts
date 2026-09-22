@@ -45,7 +45,7 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
       {
         question: "How do we start?",
         answer:
-          "A 30-minute call. Bring the problem, not a brief. I will tell you what I would do first, whether or not you hire me. If there is a fit, you get a scoped proposal with a fixed price and dates within three business days.",
+          "A 30-minute call. Bring the problem, not a brief. I will tell you what I would do first. If there is a fit, you get a scoped proposal with a fixed price and dates within three business days.",
       },
       {
         question: "Do you work alone?",

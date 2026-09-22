@@ -229,7 +229,7 @@ export default function Contact() {
     intent === "role"
       ? "Contact Ryan Winzenburg about Head of Design Operations, VP/Director of Design, and Principal Design Technologist roles."
       : intent === "consulting"
-        ? "Book a 30-minute consultation with Ryan Winzenburg. Product research, strategy, and implementation-ready design. Scoped proposal within three business days."
+        ? "Book a 30-minute call with Ryan Winzenburg. Tell me what you're about to fund and what's still uncertain. Scoped proposal within three business days if there's a fit."
         : "Contact Ryan Winzenburg about design operations leadership, AI workflow architecture, design systems, and scoped engagements.";
 
   return (
@@ -326,7 +326,7 @@ export default function Contact() {
                     </h3>
                     <p className="mt-2 max-w-md leading-relaxed text-muted-foreground">
                       {intent === "consulting" ? (
-                        <>Thanks — I&apos;ll reply and we&apos;ll find a 30-minute slot.</>
+                        <>Thanks. I&apos;ll reply and we&apos;ll find a 30-minute slot.</>
                       ) : (
                         <>
                           Thanks for reaching out. I&apos;ll get back to you

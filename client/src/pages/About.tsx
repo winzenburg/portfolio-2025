@@ -231,7 +231,7 @@ export default function About() {
       <Section tone="muted" labelledBy="capabilities-heading">
         <SectionHeading
           id="capabilities-heading"
-          eyebrow="What does Ryan Winzenburg do?"
+          eyebrow="Capabilities"
           title="Three capabilities, rarely one at a time"
           lede="Enterprise B2B product experience runs on all three. Most engagements start in one and end up somewhere else."
         />
@@ -280,7 +280,7 @@ export default function About() {
       <Section labelledBy="background-heading">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
-            <Eyebrow className="mb-4">Who is Ryan Winzenburg?</Eyebrow>
+            <Eyebrow className="mb-4">Background</Eyebrow>
             <SectionTitle id="background-heading">The short version</SectionTitle>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground lg:col-span-7 lg:col-start-6">
@@ -307,7 +307,7 @@ export default function About() {
       <Section tone="slate" labelledBy="ventures-heading">
         <SectionHeading
           id="ventures-heading"
-          eyebrow="What has Ryan Winzenburg founded?"
+          eyebrow="Ventures"
           title="Active ventures"
           lede="Each one is a separate product with its own site. This page records the founder relationship, not product marketing."
         />
@@ -366,7 +366,7 @@ export default function About() {
       <Section labelledBy="writing-heading">
         <SectionHeading
           id="writing-heading"
-          eyebrow="Where does Ryan Winzenburg publish?"
+          eyebrow="Writing"
           title="Selected writing"
           lede="First-person pieces that carry most of the thinking behind the work above."
           trailing={
@@ -509,12 +509,11 @@ export default function About() {
       <Section labelledBy="about-cta-heading">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle id="about-cta-heading" className="md:text-4xl">
-            Working through a complex B2B product experience problem?
+            Product bet you need to pressure-test?
           </SectionTitle>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            If your product organization is dealing with a hard experience,
-            operating model, or AI adoption challenge, I&apos;d like to hear
-            what you&apos;re working on, even if it&apos;s exploratory.
+            Tell me what you&apos;re working on. If it&apos;s the kind of
+            problem I work on, I&apos;ll say so.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>

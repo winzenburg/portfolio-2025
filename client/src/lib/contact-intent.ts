@@ -94,7 +94,7 @@ export function contactPathCopy(intent: ContactIntent | null): ContactPathCopy {
     return {
       title: "Book a 30-minute consultation",
       description:
-        "Tell me what you are trying to ship and what is still uncertain. I will tell you what I would do first, whether or not we work together. If there is a fit, you will have a scoped proposal within three business days.",
+        "Tell me what you are trying to ship and what is still uncertain. I will tell you what I would do first. If there is a fit, you will have a scoped proposal within three business days.",
       formHeading: "About the work",
       messageLabel: "What are you trying to ship, and what makes it uncertain?",
       messagePlaceholder:
