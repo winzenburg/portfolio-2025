@@ -390,9 +390,15 @@ export default function Services() {
         }
         footnote={
           <>
-            Twenty-five years of enterprise product experience across
-            healthcare, financial services, telecom, and technology. Previously
-            design leadership at CVS/Aetna and Comcast.
+            <span className="block">
+              Form reaches me directly. I reply and we schedule — no calendar
+              link on the site yet.
+            </span>
+            <span className="mt-2 block">
+              Twenty-five years of enterprise product experience across
+              healthcare, financial services, telecom, and technology.
+              Previously design leadership at CVS/Aetna and Comcast.
+            </span>
             <span className="mt-2 block">
               Hiring for a leadership role instead?{" "}
               <Link
@@ -624,6 +630,10 @@ export default function Services() {
             </Link>
           }
         />
+        <p className="mb-8 text-sm leading-relaxed text-slate-400">
+          No public testimonials on this site by choice — selected work and
+          engagement shape are the proof until clients agree to be named.
+        </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {SELECTED_WORK.map((item, index) => (
             <Reveal key={item.name} delay={index * 60} className="h-full">
@@ -870,6 +880,10 @@ export default function Services() {
                 <Link href={consultingHref}>Book a 30-minute call</Link>
               </Button>
             </div>
+            <p className="mt-3 text-sm leading-relaxed text-slate-400 lg:text-right">
+              Form reaches me directly. I reply and we schedule — no calendar
+              link on the site yet.
+            </p>
             <p className="mt-6 text-sm leading-relaxed text-slate-400 lg:text-right">
               Prefer email?{" "}
               <a

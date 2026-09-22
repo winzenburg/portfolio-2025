@@ -325,9 +325,15 @@ export default function Contact() {
                       Message sent
                     </h3>
                     <p className="mt-2 max-w-md leading-relaxed text-slate-300">
-                      Thanks for reaching out. I&apos;ll get back to you within
-                      24 hours. If it&apos;s urgent, {EMAIL_ADDRESS} reaches me
-                      faster.
+                      {intent === "consulting" ? (
+                        <>Thanks — I&apos;ll reply and we&apos;ll find a 30-minute slot.</>
+                      ) : (
+                        <>
+                          Thanks for reaching out. I&apos;ll get back to you
+                          within 24 hours. If it&apos;s urgent, {EMAIL_ADDRESS}{" "}
+                          reaches me faster.
+                        </>
+                      )}
                     </p>
                     <Button
                       type="button"
