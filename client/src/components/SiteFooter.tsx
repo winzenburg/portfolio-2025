@@ -7,7 +7,7 @@ const { person, organization } = brandFacts;
 interface FooterLink {
   label: string;
   href: string;
-  /** Leaves the SPA, so it renders as a plain anchor. */
+  /** Renders as a plain anchor (leaves the SPA). */
   external?: boolean;
 }
 
@@ -16,14 +16,20 @@ interface FooterColumn {
   links: FooterLink[];
 }
 
+/**
+ * Footer IA:
+ *   Work column  — case studies, consulting, assessment, methodology (demoted from primary nav)
+ *   Writing      — articles, resources, weekly pulse / subscribe
+ *   Connect      — about, contact, gallery (demoted from primary nav)
+ */
 const COLUMNS: FooterColumn[] = [
   {
     heading: "Work",
     links: [
       { label: "Case studies", href: "/work" },
-      { label: "Methodology", href: "/methodology" },
       { label: "Consulting", href: "/consulting" },
-      { label: "UX maturity assessment", href: "/assessment" },
+      { label: "UX assessment", href: "/assessment" },
+      { label: "Methodology", href: "/methodology" },
     ],
   },
   {
@@ -31,11 +37,11 @@ const COLUMNS: FooterColumn[] = [
     links: [
       { label: "Articles", href: "/articles" },
       { label: "Resources", href: "/resources" },
-      { label: "Weekly pulse", href: "/subscribe" },
+      { label: "Weekly Pulse", href: "/subscribe" },
     ],
   },
   {
-    heading: "More",
+    heading: "Connect",
     links: [
       { label: "About", href: "/about" },
       { label: "Contact", href: "/contact" },
@@ -44,7 +50,7 @@ const COLUMNS: FooterColumn[] = [
   },
 ];
 
-/** Same set the About page exposes, kept here so agents find them from any page. */
+/** Machine-readable files — surfaced for agents and crawlers. */
 const MACHINE_FILES: FooterLink[] = [
   { label: "llms.txt", href: "/llms.txt", external: true },
   { label: "brand-facts.json", href: "/brand-facts.json", external: true },
@@ -75,35 +81,40 @@ function socialKeyFromUrl(url: string): keyof typeof SOCIAL_ICONS | null {
 
 /**
  * Site-wide footer. Rendered once from App so every route ends somewhere
- * instead of dead-ending, including the case studies and article pages that
+ * rather than dead-ending — including case studies and article pages that
  * mount their own chrome.
  */
 export default function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border/60 bg-slate-950/60">
-      <div className="container py-16 md:py-20">
+    <footer className="border-t border-border bg-muted/40">
+      <div className="container py-14 md:py-18">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-5">
+
+          {/* Brand column */}
+          <div className="lg:col-span-4">
             <Link
               href="/"
-              className="group inline-flex items-center gap-3 transition-opacity hover:opacity-90"
+              className="group inline-flex items-center gap-2.5 transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
             >
               <span
                 aria-hidden="true"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/40 bg-primary/10 font-['Playfair_Display'] text-base font-semibold text-primary"
+                className="flex h-8 w-8 items-center justify-center rounded border border-primary/30 font-display text-sm font-semibold text-primary"
               >
                 RW
               </span>
-              <span className="text-lg font-semibold text-white">
+              <span className="font-display text-base font-semibold tracking-tight text-foreground">
                 {person.legalName}
               </span>
             </Link>
-            <p className="mt-6 max-w-sm leading-relaxed text-slate-400">
+
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
               {organization.description}
             </p>
-            <ul className="mt-7 flex items-center gap-3">
+
+            {/* Social icons */}
+            <ul className="mt-6 flex items-center gap-2">
               {person.sameAs.map((url) => {
                 const key = socialKeyFromUrl(url);
                 const social = key ? SOCIAL_ICONS[key] : null;
@@ -113,11 +124,11 @@ export default function SiteFooter() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex h-9 w-9 items-center justify-center rounded-lg border border-border/60 text-slate-400 transition-colors hover:border-primary/50 hover:text-primary"
+                      className="flex h-8 w-8 items-center justify-center rounded border border-border text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     >
                       {social ? (
                         <svg
-                          className="h-4 w-4"
+                          className="h-3.5 w-3.5"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
@@ -125,7 +136,7 @@ export default function SiteFooter() {
                           <path d={social.path} />
                         </svg>
                       ) : (
-                        <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                        <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
                       )}
                       <span className="sr-only">
                         {social?.label ?? url.replace(/^https?:\/\//, "")}
@@ -137,21 +148,22 @@ export default function SiteFooter() {
             </ul>
           </div>
 
+          {/* Link columns */}
           <nav
             aria-label="Footer"
-            className="grid gap-10 sm:grid-cols-3 lg:col-span-6 lg:col-start-7 lg:gap-8"
+            className="grid gap-8 sm:grid-cols-3 lg:col-span-7 lg:col-start-6 lg:gap-6"
           >
             {COLUMNS.map((column) => (
               <div key={column.heading}>
-                <h2 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+                <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                   {column.heading}
                 </h2>
-                <ul className="space-y-3">
+                <ul className="space-y-2.5">
                   {column.links.map((link) => (
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className="text-sm text-slate-300 transition-colors hover:text-primary"
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                       >
                         {link.label}
                       </Link>
@@ -163,17 +175,18 @@ export default function SiteFooter() {
           </nav>
         </div>
 
-        <div className="mt-14 flex flex-col gap-5 border-t border-border/60 pt-8 md:flex-row md:items-center md:justify-between">
-          <p className="text-sm text-slate-400">
+        {/* Bottom bar */}
+        <div className="mt-12 flex flex-col gap-4 border-t border-border pt-6 md:flex-row md:items-center md:justify-between">
+          <p className="text-xs text-muted-foreground">
             © {year} {person.legalName} · {person.location.addressLocality},{" "}
             {person.location.addressRegion}
           </p>
-          <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <ul className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
             {MACHINE_FILES.map((file) => (
               <li key={file.href}>
                 <a
                   href={file.href}
-                  className="text-xs text-slate-400 transition-colors hover:text-primary"
+                  className="text-xs text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {file.label}
                 </a>

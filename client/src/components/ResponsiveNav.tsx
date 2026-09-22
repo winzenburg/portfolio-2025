@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface ResponsiveNavProps {
@@ -14,19 +13,32 @@ interface NavItem {
   href: string;
   /** `currentPage` values that should light this item up. */
   matches: string[];
+  /** Render with primary accent color when idle (Contact CTA treatment). */
+  accent?: boolean;
 }
 
+/**
+ * Approved IA (locked):
+ *   Work · Consulting · Writing · About · Contact
+ *
+ * Demoted to footer: Methodology, Gallery, Resources, Brand Hub.
+ * Writing maps to /articles; Consulting maps to /consulting (Services page).
+ */
 const NAV_ITEMS: NavItem[] = [
   { label: "Work", href: "/work", matches: ["work"] },
-  { label: "Methodology", href: "/methodology", matches: ["methodology"] },
-  { label: "About", href: "/about", matches: ["about"] },
   {
     label: "Consulting",
     href: "/consulting",
     matches: ["services", "consulting", "assessment"],
   },
-  { label: "Articles", href: "/articles", matches: ["articles"] },
-  { label: "Resources", href: "/resources", matches: ["resources"] },
+  { label: "Writing", href: "/articles", matches: ["articles", "resources"] },
+  { label: "About", href: "/about", matches: ["about"] },
+  {
+    label: "Contact",
+    href: "/contact",
+    matches: ["contact"],
+    accent: true,
+  },
 ];
 
 export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
@@ -35,9 +47,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
   const [location] = useLocation();
   const headerRef = useRef<HTMLElement>(null);
 
-  // Publish the header height as --nav-height so any page can offset its own
-  // sticky chrome with top-[var(--nav-height)] instead of measuring the DOM or
-  // hard-coding a value that is wrong at one breakpoint.
+  // Publish header height as --nav-height so pages can offset sticky chrome.
   useEffect(() => {
     const header = headerRef.current;
     if (!header) return;
@@ -59,7 +69,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
     return () => observer.disconnect();
   }, []);
 
-  // Close the mobile menu when the route changes, so it never survives a jump.
+  // Close mobile menu on route change.
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location]);
@@ -80,30 +90,32 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
       className={cn(
         "sticky top-0 z-50 border-b transition-colors duration-200",
         isScrolled
-          ? "border-border/60 bg-background/95 backdrop-blur-xl"
-          : "border-border/40 bg-background",
+          ? "border-border bg-background/95 backdrop-blur-sm"
+          : "border-border/60 bg-background",
       )}
     >
       <div className="container py-4 md:py-5">
         <nav className="flex items-center justify-between" aria-label="Primary">
+          {/* Wordmark */}
           <Link
             href="/"
-            className="group inline-flex items-center gap-3 rounded-md transition-opacity hover:opacity-90"
+            className="group inline-flex items-center gap-2.5 rounded-sm transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             aria-label={`Ryan Winzenburg, home${currentPage === "home" ? " (current page)" : ""}`}
             aria-current={currentPage === "home" ? "page" : undefined}
           >
             <span
               aria-hidden="true"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-primary/40 bg-primary/10 font-['Playfair_Display'] text-sm font-semibold text-primary transition-colors group-hover:border-primary/70"
+              className="flex h-8 w-8 items-center justify-center rounded border border-primary/30 font-display text-sm font-semibold text-primary"
             >
               RW
             </span>
-            <span className="text-lg font-semibold tracking-tight text-white md:text-xl">
+            <span className="font-display text-base font-semibold tracking-tight text-foreground md:text-lg">
               Ryan Winzenburg
             </span>
           </Link>
 
-          <div className="hidden items-center gap-1 md:flex">
+          {/* Desktop nav */}
+          <div className="hidden items-center gap-0.5 md:flex">
             {NAV_ITEMS.map((item) => {
               const active = isActive(item);
               return (
@@ -112,53 +124,56 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "relative rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                    "relative rounded-sm px-3 py-2 text-sm font-medium transition-colors",
+                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1",
                     active
-                      ? "text-white"
-                      : "text-slate-400 hover:text-white",
+                      ? "text-foreground"
+                      : item.accent
+                        ? "text-primary hover:text-primary/80"
+                        : "text-muted-foreground hover:text-foreground",
                   )}
                 >
                   {item.label}
+                  {/* Active underline — ink-blue rule */}
                   <span
                     aria-hidden="true"
                     className={cn(
-                      "absolute inset-x-3 -bottom-px h-0.5 rounded-full bg-primary transition-opacity",
+                      "absolute inset-x-3 -bottom-px h-px rounded-full bg-primary transition-opacity",
                       active ? "opacity-100" : "opacity-0",
                     )}
                   />
                 </Link>
               );
             })}
-            <Button className="ml-4" asChild>
-              <Link
-                href="/contact"
-                aria-current={currentPage === "contact" ? "page" : undefined}
-              >
-                Contact
-              </Link>
-            </Button>
           </div>
 
+          {/* Mobile toggle */}
           <button
             type="button"
             onClick={() => setIsMenuOpen((open) => !open)}
-            className="rounded-lg p-2 text-slate-300 transition-colors hover:bg-muted hover:text-white focus-visible:ring-[3px] focus-visible:ring-ring/50 md:hidden"
+            className={cn(
+              "rounded-sm p-2 text-muted-foreground transition-colors",
+              "hover:bg-muted hover:text-foreground",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+              "md:hidden",
+            )}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6" aria-hidden="true" />
+              <X className="h-5 w-5" aria-hidden="true" />
             ) : (
-              <Menu className="h-6 w-6" aria-hidden="true" />
+              <Menu className="h-5 w-5" aria-hidden="true" />
             )}
           </button>
         </nav>
 
+        {/* Mobile menu */}
         {isMenuOpen ? (
           <div
             id="mobile-menu"
-            className="mt-4 border-t border-border/60 pt-4 md:hidden"
+            className="mt-3 border-t border-border/60 pt-3 pb-2 md:hidden"
           >
             <ul className="flex flex-col">
               {NAV_ITEMS.map((item) => {
@@ -169,14 +184,19 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                       href={item.href}
                       aria-current={active ? "page" : undefined}
                       className={cn(
-                        "flex items-center gap-3 rounded-md px-1 py-3 text-base font-medium transition-colors",
-                        active ? "text-white" : "text-slate-300 hover:text-white",
+                        "flex items-center gap-3 rounded-sm px-1 py-3 text-base font-medium transition-colors",
+                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                        active
+                          ? "text-foreground"
+                          : item.accent
+                            ? "text-primary"
+                            : "text-muted-foreground hover:text-foreground",
                       )}
                     >
                       <span
                         aria-hidden="true"
                         className={cn(
-                          "h-4 w-0.5 rounded-full transition-colors",
+                          "h-4 w-px rounded-full transition-colors",
                           active ? "bg-primary" : "bg-transparent",
                         )}
                       />
@@ -186,14 +206,6 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                 );
               })}
             </ul>
-            <Button className="mt-4 w-full" asChild>
-              <Link
-                href="/contact"
-                aria-current={currentPage === "contact" ? "page" : undefined}
-              >
-                Contact
-              </Link>
-            </Button>
           </div>
         ) : null}
       </div>
