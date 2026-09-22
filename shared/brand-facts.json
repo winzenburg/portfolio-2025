@@ -1,6 +1,6 @@
 {
   "$schema_note": "Canonical identity facts for winzenburg.com GEO. Keep identical to LinkedIn. No invented metrics. Ventures are entity stubs that link OUT to product sites. Canonical Brand Hub URL is /about.",
-  "updated": "2026-09-20",
+  "updated": "2026-09-22",
   "person": {
     "legalName": "Ryan Winzenburg",
     "url": "https://winzenburg.com",
@@ -44,7 +44,7 @@
     "name": "Ryan Winzenburg",
     "type": "ProfessionalService",
     "url": "https://winzenburg.com",
-    "description": "Product experience leadership for enterprise B2B — product operating model, design systems, and AI-enabled execution."
+    "description": "Product experience leadership for enterprise B2B: product operating model, design systems, and AI-enabled execution."
   },
   "ventures": [
     {
@@ -119,7 +119,7 @@
     {
       "title": "Consulting",
       "url": "https://winzenburg.com/consulting",
-      "note": "Product UX consulting for product leaders. /services is an alias."
+      "note": "Primary commercial route. For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated: validated product direction, reduced build risk, an executable path. /services is an alias."
     },
     {
       "title": "UX maturity assessment",

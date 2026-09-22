@@ -63,18 +63,18 @@ export const STATIC_PAGES = [
   },
   {
     path: "/consulting",
-    title: "Consulting | Product UX Research, Strategy, and Delivery | Ryan Winzenburg",
+    title: "Consulting | Validate the Product Direction Before You Fund the Build | Ryan Winzenburg",
     description:
-      "Turn uncertain customer problems into experiences your team can actually build. Research, product strategy, prototyping, testing, and delivery. Engagements start at $8,000.",
+      "For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated. Evidence behind the decision, a scope with explicit cuts, and a path engineering can build.",
     ogImage: "/images/services-hero.webp",
     changefreq: "monthly",
-    priority: "0.8",
+    priority: "0.9",
   },
   {
     path: "/services",
-    title: "Consulting | Product UX Research, Strategy, and Delivery | Ryan Winzenburg",
+    title: "Consulting | Validate the Product Direction Before You Fund the Build | Ryan Winzenburg",
     description:
-      "Turn uncertain customer problems into experiences your team can actually build. Research, product strategy, prototyping, testing, and delivery. Engagements start at $8,000.",
+      "For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated. Evidence behind the decision, a scope with explicit cuts, and a path engineering can build.",
     ogImage: "/images/services-hero.webp",
     changefreq: "monthly",
     priority: "0.6",

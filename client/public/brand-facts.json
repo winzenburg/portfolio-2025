@@ -1,37 +1,37 @@
 {
   "$schema_note": "Canonical identity facts for winzenburg.com GEO. Keep identical to LinkedIn. No invented metrics. Ventures are entity stubs that link OUT to product sites. Canonical Brand Hub URL is /about.",
-  "updated": "2026-08-12",
+  "updated": "2026-09-22",
   "person": {
     "legalName": "Ryan Winzenburg",
     "url": "https://winzenburg.com",
     "brandHubUrl": "https://winzenburg.com/about",
     "@id": "https://winzenburg.com/#ryan-winzenburg",
-    "jobTitle": "Design Operations Leader & AI Workflow Architect",
+    "jobTitle": "Product Experience Leader, Enterprise B2B",
     "linkedInHeadline": "Founder of Winzinvest (Rules-based trade execution software for RIAs), Casimir Systems, Kinlet.care, and Foundpath.",
-    "shortBio": "Design leader with 25 years designing enterprise products across healthcare, financial services, telecom, and technology. Founder of Winzinvest and Casimir Systems.",
+    "shortBio": "Product experience leader with 25 years designing enterprise B2B systems across healthcare, financial services, telecom, and technology. Founder of Winzinvest, Casimir Systems, and Foundpath.",
     "location": {
       "addressLocality": "Wheat Ridge",
       "addressRegion": "CO",
       "addressCountry": "US"
     },
     "experienceYears": 25,
-    "experienceSummary": "25 years designing enterprise products across healthcare, financial services, telecom, and technology (Comcast, CVS Health, Life Time Fitness, and others).",
+    "experienceSummary": "25 years designing enterprise B2B products across healthcare, financial services, telecom, and technology (Comcast, CVS Health, Life Time Fitness, and others).",
     "roles": [
-      "Design Operations Leader",
-      "AI Workflow Architect",
+      "Product Experience Leader",
+      "Product Operating Model",
+      "AI-enabled Execution",
       "Founder",
-      "Principal Investigator",
-      "User Experience AI Lead"
+      "Principal Investigator"
     ],
     "knowsAbout": [
+      "Product Experience Leadership",
+      "Enterprise B2B Product Design",
+      "Product Operating Model",
       "Design Operations",
-      "DesignOps",
       "AI-Augmented Design",
-      "AI Workflow Architecture",
       "Design Systems",
-      "UX Leadership",
-      "Product Design",
-      "Design Team Scaling",
+      "UX Strategy",
+      "Cross-functional Leadership",
       "Enterprise Design"
     ],
     "sameAs": [
@@ -44,7 +44,7 @@
     "name": "Ryan Winzenburg",
     "type": "ProfessionalService",
     "url": "https://winzenburg.com",
-    "description": "Design operations leadership, AI workflow architecture, design systems, and UX consulting."
+    "description": "Product experience leadership for enterprise B2B: product operating model, design systems, and AI-enabled execution."
   },
   "ventures": [
     {
@@ -119,7 +119,7 @@
     {
       "title": "Consulting",
       "url": "https://winzenburg.com/consulting",
-      "note": "Product UX consulting for product leaders. /services is an alias."
+      "note": "Primary commercial route. For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated: validated product direction, reduced build risk, an executable path. /services is an alias."
     },
     {
       "title": "UX maturity assessment",
