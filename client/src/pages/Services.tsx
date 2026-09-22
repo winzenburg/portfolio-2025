@@ -415,13 +415,20 @@ export default function Services() {
           title="Four situations with a budget attached"
           lede="These are mandates, not job titles. Every one of them is a decision somebody is about to fund, which is the point at which the work is still cheap to change."
         />
-        {/* Subgrid keeps the index rule, title, and body on shared baselines. */}
+        {/*
+          Subgrid keeps the index rule, title, and body on shared baselines, so
+          the row gap has to be zero or it would draw a line through each card.
+          That leaves the second row of cards with no rule above it at md, hence
+          the explicit border on everything past the first row.
+        */}
         <Reveal>
           <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 md:grid-rows-[auto_auto_1fr] md:gap-y-0">
             {SITUATIONS.map((situation, index) => (
               <div
                 key={situation.title}
-                className="bg-background/60 p-7 md:row-span-3 md:grid md:grid-rows-subgrid md:p-8"
+                className={`bg-background/60 p-7 md:row-span-3 md:grid md:grid-rows-subgrid md:p-8 ${
+                  index >= 2 ? "md:border-t md:border-border/60" : ""
+                }`}
               >
                 <div className="mb-6 flex items-baseline gap-3">
                   <span
