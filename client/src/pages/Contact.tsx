@@ -121,7 +121,7 @@ function PathCardHeader({ label, active }: { label: string; active: boolean }) {
         className={
           active
             ? "text-xs uppercase tracking-[0.16em] text-primary"
-            : "text-xs uppercase tracking-[0.16em] text-slate-400"
+            : "text-xs uppercase tracking-[0.16em] text-muted-foreground"
         }
       >
         {label}
@@ -133,7 +133,7 @@ function PathCardHeader({ label, active }: { label: string; active: boolean }) {
         </span>
       ) : (
         <ArrowRight
-          className="h-4 w-4 text-slate-400 transition-transform group-hover:translate-x-1"
+          className="h-4 w-4 text-muted-foreground transition-transform group-hover:translate-x-1"
           aria-hidden="true"
         />
       )}
@@ -270,10 +270,10 @@ export default function Contact() {
             className={pathCardClass(intent === "role")}
           >
             <PathCardHeader label="Hiring" active={intent === "role"} />
-            <h3 className="mb-2 text-xl font-semibold text-white">
+            <h3 className="mb-2 text-xl font-semibold text-foreground">
               A leadership role
             </h3>
-            <p className="leading-relaxed text-slate-300">
+            <p className="leading-relaxed text-muted-foreground">
               Head of Design Operations, VP or Director of Design, Principal
               Design Technologist.
             </p>
@@ -288,10 +288,10 @@ export default function Contact() {
               label="Product work"
               active={intent === "consulting"}
             />
-            <h3 className="mb-2 text-xl font-semibold text-white">
+            <h3 className="mb-2 text-xl font-semibold text-foreground">
               A 30-minute consultation
             </h3>
-            <p className="leading-relaxed text-slate-300">
+            <p className="leading-relaxed text-muted-foreground">
               Research through delivery on a product bet that still has too much
               uncertainty.
             </p>
@@ -306,7 +306,7 @@ export default function Contact() {
             <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
               <h2
                 id="contact-form-heading"
-                className="text-2xl font-bold text-white"
+                className="text-2xl font-bold text-foreground"
               >
                 {playbookInfo ? "Request your playbook" : copy.formHeading}
               </h2>
@@ -321,10 +321,10 @@ export default function Contact() {
                         aria-hidden="true"
                       />
                     </span>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-foreground">
                       Message sent
                     </h3>
-                    <p className="mt-2 max-w-md leading-relaxed text-slate-300">
+                    <p className="mt-2 max-w-md leading-relaxed text-muted-foreground">
                       {intent === "consulting" ? (
                         <>Thanks — I&apos;ll reply and we&apos;ll find a 30-minute slot.</>
                       ) : (
@@ -356,12 +356,12 @@ export default function Contact() {
                         <p className="font-semibold text-red-200">
                           That didn&apos;t send.
                         </p>
-                        <p className="mt-1 leading-relaxed text-slate-300">
+                        <p className="mt-1 leading-relaxed text-muted-foreground">
                           Nothing was lost, so you can try again. If it keeps
                           failing, email me directly at{" "}
                           <a
                             href={`mailto:${EMAIL_ADDRESS}`}
-                            className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
+                            className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
                           >
                             {EMAIL_ADDRESS}
                           </a>
@@ -379,17 +379,17 @@ export default function Contact() {
                           aria-hidden="true"
                         />
                         <div className="flex-1">
-                          <div className="text-sm text-slate-300">
+                          <div className="text-sm text-muted-foreground">
                             Requesting playbook:
                           </div>
-                          <div className="font-medium text-white">
+                          <div className="font-medium text-foreground">
                             {playbookInfo.title}
                           </div>
-                          <div className="mt-1 text-sm text-slate-400">
+                          <div className="mt-1 text-sm text-muted-foreground">
                             From:{" "}
                             <Link
                               href={`/articles/${playbookInfo.articleSlug}`}
-                              className="text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
+                              className="text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
                             >
                               {playbookInfo.article}
                             </Link>
@@ -398,7 +398,7 @@ export default function Contact() {
                         <Link
                           href={contactHref({ intent, sheet })}
                           aria-label="Clear playbook request"
-                          className="rounded-md p-1 text-slate-400 transition-colors hover:text-white"
+                          className="rounded-md p-1 text-muted-foreground transition-colors hover:text-foreground"
                         >
                           <X className="h-4 w-4" aria-hidden="true" />
                         </Link>
@@ -407,20 +407,20 @@ export default function Contact() {
                   )}
 
                   {intent === "consulting" && sheet && (
-                    <div className="mt-6 rounded-lg border border-border/60 bg-slate-900/60 p-4">
+                    <div className="mt-6 rounded-lg border border-border/60 bg-muted/60 p-4">
                       <div className="flex items-start gap-3">
                         <div className="flex-1">
-                          <div className="text-sm text-slate-400">
+                          <div className="text-sm text-muted-foreground">
                             Company shape
                           </div>
-                          <div className="font-medium text-white">
+                          <div className="font-medium text-foreground">
                             {SHEET_LABEL[sheet]}
                           </div>
                         </div>
                         <Link
                           href={contactHref({ intent: "consulting", playbook: playbookId })}
                           aria-label="Clear company shape"
-                          className="rounded-md p-1 text-slate-400 transition-colors hover:text-white"
+                          className="rounded-md p-1 text-muted-foreground transition-colors hover:text-foreground"
                         >
                           <X className="h-4 w-4" aria-hidden="true" />
                         </Link>
@@ -449,7 +449,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="name"
-                          className="mb-2 block text-sm font-medium text-slate-300"
+                          className="mb-2 block text-sm font-medium text-muted-foreground"
                         >
                           Name *
                         </label>
@@ -467,7 +467,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="email"
-                          className="mb-2 block text-sm font-medium text-slate-300"
+                          className="mb-2 block text-sm font-medium text-muted-foreground"
                         >
                           Email *
                         </label>
@@ -485,7 +485,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="company"
-                          className="mb-2 block text-sm font-medium text-slate-300"
+                          className="mb-2 block text-sm font-medium text-muted-foreground"
                         >
                           Company *
                         </label>
@@ -503,7 +503,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="role"
-                          className="mb-2 block text-sm font-medium text-slate-300"
+                          className="mb-2 block text-sm font-medium text-muted-foreground"
                         >
                           Your Role *
                         </label>
@@ -526,7 +526,7 @@ export default function Contact() {
                     <div>
                       <label
                         htmlFor="message"
-                        className="mb-2 block text-sm font-medium text-slate-300"
+                        className="mb-2 block text-sm font-medium text-muted-foreground"
                       >
                         {copy.messageLabel} *
                       </label>
@@ -555,7 +555,7 @@ export default function Contact() {
 
           <div className="space-y-6 lg:col-span-5">
             <div className="rounded-xl border border-border/60 bg-background/40 p-7">
-              <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+              <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
                 Direct lines
               </h3>
               <ul className="divide-y divide-border/60 border-t border-border/60">
@@ -565,7 +565,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackExternalLink("https://www.linkedin.com/in/rwinzenburg/", "linkedin")}
-                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
+                    className="flex items-center gap-3 py-3 text-muted-foreground transition-colors hover:text-primary"
                   >
                     <svg className="h-5 w-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -579,7 +579,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackExternalLink("https://x.com/rwinzenburg", "x")}
-                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
+                    className="flex items-center gap-3 py-3 text-muted-foreground transition-colors hover:text-primary"
                   >
                     <svg className="h-5 w-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -590,7 +590,7 @@ export default function Contact() {
                 <li>
                   <a
                     href={`mailto:${EMAIL_ADDRESS}`}
-                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
+                    className="flex items-center gap-3 py-3 text-muted-foreground transition-colors hover:text-primary"
                   >
                     <Mail className="h-5 w-5 shrink-0" aria-hidden="true" />
                     <span className="font-medium">{EMAIL_ADDRESS}</span>
@@ -599,7 +599,7 @@ export default function Contact() {
                 <li>
                   <a
                     href={`tel:+1${PHONE_NUMBER.replace(/\D/g, "")}`}
-                    className="flex items-center gap-3 py-3 text-slate-300 transition-colors hover:text-primary"
+                    className="flex items-center gap-3 py-3 text-muted-foreground transition-colors hover:text-primary"
                   >
                     <Phone className="h-5 w-5 shrink-0" aria-hidden="true" />
                     <span className="font-medium">{PHONE_NUMBER}</span>
@@ -609,12 +609,12 @@ export default function Contact() {
             </div>
 
             <div className="rounded-xl border border-border/60 bg-background/40 p-7">
-              <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+              <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
                 What to expect
               </h3>
               <ul className="space-y-3 border-t border-border/60 pt-5">
                 {copy.expectItems.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-slate-300">
+                  <li key={item} className="flex items-start gap-2.5 text-muted-foreground">
                     <span
                       aria-hidden="true"
                       className="mt-[0.5rem] h-1 w-1 shrink-0 rounded-full bg-primary"
@@ -624,11 +624,11 @@ export default function Contact() {
                 ))}
               </ul>
               {intent === "consulting" ? (
-                <p className="mt-5 border-t border-border/60 pt-5 text-sm leading-relaxed text-slate-400">
+                <p className="mt-5 border-t border-border/60 pt-5 text-sm leading-relaxed text-muted-foreground">
                   Process, timing, and payment are covered on the{" "}
                   <Link
                     href="/consulting#faq"
-                    className="text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
+                    className="text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
                   >
                     consulting FAQ
                   </Link>
@@ -650,7 +650,7 @@ export default function Contact() {
             >
               Still deciding what to ask for?
             </SectionTitle>
-            <p className="mt-4 max-w-2xl leading-relaxed text-slate-300">
+            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
               The case studies show how these engagements actually run. The
               assessment is a faster way in if you&apos;d rather start with your
               own product.

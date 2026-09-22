@@ -245,22 +245,22 @@ export default function About() {
                 className="bg-background/60 p-7 md:row-span-4 md:grid md:grid-rows-subgrid md:p-8"
               >
                 <div className="mb-6 flex items-baseline gap-3">
-                  <span className="font-['Playfair_Display'] text-2xl text-primary/70">
+                  <span className="font-display text-2xl text-primary/70">
                     {capability.index}
                   </span>
                   <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
                 </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-white">
+                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
                   {capability.name}
                 </h3>
-                <p className="mb-6 leading-relaxed text-slate-300">
+                <p className="mb-6 leading-relaxed text-muted-foreground">
                   {capability.summary}
                 </p>
                 <ul className="space-y-2.5 border-t border-border/60 pt-5">
                   {capability.points.map((point) => (
                     <li
                       key={point}
-                      className="flex items-start gap-2.5 text-sm text-slate-400"
+                      className="flex items-start gap-2.5 text-sm text-muted-foreground"
                     >
                       <span
                         aria-hidden="true"
@@ -283,8 +283,8 @@ export default function About() {
             <Eyebrow className="mb-4">Who is Ryan Winzenburg?</Eyebrow>
             <SectionTitle id="background-heading">The short version</SectionTitle>
           </div>
-          <div className="space-y-6 text-lg leading-relaxed text-slate-300 lg:col-span-7 lg:col-start-6">
-            <p className="text-xl text-slate-200 md:text-2xl md:leading-snug">
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground lg:col-span-7 lg:col-start-6">
+            <p className="text-xl text-foreground md:text-2xl md:leading-snug">
               {person.experienceSummary}
             </p>
             <p>
@@ -316,7 +316,7 @@ export default function About() {
             <Reveal key={venture.name} delay={index * 90} className="h-full">
               <article className="group relative flex h-full flex-col rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70">
                 <div className="mb-6 flex items-center justify-between">
-                  <span className="font-['Playfair_Display'] text-2xl text-primary/70">
+                  <span className="font-display text-2xl text-primary/70">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-xs text-emerald-400">
@@ -327,14 +327,14 @@ export default function About() {
                     {venture.status} · {venture.started}
                   </span>
                 </div>
-                <p className="mb-2 text-xs uppercase tracking-[0.16em] text-slate-400">
+                <p className="mb-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
                   {venture.category}
                 </p>
-                <h3 className="mb-1 text-xl font-semibold text-white">
+                <h3 className="mb-1 text-xl font-semibold text-foreground">
                   {venture.name}
                 </h3>
-                <p className="mb-4 text-sm text-slate-400">{venture.role}</p>
-                <p className="mb-7 flex-1 leading-relaxed text-slate-300">
+                <p className="mb-4 text-sm text-muted-foreground">{venture.role}</p>
+                <p className="mb-7 flex-1 leading-relaxed text-muted-foreground">
                   {venture.oneLiner}
                 </p>
                 <div className="mt-auto space-y-3 border-t border-border/60 pt-5">
@@ -342,7 +342,7 @@ export default function About() {
                     href={venture.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
                   >
                     {venture.url.replace(/^https?:\/\//, "")}
                     <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
@@ -350,7 +350,7 @@ export default function About() {
                   {venture.caseStudyUrl ? (
                     <Link
                       href={venture.caseStudyUrl}
-                      className="block text-sm text-slate-400 transition-colors hover:text-slate-200"
+                      className="block text-sm text-muted-foreground transition-colors hover:text-foreground"
                     >
                       Read the case study
                     </Link>
@@ -372,7 +372,7 @@ export default function About() {
           trailing={
             <Link
               href="/articles"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
             >
               All articles
               <ArrowRight
@@ -394,18 +394,18 @@ export default function About() {
                   {/* The ordered list already conveys position to assistive tech. */}
                   <span
                     aria-hidden="true"
-                    className="font-['Playfair_Display'] text-lg text-slate-400 transition-colors group-hover:text-primary"
+                    className="font-display text-lg text-muted-foreground transition-colors group-hover:text-primary"
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-lg font-semibold leading-snug text-slate-100 transition-colors group-hover:text-primary md:text-xl">
+                  <h3 className="text-lg font-semibold leading-snug text-foreground transition-colors group-hover:text-primary md:text-xl">
                     {article.title}
                   </h3>
-                  <p className="col-start-2 text-sm leading-relaxed text-slate-400 md:col-start-3">
+                  <p className="col-start-2 text-sm leading-relaxed text-muted-foreground md:col-start-3">
                     {article.note}
                   </p>
                   <ArrowRight
-                    className="hidden h-5 w-5 justify-self-end text-slate-500 transition-all group-hover:translate-x-1 group-hover:text-primary md:block"
+                    className="hidden h-5 w-5 justify-self-end text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-primary md:block"
                     aria-hidden="true"
                   />
                 </a>
@@ -425,14 +425,14 @@ export default function About() {
         />
         <div className="grid gap-10 lg:grid-cols-3 lg:gap-12">
           <div>
-            <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+            <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
               Topics
             </h3>
             <ul className="flex flex-wrap gap-2 border-t border-border/60 pt-4">
               {person.knowsAbout.map((topic) => (
                 <li
                   key={topic}
-                  className="rounded-full border border-border/60 bg-background/40 px-3 py-1.5 text-sm text-slate-300"
+                  className="rounded-full border border-border/60 bg-background/40 px-3 py-1.5 text-sm text-muted-foreground"
                 >
                   {topic}
                 </li>
@@ -441,7 +441,7 @@ export default function About() {
           </div>
 
           <div>
-            <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+            <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
               Verified profiles
             </h3>
             <ul className="divide-y divide-border/60 border-t border-border/60">
@@ -454,7 +454,7 @@ export default function About() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-3 py-3 text-sm text-slate-300 transition-colors hover:text-primary"
+                      className="group flex items-center gap-3 py-3 text-sm text-muted-foreground transition-colors hover:text-primary"
                     >
                       {social ? (
                         <svg
@@ -471,7 +471,7 @@ export default function About() {
                       <span className="font-medium">
                         {social?.label ?? url.replace(/^https?:\/\//, "")}
                       </span>
-                      <span className="ml-auto truncate text-xs text-slate-400 transition-colors group-hover:text-slate-300">
+                      <span className="ml-auto truncate text-xs text-muted-foreground transition-colors group-hover:text-muted-foreground">
                         {url.replace(/^https?:\/\/(www\.)?/, "")}
                       </span>
                     </a>
@@ -482,7 +482,7 @@ export default function About() {
           </div>
 
           <div>
-            <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+            <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
               Machine-readable files
             </h3>
             <ul className="divide-y divide-border/60 border-t border-border/60">
@@ -490,13 +490,13 @@ export default function About() {
                 <li key={href}>
                   <a
                     href={href}
-                    className="group flex flex-col gap-1 py-3 text-sm text-slate-300 transition-colors hover:text-primary"
+                    className="group flex flex-col gap-1 py-3 text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     <span className="flex items-center gap-2.5 font-medium">
                       <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                       {label}
                     </span>
-                    <span className="pl-6 text-xs text-slate-400">{note}</span>
+                    <span className="pl-6 text-xs text-muted-foreground">{note}</span>
                   </a>
                 </li>
               ))}
@@ -511,7 +511,7 @@ export default function About() {
           <SectionTitle id="about-cta-heading" className="md:text-4xl">
             Working through a complex B2B product experience problem?
           </SectionTitle>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             If your product organization is dealing with a hard experience,
             operating model, or AI adoption challenge, I&apos;d like to hear
             what you&apos;re working on, even if it&apos;s exploratory.

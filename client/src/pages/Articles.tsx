@@ -623,7 +623,7 @@ const CATEGORY_STYLES: Record<string, CategoryStyle> = {
     badge: "border-blue-700/50 bg-blue-900/30 text-blue-300",
   },
   "Business Strategy": {
-    pillActive: "bg-cyan-500 text-slate-900 border-cyan-500",
+    pillActive: "bg-cyan-500 text-foreground border-cyan-500",
     pillIdle: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300 hover:bg-cyan-800/50",
     badge: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300",
   },
@@ -633,7 +633,7 @@ const CATEGORY_STYLES: Record<string, CategoryStyle> = {
     badge: "border-purple-700/50 bg-purple-900/30 text-purple-300",
   },
   Engineering: {
-    pillActive: "bg-emerald-500 text-slate-900 border-emerald-500",
+    pillActive: "bg-emerald-500 text-foreground border-emerald-500",
     pillIdle: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300 hover:bg-emerald-800/50",
     badge: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300",
   },
@@ -644,7 +644,7 @@ const CATEGORY_STYLES: Record<string, CategoryStyle> = {
   },
 };
 
-const NEUTRAL_BADGE = "border-border/60 bg-background/60 text-slate-300";
+const NEUTRAL_BADGE = "border-border/60 bg-background/60 text-muted-foreground";
 
 const ALL = "All";
 
@@ -659,7 +659,7 @@ const CATEGORY_ORDER: string[] = [
 
 function ArticleMeta({ article }: { article: Article }) {
   return (
-    <div className="flex items-center gap-4 text-sm text-slate-400">
+    <div className="flex items-center gap-4 text-sm text-muted-foreground">
       <span className="flex items-center gap-2">
         <Calendar className="h-4 w-4" aria-hidden="true" />
         {article.date}
@@ -710,10 +710,10 @@ function FeaturedArticleCard({ article }: { article: Article }) {
           </span>
           <CategoryBadge category={article.category} />
         </div>
-        <h3 className="text-2xl font-bold leading-snug text-white transition-colors group-hover:text-primary md:text-3xl">
+        <h3 className="text-2xl font-bold leading-snug text-foreground transition-colors group-hover:text-primary md:text-3xl">
           {article.title}
         </h3>
-        <p className="mt-5 leading-relaxed text-slate-300">{article.excerpt}</p>
+        <p className="mt-5 leading-relaxed text-muted-foreground">{article.excerpt}</p>
         <div className="mt-7 flex items-center justify-between gap-4 border-t border-border/60 pt-5">
           <ArticleMeta article={article} />
           <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
@@ -750,16 +750,16 @@ function ArticleCard({ article }: { article: Article }) {
         <div className="mb-4">
           <CategoryBadge category={article.category} />
         </div>
-        <h3 className="mb-3 text-lg font-semibold leading-snug text-white transition-colors group-hover:text-primary">
+        <h3 className="mb-3 text-lg font-semibold leading-snug text-foreground transition-colors group-hover:text-primary">
           {article.title}
         </h3>
-        <p className="mb-6 flex-1 text-sm leading-relaxed text-slate-300">
+        <p className="mb-6 flex-1 text-sm leading-relaxed text-muted-foreground">
           {article.excerpt}
         </p>
         <div className="mt-auto flex items-center justify-between gap-3 border-t border-border/60 pt-4">
           <ArticleMeta article={article} />
           <ArrowRight
-            className="h-4 w-4 shrink-0 text-slate-500 transition-all group-hover:text-primary motion-safe:group-hover:translate-x-1"
+            className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:text-primary motion-safe:group-hover:translate-x-1"
             aria-hidden="true"
           />
         </div>
@@ -841,9 +841,9 @@ export default function Articles() {
                 className={cn(
                   "rounded-full border px-4 py-2 text-sm font-semibold transition-colors",
                   isSelected
-                    ? (style?.pillActive ?? "border-white bg-white text-slate-900")
+                    ? (style?.pillActive ?? "border-primary bg-background text-foreground")
                     : (style?.pillIdle ??
-                        "border-border/60 bg-background/40 text-slate-300 hover:border-slate-500 hover:text-white"),
+                        "border-border/60 bg-background/40 text-muted-foreground hover:border-border hover:text-foreground"),
                 )}
               >
                 {category}{" "}
@@ -857,10 +857,10 @@ export default function Articles() {
 
         {filteredArticles.length === 0 ? (
           <div className="rounded-xl border border-border/60 bg-background/40 px-6 py-20 text-center">
-            <p className="text-lg text-slate-200">
+            <p className="text-lg text-foreground">
               Nothing published in {selectedCategory} yet.
             </p>
-            <p className="mt-3 text-slate-400">
+            <p className="mt-3 text-muted-foreground">
               Try another topic, or browse everything.
             </p>
             <Button className="mt-7" variant="outline" onClick={() => handleCategoryChange(ALL)}>
@@ -901,7 +901,7 @@ export default function Articles() {
           <SectionTitle id="articles-cta-heading">
             Working on something the writing doesn&apos;t cover?
           </SectionTitle>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             If your product organization is dealing with a hard experience,
             operating model, or AI adoption problem, I&apos;d like to hear what
             you&apos;re working on.

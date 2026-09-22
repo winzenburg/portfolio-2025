@@ -54,10 +54,10 @@ export default function NewsletterSignup() {
         <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-primary">
           Weekly
         </p>
-        <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">
+        <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
           One email a week on product experience and AI-enabled delivery
         </h2>
-        <p className="mx-auto max-w-xl text-lg leading-relaxed text-slate-300">
+        <p className="mx-auto max-w-xl text-lg leading-relaxed text-muted-foreground">
           What I&apos;m working on, what broke, and what I&apos;d do
           differently. Written for people running product organizations.
         </p>
@@ -82,10 +82,10 @@ export default function NewsletterSignup() {
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-xl font-bold text-white">
+            <h3 className="mb-2 text-xl font-bold text-foreground">
               You&apos;re subscribed
             </h3>
-            <p className="text-slate-300">
+            <p className="text-muted-foreground">
               Thanks for signing up. Keep an eye on your inbox.
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function NewsletterSignup() {
                 required
                 disabled={subscribeStatus === "loading"}
                 aria-invalid={subscribeStatus === "error" || undefined}
-                className="flex-1 rounded-lg border border-slate-600 bg-slate-800/50 px-4 py-3 text-base text-white placeholder-slate-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50"
+                className="flex-1 rounded-lg border border-border bg-input/50 px-4 py-3 text-base text-foreground placeholder-muted-foreground focus:border-transparent focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50"
               />
               <Button
                 type="submit"
@@ -120,7 +120,7 @@ export default function NewsletterSignup() {
                 {errorMessage}
               </p>
             ) : null}
-            <p className="mt-4 text-center text-sm text-slate-400">
+            <p className="mt-4 text-center text-sm text-muted-foreground">
               One email a week. Unsubscribe anytime.
             </p>
           </form>

@@ -76,7 +76,7 @@ const heroFacts: Fact[] = [
 function filterPillClass(active: boolean): string {
   return active
     ? "rounded-full border border-primary/60 bg-primary/15 px-4 py-1.5 text-sm font-medium text-primary transition-colors"
-    : "rounded-full border border-border/60 bg-background/40 px-4 py-1.5 text-sm font-medium text-slate-300 transition-colors hover:border-primary/50 hover:text-white";
+    : "rounded-full border border-border/60 bg-background/40 px-4 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground";
 }
 
 export default function Gallery() {
@@ -149,7 +149,7 @@ export default function Gallery() {
           <div className="lg:w-80">
             <label
               htmlFor="gallery-search"
-              className="mb-2 block text-xs uppercase tracking-[0.16em] text-slate-400"
+              className="mb-2 block text-xs uppercase tracking-[0.16em] text-muted-foreground"
             >
               Search by name
             </label>
@@ -159,14 +159,14 @@ export default function Gallery() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Design systems, MVP, architecture…"
-              className="w-full rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-2.5 text-sm text-white placeholder:text-slate-400 outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50"
+              className="w-full rounded-lg border border-border bg-muted/60 px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50"
             />
           </div>
 
           <div>
             <p
               id="gallery-filter-label"
-              className="mb-2 text-xs uppercase tracking-[0.16em] text-slate-400"
+              className="mb-2 text-xs uppercase tracking-[0.16em] text-muted-foreground"
             >
               Category
             </p>
@@ -193,7 +193,7 @@ export default function Gallery() {
           </div>
         </div>
 
-        <p aria-live="polite" className="mt-6 text-sm text-slate-400">
+        <p aria-live="polite" className="mt-6 text-sm text-muted-foreground">
           Showing {filteredIllustrations.length} of {illustrations.length}{" "}
           illustrations
         </p>
@@ -204,7 +204,7 @@ export default function Gallery() {
               <li key={illustration.file}>
                 <Reveal delay={Math.min(index, 5) * 70} className="h-full">
                   <figure className="group flex h-full flex-col overflow-hidden rounded-xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70">
-                    <div className="aspect-[4/3] overflow-hidden bg-slate-900">
+                    <div className="aspect-[4/3] overflow-hidden bg-muted">
                       <img
                         src={`/images/gallery/${illustration.file}`}
                         alt={`${illustration.name}, ${illustration.category.toLowerCase()} illustration`}
@@ -213,10 +213,10 @@ export default function Gallery() {
                       />
                     </div>
                     <figcaption className="flex flex-1 flex-col gap-1 border-t border-border/60 p-5">
-                      <span className="text-xs uppercase tracking-[0.16em] text-slate-400">
+                      <span className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
                         {illustration.category}
                       </span>
-                      <span className="font-semibold leading-snug text-slate-100">
+                      <span className="font-semibold leading-snug text-foreground">
                         {illustration.name}
                       </span>
                     </figcaption>
@@ -227,10 +227,10 @@ export default function Gallery() {
           </ul>
         ) : (
           <div className="mt-10 rounded-xl border border-border/60 bg-background/40 p-10 text-center">
-            <h3 className="text-lg font-semibold text-white">
+            <h3 className="text-lg font-semibold text-foreground">
               Nothing matches that yet
             </h3>
-            <p className="mx-auto mt-2 max-w-md leading-relaxed text-slate-300">
+            <p className="mx-auto mt-2 max-w-md leading-relaxed text-muted-foreground">
               Try a shorter search term, or clear the filters to see all{" "}
               {illustrations.length} illustrations.
             </p>
@@ -256,7 +256,7 @@ export default function Gallery() {
             >
               These were drawn to carry an argument
             </SectionTitle>
-            <p className="mt-4 max-w-2xl leading-relaxed text-slate-300">
+            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
               Each one belongs to a piece of writing or a case study. The
               writing is where the reasoning lives.
             </p>

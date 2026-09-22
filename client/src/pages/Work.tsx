@@ -298,19 +298,19 @@ function ProjectCard({ project }: { project: Project }) {
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
             {project.kicker}
           </p>
-          <h3 className="mt-4 text-pretty text-2xl font-bold leading-tight tracking-tight text-white md:text-3xl">
+          <h3 className="mt-4 text-pretty text-2xl font-bold leading-tight tracking-tight text-foreground md:text-3xl">
             {project.title}
           </h3>
 
-          <h4 className="mt-7 text-xs uppercase tracking-[0.16em] text-slate-400">
+          <h4 className="mt-7 text-xs uppercase tracking-[0.16em] text-muted-foreground">
             MY ROLE
           </h4>
-          <p className="mt-3 leading-relaxed text-slate-300">{project.role}</p>
+          <p className="mt-3 leading-relaxed text-muted-foreground">{project.role}</p>
         </div>
 
         <div className="lg:col-span-5 lg:col-start-8 lg:row-start-2">
           {project.metricsLabel ? (
-            <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+            <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
               {project.metricsLabel}
             </h4>
           ) : null}
@@ -322,10 +322,10 @@ function ProjectCard({ project }: { project: Project }) {
                 key={metric.label}
                 className="flex flex-col border-t border-border/60 pt-4"
               >
-                <dt className="text-xs uppercase tracking-[0.14em] text-slate-400">
+                <dt className="text-xs uppercase tracking-[0.14em] text-muted-foreground">
                   {metric.label}
                 </dt>
-                <dd className="mt-auto pt-2 text-xl font-semibold tracking-tight text-white">
+                <dd className="mt-auto pt-2 text-xl font-semibold tracking-tight text-foreground">
                   {metric.value}
                 </dd>
               </div>
@@ -334,7 +334,7 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="lg:col-span-7 lg:col-start-1 lg:row-start-2">
-          <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+          <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
             {project.highlightsLabel}
           </h4>
           <dl className="grid gap-x-10 gap-y-5 sm:grid-cols-2">
@@ -343,10 +343,10 @@ function ProjectCard({ project }: { project: Project }) {
                 key={highlight.title}
                 className="border-t border-border/60 pt-4"
               >
-                <dt className="text-sm font-medium text-slate-100">
+                <dt className="text-sm font-medium text-foreground">
                   {highlight.title}
                 </dt>
-                <dd className="mt-1 text-sm leading-relaxed text-slate-400">
+                <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
                   {highlight.detail}
                 </dd>
               </div>
@@ -411,24 +411,24 @@ function EarlierProjectCard({ project }: { project: EarlierProject }) {
       </div>
 
       <div className="px-7 pt-7">
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-400">
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
           {project.kicker}
         </p>
-        <h3 className="mt-3 text-xl font-semibold leading-snug text-white transition-colors group-hover:text-primary md:text-2xl">
+        <h3 className="mt-3 text-xl font-semibold leading-snug text-foreground transition-colors group-hover:text-primary md:text-2xl">
           {project.title}
         </h3>
-        <p className="mt-4 leading-relaxed text-slate-300">{project.summary}</p>
+        <p className="mt-4 leading-relaxed text-muted-foreground">{project.summary}</p>
       </div>
 
       <div className="px-7 pb-7 pt-8">
-        <h4 className="text-xs uppercase tracking-[0.16em] text-slate-400">
+        <h4 className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
           {project.pointsLabel}
         </h4>
         <ul className="mt-4 space-y-2.5 border-t border-border/60 pt-4">
           {project.points.map((point) => (
             <li
               key={point}
-              className="flex items-start gap-2.5 text-sm text-slate-300"
+              className="flex items-start gap-2.5 text-sm text-muted-foreground"
             >
               <span
                 aria-hidden="true"
@@ -530,7 +530,7 @@ export default function Work() {
           <SectionTitle id="work-cta-heading">
             Looking for product experience leadership?
           </SectionTitle>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             I&apos;m talking with enterprise B2B product organizations about
             product experience leadership. If your team is carrying a hard
             experience problem and an operating model that isn&apos;t helping,

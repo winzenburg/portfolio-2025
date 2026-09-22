@@ -121,7 +121,7 @@ const INSTALL_STEPS = [
           ./install.sh cursor-global
         </code>{" "}
         and paste the user rule into{" "}
-        <strong className="font-medium text-white">
+        <strong className="font-medium text-foreground">
           Cursor → Customize → Rules → User Rules
         </strong>
         .
@@ -536,7 +536,7 @@ const PHASES: Phase[] = [
 
 function FormatChip({ format }: { format: string }) {
   return (
-    <span className="inline-flex h-9 w-12 shrink-0 items-center justify-center rounded-md border border-border/60 bg-background/60 text-[0.65rem] font-semibold tracking-[0.12em] text-slate-400">
+    <span className="inline-flex h-9 w-12 shrink-0 items-center justify-center rounded-md border border-border/60 bg-background/60 text-[0.65rem] font-semibold tracking-[0.12em] text-muted-foreground">
       {format}
     </span>
   );
@@ -561,7 +561,7 @@ function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-24">
             <div className="mb-5 flex items-center gap-4">
-              <span className="font-['Playfair_Display'] text-2xl text-slate-500">
+              <span className="font-display text-2xl text-muted-foreground">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <span
@@ -576,17 +576,17 @@ function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
             </div>
             <h3
               id={headingId}
-              className="mb-3 text-3xl font-bold tracking-tight text-white"
+              className="mb-3 text-3xl font-bold tracking-tight text-foreground"
             >
               {phase.name}
             </h3>
             <p className={`mb-5 text-lg ${accent.text}`}>{phase.question}</p>
-            <p className="leading-relaxed text-slate-400">{phase.intent}</p>
+            <p className="leading-relaxed text-muted-foreground">{phase.intent}</p>
           </div>
         </div>
 
         <div className="lg:col-span-8">
-          <h4 className="mb-6 text-xs uppercase tracking-[0.16em] text-slate-400">
+          <h4 className="mb-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">
             Double Diamond method areas
           </h4>
           <div className="divide-y divide-border/60 border-y border-border/60">
@@ -596,10 +596,10 @@ function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
                 className="grid gap-4 py-6 md:grid-cols-[minmax(0,15rem)_1fr] md:gap-10"
               >
                 <div>
-                  <h5 className="text-base font-semibold leading-snug text-white">
+                  <h5 className="text-base font-semibold leading-snug text-foreground">
                     {skill.name}
                   </h5>
-                  <p className="mt-1.5 text-sm leading-relaxed text-slate-400">
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                     {skill.summary}
                   </p>
                 </div>
@@ -607,7 +607,7 @@ function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
                   {skill.tasks.map((task) => (
                     <li
                       key={task}
-                      className="flex break-inside-avoid items-start gap-2.5 py-1 text-sm text-slate-300"
+                      className="flex break-inside-avoid items-start gap-2.5 py-1 text-sm text-muted-foreground"
                     >
                       <span
                         aria-hidden="true"
@@ -621,7 +621,7 @@ function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
             ))}
           </div>
 
-          <h4 className="mb-4 mt-10 text-xs uppercase tracking-[0.16em] text-slate-400">
+          <h4 className="mb-4 mt-10 text-xs uppercase tracking-[0.16em] text-muted-foreground">
             Competency skills that pair with {phase.name}
           </h4>
           <ul className="grid gap-x-8 gap-y-3 md:grid-cols-2">
@@ -630,7 +630,7 @@ function PhaseBlock({ phase, index }: { phase: Phase; index: number }) {
                 <code className="rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
                   {skill.name}
                 </code>
-                <span className="text-slate-400"> {skill.summary}</span>
+                <span className="text-muted-foreground"> {skill.summary}</span>
               </li>
             ))}
           </ul>
@@ -693,15 +693,15 @@ export default function Resources() {
             <SectionTitle id="overview-heading">
               Two packs, one shared map
             </SectionTitle>
-            <div className="mt-6 space-y-5 text-lg leading-relaxed text-slate-300">
+            <div className="mt-6 space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
                 The{" "}
-                <strong className="font-semibold text-white">
+                <strong className="font-semibold text-foreground">
                   Double Diamond Skill Pack
                 </strong>{" "}
                 is phase-tagged design method skills, research planning through
                 design QA. The{" "}
-                <strong className="font-semibold text-white">
+                <strong className="font-semibold text-foreground">
                   UX Competency Skills
                 </strong>{" "}
                 pack is eighteen agent skills sitting on a{" "}
@@ -718,7 +718,7 @@ export default function Resources() {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <h3 className="mb-6 text-xs uppercase tracking-[0.16em] text-slate-400">
+            <h3 className="mb-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">
               How the router chains them
             </h3>
             <ol className="relative">
@@ -734,15 +734,15 @@ export default function Resources() {
                     {index + 1}
                   </span>
                   <div>
-                    <p className="font-semibold text-white">{step.name}</p>
-                    <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                    <p className="font-semibold text-foreground">{step.name}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                       {step.note}
                     </p>
                   </div>
                 </li>
               ))}
             </ol>
-            <p className="mt-2 rounded-xl border border-primary/30 bg-primary/10 p-5 text-sm leading-relaxed text-slate-200">
+            <p className="mt-2 rounded-xl border border-primary/30 bg-primary/10 p-5 text-sm leading-relaxed text-foreground">
               Unsure where to start? Use{" "}
               <code className="rounded bg-slate-950/60 px-1.5 py-0.5 text-cyan-300">
                 competency-router
@@ -776,29 +776,29 @@ export default function Resources() {
                 <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-primary">
                   Recommended
                 </p>
-                <h3 className="mb-4 text-2xl font-bold text-white md:text-3xl">
+                <h3 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
                   {fullPack.title}
                 </h3>
-                <p className="mb-8 max-w-xl leading-relaxed text-slate-300">
+                <p className="mb-8 max-w-xl leading-relaxed text-muted-foreground">
                   {fullPack.description}
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors group-hover:text-cyan-300">
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors group-hover:text-primary/80">
                   <Download className="h-4 w-4" aria-hidden="true" />
                   Download {fullPack.format} · {TOTAL_SKILL_COUNT} agent skills
                 </span>
               </div>
               <div className="lg:col-span-5">
-                <p className="mb-4 text-xs uppercase tracking-[0.16em] text-slate-400">
+                <p className="mb-4 text-xs uppercase tracking-[0.16em] text-muted-foreground">
                   What&apos;s inside
                 </p>
                 <ul className="divide-y divide-border/60 border-t border-border/60">
                   {individualDownloads.map((item) => (
                     <li
                       key={item.filename}
-                      className="flex items-baseline justify-between gap-4 py-2.5 text-sm text-slate-300"
+                      className="flex items-baseline justify-between gap-4 py-2.5 text-sm text-muted-foreground"
                     >
                       <span>{item.title}</span>
-                      <span className="shrink-0 text-[0.65rem] font-semibold tracking-[0.12em] text-slate-400">
+                      <span className="shrink-0 text-[0.65rem] font-semibold tracking-[0.12em] text-muted-foreground">
                         {item.format}
                       </span>
                     </li>
@@ -809,7 +809,7 @@ export default function Resources() {
           </a>
         </Reveal>
 
-        <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-slate-400">
+        <h3 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
           Individual files
         </h3>
         <ul className="divide-y divide-border/60 border-y border-border/60">
@@ -822,20 +822,20 @@ export default function Resources() {
               >
                 <FormatChip format={item.format} />
                 <div className="min-w-0">
-                  <h4 className="text-base font-semibold leading-snug text-slate-100 transition-colors group-hover:text-primary md:text-lg">
+                  <h4 className="text-base font-semibold leading-snug text-foreground transition-colors group-hover:text-primary md:text-lg">
                     {item.title}
                   </h4>
                   {item.skillCount ? (
-                    <p className="mt-1 text-xs uppercase tracking-[0.14em] text-slate-400">
+                    <p className="mt-1 text-xs uppercase tracking-[0.14em] text-muted-foreground">
                       {item.skillCount} skills
                     </p>
                   ) : null}
                 </div>
-                <p className="col-start-2 text-sm leading-relaxed text-slate-400 md:col-start-3">
+                <p className="col-start-2 text-sm leading-relaxed text-muted-foreground md:col-start-3">
                   {item.description}
                 </p>
                 <Download
-                  className="hidden h-5 w-5 justify-self-end text-slate-400 transition-colors group-hover:text-primary md:block"
+                  className="hidden h-5 w-5 justify-self-end text-muted-foreground transition-colors group-hover:text-primary md:block"
                   aria-hidden="true"
                 />
               </a>
@@ -881,7 +881,7 @@ export default function Resources() {
             <SectionTitle id="install-heading">
               Three steps, then forget about it
             </SectionTitle>
-            <p className="mt-6 leading-relaxed text-slate-400">
+            <p className="mt-6 leading-relaxed text-muted-foreground">
               The point of the user rule is that you stop choosing skills by
               hand. The agent routes itself.
             </p>
@@ -894,10 +894,10 @@ export default function Resources() {
                     {index + 1}
                   </span>
                   <div>
-                    <h3 className="mb-2 font-semibold text-white">
+                    <h3 className="mb-2 font-semibold text-foreground">
                       {step.title}
                     </h3>
-                    <p className="leading-relaxed text-slate-300">{step.body}</p>
+                    <p className="leading-relaxed text-muted-foreground">{step.body}</p>
                   </div>
                 </li>
               ))}
@@ -916,7 +916,7 @@ export default function Resources() {
             >
               These come out of project work, not a content calendar
             </SectionTitle>
-            <p className="mt-4 max-w-2xl leading-relaxed text-slate-300">
+            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
               The packs change when the work changes. The methodology behind them
               and the writing that explains the reasoning both live on the site.
             </p>
