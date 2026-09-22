@@ -12,7 +12,7 @@ import { allPulseIssues, formatWeekOf } from "@/data/pulseIssues";
 type SubscribeStatus = "idle" | "loading" | "success" | "error";
 
 const FIELD_CLASS =
-  "w-full rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50";
+  "w-full rounded-lg border border-border bg-muted/60 px-4 py-3 text-foreground placeholder:text-muted-foreground outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50";
 
 const heroFacts: Fact[] = [
   { label: "Cadence", value: "Once a week" },
@@ -89,7 +89,7 @@ export default function Subscribe() {
             <SectionTitle id="subscribe-what-heading" className="text-2xl md:text-3xl">
               One area at a time, with the working detail
             </SectionTitle>
-            <div className="mt-6 space-y-5 leading-relaxed text-slate-300">
+            <div className="mt-6 space-y-5 leading-relaxed text-muted-foreground">
               <p>
                 Practical patterns, specific tools, and decisions from active
                 work in AI-augmented design systems, product strategy, and
@@ -107,7 +107,7 @@ export default function Subscribe() {
             <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
               <h2
                 id="subscribe-form-heading"
-                className="text-xl font-semibold text-white"
+                className="text-xl font-semibold text-foreground"
               >
                 Get the next one
               </h2>
@@ -122,16 +122,16 @@ export default function Subscribe() {
                         aria-hidden="true"
                       />
                     </span>
-                    <h3 className="text-lg font-semibold text-white">
+                    <h3 className="text-lg font-semibold text-foreground">
                       You&apos;re on the list.
                     </h3>
-                    <p className="mt-2 leading-relaxed text-slate-300">
+                    <p className="mt-2 leading-relaxed text-muted-foreground">
                       The next pulse drops this week. Check your inbox,
                       including spam, in case it lands there the first time.
                     </p>
                     <Link
                       href="/articles"
-                      className="mt-5 inline-flex text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+                      className="mt-5 inline-flex text-sm font-medium text-primary transition-colors hover:text-primary/80"
                     >
                       Read the articles archive
                     </Link>
@@ -144,10 +144,10 @@ export default function Subscribe() {
                   <div>
                     <label
                       htmlFor="firstName"
-                      className="mb-2 block text-sm font-medium text-slate-300"
+                      className="mb-2 block text-sm font-medium text-muted-foreground"
                     >
                       First name{" "}
-                      <span className="font-normal text-slate-400">
+                      <span className="font-normal text-muted-foreground">
                         (optional)
                       </span>
                     </label>
@@ -167,7 +167,7 @@ export default function Subscribe() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="mb-2 block text-sm font-medium text-slate-300"
+                      className="mb-2 block text-sm font-medium text-muted-foreground"
                     >
                       Email address
                     </label>
@@ -202,7 +202,7 @@ export default function Subscribe() {
                     ) : null}
                   </div>
 
-                  <p className="pt-2 text-sm leading-relaxed text-slate-400">
+                  <p className="pt-2 text-sm leading-relaxed text-muted-foreground">
                     Unsubscribe from any email, anytime. Resend handles it and
                     there are no dark patterns. No sharing your address.
                   </p>
@@ -226,21 +226,21 @@ export default function Subscribe() {
                 <li key={issue.slug}>
                   <Link
                     href={`/pulse/${issue.slug}`}
-                    className="group flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 rounded-xl border border-border/60 bg-background/40 px-5 py-4 transition-colors hover:border-cyan-700/60 hover:bg-slate-800/40"
+                    className="group flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 rounded-xl border border-border/60 bg-background/40 px-5 py-4 transition-colors hover:border-primary/60 hover:bg-muted/40"
                   >
-                    <span className="shrink-0 text-sm text-slate-500 pt-0.5 min-w-[90px]">
+                    <span className="shrink-0 text-sm text-muted-foreground pt-0.5 min-w-[90px]">
                       {formatWeekOf(issue.weekOf)}
                     </span>
                     <span className="flex-1 min-w-0">
-                      <span className="block text-sm font-medium text-white group-hover:text-cyan-300 transition-colors leading-snug mb-1">
+                      <span className="block text-sm font-medium text-foreground group-hover:text-primary/80 transition-colors leading-snug mb-1">
                         {issue.title}
                       </span>
-                      <span className="block text-xs text-slate-400 leading-relaxed">
+                      <span className="block text-xs text-muted-foreground leading-relaxed">
                         {issue.centralSignal}
                       </span>
                     </span>
                     <ArrowRight
-                      className="w-4 h-4 text-slate-600 group-hover:text-cyan-400 transition-colors shrink-0 mt-0.5 hidden sm:block"
+                      className="w-4 h-4 text-muted-foreground group-hover:text-primary/80 transition-colors shrink-0 mt-0.5 hidden sm:block"
                       aria-hidden="true"
                     />
                   </Link>

@@ -6,7 +6,7 @@ type SectionTone = "plain" | "muted" | "slate";
 const TONE_CLASSES: Record<SectionTone, string> = {
   plain: "",
   muted: "bg-muted/30 border-y border-border/60",
-  slate: "bg-slate-900/30 border-y border-border/60",
+  slate: "bg-muted/30 border-y border-border/60",
 };
 
 interface SectionProps {
@@ -57,11 +57,11 @@ export function Eyebrow({ children, className }: EyebrowProps) {
   return (
     <p
       className={cn(
-        "flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-slate-400",
+        "flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground",
         className,
       )}
     >
-      <span aria-hidden="true" className="h-px w-6 shrink-0 bg-slate-700" />
+      <span aria-hidden="true" className="h-px w-6 shrink-0 bg-border" />
       {children}
     </p>
   );
@@ -78,7 +78,7 @@ export function SectionTitle({ id, children, className }: SectionTitleProps) {
     <h2
       id={id}
       className={cn(
-        "text-pretty text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl",
+        "text-pretty text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl",
         className,
       )}
     >
@@ -115,7 +115,7 @@ export function SectionHeading({
         {trailing ? <div className="shrink-0">{trailing}</div> : null}
       </div>
       {lede ? (
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
           {lede}
         </p>
       ) : null}

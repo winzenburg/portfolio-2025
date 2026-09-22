@@ -403,7 +403,7 @@ export default function Services() {
               Hiring for a leadership role instead?{" "}
               <Link
                 href={roleHref}
-                className="font-medium text-primary transition-colors hover:text-cyan-300"
+                className="font-medium text-primary transition-colors hover:text-primary/80"
               >
                 That is a different conversation.
               </Link>
@@ -439,16 +439,16 @@ export default function Services() {
                 <div className="mb-6 flex items-baseline gap-3">
                   <span
                     aria-hidden="true"
-                    className="font-['Playfair_Display'] text-2xl text-primary/70"
+                    className="font-display text-2xl text-primary/70"
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
                 </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-white">
+                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
                   {situation.title}
                 </h3>
-                <p className="leading-relaxed text-slate-300">{situation.body}</p>
+                <p className="leading-relaxed text-muted-foreground">{situation.body}</p>
               </div>
             ))}
           </div>
@@ -472,16 +472,16 @@ export default function Services() {
               {/* The ordered list already conveys position to assistive tech. */}
               <span
                 aria-hidden="true"
-                className="font-['Playfair_Display'] text-lg text-slate-400"
+                className="font-display text-lg text-muted-foreground"
               >
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-lg font-semibold leading-snug text-white md:text-xl">
+              <h3 className="text-lg font-semibold leading-snug text-foreground md:text-xl">
                 {risk.title}
               </h3>
               <div className="col-start-2 md:col-start-3">
-                <p className="leading-relaxed text-slate-300">{risk.body}</p>
-                <p className="mt-3 flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm leading-relaxed text-slate-400">
+                <p className="leading-relaxed text-muted-foreground">{risk.body}</p>
+                <p className="mt-3 flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm leading-relaxed text-muted-foreground">
                   <span className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
                     Outcome
                   </span>
@@ -501,7 +501,7 @@ export default function Services() {
             <SectionTitle id="process-heading">
               An end-to-end process, built to reduce risk at every stage
             </SectionTitle>
-            <p className="mt-6 text-lg leading-relaxed text-slate-300">
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               This is the Double Diamond, applied honestly. It is a framework for
               knowing what you know, and being clear about what you have not
               proven yet. Every phase produces a decision. A document is the
@@ -525,7 +525,7 @@ export default function Services() {
                   <div className="mb-4 flex items-center gap-3">
                     <span
                       aria-hidden="true"
-                      className="font-['Playfair_Display'] text-lg text-slate-400"
+                      className="font-display text-lg text-muted-foreground"
                     >
                       {String(index + 1).padStart(2, "0")}
                     </span>
@@ -536,15 +536,15 @@ export default function Services() {
                       {phase.mode}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold tracking-tight text-white">
+                  <h3 className="text-2xl font-bold tracking-tight text-foreground">
                     {phase.name}
                   </h3>
                   <p className={`mt-2 ${accent.text}`}>{phase.question}</p>
                 </div>
                 <div className="lg:col-span-7 lg:col-start-6">
-                  <p className="leading-relaxed text-slate-300">{phase.body}</p>
-                  <p className="mt-5 border-t border-border/60 pt-4 text-sm leading-relaxed text-slate-400">
-                    <span className="mr-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-300">
+                  <p className="leading-relaxed text-muted-foreground">{phase.body}</p>
+                  <p className="mt-5 border-t border-border/60 pt-4 text-sm leading-relaxed text-muted-foreground">
+                    <span className="mr-2 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                       You get
                     </span>
                     {phase.deliverable}
@@ -556,7 +556,7 @@ export default function Services() {
         </ol>
 
         <div className="mt-12 rounded-xl border border-primary/30 bg-primary/10 p-7 md:p-8">
-          <p className="max-w-3xl leading-relaxed text-slate-200">
+          <p className="max-w-3xl leading-relaxed text-foreground">
             One thing worth saying plainly: I stay through implementation rather
             than handing off at the file. A validated direction that nobody can
             build is the same as no direction, and most of the loss happens in
@@ -564,7 +564,7 @@ export default function Services() {
           </p>
           <Link
             href="/methodology"
-            className="group mt-5 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+            className="group mt-5 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
           >
             Full methodology
             <ArrowRight
@@ -583,7 +583,7 @@ export default function Services() {
             <SectionTitle id="capabilities-heading">
               What I bring to the decision
             </SectionTitle>
-            <p className="mt-6 leading-relaxed text-slate-300">
+            <p className="mt-6 leading-relaxed text-muted-foreground">
               Three capabilities, and they rarely show up one at a time. The
               work almost never separates cleanly into just one of them.
             </p>
@@ -592,14 +592,14 @@ export default function Services() {
             <dl className="divide-y divide-border/60 border-y border-border/60">
               {CAPABILITIES.map((capability) => (
                 <div key={capability.name} className="py-6">
-                  <dt className="font-semibold text-white">{capability.name}</dt>
-                  <dd className="mt-2 leading-relaxed text-slate-300">
+                  <dt className="font-semibold text-foreground">{capability.name}</dt>
+                  <dd className="mt-2 leading-relaxed text-muted-foreground">
                     {capability.body}
                   </dd>
                 </div>
               ))}
             </dl>
-            <p className="mt-6 leading-relaxed text-slate-400">
+            <p className="mt-6 leading-relaxed text-muted-foreground">
               I also build and run my own products. Winzinvest is live
               commercial software for RIAs and family offices, and Foundpath and
               Casimir Systems are active. Founding things keeps me honest about
@@ -620,7 +620,7 @@ export default function Services() {
           trailing={
             <Link
               href="/work"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
             >
               All case studies
               <ArrowRight
@@ -630,7 +630,7 @@ export default function Services() {
             </Link>
           }
         />
-        <p className="mb-8 text-sm leading-relaxed text-slate-400">
+        <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
           No public testimonials on this site by choice — selected work and
           engagement shape are the proof until clients agree to be named.
         </p>
@@ -641,14 +641,14 @@ export default function Services() {
                 href={item.href}
                 className="group flex h-full flex-col rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70"
               >
-                <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
+                <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
                   {item.meta}
                 </p>
-                <h3 className="mt-3 text-xl font-semibold text-white">
+                <h3 className="mt-3 text-xl font-semibold text-foreground">
                   {item.name}
                 </h3>
-                <p className="mt-3 leading-relaxed text-slate-300">{item.body}</p>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-400">
+                <p className="mt-3 leading-relaxed text-muted-foreground">{item.body}</p>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {item.result}
                 </p>
                 <span className="mt-6 inline-flex items-center gap-2 border-t border-border/60 pt-5 text-sm font-medium text-primary">
@@ -679,8 +679,8 @@ export default function Services() {
                 key={item.title}
                 className="grid gap-x-8 gap-y-1.5 py-5 md:grid-cols-[minmax(0,13rem)_1fr]"
               >
-                <dt className="font-semibold text-white">{item.title}</dt>
-                <dd className="leading-relaxed text-slate-300">{item.body}</dd>
+                <dt className="font-semibold text-foreground">{item.title}</dt>
+                <dd className="leading-relaxed text-muted-foreground">{item.body}</dd>
               </div>
             ))}
           </dl>
@@ -702,13 +702,13 @@ export default function Services() {
                 key={engagement.name}
                 className="flex flex-col bg-background/60 p-7"
               >
-                <h3 className="text-xl font-semibold leading-snug text-white">
+                <h3 className="text-xl font-semibold leading-snug text-foreground">
                   {engagement.name}
                 </h3>
-                <p className="mt-3 leading-relaxed text-slate-300">
+                <p className="mt-3 leading-relaxed text-muted-foreground">
                   {engagement.when}
                 </p>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-400">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {engagement.scope}
                 </p>
                 <p className="mt-6 border-t border-border/60 pt-4 text-sm font-medium text-primary">
@@ -721,8 +721,8 @@ export default function Services() {
 
         <div className="mt-12 grid gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
-            <h3 className="text-xl font-semibold text-white">Investment</h3>
-            <div className="mt-5 space-y-4 leading-relaxed text-slate-300">
+            <h3 className="text-xl font-semibold text-foreground">Investment</h3>
+            <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
               <p>
                 Engagements start at $8,000 for a UX Diagnostic. Most product
                 engagements land between $20,000 and $150,000 depending on
@@ -735,7 +735,7 @@ export default function Services() {
                 credited.
               </p>
             </div>
-            <p className="mt-5 border-t border-border/60 pt-4 text-sm leading-relaxed text-slate-400">
+            <p className="mt-5 border-t border-border/60 pt-4 text-sm leading-relaxed text-muted-foreground">
               Every engagement gets a fixed, scoped proposal with explicit
               assumptions before anything begins.
             </p>
@@ -748,10 +748,10 @@ export default function Services() {
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
               Not sure where to start
             </p>
-            <h3 className="mt-4 text-xl font-semibold leading-snug text-white">
+            <h3 className="mt-4 text-xl font-semibold leading-snug text-foreground">
               Product risk and UX maturity assessment
             </h3>
-            <p className="mt-3 flex-1 leading-relaxed text-slate-300">
+            <p className="mt-3 flex-1 leading-relaxed text-muted-foreground">
               Twenty questions. About six minutes. A maturity score, your three
               largest product risks, and a recommended starting engagement. No
               email. Answers stay in this browser.
@@ -779,10 +779,10 @@ export default function Services() {
           <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 lg:grid-cols-3">
             {INDUSTRIES.map((industry) => (
               <div key={industry.title} className="bg-background/60 p-7">
-                <h3 className="text-lg font-semibold leading-snug text-white">
+                <h3 className="text-lg font-semibold leading-snug text-foreground">
                   {industry.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-slate-300">
+                <p className="mt-3 leading-relaxed text-muted-foreground">
                   {industry.body}
                 </p>
               </div>
@@ -793,10 +793,10 @@ export default function Services() {
         <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-12">
           {PRACTICALITIES.map((item) => (
             <div key={item.title}>
-              <h3 className="mb-4 text-xs uppercase tracking-[0.16em] text-slate-400">
+              <h3 className="mb-4 text-xs uppercase tracking-[0.16em] text-muted-foreground">
                 {item.title}
               </h3>
-              <p className="border-t border-border/60 pt-4 leading-relaxed text-slate-300">
+              <p className="border-t border-border/60 pt-4 leading-relaxed text-muted-foreground">
                 {item.body}
               </p>
             </div>
@@ -832,16 +832,16 @@ export default function Services() {
                 <div className="divide-y divide-border/60 border-y border-border/60 lg:col-span-8 lg:col-start-5">
                   {group.items.filter(isConsultingFaqItem).map((item) => (
                     <div key={item.question} className="py-7">
-                      <h4 className="text-lg font-semibold leading-snug text-white">
+                      <h4 className="text-lg font-semibold leading-snug text-foreground">
                         {item.question}
                       </h4>
-                      <p className="mt-3 leading-relaxed text-slate-300">
+                      <p className="mt-3 leading-relaxed text-muted-foreground">
                         {item.answer}
                       </p>
                       {item.relatedHref && item.relatedLabel ? (
                         <Link
                           href={item.relatedHref}
-                          className="group mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+                          className="group mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
                         >
                           {item.relatedLabel}
                           <ArrowRight
@@ -866,7 +866,7 @@ export default function Services() {
             <SectionTitle id="consulting-cta-heading">
               Bring me the bet you are about to fund
             </SectionTitle>
-            <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">
+            <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
               Thirty minutes, no deck. Tell me what you are about to commit to
               and which part of it is still unproven. I will tell you what I
               would do first, whether or not you hire me. If there is a fit, you
@@ -880,15 +880,15 @@ export default function Services() {
                 <Link href={consultingHref}>Book a 30-minute call</Link>
               </Button>
             </div>
-            <p className="mt-3 text-sm leading-relaxed text-slate-400 lg:text-right">
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-right">
               Form reaches me directly. I reply and we schedule — no calendar
               link on the site yet.
             </p>
-            <p className="mt-6 text-sm leading-relaxed text-slate-400 lg:text-right">
+            <p className="mt-6 text-sm leading-relaxed text-muted-foreground lg:text-right">
               Prefer email?{" "}
               <a
                 href="mailto:ryan@winzenburg.com"
-                className="font-medium text-primary transition-colors hover:text-cyan-300"
+                className="font-medium text-primary transition-colors hover:text-primary/80"
               >
                 ryan@winzenburg.com
               </a>

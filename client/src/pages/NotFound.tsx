@@ -64,7 +64,7 @@ export default function NotFound() {
             </span>
             <span
               aria-hidden="true"
-              className="font-['Playfair_Display'] text-6xl leading-none text-slate-400"
+              className="font-display text-6xl leading-none text-muted-foreground"
             >
               404
             </span>
@@ -86,15 +86,15 @@ export default function NotFound() {
                 className="group flex items-center gap-6 py-6 transition-colors hover:bg-white/5"
               >
                 <span className="min-w-0 flex-1 md:flex md:items-baseline md:gap-8">
-                  <span className="block text-lg font-semibold text-slate-100 transition-colors group-hover:text-primary md:w-44 md:shrink-0">
+                  <span className="block text-lg font-semibold text-foreground transition-colors group-hover:text-primary md:w-44 md:shrink-0">
                     {destination.label}
                   </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-slate-400 md:mt-0">
+                  <span className="mt-1 block text-sm leading-relaxed text-muted-foreground md:mt-0">
                     {destination.note}
                   </span>
                 </span>
                 <ArrowRight
-                  className="h-5 w-5 shrink-0 text-slate-400 transition-all group-hover:translate-x-1 group-hover:text-primary"
+                  className="h-5 w-5 shrink-0 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-primary"
                   aria-hidden="true"
                 />
               </Link>

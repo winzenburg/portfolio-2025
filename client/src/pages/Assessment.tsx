@@ -135,14 +135,14 @@ export default function Assessment() {
       />
 
       {/* Parks under the sticky nav rather than over it. */}
-      <div className="sticky top-[var(--nav-height,4.75rem)] z-40 border-b border-slate-800 bg-slate-950">
+      <div className="sticky top-[var(--nav-height,4.75rem)] z-40 border-b border-border/60 bg-muted">
         <div className="container py-3">
           <div className="mx-auto flex max-w-4xl items-center gap-4">
-            <p className="whitespace-nowrap font-mono text-xs uppercase tracking-widest text-slate-400">
+            <p className="whitespace-nowrap font-mono text-xs uppercase tracking-widest text-muted-foreground">
               {completed} of {TOTAL_QUESTIONS} answered
             </p>
             <div
-              className="h-1.5 flex-1 overflow-hidden rounded-full bg-slate-800"
+              className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted"
               role="progressbar"
               aria-valuemin={0}
               aria-valuemax={TOTAL_QUESTIONS}
@@ -160,11 +160,11 @@ export default function Assessment() {
 
       <div className="container py-14 md:py-16">
         <div className="mx-auto max-w-4xl">
-          <div className="border-l-2 border-cyan-500 bg-slate-900/50 px-6 py-5 mb-12">
-            <p className="text-slate-200">
+          <div className="border-l-2 border-primary bg-muted/50 px-6 py-5 mb-12">
+            <p className="text-foreground">
               Answer for how things actually work, not how they are supposed to. The value is in the gap between the two, and nobody sees your answers but you.
             </p>
-            <p className="text-slate-400 mt-3">
+            <p className="text-muted-foreground mt-3">
               If a question does not apply, pick the option closest to your situation. If you are not sure, that uncertainty is usually itself the answer. Individual answers stay in this browser.
             </p>
           </div>
@@ -175,17 +175,17 @@ export default function Assessment() {
               className="mb-14"
               aria-labelledby={`dimension-${dimension.id}-heading`}
             >
-              <div className="flex flex-wrap items-baseline gap-3 border-b-2 border-white/10 pb-3 mb-2">
+              <div className="flex flex-wrap items-baseline gap-3 border-b-2 border-primary/10 pb-3 mb-2">
                 <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 font-mono">
                   0{dimensionIndex + 1}
                 </span>
                 <h2
                   id={`dimension-${dimension.id}-heading`}
-                  className="text-2xl font-bold text-white"
+                  className="text-2xl font-bold text-foreground"
                 >
                   {dimension.name}
                 </h2>
-                <p className="text-slate-400 italic md:ml-auto">{dimension.question}</p>
+                <p className="text-muted-foreground italic md:ml-auto">{dimension.question}</p>
               </div>
 
               {dimension.questions.map((question) => {
@@ -194,13 +194,13 @@ export default function Assessment() {
                   <fieldset
                     key={question.id}
                     id={`question-${question.id}`}
-                    className="py-6 border-b border-slate-800 scroll-mt-36"
+                    className="py-6 border-b border-border/60 scroll-mt-36"
                   >
-                    <legend className="text-lg font-semibold text-white p-0 mb-0">
+                    <legend className="text-lg font-semibold text-foreground p-0 mb-0">
                       {question.prompt}
                     </legend>
                     {question.hint.length > 0 ? (
-                      <p className="text-sm text-slate-400 mt-0.5 mb-4 leading-snug">
+                      <p className="text-sm text-muted-foreground mt-0.5 mb-4 leading-snug">
                         {question.hint}
                       </p>
                     ) : (
@@ -229,8 +229,8 @@ export default function Assessment() {
                               htmlFor={inputId}
                               className={`block h-full cursor-pointer rounded-md border px-3 py-3 text-sm leading-snug transition-colors ${
                                 isSelected
-                                  ? "border-cyan-500 bg-cyan-700 text-white font-semibold"
-                                  : "border-slate-700 bg-slate-900/60 text-slate-300 hover:border-cyan-600 hover:text-white"
+                                  ? "border-primary bg-primary text-primary-foreground font-semibold"
+                                  : "border-border bg-muted/60 text-muted-foreground hover:border-primary/60 hover:text-foreground"
                               }`}
                             >
                               <span className="block font-mono text-[10px] tracking-widest uppercase opacity-60 mb-1">
@@ -261,7 +261,7 @@ export default function Assessment() {
               type="button"
               size="lg"
               variant="outline"
-              className="h-12 border-slate-500 px-8 text-base text-slate-200"
+              className="h-12 border-border px-8 text-base text-foreground"
               onClick={handleReset}
             >
               Start over
@@ -280,7 +280,7 @@ export default function Assessment() {
               aria-live="polite"
               aria-labelledby="assessment-result-heading"
             >
-              <div className="bg-cyan-950 border border-cyan-700/40 rounded-xl p-8 md:p-10 text-white mb-10">
+              <div className="bg-muted border border-primary/40 rounded-xl p-8 md:p-10 text-foreground mb-10">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <p className="text-6xl md:text-7xl font-serif leading-none">
                     {result.total}
@@ -305,8 +305,8 @@ export default function Assessment() {
                       key={level.name}
                       className={`flex items-center justify-center text-center px-2 py-2 text-[10px] uppercase tracking-widest font-mono ${
                         level.name === result.level.name
-                          ? "bg-white text-cyan-900 font-bold"
-                          : "bg-white/10 text-cyan-100/80"
+                          ? "bg-background text-cyan-900 font-bold"
+                          : "bg-background/10 text-cyan-100/80"
                       }`}
                     >
                       {level.name}
@@ -315,20 +315,20 @@ export default function Assessment() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-4">Where your risk sits</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Where your risk sits</h3>
               <div className="mb-10">
                 {result.ranked.map((dimension) => {
                   const pct = (dimension.score / DIMENSION_MAX) * 100;
                   return (
                     <div
                       key={dimension.id}
-                      className="grid grid-cols-[1fr_3rem] md:grid-cols-[13rem_1fr_3.5rem] gap-3 md:gap-4 items-center py-3 border-b border-slate-800"
+                      className="grid grid-cols-[1fr_3rem] md:grid-cols-[13rem_1fr_3.5rem] gap-3 md:gap-4 items-center py-3 border-b border-border/60"
                     >
-                      <p className="font-semibold text-white">{dimension.name}</p>
-                      <p className="text-right font-mono text-xs text-slate-400 md:order-last">
+                      <p className="font-semibold text-foreground">{dimension.name}</p>
+                      <p className="text-right font-mono text-xs text-muted-foreground md:order-last">
                         {dimension.score}/{DIMENSION_MAX}
                       </p>
-                      <div className="h-2.5 rounded-full bg-slate-800 overflow-hidden col-span-2 md:col-span-1">
+                      <div className="h-2.5 rounded-full bg-muted overflow-hidden col-span-2 md:col-span-1">
                         <div
                           className={`h-full ${barFillClass(scoreBarTone(dimension.score, DIMENSION_MAX))}`}
                           style={{ width: `${String(pct)}%` }}
@@ -339,13 +339,13 @@ export default function Assessment() {
                 })}
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-4">Your three largest risks</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Your three largest risks</h3>
               <div className="mb-10 space-y-4">
                 {result.topRisks.map((risk, index) => (
                   <div
                     key={risk.dimension.id}
-                    className={`border-l-2 px-5 py-5 bg-slate-900/50 ${
-                      index === 0 ? "border-red-500" : "border-cyan-600"
+                    className={`border-l-2 px-5 py-5 bg-muted/50 ${
+                      index === 0 ? "border-red-500" : "border-primary/60"
                     }`}
                   >
                     <p
@@ -355,24 +355,24 @@ export default function Assessment() {
                     >
                       Risk {index + 1} · {risk.dimension.name} · {risk.dimension.score}/{DIMENSION_MAX}
                     </p>
-                    <h4 className="text-lg font-bold text-white mb-2">{risk.flag.headline}</h4>
-                    <p className="text-slate-300 leading-relaxed">{risk.flag.body}</p>
+                    <h4 className="text-lg font-bold text-foreground mb-2">{risk.flag.headline}</h4>
+                    <p className="text-muted-foreground leading-relaxed">{risk.flag.body}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="border border-slate-700 border-t-4 border-t-cyan-500 rounded-lg p-8 mb-10">
+              <div className="border border-border border-t-4 border-t-cyan-500 rounded-lg p-8 mb-10">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-cyan-400 font-mono">
                   Where I would start
                 </p>
-                <h3 className="text-3xl font-bold text-white mt-2">{result.recommendation.name}</h3>
+                <h3 className="text-3xl font-bold text-foreground mt-2">{result.recommendation.name}</h3>
                 <p className="text-xl text-cyan-300 mt-1">{result.recommendation.timing}</p>
-                <p className="text-slate-300 leading-relaxed mt-4">{result.recommendation.why}</p>
+                <p className="text-muted-foreground leading-relaxed mt-4">{result.recommendation.why}</p>
                 <ul className="mt-4">
                   {result.recommendation.includes.map((item) => (
                     <li
                       key={item}
-                      className="text-slate-300 py-2 pl-4 border-b border-slate-800 last:border-0 relative before:content-['·'] before:absolute before:left-0 before:text-cyan-400"
+                      className="text-muted-foreground py-2 pl-4 border-b border-border/60 last:border-0 relative before:content-['·'] before:absolute before:left-0 before:text-cyan-400"
                     >
                       {item}
                     </li>
@@ -388,7 +388,7 @@ export default function Assessment() {
                 <Button
                   size="lg"
                   asChild
-                  className="h-12 bg-white px-8 text-base text-blue-700 hover:bg-blue-50"
+                  className="h-12 bg-background px-8 text-base text-blue-700 hover:bg-blue-50"
                 >
                   <Link href={consultingHref}>
                     Book a 30-minute consultation
@@ -397,7 +397,7 @@ export default function Assessment() {
                 </Button>
                 <p className="text-blue-50 mt-6 text-sm">
                   Prefer email?{" "}
-                  <a href="mailto:ryan@winzenburg.com" className="underline hover:text-white">
+                  <a href="mailto:ryan@winzenburg.com" className="underline hover:text-foreground">
                     ryan@winzenburg.com
                   </a>
                 </p>
@@ -405,7 +405,7 @@ export default function Assessment() {
             </section>
           ) : null}
 
-          <p className="text-sm text-slate-400 leading-relaxed mt-12 pt-6 border-t border-slate-800">
+          <p className="text-sm text-muted-foreground leading-relaxed mt-12 pt-6 border-t border-border/60">
             This assessment is a structured self-diagnostic, not an audit. It reflects what you reported about your own team, and it is deliberately blunt in order to be useful. A real diagnostic looks at your analytics, your support tickets, and your users, and frequently finds something different from what a team expects.
           </p>
         </div>

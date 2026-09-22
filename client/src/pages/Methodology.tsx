@@ -197,7 +197,7 @@ function PhaseBlock({
             <div className="mb-5 flex items-center gap-4">
               <span
                 aria-hidden="true"
-                className="font-['Playfair_Display'] text-2xl text-slate-400"
+                className="font-display text-2xl text-muted-foreground"
               >
                 {String(index + 1).padStart(2, "0")}
               </span>
@@ -208,25 +208,25 @@ function PhaseBlock({
             </div>
             <h3
               id={headingId}
-              className="mb-4 text-2xl font-bold tracking-tight text-white md:text-3xl"
+              className="mb-4 text-2xl font-bold tracking-tight text-foreground md:text-3xl"
             >
               {phase.name}
             </h3>
-            <p className="leading-relaxed text-slate-300">{phase.summary}</p>
+            <p className="leading-relaxed text-muted-foreground">{phase.summary}</p>
           </div>
         </div>
 
         <div className="lg:col-span-8">
           <div className="grid gap-8 md:grid-cols-2 md:gap-12">
             <div>
-              <h4 className="mb-4 text-xs uppercase tracking-[0.16em] text-slate-400">
+              <h4 className="mb-4 text-xs uppercase tracking-[0.16em] text-muted-foreground">
                 What I do
               </h4>
               <ul className="space-y-2.5 border-t border-border/60 pt-4">
                 {phase.activities.map((activity) => (
                   <li
                     key={activity}
-                    className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-300"
+                    className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground"
                   >
                     <span
                       aria-hidden="true"
@@ -238,7 +238,7 @@ function PhaseBlock({
               </ul>
             </div>
             <div>
-              <h4 className="mb-4 text-xs uppercase tracking-[0.16em] text-slate-400">
+              <h4 className="mb-4 text-xs uppercase tracking-[0.16em] text-muted-foreground">
                 What it is worth
               </h4>
               <dl className="divide-y divide-border/60 border-t border-border/60">
@@ -247,10 +247,10 @@ function PhaseBlock({
                     key={item.audience}
                     className="grid grid-cols-[minmax(0,6rem)_1fr] gap-x-4 py-3"
                   >
-                    <dt className="text-sm font-medium text-slate-100">
+                    <dt className="text-sm font-medium text-foreground">
                       {item.audience}
                     </dt>
-                    <dd className="text-sm leading-relaxed text-slate-300">
+                    <dd className="text-sm leading-relaxed text-muted-foreground">
                       {item.benefit}
                     </dd>
                   </div>
@@ -260,10 +260,10 @@ function PhaseBlock({
           </div>
 
           <div className="mt-8 rounded-xl border border-border/60 bg-background/40 p-6">
-            <p className="text-xs uppercase tracking-[0.16em] text-slate-400">
+            <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
               Deliverable
             </p>
-            <p className="mt-2 leading-relaxed text-slate-200">
+            <p className="mt-2 leading-relaxed text-foreground">
               {phase.deliverable}
             </p>
           </div>
@@ -318,15 +318,15 @@ export default function Methodology() {
               Expert-guided AI orchestration
             </SectionTitle>
           </div>
-          <div className="space-y-6 text-lg leading-relaxed text-slate-300 lg:col-span-7 lg:col-start-6">
-            <p className="text-xl text-slate-200 md:text-2xl md:leading-snug">
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground lg:col-span-7 lg:col-start-6">
+            <p className="text-xl text-foreground md:text-2xl md:leading-snug">
               Most people use AI wrong. They ask it to &ldquo;design a
               webpage&rdquo; and get generic, soulless results. That&apos;s not
               how I work.
             </p>
             <p>
               My methodology treats{" "}
-              <strong className="font-semibold text-white">
+              <strong className="font-semibold text-foreground">
                 AI as a force multiplier, guided by expert judgment
               </strong>
               . I do the strategic thinking: what to build, why it matters, how
@@ -360,9 +360,9 @@ export default function Methodology() {
             <a
               key={phase.slug}
               href={`#${phase.slug}`}
-              className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/40 px-4 py-1.5 text-sm font-medium text-slate-300 transition-colors hover:border-primary/50 hover:text-primary"
+              className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/40 px-4 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
             >
-              <span aria-hidden="true" className="text-slate-400">
+              <span aria-hidden="true" className="text-muted-foreground">
                 {String(index + 1).padStart(2, "0")}
               </span>
               {phase.shortName}
@@ -395,27 +395,27 @@ export default function Methodology() {
                 <div className="mb-6 flex items-baseline gap-3">
                   <span
                     aria-hidden="true"
-                    className="font-['Playfair_Display'] text-2xl text-primary/70"
+                    className="font-display text-2xl text-primary/70"
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
                 </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-white">
+                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
                   {reason.title}
                 </h3>
-                <p className="leading-relaxed text-slate-300">{reason.body}</p>
+                <p className="leading-relaxed text-muted-foreground">{reason.body}</p>
               </div>
             ))}
           </div>
         </Reveal>
 
-        <p className="mt-10 max-w-2xl leading-relaxed text-slate-300">
+        <p className="mt-10 max-w-2xl leading-relaxed text-muted-foreground">
           Engagement scopes, timelines, and pricing live on the consulting
           page.{" "}
           <Link
             href="/consulting"
-            className="group inline-flex items-center gap-1.5 font-medium text-primary transition-colors hover:text-cyan-300"
+            className="group inline-flex items-center gap-1.5 font-medium text-primary transition-colors hover:text-primary/80"
           >
             See how engagements are scoped
             <ArrowRight
@@ -433,7 +433,7 @@ export default function Methodology() {
             <SectionTitle id="methodology-cta-heading">
               Want to see how this runs on your product?
             </SectionTitle>
-            <p className="mt-5 max-w-2xl leading-relaxed text-slate-300">
+            <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
               Tell me what you are shipping and where it is stuck. I will walk
               you through what the five phases would look like against it,
               including the parts I would not use.

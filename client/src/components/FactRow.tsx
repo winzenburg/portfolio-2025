@@ -31,13 +31,13 @@ export default function FactRow({ facts, className }: FactRowProps) {
           key={fact.label}
           className="row-span-2 grid grid-rows-subgrid gap-0"
         >
-          <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
+          <dt className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
             {fact.label}
           </dt>
-          <dd className="mt-2 text-sm font-medium text-slate-100">
+          <dd className="mt-2 text-sm font-medium text-foreground">
             {fact.value}
             {fact.note ? (
-              <span className="mt-1 block text-xs font-normal text-slate-400">
+              <span className="mt-1 block text-xs font-normal text-muted-foreground">
                 {fact.note}
               </span>
             ) : null}

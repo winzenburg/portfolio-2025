@@ -188,7 +188,7 @@ export default function PageHero({
                   {eyebrow}
                 </span>
                 {eyebrowNote ? (
-                  <span className="hidden text-xs uppercase tracking-[0.14em] text-slate-400 sm:inline">
+                  <span className="hidden text-xs uppercase tracking-[0.14em] text-muted-foreground sm:inline">
                     {eyebrowNote}
                   </span>
                 ) : null}
@@ -197,7 +197,7 @@ export default function PageHero({
 
             <h1
               id={titleId}
-              className="text-pretty text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-pretty text-4xl font-bold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
             >
               {title}
             </h1>
@@ -205,7 +205,7 @@ export default function PageHero({
             {lede ? (
               <p
                 className={cn(
-                  "mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl",
+                  "mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl",
                   isCentered ? "mx-auto" : "",
                 )}
               >
@@ -229,7 +229,7 @@ export default function PageHero({
             {footnote ? (
               <div
                 className={cn(
-                  "mt-6 max-w-xl space-y-1 text-sm leading-relaxed text-slate-400",
+                  "mt-6 max-w-xl space-y-1 text-sm leading-relaxed text-muted-foreground",
                   isCentered ? "mx-auto" : "",
                 )}
               >

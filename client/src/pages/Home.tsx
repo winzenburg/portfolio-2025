@@ -187,7 +187,7 @@ export default function Home() {
               Hiring for a leadership role instead?{" "}
               <Link
                 href={roleHref}
-                className="font-medium text-primary transition-colors hover:text-cyan-300"
+                className="font-medium text-primary transition-colors hover:text-primary/80"
               >
                 That is a different conversation.
               </Link>
@@ -204,7 +204,7 @@ export default function Home() {
           <SectionTitle id="problem-heading" className="mt-4">
             You already have a bet. You need to know if the direction holds.
           </SectionTitle>
-          <p className="mt-6 text-lg leading-relaxed text-slate-300">
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             Most expensive product mistakes are not craft mistakes. They are
             delivery quarters spent on a direction nobody validated. If you are
             about to commit budget, the useful work is evidence, explicit cuts,
@@ -212,7 +212,7 @@ export default function Home() {
           </p>
           <Link
             href="/consulting"
-            className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+            className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
           >
             See how engagements work
             <ArrowRight
@@ -233,7 +233,7 @@ export default function Home() {
           trailing={
             <Link
               href="/consulting"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
             >
               How this turns into an engagement
               <ArrowRight
@@ -258,19 +258,19 @@ export default function Home() {
                   </span>
                   <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
                 </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-white">
+                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
                   {capability.name}
                 </h3>
-                <p className="mb-6 leading-relaxed text-slate-300">
+                <p className="mb-6 leading-relaxed text-muted-foreground">
                   {capability.summary}
                 </p>
                 <ul className="space-y-4 border-t border-border/60 pt-6">
                   {capability.points.map((point) => (
                     <li key={point.title}>
-                      <p className="text-sm font-medium text-slate-100">
+                      <p className="text-sm font-medium text-foreground">
                         {point.title}
                       </p>
-                      <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                         {point.detail}
                       </p>
                     </li>
@@ -300,10 +300,10 @@ export default function Home() {
                     {index + 1}
                   </span>
                   <div>
-                    <h3 className="mb-2 font-semibold text-white">
+                    <h3 className="mb-2 font-semibold text-foreground">
                       {principle.title}
                     </h3>
-                    <p className="leading-relaxed text-slate-300">
+                    <p className="leading-relaxed text-muted-foreground">
                       {principle.body}
                     </p>
                   </div>
@@ -313,14 +313,14 @@ export default function Home() {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <h3 className="mb-6 text-xs uppercase tracking-[0.16em] text-slate-400">
+            <h3 className="mb-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">
               What stays in the human layer
             </h3>
             <dl className="divide-y divide-border/60 overflow-hidden rounded-xl border border-border/60 bg-background/40">
               {humanLayer.map((item) => (
                 <div key={item.title} className="p-6 md:p-7">
-                  <dt className="mb-2 font-semibold text-white">{item.title}</dt>
-                  <dd className="leading-relaxed text-slate-300">{item.body}</dd>
+                  <dt className="mb-2 font-semibold text-foreground">{item.title}</dt>
+                  <dd className="leading-relaxed text-muted-foreground">{item.body}</dd>
                 </div>
               ))}
             </dl>
@@ -338,7 +338,7 @@ export default function Home() {
           trailing={
             <Link
               href="/work"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
             >
               See the case studies
               <ArrowRight
@@ -352,10 +352,10 @@ export default function Home() {
           {environments.map((environment) => {
             const content = (
               <>
-                <span className="block text-lg font-semibold text-white">
+                <span className="block text-lg font-semibold text-foreground">
                   {environment.name}
                 </span>
-                <span className="mt-1.5 block text-sm text-slate-400">
+                <span className="mt-1.5 block text-sm text-muted-foreground">
                   {environment.detail}
                 </span>
               </>
@@ -369,7 +369,7 @@ export default function Home() {
                   >
                     <span>{content}</span>
                     <ArrowRight
-                      className="h-4 w-4 shrink-0 text-slate-500 transition-all group-hover:text-primary motion-safe:group-hover:translate-x-1"
+                      className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:text-primary motion-safe:group-hover:translate-x-1"
                       aria-hidden="true"
                     />
                   </Link>
@@ -388,7 +388,7 @@ export default function Home() {
           <SectionTitle id="home-cta-heading">
             About to commit budget to something nobody has validated?
           </SectionTitle>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             That is the moment this work is worth the most. Thirty minutes, no
             deck: tell me what you&apos;re about to fund and which part of it is
             still a guess. I&apos;ll tell you what I&apos;d do first, whether or

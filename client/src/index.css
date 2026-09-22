@@ -66,7 +66,7 @@
   --primitive-paper:         oklch(0.98 0.010 95);
   --primitive-paper-subtle:  oklch(0.95 0.010 90);
   --primitive-ink:           oklch(0.20 0.018 262);
-  --primitive-ink-muted:     oklch(0.47 0.012 262);
+  --primitive-ink-muted:     oklch(0.35 0.014 262);  /* darkened: passes ≥7:1 on paper for WCAG AA */
   --primitive-rule:          oklch(0.87 0.007 95);
   --primitive-rule-strong:   oklch(0.74 0.008 95);
   --primitive-accent:        oklch(0.37 0.140 258);   /* deep ink-blue */

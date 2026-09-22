@@ -10,7 +10,7 @@ import { Section } from "@/components/Section";
 type UnsubscribeStatus = "idle" | "loading" | "success" | "error";
 
 const FIELD_CLASS =
-  "w-full rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50";
+  "w-full rounded-lg border border-border bg-muted/60 px-4 py-3 text-foreground placeholder:text-muted-foreground outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50";
 
 export default function Unsubscribe() {
   const searchString = useSearch();
@@ -73,7 +73,7 @@ export default function Unsubscribe() {
           <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
             <h2
               id="unsubscribe-form-heading"
-              className="text-xl font-semibold text-white"
+              className="text-xl font-semibold text-foreground"
             >
               Remove an address from the list
             </h2>
@@ -88,15 +88,15 @@ export default function Unsubscribe() {
                       aria-hidden="true"
                     />
                   </span>
-                  <h3 className="text-lg font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-foreground">
                     You&apos;ve been unsubscribed
                   </h3>
-                  <p className="mt-2 leading-relaxed text-slate-300">
+                  <p className="mt-2 leading-relaxed text-muted-foreground">
                     You won&apos;t receive any more newsletter emails from us.
                   </p>
                   <Link
                     href="/articles"
-                    className="mt-5 inline-flex text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+                    className="mt-5 inline-flex text-sm font-medium text-primary transition-colors hover:text-primary/80"
                   >
                     Read the articles archive
                   </Link>
@@ -109,7 +109,7 @@ export default function Unsubscribe() {
                 <div>
                   <label
                     htmlFor="unsubscribe-email"
-                    className="mb-2 block text-sm font-medium text-slate-300"
+                    className="mb-2 block text-sm font-medium text-muted-foreground"
                   >
                     Email address
                   </label>
@@ -128,7 +128,7 @@ export default function Unsubscribe() {
                   />
                   <p
                     id="unsubscribe-email-note"
-                    className="mt-2 text-sm text-slate-400"
+                    className="mt-2 text-sm text-muted-foreground"
                   >
                     Use the address the newsletter arrives at, not a forwarding
                     alias.
@@ -155,11 +155,11 @@ export default function Unsubscribe() {
             )}
           </div>
 
-          <p className="mt-6 text-center text-sm leading-relaxed text-slate-400">
+          <p className="mt-6 text-center text-sm leading-relaxed text-muted-foreground">
             Landed here by mistake?{" "}
             <Link
               href="/subscribe"
-              className="text-primary underline underline-offset-4 transition-colors hover:text-cyan-300"
+              className="text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
             >
               Stay on the list
             </Link>
