@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function TechnicalStackModernWebStandards() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Technical Stack: Modern Web Standards for Product Creation Platforms | Ryan Winzenburg</title>
@@ -25,7 +25,7 @@ export default function TechnicalStackModernWebStandards() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -40,7 +40,7 @@ export default function TechnicalStackModernWebStandards() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 7, 2024</span>
             <span>•</span>
             <span>11 min read</span>
@@ -48,25 +48,25 @@ export default function TechnicalStackModernWebStandards() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Technical Stack: Modern Web Standards for Product Creation Platforms
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.
             </p>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200" data-article-layout="v2">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground" data-article-layout="v2">
       {/* Platform Architecture Visualization */}
-      <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
+      <div className="my-12 rounded-xl overflow-hidden border border-border/50 bg-muted/50">
         <img loading="lazy"
           src="/images/articles/layercake.webp"
           alt="Platform Architecture Visualization: Layers showing Database, API, and Frontend"
           className="w-full h-auto"
         />
-        <div className="p-4 text-center border-t border-slate-700/50">
-          <p className="text-sm text-slate-400 italic">
+        <div className="p-4 text-center border-t border-border/50">
+          <p className="text-sm text-muted-foreground italic">
             The Production Stack: Organized layers from data to experience.
           </p>
         </div>
@@ -111,8 +111,8 @@ export default function TechnicalStackModernWebStandards() {
           The kicker? I was spending more time managing my validation tools than actually validating.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-0">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-0">
             "I was spending more time managing my validation tools than actually validating."
           </p>
         </div>
@@ -162,9 +162,9 @@ export default function TechnicalStackModernWebStandards() {
           The App Router's separation between server and client components solved a problem I didn't even know I had: accidentally leaking sensitive validation data to the browser. Now, my market research stays on the server where it belongs, and my UI components focus on being, well, UI components.
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h4 className="text-cyan-400 font-semibold mb-2">Next.js Impact</h4>
-          <ul className="text-slate-200 space-y-1 mb-0">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
+          <h4 className="text-primary font-semibold mb-2">Next.js Impact</h4>
+          <ul className="text-foreground space-y-1 mb-0">
             <li>• 60% faster development cycles</li>
             <li>• Zero configuration for server/client separation</li>
             <li>• Built-in metadata management for SEO</li>
@@ -212,8 +212,8 @@ export default function TechnicalStackModernWebStandards() {
           PostgreSQL was the obvious choice for the database. It handles the complex queries I need for market analysis, scales with user growth, and has enough JSON support for the flexible data structures validation requires.
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h4 className="text-cyan-400 font-semibold mb-2"> Before vs After Data Management</h4>
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
+          <h4 className="text-primary font-semibold mb-2"> Before vs After Data Management</h4>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
               <h5 className="font-semibold text-red-200 mb-2">Before: Spreadsheet Hell</h5>
@@ -225,7 +225,7 @@ export default function TechnicalStackModernWebStandards() {
               </ul>
             </div>
             <div>
-              <h5 className="font-semibold text-slate-200 mb-2">After: Unified Platform</h5>
+              <h5 className="font-semibold text-foreground mb-2">After: Unified Platform</h5>
               <ul className="text-green-300 space-y-1">
                 <li>• Single source of truth</li>
                 <li>• Automatic data consistency</li>
@@ -280,14 +280,14 @@ export default function TechnicalStackModernWebStandards() {
           When I update market research, the dashboard automatically recalculates opportunity scores. When I add competitor analysis, it updates positioning recommendations. Everything flows together instead of existing in silos.
         </p>
 
-        <div className="my-12 rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800/50">
+        <div className="my-12 rounded-xl overflow-hidden border border-border/50 bg-muted/50">
           <img loading="lazy"
             src="/images/articles/dashboard-view.webp"
             alt="Unified Validation Dashboard: Market Size, Competitor Analysis, and User Feedback in one view"
             className="w-full h-auto"
           />
-          <div className="p-4 text-center border-t border-slate-700/50">
-            <p className="text-sm text-slate-400 italic">
+          <div className="p-4 text-center border-t border-border/50">
+            <p className="text-sm text-muted-foreground italic">
               The Validation Dashboard: All critical metrics in a single pane of glass.
             </p>
           </div>
@@ -310,8 +310,8 @@ export default function TechnicalStackModernWebStandards() {
           The key insight? I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-0">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-0">
             "I'm not using AI to make decisions for me. I'm using it to generate better questions and synthesize information faster."
           </p>
         </div>
@@ -330,9 +330,9 @@ export default function TechnicalStackModernWebStandards() {
           This is strategic on top of being efficient. I'm de-risking the technical implementation while I'm validating the market. By the time I'm ready to build, half the technical work is already done.
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 my-8">
-          <h4 className="text-cyan-400 font-semibold mb-2">Platform Impact</h4>
-          <ul className="text-slate-200 space-y-1 mb-0">
+        <div className="bg-muted/50 border border-border rounded-lg p-6 my-8">
+          <h4 className="text-primary font-semibold mb-2">Platform Impact</h4>
+          <ul className="text-foreground space-y-1 mb-0">
             <li>• 75% faster validation cycles</li>
             <li>• 90% reduction in data inconsistencies</li>
             <li>• 60% faster time-to-market post-validation</li>
@@ -429,8 +429,8 @@ export default function TechnicalStackModernWebStandards() {
           The key insight? Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-0">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-0">
             "Choose boring, proven technologies over shiny new ones. Your validation platform isn't where you want to be an early adopter."
           </p>
         </div>
@@ -481,8 +481,8 @@ export default function TechnicalStackModernWebStandards() {
           The trick is knowing which tool fits your ambition.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-300 font-medium mb-0">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium mb-0">
             "The goal isn't to build the perfect validation platform. The goal is to validate ideas faster and more effectively, then ship products that succeed."
           </p>
         </div>
@@ -492,26 +492,26 @@ export default function TechnicalStackModernWebStandards() {
         </p>
 
             {/* Tags */}
-            <div className="mt-8 pt-8 border-t border-slate-700">
+            <div className="mt-8 pt-8 border-t border-border">
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-sm">AI Workflow</span>
-                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Product Validation</span>
-                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Technical Stack</span>
-                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Next.js</span>
-                <span className="px-3 py-1 bg-slate-800/50 text-slate-100 rounded-full text-sm">Platform Strategy</span>
+                <span className="px-3 py-1 bg-primary/8 text-primary rounded-full text-sm">AI Workflow</span>
+                <span className="px-3 py-1 bg-muted/50 text-foreground rounded-full text-sm">Product Validation</span>
+                <span className="px-3 py-1 bg-muted/50 text-foreground rounded-full text-sm">Technical Stack</span>
+                <span className="px-3 py-1 bg-muted/50 text-foreground rounded-full text-sm">Next.js</span>
+                <span className="px-3 py-1 bg-muted/50 text-foreground rounded-full text-sm">Platform Strategy</span>
               </div>
             </div>
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

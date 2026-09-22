@@ -57,7 +57,7 @@ export default function ArticleFaq({
       <section className="my-16" aria-labelledby="article-faq-heading">
         <h2
           id="article-faq-heading"
-          className="text-3xl font-bold text-white mb-6"
+          className="text-3xl font-bold text-foreground mb-6"
         >
           {heading}
         </h2>
@@ -65,12 +65,12 @@ export default function ArticleFaq({
           {faqItems.map((item) => (
             <div
               key={item.question}
-              className="border-b border-slate-800 pb-6 last:border-b-0 last:pb-0"
+              className="border-b border-border pb-6 last:border-b-0 last:pb-0"
             >
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-foreground mb-3">
                 {item.question}
               </h3>
-              <p className="text-slate-300 leading-relaxed">{item.answer}</p>
+              <p className="text-muted-foreground leading-relaxed">{item.answer}</p>
             </div>
           ))}
         </div>

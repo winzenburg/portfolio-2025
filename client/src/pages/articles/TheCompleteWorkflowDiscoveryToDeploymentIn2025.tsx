@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function CompleteWorkflowPost() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Complete Workflow: Discovery to Deployment in 2025 | Ryan Winzenburg</title>
@@ -25,7 +25,7 @@ export default function CompleteWorkflowPost() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -40,7 +40,7 @@ export default function CompleteWorkflowPost() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 15, 2024</span>
             <span>•</span>
             <span>12 min read</span>
@@ -48,14 +48,14 @@ export default function CompleteWorkflowPost() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Complete Workflow: Discovery to Deployment in 2025
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
-          <p className="text-xl text-slate-300 mb-8 font-medium">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
+          <p className="text-xl text-muted-foreground mb-8 font-medium">
             Last month, I killed 7 product ideas in 15 minutes. Not because I'm ruthless, because I finally built a system that tells me which ideas are worth pursuing before I waste months building the wrong thing.
           </p>
 
@@ -71,9 +71,9 @@ export default function CompleteWorkflowPost() {
             So I built what I wish I'd had three years ago: a fully systematic SaaS creation workflow that transforms ideas into validated, defensible products with predictable outcomes. Not a framework I'm "planning to implement", our production system, running right now, managing 16+ product ideas at various stages.
           </p>
 
-          <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
-            <h3 className="text-lg font-semibold mb-4 text-cyan-300">The System at a Glance</h3>
-            <ul className="space-y-2 text-cyan-300">
+          <div className="bg-primary/5 p-6 rounded-lg my-8">
+            <h3 className="text-lg font-semibold mb-4 text-primary">The System at a Glance</h3>
+            <ul className="space-y-2 text-primary">
               <li><strong>25 specialized AI agents</strong> coordinated by a single orchestrator</li>
               <li><strong>8 mandatory quality gates</strong> that ideas must pass through</li>
               <li><strong>150+ rules</strong> organized into a four-tier taxonomy</li>
@@ -92,7 +92,7 @@ export default function CompleteWorkflowPost() {
             Remember those choose-your-own-adventure books? Our workflow is like that, except the wrong choices get killed at hard gates instead of leading to dragon encounters.
           </p>
 
-          <div className="bg-slate-800 p-6 rounded-lg font-mono text-sm my-8 text-slate-300">
+          <div className="bg-muted p-6 rounded-lg font-mono text-sm my-8 text-muted-foreground">
             <div className="text-center">
               Portfolio → Discovery → Validation → Build → Scale<br/>
               &nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br/>
@@ -138,11 +138,11 @@ export default function CompleteWorkflowPost() {
             If the idea scores below 20, it gets killed immediately. No appeals court. No "but I really believe in this one."
           </p>
 
-          <div className="bg-slate-800/50 p-6 rounded-lg my-8">
+          <div className="bg-muted/50 p-6 rounded-lg my-8">
             <h3 className="text-lg font-semibold mb-3 text-green-900">Portfolio Gate Results</h3>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
-                <div className="text-2xl font-bold text-slate-200">23</div>
+                <div className="text-2xl font-bold text-foreground">23</div>
                 <div className="text-sm text-green-300">Ideas Scored</div>
               </div>
               <div>
@@ -150,8 +150,8 @@ export default function CompleteWorkflowPost() {
                 <div className="text-sm text-red-300">Killed at Gate 1</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-slate-200">~150</div>
-                <div className="text-sm text-cyan-400">Hours Saved</div>
+                <div className="text-2xl font-bold text-foreground">~150</div>
+                <div className="text-sm text-primary">Hours Saved</div>
               </div>
             </div>
           </div>
@@ -233,9 +233,9 @@ export default function CompleteWorkflowPost() {
             The Opportunity & Moat Agent synthesizes everything into an Opportunity Score (0-10) and a Moat Thesis. No fluffy "we're building a platform" nonsense, specific defensibility mechanisms.
           </p>
 
-          <div className="bg-slate-800/50 p-6 rounded-lg my-8">
+          <div className="bg-muted/50 p-6 rounded-lg my-8">
             <h4 className="font-semibold text-yellow-900 mb-2"></h4>
-            <p className="text-lg italic text-cyan-400">
+            <p className="text-lg italic text-primary">
               "The questions lead to better decisions. The AI just helps you ask them."
             </p>
           </div>
@@ -313,7 +313,7 @@ export default function CompleteWorkflowPost() {
             No UI design, no code, no marketing assets until the brand system is documented. This prevents the "design by committee" problems that plague most startups.
           </p>
 
-          <div className="bg-slate-800/30 p-6 rounded-lg my-8">
+          <div className="bg-muted/30 p-6 rounded-lg my-8">
             <h4 className="font-semibold mb-3"> Before vs. After Brand System</h4>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -326,7 +326,7 @@ export default function CompleteWorkflowPost() {
                 </ul>
               </div>
               <div>
-                <h5 className="font-medium text-slate-200 mb-2">✅ After (Brand System)</h5>
+                <h5 className="font-medium text-foreground mb-2">✅ After (Brand System)</h5>
                 <ul className="text-sm space-y-1 text-green-300">
                   <li>"How did today feel?"</li>
                   <li>"Progress, not perfection"</li>
@@ -439,23 +439,23 @@ export default function CompleteWorkflowPost() {
             Since implementing this system (~6 months in its current form):
           </p>
 
-          <div className="bg-slate-800 p-6 rounded-lg my-8">
-            <h3 className="text-lg font-semibold mb-4 text-cyan-300">Portfolio Performance</h3>
-            <ul className="space-y-2 text-slate-300">
+          <div className="bg-muted p-6 rounded-lg my-8">
+            <h3 className="text-lg font-semibold mb-4 text-primary">Portfolio Performance</h3>
+            <ul className="space-y-2 text-muted-foreground">
               <li>• 23 ideas scored, 7 killed at portfolio gate (saved ~150 hours)</li>
               <li>• 16 proceeded to discovery, 9 killed/pivoted at discovery gate</li>
               <li>• 7 proceeded to validation</li>
             </ul>
             
-            <h3 className="text-lg font-semibold mb-4 mt-6 text-cyan-300">Validation & Build</h3>
-            <ul className="space-y-2 text-slate-300">
+            <h3 className="text-lg font-semibold mb-4 mt-6 text-primary">Validation & Build</h3>
+            <ul className="space-y-2 text-muted-foreground">
               <li>• 4 passed validation thresholds, 3 currently in validation</li>
               <li>• 3 products in production, 1 shipped to 100% of users</li>
               <li>• Zero P0 security incidents (Security Gate caught 12 critical issues)</li>
             </ul>
             
-            <h3 className="text-lg font-semibold mb-4 mt-6 text-cyan-300">Time to Ship</h3>
-            <ul className="space-y-2 text-slate-300">
+            <h3 className="text-lg font-semibold mb-4 mt-6 text-primary">Time to Ship</h3>
+            <ul className="space-y-2 text-muted-foreground">
               <li>• Old way: 6-12 months, ~60% failure rate</li>
               <li>• New way: 2-4 months, ~75% success rate</li>
             </ul>
@@ -543,9 +543,9 @@ export default function CompleteWorkflowPost() {
             The most creative people I know use the most systematic processes. Because systems free your brain to focus on the interesting problems instead of remembering what step comes next.
           </p>
 
-          <div className="bg-cyan-900/20 p-6 rounded-lg my-8">
+          <div className="bg-primary/5 p-6 rounded-lg my-8">
             <h3 className="text-lg font-semibold mb-3 text-blue-900"></h3>
-            <p className="text-lg italic text-cyan-300">
+            <p className="text-lg italic text-primary">
               "What if every product you built had a 75% success rate instead of 10%? That's the promise of systematic product creation."
             </p>
           </div>
@@ -572,14 +572,14 @@ export default function CompleteWorkflowPost() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

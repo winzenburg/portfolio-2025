@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function Article() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Hub Evolution: From Static Docs to Real-Time Portfolio Intelligence | Ryan Winzenburg</title>
@@ -25,7 +25,7 @@ export default function Article() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -40,7 +40,7 @@ export default function Article() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 14, 2024</span>
             <span>•</span>
             <span>7 min read</span>
@@ -48,13 +48,13 @@ export default function Article() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Hub Evolution: From Static Docs to Decision Dashboard
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
         <p className="lead">
           I used to dread documentation. We'd write comprehensive PRDs, discovery docs, validation plans, all beautifully formatted in Notion. Then they'd sit there, forgotten, while we built the product.
         </p>
@@ -75,11 +75,11 @@ export default function Article() {
           So we built the opposite: <strong>The Hub</strong>, a living, real-time portfolio dashboard that surfaces every idea, every doc, every validation result, and every verdict in one searchable interface.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <div className="flex">
             <div className="ml-3">
-              <p className="text-sm text-slate-200 font-medium mb-2">PULL QUOTE</p>
-              <p className="text-slate-200 text-lg italic">
+              <p className="text-sm text-foreground font-medium mb-2">PULL QUOTE</p>
+              <p className="text-foreground text-lg italic">
                 "The Hub isn't a graveyard of forgotten docs. It's the control center for our entire SaaS creation pipeline."
               </p>
             </div>
@@ -177,16 +177,16 @@ export default function Article() {
           <strong>No Decision Support</strong>: Docs don't surface verdicts. You have to read the full discovery doc to find the Opportunity Score, read the validation plan to find the thresholds, read the results doc to see if they passed.
         </p>
 
-        <div className="bg-slate-800/30 p-6 rounded-lg my-8">
-          <div className="text-sm text-slate-300 mb-2">STATS CARD</div>
+        <div className="bg-muted/30 p-6 rounded-lg my-8">
+          <div className="text-sm text-muted-foreground mb-2">STATS CARD</div>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="text-2xl font-bold text-white">30 minutes</div>
-              <div className="text-sm text-slate-300">Time to get portfolio overview (before Hub)</div>
+              <div className="text-2xl font-bold text-foreground">30 minutes</div>
+              <div className="text-sm text-muted-foreground">Time to get portfolio overview (before Hub)</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-cyan-400">10 seconds</div>
-              <div className="text-sm text-slate-300">Time to get portfolio overview (with Hub)</div>
+              <div className="text-2xl font-bold text-primary">10 seconds</div>
+              <div className="text-sm text-muted-foreground">Time to get portfolio overview (with Hub)</div>
             </div>
           </div>
         </div>
@@ -229,8 +229,8 @@ export default function Article() {
           Open the Hub and you immediately see project cards laid out like this:
         </p>
 
-        <div className="bg-slate-800/30 p-6 rounded-lg font-mono text-sm my-6">
-          <div className="border border-slate-600 p-4 mb-4">
+        <div className="bg-muted/30 p-6 rounded-lg font-mono text-sm my-6">
+          <div className="border border-border p-4 mb-4">
             <div className="font-bold">🎯 Habit Tracker for Remote Workers</div>
             <div className="mt-2">Score: 32/40 ⭐⭐⭐⭐⭐ Top Priority</div>
             <div>Verdict: ✅ PROCEED</div>
@@ -260,7 +260,7 @@ export default function Article() {
           At the top, filter buttons let you focus:
         </p>
 
-        <div className="bg-slate-800/30 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-muted/30 p-4 rounded-lg font-mono text-sm my-6">
           [All Ideas: 16]  [⭐ Top Priority: 7]<br/>
           [✅ Proceed: 7]  [⚠️ Pivot: 9]
         </div>
@@ -288,13 +288,13 @@ export default function Article() {
         </p>
 
         <div className="bg-gray-900 text-gray-100 p-4 rounded-lg text-sm font-mono my-6">
-          <div className="text-green-400">// Scan /projects folder for project directories</div>
+          <div className="text-green-700">// Scan /projects folder for project directories</div>
           <div>const projectFolders = fs.readdirSync('projects');</div>
           <br/>
-          <div className="text-green-400">// Scan /docs/portfolio for portfolio score files</div>
+          <div className="text-green-700">// Scan /docs/portfolio for portfolio score files</div>
           <div>const portfolioScores = fs.readdirSync('docs/portfolio');</div>
           <br/>
-          <div className="text-green-400">// For each project, find all docs</div>
+          <div className="text-green-700">// For each project, find all docs</div>
           <div>const projects = projectFolders.map(folder =&gt; &#123;</div>
           <div>  const discoveryDocs = findDocs(`projects/$&#123;folder&#125;`, 'discovery');</div>
           <div>  const validationDocs = findDocs(`projects/$&#123;folder&#125;`, 'validation');</div>
@@ -311,11 +311,11 @@ export default function Article() {
         </p>
 
         <div className="bg-gray-900 text-gray-100 p-4 rounded-lg text-sm font-mono my-6">
-          <div className="text-green-400">// Extract score (regex: "## Score: 32/40")</div>
+          <div className="text-green-700">// Extract score (regex: "## Score: 32/40")</div>
           <div>const scoreMatch = content.match(/## Score:\s*(\d+)\/40/);</div>
           <div>const score = scoreMatch ? parseInt(scoreMatch[1]) : null;</div>
           <br/>
-          <div className="text-green-400">// Extract verdict (regex: "### Verdict: ✅ **PROCEED**")</div>
+          <div className="text-green-700">// Extract verdict (regex: "### Verdict: ✅ **PROCEED**")</div>
           <div>const verdictMatch = content.match(/### Verdict:\s*[✅⚠️❌]?\s*\*?\*?([A-Z]+)\*?\*?/i);</div>
         </div>
 
@@ -341,61 +341,61 @@ export default function Article() {
           Let me show you what changed when we launched the Hub three months ago.
         </p>
 
-        <div className="bg-slate-800/50 border border-slate-700 p-6 rounded-lg my-8">
-          <div className="font-bold text-cyan-400 mb-3">Before Hub</div>
+        <div className="bg-muted/50 border border-border p-6 rounded-lg my-8">
+          <div className="font-bold text-primary mb-3">Before Hub</div>
           
-          <p className="text-cyan-400 mb-4"><strong>Portfolio management:</strong></p>
-          <ul className="text-slate-200 mb-4">
+          <p className="text-primary mb-4"><strong>Portfolio management:</strong></p>
+          <ul className="text-foreground mb-4">
             <li>"How many ideas do we have?" → Count folders manually</li>
             <li>"Which ones are high priority?" → Open each portfolio score doc</li>
             <li>"Which passed validation?" → Search for RESULTS docs, read each one</li>
           </ul>
-          <p className="text-slate-200 font-medium">Time: ~30 minutes to get portfolio overview</p>
+          <p className="text-foreground font-medium">Time: ~30 minutes to get portfolio overview</p>
 
-          <p className="text-cyan-400 mb-2 mt-4"><strong>Decision making:</strong></p>
-          <ul className="text-slate-200 mb-4">
+          <p className="text-primary mb-2 mt-4"><strong>Decision making:</strong></p>
+          <ul className="text-foreground mb-4">
             <li>Kill/greenlight meetings required pre-reading 5-10 docs</li>
             <li>Debate about "did we validate that?" (no quick answer)</li>
             <li>Re-scoring ideas because we forgot the original score</li>
           </ul>
 
-          <p className="text-cyan-400 mb-2"><strong>Onboarding:</strong></p>
-          <ul className="text-slate-200">
+          <p className="text-primary mb-2"><strong>Onboarding:</strong></p>
+          <ul className="text-foreground">
             <li>New team member: "Where do I start?"</li>
             <li>Answer: "Read the Notion wiki, then check the projects folder, then ask if you have questions"</li>
             <li>Time to productivity: 2-3 weeks</li>
           </ul>
         </div>
 
-        <div className="bg-slate-800/50 border border-slate-700 p-6 rounded-lg my-8">
-          <div className="font-bold text-cyan-400 mb-3">After Hub</div>
+        <div className="bg-muted/50 border border-border p-6 rounded-lg my-8">
+          <div className="font-bold text-primary mb-3">After Hub</div>
           
-          <p className="text-cyan-400 mb-4"><strong>Portfolio management:</strong></p>
-          <ul className="text-slate-200 mb-4">
+          <p className="text-primary mb-4"><strong>Portfolio management:</strong></p>
+          <ul className="text-foreground mb-4">
             <li>"How many ideas do we have?" → Look at Hub: 16 total</li>
             <li>"Which ones are high priority?" → Filter by "Top Priority": 7 ideas</li>
             <li>"Which passed validation?" → Filter by "Proceed": 7 ideas</li>
           </ul>
-          <p className="text-slate-200 font-medium">Time: 10 seconds to get portfolio overview</p>
+          <p className="text-foreground font-medium">Time: 10 seconds to get portfolio overview</p>
 
-          <p className="text-cyan-400 mb-2 mt-4"><strong>Decision making:</strong></p>
-          <ul className="text-slate-200 mb-4">
+          <p className="text-primary mb-2 mt-4"><strong>Decision making:</strong></p>
+          <ul className="text-foreground mb-4">
             <li>Kill/greenlight meetings start with Hub open (everyone sees same data)</li>
             <li>Click a project card to review docs on the spot</li>
             <li>Verdicts are visible, no need to re-litigate</li>
           </ul>
 
-          <p className="text-cyan-400 mb-2"><strong>Onboarding:</strong></p>
-          <ul className="text-slate-200">
+          <p className="text-primary mb-2"><strong>Onboarding:</strong></p>
+          <ul className="text-foreground">
             <li>New team member: "Where do I start?"</li>
             <li>Answer: "Open the Hub. Top priority ideas are in green. Click one, read the docs."</li>
             <li>Time to productivity: 3-5 days</li>
           </ul>
         </div>
 
-        <div className="bg-cyan-900/20 border border-cyan-700/50 p-6 rounded-lg my-8">
-          <div className="text-sm text-cyan-400 mb-2">ROI CALCULATION</div>
-          <div className="text-cyan-300">
+        <div className="bg-primary/5 border border-primary/20 p-6 rounded-lg my-8">
+          <div className="text-sm text-primary mb-2">ROI CALCULATION</div>
+          <div className="text-primary">
             <strong>~25 hours/month saved</strong> on portfolio management + faster decisions + better onboarding = <strong>~$5,000/month value</strong> (for a 3-person team)
           </div>
         </div>
@@ -492,7 +492,7 @@ export default function Article() {
           Our structure:
         </p>
 
-        <div className="bg-slate-800/30 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-muted/30 p-4 rounded-lg font-mono text-sm my-6">
           /docs<br/>
           &nbsp;&nbsp;/portfolio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PORTFOLIO-SCORE-&lt;slug&gt;.md)<br/>
           &nbsp;&nbsp;/discovery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NICHE-INTEL-&lt;slug&gt;.md, PAIN-SIGNALS-&lt;slug&gt;.md)<br/>
@@ -531,7 +531,7 @@ export default function Article() {
         </p>
 
         <div className="bg-gray-900 text-gray-100 p-4 rounded-lg text-sm font-mono my-6">
-          <div className="text-green-400">// /app/api/hub/projects/route.ts</div>
+          <div className="text-green-700">// /app/api/hub/projects/route.ts</div>
           <div>export async function GET() &#123;</div>
           <div>&nbsp;&nbsp;const portfolioDir = path.join(process.cwd(), 'docs/portfolio');</div>
           <div>&nbsp;&nbsp;const files = fs.readdirSync(portfolioDir);</div>
@@ -542,7 +542,7 @@ export default function Article() {
           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const content = fs.readFileSync(path.join(portfolioDir, file), 'utf-8');</div>
           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const slug = file.replace('PORTFOLIO-SCORE-', '').replace('.md', '');</div>
           <br/>
-          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">// Extract score</span></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-700">// Extract score</span></div>
           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const scoreMatch = content.match(/## Score:\s*(\d+)\/40/);</div>
           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const score = scoreMatch ? parseInt(scoreMatch[1]) : null;</div>
           <br/>
@@ -656,11 +656,11 @@ export default function Article() {
           Here's what I've learned building the Hub: <strong>documentation should drive decisions, not gather dust</strong>.
         </p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
           <div className="flex">
             <div className="ml-3">
-              <p className="text-sm text-slate-200 font-medium mb-2">PULL QUOTE</p>
-              <p className="text-slate-200 text-lg italic">
+              <p className="text-sm text-foreground font-medium mb-2">PULL QUOTE</p>
+              <p className="text-foreground text-lg italic">
                 "Most teams treat docs as artifacts. We treat them as data."
               </p>
             </div>
@@ -716,19 +716,19 @@ export default function Article() {
           What if your documentation did the same?
         </p>
 
-        <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-lg my-12">
+        <div className="bg-muted/30 border border-border p-8 rounded-lg my-12">
           <div className="text-center">
-            <h3 className="text-lg font-semibold text-white mb-4">
+            <h3 className="text-lg font-semibold text-foreground mb-4">
               Want to Build Your Own Hub?
             </h3>
-            <p className="text-slate-300 mb-6">
+            <p className="text-muted-foreground mb-6">
               I'm working on open-sourcing our Hub implementation. Get notified when it's ready, plus get access to our documentation templates and naming conventions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium">
+              <button className="bg-blue-600 hover:bg-blue-700 text-primary-foreground px-6 py-3 rounded-lg font-medium">
                 Get the Hub Template
               </button>
-              <button className="bg-slate-800/50 hover:bg-slate-700 text-slate-200 px-6 py-3 rounded-lg font-medium">
+              <button className="bg-muted/50 hover:bg-muted text-foreground px-6 py-3 rounded-lg font-medium">
                 View Live Demo
               </button>
             </div>
@@ -737,14 +737,14 @@ export default function Article() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

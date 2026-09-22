@@ -13,38 +13,37 @@ interface PhaseAccent {
 
 /**
  * One accent per Double Diamond phase, shared by the diagram and the phase
- * sections so colour means the same thing in both places. The ramp stays inside
- * the site's cool palette (cyan primary, brand blue, purple, green) rather than
- * introducing warm hues that fight the navy ground.
+ * sections so colour means the same thing in both places. Ramp uses saturated
+ * mid-tones that meet WCAG AA on the paper canvas (light background).
  */
 export const PHASE_ACCENT: Record<PhaseName, PhaseAccent> = {
   Discover: {
-    svg: "text-cyan-400",
-    text: "text-cyan-300",
-    border: "border-cyan-500/30",
-    bg: "bg-cyan-500/10",
-    rule: "bg-cyan-400",
+    svg: "text-cyan-700",
+    text: "text-cyan-700",
+    border: "border-cyan-300",
+    bg: "bg-cyan-50",
+    rule: "bg-cyan-600",
   },
   Define: {
-    svg: "text-blue-400",
-    text: "text-blue-300",
-    border: "border-blue-500/30",
-    bg: "bg-blue-500/10",
-    rule: "bg-blue-400",
+    svg: "text-blue-700",
+    text: "text-blue-700",
+    border: "border-blue-300",
+    bg: "bg-blue-50",
+    rule: "bg-blue-600",
   },
   Develop: {
-    svg: "text-purple-400",
-    text: "text-purple-300",
-    border: "border-purple-500/30",
-    bg: "bg-purple-500/10",
-    rule: "bg-purple-400",
+    svg: "text-violet-700",
+    text: "text-violet-700",
+    border: "border-violet-300",
+    bg: "bg-violet-50",
+    rule: "bg-violet-600",
   },
   Deliver: {
-    svg: "text-emerald-400",
-    text: "text-emerald-300",
-    border: "border-emerald-500/30",
-    bg: "bg-emerald-500/10",
-    rule: "bg-emerald-400",
+    svg: "text-emerald-700",
+    text: "text-emerald-700",
+    border: "border-emerald-300",
+    bg: "bg-emerald-50",
+    rule: "bg-emerald-600",
   },
 };
 
@@ -83,7 +82,7 @@ export default function DoubleDiamondDiagram({
 }: DoubleDiamondDiagramProps) {
   return (
     <figure className={cn("m-0", className)}>
-      <div className="rounded-2xl border border-border/60 bg-slate-950/50 p-5 backdrop-blur-sm md:p-7">
+      <div className="rounded-2xl border border-border bg-card p-5 md:p-7">
         <svg
           viewBox="0 0 560 300"
           role="img"
@@ -98,6 +97,7 @@ export default function DoubleDiamondDiagram({
             diverges, then Deliver, which converges.
           </desc>
 
+          {/* horizontal centre-line */}
           <line
             x1="8"
             y1="150"
@@ -106,7 +106,7 @@ export default function DoubleDiamondDiagram({
             stroke="currentColor"
             strokeWidth="1"
             strokeDasharray="2 7"
-            className="text-slate-700"
+            className="text-border"
           />
 
           {/* The neck between the two diamonds: problem handed to solution. */}
@@ -117,7 +117,7 @@ export default function DoubleDiamondDiagram({
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-slate-500"
+            className="text-muted-foreground"
           />
 
           {PHASES.map((phase) => (
@@ -126,9 +126,9 @@ export default function DoubleDiamondDiagram({
               points={phase.wedge}
               className={PHASE_ACCENT[phase.name].svg}
               fill="currentColor"
-              fillOpacity="0.14"
+              fillOpacity="0.12"
               stroke="currentColor"
-              strokeOpacity="0.7"
+              strokeOpacity="0.5"
               strokeWidth="1.25"
               strokeLinejoin="round"
             />
@@ -141,12 +141,13 @@ export default function DoubleDiamondDiagram({
               cy={cy}
               r="2.5"
               fill="currentColor"
-              className="text-slate-400"
+              className="text-muted-foreground"
             />
           ))}
 
+          {/* PROBLEM / SOLUTION labels */}
           <g
-            className="fill-slate-400"
+            className="fill-muted-foreground"
             fontSize="10.5"
             letterSpacing="2.4"
             textAnchor="middle"
@@ -176,7 +177,7 @@ export default function DoubleDiamondDiagram({
                 y="291"
                 fontSize="9"
                 letterSpacing="1.8"
-                className="fill-slate-400"
+                className="fill-muted-foreground"
               >
                 {phase.mode.toUpperCase()}
               </text>
@@ -184,7 +185,7 @@ export default function DoubleDiamondDiagram({
           ))}
         </svg>
       </div>
-      <figcaption className="mt-4 max-w-md text-sm leading-relaxed text-slate-400">
+      <figcaption className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
         Discover and Define find the right problem. Develop and Deliver find the
         right solution. Teams run methods in parallel and go back upstream when
         the evidence says to.

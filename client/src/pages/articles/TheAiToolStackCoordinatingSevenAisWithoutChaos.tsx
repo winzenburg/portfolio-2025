@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function AIToolStackArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The AI Tool Stack: How We Coordinate 7 AIs Without Chaos | Ryan Winzenburg</title>
@@ -25,7 +25,7 @@ export default function AIToolStackArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
@@ -40,7 +40,7 @@ export default function AIToolStackArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 2, 2024</span>
             <span>•</span>
             <span>8 min read</span>
@@ -48,24 +48,24 @@ export default function AIToolStackArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The AI Tool Stack: Coordinating Seven AIs Without Chaos
             </h1>
           </div>
 
           {/* Article Body */}
-          <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+          <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
 
         {/* Hero Section */}
         <div className="mb-12">
-          <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 rounded-xl p-8 mb-8">
-            <h2 className="text-2xl font-bold text-white mb-4">
+          <div className="bg-primary/5 rounded-xl p-8 mb-8">
+            <h2 className="text-2xl font-bold text-foreground mb-4">
               Using multiple AI tools sounds like a nightmare. Here's how I orchestrate them with clear lanes and zero overlap.
             </h2>
           </div>
         </div>
 
-        <p className="text-xl text-slate-200 mb-8 leading-relaxed">
+        <p className="text-xl text-foreground mb-8 leading-relaxed">
           Last month, I watched a startup burn through $800 in API credits in two days. Their crime? Three different team members used ChatGPT, Claude, and Perplexity to research the exact same market opportunity. Same questions, same outputs, triple the cost.
         </p>
 
@@ -85,8 +85,8 @@ export default function AIToolStackArticle() {
 
         <p>Now I run the opposite: <strong>a coordinated AI tool stack with clear lanes, explicit handoffs, and systematic routing</strong>.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400 font-semibold">
+        <div className="bg-muted/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-semibold">
             "Each tool has a single purpose. No overlap. Information flows through a documented pipeline."
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function AIToolStackArticle() {
 
         <p><strong>No System of Record</strong>: Your best insights live in ChatGPT conversations from three months ago. Good luck finding them. Knowledge becomes tribal, trapped in chat logs that nobody can search.</p>
 
-        <div className="bg-red-900/20 border-l-4 border-red-400 px-6 pt-4 pb-5 my-8">
+        <div className="bg-destructive/20 border-l-4 border-red-400 px-6 pt-4 pb-5 my-8">
           <p className="text-red-300">
             <strong></strong> The real cost of chaos: I tracked my tool usage for one week. 47% of queries were duplicates across different tools. That's $200/month in wasted API credits.
           </p>
@@ -160,49 +160,49 @@ export default function AIToolStackArticle() {
         <p>Each tool has a single, non-overlapping purpose. Here's my current setup:</p>
 
         <div className="overflow-x-auto my-8">
-          <table className="min-w-full bg-slate-900 border border-slate-700">
-            <thead className="bg-slate-800/30">
+          <table className="min-w-full bg-muted border border-border">
+            <thead className="bg-muted/30">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Tool</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Primary Purpose</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Never Used For</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Tool</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Primary Purpose</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">Never Used For</th>
               </tr>
             </thead>
-            <tbody className="bg-slate-900 divide-y divide-slate-700">
+            <tbody className="bg-muted divide-y divide-slate-700">
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Manus.im</td>
-                <td className="px-6 py-4 text-sm text-white">Niche narrative research, pain mining, JTBD seeds</td>
-                <td className="px-6 py-4 text-sm text-slate-400">Final copy, code generation, image creation</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-foreground">Manus.im</td>
+                <td className="px-6 py-4 text-sm text-foreground">Niche narrative research, pain mining, JTBD seeds</td>
+                <td className="px-6 py-4 text-sm text-muted-foreground">Final copy, code generation, image creation</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">ChatGPT</td>
-                <td className="px-6 py-4 text-sm text-white">Rapid ideation, variant generation, clustering</td>
-                <td className="px-6 py-4 text-sm text-slate-400">Deep critique, final polish, source-of-truth synthesis</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-foreground">ChatGPT</td>
+                <td className="px-6 py-4 text-sm text-foreground">Rapid ideation, variant generation, clustering</td>
+                <td className="px-6 py-4 text-sm text-muted-foreground">Deep critique, final polish, source-of-truth synthesis</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Claude</td>
-                <td className="px-6 py-4 text-sm text-white">Critical review, editorial polish, reasoning-heavy analysis</td>
-                <td className="px-6 py-4 text-sm text-slate-400">Breadth exploration, rapid iteration, batch generation</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-foreground">Claude</td>
+                <td className="px-6 py-4 text-sm text-foreground">Critical review, editorial polish, reasoning-heavy analysis</td>
+                <td className="px-6 py-4 text-sm text-muted-foreground">Breadth exploration, rapid iteration, batch generation</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">ElevenLabs</td>
-                <td className="px-6 py-4 text-sm text-white">Founder voice, persona voice, demo narration</td>
-                <td className="px-6 py-4 text-sm text-slate-400">Music, sound effects, background audio</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-foreground">ElevenLabs</td>
+                <td className="px-6 py-4 text-sm text-foreground">Founder voice, persona voice, demo narration</td>
+                <td className="px-6 py-4 text-sm text-muted-foreground">Music, sound effects, background audio</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Midjourney</td>
-                <td className="px-6 py-4 text-sm text-white">Polished brand visuals, hero images, final assets</td>
-                <td className="px-6 py-4 text-sm text-slate-400">Rough drafts, batch generation, UI mockups</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-foreground">Midjourney</td>
+                <td className="px-6 py-4 text-sm text-foreground">Polished brand visuals, hero images, final assets</td>
+                <td className="px-6 py-4 text-sm text-muted-foreground">Rough drafts, batch generation, UI mockups</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Glif</td>
-                <td className="px-6 py-4 text-sm text-white">Creative batching, rapid draft generation, ad variants</td>
-                <td className="px-6 py-4 text-sm text-slate-400">Final polish, brand-defining assets, deterministic logic</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-foreground">Glif</td>
+                <td className="px-6 py-4 text-sm text-foreground">Creative batching, rapid draft generation, ad variants</td>
+                <td className="px-6 py-4 text-sm text-muted-foreground">Final polish, brand-defining assets, deterministic logic</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 whitespace-nowrap font-medium text-white">Lindy AI</td>
-                <td className="px-6 py-4 text-sm text-white">Execution automation, waitlist nurture, DM outreach</td>
-                <td className="px-6 py-4 text-sm text-slate-400">Source-of-truth docs, core product logic, CI/CD</td>
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-foreground">Lindy AI</td>
+                <td className="px-6 py-4 text-sm text-foreground">Execution automation, waitlist nurture, DM outreach</td>
+                <td className="px-6 py-4 text-sm text-muted-foreground">Source-of-truth docs, core product logic, CI/CD</td>
               </tr>
             </tbody>
           </table>
@@ -237,9 +237,9 @@ export default function AIToolStackArticle() {
           <li>Strategy assumptions (opportunity analysis, competitive positioning)</li>
         </ul>
 
-        <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6 my-8">
-          <h4 className="font-semibold text-cyan-300 mb-3">ChatGPT → Claude Pipeline Example:</h4>
-          <ol className="list-decimal list-inside text-cyan-300 space-y-2">
+        <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+          <h4 className="font-semibold text-primary mb-3">ChatGPT → Claude Pipeline Example:</h4>
+          <ol className="list-decimal list-inside text-primary space-y-2">
             <li>ChatGPT generates 10 headline variants</li>
             <li>Human picks top 3</li>
             <li>Claude refines top 3 for tone, clarity, impact</li>
@@ -274,7 +274,7 @@ export default function AIToolStackArticle() {
 
         <p>Every tool-to-tool transition is documented. Here are my key workflows:</p>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-8">
+        <div className="bg-muted/30 rounded-lg p-6 my-8">
           <h4 className="font-semibold mb-4">Discovery workflow:</h4>
           <ol className="list-decimal list-inside space-y-2">
             <li>Manus.im → Research niche, pain signals, competitors</li>
@@ -285,7 +285,7 @@ export default function AIToolStackArticle() {
           </ol>
         </div>
 
-        <div className="bg-slate-800/30 rounded-lg p-6 my-8">
+        <div className="bg-muted/30 rounded-lg p-6 my-8">
           <h4 className="font-semibold mb-4">Landing page workflow:</h4>
           <ol className="list-decimal list-inside space-y-2">
             <li>ChatGPT → Generate 10 headline variants</li>
@@ -331,11 +331,11 @@ export default function AIToolStackArticle() {
 
         <p><strong>Workflow examples</strong>:</p>
 
-        <div className="bg-slate-800/50 rounded-lg p-6 my-8">
+        <div className="bg-muted/50 rounded-lg p-6 my-8">
           <h4 className="font-semibold text-green-900 mb-3">Variant generation:</h4>
-          <p className="text-cyan-400 mb-2"><strong>Prompt</strong>: "Generate 20 headline variants for a habit tracker targeting burned-out remote workers. Emphasize calm, non-judgmental tone."</p>
-          <p className="text-cyan-400 mb-2"><strong>Output</strong>: 20 headlines in 30 seconds</p>
-          <p className="text-cyan-400"><strong>Next</strong>: Human selects top 5 → Claude refines → Cursor saves final</p>
+          <p className="text-primary mb-2"><strong>Prompt</strong>: "Generate 20 headline variants for a habit tracker targeting burned-out remote workers. Emphasize calm, non-judgmental tone."</p>
+          <p className="text-primary mb-2"><strong>Output</strong>: 20 headlines in 30 seconds</p>
+          <p className="text-primary"><strong>Next</strong>: Human selects top 5 → Claude refines → Cursor saves final</p>
         </div>
 
         <p><strong>Never use ChatGPT for</strong>: Critical review (use Claude), final polish (use Claude), deep reasoning (use Claude), source-of-truth synthesis (use Manus)</p>
@@ -348,8 +348,8 @@ export default function AIToolStackArticle() {
 
         <p>Claude is my "convergent thinking" machine. When I need depth, nuance, and critical analysis, Claude is mandatory.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400 font-semibold">
+        <div className="bg-muted/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-semibold">
             "Claude critique saved me from launching a fundamentally flawed pricing strategy. ChatGPT would have said it looked great."
           </p>
         </div>
@@ -423,18 +423,18 @@ export default function AIToolStackArticle() {
         <p>I've been running this coordinated system for 6 months. Here's what happened:</p>
 
         <div className="grid md:grid-cols-2 gap-6 my-8">
-          <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
+          <div className="bg-muted/50 border border-border rounded-lg p-6">
             <h4 className="font-semibold text-green-900 mb-3">Efficiency Gains</h4>
-            <ul className="text-cyan-400 space-y-2">
+            <ul className="text-primary space-y-2">
               <li>Discovery phase: 8-12 hours (was 20-30 hours)</li>
               <li>Landing page copy: 2 hours (was 6-8 hours)</li>
               <li>Creative assets: 4 hours (was 12-15 hours)</li>
             </ul>
           </div>
           
-          <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6">
-            <h4 className="font-semibold text-cyan-300 mb-3">Quality Improvements</h4>
-            <ul className="text-cyan-300 space-y-2">
+          <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+            <h4 className="font-semibold text-primary mb-3">Quality Improvements</h4>
+            <ul className="text-primary space-y-2">
               <li>Zero conflicting outputs between tools</li>
               <li>100% of high-stakes decisions get Claude critique</li>
               <li>All insights saved to searchable markdown</li>
@@ -479,7 +479,7 @@ export default function AIToolStackArticle() {
 
         <p>For overlapping tools (like ChatGPT vs Claude), define explicit routing rules:</p>
 
-        <div className="bg-slate-800/50 rounded-lg p-4 my-6">
+        <div className="bg-muted/50 rounded-lg p-4 my-6">
           <div className="font-mono text-sm">
             <p>If [breadth/variants] → Tool A</p>
             <p>If [depth/critique] → Tool B</p>
@@ -524,8 +524,8 @@ export default function AIToolStackArticle() {
 
         <p><strong>Target</strong>: &lt;$500/month for 5-7 tool stack (reasonable for a small team or solo founder).</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400">
+        <div className="bg-muted/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary">
             <strong>Time investment</strong>: 10-15 hours upfront to design the system. I spent a weekend documenting tool lanes, routing rules, and handoff protocols. Best weekend I've spent this year.
           </p>
         </div>
@@ -603,13 +603,13 @@ export default function AIToolStackArticle() {
         <p>Stop treating AI tools like a collection. Start treating them like a team.</p>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-white mt-12">
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-foreground mt-12">
           <h3 className="text-2xl font-bold mb-4">Ready to coordinate your AI tool chaos?</h3>
           <p className="text-blue-100 mb-6">
             Get my complete AI Tool Orchestration Framework, including tool lane templates, routing decision trees, 
             and cost optimization strategies.
           </p>
-          <button className="bg-slate-900 text-cyan-400 font-semibold px-6 py-3 rounded-lg hover:bg-cyan-900/20 transition-colors">
+          <button className="bg-muted text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors">
             Get the Framework →
           </button>
         </div>
@@ -617,14 +617,14 @@ export default function AIToolStackArticle() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

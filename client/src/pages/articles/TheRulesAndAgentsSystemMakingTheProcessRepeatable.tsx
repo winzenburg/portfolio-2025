@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function RulesAndAgentsSystemArticle() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Rules and Agents System: Making the Process Repeatable | Ryan Winzenburg</title>
@@ -25,13 +25,13 @@ export default function RulesAndAgentsSystemArticle() {
       <article className="pt-10 pb-16 md:pt-14">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Link */}
-          <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8">
+          <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Articles
           </Link>
 
           {/* Hero Image */}
-          <div className="mb-12 rounded-lg overflow-hidden border border-cyan-700/30">
+          <div className="mb-12 rounded-lg overflow-hidden border border-primary/15">
             <img
               src="/images/articles/rules-agents-system-diagram.webp"
               alt="System diagram showing a repeatable workflow with rules, agents, and quality gates"
@@ -40,7 +40,7 @@ export default function RulesAndAgentsSystemArticle() {
           </div>
 
           {/* Article Meta */}
-          <div className="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
             <span>December 6, 2024</span>
             <span>•</span>
             <span>8 min read</span>
@@ -48,7 +48,7 @@ export default function RulesAndAgentsSystemArticle() {
 
           {/* Article Title */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
               The Rules and Agents System: Making the Process Repeatable
             </h1>
           </div>
@@ -57,7 +57,7 @@ export default function RulesAndAgentsSystemArticle() {
           
       {/* Hero Section */}
       <div className="mb-12">
-        <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
           <div className="flex items-center gap-1">
             <Calendar className="w-4 h-4" />
             <span>November 28, 2024</span>
@@ -72,17 +72,17 @@ export default function RulesAndAgentsSystemArticle() {
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
           The Rules and Agents System: Making the Process Repeatable
         </h1>
         
-        <p className="text-xl text-slate-300 leading-relaxed">
+        <p className="text-xl text-muted-foreground leading-relaxed">
           Last month I realized something embarrassing: I was treating product creation like jazz improvisation when I should have been treating it like architecture. Here's how I fixed it with 300 rules and 12 AI agents.
         </p>
       </div>
 
       {/* System Diagram */}
-      <div className="my-12 rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900/30">
+      <div className="my-12 rounded-lg overflow-hidden border border-border/50 bg-muted/30">
         <img loading="lazy"
           src="/images/articles/rules-agents-hero.webp"
           alt="Playful architectural illustration representing a repeatable rules and agents system"
@@ -91,9 +91,9 @@ export default function RulesAndAgentsSystemArticle() {
       </div>
 
       {/* Article Content */}
-      <div className="prose prose-invert prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-cyan-400 [&_li]:text-slate-200">
+      <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
         
-        <h2 className="text-2xl font-bold text-white mb-4">The "Oh Crap" Moment</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">The "Oh Crap" Moment</h2>
         
         <p>Three weeks ago, I caught myself doing it again. Staring at a half-built feature that nobody wanted, wondering how I'd burned through two weeks of engineering time without validating basic demand.</p>
 
@@ -105,13 +105,13 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>That lightbulb moment led me to build something I'm calling the "Rules and Agents System", a framework that's transformed how I validate, design, and build products. And honestly? It's saved me from more bad decisions than I care to admit.</p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400 font-medium text-lg mb-0">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium text-lg mb-0">
             "What if I approached product creation the same way I approach code? With systems, rules, and repeatable processes that actually work?"
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-4">The Framework: Rules + Agents + Gates</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">The Framework: Rules + Agents + Gates</h2>
 
         <p>The system has three core components, and they work together like a well-orchestrated team:</p>
 
@@ -123,27 +123,27 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Real talk: This might sound over-engineered, but it's actually liberating. Instead of reinventing the wheel every time, I have a system that catches my blind spots and keeps me honest.</p>
 
-        <div className="bg-slate-900/50 p-6 rounded-lg my-8">
+        <div className="bg-muted/50 p-6 rounded-lg my-8">
           <h3 className="text-lg font-semibold mb-3">System Impact</h3>
           <div className="grid grid-cols-2 gap-4 text-center">
             <div>
-              <div className="text-2xl font-bold text-cyan-400">85%</div>
-              <div className="text-sm text-slate-400">Fewer failed features</div>
+              <div className="text-2xl font-bold text-primary">85%</div>
+              <div className="text-sm text-muted-foreground">Fewer failed features</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-green-300">60%</div>
-              <div className="text-sm text-slate-400">Faster validation cycles</div>
+              <div className="text-sm text-muted-foreground">Faster validation cycles</div>
             </div>
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-4">The Rules System: My Product Creation Constitution</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">The Rules System: My Product Creation Constitution</h2>
 
         <p>Let me show you what I mean by "rules." These aren't vague principles like "validate early", they're specific, actionable guidelines that my system can actually enforce.</p>
 
         <p>For example, here's one from my Validation Playbook:</p>
 
-        <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm my-6">
+        <div className="bg-gray-900 text-green-700 p-4 rounded-lg font-mono text-sm my-6">
           <code>
             # Core Rule: Desirability First<br/>
             No feature or product may enter engineering until<br/>
@@ -167,7 +167,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Each phase has its own "playbook", a collection of interconnected rules that define inputs, outputs, and quality standards. It's like having a pedantic but helpful colleague who never lets you skip steps.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">The Agent System: Your AI Dream Team</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">The Agent System: Your AI Dream Team</h2>
 
         <p>Now here's where it gets interesting. I've got 12 specialized AI agents, each one laser-focused on a specific part of the process. They work together like the world's most efficient product team.</p>
 
@@ -179,8 +179,8 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>The Moat & MRR Strategist</strong> is my secret weapon against commodity products. It designs defensibility strategies, network effects, data moats, switching costs, that keep competitors at bay. Because building something people want is hard enough; building something they can't easily replace is the real challenge.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400 mb-0">
+        <div className="bg-muted/50 border-l-4 border-yellow-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary mb-0">
             <strong>Quick tangent:</strong> I spent six months building a tool that competitors copied in three weeks. The Moat Strategist would have caught that vulnerability in the planning phase. Live and learn, right?
           </p>
         </div>
@@ -189,7 +189,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>These agents don't work in isolation. The output from one becomes input for the next, creating a clean handoff that prevents things from falling through the cracks.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Quality Gates: The Reality Checks</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">Quality Gates: The Reality Checks</h2>
 
         <p>The quality gates are where the rubber meets the road. Think of them as checkpoints where my system asks, "Are you sure you want to keep going?"</p>
 
@@ -206,7 +206,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>The beautiful thing about gates? They force kill-or-pivot decisions early, when it's cheap to change course. I've killed more bad ideas in the last month than I used to kill in a year, and that's a good thing.</p>
 
-        <div className="bg-slate-900/50 p-6 rounded-lg my-8">
+        <div className="bg-muted/50 p-6 rounded-lg my-8">
           <h3 className="text-lg font-semibold mb-3"> Before vs. After Quality Gates</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -230,11 +230,11 @@ export default function RulesAndAgentsSystemArticle() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Real Examples (Because Abstract Is Boring)</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">Real Examples (Because Abstract Is Boring)</h2>
 
         <p>Let me show you this system in action with actual examples from my recent projects:</p>
 
-        <h3 className="text-xl font-semibold text-white mb-3">Example 1: The Productivity App That Almost Wasn't</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-3">Example 1: The Productivity App That Almost Wasn't</h3>
 
         <p>I had this idea for a productivity app. Revolutionary concept, right? 🙄</p>
 
@@ -244,7 +244,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>That insight completely changed the product. Instead of another task manager, we built something that reads your work patterns and adjusts its approach based on your energy levels and focus state.</p>
 
-        <h3 className="text-xl font-semibold text-white mb-3">Example 2: Building Moats That Actually Hold Water</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-3">Example 2: Building Moats That Actually Hold Water</h3>
 
         <p>For a SaaS marketplace I was designing, the Moat & MRR Strategist identified three defensibility layers:</p>
 
@@ -256,7 +256,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>The Retention Architect then mapped habit-forming features, collaboration triggers, and renewal mechanisms around those moats. The result? A product strategy that's actually defensible, beyond just feature-rich.</p>
 
-        <h3 className="text-xl font-semibold text-white mb-3">Example 3: Accessibility as a First-Class Citizen</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-3">Example 3: Accessibility as a First-Class Citizen</h3>
 
         <p>Here's something I used to screw up constantly: accessibility as an afterthought.</p>
 
@@ -264,17 +264,17 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>The result? Products that work for everyone, beyond the "typical" user. And honestly, accessible design is usually better design for everyone.</p>
 
-        <div className="bg-cyan-900/20 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400 font-medium text-lg mb-0">
+        <div className="bg-primary/5 border-l-4 border-blue-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary font-medium text-lg mb-0">
             "I've killed more bad ideas in the last month than I used to kill in a year, and that's a good thing."
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-4">How to Build Your Own Rules & Agents System</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">How to Build Your Own Rules & Agents System</h2>
 
         <p>Alright, you want to try this yourself? Here's how to get started without building a complete AI orchestration platform:</p>
 
-        <h3 className="text-xl font-semibold text-white mb-3">Start Small, Think Big</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-3">Start Small, Think Big</h3>
 
         <p><strong>Map Your Phases</strong>: What are the major stages in your product creation process? Mine are Insight → Validation → Moat → Design → Engineering. Yours might be different.</p>
 
@@ -284,7 +284,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p><strong>Set Your Gates</strong>: What must be true before moving to the next phase? Be ruthless here, fuzzy gates defeat the purpose.</p>
 
-        <h3 className="text-xl font-semibold text-white mb-3">Make It Enforceable</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-3">Make It Enforceable</h3>
 
         <p>The magic isn't in having rules, it's in actually following them. Start with simple enforcement mechanisms:</p>
 
@@ -297,13 +297,13 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>You don't need fancy software. Google Docs, Notion, or even paper can work if you're disciplined about using them.</p>
 
-        <h3 className="text-xl font-semibold text-white mb-3">Integrate with Engineering</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-3">Integrate with Engineering</h3>
 
         <p>This is crucial: your product creation system should feed directly into your development workflow. No handoff friction, no "lost in translation" moments.</p>
 
         <p>For us, that means technical specs flow automatically from our agents into engineering backlogs. For you, it might be as simple as a standardized handoff template.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">The Uncomfortable Truth About Process</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">The Uncomfortable Truth About Process</h2>
 
         <p>Look, I'll be honest with you. Part of me resisted this level of systemization for years. It felt constraining, bureaucratic, corporate.</p>
 
@@ -311,13 +311,13 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Plus, having a systematic approach means my wins are repeatable, beyond lucky accidents.</p>
 
-        <div className="bg-slate-800/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-cyan-400 mb-0">
+        <div className="bg-muted/50 border-l-4 border-green-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-primary mb-0">
             <strong>Real talk:</strong> The first time through this system felt slow and over-engineered. By the third product, it felt like having superpowers. The learning curve is worth it.
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-4">What This Actually Looks Like in Practice</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">What This Actually Looks Like in Practice</h2>
 
         <p>When I start a new product idea now, here's my actual workflow:</p>
 
@@ -329,7 +329,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>By the time engineering starts, I've got validated demand, a defensibility strategy, and clear success metrics. It's not perfect, but it's evidence-based.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">The Bottom Line</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">The Bottom Line</h2>
 
         <p>Here's what I wish someone had told me five years ago: Product creation isn't art, it's craft. And like any craft, it gets better with systematic practice and accumulated wisdom.</p>
 
@@ -341,8 +341,8 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>My guess? You'll never go back to winging it.</p>
 
-        <div className="bg-slate-900/50 border-l-4 border-gray-400 px-6 pt-4 pb-5 my-8">
-          <p className="text-slate-300 text-lg font-medium mb-0">
+        <div className="bg-muted/50 border-l-4 border-gray-400 px-6 pt-4 pb-5 my-8">
+          <p className="text-muted-foreground text-lg font-medium mb-0">
             What if your product creation process was as systematic as your code? Try it for one project and find out.
           </p>
         </div>
@@ -350,16 +350,16 @@ export default function RulesAndAgentsSystemArticle() {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-16 bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-lg p-8 text-center">
-        <h3 className="text-2xl font-bold text-white mb-4">Want to Build Your Own Rules System?</h3>
-        <p className="text-lg text-slate-300 mb-6">
+      <div className="mt-16 bg-primary/5 rounded-lg p-8 text-center">
+        <h3 className="text-2xl font-bold text-foreground mb-4">Want to Build Your Own Rules System?</h3>
+        <p className="text-lg text-muted-foreground mb-6">
           I'm documenting my complete Rules and Agents framework, including templates, checklists, and implementation guides.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+          <button className="px-6 py-3 bg-blue-600 text-primary-foreground rounded-lg font-medium hover:bg-blue-700 transition-colors">
             Get the Framework Templates
           </button>
-          <button className="px-6 py-3 border border-blue-600 text-cyan-400 rounded-lg font-medium hover:bg-cyan-900/20 transition-colors">
+          <button className="px-6 py-3 border border-blue-600 text-primary rounded-lg font-medium hover:bg-primary/5 transition-colors">
             Schedule a Demo
           </button>
         </div>
@@ -368,14 +368,14 @@ export default function RulesAndAgentsSystemArticle() {
     
 
           {/* Newsletter Signup */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-border">
             <ArticleAuthorBio />
             <NewsletterSignup />
           </div>
 
           {/* Next Article Link */}
           <div className="mt-12">
-            <Link href="/articles" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors">
+            <Link href="/articles" className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors">
                 <ArrowLeft className="w-4 h-4" />
                 Back to all articles
             </Link>

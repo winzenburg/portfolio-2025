@@ -46,14 +46,14 @@ function Screenshot({ src, alt, caption, accent = 'border-amber-700/40' }: Scree
   return (
     <div className={`mb-12 rounded-lg overflow-hidden border ${accent}`}>
       <img loading="lazy" src={`${BASE}images/${src}`} alt={alt} className="w-full" />
-      <div className="bg-white/5 px-5 py-3 text-sm text-stone-400 italic">{caption}</div>
+      <div className="bg-muted px-5 py-3 text-sm text-muted-foreground italic">{caption}</div>
     </div>
   );
 }
 
 const CaseStudyUndercurrent: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#0d0d0d] text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <PageSeo
         title={CASE_STUDY_TITLE}
         description={CASE_STUDY_DESCRIPTION}
@@ -65,7 +65,7 @@ const CaseStudyUndercurrent: React.FC = () => {
 
       {/* Back Link */}
       <div className="fixed top-6 left-6 z-50">
-        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-stone-900/80 backdrop-blur-sm border border-stone-700/50 rounded-full text-stone-300 hover:text-amber-400 hover:border-amber-600/50 transition-all duration-200">
+        <Link href="/work" className="flex items-center gap-2 px-4 py-2 bg-muted/80 backdrop-blur-sm border border-border/50 rounded-full text-muted-foreground hover:text-amber-700 hover:border-amber-600/50 transition-all duration-200">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -80,36 +80,36 @@ const CaseStudyUndercurrent: React.FC = () => {
           alt="Undercurrent welcome screen"
           className="absolute inset-0 w-full h-full object-cover object-center opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0d0d0d]/60 to-[#0d0d0d]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
           <div className="inline-block px-4 py-2 bg-amber-500/15 border border-amber-500/30 rounded-full mb-6">
-            <span className="text-amber-400 text-sm font-medium tracking-wider">Hero Project · 2026</span>
+            <span className="text-amber-700 text-sm font-medium tracking-wider">Hero Project · 2026</span>
           </div>
 
           <h1 className="font-serif text-6xl md:text-7xl font-bold mb-4 tracking-tight">
             Undercurrent
           </h1>
-          <p className="text-stone-400 text-xl mb-3 tracking-widest uppercase text-sm font-medium">
+          <p className="text-muted-foreground text-xl mb-3 tracking-widest uppercase text-sm font-medium">
             Career Discovery OS
           </p>
           <div className="w-12 h-px bg-amber-600 mx-auto mb-8" />
-          <p className="text-xl text-stone-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             An AI-powered voice interview platform that helps professionals navigate career transitions through 6 proven frameworks, 19 guided questions, and automated synthesis.
           </p>
 
           {/* Key Metrics */}
           <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
-              <div className="text-3xl font-bold text-amber-400 mb-1">45-60</div>
-              <div className="text-xs text-stone-400 uppercase tracking-wider">Min Interview</div>
+            <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
+              <div className="text-3xl font-bold text-amber-700 mb-1">45-60</div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Min Interview</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
-              <div className="text-3xl font-bold text-amber-400 mb-1">6</div>
-              <div className="text-xs text-stone-400 uppercase tracking-wider">Frameworks</div>
+            <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
+              <div className="text-3xl font-bold text-amber-700 mb-1">6</div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Frameworks</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5">
-              <div className="text-3xl font-bold text-amber-400 mb-1">19</div>
-              <div className="text-xs text-stone-400 uppercase tracking-wider">Guided Questions</div>
+            <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
+              <div className="text-3xl font-bold text-amber-700 mb-1">19</div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Guided Questions</div>
             </div>
           </div>
 
@@ -133,14 +133,14 @@ const CaseStudyUndercurrent: React.FC = () => {
         {/* The Challenge */}
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">The Challenge</h2>
-          <div className="prose prose-invert prose-lg max-w-none">
-            <p className="text-stone-300 leading-relaxed mb-4">
+          <div className="prose prose-lg max-w-none">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               A layoff, a burnout spiral, or a quiet fear that AI is about to make your skills obsolete: the moment of "what now?" is universally overwhelming.
             </p>
-            <p className="text-stone-300 leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               Traditional career coaching is expensive, scheduling is a nightmare, and the process often takes months to yield actionable insights. Personality tests and quizzes are fast, but they're reductive and rarely provide the nuanced clarity needed for major life pivots.
             </p>
-            <p className="text-stone-300 leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed">
               The real design challenge: how do you build an automated system that feels like a real conversation with an expert coach? How do you extract deep, personal insights without the user feeling like they're just filling out a massive web form? This project demonstrates how AI-augmented voice interfaces can democratize access to high-end career coaching, providing synthesis and clarity faster than traditional methods.
             </p>
           </div>
@@ -149,26 +149,26 @@ const CaseStudyUndercurrent: React.FC = () => {
         {/* Onboarding Flow */}
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">Frictionless Onboarding</h2>
-          <p className="text-stone-300 leading-relaxed mb-8">
+          <p className="text-muted-foreground leading-relaxed mb-8">
             The onboarding flow is designed to build trust before asking for anything. Instead of demanding an account upfront, it walks users through the <em>Why</em>, the <em>Methodology</em>, and the <em>Structure</em> before asking for sign-in. Five screens that turn skeptics into believers.
           </p>
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/01_welcome.webp`} alt="Undercurrent welcome screen" className="w-full" />
-              <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">Welcome: brand and positioning before any commitment</div>
+              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Welcome: brand and positioning before any commitment</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/02_why_this_exists.webp`} alt="Why this exists screen" className="w-full" />
-              <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">The problem statement, in the user's language</div>
+              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">The problem statement, in the user's language</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/03_frameworks.webp`} alt="6 frameworks screen" className="w-full" />
-              <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">The methodology: credibility through rigor</div>
+              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">The methodology: credibility through rigor</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/04_interview_sections.webp`} alt="Interview sections overview" className="w-full" />
-              <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">The 8-section structure: wayfinding before the journey starts</div>
+              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">The 8-section structure: wayfinding before the journey starts</div>
             </div>
           </div>
 
@@ -184,8 +184,8 @@ const CaseStudyUndercurrent: React.FC = () => {
           <h2 className="font-serif text-4xl font-bold mb-6">The Solution</h2>
 
           <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-600/30 rounded-lg p-6 mb-8">
-            <h3 className="text-xl font-bold mb-3 text-amber-400">What Undercurrent is</h3>
-            <p className="text-stone-300 leading-relaxed">
+            <h3 className="text-xl font-bold mb-3 text-amber-700">What Undercurrent is</h3>
+            <p className="text-muted-foreground leading-relaxed">
               Not a quiz. Not a personality test. A real conversation, powered by a voice AI coach, that helps you surface what you already know about yourself but haven't had the right questions to articulate. It weaves together six proven career clarity frameworks into a single, coherent 45-60 minute interview experience.
             </p>
           </div>
@@ -199,9 +199,9 @@ const CaseStudyUndercurrent: React.FC = () => {
               { name: 'StrengthsFinder', desc: 'Build on what you naturally do best' },
               { name: 'Career Canvas', desc: 'Map the business model of your professional life' },
             ].map((f) => (
-              <div key={f.name} className="bg-white/5 border border-amber-700/30 rounded-lg p-5">
-                <h4 className="text-sm font-bold text-amber-400 mb-2 uppercase tracking-wider">{f.name}</h4>
-                <p className="text-stone-400 text-sm leading-relaxed">{f.desc}</p>
+              <div key={f.name} className="bg-muted border border-amber-700/30 rounded-lg p-5">
+                <h4 className="text-sm font-bold text-amber-700 mb-2 uppercase tracking-wider">{f.name}</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -210,7 +210,7 @@ const CaseStudyUndercurrent: React.FC = () => {
         {/* Dashboard */}
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">The Home Dashboard</h2>
-          <p className="text-stone-300 leading-relaxed mb-8">
+          <p className="text-muted-foreground leading-relaxed mb-8">
             After sign-in, the dashboard gives users a persistent, motivating view of their progress. They can see exactly how far they've come, which sections are complete, and resume with a single click. The copy adapts to their name and progress, making a 45-minute commitment feel manageable.
           </p>
           <Screenshot
@@ -223,7 +223,7 @@ const CaseStudyUndercurrent: React.FC = () => {
         {/* Interview UI */}
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">The Interview Experience</h2>
-          <p className="text-stone-300 leading-relaxed mb-8">
+          <p className="text-muted-foreground leading-relaxed mb-8">
             The core interview UI is a three-panel layout: section navigation on the left, the active question in the center, and the Coach Reflection panel on the right. Every design decision reduces cognitive load and keeps the user focused on the one thing that matters, answering honestly.
           </p>
 
@@ -236,11 +236,11 @@ const CaseStudyUndercurrent: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/07_interview_audio_prompt.webp`} alt="Audio prompt screen" className="w-full" />
-              <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">Voice-first: users hear each question before responding</div>
+              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">Voice-first: users hear each question before responding</div>
             </div>
             <div className="rounded-lg overflow-hidden border border-amber-700/40">
               <img loading="lazy" src={`${BASE}images/12_interview_text_input.webp`} alt="Text input fallback" className="w-full" />
-              <div className="bg-white/5 px-4 py-2 text-xs text-stone-400 italic">"Prefer to type instead?" gracefully degrades to text when voice isn't ideal</div>
+              <div className="bg-muted px-4 py-2 text-xs text-muted-foreground italic">"Prefer to type instead?" gracefully degrades to text when voice isn't ideal</div>
             </div>
           </div>
 
@@ -254,12 +254,12 @@ const CaseStudyUndercurrent: React.FC = () => {
         {/* Coach Reflection Engine - Product Breakthrough */}
         <section className="mb-16">
           <div className="border border-amber-600/40 rounded-xl p-8 bg-gradient-to-br from-amber-900/10 to-orange-900/10">
-            <div className="text-amber-400 text-sm font-semibold uppercase tracking-widest mb-3">Product Breakthrough</div>
+            <div className="text-amber-700 text-sm font-semibold uppercase tracking-widest mb-3">Product Breakthrough</div>
             <h2 className="font-serif text-3xl font-bold mb-4">The Coach Reflection Engine</h2>
-            <p className="text-stone-300 leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               After building the initial prototype, I realized asking good questions isn't enough. The value of a coach is in <em>how they listen</em>.
             </p>
-            <p className="text-stone-300 leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               I designed the Coach Reflection panel: a real-time AI response system that analyzes the user's answer and provides immediate feedback, validation, or gentle pushback before moving to the next question. It transforms the experience from an interrogation into a conversation. When users feel heard, they provide deeper, more honest answers to subsequent questions.
             </p>
           </div>
@@ -286,7 +286,7 @@ const CaseStudyUndercurrent: React.FC = () => {
         {/* 8-Section Journey */}
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">The 8-Section Journey</h2>
-          <p className="text-stone-300 leading-relaxed mb-8">
+          <p className="text-muted-foreground leading-relaxed mb-8">
             The 19 questions are organized into 8 sections that move from present state to future vision. Each section builds on the last, so by the time users reach Synthesis, the report writes itself from what they've already said.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
@@ -300,11 +300,11 @@ const CaseStudyUndercurrent: React.FC = () => {
               { n: '07', title: 'Career Canvas', desc: 'Mapping the business model of the user\'s professional life' },
               { n: '08', title: 'Synthesis', desc: 'Connecting the dots into a cohesive, actionable report' },
             ].map((s) => (
-              <div key={s.n} className="flex gap-4 bg-white/5 border border-white/10 rounded-lg p-5">
-                <div className="text-2xl font-bold text-amber-400/80 font-serif w-8 shrink-0">{s.n}</div>
+              <div key={s.n} className="flex gap-4 bg-muted border border-border rounded-lg p-5">
+                <div className="text-2xl font-bold text-amber-700/80 font-serif w-8 shrink-0">{s.n}</div>
                 <div>
-                  <div className="font-semibold text-white mb-1">{s.title}</div>
-                  <div className="text-stone-400 text-sm leading-relaxed">{s.desc}</div>
+                  <div className="font-semibold text-foreground mb-1">{s.title}</div>
+                  <div className="text-muted-foreground text-sm leading-relaxed">{s.desc}</div>
                 </div>
               </div>
             ))}
@@ -315,27 +315,27 @@ const CaseStudyUndercurrent: React.FC = () => {
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">Technical Stack</h2>
           <div className="grid md:grid-cols-3 gap-5">
-            <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-              <h4 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-4">Frontend</h4>
-              <ul className="space-y-2 text-stone-300 text-sm">
+            <div className="bg-muted border border-border rounded-lg p-6">
+              <h4 className="text-sm font-bold text-amber-700 uppercase tracking-wider mb-4">Frontend</h4>
+              <ul className="space-y-2 text-muted-foreground text-sm">
                 <li>Next.js (App Router)</li>
                 <li>TypeScript (strict mode)</li>
                 <li>Tailwind CSS</li>
                 <li>React 18</li>
               </ul>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-              <h4 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-4">AI & Intelligence</h4>
-              <ul className="space-y-2 text-stone-300 text-sm">
+            <div className="bg-muted border border-border rounded-lg p-6">
+              <h4 className="text-sm font-bold text-amber-700 uppercase tracking-wider mb-4">AI & Intelligence</h4>
+              <ul className="space-y-2 text-muted-foreground text-sm">
                 <li>Anthropic Claude</li>
                 <li>Orchestration & reflection</li>
                 <li>Voice-to-text processing</li>
                 <li>Automated report synthesis</li>
               </ul>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-              <h4 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-4">Infrastructure</h4>
-              <ul className="space-y-2 text-stone-300 text-sm">
+            <div className="bg-muted border border-border rounded-lg p-6">
+              <h4 className="text-sm font-bold text-amber-700 uppercase tracking-wider mb-4">Infrastructure</h4>
+              <ul className="space-y-2 text-muted-foreground text-sm">
                 <li>Vercel (hosting + CI/CD)</li>
                 <li>Google OAuth</li>
               </ul>
@@ -347,21 +347,21 @@ const CaseStudyUndercurrent: React.FC = () => {
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">What This Demonstrates</h2>
           <div className="space-y-5">
-            <div className="bg-white/5 border border-amber-700/30 rounded-lg p-6">
-              <h4 className="font-bold text-white mb-2">AI as an empathetic interface</h4>
-              <p className="text-stone-400 text-sm leading-relaxed">
+            <div className="bg-muted border border-amber-700/30 rounded-lg p-6">
+              <h4 className="font-bold text-foreground mb-2">AI as an empathetic interface</h4>
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 Undercurrent demonstrates how to use LLMs to create experiences that feel warm, perceptive, and genuinely helpful in sensitive, high-stakes contexts like career transitions, well beyond raw speed.
               </p>
             </div>
-            <div className="bg-white/5 border border-amber-700/30 rounded-lg p-6">
-              <h4 className="font-bold text-white mb-2">Complex state management</h4>
-              <p className="text-stone-400 text-sm leading-relaxed">
+            <div className="bg-muted border border-amber-700/30 rounded-lg p-6">
+              <h4 className="font-bold text-foreground mb-2">Complex state management</h4>
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 Managing a 19-question interview where each answer informs the context of the next requires sophisticated state management and prompt engineering. I bridge the gap between UX design and AI orchestration.
               </p>
             </div>
-            <div className="bg-white/5 border border-amber-700/30 rounded-lg p-6">
-              <h4 className="font-bold text-white mb-2">Consumer-grade polish</h4>
-              <p className="text-stone-400 text-sm leading-relaxed">
+            <div className="bg-muted border border-amber-700/30 rounded-lg p-6">
+              <h4 className="font-bold text-foreground mb-2">Consumer-grade polish</h4>
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 From the typography to the subtle UI animations, the platform feels like a premium consumer product. The design system, color palette, and interaction patterns were built from scratch to match the emotional register of the subject matter.
               </p>
             </div>
@@ -369,14 +369,14 @@ const CaseStudyUndercurrent: React.FC = () => {
         </section>
 
         {/* CTA */}
-        <section className="border-t border-white/10 pt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <section className="border-t border-border pt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <p className="text-stone-400 text-sm mb-1">Ready to explore it?</p>
+            <p className="text-muted-foreground text-sm mb-1">Ready to explore it?</p>
             <a
               href="https://undercurrent-brown.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors font-semibold text-lg"
+              className="inline-flex items-center gap-2 text-amber-700 hover:text-amber-700 transition-colors font-semibold text-lg"
             >
               View Live Platform
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -384,7 +384,7 @@ const CaseStudyUndercurrent: React.FC = () => {
               </svg>
             </a>
           </div>
-          <Link href="/contact?intent=consulting" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold rounded-lg transition-colors">
+          <Link href="/contact?intent=consulting" className="inline-flex items-center gap-2 px-6 py-3 bg-muted hover:bg-white/15 border border-border text-foreground font-semibold rounded-lg transition-colors">
               Let's Talk
           </Link>
         </section>
