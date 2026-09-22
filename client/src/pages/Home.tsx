@@ -197,6 +197,32 @@ export default function Home() {
         meta={<FactRow facts={heroFacts} />}
       />
 
+      {/* Problem — before the build */}
+      <Section labelledBy="problem-heading">
+        <div className="max-w-2xl">
+          <Eyebrow className="mb-4">Before you fund the next build</Eyebrow>
+          <SectionTitle id="problem-heading" className="mt-4">
+            You already have a bet. You need to know if the direction holds.
+          </SectionTitle>
+          <p className="mt-6 text-lg leading-relaxed text-slate-300">
+            Most expensive product mistakes are not craft mistakes. They are
+            delivery quarters spent on a direction nobody validated. If you are
+            about to commit budget, the useful work is evidence, explicit cuts,
+            and a scope engineering can start — not another slide narrative.
+          </p>
+          <Link
+            href="/consulting"
+            className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-cyan-300"
+          >
+            See how engagements work
+            <ArrowRight
+              className="h-4 w-4 transition-transform motion-safe:group-hover:translate-x-1"
+              aria-hidden="true"
+            />
+          </Link>
+        </div>
+      </Section>
+
       {/* Capabilities */}
       <Section tone="muted" labelledBy="capabilities-heading">
         <SectionHeading
