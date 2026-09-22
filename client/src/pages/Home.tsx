@@ -151,7 +151,7 @@ export default function Home() {
     <SiteLayout currentPage="home">
       <PageSeo
         title="Ryan Winzenburg | Product Experience Leader, Enterprise B2B"
-        description="Product experience leader with 25 years designing enterprise B2B systems at Fortune 50 companies. I lead product experience for complex B2B systems — from healthcare to fintech to defense."
+        description="Product experience leader with 25 years in enterprise B2B. Healthcare, financial services, telecom, technology. I work where product strategy, operating model, and delivery meet."
         path="/"
         ogImage="/images/about-hero.webp"
         ogType="website"
@@ -207,8 +207,8 @@ export default function Home() {
           <p className="mt-6 text-lg leading-relaxed text-slate-300">
             Most expensive product mistakes are not craft mistakes. They are
             delivery quarters spent on a direction nobody validated. If you are
-            about to commit budget, the useful work is evidence, explicit cuts,
-            and a scope engineering can start — not another slide narrative.
+            about to             commit budget, the useful work is evidence, explicit cuts,
+            and a scope engineering can start. Not another slide narrative.
           </p>
           <Link
             href="/consulting"
@@ -288,7 +288,7 @@ export default function Home() {
           <div className="lg:col-span-5">
             <Eyebrow className="mb-4">How I think about it</Eyebrow>
             <SectionTitle id="thinking-heading">
-              Where the real work happens
+              The assumptions under the work
             </SectionTitle>
             <ol className="mt-10 space-y-8">
               {principles.map((principle, index) => (
@@ -314,7 +314,7 @@ export default function Home() {
 
           <div className="lg:col-span-6 lg:col-start-7">
             <h3 className="mb-6 text-xs uppercase tracking-[0.16em] text-slate-400">
-              What stays in the human layer
+              What I don't automate
             </h3>
             <dl className="divide-y divide-border/60 overflow-hidden rounded-xl border border-border/60 bg-background/40">
               {humanLayer.map((item) => (
@@ -390,9 +390,8 @@ export default function Home() {
           </SectionTitle>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
             That is the moment this work is worth the most. Thirty minutes, no
-            deck: tell me what you&apos;re about to fund and which part of it is
-            still a guess. I&apos;ll tell you what I&apos;d do first, whether or
-            not you hire me.
+            deck. Tell me what you&apos;re about to fund and which part of it is
+            still a guess. I&apos;ll tell you what I&apos;d do first.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
