@@ -268,7 +268,7 @@ const SELECTED_WORK: WorkSample[] = [
     meta: "Commercial real estate · Product design",
     body: "UX and product design for commercial real estate workflows, including prospecting and map-driven experiences.",
     result:
-      "Workflow-first product surfaces for people who use the tool all day, not a marketing site wearing a product costume.",
+      "Workflow-first product surfaces for people who use the tool all day.",
     href: "/case-study/buildout",
   },
   {
@@ -352,7 +352,7 @@ export default function Services() {
     <SiteLayout currentPage="consulting">
       <PageSeo
         title="Consulting | Validate the Product Direction Before You Fund the Build | Ryan Winzenburg"
-        description="For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated. Evidence behind the decision, a scope with explicit cuts, and a path engineering can build."
+        description="For product leaders about to commit engineering quarters to a direction nobody has tested. I work in that window, so the decision has evidence under it before the build starts."
         path="/consulting"
         ogImage="/images/services-hero.webp"
         jsonLd={consultingFaqJsonLd()}
@@ -391,7 +391,7 @@ export default function Services() {
         footnote={
           <>
             <span className="block">
-              Form reaches me directly. I reply and we schedule — no calendar
+              Form reaches me directly. I reply and we schedule. No calendar
               link on the site yet.
             </span>
             <span className="mt-2 block">
@@ -459,7 +459,7 @@ export default function Services() {
       <Section labelledBy="risks-heading">
         <SectionHeading
           id="risks-heading"
-          eyebrow="What you are actually buying"
+          eyebrow="Six recurring risks"
           title="The risk you are carrying, and what replaces it"
           lede="Nobody hires me for research or wireframes. They hire me because a specific risk is sitting on a budget they have to defend. These are the six that come up most."
         />
@@ -499,7 +499,7 @@ export default function Services() {
           <div className="lg:col-span-5">
             <Eyebrow className="mb-4">How I work</Eyebrow>
             <SectionTitle id="process-heading">
-              An end-to-end process, built to reduce risk at every stage
+              How the work runs
             </SectionTitle>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               This is the Double Diamond, applied honestly. It is a framework for
@@ -557,10 +557,10 @@ export default function Services() {
 
         <div className="mt-12 rounded-xl border border-primary/30 bg-primary/10 p-7 md:p-8">
           <p className="max-w-3xl leading-relaxed text-foreground">
-            One thing worth saying plainly: I stay through implementation rather
-            than handing off at the file. A validated direction that nobody can
-            build is the same as no direction, and most of the loss happens in
-            the gap between the decision and the thing that ships.
+            I stay through implementation rather than handing off at the file. A
+            validated direction that nobody can build is the same as no
+            direction. Most of the loss happens in the gap between the decision
+            and the thing that ships.
           </p>
           <Link
             href="/methodology"
@@ -631,7 +631,7 @@ export default function Services() {
           }
         />
         <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
-          No public testimonials on this site by choice — selected work and
+          No public testimonials on this site by choice. Selected work and
           engagement shape are the proof until clients agree to be named.
         </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -869,7 +869,7 @@ export default function Services() {
             <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
               Thirty minutes, no deck. Tell me what you are about to commit to
               and which part of it is still unproven. I will tell you what I
-              would do first, whether or not you hire me. If there is a fit, you
+              would do first. If there is a fit, you
               will have a scoped proposal with a fixed fee within three business
               days.
             </p>
@@ -881,7 +881,7 @@ export default function Services() {
               </Button>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-right">
-              Form reaches me directly. I reply and we schedule — no calendar
+              Form reaches me directly. I reply and we schedule. No calendar
               link on the site yet.
             </p>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground lg:text-right">
