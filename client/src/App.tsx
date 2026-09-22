@@ -401,7 +401,7 @@ function App() {
   return (
     <HelmetProvider>
       <ErrorBoundary>
-        <ThemeProvider defaultTheme="light">
+        <ThemeProvider defaultTheme="dark">
           <TooltipProvider>
             <Toaster />
             <Router />
