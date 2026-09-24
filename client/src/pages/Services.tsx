@@ -186,7 +186,7 @@ const PHASES: Phase[] = [
     name: "Discover",
     mode: "Diverge",
     question: "What is actually going on?",
-    body: "Stakeholder interviews, customer research, analytics and support-ticket review, competitive and heuristic analysis, and a hard look at what the business needs this product to do.",
+    body: "For the sprint, stakeholder and customer research as needed, plus review of the artifacts you already have (analytics, support, competitive notes) when they exist. The Double Diamond below is how decisions get framed; the sprint package is the Entry card above, not every Discover activity every time.",
     deliverable:
       "A research synthesis, prioritized problem themes, and a clear statement of what we do and do not yet know.",
   },
@@ -227,7 +227,7 @@ const ENGAGEMENTS: Engagement[] = [
     name: "AI Delivery Loop Sprint",
     when: "The budget conversation has started and the direction is still unproven.",
     scope:
-      "Research as needed, AI-assisted synthesis, opportunity framing, go / no-go / pivot call, scoped next steps.",
+      "Research as needed, AI-assisted synthesis, opportunity framing, go / no-go / pivot call, written scope with stated assumptions.",
     duration: "2–4 weeks · from $8,000",
   },
   {
@@ -626,10 +626,11 @@ export default function Services() {
 
         <div className="mt-12 rounded-xl border border-primary/30 bg-primary/10 p-7 md:p-8">
           <p className="max-w-3xl leading-relaxed text-foreground">
-            I stay through implementation rather than handing off at the file. A
-            validated direction that nobody can build is the same as no
-            direction. Most of the loss happens in the gap between the decision
-            and the thing that ships.
+            The sprint ends with a scope engineering can start. Staying through
+            implementation is retainer or larger-engagement work, not part of
+            the entry sprint fee. A validated direction nobody can build is
+            still a failure mode, which is why the written scope names
+            assumptions and cuts explicitly.
           </p>
           <Link
             href="/methodology"

@@ -392,12 +392,12 @@ export const RECOMMENDATIONS: Record<DimensionId, EngagementRecommendation> = {
     timing: "2 to 4 weeks. Fixed fee, scoped before it starts. From $8,000.",
     why: "Your weakest dimension is problem definition. You are building things without an agreed statement of the problem they solve, which is the most expensive failure mode on this list because the cost lands in engineering rather than in design.",
     includes: [
-      "Research plan and participant recruiting",
-      "Five to eight customer interviews",
-      "Stakeholder interviews to surface internal constraints early",
+      "Stakeholder interviews as needed",
+      "Customer research as needed (typical path: 5–8 interviews — confirmed in the proposal)",
       "AI-assisted synthesis into prioritized problem themes",
       "Journey mapping and opportunity framing",
-      "A go, no-go, or pivot recommendation with a scope engineering can start",
+      "A go, no-go, or pivot recommendation",
+      "A written scope with stated assumptions engineering can start",
     ],
   },
   capability: {

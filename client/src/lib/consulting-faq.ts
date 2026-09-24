@@ -48,6 +48,11 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
           "A 30-minute call. Bring the problem, not a brief. Most buyers start with an AI Delivery Loop Sprint: a fixed engagement that puts evidence under a product bet before the build is funded. If the gap is ongoing senior judgment, we talk about an embedded product-experience retainer instead. If there is a fit, you get a scoped proposal with a fixed price and dates within three business days.",
       },
       {
+        question: "What is not included in the AI Delivery Loop Sprint?",
+        answer:
+          "Build and implementation, design-system construction, and ongoing embedded leadership. Those are separate shapes. The sprint delivers the decision artifacts: research as needed, synthesis, a go / no-go / pivot recommendation, and a written scope with stated assumptions.",
+      },
+      {
         question: "Do you work alone?",
         answer:
           "Yes. You work directly with me on every engagement. No account manager, no ramp, and no junior bench learning on your budget. The person you meet on the first call is the person doing the work.",
