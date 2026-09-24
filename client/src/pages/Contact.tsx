@@ -219,18 +219,18 @@ export default function Contact() {
   };
 
   const seoTitle =
-    intent === "role"
-      ? "Contact Ryan Winzenburg | Design Leadership Roles"
-      : intent === "consulting"
-        ? "Contact Ryan Winzenburg | Book a 30-Minute Consultation"
-        : "Contact Ryan Winzenburg | Design Operations & UX Leadership";
+    intent === "consulting"
+      ? "Contact Ryan Winzenburg | Book a 30-Minute Consultation"
+      : intent === "role"
+        ? "Contact Ryan Winzenburg | Design Leadership Roles"
+        : "Contact Ryan Winzenburg | Product Experience Consulting";
 
   const seoDescription =
-    intent === "role"
-      ? "Contact Ryan Winzenburg about Head of Design Operations, VP/Director of Design, and Principal Design Technologist roles."
-      : intent === "consulting"
-        ? "Book a 30-minute call with Ryan Winzenburg. Tell me what you're about to fund and what's still uncertain. Scoped proposal within three business days if there's a fit."
-        : "Contact Ryan Winzenburg about design operations leadership, AI workflow architecture, design systems, and scoped engagements.";
+    intent === "consulting"
+      ? "Book a 30-minute call with Ryan Winzenburg about an AI Delivery Loop Sprint or an embedded retainer. Scoped proposal within three business days if there's a fit."
+      : intent === "role"
+        ? "Contact Ryan Winzenburg about Head of Design Operations, VP/Director of Design, and Principal Design Technologist roles."
+        : "Contact Ryan Winzenburg about product experience consulting: AI Delivery Loop Sprints, embedded retainers, and related scoped work.";
 
   return (
     <SiteLayout currentPage="contact">
@@ -255,15 +255,34 @@ export default function Contact() {
         meta={<FactRow facts={heroFactsFor(intent)} />}
       />
 
-      {/* Path selector */}
+      {/* Path selector: consulting first (Dual-Track v2) */}
       <Section labelledBy="contact-paths-heading">
         <SectionHeading
           id="contact-paths-heading"
           eyebrow="Pick a lane"
-          title="Two conversations, and they run differently"
-          lede="Choosing one sets up the form below. If neither fits, skip it and write whatever you were going to write."
+          title="Most conversations start with consulting"
+          lede="Choosing one sets up the form below. The sprint and retainer path is the usual entry. A full-time role is a different conversation if that is what you need."
         />
         <div className="grid gap-6 md:grid-cols-2">
+          <Link
+            href={contactHref({ intent: "consulting", sheet, playbook: playbookId })}
+            aria-current={intent === "consulting" ? "page" : undefined}
+            className={pathCardClass(intent === "consulting")}
+          >
+            <PathCardHeader
+              label="Consulting"
+              active={intent === "consulting"}
+            />
+            <h3 className="mb-2 text-xl font-semibold text-foreground">
+              Sprint or embedded retainer
+            </h3>
+            <p className="leading-relaxed text-muted-foreground">
+              AI Delivery Loop Sprint when the bet is still unproven. Embedded
+              product-experience retainer when the gap is ongoing senior
+              judgment.
+            </p>
+          </Link>
+
           <Link
             href={contactHref({ intent: "role", playbook: playbookId })}
             aria-current={intent === "role" ? "page" : undefined}
@@ -271,29 +290,12 @@ export default function Contact() {
           >
             <PathCardHeader label="Hiring" active={intent === "role"} />
             <h3 className="mb-2 text-xl font-semibold text-foreground">
-              A leadership role
+              A full-time leadership role
             </h3>
             <p className="leading-relaxed text-muted-foreground">
               Head of Design Operations, VP or Director of Design, Principal
-              Design Technologist.
-            </p>
-          </Link>
-
-          <Link
-            href={contactHref({ intent: "consulting", sheet, playbook: playbookId })}
-            aria-current={intent === "consulting" ? "page" : undefined}
-            className={pathCardClass(intent === "consulting")}
-          >
-            <PathCardHeader
-              label="Product work"
-              active={intent === "consulting"}
-            />
-            <h3 className="mb-2 text-xl font-semibold text-foreground">
-              A 30-minute consultation
-            </h3>
-            <p className="leading-relaxed text-muted-foreground">
-              Research through delivery on a product bet that still has too much
-              uncertainty.
+              Design Technologist. Available when a seat is the right move, not
+              the default path on this site.
             </p>
           </Link>
         </div>
@@ -651,14 +653,15 @@ export default function Contact() {
               Still deciding what to ask for?
             </SectionTitle>
             <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-              The case studies show how these engagements actually run. The
+              The consulting page covers the AI Delivery Loop Sprint and the
+              embedded retainer. The case studies show how the work runs. The
               assessment is a faster way in if you&apos;d rather start with your
               own product.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
             <Button variant="outline" asChild>
-              <Link href="/work">See the case studies</Link>
+              <Link href="/consulting">See consulting</Link>
             </Button>
             <Button variant="outline" asChild>
               <Link href="/assessment">Take the assessment</Link>

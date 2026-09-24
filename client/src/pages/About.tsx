@@ -217,7 +217,7 @@ export default function About() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/contact?intent=role">Get in touch</Link>
+              <Link href="/contact?intent=consulting">Get in touch</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/articles">Read the writing</Link>
@@ -517,7 +517,7 @@ export default function About() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href="/contact?intent=role">Get in touch</Link>
+              <Link href="/contact?intent=consulting">Get in touch</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/work">See the case studies</Link>

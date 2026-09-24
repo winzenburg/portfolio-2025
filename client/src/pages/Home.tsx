@@ -10,7 +10,6 @@ import { Eyebrow, Section, SectionHeading, SectionTitle } from "@/components/Sec
 import { contactHref } from "@/lib/contact-intent";
 
 const consultingHref = contactHref({ intent: "consulting" });
-const roleHref = contactHref({ intent: "role" });
 
 const heroFacts: Fact[] = [
   {
@@ -24,14 +23,14 @@ const heroFacts: Fact[] = [
     note: "Healthcare, fintech, telecom",
   },
   {
-    label: "Founded",
-    value: "3 active ventures",
-    note: "Winzinvest, Casimir, Foundpath",
+    label: "Entry",
+    value: "AI Delivery Loop Sprint",
+    note: "From $8,000 · fixed fee",
   },
   {
-    label: "Based",
-    value: "Wheat Ridge, CO",
-    note: "Remote, distributed teams",
+    label: "Expansion",
+    value: "Embedded retainer",
+    note: "Ongoing product-experience leadership",
   },
 ];
 
@@ -99,6 +98,23 @@ const capabilities = [
   },
 ];
 
+const engagementPaths = [
+  {
+    index: "01",
+    label: "Entry",
+    name: "AI Delivery Loop Sprint",
+    body: "A fixed engagement for the bet you are about to fund. We put evidence under the direction, cut what does not hold, and leave engineering with a scope they can start. AI compresses the mechanical parts of synthesis and specification. The judgment stays mine.",
+    meta: "Typically 2–4 weeks · from $8,000",
+  },
+  {
+    index: "02",
+    label: "Expansion",
+    name: "Embedded product-experience retainer",
+    body: "When the gap is ongoing senior judgment, not a single decision. Roadmap input, research planning, design direction, and stakeholder alignment inside your product cadence. The sprint proves fit. The retainer is how the work stays useful.",
+    meta: "Monthly · three-month minimum",
+  },
+];
+
 const principles = [
   {
     title: "The operating model before the output",
@@ -135,7 +151,7 @@ const humanLayer = [
 
 /**
  * Environments this work has happened in. Named companies and sector labels only.
- * No outcome metrics here on purpose — the case studies carry those in context.
+ * No outcome metrics here on purpose. The case studies carry those in context.
  */
 const environments = [
   { name: "Comcast", detail: "Telecom · Fortune 50", href: "/case-study/comcast-design-system" },
@@ -150,8 +166,8 @@ export default function Home() {
   return (
     <SiteLayout currentPage="home">
       <PageSeo
-        title="Ryan Winzenburg | Product Experience Leader, Enterprise B2B"
-        description="Product experience leader with 25 years in enterprise B2B. Healthcare, financial services, telecom, technology. I work where product strategy, operating model, and delivery meet."
+        title="Ryan Winzenburg | Product Experience Consulting for Enterprise B2B"
+        description="Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint, expand into an embedded retainer. 25 years across healthcare, financial services, telecom, and technology."
         path="/"
         ogImage="/images/about-hero.webp"
         ogType="website"
@@ -159,19 +175,19 @@ export default function Home() {
 
       <PageHero
         titleId="home-hero-title"
-        eyebrow="Product Experience Leadership"
+        eyebrow="Product Experience Consulting"
         eyebrowNote="Enterprise B2B"
         media={{
           src: "/images/home-hero.mp4",
           kind: "video",
           poster: "/images/home-hero-poster.webp",
         }}
-        title="I lead product experience for complex B2B systems"
-        lede="25 years designing enterprise products across healthcare, financial services, telecom, and technology. I work where product strategy, operating model, and AI-enabled execution meet."
+        title="I help product leaders prove the direction before they fund the build"
+        lede="25 years in enterprise B2B across healthcare, financial services, telecom, and technology. The usual entry is an AI Delivery Loop Sprint. When the work needs to stay, that expands into an embedded product-experience retainer."
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/consulting">Work with me</Link>
+              <Link href="/consulting">See the sprint and retainer</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/work">View case studies</Link>
@@ -180,16 +196,15 @@ export default function Home() {
         }
         footnote={
           <>
-            Consulting: product leaders bring me the bet they are about to fund,
-            and we find out whether the direction holds before the budget is
-            committed.
+            Bring the bet you are about to fund. We find out whether the
+            direction holds before the budget is committed.
             <span className="mt-2 block">
-              Hiring for a leadership role instead?{" "}
+              Prefer to talk first?{" "}
               <Link
-                href={roleHref}
+                href={consultingHref}
                 className="font-medium text-primary transition-colors hover:text-primary/80"
               >
-                That is a different conversation.
+                Book a 30-minute call.
               </Link>
             </span>
           </>
@@ -197,7 +212,7 @@ export default function Home() {
         meta={<FactRow facts={heroFacts} />}
       />
 
-      {/* Problem — before the build */}
+      {/* Problem: before the build */}
       <Section labelledBy="problem-heading">
         <div className="max-w-2xl">
           <Eyebrow className="mb-4">Before you fund the next build</Eyebrow>
@@ -208,13 +223,62 @@ export default function Home() {
             Most expensive product mistakes are not craft mistakes. They are
             delivery quarters spent on a direction nobody validated. If you are
             about to commit budget, the useful work is evidence, explicit cuts,
-            and a scope engineering can start. Not another slide narrative.
+            and a scope engineering can start. That is what the AI Delivery Loop
+            Sprint is for.
           </p>
           <Link
             href="/consulting"
             className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
           >
-            See how engagements work
+            How the sprint and retainer work
+            <ArrowRight
+              className="h-4 w-4 transition-transform motion-safe:group-hover:translate-x-1"
+              aria-hidden="true"
+            />
+          </Link>
+        </div>
+      </Section>
+
+      {/* Entry → expansion */}
+      <Section tone="muted" labelledBy="paths-heading">
+        <SectionHeading
+          id="paths-heading"
+          eyebrow="How buyers usually engage"
+          title="Sprint to enter. Retainer to stay."
+          lede="Two shapes, one consultancy. Start with the smallest engagement that answers the decision in front of you."
+        />
+        <Reveal>
+          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2">
+            {engagementPaths.map((path) => (
+              <div key={path.name} className="bg-background/60 p-7 md:p-8">
+                <div className="mb-6 flex items-baseline gap-3">
+                  <span className="font-['Playfair_Display'] text-2xl text-primary/70">
+                    {path.index}
+                  </span>
+                  <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
+                  <span className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
+                    {path.label}
+                  </span>
+                </div>
+                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
+                  {path.name}
+                </h3>
+                <p className="mb-6 leading-relaxed text-muted-foreground">
+                  {path.body}
+                </p>
+                <p className="border-t border-border/60 pt-4 text-sm font-medium text-primary">
+                  {path.meta}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+        <div className="mt-8">
+          <Link
+            href="/consulting"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+          >
+            Full consulting page
             <ArrowRight
               className="h-4 w-4 transition-transform motion-safe:group-hover:translate-x-1"
               aria-hidden="true"
@@ -224,7 +288,7 @@ export default function Home() {
       </Section>
 
       {/* Capabilities */}
-      <Section tone="muted" labelledBy="capabilities-heading">
+      <Section labelledBy="capabilities-heading">
         <SectionHeading
           id="capabilities-heading"
           eyebrow="What I bring"
@@ -283,7 +347,7 @@ export default function Home() {
       </Section>
 
       {/* How I think */}
-      <Section labelledBy="thinking-heading">
+      <Section tone="muted" labelledBy="thinking-heading">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Eyebrow className="mb-4">How I think about it</Eyebrow>
@@ -334,7 +398,7 @@ export default function Home() {
           id="environments-heading"
           eyebrow="Where this work has happened"
           title="Selected environments"
-          lede="Fortune 50 product organizations, venture-backed SaaS, and private-equity portfolio teams. The case studies carry the specifics."
+          lede="Fortune 50 product organizations, venture-backed SaaS, and private-equity portfolio teams. The case studies carry the specifics. No invented outcome numbers on this page."
           trailing={
             <Link
               href="/work"
@@ -389,9 +453,10 @@ export default function Home() {
             About to commit budget to something nobody has validated?
           </SectionTitle>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            That is the moment this work is worth the most. Thirty minutes, no
+            That is the moment a sprint is worth the most. Thirty minutes, no
             deck. Tell me what you&apos;re about to fund and which part of it is
-            still a guess. I&apos;ll tell you what I&apos;d do first.
+            still a guess. I&apos;ll tell you whether an AI Delivery Loop Sprint,
+            a retainer, or something else is the right next step.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>

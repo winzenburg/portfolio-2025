@@ -24,7 +24,6 @@ import {
   isConsultingFaqItem,
 } from "@/lib/consulting-faq";
 
-const roleHref = contactHref({ intent: "role" });
 const consultingHref = contactHref({ intent: "consulting" });
 
 type Situation = {
@@ -81,12 +80,47 @@ type Industry = {
 const HERO_FACTS: Fact[] = [
   { label: "First step", value: "30-minute call", note: "No deck, no pitch" },
   {
-    label: "Proposal",
-    value: "Three business days",
-    note: "Fixed fee, scoped before it starts",
+    label: "Entry",
+    value: "AI Delivery Loop Sprint",
+    note: "From $8,000 · typically 2–4 weeks",
   },
-  { label: "Entry engagements", value: "2 to 4 weeks" },
+  {
+    label: "Expansion",
+    value: "Embedded retainer",
+    note: "Ongoing product-experience leadership",
+  },
   { label: "You work with", value: "Me, directly", note: "No account manager" },
+];
+
+type OfferPath = {
+  label: string;
+  name: string;
+  body: string;
+  includes: string;
+  meta: string;
+};
+
+/**
+ * Dual-Track v2 public offer: sprint is the entry, retainer is the expansion.
+ * Pricing restates the Investment block already on this page (from $8,000).
+ */
+const OFFER_PATHS: OfferPath[] = [
+  {
+    label: "Entry",
+    name: "AI Delivery Loop Sprint",
+    body: "For the product bet you are about to fund. We put evidence under the direction, make the cuts explicit, and leave your team with a scope engineering can start. AI compresses synthesis, prototyping, and specification where the work is already well defined. The judgment call stays mine.",
+    includes:
+      "Stakeholder and customer research as needed, AI-assisted synthesis, a go / no-go / pivot call, and a written scope with stated assumptions.",
+    meta: "Typically 2–4 weeks · from $8,000 · fixed fee",
+  },
+  {
+    label: "Expansion",
+    name: "Embedded product-experience retainer",
+    body: "For the gap that is not a single decision. Ongoing senior product-experience and UX strategy inside your cadence: roadmap input, research planning, design direction, and stakeholder alignment. The sprint proves whether we work well together. The retainer is how that stays useful month to month.",
+    includes:
+      "Named weekly cadence, decision rights clarity, and continuity across the product org rather than a handoff at the file.",
+    meta: "Monthly · three-month minimum",
+  },
 ];
 
 const SITUATIONS: Situation[] = [
@@ -152,7 +186,7 @@ const PHASES: Phase[] = [
     name: "Discover",
     mode: "Diverge",
     question: "What is actually going on?",
-    body: "Stakeholder interviews, customer research, analytics and support-ticket review, competitive and heuristic analysis, and a hard look at what the business needs this product to do.",
+    body: "For the sprint, stakeholder and customer research as needed, plus review of the artifacts you already have (analytics, support, competitive notes) when they exist. The Double Diamond below is how decisions get framed; the sprint package is the Entry card above, not every Discover activity every time.",
     deliverable:
       "A research synthesis, prioritized problem themes, and a clear statement of what we do and do not yet know.",
   },
@@ -183,22 +217,16 @@ const PHASES: Phase[] = [
 ];
 
 /**
- * Names are load-bearing: the assessment at /assessment recommends a starting
- * engagement by these exact names, and the FAQ prices them. Reordered so the
- * pre-commitment work reads first, which is the order this buyer arrives in.
+ * Secondary shapes only. Sprint + retainer live in OFFER_PATHS (#offer) above.
+ * Assessment recommendations still use those primary names by exact string.
  */
 const ENGAGEMENTS: Engagement[] = [
   {
     name: "UX Diagnostic",
     when: "Something in the product is clearly costing you and nobody can name it.",
-    scope: "Expert review, analytics review, stakeholder interviews, prioritized recommendations.",
+    scope:
+      "Expert review, analytics review, stakeholder interviews, prioritized recommendations.",
     duration: "2–3 weeks",
-  },
-  {
-    name: "Discovery Sprint",
-    when: "The problem is still fuzzy and the budget conversation has already started.",
-    scope: "Research, synthesis, journey mapping, opportunity framing, research readout.",
-    duration: "2–4 weeks",
   },
   {
     name: "Concept Validation",
@@ -209,20 +237,16 @@ const ENGAGEMENTS: Engagement[] = [
   {
     name: "End-to-End Product Engagement",
     when: "A product or major feature needs experience leadership from the decision through the build.",
-    scope: "Discover through delivery: research, strategy, design, testing, implementation support.",
+    scope:
+      "Discover through delivery: research, strategy, design, testing, implementation support.",
     duration: "8–16 weeks",
   },
   {
     name: "Design System Acceleration",
     when: "The same decisions are being re-made by every team that ships a screen.",
-    scope: "Component architecture, foundations, accessibility standards, documentation, governance.",
+    scope:
+      "Component architecture, foundations, accessibility standards, documentation, governance.",
     duration: "4–8 weeks",
-  },
-  {
-    name: "Fractional UX Leadership",
-    when: "The gap is ongoing senior judgment, not a project with an end date.",
-    scope: "Roadmap input, research planning, design direction, coaching, stakeholder alignment.",
-    duration: "Ongoing, 3-month minimum",
   },
 ];
 
@@ -351,8 +375,8 @@ export default function Services() {
   return (
     <SiteLayout currentPage="consulting">
       <PageSeo
-        title="Consulting | Validate the Product Direction Before You Fund the Build | Ryan Winzenburg"
-        description="For product leaders about to commit engineering quarters to a direction nobody has tested. I work in that window, so the decision has evidence under it before the build starts."
+        title="Consulting | AI Delivery Loop Sprint and Embedded Retainer | Ryan Winzenburg"
+        description="Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint from $8,000. Expand into an embedded product-experience retainer. 25 years across healthcare, financial services, telecom, and technology."
         path="/consulting"
         ogImage="/images/services-hero.webp"
         jsonLd={consultingFaqJsonLd()}
@@ -372,10 +396,9 @@ export default function Services() {
           <>
             Most of the expensive product mistakes I get called into were not
             design mistakes. Someone committed engineering quarters to a
-            direction nobody had tested, and the bill arrived at launch. I work
-            in the window just before that commitment, so the decision has
-            evidence under it and the build has a scope your engineers can
-            actually start.
+            direction nobody had tested, and the bill arrived at launch. The
+            usual entry is an AI Delivery Loop Sprint. When the work needs to
+            stay, that expands into an embedded product-experience retainer.
           </>
         }
         actions={
@@ -384,7 +407,7 @@ export default function Services() {
               <Link href={consultingHref}>Book a 30-minute call</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#situations">See where I come in</a>
+              <a href="#offer">See the sprint and retainer</a>
             </Button>
           </>
         }
@@ -398,15 +421,6 @@ export default function Services() {
               Twenty-five years of enterprise product experience across
               healthcare, financial services, telecom, and technology.
               Previously design leadership at CVS/Aetna and Comcast.
-            </span>
-            <span className="mt-2 block">
-              Hiring for a leadership role instead?{" "}
-              <Link
-                href={roleHref}
-                className="font-medium text-primary transition-colors hover:text-primary/80"
-              >
-                That is a different conversation.
-              </Link>
             </span>
           </>
         }
@@ -453,6 +467,45 @@ export default function Services() {
             ))}
           </div>
         </Reveal>
+      </Section>
+
+      {/* Dual-Track offer: sprint entry → retainer expansion */}
+      <Section id="offer" labelledBy="offer-heading">
+        <SectionHeading
+          id="offer-heading"
+          eyebrow="How engagements usually start"
+          title="Sprint to enter. Retainer to stay."
+          lede="One consultancy, two shapes. Start with the smallest engagement that answers the decision in front of you. Scaling up later is easy. Unwinding a large engagement that started before the question was clear is not."
+        />
+        <Reveal>
+          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2">
+            {OFFER_PATHS.map((offer) => (
+              <div key={offer.name} className="flex flex-col bg-background/60 p-7 md:p-8">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
+                  {offer.label}
+                </p>
+                <h3 className="mt-4 text-2xl font-semibold leading-snug text-foreground">
+                  {offer.name}
+                </h3>
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  {offer.body}
+                </p>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  {offer.includes}
+                </p>
+                <p className="mt-6 border-t border-border/60 pt-4 text-sm font-medium text-primary">
+                  {offer.meta}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+        <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+          AI-enabled delivery is how the sprint covers more ground without
+          making the work fragile. It is not a marketplace gig board and not a
+          pitch for a Director seat. If a full-time hire would serve you better,
+          I will say that on the call.
+        </p>
       </Section>
 
       {/* Risks */}
@@ -557,10 +610,11 @@ export default function Services() {
 
         <div className="mt-12 rounded-xl border border-primary/30 bg-primary/10 p-7 md:p-8">
           <p className="max-w-3xl leading-relaxed text-foreground">
-            I stay through implementation rather than handing off at the file. A
-            validated direction that nobody can build is the same as no
-            direction. Most of the loss happens in the gap between the decision
-            and the thing that ships.
+            The sprint ends with a scope engineering can start. Staying through
+            implementation is retainer or larger-engagement work, not part of
+            the entry sprint fee. A validated direction nobody can build is
+            still a failure mode, which is why the written scope names
+            assumptions and cuts explicitly.
           </p>
           <Link
             href="/methodology"
@@ -691,9 +745,9 @@ export default function Services() {
       <Section tone="slate" labelledBy="engagements-heading">
         <SectionHeading
           id="engagements-heading"
-          eyebrow="Ways to work together"
-          title="Six engagements, each defined by the decision it helps you make"
-          lede="Start at the smallest one that answers the question actually in front of you. Scaling up later is easy. Unwinding a large engagement that started before the question was clear is not."
+          eyebrow="Other engagement shapes"
+          title="When the question is narrower or larger than the entry sprint"
+          lede="The Entry and Expansion cards above cover most buyers. These four shapes apply when the decision on the table is different: a named product cost, a concept that needs testing, a full product build, or a design-system problem."
         />
         <Reveal>
           <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 lg:grid-cols-3">
@@ -724,9 +778,9 @@ export default function Services() {
             <h3 className="text-xl font-semibold text-foreground">Investment</h3>
             <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                Engagements start at $8,000 for a UX Diagnostic. Most product
+                AI Delivery Loop Sprints start from $8,000. Most larger product
                 engagements land between $20,000 and $150,000 depending on
-                scope. Fractional leadership is monthly.
+                scope. Embedded retainers are monthly.
               </p>
               <p>
                 Workshops, standalone usability studies, and audits are
@@ -868,10 +922,10 @@ export default function Services() {
             </SectionTitle>
             <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
               Thirty minutes, no deck. Tell me what you are about to commit to
-              and which part of it is still unproven. I will tell you what I
-              would do first. If there is a fit, you
-              will have a scoped proposal with a fixed fee within three business
-              days.
+              and which part of it is still unproven. I will tell you whether an
+              AI Delivery Loop Sprint, an embedded retainer, or a different
+              shape is the right next step. If there is a fit, you will have a
+              scoped proposal with a fixed fee within three business days.
             </p>
           </div>
           <div className="lg:col-span-5">
