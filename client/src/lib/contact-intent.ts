@@ -52,12 +52,12 @@ export function contactHref(input: {
 
 export function consultingPrefill(sheet: RateSheet | null): string {
   if (sheet === "startup") {
-    return "We're a growth-stage company (Series B through D). I want to talk about scoped help, not a full-time hire. Here's the situation:\n\n";
+    return "We're a growth-stage company (Series B through D). I want to talk about an AI Delivery Loop Sprint or an embedded retainer. Here's the situation:\n\n";
   }
   if (sheet === "enterprise") {
-    return "We're a larger org with procurement and multiple stakeholders. I want to talk about scoped help, not a full-time hire. Here's the situation:\n\n";
+    return "We're a larger org with procurement and multiple stakeholders. I want to talk about an AI Delivery Loop Sprint or an embedded retainer. Here's the situation:\n\n";
   }
-  return "I want to talk about a product problem, not a full-time hire. Here's the situation:\n\n";
+  return "I want to talk about an AI Delivery Loop Sprint (entry) or an embedded product-experience retainer. Here's the situation:\n\n";
 }
 
 export type ContactPathCopy = {
@@ -71,30 +71,11 @@ export type ContactPathCopy = {
 };
 
 export function contactPathCopy(intent: ContactIntent | null): ContactPathCopy {
-  if (intent === "role") {
-    return {
-      title: "Let's talk about a leadership role",
-      description:
-        "Head of Design Operations, VP or Director of Design, Principal Design Technologist. Tell me what you're hiring for and I'll tell you if I'm a fit.",
-      formHeading: "About the role",
-      messageLabel: "What's the role, and what does the team need to change?",
-      messagePlaceholder:
-        "Role title, team size, where design sits, what's actually broken, timeline if you have one.",
-      submitLabel: "Send role notes",
-      expectItems: [
-        "I reply within a day",
-        "If it's a fit, a 30-45 minute conversation",
-        "I'll ask about org design, not just the job description",
-        "No pitch deck. An honest yes or no on fit.",
-      ],
-    };
-  }
-
   if (intent === "consulting") {
     return {
       title: "Book a 30-minute consultation",
       description:
-        "Tell me what you are trying to ship and what is still uncertain. I will tell you what I would do first. If there is a fit, you will have a scoped proposal within three business days.",
+        "Most people start with an AI Delivery Loop Sprint: a fixed engagement that puts evidence under a product bet before the build budget is committed. If the work needs to stay, we talk about an embedded retainer.",
       formHeading: "About the work",
       messageLabel: "What are you trying to ship, and what makes it uncertain?",
       messagePlaceholder:
@@ -104,7 +85,26 @@ export function contactPathCopy(intent: ContactIntent | null): ContactPathCopy {
         "I reply within a day",
         "A 30-minute call. No deck.",
         "If there is a fit, a scoped proposal within three business days",
-        "If a hire would serve you better, I'll say that.",
+        "If a full-time hire would serve you better, I'll say that.",
+      ],
+    };
+  }
+
+  if (intent === "role") {
+    return {
+      title: "Let's talk about a leadership role",
+      description:
+        "Some conversations are about a full-time seat, not a sprint. Head of Design Operations, VP or Director of Design, Principal Design Technologist. Tell me what you're hiring for and I'll tell you if I'm a fit.",
+      formHeading: "About the role",
+      messageLabel: "What's the role, and what does the team need to change?",
+      messagePlaceholder:
+        "Role title, team size, where design sits, what's actually broken, timeline if you have one.",
+      submitLabel: "Send role notes",
+      expectItems: [
+        "I reply within a day",
+        "If it's a fit, a 30-45 minute conversation",
+        "I'll ask about org design as much as the job description",
+        "No pitch deck. An honest yes or no on fit.",
       ],
     };
   }
@@ -112,15 +112,16 @@ export function contactPathCopy(intent: ContactIntent | null): ContactPathCopy {
   return {
     title: "How should we start?",
     description:
-      "Most people who write are hiring. Some need scoped help because a hire isn't the move yet. Those are different conversations.",
+      "Most useful conversations start with consulting: an AI Delivery Loop Sprint when the bet is still unproven, or an embedded retainer when the gap is ongoing senior judgment. Full-time hiring is a different path if that is what you need.",
     formHeading: "Start a conversation",
     messageLabel: "What do you want to talk about?",
-    messagePlaceholder: "The role, the problem, or both.",
+    messagePlaceholder:
+      "The product bet, the ongoing leadership gap, or a full-time role.",
     submitLabel: "Send message",
     expectItems: [
       "I reply within a day",
       "Conversations are 30-45 minutes",
-      "I'll tell you if a role or scoped work is the better fit",
+      "I'll tell you whether a sprint, a retainer, or a role is the better fit",
     ],
   };
 }

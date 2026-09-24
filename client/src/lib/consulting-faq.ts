@@ -45,7 +45,7 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
       {
         question: "How do we start?",
         answer:
-          "A 30-minute call. Bring the problem, not a brief. I will tell you what I would do first. If there is a fit, you get a scoped proposal with a fixed price and dates within three business days.",
+          "A 30-minute call. Bring the problem, not a brief. Most buyers start with an AI Delivery Loop Sprint: a fixed engagement that puts evidence under a product bet before the build is funded. If the gap is ongoing senior judgment, we talk about an embedded product-experience retainer instead. If there is a fit, you get a scoped proposal with a fixed price and dates within three business days.",
       },
       {
         question: "Do you work alone?",
@@ -87,7 +87,7 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
       {
         question: "How long do engagements take?",
         answer:
-          "Two to three weeks for a diagnostic, two to four for a discovery sprint, three to six for concept validation, eight to sixteen for end-to-end product work. Fractional leadership is ongoing with a three-month minimum.",
+          "AI Delivery Loop Sprints are typically two to four weeks. A UX Diagnostic runs two to three weeks. Concept validation is three to six. End-to-end product work is eight to sixteen. Embedded retainers are ongoing with a three-month minimum.",
       },
       {
         question: "What happens if our side slips?",
@@ -142,7 +142,7 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
       {
         question: "How does pricing work?",
         answer:
-          "Fixed fee for defined work, monthly for ongoing work, hourly only for approved changes in scope. The number in the proposal is the number on the invoice, and it does not vary with how long the work takes me. Engagements start at $8,000 for a diagnostic. Most product engagements land between $20,000 and $150,000 depending on scope. Fractional leadership is monthly.",
+          "Fixed fee for defined work, monthly for ongoing work, hourly only for approved changes in scope. The number in the proposal is the number on the invoice, and it does not vary with how long the work takes me. AI Delivery Loop Sprints start from $8,000. Most larger product engagements land between $20,000 and $150,000 depending on scope. Embedded retainers are monthly.",
       },
       {
         question: "Do you work hourly?",

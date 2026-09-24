@@ -478,7 +478,7 @@ export default function Work() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/contact?intent=role">Get in touch</Link>
+              <Link href="/contact?intent=consulting">Get in touch</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/methodology">How I work</Link>
@@ -538,7 +538,7 @@ export default function Work() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href="/contact?intent=role">Let&apos;s talk</Link>
+              <Link href="/contact?intent=consulting">Let&apos;s talk</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/articles">Read my thinking</Link>
