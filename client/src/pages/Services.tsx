@@ -217,26 +217,10 @@ const PHASES: Phase[] = [
 ];
 
 /**
- * Names are load-bearing: the assessment at /assessment recommends a starting
- * engagement by these exact names, and the FAQ prices them. Primary offer
- * (sprint + retainer) is featured above; these are secondary shapes when the
- * question on the table is narrower or larger than the entry sprint.
+ * Secondary shapes only. Sprint + retainer live in OFFER_PATHS (#offer) above.
+ * Assessment recommendations still use those primary names by exact string.
  */
 const ENGAGEMENTS: Engagement[] = [
-  {
-    name: "AI Delivery Loop Sprint",
-    when: "The budget conversation has started and the direction is still unproven.",
-    scope:
-      "Research as needed, AI-assisted synthesis, opportunity framing, go / no-go / pivot call, written scope with stated assumptions.",
-    duration: "2–4 weeks · from $8,000",
-  },
-  {
-    name: "Embedded Product Experience Retainer",
-    when: "The gap is ongoing senior judgment, not a project with an end date.",
-    scope:
-      "Roadmap input, research planning, design direction, coaching, stakeholder alignment.",
-    duration: "Ongoing · 3-month minimum",
-  },
   {
     name: "UX Diagnostic",
     when: "Something in the product is clearly costing you and nobody can name it.",
@@ -763,7 +747,7 @@ export default function Services() {
           id="engagements-heading"
           eyebrow="Other engagement shapes"
           title="When the question is narrower or larger than the entry sprint"
-          lede="The AI Delivery Loop Sprint and embedded retainer cover most buyers. These are the other shapes when the decision on the table is different."
+          lede="The Entry and Expansion cards above cover most buyers. These four shapes apply when the decision on the table is different: a named product cost, a concept that needs testing, a full product build, or a design-system problem."
         />
         <Reveal>
           <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 lg:grid-cols-3">
