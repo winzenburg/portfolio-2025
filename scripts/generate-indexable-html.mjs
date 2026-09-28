@@ -394,6 +394,26 @@ function resolveStaticPageSeo(page) {
 
   if (page.path === "/about") {
     jsonLdBlocks.push(...brandHubJsonLdFromFacts());
+  } else if (page.path === "/consulting" || page.path === "/services") {
+    jsonLdBlocks.push({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "AI Delivery Loop Sprint",
+      serviceType: "Product experience consulting",
+      url: `${SITE_ORIGIN}/consulting`,
+      provider: { "@id": `${SITE_ORIGIN}/#organization` },
+      description:
+        "Fixed-fee sprint for enterprise B2B product leaders about to fund an unproven product bet. Typically 2 to 4 weeks. A go, no-go, or pivot recommendation and a written scope engineering can start. Research as needed.",
+      offers: {
+        "@type": "Offer",
+        name: "AI Delivery Loop Sprint",
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          minPrice: 8000,
+          priceCurrency: "USD",
+        },
+      },
+    });
   } else if (page.path.startsWith("/case-study/")) {
     const name = page.title.split("|")[0]?.trim() ?? page.title;
     jsonLdBlocks.push({

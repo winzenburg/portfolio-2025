@@ -518,9 +518,9 @@ export default function ScalingStrategy() {
           {/* CTA Box */}
           <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-border rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Building an AI-Powered Portfolio?</h3>
-            <p className="text-muted-foreground mb-6">I've implemented this scaling strategy across multiple businesses. Let's discuss how to apply these principles to your specific context.</p>
-            <Link href="/contact?intent=consulting" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Schedule a Discovery Call
+            <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+                Book a 30-minute call
             </Link>
           </div>
 

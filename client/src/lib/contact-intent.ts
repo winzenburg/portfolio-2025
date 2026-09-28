@@ -73,19 +73,18 @@ export type ContactPathCopy = {
 export function contactPathCopy(intent: ContactIntent | null): ContactPathCopy {
   if (intent === "consulting") {
     return {
-      title: "Book a 30-minute consultation",
+      title: "A 30-minute call about the bet you're funding",
       description:
-        "Most people start with an AI Delivery Loop Sprint: a fixed engagement that puts evidence under a product bet before the build budget is committed. If the work needs to stay, we talk about an embedded retainer.",
-      formHeading: "About the work",
-      messageLabel: "What are you trying to ship, and what makes it uncertain?",
+        "If you're about to put budget behind a product direction, write me what it is and which part is still a guess. I reply within a day. If there's a fit, you get a fixed-fee proposal within three business days.",
+      formHeading: "About the bet",
+      messageLabel: "What are you about to fund, and what is still unproven?",
       messagePlaceholder:
-        "The product or feature, who owns it, the decision you need to make, and the timeline.",
-      submitLabel: "Request a consultation",
+        "The product direction, the budget you are about to commit, and the part that is still a guess.",
+      submitLabel: "Send message",
       expectItems: [
         "I reply within a day",
         "A 30-minute call. No deck.",
-        "If there is a fit, a scoped proposal within three business days",
-        "If a full-time hire would serve you better, I'll say that.",
+        "If there is a fit, a fixed-fee proposal within three business days",
       ],
     };
   }
@@ -109,19 +108,5 @@ export function contactPathCopy(intent: ContactIntent | null): ContactPathCopy {
     };
   }
 
-  return {
-    title: "How should we start?",
-    description:
-      "Most useful conversations start with consulting: an AI Delivery Loop Sprint when the bet is still unproven, or an embedded retainer when the gap is ongoing senior judgment. Full-time hiring is a different path if that is what you need.",
-    formHeading: "Start a conversation",
-    messageLabel: "What do you want to talk about?",
-    messagePlaceholder:
-      "The product bet, the ongoing leadership gap, or a full-time role.",
-    submitLabel: "Send message",
-    expectItems: [
-      "I reply within a day",
-      "Conversations are 30-45 minutes",
-      "I'll tell you whether a sprint, a retainer, or a role is the better fit",
-    ],
-  };
+  return contactPathCopy("consulting");
 }

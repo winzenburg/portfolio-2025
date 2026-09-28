@@ -72,14 +72,14 @@ const CaseStudyKinlet: React.FC = () => {
             </h1>
           </div>
           <p className="text-xl text-muted-foreground mb-8">
-            From idea to live MVP in 30 days: AI-powered peer support platform with matching, messaging, and admin tools, built solo
+            AI-powered peer support platform with matching, messaging, and admin tools, built solo
           </p>
           
           {/* Key Metrics */}
           <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
-              <div className="text-3xl font-bold text-purple-700 mb-2">30 days</div>
-              <div className="text-sm text-foreground/70">Idea → Live MVP</div>
+              <div className="text-3xl font-bold text-purple-700 mb-2">Live</div>
+              <div className="text-sm text-foreground/70">Matching, messaging, admin</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-purple-700 mb-2">Solo</div>
@@ -162,7 +162,7 @@ const CaseStudyKinlet: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">MVP Features Built</h2>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">
-              In 30 days, I built a complete peer support platform from scratch, including onboarding, AI matching, group messaging, admin tools, and analytics. Every feature is production-ready and actively being used by caregivers.
+              I built a complete peer support platform from scratch, including onboarding, AI matching, group messaging, admin tools, and analytics. Every feature is production-ready and actively being used by caregivers.
             </p>
           </div>
 
@@ -316,7 +316,7 @@ const CaseStudyKinlet: React.FC = () => {
                   After building the core platform, I realized something critical: <strong>peer support groups fail when messages go unanswered or feel too generic.</strong> I studied caregiver research (including "The 36-Hour Day") and identified 5 features that would determine whether Kinlet succeeded or failed.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  I built all 5 features in 6 hours. The expected impact: <strong>Week 3 retention from ~50% to ~90%+</strong>.
+                  I built all 5 features in 6 hours. Target: week 3 retention from about 50% to 90% or higher.
                 </p>
               </div>
             </div>
@@ -385,7 +385,7 @@ const CaseStudyKinlet: React.FC = () => {
                   <div className="flex-1">
                     <h4 className="font-bold text-amber-700 mb-1">Response Prompts</h4>
                     <p className="text-sm text-muted-foreground mb-2">
-                      Contextual response suggestions based on tags and mood. Example for Sundowning: "The 4pm-8pm window is brutal. I know exactly what you mean." Increases response rate from ~40% → 80%+.
+                      Contextual response suggestions based on tags and mood. Example for Sundowning: "The 4pm-8pm window is brutal. I know exactly what you mean." Target: response rate from about 40% to 80% or higher.
                     </p>
                     <p className="text-sm text-muted-foreground">
                       <strong>Why it matters:</strong> People want to help but don't know what to say. Prompts model peer-level validation ("I've been there") not platitudes ("Hang in there!").
@@ -442,7 +442,7 @@ const CaseStudyKinlet: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The AI-Native Build Process</h2>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">
-              I built Kinlet from scratch in 30 days using an AI-augmented workflow that demonstrates how a solo designer-developer can now compete with entire teams. This wasn't about cutting corners, it was about using AI as a force multiplier while maintaining strategic oversight and quality standards.
+              I built Kinlet from scratch using an AI-augmented workflow. Design and implementation happened in the same pass, and I reviewed the work before it shipped.
             </p>
           </div>
 
@@ -722,7 +722,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-purple-700">Speed Without Sacrifice</h3>
               <p className="text-muted-foreground text-sm">
-                5 days from idea to production doesn't mean cutting corners. The codebase has zero `any` types, comprehensive documentation, proper validation schemas, and production-grade infrastructure. Speed through smart tooling, not technical debt.
+                The codebase has zero `any` types, comprehensive documentation, proper validation schemas, and production-grade infrastructure.
               </p>
             </div>
           </div>
@@ -767,7 +767,7 @@ const CaseStudyKinlet: React.FC = () => {
                 <strong className="text-green-700">Live MVP:</strong> Full platform is live and actively being used. Caregivers are onboarding, groups are being matched, messages are flowing daily, and analytics show healthy engagement patterns.
               </p>
               <p>
-                <strong className="text-purple-700">Technical Achievement:</strong> Built a production-grade SaaS platform with AI matching, real-time messaging, admin tools, analytics dashboards, automated emails, and moderation, all in 30 days as a solo founder.
+                <strong className="text-purple-700">Technical Achievement:</strong> Built a production-grade SaaS platform with AI matching, real-time messaging, admin tools, analytics dashboards, automated emails, and moderation, as a solo founder.
               </p>
               <p>
                 <strong className="text-purple-700">Open Source Framework:</strong> The entire codebase, workflow, and system architecture is available on GitHub. Every pattern, integration, and AI workflow is documented and replicable.

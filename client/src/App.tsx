@@ -12,6 +12,7 @@ import Methodology from "./pages/Methodology";
 import About from "./pages/About";
 import BrandHub from "./pages/BrandHub";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
 import Unsubscribe from "./pages/Unsubscribe";
 import Subscribe from "./pages/Subscribe";
 import Services from "./pages/Services";
@@ -361,6 +362,7 @@ function Router() {
           {() => <LazyRoute component={Pulse20260828} />}
         </Route>
         <Route path="/contact" component={Contact} />
+        <Route path="/privacy" component={Privacy} />
         <Route path="/subscribe" component={Subscribe} />
         <Route path="/unsubscribe" component={Unsubscribe} />
         <Route path="/case-study/saas-design-system">

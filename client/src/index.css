@@ -14,6 +14,14 @@
 @theme {
   --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  /*
+   * Contrast overrides (WCAG 2.2 AA, 4.5:1 on paper).
+   * Default cyan-400 and green-700 sit under 4.5:1 on --primitive-paper.
+   * These darker values match the ink-blue accent and the status-success green.
+   */
+  --color-cyan-400: oklch(0.37 0.140 258);
+  --color-green-600: oklch(0.42 0.12 145);
+  --color-green-700: oklch(0.38 0.12 145);
 }
 
 @theme inline {

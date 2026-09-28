@@ -340,8 +340,8 @@ export default function DocsAsSystemOfRecord() {
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-foreground mb-4">Building Your Knowledge System?</h3>
               <p className="text-muted-foreground mb-6">I help teams design documentation systems that compound rather than rot. The conventions are simple, but getting them adopted requires the right approach.</p>
-              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Let's Talk →
+              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+                Book a 30-minute call
               </Link>
             </div>
           </div>

@@ -626,7 +626,7 @@ Before writing code: Query Context7 for each library above`}
             <p className="text-muted-foreground mb-6">
               Want the exact Context7 queries we use for Tailwind, Next.js, and Supabase? Plus our dev quality template with Context7 integration?
             </p>
-            <Link href="/contact?playbook=context7-starter" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?playbook=context7-starter" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                 Download the Context7 Starter Kit →
             </Link>
           </div>

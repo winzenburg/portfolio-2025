@@ -664,9 +664,9 @@ export default function ChoosingAICodingMode() {
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Choose the Right Mode Every Time?</h3>
-            <p className="text-muted-foreground mb-6">Let's discuss how to optimize your AI-assisted development workflow.</p>
-            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Get in Touch →
+            <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+                Book a 30-minute call
             </Link>
           </div>
 

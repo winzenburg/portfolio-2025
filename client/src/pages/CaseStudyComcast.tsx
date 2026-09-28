@@ -82,8 +82,8 @@ const CaseStudyComcast: React.FC = () => {
               <div className="text-sm text-foreground/70">vs. 12+ months</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
-              <div className="text-3xl font-bold text-green-700 mb-2">~$1.03M</div>
-              <div className="text-sm text-foreground/70">Value Created</div>
+              <div className="text-3xl font-bold text-green-700 mb-2">62</div>
+              <div className="text-sm text-foreground/70">Components</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-green-700 mb-2">171K+</div>
@@ -363,10 +363,10 @@ const CaseStudyComcast: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-muted border border-border rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold text-green-700 mb-2">~$1.03M</div>
-              <div className="text-sm font-medium text-foreground mb-3">Cost Savings</div>
+              <div className="text-4xl font-bold text-green-700 mb-2">Shared</div>
+              <div className="text-sm font-medium text-foreground mb-3">Component library</div>
               <p className="text-sm text-muted-foreground">
-                Large team eliminated (84 person-months saved)
+                Used in production across Comcast Business product lines
               </p>
             </div>
 

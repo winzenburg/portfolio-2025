@@ -249,7 +249,7 @@ function mergeFaqJsonLd(html, jsonLdBlocks) {
     try {
       const parsed = JSON.parse(block);
       const type = parsed?.["@type"];
-      if (type === "FAQPage") {
+      if (type === "FAQPage" || type === "Service") {
         faqBlocks.push(JSON.stringify(parsed));
       }
     } catch {
@@ -261,11 +261,25 @@ function mergeFaqJsonLd(html, jsonLdBlocks) {
     return html;
   }
 
-  if (html.includes('"@type":"FAQPage"') || html.includes('"@type": "FAQPage"')) {
+  const missing = faqBlocks.filter((block) => {
+    if (block.includes('"@type":"FAQPage"') || block.includes('"@type": "FAQPage"')) {
+      return !(
+        html.includes('"@type":"FAQPage"') || html.includes('"@type": "FAQPage"')
+      );
+    }
+    if (block.includes('"@type":"Service"') || block.includes('"@type": "Service"')) {
+      return !(
+        html.includes('"@type":"Service"') || html.includes('"@type": "Service"')
+      );
+    }
+    return true;
+  });
+
+  if (missing.length === 0) {
     return html;
   }
 
-  const scripts = faqBlocks
+  const scripts = missing
     .map((block) => `    <script type="application/ld+json">${block}</script>`)
     .join("\n");
 
@@ -307,6 +321,9 @@ async function main() {
   /** @type {{ routePath: string; kind: "article" | "index" }[]} */
   const routes = [
     { routePath: "/about", kind: "article" },
+    { routePath: "/consulting", kind: "article" },
+    { routePath: "/contact", kind: "article" },
+    { routePath: "/privacy", kind: "article" },
     { routePath: "/articles", kind: "index" },
     ...articles.map((article) => ({
       routePath: `/articles/${article.slug}`,

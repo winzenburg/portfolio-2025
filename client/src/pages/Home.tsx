@@ -167,7 +167,7 @@ export default function Home() {
     <SiteLayout currentPage="home">
       <PageSeo
         title="Ryan Winzenburg | Product Experience Consulting for Enterprise B2B"
-        description="Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint, expand into an embedded retainer. 25 years across healthcare, financial services, telecom, and technology."
+        description="Ryan Winzenburg helps enterprise B2B product leaders test a product bet before the build budget is committed. Fixed-fee sprint, 2 to 4 weeks, from $8,000."
         path="/"
         ogImage="/images/about-hero.webp"
         ogType="website"
@@ -175,40 +175,25 @@ export default function Home() {
 
       <PageHero
         titleId="home-hero-title"
-        eyebrow="Product Experience Consulting"
-        eyebrowNote="Enterprise B2B"
+        eyebrow="Consulting for enterprise B2B product leaders"
         media={{
           src: "/images/home-hero.mp4",
           kind: "video",
           poster: "/images/home-hero-poster.webp",
         }}
-        title="I help product leaders prove the direction before they fund the build"
-        lede="25 years in enterprise B2B across healthcare, financial services, telecom, and technology. The usual entry is an AI Delivery Loop Sprint. When the work needs to stay, that expands into an embedded product-experience retainer."
+        title="Find out if the product bet holds before you fund the build."
+        lede="I run a fixed-fee AI Delivery Loop Sprint. Two to four weeks, from $8,000. You get a go, no-go, or pivot call with the evidence behind it, and a written scope your engineers can start."
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/consulting">See the sprint and retainer</Link>
+              <Link href={consultingHref}>Book a 30-minute call</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/work">View case studies</Link>
+              <Link href="/consulting">See what the sprint includes</Link>
             </Button>
           </>
         }
-        footnote={
-          <>
-            Bring the bet you are about to fund. We find out whether the
-            direction holds before the budget is committed.
-            <span className="mt-2 block">
-              Prefer to talk first?{" "}
-              <Link
-                href={consultingHref}
-                className="font-medium text-primary transition-colors hover:text-primary/80"
-              >
-                Book a 30-minute call.
-              </Link>
-            </span>
-          </>
-        }
+        footnote="25 years of enterprise B2B product work at Comcast, CVS Health / Aetna, and BuildOut."
         meta={<FactRow facts={heroFacts} />}
       />
 
@@ -220,8 +205,8 @@ export default function Home() {
             You already have a bet. You need to know if the direction holds.
           </SectionTitle>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Most expensive product mistakes are not craft mistakes. They are
-            delivery quarters spent on a direction nobody validated. If you are
+            The expensive product mistakes I see are delivery quarters spent
+            on a direction nobody tested. If you are
             about to commit budget, the useful work is evidence, explicit cuts,
             and a scope engineering can start. That is what the AI Delivery Loop
             Sprint is for.

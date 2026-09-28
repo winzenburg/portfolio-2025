@@ -588,7 +588,7 @@ export default function TheHubArticle() {
               I'm working on a step-by-step guide with templates, code examples, and lessons learned from building my own portfolio management system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-6 py-3 rounded-lg transition-colors text-center">
+              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-colors text-center">
                   Get the Hub Building Guide
               </Link>
               <Link href="/portfolio" className="inline-block border border-cyan-500 text-primary hover:bg-primary/10 font-semibold px-6 py-3 rounded-lg transition-colors text-center">

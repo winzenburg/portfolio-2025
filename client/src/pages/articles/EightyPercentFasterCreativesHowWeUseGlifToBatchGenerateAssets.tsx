@@ -674,7 +674,7 @@ export default function GlifCreativeBatchingArticle() {
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to 10x Your Creative Output?</h3>
             <p className="text-muted-foreground mb-6">Get my complete Glif workflow templates and step-by-step setup guide. Start batch-generating validation assets in under 30 minutes.</p>
-            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2">
+            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2">
                 Get the Glif Workflow Templates
                 <ArrowRight className="w-4 h-4" />
             </Link>

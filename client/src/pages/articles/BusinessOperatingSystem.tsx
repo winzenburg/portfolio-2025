@@ -427,9 +427,9 @@ export default function BusinessOperatingSystem() {
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-foreground mb-4">Want to Implement This in Your Organization?</h3>
-              <p className="text-muted-foreground mb-6">I've helped teams adopt this operating system across startups and enterprises. The key is adapting it to your specific context while keeping the core constraints intact.</p>
-              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Let's Talk →
+              <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+                  Book a 30-minute call
               </Link>
             </div>
           </div>

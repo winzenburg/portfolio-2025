@@ -242,7 +242,7 @@ export default function WritingPRDsForAI() {
             </p>
 
             <div className="my-8 bg-muted/50 border border-border rounded-lg p-6">
-              <pre className="text-sm text-muted-foreground overflow-x-auto">
+              <pre tabIndex={0} className="text-sm text-muted-foreground overflow-x-auto">
 {`# Feature: [Feature Name]
 
 ## Overview
@@ -384,34 +384,34 @@ One paragraph maximum.
 
             <div className="my-8 bg-muted/30 border border-border rounded-lg p-6">
               <div className="space-y-3 text-sm">
-                <div className="flex items-start gap-3">
+                <label className="flex items-start gap-3">
                   <input type="checkbox" className="mt-1" />
                   <span className="text-muted-foreground">Every story has 3-5 specific, testable acceptance criteria</span>
-                </div>
-                <div className="flex items-start gap-3">
+                </label>
+                <label className="flex items-start gap-3">
                   <input type="checkbox" className="mt-1" />
                   <span className="text-muted-foreground">No subjective language ("good", "nice", "reasonable")</span>
-                </div>
-                <div className="flex items-start gap-3">
+                </label>
+                <label className="flex items-start gap-3">
                   <input type="checkbox" className="mt-1" />
                   <span className="text-muted-foreground">Stories reference existing code patterns where applicable</span>
-                </div>
-                <div className="flex items-start gap-3">
+                </label>
+                <label className="flex items-start gap-3">
                   <input type="checkbox" className="mt-1" />
                   <span className="text-muted-foreground">Dependencies between stories are explicitly marked</span>
-                </div>
-                <div className="flex items-start gap-3">
+                </label>
+                <label className="flex items-start gap-3">
                   <input type="checkbox" className="mt-1" />
                   <span className="text-muted-foreground">Each story affects 1-3 files maximum</span>
-                </div>
-                <div className="flex items-start gap-3">
+                </label>
+                <label className="flex items-start gap-3">
                   <input type="checkbox" className="mt-1" />
                   <span className="text-muted-foreground">A junior developer could build this without asking questions</span>
-                </div>
-                <div className="flex items-start gap-3">
+                </label>
+                <label className="flex items-start gap-3">
                   <input type="checkbox" className="mt-1" />
                   <span className="text-muted-foreground">Technical notes provide architectural guidance</span>
-                </div>
+                </label>
               </div>
             </div>
 
@@ -507,9 +507,9 @@ One paragraph maximum.
 
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Write PRDs That Work?</h3>
-            <p className="text-muted-foreground mb-6">Let's discuss how to optimize your specifications for autonomous execution.</p>
-            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Get in Touch →
+            <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+                Book a 30-minute call
             </Link>
           </div>
 

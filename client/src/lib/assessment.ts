@@ -376,15 +376,15 @@ export const MATURITY_LEVELS: readonly MaturityLevel[] = [
 
 export const RECOMMENDATIONS: Record<DimensionId, EngagementRecommendation> = {
   evidence: {
-    name: "UX Diagnostic",
-    timing: "2 to 3 weeks. Fixed fee, scoped before it starts.",
-    why: "Your weakest dimension is customer evidence, which means the fastest useful thing is not a research programme. It is finding out what is actually happening in your product, from analytics, support tickets, expert review, and your own team, before committing to a research budget.",
+    name: "AI Delivery Loop Sprint",
+    timing: "2 to 4 weeks. Fixed fee, scoped before it starts. From $8,000.",
+    why: "Your weakest dimension is customer evidence. The sprint puts stakeholder and customer research under the bet you are about to fund, as many conversations as that decision needs, then a go, no-go, or pivot with the evidence behind it.",
     includes: [
-      "Expert review of the current experience against heuristics and accessibility standards",
-      "Analytics and funnel review to locate where the experience actually breaks",
-      "Support ticket and session review where available",
-      "Stakeholder interviews across product, design, and engineering",
-      "A prioritized list of issues, ranked by business impact and effort, with the evidence behind each",
+      "Stakeholder interviews as needed",
+      "Customer research as needed (typical path: 5 to 8 interviews, confirmed in the proposal)",
+      "AI-assisted synthesis into prioritized problem themes",
+      "A go, no-go, or pivot recommendation with the evidence behind it",
+      "A written scope with stated assumptions engineering can start",
     ],
   },
   definition: {
@@ -393,7 +393,7 @@ export const RECOMMENDATIONS: Record<DimensionId, EngagementRecommendation> = {
     why: "Your weakest dimension is problem definition. You are building things without an agreed statement of the problem they solve, which is the most expensive failure mode on this list because the cost lands in engineering rather than in design.",
     includes: [
       "Stakeholder interviews as needed",
-      "Customer research as needed (typical path: 5–8 interviews — confirmed in the proposal)",
+      "Customer research as needed (typical path: 5 to 8 interviews, confirmed in the proposal)",
       "AI-assisted synthesis into prioritized problem themes",
       "Journey mapping and opportunity framing",
       "A go, no-go, or pivot recommendation",

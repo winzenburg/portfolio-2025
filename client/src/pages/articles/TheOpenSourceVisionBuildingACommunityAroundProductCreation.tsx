@@ -454,7 +454,7 @@ export default function OpenSourceVisionArticle() {
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Want to See This Open Source Vision Become Reality?</h3>
             <p className="text-muted-foreground mb-6">I'm documenting our entire 12-agent product creation system and making it completely open source. Get early access to the frameworks, agents, and case studies that have helped us ship products 40% faster.</p>
-            <Link href="/contact?intent=consulting" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?intent=consulting" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get Early Access
                 <ArrowRight className="w-4 h-4" />
             </Link>

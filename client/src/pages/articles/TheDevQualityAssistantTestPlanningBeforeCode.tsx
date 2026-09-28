@@ -709,7 +709,7 @@ export default function DevQualityAssistant() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Ship with Confidence?</h3>
             <p className="text-muted-foreground mb-6">Get my complete Dev Quality Assistant template and implementation guide. Plus weekly insights on AI-powered development workflows.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                   Get the Template
               </Link>
               <Link href="/newsletter" className="inline-block border border-border hover:border-border text-muted-foreground hover:text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">

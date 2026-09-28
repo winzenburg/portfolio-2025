@@ -3,12 +3,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link, useSearch } from "wouter";
 import { useState, useEffect } from "react";
-import { ArrowRight, Check, FileText, Mail, Phone, X } from "lucide-react";
+import { Check, FileText, Mail, Phone, X } from "lucide-react";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
 import FactRow, { type Fact } from "@/components/FactRow";
 import SiteLayout from "@/components/SiteLayout";
-import { Section, SectionHeading, SectionTitle } from "@/components/Section";
+import { Section } from "@/components/Section";
 import { trackContactSubmit, trackExternalLink } from "@/lib/analytics";
 import {
   parseContactSearch,
@@ -70,6 +70,7 @@ type ContactFormFields = {
   email: string;
   company: string;
   role: string;
+  timing: string;
   message: string;
   playbook: string;
 };
@@ -79,6 +80,7 @@ const emptyForm: ContactFormFields = {
   email: "",
   company: "",
   role: "",
+  timing: "",
   message: "",
   playbook: "",
 };
@@ -108,44 +110,11 @@ function heroFactsFor(intent: ContactIntent | null): Fact[] {
   ];
 }
 
-function pathCardClass(active: boolean): string {
-  return active
-    ? "group block h-full rounded-xl border border-primary/60 bg-primary/10 p-7 text-left"
-    : "group block h-full rounded-xl border border-border/60 bg-background/40 p-7 text-left transition-colors hover:border-primary/50 hover:bg-background/70";
-}
-
-function PathCardHeader({ label, active }: { label: string; active: boolean }) {
-  return (
-    <div className="mb-6 flex items-center justify-between gap-4">
-      <span
-        className={
-          active
-            ? "text-xs uppercase tracking-[0.16em] text-primary"
-            : "text-xs uppercase tracking-[0.16em] text-muted-foreground"
-        }
-      >
-        {label}
-      </span>
-      {active ? (
-        <span className="inline-flex items-center gap-1.5 text-xs font-medium text-primary">
-          <Check className="h-3.5 w-3.5" aria-hidden="true" />
-          Selected
-        </span>
-      ) : (
-        <ArrowRight
-          className="h-4 w-4 text-muted-foreground transition-transform group-hover:translate-x-1"
-          aria-hidden="true"
-        />
-      )}
-    </div>
-  );
-}
-
 export default function Contact() {
   const searchString = useSearch();
   const { intent, sheet, playbookId } = parseContactSearch(searchString);
   const playbookInfo = playbookId ? PLAYBOOK_INFO[playbookId] ?? null : null;
-  const copy = contactPathCopy(intent);
+  const copy = contactPathCopy("consulting");
 
   const [formData, setFormData] = useState<ContactFormFields>(emptyForm);
   const [messageTouched, setMessageTouched] = useState(false);
@@ -218,19 +187,9 @@ export default function Contact() {
     }
   };
 
-  const seoTitle =
-    intent === "consulting"
-      ? "Contact Ryan Winzenburg | Book a 30-Minute Consultation"
-      : intent === "role"
-        ? "Contact Ryan Winzenburg | Design Leadership Roles"
-        : "Contact Ryan Winzenburg | Product Experience Consulting";
-
+  const seoTitle = "Contact | AI Delivery Loop Sprint | Ryan Winzenburg";
   const seoDescription =
-    intent === "consulting"
-      ? "Book a 30-minute call with Ryan Winzenburg about an AI Delivery Loop Sprint or an embedded retainer. Scoped proposal within three business days if there's a fit."
-      : intent === "role"
-        ? "Contact Ryan Winzenburg about Head of Design Operations, VP/Director of Design, and Principal Design Technologist roles."
-        : "Contact Ryan Winzenburg about product experience consulting: AI Delivery Loop Sprints, embedded retainers, and related scoped work.";
+    "Write to Ryan Winzenburg about a product bet you are about to fund. Reply within a day. Fixed-fee proposal within three business days if there is a fit.";
 
   return (
     <SiteLayout currentPage="contact">
@@ -243,63 +202,12 @@ export default function Contact() {
         title={copy.title}
         lede={copy.description}
         actions={
-          <>
-            <Button size="lg" asChild>
-              <a href="#contact-form">Write to me</a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href={`mailto:${EMAIL_ADDRESS}`}>Email directly</a>
-            </Button>
-          </>
+          <Button size="lg" asChild>
+            <a href="#contact-form">Write to me</a>
+          </Button>
         }
         meta={<FactRow facts={heroFactsFor(intent)} />}
       />
-
-      {/* Path selector: consulting first (Dual-Track v2) */}
-      <Section labelledBy="contact-paths-heading">
-        <SectionHeading
-          id="contact-paths-heading"
-          eyebrow="Pick a lane"
-          title="Most conversations start with consulting"
-          lede="Choosing one sets up the form below. The sprint and retainer path is the usual entry. A full-time role is a different conversation if that is what you need."
-        />
-        <div className="grid gap-6 md:grid-cols-2">
-          <Link
-            href={contactHref({ intent: "consulting", sheet, playbook: playbookId })}
-            aria-current={intent === "consulting" ? "page" : undefined}
-            className={pathCardClass(intent === "consulting")}
-          >
-            <PathCardHeader
-              label="Consulting"
-              active={intent === "consulting"}
-            />
-            <h3 className="mb-2 text-xl font-semibold text-foreground">
-              Sprint or embedded retainer
-            </h3>
-            <p className="leading-relaxed text-muted-foreground">
-              AI Delivery Loop Sprint when the bet is still unproven. Embedded
-              product-experience retainer when the gap is ongoing senior
-              judgment.
-            </p>
-          </Link>
-
-          <Link
-            href={contactHref({ intent: "role", playbook: playbookId })}
-            aria-current={intent === "role" ? "page" : undefined}
-            className={pathCardClass(intent === "role")}
-          >
-            <PathCardHeader label="Hiring" active={intent === "role"} />
-            <h3 className="mb-2 text-xl font-semibold text-foreground">
-              A full-time leadership role
-            </h3>
-            <p className="leading-relaxed text-muted-foreground">
-              Head of Design Operations, VP or Director of Design, Principal
-              Design Technologist. Available when a seat is the right move, not
-              the default path on this site.
-            </p>
-          </Link>
-        </div>
-      </Section>
 
       {/* Form + sidebar */}
       <Section id="contact-form" tone="slate" labelledBy="contact-form-heading">
@@ -489,13 +397,12 @@ export default function Contact() {
                           htmlFor="company"
                           className="mb-2 block text-sm font-medium text-muted-foreground"
                         >
-                          Company *
+                          Company
                         </label>
                         <Input
                           id="company"
                           name="company"
                           type="text"
-                          required
                           autoComplete="organization"
                           value={formData.company}
                           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -507,23 +414,40 @@ export default function Contact() {
                           htmlFor="role"
                           className="mb-2 block text-sm font-medium text-muted-foreground"
                         >
-                          Your Role *
+                          Role
                         </label>
                         <Input
                           id="role"
                           name="role"
                           type="text"
-                          required
                           autoComplete="organization-title"
                           value={formData.role}
                           onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                          placeholder={
-                            intent === "role"
-                              ? "e.g., Head of Talent, VP Product, CEO"
-                              : "e.g., VP Product, C-Suite, Partner"
-                          }
+                          placeholder="e.g. VP Product"
                         />
                       </div>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="timing"
+                        className="mb-2 block text-sm font-medium text-muted-foreground"
+                      >
+                        Rough timing
+                      </label>
+                      <select
+                        id="timing"
+                        name="timing"
+                        value={formData.timing}
+                        onChange={(e) =>
+                          setFormData({ ...formData, timing: e.target.value })
+                        }
+                        className="border-input h-11 w-full rounded-md border bg-transparent px-3 text-base text-foreground"
+                      >
+                        <option value="">Optional</option>
+                        <option value="this-month">This month</option>
+                        <option value="this-quarter">This quarter</option>
+                        <option value="later">Later</option>
+                      </select>
                     </div>
                     <div>
                       <label
@@ -549,6 +473,15 @@ export default function Contact() {
                     <Button type="submit" size="lg" className="w-full" disabled={submitting}>
                       {submitting ? "Sending..." : copy.submitLabel}
                     </Button>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      Hiring for a full-time role? Say so in the message.{" "}
+                      <Link
+                        href="/privacy"
+                        className="text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
+                      >
+                        Privacy
+                      </Link>
+                    </p>
                   </form>
                 </>
               )}
@@ -642,33 +575,6 @@ export default function Contact() {
         </div>
       </Section>
 
-      {/* Closing */}
-      <Section tone="muted" compact labelledBy="contact-closing-heading">
-        <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
-          <div className="lg:col-span-7">
-            <SectionTitle
-              id="contact-closing-heading"
-              className="text-2xl md:text-3xl"
-            >
-              Still deciding what to ask for?
-            </SectionTitle>
-            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-              The consulting page covers the AI Delivery Loop Sprint and the
-              embedded retainer. The case studies show how the work runs. The
-              assessment is a faster way in if you&apos;d rather start with your
-              own product.
-            </p>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
-            <Button variant="outline" asChild>
-              <Link href="/consulting">See consulting</Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link href="/assessment">Take the assessment</Link>
-            </Button>
-          </div>
-        </div>
-      </Section>
     </SiteLayout>
   );
 }

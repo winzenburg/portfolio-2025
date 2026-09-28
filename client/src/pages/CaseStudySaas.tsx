@@ -72,7 +72,7 @@ const CaseStudySaas: React.FC = () => {
             Kinetic UI Design System
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Industry-first automated token governance system delivered in 4 weeks
+            Automated token governance, delivered in 4 weeks
           </p>
           
           {/* Key Metrics */}
@@ -82,8 +82,8 @@ const CaseStudySaas: React.FC = () => {
               <div className="text-sm text-foreground/70">vs. 12+ months</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
-              <div className="text-3xl font-bold text-primary mb-2">~$1.03M</div>
-              <div className="text-sm text-foreground/70">Value Created</div>
+              <div className="text-3xl font-bold text-primary mb-2">48</div>
+              <div className="text-sm text-foreground/70">Component designs</div>
             </div>
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-6">
               <div className="text-3xl font-bold text-primary mb-2">84x</div>
@@ -101,7 +101,7 @@ const CaseStudySaas: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Challenge</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Enterprise SaaS companies face a critical challenge: building production-ready design systems requires massive investment. The traditional approach demands a 7-person team working for 12+ months, costing over $1M in fully-loaded salaries alone. This creates a painful dilemma, design systems are essential for scaling product development, but the upfront cost and time investment make them prohibitively expensive for many organizations.
+              Enterprise SaaS companies face a critical challenge: building production-ready design systems takes a long time when the work is sequential. The traditional approach is a 7-person team working for 12+ months. By the time that system launches, the requirements have often moved.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               The problem extends beyond just cost. Traditional design system development is sequential and slow. UX researchers conduct studies, designers create components, developers implement them, QA engineers test, and technical writers document. Each handoff introduces delays, miscommunication, and quality issues. By the time the system launches, business requirements have often changed, making portions of the work obsolete.
@@ -236,7 +236,7 @@ const CaseStudySaas: React.FC = () => {
                     Implemented comprehensive test suite with Playwright (17 E2E tests) and Vitest (6 unit tests). Used AI to generate test scenarios covering edge cases and accessibility requirements. Achieved 77% E2E coverage on complex components.
                   </p>
                   <div className="text-sm text-muted-foreground">
-                    <strong>Quality Gate:</strong> 100% WCAG 2.2 AA compliance verified with axe-core
+                    <strong>Quality Gate:</strong> Accessibility checks with axe-core
                   </div>
                 </div>
               </div>
@@ -298,7 +298,7 @@ const CaseStudySaas: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>Industry-first validation script</span>
+                  <span>Token validation script</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
@@ -328,7 +328,7 @@ const CaseStudySaas: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>100% WCAG 2.2 AA compliance</span>
+                  <span>Accessibility checks with axe-core</span>
                 </li>
               </ul>
             </div>
@@ -375,16 +375,16 @@ const CaseStudySaas: React.FC = () => {
           
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">
-              This project demonstrated that enterprise-grade design systems can be built at unprecedented speed without sacrificing quality. The automated token validation system represents an industry-first innovation that solves one of the most persistent challenges in design system governance.
+              The automated token validation system is how the library keeps tokens and code in step.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-muted border border-border rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold text-primary mb-2">~$1.03M</div>
-              <div className="text-sm font-medium text-foreground mb-3">Cost Savings</div>
+              <div className="text-4xl font-bold text-primary mb-2">48</div>
+              <div className="text-sm font-medium text-foreground mb-3">Components</div>
               <p className="text-sm text-muted-foreground">
-                7-person team eliminated (84 person-months saved)
+                Production-ready React components, with Storybook docs
               </p>
             </div>
 
@@ -456,7 +456,7 @@ const CaseStudySaas: React.FC = () => {
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             I can deliver enterprise-grade design systems in weeks, not months, at a fraction of traditional costs while maintaining rigorous quality standards.
           </p>
-          <Link href="/contact?intent=consulting" className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-foreground font-semibold rounded-lg transition-colors cursor-pointer">
+          <Link href="/contact?intent=consulting" className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-colors cursor-pointer">
               Let's Discuss Your Project
           </Link>
         </section>

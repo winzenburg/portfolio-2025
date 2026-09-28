@@ -37,9 +37,8 @@ type Reason = {
 };
 
 /**
- * Structural facts only. The page's outcome claims ($3M+, WCAG AA) stay in the
- * body where they carry their original context; promoting them into the hero
- * would amplify proof claims that have not been verified.
+ * Structural facts only. Outcome claims that could not be sourced stay off
+ * this page. The hero restates scope, not results.
  */
 const HERO_FACTS: Fact[] = [
   { label: "Phases", value: "Five", note: "Research through handoff" },
@@ -109,12 +108,12 @@ const PHASES: MethodologyPhase[] = [
       "Write production code (React, TypeScript, Angular)",
       "Implement design tokens and theming",
       "Build reusable component library",
-      "Ensure 100% WCAG AA compliance",
+      "Check accessibility while the components are built",
     ],
     value: [
       { audience: "VCs", benefit: "No prototype-to-production gap" },
-      { audience: "PMs", benefit: "Ship to production immediately" },
-      { audience: "Engineering", benefit: "Zero technical debt" },
+      { audience: "PMs", benefit: "A build the team can take into production" },
+      { audience: "Engineering", benefit: "Code the team can read and change" },
     ],
     deliverable: "Production-ready codebase, component library, design tokens",
   },
@@ -161,18 +160,30 @@ const PHASES: MethodologyPhase[] = [
   },
 ];
 
-const REASONS: Reason[] = [
+const LOOP_STAGES: Reason[] = [
   {
-    title: "Proven at scale",
-    body: "25 years at Fortune 50 companies means I have seen every failure mode. This methodology is battle-tested at enterprise scale.",
+    title: "Frame the decision",
+    body: "Name the bet, who can say yes, and what would change the call.",
   },
   {
-    title: "Repeatable process",
-    body: "Not a one-off miracle. I have delivered $3M+ in value across 3 recent projects using this exact methodology.",
+    title: "Structure the work",
+    body: "Order the questions and the sources so the week has a shape.",
   },
   {
-    title: "Your team gets better",
-    body: "Training your team on AI workflows is part of the engagement, not an afterthought. The velocity increase is permanent.",
+    title: "Orchestrate tools",
+    body: "AI drafts synthesis and specs. I decide what stays in the recommendation.",
+  },
+  {
+    title: "Review exceptions",
+    body: "The cases that do not fit the pattern get a human look before they land in the writeup.",
+  },
+  {
+    title: "Ship with accountability",
+    body: "You get a go, no-go, or pivot, and a written scope with the assumptions stated.",
+  },
+  {
+    title: "Capture the learning",
+    body: "Write down what the decision taught, so the next bet does not start from a blank page.",
   },
 ];
 
@@ -299,7 +310,7 @@ export default function Methodology() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/contact?intent=consulting">Schedule a call</Link>
+              <Link href="/contact?intent=consulting">Book a 30-minute call</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="#workflow">See the five phases</a>
@@ -315,29 +326,20 @@ export default function Methodology() {
           <div className="lg:col-span-4">
             <Eyebrow className="mb-4">The philosophy</Eyebrow>
             <SectionTitle id="philosophy-heading">
-              Expert-guided AI orchestration
+              How the work is split
             </SectionTitle>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground lg:col-span-7 lg:col-start-6">
             <p className="text-xl text-foreground md:text-2xl md:leading-snug">
-              Most people use AI wrong. They ask it to &ldquo;design a
-              webpage&rdquo; and get generic, soulless results. That&apos;s not
-              how I work.
+              I decide what gets built and why.
             </p>
             <p>
-              My methodology treats{" "}
-              <strong className="font-semibold text-foreground">
-                AI as a force multiplier, guided by expert judgment
-              </strong>
-              . I do the strategic thinking: what to build, why it matters, how
-              it should work. AI handles the execution: writing code, generating
-              documentation, running tests. Enterprise quality, at a speed that
-              was previously impossible.
+              Once that is settled, AI drafts code, documentation, and tests,
+              and I review every piece before it ships.
             </p>
             <p>
-              This isn&apos;t about replacing human expertise. It&apos;s about
-              amplifying it. I&apos;m the architect and conductor; AI is my
-              orchestra.
+              On a sprint the loop stops at a written scope. Build work is a
+              separate engagement.
             </p>
           </div>
         </div>
@@ -382,32 +384,26 @@ export default function Methodology() {
         <SectionHeading
           id="why-heading"
           eyebrow="Why it holds up"
-          title="Three reasons this methodology works"
+          title="Six stages, one engagement"
         />
-        {/* Subgrid keeps the index rule, title, and body on shared baselines. */}
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-3 md:grid-rows-[auto_auto_1fr] md:gap-y-0">
-            {REASONS.map((reason, index) => (
-              <div
-                key={reason.title}
-                className="bg-background/60 p-7 md:row-span-3 md:grid md:grid-rows-subgrid md:p-8"
-              >
-                <div className="mb-6 flex items-baseline gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="font-display text-2xl text-primary/70"
-                  >
+          <ol className="max-w-3xl divide-y divide-border/60 border-y border-border/60">
+            {LOOP_STAGES.map((stage, index) => (
+              <li key={stage.title} className="grid gap-2 py-6 sm:grid-cols-12 sm:gap-8">
+                <div className="sm:col-span-4">
+                  <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
                     {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
+                  </p>
+                  <h3 className="mt-1 text-xl font-semibold text-foreground">
+                    {stage.title}
+                  </h3>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
-                  {reason.title}
-                </h3>
-                <p className="leading-relaxed text-muted-foreground">{reason.body}</p>
-              </div>
+                <p className="leading-relaxed text-muted-foreground sm:col-span-8">
+                  {stage.body}
+                </p>
+              </li>
             ))}
-          </div>
+          </ol>
         </Reveal>
 
         <p className="mt-10 max-w-2xl leading-relaxed text-muted-foreground">
@@ -441,7 +437,7 @@ export default function Methodology() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
             <Button size="lg" asChild>
-              <Link href="/contact?intent=consulting">Schedule a call</Link>
+              <Link href="/contact?intent=consulting">Book a 30-minute call</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/work">View case studies</Link>

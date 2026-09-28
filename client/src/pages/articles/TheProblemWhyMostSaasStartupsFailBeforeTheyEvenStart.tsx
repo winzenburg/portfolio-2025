@@ -493,7 +493,7 @@ export default function SaaSStartupFailures() {
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Build Something That Lasts?</h3>
             <p className="text-muted-foreground mb-6">Get the complete validation framework, including templates, checklists, and AI-powered tools that help you validate both desirability and durability before you build.</p>
-            <Link href="/contact?playbook=complete-framework" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?playbook=complete-framework" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                 Download the Complete Framework →
             </Link>
           </div>

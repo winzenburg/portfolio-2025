@@ -27,6 +27,7 @@ export function getPageType(pathname: string): string {
   if (pathname === "/assessment") return "assessment";
   if (pathname === "/methodology") return "methodology";
   if (pathname === "/contact") return "contact";
+  if (pathname === "/privacy") return "privacy";
   if (pathname === "/gallery") return "gallery";
   return "other";
 }

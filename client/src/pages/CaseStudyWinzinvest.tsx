@@ -98,17 +98,7 @@ const CaseStudyWinzinvest: React.FC = () => {
           </p>
 
           {/* Key Metrics */}
-          <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
-            <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
-              <div className="text-3xl font-bold text-primary mb-1">2.16</div>
-              <div className="text-sm font-semibold text-foreground uppercase tracking-wider">Sharpe Ratio</div>
-              <div className="text-sm text-foreground/70 mt-1">5-year backtest</div>
-            </div>
-            <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
-              <div className="text-3xl font-bold text-primary mb-1">3.5%</div>
-              <div className="text-sm font-semibold text-foreground uppercase tracking-wider">Options Income</div>
-              <div className="text-sm text-foreground/70 mt-1">Annualized floor</div>
-            </div>
+          <div className="grid grid-cols-1 gap-4 max-w-sm mx-auto mb-8">
             <div className="bg-muted backdrop-blur-sm border border-border rounded-lg p-5">
               <div className="text-3xl font-bold text-primary mb-1">17</div>
               <div className="text-sm font-semibold text-foreground uppercase tracking-wider">Risk Gates</div>
@@ -305,17 +295,12 @@ const CaseStudyWinzinvest: React.FC = () => {
           />
         </section>
 
-        {/* Performance Track Record */}
         <section className="mb-16">
-          <h2 className="font-serif text-4xl font-bold mb-6">Performance & Track Record</h2>
+          <h2 className="font-serif text-4xl font-bold mb-6">Platform overview</h2>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-8">
+          <div className="grid gap-4 mb-8">
             <div className="rounded-lg overflow-hidden border border-border/50">
-              <img loading="lazy" src={IMG('12_performance_track_record.webp')} alt="Performance track record" className="w-full" />
-              <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Full execution history with verified backtest results</div>
-            </div>
-            <div className="rounded-lg overflow-hidden border border-border/50">
-              <img loading="lazy" src={IMG('13_platform.webp')} alt="Platform overview" className="w-full" />
+              <img loading="lazy" src={IMG('13_platform.webp')} alt="Winzinvest platform overview for advisor onboarding" className="w-full" />
               <div className="bg-muted px-4 py-2 text-sm text-muted-foreground italic">Platform overview page for advisor onboarding</div>
             </div>
           </div>

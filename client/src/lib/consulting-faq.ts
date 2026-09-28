@@ -112,7 +112,7 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
       {
         question: "How many participants do we need?",
         answer:
-          "Five gives you direction. Eight gives you a decision. Fourteen across segments gives you something defensible to a board. Which one you need depends on what the decision has to survive, and that is a conversation worth having before you pay for the larger number.",
+          "Five interviews usually show a direction. For a decision the board will question, we may need more, across segments. We agree the number before you pay for it.",
       },
       {
         question: "How do you handle participant privacy?",
@@ -192,6 +192,29 @@ export const WORKING_TOGETHER = [
     body: "50% on signature, 50% on delivery. Net 15. Scope changes get a written change order before any extra work starts.",
   },
 ] as const;
+
+/** Service + Offer for the AI Delivery Loop Sprint. Public floor is from $8,000. */
+export function sprintServiceJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "AI Delivery Loop Sprint",
+    serviceType: "Product experience consulting",
+    url: "https://winzenburg.com/consulting",
+    provider: { "@id": "https://winzenburg.com/#organization" },
+    description:
+      "Fixed-fee sprint for enterprise B2B product leaders about to fund an unproven product bet. Typically 2 to 4 weeks. A go, no-go, or pivot recommendation and a written scope engineering can start. Research as needed.",
+    offers: {
+      "@type": "Offer",
+      name: "AI Delivery Loop Sprint",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        minPrice: 8000,
+        priceCurrency: "USD",
+      },
+    },
+  };
+}
 
 export function consultingFaqJsonLd(): Record<string, unknown> {
   return {

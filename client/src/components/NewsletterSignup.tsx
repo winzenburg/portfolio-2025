@@ -1,4 +1,5 @@
 import { useId, useState } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { trackNewsletterSignup } from "@/lib/analytics";
 
@@ -49,7 +50,7 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <div className="rounded-2xl border border-primary/30 bg-gradient-to-br from-cyan-950/50 via-slate-900/40 to-slate-900/20 p-8 md:p-12">
+    <div className="rounded-2xl border border-border bg-muted/40 p-8 md:p-12">
       <div className="mb-8 text-center">
         <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-primary">
           Weekly
@@ -65,7 +66,7 @@ export default function NewsletterSignup() {
 
       <div aria-live="polite">
         {subscribeStatus === "success" ? (
-          <div className="mx-auto max-w-xl rounded-xl border border-emerald-700/50 bg-emerald-900/30 p-6 text-center">
+          <div className="mx-auto max-w-xl rounded-xl border border-border bg-background p-6 text-center">
             <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20">
               <svg
                 className="h-6 w-6 text-emerald-400"
@@ -116,12 +117,18 @@ export default function NewsletterSignup() {
               </Button>
             </div>
             {subscribeStatus === "error" ? (
-              <p role="alert" className="mt-3 text-center text-sm text-red-400">
+              <p role="alert" className="mt-3 text-center text-sm text-destructive">
                 {errorMessage}
               </p>
             ) : null}
             <p className="mt-4 text-center text-sm text-muted-foreground">
-              One email a week. Unsubscribe anytime.
+              One email a week. Unsubscribe anytime.{" "}
+              <Link
+                href="/privacy"
+                className="text-primary underline underline-offset-4 hover:text-primary/80"
+              >
+                Privacy
+              </Link>
             </p>
           </form>
         )}

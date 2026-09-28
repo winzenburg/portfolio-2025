@@ -57,10 +57,9 @@ const projects: Project[] = [
     title: "Kinlet: AI-Native SaaS MVP",
     image: "/images/kinlet-landing.webp",
     imageAlt: "Kinlet - AI-Native SaaS MVP",
-    role: "Solo founder, product strategy, UX design, full-stack development, AI integration, and go-to-market. Built complete SaaS MVP from idea to production in 5 days using AI-augmented workflows. Demonstrates how one designer-developer can now build what traditionally required entire teams.",
+    role: "Solo founder, product strategy, UX design, full-stack development, AI integration, and go-to-market. Built a SaaS MVP with matching, messaging, and admin tools.",
     metricsLabel: "WHAT I DEMONSTRATED",
     metrics: [
-      { value: "5 Days", label: "Idea → Production MVP" },
       { value: "Solo", label: "Full-stack + AI integration" },
       { value: "AI-Native", label: "Matching + moderation" },
       { value: "Live", label: "Production deployed" },
@@ -131,9 +130,8 @@ const projects: Project[] = [
     imageAlt: "Winzinvest execution platform for RIAs",
     role: "Founder and product lead. Designed, built, and deployed a fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices who need institutional-quality execution without an in-house trading desk.",
     metrics: [
-      { value: "2.16", label: "Sharpe Ratio (5yr)" },
-      { value: "3.5%", label: "Options Income Floor" },
       { value: "17", label: "Risk Gates / Order" },
+      { value: "Live", label: "Rules-based execution product" },
     ],
     highlightsLabel: "KEY CAPABILITIES",
     highlights: [
@@ -166,10 +164,9 @@ const projects: Project[] = [
     role: "Led the design system initiative from strategy through execution. Built AI-augmented workflows that enabled a 2-person team to deliver what traditionally requires 6-8 people. Trained the internal team on new processes.",
     metricsLabel: "LEADERSHIP IMPACT",
     metrics: [
-      { value: "2 → 8", label: "Team output multiplied 4x" },
-      { value: "100%", label: "Team adopted AI workflows" },
-      { value: "4-6x", label: "Faster feature delivery sustained" },
-      { value: "$1M+", label: "Saved vs. traditional staffing" },
+      { value: "2 people", label: "Team that built the system" },
+      { value: "48", label: "Components, tokens, Storybook docs" },
+      { value: "Training", label: "Internal team onboarded to the workflow" },
     ],
     highlightsLabel: "WHAT I BUILT",
     highlights: [
@@ -198,13 +195,12 @@ const projects: Project[] = [
     title: "Comcast Business Design System",
     image: "/project-comcast-design-system.webp",
     imageAlt: "Comcast Business Design System",
-    role: "Drove design system adoption across 12 product teams. Built governance processes, trained design leads, and established the DesignOps infrastructure that made cross-team consistency sustainable.",
-    metricsLabel: "LEADERSHIP IMPACT",
+    role: "Design system work across 12 product teams. Governance, a contribution model, and design-lead training.",
+    metricsLabel: "SCOPE",
     metrics: [
-      { value: "12 Teams", label: "Drove adoption org-wide" },
-      { value: "40%", label: "Faster time-to-market" },
-      { value: "$2M", label: "Annual savings realized" },
-      { value: "95%", label: "Design system adoption rate" },
+      { value: "12 teams", label: "Product teams in the governance model" },
+      { value: "Governance", label: "Contribution model and review process" },
+      { value: "Training", label: "Design leads onboarded" },
     ],
     highlightsLabel: "WHAT I BUILT",
     highlights: [

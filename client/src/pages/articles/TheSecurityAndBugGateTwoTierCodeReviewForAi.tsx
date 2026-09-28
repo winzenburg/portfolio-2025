@@ -514,13 +514,13 @@ export default function SecurityBugGateArticle() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-8 mt-16 text-foreground">
+      <div className="bg-primary rounded-lg p-8 mt-16 text-primary-foreground">
         <h2 className="text-2xl font-bold mb-4">Want the Complete Security & Bug Gate Templates?</h2>
-        <p className="text-blue-100 mb-6">
+        <p className="mb-6 text-primary-foreground/90">
           Get both the everyday prompt and pre-production gate checklists, plus examples of common issues 
           to watch for in AI-generated code.
         </p>
-        <Link href="/contact?playbook=security-bug-gate" className="inline-block bg-muted text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors">
+        <Link href="/contact?playbook=security-bug-gate" className="inline-block bg-background text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-background/90 transition-colors">
             Download the Templates
         </Link>
       </div>
