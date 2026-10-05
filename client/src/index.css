@@ -415,6 +415,78 @@
   border-color: var(--color-navy);
 }
 
+/*
+ * Contact facts. The email is one unbreakable string (~272px at 1.65rem),
+ * so equal quarters push it through the divider. One column on a phone,
+ * two from 768px, and a fixed email track from 1024px. Tracks include the
+ * 24px / 32px padding on each side of a divider.
+ * Unlayered so these beat the shared fact-row utilities.
+ */
+.studio-fact-contact {
+  grid-template-columns: minmax(0, 1fr);
+}
+.studio-fact-contact-cell {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+  border-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .studio-fact-contact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .studio-fact-contact-cell {
+    padding-right: 1.5rem;
+    border-right: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+  }
+  .studio-fact-contact-cell:nth-child(even) {
+    padding-left: 1.5rem;
+    padding-right: 0;
+    border-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .studio-fact-contact {
+    grid-template-columns:
+      minmax(9.5rem, 0.9fr)
+      minmax(15.5rem, 1.15fr)
+      20.5rem
+      minmax(11rem, 0.8fr);
+  }
+  .studio-fact-contact-cell {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom: 0;
+    border-right: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+  }
+  .studio-fact-contact-cell:nth-child(4n + 1) {
+    padding-left: 0;
+  }
+  .studio-fact-contact-cell:nth-child(4n) {
+    padding-right: 0;
+    border-right: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .studio-fact-contact {
+    grid-template-columns:
+      minmax(11rem, 0.85fr)
+      minmax(16rem, 1.1fr)
+      21.5rem
+      minmax(12rem, 0.8fr);
+  }
+  .studio-fact-contact-cell {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .studio-fact-contact-cell:nth-child(4n + 1) {
+    padding-left: 0;
+  }
+  .studio-fact-contact-cell:nth-child(4n) {
+    padding-right: 0;
+  }
+}
+
 /* Button press and a small arrow nudge. No offset shadow. */
 [data-slot="button"] {
   transition-property: color, background-color, border-color, transform, outline-offset;

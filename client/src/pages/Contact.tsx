@@ -105,7 +105,7 @@ function heroFactsFor(intent: ContactIntent | null): Fact[] {
   return [
     { label: "Reply time", value: "Within a day" },
     firstConversation,
-    { label: "Email", value: EMAIL_ADDRESS },
+    { label: "Email", value: EMAIL_ADDRESS, href: `mailto:${EMAIL_ADDRESS}` },
     { label: "Phone", value: PHONE_NUMBER },
   ];
 }
@@ -210,7 +210,7 @@ export default function Contact() {
             <a href="#contact-form">Write to me</a>
           </Button>
         }
-        meta={<FactRow facts={heroFactsFor(intent)} />}
+        meta={<FactRow layout="contact" facts={heroFactsFor(intent)} />}
       />
 
       {/* Form + sidebar */}
