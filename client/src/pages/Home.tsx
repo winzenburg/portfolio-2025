@@ -8,6 +8,8 @@ import Reveal from "@/components/Reveal";
 import SiteLayout from "@/components/SiteLayout";
 import { Eyebrow, Section, SectionHeading, SectionTitle } from "@/components/Section";
 import { contactHref } from "@/lib/contact-intent";
+import { studioCard, tileBackground } from "@/lib/studio";
+import { cn } from "@/lib/utils";
 
 const consultingHref = contactHref({ intent: "consulting" });
 
@@ -175,18 +177,35 @@ export default function Home() {
 
       <PageHero
         titleId="home-hero-title"
+        variant="framed"
         eyebrow="Consulting for enterprise B2B product leaders"
         media={{
-          src: "/images/home-hero.mp4",
-          kind: "video",
-          poster: "/images/home-hero-poster.webp",
+          src: "/images/spots/home-hero-bridge.webp",
+          alt: "A person tests a half-built plank bridge across a canyon at sunset, while a crowd with crates and wheelbarrows waits on the near cliff and one figure with a lantern stands on the far side.",
         }}
-        title="Find out if the product bet holds before you fund the build."
+        stickers={[
+          {
+            label: "Go · no-go · pivot",
+            tone: "sun",
+            className: "bottom-10 left-0 -rotate-6 sm:left-1",
+          },
+          {
+            label: "2–4 weeks",
+            tone: "aqua",
+            className: "top-1 right-0 rotate-3 sm:right-1",
+          },
+        ]}
+        title={
+          <>
+            Find out if the product bet <em className="studio-mark">holds</em>{" "}
+            before you fund the build.
+          </>
+        }
         lede="I run a fixed-fee AI Delivery Loop Sprint. Two to four weeks, from $8,000. You get a go, no-go, or pivot call with the evidence behind it, and a written scope your engineers can start."
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href={consultingHref}>Book a 30-minute call</Link>
+              <Link href={consultingHref}>Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/consulting">See what the sprint includes</Link>
@@ -225,7 +244,7 @@ export default function Home() {
       </Section>
 
       {/* Entry → expansion */}
-      <Section tone="muted" labelledBy="paths-heading">
+      <Section tone="navy" labelledBy="paths-heading">
         <SectionHeading
           id="paths-heading"
           eyebrow="How buyers usually engage"
@@ -233,25 +252,34 @@ export default function Home() {
           lede="Two shapes, one consultancy. Start with the smallest engagement that answers the decision in front of you."
         />
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2">
-            {engagementPaths.map((path) => (
-              <div key={path.name} className="bg-background/60 p-7 md:p-8">
-                <div className="mb-6 flex items-baseline gap-3">
-                  <span className="font-['Playfair_Display'] text-2xl text-primary/70">
-                    {path.index}
-                  </span>
-                  <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
-                  <span className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
-                    {path.label}
-                  </span>
-                </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
+          <div className="grid gap-8 pt-4 md:grid-cols-2">
+            {engagementPaths.map((path, index) => (
+              <div
+                key={path.name}
+                className={cn(
+                  "relative rounded-[26px] border-[3px] border-ink p-7 text-ink md:p-8",
+                  index === 0
+                    ? "bg-cream shadow-[8px_8px_0_var(--color-ink)]"
+                    : "bg-studio-card",
+                )}
+              >
+                <span
+                  aria-hidden="true"
+                  className={cn(
+                    "absolute -top-6 right-6 flex h-14 w-14 items-center justify-center rounded-full border-[3px] border-ink font-display text-2xl font-bold",
+                    index === 0 ? "bg-sun" : "bg-aqua",
+                  )}
+                >
+                  {index + 1}
+                </span>
+                <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
+                  {path.label}
+                </p>
+                <h3 className="mb-3 mt-2 text-2xl font-bold leading-snug text-ink">
                   {path.name}
                 </h3>
-                <p className="mb-6 leading-relaxed text-muted-foreground">
-                  {path.body}
-                </p>
-                <p className="border-t border-border/60 pt-4 text-sm font-medium text-primary">
+                <p className="mb-6 leading-relaxed text-ink-muted">{path.body}</p>
+                <p className="inline-block rounded-full border-2 border-ink bg-studio-card px-4 py-2 text-sm font-bold text-ink">
                   {path.meta}
                 </p>
               </div>
@@ -261,7 +289,7 @@ export default function Home() {
         <div className="mt-8">
           <Link
             href="/consulting"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+            className="group inline-flex items-center gap-2 text-sm font-bold text-sun underline-offset-4 hover:text-band"
           >
             Full consulting page
             <ArrowRight
@@ -295,17 +323,19 @@ export default function Home() {
         {/* Subgrid keeps the index rule, title, summary and point list aligned
             across all three cards regardless of copy length. */}
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-3 md:grid-rows-[auto_auto_1fr_auto] md:gap-y-0">
-            {capabilities.map((capability) => (
+          <div className="grid gap-4 md:grid-cols-3 md:grid-rows-[auto_auto_1fr_auto]">
+            {capabilities.map((capability, index) => (
               <div
                 key={capability.name}
-                className="bg-background/60 p-7 md:row-span-4 md:grid md:grid-rows-subgrid md:p-8"
+                className={cn(
+                  "rounded-3xl border-2 border-ink p-7 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-8",
+                  tileBackground(index),
+                )}
               >
                 <div className="mb-6 flex items-baseline gap-3">
-                  <span className="font-['Playfair_Display'] text-2xl text-primary/70">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-ink bg-studio-card font-display text-lg font-bold text-ink">
                     {capability.index}
                   </span>
-                  <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
                 </div>
                 <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
                   {capability.name}
@@ -332,27 +362,27 @@ export default function Home() {
       </Section>
 
       {/* How I think */}
-      <Section tone="muted" labelledBy="thinking-heading">
+      <Section tone="navy" labelledBy="thinking-heading">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Eyebrow className="mb-4">How I think about it</Eyebrow>
             <SectionTitle id="thinking-heading">
               The assumptions under the work
             </SectionTitle>
-            <ol className="mt-10 space-y-8">
+            <ol className="mt-10 space-y-4">
               {principles.map((principle, index) => (
-                <li key={principle.title} className="flex gap-5">
+                <li key={principle.title} className={cn(studioCard, "flex gap-5 p-5")}>
                   <span
                     aria-hidden="true"
-                    className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-xs font-semibold text-primary"
+                    className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-ink bg-sun text-sm font-bold text-ink"
                   >
                     {index + 1}
                   </span>
                   <div>
-                    <h3 className="mb-2 font-semibold text-foreground">
+                    <h3 className="mb-2 font-semibold text-ink">
                       {principle.title}
                     </h3>
-                    <p className="leading-relaxed text-muted-foreground">
+                    <p className="leading-relaxed text-ink-muted">
                       {principle.body}
                     </p>
                   </div>
@@ -362,14 +392,14 @@ export default function Home() {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <h3 className="mb-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">
-              What I don't automate
+            <h3 className="mb-6 text-[13px] font-bold uppercase tracking-[0.14em] text-sun">
+              What I don&apos;t automate
             </h3>
-            <dl className="divide-y divide-border/60 overflow-hidden rounded-xl border border-border/60 bg-background/40">
+            <dl className={cn(studioCard, "divide-y divide-ink/15")}>
               {humanLayer.map((item) => (
                 <div key={item.title} className="p-6 md:p-7">
-                  <dt className="mb-2 font-semibold text-foreground">{item.title}</dt>
-                  <dd className="leading-relaxed text-muted-foreground">{item.body}</dd>
+                  <dt className="mb-2 font-semibold text-ink">{item.title}</dt>
+                  <dd className="leading-relaxed text-ink-muted">{item.body}</dd>
                 </div>
               ))}
             </dl>
@@ -397,8 +427,8 @@ export default function Home() {
             </Link>
           }
         />
-        <ul className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 sm:grid-cols-2 lg:grid-cols-3">
-          {environments.map((environment) => {
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {environments.map((environment, index) => {
             const content = (
               <>
                 <span className="block text-lg font-semibold text-foreground">
@@ -410,11 +440,17 @@ export default function Home() {
               </>
             );
             return (
-              <li key={environment.name} className="bg-background/60">
+              <li
+                key={environment.name}
+                className={cn(
+                  "studio-lift rounded-3xl border-2 border-ink",
+                  tileBackground(index),
+                )}
+              >
                 {environment.href ? (
                   <Link
                     href={environment.href}
-                    className="group flex h-full items-center justify-between gap-4 p-6 transition-colors hover:bg-background/90 md:p-7"
+                    className="group flex h-full items-center justify-between gap-4 p-6 text-ink md:p-7"
                   >
                     <span>{content}</span>
                     <ArrowRight
@@ -423,7 +459,7 @@ export default function Home() {
                     />
                   </Link>
                 ) : (
-                  <div className="h-full p-6 md:p-7">{content}</div>
+                  <div className="h-full p-6 text-ink md:p-7">{content}</div>
                 )}
               </li>
             );
@@ -432,12 +468,12 @@ export default function Home() {
       </Section>
 
       {/* CTA */}
-      <Section labelledBy="home-cta-heading">
+      <Section tone="navy" labelledBy="home-cta-heading">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle id="home-cta-heading">
             About to commit budget to something nobody has validated?
           </SectionTitle>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-band-muted">
             That is the moment a sprint is worth the most. Thirty minutes, no
             deck. Tell me what you&apos;re about to fund and which part of it is
             still a guess. I&apos;ll tell you whether an AI Delivery Loop Sprint,
@@ -445,7 +481,7 @@ export default function Home() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href={consultingHref}>Book a 30-minute call</Link>
+              <Link href={consultingHref}>Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/consulting">See how engagements work</Link>

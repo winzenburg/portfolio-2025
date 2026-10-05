@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { AlertCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
@@ -51,50 +51,39 @@ export default function NotFound() {
           </>
         }
         aside={
-          <div className="flex items-center justify-center gap-6 rounded-xl border border-border/60 bg-background/40 px-8 py-12">
-            <span className="relative flex h-16 w-16 shrink-0 items-center justify-center">
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 rounded-full bg-red-900/40 motion-safe:animate-pulse"
-              />
-              <AlertCircle
-                className="relative h-12 w-12 text-red-400"
-                aria-hidden="true"
-              />
-            </span>
-            <span
-              aria-hidden="true"
-              className="font-display text-6xl leading-none text-muted-foreground"
-            >
-              404
-            </span>
+          <div className="studio-blob mx-auto max-w-sm">
+            <img
+              src="/images/spots/empty-404-signpost.webp"
+              alt="A person with a lantern stands at a crossroads beside a signpost whose arrows are blank, under a moon and stars."
+              className="aspect-square w-full object-cover"
+            />
           </div>
         }
       />
 
-      <Section tone="muted" compact labelledBy="not-found-links-heading">
+      <Section tone="navy" compact labelledBy="not-found-links-heading">
         <SectionHeading
           id="not-found-links-heading"
           eyebrow="Try one of these"
           title="Where you were probably headed"
         />
-        <ul className="border-t border-border/60">
+        <ul className="grid gap-3">
           {DESTINATIONS.map((destination) => (
-            <li key={destination.href} className="border-b border-border/60">
+            <li key={destination.href}>
               <Link
                 href={destination.href}
-                className="group flex items-center gap-6 py-6 transition-colors hover:bg-white/5"
+                className="group flex items-center gap-6 rounded-3xl border-2 border-ink bg-studio-card px-5 py-5 text-ink"
               >
                 <span className="min-w-0 flex-1 md:flex md:items-baseline md:gap-8">
-                  <span className="block text-lg font-semibold text-foreground transition-colors group-hover:text-primary md:w-44 md:shrink-0">
+                  <span className="block text-lg font-bold text-ink md:w-44 md:shrink-0">
                     {destination.label}
                   </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-muted-foreground md:mt-0">
+                  <span className="mt-1 block text-sm leading-relaxed text-ink-muted md:mt-0">
                     {destination.note}
                   </span>
                 </span>
                 <ArrowRight
-                  className="h-5 w-5 shrink-0 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-primary"
+                  className="h-5 w-5 shrink-0 text-cobalt motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
                   aria-hidden="true"
                 />
               </Link>

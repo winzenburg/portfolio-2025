@@ -105,7 +105,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           >
             <span
               aria-hidden="true"
-              className="flex h-8 w-8 items-center justify-center rounded border border-primary/30 font-display text-sm font-semibold text-primary"
+              className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-ink bg-sun font-display text-sm font-bold text-ink shadow-[3px_3px_0_var(--color-ink)]"
             >
               RW
             </span>
@@ -127,10 +127,10 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                     "relative rounded-sm px-3 py-2 text-sm font-medium transition-colors",
                     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1",
                     active
-                      ? "text-foreground"
+                      ? "text-ink"
                       : item.accent
-                        ? "text-primary hover:text-primary/80"
-                        : "text-muted-foreground hover:text-foreground",
+                        ? "rounded-full border-2 border-ink bg-cobalt px-4 text-white shadow-[3px_3px_0_var(--color-verm)] hover:bg-[#16365c]"
+                        : "text-ink-muted hover:text-ink",
                   )}
                 >
                   {item.label}
@@ -138,7 +138,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                   <span
                     aria-hidden="true"
                     className={cn(
-                      "absolute inset-x-3 -bottom-px h-px rounded-full bg-primary transition-opacity",
+                      "absolute inset-x-3 -bottom-0.5 h-1 rounded-full bg-sun",
                       active ? "opacity-100" : "opacity-0",
                     )}
                   />
@@ -187,10 +187,10 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                         "flex items-center gap-3 rounded-sm px-1 py-3 text-base font-medium transition-colors",
                         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                         active
-                          ? "text-foreground"
+                          ? "text-ink"
                           : item.accent
-                            ? "text-primary"
-                            : "text-muted-foreground hover:text-foreground",
+                            ? "mx-1 mt-2 justify-center rounded-full border-2 border-ink bg-cobalt px-4 text-white"
+                            : "text-ink-muted hover:text-ink",
                       )}
                     >
                       <span

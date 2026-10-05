@@ -276,12 +276,12 @@ function ProjectCard({ project }: { project: Project }) {
   const { liveUrl } = project;
 
   return (
-    <article className="group rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70 md:p-10">
+    <article className="studio-lift group rounded-3xl border-[3px] border-ink bg-studio-card p-7 text-ink md:p-10">
       {/* Explicit placement keeps one stacked reading order on small screens
           and, from lg up, pairs the screenshot with the numbers in the right
           rail while the narrative and build detail hold the left. */}
       <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-10">
-        <div className="aspect-video overflow-hidden rounded-lg border border-border/60 bg-muted lg:col-span-5 lg:col-start-8 lg:row-start-1">
+        <div className="aspect-video overflow-hidden rounded-2xl border-2 border-ink bg-cream lg:col-span-5 lg:col-start-8 lg:row-start-1">
           <img
             loading="lazy"
             src={project.image}
@@ -395,9 +395,9 @@ function EarlierProjectCard({ project }: { project: EarlierProject }) {
     <Link
       href={project.slug}
       onClick={() => trackCaseStudyClick(project.analyticsKey, project.title)}
-      className="group overflow-hidden rounded-xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70 md:row-span-4 md:grid md:grid-rows-subgrid"
+      className="studio-lift group overflow-hidden rounded-3xl border-[3px] border-ink bg-studio-card text-ink md:row-span-4 md:grid md:grid-rows-subgrid"
     >
-      <div className="aspect-video overflow-hidden border-b border-border/60 bg-muted">
+      <div className="aspect-video overflow-hidden border-b-[3px] border-ink bg-cream">
         <img
           loading="lazy"
           src={project.image}
@@ -461,7 +461,11 @@ export default function Work() {
         titleId="work-hero-title"
         eyebrow="Case studies"
         eyebrowNote={`${caseStudyCount} projects`}
-        media={{ src: "/images/work-hero.webp", position: "object-center" }}
+        media={{
+          src: "/images/work-hero.webp",
+          position: "object-center",
+          alt: "A suited figure holds a light bulb in one hand and a spotlight in the other, surrounded by bottles, screens, and workshop tools.",
+        }}
         title={<>What product experience leadership looks like in practice</>}
         lede={
           <>
@@ -485,7 +489,7 @@ export default function Work() {
       />
 
       {/* Featured projects */}
-      <Section labelledBy="featured-heading">
+      <Section tone="navy" labelledBy="featured-heading">
         <SectionHeading
           id="featured-heading"
           eyebrow="Featured projects"

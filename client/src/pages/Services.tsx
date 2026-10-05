@@ -17,6 +17,8 @@ import DoubleDiamondDiagram, {
   type PhaseName,
 } from "@/components/DoubleDiamondDiagram";
 import { contactHref } from "@/lib/contact-intent";
+import { studioCard, tileBackground } from "@/lib/studio";
+import { cn } from "@/lib/utils";
 import {
   CONSULTING_FAQ_GROUPS,
   WORKING_TOGETHER,
@@ -387,7 +389,11 @@ export default function Services() {
         titleId="services-hero-title"
         eyebrow="Consulting"
         eyebrowNote="Enterprise B2B product leaders"
-        media={{ src: "/images/services-hero.webp", position: "object-center" }}
+        media={{
+          src: "/images/services-hero.webp",
+          position: "object-center",
+          alt: "A figure in a dark coat stands before a tower with an eye-shaped dish and a field of tall patterned plants.",
+        }}
         title={
           <>
             Prove the direction before you spend the build budget on it.
@@ -405,7 +411,7 @@ export default function Services() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href={consultingHref}>Book a 30-minute call</Link>
+              <Link href={consultingHref}>Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="#offer">See the sprint and retainer</a>
@@ -443,27 +449,22 @@ export default function Services() {
           the explicit border on everything past the first row.
         */}
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 md:grid-rows-[auto_auto_1fr] md:gap-y-0">
+          <div className="grid gap-4 md:grid-cols-2">
             {SITUATIONS.map((situation, index) => (
               <div
                 key={situation.title}
-                className={`bg-background/60 p-7 md:row-span-3 md:grid md:grid-rows-subgrid md:p-8 ${
-                  index >= 2 ? "md:border-t md:border-border/60" : ""
-                }`}
+                className={cn(
+                  "rounded-3xl border-2 border-ink p-7 text-ink md:p-8",
+                  tileBackground(index),
+                )}
               >
-                <div className="mb-6 flex items-baseline gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="font-display text-2xl text-primary/70"
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
+                <p className="mb-4 font-display text-2xl font-bold">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
+                <h3 className="mb-3 text-xl font-bold leading-snug">
                   {situation.title}
                 </h3>
-                <p className="leading-relaxed text-muted-foreground">{situation.body}</p>
+                <p className="leading-relaxed text-ink-muted">{situation.body}</p>
               </div>
             ))}
           </div>
@@ -472,36 +473,64 @@ export default function Services() {
 
       {/* Dual-Track offer: sprint entry → retainer expansion */}
       <Section id="offer" labelledBy="offer-heading">
-        <SectionHeading
-          id="offer-heading"
-          eyebrow="How engagements usually start"
-          title="Sprint to enter. Retainer to stay."
-          lede="One consultancy, two shapes. Start with the smallest engagement that answers the decision in front of you. Scaling up later is easy. Unwinding a large engagement that started before the question was clear is not."
-        />
-        <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2">
-            {OFFER_PATHS.map((offer) => (
-              <div key={offer.name} className="flex flex-col bg-background/60 p-7 md:p-8">
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
+        <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <Eyebrow className="mb-4">How engagements usually start</Eyebrow>
+            <SectionTitle id="offer-heading">
+              Sprint to enter. Retainer to stay.
+            </SectionTitle>
+            <p className="mt-6 text-lg leading-relaxed text-ink-muted">
+              One consultancy, two shapes. Start with the smallest engagement
+              that answers the decision in front of you. Scaling up later is
+              easy. Unwinding a large engagement that started before the
+              question was clear is not.
+            </p>
+            <div className="studio-blob mx-auto mt-10 max-w-[360px] lg:mx-0">
+              <img
+                src="/images/spots/consulting-map-table.webp"
+                alt="Two people in long coats stand at a drafting table. One draws a route on a map. The other holds a stopwatch. A small flag is planted on the table."
+                className="aspect-square w-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="grid gap-8 pt-4 lg:col-span-7">
+            {OFFER_PATHS.map((offer, index) => (
+              <div
+                key={offer.name}
+                className={cn(
+                  "relative rounded-[26px] border-[3px] border-ink p-7 text-ink md:p-8",
+                  index === 0
+                    ? "bg-cream shadow-[8px_8px_0_var(--color-ink)]"
+                    : "bg-studio-card",
+                )}
+              >
+                <span
+                  aria-hidden="true"
+                  className={cn(
+                    "absolute -top-6 right-7 flex h-14 w-14 items-center justify-center rounded-full border-[3px] border-ink font-display text-2xl font-bold",
+                    index === 0 ? "bg-sun" : "bg-aqua",
+                  )}
+                >
+                  {index + 1}
+                </span>
+                <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
                   {offer.label}
                 </p>
-                <h3 className="mt-4 text-2xl font-semibold leading-snug text-foreground">
+                <h3 className="mt-2 text-3xl font-bold leading-snug text-ink">
                   {offer.name}
                 </h3>
-                <p className="mt-4 leading-relaxed text-muted-foreground">
-                  {offer.body}
-                </p>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-4 leading-relaxed text-ink-muted">{offer.body}</p>
+                <p className="mt-4 text-sm leading-relaxed text-ink-muted">
                   {offer.includes}
                 </p>
-                <p className="mt-6 border-t border-border/60 pt-4 text-sm font-medium text-primary">
+                <p className="mt-6 inline-block rounded-full border-2 border-ink bg-studio-card px-4 py-2 text-sm font-bold text-ink">
                   {offer.meta}
                 </p>
               </div>
             ))}
           </div>
-        </Reveal>
-        <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+        </div>
+        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-ink-muted">
           AI-enabled delivery is how the sprint covers more ground without
           making the work fragile. It is not a marketplace gig board and not a
           pitch for a Director seat. If a full-time hire would serve you better,
@@ -510,33 +539,29 @@ export default function Services() {
       </Section>
 
       {/* Risks */}
-      <Section labelledBy="risks-heading">
+      <Section tone="navy" labelledBy="risks-heading">
         <SectionHeading
           id="risks-heading"
           eyebrow="Six recurring risks"
           title="The risk you are carrying, and what replaces it"
           lede="People bring me in when a specific risk is sitting on a budget they have to defend. These are the six that come up most."
         />
-        <ol className="border-t border-border/60">
+        <ol className="grid gap-4">
           {RISKS.map((risk, index) => (
             <li
               key={risk.title}
-              className="grid grid-cols-[2.5rem_1fr] items-start gap-x-4 gap-y-3 border-b border-border/60 py-7 md:grid-cols-[3.5rem_minmax(0,20rem)_1fr] md:gap-x-10"
+              className={cn(studioCard, "grid gap-x-6 gap-y-3 p-6 md:grid-cols-[3.5rem_minmax(0,18rem)_1fr] md:p-7")}
             >
-              {/* The ordered list already conveys position to assistive tech. */}
-              <span
-                aria-hidden="true"
-                className="font-display text-lg text-muted-foreground"
-              >
+              <span aria-hidden="true" className="font-display text-2xl font-bold text-verm-text">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-lg font-semibold leading-snug text-foreground md:text-xl">
+              <h3 className="text-lg font-bold leading-snug text-ink md:text-xl">
                 {risk.title}
               </h3>
-              <div className="col-start-2 md:col-start-3">
-                <p className="leading-relaxed text-muted-foreground">{risk.body}</p>
-                <p className="mt-3 flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm leading-relaxed text-muted-foreground">
-                  <span className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+              <div>
+                <p className="leading-relaxed text-ink-muted">{risk.body}</p>
+                <p className="mt-3 flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm leading-relaxed text-ink-muted">
+                  <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
                     Outcome
                   </span>
                   <span className="flex-1 basis-64">{risk.outcome}</span>
@@ -666,7 +691,7 @@ export default function Services() {
       </Section>
 
       {/* Selected work */}
-      <Section tone="muted" labelledBy="work-heading">
+      <Section tone="navy" labelledBy="work-heading">
         <SectionHeading
           id="work-heading"
           eyebrow="Proof"
@@ -685,7 +710,7 @@ export default function Services() {
             </Link>
           }
         />
-        <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
+        <p className="mb-8 text-sm leading-relaxed text-band-muted">
           No public testimonials on this site by choice. Selected work and
           engagement shape are the proof until clients agree to be named.
         </p>
@@ -694,19 +719,19 @@ export default function Services() {
             <Reveal key={item.name} delay={index * 60} className="h-full">
               <Link
                 href={item.href}
-                className="group flex h-full flex-col rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70"
+                className="studio-lift group flex h-full flex-col rounded-3xl border-[3px] border-ink bg-studio-card p-7 text-ink"
               >
-                <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
                   {item.meta}
                 </p>
-                <h3 className="mt-3 text-xl font-semibold text-foreground">
+                <h3 className="mt-3 text-xl font-bold text-ink">
                   {item.name}
                 </h3>
-                <p className="mt-3 leading-relaxed text-muted-foreground">{item.body}</p>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 leading-relaxed text-ink-muted">{item.body}</p>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-ink-muted">
                   {item.result}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-2 border-t border-border/60 pt-5 text-sm font-medium text-primary">
+                <span className="mt-6 inline-flex items-center gap-2 border-t-2 border-ink/15 pt-5 text-sm font-bold text-cobalt">
                   Read the case study
                   <ArrowRight
                     className="h-4 w-4 motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
@@ -720,7 +745,7 @@ export default function Services() {
       </Section>
 
       {/* Working together */}
-      <Section compact labelledBy="working-heading">
+      <Section tone="cream" compact labelledBy="working-heading">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <Eyebrow className="mb-4">Before anything starts</Eyebrow>
@@ -751,22 +776,22 @@ export default function Services() {
           lede="The Entry and Expansion cards above cover most buyers. These four shapes apply when the decision on the table is different: a named product cost, a concept that needs testing, a full product build, or a design-system problem."
         />
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 lg:grid-cols-3">
-            {ENGAGEMENTS.map((engagement) => (
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {ENGAGEMENTS.map((engagement, index) => (
               <div
                 key={engagement.name}
-                className="flex flex-col bg-background/60 p-7"
+                className={cn(studioCard, "flex flex-col p-7", tileBackground(index))}
               >
-                <h3 className="text-xl font-semibold leading-snug text-foreground">
+                <h3 className="text-xl font-bold leading-snug text-ink">
                   {engagement.name}
                 </h3>
-                <p className="mt-3 leading-relaxed text-muted-foreground">
+                <p className="mt-3 leading-relaxed text-ink-muted">
                   {engagement.when}
                 </p>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
                   {engagement.scope}
                 </p>
-                <p className="mt-6 border-t border-border/60 pt-4 text-sm font-medium text-primary">
+                <p className="mt-6 border-t-2 border-ink/20 pt-4 text-sm font-bold text-ink">
                   {engagement.duration}
                 </p>
               </div>
@@ -831,15 +856,17 @@ export default function Services() {
           lede="Domain familiarity means less of your budget spent explaining your business to me."
         />
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-2 lg:grid-cols-3">
-            {INDUSTRIES.map((industry) => (
-              <div key={industry.title} className="bg-background/60 p-7">
-                <h3 className="text-lg font-semibold leading-snug text-foreground">
-                  {industry.title}
-                </h3>
-                <p className="mt-3 leading-relaxed text-muted-foreground">
-                  {industry.body}
-                </p>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {INDUSTRIES.map((industry, index) => (
+              <div
+                key={industry.title}
+                className={cn(
+                  "rounded-3xl border-2 border-ink p-7 text-ink",
+                  tileBackground(index),
+                )}
+              >
+                <h3 className="text-lg font-bold leading-snug">{industry.title}</h3>
+                <p className="mt-3 leading-relaxed text-ink-muted">{industry.body}</p>
               </div>
             ))}
           </div>
@@ -915,13 +942,13 @@ export default function Services() {
       </Section>
 
       {/* Closing */}
-      <Section compact labelledBy="consulting-cta-heading">
+      <Section tone="navy" compact labelledBy="consulting-cta-heading">
         <div className="grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-16">
           <div className="lg:col-span-7">
             <SectionTitle id="consulting-cta-heading">
               Bring me the bet you are about to fund
             </SectionTitle>
-            <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-2xl leading-relaxed text-band-muted">
               Thirty minutes, no deck. Tell me what you are about to commit to
               and which part of it is still unproven. I will tell you whether an
               AI Delivery Loop Sprint, an embedded retainer, or a different
@@ -932,18 +959,18 @@ export default function Services() {
           <div className="lg:col-span-5">
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
               <Button size="lg" asChild>
-                <Link href={consultingHref}>Book a 30-minute call</Link>
+                <Link href={consultingHref}>Talk through your product bet</Link>
               </Button>
             </div>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-right">
+            <p className="mt-3 text-sm leading-relaxed text-band-muted lg:text-right">
               Form reaches me directly. I reply and we schedule. No calendar
               link on the site yet.
             </p>
-            <p className="mt-6 text-sm leading-relaxed text-muted-foreground lg:text-right">
+            <p className="mt-6 text-sm leading-relaxed text-band-muted lg:text-right">
               Prefer email?{" "}
               <a
                 href="mailto:ryan@winzenburg.com"
-                className="font-medium text-primary transition-colors hover:text-primary/80"
+                className="font-bold text-sun underline-offset-4 hover:text-band"
               >
                 ryan@winzenburg.com
               </a>
