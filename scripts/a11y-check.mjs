@@ -57,10 +57,7 @@ for (const width of widths) {
         runOnly: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"],
       }),
     );
-    // maximum-scale in client/index.html is a known site-wide finding. Removing
-    // it reintroduces iOS focus zoom on the sub-16px form inputs, so it needs a
-    // font-size pass first and is tracked separately.
-    const violations = results.violations.filter((v) => v.id !== "meta-viewport");
+    const violations = results.violations;
     const label = `/${slug} @ ${width}px`;
     if (violations.length === 0) {
       console.log(`OK   ${label}`);

@@ -16,6 +16,8 @@ export default function GameficationThatDoesntManipulate() {
         <meta property="og:description" content="Gamification is often manipulative. Here&#39;s how to make it helpful, respectful, and tailored to your industry." />
         <meta property="og:url" content="https://winzenburg.com/articles/gamification-done-right" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/gamification-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/gamification-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/gamification-done-right" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Gamification That Doesn't Manipulate: Designing Habit Loops with Industry-Appropriate Mascots","description":"Gamification is often manipulative. Here's how to make it helpful, respectful, and tailored to your industry.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/gamification-done-right","image":"https://winzenburg.com/images/articles/gamification-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function GameficationThatDoesntManipulate() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Gamification That Doesn't Manipulate"
+              src="/images/articles/gamification-hero.webp"
+              alt="A blue bird carries a lantern beside a person walking a path of stepping stones."
               className="w-full h-auto"
             />
           </div>
@@ -720,7 +722,7 @@ export default function GameficationThatDoesntManipulate() {
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Want to Build Better Product Experiences?</h3>
             <p className="text-muted-foreground mb-6">Get frameworks like this delivered to your inbox. I share the methods behind building products that users actually love, no manipulation required.</p>
-            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get the Framework Library →
             </Link>
           </div>

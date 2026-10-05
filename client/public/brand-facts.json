@@ -117,9 +117,14 @@
       "note": "Enterprise and product case studies."
     },
     {
+      "title": "AI Delivery Loop Sprint",
+      "url": "https://winzenburg.com/consulting",
+      "note": "Fixed-fee sprint for enterprise B2B product leaders about to fund an unproven product bet. Two to four weeks, from $8,000. Go, no-go, or pivot call plus a written scope engineering can start."
+    },
+    {
       "title": "Consulting",
       "url": "https://winzenburg.com/consulting",
-      "note": "Primary commercial route. For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated: validated product direction, reduced build risk, an executable path. /services is an alias."
+      "note": "Primary commercial route. AI Delivery Loop Sprint from $8,000, then an embedded product-experience retainer. /services is an alias."
     },
     {
       "title": "UX maturity assessment",

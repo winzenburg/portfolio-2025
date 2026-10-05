@@ -16,6 +16,8 @@ export default function LinnyAutomationArticle() {
         <meta property="og:description" content="Most founders manually manage waitlists and outreach. We automate execution with Lindy while keeping Cursor as our documentation system of record." />
         <meta property="og:url" content="https://winzenburg.com/articles/lindy-automated-validation" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/lindy-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/lindy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/lindy-automated-validation" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale","description":"Most founders manually manage waitlists and outreach. We automate execution with Lindy while keeping Cursor as our documentation system of record.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/lindy-automated-validation","image":"https://winzenburg.com/images/articles/lindy-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function LinnyAutomationArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Dashboard showing automated validation workflows"
+              src="/images/articles/lindy-hero.webp"
+              alt="A blue robot delivers letters along a street while a person writes at a desk in the foreground."
               className="w-full h-auto"
             />
           </div>
@@ -870,7 +872,7 @@ export default function LinnyAutomationArticle() {
               Want the exact Lindy automation specs we use for waitlist nurture, DM outreach, and daily reporting? 
               I've packaged them into templates you can copy and customize for your validations.
             </p>
-            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get the Lindy Templates →
             </Link>
           </div>

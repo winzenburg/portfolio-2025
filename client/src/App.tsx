@@ -12,6 +12,7 @@ import Methodology from "./pages/Methodology";
 import About from "./pages/About";
 import BrandHub from "./pages/BrandHub";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
 import Unsubscribe from "./pages/Unsubscribe";
 import Subscribe from "./pages/Subscribe";
 import Services from "./pages/Services";
@@ -141,6 +142,9 @@ const AIUxMaturityLevel3 = lazy(() => import("./pages/articles/AIUxMaturityLevel
 const TheInterfaceProblem = lazy(() => import("./pages/articles/TheInterfaceProblem"));
 const TheAgentLayerBusinessLayer = lazy(
   () => import("./pages/articles/TheAgentLayerBusinessLayer"),
+);
+const MapTheWorkBeforeYouAutomate = lazy(
+  () => import("./pages/articles/MapTheWorkBeforeYouAutomate"),
 );
 const Pulse20260921 = lazy(() => import("./pages/pulse/2026-09-21"));
 const Pulse20260914 = lazy(() => import("./pages/pulse/2026-09-14"));
@@ -351,6 +355,9 @@ function Router() {
         <Route path="/articles/the-agent-layer-is-becoming-the-business-layer">
           {() => <LazyRoute component={TheAgentLayerBusinessLayer} />}
         </Route>
+        <Route path="/articles/map-the-work-before-you-automate-it">
+          {() => <LazyRoute component={MapTheWorkBeforeYouAutomate} />}
+        </Route>
         <Route path="/pulse/2026-09-21">
           {() => <LazyRoute component={Pulse20260921} />}
         </Route>
@@ -361,6 +368,7 @@ function Router() {
           {() => <LazyRoute component={Pulse20260828} />}
         </Route>
         <Route path="/contact" component={Contact} />
+        <Route path="/privacy" component={Privacy} />
         <Route path="/subscribe" component={Subscribe} />
         <Route path="/unsubscribe" component={Unsubscribe} />
         <Route path="/case-study/saas-design-system">

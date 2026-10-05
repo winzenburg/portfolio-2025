@@ -22,6 +22,7 @@ import {
   WORKING_TOGETHER,
   consultingFaqJsonLd,
   isConsultingFaqItem,
+  sprintServiceJsonLd,
 } from "@/lib/consulting-faq";
 
 const consultingHref = contactHref({ intent: "consulting" });
@@ -210,7 +211,7 @@ const PHASES: Phase[] = [
     name: "Deliver",
     mode: "Converge",
     question: "Will it hold up, and can it be built?",
-    body: "Usability testing, iteration, accessibility review, high-fidelity design, component and state specification, and direct work with engineering through implementation.",
+    body: "Usability testing, iteration, accessibility review, high-fidelity design, and component and state specification. The Double Diamond below is the general method. Implementation is a separate engagement, not part of the sprint.",
     deliverable:
       "Implementation-ready design with edge cases and states documented, plus test evidence behind the decisions.",
   },
@@ -379,7 +380,7 @@ export default function Services() {
         description="Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint from $8,000. Expand into an embedded product-experience retainer. 25 years across healthcare, financial services, telecom, and technology."
         path="/consulting"
         ogImage="/images/services-hero.webp"
-        jsonLd={consultingFaqJsonLd()}
+        jsonLd={[consultingFaqJsonLd(), sprintServiceJsonLd()]}
       />
 
       <PageHero
@@ -514,7 +515,7 @@ export default function Services() {
           id="risks-heading"
           eyebrow="Six recurring risks"
           title="The risk you are carrying, and what replaces it"
-          lede="Nobody hires me for research or wireframes. They hire me because a specific risk is sitting on a budget they have to defend. These are the six that come up most."
+          lede="People bring me in when a specific risk is sitting on a budget they have to defend. These are the six that come up most."
         />
         <ol className="border-t border-border/60">
           {RISKS.map((risk, index) => (
@@ -864,7 +865,7 @@ export default function Services() {
           id="faq-heading"
           eyebrow="Before a call"
           title="Questions that come up before a call"
-          lede="Process, timing, research, ownership, and payment. Honest answers rather than reassuring ones."
+          lede="Process, timing, research, ownership, and payment."
         />
         <div className="space-y-16 md:space-y-20">
           {CONSULTING_FAQ_GROUPS.map((group) => {

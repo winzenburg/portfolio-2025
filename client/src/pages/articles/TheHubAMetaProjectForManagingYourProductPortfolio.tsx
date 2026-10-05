@@ -16,6 +16,8 @@ export default function TheHubArticle() {
         <meta property="og:description" content="What if you had a dashboard for managing your entire product portfolio? Here&#39;s how we built it." />
         <meta property="og:url" content="https://winzenburg.com/articles/the-hub" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/hub-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/hub-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/the-hub" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Hub: A Meta-Project for Managing Your Product Portfolio","description":"What if you had a dashboard for managing your entire product portfolio? Here's how we built it.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/the-hub","image":"https://winzenburg.com/images/articles/hub-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function TheHubArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="The Hub: Portfolio Management Dashboard"
+              src="/images/articles/hub-hero.webp"
+              alt="A lighthouse beam crosses a harbor of small boats, some docked and some still out on the water."
               className="w-full h-auto"
             />
           </div>
@@ -588,7 +590,7 @@ export default function TheHubArticle() {
               I'm working on a step-by-step guide with templates, code examples, and lessons learned from building my own portfolio management system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-6 py-3 rounded-lg transition-colors text-center">
+              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-colors text-center">
                   Get the Hub Building Guide
               </Link>
               <Link href="/portfolio" className="inline-block border border-cyan-500 text-primary hover:bg-primary/10 font-semibold px-6 py-3 rounded-lg transition-colors text-center">

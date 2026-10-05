@@ -20,6 +20,7 @@ interface Article {
   slug: string;
   category: string;
   heroImage: string;
+  heroAlt?: string;
 }
 
 /**
@@ -52,6 +53,17 @@ interface Article {
  */
 
 const articles: Article[] = [
+  {
+    id: "56",
+    title: "Map the Work Before You Automate It",
+    excerpt: "AI projects stall when teams automate a process nobody has mapped. How to find the real workflow, sort every step into four buckets, and design the moments where a person decides.",
+    date: "October 5, 2026",
+    readTime: "6 min read",
+    slug: "map-the-work-before-you-automate-it",
+    category: "AI Workflow",
+    heroImage: "/images/articles/map-the-work-before-you-automate-it-hero.webp",
+    heroAlt: "Four surveyors in long coats plant red flags along a winding path that loops past benches and gates, while an idle conveyor machine waits at the edge of the valley."
+  },
   {
     id: "55",
     title: "The Agent Layer Is Becoming the Business Layer",
@@ -340,7 +352,8 @@ const articles: Article[] = [
     readTime: "7 min read",
     slug: "saas-problem",
     category: "Business Strategy",
-    heroImage: "/images/articles/saas-problem-hero.webp"
+    heroImage: "/images/articles/saas-problem-hero.webp",
+    heroAlt: "One person stacks a tower of houses on a rock while a long line of people waits on the opposite shore."
   },
   {
     id: "26",
@@ -350,7 +363,8 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "portfolio-approach",
     category: "Business Strategy",
-    heroImage: "/images/articles/portfolio-hero.webp"
+    heroImage: "/images/articles/portfolio-hero.webp",
+    heroAlt: "Two gardeners tend rows of potted seedlings, one large tree, and a wheelbarrow of wilted plants inside a greenhouse."
   },
   {
     id: "25",
@@ -360,7 +374,8 @@ const articles: Article[] = [
     readTime: "16 min read",
     slug: "personalization-privacy",
     category: "Design Systems",
-    heroImage: "/images/articles/personalization-hero.webp"
+    heroImage: "/images/articles/personalization-hero.webp",
+    heroAlt: "A nighttime street of shuttered houses, with one lit shop where a tailor measures a customer."
   },
   {
     id: "24",
@@ -370,7 +385,8 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "open-source-vision",
     category: "Business Strategy",
-    heroImage: "/images/articles/open-source-hero.webp"
+    heroImage: "/images/articles/open-source-hero.webp",
+    heroAlt: "A cutaway workshop building shows many people making things while a crowd watches from the street."
   },
   {
     id: "23",
@@ -380,7 +396,8 @@ const articles: Article[] = [
     readTime: "13 min read",
     slug: "micro-interactions",
     category: "Design Systems",
-    heroImage: "/images/articles/micro-interactions-hero.webp"
+    heroImage: "/images/articles/micro-interactions-hero.webp",
+    heroAlt: "A person skips a stone across stepping stones while another catches it on the far bank."
   },
   {
     id: "22",
@@ -390,7 +407,8 @@ const articles: Article[] = [
     readTime: "19 min read",
     slug: "kill-greenlight-ritual",
     category: "Business Strategy",
-    heroImage: "/images/articles/kill-greenlight-hero.webp"
+    heroImage: "/images/articles/kill-greenlight-hero.webp",
+    heroAlt: "A signalman with two lanterns stands where many train tracks split, some blocked by red signals."
   },
   {
     id: "21",
@@ -400,7 +418,8 @@ const articles: Article[] = [
     readTime: "15 min read",
     slug: "hub-evolution",
     category: "AI Workflow",
-    heroImage: "/images/articles/hub-evolution-hero.webp"
+    heroImage: "/images/articles/hub-evolution-hero.webp",
+    heroAlt: "People leave a dark cabinet room and gather around a lit wall of charts."
   },
   {
     id: "20",
@@ -410,7 +429,8 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "the-hub",
     category: "AI Workflow",
-    heroImage: "/images/articles/hub-hero.webp"
+    heroImage: "/images/articles/hub-hero.webp",
+    heroAlt: "A lighthouse beam crosses a harbor of small boats, some docked and some still out on the water."
   },
   {
     id: "19",
@@ -420,7 +440,8 @@ const articles: Article[] = [
     readTime: "17 min read",
     slug: "gamification-done-right",
     category: "Design Systems",
-    heroImage: "/images/articles/gamification-hero.webp"
+    heroImage: "/images/articles/gamification-hero.webp",
+    heroAlt: "A blue bird carries a lantern beside a person walking a path of stepping stones."
   },
   {
     id: "18",
@@ -430,7 +451,8 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "documentation-system",
     category: "AI Workflow",
-    heroImage: "/images/articles/docs-system-hero.webp"
+    heroImage: "/images/articles/docs-system-hero.webp",
+    heroAlt: "People on ladders pull folders from a wall of cabinets and connect them with red string."
   },
   {
     id: "17",
@@ -440,7 +462,8 @@ const articles: Article[] = [
     readTime: "14 min read",
     slug: "dev-quality-assistant",
     category: "Engineering",
-    heroImage: "/images/articles/dev-quality-hero.webp"
+    heroImage: "/images/articles/dev-quality-hero.webp",
+    heroAlt: "Surveyors stake a foundation and check a blueprint before a crew waits with bricks."
   },
   {
     id: "16",
@@ -450,7 +473,8 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "complete-workflow-2025",
     category: "AI Workflow",
-    heroImage: "/images/articles/complete-workflow-hero.webp"
+    heroImage: "/images/articles/complete-workflow-hero.webp",
+    heroAlt: "People carry lanterns along a winding path through a series of dark arches toward a lit house."
   },
   {
     id: "15",
@@ -460,7 +484,8 @@ const articles: Article[] = [
     readTime: "12 min read",
     slug: "brand-first-validation",
     category: "Design Systems",
-    heroImage: "/images/articles/brand-first-hero.webp"
+    heroImage: "/images/articles/brand-first-hero.webp",
+    heroAlt: "A person plants a striped flag while builders paint matching marks onto a row of houses."
   },
   {
     id: "14",
@@ -470,7 +495,8 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "ai-tool-stack",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-tool-stack-hero.webp"
+    heroImage: "/images/articles/ai-tool-stack-hero.webp",
+    heroAlt: "A watchtower operator directs separate boats down parallel canals toward an orange sun."
   },
   {
     id: "13",
@@ -480,7 +506,8 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "ai-orchestration",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-orchestration-hero.webp"
+    heroImage: "/images/articles/ai-orchestration-hero.webp",
+    heroAlt: "A conductor on a central rock directs people on linked islands, each tending a different light or machine under a full moon."
   },
   {
     id: "12",
@@ -490,7 +517,8 @@ const articles: Article[] = [
     readTime: "17 min read",
     slug: "context7-live-docs",
     category: "Engineering",
-    heroImage: "/images/articles/context7-hero.webp"
+    heroImage: "/images/articles/context7-hero.webp",
+    heroAlt: "A person nets fresh pages from a lighthouse beam while cobwebbed books sit unused beside them."
   },
   {
     id: "11",
@@ -500,7 +528,8 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "lindy-automated-validation",
     category: "AI Workflow",
-    heroImage: "/images/articles/lindy-hero.webp"
+    heroImage: "/images/articles/lindy-hero.webp",
+    heroAlt: "A blue robot delivers letters along a street while a person writes at a desk in the foreground."
   },
   {
     id: "10",
@@ -510,7 +539,8 @@ const articles: Article[] = [
     readTime: "16 min read",
     slug: "glif-batch-creatives",
     category: "AI Workflow",
-    heroImage: "/images/articles/glif-hero.webp"
+    heroImage: "/images/articles/glif-hero.webp",
+    heroAlt: "Two people run a printing press and hang rows of finished posters to dry."
   },
   {
     id: "9",
@@ -618,29 +648,29 @@ interface CategoryStyle {
 
 const CATEGORY_STYLES: Record<string, CategoryStyle> = {
   "Design Systems": {
-    pillActive: "bg-blue-500 text-white border-blue-500",
-    pillIdle: "border-blue-700/50 bg-blue-900/30 text-blue-300 hover:bg-blue-800/50",
-    badge: "border-blue-700/50 bg-blue-900/30 text-blue-300",
+    pillActive: "bg-blue-700 text-white border-blue-700",
+    pillIdle: "border-blue-600 bg-blue-50 text-blue-800 hover:bg-blue-100",
+    badge: "border-blue-300 bg-blue-50 text-blue-800",
   },
   "Business Strategy": {
-    pillActive: "bg-cyan-500 text-foreground border-cyan-500",
-    pillIdle: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300 hover:bg-cyan-800/50",
-    badge: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300",
+    pillActive: "bg-cyan-700 text-white border-cyan-700",
+    pillIdle: "border-cyan-600 bg-cyan-50 text-cyan-800 hover:bg-cyan-100",
+    badge: "border-cyan-300 bg-cyan-50 text-cyan-800",
   },
   "AI Workflow": {
-    pillActive: "bg-purple-500 text-white border-purple-500",
-    pillIdle: "border-purple-700/50 bg-purple-900/30 text-purple-300 hover:bg-purple-800/50",
-    badge: "border-purple-700/50 bg-purple-900/30 text-purple-300",
+    pillActive: "bg-purple-700 text-white border-purple-700",
+    pillIdle: "border-purple-600 bg-purple-50 text-purple-800 hover:bg-purple-100",
+    badge: "border-purple-300 bg-purple-50 text-purple-800",
   },
   Engineering: {
-    pillActive: "bg-emerald-500 text-foreground border-emerald-500",
-    pillIdle: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300 hover:bg-emerald-800/50",
-    badge: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300",
+    pillActive: "bg-emerald-700 text-white border-emerald-700",
+    pillIdle: "border-emerald-600 bg-emerald-50 text-emerald-800 hover:bg-emerald-100",
+    badge: "border-emerald-300 bg-emerald-50 text-emerald-800",
   },
   "Product Design": {
-    pillActive: "bg-rose-500 text-white border-rose-500",
-    pillIdle: "border-rose-700/50 bg-rose-900/30 text-rose-300 hover:bg-rose-800/50",
-    badge: "border-rose-700/50 bg-rose-900/30 text-rose-300",
+    pillActive: "bg-rose-700 text-white border-rose-700",
+    pillIdle: "border-rose-600 bg-rose-50 text-rose-800 hover:bg-rose-100",
+    badge: "border-rose-300 bg-rose-50 text-rose-800",
   },
 };
 
@@ -699,7 +729,7 @@ function FeaturedArticleCard({ article }: { article: Article }) {
         <img
           loading="lazy"
           src={article.heroImage}
-          alt={article.title}
+          alt={article.heroAlt ?? article.title}
           className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
         />
       </div>
@@ -742,7 +772,7 @@ function ArticleCard({ article }: { article: Article }) {
         <img
           loading="lazy"
           src={article.heroImage}
-          alt={article.title}
+          alt={article.heroAlt ?? article.title}
           className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
         />
       </div>
@@ -847,7 +877,7 @@ export default function Articles() {
                 )}
               >
                 {category}{" "}
-                <span className="font-normal opacity-70">
+                <span className="font-normal">
                   {getCategoryCount(category)}
                 </span>
               </button>

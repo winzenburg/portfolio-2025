@@ -16,6 +16,8 @@ export default function OpenSourceVisionArticle() {
         <meta property="og:description" content="What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products." />
         <meta property="og:url" content="https://winzenburg.com/articles/open-source-vision" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/open-source-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/open-source-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/open-source-vision" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Open Source Vision: Building a Community Around Product Creation","description":"What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/open-source-vision","image":"https://winzenburg.com/images/articles/open-source-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function OpenSourceVisionArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Open Source Product Creation Vision"
+              src="/images/articles/open-source-hero.webp"
+              alt="A cutaway workshop building shows many people making things while a crowd watches from the street."
               className="w-full h-auto"
             />
           </div>
@@ -454,7 +456,7 @@ export default function OpenSourceVisionArticle() {
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Want to See This Open Source Vision Become Reality?</h3>
             <p className="text-muted-foreground mb-6">I'm documenting our entire 12-agent product creation system and making it completely open source. Get early access to the frameworks, agents, and case studies that have helped us ship products 40% faster.</p>
-            <Link href="/contact?intent=consulting" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?intent=consulting" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                 Get Early Access
                 <ArrowRight className="w-4 h-4" />
             </Link>

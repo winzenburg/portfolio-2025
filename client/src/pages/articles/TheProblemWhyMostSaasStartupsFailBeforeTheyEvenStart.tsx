@@ -16,6 +16,8 @@ export default function SaaSStartupFailures() {
         <meta property="og:description" content="Exploring why 90% of SaaS startups fail and how the problem isn&#39;t the idea, it&#39;s the process." />
         <meta property="og:url" content="https://winzenburg.com/articles/saas-problem" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/saas-problem-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/saas-problem-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/saas-problem" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Problem: Why Most SaaS Startups Fail Before They Even Start","description":"Exploring why 90% of SaaS startups fail and how the problem isn't the idea, it's the process.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/saas-problem","image":"https://winzenburg.com/images/articles/saas-problem-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function SaaSStartupFailures() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Why Most SaaS Startups Fail"
+              src="/images/articles/saas-problem-hero.webp"
+              alt="One person stacks a tower of houses on a rock while a long line of people waits on the opposite shore."
               className="w-full h-auto"
             />
           </div>
@@ -493,7 +495,7 @@ export default function SaaSStartupFailures() {
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Build Something That Lasts?</h3>
             <p className="text-muted-foreground mb-6">Get the complete validation framework, including templates, checklists, and AI-powered tools that help you validate both desirability and durability before you build.</p>
-            <Link href="/contact?playbook=complete-framework" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+            <Link href="/contact?playbook=complete-framework" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                 Download the Complete Framework →
             </Link>
           </div>

@@ -24,9 +24,9 @@ import { SITE_ORIGIN } from "./articles-metadata.mjs";
 export const STATIC_PAGES = [
   {
     path: "/",
-    title: "Ryan Winzenburg | Product Experience Leader, Enterprise B2B",
+    title: "Ryan Winzenburg | Product Experience Consulting for Enterprise B2B",
     description:
-      "Product experience leader with 25 years designing enterprise B2B systems at Fortune 50 companies. I lead product experience for complex B2B systems, from healthcare to fintech to defense.",
+      "Ryan Winzenburg helps enterprise B2B product leaders test a product bet before the build budget is committed. Fixed-fee sprint, 2 to 4 weeks, from $8,000.",
     ogImage: "/images/about-hero.webp",
     ogType: "website",
     changefreq: "weekly",
@@ -63,18 +63,18 @@ export const STATIC_PAGES = [
   },
   {
     path: "/consulting",
-    title: "Consulting | Validate the Product Direction Before You Fund the Build | Ryan Winzenburg",
+    title: "Consulting | AI Delivery Loop Sprint and Embedded Retainer | Ryan Winzenburg",
     description:
-      "For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated. Evidence behind the decision, a scope with explicit cuts, and a path engineering can build.",
+      "Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint from $8,000. Expand into an embedded product-experience retainer. 25 years across healthcare, financial services, telecom, and technology.",
     ogImage: "/images/services-hero.webp",
     changefreq: "monthly",
     priority: "0.9",
   },
   {
     path: "/services",
-    title: "Consulting | Validate the Product Direction Before You Fund the Build | Ryan Winzenburg",
+    title: "Consulting | AI Delivery Loop Sprint and Embedded Retainer | Ryan Winzenburg",
     description:
-      "For enterprise B2B product leaders about to commit delivery budget to a direction nobody has validated. Evidence behind the decision, a scope with explicit cuts, and a path engineering can build.",
+      "Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint from $8,000. Expand into an embedded product-experience retainer. 25 years across healthcare, financial services, telecom, and technology.",
     ogImage: "/images/services-hero.webp",
     changefreq: "monthly",
     priority: "0.6",
@@ -108,12 +108,21 @@ export const STATIC_PAGES = [
   },
   {
     path: "/contact",
-    title: "Contact Ryan Winzenburg | Design Leadership Roles and Scoped Work",
+    title: "Contact | AI Delivery Loop Sprint | Ryan Winzenburg",
     description:
-      "Contact Ryan Winzenburg about a design leadership role, or about scoped AI workflow, design system, and product work.",
+      "Write to Ryan Winzenburg about a product bet you are about to fund. Reply within a day. Fixed-fee proposal within three business days if there is a fit.",
     ogImage: "/images/contact-hero.webp",
     changefreq: "monthly",
     priority: "0.7",
+  },
+  {
+    path: "/privacy",
+    title: "Privacy | Ryan Winzenburg",
+    description:
+      "What this site stores: PostHog page analytics, Netlify contact form fields, and a Resend newsletter contact. Deletion requests go to ryan@winzenburg.com.",
+    ogImage: "/images/contact-hero.webp",
+    changefreq: "yearly",
+    priority: "0.3",
   },
   {
     path: "/gallery",

@@ -16,6 +16,8 @@ export default function DevQualityAssistant() {
         <meta property="og:description" content="Most teams treat testing as an afterthought. We make it a build prerequisite." />
         <meta property="og:url" content="https://winzenburg.com/articles/dev-quality-assistant" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/dev-quality-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/dev-quality-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/dev-quality-assistant" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Dev Quality Assistant: Test Planning Before Code Touches the Repo","description":"Most teams treat testing as an afterthought. We make it a build prerequisite.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dev-quality-assistant","image":"https://winzenburg.com/images/articles/dev-quality-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function DevQualityAssistant() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Developer planning tests before coding"
+              src="/images/articles/dev-quality-hero.webp"
+              alt="Surveyors stake a foundation and check a blueprint before a crew waits with bricks."
               className="w-full h-auto"
             />
           </div>
@@ -709,7 +711,7 @@ export default function DevQualityAssistant() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Ship with Confidence?</h3>
             <p className="text-muted-foreground mb-6">Get my complete Dev Quality Assistant template and implementation guide. Plus weekly insights on AI-powered development workflows.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+              <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
                   Get the Template
               </Link>
               <Link href="/newsletter" className="inline-block border border-border hover:border-border text-muted-foreground hover:text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">

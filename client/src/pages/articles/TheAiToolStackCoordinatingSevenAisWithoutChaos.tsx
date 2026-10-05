@@ -16,6 +16,8 @@ export default function AIToolStackArticle() {
         <meta property="og:description" content="Using multiple AI tools sounds like a nightmare. Here&#39;s how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-tool-stack" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-tool-stack" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"Using multiple AI tools sounds like a nightmare. Here's how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.webp"})}</script>
@@ -34,7 +36,7 @@ export default function AIToolStackArticle() {
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/ai-tool-stack-hero.webp"
-              alt="The AI Tool Stack"
+              alt="A watchtower operator directs separate boats down parallel canals toward an orange sun."
               className="w-full h-auto"
             />
           </div>

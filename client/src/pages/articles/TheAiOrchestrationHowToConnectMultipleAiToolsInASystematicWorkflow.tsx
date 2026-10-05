@@ -16,6 +16,8 @@ export default function AiOrchestrationWorkflow() {
         <meta property="og:description" content="AI tools are powerful, but they&#39;re islands. Here&#39;s how to orchestrate them into a systematic, auditable workflow." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-orchestration" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-orchestration-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/ai-orchestration-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-orchestration" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow","description":"AI tools are powerful, but they're islands. Here's how to orchestrate them into a systematic, auditable workflow.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-orchestration","image":"https://winzenburg.com/images/articles/ai-orchestration-hero.webp"})}</script>
@@ -34,7 +36,7 @@ export default function AiOrchestrationWorkflow() {
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/ai-orchestration-hero.webp"
-              alt="The AI Orchestration"
+              alt="A conductor on a central rock directs people on linked islands, each tending a different light or machine under a full moon."
               className="w-full h-auto"
             />
           </div>

@@ -696,10 +696,10 @@ export default function MonetizationStrategy() {
               Building a Monetization Strategy?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              I've helped companies implement these frameworks to generate revenue from day one. Let's discuss your specific product and market.
+              If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.
             </p>
-            <Link href="/contact?intent=consulting" className="inline-block bg-cyan-900/200 hover:bg-blue-400 text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Schedule a Discovery Call →
+            <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+                Book a 30-minute call
             </Link>
           </div>
         </div>

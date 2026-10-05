@@ -4,8 +4,8 @@ import { brandFacts } from "@/lib/brandFacts";
 
 const AUTHOR_NAME = brandFacts.person.legalName;
 const AUTHOR_TITLE = brandFacts.person.jobTitle;
-const VENTURE_NAMES = brandFacts.ventures.map((v) => v.name);
-const AUTHOR_BLURB = `${AUTHOR_NAME}, founder of ${VENTURE_NAMES.join(" and ")}, is a ${AUTHOR_TITLE} with ${brandFacts.person.experienceYears} years designing enterprise products. Ryan Winzenburg writes about AI-native workflows, design systems, and operating models that make teams ship.`;
+const AUTHOR_BLURB =
+  "Ryan Winzenburg runs a product experience consultancy for enterprise B2B teams. He has 25 years of product work behind him and writes about AI-enabled delivery and operating models.";
 
 /**
  * Visible E-E-A-T author block for every article.

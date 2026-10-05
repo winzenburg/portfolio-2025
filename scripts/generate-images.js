@@ -42,7 +42,7 @@ async function getArticles() {
   // We'll use regex to match each object block { ... }
   // This is a simple parser, might be brittle if code style changes drastically
   const articleObjects = [];
-  const objectRegex = /{\s*id:\s*"([^"]+)",\s*title:\s*"([^"]+)",\s*excerpt:\s*"([^"]+)",\s*date:\s*"([^"]+)",\s*readTime:\s*"([^"]+)",\s*slug:\s*"([^"]+)",\s*category:\s*"([^"]+)",\s*heroImage:\s*"([^"]+)"\s*}/g;
+  const objectRegex = /{\s*id:\s*"([^"]+)",\s*title:\s*"([^"]+)",\s*excerpt:\s*"([^"]+)",\s*date:\s*"([^"]+)",\s*readTime:\s*"([^"]+)",\s*slug:\s*"([^"]+)",\s*category:\s*"([^"]+)",\s*heroImage:\s*"([^"]+)"(?:,\s*heroAlt:\s*"(?:[^"\\]|\\.)*")?\s*}/g;
   
   let m;
   while ((m = objectRegex.exec(arrayContent)) !== null) {
