@@ -511,7 +511,7 @@ export default function AutonomousAICoding() {
                   <span className="text-primary font-bold text-xl">1</span>
                   <div>
                     <div className="text-foreground font-semibold mb-2">Story size matters more than you think</div>
-                    <div className="text-muted-foreground text-sm">Small stories (1-3 files, under 50 lines) succeed 95% of the time. Large stories (10+ files, 200+ lines) succeed maybe 60% of the time. Break things down.</div>
+                    <div className="text-muted-foreground text-sm">Small stories (1-3 files, under 50 lines) usually succeed. Large stories (10+ files, 200+ lines) fail more often. Break things down.</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -554,7 +554,7 @@ export default function AutonomousAICoding() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The math changes the week. I write PRDs during the day. Agents build features at night. I test and polish in the morning. Ship by noon. While competitors are still estimating their sprint capacity, I'm shipping validated features at 3x velocity.
+              The math changes the week. I write PRDs during the day. Agents build features at night. I test and polish in the morning. Ship by noon. While competitors are still estimating their sprint capacity, I'm shipping validated features faster than I used to.
             </p>
 
             {/* Pull Quote */}

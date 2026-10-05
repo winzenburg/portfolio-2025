@@ -298,7 +298,7 @@ export default function CompoundIntelligence() {
                 <div className="bg-muted/50 border border-green-300 rounded p-4">
                   <div className="text-green-700 font-semibold mb-2">Build 4: Full Context Advantage</div>
                   <p className="text-muted-foreground text-sm mb-3">Agent read all three previous learnings. Implemented form with perfect UX, no race conditions, proper cleanup, first try.</p>
-                  <p className="text-muted-foreground text-sm">Time to implement: 40% faster than Build 1. Zero rework required.</p>
+                  <p className="text-muted-foreground text-sm">Time to implement: shorter than Build 1. No rework required.</p>
                   <div className="text-green-700 text-xs">✓ Flawless execution, powered by compound intelligence</div>
                 </div>
               </div>

@@ -333,7 +333,7 @@ export default function ScalingStrategy() {
             </h3>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Customer support is where automation delivers the most dramatic impact. An AI-first support strategy means your chatbot should handle 80% of incoming questions. It's trained on your documentation, common issues, and previous support tickets. It suggests relevant help articles automatically. It detects issues proactively before customers even report them. It only escalates to humans when it encounters something complex or when the customer explicitly requests it.
+              Customer support is where automation delivers the most dramatic impact. An AI-first support strategy means your chatbot should handle most incoming questions. It's trained on your documentation, common issues, and previous support tickets. It suggests relevant help articles automatically. It detects issues proactively before customers even report them. It only escalates to humans when it encounters something complex or when the customer explicitly requests it.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">

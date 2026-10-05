@@ -533,7 +533,7 @@ const articles: Article[] = [
   },
   {
     id: "10",
-    title: "80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets",
+    title: "Faster Creatives: How We Use Glif to Batch-Generate Validation Assets",
     excerpt: "Most founders get stuck on 'we need 10 ad variants' and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours.",
     date: "December 7, 2024",
     readTime: "16 min read",
@@ -594,7 +594,7 @@ const articles: Article[] = [
   },
   {
     id: "4",
-    title: "The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster",
+    title: "The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI",
     excerpt: "Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks. Not by cutting corners, by strategically implementing AI throughout the entire design process. Here's the framework.",
     date: "March 17, 2025",
     readTime: "5 min read",
@@ -605,7 +605,7 @@ const articles: Article[] = [
   {
     id: "3",
     title: "How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)",
-    excerpt: "Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance. Not by cutting corners, by strategically implementing AI where it accelerates work.",
+    excerpt: "Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. Accessibility held to WCAG 2.2 AA. Not by cutting corners, by strategically implementing AI where it accelerates work.",
     date: "February 24, 2025",
     readTime: "7 min read",
     slug: "design-system-4-weeks",

@@ -613,7 +613,7 @@ export default function ChoosingAICodingMode() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              That shift, from defaulting to one mode to strategically choosing, increased my output by 2-3x. Not because one mode is better, but because I stopped using the wrong mode for the wrong work.
+              That shift, from defaulting to one mode to strategically choosing, increased my output. Not because one mode is better, but because I stopped using the wrong mode for the wrong work.
             </p>
 
             {/* Statistics Cards */}

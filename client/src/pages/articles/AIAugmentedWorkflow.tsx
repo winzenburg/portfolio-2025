@@ -10,15 +10,15 @@ export default function AIAugmentedWorkflow() {
     <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
-        <title>The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster | Ryan Winzenburg</title>
+        <title>The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI | Ryan Winzenburg</title>
         <meta name="description" content="I deliver comparable enterprise UX in 2 to 3 weeks by putting AI on the mechanical work and keeping the design decisions." />
-        <meta property="og:title" content="The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster" />
+        <meta property="og:title" content="The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI" />
         <meta property="og:description" content="I deliver comparable enterprise UX in 2 to 3 weeks by putting AI on the mechanical work and keeping the design decisions." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-augmented-workflow" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-augmented-workflow" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster","description":"I deliver comparable enterprise UX in 2 to 3 weeks by putting AI on the mechanical work and keeping the design decisions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-03-17","url":"https://winzenburg.com/articles/ai-augmented-workflow","image":"https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI","description":"I deliver comparable enterprise UX in 2 to 3 weeks by putting AI on the mechanical work and keeping the design decisions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-03-17","url":"https://winzenburg.com/articles/ai-augmented-workflow","image":"https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -50,7 +50,7 @@ export default function AIAugmentedWorkflow() {
           <div className="mb-12">
 
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX 4-6x Faster
+              The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -279,7 +279,7 @@ export default function AIAugmentedWorkflow() {
             <div className="my-10 bg-primary/5 border border-primary/20 rounded-lg p-6">
               <div className="text-foreground font-semibold mb-2">The Zero-Bug Policy</div>
               <p className="text-muted-foreground">
-                This is the part that surprises people most. I implement proactive bug prevention through AI agents that catch issues before they reach production. The agents learn project-specific quality rules, automatically fix common patterns, and flag edge cases that need human review. My bug rate dropped by 80% after implementing this approach. AI catches issues at the moment they're introduced, instead of weeks later during QA.
+                This is the part that surprises people most. I implement proactive bug prevention through AI agents that catch issues before they reach production. The agents learn project-specific quality rules, automatically fix common patterns, and flag edge cases that need human review. My bug rate dropped noticeably after I adopted this approach. AI catches issues at the moment they're introduced, instead of weeks later during QA.
               </p>
             </div>
 
@@ -309,7 +309,7 @@ export default function AIAugmentedWorkflow() {
               <div className="bg-primary/8 border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-primary font-semibold mb-2 uppercase text-sm tracking-wider">AI-Augmented Timeline</div>
                 <div className="text-5xl font-bold text-primary mb-2">2-3 weeks</div>
-                <div className="text-muted-foreground text-sm font-semibold">4-6x faster to market</div>
+                <div className="text-muted-foreground text-sm font-semibold">Faster to market</div>
               </div>
             </div>
 

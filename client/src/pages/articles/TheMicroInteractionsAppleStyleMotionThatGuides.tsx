@@ -252,7 +252,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <p>
-          It's about building for everyone, beyond checking a compliance box. When we implemented proper reduced-motion fallbacks, our accessibility score jumped to 100% WCAG 2.2 AA compliance.
+          It's about building for everyone, beyond checking a compliance box. When we implemented proper reduced-motion fallbacks, our accessibility score met WCAG 2.2 AA.
         </p>
 
         <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
@@ -510,7 +510,7 @@ export default function MicroInteractionsArticle() {
           <div className="space-y-2">
             <p className="text-primary"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
             <p className="text-primary"><strong>Complaints about "too many animations":</strong> 0% (vs 8% before)</p>
-            <p className="text-primary"><strong>WCAG 2.2 AA compliance:</strong> 100% (motion requirements)</p>
+            <p className="text-primary"><strong>WCAG 2.2 AA compliance:</strong> met for motion</p>
             <p className="text-primary"><strong>Perceived performance rating:</strong> Increased 18%</p>
           </div>
         </div>

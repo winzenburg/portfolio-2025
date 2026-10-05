@@ -64,7 +64,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              But here's what the final system delivered: 48 production-ready components spanning the full enterprise UI spectrum. 63,813 lines of thoroughly tested code. 100% WCAG 2.2 AA compliance across every component. Complete documentation with usage guidelines and governance frameworks. All in four weeks.
+              But here's what the final system delivered: 48 production-ready components spanning the full enterprise UI spectrum. 63,813 lines of thoroughly tested code. WCAG 2.2 AA accessibility across every component. Complete documentation with usage guidelines and governance frameworks. All in four weeks.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -313,8 +313,8 @@ export default function DesignSystem4Weeks() {
                 <div className="text-muted-foreground text-sm font-semibold">With AI + review</div>
               </div>
               <div className="bg-muted/50 border border-cyan-900/50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">10x</div>
-                <div className="text-muted-foreground text-sm">Faster development</div>
+                <div className="text-3xl font-bold text-primary mb-2">Faster</div>
+                <div className="text-muted-foreground text-sm">Than writing each one by hand</div>
               </div>
             </div>
 
@@ -323,11 +323,11 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The speed increase was dramatic, going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. That's a genuine 10x improvement in development velocity. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were more reliable than what I'd typically ship after manual development.
+              The speed increase was dramatic, going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were more reliable than what I'd typically ship after manual development.
             </p>
 
             <div className="bg-gradient-to-r from-cyan-900/20 via-blue-900/20 to-purple-900/20 border border-primary/20 rounded-lg p-6 my-8">
-              <p className="text-primary font-semibold text-center">Seven days produced 48 production-ready components with 100% test coverage, 100% WCAG 2.2 AA compliance, full TypeScript typing across every component, and complete Storybook documentation. Not a minimum viable product. Enterprise-ready code.</p>
+              <p className="text-primary font-semibold text-center">Seven days produced 48 production-ready components with thorough test coverage, WCAG 2.2 AA accessibility, full TypeScript typing across every component, and complete Storybook documentation. Not a minimum viable product. Enterprise-ready code.</p>
             </div>
 
             <h3 className="text-2xl font-bold text-primary mt-10 mb-4">
@@ -456,11 +456,11 @@ export default function DesignSystem4Weeks() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Accessibility:</span>
-                    <span className="text-primary">100% WCAG 2.2 AA</span>
+                    <span className="text-primary">WCAG 2.2 AA</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Test coverage:</span>
-                    <span className="text-primary">100%</span>
+                    <span className="text-primary">Thorough</span>
                   </div>
                 </div>
                 <div className="pt-4 border-t border-primary/15">
@@ -482,7 +482,7 @@ export default function DesignSystem4Weeks() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Team efficiency:</span>
-                    <span className="text-primary">10x improvement</span>
+                    <span className="text-primary">Faster</span>
                   </div>
                 </div>
                 <div className="pt-4 border-t border-primary/15">

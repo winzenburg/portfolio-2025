@@ -426,7 +426,7 @@ One paragraph maximum.
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I used to rush PRD writing to "save time." Then I'd watch autonomous builds fail and cost $40-80 in wasted API calls. Now I spend 45-60 minutes on PRDs. My success rate went from 60% to 95%. The math is clear:
+              I used to rush PRD writing to "save time." Then I'd watch autonomous builds fail and cost $40-80 in wasted API calls. Now I spend 45-60 minutes on PRDs. My success rate improved noticeably. The math is clear:
             </p>
 
             <div className="my-12 grid md:grid-cols-2 gap-6">
@@ -439,7 +439,7 @@ One paragraph maximum.
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Success rate:</span>
-                    <span className="text-foreground">60%</span>
+                    <span className="text-foreground">Lower</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Average cost:</span>
@@ -460,7 +460,7 @@ One paragraph maximum.
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Success rate:</span>
-                    <span className="text-foreground">95%</span>
+                    <span className="text-foreground">Higher</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Average cost:</span>

@@ -10,9 +10,9 @@ export default function GlifCreativeBatchingArticle() {
     <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
-        <title>80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets | Ryan Winzenburg</title>
+        <title>Faster Creatives: How We Use Glif to Batch-Generate Validation Assets | Ryan Winzenburg</title>
         <meta name="description" content="Founders lose days making ad variants by hand. I batch-generate them in Glif, refine the keepers, and ship the same day." />
-        <meta property="og:title" content="80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets" />
+        <meta property="og:title" content="Faster Creatives: How We Use Glif to Batch-Generate Validation Assets" />
         <meta property="og:description" content="Founders lose days making ad variants by hand. I batch-generate them in Glif, refine the keepers, and ship the same day." />
         <meta property="og:url" content="https://winzenburg.com/articles/glif-batch-creatives" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/glif-hero.webp" />
@@ -20,7 +20,7 @@ export default function GlifCreativeBatchingArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/glif-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/glif-batch-creatives" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets","description":"Founders lose days making ad variants by hand. I batch-generate them in Glif, refine the keepers, and ship the same day.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/glif-batch-creatives","image":"https://winzenburg.com/images/articles/glif-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Faster Creatives: How We Use Glif to Batch-Generate Validation Assets","description":"Founders lose days making ad variants by hand. I batch-generate them in Glif, refine the keepers, and ship the same day.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/glif-batch-creatives","image":"https://winzenburg.com/images/articles/glif-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -51,7 +51,7 @@ export default function GlifCreativeBatchingArticle() {
           {/* Article Title */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              80% Faster Creatives: How I Use Glif to Batch-Generate Validation Assets
+              Faster Creatives: How I Use Glif to Batch-Generate Validation Assets
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">

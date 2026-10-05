@@ -317,7 +317,7 @@ export default function DesignSystemsFail() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              We implemented all three solutions. AI-powered documentation made the system accessible. Automated validation handled maintenance. Data-driven governance accelerated decisions. Within two months, adoption hit 95%. Maintenance time dropped from twenty hours per week to two. Decisions that took weeks started getting resolved in days.
+              We implemented all three solutions. AI-powered documentation made the system accessible. Automated validation handled maintenance. Data-driven governance accelerated decisions. Within two months, adoption was widespread. Maintenance time dropped sharply. Decisions that took weeks started getting resolved in days.
             </p>
 
             {/* ROI Results */}
@@ -328,12 +328,12 @@ export default function DesignSystemsFail() {
               </div>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">95%</div>
+                  <div className="text-3xl font-bold text-primary mb-1">High</div>
                   <div className="text-sm text-muted-foreground">Adoption rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">90%</div>
-                  <div className="text-sm text-muted-foreground">Less maintenance</div>
+                  <div className="text-3xl font-bold text-primary mb-1">Lower</div>
+                  <div className="text-sm text-muted-foreground">Maintenance time</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-1">10x</div>

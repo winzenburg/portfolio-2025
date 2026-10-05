@@ -168,8 +168,8 @@ export default function AITechStack() {
                 <div className="text-muted-foreground text-sm font-semibold">With Cursor</div>
               </div>
               <div className="bg-muted/50 border border-cyan-900/50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">10x</div>
-                <div className="text-muted-foreground text-sm">Faster per component</div>
+                <div className="text-3xl font-bold text-primary mb-2">Faster</div>
+                <div className="text-muted-foreground text-sm">Per component</div>
               </div>
             </div>
 
@@ -178,7 +178,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I spend two to three minutes reviewing the generated code and another one to two minutes making refinements, adjusting edge cases, tweaking the API to match specific requirements, ensuring the implementation matches my mental model. Total time from idea to production-ready component: five minutes. That's a genuine 10x improvement in speed, and the quality is consistently high.
+              I spend two to three minutes reviewing the generated code and another one to two minutes making refinements, adjusting edge cases, tweaking the API to match specific requirements, ensuring the implementation matches my mental model. Total time from idea to production-ready component: five minutes. The quality stayed high.
             </p>
 
             <h3 className="text-2xl font-bold text-primary mt-10 mb-4">
@@ -382,7 +382,7 @@ export default function AITechStack() {
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary">✓</span>
-                    <span className="text-muted-foreground"><strong>Cost:</strong> Comparable quality, 10x faster</span>
+                    <span className="text-muted-foreground"><strong>Cost:</strong> Comparable quality, in less time</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary">✓</span>
@@ -601,7 +601,7 @@ export default function AITechStack() {
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary">✓</span>
-                    <span className="text-muted-foreground">Maintain 100% test coverage</span>
+                    <span className="text-muted-foreground">Maintain thorough test coverage</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary">✓</span>
