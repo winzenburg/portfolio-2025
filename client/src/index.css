@@ -415,26 +415,6 @@
   border-color: var(--color-navy);
 }
 
-/*
- * Fact row on a navy hero panel. Unlayered so these beat the ink utilities.
- * Cream on #112234 is about 13:1.
- */
-[data-tone="navy"] dl {
-  border-color: color-mix(in srgb, var(--color-band) 45%, transparent);
-}
-[data-tone="navy"] dl > div {
-  border-color: color-mix(in srgb, var(--color-band) 45%, transparent);
-}
-[data-tone="navy"] dt {
-  color: var(--color-band-muted);
-}
-[data-tone="navy"] dd {
-  color: var(--color-band);
-}
-[data-tone="navy"] dd span {
-  color: var(--color-band-muted);
-}
-
 /* Button press and a small arrow nudge. No offset shadow. */
 [data-slot="button"] {
   transition-property: color, background-color, border-color, transform, outline-offset;

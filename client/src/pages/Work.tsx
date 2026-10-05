@@ -276,7 +276,7 @@ function ProjectCard({ project }: { project: Project }) {
   const { liveUrl } = project;
 
   return (
-    <article className="group border-t border-ink/15 py-12 text-ink md:py-16">
+    <article className="group border-t border-band/45 py-12 text-band md:py-16">
       {/* Explicit placement keeps one stacked reading order on small screens
           and, from lg up, pairs the screenshot with the numbers in the right
           rail while the narrative and build detail hold the left. */}
@@ -291,22 +291,22 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="lg:col-span-7 lg:col-start-1 lg:row-start-1">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-band">
             {project.kicker}
           </p>
-          <h3 className="mt-4 text-pretty text-2xl font-bold leading-tight tracking-tight text-foreground md:text-3xl">
+          <h3 className="mt-4 text-pretty text-2xl font-bold leading-tight tracking-tight text-band md:text-3xl">
             {project.title}
           </h3>
 
-          <h4 className="mt-7 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+          <h4 className="mt-7 text-xs uppercase tracking-[0.16em] text-band-muted">
             MY ROLE
           </h4>
-          <p className="mt-3 leading-relaxed text-muted-foreground">{project.role}</p>
+          <p className="mt-3 leading-relaxed text-band-muted">{project.role}</p>
         </div>
 
         <div className="lg:col-span-5 lg:col-start-8 lg:row-start-2">
           {project.metricsLabel ? (
-            <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+            <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-band-muted">
               {project.metricsLabel}
             </h4>
           ) : null}
@@ -316,12 +316,12 @@ function ProjectCard({ project }: { project: Project }) {
             {project.metrics.map((metric) => (
               <div
                 key={metric.label}
-                className="flex flex-col border-t border-border/60 pt-4"
+                className="flex flex-col border-t border-band/45 pt-4"
               >
-                <dt className="text-xs uppercase tracking-[0.14em] text-muted-foreground">
+                <dt className="text-xs uppercase tracking-[0.14em] text-band-muted">
                   {metric.label}
                 </dt>
-                <dd className="mt-auto pt-2 text-xl font-semibold tracking-tight text-foreground">
+                <dd className="mt-auto pt-2 text-xl font-semibold tracking-tight text-band">
                   {metric.value}
                 </dd>
               </div>
@@ -330,19 +330,19 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="lg:col-span-7 lg:col-start-1 lg:row-start-2">
-          <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+          <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-band-muted">
             {project.highlightsLabel}
           </h4>
           <dl className="grid gap-x-10 gap-y-5 sm:grid-cols-2">
             {project.highlights.map((highlight) => (
               <div
                 key={highlight.title}
-                className="border-t border-border/60 pt-4"
+                className="border-t border-band/45 pt-4"
               >
-                <dt className="text-sm font-medium text-foreground">
+                <dt className="text-sm font-medium text-band">
                   {highlight.title}
                 </dt>
-                <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                <dd className="mt-1 text-sm leading-relaxed text-band-muted">
                   {highlight.detail}
                 </dd>
               </div>
@@ -350,7 +350,7 @@ function ProjectCard({ project }: { project: Project }) {
           </dl>
         </div>
 
-        <div className="flex flex-col gap-3 border-t border-border/60 pt-7 sm:flex-row lg:col-span-12 lg:col-start-1 lg:row-start-3">
+        <div className="flex flex-col gap-3 border-t border-band/45 pt-7 sm:flex-row lg:col-span-12 lg:col-start-1 lg:row-start-3">
           <Button asChild>
             <Link
               href={project.slug}

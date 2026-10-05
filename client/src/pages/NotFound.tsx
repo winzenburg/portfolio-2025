@@ -71,13 +71,13 @@ export default function NotFound() {
             <li key={destination.href} className="border-b border-band/25">
               <Link
                 href={destination.href}
-                className="group flex items-baseline gap-6 py-6 text-band transition-opacity duration-200 hover:opacity-70"
+                className="group flex items-baseline gap-6 py-6 text-band transition-colors duration-200 hover:text-white"
               >
                 <span className="min-w-0 flex-1 md:flex md:items-baseline md:gap-10">
-                  <span className="block font-display text-2xl tracking-[-0.02em] text-band md:w-48 md:shrink-0">
+                  <span className="block font-display text-2xl tracking-[-0.02em] text-band group-hover:text-white md:w-48 md:shrink-0">
                     {destination.label}
                   </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-band-muted md:mt-0">
+                  <span className="mt-1 block text-sm leading-relaxed text-band-muted group-hover:text-white md:mt-0">
                     {destination.note}
                   </span>
                 </span>

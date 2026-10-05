@@ -27,7 +27,11 @@ export default function FactRow({ facts, className }: FactRowProps) {
       {facts.map((fact) => (
         <div
           key={fact.label}
-          className="border-b border-ink/15 py-6 pr-6 md:border-b-0 md:border-r md:last:border-r-0"
+          className={cn(
+            "border-b border-ink/15 py-6 pr-6 md:border-b-0 md:border-r md:last:border-r-0",
+            // Space after the divider. The first column of each row stays on the page grid.
+            "pl-0 max-md:[&:nth-child(even)]:pl-6 md:pl-6 md:[&:nth-child(4n+1)]:pl-0 xl:pl-8 xl:[&:nth-child(4n+1)]:pl-0",
+          )}
         >
           <dt className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
             {fact.label}
