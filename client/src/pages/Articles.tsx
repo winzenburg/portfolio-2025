@@ -690,14 +690,14 @@ function FeaturedArticleCard({ article }: { article: Article }) {
       onClick={() =>
         trackArticleCardClick(article.slug, article.title, article.category)
       }
-      className="group grid overflow-hidden rounded-sm bg-studio-card text-ink lg:grid-cols-2"
+      className="studio-lift group grid overflow-hidden rounded-sm bg-studio-card text-ink lg:grid-cols-2"
     >
       <div className="aspect-[3/2] overflow-hidden">
         <img
           loading="lazy"
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
-          className="h-full w-full object-cover transition-opacity duration-300 motion-safe:group-hover:opacity-90"
+          className="studio-zoom h-full w-full object-cover"
         />
       </div>
       <div className="flex flex-col justify-center p-8 md:p-10">
@@ -733,14 +733,14 @@ function ArticleCard({ article }: { article: Article }) {
       onClick={() =>
         trackArticleCardClick(article.slug, article.title, article.category)
       }
-      className="group flex h-full flex-col overflow-hidden rounded-sm bg-studio-card text-ink"
+      className="studio-lift group flex h-full flex-col overflow-hidden rounded-sm bg-studio-card text-ink"
     >
       <div className="aspect-[3/2] overflow-hidden">
         <img
           loading="lazy"
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
-          className="h-full w-full object-cover transition-opacity duration-300 motion-safe:group-hover:opacity-90"
+          className="studio-zoom h-full w-full object-cover"
         />
       </div>
       <div className="flex flex-1 flex-col p-6">
@@ -795,6 +795,7 @@ export default function Articles() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="articles-hero-title"
         eyebrow="Articles"
         eyebrowNote={`${articles.length} pieces`}
@@ -868,9 +869,14 @@ export default function Articles() {
             ) : null}
             {rest.length > 0 ? (
               <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-                {rest.map((article) => (
+                {rest.map((article, index) => (
                   <li key={article.id} className="flex">
-                    <ArticleCard article={article} />
+                    <Reveal
+                      delay={Math.min(index, 8) * 60}
+                      className="flex h-full w-full"
+                    >
+                      <ArticleCard article={article} />
+                    </Reveal>
                   </li>
                 ))}
               </ul>

@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 export interface PageHeroMedia {
@@ -40,7 +40,51 @@ function useHeroVideoEnabled(enabled: boolean): boolean {
   return shouldPlay;
 }
 
-type PageHeroVariant = "plain" | "framed" | "band";
+/**
+ * A few pixels of pointer parallax on the hero image. Skipped for coarse
+ * pointers and for anyone who asked for reduced motion. The shift is a CSS
+ * variable so the stylesheet can zero it.
+ */
+function useHeroShift(active: boolean) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!active) return;
+    const frame = ref.current;
+    if (!frame || typeof window.matchMedia !== "function") return;
+
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const fine = window.matchMedia("(pointer: fine)");
+    if (reduce.matches || !fine.matches) return;
+
+    const media = frame.querySelector("img, video");
+    if (!(media instanceof HTMLElement)) return;
+
+    const onMove = (event: PointerEvent) => {
+      const rect = frame.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) return;
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      media.style.setProperty("--hero-x", `${(-x * 14).toFixed(2)}px`);
+      media.style.setProperty("--hero-y", `${(-y * 10).toFixed(2)}px`);
+    };
+    const onLeave = () => {
+      media.style.setProperty("--hero-x", "0px");
+      media.style.setProperty("--hero-y", "0px");
+    };
+
+    frame.addEventListener("pointermove", onMove);
+    frame.addEventListener("pointerleave", onLeave);
+    return () => {
+      frame.removeEventListener("pointermove", onMove);
+      frame.removeEventListener("pointerleave", onLeave);
+    };
+  }, [active]);
+
+  return ref;
+}
+
+type PageHeroVariant = "plain" | "framed" | "band" | "bleed";
 
 interface PageHeroProps {
   /** Short label above the headline. Pass a plain string; the rule is drawn here. */
@@ -61,6 +105,8 @@ interface PageHeroProps {
   /**
    * `framed` puts full-color art beside the copy, unfiltered.
    * `band` is a straight navy section.
+   * `bleed` runs the art edge to edge. The headline sits on a solid navy
+   * panel so the type never rests on the illustration.
    * Defaults to `framed` when media is set, otherwise `plain`.
    */
   variant?: PageHeroVariant;
@@ -130,11 +176,106 @@ export default function PageHero({
   className,
 }: PageHeroProps) {
   const resolved: PageHeroVariant = variant ?? (media ? "framed" : "plain");
-  const showFrame = resolved !== "plain" && media !== undefined;
-  const onBand = resolved === "band";
-  const playVideo = useHeroVideoEnabled(showFrame && media?.kind === "video");
+  const showFrame = resolved !== "plain" && resolved !== "bleed" && media !== undefined;
+  const onBand = resolved === "band" || resolved === "bleed";
+  const playVideo = useHeroVideoEnabled(
+    media?.kind === "video" && (showFrame || resolved === "bleed"),
+  );
+  const shiftRef = useHeroShift(resolved === "bleed" && media !== undefined);
   const isCentered = align === "center" && !aside && !showFrame;
   const hasVisual = showFrame || aside !== undefined;
+
+  if (resolved === "bleed" && media) {
+    const imageSrc = media.kind === "video" ? (media.poster ?? media.src) : media.src;
+    const alt = media.alt ?? "";
+
+    return (
+      <section
+        aria-labelledby={titleId}
+        data-tone="navy"
+        className={cn(
+          "relative isolate overflow-hidden bg-navy text-band",
+          className,
+        )}
+      >
+        <div
+          ref={shiftRef}
+          className="relative h-[70vw] min-h-64 max-h-[28rem] w-full overflow-hidden lg:absolute lg:inset-0 lg:h-full lg:max-h-none lg:min-h-0"
+        >
+          {media.kind === "video" && playVideo ? (
+            <video
+              src={media.src}
+              poster={media.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={alt || undefined}
+              className={cn(
+                "studio-hero-shift absolute inset-0 h-full w-full object-cover",
+                media.position ?? "object-center",
+              )}
+            />
+          ) : (
+            <img
+              src={imageSrc}
+              alt={alt}
+              className={cn(
+                "studio-hero-shift absolute inset-0 h-full w-full object-cover",
+                media.position ?? "object-center",
+              )}
+            />
+          )}
+        </div>
+
+        <div className="relative z-10 bg-navy lg:min-h-[36rem] lg:w-[min(42rem,52%)]">
+          <div className="px-4 py-12 sm:px-8 lg:px-12 lg:py-20 xl:pl-16">
+            {eyebrow ? (
+              <div className="mb-5 flex flex-wrap items-center gap-3">
+                <span aria-hidden="true" className="h-px w-6 bg-band" />
+                <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-band">
+                  {eyebrow}
+                </span>
+                {eyebrowNote ? (
+                  <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-band-muted">
+                    {eyebrowNote}
+                  </span>
+                ) : null}
+              </div>
+            ) : null}
+
+            <h1
+              id={titleId}
+              className="text-pretty text-4xl font-medium leading-[1.05] tracking-[-0.03em] text-band sm:text-5xl lg:text-[3.5rem]"
+            >
+              {title}
+            </h1>
+
+            {lede ? (
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-band-muted md:text-xl">
+                {lede}
+              </p>
+            ) : null}
+
+            {actions ? (
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                {actions}
+              </div>
+            ) : null}
+
+            {footnote ? (
+              <div className="mt-6 max-w-xl space-y-1 text-[15px] leading-relaxed text-band-muted">
+                {footnote}
+              </div>
+            ) : null}
+
+            {meta ? <div className="mt-10 lg:mt-12">{meta}</div> : null}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section

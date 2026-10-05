@@ -74,7 +74,7 @@ const CaseStudyWinzinvest: React.FC = () => {
       </div>
 
       {/* Hero */}
-      <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden">
+      <section className="studio-case-hero relative min-h-[65vh] flex items-center justify-center overflow-hidden">
         <img
           src={IMG('01_homepage_hero.webp')}
           alt="Winzinvest homepage"

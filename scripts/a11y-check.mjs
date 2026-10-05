@@ -9,9 +9,9 @@
  * Exits non-zero on any violation, so it can gate CI once the deferred
  * surfaces are converted.
  *
- * Page heroes no longer paint copy on a filtered illustration. Framed art sits
- * beside the text, and navy bands use cream or sun type on #112234. Re-check
- * those pairings if the band or paper tokens change.
+ * Bleed heroes put the illustration edge to edge and the headline on a solid
+ * navy panel (cream on #112234). Re-check those pairings if the band or paper
+ * tokens change.
  */
 import { chromium } from "playwright";
 import { createRequire } from "node:module";

@@ -50,7 +50,7 @@ const CaseStudyKinlet: React.FC = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="studio-case-hero relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img 
           src={`${import.meta.env.BASE_URL}images/kinlet-landing.webp`} 
           alt="Kinlet Landing Page"

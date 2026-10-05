@@ -286,7 +286,7 @@ function ProjectCard({ project }: { project: Project }) {
             loading="lazy"
             src={project.image}
             alt={project.imageAlt}
-            className="h-full w-full object-cover object-top transition-opacity duration-300 motion-safe:group-hover:opacity-90"
+            className="studio-zoom h-full w-full object-cover object-top"
           />
         </div>
 
@@ -395,14 +395,14 @@ function EarlierProjectCard({ project }: { project: EarlierProject }) {
     <Link
       href={project.slug}
       onClick={() => trackCaseStudyClick(project.analyticsKey, project.title)}
-      className="group overflow-hidden rounded-sm border border-ink/15 bg-studio-card text-ink md:row-span-4 md:grid md:grid-rows-subgrid"
+      className="studio-lift group overflow-hidden rounded-sm border border-ink/15 bg-studio-card text-ink md:row-span-4 md:grid md:grid-rows-subgrid"
     >
       <div className="aspect-video overflow-hidden border-b-[3px] border-ink bg-cream">
         <img
           loading="lazy"
           src={project.image}
           alt={project.imageAlt}
-          className="h-full w-full object-cover object-top transition-opacity duration-300 motion-safe:group-hover:opacity-90"
+          className="studio-zoom h-full w-full object-cover object-top"
         />
       </div>
 
@@ -458,6 +458,7 @@ export default function Work() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="work-hero-title"
         eyebrow="Case studies"
         eyebrowNote={`${caseStudyCount} projects`}
@@ -497,8 +498,8 @@ export default function Work() {
           lede="Each one is a team I led, a process I redesigned, or an operating model I helped change. Not a list of deliverables."
         />
         <div className="space-y-10 md:space-y-12">
-          {projects.map((project) => (
-            <Reveal key={project.slug}>
+          {projects.map((project, index) => (
+            <Reveal key={project.slug} delay={index * 70}>
               <ProjectCard project={project} />
             </Reveal>
           ))}

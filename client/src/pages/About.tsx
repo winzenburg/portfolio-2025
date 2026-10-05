@@ -197,6 +197,7 @@ export default function About() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="about-hero-title"
         eyebrow="About"
         eyebrowNote={`Canonical profile · Updated ${brandFacts.updated}`}

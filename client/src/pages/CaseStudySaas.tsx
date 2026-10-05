@@ -55,7 +55,7 @@ const CaseStudySaas: React.FC = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="studio-case-hero relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
           src={`${import.meta.env.BASE_URL}project-saas-design-system.webp`} 

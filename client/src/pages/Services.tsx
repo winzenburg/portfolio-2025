@@ -386,6 +386,7 @@ export default function Services() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="services-hero-title"
         eyebrow="Consulting"
         eyebrowNote="Enterprise B2B product leaders"

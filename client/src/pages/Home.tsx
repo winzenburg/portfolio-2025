@@ -176,8 +176,14 @@ export default function Home() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="home-hero-title"
         eyebrow="Consulting for enterprise B2B product leaders"
+        media={{
+          src: "/images/home-hero-poster.webp",
+          position: "object-[68%_center]",
+          alt: "Figures stand and work across a stepped structure of blue, red, black, and cream blocks beneath a red sun.",
+        }}
         title={
           <>
             Find out if the product bet <em className="studio-mark">holds</em>{" "}
@@ -234,12 +240,11 @@ export default function Home() {
           title="Sprint to enter. Retainer to stay."
           lede="Two shapes, one consultancy. Start with the smallest engagement that answers the decision in front of you."
         />
-        <Reveal>
-          <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2">
             {engagementPaths.map((path, index) => (
+              <Reveal key={path.name} delay={index * 80} className="h-full">
               <div
-                key={path.name}
-                className="rounded-sm bg-studio-card p-8 text-ink md:p-10"
+                className="studio-lift h-full rounded-sm bg-studio-card p-8 text-ink md:p-10"
               >
                 <p className="font-display text-sm tracking-[0.18em] text-verm-text">
                   0{index + 1}
@@ -255,9 +260,9 @@ export default function Home() {
                   {path.meta}
                 </p>
               </div>
+              </Reveal>
             ))}
           </div>
-        </Reveal>
         <div className="mt-8">
           <Link
             href="/consulting"
@@ -300,7 +305,7 @@ export default function Home() {
               <div
                 key={capability.name}
                 className={cn(
-                  "rounded-sm border border-ink/15 p-8 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-10",
+                  "studio-lift rounded-sm border border-ink/15 p-8 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-10",
                   tileBackground(index),
                 )}
               >
