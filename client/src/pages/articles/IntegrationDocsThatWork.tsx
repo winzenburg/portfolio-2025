@@ -525,10 +525,10 @@ Success! You're ready to integrate.`}
           </div>
 
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Need Documentation That Developers Actually Use?</h3>
-            <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Integrations that stall on the docs</h3>
+            <p className="text-muted-foreground mb-6">If partners take hours to integrate with your product, the docs are part of the product experience. I can help you find where they get stuck. Thirty minutes, no deck.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                See if a Discovery Call fits
+                Talk through your product bet
             </Link>
           </div>
 

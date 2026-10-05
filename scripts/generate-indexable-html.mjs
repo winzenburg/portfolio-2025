@@ -302,9 +302,9 @@ function brandHubJsonLdFromFacts() {
       "@type": "WebPage",
       "@id": `${SITE_ORIGIN}/about#webpage`,
       url: `${SITE_ORIGIN}/about`,
-      name: "About Ryan Winzenburg — Brand Hub",
+      name: "About Ryan Winzenburg",
       description:
-        "Canonical identity facts for Ryan Winzenburg, founder of Winzinvest and Casimir Systems.",
+        "Ryan Winzenburg has spent 25 years on enterprise B2B product experience, including Comcast, CVS Health / Aetna, and BuildOut. He helps product leaders test a bet before the build.",
       dateModified: facts.updated,
       about: { "@id": personId },
       mainEntity: { "@id": personId },

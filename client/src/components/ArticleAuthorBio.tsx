@@ -5,7 +5,7 @@ import { brandFacts } from "@/lib/brandFacts";
 const AUTHOR_NAME = brandFacts.person.legalName;
 const AUTHOR_TITLE = brandFacts.person.jobTitle;
 const AUTHOR_BLURB =
-  "Ryan Winzenburg runs a product experience consultancy for enterprise B2B teams. He has 25 years of product work behind him and writes about AI-enabled delivery and operating models.";
+  "Ryan Winzenburg runs a product experience consultancy for enterprise B2B teams. He helps product leaders test a bet with real users before the build is funded, and writes about AI-enabled delivery and operating models from 25 years of product work.";
 
 /**
  * Visible E-E-A-T author block for every article.

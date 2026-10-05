@@ -162,7 +162,7 @@ const projects: Project[] = [
     title: "Kinetic UI Design System",
     image: "/saas-ds-welcome.webp",
     imageAlt: "Kinetic UI Design System",
-    role: "Led the design system initiative from strategy through execution. Built AI-augmented workflows that enabled a 2-person team to deliver what traditionally requires 6-8 people. Trained the internal team on new processes.",
+    role: "Led the design system from strategy through execution. Built AI-augmented workflows so a 2-person team could deliver 48 components, tokens, and Storybook docs. Trained the internal team on the new process.",
     metricsLabel: "LEADERSHIP IMPACT",
     metrics: [
       { value: "2 people", label: "Team that built the system" },
@@ -480,7 +480,7 @@ export default function Work() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/contact?intent=consulting">Get in touch</Link>
+              <Link href="/contact?intent=consulting">Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/methodology">How I work</Link>
@@ -496,7 +496,7 @@ export default function Work() {
           id="featured-heading"
           eyebrow="Featured projects"
           title="Product experience, at organization scale"
-          lede="Each one is a team I led, a process I redesigned, or an operating model I helped change. Not a list of deliverables."
+          lede="Client work and products I founded, with the decisions I made in each."
         />
         <div className="space-y-10 md:space-y-12">
           {projects.map((project, index) => (
@@ -513,7 +513,7 @@ export default function Work() {
           id="earlier-heading"
           eyebrow="Before that"
           title="Earlier Career Leadership"
-          lede="Foundation experience in design leadership at scale"
+          lede="Design leadership at a Fortune 10 healthcare company and a growth-stage SaaS company"
         />
         {/* Subgrid keeps the summary, point list and footer rules on the same
             baselines across both cards. */}
@@ -530,13 +530,10 @@ export default function Work() {
       <Section tone="muted" compact labelledBy="work-cta-heading">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle id="work-cta-heading">
-            Looking for product experience leadership?
+            A product bet you need to test
           </SectionTitle>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            I&apos;m talking with enterprise B2B product organizations about
-            product experience leadership. If your team is carrying a hard
-            experience problem and an operating model that isn&apos;t helping,
-            tell me about it.
+            If your team is about to fund a direction and part of it is still a guess, tell me about it. I'll say whether I can help.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>

@@ -12,14 +12,14 @@ export default function AIAugmentedWorkflow() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI | Ryan Winzenburg</title>
-        <meta name="description" content="I deliver comparable enterprise UX in 2 to 3 weeks by putting AI on the mechanical work and keeping the design decisions." />
+        <meta name="description" content="How I put AI on the mechanical parts of UX work, research synthesis, specs, and prototypes, and keep the design decisions with people. The framework, phase by phase." />
         <meta property="og:title" content="The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI" />
-        <meta property="og:description" content="I deliver comparable enterprise UX in 2 to 3 weeks by putting AI on the mechanical work and keeping the design decisions." />
+        <meta property="og:description" content="How I put AI on the mechanical parts of UX work, research synthesis, specs, and prototypes, and keep the design decisions with people. The framework, phase by phase." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-augmented-workflow" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-augmented-workflow" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI","description":"I deliver comparable enterprise UX in 2 to 3 weeks by putting AI on the mechanical work and keeping the design decisions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-03-17","url":"https://winzenburg.com/articles/ai-augmented-workflow","image":"https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI","description":"How I put AI on the mechanical parts of UX work, research synthesis, specs, and prototypes, and keep the design decisions with people. The framework, phase by phase.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-03-17","url":"https://winzenburg.com/articles/ai-augmented-workflow","image":"https://winzenburg.com/images/articles/ai-augmented-workflow-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -56,7 +56,7 @@ export default function AIAugmentedWorkflow() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Last quarter, I delivered a complete enterprise dashboard, from requirements through production, in three weeks flat. My stakeholder's reaction was immediate: "How did you do this so fast?" The honest answer? I didn't work longer hours. I didn't cut corners. I rebuilt my entire workflow around AI, and it fundamentally changed what's possible.
+              Last quarter, I delivered a complete enterprise dashboard, from requirements through production, in three weeks flat. My stakeholder's reaction was immediate: "How did you do this so fast?" I didn't work longer hours or cut corners. I rebuilt my workflow so AI handles the mechanical steps and I keep the design decisions.
             </p>
           </div>
 
@@ -606,10 +606,10 @@ export default function AIAugmentedWorkflow() {
 
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Accelerate Your Product Development?</h3>
-            <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Putting AI into a design process</h3>
+            <p className="text-muted-foreground mb-6">If your team is about to fund an AI feature and nobody has agreed on the job it does for the user, that is where I start. Thirty minutes, no deck.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                See if a Discovery Call fits
+                Talk through your product bet
             </Link>
           </div>
 

@@ -70,9 +70,9 @@ const PHASES: MethodologyPhase[] = [
       "Identify high-impact opportunities",
     ],
     value: [
-      { audience: "VCs", benefit: "Validate assumptions fast, reduce risk" },
-      { audience: "PMs", benefit: "Data-driven roadmap in days" },
-      { audience: "Design", benefit: "Research at scale without hiring" },
+      { audience: "Product leaders", benefit: "Evidence before the budget is committed" },
+      { audience: "PMs", benefit: "A roadmap tied to what users do" },
+      { audience: "Design", benefit: "More research coverage without a new hire" },
     ],
     deliverable:
       "Strategy document, personas, prioritized opportunities, executive summary",
@@ -83,7 +83,7 @@ const PHASES: MethodologyPhase[] = [
     shortName: "Design",
     timeline: "3–5 days",
     summary:
-      "High-fidelity, interactive prototypes without the traditional slow wireframing process.",
+      "Interactive prototypes at the fidelity the decision needs.",
     activities: [
       "Model information architecture and navigation",
       "Generate production-quality components",
@@ -91,9 +91,9 @@ const PHASES: MethodologyPhase[] = [
       "Iterate based on stakeholder feedback",
     ],
     value: [
-      { audience: "VCs", benefit: "Validate product-market fit fast" },
-      { audience: "PMs", benefit: "Test with users in week 1" },
-      { audience: "Design", benefit: "Skip low-fi, go straight to hi-fi" },
+      { audience: "Product leaders", benefit: "See the direction work before engineering starts" },
+      { audience: "PMs", benefit: "Users react to something real, early" },
+      { audience: "Design", benefit: "Less time redrawing wireframes" },
     ],
     deliverable: "Fully interactive prototype built with production-ready code",
   },
@@ -111,7 +111,7 @@ const PHASES: MethodologyPhase[] = [
       "Check accessibility while the components are built",
     ],
     value: [
-      { audience: "VCs", benefit: "No prototype-to-production gap" },
+      { audience: "Product leaders", benefit: "Less rework between prototype and build" },
       { audience: "PMs", benefit: "A build the team can take into production" },
       { audience: "Engineering", benefit: "Code the team can read and change" },
     ],
@@ -123,7 +123,7 @@ const PHASES: MethodologyPhase[] = [
     shortName: "Testing",
     timeline: "2–3 days",
     summary:
-      "Comprehensive automated testing ensures enterprise quality without manual QA overhead.",
+      "Automated tests catch regressions and accessibility problems before release.",
     activities: [
       "Write E2E tests with Playwright",
       "Automated accessibility audits (axe-core)",
@@ -131,8 +131,8 @@ const PHASES: MethodologyPhase[] = [
       "Performance optimization",
     ],
     value: [
-      { audience: "VCs", benefit: "Reduce post-launch bugs" },
-      { audience: "PMs", benefit: "Ship with confidence" },
+      { audience: "Product leaders", benefit: "Fewer surprises after launch" },
+      { audience: "PMs", benefit: "A release you can sign off on" },
       { audience: "Engineering", benefit: "Automated QA pipeline" },
     ],
     deliverable:
@@ -152,7 +152,7 @@ const PHASES: MethodologyPhase[] = [
       "Train your team on AI workflows",
     ],
     value: [
-      { audience: "VCs", benefit: "Reduce future maintenance costs" },
+      { audience: "Product leaders", benefit: "Lower cost to maintain after handoff" },
       { audience: "PMs", benefit: "Team is self-sufficient" },
       { audience: "Design", benefit: "Your team learns AI workflows" },
     ],
@@ -288,8 +288,7 @@ export default function Methodology() {
   return (
     <SiteLayout currentPage="methodology">
       <PageSeo
-        title="AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg"
-        description="A five-phase AI-native design methodology for enterprise product work: where the strategic calls stay human, and where AI handles execution."
+        title="Methodology | From Evidence to a Buildable Scope | Ryan Winzenburg" description="How I run enterprise product work in five phases, from research to handoff. People make the strategic calls. AI speeds up the drafting, and I review all of it."
         path="/methodology"
         ogImage="/images/methodology-hero.webp"
       />
@@ -299,12 +298,10 @@ export default function Methodology() {
         eyebrow="Methodology"
         eyebrowNote="Research through handoff"
         media={{ src: "/images/methodology-hero.webp", position: "object-center" }}
-        title={<>A five-phase workflow for AI-native product delivery</>}
+        title={<>How a product bet becomes a scope your team can build</>}
         lede={
           <>
-            I make the strategic calls about what to build and why. AI handles
-            execution: code, documentation, tests. The structure underneath is
-            25 years of Fortune 50 product work.
+            I decide what to build and why, with your team in the room. Once that is settled, AI drafts code, documentation, and tests, and I review every piece. A sprint stops at a written scope. The later phases are separate work.
           </>
         }
         actions={

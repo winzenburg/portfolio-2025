@@ -12,16 +12,16 @@ export default function KillGreenlightRitual() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality | Ryan Winzenburg</title>
-        <meta name="description" content="Most founders can&#39;t kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria." />
+        <meta name="description" content="Sunk cost keeps weak ideas alive. The weekly review and kill criteria I use to stop work on an idea before it eats another quarter." />
         <meta property="og:title" content="The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality" />
-        <meta property="og:description" content="Most founders can&#39;t kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria." />
+        <meta property="og:description" content="Sunk cost keeps weak ideas alive. The weekly review and kill criteria I use to stop work on an idea before it eats another quarter." />
         <meta property="og:url" content="https://winzenburg.com/articles/kill-greenlight-ritual" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/kill-greenlight-hero.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/kill-greenlight-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/kill-greenlight-ritual" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality","description":"Most founders can't kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/kill-greenlight-ritual","image":"https://winzenburg.com/images/articles/kill-greenlight-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality","description":"Sunk cost keeps weak ideas alive. The weekly review and kill criteria I use to stop work on an idea before it eats another quarter.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/kill-greenlight-ritual","image":"https://winzenburg.com/images/articles/kill-greenlight-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}

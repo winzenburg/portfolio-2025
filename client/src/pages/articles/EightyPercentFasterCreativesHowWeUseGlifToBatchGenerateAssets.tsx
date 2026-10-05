@@ -676,7 +676,7 @@ export default function GlifCreativeBatchingArticle() {
 
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Ready to 10x Your Creative Output?</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Batch-generating validation assets</h3>
             <p className="text-muted-foreground mb-6">The Glif workflow templates and setup guide are available if you want to batch-generate validation assets.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2">
                 Open the Glif workflow templates

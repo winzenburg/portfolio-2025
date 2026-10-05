@@ -29,18 +29,18 @@ export default function Pulse20260921() {
       <ResponsiveNav currentPage="subscribe" />
 
       <Helmet>
-        <title>Weekly AI Founder Pulse — Week of September 21, 2026 | Ryan Winzenburg</title>
+        <title>Weekly AI Founder Pulse: Week of September 21, 2026 | Ryan Winzenburg</title>
         <meta
           name="description"
-          content="The agent layer is becoming the business layer—but the durable advantage is controlled operating design. Five signals from the week of September 21, 2026."
+          content="The agent layer is becoming the business layer, but the durable advantage is controlled operating design. Five signals from the week of September 21, 2026."
         />
         <meta
           property="og:title"
-          content="Weekly AI Founder Pulse — Week of September 21, 2026"
+          content="Weekly AI Founder Pulse: Week of September 21, 2026"
         />
         <meta
           property="og:description"
-          content="The agent layer is becoming the business layer—but the durable advantage is controlled operating design."
+          content="The agent layer is becoming the business layer, but the durable advantage is controlled operating design."
         />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
@@ -50,9 +50,9 @@ export default function Pulse20260921() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Weekly AI Founder Pulse — Week of September 21, 2026",
+            headline: "Weekly AI Founder Pulse: Week of September 21, 2026",
             description:
-              "The agent layer is becoming the business layer—but the durable advantage is controlled operating design.",
+              "The agent layer is becoming the business layer, but the durable advantage is controlled operating design.",
             author: {
               "@type": "Person",
               name: "Ryan Winzenburg",
@@ -85,7 +85,7 @@ export default function Pulse20260921() {
             <div className="rounded-lg border border-border/60 bg-muted/60 px-5 py-4">
               <p className="text-sm font-medium text-muted-foreground mb-1">Central signal</p>
               <p className="text-base text-foreground leading-relaxed">
-                The agent layer is becoming the business layer—but the durable advantage is
+                The agent layer is becoming the business layer, but the durable advantage is
                 controlled operating design.
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function Pulse20260921() {
               The leading pattern this week is agents connected to work: code, marketing, content,
               and workflow orchestration. The counter-signal is equally important. Once agents touch
               real operations, continuous evaluation, scoped authority, evidence capture, and human
-              escalation become the product—not back-office compliance.
+              escalation become the product, not back-office compliance.
             </p>
 
             <h2>Five signals to use</h2>
@@ -178,7 +178,7 @@ export default function Pulse20260921() {
                 Specification, code, launch assets, and distribution are increasingly one flow
                 rather than separate specialist handoffs. Design for a brief-to-evidence loop: a
                 structured brief yields a build, a launch artifact, a test, and a retained decision
-                record—while judgment gates remain explicit for positioning, accuracy, and brand
+                record, while judgment gates remain explicit for positioning, accuracy, and brand
                 risk.
               </p>
             </div>
@@ -308,7 +308,7 @@ export default function Pulse20260921() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Latent Space — Why Static Evals Become Obsolete in Production (Sep 19)
+                    Latent Space: Why Static Evals Become Obsolete in Production (Sep 19)
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -320,7 +320,7 @@ export default function Pulse20260921() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Latent Space — The $20 Agent, $200M Liability (Sep 16)
+                    Latent Space: The $20 Agent, $200M Liability (Sep 16)
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -332,7 +332,7 @@ export default function Pulse20260921() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Riley Brown — Astra Built Me an Entire Product Launch (Sep 16)
+                    Riley Brown: Astra Built Me an Entire Product Launch (Sep 16)
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>

@@ -187,7 +187,7 @@ export default function Contact() {
     }
   };
 
-  const seoTitle = "Contact | AI Delivery Loop Sprint | Ryan Winzenburg";
+  const seoTitle = "Contact | Talk Through Your Product Bet | Ryan Winzenburg";
   const seoDescription =
     "Write to Ryan Winzenburg about a product bet you are about to fund. Reply within a day. Fixed-fee proposal within three business days if there is a fit.";
 
@@ -235,8 +235,7 @@ export default function Contact() {
                         <>Thanks. I&apos;ll reply and we&apos;ll find a 30-minute slot.</>
                       ) : (
                         <>
-                          Thanks for reaching out. I&apos;ll get back to you
-                          within 24 hours. If it&apos;s urgent, {EMAIL_ADDRESS}{" "}
+                          Thanks for reaching out. I'll reply within a day. If it&apos;s urgent, {EMAIL_ADDRESS}{" "}
                           reaches me faster.
                         </>
                       )}

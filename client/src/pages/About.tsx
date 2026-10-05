@@ -41,9 +41,9 @@ const aboutBrandHubJsonLd = [
     "@type": "WebPage",
     "@id": "https://winzenburg.com/about#webpage",
     url: "https://winzenburg.com/about",
-    name: "About Ryan Winzenburg — Brand Hub",
+    name: "About Ryan Winzenburg",
     description:
-      "Canonical identity facts for Ryan Winzenburg, founder of Winzinvest, Casimir Systems, and Foundpath.",
+      "Ryan Winzenburg has spent 25 years on enterprise B2B product experience, including Comcast, CVS Health / Aetna, and BuildOut. He helps product leaders test a bet before the build.",
     dateModified: brandFacts.updated,
     about: { "@id": PERSON_ID },
     mainEntity: { "@id": PERSON_ID },
@@ -188,8 +188,8 @@ export default function About() {
   return (
     <SiteLayout currentPage="about">
       <PageSeo
-        title="About Ryan Winzenburg | Brand Hub — Canonical Identity Facts"
-        description="Canonical facts about Ryan Winzenburg: Product Experience Leader, Enterprise B2B, in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath."
+        title="About Ryan Winzenburg | Enterprise B2B Product Experience Consultant"
+        description="Ryan Winzenburg has spent 25 years on enterprise B2B product experience, including Comcast, CVS Health / Aetna, and BuildOut. He helps product leaders test a bet before the build."
         path="/about"
         ogImage="/images/about-hero.webp"
         ogType="profile"
@@ -200,7 +200,7 @@ export default function About() {
         variant="bleed"
         titleId="about-hero-title"
         eyebrow="About"
-        eyebrowNote={`Canonical profile · Updated ${brandFacts.updated}`}
+        eyebrowNote={`Updated ${brandFacts.updated}`}
         media={{
           src: "/images/about-hero.webp",
           focus: "50% 30%",
@@ -224,7 +224,7 @@ export default function About() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/contact?intent=consulting">Get in touch</Link>
+              <Link href="/contact?intent=consulting">Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/articles">Read the writing</Link>
@@ -524,7 +524,7 @@ export default function About() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href="/contact?intent=consulting">Get in touch</Link>
+              <Link href="/contact?intent=consulting">Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/work">See the case studies</Link>

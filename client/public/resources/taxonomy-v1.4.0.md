@@ -1,7 +1,7 @@
 # UX / Product / UI / Front-End Architecture Competency Taxonomy (v1.4.0)
 202 discrete skills in 15 domains. Refined 2026-09-15 from Ryan Winzenburg's taxonomy of 2026-09-10. See CHANGELOG.md for what changed.
 
-**Depth:** O = deep specialist (expected to set the standard) · P = independent practitioner · L = working literacy (can review and make trade-offs) · — = outside normal scope.
+**Depth:** O = deep specialist (expected to set the standard) · P = independent practitioner · L = working literacy (can review and make trade-offs) · - = outside normal scope.
 **Lead:** the one role that is accountable, breaks ties, and signs off. Several roles can be O; only one leads.
 **Evidence scale for audits:** 0 unexposed · 1 assisted · 2 independent · 3 sets the standard · 4 evolves the discipline. Rough mapping: L ≈ 1–2, P ≈ 2–3, O ≈ 3–4.
 
@@ -41,19 +41,19 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 |---|---|---|---|---|---|---|---|
 | RE-01 | Research planning | Selects a method, participant profile, sample, timeline, and decision it will inform. | P | O | L | L | UX |
 | RE-02 | Stakeholder interview design | Extracts context, constraints, incentives, and unresolved decisions without treating opinion as evidence. | O | O | L | P | Product |
-| RE-03 | Generative interview moderation | Elicits past behavior, context, language, and unmet needs without leading participants. | P | O | L | — | UX |
+| RE-03 | Generative interview moderation | Elicits past behavior, context, language, and unmet needs without leading participants. | P | O | L | - | UX |
 | RE-04 | Contextual inquiry | Observes work in situ and documents tools, workarounds, interruptions, and environmental constraints. | P | O | L | L | UX |
 | RE-05 | Task analysis | Decomposes a user goal into actions, decisions, inputs, variations, and failure points. | P | O | P | P | UX |
 | RE-06 | Survey design | Creates unbiased questions, response structures, and sampling logic appropriate to the decision. | P | P | L | L | UX |
 | RE-07 | Quantitative behavior analysis | Uses event, funnel, cohort, and segmentation data without confusing correlation and cause. | P | P | L | P | Product |
-| RE-08 | Diary-study design | Captures longitudinal behavior, reflections, and changes in context. | L | P | — | — | UX |
+| RE-08 | Diary-study design | Captures longitudinal behavior, reflections, and changes in context. | L | P | - | - | UX |
 | RE-09 | Usability-test moderation | Runs task-based sessions, probes behavior, and avoids coaching participants. | P | O | P | L | UX |
 | RE-10 | Research synthesis | Clusters observations with affinity mapping and coding into findings, insight statements (observation, tension, implication), triangulation, and confidence levels. | P | O | L | L | UX |
 | RE-11 | Insight communication | Communicates evidence through concise narratives, artifacts, clips, and direct implications. | O | O | P | L | UX |
 | RE-12 | Research-repository stewardship | Makes evidence findable, traceable, current, and reusable across teams. | P | P | L | L | UX |
 | RE-13 | Secondary and competitive research | Runs desk research and maps competitors by tier (direct, indirect, substitute, potential) into a what-we-know / don't-know summary. | P | O | L | L | UX |
 | RE-14 | Heuristic evaluation | Rates an interface against established heuristics (e.g. Nielsen's 10) on a 0–4 severity scale, alone or benchmarked against competitors; includes expert-rating methods such as PURE. | P | O | O | L | UX |
-| RE-15 | Experience modeling | Builds needs-based personas (goals, tensions, behaviors — not demographics), experience maps, empathy maps, mental-model diagrams, and ecosystem maps from evidence. | P | O | L | L | UX |
+| RE-15 | Experience modeling | Builds needs-based personas (goals, tensions, behaviors, not demographics), experience maps, empathy maps, mental-model diagrams, and ecosystem maps from evidence. | P | O | L | L | UX |
 | RE-16 | Evaluative testing at scale | Runs unmoderated tests, tree tests, first-click tests, and desirability studies with samples sized to the question (typically 20–50). | P | O | L | L | UX |
 | RE-17 | Usability measurement | Reports task success, error types, time on task, and standardized scores (SUS, SEQ) with severity-rated findings and recommended changes. | P | O | L | L | UX |
 | RE-18 | Research ethics and bias control | Handles consent, privacy, and incentives; audits screeners, guides, and synthesis for bias; uses independent coding when stakes are high. | P | O | L | L | UX |
@@ -68,7 +68,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | ID-04 | Co-design and design studio | Runs sketch–present–critique–iterate cycles with cross-functional partners or users. | P | O | P | P | UX |
 | ID-05 | Concept convergence | Clusters ideas, votes with stated criteria, and selects 3–5 directions with a recorded rationale. | O | P | P | P | Product |
 | ID-06 | Concept brief | Documents each direction: problem addressed, how it works, key assumptions, risks, and how it will be tested. | O | P | P | L | Product |
-| ID-07 | Concept testing | Tests competing concepts with 5–8 target users each and reports preference, comprehension, and concerns against a preset threshold. | P | O | L | — | UX |
+| ID-07 | Concept testing | Tests competing concepts with 5–8 target users each and reports preference, comprehension, and concerns against a preset threshold. | P | O | L | - | UX |
 | ID-08 | Design sprint execution | Runs a time-boxed map–sketch–decide–prototype–test sprint and ends with test results and a decision. | O | O | P | P | Product |
 
 ## 3. Information architecture and interaction design (IA) → `competency-ia-interaction`
@@ -191,14 +191,14 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | FE-04 | Responsive implementation | Implements fluid layouts, appropriate breakpoints, media features, and viewport behavior. | L | P | P | O | FE Arch |
 | FE-05 | JavaScript and TypeScript fluency | Uses types, data transformation, async patterns, modules, and error handling safely. | L | L | L | O | FE Arch |
 | FE-06 | DOM and event-model reasoning | Handles propagation, delegation, focus, input, pointer, keyboard, and lifecycle interactions correctly. | L | P | P | O | FE Arch |
-| FE-07 | Browser API selection | Chooses browser capabilities such as storage, observers, workers, history, clipboard, and media APIs responsibly. | — | L | L | O | FE Arch |
+| FE-07 | Browser API selection | Chooses browser capabilities such as storage, observers, workers, history, clipboard, and media APIs responsibly. | - | L | L | O | FE Arch |
 | FE-08 | Semantic component implementation | Prefers native elements and exposes accessible semantics when custom behavior is necessary. | L | P | P | O | FE Arch |
 | FE-09 | Client-side routing | Implements route structure, deep links, parameters, guards, navigation state, and recovery. | L | L | L | O | FE Arch |
-| FE-10 | Framework lifecycle knowledge | Understands rendering, effects, hydration, reactivity, suspense, and cleanup in the chosen stack. | — | L | L | O | FE Arch |
-| FE-11 | Package and dependency literacy | Evaluates package purpose, quality, license, maintenance, bundle cost, and security posture. | — | L | L | O | FE Arch |
-| FE-12 | Build-tool fluency | Configures development, test, build, lint, formatting, environment, and deployment workflows. | — | L | L | O | FE Arch |
-| FE-13 | Motion implementation | Implements animation with compositor-friendly properties, interruptible timing, scroll-driven techniques, and reduced-motion support inside performance budgets. | — | L | P | O | FE Arch |
-| FE-14 | Immersive graphics | Uses Canvas, SVG, WebGL/3D, and physics libraries only when they serve the experience, with fallbacks, performance limits, and accessible alternatives. | — | L | P | O | FE Arch |
+| FE-10 | Framework lifecycle knowledge | Understands rendering, effects, hydration, reactivity, suspense, and cleanup in the chosen stack. | - | L | L | O | FE Arch |
+| FE-11 | Package and dependency literacy | Evaluates package purpose, quality, license, maintenance, bundle cost, and security posture. | - | L | L | O | FE Arch |
+| FE-12 | Build-tool fluency | Configures development, test, build, lint, formatting, environment, and deployment workflows. | - | L | L | O | FE Arch |
+| FE-13 | Motion implementation | Implements animation with compositor-friendly properties, interruptible timing, scroll-driven techniques, and reduced-motion support inside performance budgets. | - | L | P | O | FE Arch |
+| FE-14 | Immersive graphics | Uses Canvas, SVG, WebGL/3D, and physics libraries only when they serve the experience, with fallbacks, performance limits, and accessible alternatives. | - | L | P | O | FE Arch |
 
 ## 10. Front-end architecture and application systems (AR) → `competency-frontend-architecture`
 
@@ -213,7 +213,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | AR-07 | Authentication and authorization UX implementation | Implements identity, session, role, permission, expiry, reauthentication, and access-denied states safely. | P | P | P | O | FE Arch |
 | AR-08 | Feature-flag architecture | Supports targeted rollout, kill switches, experiment assignment, configuration, and flag cleanup. | P | L | L | O | FE Arch |
 | AR-09 | Error-boundary and recovery architecture | Contains failures, preserves useful context, supports retry, and avoids blank-screen failure modes. | L | P | P | O | FE Arch |
-| AR-10 | Codebase modularity | Keeps code independently understandable, testable, deployable, and changeable as product complexity grows. | — | L | L | O | FE Arch |
+| AR-10 | Codebase modularity | Keeps code independently understandable, testable, deployable, and changeable as product complexity grows. | - | L | L | O | FE Arch |
 | AR-11 | Architectural decision records | Captures context, alternatives, decision, consequences, and revisit triggers for consequential choices. | L | L | L | O | FE Arch |
 | AR-12 | Technical roadmapping | Sequences platform investments, migrations, risk reduction, and capability building against product strategy. | P | L | L | O | FE Arch |
 
@@ -221,7 +221,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 
 | ID | Skill | Observable evidence | Product | UX | UI | FE Arch | Lead |
 |---|---|---|---|---|---|---|---|
-| QL-01 | Unit-test design | Tests important logic and behavior with isolated, maintainable cases. | — | L | L | O | FE Arch |
+| QL-01 | Unit-test design | Tests important logic and behavior with isolated, maintainable cases. | - | L | L | O | FE Arch |
 | QL-02 | Integration-test design | Verifies components, state, data, and services working together at meaningful seams. | L | L | L | O | FE Arch |
 | QL-03 | End-to-end test design | Automates critical user journeys with stable fixtures, assertions, and failure diagnostics. | P | P | L | O | FE Arch |
 | QL-04 | Accessibility-test automation | Integrates automated scanning while recognizing where manual evaluation is required. | L | P | P | O | FE Arch |
@@ -243,7 +243,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | ME-03 | Event-schema design | Uses consistent event names, properties, versioning, data types, and semantics across product surfaces. | P | P | L | O | FE Arch |
 | ME-04 | Instrumentation implementation | Implements analytics events correctly without degrading performance or privacy. | L | L | L | O | FE Arch |
 | ME-05 | Funnel analysis | Locates loss, delay, and variation through a multi-step journey. | O | P | L | P | Product |
-| ME-06 | Cohort analysis | Compares behavior by acquisition, tenure, role, plan, device, or exposure period. | P | P | — | P | Product |
+| ME-06 | Cohort analysis | Compares behavior by acquisition, tenure, role, plan, device, or exposure period. | P | P | - | P | Product |
 | ME-07 | Segmentation | Finds materially different needs or outcomes across meaningful populations without overfitting. | P | O | L | P | UX |
 | ME-08 | Experiment analysis | Interprets experiment results, validity limits, novelty effects, and decision implications. | O | P | L | P | Product |
 | ME-09 | Qual-quant triangulation | Uses behavioral data and human evidence together to explain what happened and why. | O | O | L | P | UX |
@@ -258,7 +258,7 @@ A **skill** is an observable capability that produces a repeatable outcome. Tool
 | ID | Skill | Observable evidence | Product | UX | UI | FE Arch | Lead |
 |---|---|---|---|---|---|---|---|
 | GM-01 | Landing-page architecture | Structures a page around one audience, one promise, proof, objections, and one primary action. | O | P | O | P | Product |
-| GM-02 | Conversion copywriting | Writes headlines, value propositions, CTAs, and objection handling in customer language; distinct from task-focused UX writing (CX-01). | O | P | L | — | Product |
+| GM-02 | Conversion copywriting | Writes headlines, value propositions, CTAs, and objection handling in customer language; distinct from task-focused UX writing (CX-01). | O | P | L | - | Product |
 | GM-03 | Pricing-page design | Presents plans, comparison, billing options, FAQs, and the enterprise path so buyers can choose without a sales call. | O | P | O | L | Product |
 | GM-04 | Upgrade and paywall design | Places upgrade moments at points of realized value, previews paid value, and never blocks core work or hides the free path. | O | O | P | P | Product |
 | GM-05 | Proof design | Uses real product UI, workflow demos, verifiable metrics, logos, and attributable testimonials as evidence. | O | P | O | P | Product |
@@ -343,10 +343,10 @@ When skills or sources disagree, apply these in order:
 7. **Agents fix, humans approve.** Automated review-and-fix loops (PR-13) end in human review (LG-13).
 
 ## References
-1. W3C, Web Content Accessibility Guidelines (WCAG) 2.2 — https://www.w3.org/TR/WCAG22/
-2. MDN, HTML: A good basis for accessibility — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML
-3. W3C Design Tokens Community Group, Design Tokens Format Module 2025.10 — https://www.designtokens.org/tr/drafts/format/
-4. ISO 9241-210:2019, Human-centred design for interactive systems — https://www.iso.org/standard/77520.html
-5. Nielsen Norman Group, 10 Usability Heuristics — https://www.nngroup.com/articles/ten-usability-heuristics/
-6. web.dev, Core Web Vitals — https://web.dev/articles/vitals
-7. W3C WAI, ARIA Authoring Practices Guide — https://www.w3.org/WAI/ARIA/apg/
+1. W3C, Web Content Accessibility Guidelines (WCAG) 2.2: https://www.w3.org/TR/WCAG22/
+2. MDN, HTML: A good basis for accessibility: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML
+3. W3C Design Tokens Community Group, Design Tokens Format Module 2025.10: https://www.designtokens.org/tr/drafts/format/
+4. ISO 9241-210:2019, Human-centred design for interactive systems: https://www.iso.org/standard/77520.html
+5. Nielsen Norman Group, 10 Usability Heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/
+6. web.dev, Core Web Vitals: https://web.dev/articles/vitals
+7. W3C WAI, ARIA Authoring Practices Guide: https://www.w3.org/WAI/ARIA/apg/

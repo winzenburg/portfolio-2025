@@ -11,15 +11,15 @@ export default function DesignSystem4Weeks() {
     <div className="min-h-screen bg-background">
       <ResponsiveNav currentPage="articles" />
       <Helmet>
-        <title>How I Built an Enterprise Design System in 4 Weeks (Not 12 Months) | Ryan Winzenburg</title>
-        <meta name="description" content="Most teams spend 12 to 18 months on an enterprise design system. I built one in 4 weeks, with 48 production-ready components." />
-        <meta property="og:title" content="How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)" />
-        <meta property="og:description" content="Most teams spend 12 to 18 months on an enterprise design system. I built one in 4 weeks, with 48 production-ready components." />
+        <title>How I Built an Enterprise Design System in 4 Weeks | Ryan Winzenburg</title>
+        <meta name="description" content="I built an enterprise design system in 4 weeks: 48 production-ready components, accessibility held to WCAG 2.2 AA. This is where AI did the work and where I kept the decisions." />
+        <meta property="og:title" content="How I Built an Enterprise Design System in 4 Weeks" />
+        <meta property="og:description" content="I built an enterprise design system in 4 weeks: 48 production-ready components, accessibility held to WCAG 2.2 AA. This is where AI did the work and where I kept the decisions." />
         <meta property="og:url" content="https://winzenburg.com/articles/design-system-4-weeks" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-system-4-weeks" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)","description":"Most teams spend 12 to 18 months on an enterprise design system. I built one in 4 weeks, with 48 production-ready components.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-24","url":"https://winzenburg.com/articles/design-system-4-weeks","image":"https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How I Built an Enterprise Design System in 4 Weeks","description":"I built an enterprise design system in 4 weeks: 48 production-ready components, accessibility held to WCAG 2.2 AA. This is where AI did the work and where I kept the decisions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-24","url":"https://winzenburg.com/articles/design-system-4-weeks","image":"https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -51,11 +51,11 @@ export default function DesignSystem4Weeks() {
           {/* Article Title */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)
+              How I Built an Enterprise Design System in 4 Weeks
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks.
+              I built an enterprise design system in 4 weeks: 48 production-ready components, accessibility held to WCAG 2.2 AA. This is where AI did the work and where I kept the decisions.
             </p>
           </div>
 
@@ -852,10 +852,10 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Need to Build or Accelerate a Design System?</h3>
-              <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">A design system about to get funded</h3>
+              <p className="text-muted-foreground mb-6">Before a design system gets a year of budget, it helps to know what it has to prove and who will adopt it. I can help you work that out. Thirty minutes, no deck.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  See if a Discovery Call fits
+                  Talk through your product bet
               </Link>
             </div>
           </div>

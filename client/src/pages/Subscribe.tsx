@@ -75,8 +75,7 @@ export default function Subscribe() {
         title="Weekly AI Founder Pulse"
         lede={
           <>
-            Once a week. One area where AI is genuinely changing how design and
-            product teams work.
+            Once a week, one place where AI is changing how design and product teams work, with the detail from my own projects.
           </>
         }
         meta={<FactRow facts={heroFacts} />}

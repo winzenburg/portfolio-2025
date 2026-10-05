@@ -106,9 +106,7 @@ const CaseStudyKinlet: React.FC = () => {
             <p className="text-muted-foreground leading-relaxed mb-4">
               But here's the real challenge: <strong>How do you validate and build a mental health platform as a solo founder without compromising on safety, privacy, or quality?</strong> Traditional MVP development would take months and tens of thousands of dollars. But caregivers can't wait, they're burning out right now.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              This project demonstrates how AI-augmented workflows enable a single designer-developer to build production-ready SaaS applications at unprecedented speed while maintaining enterprise-grade quality standards.
-            </p>
+            
           </div>
         </section>
 
@@ -819,10 +817,10 @@ const CaseStudyKinlet: React.FC = () => {
         {/* CTA */}
         <section className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-8 text-center">
           <h2 className="font-['Playfair_Display'] text-3xl font-bold mb-4">
-            Ready to Build AI-Native Products?
+            Planning an AI feature for people in a hard moment
           </h2>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            I can help your team adopt AI-augmented workflows, build SaaS MVPs at unprecedented speed, or serve as a full-stack product leader who bridges strategy and execution.
+            Kinlet taught me where AI helps caregivers and where a person has to stay involved. If your team is weighing that trade-off in a product, I can help you test it before the build.
           </p>
           <Link href="/contact?intent=consulting" className="inline-block px-8 py-3 bg-purple-600 hover:bg-purple-500 text-foreground font-semibold rounded-lg transition-colors cursor-pointer">
               Let's Talk

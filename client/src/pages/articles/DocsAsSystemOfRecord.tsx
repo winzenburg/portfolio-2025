@@ -340,10 +340,10 @@ export default function DocsAsSystemOfRecord() {
             </div>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Building Your Knowledge System?</h3>
-              <p className="text-muted-foreground mb-6">I help teams design documentation systems that compound rather than rot. The conventions are simple, but getting them adopted requires the right approach.</p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Decisions that get lost between teams</h3>
+              <p className="text-muted-foreground mb-6">If your teams keep re-making decisions because nobody can find the last one, I can help you set up a record people use. Thirty minutes, no deck.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                See if a Discovery Call fits
+                Talk through your product bet
               </Link>
             </div>
           </div>

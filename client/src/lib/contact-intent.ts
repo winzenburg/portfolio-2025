@@ -52,12 +52,12 @@ export function contactHref(input: {
 
 export function consultingPrefill(sheet: RateSheet | null): string {
   if (sheet === "startup") {
-    return "We're a growth-stage company (Series B through D). I want to talk about an AI Delivery Loop Sprint or an embedded retainer. Here's the situation:\n\n";
+    return "We're a growth-stage company (Series B through D). Here's what we're about to fund, and the part that's still a guess:\n\n";
   }
   if (sheet === "enterprise") {
-    return "We're a larger org with procurement and multiple stakeholders. I want to talk about an AI Delivery Loop Sprint or an embedded retainer. Here's the situation:\n\n";
+    return "We're a larger org with procurement and multiple stakeholders. Here's what we're about to fund, and the part that's still a guess:\n\n";
   }
-  return "I want to talk about an AI Delivery Loop Sprint (entry) or an embedded product-experience retainer. Here's the situation:\n\n";
+  return "Here's what we're about to fund, and the part that's still a guess:\n\n";
 }
 
 export type ContactPathCopy = {

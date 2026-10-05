@@ -74,7 +74,7 @@ const CaseStudyComcast: React.FC = () => {
             Comcast Business Design System
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            171,000+ lines: 62 components, 826 icons in 4 weeks for Fortune 100 production use
+            A design system Comcast Business designers could use without writing code. 62 components and 826 icons, built in 4 weeks.
           </p>
           
           {/* Key Metrics */}
@@ -114,12 +114,12 @@ const CaseStudyComcast: React.FC = () => {
           </div>
         </section>
 
-        {/* The Force Multiplier Approach */}
+        {/* How I built it in four weeks */}
         <section className="mb-16">
-          <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Force Multiplier Approach</h2>
+          <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">How I built it in four weeks</h2>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">
-              I delivered a production-ready design system in 4 weeks by using my AI-augmented workflow to build at unprecedented scale. The system includes 62 components, 826 type-safe icons, and over 171,000 lines of code, a scope that would traditionally require a large team working for over a year.
+              I built the system in 4 weeks, using AI to draft components, icons, and documentation while I set the architecture and reviewed the output. It has 62 components, 826 type-safe icons, and more than 171,000 lines of code.
             </p>
           </div>
 
@@ -359,7 +359,7 @@ const CaseStudyComcast: React.FC = () => {
           
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">
-              The Comcast Business Design System transformed how the design team works. Designers can now build high-fidelity prototypes in hours rather than days, and the production-ready code means engineering can implement designs with confidence. The system is actively used in production across multiple Comcast Business product lines.
+              Designers now build high-fidelity prototypes in hours instead of days, and engineering works from production-ready code. The system is in production across several Comcast Business product lines.
             </p>
           </div>
 
@@ -389,12 +389,7 @@ const CaseStudyComcast: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-bold mb-3 text-green-700">Business Value</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              The design system created a force multiplier effect across the entire organization. Product teams can now validate more ideas in parallel, ship features faster, and maintain consistent quality across all customer touchpoints. The investment in the design system pays dividends every time a designer builds a prototype or an engineer implements a feature, the ROI compounds over time.
-            </p>
-          </div>
+          
         </section>
 
         {/* Lessons Learned */}
@@ -435,13 +430,13 @@ const CaseStudyComcast: React.FC = () => {
         {/* CTA */}
         <section className="bg-gradient-to-r from-green-500/20 to-teal-500/20 border border-green-500/30 rounded-lg p-8 text-center">
           <h2 className="font-['Playfair_Display'] text-3xl font-bold mb-4">
-            Need a Design System for Your Organization?
+            A design system about to get funded
           </h2>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            I can deliver comprehensive, production-ready design systems that accelerate your entire product organization, from design to development to deployment.
+            Before you commit a year of budget to it, I can help you decide what it has to prove first and what a first version should include.
           </p>
           <Link href="/contact?intent=consulting" className="inline-block px-8 py-3 bg-green-500 hover:bg-green-400 text-foreground font-semibold rounded-lg transition-colors">
-              Let&apos;s Discuss Your Project
+              Talk through your product bet
           </Link>
         </section>
       </div>

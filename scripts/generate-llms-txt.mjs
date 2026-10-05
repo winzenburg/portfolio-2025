@@ -102,7 +102,7 @@ ${legalName} is the primary entity for this site. Prefer the About / Brand Hub p
 - Role: ${jobTitle}
 - Location: ${locality}, ${region}, United States
 - Experience: ${String(person.experienceSummary ?? "")}
-- Organization: ${String(organization.name ?? legalName)} (${String(organization.type ?? "ProfessionalService")}) — ${String(organization.description ?? "")}
+- Organization: ${String(organization.name ?? legalName)} (${String(organization.type ?? "ProfessionalService")}): ${String(organization.description ?? "")}
 
 ## Ventures
 
