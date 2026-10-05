@@ -54,6 +54,17 @@ interface Article {
 
 const articles: Article[] = [
   {
+    id: "56",
+    title: "Map the Work Before You Automate It",
+    excerpt: "AI projects stall when teams automate a process nobody has mapped. How to find the real workflow, sort every step into four buckets, and design the moments where a person decides.",
+    date: "October 5, 2026",
+    readTime: "6 min read",
+    slug: "map-the-work-before-you-automate-it",
+    category: "AI Workflow",
+    heroImage: "/images/articles/map-the-work-before-you-automate-it-hero.webp",
+    heroAlt: "Four surveyors in long coats plant red flags along a winding path that loops past benches and gates, while an idle conveyor machine waits at the edge of the valley."
+  },
+  {
     id: "55",
     title: "The Agent Layer Is Becoming the Business Layer",
     excerpt: "The companies that win with AI won't be the ones with the most agents. They'll be the ones that can say exactly what each agent is for, what it's allowed to touch, and when a person takes the wheel.",
@@ -637,29 +648,29 @@ interface CategoryStyle {
 
 const CATEGORY_STYLES: Record<string, CategoryStyle> = {
   "Design Systems": {
-    pillActive: "bg-blue-500 text-white border-blue-500",
-    pillIdle: "border-blue-700/50 bg-blue-900/30 text-blue-300 hover:bg-blue-800/50",
-    badge: "border-blue-700/50 bg-blue-900/30 text-blue-300",
+    pillActive: "bg-blue-700 text-white border-blue-700",
+    pillIdle: "border-blue-600 bg-blue-50 text-blue-800 hover:bg-blue-100",
+    badge: "border-blue-300 bg-blue-50 text-blue-800",
   },
   "Business Strategy": {
-    pillActive: "bg-cyan-500 text-foreground border-cyan-500",
-    pillIdle: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300 hover:bg-cyan-800/50",
-    badge: "border-cyan-700/50 bg-cyan-900/30 text-cyan-300",
+    pillActive: "bg-cyan-700 text-white border-cyan-700",
+    pillIdle: "border-cyan-600 bg-cyan-50 text-cyan-800 hover:bg-cyan-100",
+    badge: "border-cyan-300 bg-cyan-50 text-cyan-800",
   },
   "AI Workflow": {
-    pillActive: "bg-purple-500 text-white border-purple-500",
-    pillIdle: "border-purple-700/50 bg-purple-900/30 text-purple-300 hover:bg-purple-800/50",
-    badge: "border-purple-700/50 bg-purple-900/30 text-purple-300",
+    pillActive: "bg-purple-700 text-white border-purple-700",
+    pillIdle: "border-purple-600 bg-purple-50 text-purple-800 hover:bg-purple-100",
+    badge: "border-purple-300 bg-purple-50 text-purple-800",
   },
   Engineering: {
-    pillActive: "bg-emerald-500 text-foreground border-emerald-500",
-    pillIdle: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300 hover:bg-emerald-800/50",
-    badge: "border-emerald-700/50 bg-emerald-900/30 text-emerald-300",
+    pillActive: "bg-emerald-700 text-white border-emerald-700",
+    pillIdle: "border-emerald-600 bg-emerald-50 text-emerald-800 hover:bg-emerald-100",
+    badge: "border-emerald-300 bg-emerald-50 text-emerald-800",
   },
   "Product Design": {
-    pillActive: "bg-rose-500 text-white border-rose-500",
-    pillIdle: "border-rose-700/50 bg-rose-900/30 text-rose-300 hover:bg-rose-800/50",
-    badge: "border-rose-700/50 bg-rose-900/30 text-rose-300",
+    pillActive: "bg-rose-700 text-white border-rose-700",
+    pillIdle: "border-rose-600 bg-rose-50 text-rose-800 hover:bg-rose-100",
+    badge: "border-rose-300 bg-rose-50 text-rose-800",
   },
 };
 
@@ -866,7 +877,7 @@ export default function Articles() {
                 )}
               >
                 {category}{" "}
-                <span className="font-normal opacity-70">
+                <span className="font-normal">
                   {getCategoryCount(category)}
                 </span>
               </button>

@@ -62,7 +62,7 @@ export default function Article() {
       {/* Hero Section */}
       <div className="mb-12">
         <div className="mb-8">
-          <span className="inline-block rounded-full bg-purple-900/30 border border-purple-700/50 px-3 py-1 text-sm font-medium text-purple-300 mb-4">
+          <span className="inline-block rounded-full bg-purple-50 border border-purple-300 px-3 py-1 text-sm font-medium text-purple-800 mb-4">
             AI Workflow
           </span>
           <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">
@@ -173,7 +173,7 @@ export default function Article() {
                 Heat is common. Durability is rare.
               </div>
             </div>
-            <div className="rounded-full border border-purple-700/50 bg-purple-900/30 px-3 py-1 text-xs font-semibold text-purple-200">
+            <div className="rounded-full border border-purple-300 bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-800">
               System results
             </div>
           </div>
