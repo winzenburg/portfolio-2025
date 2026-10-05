@@ -16,6 +16,8 @@ export default function BrandFirstValidationArticle() {
         <meta property="og:description" content="Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision." />
         <meta property="og:url" content="https://winzenburg.com/articles/brand-first-validation" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/brand-first-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/brand-first-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/brand-first-validation" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Brand-First Validation: Why We Design the Brand System Before Writing Code","description":"Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/brand-first-validation","image":"https://winzenburg.com/images/articles/brand-first-hero.webp"})}</script>
@@ -34,7 +36,7 @@ export default function BrandFirstValidationArticle() {
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/brand-first-hero.webp"
-              alt="Brand-First Validation"
+              alt="A person plants a striped flag while builders paint matching marks onto a row of houses."
               className="w-full h-auto"
             />
           </div>

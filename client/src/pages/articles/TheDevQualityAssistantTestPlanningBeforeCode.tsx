@@ -16,6 +16,8 @@ export default function DevQualityAssistant() {
         <meta property="og:description" content="Most teams treat testing as an afterthought. We make it a build prerequisite." />
         <meta property="og:url" content="https://winzenburg.com/articles/dev-quality-assistant" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/dev-quality-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/dev-quality-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/dev-quality-assistant" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Dev Quality Assistant: Test Planning Before Code Touches the Repo","description":"Most teams treat testing as an afterthought. We make it a build prerequisite.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dev-quality-assistant","image":"https://winzenburg.com/images/articles/dev-quality-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function DevQualityAssistant() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Developer planning tests before coding"
+              src="/images/articles/dev-quality-hero.webp"
+              alt="Surveyors stake a foundation and check a blueprint before a crew waits with bricks."
               className="w-full h-auto"
             />
           </div>

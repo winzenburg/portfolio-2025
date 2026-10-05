@@ -33,7 +33,7 @@ export function extractArticlesMetadata() {
   const articles = [];
 
   const articleRegex =
-    /\{[\s\S]*?id:\s*"(\d+)"[\s\S]*?title:\s*"([^"]*)"[\s\S]*?excerpt:\s*"([^"]*)"[\s\S]*?date:\s*"([^"]*)"[\s\S]*?readTime:\s*"([^"]*)"[\s\S]*?slug:\s*"([^"]*)"[\s\S]*?category:\s*"([^"]*)"[\s\S]*?heroImage:\s*"([^"]*)"\s*\}/g;
+    /\{[\s\S]*?id:\s*"(\d+)"[\s\S]*?title:\s*"([^"]*)"[\s\S]*?excerpt:\s*"([^"]*)"[\s\S]*?date:\s*"([^"]*)"[\s\S]*?readTime:\s*"([^"]*)"[\s\S]*?slug:\s*"([^"]*)"[\s\S]*?category:\s*"([^"]*)"[\s\S]*?heroImage:\s*"([^"]*)"(?:,\s*heroAlt:\s*"(?:[^"\\]|\\.)*")?\s*\}/g;
 
   let match;
   while ((match = articleRegex.exec(articlesStr)) !== null) {

@@ -16,6 +16,8 @@ export default function MicroInteractionsArticle() {
         <meta property="og:description" content="Bad animations annoy. Great ones are invisible. Here&#39;s our playbook for refined, goal-driven micro-interactions." />
         <meta property="og:url" content="https://winzenburg.com/articles/micro-interactions" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/micro-interactions-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/micro-interactions-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/micro-interactions" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting","description":"Bad animations annoy. Great ones are invisible. Here's our playbook for refined, goal-driven micro-interactions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/micro-interactions","image":"https://winzenburg.com/images/articles/micro-interactions-hero.webp"})}</script>
@@ -34,7 +36,7 @@ export default function MicroInteractionsArticle() {
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/micro-interactions-hero.webp"
-              alt="Micro-Interactions Done Right"
+              alt="A person skips a stone across stepping stones while another catches it on the far bank."
               className="w-full h-auto"
             />
           </div>

@@ -16,6 +16,8 @@ export default function GlifCreativeBatchingArticle() {
         <meta property="og:description" content="Most founders get stuck on &#39;we need 10 ad variants&#39; and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours." />
         <meta property="og:url" content="https://winzenburg.com/articles/glif-batch-creatives" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/glif-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/glif-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/glif-batch-creatives" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets","description":"Most founders get stuck on 'we need 10 ad variants' and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/glif-batch-creatives","image":"https://winzenburg.com/images/articles/glif-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function GlifCreativeBatchingArticle() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="80% Faster Creatives with Glif Batch Generation"
+              src="/images/articles/glif-hero.webp"
+              alt="Two people run a printing press and hang rows of finished posters to dry."
               className="w-full h-auto"
             />
           </div>

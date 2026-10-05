@@ -16,6 +16,8 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         <meta property="og:description" content="Knowledge gets lost. Processes aren&#39;t repeatable. What if every decision was documented and auditable?" />
         <meta property="og:url" content="https://winzenburg.com/articles/documentation-system" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/docs-system-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/docs-system-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/documentation-system" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Documentation System: Making Knowledge Repeatable and Auditable","description":"Knowledge gets lost. Processes aren't repeatable. What if every decision was documented and auditable?","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/documentation-system","image":"https://winzenburg.com/images/articles/docs-system-hero.webp"})}</script>
@@ -34,7 +36,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/docs-system-hero.webp"
-              alt="The Documentation System"
+              alt="People on ladders pull folders from a wall of cabinets and connect them with red string."
               className="w-full h-auto"
             />
           </div>

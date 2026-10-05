@@ -35,7 +35,7 @@ function extractArticleMeta(content) {
   const arrayMatch = content.match(/const articles: Article\[\] = \[([\s\S]*?)\n\];/);
   if (!arrayMatch) return [];
 
-  const objectRegex = /\{\s*id:\s*"[^"]*",\s*title:\s*"(?:[^"\\]|\\.)*",\s*excerpt:\s*"(?:[^"\\]|\\.)*",\s*date:\s*"[^"]*",\s*readTime:\s*"[^"]*",\s*slug:\s*"([^"]*)",\s*category:\s*"[^"]*",\s*heroImage:\s*"([^"]*)"\s*\}/g;
+  const objectRegex = /\{\s*id:\s*"[^"]*",\s*title:\s*"(?:[^"\\]|\\.)*",\s*excerpt:\s*"(?:[^"\\]|\\.)*",\s*date:\s*"[^"]*",\s*readTime:\s*"[^"]*",\s*slug:\s*"([^"]*)",\s*category:\s*"[^"]*",\s*heroImage:\s*"([^"]*)"(?:,\s*heroAlt:\s*"(?:[^"\\]|\\.)*")?\s*\}/g;
 
   const results = [];
   let match;

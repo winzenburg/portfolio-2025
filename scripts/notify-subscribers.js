@@ -73,7 +73,7 @@ function extractArticles() {
   }
 
   const objectRegex =
-    /\{\s*id:\s*"([^"]*)",\s*title:\s*"((?:[^"\\]|\\.)*)",\s*excerpt:\s*"((?:[^"\\]|\\.)*)",\s*date:\s*"([^"]*)",\s*readTime:\s*"([^"]*)",\s*slug:\s*"([^"]*)",\s*category:\s*"([^"]*)",\s*heroImage:\s*"([^"]*)"\s*\}/g;
+    /\{\s*id:\s*"([^"]*)",\s*title:\s*"((?:[^"\\]|\\.)*)",\s*excerpt:\s*"((?:[^"\\]|\\.)*)",\s*date:\s*"([^"]*)",\s*readTime:\s*"([^"]*)",\s*slug:\s*"([^"]*)",\s*category:\s*"([^"]*)",\s*heroImage:\s*"([^"]*)"(?:,\s*heroAlt:\s*"(?:[^"\\]|\\.)*")?\s*\}/g;
 
   const articles = [];
   let match;

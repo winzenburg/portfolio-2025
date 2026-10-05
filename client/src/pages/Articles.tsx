@@ -20,6 +20,7 @@ interface Article {
   slug: string;
   category: string;
   heroImage: string;
+  heroAlt?: string;
 }
 
 /**
@@ -340,7 +341,8 @@ const articles: Article[] = [
     readTime: "7 min read",
     slug: "saas-problem",
     category: "Business Strategy",
-    heroImage: "/images/articles/saas-problem-hero.webp"
+    heroImage: "/images/articles/saas-problem-hero.webp",
+    heroAlt: "One person stacks a tower of houses on a rock while a long line of people waits on the opposite shore."
   },
   {
     id: "26",
@@ -350,7 +352,8 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "portfolio-approach",
     category: "Business Strategy",
-    heroImage: "/images/articles/portfolio-hero.webp"
+    heroImage: "/images/articles/portfolio-hero.webp",
+    heroAlt: "Two gardeners tend rows of potted seedlings, one large tree, and a wheelbarrow of wilted plants inside a greenhouse."
   },
   {
     id: "25",
@@ -360,7 +363,8 @@ const articles: Article[] = [
     readTime: "16 min read",
     slug: "personalization-privacy",
     category: "Design Systems",
-    heroImage: "/images/articles/personalization-hero.webp"
+    heroImage: "/images/articles/personalization-hero.webp",
+    heroAlt: "A nighttime street of shuttered houses, with one lit shop where a tailor measures a customer."
   },
   {
     id: "24",
@@ -370,7 +374,8 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "open-source-vision",
     category: "Business Strategy",
-    heroImage: "/images/articles/open-source-hero.webp"
+    heroImage: "/images/articles/open-source-hero.webp",
+    heroAlt: "A cutaway workshop building shows many people making things while a crowd watches from the street."
   },
   {
     id: "23",
@@ -380,7 +385,8 @@ const articles: Article[] = [
     readTime: "13 min read",
     slug: "micro-interactions",
     category: "Design Systems",
-    heroImage: "/images/articles/micro-interactions-hero.webp"
+    heroImage: "/images/articles/micro-interactions-hero.webp",
+    heroAlt: "A person skips a stone across stepping stones while another catches it on the far bank."
   },
   {
     id: "22",
@@ -390,7 +396,8 @@ const articles: Article[] = [
     readTime: "19 min read",
     slug: "kill-greenlight-ritual",
     category: "Business Strategy",
-    heroImage: "/images/articles/kill-greenlight-hero.webp"
+    heroImage: "/images/articles/kill-greenlight-hero.webp",
+    heroAlt: "A signalman with two lanterns stands where many train tracks split, some blocked by red signals."
   },
   {
     id: "21",
@@ -400,7 +407,8 @@ const articles: Article[] = [
     readTime: "15 min read",
     slug: "hub-evolution",
     category: "AI Workflow",
-    heroImage: "/images/articles/hub-evolution-hero.webp"
+    heroImage: "/images/articles/hub-evolution-hero.webp",
+    heroAlt: "People leave a dark cabinet room and gather around a lit wall of charts."
   },
   {
     id: "20",
@@ -410,7 +418,8 @@ const articles: Article[] = [
     readTime: "9 min read",
     slug: "the-hub",
     category: "AI Workflow",
-    heroImage: "/images/articles/hub-hero.webp"
+    heroImage: "/images/articles/hub-hero.webp",
+    heroAlt: "A lighthouse beam crosses a harbor of small boats, some docked and some still out on the water."
   },
   {
     id: "19",
@@ -420,7 +429,8 @@ const articles: Article[] = [
     readTime: "17 min read",
     slug: "gamification-done-right",
     category: "Design Systems",
-    heroImage: "/images/articles/gamification-hero.webp"
+    heroImage: "/images/articles/gamification-hero.webp",
+    heroAlt: "A blue bird carries a lantern beside a person walking a path of stepping stones."
   },
   {
     id: "18",
@@ -430,7 +440,8 @@ const articles: Article[] = [
     readTime: "8 min read",
     slug: "documentation-system",
     category: "AI Workflow",
-    heroImage: "/images/articles/docs-system-hero.webp"
+    heroImage: "/images/articles/docs-system-hero.webp",
+    heroAlt: "People on ladders pull folders from a wall of cabinets and connect them with red string."
   },
   {
     id: "17",
@@ -440,7 +451,8 @@ const articles: Article[] = [
     readTime: "14 min read",
     slug: "dev-quality-assistant",
     category: "Engineering",
-    heroImage: "/images/articles/dev-quality-hero.webp"
+    heroImage: "/images/articles/dev-quality-hero.webp",
+    heroAlt: "Surveyors stake a foundation and check a blueprint before a crew waits with bricks."
   },
   {
     id: "16",
@@ -450,7 +462,8 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "complete-workflow-2025",
     category: "AI Workflow",
-    heroImage: "/images/articles/complete-workflow-hero.webp"
+    heroImage: "/images/articles/complete-workflow-hero.webp",
+    heroAlt: "People carry lanterns along a winding path through a series of dark arches toward a lit house."
   },
   {
     id: "15",
@@ -460,7 +473,8 @@ const articles: Article[] = [
     readTime: "12 min read",
     slug: "brand-first-validation",
     category: "Design Systems",
-    heroImage: "/images/articles/brand-first-hero.webp"
+    heroImage: "/images/articles/brand-first-hero.webp",
+    heroAlt: "A person plants a striped flag while builders paint matching marks onto a row of houses."
   },
   {
     id: "14",
@@ -470,7 +484,8 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "ai-tool-stack",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-tool-stack-hero.webp"
+    heroImage: "/images/articles/ai-tool-stack-hero.webp",
+    heroAlt: "A watchtower operator directs separate boats down parallel canals toward an orange sun."
   },
   {
     id: "13",
@@ -480,7 +495,8 @@ const articles: Article[] = [
     readTime: "10 min read",
     slug: "ai-orchestration",
     category: "AI Workflow",
-    heroImage: "/images/articles/ai-orchestration-hero.webp"
+    heroImage: "/images/articles/ai-orchestration-hero.webp",
+    heroAlt: "A conductor on a central rock directs people on linked islands, each tending a different light or machine under a full moon."
   },
   {
     id: "12",
@@ -490,7 +506,8 @@ const articles: Article[] = [
     readTime: "17 min read",
     slug: "context7-live-docs",
     category: "Engineering",
-    heroImage: "/images/articles/context7-hero.webp"
+    heroImage: "/images/articles/context7-hero.webp",
+    heroAlt: "A person nets fresh pages from a lighthouse beam while cobwebbed books sit unused beside them."
   },
   {
     id: "11",
@@ -500,7 +517,8 @@ const articles: Article[] = [
     readTime: "18 min read",
     slug: "lindy-automated-validation",
     category: "AI Workflow",
-    heroImage: "/images/articles/lindy-hero.webp"
+    heroImage: "/images/articles/lindy-hero.webp",
+    heroAlt: "A blue robot delivers letters along a street while a person writes at a desk in the foreground."
   },
   {
     id: "10",
@@ -510,7 +528,8 @@ const articles: Article[] = [
     readTime: "16 min read",
     slug: "glif-batch-creatives",
     category: "AI Workflow",
-    heroImage: "/images/articles/glif-hero.webp"
+    heroImage: "/images/articles/glif-hero.webp",
+    heroAlt: "Two people run a printing press and hang rows of finished posters to dry."
   },
   {
     id: "9",
@@ -699,7 +718,7 @@ function FeaturedArticleCard({ article }: { article: Article }) {
         <img
           loading="lazy"
           src={article.heroImage}
-          alt={article.title}
+          alt={article.heroAlt ?? article.title}
           className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
         />
       </div>
@@ -742,7 +761,7 @@ function ArticleCard({ article }: { article: Article }) {
         <img
           loading="lazy"
           src={article.heroImage}
-          alt={article.title}
+          alt={article.heroAlt ?? article.title}
           className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
         />
       </div>

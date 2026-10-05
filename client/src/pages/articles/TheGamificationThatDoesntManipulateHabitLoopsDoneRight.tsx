@@ -16,6 +16,8 @@ export default function GameficationThatDoesntManipulate() {
         <meta property="og:description" content="Gamification is often manipulative. Here&#39;s how to make it helpful, respectful, and tailored to your industry." />
         <meta property="og:url" content="https://winzenburg.com/articles/gamification-done-right" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/gamification-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/gamification-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/gamification-done-right" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Gamification That Doesn't Manipulate: Designing Habit Loops with Industry-Appropriate Mascots","description":"Gamification is often manipulative. Here's how to make it helpful, respectful, and tailored to your industry.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/gamification-done-right","image":"https://winzenburg.com/images/articles/gamification-hero.webp"})}</script>
@@ -33,8 +35,8 @@ export default function GameficationThatDoesntManipulate() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
-              src="/images/articles/placeholder.png"
-              alt="Gamification That Doesn't Manipulate"
+              src="/images/articles/gamification-hero.webp"
+              alt="A blue bird carries a lantern beside a person walking a path of stepping stones."
               className="w-full h-auto"
             />
           </div>

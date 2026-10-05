@@ -44,7 +44,7 @@ CRITICAL RULES:
 LAYOUT STRUCTURE (copy exactly from reference):
 - ResponsiveNav at top
 - Back link to /articles
-- Hero image placeholder (use /images/articles/placeholder.png)
+- Hero image from /images/articles/<slug>-hero.webp (do not use a shared placeholder)
 - Article metadata (date, reading time)
 - Title and subtitle in proper typography
 - Body with prose prose-invert prose-lg styling
@@ -97,7 +97,7 @@ Instructions:
 
 Important:
 - Import ResponsiveNav and NewsletterSignup
-- Use /images/articles/placeholder.png for hero (we'll replace later)
+- Use the article's own /images/articles/<slug>-hero.webp for the hero
 - Extract a compelling subtitle from the first paragraph
 - Add proper section breaks and visual hierarchy
 - Identify key metrics and wrap in stat cards

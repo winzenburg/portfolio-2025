@@ -18,6 +18,8 @@ export default function PortfolioApproachArticle() {
         <meta property="og:description" content="You&#39;re not building one product. You&#39;re managing a portfolio of bets. Here&#39;s how to manage them systematically." />
         <meta property="og:url" content="https://winzenburg.com/articles/portfolio-approach" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/portfolio-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/portfolio-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/portfolio-approach" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value","description":"You're not building one product. You're managing a portfolio of bets. Here's how to manage them systematically.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/portfolio-approach","image":"https://winzenburg.com/images/articles/portfolio-hero.webp"})}</script>
@@ -36,7 +38,7 @@ export default function PortfolioApproachArticle() {
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/portfolio-hero.webp"
-              alt="The Portfolio Approach"
+              alt="Two gardeners tend rows of potted seedlings, one large tree, and a wheelbarrow of wilted plants inside a greenhouse."
               className="w-full h-auto"
             />
           </div>

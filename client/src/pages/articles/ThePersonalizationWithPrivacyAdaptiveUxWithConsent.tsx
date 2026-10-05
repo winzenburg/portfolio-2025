@@ -16,6 +16,8 @@ export default function PersonalizationWithPrivacyArticle() {
         <meta property="og:description" content="Personalization can feel creepy. Here&#39;s how to make it thoughtful, transparent, and opt-in." />
         <meta property="og:url" content="https://winzenburg.com/articles/personalization-privacy" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/personalization-hero.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://winzenburg.com/images/articles/personalization-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/personalization-privacy" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Personalization with Privacy: How We Design Adaptive UX That Respects Consent","description":"Personalization can feel creepy. Here's how to make it thoughtful, transparent, and opt-in.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/personalization-privacy","image":"https://winzenburg.com/images/articles/personalization-hero.webp"})}</script>
@@ -34,7 +36,7 @@ export default function PersonalizationWithPrivacyArticle() {
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/personalization-hero.webp"
-              alt="Personalization with Privacy"
+              alt="A nighttime street of shuttered houses, with one lit shop where a tailor measures a customer."
               className="w-full h-auto"
             />
           </div>
