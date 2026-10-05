@@ -11,14 +11,14 @@ export default function SelfValidatingAIAgents() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Self-Validating AI Agents: When Acceptance Criteria Become Tests | Ryan Winzenburg</title>
-        <meta name="description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
+        <meta name="description" content="An agent built a feature overnight, checked it against acceptance criteria, fixed the failures, and committed the result." />
         <meta property="og:title" content="Self-Validating AI Agents: When Acceptance Criteria Become Tests" />
-        <meta property="og:description" content="Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn&#39;t magic. It&#39;s well-written acceptance criteria." />
+        <meta property="og:description" content="An agent built a feature overnight, checked it against acceptance criteria, fixed the failures, and committed the result." />
         <meta property="og:url" content="https://winzenburg.com/articles/self-validating-ai-agents" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/self-validating-ai-agents-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/self-validating-ai-agents" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"An agent built a feature overnight, checked it against acceptance criteria, fixed the failures, and committed the result.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.webp"})}</script>
       </Helmet>
 
       <article className="pt-10 pb-16 md:pt-14">
@@ -48,14 +48,14 @@ export default function SelfValidatingAIAgents() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation isn't magic. It's well-written acceptance criteria.
+              Last night, an autonomous agent built a feature, tested it against 23 acceptance criteria, found 2 failures, fixed them, retested, and committed, all while I slept. Self-validation comes from well-written acceptance criteria.
             </p>
           </div>
 
           <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
             
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The breakthrough in autonomous AI coding isn't better models or longer context windows. It's turning acceptance criteria into executable validation logic. When your criteria are specific and testable, agents can verify their own work. No human review required until the end.
+              The breakthrough in autonomous AI coding is turning acceptance criteria into executable validation logic. When your criteria are specific and testable, agents can verify their own work. No human review required until the end.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -351,7 +351,7 @@ export default function SelfValidatingAIAgents() {
 
             <div className="my-12 pl-6 border-l-4 border-primary">
               <p className="text-2xl text-primary font-semibold italic leading-relaxed">
-                "Self-validation isn't about trusting AI blindly. It's about making success verifiable."
+                "Self-validation means making success verifiable."
               </p>
             </div>
 
@@ -597,7 +597,7 @@ export default function SelfValidatingAIAgents() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Want to Enable Self-Validating AI Workflows?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

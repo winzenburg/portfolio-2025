@@ -12,14 +12,14 @@ export default function MVPStrategy() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The MVP Strategy: Launching Products That Sell Themselves | Ryan Winzenburg</title>
-        <meta name="description" content="Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here&#39;s the virality-by-design framework for the minimum that creates genuine value." />
+        <meta name="description" content="Most MVPs try to do too much and launch late with unclear value. Build the smallest version that proves one user behavior." />
         <meta property="og:title" content="The MVP Strategy: Launching Products That Sell Themselves" />
-        <meta property="og:description" content="Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here&#39;s the virality-by-design framework for the minimum that creates genuine value." />
+        <meta property="og:description" content="Most MVPs try to do too much and launch late with unclear value. Build the smallest version that proves one user behavior." />
         <meta property="og:url" content="https://winzenburg.com/articles/mvp-strategy" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/mvp-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/mvp-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The MVP Strategy: Launching Products That Sell Themselves","description":"Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. Here's the virality-by-design framework for the minimum that creates genuine value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-26","url":"https://winzenburg.com/articles/mvp-strategy","image":"https://winzenburg.com/images/articles/mvp-strategy-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The MVP Strategy: Launching Products That Sell Themselves","description":"Most MVPs try to do too much and launch late with unclear value. Build the smallest version that proves one user behavior.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-26","url":"https://winzenburg.com/articles/mvp-strategy","image":"https://winzenburg.com/images/articles/mvp-strategy-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Content */}
@@ -170,7 +170,7 @@ export default function MVPStrategy() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Here's the uncomfortable truth about MVPs: you're going to get things wrong. Your assumptions about what users need, how they'll use the product, what features matter most, some of those will be incorrect. The difference between products that succeed and those that fail isn't getting everything right the first time. It's learning fast enough to course-correct before you run out of runway.
+              You're going to get assumptions wrong: what users need, how they'll use the product, which features matter. Products that last course-correct before they run out of runway.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -238,7 +238,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The psychological trigger is straightforward: surprise and delight drives organic advocacy. When users experience something genuinely impressive, their natural reaction is to share it. Design your MVP to create these moments deliberately, and the product starts selling itself.
+              The psychological trigger is straightforward: surprise and delight drives organic advocacy. When users experience something impressive, their natural reaction is to share it. Design your MVP to create these moments deliberately, and the product starts selling itself.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -325,7 +325,7 @@ export default function MVPStrategy() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The third mistake, and this one stung, was launching without a distribution plan. We built a genuinely good product with clear value. But we had no audience, no distribution channels, and no clear path to getting users. We thought "build it and they will come" actually worked. It doesn't. Now I start building audience in parallel with building product. By the time you launch, you should already have people waiting to use it.
+              The third mistake, and this one stung, was launching without a distribution plan. We built a good product with clear value. But we had no audience, no distribution channels, and no clear path to getting users. We thought "build it and they will come" actually worked. It doesn't. Now I start building audience in parallel with building product. By the time you launch, you should already have people waiting to use it.
             </p>
 
             {/* Lessons Learned */}
@@ -368,7 +368,7 @@ export default function MVPStrategy() {
               <h3 className="text-2xl font-bold text-foreground mb-4">Building an MVP That Sells Itself?</h3>
               <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Book a 30-minute call
+                  See if a Discovery Call fits
               </Link>
             </div>
           </div>

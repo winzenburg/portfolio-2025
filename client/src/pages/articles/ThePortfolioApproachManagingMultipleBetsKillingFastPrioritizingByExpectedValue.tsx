@@ -375,15 +375,15 @@ export default function PortfolioApproachArticle() {
             available for free. Includes the formulas, scoring rubrics, and example calculations.
           </p>
           <Link href="/contact?playbook=portfolio-template" className="inline-block bg-purple-600 text-foreground px-4 py-2 rounded hover:bg-purple-700 transition-colors">
-              Download Portfolio Template
+              Open the portfolio template
           </Link>
         </Card>
 
-        <h2>The Uncomfortable Truth About This Approach</h2>
+        <h2>The trade-offs</h2>
 
         <p>
-          Real talk: this portfolio approach isn't all upside. There are legitimate trade-offs 
-          and limitations that nobody talks about.
+          This portfolio approach isn't all upside. There are legitimate trade-offs 
+          and limitations.
         </p>
 
         <h3>What You Gain:</h3>
@@ -487,7 +487,7 @@ export default function PortfolioApproachArticle() {
 
         <p>
           I'm genuinely curious how this works for other founders. The portfolio approach has 
-          been transformative for my business, but every context is different.
+          changed how I run the business, but every context is different.
         </p>
 
         <p>
@@ -504,12 +504,12 @@ export default function PortfolioApproachArticle() {
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">Ready to Build Your Product Portfolio?</h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Get the complete portfolio scoring template, example calculations, and monthly review 
-              process. Everything you need to start managing product bets like a VC.
+              The portfolio scoring template, example calculations, and monthly review 
+              process are available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/contact?playbook=portfolio-template" className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                  Download Free Template
+                  Open the free template
               </Link>
               <button className="text-primary hover:text-primary transition-colors">
                 Read More Articles →

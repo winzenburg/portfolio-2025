@@ -151,7 +151,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          This one's a big deal. About 35% of users enable reduced-motion in their OS settings, they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this isn't bad UX. It's an accessibility failure.
+          This one's a big deal. About 35% of users enable reduced-motion in their OS settings, they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this is an accessibility failure.
         </p>
 
         <p>
@@ -252,7 +252,7 @@ export default function MicroInteractionsArticle() {
         </p>
 
         <p>
-          It's about building for everyone, beyond checking a compliance box. When we implemented proper reduced-motion fallbacks, our accessibility score jumped to 100% WCAG 2.2 AA compliance.
+          It's about building for everyone, beyond checking a compliance box. When we implemented proper reduced-motion fallbacks, our accessibility score met WCAG 2.2 AA.
         </p>
 
         <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
@@ -510,7 +510,7 @@ export default function MicroInteractionsArticle() {
           <div className="space-y-2">
             <p className="text-primary"><strong>User feedback mentioning "smooth" or "polished":</strong> 23% (vs 5% before)</p>
             <p className="text-primary"><strong>Complaints about "too many animations":</strong> 0% (vs 8% before)</p>
-            <p className="text-primary"><strong>WCAG 2.2 AA compliance:</strong> 100% (motion requirements)</p>
+            <p className="text-primary"><strong>WCAG 2.2 AA compliance:</strong> met for motion</p>
             <p className="text-primary"><strong>Perceived performance rating:</strong> Increased 18%</p>
           </div>
         </div>
@@ -632,7 +632,7 @@ export default function MicroInteractionsArticle() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact?playbook=micro-interactions" className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center">
-                Download the Playbook
+                Open the playbook
             </Link>
             <button className="border border-border text-foreground px-6 py-3 rounded-lg font-medium hover:bg-muted/30 transition-colors">
               View Live Examples

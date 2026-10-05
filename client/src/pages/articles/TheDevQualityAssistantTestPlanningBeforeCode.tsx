@@ -101,7 +101,7 @@ export default function DevQualityAssistant() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              This isn't about perfectionism or slowing teams down. It's about <strong className="text-foreground">defining correctness before building</strong>, the same way you wouldn't start construction without blueprints.
+              <strong className="text-foreground">Define correctness before building</strong>, the same way you wouldn't start construction without blueprints.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -572,7 +572,7 @@ export default function DevQualityAssistant() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The goal isn't a perfect plan upfront. It's a <em className="text-primary">living</em> plan that guides quality decisions.
+              The goal is a <em className="text-primary">living</em> plan that guides quality decisions, updated when the work teaches you something.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -709,13 +709,13 @@ export default function DevQualityAssistant() {
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Ship with Confidence?</h3>
-            <p className="text-muted-foreground mb-6">Get my complete Dev Quality Assistant template and implementation guide. Plus weekly insights on AI-powered development workflows.</p>
+            <p className="text-muted-foreground mb-6">The Dev Quality Assistant template and implementation guide are available, along with weekly notes on AI-powered development.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Get the Template
+                  Open the template
               </Link>
               <Link href="/newsletter" className="inline-block border border-border hover:border-border text-muted-foreground hover:text-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Subscribe to Updates
+                  Subscribe for updates
               </Link>
             </div>
           </div>

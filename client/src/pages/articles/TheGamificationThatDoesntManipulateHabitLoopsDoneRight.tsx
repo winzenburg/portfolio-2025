@@ -105,7 +105,7 @@ export default function GameficationThatDoesntManipulate() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The uncomfortable truth: <strong className="text-foreground">guilt-based streaks work in the short term</strong>. They create anxiety-driven engagement that looks amazing on your retention dashboards. But they're building a house of cards.
+              <strong className="text-foreground">Guilt-based streaks work in the short term</strong>. They create anxiety-driven engagement that looks amazing on your retention dashboards. But they're building a house of cards.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -663,7 +663,7 @@ export default function GameficationThatDoesntManipulate() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The companies that win will be the ones that genuinely help users achieve their goals, not the ones that trick users into fake engagement.
+              The companies that win will be the ones that help users achieve their goals, not the ones that trick users into fake engagement.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -721,9 +721,9 @@ export default function GameficationThatDoesntManipulate() {
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Want to Build Better Product Experiences?</h3>
-            <p className="text-muted-foreground mb-6">Get frameworks like this delivered to your inbox. I share the methods behind building products that users actually love, no manipulation required.</p>
+            <p className="text-muted-foreground mb-6">I send frameworks like this by email. The notes cover methods for products people keep using, without manipulation.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Get the Framework Library →
+                Open the framework library
             </Link>
           </div>
 

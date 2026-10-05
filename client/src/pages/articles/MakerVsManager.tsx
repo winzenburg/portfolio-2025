@@ -298,7 +298,7 @@ export default function MakerVsManager() {
               <h3 className="text-2xl font-bold text-foreground mb-4">Struggling with Time Protection?</h3>
               <p className="text-muted-foreground mb-6">I help teams design operating rhythms that protect deep work while enabling necessary coordination. The key is finding the right balance for your context.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
               </Link>
             </div>
           </div>

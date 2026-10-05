@@ -14,12 +14,12 @@ export default function AIUxMaturityLevel3() {
         <title>AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3. | Ryan Winzenburg</title>
         <meta
           name="description"
-          content="Everyone wants to skip straight to Level 5. That jump doesn't happen. The real opportunity is smaller and more useful: use AI to bridge Level 2 to Level 3 by doing the discovery work the business never funded."
+          content="Skipping straight to the highest AI UX maturity level does not work. The useful step is helping a team with a decision they are already making."
         />
         <meta property="og:title" content="AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3." />
         <meta
           property="og:description"
-          content="Everyone wants to skip straight to Level 5. The real opportunity is using AI to bridge Level 2 to Level 3."
+          content="Skipping straight to the highest AI UX maturity level does not work. The useful step is helping a team with a decision they are already making."
         />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-ux-maturity-level-3" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-ux-maturity-level-3-hero.webp" />
@@ -30,7 +30,7 @@ export default function AIUxMaturityLevel3() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline: "AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3.",
-          description: "Everyone wants to skip straight to Level 5. The real opportunity is using AI to bridge Level 2 to Level 3.",
+          description: "Skipping straight to the highest AI UX maturity level does not work. The useful step is helping a team with a decision they are already making.",
           author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
           datePublished: "2026-07-09",
           url: "https://winzenburg.com/articles/ai-ux-maturity-level-3",
@@ -127,7 +127,7 @@ export default function AIUxMaturityLevel3() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              A designer proposing a discovery phase before every build is a process imposition. It threatens whoever owns that process today. A JTBD read that gives a PM ammunition for a roadmap decision they're already trying to make lands as leverage instead. You're helping them win their own argument with their VP, not grading their judgment.
+              A designer proposing a discovery phase before every build is a process imposition. It threatens whoever owns that process today. A JTBD read that gives a PM ammunition for a roadmap decision they're already trying to make lands as support instead. You're helping them win their own argument with their VP, not grading their judgment.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -138,7 +138,7 @@ export default function AIUxMaturityLevel3() {
               <div className="bg-muted/30 border border-cyan-800/40 rounded-lg p-5">
                 <div className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">High trust</div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Insight lands as leverage. The PM reads the data as help winning a decision, not as a challenge to their ownership of it.
+                  Insight lands as support. The PM reads the data as help winning a decision, not as a challenge to their ownership of it.
                 </p>
               </div>
               <div className="bg-muted/30 border border-destructive/30 rounded-lg p-5">

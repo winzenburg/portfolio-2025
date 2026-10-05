@@ -12,14 +12,14 @@ export default function MonetizationStrategy() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Monetization Strategy: Generating Revenue from Day One | Ryan Winzenburg</title>
-        <meta name="description" content="Monetization isn&#39;t an afterthought, it&#39;s a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building." />
+        <meta name="description" content="Pricing belongs in the product plan from the first week. A modular model can start earning before the full product is built." />
         <meta property="og:title" content="Monetization Strategy: Generating Revenue from Day One" />
-        <meta property="og:description" content="Monetization isn&#39;t an afterthought, it&#39;s a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building." />
+        <meta property="og:description" content="Pricing belongs in the product plan from the first week. A modular model can start earning before the full product is built." />
         <meta property="og:url" content="https://winzenburg.com/articles/monetization-strategy" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/monetization-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/monetization-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Monetization Strategy: Generating Revenue from Day One","description":"Monetization isn't an afterthought, it's a critical component of product strategy from day one. Learn the modular pricing framework that generates revenue before building.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-07-21","url":"https://winzenburg.com/articles/monetization-strategy","image":"https://winzenburg.com/images/articles/monetization-strategy-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Monetization Strategy: Generating Revenue from Day One","description":"Pricing belongs in the product plan from the first week. A modular model can start earning before the full product is built.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-07-21","url":"https://winzenburg.com/articles/monetization-strategy","image":"https://winzenburg.com/images/articles/monetization-strategy-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Content */}
@@ -58,7 +58,7 @@ export default function MonetizationStrategy() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Monetization isn't an afterthought. It's a critical component of product strategy from day one.
+              Monetization is a critical part of product strategy from day one.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function MonetizationStrategy() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The free tier, when it makes sense for your business model, serves a specific strategic purpose. It's not about giving away your product, it's about lowering the barrier to experiencing value. You offer limited usage, perhaps three projects instead of unlimited. Core functionality only, without the advanced features that power users need. Community support rather than dedicated assistance. And critically, thoughtful upgrade prompts that guide users toward paid tiers when they hit limits.
+              The free tier, when it makes sense for your business model, serves a specific strategic purpose. The free tier lowers the barrier to experiencing value. You offer limited usage, perhaps three projects instead of unlimited. Core functionality only, without the advanced features that power users need. Community support rather than dedicated assistance. And critically, thoughtful upgrade prompts that guide users toward paid tiers when they hit limits.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -699,7 +699,7 @@ export default function MonetizationStrategy() {
               If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.
             </p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
         </div>

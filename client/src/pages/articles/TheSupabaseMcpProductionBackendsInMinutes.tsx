@@ -106,8 +106,7 @@ export default function SupabaseMCPArticle() {
         <p>If that timeline made you wince, I've been there. Multiple times.</p>
 
         <p>
-          The problem isn't that we're bad developers. It's that backend design is genuinely 
-          hard. Multi-tenancy is tricky. RLS is subtle. Analytics gets ignored until it's too 
+          Backend design is hard. Multi-tenancy is tricky. RLS is subtle. Analytics gets ignored until it's too 
           late. Security becomes an afterthought.
         </p>
 
@@ -133,7 +132,7 @@ export default function SupabaseMCPArticle() {
         </div>
 
         <p>
-          And here's what nobody tells you: every mistake compounds. That missing 
+          Every mistake compounds. That missing 
           organization_id? It's never just one table. It's twenty tables, plus RLS policies, 
           plus indexes, plus migrations. One oversight becomes months of work.
         </p>

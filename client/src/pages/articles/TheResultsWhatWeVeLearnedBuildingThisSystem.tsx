@@ -92,7 +92,7 @@ export default function Article() {
       {/* Article Content */}
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-foreground font-medium mb-8">
-          Last Tuesday, I watched a startup founder spend three hours explaining why their "revolutionary" idea was going to change everything. Two weeks later? Dead on arrival.
+          Last Tuesday, I watched a startup founder spend three hours explaining why their "big new" idea was going to change everything. Two weeks later? Dead on arrival.
         </p>
 
         <p>
@@ -267,7 +267,7 @@ export default function Article() {
         </p>
 
         <p>
-          Now we maintain a portfolio of 8-12 ideas at various stages. It's not about hedging our bets, it's about making smarter decisions:
+          Now we maintain a portfolio of 8-12 ideas at various stages. That spread is how we make smarter decisions:
         </p>
 
         <div className="bg-muted/30 p-6 rounded-lg my-8">
@@ -332,7 +332,7 @@ export default function Article() {
         </ul>
 
         <p>
-          Documentation isn't record-keeping. It's compound learning: every decision, insight, and failure becomes input for future decisions.
+          Documentation is compound learning: every decision, insight, and failure becomes input for future decisions.
         </p>
 
         <p>
@@ -340,7 +340,7 @@ export default function Article() {
         </p>
 
         <blockquote className="border-l-4 border-border pl-6 italic text-foreground my-8">
-          "Documentation isn't record-keeping. It's compound learning."
+          "Documentation is compound learning."
         </blockquote>
 
         <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -422,7 +422,7 @@ export default function Article() {
           <div className="bg-muted/50 p-6 rounded-lg">
             <h4 className="font-semibold text-green-900 mb-2">AI Needs Systems, Not More Prompts</h4>
             <p className="text-primary">
-              Individual AI tools are powerful. Orchestrated AI systems are transformative.
+              Individual AI tools are powerful. Orchestrated AI systems change the work.
             </p>
           </div>
 
@@ -466,7 +466,7 @@ export default function Article() {
         </h2>
 
         <p>
-          Here's what I wish someone had told me a year ago: Building systematic product creation isn't about finding the perfect process. It's about building a learning system that gets smarter with each iteration.
+          Here's what I wish someone had told me a year ago: Build a learning system that gets smarter with each iteration. There is no perfect process waiting to be found.
         </p>
 
         <p>
@@ -497,10 +497,10 @@ export default function Article() {
             Want the Complete Framework?
           </h3>
           <p className="text-foreground mb-6">
-            Get the detailed validation templates, AI orchestration playbooks, and portfolio management tools we use in our product creation engine.
+            The validation templates, AI orchestration playbooks, and portfolio tools from the product creation engine are available.
           </p>
           <Link href="/contact?playbook=complete-system" className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-              Download the Complete System
+              Open the complete system
           </Link>
         </div>
       </div>
@@ -511,7 +511,7 @@ export default function Article() {
           ← Back to Articles
         </a>
         <a href="/contact?intent=consulting" className="text-primary hover:text-foreground font-medium">
-          Get in Touch →
+          Get in touch
         </a>
       </nav>
     </article>

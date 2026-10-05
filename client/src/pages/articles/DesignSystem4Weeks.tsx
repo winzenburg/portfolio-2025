@@ -11,14 +11,14 @@ export default function DesignSystem4Weeks() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>How I Built an Enterprise Design System in 4 Weeks (Not 12 Months) | Ryan Winzenburg</title>
-        <meta name="description" content="Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance." />
+        <meta name="description" content="Most teams spend 12 to 18 months on an enterprise design system. I built one in 4 weeks, with 48 production-ready components." />
         <meta property="og:title" content="How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)" />
-        <meta property="og:description" content="Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance." />
+        <meta property="og:description" content="Most teams spend 12 to 18 months on an enterprise design system. I built one in 4 weeks, with 48 production-ready components." />
         <meta property="og:url" content="https://winzenburg.com/articles/design-system-4-weeks" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-system-4-weeks" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)","description":"Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. 100% WCAG 2.2 AA compliance.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-24","url":"https://winzenburg.com/articles/design-system-4-weeks","image":"https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)","description":"Most teams spend 12 to 18 months on an enterprise design system. I built one in 4 weeks, with 48 production-ready components.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-24","url":"https://winzenburg.com/articles/design-system-4-weeks","image":"https://winzenburg.com/images/articles/design-system-4-weeks-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -64,7 +64,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              But here's what the final system delivered: 48 production-ready components spanning the full enterprise UI spectrum. 63,813 lines of thoroughly tested code. 100% WCAG 2.2 AA compliance across every component. Complete documentation with usage guidelines and governance frameworks. All in four weeks.
+              But here's what the final system delivered: 48 production-ready components spanning the full enterprise UI spectrum. 63,813 lines of thoroughly tested code. WCAG 2.2 AA accessibility across every component. Complete documentation with usage guidelines and governance frameworks. All in four weeks.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -313,8 +313,8 @@ export default function DesignSystem4Weeks() {
                 <div className="text-muted-foreground text-sm font-semibold">With AI + review</div>
               </div>
               <div className="bg-muted/50 border border-cyan-900/50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">10x</div>
-                <div className="text-muted-foreground text-sm">Faster development</div>
+                <div className="text-3xl font-bold text-primary mb-2">Faster</div>
+                <div className="text-muted-foreground text-sm">Than writing each one by hand</div>
               </div>
             </div>
 
@@ -323,11 +323,11 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The speed increase was dramatic, going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. That's a genuine 10x improvement in development velocity. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were more reliable than what I'd typically ship after manual development.
+              The speed increase was dramatic, going from thirty to forty-five minutes per component down to three to five minutes including AI generation and human review. But what surprised me most was the quality. With comprehensive test coverage automatically generated and accessibility baked in from the start, the final components were more reliable than what I'd typically ship after manual development.
             </p>
 
             <div className="bg-gradient-to-r from-cyan-900/20 via-blue-900/20 to-purple-900/20 border border-primary/20 rounded-lg p-6 my-8">
-              <p className="text-primary font-semibold text-center">Seven days produced 48 production-ready components with 100% test coverage, 100% WCAG 2.2 AA compliance, full TypeScript typing across every component, and complete Storybook documentation. Not a minimum viable product. Genuinely enterprise-ready code.</p>
+              <p className="text-primary font-semibold text-center">Seven days produced 48 production-ready components with thorough test coverage, WCAG 2.2 AA accessibility, full TypeScript typing across every component, and complete Storybook documentation. Not a minimum viable product. Enterprise-ready code.</p>
             </div>
 
             <h3 className="text-2xl font-bold text-primary mt-10 mb-4">
@@ -456,11 +456,11 @@ export default function DesignSystem4Weeks() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Accessibility:</span>
-                    <span className="text-primary">100% WCAG 2.2 AA</span>
+                    <span className="text-primary">WCAG 2.2 AA</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Test coverage:</span>
-                    <span className="text-primary">100%</span>
+                    <span className="text-primary">Thorough</span>
                   </div>
                 </div>
                 <div className="pt-4 border-t border-primary/15">
@@ -482,7 +482,7 @@ export default function DesignSystem4Weeks() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Team efficiency:</span>
-                    <span className="text-primary">10x improvement</span>
+                    <span className="text-primary">Faster</span>
                   </div>
                 </div>
                 <div className="pt-4 border-t border-primary/15">
@@ -501,7 +501,7 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              But there's no catch. The framework works because it's based on a clear understanding of where AI genuinely excels versus where human judgment remains essential. It's not about replacing human work with AI. It's about strategically applying AI to the mechanical tasks that consume time without requiring creative thinking, while keeping humans firmly in control of the strategic decisions that define system quality.
+              But there's no catch. The framework works because it is clear where AI excels and where human judgment stays essential. Apply AI to the mechanical tasks that consume time without requiring creative thinking, and keep humans in control of the decisions that define system quality.
             </p>
 
             {/* AI vs Human Comparison */}
@@ -707,7 +707,7 @@ export default function DesignSystem4Weeks() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The real competitive advantage isn't building faster, though that matters too. It's what becomes possible when you can ship a complete design system in four weeks instead of twelve to eighteen months.
+              The real competitive advantage is what becomes possible when you can ship a complete design system in four weeks instead of twelve to eighteen months. Building faster matters too.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -846,14 +846,14 @@ export default function DesignSystem4Weeks() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6 text-center font-semibold">
-              The question isn't whether to adopt AI-augmented design system approaches. It's how quickly you can make the transition before the competitive gap becomes insurmountable.
+              The question is how quickly you can make the transition to an AI-augmented design system before the competitive gap becomes insurmountable.
             </p>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
               <h3 className="text-2xl font-bold text-foreground mb-4">Need to Build or Accelerate a Design System?</h3>
               <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Book a 30-minute call
+                  See if a Discovery Call fits
               </Link>
             </div>
           </div>

@@ -58,7 +58,7 @@ export default function KillGreenlightRitual() {
           {/* Article Body */}
           <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
         <p className="text-xl text-muted-foreground mb-8">
-          I'll never forget the moment I finally killed my "revolutionary AI-powered meal planner."
+          I'll never forget the moment I finally killed my "new AI-powered meal planner."
         </p>
 
         <p>
@@ -85,7 +85,7 @@ export default function KillGreenlightRitual() {
         </div>
 
         <p>
-          Every rational signal screamed "kill this thing." But I'd invested three months. I'd told friends about it. I'd built features I was genuinely proud of. The sunk cost fallacy was doing its thing: <em>"just give it one more week..."</em>
+          Every rational signal screamed "kill this thing." But I'd invested three months. I'd told friends about it. I'd built features I was proud of. The sunk cost fallacy was doing its thing: <em>"just give it one more week..."</em>
         </p>
 
         <p>
@@ -619,7 +619,7 @@ Date: 2025-12-02`}</div>
           <h3 className="text-lg font-semibold mb-4">Want the Kill/Greenlight Framework?</h3>
           <p className="mb-4">
             I've documented the exact process, criteria, and templates I use for weekly portfolio reviews. 
-            Get the complete framework and start making better decisions about your ideas.
+            The process, criteria, and templates from my weekly portfolio reviews are written up.
           </p>
           <div className="flex gap-4">
             <span className="inline-block bg-muted/50 border border-border text-muted-foreground px-4 py-2 rounded-lg text-sm">Framework Template</span>

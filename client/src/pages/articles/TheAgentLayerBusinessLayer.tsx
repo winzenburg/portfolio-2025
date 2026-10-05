@@ -15,12 +15,12 @@ export default function TheAgentLayerBusinessLayer() {
         <title>The Agent Layer Is Becoming the Business Layer | Ryan Winzenburg</title>
         <meta
           name="description"
-          content="Agents are starting to absorb the coordination work that used to hold companies together. That makes agent design an org design problem, not a model problem. Most companies haven't decided who owns it."
+          content="Agents are taking on coordination work that used to live in handoffs and job descriptions, so agent design is org design."
         />
         <meta property="og:title" content="The Agent Layer Is Becoming the Business Layer" />
         <meta
           property="og:description"
-          content="Agents are starting to absorb the coordination work that used to hold companies together. That makes agent design an org design problem, not a model problem."
+          content="Agents are taking on coordination work that used to live in handoffs and job descriptions, so agent design is org design."
         />
         <meta property="og:url" content="https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp" />
@@ -31,7 +31,7 @@ export default function TheAgentLayerBusinessLayer() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline: "The Agent Layer Is Becoming the Business Layer",
-          description: "Agents are starting to absorb the coordination work that used to hold companies together. That makes agent design an org design problem, not a model problem.",
+          description: "Agents are taking on coordination work that used to live in handoffs and job descriptions, so agent design is org design.",
           author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
           datePublished: "2026-08-11",
           url: "https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer",
@@ -77,7 +77,7 @@ export default function TheAgentLayerBusinessLayer() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The problem isn't the model. It's the level we're working at.
+              The hard part is the level we're working at.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -113,11 +113,11 @@ export default function TheAgentLayerBusinessLayer() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Agents are pulling that bundle apart, and the first piece to move isn't executive judgment or deep domain expertise. It's the scaffolding around them: gathering inputs, applying known rules, preparing drafts, running standard checks, updating systems, chasing follow-ups, making sure the next handoff actually happens.
+              Agents are pulling that bundle apart, and the first piece to move is the scaffolding around executive judgment and domain expertise: gathering inputs, applying known rules, preparing drafts, running standard checks, updating systems, chasing follow-ups, making sure the next handoff actually happens.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              That's a large share of what we call operations. It's also a large share of what senior people quietly spend their week doing. So the realistic outcome isn't a company without people. It's a company where fewer people are working as middleware between tools, documents, and queues.
+              That's a large share of what we call operations. It's also a large share of what senior people quietly spend their week doing. The realistic outcome is a company where fewer people work as middleware between tools, documents, and queues.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -143,7 +143,7 @@ export default function TheAgentLayerBusinessLayer() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              That's not documentation for its own sake. It's the difference between a few isolated AI wins and something that compounds.
+              That documentation is the difference between a few isolated AI wins and something that compounds.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -234,7 +234,7 @@ export default function TheAgentLayerBusinessLayer() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              If you want a place to start, it isn't a transformation program. It's one workflow that happens often, has definable inputs and outputs, and produces a result someone can measure. Map where context enters, where decisions get made, where systems get touched, where quality actually fails, and where a person has to keep authority. Then build the smallest loop that can do part of it safely, and get the evidence and observability working before chasing anything broader.
+              Start with one workflow that happens often, has definable inputs and outputs, and produces a result someone can measure. Map where context enters, where decisions get made, where systems get touched, where quality actually fails, and where a person has to keep authority. Then build the smallest loop that can do part of it safely, and get the evidence and observability working before chasing anything broader.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -246,7 +246,7 @@ export default function TheAgentLayerBusinessLayer() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Someone has to own that work. It isn't a model selection problem, so it doesn't belong to whoever picked the vendor. It's design, operations, and product sitting in the same room deciding how the company actually runs.
+              Someone has to own that work. Design, operations, and product have to sit in the same room and decide how the company actually runs. It does not belong only to whoever picked the vendor.
             </p>
 
             <div className="my-12 pl-6 border-l-4 border-primary">
@@ -260,7 +260,7 @@ export default function TheAgentLayerBusinessLayer() {
                 {
                   question: "What does it mean that the agent layer is becoming the business layer?",
                   answer:
-                    "Agents are starting to absorb coordination work that used to live in job descriptions, handoffs, and undocumented process. Designing those agents means deciding authority, sources of truth, escalation, and accountability — the same questions as org design.",
+                    "Agents are starting to absorb coordination work that used to live in job descriptions, handoffs, and undocumented process. Designing those agents means deciding authority, sources of truth, escalation, and accountability, the same questions as org design.",
                 },
                 {
                   question: "Why do agent pilots look good in demos and thin in production?",

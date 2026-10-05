@@ -12,9 +12,9 @@ export default function AskingBetterStrategicQuestions() {
 
       <Helmet>
         <title>Asking Better Strategic Questions About AI in Product Design | Ryan Winzenburg</title>
-        <meta name="description" content="The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible? A design leadership perspective on AI, product design, and raising ambition." />
+        <meta name="description" content="The useful AI question for a product team is what they can build now that used to be too expensive to try. Cost is no longer the reason to wait." />
         <meta property="og:title" content="Asking Better Strategic Questions About AI in Product Design" />
-        <meta property="og:description" content="The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible?" />
+        <meta property="og:description" content="The useful AI question for a product team is what they can build now that used to be too expensive to try. Cost is no longer the reason to wait." />
         <meta property="og:url" content="https://winzenburg.com/articles/strategic-questions-ai-product-design" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/strategic-questions-ai-hero.webp" />
                 <meta property="og:type" content="article" />
@@ -24,7 +24,7 @@ export default function AskingBetterStrategicQuestions() {
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "Asking Better Strategic Questions About AI in Product Design",
-          "description": "The best question about AI isn't how to cut headcount, it's what can we do now that was previously impossible?",
+          "description": "The useful AI question for a product team is what they can build now that used to be too expensive to try. Cost is no longer the reason to wait.",
           "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
           "datePublished": "2026-03-07",
           "url": "https://winzenburg.com/articles/strategic-questions-ai-product-design",
@@ -80,7 +80,7 @@ export default function AskingBetterStrategicQuestions() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              That's where the real value is. When the cost of execution drops, the game changes. Not because you spend less, but because you can suddenly build things, test things, and ship things that used to be off the table. New products. New services. New ways of making better decisions faster. The biggest opportunity isn't lower costs. It's new capability.
+              That's where the real value is. When the cost of execution drops, the game changes. Not because you spend less, but because you can suddenly build things, test things, and ship things that used to be off the table. New products. New services. New ways of making better decisions faster. The biggest opportunity is new capability.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -146,11 +146,11 @@ export default function AskingBetterStrategicQuestions() {
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
-              How do we empower the people who already understand the problems best?
+              How do we help the people who already understand the problems best?
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              This isn't a technology question. It's a leadership question.
+              This is a leadership question.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
