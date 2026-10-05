@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { tileBackground } from "@/lib/studio";
 
 export interface Fact {
   label: string;
@@ -13,31 +14,32 @@ interface FactRowProps {
 }
 
 /**
- * Hairline-ruled definition list used under page heroes. Replaces the pill rows
- * and stat grids that each page used to hand-roll differently.
+ * Colored fact tiles. Ink text on blush, aqua, sun, and cream, each above 8:1.
+ * The value uses Fraunces so the number reads as a display numeral.
  */
 export default function FactRow({ facts, className }: FactRowProps) {
   return (
-    // Subgrid keeps the values on one baseline when a label wraps to two lines,
-    // which happens often in the two-column mobile layout.
     <dl
       className={cn(
-        "grid grid-cols-2 grid-rows-[auto_1fr] gap-x-8 gap-y-6 border-t border-border/60 pt-8 md:grid-cols-4",
+        "grid grid-cols-2 gap-4 md:grid-cols-4",
         className,
       )}
     >
-      {facts.map((fact) => (
+      {facts.map((fact, index) => (
         <div
           key={fact.label}
-          className="row-span-2 grid grid-rows-subgrid gap-0"
+          className={cn(
+            "rounded-[18px] border-2 border-ink px-5 py-4 text-ink",
+            tileBackground(index),
+          )}
         >
-          <dt className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
+          <dt className="text-[13px] font-bold uppercase tracking-[0.14em]">
             {fact.label}
           </dt>
-          <dd className="mt-2 text-sm font-medium text-foreground">
+          <dd className="mt-1.5 font-display text-[1.65rem] font-bold leading-tight tracking-tight">
             {fact.value}
             {fact.note ? (
-              <span className="mt-1 block text-xs font-normal text-muted-foreground">
+              <span className="mt-1 block font-sans text-[15px] font-normal leading-snug">
                 {fact.note}
               </span>
             ) : null}

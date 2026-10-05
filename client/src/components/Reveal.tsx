@@ -49,7 +49,7 @@ export default function Reveal({ children, delay = 0, className }: RevealProps) 
       ref={ref}
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
       className={cn(
-        "motion-safe:transition-[opacity,transform] motion-safe:duration-700 motion-safe:ease-out",
+        "motion-safe:transition-[opacity,transform] motion-safe:duration-700 motion-safe:ease-out motion-reduce:transition-none motion-reduce:transform-none",
         hasEntered ? "" : "motion-safe:translate-y-3 motion-safe:opacity-0",
         className,
       )}

@@ -1,5 +1,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { Sticker, type ChipTone } from "@/components/Chip";
+import { BandWave } from "@/components/StudioWave";
 
 export interface PageHeroMedia {
   src: string;
@@ -12,6 +14,14 @@ export interface PageHeroMedia {
   poster?: string;
   /** Tailwind object-position utility, e.g. "object-top". */
   position?: string;
+  /** Describes the scene. Required when the picture is content, not decoration. */
+  alt?: string;
+}
+
+export interface PageHeroSticker {
+  label: string;
+  tone?: ChipTone;
+  className?: string;
 }
 
 /**
@@ -38,6 +48,8 @@ function useHeroVideoEnabled(enabled: boolean): boolean {
   return shouldPlay;
 }
 
+type PageHeroVariant = "plain" | "framed" | "band";
+
 interface PageHeroProps {
   /** Short label above the headline. Pass a plain string; the rule is drawn here. */
   eyebrow?: string;
@@ -46,7 +58,7 @@ interface PageHeroProps {
   title: ReactNode;
   titleId?: string;
   lede?: ReactNode;
-  /** Fact row or pill row rendered under the actions. */
+  /** Fact row or pill row rendered under the hero grid. */
   meta?: ReactNode;
   actions?: ReactNode;
   /** Note rendered under the actions, before the meta row. */
@@ -54,22 +66,72 @@ interface PageHeroProps {
   /** Visual that sits beside the copy column on large screens. */
   aside?: ReactNode;
   media?: PageHeroMedia;
-  /** Centres the copy column. Use only where there is no aside. */
+  /**
+   * `framed` puts full-color art in a tilted print frame.
+   * `band` is a navy section with a wavy edge.
+   * Defaults to `framed` when media is set, otherwise `plain`.
+   */
+  variant?: PageHeroVariant;
+  stickers?: PageHeroSticker[];
+  /** Centres the copy column. Use only where there is no aside or frame. */
   align?: "start" | "center";
   className?: string;
 }
 
+function FramedArt({
+  media,
+  stickers,
+  playVideo,
+}: {
+  media: PageHeroMedia;
+  stickers?: PageHeroSticker[];
+  playVideo: boolean;
+}) {
+  const imageSrc = media.kind === "video" ? (media.poster ?? media.src) : media.src;
+  const alt = media.alt ?? "";
+
+  return (
+    <div className="relative px-3 py-6 sm:px-8 sm:py-8">
+      <div className="studio-frame">
+        {media.kind === "video" && playVideo ? (
+          <video
+            src={media.src}
+            poster={media.poster}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={alt || undefined}
+            className={cn(
+              "aspect-[16/9] h-auto w-full object-cover",
+              media.position ?? "object-center",
+            )}
+          />
+        ) : (
+          <img
+            src={imageSrc}
+            alt={alt}
+            className={cn(
+              "aspect-[16/9] h-auto w-full object-cover",
+              media.position ?? "object-center",
+            )}
+          />
+        )}
+      </div>
+      {stickers?.map((sticker) => (
+        <Sticker key={sticker.label} tone={sticker.tone} className={sticker.className}>
+          {sticker.label}
+        </Sticker>
+      ))}
+    </div>
+  );
+}
+
 /**
- * Shared page hero for the marketing pages.
- *
- * `relative isolate` is load-bearing: it keeps the negatively-stacked
- * background layers inside this section instead of letting a later block
- * background paint over them (the bug that hid the About hero image).
- *
- * Source hero art on this site is bright, warm editorial illustration. Rather
- * than dropping it to 40% opacity and letting it read as mud, it gets pulled
- * into the site's navy range with a grayscale + brand-tint duotone, then a
- * directional scrim keeps the headline column at full contrast.
+ * Shared page hero. Art is never filtered. `framed` keeps it in a print
+ * beside the copy, and `band` sets the copy on navy, so text does not sit
+ * on the illustration.
  */
 export default function PageHero({
   eyebrow,
@@ -82,113 +144,76 @@ export default function PageHero({
   footnote,
   aside,
   media,
+  variant,
+  stickers,
   align = "start",
   className,
 }: PageHeroProps) {
-  const isCentered = align === "center" && !aside;
-  const playVideo = useHeroVideoEnabled(media?.kind === "video");
-  const mediaFilter =
-    "[filter:grayscale(1)_brightness(0.62)_contrast(1.2)]";
+  const resolved: PageHeroVariant = variant ?? (media ? "framed" : "plain");
+  const showFrame = resolved !== "plain" && media !== undefined;
+  const onBand = resolved === "band";
+  const playVideo = useHeroVideoEnabled(showFrame && media?.kind === "video");
+  const isCentered = align === "center" && !aside && !showFrame;
+  const hasVisual = showFrame || aside !== undefined;
 
   return (
     <section
       aria-labelledby={titleId}
       className={cn(
-        "relative isolate overflow-hidden border-b border-border/60",
+        "relative",
+        onBand ? "z-10 bg-navy text-band" : "text-ink",
         className,
       )}
     >
-      {/* Brand glow, masked to the top-left so the headline has a light source. */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-20 bg-primary/10 [mask-image:radial-gradient(75%_60%_at_10%_0%,black,transparent_70%)]"
-      />
-
-      {media ? (
-        <div aria-hidden="true" className="absolute inset-0 -z-10 overflow-hidden">
-          {/* Art is anchored right so the crop stays interesting next to the copy. */}
-          <div
-            className={cn(
-              "absolute inset-y-0 right-0 isolate w-full",
-              isCentered ? "" : "lg:w-[78%]",
-            )}
-          >
-            {media.kind === "video" && playVideo ? (
-              <video
-                src={media.src}
-                poster={media.poster}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                className={cn(
-                  "h-full w-full object-cover",
-                  mediaFilter,
-                  media.position ?? "object-center",
-                )}
-              />
-            ) : (
-              <img
-                src={media.kind === "video" ? (media.poster ?? media.src) : media.src}
-                alt=""
-                className={cn(
-                  "h-full w-full object-cover",
-                  mediaFilter,
-                  media.position ?? "object-center",
-                )}
-              />
-            )}
-            <div className="absolute inset-0 bg-primary/30 mix-blend-color" />
-            <div className="absolute inset-0 bg-slate-950/40 mix-blend-multiply" />
-          </div>
-          <div
-            className={cn(
-              "absolute inset-0",
-              isCentered
-                ? "bg-gradient-to-b from-background via-background/75 to-background"
-                : "bg-gradient-to-r from-background from-30% via-background/75 to-background/20",
-            )}
-          />
-          {/* Below lg the copy spans the full width, so the art drops back to texture. */}
-          <div className="absolute inset-0 bg-background/75 lg:hidden" />
-          <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-background to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-background to-transparent" />
-        </div>
+      {onBand ? (
+        <>
+          <BandWave edge="top" />
+          <BandWave edge="bottom" />
+        </>
       ) : null}
-
-      {/* Layout rules, faded at both ends so they read as structure, not chrome. */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.06] [background-image:linear-gradient(to_right,white_1px,transparent_1px)] [background-size:96px_100%] [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_70%,transparent)]"
-      />
 
       <div className="container relative py-16 md:py-24 lg:py-28">
         <div
           className={cn(
-            "grid items-center gap-12 lg:gap-16",
-            aside ? "lg:grid-cols-12" : "",
+            "grid items-center gap-10 lg:gap-8",
+            hasVisual ? "lg:grid-cols-12" : "",
           )}
         >
           <div
             className={cn(
-              aside ? "lg:col-span-7" : "max-w-4xl",
+              hasVisual ? "lg:col-span-6" : "max-w-4xl",
               isCentered ? "mx-auto text-center" : "",
             )}
           >
             {eyebrow ? (
               <div
                 className={cn(
-                  "mb-6 flex items-center gap-3",
+                  "mb-5 flex flex-wrap items-center gap-3",
                   isCentered ? "justify-center" : "",
                 )}
               >
-                <span aria-hidden="true" className="h-px w-8 bg-primary" />
-                <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
+                <span
+                  aria-hidden="true"
+                  className={cn(
+                    "h-[3px] w-7 rounded-sm",
+                    onBand ? "bg-sun" : "bg-verm",
+                  )}
+                />
+                <span
+                  className={cn(
+                    "text-[13px] font-bold uppercase tracking-[0.14em]",
+                    onBand ? "text-sun" : "text-verm-text",
+                  )}
+                >
                   {eyebrow}
                 </span>
                 {eyebrowNote ? (
-                  <span className="hidden text-xs uppercase tracking-[0.14em] text-muted-foreground sm:inline">
+                  <span
+                    className={cn(
+                      "text-[13px] font-bold uppercase tracking-[0.14em]",
+                      onBand ? "text-band-muted" : "text-ink-muted",
+                    )}
+                  >
                     {eyebrowNote}
                   </span>
                 ) : null}
@@ -197,7 +222,10 @@ export default function PageHero({
 
             <h1
               id={titleId}
-              className="text-pretty text-4xl font-bold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+              className={cn(
+                "text-pretty text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl",
+                onBand ? "text-band" : "text-ink",
+              )}
             >
               {title}
             </h1>
@@ -205,7 +233,8 @@ export default function PageHero({
             {lede ? (
               <p
                 className={cn(
-                  "mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl",
+                  "mt-6 max-w-xl text-lg leading-relaxed md:text-xl",
+                  onBand ? "text-band-muted" : "text-ink-muted",
                   isCentered ? "mx-auto" : "",
                 )}
               >
@@ -216,7 +245,7 @@ export default function PageHero({
             {actions ? (
               <div
                 className={cn(
-                  "mt-9 flex flex-col gap-3 sm:flex-row sm:items-center",
+                  "mt-8 flex flex-col gap-3 sm:flex-row sm:items-center",
                   isCentered ? "sm:justify-center" : "",
                 )}
               >
@@ -224,24 +253,29 @@ export default function PageHero({
               </div>
             ) : null}
 
-            {/* A div, not a p, so callers can pass more than one line without
-                nesting block-level spans inside a paragraph. */}
             {footnote ? (
               <div
                 className={cn(
-                  "mt-6 max-w-xl space-y-1 text-sm leading-relaxed text-muted-foreground",
+                  "mt-6 max-w-xl space-y-1 text-[15px] leading-relaxed",
+                  onBand ? "text-band-muted" : "text-ink-muted",
                   isCentered ? "mx-auto" : "",
                 )}
               >
                 {footnote}
               </div>
             ) : null}
-
-            {meta ? <div className="mt-12">{meta}</div> : null}
           </div>
 
-          {aside ? <div className="lg:col-span-5">{aside}</div> : null}
+          {showFrame && media ? (
+            <div className="lg:col-span-6">
+              <FramedArt media={media} stickers={stickers} playVideo={playVideo} />
+            </div>
+          ) : aside ? (
+            <div className="lg:col-span-5 lg:col-start-8">{aside}</div>
+          ) : null}
         </div>
+
+        {meta ? <div className="mt-12 lg:mt-16">{meta}</div> : null}
       </div>
     </section>
   );

@@ -1,25 +1,45 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,500..800,50,1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Font family tokens — consumed as Tailwind utilities:
- *   font-sans    → Source Sans 3 (body / UI)
- *   font-display → Newsreader (headlines / display)
+ * Illustrated Studio tokens.
+ * font-sans    → Source Sans 3 (body / UI, 17–21px in page copy)
+ * font-display → Fraunces with SOFT 50 and WONK 1 (headlines, numerals)
  *
- * Replaces: Inter (body) + Playfair Display (headings)
+ * Palette roles are named by purpose. Vermilion (#DF5124) is decoration
+ * only. Eyebrow text uses --color-verm-text (#B8401A), which clears 4.5:1
+ * on paper. Cobalt is the only action color.
  */
 @theme {
   --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+
+  --color-paper: #fbf6ea;
+  --color-studio-card: #fffdf7;
+  --color-ink: #112234;
+  --color-ink-muted: #3e4a5c;
+  --color-cobalt: #1c4373;
+  --color-verm: #df5124;
+  --color-verm-text: #b8401a;
+  --color-sun: #fcd875;
+  --color-aqua: #79cacb;
+  --color-blush: #f3c0bf;
+  --color-cream: #f0d1a5;
+  --color-apricot: #efaa77;
+  --color-navy: #112234;
+  --color-band: #f7ebd3;
+  --color-band-muted: #e4d9c2;
+  --color-teal: #4d8b88;
+  --color-focus: #c4441a;
+
   /*
    * Contrast overrides (WCAG 2.2 AA, 4.5:1 on paper).
-   * Default cyan-400 and green-700 sit under 4.5:1 on --primitive-paper.
-   * These darker values match the ink-blue accent and the status-success green.
+   * Default cyan-400 and green-700 sit under 4.5:1 on paper.
    */
-  --color-cyan-400: oklch(0.37 0.140 258);
+  --color-cyan-400: #1c4373;
   --color-green-600: oklch(0.42 0.12 145);
   --color-green-700: oklch(0.38 0.12 145);
 }
@@ -71,15 +91,15 @@
    * Ink:  near-black with slight blue cast (like quality print)
    * Ink-blue: single quiet accent — deep fountain-pen blue
    */
-  --primitive-paper:         oklch(0.98 0.010 95);
-  --primitive-paper-subtle:  oklch(0.95 0.010 90);
-  --primitive-ink:           oklch(0.20 0.018 262);
-  --primitive-ink-muted:     oklch(0.35 0.014 262);  /* darkened: passes ≥7:1 on paper for WCAG AA */
-  --primitive-rule:          oklch(0.87 0.007 95);
-  --primitive-rule-strong:   oklch(0.74 0.008 95);
-  --primitive-accent:        oklch(0.37 0.140 258);   /* deep ink-blue */
-  --primitive-accent-hover:  oklch(0.44 0.148 258);   /* slightly lighter on hover */
-  --primitive-accent-focus:  oklch(0.37 0.140 258);   /* same hue for focus ring */
+  --primitive-paper:         #fbf6ea;
+  --primitive-paper-subtle:  #f3ecda;
+  --primitive-ink:           #112234;
+  --primitive-ink-muted:     #3e4a5c;   /* 8.33:1 on paper */
+  --primitive-rule:          #e4dccb;
+  --primitive-rule-strong:   #c9bfab;
+  --primitive-accent:        #1c4373;   /* cobalt, white text 10:1 */
+  --primitive-accent-hover:  #16365c;
+  --primitive-accent-focus:  #c4441a;   /* 4.65:1 on paper */
 
   /*
    * ── Semantic tokens — compose page/component styles from these ───────────
@@ -115,16 +135,16 @@
    * These map to Tailwind's @theme inline utilities above.
    * Values are resolved from primitives where possible.
    */
-  --radius: 0.25rem;   /* 4px — near-sharp; no large SaaS pills */
+  --radius: 0.75rem;
 
   --background:             var(--primitive-paper);
   --foreground:             var(--primitive-ink);
-  --card:                   var(--primitive-paper-subtle);
+  --card:                   #fffdf7;
   --card-foreground:        var(--primitive-ink);
-  --popover:                var(--primitive-paper);
+  --popover:                #fffdf7;
   --popover-foreground:     var(--primitive-ink);
   --primary:                var(--primitive-accent);
-  --primary-foreground:     var(--primitive-paper);
+  --primary-foreground:     #ffffff;
   --secondary:              var(--primitive-paper-subtle);
   --secondary-foreground:   var(--primitive-ink);
   --muted:                  oklch(0.93 0.006 90);
@@ -135,7 +155,7 @@
   --destructive-foreground: var(--primitive-paper);
   --border:                 var(--primitive-rule);
   --input:                  oklch(0.91 0.008 90);
-  --ring:                   var(--primitive-accent);
+  --ring:                   #c4441a;
 
   /* Sidebar — warm paper surface */
   --sidebar:                  var(--primitive-paper);
@@ -208,20 +228,42 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
+    background-image: radial-gradient(rgba(17, 34, 52, 0.05) 1px, transparent 1px);
+    background-size: 6px 6px;
     font-family: var(--font-sans);
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, .font-display {
     font-family: var(--font-display);
-    font-weight: 600;
+    font-weight: 650;
+    font-variation-settings: "SOFT" 50, "WONK" 1, "opsz" 72;
   }
-  /* Respect prefers-reduced-motion globally */
+  h1 {
+    font-variation-settings: "SOFT" 50, "WONK" 1, "opsz" 144;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+  /* Respect prefers-reduced-motion globally. Hover lifts are transforms,
+     so they are cleared here as well as having their transitions zeroed. */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
+    }
+    .studio-sticker {
+      animation: none !important;
+    }
+    .studio-press:hover,
+    .studio-press-ink:hover,
+    .studio-chip:hover,
+    .studio-lift:hover,
+    .studio-wiggle:hover {
+      transform: none !important;
     }
   }
   button:not(:disabled),
@@ -293,4 +335,101 @@
   .text-accent-comcast  { color: var(--cs-accent-comcast); }
   .text-accent-buildout { color: var(--cs-accent-buildout); }
   .text-accent-cvs      { color: var(--cs-accent-cvs); }
+
+  /* Sun underline for one word in a display headline. */
+  .studio-mark {
+    font-style: normal;
+    background-image: linear-gradient(transparent 58%, var(--color-sun) 58%);
+    padding-inline: 0.12em;
+  }
+
+  /* Framed print: ink outline, offset shadow, slight tilt. */
+  .studio-frame {
+    border: 3px solid var(--color-ink);
+    border-radius: 28px;
+    overflow: hidden;
+    background: var(--color-apricot);
+    box-shadow: 10px 10px 0 var(--color-ink);
+    rotate: 1.2deg;
+  }
+
+  .studio-blob {
+    border: 3px solid var(--color-ink);
+    border-radius: 50% 50% 46% 54% / 52% 48% 52% 48%;
+    overflow: hidden;
+    box-shadow: 8px 8px 0 var(--color-teal);
+    background: var(--color-cream);
+  }
+
+  .studio-press,
+  .studio-press-ink,
+  .studio-lift,
+  .studio-chip,
+  .studio-wiggle {
+    transition:
+      transform 150ms ease-out,
+      box-shadow 150ms ease-out,
+      background-color 200ms ease-out;
+  }
+
+  .studio-press {
+    box-shadow: 4px 4px 0 var(--color-verm);
+  }
+  .studio-press:hover {
+    transform: translateY(-3px);
+    box-shadow: 7px 7px 0 var(--color-verm);
+  }
+  .studio-press:active {
+    transform: translateY(1px);
+    box-shadow: 2px 2px 0 var(--color-verm);
+  }
+
+  .studio-press-ink {
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
+  .studio-press-ink:hover {
+    transform: translateY(-3px);
+    box-shadow: 7px 7px 0 var(--color-ink);
+  }
+  .studio-press-ink:active {
+    transform: translateY(1px);
+    box-shadow: 2px 2px 0 var(--color-ink);
+  }
+
+  .studio-lift {
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
+  .studio-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 7px 7px 0 var(--color-ink);
+  }
+  .studio-lift-sun {
+    box-shadow: 10px 10px 0 var(--color-sun);
+  }
+  .studio-lift-sun:hover {
+    box-shadow: 13px 13px 0 var(--color-sun);
+  }
+
+  .studio-chip:hover,
+  .studio-wiggle:hover {
+    transform: rotate(-2deg);
+  }
+  .studio-chip[aria-pressed="true"] {
+    box-shadow: 3px 3px 0 var(--color-ink);
+  }
+
+  .studio-sticker {
+    animation: studio-sticker-in 500ms ease-out both;
+  }
+}
+
+@keyframes studio-sticker-in {
+  from {
+    opacity: 0;
+    translate: 0 -12px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
