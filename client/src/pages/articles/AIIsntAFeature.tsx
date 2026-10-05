@@ -12,15 +12,15 @@ export default function AIIsntAFeature() {
       <ResponsiveNav currentPage="articles" />
 
       <Helmet>
-        <title>AI Isn't a Feature. It's a Workflow Problem. | Ryan Winzenburg</title>
+        <title>AI Is a Workflow Problem. | Ryan Winzenburg</title>
         <meta
           name="description"
-          content="Most teams aren't falling behind because they lack AI tools. They're asking the wrong question. Why workflow redesign, not feature bolt-ons, is where the real advantage lives."
+          content="Teams fall behind when they bolt AI onto the old workflow. The advantage shows up when they redesign how the work moves."
         />
-        <meta property="og:title" content="AI Isn't a Feature. It's a Workflow Problem." />
+        <meta property="og:title" content="AI Is a Workflow Problem." />
         <meta
           property="og:description"
-          content="Most teams aren't falling behind because they lack AI tools. They're asking the wrong question."
+          content="Teams fall behind when they bolt AI onto the old workflow. The advantage shows up when they redesign how the work moves."
         />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-isnt-a-feature-workflow" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-isnt-a-feature-workflow-hero.webp" />
@@ -30,8 +30,8 @@ export default function AIIsntAFeature() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "AI Isn't a Feature. It's a Workflow Problem.",
-          description: "Most teams aren't falling behind because they lack AI tools. They're asking the wrong question.",
+          headline: "AI Is a Workflow Problem.",
+          description: "Teams fall behind when they bolt AI onto the old workflow. The advantage shows up when they redesign how the work moves.",
           author: { "@type": "Person", name: "Ryan Winzenburg", url: "https://winzenburg.com" },
           datePublished: "2026-05-29",
           url: "https://winzenburg.com/articles/ai-isnt-a-feature-workflow",
@@ -49,7 +49,7 @@ export default function AIIsntAFeature() {
           <div className="mb-12 rounded-lg overflow-hidden">
             <img
               src="/images/articles/ai-isnt-a-feature-workflow-hero.webp"
-              alt="AI Isn't a Feature. It's a Workflow Problem."
+              alt="AI Is a Workflow Problem."
               className="w-full h-auto"
             />
           </div>
@@ -62,11 +62,11 @@ export default function AIIsntAFeature() {
 
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              AI Isn't a Feature. It's a Workflow Problem.
+              AI Is a Workflow Problem.
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              AI isn&apos;t a feature you bolt on — it&apos;s a workflow redesign problem, and teams that treat it as a button lose to teams that rebuild how work moves.
+              AI is a workflow redesign problem, and teams that treat it as a button lose to teams that rebuild how work moves.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function AIIsntAFeature() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              There are two parallel movements underway, and it's worth being clear about the difference.
+              There are two parallel movements underway. The difference matters.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -93,7 +93,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The second movement is more significant. It's applications being rebuilt around AI from the ground up. Platforms designed from the start to use AI not as an add-on, but as the operating model. The difference isn't incremental. It's structural.
+              The second movement is more significant. It's applications being rebuilt around AI from the ground up. Platforms designed from the start to use AI as the operating model. The difference is structural.
             </p>
 
             <div className="my-12 grid md:grid-cols-2 gap-6">
@@ -142,7 +142,7 @@ export default function AIIsntAFeature() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Most product teams aren't short on ideas. They're short on time to validate them.
+              Most product teams are short on time to validate their ideas.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -150,7 +150,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The bottleneck isn't building. It's the time between insight and validated decision.
+              The bottleneck is the time between insight and a validated decision.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -168,7 +168,7 @@ export default function AIIsntAFeature() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The gains that matter aren't coming from AI writing your PRDs faster. They're coming from teams that have redesigned the entire chain of work.
+              The gains that matter come from teams that have redesigned the entire chain of work.
             </p>
 
             <div className="my-8 bg-muted border border-primary/20 rounded-lg p-6">
@@ -208,7 +208,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              That's where AI creates leverage. Not in the creative, judgment-intensive work, that still requires humans. But in the connective tissue between the work. The transcription. The documentation. The synthesis. The translation between disciplines. That's where hours disappear, and that's where redesigning the workflow pays off.
+              AI pays off in the connective tissue between the work: transcription, documentation, synthesis, and translation between disciplines. Creative, judgment-intensive work still requires humans. That is where hours disappear, and where redesigning the workflow pays off.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -220,11 +220,11 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The answer, in the organizations I've seen get this right, is design operations or product operations. Not because they have the most authority, but because they have the right vantage point. They sit at the intersection of process, tooling, and craft. They can see where handoffs break down. They understand both the design system and the delivery pipeline. And they're not so deep in execution that they can't look up and ask: why are we doing it this way?
+              The answer, in the organizations I've seen get this right, is design operations or product operations. They have the right vantage point. They sit at the intersection of process, tooling, and craft. They can see where handoffs break down. They understand both the design system and the delivery pipeline. And they're not so deep in execution that they can't look up and ask: why are we doing it this way?
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              That cross-functional visibility is exactly what workflow redesign requires. It's not a technical problem. It's a systems problem, and the people who think in systems are the ones who should be leading it.
+              That cross-functional visibility is exactly what workflow redesign requires. This is a systems problem, and the people who think in systems are the ones who should be leading it.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -248,7 +248,7 @@ export default function AIIsntAFeature() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              A lot of product and design teams are using AI to protect the old model, to do the same work with less effort. That's the wrong frame. The better question isn't how to preserve what you're already doing. It's what becomes possible now that the economics of building have fundamentally changed.
+              A lot of product and design teams are using AI to protect the old model, to do the same work with less effort. That's the wrong frame. The better question is what becomes possible now that the economics of building have changed.
             </p>
 
             <div className="my-8 bg-muted border border-primary/20 rounded-lg p-6">
@@ -256,7 +256,7 @@ export default function AIIsntAFeature() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <span className="text-primary mt-1 text-lg leading-none">→</span>
-                  <span>What can you offer users now that wasn't viable six months ago, not because you lacked the idea, but because you lacked the capacity to build it?</span>
+                  <span>What can you offer users now that wasn't viable six months ago, because you lacked the capacity to build it?</span>
                 </div>
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <span className="text-primary mt-1 text-lg leading-none">→</span>
@@ -288,7 +288,7 @@ export default function AIIsntAFeature() {
                 {
                   question: "Why isn't AI just another product feature?",
                   answer:
-                    "Feature bolt-ons improve individual tasks by roughly 10–30% while leaving handoffs, silos, and process friction intact. The durable advantage comes from redesigning the workflow around AI, not from adding a summarize button to the old process.",
+                    "Feature bolt-ons improve individual tasks by roughly 10 to 30% while leaving handoffs, silos, and process friction intact. The durable advantage comes from redesigning the workflow around AI, not from adding a summarize button to the old process.",
                 },
                 {
                   question: "Who should own AI workflow redesign inside a product org?",

@@ -624,12 +624,12 @@ Before writing code: Query Context7 for each library above`}
 
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Get This Workflow</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">The Context7 workflow</h3>
             <p className="text-muted-foreground mb-6">
               Want the exact Context7 queries we use for Tailwind, Next.js, and Supabase? Plus our dev quality template with Context7 integration?
             </p>
             <Link href="/contact?playbook=context7-starter" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Download the Context7 Starter Kit →
+                Open the Context7 starter kit
             </Link>
           </div>
 

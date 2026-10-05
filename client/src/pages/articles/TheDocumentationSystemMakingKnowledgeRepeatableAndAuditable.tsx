@@ -326,11 +326,11 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
       </p>
 
       <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
-        The Uncomfortable Truths About Documentation Systems
+        The costs of a documentation system
       </h2>
 
       <p className="mb-6">
-        Let me be honest about the downsides, because every productivity guru loves to skip this part:
+        The downsides are real:
       </p>
 
       <p className="mb-6">
@@ -416,7 +416,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
           href="/resources/documentation-system-templates" 
           className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
         >
-          Get the Documentation Templates
+          Open the documentation templates
         </a>
       </div>
           </div>

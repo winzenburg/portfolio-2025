@@ -55,7 +55,7 @@ export default function AudienceFirstGoToMarket() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              I've watched it happen dozens of times. A team spends six months building what they believe is a transformative product. They pour everything into getting the features right, the design polished, the performance optimized. Launch day arrives with genuine excitement and anticipation. They hit publish, send out announcements, and wait for the response.
+              I've watched it happen dozens of times. A team spends six months building what they believe is a product that will change their market. They pour everything into getting the features right, the design polished, the performance optimized. Launch day arrives with genuine excitement and anticipation. They hit publish, send out announcements, and wait for the response.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default function AudienceFirstGoToMarket() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Organic content builds your foundation, but there's a ceiling to how fast you can grow through your own audience alone. Eventually you need to reach beyond the people who already follow you. This is where creator partnerships become transformative, they let you tap into established audiences that align perfectly with your target market.
+              Organic content builds your foundation, but there's a ceiling to how fast you can grow through your own audience alone. Eventually you need to reach beyond the people who already follow you. This is where creator partnerships change the reach. They let you tap into established audiences that align with your target market.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -177,7 +177,7 @@ export default function AudienceFirstGoToMarket() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The partnership terms need to be genuinely attractive to work. Equity stakes of 10-20% or revenue shares of 30-50% might seem steep, but they align incentives completely. When the creator succeeds financially only if your product succeeds, they're motivated to promote it thoughtfully and persistently, beyond a single mention. This transforms the relationship from a transactional sponsorship into a true partnership where both parties benefit from mutual success.
+              The partnership terms need to be attractive enough to work. Equity stakes of 10-20% or revenue shares of 30-50% might seem steep, but they align incentives completely. When the creator succeeds financially only if your product succeeds, they're motivated to promote it thoughtfully and persistently, beyond a single mention. This transforms the relationship from a transactional sponsorship into a true partnership where both parties benefit from mutual success.
             </p>
 
             {/* Implementation Steps */}
@@ -368,7 +368,7 @@ export default function AudienceFirstGoToMarket() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The sequencing matters enormously. Start with organic content to validate that your message resonates and that you can build an audience at all. Add creator partnerships once you've validated product-market fit and have something genuinely worth promoting. Layer in paid acquisition only when the economics are clear and you're confident in your conversion funnel. This staged approach prevents the common mistake of burning budget on paid ads before you understand what actually works.
+              The sequencing matters enormously. Start with organic content to validate that your message resonates and that you can build an audience at all. Add creator partnerships once you've validated product-market fit and have something worth promoting. Layer in paid acquisition only when the economics are clear and you're confident in your conversion funnel. This staged approach prevents the common mistake of burning budget on paid ads before you understand what actually works.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -380,7 +380,7 @@ export default function AudienceFirstGoToMarket() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Weeks five through eight are when you add creator outreach. You've validated that your message resonates organically. You understand what content performs well. Now you're identifying creators whose audiences align with your target market and proposing partnerships that genuinely benefit both parties.
+              Weeks five through eight are when you add creator outreach. You've validated that your message resonates organically. You understand what content performs well. Now you're identifying creators whose audiences align with your target market and proposing partnerships that benefit both parties.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -456,7 +456,7 @@ export default function AudienceFirstGoToMarket() {
               <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Build Your Audience-First Strategy?</h3>
               <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Book a 30-minute call
+                  See if a Discovery Call fits
               </Link>
             </div>
           </div>

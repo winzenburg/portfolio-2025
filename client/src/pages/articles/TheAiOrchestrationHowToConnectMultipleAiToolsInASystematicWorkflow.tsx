@@ -214,10 +214,10 @@ export default function AiOrchestrationWorkflow() {
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">The Secret Sauce: Quality Gates</h2>
+        <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">Quality Gates</h2>
 
         <p>
-          Here's what most people get wrong about AI orchestration: they think it's just about connecting APIs. But the real breakthrough comes from building quality gates between each step.
+          Connecting APIs is the easy part. The useful work is a quality gate between each step.
         </p>
 
         <p>
@@ -340,14 +340,14 @@ export default function AiOrchestrationWorkflow() {
           Ready to Orchestrate Your AI Workflow?
         </h3>
         <p className="text-muted-foreground mb-6">
-          Get the complete AI orchestration framework, including templates, quality gates, and implementation guides.
+          The AI orchestration framework includes templates, quality gates, and implementation guides.
         </p>
         <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
           <Link 
             href="/ai-orchestration-framework"
             className="inline-block bg-blue-600 text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            Get the Framework
+            Open the framework
           </Link>
           <Link 
             href="/contact?intent=consulting"

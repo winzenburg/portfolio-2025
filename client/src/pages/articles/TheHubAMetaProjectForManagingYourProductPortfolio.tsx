@@ -73,7 +73,7 @@ export default function TheHubArticle() {
           {/* Article Body */}
           <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_p:last-child]:mb-0 [&_blockquote]:my-8 [&_blockquote:last-child]:mb-0 [&_ul]:my-6 [&_ol]:my-6 [&_ul]:pl-6 [&_ol]:pl-6 [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-2 [&_li]:marker:text-primary [&_li]:text-foreground">
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Here's what nobody tells you about being a serial product creator: the ideas multiply faster than rabbits, and keeping track of them all becomes a full-time job. I had spreadsheets tracking spreadsheets, Notion pages for organizing other Notion pages, and a growing sense that I was spending more time managing my portfolio than actually building products.
+              The ideas multiply faster than rabbits, and keeping track of them all becomes a full-time job. I had spreadsheets tracking spreadsheets, Notion pages for organizing other Notion pages, and a growing sense that I was spending more time managing my portfolio than actually building products.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -159,7 +159,7 @@ export default function TheHubArticle() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              This isn't pretty visual progress bars, though they are pretty. It's accountability. When a project sits in "Validation" for two months, that card starts looking lonely. Either I move it forward or kill it. No more project purgatory.
+              The cards are accountability, even when they also look good. When a project sits in "Validation" for two months, that card starts looking lonely. Either I move it forward or kill it. No more project purgatory.
             </p>
 
             <h3 className="text-2xl font-bold text-primary mt-8 mb-4">
@@ -591,7 +591,7 @@ export default function TheHubArticle() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-colors text-center">
-                  Get the Hub Building Guide
+                  Open the Hub building guide
               </Link>
               <Link href="/portfolio" className="inline-block border border-cyan-500 text-primary hover:bg-primary/10 font-semibold px-6 py-3 rounded-lg transition-colors text-center">
                   See My Portfolio Dashboard

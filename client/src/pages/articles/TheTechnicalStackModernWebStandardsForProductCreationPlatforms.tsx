@@ -239,7 +239,7 @@ export default function TechnicalStackModernWebStandards() {
         <h3 className="text-2xl font-bold mt-8 mb-4">Design System: Accessibility First (Because It Matters)</h3>
 
         <p>
-          I'll admit it: I used to ship interfaces that looked pretty but were terrible for anyone using a keyboard or screen reader. Not because I didn't care, but because I didn't know better.
+          I'll admit it: I used to ship interfaces that looked pretty but were terrible for anyone using a keyboard or screen reader. I didn't know better.
         </p>
 
         <p>
@@ -250,10 +250,10 @@ export default function TechnicalStackModernWebStandards() {
           The practical impact? My validation platform works for everyone, beyond people who navigate the way I do. That's good karma, and it's good business too.
         </p>
 
-        <h3 className="text-2xl font-bold mt-8 mb-4">AI Integration: The Force Multiplier</h3>
+        <h3 className="text-2xl font-bold mt-8 mb-4">AI Integration: What It Multiplies</h3>
 
         <p>
-          Here's where things get interesting. I've integrated AI tools throughout the platform, not to replace thinking, but to accelerate it.
+          I've integrated AI tools throughout the platform to speed up the thinking I still do.
         </p>
 
         <p>

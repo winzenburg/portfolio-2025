@@ -11,14 +11,14 @@ export default function AICodingEconomics() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Economics of AI-Assisted Coding: When $40 Beats 6 Hours | Ryan Winzenburg</title>
-        <meta name="description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money, it&#39;s about what becomes possible when implementation stops being the constraint." />
+        <meta name="description" content="A feature that used to cost a day of implementation can cost a few dollars in API calls. The larger cost is the work you never get to test." />
         <meta property="og:title" content="The Economics of AI-Assisted Coding: When $40 Beats 6 Hours" />
-        <meta property="og:description" content="Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn&#39;t about saving money, it&#39;s about what becomes possible when implementation stops being the constraint." />
+        <meta property="og:description" content="A feature that used to cost a day of implementation can cost a few dollars in API calls. The larger cost is the work you never get to test." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-coding-economics" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-coding-economics-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-coding-economics" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"Last month, I spent $42 on API calls to build a feature that would have cost me $600 in time. The ROI was 14x. But the real story isn't about saving money, it's about what becomes possible when implementation stops being the constraint.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"A feature that used to cost a day of implementation can cost a few dollars in API calls. The larger cost is the work you never get to test.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -119,13 +119,13 @@ export default function AICodingEconomics() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              But the real cost isn't money. It's opportunity cost. While you're spending 13 hours implementing Feature A, you're not validating Feature B, not talking to users about Feature C, not exploring the market for Feature D. Serial execution means you can only ship what fits in your available hours.
+              The real cost is opportunity cost. While you're spending 13 hours implementing Feature A, you're not validating Feature B, not talking to users about Feature C, not exploring the market for Feature D. Serial execution means you can only ship what fits in your available hours.
             </p>
 
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-primary">
               <p className="text-2xl text-primary font-semibold italic leading-relaxed">
-                "The bottleneck isn't coding speed. It's that you can only code one feature at a time."
+                "You can only code one feature at a time. That is the bottleneck."
               </p>
             </div>
 
@@ -406,7 +406,7 @@ export default function AICodingEconomics() {
             </h3>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              This one's real. If you're junior and trying to learn, manually coding everything has educational value. But if you're already competent? The time spent coding boilerplate CRUD operations isn't making you a better engineer. It's just occupying time you could spend learning architecture, system design, or user behavior.
+              This one's real. If you're junior and trying to learn, manually coding everything has educational value. But if you're already competent? Coding boilerplate CRUD occupies time you could spend on architecture, system design, or user behavior.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -552,7 +552,7 @@ export default function AICodingEconomics() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Want to 5x Your Development ROI?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

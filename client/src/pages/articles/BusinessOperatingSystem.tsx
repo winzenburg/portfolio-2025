@@ -11,14 +11,14 @@ export default function BusinessOperatingSystem() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Business Operating System: A Weekly Loop for Shipping and Learning | Ryan Winzenburg</title>
-        <meta name="description" content="Most teams don&#39;t fail because they lack ideas. They fail because they can&#39;t translate decisions into weekly outcomes. Here&#39;s the operating system that keeps execution honest." />
+        <meta name="description" content="Teams stall when good decisions never become weekly outcomes. An operating system is how those decisions turn into finished work." />
         <meta property="og:title" content="The Business Operating System: A Weekly Loop for Shipping and Learning" />
-        <meta property="og:description" content="Most teams don&#39;t fail because they lack ideas. They fail because they can&#39;t translate decisions into weekly outcomes. Here&#39;s the operating system that keeps execution honest." />
+        <meta property="og:description" content="Teams stall when good decisions never become weekly outcomes. An operating system is how those decisions turn into finished work." />
         <meta property="og:url" content="https://winzenburg.com/articles/business-operating-system" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/business-operating-system-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/business-operating-system" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Business Operating System: A Weekly Loop for Shipping and Learning","description":"Most teams don't fail because they lack ideas. They fail because they can't translate decisions into weekly outcomes. Here's the operating system that keeps execution honest.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-30","url":"https://winzenburg.com/articles/business-operating-system","image":"https://winzenburg.com/images/articles/business-operating-system-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Business Operating System: A Weekly Loop for Shipping and Learning","description":"Teams stall when good decisions never become weekly outcomes. An operating system is how those decisions turn into finished work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-30","url":"https://winzenburg.com/articles/business-operating-system","image":"https://winzenburg.com/images/articles/business-operating-system-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -429,7 +429,7 @@ export default function BusinessOperatingSystem() {
               <h3 className="text-2xl font-bold text-foreground mb-4">Want to Implement This in Your Organization?</h3>
               <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Book a 30-minute call
+                  See if a Discovery Call fits
               </Link>
             </div>
           </div>

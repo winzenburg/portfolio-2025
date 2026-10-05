@@ -608,11 +608,11 @@ export default function AIToolStackArticle() {
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-foreground mt-12">
           <h3 className="text-2xl font-bold mb-4">Ready to coordinate your AI tool chaos?</h3>
           <p className="text-blue-100 mb-6">
-            Get my complete AI Tool Orchestration Framework, including tool lane templates, routing decision trees, 
-            and cost optimization strategies.
+            The AI Tool Orchestration Framework includes tool lane templates, routing decision trees, 
+            and how I keep the cost down.
           </p>
           <button className="bg-muted text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors">
-            Get the Framework →
+            Open the framework
           </button>
         </div>
 

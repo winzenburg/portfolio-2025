@@ -11,14 +11,14 @@ export default function WritingPRDsForAI() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Writing PRDs That AI Agents Can Execute | Ryan Winzenburg</title>
-        <meta name="description" content="I spent 45 minutes writing a PRD. The autonomous agent built the feature perfectly overnight for $42. Then I wrote another PRD in 20 minutes. The agent failed three times and wasted $60. The difference? Acceptance criteria specificity." />
+        <meta name="description" content="A careful PRD let an agent build a feature overnight for a small API bill. A thin PRD produced a failed build and a wasted call." />
         <meta property="og:title" content="Writing PRDs That AI Agents Can Execute" />
-        <meta property="og:description" content="I spent 45 minutes writing a PRD. The autonomous agent built the feature perfectly overnight for $42. Then I wrote another PRD in 20 minutes. The agent failed three times and wasted $60. The difference? Acceptance criteria specificity." />
+        <meta property="og:description" content="A careful PRD let an agent build a feature overnight for a small API bill. A thin PRD produced a failed build and a wasted call." />
         <meta property="og:url" content="https://winzenburg.com/articles/writing-prds-for-ai-agents" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/writing-prds-for-ai-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/writing-prds-for-ai-agents" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Writing PRDs That AI Agents Can Execute","description":"I spent 45 minutes writing a PRD. The autonomous agent built the feature perfectly overnight for $42. Then I wrote another PRD in 20 minutes. The agent failed three times and wasted $60. The difference? Acceptance criteria specificity.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-01","url":"https://winzenburg.com/articles/writing-prds-for-ai-agents","image":"https://winzenburg.com/images/articles/writing-prds-for-ai-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Writing PRDs That AI Agents Can Execute","description":"A careful PRD let an agent build a feature overnight for a small API bill. A thin PRD produced a failed build and a wasted call.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-01","url":"https://winzenburg.com/articles/writing-prds-for-ai-agents","image":"https://winzenburg.com/images/articles/writing-prds-for-ai-hero.webp"})}</script>
       </Helmet>
 
       <article className="pt-10 pb-16 md:pt-14">
@@ -426,7 +426,7 @@ One paragraph maximum.
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I used to rush PRD writing to "save time." Then I'd watch autonomous builds fail and cost $40-80 in wasted API calls. Now I spend 45-60 minutes on PRDs. My success rate went from 60% to 95%. The math is clear:
+              I used to rush PRD writing to "save time." Then I'd watch autonomous builds fail and cost $40-80 in wasted API calls. Now I spend 45-60 minutes on PRDs. My success rate improved noticeably. The math is clear:
             </p>
 
             <div className="my-12 grid md:grid-cols-2 gap-6">
@@ -439,7 +439,7 @@ One paragraph maximum.
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Success rate:</span>
-                    <span className="text-foreground">60%</span>
+                    <span className="text-foreground">Lower</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Average cost:</span>
@@ -460,7 +460,7 @@ One paragraph maximum.
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Success rate:</span>
-                    <span className="text-foreground">95%</span>
+                    <span className="text-foreground">Higher</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Average cost:</span>
@@ -509,7 +509,7 @@ One paragraph maximum.
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Write PRDs That Work?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 
