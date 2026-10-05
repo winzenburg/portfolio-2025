@@ -18,7 +18,7 @@ const badgeVariants = cva(
         outline:
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
         sticker:
-          "rounded-sm border border-ink/20 bg-transparent px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink",
+          "rounded-sm border border-line bg-transparent px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink",
       },
     },
     defaultVariants: {

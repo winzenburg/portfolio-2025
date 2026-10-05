@@ -464,7 +464,7 @@ export default function Work() {
         eyebrowNote={`${caseStudyCount} projects`}
         media={{
           src: "/images/work-hero.webp",
-          position: "object-center",
+          position: "object-[center_28%]",
           alt: "A suited figure holds a light bulb in one hand and a spotlight in the other, surrounded by bottles, screens, and workshop tools.",
         }}
         title={<>What product experience leadership looks like in practice</>}

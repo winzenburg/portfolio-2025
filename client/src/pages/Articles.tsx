@@ -801,7 +801,7 @@ export default function Articles() {
         eyebrowNote={`${articles.length} pieces`}
         media={{
           src: "/images/articles-hero.webp",
-          position: "object-center",
+          position: "object-[center_36%]",
           alt: "A person in a polka-dot coat balances on a plank resting on patterned blocks and spheres.",
         }}
         title="Writing on product experience, operating models, and AI-enabled delivery"

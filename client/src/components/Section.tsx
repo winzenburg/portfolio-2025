@@ -61,8 +61,8 @@ interface EyebrowProps {
 }
 
 /**
- * Small label above a heading. Vermilion text on paper (5.14:1). On a navy
- * band it switches to sun, which clears 11:1 on navy.
+ * Small label above a heading. Vermilion text on paper (6.77:1). On a navy
+ * band it switches to cream, which clears 13:1 on navy.
  */
 export function Eyebrow({ children, className }: EyebrowProps) {
   const onNavy = useSectionTone() === "navy";

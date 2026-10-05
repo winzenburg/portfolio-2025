@@ -105,7 +105,7 @@ const engagementPaths = [
     index: "01",
     label: "Entry",
     name: "AI Delivery Loop Sprint",
-    body: "A fixed engagement for the bet you are about to fund. We put evidence under the direction, cut what does not hold, and leave engineering with a scope they can start. AI compresses the mechanical parts of synthesis and specification. The judgment stays mine.",
+    body: "A fixed engagement for the bet you are about to fund. We put evidence under the direction, cut what does not hold, and leave engineering with a written scope they can start. You get a go, no-go, or pivot call with the evidence behind it. AI compresses the mechanical parts of synthesis and specification. The judgment stays mine.",
     meta: "Typically 2–4 weeks · from $8,000",
   },
   {
@@ -181,7 +181,7 @@ export default function Home() {
         eyebrow="Consulting for enterprise B2B product leaders"
         media={{
           src: "/images/home-hero-poster.webp",
-          position: "object-[68%_center]",
+          position: "object-center",
           alt: "Figures stand and work across a stepped structure of blue, red, black, and cream blocks beneath a red sun.",
         }}
         title={
@@ -190,7 +190,7 @@ export default function Home() {
             before you fund the build.
           </>
         }
-        lede="I run a fixed-fee AI Delivery Loop Sprint. Two to four weeks, from $8,000. You get a go, no-go, or pivot call with the evidence behind it, and a written scope your engineers can start."
+        lede="Before your team commits a quarter of engineering time, you should know the idea will hold up with real users. I help product leaders test the bet early, so the build starts on evidence instead of hope."
         actions={
           <>
             <Button size="lg" asChild>

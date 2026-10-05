@@ -65,8 +65,8 @@ function useHeroShift(active: boolean) {
       if (rect.width === 0 || rect.height === 0) return;
       const x = (event.clientX - rect.left) / rect.width - 0.5;
       const y = (event.clientY - rect.top) / rect.height - 0.5;
-      media.style.setProperty("--hero-x", `${(-x * 14).toFixed(2)}px`);
-      media.style.setProperty("--hero-y", `${(-y * 10).toFixed(2)}px`);
+      media.style.setProperty("--hero-x", `${(-x * 8).toFixed(2)}px`);
+      media.style.setProperty("--hero-y", `${(-y * 6).toFixed(2)}px`);
     };
     const onLeave = () => {
       media.style.setProperty("--hero-x", "0px");
@@ -105,8 +105,8 @@ interface PageHeroProps {
   /**
    * `framed` puts full-color art beside the copy, unfiltered.
    * `band` is a straight navy section.
-   * `bleed` runs the art edge to edge. The headline sits on a solid navy
-   * panel so the type never rests on the illustration.
+   * `bleed` puts the illustration beside the copy, shown whole.
+   * The headline sits on a solid navy panel so the type never rests on the art.
    * Defaults to `framed` when media is set, otherwise `plain`.
    */
   variant?: PageHeroVariant;
@@ -190,6 +190,7 @@ export default function PageHero({
     const alt = media.alt ?? "";
 
     return (
+      <>
       <section
         aria-labelledby={titleId}
         data-tone="navy"
@@ -198,39 +199,9 @@ export default function PageHero({
           className,
         )}
       >
-        <div
-          ref={shiftRef}
-          className="relative h-[70vw] min-h-64 max-h-[28rem] w-full overflow-hidden lg:absolute lg:inset-0 lg:h-full lg:max-h-none lg:min-h-0"
-        >
-          {media.kind === "video" && playVideo ? (
-            <video
-              src={media.src}
-              poster={media.poster}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label={alt || undefined}
-              className={cn(
-                "studio-hero-shift absolute inset-0 h-full w-full object-cover",
-                media.position ?? "object-center",
-              )}
-            />
-          ) : (
-            <img
-              src={imageSrc}
-              alt={alt}
-              className={cn(
-                "studio-hero-shift absolute inset-0 h-full w-full object-cover",
-                media.position ?? "object-center",
-              )}
-            />
-          )}
-        </div>
-
-        <div className="relative z-10 bg-navy lg:min-h-[36rem] lg:w-[min(42rem,52%)]">
-          <div className="px-4 py-12 sm:px-8 lg:px-12 lg:py-20 xl:pl-16">
+        <div className="lg:grid lg:min-h-[34rem] lg:grid-cols-[minmax(18rem,42rem)_minmax(0,1fr)] lg:items-center">
+        <div className="relative z-10 order-2 bg-navy lg:order-1">
+          <div className="px-4 py-12 sm:px-8 lg:px-12 lg:py-16 xl:pl-16">
             {eyebrow ? (
               <div className="mb-5 flex flex-wrap items-center gap-3">
                 <span aria-hidden="true" className="h-px w-6 bg-band" />
@@ -269,11 +240,48 @@ export default function PageHero({
                 {footnote}
               </div>
             ) : null}
-
-            {meta ? <div className="mt-10 lg:mt-12">{meta}</div> : null}
           </div>
         </div>
+        <div
+          ref={shiftRef}
+          className="order-1 flex items-center justify-center overflow-hidden px-4 py-8 sm:px-8 lg:order-2 lg:px-10 lg:py-12"
+        >
+          {media.kind === "video" && playVideo ? (
+            <video
+              src={media.src}
+              poster={media.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={alt || undefined}
+              className={cn(
+                "studio-hero-art",
+                media.position ?? "object-center",
+              )}
+            />
+          ) : (
+            <img
+              src={imageSrc}
+              alt={alt}
+              width={1456}
+              height={812}
+              className={cn(
+                "studio-hero-art",
+                media.position ?? "object-center",
+              )}
+            />
+          )}
+        </div>
+        </div>
       </section>
+      {meta ? (
+        <div className="border-b border-ink/15 bg-paper text-ink">
+          <div className="container">{meta}</div>
+        </div>
+      ) : null}
+    </>
     );
   }
 

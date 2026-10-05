@@ -203,7 +203,7 @@ export default function About() {
         eyebrowNote={`Canonical profile · Updated ${brandFacts.updated}`}
         media={{
           src: "/images/about-hero.webp",
-          position: "object-center",
+          position: "object-[center_32%]",
           alt: "People gather on and inside a large gear, some climbing stairs along its edge, with trees around them.",
         }}
         title={

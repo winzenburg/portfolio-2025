@@ -128,13 +128,13 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           {/* Wordmark */}
           <Link
             href="/"
-            className="group inline-flex items-center gap-2.5 rounded-sm transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="group inline-flex items-center gap-2.5 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             aria-label={`Ryan Winzenburg, home${currentPage === "home" ? " (current page)" : ""}`}
             aria-current={currentPage === "home" ? "page" : undefined}
           >
             <span
               aria-hidden="true"
-              className="flex h-9 w-9 items-center justify-center border border-ink/30 font-display text-xs tracking-[0.12em] text-ink"
+              className="flex h-9 w-9 items-center justify-center border border-line font-display text-xs tracking-[0.12em] text-ink"
             >
               RW
             </span>
