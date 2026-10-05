@@ -11,14 +11,14 @@ export default function FreshContextPerIteration() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Fresh Context Per Iteration: Why Autonomous Agents Don&#39;t Break Like Long Sessions | Ryan Winzenburg</title>
-        <meta name="description" content="I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn&#39;t have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift." />
+        <meta name="description" content="Long AI sessions get worse as the chat fills with old decisions. Resetting context between stories keeps the agent on the current code." />
         <meta property="og:title" content="Fresh Context Per Iteration: Why Autonomous Agents Don&#39;t Break Like Long Sessions" />
-        <meta property="og:description" content="I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn&#39;t have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift." />
+        <meta property="og:description" content="Long AI sessions get worse as the chat fills with old decisions. Resetting context between stories keeps the agent on the current code." />
         <meta property="og:url" content="https://winzenburg.com/articles/fresh-context-per-iteration" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/fresh-context-per-iteration" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Fresh Context Per Iteration: Why Autonomous Agents Don't Break Like Long Sessions","description":"I spent 4 hours in an interactive AI session yesterday. By hour 3, the agent was making mistakes it wouldn't have made in hour 1. Context pollution had set in. Meanwhile, an autonomous agent built a feature overnight with zero context drift.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-15","url":"https://winzenburg.com/articles/fresh-context-per-iteration","image":"https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Fresh Context Per Iteration: Why Autonomous Agents Don't Break Like Long Sessions","description":"Long AI sessions get worse as the chat fills with old decisions. Resetting context between stories keeps the agent on the current code.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-15","url":"https://winzenburg.com/articles/fresh-context-per-iteration","image":"https://winzenburg.com/images/articles/fresh-context-per-iteration-hero.webp"})}</script>
       </Helmet>
 
       <article className="pt-10 pb-16 md:pt-14">
@@ -63,12 +63,12 @@ export default function FreshContextPerIteration() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The difference isn't smarter AI. It's architectural. Autonomous agents reset context between tasks. Interactive sessions accumulate it. That single difference explains why autonomous builds can run overnight reliably while long interactive sessions become progressively less useful.
+              The difference is architectural. Autonomous agents reset context between tasks. Interactive sessions accumulate it. That single difference explains why autonomous builds can run overnight reliably while long interactive sessions become progressively less useful.
             </p>
 
             <div className="my-12 pl-6 border-l-4 border-primary">
               <p className="text-2xl text-primary font-semibold italic leading-relaxed">
-                "The problem isn't context windows filling up. It's that every interaction adds noise to future decisions."
+                "Every interaction adds noise to future decisions. A bigger context window does not fix that."
               </p>
             </div>
 
@@ -129,7 +129,7 @@ export default function FreshContextPerIteration() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The decline isn't linear. It's exponential. Each bad decision based on polluted context creates more pollution for future decisions. By hour 4, you're spending more time correcting the agent than you would spend coding manually.
+              The decline is exponential. Each bad decision based on polluted context creates more pollution for future decisions. By hour 4, you're spending more time correcting the agent than you would spend coding manually.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -172,7 +172,7 @@ export default function FreshContextPerIteration() {
             </h3>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Here's what most people miss: the relevant context for Story 5 isn't "everything that happened in Stories 1-4." It's "the current state of the codebase after Stories 1-4 completed."
+              The relevant context for Story 5 is the current state of the codebase after Stories 1-4, not a transcript of everything that happened.
             </p>
 
             <div className="my-12 grid md:grid-cols-2 gap-6">
@@ -518,7 +518,7 @@ export default function FreshContextPerIteration() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Context pollution isn't a bug in AI coding assistants. It's an inevitable consequence of accumulating conversation history. The solution isn't bigger context windows or smarter models. It's architectural: reset context between tasks.
+              Context pollution isn't a bug in AI coding assistants. It's an inevitable consequence of accumulating conversation history. Reset context between tasks. Bigger windows and smarter models do not fix the noise.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -542,7 +542,7 @@ export default function FreshContextPerIteration() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Architect AI Workflows That Scale?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

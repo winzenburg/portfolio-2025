@@ -12,14 +12,14 @@ export default function DesignSystemsFail() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Why Most Design Systems Fail (And How to Fix Them) | Ryan Winzenburg</title>
-        <meta name="description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems, and three AI-powered solutions." />
+        <meta name="description" content="A design system can take a year and a large budget, then sit unused. The failure is usually organizational, and adoption is the fix." />
         <meta property="og:title" content="Why Most Design Systems Fail (And How to Fix Them)" />
-        <meta property="og:description" content="Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here&#39;s the data on what kills design systems, and three AI-powered solutions." />
+        <meta property="og:description" content="A design system can take a year and a large budget, then sit unused. The failure is usually organizational, and adoption is the fix." />
         <meta property="og:url" content="https://winzenburg.com/articles/design-systems-fail" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/design-systems-fail-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-systems-fail" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. Here's the data on what kills design systems, and three AI-powered solutions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"A design system can take a year and a large budget, then sit unused. The failure is usually organizational, and adoption is the fix.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -54,7 +54,7 @@ export default function DesignSystemsFail() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Most design systems fail because the problem is organizational, not technical — and AI-powered workflows can reverse the usual path to shelfware.
+              Most design systems fail because the problem is organizational, not technical. AI-powered workflows can reverse the usual path to shelfware.
             </p>
           </div>
 
@@ -178,7 +178,7 @@ export default function DesignSystemsFail() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I've sat in governance meetings that devolved into debates about button radius or color values that dragged on for hours. Not because these decisions were inherently difficult, but because there was no framework for making them. Everyone had opinions. Nobody had data. And without clear decision-making authority, consensus became impossible.
+              I've sat in governance meetings that devolved into debates about button radius or color values that dragged on for hours. Those decisions were not inherently difficult. There was no framework for making them. Everyone had opinions. Nobody had data. And without clear decision-making authority, consensus became impossible.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -483,7 +483,7 @@ export default function DesignSystemsFail() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Companies still building traditional design systems will waste months on systems with low adoption, burn resources on manual maintenance, and lose velocity to governance bottlenecks. This isn't a marginal difference in efficiency. It's a fundamental competitive gap that compounds over time.
+              Companies still building traditional design systems will waste months on systems with low adoption, burn resources on manual maintenance, and lose velocity to governance bottlenecks. This competitive gap compounds over time.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -494,7 +494,7 @@ export default function DesignSystemsFail() {
               <h3 className="text-2xl font-bold text-foreground mb-4">Building or Fixing a Design System?</h3>
               <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Book a 30-minute call
+                  See if a Discovery Call fits
               </Link>
             </div>
 
@@ -513,7 +513,7 @@ export default function DesignSystemsFail() {
                 {
                   question: "How does AI change design system success rates?",
                   answer:
-                    "AI helps when it compresses the work that blocks adoption — component generation, documentation, and consistency checks — so the system stays current and cheaper to use than workarounds. It does not replace clear ownership or decision rights.",
+                    "AI helps when it compresses the work that blocks adoption (component generation, documentation, and consistency checks), so the system stays current and cheaper to use than workarounds. It does not replace clear ownership or decision rights.",
                 },
               ]}
             />

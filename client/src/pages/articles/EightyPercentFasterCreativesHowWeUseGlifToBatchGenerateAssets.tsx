@@ -11,16 +11,16 @@ export default function GlifCreativeBatchingArticle() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets | Ryan Winzenburg</title>
-        <meta name="description" content="Most founders get stuck on &#39;we need 10 ad variants&#39; and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours." />
+        <meta name="description" content="Founders lose days making ad variants by hand. I batch-generate them in Glif, refine the keepers, and ship the same day." />
         <meta property="og:title" content="80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets" />
-        <meta property="og:description" content="Most founders get stuck on &#39;we need 10 ad variants&#39; and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours." />
+        <meta property="og:description" content="Founders lose days making ad variants by hand. I batch-generate them in Glif, refine the keepers, and ship the same day." />
         <meta property="og:url" content="https://winzenburg.com/articles/glif-batch-creatives" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/glif-hero.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/glif-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/glif-batch-creatives" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets","description":"Most founders get stuck on 'we need 10 ad variants' and spend days in Canva. We batch-generate creatives with Glif, refine with Midjourney, and ship in hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/glif-batch-creatives","image":"https://winzenburg.com/images/articles/glif-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"80% Faster Creatives: How We Use Glif to Batch-Generate Validation Assets","description":"Founders lose days making ad variants by hand. I batch-generate them in Glif, refine the keepers, and ship the same day.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/glif-batch-creatives","image":"https://winzenburg.com/images/articles/glif-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -81,7 +81,7 @@ export default function GlifCreativeBatchingArticle() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I used to think creative work was where I needed to be meticulous. Every pixel perfect, every concept fully realized before testing. In fact, that's exactly backwards.
+              I used to think creative work was where I needed to control every pixel. Every pixel perfect, every concept fully realized before testing. In fact, that's exactly backwards.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -511,7 +511,7 @@ export default function GlifCreativeBatchingArticle() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              But here's what it nails: removing the creative bottleneck from validation. If you're a solo founder who needs to test multiple ideas with visual assets, it's transformative.
+              But here's what it nails: removing the creative bottleneck from validation. If you're a solo founder who needs to test multiple ideas with visual assets, it changes how fast you can test.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -675,9 +675,9 @@ export default function GlifCreativeBatchingArticle() {
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to 10x Your Creative Output?</h3>
-            <p className="text-muted-foreground mb-6">Get my complete Glif workflow templates and step-by-step setup guide. Start batch-generating validation assets in under 30 minutes.</p>
+            <p className="text-muted-foreground mb-6">The Glif workflow templates and setup guide are available if you want to batch-generate validation assets.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2">
-                Get the Glif Workflow Templates
+                Open the Glif workflow templates
                 <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

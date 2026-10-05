@@ -96,8 +96,8 @@ const articles: Article[] = [
   },
   {
     id: "52",
-    title: "AI Isn't a Feature. It's a Workflow Problem.",
-    excerpt: "Most teams aren't falling behind because they lack access to AI. They're asking the wrong question. The shift from AI as a feature to AI as a workflow redesign problem is where the real advantage lives.",
+    title: "AI Is a Workflow Problem.",
+    excerpt: "Teams fall behind when they bolt AI onto the old workflow. The advantage shows up when they redesign how the work moves.",
     date: "May 29, 2026",
     readTime: "7 min read",
     slug: "ai-isnt-a-feature-workflow",
@@ -545,7 +545,7 @@ const articles: Article[] = [
   {
     id: "9",
     title: "Scaling Strategy: Building a Portfolio of AI-Powered Businesses",
-    excerpt: "After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here's the portfolio approach that creates compounding value through interconnected niche businesses, 90%+ automation, and strategic leverage.",
+    excerpt: "After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here's the portfolio approach that creates compounding value through interconnected niche businesses, 90%+ automation, and a real operating edge.",
     date: "August 14, 2025",
     readTime: "6 min read",
     slug: "scaling-strategy",

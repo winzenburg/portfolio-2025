@@ -521,7 +521,7 @@ export default function SecurityBugGateArticle() {
           to watch for in AI-generated code.
         </p>
         <Link href="/contact?playbook=security-bug-gate" className="inline-block bg-background text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-background/90 transition-colors">
-            Download the Templates
+            Open the templates
         </Link>
       </div>
     </article>

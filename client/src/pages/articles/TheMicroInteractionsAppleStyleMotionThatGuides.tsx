@@ -151,7 +151,7 @@ export default function MicroInteractionsArticle() {
         </h3>
 
         <p>
-          This one's a big deal. About 35% of users enable reduced-motion in their OS settings, they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this isn't bad UX. It's an accessibility failure.
+          This one's a big deal. About 35% of users enable reduced-motion in their OS settings, they have vestibular disorders, ADHD, or motion sensitivity. Ignoring this is an accessibility failure.
         </p>
 
         <p>
@@ -632,7 +632,7 @@ export default function MicroInteractionsArticle() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact?playbook=micro-interactions" className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center">
-                Download the Playbook
+                Open the playbook
             </Link>
             <button className="border border-border text-foreground px-6 py-3 rounded-lg font-medium hover:bg-muted/30 transition-colors">
               View Live Examples

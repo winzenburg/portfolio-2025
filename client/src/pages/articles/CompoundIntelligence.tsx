@@ -11,14 +11,14 @@ export default function CompoundIntelligence() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Compound Intelligence: How Documentation Makes Codebases Learn | Ryan Winzenburg</title>
-        <meta name="description" content="My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence." />
+        <meta name="description" content="An agent wrote down what it learned, and the next agent used that file. The codebase got smarter without a new feature from me." />
         <meta property="og:title" content="Compound Intelligence: How Documentation Makes Codebases Learn" />
-        <meta property="og:description" content="My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence." />
+        <meta property="og:description" content="An agent wrote down what it learned, and the next agent used that file. The codebase got smarter without a new feature from me." />
         <meta property="og:url" content="https://winzenburg.com/articles/compound-intelligence" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/compound-intelligence-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/compound-intelligence" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Compound Intelligence: How Documentation Makes Codebases Learn","description":"My codebase got smarter last month without me touching a line of code. An autonomous agent documented its learnings. The next agent read that file and made better decisions. This is compound intelligence.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-22","url":"https://winzenburg.com/articles/compound-intelligence","image":"https://winzenburg.com/images/articles/compound-intelligence-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Compound Intelligence: How Documentation Makes Codebases Learn","description":"An agent wrote down what it learned, and the next agent used that file. The codebase got smarter without a new feature from me.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-22","url":"https://winzenburg.com/articles/compound-intelligence","image":"https://winzenburg.com/images/articles/compound-intelligence-hero.webp"})}</script>
       </Helmet>
 
       <article className="pt-10 pb-16 md:pt-14">
@@ -613,7 +613,7 @@ export default function CompoundIntelligence() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Build Intelligence That Compounds?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

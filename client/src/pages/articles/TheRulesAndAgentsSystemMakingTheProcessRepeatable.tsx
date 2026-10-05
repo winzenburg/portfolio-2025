@@ -152,7 +152,7 @@ export default function RulesAndAgentsSystemArticle() {
           </code>
         </div>
 
-        <p>See how specific that is? It's not "validate your idea", it's exactly what validation looks like, with numbers and criteria.</p>
+        <p>See how specific that is? That is what validation looks like, with numbers and criteria.</p>
 
         <p>My rules cover six major phases:</p>
 
@@ -236,7 +236,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <h3 className="text-xl font-semibold text-foreground mb-3">Example 1: The Productivity App That Almost Wasn't</h3>
 
-        <p>I had this idea for a productivity app. Revolutionary concept, right? 🙄</p>
+        <p>I had this idea for a productivity app. New concept, right? 🙄</p>
 
         <p>My Insight & Narrative Strategist dug deeper and uncovered something interesting: Remote workers don't struggle with productivity because they lack discipline, they struggle because existing apps are too rigid for the psychological chaos of working from home.</p>
 
@@ -303,9 +303,9 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>For us, that means technical specs flow automatically from our agents into engineering backlogs. For you, it might be as simple as a standardized handoff template.</p>
 
-        <h2 className="text-2xl font-bold text-foreground mb-4">The Uncomfortable Truth About Process</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">What I resisted about process</h2>
 
-        <p>Look, I'll be honest with you. Part of me resisted this level of systemization for years. It felt constraining, bureaucratic, corporate.</p>
+        <p>Part of me resisted this level of systemization for years. It felt constraining, bureaucratic, corporate.</p>
 
         <p>But here's what I learned: Good process doesn't limit creativity, it creates space for it. When I'm not constantly making the same validation mistakes, I can focus on the challenges that actually require creative thinking.</p>
 
@@ -333,7 +333,7 @@ export default function RulesAndAgentsSystemArticle() {
 
         <p>Here's what I wish someone had told me five years ago: Product creation isn't art, it's craft. And like any craft, it gets better with systematic practice and accumulated wisdom.</p>
 
-        <p>The Rules and Agents system isn't about removing creativity or intuition. It's about creating structure so your creativity can focus on problems that actually matter.</p>
+        <p>The Rules and Agents system creates structure so creativity can focus on problems that actually matter.</p>
 
         <p>Will this approach work for everyone? Probably not. Some people thrive in chaos, and that's fine. But if you're tired of building things nobody wants, if you want your product wins to be repeatable instead of accidental, this systematic approach might be exactly what you need.</p>
 
@@ -357,10 +357,10 @@ export default function RulesAndAgentsSystemArticle() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="px-6 py-3 bg-blue-600 text-primary-foreground rounded-lg font-medium hover:bg-blue-700 transition-colors">
-            Get the Framework Templates
+            Open the framework templates
           </button>
           <button className="px-6 py-3 border border-blue-600 text-primary rounded-lg font-medium hover:bg-primary/5 transition-colors">
-            Schedule a Demo
+            See a demo
           </button>
         </div>
       </div>

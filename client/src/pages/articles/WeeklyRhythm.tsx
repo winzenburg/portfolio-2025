@@ -11,14 +11,14 @@ export default function WeeklyRhythm() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The Weekly Rhythm: A 60-Minute Operating System That Actually Ships | Ryan Winzenburg</title>
-        <meta name="description" content="Most weekly planning fails because it tries to plan everything. The goal isn&#39;t comprehensive planning, it&#39;s deciding what the week is for." />
+        <meta name="description" content="Weekly planning has one job: decide what the week is for, then protect the time to finish that work instead of filling the calendar." />
         <meta property="og:title" content="The Weekly Rhythm: A 60-Minute Operating System That Actually Ships" />
-        <meta property="og:description" content="Most weekly planning fails because it tries to plan everything. The goal isn&#39;t comprehensive planning, it&#39;s deciding what the week is for." />
+        <meta property="og:description" content="Weekly planning has one job: decide what the week is for, then protect the time to finish that work instead of filling the calendar." />
         <meta property="og:url" content="https://winzenburg.com/articles/weekly-rhythm" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/weekly-rhythm-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/weekly-rhythm" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Most weekly planning fails because it tries to plan everything. The goal isn't comprehensive planning, it's deciding what the week is for.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Weekly planning has one job: decide what the week is for, then protect the time to finish that work instead of filling the calendar.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -70,7 +70,7 @@ export default function WeeklyRhythm() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-primary">
               <p className="text-2xl text-primary font-semibold italic leading-relaxed">
-                "Weekly planning isn't about planning everything. It's about deciding what the week is for."
+                "Weekly planning decides what the week is for."
               </p>
             </div>
 
@@ -109,7 +109,7 @@ export default function WeeklyRhythm() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Planning has one job: turn strategy into a week you can actually finish. This isn't about comprehensive planning or covering all your bases. It's about creating clarity on what matters and protecting the time to make it happen.
+              Planning has one job: turn strategy into a week you can actually finish. Create clarity on what matters and protect the time to make it happen.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -206,7 +206,7 @@ export default function WeeklyRhythm() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The difference is that outcomes have a finish line. You know when they're done. Tasks don't. Rewriting tasks into outcomes is the single highest-leverage improvement most teams can make to their weekly planning.
+              The difference is that outcomes have a finish line. You know when they're done. Tasks don't. Rewriting tasks into outcomes is the single best improvement most teams can make to their weekly planning.
             </p>
 
             <h3 className="text-2xl font-semibold text-foreground mt-10 mb-4">
@@ -364,7 +364,7 @@ export default function WeeklyRhythm() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-primary mt-1">→</span>
-                  <span className="text-muted-foreground">Weekly planning is not about planning everything, it's about deciding what the week is for</span>
+                  <span className="text-muted-foreground">Weekly planning decides what the week is for</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-primary mt-1">→</span>
@@ -389,7 +389,7 @@ export default function WeeklyRhythm() {
               <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Implement This Rhythm?</h3>
               <p className="text-muted-foreground mb-6">I help design teams adopt operating systems that ship faster without burning out. The key is finding the right balance for your context.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
               </Link>
             </div>
           </div>

@@ -759,7 +759,7 @@ export default function BrandFirstValidationArticle() {
             I've turned this into a step-by-step template that walks you through each section with examples and prompts. It's what I use for every new product.
           </p>
           <button className="bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-            Get the Brand Blueprint Template
+            Open the brand blueprint template
           </button>
         </div>
       </div>

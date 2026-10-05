@@ -11,14 +11,14 @@ export default function AITechStack() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The AI-Powered Design Tech Stack: My Exact Workflow | Ryan Winzenburg</title>
-        <meta name="description" content="After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: What tools did you actually use? Here&#39;s my complete tech stack." />
+        <meta name="description" content="After the 4-week design system build, people asked which tools I actually use. This is the stack, and why each piece stays." />
         <meta property="og:title" content="The AI-Powered Design Tech Stack: My Exact Workflow" />
-        <meta property="og:description" content="After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: What tools did you actually use? Here&#39;s my complete tech stack." />
+        <meta property="og:description" content="After the 4-week design system build, people asked which tools I actually use. This is the stack, and why each piece stays." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-tech-stack" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tech-stack-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-tech-stack" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Powered Design Tech Stack: My Exact Workflow","description":"After publishing how I built a design system in 4 weeks instead of 12 months, the most common question was: What tools did you actually use? Here's my complete tech stack.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-03","url":"https://winzenburg.com/articles/ai-tech-stack","image":"https://winzenburg.com/images/articles/ai-tech-stack-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Powered Design Tech Stack: My Exact Workflow","description":"After the 4-week design system build, people asked which tools I actually use. This is the stack, and why each piece stays.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-03","url":"https://winzenburg.com/articles/ai-tech-stack","image":"https://winzenburg.com/images/articles/ai-tech-stack-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -68,7 +68,7 @@ export default function AITechStack() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Before I get into specific tools, you need to understand the philosophy that guides my choices. I've watched too many teams get distracted by shiny new AI tools that promised to revolutionize their workflow but ended up creating more complexity than value. The graveyard of abandoned tools is depressing, subscriptions that seemed essential in the moment but never actually got integrated into the daily flow of work.
+              Before I get into specific tools, you need to understand the philosophy that guides my choices. I've watched too many teams get distracted by shiny new AI tools that promised to reshape their workflow but ended up creating more complexity than value. The graveyard of abandoned tools is depressing, subscriptions that seemed essential in the moment but never actually got integrated into the daily flow of work.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -107,7 +107,7 @@ export default function AITechStack() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Here's what most people miss about Figma in an AI-powered workflow: it's not about the tool's AI capabilities. It's about Figma being the place where human judgment matters most. I make decisions in Figma about which components should exist, how they should relate to each other, what the component API should expose. These are strategic decisions that require understanding business context, user needs, and technical constraints. No AI currently replaces this kind of contextual strategic thinking.
+              Figma is where human judgment matters most in an AI-powered workflow. I decide which components should exist, how they relate, and what the component API should expose. These are strategic decisions that require understanding business context, user needs, and technical constraints. No AI currently replaces this kind of contextual strategic thinking.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -634,7 +634,7 @@ export default function AITechStack() {
               <h3 className="text-2xl font-bold text-foreground mb-4">Implementing an AI-Augmented Design Workflow?</h3>
               <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Book a 30-minute call
+                  See if a Discovery Call fits
               </Link>
             </div>
           </div>

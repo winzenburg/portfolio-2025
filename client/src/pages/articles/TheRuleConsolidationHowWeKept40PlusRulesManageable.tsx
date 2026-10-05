@@ -335,7 +335,7 @@ export default function RuleConsolidation() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Now there's one place to learn how the Hub works. Revolutionary, I know.
+              Now there's one place to learn how the Hub works. Obvious, I know.
             </p>
 
             <h3 className="text-2xl font-bold text-primary mt-8 mb-4">
@@ -641,10 +641,10 @@ export default function RuleConsolidation() {
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Want More AI Workflow Insights?</h3>
-            <p className="text-muted-foreground mb-6">Get practical frameworks for building scalable AI systems that actually work in production.</p>
+            <p className="text-muted-foreground mb-6">Practical frameworks for AI systems that hold up in production.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  Subscribe for Updates →
+                  Subscribe for updates
               </Link>
               <Link href="/articles" className="inline-block border border-cyan-500 text-primary hover:bg-primary/10 font-semibold px-8 py-3 rounded-lg transition-colors">
                   Browse More Articles

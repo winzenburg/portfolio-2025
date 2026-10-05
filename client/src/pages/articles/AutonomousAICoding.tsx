@@ -517,7 +517,7 @@ export default function AutonomousAICoding() {
                 <div className="flex items-start gap-4">
                   <span className="text-primary font-bold text-xl">2</span>
                   <div>
-                    <div className="text-foreground font-semibold mb-2">Technical notes are force multipliers</div>
+                    <div className="text-foreground font-semibold mb-2">Technical notes carry the pattern</div>
                     <div className="text-muted-foreground text-sm">Adding "Follow the pattern in FilterDropdown.tsx" to a story dramatically improves code quality. Agents are excellent at pattern matching, terrible at pattern invention.</div>
                   </div>
                 </div>
@@ -554,7 +554,7 @@ export default function AutonomousAICoding() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The math is transformative. I write PRDs during the day. Agents build features at night. I test and polish in the morning. Ship by noon. While competitors are still estimating their sprint capacity, I'm shipping validated features at 3x velocity.
+              The math changes the week. I write PRDs during the day. Agents build features at night. I test and polish in the morning. Ship by noon. While competitors are still estimating their sprint capacity, I'm shipping validated features at 3x velocity.
             </p>
 
             {/* Pull Quote */}
@@ -592,7 +592,7 @@ export default function AutonomousAICoding() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I went to bed with a PRD. I woke up with working code. That capability changes everything about how fast you can ship, how many experiments you can run, and how quickly you can learn from real users. The question isn't whether autonomous coding will become standard. It's whether you'll adopt it before or after your competitors.
+              I went to bed with a PRD. I woke up with working code. That capability changes everything about how fast you can ship, how many experiments you can run, and how quickly you can learn from real users. Autonomous coding is becoming standard. The open question is whether you adopt it before your competitors.
             </p>
 
             <div className="my-12 bg-primary/5 border border-primary/20 rounded-lg p-8">
@@ -613,7 +613,7 @@ export default function AutonomousAICoding() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to 3x Your Shipping Velocity?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

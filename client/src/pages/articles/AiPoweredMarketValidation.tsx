@@ -217,7 +217,7 @@ export default function AIMarketValidation() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              But competitive analysis isn't about reinventing the wheel. I follow what I call the mimesis principle, examine what's already working in the market, then add your unique differentiation. If competitors are succeeding with a particular feature set or pricing model, that's validated demand. The question isn't whether to do something completely different, but how to do the proven things better while adding something genuinely new that matters.
+              But competitive analysis isn't about reinventing the wheel. I follow what I call the mimesis principle, examine what's already working in the market, then add your unique differentiation. If competitors are succeeding with a particular feature set or pricing model, that's validated demand. The question isn't whether to do something completely different, but how to do the proven things better while adding something new that matters.
             </p>
 
             {/* Competitive Analysis Time Comparison */}
@@ -419,7 +419,7 @@ export default function AIMarketValidation() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              This isn't a marginal improvement in efficiency. It's a fundamental shift in how product development works. You're no longer betting on your best guess about market demand. You're systematically testing opportunities until you find ones with strong evidence across all five validation metrics. Then you build with confidence, knowing the market exists and competitors are already proving people will pay for solutions.
+              This changes how product development works. You're no longer betting on your best guess about market demand. You're systematically testing opportunities until you find ones with strong evidence across all five validation metrics. Then you build with confidence, knowing the market exists and competitors are already proving people will pay for solutions.
             </p>
           </div>
 
@@ -428,7 +428,7 @@ export default function AIMarketValidation() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Validating a New Product Idea?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

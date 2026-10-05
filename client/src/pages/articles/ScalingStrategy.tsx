@@ -12,14 +12,14 @@ export default function ScalingStrategy() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Scaling Strategy: Building a Portfolio of AI-Powered Businesses | Ryan Winzenburg</title>
-        <meta name="description" content="After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here&#39;s the portfolio approach that creates compounding value." />
+        <meta name="description" content="After an MVP is selling, the next choice is one bigger product or a portfolio of related businesses that share customers and trust." />
         <meta property="og:title" content="Scaling Strategy: Building a Portfolio of AI-Powered Businesses" />
-        <meta property="og:description" content="After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here&#39;s the portfolio approach that creates compounding value." />
+        <meta property="og:description" content="After an MVP is selling, the next choice is one bigger product or a portfolio of related businesses that share customers and trust." />
         <meta property="og:url" content="https://winzenburg.com/articles/scaling-strategy" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/scaling-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/scaling-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Scaling Strategy: Building a Portfolio of AI-Powered Businesses","description":"After successfully launching and monetizing an MVP, most founders face a choice: Scale one product or build a portfolio. Here's the portfolio approach that creates compounding value.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-08-14","url":"https://winzenburg.com/articles/scaling-strategy","image":"https://winzenburg.com/images/articles/scaling-strategy-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Scaling Strategy: Building a Portfolio of AI-Powered Businesses","description":"After an MVP is selling, the next choice is one bigger product or a portfolio of related businesses that share customers and trust.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-08-14","url":"https://winzenburg.com/articles/scaling-strategy","image":"https://winzenburg.com/images/articles/scaling-strategy-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Content */}
@@ -233,7 +233,7 @@ export default function ScalingStrategy() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Here's what most people get wrong about building a portfolio: they treat each product as a completely separate business. Different brands, different websites, different support systems. It's organizational chaos and you lose the single biggest advantage of the portfolio approach, compounding trust.
+              Treating each product as a completely separate business throws away the portfolio advantage. Different brands, different websites, different support systems. It's organizational chaos and you lose the single biggest advantage of the portfolio approach, compounding trust.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -333,7 +333,7 @@ export default function ScalingStrategy() {
             </h3>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Customer support is where automation delivers the most dramatic impact. An AI-first support strategy means your chatbot should handle 80% of incoming questions. It's trained on your documentation, common issues, and previous support tickets. It suggests relevant help articles automatically. It detects issues proactively before customers even report them. It only escalates to humans when it encounters something genuinely complex or when the customer explicitly requests it.
+              Customer support is where automation delivers the most dramatic impact. An AI-first support strategy means your chatbot should handle 80% of incoming questions. It's trained on your documentation, common issues, and previous support tickets. It suggests relevant help articles automatically. It detects issues proactively before customers even report them. It only escalates to humans when it encounters something complex or when the customer explicitly requests it.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -357,7 +357,7 @@ export default function ScalingStrategy() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Let me be clear about what timeline actually works. Most founders either move too fast or too slow. Move too fast and you fragment your attention before your core product has real traction. Move too slow and you miss the window where portfolio advantages compound most aggressively. Here's the timeline I've seen work consistently.
+              Most founders either move too fast or too slow. Move too fast and you fragment your attention before your core product has real traction. Move too slow and you miss the window where portfolio advantages compound most aggressively. Here's the timeline I've seen work consistently.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -390,7 +390,7 @@ export default function ScalingStrategy() {
 
               <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border-l-4 border-blue-400 px-6 pt-4 pb-5">
                 <h4 className="text-foreground font-semibold mb-3 text-lg">Months 19-24: Optimize and Scale</h4>
-                <p className="text-muted-foreground mb-3 leading-relaxed">The focus shifts to optimization. You're improving automation everywhere, expanding your team only where it creates genuine leverage, and making the strategic decision: do you continue building the portfolio, or do you start exploring exits for individual products or the entire portfolio?</p>
+                <p className="text-muted-foreground mb-3 leading-relaxed">The focus shifts to optimization. You're improving automation everywhere, expanding your team only where it creates a real advantage, and making the strategic decision: do you continue building the portfolio, or do you start exploring exits for individual products or the entire portfolio?</p>
                 <div className="flex items-start gap-2 mt-4">
                   <span className="text-blue-600 font-bold">→</span>
                   <span className="font-semibold text-foreground">Strategic inflection point</span>
@@ -454,7 +454,7 @@ export default function ScalingStrategy() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Meanwhile, AI-first portfolio companies are operating in a completely different paradigm. They have diverse revenue streams that insulate them from market volatility. They achieve 90%+ operational efficiency through automation, so adding products doesn't proportionally increase costs. They benefit from compounding advantages where each product amplifies the others. And critically, they maintain strategic optionality, they can exit individual products, acquire complementary businesses, or scale the entire portfolio depending on market conditions.
+              Meanwhile, AI-first portfolio companies are operating in a completely different way. They have diverse revenue streams that insulate them from market volatility. They achieve 90%+ operational efficiency through automation, so adding products doesn't proportionally increase costs. They benefit from compounding advantages where each product amplifies the others. And critically, they maintain strategic optionality, they can exit individual products, acquire complementary businesses, or scale the entire portfolio depending on market conditions.
             </p>
 
             {/* Traditional vs AI-First Comparison */}
@@ -520,7 +520,7 @@ export default function ScalingStrategy() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Building an AI-Powered Portfolio?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

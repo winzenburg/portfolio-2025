@@ -11,14 +11,14 @@ export default function ChoosingAICodingMode() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Choosing Your AI Coding Mode: Interactive vs Autonomous | Ryan Winzenburg</title>
-        <meta name="description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong, my choice was. Here&#39;s the decision framework I should have used." />
+        <meta name="description" content="I wasted a day and $60 running a feature autonomously when it should have stayed interactive. The mode has to match the work." />
         <meta property="og:title" content="Choosing Your AI Coding Mode: Interactive vs Autonomous" />
-        <meta property="og:description" content="Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn&#39;t wrong, my choice was. Here&#39;s the decision framework I should have used." />
+        <meta property="og:description" content="I wasted a day and $60 running a feature autonomously when it should have stayed interactive. The mode has to match the work." />
         <meta property="og:url" content="https://winzenburg.com/articles/choosing-ai-coding-mode" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/choosing-ai-coding-mode" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"Last week, I wasted $60 and 8 hours trying to build a feature autonomously that should have been interactive. The mode wasn't wrong, my choice was. Here's the decision framework I should have used.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"I wasted a day and $60 running a feature autonomously when it should have stayed interactive. The mode has to match the work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -159,7 +159,7 @@ export default function ChoosingAICodingMode() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-primary">
               <p className="text-2xl text-primary font-semibold italic leading-relaxed">
-                "The mode isn't a preference. It's a function of your requirements clarity and risk tolerance."
+                "The mode is a function of how clear your requirements are, and of your risk tolerance."
               </p>
             </div>
 
@@ -543,7 +543,7 @@ export default function ChoosingAICodingMode() {
             {/* Pull Quote */}
             <div className="my-12 pl-6 border-l-4 border-primary">
               <p className="text-2xl text-primary font-semibold italic leading-relaxed">
-                "The right mode isn't the one that sounds coolest. It's the one that matches your constraints."
+                "The right mode is the one that matches your constraints."
               </p>
             </div>
 
@@ -609,7 +609,7 @@ export default function ChoosingAICodingMode() {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The real value isn't in picking the "best" mode. It's in consciously matching the mode to your context. I used to default to interactive because it felt safer. Now I analyze each feature against the decision framework and choose deliberately.
+              The real value is matching the mode to the work in front of you. I used to default to interactive because it felt safer. Now I analyze each feature against the decision framework and choose deliberately.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -666,7 +666,7 @@ export default function ChoosingAICodingMode() {
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Choose the Right Mode Every Time?</h3>
             <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Book a 30-minute call
+                See if a Discovery Call fits
             </Link>
           </div>
 

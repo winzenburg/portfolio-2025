@@ -421,7 +421,7 @@ export default function Article() {
         <h2>What We're Building Next</h2>
 
         <p>
-          The current Hub is v1, functional but basic. Here's what's coming that I'm genuinely excited about:
+          The current Hub is v1, functional but basic. What I'm excited about next:
         </p>
 
         <h3>Full-Text Search Across Everything</h3>
@@ -649,7 +649,7 @@ export default function Article() {
         </ul>
 
         <p>
-          But if you have 10+ ideas, multiple phases, and a need for portfolio visibility, the Hub is transformative.
+          But if you have 10+ ideas, multiple phases, and a need for portfolio visibility, the Hub changes how the portfolio runs.
         </p>
 
         <h2>The Bigger Picture</h2>
@@ -728,7 +728,7 @@ export default function Article() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-blue-600 hover:bg-blue-700 text-primary-foreground px-6 py-3 rounded-lg font-medium">
-                Get the Hub Template
+                Open the Hub template
               </button>
               <button className="bg-muted/50 hover:bg-muted text-foreground px-6 py-3 rounded-lg font-medium">
                 View Live Demo

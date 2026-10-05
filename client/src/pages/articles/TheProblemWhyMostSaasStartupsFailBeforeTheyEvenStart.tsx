@@ -124,7 +124,7 @@ export default function SaaSStartupFailures() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The goal isn't to build something people might want. It's to find people who would be genuinely upset if your solution disappeared tomorrow.
+              The goal is to find people who would be upset if your solution disappeared tomorrow.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -324,7 +324,7 @@ export default function SaaSStartupFailures() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The solution isn't to avoid AI, it's to integrate it properly into your validation system. Clear handoffs, citation requirements, human verification gates. AI becomes a force multiplier, not a replacement for thinking.
+              Integrate AI into the validation system with clear handoffs, citation requirements, and human verification gates. AI multiplies the work you can check. It does not replace the thinking.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
@@ -343,7 +343,7 @@ export default function SaaSStartupFailures() {
               <div className="space-y-4">
                 <div>
                   <div className="text-foreground font-semibold mb-2">Filter 1: Heat Filter (Desirability)</div>
-                  <div className="text-muted-foreground text-sm">Does a tribe of real humans urgently want this? Can you find 100 people who would be genuinely upset if this solution disappeared? This is your demand signal.</div>
+                  <div className="text-muted-foreground text-sm">Does a tribe of real humans urgently want this? Can you find 100 people who would be upset if this solution disappeared? This is your demand signal.</div>
                 </div>
                 <div>
                   <div className="text-foreground font-semibold mb-2">Filter 2: Durability Filter</div>
@@ -494,9 +494,9 @@ export default function SaaSStartupFailures() {
           {/* CTA Card */}
           <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Build Something That Lasts?</h3>
-            <p className="text-muted-foreground mb-6">Get the complete validation framework, including templates, checklists, and AI-powered tools that help you validate both desirability and durability before you build.</p>
+            <p className="text-muted-foreground mb-6">The complete validation framework includes templates, checklists, and AI-powered tools for checking desirability and durability before a build.</p>
             <Link href="/contact?playbook=complete-framework" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                Download the Complete Framework →
+                Open the complete framework
             </Link>
           </div>
 

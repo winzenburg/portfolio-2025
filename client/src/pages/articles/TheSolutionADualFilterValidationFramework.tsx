@@ -253,7 +253,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </p>
 
         <p>
-          If people wouldn't be genuinely upset, you're a nice-to-have. Nice-to-haves get cut when 
+          If people wouldn't be upset, you're a nice-to-have. Nice-to-haves get cut when 
           budgets tighten.
         </p>
 
@@ -347,7 +347,7 @@ export default function DualFilterValidationFrameworkArticle() {
         </h2>
 
         <p>
-          Before you go applying this to everything, let me be clear about what this framework can't do:
+          This framework can't do everything:
         </p>
 
         <p>
@@ -462,7 +462,7 @@ export default function DualFilterValidationFrameworkArticle() {
             href="/contact?playbook=validation-playbook"
             className="inline-block bg-blue-600 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            Get the Complete Validation Playbook
+            Open the validation playbook
           </Link>
         </div>
 
