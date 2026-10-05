@@ -1,7 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { Sticker, type ChipTone } from "@/components/Chip";
-import { BandWave } from "@/components/StudioWave";
 
 export interface PageHeroMedia {
   src: string;
@@ -16,12 +14,6 @@ export interface PageHeroMedia {
   position?: string;
   /** Describes the scene. Required when the picture is content, not decoration. */
   alt?: string;
-}
-
-export interface PageHeroSticker {
-  label: string;
-  tone?: ChipTone;
-  className?: string;
 }
 
 /**
@@ -67,12 +59,11 @@ interface PageHeroProps {
   aside?: ReactNode;
   media?: PageHeroMedia;
   /**
-   * `framed` puts full-color art in a tilted print frame.
-   * `band` is a navy section with a wavy edge.
+   * `framed` puts full-color art beside the copy, unfiltered.
+   * `band` is a straight navy section.
    * Defaults to `framed` when media is set, otherwise `plain`.
    */
   variant?: PageHeroVariant;
-  stickers?: PageHeroSticker[];
   /** Centres the copy column. Use only where there is no aside or frame. */
   align?: "start" | "center";
   className?: string;
@@ -80,58 +71,48 @@ interface PageHeroProps {
 
 function FramedArt({
   media,
-  stickers,
   playVideo,
 }: {
   media: PageHeroMedia;
-  stickers?: PageHeroSticker[];
   playVideo: boolean;
 }) {
   const imageSrc = media.kind === "video" ? (media.poster ?? media.src) : media.src;
   const alt = media.alt ?? "";
 
   return (
-    <div className="relative px-3 py-6 sm:px-8 sm:py-8">
-      <div className="studio-frame">
-        {media.kind === "video" && playVideo ? (
-          <video
-            src={media.src}
-            poster={media.poster}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            aria-label={alt || undefined}
-            className={cn(
-              "aspect-[16/9] h-auto w-full object-cover",
-              media.position ?? "object-center",
-            )}
-          />
-        ) : (
-          <img
-            src={imageSrc}
-            alt={alt}
-            className={cn(
-              "aspect-[16/9] h-auto w-full object-cover",
-              media.position ?? "object-center",
-            )}
-          />
-        )}
-      </div>
-      {stickers?.map((sticker) => (
-        <Sticker key={sticker.label} tone={sticker.tone} className={sticker.className}>
-          {sticker.label}
-        </Sticker>
-      ))}
+    <div className="studio-frame">
+      {media.kind === "video" && playVideo ? (
+        <video
+          src={media.src}
+          poster={media.poster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label={alt || undefined}
+          className={cn(
+            "aspect-[16/9] h-auto w-full object-cover",
+            media.position ?? "object-center",
+          )}
+        />
+      ) : (
+        <img
+          src={imageSrc}
+          alt={alt}
+          className={cn(
+            "aspect-[16/9] h-auto w-full object-cover",
+            media.position ?? "object-center",
+          )}
+        />
+      )}
     </div>
   );
 }
 
 /**
- * Shared page hero. Art is never filtered. `framed` keeps it in a print
- * beside the copy, and `band` sets the copy on navy, so text does not sit
- * on the illustration.
+ * Shared page hero. Art is never filtered and sits beside the copy.
+ * `band` sets the copy on a straight navy field.
  */
 export default function PageHero({
   eyebrow,
@@ -145,7 +126,6 @@ export default function PageHero({
   aside,
   media,
   variant,
-  stickers,
   align = "start",
   className,
 }: PageHeroProps) {
@@ -165,13 +145,6 @@ export default function PageHero({
         className,
       )}
     >
-      {onBand ? (
-        <>
-          <BandWave edge="top" />
-          <BandWave edge="bottom" />
-        </>
-      ) : null}
-
       <div className="container relative py-16 md:py-24 lg:py-28">
         <div
           className={cn(
@@ -195,14 +168,14 @@ export default function PageHero({
                 <span
                   aria-hidden="true"
                   className={cn(
-                    "h-[3px] w-7 rounded-sm",
-                    onBand ? "bg-sun" : "bg-verm",
+                    "h-px w-6",
+                    onBand ? "bg-band" : "bg-verm-text",
                   )}
                 />
                 <span
                   className={cn(
                     "text-[13px] font-bold uppercase tracking-[0.14em]",
-                    onBand ? "text-sun" : "text-verm-text",
+                    onBand ? "text-band" : "text-verm-text",
                   )}
                 >
                   {eyebrow}
@@ -223,7 +196,7 @@ export default function PageHero({
             <h1
               id={titleId}
               className={cn(
-                "text-pretty text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl",
+                "text-pretty text-4xl font-medium leading-[1.05] tracking-[-0.03em] sm:text-5xl lg:text-[3.5rem]",
                 onBand ? "text-band" : "text-ink",
               )}
             >
@@ -268,7 +241,7 @@ export default function PageHero({
 
           {showFrame && media ? (
             <div className="lg:col-span-6">
-              <FramedArt media={media} stickers={stickers} playVideo={playVideo} />
+              <FramedArt media={media} playVideo={playVideo} />
             </div>
           ) : aside ? (
             <div className="lg:col-span-5 lg:col-start-8">{aside}</div>

@@ -50,7 +50,7 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <div className="rounded-3xl border-[3px] border-ink bg-cream p-8 text-ink md:p-12">
+    <div className="border border-ink/15 bg-studio-card p-8 text-ink md:p-12">
       <div className="mb-8 text-center">
         <p className="mb-4 text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
           Weekly
@@ -66,7 +66,7 @@ export default function NewsletterSignup() {
 
       <div aria-live="polite">
         {subscribeStatus === "success" ? (
-          <div className="mx-auto max-w-xl rounded-3xl border-2 border-ink bg-sun p-6 text-center text-ink">
+          <div className="mx-auto max-w-xl border-l-2 border-verm-text p-6 text-center text-ink">
             <h3 className="mb-2 font-display text-2xl font-bold text-ink">
               You&apos;re subscribed
             </h3>
@@ -89,7 +89,7 @@ export default function NewsletterSignup() {
                 required
                 disabled={subscribeStatus === "loading"}
                 aria-invalid={subscribeStatus === "error" || undefined}
-                className="flex-1 rounded-full border-2 border-ink bg-studio-card px-4 py-3 text-base text-ink placeholder:text-ink-muted focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus disabled:opacity-50"
+                className="flex-1 rounded-sm border border-ink/40 bg-studio-card px-4 py-3 text-base text-ink placeholder:text-ink-muted focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus disabled:opacity-50"
               />
               <Button
                 type="submit"
@@ -103,7 +103,7 @@ export default function NewsletterSignup() {
             {subscribeStatus === "error" ? (
               <p
                 role="alert"
-                className="mt-3 rounded-full border-2 border-ink bg-blush px-4 py-2 text-center text-sm font-bold text-ink"
+                className="mt-3 border-l-2 border-verm-text px-4 py-2 text-center text-sm text-ink"
               >
                 {errorMessage}
               </p>

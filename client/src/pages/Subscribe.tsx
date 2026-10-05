@@ -104,7 +104,7 @@ export default function Subscribe() {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <div className="rounded-3xl border-[3px] border-ink bg-studio-card p-7 text-ink md:p-8">
+            <div className="rounded-sm border border-ink/15 bg-studio-card p-7 text-ink md:p-10">
               <h2
                 id="subscribe-form-heading"
                 className="text-xl font-semibold text-foreground"
@@ -115,7 +115,7 @@ export default function Subscribe() {
               {/* Always mounted so the confirmation is announced when it appears. */}
               <div aria-live="polite">
                 {status === "success" ? (
-                  <div className="mt-6 rounded-3xl border-2 border-ink bg-sun p-6 text-ink">
+                  <div className="mt-6 border-l-2 border-verm-text p-6 text-ink">
                     <h3 className="text-lg font-bold text-ink">
                       You&apos;re on the list.
                     </h3>
@@ -190,7 +190,7 @@ export default function Subscribe() {
 
                   <div role="alert">
                     {status === "error" ? (
-                      <p className="rounded-2xl border-2 border-ink bg-blush px-4 py-3 text-sm font-semibold text-ink">
+                      <p className="border-l-2 border-verm-text px-4 py-3 text-sm text-ink">
                         {errorMessage}
                       </p>
                     ) : null}

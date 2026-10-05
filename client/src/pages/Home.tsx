@@ -177,24 +177,7 @@ export default function Home() {
 
       <PageHero
         titleId="home-hero-title"
-        variant="framed"
         eyebrow="Consulting for enterprise B2B product leaders"
-        media={{
-          src: "/images/spots/home-hero-bridge.webp",
-          alt: "A person tests a half-built plank bridge across a canyon at sunset, while a crowd with crates and wheelbarrows waits on the near cliff and one figure with a lantern stands on the far side.",
-        }}
-        stickers={[
-          {
-            label: "Go · no-go · pivot",
-            tone: "sun",
-            className: "bottom-10 left-0 -rotate-6 sm:left-1",
-          },
-          {
-            label: "2–4 weeks",
-            tone: "aqua",
-            className: "top-1 right-0 rotate-3 sm:right-1",
-          },
-        ]}
         title={
           <>
             Find out if the product bet <em className="studio-mark">holds</em>{" "}
@@ -252,34 +235,23 @@ export default function Home() {
           lede="Two shapes, one consultancy. Start with the smallest engagement that answers the decision in front of you."
         />
         <Reveal>
-          <div className="grid gap-8 pt-4 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2">
             {engagementPaths.map((path, index) => (
               <div
                 key={path.name}
-                className={cn(
-                  "relative rounded-[26px] border-[3px] border-ink p-7 text-ink md:p-8",
-                  index === 0
-                    ? "bg-cream shadow-[8px_8px_0_var(--color-ink)]"
-                    : "bg-studio-card",
-                )}
+                className="rounded-sm bg-studio-card p-8 text-ink md:p-10"
               >
-                <span
-                  aria-hidden="true"
-                  className={cn(
-                    "absolute -top-6 right-6 flex h-14 w-14 items-center justify-center rounded-full border-[3px] border-ink font-display text-2xl font-bold",
-                    index === 0 ? "bg-sun" : "bg-aqua",
-                  )}
-                >
-                  {index + 1}
-                </span>
-                <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
+                <p className="font-display text-sm tracking-[0.18em] text-verm-text">
+                  0{index + 1}
+                </p>
+                <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
                   {path.label}
                 </p>
-                <h3 className="mb-3 mt-2 text-2xl font-bold leading-snug text-ink">
+                <h3 className="mb-3 mt-2 text-2xl font-medium leading-snug text-ink">
                   {path.name}
                 </h3>
                 <p className="mb-6 leading-relaxed text-ink-muted">{path.body}</p>
-                <p className="inline-block rounded-full border-2 border-ink bg-studio-card px-4 py-2 text-sm font-bold text-ink">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">
                   {path.meta}
                 </p>
               </div>
@@ -289,7 +261,7 @@ export default function Home() {
         <div className="mt-8">
           <Link
             href="/consulting"
-            className="group inline-flex items-center gap-2 text-sm font-bold text-sun underline-offset-4 hover:text-band"
+            className="group inline-flex items-center gap-2 text-sm text-band underline decoration-band/40 underline-offset-4 hover:text-white"
           >
             Full consulting page
             <ArrowRight
@@ -328,16 +300,16 @@ export default function Home() {
               <div
                 key={capability.name}
                 className={cn(
-                  "rounded-3xl border-2 border-ink p-7 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-8",
+                  "rounded-sm border border-ink/15 p-8 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-10",
                   tileBackground(index),
                 )}
               >
                 <div className="mb-6 flex items-baseline gap-3">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-ink bg-studio-card font-display text-lg font-bold text-ink">
+                  <span className="font-display text-sm tracking-[0.18em] text-verm-text">
                     {capability.index}
                   </span>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
+                <h3 className="mb-3 text-xl font-medium leading-snug text-ink">
                   {capability.name}
                 </h3>
                 <p className="mb-6 leading-relaxed text-muted-foreground">
@@ -371,12 +343,12 @@ export default function Home() {
             </SectionTitle>
             <ol className="mt-10 space-y-4">
               {principles.map((principle, index) => (
-                <li key={principle.title} className={cn(studioCard, "flex gap-5 p-5")}>
+                <li key={principle.title} className={cn(studioCard, "flex gap-5 p-6 md:p-7")}>
                   <span
                     aria-hidden="true"
-                    className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-ink bg-sun text-sm font-bold text-ink"
+                    className="mt-1 font-display text-sm tracking-[0.18em] text-verm-text"
                   >
-                    {index + 1}
+                    0{index + 1}
                   </span>
                   <div>
                     <h3 className="mb-2 font-semibold text-ink">
@@ -392,7 +364,7 @@ export default function Home() {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <h3 className="mb-6 text-[13px] font-bold uppercase tracking-[0.14em] text-sun">
+            <h3 className="mb-6 text-[11px] font-semibold uppercase tracking-[0.16em] text-band">
               What I don&apos;t automate
             </h3>
             <dl className={cn(studioCard, "divide-y divide-ink/15")}>
@@ -443,7 +415,7 @@ export default function Home() {
               <li
                 key={environment.name}
                 className={cn(
-                  "studio-lift rounded-3xl border-2 border-ink",
+                  "rounded-sm border border-ink/15",
                   tileBackground(index),
                 )}
               >

@@ -276,17 +276,17 @@ function ProjectCard({ project }: { project: Project }) {
   const { liveUrl } = project;
 
   return (
-    <article className="studio-lift group rounded-3xl border-[3px] border-ink bg-studio-card p-7 text-ink md:p-10">
+    <article className="group border-t border-ink/15 py-12 text-ink md:py-16">
       {/* Explicit placement keeps one stacked reading order on small screens
           and, from lg up, pairs the screenshot with the numbers in the right
           rail while the narrative and build detail hold the left. */}
       <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-10">
-        <div className="aspect-video overflow-hidden rounded-2xl border-2 border-ink bg-cream lg:col-span-5 lg:col-start-8 lg:row-start-1">
+        <div className="aspect-video overflow-hidden rounded-sm lg:col-span-5 lg:col-start-8 lg:row-start-1">
           <img
             loading="lazy"
             src={project.image}
             alt={project.imageAlt}
-            className="h-full w-full object-cover object-top transition-transform duration-500 motion-safe:group-hover:scale-105"
+            className="h-full w-full object-cover object-top transition-opacity duration-300 motion-safe:group-hover:opacity-90"
           />
         </div>
 
@@ -395,14 +395,14 @@ function EarlierProjectCard({ project }: { project: EarlierProject }) {
     <Link
       href={project.slug}
       onClick={() => trackCaseStudyClick(project.analyticsKey, project.title)}
-      className="studio-lift group overflow-hidden rounded-3xl border-[3px] border-ink bg-studio-card text-ink md:row-span-4 md:grid md:grid-rows-subgrid"
+      className="group overflow-hidden rounded-sm border border-ink/15 bg-studio-card text-ink md:row-span-4 md:grid md:grid-rows-subgrid"
     >
       <div className="aspect-video overflow-hidden border-b-[3px] border-ink bg-cream">
         <img
           loading="lazy"
           src={project.image}
           alt={project.imageAlt}
-          className="h-full w-full object-cover object-top transition-transform duration-500 motion-safe:group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition-opacity duration-300 motion-safe:group-hover:opacity-90"
         />
       </div>
 

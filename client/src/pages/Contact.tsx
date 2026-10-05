@@ -217,7 +217,7 @@ export default function Contact() {
       <Section id="contact-form" tone="slate" labelledBy="contact-form-heading">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
-            <div className="rounded-3xl border-[3px] border-ink bg-studio-card p-7 text-ink md:p-8">
+            <div className="rounded-sm border border-ink/15 bg-studio-card p-7 text-ink md:p-10">
               <h2
                 id="contact-form-heading"
                 className="text-2xl font-bold text-foreground"
@@ -228,7 +228,7 @@ export default function Contact() {
               {/* Always mounted so the confirmation is announced when it lands. */}
               <div aria-live="polite">
                 {submitted ? (
-                  <div className="mt-6 rounded-3xl border-2 border-ink bg-sun p-6 text-ink md:p-7">
+                  <div className="mt-6 border-l-2 border-verm-text bg-studio-card p-6 text-ink md:p-7">
                     <h3 className="text-xl font-bold text-ink">Message sent</h3>
                     <p className="mt-2 max-w-md leading-relaxed text-ink">
                       {intent === "consulting" ? (
@@ -258,7 +258,7 @@ export default function Contact() {
                   {/* role="alert" so a failed send is announced straight away. */}
                   <div role="alert">
                     {submitFailed ? (
-                      <div className="mt-6 rounded-3xl border-2 border-ink bg-blush p-5 text-ink">
+                      <div className="mt-6 border-l-2 border-verm-text p-5 text-ink">
                         <p className="font-bold">That didn&apos;t send.</p>
                         <p className="mt-1 leading-relaxed">
                           Nothing was lost, so you can try again. If it keeps

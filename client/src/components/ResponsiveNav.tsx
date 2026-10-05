@@ -105,7 +105,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           >
             <span
               aria-hidden="true"
-              className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-ink bg-sun font-display text-sm font-bold text-ink shadow-[3px_3px_0_var(--color-ink)]"
+              className="flex h-9 w-9 items-center justify-center border border-ink/30 font-display text-xs tracking-[0.12em] text-ink"
             >
               RW
             </span>
@@ -128,9 +128,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1",
                     active
                       ? "text-ink"
-                      : item.accent
-                        ? "rounded-full border-2 border-ink bg-cobalt px-4 text-white shadow-[3px_3px_0_var(--color-verm)] hover:bg-[#16365c]"
-                        : "text-ink-muted hover:text-ink",
+                      : "text-ink-muted hover:text-ink",
                   )}
                 >
                   {item.label}
@@ -138,7 +136,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                   <span
                     aria-hidden="true"
                     className={cn(
-                      "absolute inset-x-3 -bottom-0.5 h-1 rounded-full bg-sun",
+                      "absolute inset-x-3 bottom-1 h-px bg-verm-text",
                       active ? "opacity-100" : "opacity-0",
                     )}
                   />
@@ -186,11 +184,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                       className={cn(
                         "flex items-center gap-3 rounded-sm px-1 py-3 text-base font-medium transition-colors",
                         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                        active
-                          ? "text-ink"
-                          : item.accent
-                            ? "mx-1 mt-2 justify-center rounded-full border-2 border-ink bg-cobalt px-4 text-white"
-                            : "text-ink-muted hover:text-ink",
+                        active ? "text-ink" : "text-ink-muted hover:text-ink",
                       )}
                     >
                       <span

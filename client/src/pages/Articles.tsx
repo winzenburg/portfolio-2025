@@ -9,7 +9,6 @@ import Reveal from "@/components/Reveal";
 import SiteLayout from "@/components/SiteLayout";
 import { Section, SectionHeading, SectionTitle } from "@/components/Section";
 import { Chip, ChipLabel, type ChipTone } from "@/components/Chip";
-import { cn } from "@/lib/utils";
 import { trackArticleCardClick, trackCategoryFilter } from "@/lib/analytics";
 
 interface Article {
@@ -691,14 +690,14 @@ function FeaturedArticleCard({ article }: { article: Article }) {
       onClick={() =>
         trackArticleCardClick(article.slug, article.title, article.category)
       }
-      className="studio-lift studio-lift-sun group grid overflow-hidden rounded-3xl border-[3px] border-ink bg-studio-card text-ink lg:grid-cols-2"
+      className="group grid overflow-hidden rounded-sm bg-studio-card text-ink lg:grid-cols-2"
     >
-      <div className="aspect-[16/10] overflow-hidden border-b-[3px] border-ink lg:border-b-0 lg:border-r-[3px]">
+      <div className="aspect-[3/2] overflow-hidden">
         <img
           loading="lazy"
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
-          className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
+          className="h-full w-full object-cover transition-opacity duration-300 motion-safe:group-hover:opacity-90"
         />
       </div>
       <div className="flex flex-col justify-center p-8 md:p-10">
@@ -708,13 +707,13 @@ function FeaturedArticleCard({ article }: { article: Article }) {
           </span>
           <CategoryBadge category={article.category} />
         </div>
-        <h3 className="text-2xl font-bold leading-snug text-ink md:text-3xl">
+        <h3 className="text-2xl font-medium leading-snug tracking-[-0.02em] text-ink md:text-3xl">
           {article.title}
         </h3>
         <p className="mt-5 leading-relaxed text-ink-muted">{article.excerpt}</p>
         <div className="mt-7 flex items-center justify-between gap-4 border-t border-border/60 pt-5">
           <ArticleMeta article={article} />
-          <span className="inline-flex items-center gap-2 text-sm font-bold text-cobalt">
+          <span className="inline-flex items-center gap-2 text-sm text-cobalt">
             Read
             <ArrowRight
               className="h-4 w-4 transition-transform motion-safe:group-hover:translate-x-1"
@@ -727,32 +726,28 @@ function FeaturedArticleCard({ article }: { article: Article }) {
   );
 }
 
-function ArticleCard({ article, tilt }: { article: Article; tilt: "left" | "right" | "none" }) {
+function ArticleCard({ article }: { article: Article }) {
   return (
     <Link
       href={`/articles/${article.slug}`}
       onClick={() =>
         trackArticleCardClick(article.slug, article.title, article.category)
       }
-      className={cn(
-        "studio-lift group flex h-full flex-col overflow-hidden rounded-3xl border-[3px] border-ink bg-studio-card text-ink",
-        tilt === "left" && "md:-rotate-1",
-        tilt === "right" && "md:rotate-[0.8deg]",
-      )}
+      className="group flex h-full flex-col overflow-hidden rounded-sm bg-studio-card text-ink"
     >
-      <div className="aspect-[16/9] overflow-hidden border-b-[3px] border-ink">
+      <div className="aspect-[3/2] overflow-hidden">
         <img
           loading="lazy"
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
-          className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
+          className="h-full w-full object-cover transition-opacity duration-300 motion-safe:group-hover:opacity-90"
         />
       </div>
       <div className="flex flex-1 flex-col p-6">
         <div className="mb-4">
           <CategoryBadge category={article.category} />
         </div>
-        <h3 className="mb-3 text-lg font-bold leading-snug text-ink">
+        <h3 className="mb-3 text-lg font-medium leading-snug tracking-[-0.02em] text-ink">
           {article.title}
         </h3>
         <p className="mb-6 flex-1 text-sm leading-relaxed text-ink-muted">
@@ -853,7 +848,7 @@ export default function Articles() {
         </div>
 
         {filteredArticles.length === 0 ? (
-          <div className="rounded-3xl border-[3px] border-ink bg-studio-card px-6 py-16 text-center text-ink">
+          <div className="bg-studio-card px-6 py-16 text-center text-ink">
             <p className="font-display text-2xl font-bold">
               Nothing published in {selectedCategory} yet.
             </p>
@@ -872,13 +867,10 @@ export default function Articles() {
               </Reveal>
             ) : null}
             {rest.length > 0 ? (
-              <ul className="grid gap-6 px-1 py-4 md:grid-cols-2 xl:grid-cols-3">
-                {rest.map((article, index) => (
+              <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+                {rest.map((article) => (
                   <li key={article.id} className="flex">
-                    <ArticleCard
-                      article={article}
-                      tilt={index % 2 === 0 ? "left" : "right"}
-                    />
+                    <ArticleCard article={article} />
                   </li>
                 ))}
               </ul>

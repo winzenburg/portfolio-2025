@@ -6,7 +6,7 @@
 /*
  * Illustrated Studio tokens.
  * font-sans    → Source Sans 3 (body / UI, 17–21px in page copy)
- * font-display → Fraunces with SOFT 50 and WONK 1 (headlines, numerals)
+ * font-display → Fraunces at a straight optical size (SOFT 0, WONK 0)
  *
  * Palette roles are named by purpose. Vermilion (#DF5124) is decoration
  * only. Eyebrow text uses --color-verm-text (#B8401A), which clears 4.5:1
@@ -134,7 +134,7 @@
    * These map to Tailwind's @theme inline utilities above.
    * Values are resolved from primitives where possible.
    */
-  --radius: 0.75rem;
+  --radius: 0.25rem;
 
   --background:             var(--primitive-paper);
   --foreground:             var(--primitive-ink);
@@ -229,17 +229,17 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    background-image: radial-gradient(rgba(17, 34, 52, 0.05) 1px, transparent 1px);
-    background-size: 6px 6px;
     font-family: var(--font-sans);
   }
   h1, h2, h3, h4, h5, h6, .font-display {
     font-family: var(--font-display);
-    font-weight: 650;
-    font-variation-settings: "SOFT" 50, "WONK" 1, "opsz" 72;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    font-variation-settings: "SOFT" 0, "WONK" 0, "opsz" 48;
   }
   h1 {
-    font-variation-settings: "SOFT" 50, "WONK" 1, "opsz" 144;
+    letter-spacing: -0.03em;
+    font-variation-settings: "SOFT" 0, "WONK" 0, "opsz" 72;
   }
   :focus-visible {
     outline: 2px solid var(--color-focus);
@@ -253,16 +253,6 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
-    }
-    .studio-sticker {
-      animation: none !important;
-    }
-    .studio-press:hover,
-    .studio-press-ink:hover,
-    .studio-chip:hover,
-    .studio-lift:hover,
-    .studio-wiggle:hover {
-      transform: none !important;
     }
   }
   button:not(:disabled),
@@ -335,100 +325,77 @@
   .text-accent-buildout { color: var(--cs-accent-buildout); }
   .text-accent-cvs      { color: var(--cs-accent-cvs); }
 
-  /* Sun underline for one word in a display headline. */
+  /* Italic emphasis inside a display headline. No marker highlight. */
   .studio-mark {
-    font-style: normal;
-    background-image: linear-gradient(transparent 58%, var(--color-sun) 58%);
-    padding-inline: 0.12em;
+    font-style: italic;
+    font-weight: 500;
+    padding-inline: 0.08em;
   }
 
-  /* Framed print: ink outline, offset shadow, slight tilt. */
+  /* Hero art sits clean, full color, with a modest radius. */
   .studio-frame {
-    border: 3px solid var(--color-ink);
-    border-radius: 28px;
     overflow: hidden;
-    background: var(--color-apricot);
-    box-shadow: 10px 10px 0 var(--color-ink);
-    rotate: 1.2deg;
+    border-radius: 2px;
   }
 
-  .studio-blob {
-    border: 3px solid var(--color-ink);
-    border-radius: 50% 50% 46% 54% / 52% 48% 52% 48%;
-    overflow: hidden;
-    box-shadow: 8px 8px 0 var(--color-teal);
-    background: var(--color-cream);
+  /* Quiet outlined tags. On navy, cream type; selected is a filled chip. */
+  .studio-chip {
+    border-color: color-mix(in srgb, var(--color-ink) 25%, transparent);
+    background: transparent;
+    color: var(--color-ink);
   }
-
-  .studio-press,
-  .studio-press-ink,
-  .studio-lift,
-  .studio-chip,
-  .studio-wiggle {
-    transition:
-      transform 150ms ease-out,
-      box-shadow 150ms ease-out,
-      background-color 200ms ease-out;
-  }
-
-  .studio-press {
-    box-shadow: 4px 4px 0 var(--color-verm);
-  }
-  .studio-press:hover {
-    transform: translateY(-3px);
-    box-shadow: 7px 7px 0 var(--color-verm);
-  }
-  .studio-press:active {
-    transform: translateY(1px);
-    box-shadow: 2px 2px 0 var(--color-verm);
-  }
-
-  .studio-press-ink {
-    box-shadow: 4px 4px 0 var(--color-ink);
-  }
-  .studio-press-ink:hover {
-    transform: translateY(-3px);
-    box-shadow: 7px 7px 0 var(--color-ink);
-  }
-  .studio-press-ink:active {
-    transform: translateY(1px);
-    box-shadow: 2px 2px 0 var(--color-ink);
-  }
-
-  .studio-lift {
-    box-shadow: 4px 4px 0 var(--color-ink);
-  }
-  .studio-lift:hover {
-    transform: translateY(-3px);
-    box-shadow: 7px 7px 0 var(--color-ink);
-  }
-  .studio-lift-sun {
-    box-shadow: 10px 10px 0 var(--color-sun);
-  }
-  .studio-lift-sun:hover {
-    box-shadow: 13px 13px 0 var(--color-sun);
-  }
-
-  .studio-chip:hover,
-  .studio-wiggle:hover {
-    transform: rotate(-2deg);
+  .studio-chip:hover {
+    border-color: color-mix(in srgb, var(--color-ink) 55%, transparent);
   }
   .studio-chip[aria-pressed="true"] {
-    box-shadow: 3px 3px 0 var(--color-ink);
+    border-color: var(--color-navy);
+    background: var(--color-navy);
+    color: var(--color-band);
   }
-
-  .studio-sticker {
-    animation: studio-sticker-in 500ms ease-out both;
+  [data-tone="navy"] .studio-chip {
+    border-color: color-mix(in srgb, var(--color-band) 40%, transparent);
+    background: transparent;
+    color: var(--color-band);
+  }
+  [data-tone="navy"] .studio-chip:hover {
+    border-color: var(--color-band);
+  }
+  [data-tone="navy"] .studio-chip[aria-pressed="true"] {
+    border-color: var(--color-band);
+    background: var(--color-band);
+    color: var(--color-ink);
   }
 }
 
-@keyframes studio-sticker-in {
-  from {
-    opacity: 0;
-    translate: 0 -12px;
-  }
-  to {
-    opacity: 1;
-    translate: 0 0;
-  }
+/*
+ * Buttons that sit directly on a navy band. Unlayered so these beat Tailwind
+ * utilities. Buttons inside a paper card keep the paper pairing.
+ */
+[data-tone="navy"] [data-slot="button"][data-variant="default"] {
+  background-color: var(--color-band);
+  color: var(--color-ink);
+  border-color: transparent;
+}
+[data-tone="navy"] [data-slot="button"][data-variant="default"]:hover {
+  background-color: #fffdf7;
+}
+[data-tone="navy"] [data-slot="button"][data-variant="outline"] {
+  background-color: transparent;
+  color: var(--color-band);
+  border-color: color-mix(in srgb, var(--color-band) 55%, transparent);
+}
+[data-tone="navy"] [data-slot="button"][data-variant="outline"]:hover {
+  background-color: var(--color-band);
+  color: var(--color-ink);
+  border-color: var(--color-band);
+}
+[data-tone="navy"] .bg-studio-card [data-slot="button"][data-variant="outline"] {
+  background-color: transparent;
+  color: var(--color-ink);
+  border-color: color-mix(in srgb, var(--color-ink) 30%, transparent);
+}
+[data-tone="navy"] .bg-studio-card [data-slot="button"][data-variant="outline"]:hover {
+  background-color: var(--color-navy);
+  color: var(--color-band);
+  border-color: var(--color-navy);
 }

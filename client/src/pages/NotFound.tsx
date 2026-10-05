@@ -51,13 +51,12 @@ export default function NotFound() {
           </>
         }
         aside={
-          <div className="studio-blob mx-auto max-w-sm">
-            <img
-              src="/images/spots/empty-404-signpost.webp"
-              alt="A person with a lantern stands at a crossroads beside a signpost whose arrows are blank, under a moon and stars."
-              className="aspect-square w-full object-cover"
-            />
-          </div>
+          <p
+            aria-hidden="true"
+            className="font-display text-[7.5rem] leading-none tracking-[-0.05em] text-ink sm:text-[9rem] lg:text-right"
+          >
+            404
+          </p>
         }
       />
 
@@ -67,23 +66,23 @@ export default function NotFound() {
           eyebrow="Try one of these"
           title="Where you were probably headed"
         />
-        <ul className="grid gap-3">
+        <ul className="border-t border-band/25">
           {DESTINATIONS.map((destination) => (
-            <li key={destination.href}>
+            <li key={destination.href} className="border-b border-band/25">
               <Link
                 href={destination.href}
-                className="group flex items-center gap-6 rounded-3xl border-2 border-ink bg-studio-card px-5 py-5 text-ink"
+                className="group flex items-baseline gap-6 py-6 text-band transition-opacity duration-200 hover:opacity-70"
               >
-                <span className="min-w-0 flex-1 md:flex md:items-baseline md:gap-8">
-                  <span className="block text-lg font-bold text-ink md:w-44 md:shrink-0">
+                <span className="min-w-0 flex-1 md:flex md:items-baseline md:gap-10">
+                  <span className="block font-display text-2xl tracking-[-0.02em] text-band md:w-48 md:shrink-0">
                     {destination.label}
                   </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-ink-muted md:mt-0">
+                  <span className="mt-1 block text-sm leading-relaxed text-band-muted md:mt-0">
                     {destination.note}
                   </span>
                 </span>
                 <ArrowRight
-                  className="h-5 w-5 shrink-0 text-cobalt motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
+                  className="h-4 w-4 shrink-0 text-band-muted"
                   aria-hidden="true"
                 />
               </Link>

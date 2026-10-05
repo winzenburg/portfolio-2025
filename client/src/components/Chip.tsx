@@ -1,24 +1,17 @@
 import type { ComponentProps } from "react";
 import { cn } from "@/lib/utils";
 
+/** Kept so existing call sites compile. Fills are no longer applied. */
 export const CHIP_TONES = {
-  sun: "bg-sun",
-  aqua: "bg-aqua",
-  blush: "bg-blush",
-  cream: "bg-cream",
-  apricot: "bg-apricot",
-  paper: "bg-band",
+  sun: "",
+  aqua: "",
+  blush: "",
+  cream: "",
+  apricot: "",
+  paper: "",
 } as const;
 
 export type ChipTone = keyof typeof CHIP_TONES;
-
-const chipClass = (tone: ChipTone, className?: string) =>
-  cn(
-    "studio-chip inline-flex items-center gap-1.5 rounded-full border-2 border-ink px-4 py-2 text-[15px] font-bold text-ink",
-    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
-    CHIP_TONES[tone],
-    className,
-  );
 
 interface ChipProps extends ComponentProps<"button"> {
   tone?: ChipTone;
@@ -26,22 +19,26 @@ interface ChipProps extends ComponentProps<"button"> {
 }
 
 /**
- * Filter chip. Ink text on a studio fill (all pairings clear 8:1).
- * Selected state adds an offset shadow and aria-pressed, so it does not
- * depend on color alone.
+ * Quiet filter tag. Selected state is a filled chip plus aria-pressed,
+ * so it does not depend on color alone. On a navy band, index.css switches
+ * the pairing to cream type and an ink-on-cream selected state.
  */
 export function Chip({
-  tone = "sun",
   selected = false,
   className,
   type = "button",
+  tone: _tone,
   ...props
 }: ChipProps) {
   return (
     <button
       type={type}
       aria-pressed={selected}
-      className={chipClass(tone, className)}
+      className={cn(
+        "studio-chip inline-flex min-h-9 items-center gap-1.5 border px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] transition-colors duration-200",
+        "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
+        className,
+      )}
       {...props}
     />
   );
@@ -51,22 +48,12 @@ interface ChipLabelProps extends ComponentProps<"span"> {
   tone?: ChipTone;
 }
 
-/** Non-interactive sticker label. Same fills and ink edge as Chip. */
-export function ChipLabel({ tone = "aqua", className, ...props }: ChipLabelProps) {
-  return <span className={chipClass(tone, className)} {...props} />;
-}
-
-interface StickerProps extends ComponentProps<"span"> {
-  tone?: ChipTone;
-}
-
-/** Absolute sticker used on framed art. Drops in once. Not a control. */
-export function Sticker({ tone = "sun", className, ...props }: StickerProps) {
+/** Small uppercase category label. Terracotta on paper clears 4.5:1. */
+export function ChipLabel({ className, tone: _tone, ...props }: ChipLabelProps) {
   return (
     <span
       className={cn(
-        "studio-sticker pointer-events-none absolute z-10 inline-flex items-center rounded-full border-2 border-ink px-4 py-2.5 text-[15px] font-bold text-ink shadow-[3px_3px_0_var(--color-ink)]",
-        CHIP_TONES[tone],
+        "text-[11px] font-semibold uppercase tracking-[0.16em] text-verm-text",
         className,
       )}
       {...props}

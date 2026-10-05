@@ -208,7 +208,7 @@ export default function Gallery() {
                       <img
                         src={`/images/gallery/${illustration.file}`}
                         alt={`${illustration.name}, ${illustration.category.toLowerCase()} illustration`}
-                        className="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105"
+                        className="h-full w-full object-cover motion-safe:transition-opacity motion-safe:duration-300 motion-safe:group-hover:opacity-90"
                         loading="lazy"
                       />
                     </div>

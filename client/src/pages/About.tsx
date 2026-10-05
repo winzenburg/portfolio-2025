@@ -249,12 +249,12 @@ export default function About() {
               <div
                 key={capability.name}
                 className={cn(
-                  "rounded-3xl border-2 border-ink p-7 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-8",
+                  "rounded-sm border border-ink/15 p-8 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-10",
                   tileBackground(index),
                 )}
               >
                 <div className="mb-6">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-ink bg-studio-card font-display text-lg font-bold">
+                  <span className="font-display text-sm tracking-[0.18em] text-verm-text">
                     {capability.index}
                   </span>
                 </div>
@@ -320,7 +320,7 @@ export default function About() {
         <div className="grid gap-6 md:grid-cols-3">
           {ventures.map((venture, index) => (
             <Reveal key={venture.name} delay={index * 90} className="h-full">
-              <article className="studio-lift group relative flex h-full flex-col rounded-3xl border-[3px] border-ink bg-studio-card p-7 text-ink">
+              <article className="group relative flex h-full flex-col rounded-sm border border-ink/10 bg-studio-card p-7 text-ink md:p-8">
                 <div className="mb-6 flex items-center justify-between">
                   <span className="font-display text-2xl font-bold text-verm-text">
                     {String(index + 1).padStart(2, "0")}
@@ -328,7 +328,7 @@ export default function About() {
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold text-ink">
                     <span
                       aria-hidden="true"
-                      className="h-2 w-2 rounded-full border border-ink bg-sun"
+                      className="h-1.5 w-1.5 rounded-full bg-verm-text"
                     />
                     {venture.status} · {venture.started}
                   </span>

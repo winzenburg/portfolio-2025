@@ -1,19 +1,11 @@
-/** Shared surface classes for Illustrated Studio cards and tiles. */
+/** Shared surface classes. Hairline rules, no offset shadows. */
 export const studioCard =
-  "rounded-3xl border-2 border-ink bg-studio-card text-ink";
+  "rounded-sm border border-ink/15 bg-studio-card text-ink";
 
 export const studioCardInteractive =
-  "studio-lift rounded-3xl border-2 border-ink bg-studio-card text-ink";
+  "rounded-sm border border-ink/15 bg-studio-card text-ink transition-colors duration-200 hover:border-ink/40";
 
-export const TILE_BACKGROUNDS = [
-  "bg-blush",
-  "bg-aqua",
-  "bg-sun",
-  "bg-cream",
-  "bg-apricot",
-] as const;
-
-export function tileBackground(index: number): (typeof TILE_BACKGROUNDS)[number] {
-  const tone = TILE_BACKGROUNDS[index % TILE_BACKGROUNDS.length];
-  return tone ?? "bg-cream";
+/** Index kept so call sites stay stable. Tiles no longer take a bright fill. */
+export function tileBackground(_index: number): string {
+  return "bg-studio-card";
 }

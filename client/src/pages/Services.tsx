@@ -454,14 +454,14 @@ export default function Services() {
               <div
                 key={situation.title}
                 className={cn(
-                  "rounded-3xl border-2 border-ink p-7 text-ink md:p-8",
+                  "rounded-sm border border-ink/15 p-8 text-ink md:p-10",
                   tileBackground(index),
                 )}
               >
-                <p className="mb-4 font-display text-2xl font-bold">
+                <p className="mb-4 font-display text-sm tracking-[0.18em] text-verm-text">
                   {String(index + 1).padStart(2, "0")}
                 </p>
-                <h3 className="mb-3 text-xl font-bold leading-snug">
+                <h3 className="mb-3 text-xl font-medium leading-snug">
                   {situation.title}
                 </h3>
                 <p className="leading-relaxed text-ink-muted">{situation.body}</p>
@@ -485,45 +485,27 @@ export default function Services() {
               easy. Unwinding a large engagement that started before the
               question was clear is not.
             </p>
-            <div className="studio-blob mx-auto mt-10 max-w-[360px] lg:mx-0">
-              <img
-                src="/images/spots/consulting-map-table.webp"
-                alt="Two people in long coats stand at a drafting table. One draws a route on a map. The other holds a stopwatch. A small flag is planted on the table."
-                className="aspect-square w-full object-cover"
-              />
-            </div>
           </div>
-          <div className="grid gap-8 pt-4 lg:col-span-7">
+          <div className="grid gap-6 lg:col-span-7">
             {OFFER_PATHS.map((offer, index) => (
               <div
                 key={offer.name}
-                className={cn(
-                  "relative rounded-[26px] border-[3px] border-ink p-7 text-ink md:p-8",
-                  index === 0
-                    ? "bg-cream shadow-[8px_8px_0_var(--color-ink)]"
-                    : "bg-studio-card",
-                )}
+                className="rounded-sm border border-ink/15 bg-studio-card p-8 text-ink md:p-10"
               >
-                <span
-                  aria-hidden="true"
-                  className={cn(
-                    "absolute -top-6 right-7 flex h-14 w-14 items-center justify-center rounded-full border-[3px] border-ink font-display text-2xl font-bold",
-                    index === 0 ? "bg-sun" : "bg-aqua",
-                  )}
-                >
-                  {index + 1}
-                </span>
-                <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
+                <p className="font-display text-sm tracking-[0.18em] text-verm-text">
+                  0{index + 1}
+                </p>
+                <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
                   {offer.label}
                 </p>
-                <h3 className="mt-2 text-3xl font-bold leading-snug text-ink">
+                <h3 className="mt-2 text-3xl font-medium leading-snug text-ink">
                   {offer.name}
                 </h3>
                 <p className="mt-4 leading-relaxed text-ink-muted">{offer.body}</p>
                 <p className="mt-4 text-sm leading-relaxed text-ink-muted">
                   {offer.includes}
                 </p>
-                <p className="mt-6 inline-block rounded-full border-2 border-ink bg-studio-card px-4 py-2 text-sm font-bold text-ink">
+                <p className="mt-6 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">
                   {offer.meta}
                 </p>
               </div>
@@ -719,7 +701,7 @@ export default function Services() {
             <Reveal key={item.name} delay={index * 60} className="h-full">
               <Link
                 href={item.href}
-                className="studio-lift group flex h-full flex-col rounded-3xl border-[3px] border-ink bg-studio-card p-7 text-ink"
+                className="group flex h-full flex-col rounded-sm border border-ink/10 bg-studio-card p-7 text-ink md:p-8"
               >
                 <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
                   {item.meta}
@@ -745,7 +727,7 @@ export default function Services() {
       </Section>
 
       {/* Working together */}
-      <Section tone="cream" compact labelledBy="working-heading">
+      <Section compact labelledBy="working-heading">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <Eyebrow className="mb-4">Before anything starts</Eyebrow>
@@ -861,11 +843,11 @@ export default function Services() {
               <div
                 key={industry.title}
                 className={cn(
-                  "rounded-3xl border-2 border-ink p-7 text-ink",
+                  "rounded-sm border border-ink/15 p-8 text-ink",
                   tileBackground(index),
                 )}
               >
-                <h3 className="text-lg font-bold leading-snug">{industry.title}</h3>
+                <h3 className="text-lg font-medium leading-snug">{industry.title}</h3>
                 <p className="mt-3 leading-relaxed text-ink-muted">{industry.body}</p>
               </div>
             ))}
@@ -970,7 +952,7 @@ export default function Services() {
               Prefer email?{" "}
               <a
                 href="mailto:ryan@winzenburg.com"
-                className="font-bold text-sun underline-offset-4 hover:text-band"
+                className="text-band underline decoration-band/40 underline-offset-4 hover:text-white"
               >
                 ryan@winzenburg.com
               </a>

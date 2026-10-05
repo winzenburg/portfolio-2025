@@ -1,6 +1,5 @@
 import { createContext, useContext, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { BandWave } from "@/components/StudioWave";
 
 type SectionTone = "plain" | "muted" | "slate" | "cream" | "navy";
 
@@ -37,13 +36,12 @@ export function Section({
   compact = false,
   className,
 }: SectionProps) {
-  const isNavy = tone === "navy";
-
   return (
     <SectionToneContext.Provider value={tone}>
       <section
         id={id}
         aria-labelledby={labelledBy}
+        data-tone={tone}
         className={cn(
           compact ? "py-16 md:py-20" : "py-20 md:py-28",
           TONE_CLASSES[tone],
@@ -51,9 +49,7 @@ export function Section({
           className,
         )}
       >
-        {isNavy ? <BandWave edge="top" /> : null}
         <div className="container relative">{children}</div>
-        {isNavy ? <BandWave edge="bottom" /> : null}
       </section>
     </SectionToneContext.Provider>
   );
@@ -75,15 +71,15 @@ export function Eyebrow({ children, className }: EyebrowProps) {
     <p
       className={cn(
         "flex items-center gap-3 text-[13px] font-bold uppercase tracking-[0.14em]",
-        onNavy ? "text-sun" : "text-verm-text",
+        onNavy ? "text-band" : "text-verm-text",
         className,
       )}
     >
       <span
         aria-hidden="true"
         className={cn(
-          "h-[3px] w-7 shrink-0 rounded-sm",
-          onNavy ? "bg-sun" : "bg-verm",
+          "h-px w-6 shrink-0",
+          onNavy ? "bg-band" : "bg-verm-text",
         )}
       />
       {children}
@@ -104,7 +100,7 @@ export function SectionTitle({ id, children, className }: SectionTitleProps) {
     <h2
       id={id}
       className={cn(
-        "text-pretty text-3xl font-bold leading-tight tracking-tight md:text-4xl",
+        "text-pretty text-3xl font-medium leading-tight tracking-[-0.025em] md:text-4xl",
         onNavy ? "text-band" : "text-ink",
         className,
       )}
@@ -146,7 +142,7 @@ export function SectionHeading({
             className={cn(
               "shrink-0",
               onNavy &&
-                "[&_a]:font-bold [&_a]:text-sun [&_a]:underline-offset-4 hover:[&_a]:text-band",
+                "[&_a]:text-band [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-white",
             )}
           >
             {trailing}

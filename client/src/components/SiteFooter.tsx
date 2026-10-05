@@ -1,7 +1,6 @@
 import { Link } from "wouter";
 import { ArrowUpRight } from "lucide-react";
 import { brandFacts } from "@/lib/brandFacts";
-import { BandWave } from "@/components/StudioWave";
 
 const { person, organization } = brandFacts;
 
@@ -90,10 +89,7 @@ export default function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-12 bg-muted/40">
-      <div className="relative h-14 bg-navy" aria-hidden="true">
-        <BandWave edge="top" />
-      </div>
+    <footer className="mt-20 border-t border-ink/15 bg-paper">
       <div className="container py-14 md:py-18">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
 
@@ -105,7 +101,7 @@ export default function SiteFooter() {
             >
               <span
                 aria-hidden="true"
-                className="flex h-11 w-11 items-center justify-center rounded-xl border-2 border-ink bg-sun text-ink"
+                className="flex h-9 w-9 items-center justify-center border border-ink/30 font-display text-xs tracking-[0.12em] text-ink"
               >
                 RW
               </span>
