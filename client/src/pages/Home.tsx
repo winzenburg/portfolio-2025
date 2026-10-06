@@ -180,8 +180,8 @@ export default function Home() {
         <link
           rel="preload"
           as="image"
-          href="/images/home-hero-test-arch.webp"
-          imageSrcSet="/images/home-hero-test-arch-1456w.webp 1456w, /images/home-hero-test-arch.webp 2912w"
+          href="/images/home-hero-climb.webp"
+          imageSrcSet="/images/home-hero-climb-1456w.webp 1456w, /images/home-hero-climb.webp 2912w"
           imageSizes="(min-width: 1024px) max(48vw, calc(100vw - 42rem)), 100vw"
           fetchPriority="high"
         />
@@ -193,9 +193,9 @@ export default function Home() {
         titleId="home-hero-title"
         eyebrow="Consulting for enterprise B2B product leaders"
         media={{
-          src: "/images/home-hero-test-arch.webp",
-          focus: "80% 35%",
-          alt: "Illustration of a single finished arch standing on open ground, with the rest of the arcade only staked out in string.",
+          src: "/images/home-hero-climb.webp",
+          focus: "45% 50%",
+          alt: "Illustration of a roped climber testing the first section of a tall wall of blocks while the team holds the rope below, with ladders and supplies waiting for the full climb.",
         }}
         title={
           <>

@@ -256,7 +256,7 @@ export default function PageHero({
             ) : null}
 
             {actions ? (
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-8 flex w-full max-w-full flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 {actions}
               </div>
             ) : null}
@@ -360,7 +360,7 @@ export default function PageHero({
             {actions ? (
               <div
                 className={cn(
-                  "mt-8 flex flex-col gap-3 sm:flex-row sm:items-center",
+                  "mt-8 flex w-full max-w-full flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center",
                   isCentered ? "sm:justify-center" : "",
                 )}
               >
