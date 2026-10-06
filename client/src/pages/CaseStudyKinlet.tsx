@@ -51,11 +51,13 @@ const CaseStudyKinlet: React.FC = () => {
 
       {/* Hero Section */}
       <section className="studio-case-hero relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <img 
-          src={`${import.meta.env.BASE_URL}images/kinlet-landing.webp`} 
-          alt="Kinlet Landing Page"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-        />
+        <div className="absolute inset-0">
+          <img
+            src={`${import.meta.env.BASE_URL}images/kinlet-landing.webp`}
+            alt="Kinlet Landing Page"
+            className="h-full w-full object-cover opacity-20"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="inline-block px-4 py-2 bg-purple-500/20 border border-purple-500/30 rounded-full mb-6">

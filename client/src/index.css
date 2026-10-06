@@ -514,27 +514,42 @@
   transform: translateY(-2px);
 }
 .studio-zoom {
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 .group:hover .studio-zoom {
-  transform: scale(1.035);
+  transform: scale(1.03);
 }
 
 /*
- * Full-bleed hero art. Cover crop, with a few pixels of overscan so the
- * pointer drift stays inside the frame. Object-position is set per image.
+ * Hero art settles once on load, from a slight crop down to the cover frame.
+ * Scale only, so the box does not move. The parent clips the overflow.
+ * transform-origin is set inline to the same point as object-position.
  */
+@keyframes studio-hero-settle {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.studio-hero-art,
+article > .container > div:has(> img:only-child) > img,
+.studio-case-hero > .absolute > img {
+  transform-origin: center center;
+  animation: studio-hero-settle 1.4s cubic-bezier(0, 0, 0.2, 1) both;
+}
+
 .studio-hero-art {
   position: absolute;
-  inset: -12px;
+  inset: 0;
   display: block;
-  width: calc(100% + 24px);
-  height: calc(100% + 24px);
+  width: 100%;
+  height: 100%;
   max-width: none;
   max-height: none;
   object-fit: cover;
-  transform: translate3d(var(--hero-x, 0px), var(--hero-y, 0px), 0);
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* One rule slides between nav items. */
@@ -672,6 +687,8 @@ article > .container > div:has(> img:only-child) > img {
 
 @media (prefers-reduced-motion: reduce) {
   .studio-hero-art,
+  article > .container > div:has(> img:only-child) > img,
+  .studio-case-hero > .absolute > img,
   .studio-zoom,
   .group:hover .studio-zoom,
   .studio-lift,
@@ -679,6 +696,7 @@ article > .container > div:has(> img:only-child) > img {
   [data-slot="button"]:hover,
   [data-slot="button"]:active,
   [data-slot="button"]:hover :is(svg.lucide-arrow-right, svg.lucide-arrow-up-right) {
+    animation: none !important;
     transform: none !important;
     transition: none !important;
   }

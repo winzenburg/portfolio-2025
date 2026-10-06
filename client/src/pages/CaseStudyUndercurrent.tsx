@@ -75,11 +75,13 @@ const CaseStudyUndercurrent: React.FC = () => {
 
       {/* Hero */}
       <section className="studio-case-hero relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <img
-          src={`${BASE}images/01_welcome.webp`}
-          alt="Undercurrent welcome screen"
-          className="absolute inset-0 w-full h-full object-cover object-center opacity-25"
-        />
+        <div className="absolute inset-0">
+          <img
+            src={`${BASE}images/01_welcome.webp`}
+            alt="Undercurrent welcome screen"
+            className="h-full w-full object-cover object-center opacity-25"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
           <div className="inline-block px-4 py-2 bg-amber-500/15 border border-amber-500/30 rounded-full mb-6">

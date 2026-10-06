@@ -51,11 +51,13 @@ const CaseStudyCultivate: React.FC = () => {
 
       {/* Hero Section */}
       <section className="studio-case-hero relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <img 
-          src={`${import.meta.env.BASE_URL}project-cultivate-bos.webp`} 
-          alt="Cultivate Business Operating System Dashboard"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-        />
+        <div className="absolute inset-0">
+          <img
+            src={`${import.meta.env.BASE_URL}project-cultivate-bos.webp`}
+            alt="Cultivate Business Operating System Dashboard"
+            className="h-full w-full object-cover opacity-20"
+          />
+        </div>
         <div 
           className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background"
         />
