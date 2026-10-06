@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function SupabaseMCPArticle() {
   return (
@@ -32,9 +33,10 @@ export default function SupabaseMCPArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-primary/15">
-            <img
+            <HeroImage
               src="/images/articles/supabase-mcp-hero.webp"
               alt="Supabase MCP Blueprint: Systematic Backend Design"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function MakerVsManager() {
   return (
@@ -32,9 +33,10 @@ export default function MakerVsManager() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/maker-vs-manager-hero.webp"
               alt="Maker vs Manager"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

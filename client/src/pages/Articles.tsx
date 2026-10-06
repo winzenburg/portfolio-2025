@@ -1,5 +1,6 @@
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Link } from "wouter";
+import HeroImage from "@/components/HeroImage";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
@@ -693,10 +694,10 @@ function FeaturedArticleCard({ article }: { article: Article }) {
       className="studio-lift group grid overflow-hidden rounded-sm bg-studio-card text-ink lg:grid-cols-2"
     >
       <div className="aspect-[3/2] overflow-hidden">
-        <img
-          loading="lazy"
+        <HeroImage
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
+          sizes="(min-width: 1024px) 640px, 100vw"
           className="studio-zoom h-full w-full object-cover"
         />
       </div>
@@ -736,10 +737,10 @@ function ArticleCard({ article }: { article: Article }) {
       className="studio-lift group flex h-full flex-col overflow-hidden rounded-sm bg-studio-card text-ink"
     >
       <div className="aspect-[3/2] overflow-hidden">
-        <img
-          loading="lazy"
+        <HeroImage
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
+          sizes="(min-width: 1024px) 400px, 100vw"
           className="studio-zoom h-full w-full object-cover"
         />
       </div>
@@ -801,7 +802,7 @@ export default function Articles() {
         eyebrowNote={`${articles.length} pieces`}
         media={{
           src: "/images/articles-hero.webp",
-          position: "object-[center_36%]",
+          focus: "52% 18%",
           alt: "A person in a polka-dot coat balances on a plank resting on patterned blocks and spheres.",
         }}
         title="Writing on product experience, operating models, and AI-enabled delivery"

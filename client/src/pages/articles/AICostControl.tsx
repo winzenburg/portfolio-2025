@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function AICostControl() {
   return (
@@ -32,9 +33,10 @@ export default function AICostControl() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/ai-cost-control-hero.webp"
-              alt="AI Cost Control That Doesn't Break Velocity"
+              alt="AI Cost Control That Doesn"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

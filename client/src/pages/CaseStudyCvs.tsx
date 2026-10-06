@@ -1,5 +1,6 @@
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
+import HeroImage from "@/components/HeroImage";
 import PageSeo from "@/components/PageSeo";
 
 const CASE_STUDY_PATH = "/case-study/cvs-aetna";
@@ -52,9 +53,10 @@ export default function CaseStudyCvs() {
       {/* Hero Section */}
       <section className="studio-case-hero relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={`${import.meta.env.BASE_URL}project-cvs-aetna-hero.webp`}
-            alt="CVS Aetna Health Insurance" 
+          <HeroImage
+            src="/project-cvs-aetna-hero.webp"
+            alt="CVS Aetna Health Insurance"
+            sizes="100vw"
             className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background"></div>

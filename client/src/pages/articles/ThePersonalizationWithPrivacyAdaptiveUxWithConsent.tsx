@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function PersonalizationWithPrivacyArticle() {
   return (
@@ -34,9 +35,10 @@ export default function PersonalizationWithPrivacyArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/personalization-hero.webp"
               alt="A nighttime street of shuttered houses, with one lit shop where a tailor measures a customer."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

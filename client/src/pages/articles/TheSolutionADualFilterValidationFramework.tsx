@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function DualFilterValidationFrameworkArticle() {
   return (
@@ -32,9 +33,10 @@ export default function DualFilterValidationFrameworkArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-primary/15">
-            <img
+            <HeroImage
               src="/images/articles/dual-filter-hero.webp"
               alt="Dual-filter validation framework: heat versus durability"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

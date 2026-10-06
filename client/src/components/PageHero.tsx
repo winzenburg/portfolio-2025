@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { heroSpec } from "@/lib/hero-art";
 import { cn } from "@/lib/utils";
 
 export interface PageHeroMedia {
@@ -10,10 +11,46 @@ export interface PageHeroMedia {
   kind?: "image" | "video";
   /** Still frame for video media. Required in practice for `kind: "video"`. */
   poster?: string;
-  /** Tailwind object-position utility, e.g. "object-top". */
+  /** Tailwind object-position utility, e.g. "object-top". Used by the framed variant. */
   position?: string;
+  /** CSS object-position for a cover crop, e.g. "50% 20%". Wins over the hero map. */
+  focus?: string;
   /** Describes the scene. Required when the picture is content, not decoration. */
   alt?: string;
+}
+
+function heroImageAttrs(
+  src: string,
+  alt: string,
+  priority: boolean,
+  sizes: string,
+  focus?: string,
+): {
+  src: string;
+  srcSet?: string;
+  sizes?: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  loading: "eager" | "lazy";
+  decoding: "async";
+  fetchPriority?: "high";
+  style?: CSSProperties;
+} {
+  const spec = heroSpec(src);
+  const objectPosition = focus ?? spec?.focus;
+  return {
+    src: spec?.src ?? src,
+    srcSet: spec?.srcSet,
+    sizes: spec ? sizes : undefined,
+    alt,
+    width: spec?.width,
+    height: spec?.height,
+    loading: priority ? "eager" : "lazy",
+    decoding: "async",
+    fetchPriority: priority ? "high" : undefined,
+    style: objectPosition ? { objectPosition } : undefined,
+  };
 }
 
 /**
@@ -105,7 +142,7 @@ interface PageHeroProps {
   /**
    * `framed` puts full-color art beside the copy, unfiltered.
    * `band` is a straight navy section.
-   * `bleed` puts the illustration beside the copy, shown whole.
+   * `bleed` runs the art edge to edge, cropped with object-fit: cover.
    * The headline sits on a solid navy panel so the type never rests on the art.
    * Defaults to `framed` when media is set, otherwise `plain`.
    */
@@ -113,6 +150,8 @@ interface PageHeroProps {
   /** Centres the copy column. Use only where there is no aside or frame. */
   align?: "start" | "center";
   className?: string;
+  /** Fetch the bleed image immediately. Home only. */
+  priority?: boolean;
 }
 
 function FramedArt({
@@ -124,13 +163,14 @@ function FramedArt({
 }) {
   const imageSrc = media.kind === "video" ? (media.poster ?? media.src) : media.src;
   const alt = media.alt ?? "";
+  const image = heroImageAttrs(imageSrc, alt, false, "(min-width: 1024px) 40rem, 100vw", media.focus);
 
   return (
     <div className="studio-frame">
       {media.kind === "video" && playVideo ? (
         <video
           src={media.src}
-          poster={media.poster}
+          poster={image.src}
           autoPlay
           muted
           loop
@@ -144,11 +184,10 @@ function FramedArt({
         />
       ) : (
         <img
-          src={imageSrc}
-          alt={alt}
+          {...image}
           className={cn(
             "aspect-[16/9] h-auto w-full object-cover",
-            media.position ?? "object-center",
+            !image.style && (media.position ?? "object-center"),
           )}
         />
       )}
@@ -174,6 +213,7 @@ export default function PageHero({
   variant,
   align = "start",
   className,
+  priority = false,
 }: PageHeroProps) {
   const resolved: PageHeroVariant = variant ?? (media ? "framed" : "plain");
   const showFrame = resolved !== "plain" && resolved !== "bleed" && media !== undefined;
@@ -188,6 +228,7 @@ export default function PageHero({
   if (resolved === "bleed" && media) {
     const imageSrc = media.kind === "video" ? (media.poster ?? media.src) : media.src;
     const alt = media.alt ?? "";
+    const image = heroImageAttrs(imageSrc, alt, priority, "100vw", media.focus);
 
     return (
       <>
@@ -199,9 +240,32 @@ export default function PageHero({
           className,
         )}
       >
-        <div className="lg:grid lg:min-h-[34rem] lg:grid-cols-[minmax(18rem,42rem)_minmax(0,1fr)] lg:items-center">
-        <div className="relative z-10 order-2 bg-navy lg:order-1">
-          <div className="px-4 py-12 sm:px-8 lg:px-12 lg:py-16 xl:pl-16">
+        <div
+          ref={shiftRef}
+          className="relative h-[70vw] min-h-64 max-h-[28rem] w-full overflow-hidden lg:absolute lg:inset-0 lg:h-full lg:max-h-none lg:min-h-0"
+        >
+          {media.kind === "video" && playVideo ? (
+            <video
+              src={media.src}
+              poster={image.src}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={alt || undefined}
+              className="studio-hero-art"
+              style={image.style}
+            />
+          ) : (
+            <img
+              {...image}
+              className="studio-hero-art"
+            />
+          )}
+        </div>
+        <div className="relative z-10 bg-navy lg:min-h-[36rem] lg:w-[min(42rem,52%)]">
+          <div className="px-4 py-12 sm:px-8 lg:px-12 lg:py-20 xl:pl-16">
             {eyebrow ? (
               <div className="mb-5 flex flex-wrap items-center gap-3">
                 <span aria-hidden="true" className="h-px w-6 bg-band" />
@@ -241,39 +305,6 @@ export default function PageHero({
               </div>
             ) : null}
           </div>
-        </div>
-        <div
-          ref={shiftRef}
-          className="order-1 flex items-center justify-center overflow-hidden px-4 py-8 sm:px-8 lg:order-2 lg:px-10 lg:py-12"
-        >
-          {media.kind === "video" && playVideo ? (
-            <video
-              src={media.src}
-              poster={media.poster}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label={alt || undefined}
-              className={cn(
-                "studio-hero-art",
-                media.position ?? "object-center",
-              )}
-            />
-          ) : (
-            <img
-              src={imageSrc}
-              alt={alt}
-              width={1456}
-              height={812}
-              className={cn(
-                "studio-hero-art",
-                media.position ?? "object-center",
-              )}
-            />
-          )}
-        </div>
         </div>
       </section>
       {meta ? (

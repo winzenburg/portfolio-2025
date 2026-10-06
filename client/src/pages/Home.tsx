@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
@@ -175,13 +176,24 @@ export default function Home() {
         ogType="website"
       />
 
+      <Helmet>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/home-hero-poster.webp"
+          imageSrcSet="/images/home-hero-poster-1456w.webp 1456w, /images/home-hero-poster.webp 2912w"
+          imageSizes="100vw"
+          fetchPriority="high"
+        />
+      </Helmet>
       <PageHero
         variant="bleed"
+        priority
         titleId="home-hero-title"
         eyebrow="Consulting for enterprise B2B product leaders"
         media={{
           src: "/images/home-hero-poster.webp",
-          position: "object-center",
+          focus: "50% 20%",
           alt: "Figures stand and work across a stepped structure of blue, red, black, and cream blocks beneath a red sun.",
         }}
         title={

@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
+import HeroImage from "@/components/HeroImage";
 import { Button } from "@/components/ui/button";
 import FactRow, { type Fact } from "@/components/FactRow";
 import PageHero from "@/components/PageHero";
@@ -282,10 +283,10 @@ function ProjectCard({ project }: { project: Project }) {
           rail while the narrative and build detail hold the left. */}
       <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-10">
         <div className="aspect-video overflow-hidden rounded-sm lg:col-span-5 lg:col-start-8 lg:row-start-1">
-          <img
-            loading="lazy"
+          <HeroImage
             src={project.image}
             alt={project.imageAlt}
+            sizes="(min-width: 1024px) 520px, 100vw"
             className="studio-zoom h-full w-full object-cover object-top"
           />
         </div>
@@ -398,10 +399,10 @@ function EarlierProjectCard({ project }: { project: EarlierProject }) {
       className="studio-lift group overflow-hidden rounded-sm border border-ink/15 bg-studio-card text-ink md:row-span-4 md:grid md:grid-rows-subgrid"
     >
       <div className="aspect-video overflow-hidden border-b-[3px] border-ink bg-cream">
-        <img
-          loading="lazy"
+        <HeroImage
           src={project.image}
           alt={project.imageAlt}
+          sizes="(min-width: 768px) 50vw, 100vw"
           className="studio-zoom h-full w-full object-cover object-top"
         />
       </div>
@@ -464,7 +465,7 @@ export default function Work() {
         eyebrowNote={`${caseStudyCount} projects`}
         media={{
           src: "/images/work-hero.webp",
-          position: "object-[center_28%]",
+          focus: "50% 22%",
           alt: "A suited figure holds a light bulb in one hand and a spotlight in the other, surrounded by bottles, screens, and workshop tools.",
         }}
         title={<>What product experience leadership looks like in practice</>}

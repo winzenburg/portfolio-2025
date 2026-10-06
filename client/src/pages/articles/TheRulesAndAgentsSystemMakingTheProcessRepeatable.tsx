@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function RulesAndAgentsSystemArticle() {
   return (
@@ -83,11 +84,12 @@ export default function RulesAndAgentsSystemArticle() {
 
       {/* System Diagram */}
       <div className="my-12 rounded-lg overflow-hidden border border-border/50 bg-muted/30">
-        <img loading="lazy"
-          src="/images/articles/rules-agents-hero.webp"
-          alt="Playful architectural illustration representing a repeatable rules and agents system"
-          className="w-full h-auto"
-        />
+        <HeroImage
+              src="/images/articles/rules-agents-hero.webp"
+              alt="Playful architectural illustration representing a repeatable rules and agents system"
+              sizes="100vw"
+              className="w-full h-auto"
+            />
       </div>
 
       {/* Article Content */}

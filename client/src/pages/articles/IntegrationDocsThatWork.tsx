@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function IntegrationDocsThatWork() {
   return (
@@ -40,9 +41,10 @@ export default function IntegrationDocsThatWork() {
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/integration-docs-hero.webp"
               alt="Integration Documentation That Works"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

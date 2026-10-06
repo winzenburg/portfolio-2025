@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
+import HeroImage from "@/components/HeroImage";
 import PageSeo from "@/components/PageSeo";
 
 const BASE = import.meta.env.BASE_URL;
@@ -75,10 +76,11 @@ const CaseStudyWinzinvest: React.FC = () => {
 
       {/* Hero */}
       <section className="studio-case-hero relative min-h-[65vh] flex items-center justify-center overflow-hidden">
-        <img
-          src={IMG('01_homepage_hero.webp')}
+        <HeroImage
+          src="/images/winzinvest_01_homepage_hero.webp"
           alt="Winzinvest homepage"
-          className="absolute inset-0 w-full h-full object-cover object-top opacity-20"
+          sizes="100vw"
+          className="absolute inset-0 h-full w-full object-cover object-top opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">

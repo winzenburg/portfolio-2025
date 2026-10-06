@@ -5,6 +5,7 @@ import ArticleFaq from "@/components/ArticleFaq";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function TheAgentLayerBusinessLayer() {
   return (
@@ -47,9 +48,10 @@ export default function TheAgentLayerBusinessLayer() {
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp"
               alt="The Agent Layer Is Becoming the Business Layer"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

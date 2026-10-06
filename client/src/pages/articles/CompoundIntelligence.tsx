@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function CompoundIntelligence() {
   return (
@@ -29,9 +30,10 @@ export default function CompoundIntelligence() {
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/compound-intelligence-hero.webp"
               alt="Compound Intelligence"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

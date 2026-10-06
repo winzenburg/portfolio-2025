@@ -5,6 +5,7 @@ import ArticleFaq from "@/components/ArticleFaq";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function MapTheWorkBeforeYouAutomate() {
   return (
@@ -49,11 +50,10 @@ export default function MapTheWorkBeforeYouAutomate() {
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/map-the-work-before-you-automate-it-hero.webp"
               alt="Four surveyors in long coats plant red flags along a winding path that loops past benches and gates, while an idle conveyor machine waits at the edge of the valley."
-              width={1024}
-              height={576}
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

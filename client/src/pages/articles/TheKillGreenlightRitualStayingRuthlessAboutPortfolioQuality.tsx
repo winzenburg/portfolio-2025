@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function KillGreenlightRitual() {
   return (
@@ -34,9 +35,10 @@ export default function KillGreenlightRitual() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/kill-greenlight-hero.webp"
               alt="A signalman with two lanterns stands where many train tracks split, some blocked by red signals."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

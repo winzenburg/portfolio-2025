@@ -5,6 +5,7 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ArticleFaq from "@/components/ArticleFaq";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function DesignSystemsFail() {
   return (
@@ -33,9 +34,10 @@ export default function DesignSystemsFail() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/design-systems-fail-hero.webp"
               alt="Why Most Design Systems Fail"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

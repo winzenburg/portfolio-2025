@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function GameficationThatDoesntManipulate() {
   return (
@@ -34,9 +35,10 @@ export default function GameficationThatDoesntManipulate() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/gamification-hero.webp"
               alt="A blue bird carries a lantern beside a person walking a path of stepping stones."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

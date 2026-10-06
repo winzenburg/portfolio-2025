@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function OpenSourceVisionArticle() {
   return (
@@ -34,9 +35,10 @@ export default function OpenSourceVisionArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/open-source-hero.webp"
               alt="A cutaway workshop building shows many people making things while a crowd watches from the street."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

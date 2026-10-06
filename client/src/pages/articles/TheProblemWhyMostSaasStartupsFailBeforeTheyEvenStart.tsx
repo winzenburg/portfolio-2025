@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function SaaSStartupFailures() {
   return (
@@ -34,9 +35,10 @@ export default function SaaSStartupFailures() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/saas-problem-hero.webp"
               alt="One person stacks a tower of houses on a rock while a long line of people waits on the opposite shore."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

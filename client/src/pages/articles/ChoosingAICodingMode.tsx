@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function ChoosingAICodingMode() {
   return (
@@ -32,9 +33,10 @@ export default function ChoosingAICodingMode() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/choosing-ai-coding-mode-hero.webp"
               alt="Choosing Your AI Coding Mode"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

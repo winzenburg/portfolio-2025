@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function AutonomousAICoding() {
   return (
@@ -32,9 +33,10 @@ export default function AutonomousAICoding() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/autonomous-ai-coding-hero.webp"
               alt="Autonomous AI Coding"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

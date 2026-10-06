@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function GlifCreativeBatchingArticle() {
   return (
@@ -34,9 +35,10 @@ export default function GlifCreativeBatchingArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/glif-hero.webp"
               alt="Two people run a printing press and hang rows of finished posters to dry."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

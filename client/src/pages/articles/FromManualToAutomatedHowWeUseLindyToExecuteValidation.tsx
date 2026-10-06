@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function LinnyAutomationArticle() {
   return (
@@ -34,9 +35,10 @@ export default function LinnyAutomationArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/lindy-hero.webp"
               alt="A blue robot delivers letters along a street while a person writes at a desk in the foreground."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>
