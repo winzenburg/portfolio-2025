@@ -552,6 +552,17 @@ article > .container > div:has(> img:only-child) > img,
   object-fit: cover;
 }
 
+/*
+ * Home's arch sits high in a wide frame. Past 1536px the copy column is
+ * too short for object-position 35% to keep the sun inside the crop, so
+ * the frame grows. The extra space is only on the home hero.
+ */
+@media (min-width: 1536px) {
+  .studio-home-hero > .relative.z-10 {
+    min-height: 57rem;
+  }
+}
+
 /* One rule slides between nav items. */
 .nav-indicator {
   transition:
