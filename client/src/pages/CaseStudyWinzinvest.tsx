@@ -76,12 +76,14 @@ const CaseStudyWinzinvest: React.FC = () => {
 
       {/* Hero */}
       <section className="studio-case-hero relative min-h-[65vh] flex items-center justify-center overflow-hidden">
-        <HeroImage
-          src="/images/winzinvest_01_homepage_hero.webp"
-          alt="Winzinvest homepage"
-          sizes="100vw"
-          className="absolute inset-0 h-full w-full object-cover object-top opacity-20"
-        />
+        <div className="absolute inset-0">
+          <HeroImage
+            src="/images/winzinvest_01_homepage_hero.webp"
+            alt="Winzinvest homepage"
+            sizes="100vw"
+            className="h-full w-full object-cover object-top opacity-20"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
           <div className="inline-block px-4 py-2 bg-primary/15 border border-primary/20 rounded-full mb-6">

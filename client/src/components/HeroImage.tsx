@@ -28,7 +28,7 @@ export default function HeroImage({
 }: HeroImageProps) {
   const spec = heroSpec(src);
   const style: CSSProperties | undefined = spec
-    ? { objectPosition: spec.focus }
+    ? { objectPosition: spec.focus, transformOrigin: spec.focus }
     : undefined;
 
   return (

@@ -180,21 +180,22 @@ export default function Home() {
         <link
           rel="preload"
           as="image"
-          href="/images/home-hero-poster.webp"
-          imageSrcSet="/images/home-hero-poster-1456w.webp 1456w, /images/home-hero-poster.webp 2912w"
+          href="/images/home-hero-test-arch.webp"
+          imageSrcSet="/images/home-hero-test-arch-1456w.webp 1456w, /images/home-hero-test-arch.webp 2912w"
           imageSizes="100vw"
           fetchPriority="high"
         />
       </Helmet>
       <PageHero
+        className="studio-home-hero"
         variant="bleed"
         priority
         titleId="home-hero-title"
         eyebrow="Consulting for enterprise B2B product leaders"
         media={{
-          src: "/images/home-hero-poster.webp",
-          focus: "50% 20%",
-          alt: "Figures stand and work across a stepped structure of blue, red, black, and cream blocks beneath a red sun.",
+          src: "/images/home-hero-test-arch.webp",
+          focus: "80% 35%",
+          alt: "Illustration of a single finished arch standing on open ground, with the rest of the arcade only staked out in string.",
         }}
         title={
           <>

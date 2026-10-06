@@ -16,7 +16,7 @@ export interface ResolvedHero extends HeroSpec {
 }
 
 const HEROES: Record<string, HeroSpec> = {
-  "/images/home-hero-poster.webp": { width: 2912, height: 1624, focus: "50% 20%" },
+  "/images/home-hero-test-arch.webp": { width: 2912, height: 1624, focus: "80% 35%" },
   "/images/services-hero.webp": { width: 2912, height: 1632, focus: "35% 70%" },
   "/images/work-hero.webp": { width: 2912, height: 1632, focus: "50% 22%" },
   "/images/about-hero.webp": { width: 2912, height: 1632, focus: "50% 30%" },

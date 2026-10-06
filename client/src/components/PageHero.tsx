@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 import { heroSpec } from "@/lib/hero-art";
 import { cn } from "@/lib/utils";
 
@@ -49,7 +49,9 @@ function heroImageAttrs(
     loading: priority ? "eager" : "lazy",
     decoding: "async",
     fetchPriority: priority ? "high" : undefined,
-    style: objectPosition ? { objectPosition } : undefined,
+    style: objectPosition
+      ? { objectPosition, transformOrigin: objectPosition }
+      : undefined,
   };
 }
 
@@ -75,50 +77,6 @@ function useHeroVideoEnabled(enabled: boolean): boolean {
   }, [enabled]);
 
   return shouldPlay;
-}
-
-/**
- * A few pixels of pointer parallax on the hero image. Skipped for coarse
- * pointers and for anyone who asked for reduced motion. The shift is a CSS
- * variable so the stylesheet can zero it.
- */
-function useHeroShift(active: boolean) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!active) return;
-    const frame = ref.current;
-    if (!frame || typeof window.matchMedia !== "function") return;
-
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const fine = window.matchMedia("(pointer: fine)");
-    if (reduce.matches || !fine.matches) return;
-
-    const media = frame.querySelector("img, video");
-    if (!(media instanceof HTMLElement)) return;
-
-    const onMove = (event: PointerEvent) => {
-      const rect = frame.getBoundingClientRect();
-      if (rect.width === 0 || rect.height === 0) return;
-      const x = (event.clientX - rect.left) / rect.width - 0.5;
-      const y = (event.clientY - rect.top) / rect.height - 0.5;
-      media.style.setProperty("--hero-x", `${(-x * 8).toFixed(2)}px`);
-      media.style.setProperty("--hero-y", `${(-y * 6).toFixed(2)}px`);
-    };
-    const onLeave = () => {
-      media.style.setProperty("--hero-x", "0px");
-      media.style.setProperty("--hero-y", "0px");
-    };
-
-    frame.addEventListener("pointermove", onMove);
-    frame.addEventListener("pointerleave", onLeave);
-    return () => {
-      frame.removeEventListener("pointermove", onMove);
-      frame.removeEventListener("pointerleave", onLeave);
-    };
-  }, [active]);
-
-  return ref;
 }
 
 type PageHeroVariant = "plain" | "framed" | "band" | "bleed";
@@ -221,7 +179,6 @@ export default function PageHero({
   const playVideo = useHeroVideoEnabled(
     media?.kind === "video" && (showFrame || resolved === "bleed"),
   );
-  const shiftRef = useHeroShift(resolved === "bleed" && media !== undefined);
   const isCentered = align === "center" && !aside && !showFrame;
   const hasVisual = showFrame || aside !== undefined;
 
@@ -240,10 +197,7 @@ export default function PageHero({
           className,
         )}
       >
-        <div
-          ref={shiftRef}
-          className="relative h-[70vw] min-h-64 max-h-[28rem] w-full overflow-hidden lg:absolute lg:inset-0 lg:h-full lg:max-h-none lg:min-h-0"
-        >
+        <div className="relative h-[70vw] min-h-64 max-h-[28rem] w-full overflow-hidden lg:absolute lg:inset-0 lg:h-full lg:max-h-none lg:min-h-0">
           {media.kind === "video" && playVideo ? (
             <video
               src={media.src}
