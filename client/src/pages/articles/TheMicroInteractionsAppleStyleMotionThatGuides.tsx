@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function MicroInteractionsArticle() {
   return (
@@ -34,9 +35,10 @@ export default function MicroInteractionsArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/micro-interactions-hero.webp"
               alt="A person skips a stone across stepping stones while another catches it on the far bank."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

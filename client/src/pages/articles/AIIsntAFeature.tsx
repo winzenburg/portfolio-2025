@@ -5,6 +5,7 @@ import ArticleFaq from "@/components/ArticleFaq";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function AIIsntAFeature() {
   return (
@@ -47,9 +48,10 @@ export default function AIIsntAFeature() {
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/ai-isnt-a-feature-workflow-hero.webp"
               alt="AI Is a Workflow Problem."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

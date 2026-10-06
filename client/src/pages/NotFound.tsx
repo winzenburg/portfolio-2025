@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { AlertCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
@@ -51,50 +51,38 @@ export default function NotFound() {
           </>
         }
         aside={
-          <div className="flex items-center justify-center gap-6 rounded-xl border border-border/60 bg-background/40 px-8 py-12">
-            <span className="relative flex h-16 w-16 shrink-0 items-center justify-center">
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 rounded-full bg-red-900/40 motion-safe:animate-pulse"
-              />
-              <AlertCircle
-                className="relative h-12 w-12 text-red-400"
-                aria-hidden="true"
-              />
-            </span>
-            <span
-              aria-hidden="true"
-              className="font-display text-6xl leading-none text-muted-foreground"
-            >
-              404
-            </span>
-          </div>
+          <p
+            aria-hidden="true"
+            className="font-display text-[7.5rem] leading-none tracking-[-0.05em] text-ink sm:text-[9rem] lg:text-right"
+          >
+            404
+          </p>
         }
       />
 
-      <Section tone="muted" compact labelledBy="not-found-links-heading">
+      <Section tone="navy" compact labelledBy="not-found-links-heading">
         <SectionHeading
           id="not-found-links-heading"
           eyebrow="Try one of these"
           title="Where you were probably headed"
         />
-        <ul className="border-t border-border/60">
+        <ul className="border-t border-band/25">
           {DESTINATIONS.map((destination) => (
-            <li key={destination.href} className="border-b border-border/60">
+            <li key={destination.href} className="border-b border-band/25">
               <Link
                 href={destination.href}
-                className="group flex items-center gap-6 py-6 transition-colors hover:bg-white/5"
+                className="group flex items-baseline gap-6 py-6 text-band transition-colors duration-200 hover:text-white"
               >
-                <span className="min-w-0 flex-1 md:flex md:items-baseline md:gap-8">
-                  <span className="block text-lg font-semibold text-foreground transition-colors group-hover:text-primary md:w-44 md:shrink-0">
+                <span className="min-w-0 flex-1 md:flex md:items-baseline md:gap-10">
+                  <span className="block font-display text-2xl tracking-[-0.02em] text-band group-hover:text-white md:w-48 md:shrink-0">
                     {destination.label}
                   </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-muted-foreground md:mt-0">
+                  <span className="mt-1 block text-sm leading-relaxed text-band-muted group-hover:text-white md:mt-0">
                     {destination.note}
                   </span>
                 </span>
                 <ArrowRight
-                  className="h-5 w-5 shrink-0 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-primary"
+                  className="h-4 w-4 shrink-0 text-band-muted"
                   aria-hidden="true"
                 />
               </Link>

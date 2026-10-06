@@ -391,7 +391,7 @@ export default function Assessment() {
                   className="h-12 bg-background px-8 text-base text-blue-700 hover:bg-blue-50"
                 >
                   <Link href={consultingHref}>
-                    Book a 30-minute consultation
+                    Talk through your product bet
                     <ArrowRight aria-hidden="true" />
                   </Link>
                 </Button>

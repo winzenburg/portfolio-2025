@@ -89,7 +89,7 @@ export default function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-muted/40">
+    <footer className="mt-20 border-t border-ink/15 bg-paper">
       <div className="container py-14 md:py-18">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
 
@@ -97,11 +97,11 @@ export default function SiteFooter() {
           <div className="lg:col-span-4">
             <Link
               href="/"
-              className="group inline-flex items-center gap-2.5 transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+              className="group inline-flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
             >
               <span
                 aria-hidden="true"
-                className="flex h-8 w-8 items-center justify-center rounded border border-primary/30 font-display text-sm font-semibold text-primary"
+                className="flex h-9 w-9 items-center justify-center border border-line font-display text-xs tracking-[0.12em] text-ink"
               >
                 RW
               </span>

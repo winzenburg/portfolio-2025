@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link, useSearch } from "wouter";
 import { useState, useEffect } from "react";
-import { Check, FileText, Mail, Phone, X } from "lucide-react";
+import { FileText, Mail, Phone, X } from "lucide-react";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
 import FactRow, { type Fact } from "@/components/FactRow";
@@ -105,7 +105,7 @@ function heroFactsFor(intent: ContactIntent | null): Fact[] {
   return [
     { label: "Reply time", value: "Within a day" },
     firstConversation,
-    { label: "Email", value: EMAIL_ADDRESS },
+    { label: "Email", value: EMAIL_ADDRESS, href: `mailto:${EMAIL_ADDRESS}` },
     { label: "Phone", value: PHONE_NUMBER },
   ];
 }
@@ -198,7 +198,11 @@ export default function Contact() {
       <PageHero
         titleId="contact-hero-title"
         eyebrow="Contact"
-        media={{ src: "/images/contact-hero.webp", position: "object-center" }}
+        media={{
+          src: "/images/contact-hero.webp",
+          position: "object-center",
+          alt: "A person with a folder walks a plank laid across stacks of paper, in front of a large yellow sun.",
+        }}
         title={copy.title}
         lede={copy.description}
         actions={
@@ -206,14 +210,14 @@ export default function Contact() {
             <a href="#contact-form">Write to me</a>
           </Button>
         }
-        meta={<FactRow facts={heroFactsFor(intent)} />}
+        meta={<FactRow layout="contact" facts={heroFactsFor(intent)} />}
       />
 
       {/* Form + sidebar */}
       <Section id="contact-form" tone="slate" labelledBy="contact-form-heading">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
-            <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
+            <div className="rounded-sm border border-ink/15 bg-studio-card p-7 text-ink md:p-10">
               <h2
                 id="contact-form-heading"
                 className="text-2xl font-bold text-foreground"
@@ -224,17 +228,9 @@ export default function Contact() {
               {/* Always mounted so the confirmation is announced when it lands. */}
               <div aria-live="polite">
                 {submitted ? (
-                  <div className="mt-6 rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-6 md:p-7">
-                    <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20">
-                      <Check
-                        className="h-6 w-6 text-emerald-300"
-                        aria-hidden="true"
-                      />
-                    </span>
-                    <h3 className="text-xl font-semibold text-foreground">
-                      Message sent
-                    </h3>
-                    <p className="mt-2 max-w-md leading-relaxed text-muted-foreground">
+                  <div className="mt-6 border-l-2 border-verm-text bg-studio-card p-6 text-ink md:p-7">
+                    <h3 className="text-xl font-bold text-ink">Message sent</h3>
+                    <p className="mt-2 max-w-md leading-relaxed text-ink">
                       {intent === "consulting" ? (
                         <>Thanks. I&apos;ll reply and we&apos;ll find a 30-minute slot.</>
                       ) : (
@@ -262,11 +258,9 @@ export default function Contact() {
                   {/* role="alert" so a failed send is announced straight away. */}
                   <div role="alert">
                     {submitFailed ? (
-                      <div className="mt-6 rounded-lg border border-red-500/40 bg-red-500/10 p-5">
-                        <p className="font-semibold text-red-200">
-                          That didn&apos;t send.
-                        </p>
-                        <p className="mt-1 leading-relaxed text-muted-foreground">
+                      <div className="mt-6 border-l-2 border-verm-text p-5 text-ink">
+                        <p className="font-bold">That didn&apos;t send.</p>
+                        <p className="mt-1 leading-relaxed">
                           Nothing was lost, so you can try again. If it keeps
                           failing, email me directly at{" "}
                           <a

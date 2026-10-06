@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
+import ArticleChrome from "@/components/ArticleChrome";
 import { cn } from "@/lib/utils";
 
 interface ResponsiveNavProps {
@@ -46,6 +47,10 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [location] = useLocation();
   const headerRef = useRef<HTMLElement>(null);
+  const desktopNavRef = useRef<HTMLDivElement>(null);
+  const [indicator, setIndicator] = useState<{ x: number; width: number } | null>(
+    null,
+  );
 
   // Publish header height as --nav-height so pages can offset sticky chrome.
   useEffect(() => {
@@ -84,6 +89,30 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
   const isActive = (item: NavItem) =>
     currentPage !== undefined && item.matches.includes(currentPage);
 
+  useEffect(() => {
+    const nav = desktopNavRef.current;
+    if (!nav) return;
+
+    const place = () => {
+      const active = nav.querySelector<HTMLElement>('[aria-current="page"]');
+      if (!active) {
+        setIndicator(null);
+        return;
+      }
+      const parent = nav.getBoundingClientRect();
+      const box = active.getBoundingClientRect();
+      const inset = 12;
+      setIndicator({
+        x: box.left - parent.left + inset,
+        width: Math.max(0, box.width - inset * 2),
+      });
+    };
+
+    place();
+    window.addEventListener("resize", place);
+    return () => window.removeEventListener("resize", place);
+  }, [location, currentPage]);
+
   return (
     <header
       ref={headerRef}
@@ -99,13 +128,13 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           {/* Wordmark */}
           <Link
             href="/"
-            className="group inline-flex items-center gap-2.5 rounded-sm transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="group inline-flex items-center gap-2.5 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             aria-label={`Ryan Winzenburg, home${currentPage === "home" ? " (current page)" : ""}`}
             aria-current={currentPage === "home" ? "page" : undefined}
           >
             <span
               aria-hidden="true"
-              className="flex h-8 w-8 items-center justify-center rounded border border-primary/30 font-display text-sm font-semibold text-primary"
+              className="flex h-9 w-9 items-center justify-center border border-line font-display text-xs tracking-[0.12em] text-ink"
             >
               RW
             </span>
@@ -115,7 +144,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden items-center gap-0.5 md:flex">
+          <div ref={desktopNavRef} className="relative hidden items-center gap-0.5 md:flex">
             {NAV_ITEMS.map((item) => {
               const active = isActive(item);
               return (
@@ -124,27 +153,29 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "relative rounded-sm px-3 py-2 text-sm font-medium transition-colors",
+                    "relative rounded-sm px-3 py-2 text-sm font-medium transition-colors duration-200",
                     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1",
                     active
-                      ? "text-foreground"
-                      : item.accent
-                        ? "text-primary hover:text-primary/80"
-                        : "text-muted-foreground hover:text-foreground",
+                      ? "text-ink"
+                      : "text-ink-muted hover:text-ink",
                   )}
                 >
                   {item.label}
-                  {/* Active underline — ink-blue rule */}
-                  <span
-                    aria-hidden="true"
-                    className={cn(
-                      "absolute inset-x-3 -bottom-px h-px rounded-full bg-primary transition-opacity",
-                      active ? "opacity-100" : "opacity-0",
-                    )}
-                  />
                 </Link>
               );
             })}
+            <span
+              aria-hidden="true"
+              className="nav-indicator pointer-events-none absolute bottom-1 left-0 h-px bg-verm-text"
+              style={
+                indicator
+                  ? {
+                      width: indicator.width,
+                      transform: `translateX(${indicator.x}px)`,
+                    }
+                  : { width: 0, opacity: 0 }
+              }
+            />
           </div>
 
           {/* Mobile toggle */}
@@ -186,11 +217,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
                       className={cn(
                         "flex items-center gap-3 rounded-sm px-1 py-3 text-base font-medium transition-colors",
                         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                        active
-                          ? "text-foreground"
-                          : item.accent
-                            ? "text-primary"
-                            : "text-muted-foreground hover:text-foreground",
+                        active ? "text-ink" : "text-ink-muted hover:text-ink",
                       )}
                     >
                       <span
@@ -209,6 +236,7 @@ export default function ResponsiveNav({ currentPage }: ResponsiveNavProps) {
           </div>
         ) : null}
       </div>
+      <ArticleChrome />
     </header>
   );
 }

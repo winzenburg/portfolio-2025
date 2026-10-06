@@ -9,13 +9,9 @@
  * Exits non-zero on any violation, so it can gate CI once the deferred
  * surfaces are converted.
  *
- * Known blind spot: axe returns `incomplete` rather than pass/fail for the
- * PageHero copy column, because the layered duotone scrim makes the backdrop
- * undeterminable to a static analyser. Verified manually instead by hiding the
- * hero text, sampling the brightest backdrop pixel inside each text box, and
- * computing the ratio: backdrops land at rgb(18-44) and the worst case across
- * every hero is 9.5:1, well clear of 4.5:1. Re-check that by hand if the scrim
- * gradients in PageHero change.
+ * Bleed heroes put the illustration edge to edge and the headline on a solid
+ * navy panel (cream on #112234). Re-check those pairings if the band or paper
+ * tokens change.
  */
 import { chromium } from "playwright";
 import { createRequire } from "node:module";

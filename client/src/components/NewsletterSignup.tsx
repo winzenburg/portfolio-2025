@@ -50,15 +50,15 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <div className="rounded-2xl border border-border bg-muted/40 p-8 md:p-12">
+    <div className="border border-ink/15 bg-studio-card p-8 text-ink md:p-12">
       <div className="mb-8 text-center">
-        <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-primary">
+        <p className="mb-4 text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
           Weekly
         </p>
-        <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
+        <h2 className="mb-4 text-2xl font-bold text-ink md:text-3xl">
           One email a week on product experience and AI-enabled delivery
         </h2>
-        <p className="mx-auto max-w-xl text-lg leading-relaxed text-muted-foreground">
+        <p className="mx-auto max-w-xl text-lg leading-relaxed text-ink-muted">
           What I&apos;m working on, what broke, and what I&apos;d do
           differently. Written for people running product organizations.
         </p>
@@ -66,27 +66,11 @@ export default function NewsletterSignup() {
 
       <div aria-live="polite">
         {subscribeStatus === "success" ? (
-          <div className="mx-auto max-w-xl rounded-xl border border-border bg-background p-6 text-center">
-            <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20">
-              <svg
-                className="h-6 w-6 text-emerald-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </div>
-            <h3 className="mb-2 text-xl font-bold text-foreground">
+          <div className="mx-auto max-w-xl border-l-2 border-verm-text p-6 text-center text-ink">
+            <h3 className="mb-2 font-display text-2xl font-bold text-ink">
               You&apos;re subscribed
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-ink">
               Thanks for signing up. Keep an eye on your inbox.
             </p>
           </div>
@@ -105,7 +89,7 @@ export default function NewsletterSignup() {
                 required
                 disabled={subscribeStatus === "loading"}
                 aria-invalid={subscribeStatus === "error" || undefined}
-                className="flex-1 rounded-lg border border-border bg-input/50 px-4 py-3 text-base text-foreground placeholder-muted-foreground focus:border-transparent focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50"
+                className="flex-1 rounded-sm border border-ink/40 bg-studio-card px-4 py-3 text-base text-ink placeholder:text-ink-muted focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus disabled:opacity-50"
               />
               <Button
                 type="submit"
@@ -117,7 +101,10 @@ export default function NewsletterSignup() {
               </Button>
             </div>
             {subscribeStatus === "error" ? (
-              <p role="alert" className="mt-3 text-center text-sm text-destructive">
+              <p
+                role="alert"
+                className="mt-3 border-l-2 border-verm-text px-4 py-2 text-center text-sm text-ink"
+              >
                 {errorMessage}
               </p>
             ) : null}

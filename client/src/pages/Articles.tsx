@@ -1,5 +1,6 @@
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Link } from "wouter";
+import HeroImage from "@/components/HeroImage";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import NewsletterSignup from "@/components/NewsletterSignup";
@@ -8,7 +9,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SiteLayout from "@/components/SiteLayout";
 import { Section, SectionHeading, SectionTitle } from "@/components/Section";
-import { cn } from "@/lib/utils";
+import { Chip, ChipLabel, type ChipTone } from "@/components/Chip";
 import { trackArticleCardClick, trackCategoryFilter } from "@/lib/analytics";
 
 interface Article {
@@ -640,41 +641,13 @@ const articles: Article[] = [
  * never drift apart. Previously the pill list had a Product Design entry that
  * the badge switch did not, so those cards rendered with AI Workflow styling.
  */
-interface CategoryStyle {
-  pillActive: string;
-  pillIdle: string;
-  badge: string;
-}
-
-const CATEGORY_STYLES: Record<string, CategoryStyle> = {
-  "Design Systems": {
-    pillActive: "bg-blue-700 text-white border-blue-700",
-    pillIdle: "border-blue-600 bg-blue-50 text-blue-800 hover:bg-blue-100",
-    badge: "border-blue-300 bg-blue-50 text-blue-800",
-  },
-  "Business Strategy": {
-    pillActive: "bg-cyan-700 text-white border-cyan-700",
-    pillIdle: "border-cyan-600 bg-cyan-50 text-cyan-800 hover:bg-cyan-100",
-    badge: "border-cyan-300 bg-cyan-50 text-cyan-800",
-  },
-  "AI Workflow": {
-    pillActive: "bg-purple-700 text-white border-purple-700",
-    pillIdle: "border-purple-600 bg-purple-50 text-purple-800 hover:bg-purple-100",
-    badge: "border-purple-300 bg-purple-50 text-purple-800",
-  },
-  Engineering: {
-    pillActive: "bg-emerald-700 text-white border-emerald-700",
-    pillIdle: "border-emerald-600 bg-emerald-50 text-emerald-800 hover:bg-emerald-100",
-    badge: "border-emerald-300 bg-emerald-50 text-emerald-800",
-  },
-  "Product Design": {
-    pillActive: "bg-rose-700 text-white border-rose-700",
-    pillIdle: "border-rose-600 bg-rose-50 text-rose-800 hover:bg-rose-100",
-    badge: "border-rose-300 bg-rose-50 text-rose-800",
-  },
+const CATEGORY_TONE: Record<string, ChipTone> = {
+  "Design Systems": "aqua",
+  "Business Strategy": "sun",
+  "AI Workflow": "blush",
+  Engineering: "cream",
+  "Product Design": "apricot",
 };
-
-const NEUTRAL_BADGE = "border-border/60 bg-background/60 text-muted-foreground";
 
 const ALL = "All";
 
@@ -689,7 +662,7 @@ const CATEGORY_ORDER: string[] = [
 
 function ArticleMeta({ article }: { article: Article }) {
   return (
-    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+    <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-ink-muted">
       <span className="flex items-center gap-2">
         <Calendar className="h-4 w-4" aria-hidden="true" />
         {article.date}
@@ -704,14 +677,9 @@ function ArticleMeta({ article }: { article: Article }) {
 
 function CategoryBadge({ category }: { category: string }) {
   return (
-    <span
-      className={cn(
-        "inline-block rounded-full border px-3 py-1 text-xs font-semibold",
-        CATEGORY_STYLES[category]?.badge ?? NEUTRAL_BADGE,
-      )}
-    >
+    <ChipLabel tone={CATEGORY_TONE[category] ?? "cream"}>
       {category}
-    </span>
+    </ChipLabel>
   );
 }
 
@@ -723,30 +691,30 @@ function FeaturedArticleCard({ article }: { article: Article }) {
       onClick={() =>
         trackArticleCardClick(article.slug, article.title, article.category)
       }
-      className="group grid overflow-hidden rounded-2xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70 lg:grid-cols-2"
+      className="studio-lift group grid overflow-hidden rounded-sm bg-studio-card text-ink lg:grid-cols-2"
     >
-      <div className="aspect-[16/10] overflow-hidden lg:aspect-auto lg:h-full">
-        <img
-          loading="lazy"
+      <div className="aspect-[3/2] overflow-hidden">
+        <HeroImage
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
-          className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
+          sizes="(min-width: 1024px) 640px, 100vw"
+          className="studio-zoom h-full w-full object-cover"
         />
       </div>
       <div className="flex flex-col justify-center p-8 md:p-10">
         <div className="mb-5 flex flex-wrap items-center gap-4">
-          <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
+          <span className="text-[13px] font-bold uppercase tracking-[0.14em] text-verm-text">
             Latest
           </span>
           <CategoryBadge category={article.category} />
         </div>
-        <h3 className="text-2xl font-bold leading-snug text-foreground transition-colors group-hover:text-primary md:text-3xl">
+        <h3 className="text-2xl font-medium leading-snug tracking-[-0.02em] text-ink md:text-3xl">
           {article.title}
         </h3>
-        <p className="mt-5 leading-relaxed text-muted-foreground">{article.excerpt}</p>
+        <p className="mt-5 leading-relaxed text-ink-muted">{article.excerpt}</p>
         <div className="mt-7 flex items-center justify-between gap-4 border-t border-border/60 pt-5">
           <ArticleMeta article={article} />
-          <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
+          <span className="inline-flex items-center gap-2 text-sm text-cobalt">
             Read
             <ArrowRight
               className="h-4 w-4 transition-transform motion-safe:group-hover:translate-x-1"
@@ -766,30 +734,30 @@ function ArticleCard({ article }: { article: Article }) {
       onClick={() =>
         trackArticleCardClick(article.slug, article.title, article.category)
       }
-      className="group flex h-full flex-col overflow-hidden rounded-xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70"
+      className="studio-lift group flex h-full flex-col overflow-hidden rounded-sm bg-studio-card text-ink"
     >
-      <div className="aspect-[16/9] overflow-hidden">
-        <img
-          loading="lazy"
+      <div className="aspect-[3/2] overflow-hidden">
+        <HeroImage
           src={article.heroImage}
           alt={article.heroAlt ?? article.title}
-          className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-105"
+          sizes="(min-width: 1024px) 400px, 100vw"
+          className="studio-zoom h-full w-full object-cover"
         />
       </div>
       <div className="flex flex-1 flex-col p-6">
         <div className="mb-4">
           <CategoryBadge category={article.category} />
         </div>
-        <h3 className="mb-3 text-lg font-semibold leading-snug text-foreground transition-colors group-hover:text-primary">
+        <h3 className="mb-3 text-lg font-medium leading-snug tracking-[-0.02em] text-ink">
           {article.title}
         </h3>
-        <p className="mb-6 flex-1 text-sm leading-relaxed text-muted-foreground">
+        <p className="mb-6 flex-1 text-sm leading-relaxed text-ink-muted">
           {article.excerpt}
         </p>
         <div className="mt-auto flex items-center justify-between gap-3 border-t border-border/60 pt-4">
           <ArticleMeta article={article} />
           <ArrowRight
-            className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:text-primary motion-safe:group-hover:translate-x-1"
+            className="h-4 w-4 shrink-0 text-cobalt transition-transform motion-safe:group-hover:translate-x-1"
             aria-hidden="true"
           />
         </div>
@@ -828,10 +796,15 @@ export default function Articles() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="articles-hero-title"
         eyebrow="Articles"
         eyebrowNote={`${articles.length} pieces`}
-        media={{ src: "/images/articles-hero.webp", position: "object-center" }}
+        media={{
+          src: "/images/articles-hero.webp",
+          focus: "52% 18%",
+          alt: "A person in a polka-dot coat balances on a plank resting on patterned blocks and spheres.",
+        }}
         title="Writing on product experience, operating models, and AI-enabled delivery"
         lede="First-person pieces from enterprise product work. What I tried, what broke, and what I would do differently."
         actions={
@@ -846,7 +819,7 @@ export default function Articles() {
         }
       />
 
-      <Section labelledBy="articles-index-heading">
+      <Section tone="navy" labelledBy="articles-index-heading">
         <SectionHeading
           id="articles-index-heading"
           eyebrow="The archive"
@@ -861,36 +834,27 @@ export default function Articles() {
         >
           {CATEGORY_ORDER.map((category) => {
             const isSelected = selectedCategory === category;
-            const style = CATEGORY_STYLES[category];
+            const tone = CATEGORY_TONE[category] ?? "paper";
             return (
-              <button
+              <Chip
                 key={category}
-                type="button"
-                aria-pressed={isSelected}
+                tone={tone}
+                selected={isSelected}
                 onClick={() => handleCategoryChange(category)}
-                className={cn(
-                  "rounded-full border px-4 py-2 text-sm font-semibold transition-colors",
-                  isSelected
-                    ? (style?.pillActive ?? "border-primary bg-background text-foreground")
-                    : (style?.pillIdle ??
-                        "border-border/60 bg-background/40 text-muted-foreground hover:border-border hover:text-foreground"),
-                )}
               >
                 {category}{" "}
-                <span className="font-normal">
-                  {getCategoryCount(category)}
-                </span>
-              </button>
+                <span className="font-normal">{getCategoryCount(category)}</span>
+              </Chip>
             );
           })}
         </div>
 
         {filteredArticles.length === 0 ? (
-          <div className="rounded-xl border border-border/60 bg-background/40 px-6 py-20 text-center">
-            <p className="text-lg text-foreground">
+          <div className="bg-studio-card px-6 py-16 text-center text-ink">
+            <p className="font-display text-2xl font-bold">
               Nothing published in {selectedCategory} yet.
             </p>
-            <p className="mt-3 text-muted-foreground">
+            <p className="mt-3 text-ink-muted">
               Try another topic, or browse everything.
             </p>
             <Button className="mt-7" variant="outline" onClick={() => handleCategoryChange(ALL)}>
@@ -905,10 +869,15 @@ export default function Articles() {
               </Reveal>
             ) : null}
             {rest.length > 0 ? (
-              <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                {rest.map((article) => (
+              <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+                {rest.map((article, index) => (
                   <li key={article.id} className="flex">
-                    <ArticleCard article={article} />
+                    <Reveal
+                      delay={Math.min(index, 8) * 60}
+                      className="flex h-full w-full"
+                    >
+                      <ArticleCard article={article} />
+                    </Reveal>
                   </li>
                 ))}
               </ul>

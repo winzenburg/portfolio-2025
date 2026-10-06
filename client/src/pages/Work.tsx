@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
+import HeroImage from "@/components/HeroImage";
 import { Button } from "@/components/ui/button";
 import FactRow, { type Fact } from "@/components/FactRow";
 import PageHero from "@/components/PageHero";
@@ -276,37 +277,37 @@ function ProjectCard({ project }: { project: Project }) {
   const { liveUrl } = project;
 
   return (
-    <article className="group rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70 md:p-10">
+    <article className="group border-t border-band/45 py-12 text-band md:py-16">
       {/* Explicit placement keeps one stacked reading order on small screens
           and, from lg up, pairs the screenshot with the numbers in the right
           rail while the narrative and build detail hold the left. */}
       <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-10">
-        <div className="aspect-video overflow-hidden rounded-lg border border-border/60 bg-muted lg:col-span-5 lg:col-start-8 lg:row-start-1">
-          <img
-            loading="lazy"
+        <div className="aspect-video overflow-hidden rounded-sm lg:col-span-5 lg:col-start-8 lg:row-start-1">
+          <HeroImage
             src={project.image}
             alt={project.imageAlt}
-            className="h-full w-full object-cover object-top transition-transform duration-500 motion-safe:group-hover:scale-105"
+            sizes="(min-width: 1024px) 520px, 100vw"
+            className="studio-zoom h-full w-full object-cover object-top"
           />
         </div>
 
         <div className="lg:col-span-7 lg:col-start-1 lg:row-start-1">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-band">
             {project.kicker}
           </p>
-          <h3 className="mt-4 text-pretty text-2xl font-bold leading-tight tracking-tight text-foreground md:text-3xl">
+          <h3 className="mt-4 text-pretty text-2xl font-bold leading-tight tracking-tight text-band md:text-3xl">
             {project.title}
           </h3>
 
-          <h4 className="mt-7 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+          <h4 className="mt-7 text-xs uppercase tracking-[0.16em] text-band-muted">
             MY ROLE
           </h4>
-          <p className="mt-3 leading-relaxed text-muted-foreground">{project.role}</p>
+          <p className="mt-3 leading-relaxed text-band-muted">{project.role}</p>
         </div>
 
         <div className="lg:col-span-5 lg:col-start-8 lg:row-start-2">
           {project.metricsLabel ? (
-            <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+            <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-band-muted">
               {project.metricsLabel}
             </h4>
           ) : null}
@@ -316,12 +317,12 @@ function ProjectCard({ project }: { project: Project }) {
             {project.metrics.map((metric) => (
               <div
                 key={metric.label}
-                className="flex flex-col border-t border-border/60 pt-4"
+                className="flex flex-col border-t border-band/45 pt-4"
               >
-                <dt className="text-xs uppercase tracking-[0.14em] text-muted-foreground">
+                <dt className="text-xs uppercase tracking-[0.14em] text-band-muted">
                   {metric.label}
                 </dt>
-                <dd className="mt-auto pt-2 text-xl font-semibold tracking-tight text-foreground">
+                <dd className="mt-auto pt-2 text-xl font-semibold tracking-tight text-band">
                   {metric.value}
                 </dd>
               </div>
@@ -330,19 +331,19 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="lg:col-span-7 lg:col-start-1 lg:row-start-2">
-          <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+          <h4 className="mb-5 text-xs uppercase tracking-[0.16em] text-band-muted">
             {project.highlightsLabel}
           </h4>
           <dl className="grid gap-x-10 gap-y-5 sm:grid-cols-2">
             {project.highlights.map((highlight) => (
               <div
                 key={highlight.title}
-                className="border-t border-border/60 pt-4"
+                className="border-t border-band/45 pt-4"
               >
-                <dt className="text-sm font-medium text-foreground">
+                <dt className="text-sm font-medium text-band">
                   {highlight.title}
                 </dt>
-                <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                <dd className="mt-1 text-sm leading-relaxed text-band-muted">
                   {highlight.detail}
                 </dd>
               </div>
@@ -350,7 +351,7 @@ function ProjectCard({ project }: { project: Project }) {
           </dl>
         </div>
 
-        <div className="flex flex-col gap-3 border-t border-border/60 pt-7 sm:flex-row lg:col-span-12 lg:col-start-1 lg:row-start-3">
+        <div className="flex flex-col gap-3 border-t border-band/45 pt-7 sm:flex-row lg:col-span-12 lg:col-start-1 lg:row-start-3">
           <Button asChild>
             <Link
               href={project.slug}
@@ -395,14 +396,14 @@ function EarlierProjectCard({ project }: { project: EarlierProject }) {
     <Link
       href={project.slug}
       onClick={() => trackCaseStudyClick(project.analyticsKey, project.title)}
-      className="group overflow-hidden rounded-xl border border-border/60 bg-background/40 transition-colors hover:border-primary/50 hover:bg-background/70 md:row-span-4 md:grid md:grid-rows-subgrid"
+      className="studio-lift group overflow-hidden rounded-sm border border-ink/15 bg-studio-card text-ink md:row-span-4 md:grid md:grid-rows-subgrid"
     >
-      <div className="aspect-video overflow-hidden border-b border-border/60 bg-muted">
-        <img
-          loading="lazy"
+      <div className="aspect-video overflow-hidden border-b-[3px] border-ink bg-cream">
+        <HeroImage
           src={project.image}
           alt={project.imageAlt}
-          className="h-full w-full object-cover object-top transition-transform duration-500 motion-safe:group-hover:scale-105"
+          sizes="(min-width: 768px) 50vw, 100vw"
+          className="studio-zoom h-full w-full object-cover object-top"
         />
       </div>
 
@@ -458,10 +459,15 @@ export default function Work() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="work-hero-title"
         eyebrow="Case studies"
         eyebrowNote={`${caseStudyCount} projects`}
-        media={{ src: "/images/work-hero.webp", position: "object-center" }}
+        media={{
+          src: "/images/work-hero.webp",
+          focus: "50% 22%",
+          alt: "A suited figure holds a light bulb in one hand and a spotlight in the other, surrounded by bottles, screens, and workshop tools.",
+        }}
         title={<>What product experience leadership looks like in practice</>}
         lede={
           <>
@@ -485,7 +491,7 @@ export default function Work() {
       />
 
       {/* Featured projects */}
-      <Section labelledBy="featured-heading">
+      <Section tone="navy" labelledBy="featured-heading">
         <SectionHeading
           id="featured-heading"
           eyebrow="Featured projects"
@@ -493,8 +499,8 @@ export default function Work() {
           lede="Each one is a team I led, a process I redesigned, or an operating model I helped change. Not a list of deliverables."
         />
         <div className="space-y-10 md:space-y-12">
-          {projects.map((project) => (
-            <Reveal key={project.slug}>
+          {projects.map((project, index) => (
+            <Reveal key={project.slug} delay={index * 70}>
               <ProjectCard project={project} />
             </Reveal>
           ))}

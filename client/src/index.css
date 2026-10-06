@@ -1,25 +1,46 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Font family tokens — consumed as Tailwind utilities:
- *   font-sans    → Source Sans 3 (body / UI)
- *   font-display → Newsreader (headlines / display)
+ * Illustrated Studio tokens.
+ * font-sans    → Source Sans 3 (body / UI, 17–21px in page copy)
+ * font-display → Fraunces at a straight optical size (SOFT 0, WONK 0)
  *
- * Replaces: Inter (body) + Playfair Display (headings)
+ * Palette roles are named by purpose. Vermilion (#DF5124) is decoration
+ * only. Eyebrow text uses --color-verm-text (#9A3414), which clears 6.7:1
+ * on paper and 5:1 on cream. Cobalt is the only action color.
  */
 @theme {
   --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+
+  --color-paper: #fbf6ea;
+  --color-studio-card: #fffdf7;
+  --color-ink: #112234;
+  --color-ink-muted: #3e4a5c;
+  --color-cobalt: #1c4373;
+  --color-verm: #df5124;
+  --color-verm-text: #9a3414;
+  --color-sun: #fcd875;
+  --color-aqua: #79cacb;
+  --color-blush: #f3c0bf;
+  --color-cream: #f0d1a5;
+  --color-apricot: #efaa77;
+  --color-navy: #112234;
+  --color-band: #f7ebd3;
+  --color-band-muted: #e4d9c2;
+  --color-teal: #4d8b88;
+  --color-focus: #c4441a;
+  /* Control boundaries. 3.81:1 on paper, 4.04:1 on the card. */
+  --color-line: #857c6e;
+
   /*
    * Contrast overrides (WCAG 2.2 AA, 4.5:1 on paper).
-   * Default cyan-400 and green-700 sit under 4.5:1 on --primitive-paper.
-   * These darker values match the ink-blue accent and the status-success green.
+   * Default cyan-400 and green-700 sit under 4.5:1 on paper.
    */
-  --color-cyan-400: oklch(0.37 0.140 258);
+  --color-cyan-400: #1c4373;
   --color-green-600: oklch(0.42 0.12 145);
   --color-green-700: oklch(0.38 0.12 145);
 }
@@ -71,15 +92,15 @@
    * Ink:  near-black with slight blue cast (like quality print)
    * Ink-blue: single quiet accent — deep fountain-pen blue
    */
-  --primitive-paper:         oklch(0.98 0.010 95);
-  --primitive-paper-subtle:  oklch(0.95 0.010 90);
-  --primitive-ink:           oklch(0.20 0.018 262);
-  --primitive-ink-muted:     oklch(0.35 0.014 262);  /* darkened: passes ≥7:1 on paper for WCAG AA */
-  --primitive-rule:          oklch(0.87 0.007 95);
-  --primitive-rule-strong:   oklch(0.74 0.008 95);
-  --primitive-accent:        oklch(0.37 0.140 258);   /* deep ink-blue */
-  --primitive-accent-hover:  oklch(0.44 0.148 258);   /* slightly lighter on hover */
-  --primitive-accent-focus:  oklch(0.37 0.140 258);   /* same hue for focus ring */
+  --primitive-paper:         #fbf6ea;
+  --primitive-paper-subtle:  #f3ecda;
+  --primitive-ink:           #112234;
+  --primitive-ink-muted:     #3e4a5c;   /* 8.33:1 on paper */
+  --primitive-rule:          #e4dccb;
+  --primitive-rule-strong:   #c9bfab;
+  --primitive-accent:        #1c4373;   /* cobalt, white text 10:1 */
+  --primitive-accent-hover:  #16365c;
+  --primitive-accent-focus:  #c4441a;   /* 4.65:1 on paper */
 
   /*
    * ── Semantic tokens — compose page/component styles from these ───────────
@@ -115,16 +136,16 @@
    * These map to Tailwind's @theme inline utilities above.
    * Values are resolved from primitives where possible.
    */
-  --radius: 0.25rem;   /* 4px — near-sharp; no large SaaS pills */
+  --radius: 0.25rem;
 
   --background:             var(--primitive-paper);
   --foreground:             var(--primitive-ink);
-  --card:                   var(--primitive-paper-subtle);
+  --card:                   #fffdf7;
   --card-foreground:        var(--primitive-ink);
-  --popover:                var(--primitive-paper);
+  --popover:                #fffdf7;
   --popover-foreground:     var(--primitive-ink);
   --primary:                var(--primitive-accent);
-  --primary-foreground:     var(--primitive-paper);
+  --primary-foreground:     #ffffff;
   --secondary:              var(--primitive-paper-subtle);
   --secondary-foreground:   var(--primitive-ink);
   --muted:                  oklch(0.93 0.006 90);
@@ -134,8 +155,8 @@
   --destructive:            var(--color-status-danger);
   --destructive-foreground: var(--primitive-paper);
   --border:                 var(--primitive-rule);
-  --input:                  oklch(0.91 0.008 90);
-  --ring:                   var(--primitive-accent);
+  --input:                  #857c6e;
+  --ring:                   #c4441a;
 
   /* Sidebar — warm paper surface */
   --sidebar:                  var(--primitive-paper);
@@ -208,14 +229,39 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: var(--font-sans);
+    overflow-x: clip;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, .font-display {
     font-family: var(--font-display);
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    font-variation-settings: "SOFT" 0, "WONK" 0, "opsz" 48;
   }
-  /* Respect prefers-reduced-motion globally */
+  h1 {
+    letter-spacing: -0.03em;
+    font-variation-settings: "SOFT" 0, "WONK" 0, "opsz" 72;
+  }
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  summary,
+  [tabindex] {
+    outline-offset: 1px;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+    transition:
+      outline-offset 200ms cubic-bezier(0.22, 1, 0.36, 1),
+      outline-color 200ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  /* Respect prefers-reduced-motion globally. Hover lifts are transforms,
+     so they are cleared here as well as having their transitions zeroed. */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
@@ -293,4 +339,355 @@
   .text-accent-comcast  { color: var(--cs-accent-comcast); }
   .text-accent-buildout { color: var(--cs-accent-buildout); }
   .text-accent-cvs      { color: var(--cs-accent-cvs); }
+
+  /* Italic emphasis inside a display headline. No marker highlight. */
+  .studio-mark {
+    font-style: italic;
+    font-weight: 500;
+    padding-inline: 0.08em;
+  }
+
+  /* Hero art sits clean, full color, with a modest radius. */
+  .studio-frame {
+    overflow: hidden;
+    border-radius: 2px;
+  }
+
+  /* Quiet outlined tags. On navy, cream type; selected is a filled chip. */
+  .studio-chip {
+    border-color: var(--color-line);
+    background: transparent;
+    color: var(--color-ink);
+  }
+  .studio-chip:hover {
+    border-color: var(--color-ink);
+  }
+  .studio-chip[aria-pressed="true"] {
+    border-color: var(--color-navy);
+    background: var(--color-navy);
+    color: var(--color-band);
+  }
+  [data-tone="navy"] .studio-chip {
+    border-color: color-mix(in srgb, var(--color-band) 55%, transparent);
+    background: transparent;
+    color: var(--color-band);
+  }
+  [data-tone="navy"] .studio-chip:hover {
+    border-color: var(--color-band);
+  }
+  [data-tone="navy"] .studio-chip[aria-pressed="true"] {
+    border-color: var(--color-band);
+    background: var(--color-band);
+    color: var(--color-ink);
+  }
+}
+
+/*
+ * Buttons that sit directly on a navy band. Unlayered so these beat Tailwind
+ * utilities. Buttons inside a paper card keep the paper pairing.
+ */
+[data-tone="navy"] [data-slot="button"][data-variant="default"] {
+  background-color: var(--color-band);
+  color: var(--color-ink);
+  border-color: transparent;
+}
+[data-tone="navy"] [data-slot="button"][data-variant="default"]:hover {
+  background-color: #fffdf7;
+}
+[data-tone="navy"] [data-slot="button"][data-variant="outline"] {
+  background-color: transparent;
+  color: var(--color-band);
+  border-color: color-mix(in srgb, var(--color-band) 55%, transparent);
+}
+[data-tone="navy"] [data-slot="button"][data-variant="outline"]:hover {
+  background-color: var(--color-band);
+  color: var(--color-ink);
+  border-color: var(--color-band);
+}
+[data-tone="navy"] .bg-studio-card [data-slot="button"][data-variant="outline"] {
+  background-color: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-line);
+}
+[data-tone="navy"] .bg-studio-card [data-slot="button"][data-variant="outline"]:hover {
+  background-color: var(--color-navy);
+  color: var(--color-band);
+  border-color: var(--color-navy);
+}
+
+/*
+ * Contact facts. The email is one unbreakable string (~272px at 1.65rem),
+ * so equal quarters push it through the divider. One column on a phone,
+ * two from 768px, and a fixed email track from 1024px. Tracks include the
+ * 24px / 32px padding on each side of a divider.
+ * Unlayered so these beat the shared fact-row utilities.
+ */
+.studio-fact-contact {
+  grid-template-columns: minmax(0, 1fr);
+}
+.studio-fact-contact-cell {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+  border-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .studio-fact-contact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .studio-fact-contact-cell {
+    padding-right: 1.5rem;
+    border-right: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+  }
+  .studio-fact-contact-cell:nth-child(even) {
+    padding-left: 1.5rem;
+    padding-right: 0;
+    border-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .studio-fact-contact {
+    grid-template-columns:
+      minmax(9.5rem, 0.9fr)
+      minmax(15.5rem, 1.15fr)
+      20.5rem
+      minmax(11rem, 0.8fr);
+  }
+  .studio-fact-contact-cell {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom: 0;
+    border-right: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+  }
+  .studio-fact-contact-cell:nth-child(4n + 1) {
+    padding-left: 0;
+  }
+  .studio-fact-contact-cell:nth-child(4n) {
+    padding-right: 0;
+    border-right: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .studio-fact-contact {
+    grid-template-columns:
+      minmax(11rem, 0.85fr)
+      minmax(16rem, 1.1fr)
+      21.5rem
+      minmax(12rem, 0.8fr);
+  }
+  .studio-fact-contact-cell {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .studio-fact-contact-cell:nth-child(4n + 1) {
+    padding-left: 0;
+  }
+  .studio-fact-contact-cell:nth-child(4n) {
+    padding-right: 0;
+  }
+}
+
+/* Button press and a small arrow nudge. No offset shadow. */
+[data-slot="button"] {
+  transition-property: color, background-color, border-color, transform, outline-offset;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-slot="button"]:hover {
+  transform: translateY(-2px);
+}
+[data-slot="button"]:active {
+  transform: translateY(1px);
+}
+[data-slot="button"] :is(svg.lucide-arrow-right, svg.lucide-arrow-up-right) {
+  transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-slot="button"]:hover :is(svg.lucide-arrow-right, svg.lucide-arrow-up-right) {
+  transform: translateX(3px);
+}
+
+/* Card hover: a 2px lift, and a slight zoom on the picture. */
+.studio-lift {
+  transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.studio-lift:hover {
+  transform: translateY(-2px);
+}
+.studio-zoom {
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .studio-zoom {
+  transform: scale(1.035);
+}
+
+/*
+ * Full-bleed hero art. Cover crop, with a few pixels of overscan so the
+ * pointer drift stays inside the frame. Object-position is set per image.
+ */
+.studio-hero-art {
+  position: absolute;
+  inset: -12px;
+  display: block;
+  width: calc(100% + 24px);
+  height: calc(100% + 24px);
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  transform: translate3d(var(--hero-x, 0px), var(--hero-y, 0px), 0);
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* One rule slides between nav items. */
+.nav-indicator {
+  transition:
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    width 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 180ms ease;
+}
+
+/*
+ * Text links draw an underline in from the left.
+ * Skips buttons, card links, and links that already carry an underline.
+ */
+:where(p, li, dd, figcaption, blockquote) > a[href]:not([data-slot="button"]):not(.underline):not(.flex),
+.prose a[href]:not([data-slot="button"]),
+a.inline-flex.group:not([data-slot="button"]):not([class*="overflow-hidden"]) {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition:
+    background-size 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 200ms ease,
+    outline-offset 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+:where(p, li, dd, figcaption, blockquote) > a[href]:not([data-slot="button"]):not(.underline):not(.flex):hover,
+:where(p, li, dd, figcaption, blockquote) > a[href]:not([data-slot="button"]):not(.underline):not(.flex):focus-visible,
+.prose a[href]:not([data-slot="button"]):hover,
+.prose a[href]:not([data-slot="button"]):focus-visible,
+a.inline-flex.group:not([data-slot="button"]):not([class*="overflow-hidden"]):hover,
+a.inline-flex.group:not([data-slot="button"]):not([class*="overflow-hidden"]):focus-visible {
+  background-size: 100% 1px;
+}
+
+/*
+ * Article heroes break out of the measure and run edge to edge,
+ * above the title. The title stays on paper.
+ */
+article > .container > div:has(> img:only-child) {
+  width: 100vw;
+  max-width: 100vw;
+  border: 0;
+  border-radius: 0;
+  position: relative;
+  left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%);
+}
+article > .container > div:has(> img:only-child) > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--color-navy);
+}
+
+/*
+ * Case-study heroes: full-bleed cover art, then the headline on a solid
+ * navy band. The band is the scrim, so the type never sits on the picture.
+ * Metric tiles keep their own paper fill.
+ */
+.studio-case-hero {
+  display: block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  background: var(--color-navy);
+  color: var(--color-band);
+}
+.studio-case-hero > img,
+.studio-case-hero > .absolute {
+  position: relative !important;
+  inset: auto !important;
+  display: block;
+  height: min(62vh, 680px);
+  width: 100%;
+  overflow: hidden;
+  opacity: 1 !important;
+  object-fit: cover;
+  background: var(--color-navy);
+}
+.studio-case-hero > .absolute img {
+  opacity: 1 !important;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  background: var(--color-navy);
+}
+.studio-case-hero > img {
+  opacity: 1 !important;
+  object-fit: cover;
+}
+.studio-case-hero [class*="bg-gradient-to-b"] {
+  display: none !important;
+}
+.studio-case-hero > .relative {
+  position: relative !important;
+  z-index: 1;
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background: var(--color-navy);
+  color: var(--color-band);
+  padding: 3rem 1.5rem 3.5rem;
+}
+.studio-case-hero h1 {
+  color: var(--color-band) !important;
+}
+.studio-case-hero > .relative > p,
+.studio-case-hero > .relative > div > p {
+  color: var(--color-band-muted) !important;
+}
+.studio-case-hero > .relative > .inline-block,
+.studio-case-hero > .relative > div.inline-block {
+  background-color: transparent !important;
+  border-color: color-mix(in srgb, var(--color-band) 45%, transparent) !important;
+}
+.studio-case-hero > .relative > .inline-block span,
+.studio-case-hero > .relative > div.inline-block span {
+  color: var(--color-band) !important;
+}
+.studio-case-hero > .relative > div > div:first-child {
+  color: var(--color-band-muted);
+}
+.studio-case-hero > .relative img:not([class*="object-cover"]) {
+  background: var(--color-studio-card);
+  border-radius: 2px;
+  padding: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-hero-art,
+  .studio-zoom,
+  .group:hover .studio-zoom,
+  .studio-lift,
+  .studio-lift:hover,
+  [data-slot="button"]:hover,
+  [data-slot="button"]:active,
+  [data-slot="button"]:hover :is(svg.lucide-arrow-right, svg.lucide-arrow-up-right) {
+    transform: none !important;
+    transition: none !important;
+  }
+  .nav-indicator {
+    transition: none !important;
+  }
+  :where(p, li, dd, figcaption, blockquote) > a[href],
+  .prose a[href],
+  a.inline-flex.group {
+    transition: none !important;
+  }
 }

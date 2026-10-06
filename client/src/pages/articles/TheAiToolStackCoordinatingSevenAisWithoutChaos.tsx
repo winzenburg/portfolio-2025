@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function AIToolStackArticle() {
   return (
@@ -34,9 +35,10 @@ export default function AIToolStackArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/ai-tool-stack-hero.webp"
               alt="A watchtower operator directs separate boats down parallel canals toward an orange sun."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

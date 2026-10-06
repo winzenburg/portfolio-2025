@@ -310,7 +310,7 @@ export default function Methodology() {
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/contact?intent=consulting">Book a 30-minute call</Link>
+              <Link href="/contact?intent=consulting">Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="#workflow">See the five phases</a>
@@ -437,7 +437,7 @@ export default function Methodology() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:col-span-5 lg:justify-end">
             <Button size="lg" asChild>
-              <Link href="/contact?intent=consulting">Book a 30-minute call</Link>
+              <Link href="/contact?intent=consulting">Talk through your product bet</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/work">View case studies</Link>

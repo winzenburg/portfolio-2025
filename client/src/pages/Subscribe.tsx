@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { Check, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
@@ -104,7 +104,7 @@ export default function Subscribe() {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7">
-            <div className="rounded-xl border border-border/60 bg-background/40 p-7 md:p-8">
+            <div className="rounded-sm border border-ink/15 bg-studio-card p-7 text-ink md:p-10">
               <h2
                 id="subscribe-form-heading"
                 className="text-xl font-semibold text-foreground"
@@ -115,17 +115,11 @@ export default function Subscribe() {
               {/* Always mounted so the confirmation is announced when it appears. */}
               <div aria-live="polite">
                 {status === "success" ? (
-                  <div className="mt-6 rounded-lg border border-emerald-500/40 bg-emerald-500/10 p-6">
-                    <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500/20">
-                      <Check
-                        className="h-6 w-6 text-emerald-300"
-                        aria-hidden="true"
-                      />
-                    </span>
-                    <h3 className="text-lg font-semibold text-foreground">
+                  <div className="mt-6 border-l-2 border-verm-text p-6 text-ink">
+                    <h3 className="text-lg font-bold text-ink">
                       You&apos;re on the list.
                     </h3>
-                    <p className="mt-2 leading-relaxed text-muted-foreground">
+                    <p className="mt-2 leading-relaxed text-ink">
                       The next pulse drops this week. Check your inbox,
                       including spam, in case it lands there the first time.
                     </p>
@@ -196,7 +190,7 @@ export default function Subscribe() {
 
                   <div role="alert">
                     {status === "error" ? (
-                      <p className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                      <p className="border-l-2 border-verm-text px-4 py-3 text-sm text-ink">
                         {errorMessage}
                       </p>
                     ) : null}

@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function DevQualityAssistant() {
   return (
@@ -34,9 +35,10 @@ export default function DevQualityAssistant() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/dev-quality-hero.webp"
               alt="Surveyors stake a foundation and check a blueprint before a crew waits with bricks."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

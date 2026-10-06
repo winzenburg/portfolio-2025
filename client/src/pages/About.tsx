@@ -12,6 +12,8 @@ import {
   PERSON_ID,
   brandFacts,
 } from "@/lib/brandFacts";
+import { tileBackground } from "@/lib/studio";
+import { cn } from "@/lib/utils";
 
 /**
  * Canonical Brand Hub lives at /about.
@@ -195,10 +197,15 @@ export default function About() {
       />
 
       <PageHero
+        variant="bleed"
         titleId="about-hero-title"
         eyebrow="About"
         eyebrowNote={`Canonical profile · Updated ${brandFacts.updated}`}
-        media={{ src: "/images/about-hero.webp", position: "object-center" }}
+        media={{
+          src: "/images/about-hero.webp",
+          focus: "50% 30%",
+          alt: "People gather on and inside a large gear, some climbing stairs along its edge, with trees around them.",
+        }}
         title={
           <>
             Twenty-five years designing enterprise B2B systems, and the
@@ -238,25 +245,25 @@ export default function About() {
         {/* Subgrid keeps the index rule, title, summary and supporting list on
             the same baselines across all three cards. */}
         <Reveal>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border/60 bg-border/60 md:grid-cols-3 md:grid-rows-[auto_auto_1fr_auto] md:gap-y-0">
-            {capabilities.map((capability) => (
+          <div className="grid gap-4 md:grid-cols-3 md:grid-rows-[auto_auto_1fr_auto]">
+            {capabilities.map((capability, index) => (
               <div
                 key={capability.name}
-                className="bg-background/60 p-7 md:row-span-4 md:grid md:grid-rows-subgrid md:p-8"
+                className={cn(
+                  "rounded-sm border border-ink/15 p-8 text-ink md:row-span-4 md:grid md:grid-rows-subgrid md:p-10",
+                  tileBackground(index),
+                )}
               >
-                <div className="mb-6 flex items-baseline gap-3">
-                  <span className="font-display text-2xl text-primary/70">
+                <div className="mb-6">
+                  <span className="font-display text-sm tracking-[0.18em] text-verm-text">
                     {capability.index}
                   </span>
-                  <span aria-hidden="true" className="h-px flex-1 bg-border/60" />
                 </div>
-                <h3 className="mb-3 text-xl font-semibold leading-snug text-foreground">
+                <h3 className="mb-3 text-xl font-bold leading-snug">
                   {capability.name}
                 </h3>
-                <p className="mb-6 leading-relaxed text-muted-foreground">
-                  {capability.summary}
-                </p>
-                <ul className="space-y-2.5 border-t border-border/60 pt-5">
+                <p className="mb-6 leading-relaxed">{capability.summary}</p>
+                <ul className="space-y-2.5 border-t-2 border-ink/20 pt-5">
                   {capability.points.map((point) => (
                     <li
                       key={point}
@@ -304,7 +311,7 @@ export default function About() {
       </Section>
 
       {/* Ventures */}
-      <Section tone="slate" labelledBy="ventures-heading">
+      <Section tone="navy" labelledBy="ventures-heading">
         <SectionHeading
           id="ventures-heading"
           eyebrow="Ventures"
@@ -314,15 +321,15 @@ export default function About() {
         <div className="grid gap-6 md:grid-cols-3">
           {ventures.map((venture, index) => (
             <Reveal key={venture.name} delay={index * 90} className="h-full">
-              <article className="group relative flex h-full flex-col rounded-xl border border-border/60 bg-background/40 p-7 transition-colors hover:border-primary/50 hover:bg-background/70">
+              <article className="group relative flex h-full flex-col rounded-sm border border-ink/10 bg-studio-card p-7 text-ink md:p-8">
                 <div className="mb-6 flex items-center justify-between">
-                  <span className="font-display text-2xl text-primary/70">
+                  <span className="font-display text-2xl font-bold text-verm-text">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <span className="inline-flex items-center gap-1.5 text-xs text-emerald-400">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold text-ink">
                     <span
                       aria-hidden="true"
-                      className="h-1.5 w-1.5 rounded-full bg-emerald-400"
+                      className="h-1.5 w-1.5 rounded-full bg-verm-text"
                     />
                     {venture.status} · {venture.started}
                   </span>

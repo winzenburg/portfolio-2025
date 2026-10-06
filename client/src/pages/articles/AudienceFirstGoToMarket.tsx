@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function AudienceFirstGoToMarket() {
   return (
@@ -33,9 +34,10 @@ export default function AudienceFirstGoToMarket() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/audience-first-go-to-market-hero.webp"
               alt="Audience-First Go-to-Market Strategy"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

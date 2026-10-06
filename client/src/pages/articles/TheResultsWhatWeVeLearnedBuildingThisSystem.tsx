@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function Article() {
   return (
@@ -33,12 +34,12 @@ export default function Article() {
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden border border-primary/15 bg-muted/20">
             <div className="aspect-video">
-              <img
-                src="/images/articles/results-hero.webp"
-                alt="Editorial illustration of a large machine with numbered stages, representing a systematic product creation engine and outcomes"
-                className="h-full w-full object-cover"
-                loading="lazy"
-              />
+              <HeroImage
+              src="/images/articles/results-hero.webp"
+              alt="Editorial illustration of a large machine with numbered stages, representing a systematic product creation engine and outcomes"
+              sizes="100vw"
+              className="h-full w-full object-cover"
+            />
             </div>
           </div>
 

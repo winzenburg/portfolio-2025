@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function PortfolioApproachArticle() {
   return (
@@ -36,9 +37,10 @@ export default function PortfolioApproachArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/portfolio-hero.webp"
               alt="Two gardeners tend rows of potted seedlings, one large tree, and a wheelbarrow of wilted plants inside a greenhouse."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

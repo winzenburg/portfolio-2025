@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function TheHubArticle() {
   return (
@@ -34,9 +35,10 @@ export default function TheHubArticle() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/hub-hero.webp"
               alt="A lighthouse beam crosses a harbor of small boats, some docked and some still out on the water."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

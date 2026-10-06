@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function WritingPRDsForAI() {
   return (
@@ -29,9 +30,10 @@ export default function WritingPRDsForAI() {
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/writing-prds-for-ai-hero.webp"
               alt="Writing PRDs That AI Agents Can Execute"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

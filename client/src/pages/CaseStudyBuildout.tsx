@@ -1,3 +1,4 @@
+import HeroImage from "@/components/HeroImage";
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import PageSeo from "@/components/PageSeo";
@@ -50,12 +51,13 @@ export default function CaseStudyBuildout() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="studio-case-hero relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={`${import.meta.env.BASE_URL}project-buildout-hero.webp`}
-            alt="BuildOut Commercial Real Estate" 
-            className="w-full h-full object-cover opacity-60"
+          <HeroImage
+            src="/project-buildout-hero.webp"
+            alt="BuildOut Commercial Real Estate"
+            sizes="100vw"
+            className="h-full w-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background"></div>
         </div>

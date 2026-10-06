@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function AIUxMaturityLevel3() {
   return (
@@ -46,9 +47,10 @@ export default function AIUxMaturityLevel3() {
           </Link>
 
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/ai-ux-maturity-level-3-hero.webp"
-              alt="AI Won't Get You to UX Maturity Level 5. It Will Get You to Level 3."
+              alt="AI Won"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

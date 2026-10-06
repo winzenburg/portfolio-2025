@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function AiOrchestrationWorkflow() {
   return (
@@ -34,9 +35,10 @@ export default function AiOrchestrationWorkflow() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/ai-orchestration-hero.webp"
               alt="A conductor on a central rock directs people on linked islands, each tending a different light or machine under a full moon."
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

@@ -74,7 +74,7 @@ const CaseStudyUndercurrent: React.FC = () => {
       </div>
 
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="studio-case-hero relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <img
           src={`${BASE}images/01_welcome.webp`}
           alt="Undercurrent welcome screen"

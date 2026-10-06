@@ -4,6 +4,7 @@ import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import ResponsiveNav from "@/components/ResponsiveNav";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function ScalingStrategy() {
   return (
@@ -33,9 +34,10 @@ export default function ScalingStrategy() {
 
           {/* Hero Image */}
           <div className="mb-12 -mx-6 md:mx-0 md:rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/scaling-strategy-hero.webp"
               alt="Scaling Strategy"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>

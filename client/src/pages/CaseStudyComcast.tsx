@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
+import HeroImage from "@/components/HeroImage";
 import PageSeo from "@/components/PageSeo";
 
 const CASE_STUDY_PATH = "/case-study/comcast-design-system";
@@ -55,13 +56,14 @@ const CaseStudyComcast: React.FC = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="studio-case-hero relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-          src={`${import.meta.env.BASE_URL}project-comcast-design-system.webp`} 
-          alt="Comcast Business Design System"
-          className="w-full h-full object-cover opacity-40"
-        />
+          <HeroImage
+            src="/project-comcast-design-system.webp"
+            alt="Comcast Business Design System"
+            sizes="100vw"
+            className="h-full w-full object-cover opacity-40"
+          />
                   <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

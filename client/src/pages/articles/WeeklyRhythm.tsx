@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ArticleAuthorBio from "@/components/ArticleAuthorBio";
 import { Helmet } from "react-helmet-async";
+import HeroImage from "@/components/HeroImage";
 
 export default function WeeklyRhythm() {
   return (
@@ -32,9 +33,10 @@ export default function WeeklyRhythm() {
 
           {/* Hero Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
-            <img
+            <HeroImage
               src="/images/articles/weekly-rhythm-hero.webp"
               alt="The Weekly Rhythm"
+              sizes="100vw"
               className="w-full h-auto"
             />
           </div>
