@@ -553,13 +553,22 @@ article > .container > div:has(> img:only-child) > img,
 }
 
 /*
- * Home's arch sits high in a wide frame. Past 1536px the copy column is
- * too short for object-position 35% to keep the sun inside the crop, so
- * the frame grows. The extra space is only on the home hero.
+ * The climb illustration is taller than the copy. Past 1536px the home
+ * column would crop the team at the bottom, so the frame grows.
  */
 @media (min-width: 1536px) {
   .studio-home-hero > .relative.z-10 {
     min-height: 57rem;
+  }
+}
+
+/*
+ * Articles is wide and short past 1800px, so cover would crop the top.
+ * A slightly taller frame shows the full illustration at 1920.
+ */
+@media (min-width: 1800px) {
+  .studio-articles-hero > .relative.z-10 {
+    min-height: 44rem;
   }
 }
 

@@ -100,8 +100,10 @@ interface PageHeroProps {
   /**
    * `framed` puts full-color art beside the copy, unfiltered.
    * `band` is a straight navy section.
-   * `bleed` runs the art edge to edge, cropped with object-fit: cover.
-   * The headline sits on a solid navy panel so the type never rests on the art.
+   * `bleed` sets the headline on a solid navy panel. From the `lg` breakpoint
+   * the art fills only the visible column to the right of that panel, still
+   * flush with the panel and with the top, right, and bottom of the hero.
+   * Smaller screens stack the art above the copy.
    * Defaults to `framed` when media is set, otherwise `plain`.
    */
   variant?: PageHeroVariant;
@@ -185,7 +187,13 @@ export default function PageHero({
   if (resolved === "bleed" && media) {
     const imageSrc = media.kind === "video" ? (media.poster ?? media.src) : media.src;
     const alt = media.alt ?? "";
-    const image = heroImageAttrs(imageSrc, alt, priority, "100vw", media.focus);
+    const image = heroImageAttrs(
+      imageSrc,
+      alt,
+      priority,
+      "(min-width: 1024px) max(48vw, calc(100vw - 42rem)), 100vw",
+      media.focus,
+    );
 
     return (
       <>
@@ -193,11 +201,11 @@ export default function PageHero({
         aria-labelledby={titleId}
         data-tone="navy"
         className={cn(
-          "relative isolate overflow-hidden bg-navy text-band",
+          "relative isolate overflow-hidden bg-navy text-band lg:grid lg:grid-cols-[minmax(0,min(42rem,52%))_minmax(0,1fr)]",
           className,
         )}
       >
-        <div className="relative h-[70vw] min-h-64 max-h-[28rem] w-full overflow-hidden lg:absolute lg:inset-0 lg:h-full lg:max-h-none lg:min-h-0">
+        <div className="relative h-[70vw] min-h-64 max-h-[28rem] w-full overflow-hidden lg:col-start-2 lg:row-start-1 lg:h-auto lg:max-h-none lg:min-h-0 lg:w-auto">
           {media.kind === "video" && playVideo ? (
             <video
               src={media.src}
@@ -218,7 +226,7 @@ export default function PageHero({
             />
           )}
         </div>
-        <div className="relative z-10 bg-navy lg:min-h-[36rem] lg:w-[min(42rem,52%)]">
+        <div className="relative z-10 bg-navy lg:col-start-1 lg:row-start-1 lg:min-h-[36rem] lg:w-full">
           <div className="px-4 py-12 sm:px-8 lg:px-12 lg:py-20 xl:pl-16">
             {eyebrow ? (
               <div className="mb-5 flex flex-wrap items-center gap-3">
@@ -248,7 +256,7 @@ export default function PageHero({
             ) : null}
 
             {actions ? (
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-8 flex w-full max-w-full flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 {actions}
               </div>
             ) : null}
@@ -352,7 +360,7 @@ export default function PageHero({
             {actions ? (
               <div
                 className={cn(
-                  "mt-8 flex flex-col gap-3 sm:flex-row sm:items-center",
+                  "mt-8 flex w-full max-w-full flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center",
                   isCentered ? "sm:justify-center" : "",
                 )}
               >
