@@ -26,14 +26,14 @@ const heroFacts: Fact[] = [
     note: "Healthcare, fintech, telecom",
   },
   {
-    label: "Entry",
-    value: "AI Delivery Loop Sprint",
-    note: "From $8,000 · fixed fee",
+    label: "You leave with",
+    value: "A go, no-go, or pivot call",
+    note: "And a written scope your engineers can start",
   },
   {
-    label: "Expansion",
-    value: "Embedded retainer",
-    note: "Ongoing product-experience leadership",
+    label: "You work with",
+    value: "Me, directly",
+    note: "No account manager or junior bench",
   },
 ];
 
@@ -67,11 +67,11 @@ const capabilities = [
     points: [
       {
         title: "Design system strategy",
-        detail: "Token-based architecture with sustainable governance",
+        detail: "One set of design decisions every team can reuse",
       },
       {
         title: "Design operations",
-        detail: "Process, tooling, and rituals that scale delivery",
+        detail: "How design work moves from decision to release",
       },
       {
         title: "Structure and governance",
@@ -87,11 +87,11 @@ const capabilities = [
     points: [
       {
         title: "Workflow architecture",
-        detail: "AI systems that fit into real team rhythms, not over them",
+        detail: "AI that fits the way your teams already work",
       },
       {
         title: "Orchestrated tooling",
-        detail: "MCP integrations, Cursor workflows, agent coordination",
+        detail: "AI tools set up to fit how your team already ships",
       },
       {
         title: "Speed without fragility",
@@ -106,14 +106,14 @@ const engagementPaths = [
     index: "01",
     label: "Entry",
     name: "AI Delivery Loop Sprint",
-    body: "A fixed engagement for the bet you are about to fund. We put evidence under the direction, cut what does not hold, and leave engineering with a written scope they can start. You get a go, no-go, or pivot call with the evidence behind it. AI compresses the mechanical parts of synthesis and specification. The judgment stays mine.",
+    body: "For the bet you are about to fund. I test the direction with your stakeholders and users, cut what does not hold up, and hand engineering a scope they can start. AI speeds up synthesis and drafting. I review everything that reaches you.",
     meta: "Typically 2–4 weeks · from $8,000",
   },
   {
     index: "02",
     label: "Expansion",
     name: "Embedded product-experience retainer",
-    body: "When the gap is ongoing senior judgment, not a single decision. Roadmap input, research planning, design direction, and stakeholder alignment inside your product cadence. The sprint proves fit. The retainer is how the work stays useful.",
+    body: "For when you need senior product-experience judgment every week. Roadmap input, research planning, design direction, and stakeholder alignment, inside the cadence your team already runs. Most retainers start after a sprint, once we both know the fit is right.",
     meta: "Monthly · three-month minimum",
   },
 ];
@@ -170,7 +170,7 @@ export default function Home() {
     <SiteLayout currentPage="home">
       <PageSeo
         title="Ryan Winzenburg | Product Experience Consulting for Enterprise B2B"
-        description="Ryan Winzenburg helps enterprise B2B product leaders test a product bet before the build budget is committed. Fixed-fee sprint, 2 to 4 weeks, from $8,000."
+        description="Find out if a product bet holds up with real users before your team commits a quarter of engineering time. For enterprise B2B product leaders."
         path="/"
         ogImage="/images/about-hero.webp"
         ogType="website"
@@ -228,8 +228,7 @@ export default function Home() {
             The expensive product mistakes I see are delivery quarters spent
             on a direction nobody tested. If you are
             about to commit budget, the useful work is evidence, explicit cuts,
-            and a scope engineering can start. That is what the AI Delivery Loop
-            Sprint is for.
+            and a scope engineering can start. A two-to-four-week sprint is built for that.
           </p>
           <Link
             href="/consulting"
@@ -248,9 +247,7 @@ export default function Home() {
       <Section tone="navy" labelledBy="paths-heading">
         <SectionHeading
           id="paths-heading"
-          eyebrow="How buyers usually engage"
-          title="Sprint to enter. Retainer to stay."
-          lede="Two shapes, one consultancy. Start with the smallest engagement that answers the decision in front of you."
+          eyebrow="Two ways to work together" title="Start with one decision. Keep me on if it helps." lede="Most teams start with the decision in front of them. Some keep me on afterward for ongoing product-experience work."
         />
         <div className="grid gap-6 md:grid-cols-2">
             {engagementPaths.map((path, index) => (
@@ -402,7 +399,7 @@ export default function Home() {
           id="environments-heading"
           eyebrow="Where this work has happened"
           title="Selected environments"
-          lede="Fortune 50 product organizations, venture-backed SaaS, and private-equity portfolio teams. The case studies carry the specifics. No invented outcome numbers on this page."
+          lede="Fortune 50 product organizations, venture-backed SaaS, and private-equity portfolio teams. The case studies have the specifics."
           trailing={
             <Link
               href="/work"
@@ -460,13 +457,10 @@ export default function Home() {
       <Section tone="navy" labelledBy="home-cta-heading">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle id="home-cta-heading">
-            About to commit budget to something nobody has validated?
+            Before you commit budget to a direction nobody has tested
           </SectionTitle>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-band-muted">
-            That is the moment a sprint is worth the most. Thirty minutes, no
-            deck. Tell me what you&apos;re about to fund and which part of it is
-            still a guess. I&apos;ll tell you whether an AI Delivery Loop Sprint,
-            a retainer, or something else is the right next step.
+            Tell me what you're about to fund and which part of it is still a guess. Thirty minutes, no deck. I'll tell you what I would test first, and whether I'm the right person to help.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>

@@ -296,10 +296,10 @@ export default function QualityGatesForAI() {
             </div>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Building Reliable AI Features?</h3>
-              <p className="text-muted-foreground mb-6">I help teams design AI systems that work consistently in production. Quality gates are just one part of the reliability story.</p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">AI output that breaks in the UI</h3>
+              <p className="text-muted-foreground mb-6">If an AI feature works in the demo and breaks in production, I can help you decide which checks belong between the model and the screen. Thirty minutes, no deck.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                See if a Discovery Call fits
+                Talk through your product bet
               </Link>
             </div>
           </div>

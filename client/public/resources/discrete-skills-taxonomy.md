@@ -10,7 +10,7 @@ The four disciplines share a common product-making core, but they are not interc
 
 The taxonomy below contains **156 atomic competencies**, organized into 13 domains. It is deliberately broader than a job-description checklist. A senior individual contributor should be deeply capable in the shared core and in one or two specialisms; a staff-level product designer or front-end architect should understand the interfaces between all domains. No credible role requires one person to be the top expert in every item.
 
-> **Depth legend:** **O** = accountable owner / deep specialist; **P** = independent practitioner; **L** = working literacy sufficient to collaborate, review, and make sound trade-offs; **—** = normally outside role scope. The ratings describe a mature senior-role baseline, not an entry-level hiring screen.
+> **Depth legend:** **O** = accountable owner / deep specialist; **P** = independent practitioner; **L** = working literacy sufficient to collaborate, review, and make sound trade-offs; **-** = normally outside role scope. The ratings describe a mature senior-role baseline, not an entry-level hiring screen.
 
 ### Role boundary map
 
@@ -54,12 +54,12 @@ The ratings below indicate where a capability should be owned versus understood.
 |---|---|---|---|---|---|---|
 | RE-01 | Research planning | Selects a method, participant profile, sample, timeline, and decision it will inform. | P | O | L | L |
 | RE-02 | Stakeholder interview design | Extracts context, constraints, incentives, and unresolved decisions without treating opinion as evidence. | O | P | L | P |
-| RE-03 | Generative interview moderation | Elicits past behavior, context, language, and unmet needs without leading participants. | P | O | L | — |
+| RE-03 | Generative interview moderation | Elicits past behavior, context, language, and unmet needs without leading participants. | P | O | L | - |
 | RE-04 | Contextual inquiry | Observes work in situ and documents tools, workarounds, interruptions, and environmental constraints. | P | O | L | L |
 | RE-05 | Task analysis | Decomposes a user goal into actions, decisions, inputs, variations, and failure points. | P | O | P | P |
 | RE-06 | Survey design | Creates unbiased questions, response structures, and sampling logic appropriate to the decision. | P | P | L | L |
 | RE-07 | Quantitative behavior analysis | Uses event, funnel, cohort, and segmentation data without confusing correlation and cause. | P | P | L | P |
-| RE-08 | Diary-study design | Captures longitudinal behavior, reflections, and changes in context. | L | P | — | — |
+| RE-08 | Diary-study design | Captures longitudinal behavior, reflections, and changes in context. | L | P | - | - |
 | RE-09 | Usability-test moderation | Runs task-based sessions, probes behavior, and avoids coaching participants. | P | O | P | L |
 | RE-10 | Research synthesis | Clusters observations into findings, confidence levels, tensions, and implications. | P | O | L | L |
 | RE-11 | Insight communication | Communicates evidence through concise narratives, artifacts, clips, and direct implications. | O | O | P | L |
@@ -181,12 +181,12 @@ Design tokens are a platform-agnostic method for expressing named design decisio
 | FE-04 | Responsive implementation | Implements fluid layouts, appropriate breakpoints, media features, and viewport behavior. | L | P | P | O |
 | FE-05 | JavaScript and TypeScript fluency | Uses types, data transformation, async patterns, modules, and error handling safely. | L | L | L | O |
 | FE-06 | DOM and event-model reasoning | Handles propagation, delegation, focus, input, pointer, keyboard, and lifecycle interactions correctly. | L | P | P | O |
-| FE-07 | Browser API selection | Chooses browser capabilities such as storage, observers, workers, history, clipboard, and media APIs responsibly. | — | L | L | O |
+| FE-07 | Browser API selection | Chooses browser capabilities such as storage, observers, workers, history, clipboard, and media APIs responsibly. | - | L | L | O |
 | FE-08 | Semantic component implementation | Prefers native elements and exposes accessible semantics when custom behavior is necessary. | L | P | P | O |
 | FE-09 | Client-side routing | Implements route structure, deep links, parameters, guards, navigation state, and recovery. | L | L | L | O |
-| FE-10 | Framework lifecycle knowledge | Understands rendering, effects, hydration, reactivity, suspense, and cleanup in the chosen stack. | — | L | L | O |
-| FE-11 | Package and dependency literacy | Evaluates package purpose, quality, license, maintenance, bundle cost, and security posture. | — | L | L | O |
-| FE-12 | Build-tool fluency | Configures development, test, build, lint, formatting, environment, and deployment workflows. | — | L | L | O |
+| FE-10 | Framework lifecycle knowledge | Understands rendering, effects, hydration, reactivity, suspense, and cleanup in the chosen stack. | - | L | L | O |
+| FE-11 | Package and dependency literacy | Evaluates package purpose, quality, license, maintenance, bundle cost, and security posture. | - | L | L | O |
+| FE-12 | Build-tool fluency | Configures development, test, build, lint, formatting, environment, and deployment workflows. | - | L | L | O |
 
 ### 10. Front-end architecture and application systems
 
@@ -201,7 +201,7 @@ Design tokens are a platform-agnostic method for expressing named design decisio
 | AR-07 | Authentication and authorization UX implementation | Implements identity, session, role, permission, expiry, reauthentication, and access-denied states safely. | P | P | P | O |
 | AR-08 | Feature-flag architecture | Supports targeted rollout, kill switches, experiment assignment, configuration, and flag cleanup. | P | L | L | O |
 | AR-09 | Error-boundary and recovery architecture | Contains failures, preserves useful context, supports retry, and avoids blank-screen failure modes. | L | P | P | O |
-| AR-10 | Codebase modularity | Keeps code independently understandable, testable, deployable, and changeable as product complexity grows. | — | L | L | O |
+| AR-10 | Codebase modularity | Keeps code independently understandable, testable, deployable, and changeable as product complexity grows. | - | L | L | O |
 | AR-11 | Architectural decision records | Captures context, alternatives, decision, consequences, and revisit triggers for consequential choices. | L | L | L | O |
 | AR-12 | Technical roadmapping | Sequences platform investments, migrations, risk reduction, and capability building against product strategy. | P | L | L | O |
 
@@ -209,7 +209,7 @@ Design tokens are a platform-agnostic method for expressing named design decisio
 
 | ID | Discrete skill | Observable evidence | Product | UX | UI | Front-end Arch. |
 |---|---|---|---|---|---|---|
-| QL-01 | Unit-test design | Tests important logic and behavior with isolated, maintainable cases. | — | L | L | O |
+| QL-01 | Unit-test design | Tests important logic and behavior with isolated, maintainable cases. | - | L | L | O |
 | QL-02 | Integration-test design | Verifies components, state, data, and services working together at meaningful seams. | L | L | L | O |
 | QL-03 | End-to-end test design | Automates critical user journeys with stable fixtures, assertions, and failure diagnostics. | P | P | L | O |
 | QL-04 | Accessibility-test automation | Integrates automated scanning while recognizing where manual evaluation is required. | L | P | P | O |
@@ -231,7 +231,7 @@ Design tokens are a platform-agnostic method for expressing named design decisio
 | ME-03 | Event-schema design | Uses consistent event names, properties, versioning, data types, and semantics across product surfaces. | P | P | L | O |
 | ME-04 | Instrumentation implementation | Implements analytics events correctly without degrading performance or privacy. | L | L | L | O |
 | ME-05 | Funnel analysis | Locates loss, delay, and variation through a multi-step journey. | O | P | L | P |
-| ME-06 | Cohort analysis | Compares behavior by acquisition, tenure, role, plan, device, or exposure period. | P | P | — | P |
+| ME-06 | Cohort analysis | Compares behavior by acquisition, tenure, role, plan, device, or exposure period. | P | P | - | P |
 | ME-07 | Segmentation | Finds materially different needs or outcomes across meaningful populations without overfitting. | P | O | L | P |
 | ME-08 | Experiment analysis | Interprets experiment results, validity limits, novelty effects, and decision implications. | O | P | L | P |
 | ME-09 | Qual-quant triangulation | Uses behavioral data and human evidence together to explain what happened and why. | O | O | L | P |
@@ -328,5 +328,5 @@ If the objective is to operate credibly at the intersection of product managemen
 [1]: https://www.w3.org/TR/WCAG22/ "Web Content Accessibility Guidelines (WCAG) 2.2"
 [2]: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML "HTML: A good basis for accessibility"
 [3]: https://www.designtokens.org/tr/drafts/format/ "Design Tokens Format Module 2025.10"
-[4]: https://www.iso.org/standard/77520.html "ISO 9241-210:2019 Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems"
+[4]: https://www.iso.org/standard/77520.html "ISO 9241-210:2019 Ergonomics of human-system interaction: Part 210: Human-centred design for interactive systems"
 [5]: https://www.nngroup.com/articles/ten-usability-heuristics/ "10 Usability Heuristics for User Interface Design"

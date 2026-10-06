@@ -28,14 +28,14 @@ export default function Pulse20260914() {
       <ResponsiveNav currentPage="subscribe" />
 
       <Helmet>
-        <title>Weekly AI Founder Pulse — Week of September 14, 2026 | Ryan Winzenburg</title>
+        <title>Weekly AI Founder Pulse: Week of September 14, 2026 | Ryan Winzenburg</title>
         <meta
           name="description"
           content="The agent layer is becoming the operating layer. Five signals from the week of September 14, 2026."
         />
         <meta
           property="og:title"
-          content="Weekly AI Founder Pulse — Week of September 14, 2026"
+          content="Weekly AI Founder Pulse: Week of September 14, 2026"
         />
         <meta
           property="og:description"
@@ -49,7 +49,7 @@ export default function Pulse20260914() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Weekly AI Founder Pulse — Week of September 14, 2026",
+            headline: "Weekly AI Founder Pulse: Week of September 14, 2026",
             description: "The agent layer is becoming the operating layer.",
             author: {
               "@type": "Person",
@@ -117,22 +117,22 @@ export default function Pulse20260914() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=maSdsTLaMuU"
-                    title="Lenny's Podcast — How a handful of people built Grok Bot in 30 days"
+                    title="Lenny's Podcast: How a handful of people built Grok Bot in 30 days"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=Ju41cQSe7hY"
-                    title="Riley Brown — I Spent 100 Hours Using GPT-6 Astra"
+                    title="Riley Brown: I Spent 100 Hours Using GPT-6 Astra"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=nglqTHwuZ-8"
-                    title="Greg Isenberg — GPT-6 Astra: How I'd Make Money With It"
+                    title="Greg Isenberg: GPT-6 Astra: How I'd Make Money With It"
                   />
                 </ul>
               </div>
               <p className="text-muted-foreground leading-relaxed text-sm">
                 Creator attention has moved from "which model wins?" to "what task can I hand it
                 next?" Keep your model layer interchangeable and benchmark proprietary workflows on
-                completion rate, cycle time, exception rate, and reviewer effort—not on vendor
+                completion rate, cycle time, exception rate, and reviewer effort, not on vendor
                 claims.
               </p>
             </div>
@@ -154,11 +154,11 @@ export default function Pulse20260914() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=_LCeJZFIsd4"
-                    title="Leveling Up — related AI workflow content from the week"
+                    title="Leveling Up: related AI workflow content from the week"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=ifz8NGHuHtY"
-                    title="Matt Wolfe — AI news / tooling cluster"
+                    title="Matt Wolfe: AI news / tooling cluster"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=xo8WsOaBTcw"
@@ -189,15 +189,15 @@ export default function Pulse20260914() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=LNFGf5w99Gs"
-                    title="Sabrina Ramonov — These 5 FREE AI Tools Made Me $1M With Zero Employees"
+                    title="Sabrina Ramonov: These 5 FREE AI Tools Made Me $1M With Zero Employees"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=XqS7kIWMIDE"
-                    title="Dan Koe — If You Have Multiple Interests, Please Start a One-Person Business"
+                    title="Dan Koe: If You Have Multiple Interests, Please Start a One-Person Business"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=gHUMarocxy4"
-                    title="My First Million — high school dropout / $200M brand"
+                    title="My First Million: high school dropout / $200M brand"
                   />
                 </ul>
               </div>
@@ -251,7 +251,7 @@ export default function Pulse20260914() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=uLDK4l_-gUE"
-                    title="No Priors — Coinbase's Everything Exchange: Agentic Finance, Stablecoins & Tokenization"
+                    title="No Priors: Coinbase's Everything Exchange: Agentic Finance, Stablecoins & Tokenization"
                   />
                 </ul>
               </div>
@@ -273,7 +273,7 @@ export default function Pulse20260914() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Riley Brown — I Spent 100 Hours Using GPT-6 Astra
+                    Riley Brown: I Spent 100 Hours Using GPT-6 Astra
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -285,7 +285,7 @@ export default function Pulse20260914() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Lenny's Podcast — How a handful of people built Grok Bot in 30 days
+                    Lenny's Podcast: How a handful of people built Grok Bot in 30 days
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -297,7 +297,7 @@ export default function Pulse20260914() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    No Priors — Coinbase's Everything Exchange: Agentic Finance
+                    No Priors: Coinbase's Everything Exchange: Agentic Finance
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>

@@ -61,7 +61,7 @@ export default function AskingBetterStrategicQuestions() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              I've spent 20+ years inside enterprise product and design organizations. I've watched teams adopt, and resist, every wave of tooling change. And the pattern right now is remarkably consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.
+              I've spent 25 years inside enterprise product and design organizations. I've watched teams adopt, and resist, every wave of tooling change. And the pattern right now is remarkably consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.
             </p>
           </div>
 

@@ -108,7 +108,7 @@ const articles: Article[] = [
   {
     id: "51",
     title: "Asking Better Strategic Questions About AI in Product Design",
-    excerpt: "I've spent 20+ years inside enterprise product and design organizations. The pattern right now is consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.",
+    excerpt: "I've spent 25 years inside enterprise product and design organizations. The pattern right now is consistent: a lot of noise, most of it fear-driven, and most of the questions being asked are the wrong ones.",
     date: "March 7, 2026",
     readTime: "6 min read",
     slug: "strategic-questions-ai-product-design",
@@ -348,7 +348,7 @@ const articles: Article[] = [
   {
     id: "27",
     title: "The Problem: Why Most SaaS Startups Fail Before They Even Start",
-    excerpt: "Exploring why 90% of SaaS startups fail and how the problem isn't the idea, it's the process.",
+    excerpt: "Most new products fail on process before the idea gets a fair test. What I changed in my own validation process after learning that the expensive way.",
     date: "December 7, 2024",
     readTime: "7 min read",
     slug: "saas-problem",
@@ -403,7 +403,7 @@ const articles: Article[] = [
   {
     id: "22",
     title: "The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality",
-    excerpt: "Most founders can't kill ideas because of sunk costs. We make tough decisions systematically, not emotionally, using weekly reviews and clear kill criteria.",
+    excerpt: "Sunk cost keeps weak ideas alive. The weekly review and kill criteria I use to stop work on an idea before it eats another quarter.",
     date: "December 7, 2024",
     readTime: "19 min read",
     slug: "kill-greenlight-ritual",
@@ -491,7 +491,7 @@ const articles: Article[] = [
   {
     id: "14",
     title: "The AI Tool Stack: How We Coordinate 7 AIs Without Chaos",
-    excerpt: "Using multiple AI tools sounds like a nightmare. Here's how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.",
+    excerpt: "How I give seven AI tools separate jobs so they do not repeat each other's work or cost.",
     date: "December 7, 2024",
     readTime: "18 min read",
     slug: "ai-tool-stack",
@@ -524,7 +524,7 @@ const articles: Article[] = [
   {
     id: "11",
     title: "From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale",
-    excerpt: "Most founders manually manage waitlists and outreach. We automate execution with Lindy while keeping Cursor as our documentation system of record.",
+    excerpt: "How I hand waitlist follow-up and outreach to Lindy, and keep every decision written down in one place.",
     date: "December 7, 2024",
     readTime: "18 min read",
     slug: "lindy-automated-validation",
@@ -566,7 +566,7 @@ const articles: Article[] = [
   {
     id: "7",
     title: "The MVP Strategy: Launching Products That Sell Themselves",
-    excerpt: "Most MVPs try to do too much. The result: Delayed launches, complex products, unclear value. The alternative: Ship the minimum that creates genuine value. Make it so good people can't help but share it. Learn the virality-by-design framework.",
+    excerpt: "Most MVPs try to do too much and launch late with unclear value. Build the smallest version that proves one user behavior.",
     date: "June 26, 2025",
     readTime: "8 min read",
     slug: "mvp-strategy",
@@ -596,7 +596,7 @@ const articles: Article[] = [
   {
     id: "4",
     title: "The AI-Augmented Workflow: How I Deliver Enterprise-Grade UX Faster with AI",
-    excerpt: "Speed matters in competitive markets. Traditional UX design cycles take 8-12 weeks. I deliver comparable enterprise-grade outcomes in 2-3 weeks. Not by cutting corners, by strategically implementing AI throughout the entire design process. Here's the framework.",
+    excerpt: "How I put AI on the mechanical parts of UX work, research synthesis, specs, and prototypes, and keep the design decisions with people. The framework, phase by phase.",
     date: "March 17, 2025",
     readTime: "5 min read",
     slug: "ai-augmented-workflow",
@@ -605,8 +605,8 @@ const articles: Article[] = [
   },
   {
     id: "3",
-    title: "How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)",
-    excerpt: "Most teams spend 12-18 months building enterprise design systems. I built one in 4 weeks. 48 production-ready components. 63,813 lines of code. Accessibility held to WCAG 2.2 AA. Not by cutting corners, by strategically implementing AI where it accelerates work.",
+    title: "How I Built an Enterprise Design System in 4 Weeks",
+    excerpt: "I built an enterprise design system in 4 weeks: 48 production-ready components, accessibility held to WCAG 2.2 AA. This is where AI did the work and where I kept the decisions.",
     date: "February 24, 2025",
     readTime: "7 min read",
     slug: "design-system-4-weeks",
@@ -626,7 +626,7 @@ const articles: Article[] = [
   {
     id: "1",
     title: "Why Most Design Systems Fail (And How to Fix Them)",
-    excerpt: "Here's the pattern I've seen repeatedly: Company invests 12-18 months and nearly $1 million building a design system. Six months after launch, adoption sits below 20%. The system becomes shelfware. The data shows three core problems that kill design systems, and three AI-powered solutions that work.",
+    excerpt: "A design system can take a year and a large budget, then sit unused. The failure is usually organizational. Three problems I keep seeing, and what fixes adoption.",
     date: "January 15, 2025",
     readTime: "9 min read",
     slug: "design-systems-fail",
@@ -806,7 +806,7 @@ export default function Articles() {
           alt: "A person in a polka-dot coat balances on a plank resting on patterned blocks and spheres.",
         }}
         title="Writing on product experience, operating models, and AI-enabled delivery"
-        lede="First-person pieces from enterprise product work. What I tried, what broke, and what I would do differently."
+        lede="First-person pieces from enterprise product work and from the products I build myself. What I tried, what broke, and what I would do differently."
         actions={
           <>
             <Button size="lg" asChild>

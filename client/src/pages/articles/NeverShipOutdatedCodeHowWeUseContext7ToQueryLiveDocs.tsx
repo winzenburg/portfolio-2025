@@ -57,7 +57,7 @@ export default function Context7LiveDocs() {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Last month I asked Claude for Tailwind code and got 15 errors. The problem? AI training data was 6 months old. Here's how Context7 changed everything.
+              Last month I asked Claude for Tailwind code and got 15 errors. The problem? AI training data was 6 months old. Querying live documentation through Context7 fixed most of them.
             </p>
           </div>
 

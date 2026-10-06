@@ -81,7 +81,7 @@ export default function BrandFirstValidationArticle() {
         </h1>
         
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-          Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision, and that one shift changed everything.
+          Most teams bolt branding on at the end. I make it a pre-build artifact that informs every UI decision. That one change cut a lot of rework.
         </p>
 
         <div className="w-full h-64 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg flex items-center justify-center mb-8">

@@ -26,7 +26,7 @@ export const STATIC_PAGES = [
     path: "/",
     title: "Ryan Winzenburg | Product Experience Consulting for Enterprise B2B",
     description:
-      "Ryan Winzenburg helps enterprise B2B product leaders test a product bet before the build budget is committed. Fixed-fee sprint, 2 to 4 weeks, from $8,000.",
+      "Find out if a product bet holds up with real users before your team commits a quarter of engineering time. For enterprise B2B product leaders.",
     ogImage: "/images/about-hero.webp",
     ogType: "website",
     changefreq: "weekly",
@@ -44,9 +44,9 @@ export const STATIC_PAGES = [
   },
   {
     path: "/about",
-    title: "About Ryan Winzenburg | Brand Hub — Canonical Identity Facts",
+    title: "About Ryan Winzenburg | Enterprise B2B Product Experience Consultant",
     description:
-      "Canonical facts about Ryan Winzenburg: Product Experience Leader, Enterprise B2B, in Wheat Ridge, CO; founder of Winzinvest, Casimir Systems, and Foundpath.",
+      "Ryan Winzenburg has spent 25 years on enterprise B2B product experience, including Comcast, CVS Health / Aetna, and BuildOut. He helps product leaders test a bet before the build.",
     ogImage: "/images/about-hero.webp",
     ogType: "profile",
     changefreq: "monthly",
@@ -54,27 +54,27 @@ export const STATIC_PAGES = [
   },
   {
     path: "/methodology",
-    title: "AI-Native Design Methodology | 5-Phase Workflow, Ryan Winzenburg",
+    title: "Methodology | From Evidence to a Buildable Scope | Ryan Winzenburg",
     description:
-      "A five-phase AI-native design methodology for enterprise product work: where the strategic calls stay human, and where AI handles execution.",
+      "How I run enterprise product work in five phases, from research to handoff. People make the strategic calls. AI speeds up the drafting, and I review all of it.",
     ogImage: "/images/methodology-hero.webp",
     changefreq: "monthly",
     priority: "0.8",
   },
   {
     path: "/consulting",
-    title: "Consulting | AI Delivery Loop Sprint and Embedded Retainer | Ryan Winzenburg",
+    title: "Consulting | Test the Product Bet Before You Fund the Build | Ryan Winzenburg",
     description:
-      "Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint from $8,000. Expand into an embedded product-experience retainer. 25 years across healthcare, financial services, telecom, and technology.",
+      "For enterprise B2B product leaders about to fund a product bet. Test it with real users first, then leave with a go, no-go, or pivot call and a scope your team can build.",
     ogImage: "/images/services-hero.webp",
     changefreq: "monthly",
     priority: "0.9",
   },
   {
     path: "/services",
-    title: "Consulting | AI Delivery Loop Sprint and Embedded Retainer | Ryan Winzenburg",
+    title: "Consulting | Test the Product Bet Before You Fund the Build | Ryan Winzenburg",
     description:
-      "Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint from $8,000. Expand into an embedded product-experience retainer. 25 years across healthcare, financial services, telecom, and technology.",
+      "For enterprise B2B product leaders about to fund a product bet. Test it with real users first, then leave with a go, no-go, or pivot call and a scope your team can build.",
     ogImage: "/images/services-hero.webp",
     changefreq: "monthly",
     priority: "0.6",
@@ -108,7 +108,7 @@ export const STATIC_PAGES = [
   },
   {
     path: "/contact",
-    title: "Contact | AI Delivery Loop Sprint | Ryan Winzenburg",
+    title: "Contact | Talk Through Your Product Bet | Ryan Winzenburg",
     description:
       "Write to Ryan Winzenburg about a product bet you are about to fund. Reply within a day. Fixed-fee proposal within three business days if there is a fit.",
     ogImage: "/images/contact-hero.webp",

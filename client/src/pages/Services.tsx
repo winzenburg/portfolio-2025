@@ -83,14 +83,14 @@ type Industry = {
 const HERO_FACTS: Fact[] = [
   { label: "First step", value: "30-minute call", note: "No deck, no pitch" },
   {
-    label: "Entry",
-    value: "AI Delivery Loop Sprint",
-    note: "From $8,000 · typically 2–4 weeks",
+    label: "You leave with",
+    value: "A go, no-go, or pivot call",
+    note: "Plus a written scope, in 2 to 4 weeks",
   },
   {
-    label: "Expansion",
-    value: "Embedded retainer",
-    note: "Ongoing product-experience leadership",
+    label: "Fee",
+    value: "Fixed, in writing",
+    note: "Agreed before anything starts",
   },
   { label: "You work with", value: "Me, directly", note: "No account manager" },
 ];
@@ -111,7 +111,7 @@ const OFFER_PATHS: OfferPath[] = [
   {
     label: "Entry",
     name: "AI Delivery Loop Sprint",
-    body: "For the product bet you are about to fund. We put evidence under the direction, make the cuts explicit, and leave your team with a scope engineering can start. AI compresses synthesis, prototyping, and specification where the work is already well defined. The judgment call stays mine.",
+    body: "For the product bet you are about to fund. I test the direction with your stakeholders and users, name what to cut, and leave your team with a scope engineering can start. AI speeds up synthesis, prototyping, and specs where the work is well defined. I make the calls and review everything you receive.",
     includes:
       "Stakeholder and customer research as needed, AI-assisted synthesis, a go / no-go / pivot call, and a written scope with stated assumptions.",
     meta: "Typically 2–4 weeks · from $8,000 · fixed fee",
@@ -119,7 +119,7 @@ const OFFER_PATHS: OfferPath[] = [
   {
     label: "Expansion",
     name: "Embedded product-experience retainer",
-    body: "For the gap that is not a single decision. Ongoing senior product-experience and UX strategy inside your cadence: roadmap input, research planning, design direction, and stakeholder alignment. The sprint proves whether we work well together. The retainer is how that stays useful month to month.",
+    body: "For when the need is ongoing. Senior product-experience and UX strategy inside your cadence: roadmap input, research planning, design direction, and stakeholder alignment. A sprint first lets both of us check the fit before a monthly commitment.",
     includes:
       "Named weekly cadence, decision rights clarity, and continuity across the product org rather than a handoff at the file.",
     meta: "Monthly · three-month minimum",
@@ -189,7 +189,7 @@ const PHASES: Phase[] = [
     name: "Discover",
     mode: "Diverge",
     question: "What is actually going on?",
-    body: "For the sprint, stakeholder and customer research as needed, plus review of the artifacts you already have (analytics, support, competitive notes) when they exist. The Double Diamond below is how decisions get framed; the sprint package is the Entry card above, not every Discover activity every time.",
+    body: "Interviews with stakeholders and customers, as the question needs, plus a review of what you already have: analytics, support tickets, competitive notes. A sprint uses the parts of this phase your decision needs.",
     deliverable:
       "A research synthesis, prioritized problem themes, and a clear statement of what we do and do not yet know.",
   },
@@ -213,7 +213,7 @@ const PHASES: Phase[] = [
     name: "Deliver",
     mode: "Converge",
     question: "Will it hold up, and can it be built?",
-    body: "Usability testing, iteration, accessibility review, high-fidelity design, and component and state specification. The Double Diamond below is the general method. Implementation is a separate engagement, not part of the sprint.",
+    body: "Usability testing, iteration, accessibility review, high-fidelity design, and component and state specification. Building it is a separate engagement.",
     deliverable:
       "Implementation-ready design with edge cases and states documented, plus test evidence behind the decisions.",
   },
@@ -300,7 +300,7 @@ const SELECTED_WORK: WorkSample[] = [
   },
   {
     name: "Kinlet",
-    meta: "AI matching platform · Product design and design system",
+    meta: "Founder · AI matching platform · Product design and build",
     body: "Product design and design system work spanning onboarding, matching, and analytics.",
     result:
       "A coherent product surface across the matching workflow, instead of a pile of screens that each solved a local problem.",
@@ -316,7 +316,7 @@ const SELECTED_WORK: WorkSample[] = [
   },
   {
     name: "Undercurrent / Foundpath",
-    meta: "Career discovery · Product design and build",
+    meta: "Founder · Career discovery · Product design and build",
     body: "AI-powered discovery platforms that turn unstructured conversation into a usable written synthesis.",
     result:
       "Current, hands-on work with AI-native product patterns. Coaches start from a written brief instead of a blank intake.",
@@ -378,8 +378,8 @@ export default function Services() {
   return (
     <SiteLayout currentPage="consulting">
       <PageSeo
-        title="Consulting | AI Delivery Loop Sprint and Embedded Retainer | Ryan Winzenburg"
-        description="Product experience consultancy for enterprise B2B. Start with an AI Delivery Loop Sprint from $8,000. Expand into an embedded product-experience retainer. 25 years across healthcare, financial services, telecom, and technology."
+        title="Consulting | Test the Product Bet Before You Fund the Build | Ryan Winzenburg"
+        description="For enterprise B2B product leaders about to fund a product bet. Test it with real users first, then leave with a go, no-go, or pivot call and a scope your team can build."
         path="/consulting"
         ogImage="/images/services-hero.webp"
         jsonLd={[consultingFaqJsonLd(), sprintServiceJsonLd()]}
@@ -402,11 +402,7 @@ export default function Services() {
         }
         lede={
           <>
-            Most of the expensive product mistakes I get called into were not
-            design mistakes. Someone committed engineering quarters to a
-            direction nobody had tested, and the bill arrived at launch. The
-            usual entry is an AI Delivery Loop Sprint. When the work needs to
-            stay, that expands into an embedded product-experience retainer.
+            The expensive product mistakes I get called into usually start before design. Someone commits engineering quarters to a direction nobody tested, and the bill arrives at launch. I help you test that direction first, in two to four weeks, so the build starts from evidence.
           </>
         }
         actions={
@@ -422,8 +418,7 @@ export default function Services() {
         footnote={
           <>
             <span className="block">
-              Form reaches me directly. I reply and we schedule. No calendar
-              link on the site yet.
+              The form comes straight to me. I reply within a day and we find a time.
             </span>
             <span className="mt-2 block">
               Twenty-five years of enterprise product experience across
@@ -440,8 +435,7 @@ export default function Services() {
         <SectionHeading
           id="situations-heading"
           eyebrow="Where I come in"
-          title="Four situations with a budget attached"
-          lede="These are mandates, not job titles. Every one of them is a decision somebody is about to fund, which is the point at which the work is still cheap to change."
+          title="Four situations I get called into" lede="Each one is a decision someone is about to fund. That is when changing direction still costs the least."
         />
         {/*
           Subgrid keeps the index rule, title, and body on shared baselines, so
@@ -478,13 +472,10 @@ export default function Services() {
           <div className="lg:col-span-5">
             <Eyebrow className="mb-4">How engagements usually start</Eyebrow>
             <SectionTitle id="offer-heading">
-              Sprint to enter. Retainer to stay.
+              Start with one decision. Keep me on if it helps.
             </SectionTitle>
             <p className="mt-6 text-lg leading-relaxed text-ink-muted">
-              One consultancy, two shapes. Start with the smallest engagement
-              that answers the decision in front of you. Scaling up later is
-              easy. Unwinding a large engagement that started before the
-              question was clear is not.
+              Start with the smallest engagement that answers the decision in front of you. Adding scope later is easy. Unwinding a large engagement that began before the question was clear is expensive.
             </p>
           </div>
           <div className="grid gap-6 lg:col-span-7">
@@ -514,10 +505,7 @@ export default function Services() {
           </div>
         </div>
         <p className="mt-10 max-w-3xl text-sm leading-relaxed text-ink-muted">
-          AI-enabled delivery is how the sprint covers more ground without
-          making the work fragile. It is not a marketplace gig board and not a
-          pitch for a Director seat. If a full-time hire would serve you better,
-          I will say that on the call.
+          AI handles the mechanical parts, which is how two to four weeks covers this much ground. If a full-time hire would serve you better, I will say so on the call.
         </p>
       </Section>
 
@@ -564,10 +552,7 @@ export default function Services() {
               How the work runs
             </SectionTitle>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              This is the Double Diamond, applied honestly. It is a framework for
-              knowing what you know, and being clear about what you have not
-              proven yet. Every phase produces a decision. A document is the
-              byproduct.
+              I use the Double Diamond, a common design method: widen the problem, narrow it, then do the same for the solution. It keeps what we know apart from what we have not proven yet. Every phase ends in a decision, and the documents follow from it.
             </p>
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
@@ -647,8 +632,7 @@ export default function Services() {
               What I bring to the decision
             </SectionTitle>
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              Three capabilities, and they rarely show up one at a time. The
-              work almost never separates cleanly into just one of them.
+              Most of the problems I see need all three at once.
             </p>
           </div>
           <div className="lg:col-span-7 lg:col-start-6">
@@ -694,8 +678,7 @@ export default function Services() {
           }
         />
         <p className="mb-8 text-sm leading-relaxed text-band-muted">
-          No public testimonials on this site by choice. Selected work and
-          engagement shape are the proof until clients agree to be named.
+          There are no client testimonials here yet. Each case study shows the scope I worked in and the decisions I made.
         </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {SELECTED_WORK.map((item, index) => (
@@ -932,11 +915,7 @@ export default function Services() {
               Bring me the bet you are about to fund
             </SectionTitle>
             <p className="mt-5 max-w-2xl leading-relaxed text-band-muted">
-              Thirty minutes, no deck. Tell me what you are about to commit to
-              and which part of it is still unproven. I will tell you whether an
-              AI Delivery Loop Sprint, an embedded retainer, or a different
-              shape is the right next step. If there is a fit, you will have a
-              scoped proposal with a fixed fee within three business days.
+              Thirty minutes, no deck. Tell me what you are about to commit to and which part is still unproven. I will tell you what I would test first and what shape of work fits, if any. If there is a fit, you get a fixed-fee proposal within three business days.
             </p>
           </div>
           <div className="lg:col-span-5">
@@ -946,8 +925,7 @@ export default function Services() {
               </Button>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-band-muted lg:text-right">
-              Form reaches me directly. I reply and we schedule. No calendar
-              link on the site yet.
+              The form comes straight to me. I reply within a day and we find a time.
             </p>
             <p className="mt-6 text-sm leading-relaxed text-band-muted lg:text-right">
               Prefer email?{" "}

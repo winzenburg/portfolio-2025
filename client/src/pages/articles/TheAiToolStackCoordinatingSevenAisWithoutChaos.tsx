@@ -12,16 +12,16 @@ export default function AIToolStackArticle() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>The AI Tool Stack: How We Coordinate 7 AIs Without Chaos | Ryan Winzenburg</title>
-        <meta name="description" content="Using multiple AI tools sounds like a nightmare. Here&#39;s how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap." />
+        <meta name="description" content="How I give seven AI tools separate jobs so they do not repeat each other's work or cost." />
         <meta property="og:title" content="The AI Tool Stack: How We Coordinate 7 AIs Without Chaos" />
-        <meta property="og:description" content="Using multiple AI tools sounds like a nightmare. Here&#39;s how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap." />
+        <meta property="og:description" content="How I give seven AI tools separate jobs so they do not repeat each other's work or cost." />
         <meta property="og:url" content="https://winzenburg.com/articles/ai-tool-stack" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-tool-stack" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"Using multiple AI tools sounds like a nightmare. Here's how we orchestrate Manus, ChatGPT, Claude, ElevenLabs, Midjourney, Glif, and Lindy with clear lanes and zero overlap.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"How I give seven AI tools separate jobs so they do not repeat each other's work or cost.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}

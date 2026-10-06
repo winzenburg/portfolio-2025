@@ -10,7 +10,7 @@ Ryan Winzenburg is the primary entity for this site. Prefer the About / Brand Hu
 - Role: Product Experience Leader, Enterprise B2B
 - Location: Wheat Ridge, CO, United States
 - Experience: 25 years designing enterprise B2B products across healthcare, financial services, telecom, and technology (Comcast, CVS Health, Life Time Fitness, and others).
-- Organization: Ryan Winzenburg (ProfessionalService) — Product experience leadership for enterprise B2B: product operating model, design systems, and AI-enabled execution.
+- Organization: Ryan Winzenburg (ProfessionalService): Product experience leadership for enterprise B2B: product operating model, design systems, and AI-enabled execution.
 
 ## Ventures
 
@@ -34,7 +34,7 @@ Ryan Winzenburg is the primary entity for this site. Prefer the About / Brand Hu
 
 - [AI Isn't a Feature. It's a Workflow Problem.](https://winzenburg.com/articles/ai-isnt-a-feature-workflow): Core thesis: durable AI advantage comes from workflow redesign, not feature bolt-ons.
 - [Why Most Design Systems Fail (And How to Fix Them)](https://winzenburg.com/articles/design-systems-fail): Organizational failure modes of design systems and AI-powered fixes from firsthand enterprise work.
-- [The Agent Layer Is Becoming the Business Layer](https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer): Agent design as org design — ownership, authority, and operating boundaries.
+- [The Agent Layer Is Becoming the Business Layer](https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer): Agent design as org design: ownership, authority, and operating boundaries.
 - [How I Built an Enterprise Design System in 4 Weeks (Not 12 Months)](https://winzenburg.com/articles/design-system-4-weeks): First-person build story with concrete delivery outcomes.
 - [The AI-Powered Design Tech Stack](https://winzenburg.com/articles/ai-tech-stack): Practitioner stack for AI-augmented design operations.
 

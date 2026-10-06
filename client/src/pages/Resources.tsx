@@ -177,7 +177,7 @@ const PHASES: Phase[] = [
     mode: "Diverge",
     question: "What is actually going on?",
     intent:
-      "Generate evidence about the problem space. Stay expansive — learn, don’t confirm. Discovery ends when you can define the problem with confidence.",
+      "Generate evidence about the problem space. Stay expansive. Learn, don't confirm. Discovery ends when you can define the problem with confidence.",
     doubleDiamond: [
       {
         name: "Research planning",
@@ -291,7 +291,7 @@ const PHASES: Phase[] = [
       },
       {
         name: "Problem framing",
-        summary: "Turn insight into a problem worth solving — and say what you are not solving.",
+        summary: "Turn insight into a problem worth solving, and say what you are not solving.",
         tasks: [
           "Root cause analysis (5 Whys)",
           "Problem / point-of-view statement writing",

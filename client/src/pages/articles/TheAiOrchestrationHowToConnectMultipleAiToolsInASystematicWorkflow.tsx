@@ -56,7 +56,7 @@ export default function AiOrchestrationWorkflow() {
               The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Most founders use AI tools like islands. I built bridges between them, and the results blew my mind.
+              Most teams use AI tools one at a time, with nothing passing between them. I connected mine into one workflow. This is how it is wired and what it changed.
             </p>
           </div>
 
@@ -355,7 +355,7 @@ export default function AiOrchestrationWorkflow() {
             href="/contact?intent=consulting"
             className="inline-block border border-gray-600 text-muted-foreground px-8 py-3 rounded-lg font-semibold hover:border-gray-500 transition-colors"
           >
-            Let's Chat
+            Talk through your product bet
           </Link>
         </div>
       </div>

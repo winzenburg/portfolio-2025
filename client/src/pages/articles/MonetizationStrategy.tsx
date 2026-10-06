@@ -695,13 +695,13 @@ export default function MonetizationStrategy() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-border rounded-lg p-8 text-center">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Building a Monetization Strategy?
+              Pricing a new product
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.
+              I wrote this from my own ventures. Inside a larger company the test is the same. Before the build starts, you want to know the idea holds up with real users. If a bet like that is about to be funded, I can help you test it.
             </p>
             <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                See if a Discovery Call fits
+                Talk through your product bet
             </Link>
           </div>
         </div>

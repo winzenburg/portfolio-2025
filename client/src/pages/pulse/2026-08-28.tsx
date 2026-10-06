@@ -28,14 +28,14 @@ export default function Pulse20260828() {
       <ResponsiveNav currentPage="subscribe" />
 
       <Helmet>
-        <title>Weekly AI Founder Pulse — Week of August 28, 2026 | Ryan Winzenburg</title>
+        <title>Weekly AI Founder Pulse: Week of August 28, 2026 | Ryan Winzenburg</title>
         <meta
           name="description"
           content="The market is shifting from prompt-driven AI to agentic work that can act across interfaces, execute defined workflows, and produce monetizable outcomes. Five signals from the week of August 28, 2026."
         />
         <meta
           property="og:title"
-          content="Weekly AI Founder Pulse — Week of August 28, 2026"
+          content="Weekly AI Founder Pulse: Week of August 28, 2026"
         />
         <meta
           property="og:description"
@@ -49,7 +49,7 @@ export default function Pulse20260828() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Weekly AI Founder Pulse — Week of August 28, 2026",
+            headline: "Weekly AI Founder Pulse: Week of August 28, 2026",
             description:
               "The market is shifting from prompt-driven AI to agentic work that can act across interfaces, execute defined workflows, and produce monetizable outcomes.",
             author: {
@@ -117,30 +117,30 @@ export default function Pulse20260828() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=EoNH3Tn8wYE"
-                    title="Greg Isenberg — WebMCP: Let AI Agents pay you money"
+                    title="Greg Isenberg: WebMCP: Let AI Agents pay you money"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=_9OT25ZvrWs"
-                    title="AI Jason — I don't prompt agents anymore..."
+                    title="AI Jason: I don't prompt agents anymore..."
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=XgkW4A6lrDY"
-                    title="Riley Brown — 11 Insane Things Cursor's NEW GrokBot Can Do"
+                    title="Riley Brown: 11 Insane Things Cursor's NEW GrokBot Can Do"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=rKo9iLGjUbs"
-                    title="Matt Wolfe — I Built a FREE App That Runs Your Entire Business"
+                    title="Matt Wolfe: I Built a FREE App That Runs Your Entire Business"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=HGk9N-HctVA"
-                    title="Leveling Up — Grok Bot's Best Workflows for Marketing"
+                    title="Leveling Up: Grok Bot's Best Workflows for Marketing"
                   />
                 </ul>
               </div>
               <p className="text-muted-foreground leading-relaxed text-sm">
                 The key shift is from conversational assistance to agents that perform work across
                 tools and interfaces. Differentiation moves to permissions, workflow control,
-                exception handling, and evidence trails—governed action, not open-ended autonomy.
+                exception handling, and evidence trails: governed action, not open-ended autonomy.
               </p>
             </div>
 
@@ -161,19 +161,19 @@ export default function Pulse20260828() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=mHqSBCHEZOY"
-                    title="Riley Brown — NEW ChatGPT Sites Just Changed Everything"
+                    title="Riley Brown: NEW ChatGPT Sites Just Changed Everything"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=ETa6ZYqoIXo"
-                    title="Riley Brown — Codex vs Claude vs Grokbot"
+                    title="Riley Brown: Codex vs Claude vs Grokbot"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=XgkW4A6lrDY"
-                    title="Riley Brown — 11 Insane Things Cursor's NEW GrokBot Can Do"
+                    title="Riley Brown: 11 Insane Things Cursor's NEW GrokBot Can Do"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=rKo9iLGjUbs"
-                    title="Matt Wolfe — I Built a FREE App That Runs Your Entire Business"
+                    title="Matt Wolfe: I Built a FREE App That Runs Your Entire Business"
                   />
                 </ul>
               </div>
@@ -201,30 +201,30 @@ export default function Pulse20260828() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=I-pPhs5Qbsk"
-                    title="Marc Lou — My SaaS hit $4,000/day (solo)"
+                    title="Marc Lou: My SaaS hit $4,000/day (solo)"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=mVd6PIKY-P0"
-                    title="Sabrina Ramonov — How I Made $120,000 with AI"
+                    title="Sabrina Ramonov: How I Made $120,000 with AI"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=TePQevG_Dgc"
-                    title="Sabrina Ramonov — How I'd Start a 1-Person Business + Personal Brand with AI in 30 Days"
+                    title="Sabrina Ramonov: How I'd Start a 1-Person Business + Personal Brand with AI in 30 Days"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=NO4u4PiHC5o"
-                    title="Sabrina Ramonov — How to Make Your First $1000 (3 Claude Prompts)"
+                    title="Sabrina Ramonov: How to Make Your First $1000 (3 Claude Prompts)"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=TVpLs0F1zpA"
-                    title="My First Million — How a $5B founder is using AI"
+                    title="My First Million: How a $5B founder is using AI"
                   />
                 </ul>
               </div>
               <p className="text-muted-foreground leading-relaxed text-sm">
                 Solo-founder content has moved beyond generic productivity advice. The active thesis
                 is operating a broader commercial surface when agents own defined recurring work.
-                The metric is a validated, repeatable commercial outcome—not agent novelty.
+                The metric is a validated, repeatable commercial outcome, not agent novelty.
               </p>
             </div>
 
@@ -246,15 +246,15 @@ export default function Pulse20260828() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=Zvgm3KE5pHM"
-                    title="Leveling Up — The New SEO Playbook for AI"
+                    title="Leveling Up: The New SEO Playbook for AI"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=qQluNEfSVHk"
-                    title="Greg Isenberg — Making $$$ with Grok Bot"
+                    title="Greg Isenberg: Making $$$ with Grok Bot"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=YS9In813jJ0"
-                    title="Lenny's Podcast — 84 minutes of enterprise sales alpha | Jen Abel"
+                    title="Lenny's Podcast: 84 minutes of enterprise sales alpha | Jen Abel"
                   />
                 </ul>
               </div>
@@ -282,19 +282,19 @@ export default function Pulse20260828() {
                 <ul className="space-y-1.5 text-sm">
                   <VideoLink
                     href="https://www.youtube.com/watch?v=YscDZpVF4CQ"
-                    title="No Priors — Rethinking Legacy Data Infrastructure with Eon"
+                    title="No Priors: Rethinking Legacy Data Infrastructure with Eon"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=MwNvowwcZOo"
-                    title="Latent Space — Forward Deployed: Voice AI on what works in 2026"
+                    title="Latent Space: Forward Deployed: Voice AI on what works in 2026"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=KpOW9Pk4BUs"
-                    title="Latent Space — Simulating Humanity: from Generative Agents to Digital Twins"
+                    title="Latent Space: Simulating Humanity: from Generative Agents to Digital Twins"
                   />
                   <VideoLink
                     href="https://www.youtube.com/watch?v=TInwQglNkzo"
-                    title="Matt Wolfe — AI News: OpenAI Made a Massive Move Against NVIDIA"
+                    title="Matt Wolfe: AI News: OpenAI Made a Massive Move Against NVIDIA"
                   />
                 </ul>
               </div>
@@ -316,7 +316,7 @@ export default function Pulse20260828() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Greg Isenberg — WebMCP: Let AI Agents pay you money
+                    Greg Isenberg: WebMCP: Let AI Agents pay you money
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -328,7 +328,7 @@ export default function Pulse20260828() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    Marc Lou — My SaaS hit $4,000/day (solo)
+                    Marc Lou: My SaaS hit $4,000/day (solo)
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>
@@ -340,7 +340,7 @@ export default function Pulse20260828() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary transition-colors text-sm leading-snug flex items-start gap-1.5"
                   >
-                    AI Jason — I don't prompt agents anymore...
+                    AI Jason: I don't prompt agents anymore...
                     <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
                   </a>
                 </li>

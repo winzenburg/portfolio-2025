@@ -317,10 +317,10 @@ export default function AICostControl() {
             </div>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Building AI Systems at Scale?</h3>
-              <p className="text-muted-foreground mb-6">I help teams design AI workflows that stay both affordable and fast. The key is building cost control into the architecture from the start.</p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">When the AI bill grows faster than usage</h3>
+              <p className="text-muted-foreground mb-6">If retries and rework are driving your AI costs, I can help you find where in the workflow it starts. Thirty minutes, no deck.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                See if a Discovery Call fits
+                Talk through your product bet
               </Link>
             </div>
           </div>

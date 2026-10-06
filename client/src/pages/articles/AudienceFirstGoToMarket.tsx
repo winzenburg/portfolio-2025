@@ -455,10 +455,10 @@ export default function AudienceFirstGoToMarket() {
             </div>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Build Your Audience-First Strategy?</h3>
-              <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Planning a launch inside a larger company</h3>
+              <p className="text-muted-foreground mb-6">I wrote this from my own ventures. Inside a larger company the test is the same. Before the build starts, you want to know the idea holds up with real users. If a bet like that is about to be funded, I can help you test it.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  See if a Discovery Call fits
+                  Talk through your product bet
               </Link>
             </div>
           </div>

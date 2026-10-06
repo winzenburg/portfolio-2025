@@ -104,7 +104,7 @@ export default function CaseStudyCvs() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Problem Statement</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground">
-                Aetna is an enormous healthcare organization with 100's of medical experts and insurance specialists. Overtime, the consumer facing website and mobile applications began to reflect how these experts viewed healthcare and insurance rather than the customer's understanding of their services. This impacted user satisfaction with the service by making <strong>critical health information and tools hard to understand, find, and use</strong>.
+                Aetna is a large healthcare organization with hundreds of medical experts and insurance specialists. Over time, the consumer-facing website and mobile applications began to reflect how these experts viewed healthcare and insurance rather than the customer's understanding of their services. This impacted user satisfaction with the service by making <strong>critical health information and tools hard to understand, find, and use</strong>.
               </p>
             </div>
           </div>
@@ -302,17 +302,17 @@ export default function CaseStudyCvs() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-              Interested in Similar Results?
+              An app built around your org chart
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              I bring the same rigorous, user-centered approach to every project, whether traditional UX or AI-augmented workflows.
+              Members could not find what they needed because the product mirrored how experts organize insurance. If your customers are getting lost in a similar way, tell me what you are seeing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="outline" size="lg" asChild>
                 <Link href="/work">Back to Work</Link>
               </Button>
               <Button size="lg" asChild>
-                <Link href="/contact?intent=consulting">Let&apos;s discuss your project</Link>
+                <Link href="/contact?intent=consulting">Talk through your product bet</Link>
               </Button>
             </div>
           </div>

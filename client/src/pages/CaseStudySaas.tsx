@@ -106,9 +106,7 @@ const CaseStudySaas: React.FC = () => {
             <p className="text-muted-foreground leading-relaxed mb-4">
               The problem extends beyond just cost. Traditional design system development is sequential and slow. UX researchers conduct studies, designers create components, developers implement them, QA engineers test, and technical writers document. Each handoff introduces delays, miscommunication, and quality issues. By the time the system launches, business requirements have often changed, making portions of the work obsolete.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              What if there was a way to deliver the same enterprise-grade quality in a fraction of the time, at a fraction of the cost, while maintaining rigorous standards for accessibility, testing, and documentation?
-            </p>
+            
           </div>
 
           {/* Design System Screenshot */}
@@ -124,12 +122,12 @@ const CaseStudySaas: React.FC = () => {
           </div>
         </section>
 
-        {/* The Force Multiplier Approach */}
+        {/* How the four weeks were spent */}
         <section className="mb-16">
-          <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Force Multiplier Approach</h2>
+          <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">How the four weeks were spent</h2>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">
-              I applied my AI-augmented 5-phase workflow to compress 84 person-months of work into just 4 weeks. This wasn't about cutting corners, it was about using AI as a force multiplier while maintaining the strategic oversight and quality standards that only 25 years of experience can provide.
+              I ran the five-phase workflow with AI drafting components, tests, and documentation. I set the token architecture, reviewed every component, and decided what shipped.
             </p>
           </div>
 
@@ -146,7 +144,7 @@ const CaseStudySaas: React.FC = () => {
                     Conducted competitive analysis of leading design systems (Material Design, Ant Design, Chakra UI), synthesized best practices, and defined a token-first architecture strategy. Used AI to analyze hundreds of components across multiple systems, identifying patterns and anti-patterns.
                   </p>
                   <div className="text-sm text-muted-foreground">
-                    <strong>Key Decision:</strong> Implement industry-first automated token validation to prevent governance drift
+                    <strong>Key decision:</strong> automated token validation, so the code cannot drift from the design tokens
                   </div>
                 </div>
               </div>
@@ -421,7 +419,7 @@ const CaseStudySaas: React.FC = () => {
             <div className="bg-muted border-l-4 border-primary rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-primary">Automated Validation Pays for Itself</h3>
               <p className="text-muted-foreground">
-                The custom token validation script proved to be one of the most valuable innovations. By automatically scanning the entire codebase and flagging non-compliant usage, it eliminates the manual governance burden that typically makes design systems expensive to maintain. This single innovation could save organizations hundreds of thousands of dollars over the system's lifetime.
+                The custom token validation script proved to be one of the most valuable innovations. By automatically scanning the entire codebase and flagging non-compliant usage, it eliminates the manual governance burden that typically makes design systems expensive to maintain. 
               </p>
             </div>
 
@@ -451,13 +449,13 @@ const CaseStudySaas: React.FC = () => {
         {/* CTA */}
         <section className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-primary/20 rounded-lg p-8 text-center">
           <h2 className="font-['Playfair_Display'] text-3xl font-bold mb-4">
-            Ready to Build Your Design System?
+            A design system about to get funded
           </h2>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            I can deliver enterprise-grade design systems in weeks, not months, at a fraction of traditional costs while maintaining rigorous quality standards.
+            Before you commit a year of budget to it, I can help you decide what it has to prove first and what a first version should include.
           </p>
           <Link href="/contact?intent=consulting" className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-colors cursor-pointer">
-              Let's Discuss Your Project
+              Talk through your product bet
           </Link>
         </section>
       </div>

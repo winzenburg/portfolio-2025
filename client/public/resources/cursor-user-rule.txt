@@ -1,4 +1,4 @@
-Competency skills (installed globally in ~/.cursor/skills) — use them automatically.
+Competency skills (installed globally in ~/.cursor/skills): use them automatically.
 
 For any product, UX, UI, design-system, marketing-page, accessibility, or front-end task, load the matching competency skill before you start, without waiting to be asked. Don't ask me which skill to use; name it in one short line and continue.
 

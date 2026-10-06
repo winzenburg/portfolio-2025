@@ -259,17 +259,17 @@ export default function CaseStudyBuildout() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-              Interested in Similar Results?
+              Tools people use all day
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              I bring the same rigorous, user-centered approach to every project, whether traditional UX or AI-augmented workflows.
+              Brokers were spending most of their day researching instead of selling. If your users lose hours inside your product, tell me where.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="outline" size="lg" asChild>
                 <Link href="/work">Back to Work</Link>
               </Button>
               <Button size="lg" asChild>
-                <Link href="/contact?intent=consulting">Let&apos;s discuss your project</Link>
+                <Link href="/contact?intent=consulting">Talk through your product bet</Link>
               </Button>
             </div>
           </div>

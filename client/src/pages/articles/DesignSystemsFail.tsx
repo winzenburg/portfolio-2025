@@ -13,14 +13,14 @@ export default function DesignSystemsFail() {
       <ResponsiveNav currentPage="articles" />
       <Helmet>
         <title>Why Most Design Systems Fail (And How to Fix Them) | Ryan Winzenburg</title>
-        <meta name="description" content="A design system can take a year and a large budget, then sit unused. The failure is usually organizational, and adoption is the fix." />
+        <meta name="description" content="A design system can take a year and a large budget, then sit unused. The failure is usually organizational. Three problems I keep seeing, and what fixes adoption." />
         <meta property="og:title" content="Why Most Design Systems Fail (And How to Fix Them)" />
-        <meta property="og:description" content="A design system can take a year and a large budget, then sit unused. The failure is usually organizational, and adoption is the fix." />
+        <meta property="og:description" content="A design system can take a year and a large budget, then sit unused. The failure is usually organizational. Three problems I keep seeing, and what fixes adoption." />
         <meta property="og:url" content="https://winzenburg.com/articles/design-systems-fail" />
         <meta property="og:image" content="https://winzenburg.com/images/articles/design-systems-fail-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-systems-fail" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"A design system can take a year and a large budget, then sit unused. The failure is usually organizational, and adoption is the fix.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"A design system can take a year and a large budget, then sit unused. The failure is usually organizational. Three problems I keep seeing, and what fixes adoption.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.webp"})}</script>
       </Helmet>
 
       {/* Article Header */}
@@ -493,10 +493,10 @@ export default function DesignSystemsFail() {
             </p>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Building or Fixing a Design System?</h3>
-              <p className="text-muted-foreground mb-6">If you're about to fund an AI feature and the job it does is still unclear, a 30-minute call is where I start.</p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">A design system nobody is using</h3>
+              <p className="text-muted-foreground mb-6">Before a design system gets a year of budget, it helps to know what it has to prove and who will adopt it. I can help you work that out. Thirty minutes, no deck.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                  See if a Discovery Call fits
+                  Talk through your product bet
               </Link>
             </div>
 

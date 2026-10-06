@@ -45,7 +45,7 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
       {
         question: "How do we start?",
         answer:
-          "A 30-minute call. Bring the problem, not a brief. Most buyers start with an AI Delivery Loop Sprint: a fixed engagement that puts evidence under a product bet before the build is funded. If the gap is ongoing senior judgment, we talk about an embedded product-experience retainer instead. If there is a fit, you get a scoped proposal with a fixed price and dates within three business days.",
+          "A 30-minute call. Bring the problem, not a brief. Most teams start with an AI Delivery Loop Sprint: a fixed engagement that puts evidence under a product bet before the build is funded. If the gap is ongoing senior judgment, we talk about an embedded product-experience retainer instead. If there is a fit, you get a scoped proposal with a fixed price and dates within three business days.",
       },
       {
         question: "What is not included in the AI Delivery Loop Sprint?",
@@ -72,7 +72,7 @@ export const CONSULTING_FAQ_GROUPS: readonly ConsultingFaqGroup[] = [
       {
         question: "What if the research says we should not build it?",
         answer:
-          "You get that in writing, with the evidence. It is a legitimate outcome and usually the cheapest one available. An engagement that prevents an unnecessary build has paid for itself several times over.",
+          "You get that in writing, with the evidence. It is a legitimate outcome, and usually the cheapest one available.",
       },
       {
         question: "Do you work on site?",

@@ -367,10 +367,10 @@ export default function DebuggingAIWorkflows() {
             </div>
 
             <div className="bg-primary/8 border border-primary/20 rounded-lg p-8 my-12 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Building Observable AI Systems?</h3>
-              <p className="text-muted-foreground mb-6">I help teams design AI workflows that are debuggable from day one. The right observability strategy prevents endless firefighting later.</p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">AI failures nobody can reproduce</h3>
+              <p className="text-muted-foreground mb-6">If your team ships AI features and cannot explain why one failed, I can help you design the evidence trail before the next incident. Thirty minutes, no deck.</p>
               <Link href="/contact?intent=consulting" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
-                See if a Discovery Call fits
+                Talk through your product bet
               </Link>
             </div>
           </div>

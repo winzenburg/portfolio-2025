@@ -141,7 +141,7 @@ const CaseStudyUndercurrent: React.FC = () => {
               Traditional career coaching is expensive, scheduling is a nightmare, and the process often takes months to yield actionable insights. Personality tests and quizzes are fast, but they're reductive and rarely provide the nuanced clarity needed for major life pivots.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              The real design challenge: how do you build an automated system that feels like a real conversation with an expert coach? How do you extract deep, personal insights without the user feeling like they're just filling out a massive web form? This project demonstrates how AI-augmented voice interfaces can democratize access to high-end career coaching, providing synthesis and clarity faster than traditional methods.
+              The real design challenge: how do you build an automated system that feels like a real conversation with an expert coach? How do you extract deep, personal insights without the user feeling like they're just filling out a massive web form? This project tests whether a voice interview can give people the kind of synthesis a coach gives, faster and at lower cost.
             </p>
           </div>
         </section>
@@ -150,7 +150,7 @@ const CaseStudyUndercurrent: React.FC = () => {
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">Frictionless Onboarding</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            The onboarding flow is designed to build trust before asking for anything. Instead of demanding an account upfront, it walks users through the <em>Why</em>, the <em>Methodology</em>, and the <em>Structure</em> before asking for sign-in. Five screens that turn skeptics into believers.
+            The onboarding flow is designed to build trust before asking for anything. Instead of demanding an account upfront, it walks users through the <em>Why</em>, the <em>Methodology</em>, and the <em>Structure</em> before asking for sign-in. Five screens explain the method before anyone signs in.
           </p>
 
           <div className="grid md:grid-cols-2 gap-4 mb-8">
@@ -186,7 +186,7 @@ const CaseStudyUndercurrent: React.FC = () => {
           <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-600/30 rounded-lg p-6 mb-8">
             <h3 className="text-xl font-bold mb-3 text-amber-700">What Undercurrent is</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Not a quiz. Not a personality test. A real conversation, powered by a voice AI coach, that helps you surface what you already know about yourself but haven't had the right questions to articulate. It weaves together six proven career clarity frameworks into a single, coherent 45-60 minute interview experience.
+              A guided conversation with a voice AI coach that helps you surface what you already know about yourself but haven't had the right questions to articulate. It weaves together six proven career clarity frameworks into a single, coherent 45-60 minute interview experience.
             </p>
           </div>
 
