@@ -182,7 +182,7 @@ export default function Home() {
           as="image"
           href="/images/home-hero-test-arch.webp"
           imageSrcSet="/images/home-hero-test-arch-1456w.webp 1456w, /images/home-hero-test-arch.webp 2912w"
-          imageSizes="100vw"
+          imageSizes="(min-width: 1024px) max(48vw, calc(100vw - 42rem)), 100vw"
           fetchPriority="high"
         />
       </Helmet>

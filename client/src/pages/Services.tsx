@@ -392,7 +392,7 @@ export default function Services() {
         eyebrowNote="Enterprise B2B product leaders"
         media={{
           src: "/images/services-hero.webp",
-          focus: "35% 70%",
+          focus: "40% 48%",
           alt: "A figure in a dark coat stands before a tower with an eye-shaped dish and a field of tall patterned plants.",
         }}
         title={

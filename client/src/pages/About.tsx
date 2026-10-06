@@ -203,7 +203,7 @@ export default function About() {
         eyebrowNote={`Updated ${brandFacts.updated}`}
         media={{
           src: "/images/about-hero.webp",
-          focus: "50% 30%",
+          focus: "46% 32%",
           alt: "People gather on and inside a large gear, some climbing stairs along its edge, with trees around them.",
         }}
         title={

@@ -796,13 +796,14 @@ export default function Articles() {
       />
 
       <PageHero
+        className="studio-articles-hero"
         variant="bleed"
         titleId="articles-hero-title"
         eyebrow="Articles"
         eyebrowNote={`${articles.length} pieces`}
         media={{
           src: "/images/articles-hero.webp",
-          focus: "52% 18%",
+          focus: "50% 12%",
           alt: "A person in a polka-dot coat balances on a plank resting on patterned blocks and spheres.",
         }}
         title="Writing on product experience, operating models, and AI-enabled delivery"
