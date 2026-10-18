@@ -21,7 +21,7 @@ export default function TheHubArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/hub-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/the-hub" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Hub: A Meta-Project for Managing Your Product Portfolio","description":"What if you had a dashboard for managing your entire product portfolio? Here's how we built it.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/the-hub","image":"https://winzenburg.com/images/articles/hub-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Hub: A Meta-Project for Managing Your Product Portfolio","description":"What if you had a dashboard for managing your entire product portfolio? Here's how we built it.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/the-hub","image":"https://winzenburg.com/images/articles/hub-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/the-hub"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

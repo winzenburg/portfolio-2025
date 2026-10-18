@@ -19,7 +19,7 @@ export default function RocksNotTasks() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/rocks-not-tasks-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/rocks-not-tasks" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes","description":"The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-23","url":"https://winzenburg.com/articles/rocks-not-tasks","image":"https://winzenburg.com/images/articles/rocks-not-tasks-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Rocks, Not Tasks: How to Commit to 1-3 Weekly Outcomes","description":"The fastest way to sabotage a week is to commit to tasks instead of outcomes. Here's how to define weekly outcomes that actually finish.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-23","url":"https://winzenburg.com/articles/rocks-not-tasks","image":"https://winzenburg.com/images/articles/rocks-not-tasks-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/rocks-not-tasks"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

@@ -29,7 +29,9 @@ export default function IntegrationDocsThatWork() {
           "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
           "datePublished": "2026-02-29",
           "url": "https://winzenburg.com/articles/integration-docs-that-work",
-          "image": "https://winzenburg.com/images/articles/integration-docs-hero.webp"
+          "image": "https://winzenburg.com/images/articles/integration-docs-hero.webp",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://winzenburg.com/articles/integration-docs-that-work" },
+          "publisher": { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

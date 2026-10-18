@@ -21,7 +21,7 @@ export default function CompleteWorkflowPost() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/complete-workflow-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/complete-workflow-2025" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Complete Workflow: Discovery to Deployment in 2025","description":"Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/complete-workflow-2025","image":"https://winzenburg.com/images/articles/complete-workflow-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Complete Workflow: Discovery to Deployment in 2025","description":"Our current end-to-end SaaS creation system, from validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/complete-workflow-2025","image":"https://winzenburg.com/images/articles/complete-workflow-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/complete-workflow-2025"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

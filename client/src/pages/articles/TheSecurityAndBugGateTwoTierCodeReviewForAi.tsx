@@ -19,7 +19,7 @@ export default function SecurityBugGateArticle() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/security-gate-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/security-bug-gate" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features","description":"AI can ship features fast, but it can also ship vulnerabilities. Here's our quality firewall for AI-generated code.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/security-bug-gate","image":"https://winzenburg.com/images/articles/security-gate-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Security & Bug Gate: Two-Tier Code Review for AI-Generated Features","description":"AI can ship features fast, but it can also ship vulnerabilities. Here's our quality firewall for AI-generated code.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/security-bug-gate","image":"https://winzenburg.com/images/articles/security-gate-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/security-bug-gate"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

@@ -20,7 +20,7 @@ export default function DesignSystemsFail() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/design-systems-fail-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/design-systems-fail" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"A design system can take a year and a large budget, then sit unused. The failure is usually organizational. Three problems I keep seeing, and what fixes adoption.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Most Design Systems Fail (And How to Fix Them)","description":"A design system can take a year and a large budget, then sit unused. The failure is usually organizational. Three problems I keep seeing, and what fixes adoption.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-01-15","url":"https://winzenburg.com/articles/design-systems-fail","image":"https://winzenburg.com/images/articles/design-systems-fail-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/design-systems-fail"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

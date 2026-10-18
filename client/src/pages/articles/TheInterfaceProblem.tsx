@@ -63,6 +63,8 @@ export default function TheInterfaceProblem() {
           datePublished: "2026-06-03",
           url: "https://winzenburg.com/articles/interface-problem-ai-ux",
           image: "https://winzenburg.com/images/articles/interface-problem-hero.webp",
+          mainEntityOfPage: { "@type": "WebPage", "@id": "https://winzenburg.com/articles/interface-problem-ai-ux" },
+          publisher: { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

@@ -19,7 +19,7 @@ export default function DocsAsSystemOfRecord() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/docs-system-of-record-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/docs-as-system-of-record" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Docs as the System of Record: Making Decisions Traceable and Reusable","description":"When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here's the fix.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-18","url":"https://winzenburg.com/articles/docs-as-system-of-record","image":"https://winzenburg.com/images/articles/docs-system-of-record-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Docs as the System of Record: Making Decisions Traceable and Reusable","description":"When knowledge lives in chat threads, personal notes, and scattered docs, you lose context, repeatability, and auditability. Here's the fix.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-18","url":"https://winzenburg.com/articles/docs-as-system-of-record","image":"https://winzenburg.com/images/articles/docs-system-of-record-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/docs-as-system-of-record"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

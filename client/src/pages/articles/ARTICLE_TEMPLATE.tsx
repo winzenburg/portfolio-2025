@@ -75,6 +75,8 @@ export default function ARTICLE_TEMPLATE() {
           dateModified: "2026-01-01",
           url: "https://winzenburg.com/articles/your-article-slug",
           image: "https://winzenburg.com/images/articles/your-article-slug-hero.webp",
+          mainEntityOfPage: { "@type": "WebPage", "@id": "https://winzenburg.com/articles/your-article-slug" },
+          publisher: { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

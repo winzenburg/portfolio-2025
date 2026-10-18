@@ -39,6 +39,8 @@ export default function MapTheWorkBeforeYouAutomate() {
           datePublished: "2026-10-05",
           url: "https://winzenburg.com/articles/map-the-work-before-you-automate-it",
           image: "https://winzenburg.com/images/articles/map-the-work-before-you-automate-it-hero.webp",
+          mainEntityOfPage: { "@type": "WebPage", "@id": "https://winzenburg.com/articles/map-the-work-before-you-automate-it" },
+          publisher: { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

@@ -21,7 +21,7 @@ export default function SaaSStartupFailures() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/saas-problem-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/saas-problem" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Problem: Why Most SaaS Startups Fail Before They Even Start","description":"Most new products fail on process before the idea gets a fair test. What I changed in my own validation process after learning that the expensive way.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/saas-problem","image":"https://winzenburg.com/images/articles/saas-problem-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Problem: Why Most SaaS Startups Fail Before They Even Start","description":"Most new products fail on process before the idea gets a fair test. What I changed in my own validation process after learning that the expensive way.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/saas-problem","image":"https://winzenburg.com/images/articles/saas-problem-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/saas-problem"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

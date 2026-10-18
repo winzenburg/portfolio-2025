@@ -19,7 +19,7 @@ export default function SupabaseMCPArticle() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/supabase-mcp-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/supabase-mcp-blueprint" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks","description":"Backend design is usually trial-and-error. We turned it into a repeatable blueprint using Supabase MCP.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/supabase-mcp-blueprint","image":"https://winzenburg.com/images/articles/supabase-mcp-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Supabase MCP Blueprint: Production-Grade Backends in Minutes, Not Weeks","description":"Backend design is usually trial-and-error. We turned it into a repeatable blueprint using Supabase MCP.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/supabase-mcp-blueprint","image":"https://winzenburg.com/images/articles/supabase-mcp-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/supabase-mcp-blueprint"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

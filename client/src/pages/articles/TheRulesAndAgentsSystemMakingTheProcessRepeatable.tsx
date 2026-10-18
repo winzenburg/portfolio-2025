@@ -19,7 +19,7 @@ export default function RulesAndAgentsSystemArticle() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/rules-agents-system-diagram.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/rules-and-agents" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rules and Agents System: Making the Process Repeatable","description":"What if your product creation process was as systematic as your code? Here's how rules and agents make the entire workflow repeatable.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rules-and-agents","image":"https://winzenburg.com/images/articles/rules-agents-system-diagram.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rules and Agents System: Making the Process Repeatable","description":"What if your product creation process was as systematic as your code? Here's how rules and agents make the entire workflow repeatable.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rules-and-agents","image":"https://winzenburg.com/images/articles/rules-agents-system-diagram.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/rules-and-agents"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

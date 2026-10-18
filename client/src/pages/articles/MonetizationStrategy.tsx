@@ -20,7 +20,7 @@ export default function MonetizationStrategy() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/monetization-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/monetization-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Monetization Strategy: Generating Revenue from Day One","description":"Pricing belongs in the product plan from the first week. A modular model can start earning before the full product is built.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-07-21","url":"https://winzenburg.com/articles/monetization-strategy","image":"https://winzenburg.com/images/articles/monetization-strategy-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Monetization Strategy: Generating Revenue from Day One","description":"Pricing belongs in the product plan from the first week. A modular model can start earning before the full product is built.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-07-21","url":"https://winzenburg.com/articles/monetization-strategy","image":"https://winzenburg.com/images/articles/monetization-strategy-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/monetization-strategy"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Content */}

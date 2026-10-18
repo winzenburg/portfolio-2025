@@ -21,7 +21,7 @@ export default function DevQualityAssistant() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/dev-quality-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/dev-quality-assistant" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Dev Quality Assistant: Test Planning Before Code Touches the Repo","description":"Most teams treat testing as an afterthought. We make it a build prerequisite.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dev-quality-assistant","image":"https://winzenburg.com/images/articles/dev-quality-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Dev Quality Assistant: Test Planning Before Code Touches the Repo","description":"Most teams treat testing as an afterthought. We make it a build prerequisite.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dev-quality-assistant","image":"https://winzenburg.com/images/articles/dev-quality-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/dev-quality-assistant"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

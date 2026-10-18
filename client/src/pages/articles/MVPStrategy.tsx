@@ -20,7 +20,7 @@ export default function MVPStrategy() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/mvp-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/mvp-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The MVP Strategy: Launching Products That Sell Themselves","description":"Most MVPs try to do too much and launch late with unclear value. Build the smallest version that proves one user behavior.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-26","url":"https://winzenburg.com/articles/mvp-strategy","image":"https://winzenburg.com/images/articles/mvp-strategy-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The MVP Strategy: Launching Products That Sell Themselves","description":"Most MVPs try to do too much and launch late with unclear value. Build the smallest version that proves one user behavior.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-06-26","url":"https://winzenburg.com/articles/mvp-strategy","image":"https://winzenburg.com/images/articles/mvp-strategy-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/mvp-strategy"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Content */}

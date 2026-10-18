@@ -19,7 +19,7 @@ export default function BusinessOperatingSystem() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/business-operating-system-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/business-operating-system" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Business Operating System: A Weekly Loop for Shipping and Learning","description":"Teams stall when good decisions never become weekly outcomes. An operating system is how those decisions turn into finished work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-30","url":"https://winzenburg.com/articles/business-operating-system","image":"https://winzenburg.com/images/articles/business-operating-system-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Business Operating System: A Weekly Loop for Shipping and Learning","description":"Teams stall when good decisions never become weekly outcomes. An operating system is how those decisions turn into finished work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-30","url":"https://winzenburg.com/articles/business-operating-system","image":"https://winzenburg.com/images/articles/business-operating-system-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/business-operating-system"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

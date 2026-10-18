@@ -19,7 +19,7 @@ export default function AICodingEconomics() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-coding-economics-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-coding-economics" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"A feature that used to cost a day of implementation can cost a few dollars in API calls. The larger cost is the work you never get to test.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Economics of AI-Assisted Coding: When $40 Beats 6 Hours","description":"A feature that used to cost a day of implementation can cost a few dollars in API calls. The larger cost is the work you never get to test.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-18","url":"https://winzenburg.com/articles/ai-coding-economics","image":"https://winzenburg.com/images/articles/ai-coding-economics-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/ai-coding-economics"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

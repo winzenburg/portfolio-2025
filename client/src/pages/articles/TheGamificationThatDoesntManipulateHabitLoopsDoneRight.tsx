@@ -21,7 +21,7 @@ export default function GameficationThatDoesntManipulate() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/gamification-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/gamification-done-right" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Gamification That Doesn't Manipulate: Designing Habit Loops with Industry-Appropriate Mascots","description":"Gamification is often manipulative. Here's how to make it helpful, respectful, and tailored to your industry.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/gamification-done-right","image":"https://winzenburg.com/images/articles/gamification-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Gamification That Doesn't Manipulate: Designing Habit Loops with Industry-Appropriate Mascots","description":"Gamification is often manipulative. Here's how to make it helpful, respectful, and tailored to your industry.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/gamification-done-right","image":"https://winzenburg.com/images/articles/gamification-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/gamification-done-right"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

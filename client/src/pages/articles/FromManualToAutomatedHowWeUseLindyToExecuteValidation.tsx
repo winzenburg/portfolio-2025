@@ -21,7 +21,7 @@ export default function LinnyAutomationArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/lindy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/lindy-automated-validation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale","description":"How I hand waitlist follow-up and outreach to Lindy, and keep every decision written down in one place.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/lindy-automated-validation","image":"https://winzenburg.com/images/articles/lindy-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"From Manual to Automated: How We Use Lindy AI to Execute Validation at Scale","description":"How I hand waitlist follow-up and outreach to Lindy, and keep every decision written down in one place.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/lindy-automated-validation","image":"https://winzenburg.com/images/articles/lindy-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/lindy-automated-validation"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}
