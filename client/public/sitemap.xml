@@ -111,6 +111,12 @@
 
   <!-- Articles (generated from Articles.tsx) -->
   <url>
+    <loc>https://winzenburg.com/articles/map-the-work-before-you-automate-it</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
