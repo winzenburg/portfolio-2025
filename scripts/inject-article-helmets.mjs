@@ -430,6 +430,8 @@ function buildHelmetBlock(article) {
     datePublished: date,
     url,
     image: imageUrl,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    publisher: { "@id": "https://winzenburg.com/#organization" },
   });
 
   return `

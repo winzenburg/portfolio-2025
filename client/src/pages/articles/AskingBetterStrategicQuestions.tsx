@@ -29,7 +29,9 @@ export default function AskingBetterStrategicQuestions() {
           "author": { "@type": "Person", "name": "Ryan Winzenburg", "url": "https://winzenburg.com" },
           "datePublished": "2026-03-07",
           "url": "https://winzenburg.com/articles/strategic-questions-ai-product-design",
-          "image": "https://winzenburg.com/images/articles/strategic-questions-ai-hero.webp"
+          "image": "https://winzenburg.com/images/articles/strategic-questions-ai-hero.webp",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://winzenburg.com/articles/strategic-questions-ai-product-design" },
+          "publisher": { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

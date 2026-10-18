@@ -36,6 +36,8 @@ export default function AIUxMaturityLevel3() {
           datePublished: "2026-07-09",
           url: "https://winzenburg.com/articles/ai-ux-maturity-level-3",
           image: "https://winzenburg.com/images/articles/ai-ux-maturity-level-3-hero.webp",
+          mainEntityOfPage: { "@type": "WebPage", "@id": "https://winzenburg.com/articles/ai-ux-maturity-level-3" },
+          publisher: { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

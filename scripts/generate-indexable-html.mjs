@@ -266,6 +266,18 @@ function resolveArticleSeo(article, componentPath) {
   }
   articleLd.dateModified = dateModified;
 
+  const articlePageUrl =
+    typeof articleLd.url === "string" && articleLd.url.length > 0
+      ? articleLd.url
+      : canonical;
+  articleLd.mainEntityOfPage = {
+    "@type": "WebPage",
+    "@id": articlePageUrl,
+  };
+  articleLd.publisher = {
+    "@id": `${SITE_ORIGIN}/#organization`,
+  };
+
   return {
     title,
     description,

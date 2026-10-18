@@ -23,7 +23,7 @@ export default function PortfolioApproachArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/portfolio-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/portfolio-approach" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value","description":"You're not building one product. You're managing a portfolio of bets. Here's how to manage them systematically.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/portfolio-approach","image":"https://winzenburg.com/images/articles/portfolio-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Portfolio Approach: Managing Multiple Bets, Killing Fast, Prioritizing by Expected Value","description":"You're not building one product. You're managing a portfolio of bets. Here's how to manage them systematically.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/portfolio-approach","image":"https://winzenburg.com/images/articles/portfolio-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/portfolio-approach"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

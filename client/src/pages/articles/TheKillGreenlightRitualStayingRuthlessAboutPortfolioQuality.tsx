@@ -21,7 +21,7 @@ export default function KillGreenlightRitual() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/kill-greenlight-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/kill-greenlight-ritual" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality","description":"Sunk cost keeps weak ideas alive. The weekly review and kill criteria I use to stop work on an idea before it eats another quarter.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/kill-greenlight-ritual","image":"https://winzenburg.com/images/articles/kill-greenlight-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Kill/Greenlight Ritual: How We Stay Ruthless About Portfolio Quality","description":"Sunk cost keeps weak ideas alive. The weekly review and kill criteria I use to stop work on an idea before it eats another quarter.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/kill-greenlight-ritual","image":"https://winzenburg.com/images/articles/kill-greenlight-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/kill-greenlight-ritual"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

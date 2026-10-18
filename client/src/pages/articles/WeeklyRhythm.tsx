@@ -19,7 +19,7 @@ export default function WeeklyRhythm() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/weekly-rhythm-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/weekly-rhythm" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Weekly planning has one job: decide what the week is for, then protect the time to finish that work instead of filling the calendar.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Weekly Rhythm: A 60-Minute Operating System That Actually Ships","description":"Weekly planning has one job: decide what the week is for, then protect the time to finish that work instead of filling the calendar.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-25","url":"https://winzenburg.com/articles/weekly-rhythm","image":"https://winzenburg.com/images/articles/weekly-rhythm-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/weekly-rhythm"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

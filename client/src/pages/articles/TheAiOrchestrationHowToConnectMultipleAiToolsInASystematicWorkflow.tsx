@@ -21,7 +21,7 @@ export default function AiOrchestrationWorkflow() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/ai-orchestration-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-orchestration" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow","description":"AI tools are powerful, but they're islands. Here's how to orchestrate them into a systematic, auditable workflow.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-orchestration","image":"https://winzenburg.com/images/articles/ai-orchestration-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Orchestration: How to Connect Multiple AI Tools in a Systematic Workflow","description":"AI tools are powerful, but they're islands. Here's how to orchestrate them into a systematic, auditable workflow.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-orchestration","image":"https://winzenburg.com/images/articles/ai-orchestration-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/ai-orchestration"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

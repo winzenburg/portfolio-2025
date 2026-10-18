@@ -21,7 +21,7 @@ export default function AIToolStackArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/ai-tool-stack-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-tool-stack" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"How I give seven AI tools separate jobs so they do not repeat each other's work or cost.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI Tool Stack: How We Coordinate 7 AIs Without Chaos","description":"How I give seven AI tools separate jobs so they do not repeat each other's work or cost.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/ai-tool-stack","image":"https://winzenburg.com/images/articles/ai-tool-stack-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/ai-tool-stack"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

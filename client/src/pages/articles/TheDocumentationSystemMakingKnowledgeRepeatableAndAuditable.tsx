@@ -21,7 +21,7 @@ export default function TheDocumentationSystemMakingKnowledgeRepeatableAndAudita
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/docs-system-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/documentation-system" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Documentation System: Making Knowledge Repeatable and Auditable","description":"Knowledge gets lost. Processes aren't repeatable. What if every decision was documented and auditable?","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/documentation-system","image":"https://winzenburg.com/images/articles/docs-system-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Documentation System: Making Knowledge Repeatable and Auditable","description":"Knowledge gets lost. Processes aren't repeatable. What if every decision was documented and auditable?","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/documentation-system","image":"https://winzenburg.com/images/articles/docs-system-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/documentation-system"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

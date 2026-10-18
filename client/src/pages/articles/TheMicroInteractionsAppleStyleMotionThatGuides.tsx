@@ -21,7 +21,7 @@ export default function MicroInteractionsArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/micro-interactions-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/micro-interactions" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting","description":"Bad animations annoy. Great ones are invisible. Here's our playbook for refined, goal-driven micro-interactions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/micro-interactions","image":"https://winzenburg.com/images/articles/micro-interactions-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Micro-Interactions Done Right: Apple-Style Motion That Guides Without Distracting","description":"Bad animations annoy. Great ones are invisible. Here's our playbook for refined, goal-driven micro-interactions.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/micro-interactions","image":"https://winzenburg.com/images/articles/micro-interactions-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/micro-interactions"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

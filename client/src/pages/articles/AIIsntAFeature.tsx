@@ -37,6 +37,8 @@ export default function AIIsntAFeature() {
           datePublished: "2026-05-29",
           url: "https://winzenburg.com/articles/ai-isnt-a-feature-workflow",
           image: "https://winzenburg.com/images/articles/ai-isnt-a-feature-workflow-hero.webp",
+          mainEntityOfPage: { "@type": "WebPage", "@id": "https://winzenburg.com/articles/ai-isnt-a-feature-workflow" },
+          publisher: { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

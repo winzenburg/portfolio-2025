@@ -19,7 +19,7 @@ export default function ChoosingAICodingMode() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/choosing-ai-coding-mode" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"I wasted a day and $60 running a feature autonomously when it should have stayed interactive. The mode has to match the work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Choosing Your AI Coding Mode: Interactive vs Autonomous","description":"I wasted a day and $60 running a feature autonomously when it should have stayed interactive. The mode has to match the work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-25","url":"https://winzenburg.com/articles/choosing-ai-coding-mode","image":"https://winzenburg.com/images/articles/choosing-ai-coding-mode-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/choosing-ai-coding-mode"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

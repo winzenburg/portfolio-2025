@@ -19,7 +19,7 @@ export default function AITechStack() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-tech-stack-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-tech-stack" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Powered Design Tech Stack: My Exact Workflow","description":"After the 4-week design system build, people asked which tools I actually use. This is the stack, and why each piece stays.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-03","url":"https://winzenburg.com/articles/ai-tech-stack","image":"https://winzenburg.com/images/articles/ai-tech-stack-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The AI-Powered Design Tech Stack: My Exact Workflow","description":"After the 4-week design system build, people asked which tools I actually use. This is the stack, and why each piece stays.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-02-03","url":"https://winzenburg.com/articles/ai-tech-stack","image":"https://winzenburg.com/images/articles/ai-tech-stack-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/ai-tech-stack"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

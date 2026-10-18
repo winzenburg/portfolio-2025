@@ -37,6 +37,8 @@ export default function TheAgentLayerBusinessLayer() {
           datePublished: "2026-08-11",
           url: "https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer",
           image: "https://winzenburg.com/images/articles/the-agent-layer-is-becoming-the-business-layer-hero.webp",
+          mainEntityOfPage: { "@type": "WebPage", "@id": "https://winzenburg.com/articles/the-agent-layer-is-becoming-the-business-layer" },
+          publisher: { "@id": "https://winzenburg.com/#organization" },
         })}</script>
       </Helmet>
 

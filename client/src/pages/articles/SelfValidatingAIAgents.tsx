@@ -19,7 +19,7 @@ export default function SelfValidatingAIAgents() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/self-validating-ai-agents-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/self-validating-ai-agents" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"An agent built a feature overnight, checked it against acceptance criteria, fixed the failures, and committed the result.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Self-Validating AI Agents: When Acceptance Criteria Become Tests","description":"An agent built a feature overnight, checked it against acceptance criteria, fixed the failures, and committed the result.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-08","url":"https://winzenburg.com/articles/self-validating-ai-agents","image":"https://winzenburg.com/images/articles/self-validating-ai-agents-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/self-validating-ai-agents"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       <article className="pt-10 pb-16 md:pt-14">

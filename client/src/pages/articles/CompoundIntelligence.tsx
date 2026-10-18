@@ -19,7 +19,7 @@ export default function CompoundIntelligence() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/compound-intelligence-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/compound-intelligence" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Compound Intelligence: How Documentation Makes Codebases Learn","description":"An agent wrote down what it learned, and the next agent used that file. The codebase got smarter without a new feature from me.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-22","url":"https://winzenburg.com/articles/compound-intelligence","image":"https://winzenburg.com/images/articles/compound-intelligence-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Compound Intelligence: How Documentation Makes Codebases Learn","description":"An agent wrote down what it learned, and the next agent used that file. The codebase got smarter without a new feature from me.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-22","url":"https://winzenburg.com/articles/compound-intelligence","image":"https://winzenburg.com/images/articles/compound-intelligence-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/compound-intelligence"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       <article className="pt-10 pb-16 md:pt-14">

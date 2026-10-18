@@ -19,7 +19,7 @@ export default function RuleConsolidation() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/rule-consolidation-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/rule-consolidation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rule Consolidation: How We Kept 40+ Rules Manageable Without Losing Power","description":"Most systems collapse under their own complexity. Here's how we prevented that with a unified taxonomy and single foreman orchestrator.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rule-consolidation","image":"https://winzenburg.com/images/articles/rule-consolidation-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Rule Consolidation: How We Kept 40+ Rules Manageable Without Losing Power","description":"Most systems collapse under their own complexity. Here's how we prevented that with a unified taxonomy and single foreman orchestrator.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/rule-consolidation","image":"https://winzenburg.com/images/articles/rule-consolidation-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/rule-consolidation"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

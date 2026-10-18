@@ -19,7 +19,7 @@ export default function QualityGatesForAI() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/quality-gates-ai-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/quality-gates-for-ai" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Quality Gates for AI Outputs: Schema, Normalization, and Readable Rendering","description":"AI output is raw material, not finished product. Treat it like untrusted input and run it through gates: validate, normalize, render.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-09","url":"https://winzenburg.com/articles/quality-gates-for-ai","image":"https://winzenburg.com/images/articles/quality-gates-ai-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Quality Gates for AI Outputs: Schema, Normalization, and Readable Rendering","description":"AI output is raw material, not finished product. Treat it like untrusted input and run it through gates: validate, normalize, render.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-09","url":"https://winzenburg.com/articles/quality-gates-for-ai","image":"https://winzenburg.com/images/articles/quality-gates-ai-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/quality-gates-for-ai"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

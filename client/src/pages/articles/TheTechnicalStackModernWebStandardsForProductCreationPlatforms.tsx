@@ -18,7 +18,7 @@ export default function TechnicalStackModernWebStandards() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/tech-stack.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/technical-stack" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Technical Stack: Modern Web Standards for Product Creation Platforms","description":"Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/technical-stack","image":"https://winzenburg.com/images/articles/tech-stack.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Technical Stack: Modern Web Standards for Product Creation Platforms","description":"Building a systematic approach to SaaS product creation with a production-ready platform, not a prototype.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/technical-stack","image":"https://winzenburg.com/images/articles/tech-stack.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/technical-stack"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

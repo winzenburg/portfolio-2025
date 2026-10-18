@@ -19,7 +19,7 @@ export default function DualFilterValidationFrameworkArticle() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/dual-filter-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/dual-filter-validation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Solution: A Dual-Filter Validation Framework","description":"Heat gets you in. Durability makes it a real SaaS business. Here's the dual-filter framework for validating product ideas that actually work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dual-filter-validation","image":"https://winzenburg.com/images/articles/dual-filter-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Solution: A Dual-Filter Validation Framework","description":"Heat gets you in. Durability makes it a real SaaS business. Here's the dual-filter framework for validating product ideas that actually work.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/dual-filter-validation","image":"https://winzenburg.com/images/articles/dual-filter-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/dual-filter-validation"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

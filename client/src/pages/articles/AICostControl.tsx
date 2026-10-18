@@ -19,7 +19,7 @@ export default function AICostControl() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/ai-cost-control-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/ai-cost-control" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"AI Cost Control That Doesn't Break Velocity","description":"Most AI cost overruns come from retries and rework, not expensive calls. Here's how to build AI systems that stay both affordable and fast.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-11","url":"https://winzenburg.com/articles/ai-cost-control","image":"https://winzenburg.com/images/articles/ai-cost-control-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"AI Cost Control That Doesn't Break Velocity","description":"Most AI cost overruns come from retries and rework, not expensive calls. Here's how to build AI systems that stay both affordable and fast.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-12-11","url":"https://winzenburg.com/articles/ai-cost-control","image":"https://winzenburg.com/images/articles/ai-cost-control-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/ai-cost-control"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

@@ -19,7 +19,7 @@ export default function WritingPRDsForAI() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/writing-prds-for-ai-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/writing-prds-for-ai-agents" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Writing PRDs That AI Agents Can Execute","description":"A careful PRD let an agent build a feature overnight for a small API bill. A thin PRD produced a failed build and a wasted call.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-01","url":"https://winzenburg.com/articles/writing-prds-for-ai-agents","image":"https://winzenburg.com/images/articles/writing-prds-for-ai-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Writing PRDs That AI Agents Can Execute","description":"A careful PRD let an agent build a feature overnight for a small API bill. A thin PRD produced a failed build and a wasted call.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-02-01","url":"https://winzenburg.com/articles/writing-prds-for-ai-agents","image":"https://winzenburg.com/images/articles/writing-prds-for-ai-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/writing-prds-for-ai-agents"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       <article className="pt-10 pb-16 md:pt-14">

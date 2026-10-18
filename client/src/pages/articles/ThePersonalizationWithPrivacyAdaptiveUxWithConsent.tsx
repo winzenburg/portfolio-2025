@@ -21,7 +21,7 @@ export default function PersonalizationWithPrivacyArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/personalization-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/personalization-privacy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Personalization with Privacy: How We Design Adaptive UX That Respects Consent","description":"Personalization can feel creepy. Here's how to make it thoughtful, transparent, and opt-in.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/personalization-privacy","image":"https://winzenburg.com/images/articles/personalization-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Personalization with Privacy: How We Design Adaptive UX That Respects Consent","description":"Personalization can feel creepy. Here's how to make it thoughtful, transparent, and opt-in.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/personalization-privacy","image":"https://winzenburg.com/images/articles/personalization-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/personalization-privacy"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

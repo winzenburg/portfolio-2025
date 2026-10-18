@@ -20,7 +20,7 @@ export default function ScalingStrategy() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/scaling-strategy-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/scaling-strategy" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Scaling Strategy: Building a Portfolio of AI-Powered Businesses","description":"After an MVP is selling, the next choice is one bigger product or a portfolio of related businesses that share customers and trust.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-08-14","url":"https://winzenburg.com/articles/scaling-strategy","image":"https://winzenburg.com/images/articles/scaling-strategy-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Scaling Strategy: Building a Portfolio of AI-Powered Businesses","description":"After an MVP is selling, the next choice is one bigger product or a portfolio of related businesses that share customers and trust.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2025-08-14","url":"https://winzenburg.com/articles/scaling-strategy","image":"https://winzenburg.com/images/articles/scaling-strategy-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/scaling-strategy"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Content */}

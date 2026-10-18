@@ -21,7 +21,7 @@ export default function BrandFirstValidationArticle() {
         <meta name="twitter:image" content="https://winzenburg.com/images/articles/brand-first-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/brand-first-validation" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Brand-First Validation: Why We Design the Brand System Before Writing Code","description":"Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/brand-first-validation","image":"https://winzenburg.com/images/articles/brand-first-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Brand-First Validation: Why We Design the Brand System Before Writing Code","description":"Most teams bolt branding on at the end. We make it a pre-build artifact that informs every UI decision.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2024-12-07","url":"https://winzenburg.com/articles/brand-first-validation","image":"https://winzenburg.com/images/articles/brand-first-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/brand-first-validation"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}

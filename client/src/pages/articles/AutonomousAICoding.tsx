@@ -19,7 +19,7 @@ export default function AutonomousAICoding() {
         <meta property="og:image" content="https://winzenburg.com/images/articles/autonomous-ai-coding-hero.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://winzenburg.com/articles/autonomous-ai-coding" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Autonomous AI Coding: Building Features Overnight","description":"I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-11","url":"https://winzenburg.com/articles/autonomous-ai-coding","image":"https://winzenburg.com/images/articles/autonomous-ai-coding-hero.webp"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Autonomous AI Coding: Building Features Overnight","description":"I went to bed with a PRD and five user stories. When I woke up, the feature was built, tested, and committed. Total cost: $42. Total time I spent coding: zero hours.","author":{"@type":"Person","name":"Ryan Winzenburg","url":"https://winzenburg.com"},"datePublished":"2026-01-11","url":"https://winzenburg.com/articles/autonomous-ai-coding","image":"https://winzenburg.com/images/articles/autonomous-ai-coding-hero.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://winzenburg.com/articles/autonomous-ai-coding"},"publisher":{"@id":"https://winzenburg.com/#organization"}})}</script>
       </Helmet>
 
       {/* Article Header */}
