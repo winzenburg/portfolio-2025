@@ -207,7 +207,7 @@ export const STATIC_PAGES = [
     path: "/case-study/winzinvest",
     title: "Winzinvest: Execution Controls for RIAs | Ryan Winzenburg",
     description:
-      "A fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices.",
+      "Systematic execution for RIAs and family offices. Every order across every client account must clear the same rules-based framework before it reaches Interactive Brokers.",
     ogImage: "/images/winzinvest_01_homepage_hero.webp",
     ogType: "article",
     changefreq: "monthly",
@@ -215,7 +215,7 @@ export const STATIC_PAGES = [
   },
   {
     path: "/subscribe",
-    title: "Subscribe to the Weekly AI Founder Pulse | Ryan Winzenburg",
+    title: "Subscribe to the Weekly Product Pulse | Ryan Winzenburg",
     description:
       "A weekly brief for design and product leaders building with AI. Practical patterns, specific tools, and real examples from active work in design systems, product strategy, and AI workflow architecture.",
     ogImage: "/images/contact-hero.webp",

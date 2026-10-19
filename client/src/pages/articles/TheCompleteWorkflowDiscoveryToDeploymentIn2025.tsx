@@ -460,8 +460,8 @@ export default function CompleteWorkflowPost() {
             
             <h3 className="text-lg font-semibold mb-4 mt-6 text-primary">Time to Ship</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>• Old way: 6-12 months, ~60% failure rate</li>
-              <li>• New way: 2-4 months, ~75% success rate</li>
+              <li>• Old way: 6-12 months</li>
+              <li>• New way: 2-4 months</li>
             </ul>
           </div>
 
@@ -547,12 +547,6 @@ export default function CompleteWorkflowPost() {
             The most creative people I know use the most systematic processes. Because systems free your brain to focus on the interesting problems instead of remembering what step comes next.
           </p>
 
-          <div className="bg-primary/5 p-6 rounded-lg my-8">
-            <h3 className="text-lg font-semibold mb-3 text-blue-900"></h3>
-            <p className="text-lg italic text-primary">
-              "What if every product you built had a 75% success rate instead of 10%? That's the promise of systematic product creation."
-            </p>
-          </div>
 
           <p>
             We're continuing to refine the system: AI-generated discovery docs, real-time Hub updates, cross-project learning patterns. But the core framework is solid.
@@ -562,9 +556,6 @@ export default function CompleteWorkflowPost() {
             From validating ideas to shipping code, with 25 agents, 8 quality gates, and zero guesswork.
           </p>
 
-          <p>
-            What if you never had to wonder "should I build this?" again? What if you could focus your creative energy on execution instead of validation? What if your success rate went from 10% to 75%?
-          </p>
 
           <p>
             That's what systematic product creation looks like. And honestly? It's way more fun than building things nobody wants.
