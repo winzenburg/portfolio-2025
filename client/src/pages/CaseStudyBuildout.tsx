@@ -65,7 +65,7 @@ export default function CaseStudyBuildout() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <div className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wider">
-              Traditional UX · Design · 2023
+              Traditional UX · Design · 2022-2023
             </div>
             <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
               BuildOut: Commercial Real Estate App
@@ -91,7 +91,7 @@ export default function CaseStudyBuildout() {
             </div>
             <div>
               <div className="text-sm font-semibold text-muted-foreground mb-2">Year</div>
-              <div className="text-2xl font-bold">2023</div>
+              <div className="text-2xl font-bold">2022-2023</div>
             </div>
           </div>
         </div>

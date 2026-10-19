@@ -227,7 +227,7 @@ const projects: Project[] = [...clientProjects, ...foundedProjects];
 const earlierProjects: EarlierProject[] = [
   {
     slug: "/case-study/buildout",
-    kicker: "B2B SAAS · 2018-2020",
+    kicker: "B2B SAAS · 2022-2023",
     title: "BuildOut",
     image: "/project-buildout-hero.webp",
     imageAlt: "Commercial real estate towers, the market BuildOut serves",
