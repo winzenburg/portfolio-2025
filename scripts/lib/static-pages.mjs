@@ -207,7 +207,7 @@ export const STATIC_PAGES = [
     path: "/case-study/winzinvest",
     title: "Winzinvest: Execution Controls for RIAs | Ryan Winzenburg",
     description:
-      "A fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices.",
+      "Systematic execution for RIAs and family offices. Every order across every client account must clear the same rules-based framework before it reaches Interactive Brokers.",
     ogImage: "/images/winzinvest_01_homepage_hero.webp",
     ogType: "article",
     changefreq: "monthly",

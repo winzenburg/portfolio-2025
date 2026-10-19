@@ -65,13 +65,13 @@ export default function CaseStudyCvs() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <div className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wider">
-              Traditional UX · Research · 2020
+              Traditional UX · Research · 2018-2020
             </div>
             <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
               CVS/Aetna: Health Insurance Apps
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              Restructuring applications to mirror customer perspective and improve success rates from 50% to 90%
+              Health insurance apps reorganized around how members think. Task success went from below 50% in some areas to over 90%.
             </p>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function CaseStudyCvs() {
             </div>
             <div>
               <div className="text-sm font-semibold text-muted-foreground mb-2">Year</div>
-              <div className="text-2xl font-bold">2020</div>
+              <div className="text-2xl font-bold">2018-2020</div>
             </div>
           </div>
         </div>

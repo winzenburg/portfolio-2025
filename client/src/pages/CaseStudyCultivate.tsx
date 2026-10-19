@@ -69,7 +69,7 @@ const CaseStudyCultivate: React.FC = () => {
             Cultivate: Startup Operating System
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            A portfolio-first SaaS workspace that turns ideas into validated products, powered by 25 agents, 8 quality gates, and zero guesswork
+            A portfolio-first SaaS workspace that turns ideas into validated products, with 25 agents and 8 quality gates
           </p>
           
           {/* Key Metrics */}
@@ -98,7 +98,7 @@ const CaseStudyCultivate: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">The Problem</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              90% of SaaS startups fail. But the problem isn't the idea, it's the process. Most founders fall into the "build trap," coding products before validating demand. Even worse, they validate desirability without assessing durability: Will people still pay 12-36 months from now? Will the product have switching costs, network effects, or compounding advantages?
+              Most founders fall into the "build trap," coding products before validating demand. Even worse, they validate desirability without assessing durability: Will people still pay 12-36 months from now? Will the product have switching costs, network effects, or compounding advantages?
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               As a solo founder or small team, you can't afford to bet everything on one idea. You need a portfolio approach, multiple bets running in parallel with systematic validation. But managing a portfolio creates its own challenges: How do you track 10+ ideas across discovery, validation, and build phases? How do you ensure quality without becoming a bottleneck? How do you make your process repeatable as you scale?
@@ -526,7 +526,7 @@ const CaseStudyCultivate: React.FC = () => {
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-emerald-700">Process Design Expertise</h3>
               <p className="text-muted-foreground text-sm">
-                Building Cultivate required distilling three years of startup experience into systematic workflows. I can take messy, intuitive processes and transform them into repeatable systems that scale, essential for Head of Design Operations or VP of Product roles.
+                Building Cultivate required distilling three years of startup experience into systematic workflows. I can take messy, intuitive processes and turn them into repeatable systems a team can run.
               </p>
             </div>
 

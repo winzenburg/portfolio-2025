@@ -9,7 +9,7 @@ const IMG = (name: string) => `${BASE}images/winzinvest_${name}`;
 const CASE_STUDY_PATH = "/case-study/winzinvest";
 const CASE_STUDY_TITLE = "Winzinvest: Execution Controls for RIAs | Ryan Winzenburg";
 const CASE_STUDY_DESCRIPTION =
-  "A fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices.";
+  "Systematic execution for RIAs and family offices. Every order across every client account must clear the same rules-based framework before it reaches Interactive Brokers.";
 const CASE_STUDY_OG_IMAGE = "/images/winzinvest_01_homepage_hero.webp";
 
 const caseStudyJsonLd: Record<string, unknown>[] = [
@@ -98,7 +98,7 @@ const CaseStudyWinzinvest: React.FC = () => {
           </p>
           <div className="w-12 h-px bg-primary mx-auto mb-8" />
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12">
-            A fully automated stock and options trading platform that enforces rules-based execution across every client account. No exceptions.
+            Every order across every client account must clear the same rules-based framework before it reaches Interactive Brokers.
           </p>
 
           {/* Key Metrics */}
@@ -145,7 +145,7 @@ const CaseStudyWinzinvest: React.FC = () => {
               The industry default is to either build an expensive in-house trading desk or settle for passive index rebalancing. Neither works for advisors who want to run systematic, rules-based strategies at scale.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Winzinvest was built to bridge this gap: institutional-quality, systematic execution that connects directly to existing brokerage accounts, enforcing strict risk controls without requiring a change in custodian.
+              Winzinvest fills this gap with systematic, rules-based execution that connects directly to existing brokerage accounts and applies risk controls without a change in custodian.
             </p>
           </div>
         </section>
@@ -180,7 +180,7 @@ const CaseStudyWinzinvest: React.FC = () => {
         <section className="mb-16">
           <h2 className="font-serif text-4xl font-bold mb-6">The Dashboard</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            The dashboard is the operational nerve center. It surfaces immediate risk state at a glance: net liquidation value, leverage, daily P&L, execution regime, and active macro events. The information hierarchy is deliberate: when real capital is at risk, the interface must project absolute reliability, not vanity metrics.
+            The dashboard is the operational nerve center. It surfaces immediate risk state at a glance: net liquidation value, leverage, daily P&L, execution regime, and active macro events. When real capital is at risk, the screen shows risk state first and leaves vanity metrics out.
           </p>
 
           <Screenshot

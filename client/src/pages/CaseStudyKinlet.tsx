@@ -667,7 +667,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-muted border-l-4 border-purple-500 rounded-r-lg p-6">
               <h3 className="text-lg font-bold mb-2 text-purple-700">Content Moderation With Empathy</h3>
               <p className="text-muted-foreground mb-3">
-                The AI moderation system doesn't just flag violations, it understands context. Someone sharing they're "at the end of their rope" isn't necessarily in crisis, but if combined with other signals (isolation, sleep deprivation, specific language patterns), the AI can escalate to human review. This enables safety without the false positives that make automated moderation feel oppressive.
+                The AI moderation system doesn't just flag violations, it understands context. Someone sharing they're "at the end of their rope" isn't necessarily in crisis, but if combined with other signals (isolation, sleep deprivation, specific language patterns), the AI reviews the message and flags the risky ones. This enables safety without the false positives that make automated moderation feel oppressive.
               </p>
               <div className="text-sm text-muted-foreground bg-muted p-3 rounded">
                 <strong>Safety Categories:</strong> Medical misinformation, harassment, spam, crisis signals, guideline violations, each with contextual severity assessment
@@ -715,7 +715,7 @@ const CaseStudyKinlet: React.FC = () => {
             <div className="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/30 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3 text-purple-700">Ethical AI Integration</h3>
               <p className="text-muted-foreground text-sm">
-                AI isn't magic, it's a tool that requires careful implementation. Kinlet shows how to use AI for matching and moderation in sensitive contexts while maintaining human oversight, clear boundaries, and user trust.
+                AI isn't magic, it's a tool that requires careful implementation. Kinlet shows how to use AI for matching and moderation in sensitive contexts, with clear boundaries and user trust.
               </p>
             </div>
 

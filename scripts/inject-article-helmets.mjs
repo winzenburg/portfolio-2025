@@ -218,7 +218,7 @@ const articles = [
     file: "TheOpenSourceVisionBuildingACommunityAroundProductCreation.tsx",
     slug: "open-source-vision",
     title: "The Open Source Vision: Building a Community Around Product Creation",
-    description: "What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products.",
+    description: "Why I plan to open-source the 12-agent system I use to validate and build products, and what other teams could reuse from it.",
     heroImage: "/images/articles/open-source-hero.png",
     date: "2024-12-07",
   },

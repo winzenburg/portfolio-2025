@@ -21,7 +21,7 @@ export default function Privacy() {
       <article className="pt-24 pb-16">
         <div className="mx-auto max-w-3xl px-6">
           <p className="mb-6 text-sm text-muted-foreground">
-            Ryan still needs to review this page before it is relied on.
+            Last updated October 19, 2026.
           </p>
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
             Privacy

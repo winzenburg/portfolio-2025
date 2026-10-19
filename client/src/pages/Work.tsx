@@ -51,7 +51,104 @@ interface EarlierProject {
   analyticsKey: string;
 }
 
-const projects: Project[] = [
+/** Client work leads: enterprise readers see the teams I worked inside first. */
+const clientProjects: Project[] = [
+  {
+    slug: "/case-study/comcast-design-system",
+    kicker: "FORTUNE 50 TELECOM · 2024",
+    title: "Comcast Business Design System",
+    image: "/project-comcast-design-system.webp",
+    imageAlt: "Comcast Business Design System",
+    role: "Design system work across 12 product teams. Governance, a contribution model, and design-lead training.",
+    metricsLabel: "SCOPE",
+    metrics: [
+      { value: "12 teams", label: "Product teams in the governance model" },
+      { value: "Governance", label: "Contribution model and review process" },
+      { value: "Training", label: "Design leads onboarded" },
+    ],
+    highlightsLabel: "WHAT I BUILT",
+    highlights: [
+      {
+        title: "Governance Framework",
+        detail: "Contribution model, review process",
+      },
+      { title: "Design Lead Training", detail: "12 team leads onboarded" },
+      { title: "Adoption Dashboard", detail: "Metrics tracking for leadership" },
+      { title: "Component Library", detail: "Shared across all 12 teams" },
+    ],
+    analyticsKey: "comcast-design-system",
+  },
+  {
+    slug: "/case-study/saas-design-system",
+    kicker: "SERIES C SAAS · 2024",
+    title: "Kinetic UI Design System",
+    image: "/saas-ds-welcome.webp",
+    imageAlt: "Kinetic UI Design System",
+    role: "Led the design system from strategy through execution. Built AI-augmented workflows so a 2-person team could deliver 48 components, tokens, and Storybook docs. Trained the internal team on the new process.",
+    metricsLabel: "LEADERSHIP IMPACT",
+    metrics: [
+      { value: "2 people", label: "Team that built the system" },
+      { value: "48", label: "Components, tokens, Storybook docs" },
+      { value: "Training", label: "Internal team onboarded to the workflow" },
+    ],
+    highlightsLabel: "WHAT I BUILT",
+    highlights: [
+      {
+        title: "AI Workflow System",
+        detail: "Cursor + Claude + MCP for design-to-code",
+      },
+      {
+        title: "Team Training Program",
+        detail: "Onboarded 5 designers to new workflows",
+      },
+      {
+        title: "Design System Infrastructure",
+        detail: "48 components, tokens, Storybook docs",
+      },
+      {
+        title: "Process Documentation",
+        detail: "Runbooks for sustainable maintenance",
+      },
+    ],
+    analyticsKey: "saas-design-system",
+  },
+];
+
+/** Products I founded, after the client work. */
+const foundedProjects: Project[] = [
+  {
+    slug: "/case-study/winzinvest",
+    kicker: "FOUNDER · FINTECH · 2024 – PRESENT",
+    title: "Winzinvest: Execution Controls for RIAs",
+    image: "/images/winzinvest_01_homepage_hero.webp",
+    imageAlt: "Winzinvest execution platform for RIAs",
+    role: "Founder and product lead. Designed, built, and deployed a fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices who need institutional-quality execution without an in-house trading desk.",
+    metrics: [
+      { value: "17", label: "Risk Gates / Order" },
+      { value: "Live", label: "Rules-based execution product" },
+    ],
+    highlightsLabel: "KEY CAPABILITIES",
+    highlights: [
+      {
+        title: "Systematic Execution",
+        detail: "Automated entries, exits, stops, and options rolls via IBKR API",
+      },
+      {
+        title: "17-Gate Risk Framework",
+        detail: "Every order blocked or approved by independent risk checks",
+      },
+      {
+        title: "Firm Command Center",
+        detail: "Multi-account oversight with governance queue and audit logs",
+      },
+      {
+        title: "Transparent Logic",
+        detail: "Every blocked trade logged with the specific gate that rejected it",
+      },
+    ],
+    liveUrl: "https://winzinvest.com",
+    analyticsKey: "winzinvest",
+  },
   {
     slug: "/case-study/kinlet",
     kicker: "FOUNDER · AI-NATIVE SAAS · 2026",
@@ -73,7 +170,7 @@ const projects: Project[] = [
       },
       {
         title: "Content Moderation AI",
-        detail: "Real-time safety without 24/7 humans",
+        detail: "AI reviews messages and flags risky ones",
       },
       {
         title: "Validation Framework",
@@ -123,99 +220,9 @@ const projects: Project[] = [
     liveUrl: "https://undercurrent-brown.vercel.app/",
     analyticsKey: "undercurrent",
   },
-  {
-    slug: "/case-study/winzinvest",
-    kicker: "FOUNDER · FINTECH · 2024 – PRESENT",
-    title: "Winzinvest: Execution Controls for RIAs",
-    image: "/images/winzinvest_01_homepage_hero.webp",
-    imageAlt: "Winzinvest execution platform for RIAs",
-    role: "Founder and product lead. Designed, built, and deployed a fully automated stock and options trading platform that enforces rules-based execution across every client account. Built for RIAs and family offices who need institutional-quality execution without an in-house trading desk.",
-    metrics: [
-      { value: "17", label: "Risk Gates / Order" },
-      { value: "Live", label: "Rules-based execution product" },
-    ],
-    highlightsLabel: "KEY CAPABILITIES",
-    highlights: [
-      {
-        title: "Systematic Execution",
-        detail: "Automated entries, exits, stops, and options rolls via IBKR API",
-      },
-      {
-        title: "17-Gate Risk Framework",
-        detail: "Every order blocked or approved by independent risk checks",
-      },
-      {
-        title: "Firm Command Center",
-        detail: "Multi-account oversight with governance queue and audit logs",
-      },
-      {
-        title: "Transparent Logic",
-        detail: "Every blocked trade logged with the specific gate that rejected it",
-      },
-    ],
-    liveUrl: "https://winzinvest.com",
-    analyticsKey: "winzinvest",
-  },
-  {
-    slug: "/case-study/saas-design-system",
-    kicker: "SERIES C SAAS · 2024",
-    title: "Kinetic UI Design System",
-    image: "/saas-ds-welcome.webp",
-    imageAlt: "Kinetic UI Design System",
-    role: "Led the design system from strategy through execution. Built AI-augmented workflows so a 2-person team could deliver 48 components, tokens, and Storybook docs. Trained the internal team on the new process.",
-    metricsLabel: "LEADERSHIP IMPACT",
-    metrics: [
-      { value: "2 people", label: "Team that built the system" },
-      { value: "48", label: "Components, tokens, Storybook docs" },
-      { value: "Training", label: "Internal team onboarded to the workflow" },
-    ],
-    highlightsLabel: "WHAT I BUILT",
-    highlights: [
-      {
-        title: "AI Workflow System",
-        detail: "Cursor + Claude + MCP for design-to-code",
-      },
-      {
-        title: "Team Training Program",
-        detail: "Onboarded 5 designers to new workflows",
-      },
-      {
-        title: "Design System Infrastructure",
-        detail: "48 components, tokens, Storybook docs",
-      },
-      {
-        title: "Process Documentation",
-        detail: "Runbooks for sustainable maintenance",
-      },
-    ],
-    analyticsKey: "saas-design-system",
-  },
-  {
-    slug: "/case-study/comcast-design-system",
-    kicker: "FORTUNE 50 TELECOM · 2024",
-    title: "Comcast Business Design System",
-    image: "/project-comcast-design-system.webp",
-    imageAlt: "Comcast Business Design System",
-    role: "Design system work across 12 product teams. Governance, a contribution model, and design-lead training.",
-    metricsLabel: "SCOPE",
-    metrics: [
-      { value: "12 teams", label: "Product teams in the governance model" },
-      { value: "Governance", label: "Contribution model and review process" },
-      { value: "Training", label: "Design leads onboarded" },
-    ],
-    highlightsLabel: "WHAT I BUILT",
-    highlights: [
-      {
-        title: "Governance Framework",
-        detail: "Contribution model, review process",
-      },
-      { title: "Design Lead Training", detail: "12 team leads onboarded" },
-      { title: "Adoption Dashboard", detail: "Metrics tracking for leadership" },
-      { title: "Component Library", detail: "Shared across all 12 teams" },
-    ],
-    analyticsKey: "comcast-design-system",
-  },
 ];
+
+const projects: Project[] = [...clientProjects, ...foundedProjects];
 
 const earlierProjects: EarlierProject[] = [
   {
@@ -236,12 +243,12 @@ const earlierProjects: EarlierProject[] = [
   },
   {
     slug: "/case-study/cvs-aetna",
-    kicker: "FORTUNE 10 HEALTHCARE · 2016-2018",
+    kicker: "FORTUNE 10 HEALTHCARE · 2018-2020",
     title: "CVS Health/Aetna",
     image: "/project-cvs-aetna-hero.webp",
     imageAlt: "A patient receiving care, the setting for the CVS Health and Aetna work",
     summary:
-      "Led UX initiatives across a 20+ person design org for enterprise healthcare applications serving millions. Navigated complex regulatory requirements and aligned stakeholders across a massive organization.",
+      "Led UX across a 20+ person design org on healthcare apps with millions of users. Worked inside HIPAA requirements and got stakeholders across the company to agree on shared design standards.",
     pointsLabel: "LEADERSHIP EXPERIENCE",
     points: [
       "Led initiatives across 20+ person design org",
@@ -264,7 +271,7 @@ const heroFacts: Fact[] = [
     value: `${caseStudyCount}`,
     note: `${projects.length} current, ${earlierProjects.length} earlier career`,
   },
-  { label: "Span", value: "2016 – present" },
+  { label: "Span", value: "2018 – present" },
   {
     label: "Sectors",
     value: "Telecom, healthcare, fintech",
@@ -490,16 +497,16 @@ export default function Work() {
         meta={<FactRow facts={heroFacts} />}
       />
 
-      {/* Featured projects */}
+      {/* Client work */}
       <Section tone="navy" labelledBy="featured-heading">
         <SectionHeading
           id="featured-heading"
-          eyebrow="Featured projects"
+          eyebrow="Client work"
           title="Product experience, at organization scale"
-          lede="Client work and products I founded, with the decisions I made in each."
+          lede="Enterprise and Series C teams I worked inside, with the decisions I made in each."
         />
         <div className="space-y-10 md:space-y-12">
-          {projects.map((project, index) => (
+          {clientProjects.map((project, index) => (
             <Reveal key={project.slug} delay={index * 70}>
               <ProjectCard project={project} />
             </Reveal>
@@ -524,6 +531,23 @@ export default function Work() {
             ))}
           </div>
         </Reveal>
+      </Section>
+
+      {/* Products I founded */}
+      <Section tone="navy" labelledBy="founded-heading">
+        <SectionHeading
+          id="founded-heading"
+          eyebrow="Products I founded"
+          title="Products I designed, built, and shipped"
+          lede="My own products, where I made the product calls and wrote the code."
+        />
+        <div className="space-y-10 md:space-y-12">
+          {foundedProjects.map((project, index) => (
+            <Reveal key={project.slug} delay={index * 70}>
+              <ProjectCard project={project} />
+            </Reveal>
+          ))}
+        </div>
       </Section>
 
       {/* CTA */}

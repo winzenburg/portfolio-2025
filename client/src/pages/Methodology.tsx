@@ -58,11 +58,11 @@ const HERO_FACTS: Fact[] = [
 const PHASES: MethodologyPhase[] = [
   {
     slug: "phase-research-strategy",
-    name: "AI-Powered Research & Strategy",
+    name: "Research and strategy",
     shortName: "Research",
     timeline: "1–2 days",
     summary:
-      "Deep understanding of the problem space and data-driven strategy in days, not months.",
+      "Find out what is happening in the problem before anyone designs a fix.",
     activities: [
       "Synthesize user research, surveys, support tickets",
       "Conduct heuristic analysis of existing products",

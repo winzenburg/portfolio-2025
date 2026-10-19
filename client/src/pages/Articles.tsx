@@ -381,7 +381,7 @@ const articles: Article[] = [
   {
     id: "24",
     title: "The Open Source Vision: Building a Community Around Product Creation",
-    excerpt: "What if the entire product creation process was open source? Explore the benefits of a community-driven, transparent approach to building successful SaaS products.",
+    excerpt: "Why I plan to open-source the 12-agent system I use to validate and build products, and what other teams could reuse from it.",
     date: "December 7, 2024",
     readTime: "10 min read",
     slug: "open-source-vision",

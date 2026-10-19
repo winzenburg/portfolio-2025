@@ -244,7 +244,7 @@ export default function CaseStudyBuildout() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">The Outcome</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-muted-foreground mb-6">
-                The product is currently in beta with a general release planned for summer 2023. Based upon our work with customers along the way, the early feedback has been positive.
+                The product went into beta in 2023, and the customers we tested it with gave positive early feedback.
               </p>
               <p className="text-xl leading-relaxed text-muted-foreground">
                 The biggest challenge for the product, in the long run, will be the data the company is able to supply to their customers. Even without the data, the product represents a <strong>major improvement in a customer's workflow and business</strong>.
