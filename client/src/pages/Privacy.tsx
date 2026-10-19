@@ -111,7 +111,7 @@ export default function Privacy() {
                 /unsubscribe updates that contact to unsubscribed.
               </p>
               <p>
-                The Weekly Product Pulse form at /subscribe sends the email,
+                The Weekly AI Founder Pulse form at /subscribe sends the email,
                 and a first name if one is entered, to Resend. It can also send
                 a welcome email from hello@winzenburg.com.
               </p>

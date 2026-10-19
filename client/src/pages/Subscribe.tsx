@@ -62,7 +62,7 @@ export default function Subscribe() {
   return (
     <SiteLayout currentPage="subscribe">
       <PageSeo
-        title="Subscribe to the Weekly Product Pulse | Ryan Winzenburg"
+        title="Subscribe to the Weekly AI Founder Pulse | Ryan Winzenburg"
         description="A weekly brief for design and product leaders building with AI. Practical patterns, specific tools, real examples from active work."
         path="/subscribe"
         ogImage="/images/contact-hero.webp"
@@ -72,7 +72,7 @@ export default function Subscribe() {
         titleId="subscribe-hero-title"
         align="center"
         eyebrow="Newsletter"
-        title="Weekly Product Pulse"
+        title="Weekly AI Founder Pulse"
         lede={
           <>
             Once a week, one place where AI is changing how design and product teams work, with the detail from my own projects.

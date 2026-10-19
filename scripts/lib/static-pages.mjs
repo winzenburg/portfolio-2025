@@ -215,7 +215,7 @@ export const STATIC_PAGES = [
   },
   {
     path: "/subscribe",
-    title: "Subscribe to the Weekly Product Pulse | Ryan Winzenburg",
+    title: "Subscribe to the Weekly AI Founder Pulse | Ryan Winzenburg",
     description:
       "A weekly brief for design and product leaders building with AI. Practical patterns, specific tools, and real examples from active work in design systems, product strategy, and AI workflow architecture.",
     ogImage: "/images/contact-hero.webp",
