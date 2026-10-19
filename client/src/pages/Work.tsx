@@ -170,7 +170,7 @@ const foundedProjects: Project[] = [
       },
       {
         title: "Content Moderation AI",
-        detail: "AI flags risky messages for a person to review",
+        detail: "AI reviews messages and flags risky ones",
       },
       {
         title: "Validation Framework",
@@ -243,7 +243,7 @@ const earlierProjects: EarlierProject[] = [
   },
   {
     slug: "/case-study/cvs-aetna",
-    kicker: "FORTUNE 10 HEALTHCARE · 2016-2018",
+    kicker: "FORTUNE 10 HEALTHCARE · 2018-2020",
     title: "CVS Health/Aetna",
     image: "/project-cvs-aetna-hero.webp",
     imageAlt: "A patient receiving care, the setting for the CVS Health and Aetna work",
@@ -271,7 +271,7 @@ const heroFacts: Fact[] = [
     value: `${caseStudyCount}`,
     note: `${projects.length} current, ${earlierProjects.length} earlier career`,
   },
-  { label: "Span", value: "2016 – present" },
+  { label: "Span", value: "2018 – present" },
   {
     label: "Sectors",
     value: "Telecom, healthcare, fintech",
