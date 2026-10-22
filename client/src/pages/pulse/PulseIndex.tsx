@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import ResponsiveNav from "@/components/ResponsiveNav";
-import NewsletterSignup from "@/components/NewsletterSignup";
+import WeeklyPulseSignup from "@/components/WeeklyPulseSignup";
 import { allPulseIssues } from "@/data/pulseIssues";
 import { pulseTextIssues } from "@/data/pulseTextIssues";
 
@@ -45,7 +45,7 @@ export default function PulseIndex() {
         </div>
       </main>
       <div className="container mx-auto px-6 max-w-3xl pb-20">
-        <NewsletterSignup />
+        <WeeklyPulseSignup />
       </div>
     </div>
   );
