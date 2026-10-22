@@ -359,6 +359,12 @@ export default function Pulse20260921() {
               <ArrowLeft className="w-4 h-4" aria-hidden="true" />
               All past issues
             </Link>
+            <Link
+              href="/pulse/2026-09-28"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-muted-foreground transition-colors"
+            >
+              Next issue →
+            </Link>
           </div>
         </div>
       </article>

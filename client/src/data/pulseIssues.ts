@@ -17,6 +17,37 @@ export type PulseIssue = {
 
 export const allPulseIssues: PulseIssue[] = [
   {
+    slug: "2026-10-19",
+    title: "Weekly AI Founder Pulse: Week of October 19, 2026",
+    weekOf: "2026-10-19",
+    publishedAt: "2026-10-20",
+    centralSignal:
+      "Software that does the work, with a paper trail, is replacing software that suggests it.",
+  },
+  {
+    slug: "2026-10-12",
+    title: "Weekly AI Founder Pulse: Week of October 12, 2026",
+    weekOf: "2026-10-12",
+    publishedAt: "2026-10-18",
+    centralSignal:
+      "The agent layer is now the business layer, and the differentiator is governance, not model access.",
+  },
+  {
+    slug: "2026-10-05",
+    title: "Weekly AI Founder Pulse: Week of October 5, 2026",
+    weekOf: "2026-10-05",
+    publishedAt: "2026-10-11",
+    centralSignal:
+      "The agent layer got a control plane. Permissioning is now the product.",
+  },
+  {
+    slug: "2026-09-28",
+    title: "Weekly AI Founder Pulse: Week of September 28, 2026",
+    weekOf: "2026-09-28",
+    publishedAt: "2026-10-04",
+    centralSignal: "The agent layer is becoming the workflow surface.",
+  },
+  {
     slug: "2026-09-21",
     title: "Weekly AI Founder Pulse: Week of September 21, 2026",
     weekOf: "2026-09-21",
@@ -42,7 +73,7 @@ export const allPulseIssues: PulseIssue[] = [
 ];
 
 export function getPulseIssue(slug: string): PulseIssue | undefined {
-  return allPulseIssues.find((issue) => issue.slug === slug);
+  return allPulseIssues.find(issue => issue.slug === slug);
 }
 
 export function formatWeekOf(isoDate: string): string {
