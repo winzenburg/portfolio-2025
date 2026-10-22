@@ -2,7 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link, useParams } from "wouter";
 import { Helmet } from "react-helmet-async";
 import ResponsiveNav from "@/components/ResponsiveNav";
-import NewsletterSignup from "@/components/NewsletterSignup";
+import WeeklyPulseSignup from "@/components/WeeklyPulseSignup";
 import { pulseTextIssues } from "@/data/pulseTextIssues";
 
 const URL_RE = /(https?:\/\/[^\s|)]+)/g;
@@ -109,7 +109,7 @@ export default function PulseTextIssue() {
         </div>
       </article>
       <div className="container mx-auto px-6 max-w-3xl pb-20">
-        <NewsletterSignup />
+        <WeeklyPulseSignup />
       </div>
     </div>
   );

@@ -1,18 +1,12 @@
-import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { WeeklyPulseSignupForm } from "@/components/WeeklyPulseSignup";
 import PageSeo from "@/components/PageSeo";
 import PageHero from "@/components/PageHero";
 import FactRow, { type Fact } from "@/components/FactRow";
 import SiteLayout from "@/components/SiteLayout";
 import { Eyebrow, Section, SectionTitle } from "@/components/Section";
 import { allPulseIssues, formatWeekOf } from "@/data/pulseIssues";
-
-type SubscribeStatus = "idle" | "loading" | "success" | "error";
-
-const FIELD_CLASS =
-  "w-full rounded-lg border border-border bg-muted/60 px-4 py-3 text-foreground placeholder:text-muted-foreground outline-none transition-colors focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50";
 
 const heroFacts: Fact[] = [
   { label: "Cadence", value: "Once a week" },
@@ -22,43 +16,6 @@ const heroFacts: Fact[] = [
 ];
 
 export default function Subscribe() {
-  const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [status, setStatus] = useState<SubscribeStatus>("idle");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("loading");
-    setErrorMessage("");
-
-    try {
-      const response = await fetch("/api/subscribe-weekly-scan", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          ...(firstName.trim() ? { firstName: firstName.trim() } : {}),
-        }),
-      });
-
-      const data: { success?: boolean; error?: string } = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.error ?? "Something went wrong. Please try again.");
-      }
-
-      setStatus("success");
-    } catch (error) {
-      setStatus("error");
-      setErrorMessage(
-        error instanceof Error
-          ? error.message
-          : "Something went wrong. Please try again.",
-      );
-    }
-  };
-
   return (
     <SiteLayout currentPage="subscribe">
       <PageSeo
@@ -111,96 +68,7 @@ export default function Subscribe() {
                 Get the next one
               </h2>
 
-              {/* Always mounted so the confirmation is announced when it appears. */}
-              <div aria-live="polite">
-                {status === "success" ? (
-                  <div className="mt-6 border-l-2 border-verm-text p-6 text-ink">
-                    <h3 className="text-lg font-bold text-ink">
-                      You&apos;re on the list.
-                    </h3>
-                    <p className="mt-2 leading-relaxed text-ink">
-                      The next pulse drops this week. Check your inbox,
-                      including spam, in case it lands there the first time.
-                    </p>
-                    <Link
-                      href="/articles"
-                      className="mt-5 inline-flex text-sm font-medium text-primary transition-colors hover:text-primary/80"
-                    >
-                      Read the articles archive
-                    </Link>
-                  </div>
-                ) : null}
-              </div>
-
-              {status === "success" ? null : (
-                <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-                  <div>
-                    <label
-                      htmlFor="firstName"
-                      className="mb-2 block text-sm font-medium text-muted-foreground"
-                    >
-                      First name{" "}
-                      <span className="font-normal text-muted-foreground">
-                        (optional)
-                      </span>
-                    </label>
-                    <input
-                      id="firstName"
-                      name="firstName"
-                      type="text"
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                      placeholder="Alex"
-                      autoComplete="given-name"
-                      disabled={status === "loading"}
-                      className={FIELD_CLASS}
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="mb-2 block text-sm font-medium text-muted-foreground"
-                    >
-                      Email address
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="you@company.com"
-                      required
-                      autoComplete="email"
-                      disabled={status === "loading"}
-                      className={FIELD_CLASS}
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    size="lg"
-                    className="w-full"
-                    disabled={status === "loading"}
-                  >
-                    {status === "loading" ? "Subscribing…" : "Subscribe"}
-                  </Button>
-
-                  <div role="alert">
-                    {status === "error" ? (
-                      <p className="border-l-2 border-verm-text px-4 py-3 text-sm text-ink">
-                        {errorMessage}
-                      </p>
-                    ) : null}
-                  </div>
-
-                  <p className="pt-2 text-sm leading-relaxed text-muted-foreground">
-                    Unsubscribe from any email, anytime. Resend handles it and
-                    there are no dark patterns. No sharing your address.
-                  </p>
-                </form>
-              )}
+              <WeeklyPulseSignupForm />
             </div>
           </div>
         </div>
