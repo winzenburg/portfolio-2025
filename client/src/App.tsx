@@ -149,6 +149,8 @@ const MapTheWorkBeforeYouAutomate = lazy(
 const Pulse20260921 = lazy(() => import("./pages/pulse/2026-09-21"));
 const Pulse20260914 = lazy(() => import("./pages/pulse/2026-09-14"));
 const Pulse20260828 = lazy(() => import("./pages/pulse/2026-08-28"));
+const PulseIndex = lazy(() => import("./pages/pulse/PulseIndex"));
+const PulseTextIssue = lazy(() => import("./pages/pulse/PulseTextIssue"));
 
 function PageTracker() {
   usePageTracking();
@@ -366,6 +368,12 @@ function Router() {
         </Route>
         <Route path="/pulse/2026-08-28">
           {() => <LazyRoute component={Pulse20260828} />}
+        </Route>
+        <Route path="/pulse/:slug">
+          {() => <LazyRoute component={PulseTextIssue} />}
+        </Route>
+        <Route path="/pulse">
+          {() => <LazyRoute component={PulseIndex} />}
         </Route>
         <Route path="/contact" component={Contact} />
         <Route path="/privacy" component={Privacy} />
