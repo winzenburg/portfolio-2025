@@ -394,18 +394,26 @@ export default function Pulse20261019() {
             aria-label="Issue navigation"
             className="mt-16 border-t border-border pt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
           >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <Link
+                href="/pulse/2026-10-12"
+                className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                Previous issue
+              </Link>
+              <Link
+                href="/subscribe"
+                className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary transition-colors"
+              >
+                All past issues
+              </Link>
+            </div>
             <Link
-              href="/pulse/2026-10-12"
-              className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary transition-colors"
+              href="/pulse/2026-10-26"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-muted-foreground transition-colors"
             >
-              <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-              Previous issue
-            </Link>
-            <Link
-              href="/subscribe"
-              className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary transition-colors"
-            >
-              All past issues
+              Next issue →
             </Link>
           </nav>
         </div>

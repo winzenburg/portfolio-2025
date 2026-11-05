@@ -17,6 +17,14 @@ export type PulseIssue = {
 
 export const allPulseIssues: PulseIssue[] = [
   {
+    slug: "2026-10-26",
+    title: "Weekly AI Founder Pulse: Week of October 26, 2026",
+    weekOf: "2026-10-26",
+    publishedAt: "2026-11-01",
+    centralSignal:
+      "The agent layer is becoming the business layer, but durable advantage is moving from what an agent can do to how rigorously its actions are bounded, evidenced, and tied to an economic loop.",
+  },
+  {
     slug: "2026-10-19",
     title: "Weekly AI Founder Pulse: Week of October 19, 2026",
     weekOf: "2026-10-19",
