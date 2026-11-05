@@ -232,6 +232,15 @@ export const STATIC_PAGES = [
     priority: "0.6",
   },
   {
+    path: "/pulse/2026-10-26",
+    title: "Weekly AI Founder Pulse: Week of October 26, 2026 | Ryan Winzenburg",
+    description: "The agent layer is becoming the business layer, but durable advantage is moving from what an agent can do to how rigorously its actions are bounded, evidenced, and tied to an economic loop.",
+    ogImage: "/images/contact-hero.webp",
+    ogType: "article",
+    changefreq: "yearly",
+    priority: "0.5",
+  },
+  {
     path: "/pulse/2026-10-19",
     title: "Weekly AI Founder Pulse: Week of October 19, 2026 | Ryan Winzenburg",
     description: "Software that does the work, with a paper trail, is replacing software that suggests it.",
