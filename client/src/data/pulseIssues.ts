@@ -17,6 +17,14 @@ export type PulseIssue = {
 
 export const allPulseIssues: PulseIssue[] = [
   {
+    slug: "2026-11-02",
+    title: "Weekly AI Founder Pulse: Week of November 2, 2026",
+    weekOf: "2026-11-02",
+    publishedAt: "2026-11-08",
+    centralSignal:
+      "The emerging advantage is a governed operating loop: agents that take action, make their evidence visible, stay inside policy boundaries, and route irreversible steps to people.",
+  },
+  {
     slug: "2026-10-26",
     title: "Weekly AI Founder Pulse: Week of October 26, 2026",
     weekOf: "2026-10-26",

@@ -232,6 +232,15 @@ export const STATIC_PAGES = [
     priority: "0.6",
   },
   {
+    path: "/pulse/2026-11-02",
+    title: "Weekly AI Founder Pulse: Week of November 2, 2026 | Ryan Winzenburg",
+    description: "The emerging advantage is a governed operating loop: agents that take action, make their evidence visible, stay inside policy boundaries, and route irreversible steps to people.",
+    ogImage: "/images/articles/ai-cost-control-hero.webp",
+    ogType: "article",
+    changefreq: "yearly",
+    priority: "0.5",
+  },
+  {
     path: "/pulse/2026-10-26",
     title: "Weekly AI Founder Pulse: Week of October 26, 2026 | Ryan Winzenburg",
     description: "The agent layer is becoming the business layer, but durable advantage is moving from what an agent can do to how rigorously its actions are bounded, evidenced, and tied to an economic loop.",
