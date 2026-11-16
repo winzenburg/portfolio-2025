@@ -232,6 +232,15 @@ export const STATIC_PAGES = [
     priority: "0.6",
   },
   {
+    path: "/pulse/2026-11-09",
+    title: "Weekly AI Founder Pulse: Week of November 9, 2026 | Ryan Winzenburg",
+    description: "The advantage is no longer model access. It is the governed operating layer around the model.",
+    ogImage: "/images/articles/business-operating-system-hero.webp",
+    ogType: "article",
+    changefreq: "yearly",
+    priority: "0.5",
+  },
+  {
     path: "/pulse/2026-11-02",
     title: "Weekly AI Founder Pulse: Week of November 2, 2026 | Ryan Winzenburg",
     description: "The emerging advantage is a governed operating loop: agents that take action, make their evidence visible, stay inside policy boundaries, and route irreversible steps to people.",
