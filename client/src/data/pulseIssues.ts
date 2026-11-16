@@ -17,6 +17,14 @@ export type PulseIssue = {
 
 export const allPulseIssues: PulseIssue[] = [
   {
+    slug: "2026-11-09",
+    title: "Weekly AI Founder Pulse: Week of November 9, 2026",
+    weekOf: "2026-11-09",
+    publishedAt: "2026-11-15",
+    centralSignal:
+      "The advantage is no longer model access. It is the governed operating layer around the model.",
+  },
+  {
     slug: "2026-11-02",
     title: "Weekly AI Founder Pulse: Week of November 2, 2026",
     weekOf: "2026-11-02",
