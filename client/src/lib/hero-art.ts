@@ -23,7 +23,7 @@ const HEROES: Record<string, HeroSpec> = {
   "/images/articles-hero.webp": { width: 2912, height: 1632, focus: "50% 12%" },
   "/project-buildout-hero.webp": { width: 2880, height: 1886, focus: "60% 50%" },
   "/project-cvs-aetna-hero.webp": { width: 2880, height: 1886, focus: "70% 25%" },
-  "/project-comcast-design-system.webp": { width: 2880, height: 3490, focus: "50% 0%" },
+  "/project-comcast-design-system.webp": { width: 2880, height: 3490, focus: "50% 55%" },
   "/images/winzinvest_01_homepage_hero.webp": { width: 2880, height: 2477, focus: "50% 0%" },
   "/images/articles/ai-augmented-workflow-hero.webp": { width: 2880, height: 1615, focus: "50% 45%" },
   "/images/articles/ai-coding-economics-hero.webp": { width: 2880, height: 1620, focus: "50% 55%" },
