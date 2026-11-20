@@ -8,6 +8,8 @@ const CASE_STUDY_TITLE = "Comcast Design System Case Study | Ryan Winzenburg";
 const CASE_STUDY_DESCRIPTION =
   "Enterprise design system work at Comcast: components, foundations, and governance for multi-product delivery.";
 const CASE_STUDY_OG_IMAGE = "/project-comcast-design-system-hero.webp";
+const ILLUSTRATIVE_CAPTION =
+  "Illustrative recreation; no Comcast screens, tokens or data shown.";
 
 const caseStudyJsonLd: Record<string, unknown>[] = [
   {
@@ -60,7 +62,7 @@ const CaseStudyComcast: React.FC = () => {
         <div className="absolute inset-0">
           <HeroImage
             src="/project-comcast-design-system.webp"
-            alt="Comcast Business Design System"
+            alt="Illustrative recreation of an enterprise design system cover; no Comcast screens, tokens or data shown."
             sizes="100vw"
             className="h-full w-full object-cover opacity-40"
           />
@@ -74,7 +76,7 @@ const CaseStudyComcast: React.FC = () => {
             Comcast Business Design System
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            A design system Comcast Business designers could use without writing code. 62 components and 826 icons, built in 4 weeks.
+            I owned the digital design system at Comcast Business. 62 components built in code, so designers could ship consistent prototypes without writing production UI themselves.
           </p>
           
           {/* Key Metrics */}
@@ -119,19 +121,19 @@ const CaseStudyComcast: React.FC = () => {
           <h2 className="font-['Playfair_Display'] text-4xl font-bold mb-6">How I built it in four weeks</h2>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-muted-foreground leading-relaxed">
-              I built the system in 4 weeks, using AI to draft components, icons, and documentation while I set the architecture and reviewed the output. It has 62 components, 826 type-safe icons, and more than 171,000 lines of code.
+              I owned the digital design system at Comcast Business. I built the system in 4 weeks, using AI to draft components and documentation while I set the architecture and reviewed the output. 62 components were built in code, along with more than 171,000 lines of supporting system code.
             </p>
           </div>
 
-          {/* Foundation Screenshot */}
+          {/* Token architecture recreation */}
           <div className="mb-8 rounded-lg overflow-hidden border border-green-500/30">
             <img loading="lazy" 
               src={`${import.meta.env.BASE_URL}comcast-ds-colors.webp`}
-              alt="Comcast Design System Color Foundation"
+              alt="Illustrative recreation of design-token architecture across primitive, semantic, and component tiers; no Comcast screens, tokens or data shown."
               className="w-full"
             />
             <div className="bg-muted p-4 text-sm text-muted-foreground">
-              Complete color system with semantic tokens, brand colors, and accessible color ramps
+              Token architecture across primitive, semantic, and component tiers. {ILLUSTRATIVE_CAPTION}
             </div>
           </div>
 
@@ -161,26 +163,26 @@ const CaseStudyComcast: React.FC = () => {
                   <span className="text-green-700 font-bold text-xl">2</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2 text-green-700">Week 2: Primitive Components & Icons</h3>
+                  <h3 className="text-xl font-bold mb-2 text-green-700">Week 2: Primitive Components</h3>
                   <p className="text-muted-foreground mb-3">
-                    Built 38 primitive components (buttons, inputs, cards, badges, etc.) following atomic design principles. Created type-safe icon system with 826 icons, ensuring consistent sizing and coloring. Implemented comprehensive prop interfaces for maximum flexibility while maintaining design consistency.
+                    Built 38 primitive components (buttons, inputs, cards, badges, etc.) following atomic design principles. Implemented comprehensive prop interfaces for maximum flexibility while maintaining design consistency.
                   </p>
                   <div className="text-sm text-muted-foreground">
-                    <strong>Innovation:</strong> Type-safe icon system prevents runtime errors and improves developer experience
+                    <strong>Focus:</strong> Stable primitives that patterns and product teams could compose without forking styles
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Icon Library Screenshot */}
+            {/* Contribution / governance recreation */}
             <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
               <img loading="lazy" 
                 src={`${import.meta.env.BASE_URL}comcast-ds-icons.webp`}
-                alt="Comcast Design System Icon Library"
+                alt="Illustrative recreation of a design-system contribution flow from propose to release; no Comcast screens, tokens or data shown."
                 className="w-full"
               />
               <div className="bg-muted p-4 text-sm text-muted-foreground">
-                Interactive icon picker with 826 type-safe icons, searchable and categorized
+                Contribution model: propose, review, build, release. {ILLUSTRATIVE_CAPTION}
               </div>
             </div>
 
@@ -202,30 +204,6 @@ const CaseStudyComcast: React.FC = () => {
               </div>
             </div>
 
-            {/* Enterprise Billing Screenshot */}
-            <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
-              <img loading="lazy" 
-                src={`${import.meta.env.BASE_URL}comcast-ds-billing.webp`}
-                alt="Comcast Design System Enterprise Billing Interface"
-                className="w-full"
-              />
-              <div className="bg-muted p-4 text-sm text-muted-foreground">
-                Enterprise billing dashboard with invoice management, payment tracking, usage monitoring, and auto-pay settings
-              </div>
-            </div>
-
-            {/* Executive Dashboard Screenshot */}
-            <div className="mb-6 rounded-lg overflow-hidden border border-green-500/30">
-              <img loading="lazy" 
-                src={`${import.meta.env.BASE_URL}comcast-ds-dashboard.webp`}
-                alt="Comcast Design System Executive Dashboard"
-                className="w-full"
-              />
-              <div className="bg-muted p-4 text-sm text-muted-foreground">
-                Executive dashboard with real-time business insights, service performance trends, revenue analytics, and critical alerts
-              </div>
-            </div>
-
             {/* Week 4 */}
             <div className="bg-muted border border-green-500/30 rounded-lg p-6">
               <div className="flex items-start gap-4">
@@ -235,7 +213,7 @@ const CaseStudyComcast: React.FC = () => {
                 <div className="flex-1">
                   <h3 className="text-xl font-bold mb-2 text-green-700">Week 4: Documentation & Deployment</h3>
                   <p className="text-muted-foreground mb-3">
-                    Created comprehensive Storybook documentation for all 62 components. Generated usage examples, accessibility guidelines, and best practices. Set up automated deployment pipeline and conducted training sessions with design team to ensure successful adoption.
+                    Created comprehensive documentation for all 62 components. Generated usage examples, accessibility guidelines, and best practices. Set up automated deployment pipeline and conducted training sessions with design team to ensure successful adoption.
                   </p>
                   <div className="text-sm text-muted-foreground">
                     <strong>Outcome:</strong> Production-ready system deployed and actively used by design team
@@ -256,7 +234,7 @@ const CaseStudyComcast: React.FC = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-green-700 mt-1">•</span>
-                  <span>62 total components</span>
+                  <span>62 total components built in code</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-700 mt-1">•</span>
@@ -274,23 +252,23 @@ const CaseStudyComcast: React.FC = () => {
             </div>
 
             <div className="bg-muted border border-border rounded-lg p-6">
-              <h3 className="text-lg font-bold mb-4 text-green-700">Icon System</h3>
+              <h3 className="text-lg font-bold mb-4 text-green-700">Contribution Model</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-green-700 mt-1">•</span>
-                  <span>826 type-safe icons</span>
+                  <span>Propose → review → build → release path</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-700 mt-1">•</span>
-                  <span>Consistent sizing system</span>
+                  <span>Shared intake for new patterns</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-700 mt-1">•</span>
-                  <span>Token-based coloring</span>
+                  <span>Design and engineering paired ownership</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-700 mt-1">•</span>
-                  <span>TypeScript interfaces prevent errors</span>
+                  <span>Versioned releases instead of one-off forks</span>
                 </li>
               </ul>
             </div>
@@ -344,7 +322,7 @@ const CaseStudyComcast: React.FC = () => {
           <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 border border-green-500/30 rounded-lg p-6">
             <h3 className="text-lg font-bold mb-4">Technology Stack</h3>
             <div className="flex flex-wrap gap-3">
-              {['React 18', 'TypeScript', 'Tailwind CSS', 'Storybook', 'Vite', 'PostCSS'].map(tech => (
+              {['React 18', 'TypeScript', 'Tailwind CSS', 'Vite', 'PostCSS'].map(tech => (
                 <span key={tech} className="px-4 py-2 bg-muted rounded-full text-sm text-muted-foreground">
                   {tech}
                 </span>
@@ -405,9 +383,9 @@ const CaseStudyComcast: React.FC = () => {
             </div>
 
             <div className="bg-muted border-l-4 border-green-500 rounded-r-lg p-6">
-              <h3 className="text-lg font-bold mb-2 text-green-700">Icon System Needs Type Safety</h3>
+              <h3 className="text-lg font-bold mb-2 text-green-700">Governance Beats One-Off Variants</h3>
               <p className="text-muted-foreground">
-                With 826 icons, it would be easy to make mistakes, typos in icon names, incorrect sizing, or inconsistent colors. The type-safe icon system prevents all these errors at compile time. Developers get autocomplete for icon names, and TypeScript catches mistakes before they reach production. This investment in developer experience pays dividends across hundreds of developers.
+                Without a clear propose → review → build → release path, teams recreate the same pattern under a new name. Pairing design and engineering ownership on each contribution kept the library coherent as more product teams adopted it.
               </p>
             </div>
 
@@ -445,4 +423,3 @@ const CaseStudyComcast: React.FC = () => {
 };
 
 export default CaseStudyComcast;
-
