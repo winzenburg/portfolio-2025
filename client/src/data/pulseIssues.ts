@@ -17,6 +17,13 @@ export type PulseIssue = {
 
 export const allPulseIssues: PulseIssue[] = [
   {
+    slug: "2026-11-16",
+    title: "Weekly AI Founder Pulse: Week of November 16, 2026",
+    weekOf: "2026-11-16",
+    publishedAt: "2026-11-22",
+    centralSignal: "The agent layer is becoming the business layer.",
+  },
+  {
     slug: "2026-11-09",
     title: "Weekly AI Founder Pulse: Week of November 9, 2026",
     weekOf: "2026-11-09",
