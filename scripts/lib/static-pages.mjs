@@ -232,6 +232,15 @@ export const STATIC_PAGES = [
     priority: "0.6",
   },
   {
+    path: "/pulse/2026-11-16",
+    title: "Weekly AI Founder Pulse: Week of November 16, 2026 | Ryan Winzenburg",
+    description: "The agent layer is becoming the business layer.",
+    ogImage: "/images/articles/ai-orchestration-hero.webp",
+    ogType: "article",
+    changefreq: "yearly",
+    priority: "0.5",
+  },
+  {
     path: "/pulse/2026-11-09",
     title: "Weekly AI Founder Pulse: Week of November 9, 2026 | Ryan Winzenburg",
     description: "The advantage is no longer model access. It is the governed operating layer around the model.",

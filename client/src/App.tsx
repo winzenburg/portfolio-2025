@@ -146,6 +146,7 @@ const TheAgentLayerBusinessLayer = lazy(
 const MapTheWorkBeforeYouAutomate = lazy(
   () => import("./pages/articles/MapTheWorkBeforeYouAutomate"),
 );
+const Pulse20261116 = lazy(() => import("./pages/pulse/2026-11-16"));
 const Pulse20261109 = lazy(() => import("./pages/pulse/2026-11-09"));
 const Pulse20261102 = lazy(() => import("./pages/pulse/2026-11-02"));
 const Pulse20261026 = lazy(() => import("./pages/pulse/2026-10-26"));
@@ -366,6 +367,9 @@ function Router() {
         </Route>
         <Route path="/articles/map-the-work-before-you-automate-it">
           {() => <LazyRoute component={MapTheWorkBeforeYouAutomate} />}
+        </Route>
+        <Route path="/pulse/2026-11-16">
+          {() => <LazyRoute component={Pulse20261116} />}
         </Route>
         <Route path="/pulse/2026-11-09">
           {() => <LazyRoute component={Pulse20261109} />}
